@@ -44,6 +44,10 @@ async function boot() {
   }
   try { const a = await getJSON('audio/index.json'); V.X.audio = new Set(a.files || []); } catch (e) { /* 还没有音频 */ }
   window.addEventListener('hashchange', render);
+  document.addEventListener('click', (e) => {
+    const a = e.target.closest && e.target.closest('a[href^="#/"]');
+    if (a && a.getAttribute('href') === location.hash) { e.preventDefault(); render(); }
+  });
   render();
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('sw.js').catch(() => {});

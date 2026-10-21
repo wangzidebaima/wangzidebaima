@@ -182,7 +182,7 @@ function renderQ(q, no, ans, update) {
     box.append(head(esc(q.stem)));
     box.append(h('input', { class: 'blank wide', type: 'text', placeholder: '写下你的答案（英文）', autocapitalize: 'off', autocomplete: 'off', autocorrect: 'off', spellcheck: 'false', oninput: (e) => setA(e.target.value) }));
   } else if (q.type === 'math') {
-    box.append(head(mathHtml(q.stem) + (q.stem.length < 60 ? ' = ？' : '')));
+    box.append(head(mathHtml(q.stem) + (q.stem.length < 60 && !/[=＝？?]/.test(q.stem) ? ' = ？' : '')));
     if (q.kindName) box.append(h('span', { class: 'pill' }, q.kindName));
     const inp = h('input', { class: 'mi', readonly: true, inputmode: 'none', placeholder: '点这里输入答案', oninput: () => setA(inp.value) });
     inp.addEventListener('click', () => keypad.open(inp, !q.digits));
@@ -343,16 +343,27 @@ export function records() {
   const weak = Object.entries(p.rand.types).filter(([, s]) => s.n >= 3).map(([id, s]) => ({ id, rate: s.w / s.n, s })).sort((a, b) => b.rate - a.rate).slice(0, 4);
   const text = summaryText(u);
   const ta = h('textarea', { class: 'sum', readonly: true, rows: text.split('\n').length + 1 }, text);
-  const share = async () => {
+  const copy = async () => {
+    try { await navigator.clipboard.writeText(text); return true; } catch (e) { /* 下面兜底 */ }
+    try { ta.removeAttribute('readonly'); ta.focus(); ta.select(); const ok = document.execCommand('copy'); ta.setAttribute('readonly', ''); return ok; } catch (e) { return false; }
+  };
+  const toWechat = async () => {
+    const ok = await copy();
+    toast(ok ? '已复制，正在打开微信，粘贴发给家长' : '请长按上面的文字，选「复制」，再去微信粘贴');
+    if (ok) setTimeout(() => { location.href = 'weixin://'; }, 900);
+  };
+  const shareOther = async () => {
     try { if (navigator.share) { await navigator.share({ text }); return; } } catch (e) { return; }
-    try { await navigator.clipboard.writeText(text); toast('已复制，去微信粘贴发给家长'); } catch (e) { ta.focus(); ta.select(); toast('请长按文字，选「复制」'); }
+    toast((await copy()) ? '已复制，去微信粘贴发给家长' : '请长按上面的文字，选「复制」');
   };
   mount(page('我的记录', [
     h('section', { class: 'jar mini' }, h('div', { class: 'jar-top' }, h('div', { class: 'jar-n' }, '⭐ ', h('b', {}, st.total)), h('div', { class: 'jar-s' }, `题库 ${st.bank} · 随机 ${st.rand}`))),
     h('h2', { class: 'sh' }, '最近 7 天'), h('div', { class: 'list' }, dayRows.length ? dayRows : h('p', { class: 'note' }, '还没有记录，去做一组题吧。')),
     weak.length ? [h('h2', { class: 'sh' }, '随机练习里的弱项'), h('div', { class: 'list' }, weak.map(w => h('div', { class: 'row static' }, h('div', {}, h('b', {}, names[w.id] || w.id)), h('span', { class: 'chip' + (w.rate >= 0.4 ? ' bad' : ' ok') }, `错 ${w.s.w}/${w.s.n}`))))] : null,
     h('h2', { class: 'sh' }, '发给家长'), ta,
-    h('button', { class: 'btn primary wide', onclick: share }, '发给家长（微信）'),
+    h('button', { class: 'btn primary wide', onclick: toWechat }, '复制并打开微信'),
+    h('button', { class: 'btn ghost wide', style: 'margin-top:10px', onclick: shareOther }, '用其他方式分享'),
+    h('p', { class: 'note' }, '打开微信后，找到家长的对话，长按输入框选「粘贴」，再发送。'),
   ]));
 }
 
