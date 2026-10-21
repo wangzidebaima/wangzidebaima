@@ -1,0 +1,124 @@
+{
+ "id": "g4r4",
+ "kind": "reading",
+ "title": "Set 4  My New Schoolbag",
+ "subtitle": "对应课本：Unit 2 My schoolbag",
+ "dialogue": [
+  {
+   "s": "John",
+   "t": "Look! I have a new schoolbag. It's blue and white."
+  },
+  {
+   "s": "Wu Yifan",
+   "t": "Wow! What's in it?"
+  },
+  {
+   "s": "John",
+   "t": "I have a Chinese book, a notebook and a toy car."
+  },
+  {
+   "s": "Wu Yifan",
+   "t": "Do you have a storybook?"
+  },
+  {
+   "s": "John",
+   "t": "Yes, I do. I have two storybooks. Do you want to read one?"
+  },
+  {
+   "s": "Wu Yifan",
+   "t": "Yes, please! Here's some candy for you."
+  },
+  {
+   "s": "John",
+   "t": "Thank you!"
+  }
+ ],
+ "vocab": "new 新的 · schoolbag 书包 · Chinese book 语文书 · notebook 笔记本 · toy car 玩具车 · storybook 故事书 · candy 糖果",
+ "sections": [
+  {
+   "id": "A",
+   "title": "A. 判断对错（T 对，F 错）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g4r4-1",
+     "type": "tf",
+     "stem": "John has a new schoolbag.",
+     "answer": "T",
+     "why": "John: I have a new schoolbag.",
+     "pts": 1
+    },
+    {
+     "id": "g4r4-2",
+     "type": "tf",
+     "stem": "John's schoolbag is red.",
+     "answer": "F",
+     "why": "书包是蓝白色（blue and white）。",
+     "pts": 1
+    },
+    {
+     "id": "g4r4-3",
+     "type": "tf",
+     "stem": "John has a toy car.",
+     "answer": "T",
+     "why": "John: ...a notebook and a toy car.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "B. 选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4r4-4",
+     "type": "choice",
+     "stem": "What colour is John's schoolbag?",
+     "options": [
+      "red",
+      "blue and white",
+      "green"
+     ],
+     "answer": "B",
+     "why": "It's blue and white.",
+     "pts": 1
+    },
+    {
+     "id": "g4r4-5",
+     "type": "choice",
+     "stem": "What does Wu Yifan give John?",
+     "options": [
+      "a toy",
+      "some candy",
+      "a key"
+     ],
+     "answer": "B",
+     "why": "Wu Yifan: Here's some candy for you.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "C. 回答问题",
+   "type": "short",
+   "questions": [
+    {
+     "id": "g4r4-6",
+     "type": "short",
+     "stem": "Does John have a storybook? (Yes, he does. / No, he doesn't.)",
+     "accept": [
+      "yes"
+     ],
+     "ref": "Yes, he does.",
+     "why": "John: Yes, I do. I have two storybooks.",
+     "pts": 1,
+     "reject": [
+      "no"
+     ]
+    }
+   ]
+  }
+ ]
+}

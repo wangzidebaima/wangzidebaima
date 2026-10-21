@@ -1,0 +1,57 @@
+{
+ "version": "2026-10-21-1",
+ "appName": "每日练习",
+ "dailyRandomStarCap": 20,
+ "rewards": [
+  {
+   "stars": 30,
+   "label": "小奖励"
+  },
+  {
+   "stars": 60,
+   "label": "中奖励"
+  },
+  {
+   "stars": 100,
+   "label": "大奖励"
+  }
+ ],
+ "users": [
+  {
+   "id": "son",
+   "display": "梓逸",
+   "names": [
+    "徐梓逸",
+    "梓逸"
+   ],
+   "theme": "blue",
+   "subjects": [
+    "g7math",
+    "g7reading",
+    "g7listening"
+   ],
+   "random": [
+    "math7",
+    "vocab7"
+   ]
+  },
+  {
+   "id": "daughter",
+   "display": "清湲",
+   "names": [
+    "徐清湲",
+    "清湲"
+   ],
+   "theme": "rose",
+   "subjects": [
+    "g4reading",
+    "g4speaking",
+    "g4listening"
+   ],
+   "random": [
+    "math4",
+    "vocab4"
+   ]
+  }
+ ]
+}

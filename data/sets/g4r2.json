@@ -1,0 +1,128 @@
+{
+ "id": "g4r2",
+ "kind": "reading",
+ "title": "Set 2  Let's Clean the Classroom!",
+ "subtitle": "对应课本：Unit 1 My classroom",
+ "dialogue": [
+  {
+   "s": "Miss White",
+   "t": "Class, let's clean the classroom!"
+  },
+  {
+   "s": "Mike",
+   "t": "OK! I can clean the board."
+  },
+  {
+   "s": "Amy",
+   "t": "I can clean the window."
+  },
+  {
+   "s": "Miss White",
+   "t": "Good! Zhang Peng, can you clean the floor?"
+  },
+  {
+   "s": "Zhang Peng",
+   "t": "Yes, I can."
+  },
+  {
+   "s": "Miss White",
+   "t": "Thank you, boys and girls. Wow! The classroom is clean now."
+  },
+  {
+   "s": "Amy",
+   "t": "Look at the picture on the wall. It's nice!"
+  },
+  {
+   "s": "Miss White",
+   "t": "Yes, it is."
+  }
+ ],
+ "vocab": "clean 打扫/干净的 · board 黑板 · window 窗户 · floor 地板 · picture 图画 · wall 墙 · classroom 教室",
+ "sections": [
+  {
+   "id": "A",
+   "title": "A. 判断对错（T 对，F 错）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g4r2-1",
+     "type": "tf",
+     "stem": "Miss White says, \"Let's clean the classroom!\"",
+     "answer": "T",
+     "why": "第一句就是 Class, let's clean the classroom!",
+     "pts": 1
+    },
+    {
+     "id": "g4r2-2",
+     "type": "tf",
+     "stem": "Mike cleans the window.",
+     "answer": "F",
+     "why": "Mike 擦黑板（board），Amy 擦窗户。",
+     "pts": 1
+    },
+    {
+     "id": "g4r2-3",
+     "type": "tf",
+     "stem": "Zhang Peng can clean the floor.",
+     "answer": "T",
+     "why": "Zhang Peng: Yes, I can.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "B. 选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4r2-4",
+     "type": "choice",
+     "stem": "Who cleans the window?",
+     "options": [
+      "Mike",
+      "Amy",
+      "Zhang Peng"
+     ],
+     "answer": "B",
+     "why": "Amy: I can clean the window.",
+     "pts": 1
+    },
+    {
+     "id": "g4r2-5",
+     "type": "choice",
+     "stem": "What is on the wall?",
+     "options": [
+      "a picture",
+      "a fan",
+      "a light"
+     ],
+     "answer": "A",
+     "why": "Look at the picture on the wall.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "C. 回答问题",
+   "type": "short",
+   "questions": [
+    {
+     "id": "g4r2-6",
+     "type": "short",
+     "stem": "Is the classroom clean now? (Yes, it is. / No, it isn't.)",
+     "accept": [
+      "yes"
+     ],
+     "ref": "Yes, it is.",
+     "why": "Miss White: The classroom is clean now.",
+     "pts": 1,
+     "reject": [
+      "no"
+     ]
+    }
+   ]
+  }
+ ]
+}

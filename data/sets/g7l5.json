@@ -1,0 +1,119 @@
+{
+ "id": "g7l5",
+ "kind": "listening",
+ "title": "Listening 5  A Bad Cold",
+ "subtitle": "对话",
+ "audio": "audio/g7l5.mp3",
+ "rate": "-5%",
+ "speakers": {
+  "Amy": "f1",
+  "Jim": "m1"
+ },
+ "transcript": [
+  {
+   "s": "Amy",
+   "t": "Hi, Jim. You weren't at school yesterday. What happened?"
+  },
+  {
+   "s": "Jim",
+   "t": "I had a bad cold, so I stayed in bed all day."
+  },
+  {
+   "s": "Amy",
+   "t": "Oh, are you OK now?"
+  },
+  {
+   "s": "Jim",
+   "t": "Yes, I'm better. My mother took me to see a doctor in the afternoon."
+  },
+  {
+   "s": "Amy",
+   "t": "What did the doctor say?"
+  },
+  {
+   "s": "Jim",
+   "t": "He told me to drink more water and have a good rest."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l5-A1",
+     "type": "choice",
+     "stem": "Why wasn't Jim at school yesterday?",
+     "options": [
+      "He had a cold.",
+      "He went to the zoo.",
+      "He was late."
+     ],
+     "answer": "A",
+     "why": "Jim: I had a bad cold.",
+     "pts": 1
+    },
+    {
+     "id": "g7l5-A2",
+     "type": "choice",
+     "stem": "When did Jim see the doctor?",
+     "options": [
+      "In the morning.",
+      "In the afternoon.",
+      "In the evening."
+     ],
+     "answer": "B",
+     "why": "My mother took me to see a doctor in the afternoon.",
+     "pts": 1
+    },
+    {
+     "id": "g7l5-A3",
+     "type": "choice",
+     "stem": "What did the doctor tell Jim to do?",
+     "options": [
+      "Eat more fruit.",
+      "Drink more water and have a rest.",
+      "Do more exercise."
+     ],
+     "answer": "B",
+     "why": "He told me to drink more water and have a good rest.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l5-B1",
+     "type": "fill",
+     "stem": "Jim stayed in ____ all day.",
+     "answers": [
+      [
+       "bed"
+      ]
+     ],
+     "why": "I stayed in bed all day.",
+     "pts": 1
+    },
+    {
+     "id": "g7l5-B2",
+     "type": "fill",
+     "stem": "Jim's ____ took him to see a doctor.",
+     "answers": [
+      [
+       "mother",
+       "mom",
+       "mum"
+      ]
+     ],
+     "why": "My mother took me to see a doctor.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,127 @@
+{
+ "id": "g4l2",
+ "kind": "listening",
+ "title": "Listening 2  At the Fruit Shop",
+ "subtitle": "每段听两遍",
+ "audio": "audio/g4l2.mp3",
+ "rate": "-15%",
+ "speakers": {
+  "Shopkeeper": "m1",
+  "Girl": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Shopkeeper",
+   "t": "Good morning. Can I help you?"
+  },
+  {
+   "s": "Girl",
+   "t": "Yes, please. I want some apples."
+  },
+  {
+   "s": "Shopkeeper",
+   "t": "How many do you want?"
+  },
+  {
+   "s": "Girl",
+   "t": "Six, please. And two bananas."
+  },
+  {
+   "s": "Shopkeeper",
+   "t": "Here you are."
+  },
+  {
+   "s": "Girl",
+   "t": "Thank you. How much is it?"
+  },
+  {
+   "s": "Shopkeeper",
+   "t": "Ten yuan."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听一听，选一选",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4l2-A1",
+     "type": "choice",
+     "stem": "What does the girl want?",
+     "options": [
+      "Apples and bananas.",
+      "Oranges.",
+      "Grapes."
+     ],
+     "answer": "A",
+     "why": "I want some apples. And two bananas.",
+     "pts": 1
+    },
+    {
+     "id": "g4l2-A2",
+     "type": "choice",
+     "stem": "How many apples does she want?",
+     "options": [
+      "Four.",
+      "Six.",
+      "Eight."
+     ],
+     "answer": "B",
+     "why": "Six, please.",
+     "pts": 1
+    },
+    {
+     "id": "g4l2-A3",
+     "type": "choice",
+     "stem": "How much is it?",
+     "options": [
+      "Eight yuan.",
+      "Ten yuan.",
+      "Twelve yuan."
+     ],
+     "answer": "B",
+     "why": "Ten yuan.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听一听，填一填（从方框里选词）",
+   "type": "fill",
+   "bank": [
+    "apples",
+    "yuan",
+    "bananas"
+   ],
+   "bankMode": "select",
+   "questions": [
+    {
+     "id": "g4l2-B1",
+     "type": "fill",
+     "stem": "She wants six ____.",
+     "answers": [
+      [
+       "apples"
+      ]
+     ],
+     "why": "Six, please.（six apples）",
+     "pts": 1
+    },
+    {
+     "id": "g4l2-B2",
+     "type": "fill",
+     "stem": "The fruit is ten ____.",
+     "answers": [
+      [
+       "yuan"
+      ]
+     ],
+     "why": "Ten yuan.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

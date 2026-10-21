@@ -1,0 +1,132 @@
+{
+ "id": "g7l2",
+ "kind": "listening",
+ "title": "Listening 2  Buying a T-shirt",
+ "subtitle": "对话",
+ "audio": "audio/g7l2.mp3",
+ "rate": "-5%",
+ "speakers": {
+  "Clerk": "m1",
+  "Girl": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Clerk",
+   "t": "Can I help you?"
+  },
+  {
+   "s": "Girl",
+   "t": "Yes. I want a T-shirt."
+  },
+  {
+   "s": "Clerk",
+   "t": "What colour do you like?"
+  },
+  {
+   "s": "Girl",
+   "t": "I like blue. How much is it?"
+  },
+  {
+   "s": "Clerk",
+   "t": "It's 45 yuan."
+  },
+  {
+   "s": "Girl",
+   "t": "That's too expensive. Do you have a cheaper one?"
+  },
+  {
+   "s": "Clerk",
+   "t": "Yes. This yellow one is 30 yuan."
+  },
+  {
+   "s": "Girl",
+   "t": "OK, I'll take it. Here's 50 yuan."
+  },
+  {
+   "s": "Clerk",
+   "t": "Here's your change, 20 yuan."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l2-A1",
+     "type": "choice",
+     "stem": "What does the girl want to buy?",
+     "options": [
+      "A T-shirt.",
+      "A hat.",
+      "A pair of shoes."
+     ],
+     "answer": "A",
+     "why": "Girl: I want a T-shirt.",
+     "pts": 1
+    },
+    {
+     "id": "g7l2-A2",
+     "type": "choice",
+     "stem": "What colour does she like?",
+     "options": [
+      "Red.",
+      "Blue.",
+      "Yellow."
+     ],
+     "answer": "B",
+     "why": "Girl: I like blue.",
+     "pts": 1
+    },
+    {
+     "id": "g7l2-A3",
+     "type": "choice",
+     "stem": "Which one does she buy?",
+     "options": [
+      "The blue one.",
+      "The yellow one.",
+      "The red one."
+     ],
+     "answer": "B",
+     "why": "蓝色太贵，她买了便宜的黄色那件：OK, I'll take it.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l2-B1",
+     "type": "fill",
+     "stem": "The blue T-shirt is ____ yuan.",
+     "answers": [
+      [
+       "45",
+       "forty-five",
+       "forty five"
+      ]
+     ],
+     "why": "Clerk: It's 45 yuan.",
+     "pts": 1
+    },
+    {
+     "id": "g7l2-B2",
+     "type": "fill",
+     "stem": "She gets ____ yuan change.",
+     "answers": [
+      [
+       "20",
+       "twenty"
+      ]
+     ],
+     "why": "黄色 30 元，付 50 元，找回 20 元：Here's your change, 20 yuan.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

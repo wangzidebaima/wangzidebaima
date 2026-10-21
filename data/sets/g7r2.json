@@ -1,0 +1,291 @@
+{
+ "id": "g7r2",
+ "kind": "reading",
+ "title": "Passage 2  My School",
+ "subtitle": "考点：一般现在时 / there be 句型",
+ "passage": [
+  "My name is Lily. I'm in Class 3, Grade 7. My school is big and beautiful. There are about 1,000 students and 60 teachers in it.",
+  "There is a library near the playground, and we often read books there at noon. I have eight classes every day. My favourite subject is art because it is interesting. My art teacher, Ms. Green, is kind and funny. After class, we sometimes draw pictures together. I love my school, so I study hard every day."
+ ],
+ "vocab": "library 图书馆 · playground 操场 · favourite 最喜欢的 · subject 科目 · kind 友善的 · funny 有趣的",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题（每题 2 分）",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r2-A1",
+     "type": "choice",
+     "stem": "How many students are there in Lily's school?",
+     "options": [
+      "60.",
+      "About 1,000.",
+      "100.",
+      "800."
+     ],
+     "answer": "B",
+     "why": "原文：There are about 1,000 students and 60 teachers. 60 是老师的人数。",
+     "pts": 2
+    },
+    {
+     "id": "g7r2-A2",
+     "type": "choice",
+     "stem": "Where is the library?",
+     "options": [
+      "In front of the classroom.",
+      "Near the playground.",
+      "Behind the gym.",
+      "Next to the gate."
+     ],
+     "answer": "B",
+     "why": "原文：There is a library near the playground.",
+     "pts": 2
+    },
+    {
+     "id": "g7r2-A3",
+     "type": "choice",
+     "stem": "Why does Lily like art?",
+     "options": [
+      "Because it is easy.",
+      "Because her mother is an artist.",
+      "Because it is interesting.",
+      "Because it is the first class."
+     ],
+     "answer": "C",
+     "why": "原文：My favourite subject is art because it is interesting.",
+     "pts": 2
+    },
+    {
+     "id": "g7r2-A4",
+     "type": "choice",
+     "stem": "What is Ms. Green like?",
+     "options": [
+      "Strict.",
+      "Quiet.",
+      "Kind and funny.",
+      "Tall and thin."
+     ],
+     "answer": "C",
+     "why": "原文：My art teacher, Ms. Green, is kind and funny.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r2-B1",
+     "type": "tf",
+     "stem": "Lily is in Grade 8.",
+     "answer": "F",
+     "why": "原文：I'm in Class 3, Grade 7. 是七年级。",
+     "pts": 1
+    },
+    {
+     "id": "g7r2-B2",
+     "type": "tf",
+     "stem": "There are about 60 teachers in Lily's school.",
+     "answer": "T",
+     "why": "原文：1,000 students and 60 teachers。",
+     "pts": 1
+    },
+    {
+     "id": "g7r2-B3",
+     "type": "tf",
+     "stem": "Lily often reads books in the library at noon.",
+     "answer": "T",
+     "why": "原文：we often read books there at noon（there 指 library）。",
+     "pts": 1
+    },
+    {
+     "id": "g7r2-B4",
+     "type": "tf",
+     "stem": "Lily has six classes every day.",
+     "answer": "F",
+     "why": "原文：I have eight classes every day. 是八节课。",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "bank": [
+    "in",
+    "near",
+    "at",
+    "and",
+    "because",
+    "after",
+    "so"
+   ],
+   "bankMode": "select",
+   "questions": [
+    {
+     "id": "g7r2-C1",
+     "type": "fill",
+     "stem": "My school is big ____ beautiful.",
+     "answers": [
+      [
+       "and"
+      ]
+     ],
+     "why": "并列两个形容词 big 和 beautiful，用 and。",
+     "pts": 1
+    },
+    {
+     "id": "g7r2-C2",
+     "type": "fill",
+     "stem": "There are about 1,000 students ____ my school.",
+     "answers": [
+      [
+       "in"
+      ]
+     ],
+     "why": "in my school 在我的学校里。",
+     "pts": 1
+    },
+    {
+     "id": "g7r2-C3",
+     "type": "fill",
+     "stem": "The library is ____ the playground.",
+     "answers": [
+      [
+       "near"
+      ]
+     ],
+     "why": "near the playground 在操场附近。",
+     "pts": 1
+    },
+    {
+     "id": "g7r2-C4",
+     "type": "fill",
+     "stem": "We often read books there ____ noon.",
+     "answers": [
+      [
+       "at"
+      ]
+     ],
+     "why": "at noon 在中午。",
+     "pts": 1
+    },
+    {
+     "id": "g7r2-C5",
+     "type": "fill",
+     "stem": "I like art ____ it is interesting.",
+     "answers": [
+      [
+       "because"
+      ]
+     ],
+     "why": "说明原因，用 because。",
+     "pts": 1
+    },
+    {
+     "id": "g7r2-C6",
+     "type": "fill",
+     "stem": "____ class, we sometimes draw pictures together.",
+     "answers": [
+      [
+       "after"
+      ]
+     ],
+     "why": "After class 下课后（句首大写）。",
+     "pts": 1
+    },
+    {
+     "id": "g7r2-C7",
+     "type": "fill",
+     "stem": "I love my school, ____ I study hard every day.",
+     "answers": [
+      [
+       "so"
+      ]
+     ],
+     "why": "前面是原因，后面是结果，用 so（所以）。",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "D",
+   "title": "四、用动词的适当形式填空",
+   "type": "fill",
+   "bank": [
+    "have",
+    "read",
+    "draw",
+    "love",
+    "study"
+   ],
+   "bankMode": "hint",
+   "questions": [
+    {
+     "id": "g7r2-D1",
+     "type": "fill",
+     "stem": "Lily ____ eight classes every day.",
+     "answers": [
+      [
+       "has"
+      ]
+     ],
+     "why": "Lily 是第三人称单数，have → has。",
+     "pts": 1
+    },
+    {
+     "id": "g7r2-D2",
+     "type": "fill",
+     "stem": "The students ____ books in the library.",
+     "answers": [
+      [
+       "read"
+      ]
+     ],
+     "why": "The students 是复数，用原形 read。",
+     "pts": 1
+    },
+    {
+     "id": "g7r2-D3",
+     "type": "fill",
+     "stem": "My friend Amy ____ pictures after class.",
+     "answers": [
+      [
+       "draws"
+      ]
+     ],
+     "why": "Amy 是第三人称单数，draw → draws。",
+     "pts": 1
+    },
+    {
+     "id": "g7r2-D4",
+     "type": "fill",
+     "stem": "They all ____ their school.",
+     "answers": [
+      [
+       "love"
+      ]
+     ],
+     "why": "They 是复数，用原形 love。",
+     "pts": 1
+    },
+    {
+     "id": "g7r2-D5",
+     "type": "fill",
+     "stem": "Lily ____ hard every day.",
+     "answers": [
+      [
+       "studies"
+      ]
+     ],
+     "why": "Lily 是第三人称单数；study 以「辅音字母+y」结尾，变 y 为 i 再加 es → studies。",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

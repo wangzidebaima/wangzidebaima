@@ -1,0 +1,292 @@
+{
+ "subjects": [
+  {
+   "id": "g7math",
+   "title": "有理数 7 天练习",
+   "icon": "🔢",
+   "desc": "每天 2 题：加减法 + 乘除法",
+   "sets": [
+    {
+     "id": "g7m1",
+     "file": "sets/g7m1.json",
+     "title": "第一天",
+     "subtitle": "难度：简单",
+     "kind": "math",
+     "count": 2
+    },
+    {
+     "id": "g7m2",
+     "file": "sets/g7m2.json",
+     "title": "第二天",
+     "subtitle": "难度：简单",
+     "kind": "math",
+     "count": 2
+    },
+    {
+     "id": "g7m3",
+     "file": "sets/g7m3.json",
+     "title": "第三天",
+     "subtitle": "难度：简单",
+     "kind": "math",
+     "count": 2
+    },
+    {
+     "id": "g7m4",
+     "file": "sets/g7m4.json",
+     "title": "第四天",
+     "subtitle": "难度：适中",
+     "kind": "math",
+     "count": 2
+    },
+    {
+     "id": "g7m5",
+     "file": "sets/g7m5.json",
+     "title": "第五天",
+     "subtitle": "难度：适中",
+     "kind": "math",
+     "count": 2
+    },
+    {
+     "id": "g7m6",
+     "file": "sets/g7m6.json",
+     "title": "第六天",
+     "subtitle": "难度：适中",
+     "kind": "math",
+     "count": 2
+    },
+    {
+     "id": "g7m7",
+     "file": "sets/g7m7.json",
+     "title": "第七天",
+     "subtitle": "难度：适中",
+     "kind": "math",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "id": "g7reading",
+   "title": "英语阅读理解",
+   "icon": "📖",
+   "desc": "6 篇，按时态练习",
+   "sets": [
+    {
+     "id": "g7r1",
+     "file": "sets/g7r1.json",
+     "title": "Passage 1  Mike's Day",
+     "subtitle": "考点：一般现在时",
+     "kind": "reading",
+     "count": 19
+    },
+    {
+     "id": "g7r2",
+     "file": "sets/g7r2.json",
+     "title": "Passage 2  My School",
+     "subtitle": "考点：一般现在时 / there be 句型",
+     "kind": "reading",
+     "count": 20
+    },
+    {
+     "id": "g7r3",
+     "file": "sets/g7r3.json",
+     "title": "Passage 3  Jack's Birthday Party",
+     "subtitle": "考点：一般过去时",
+     "kind": "reading",
+     "count": 20
+    },
+    {
+     "id": "g7r4",
+     "file": "sets/g7r4.json",
+     "title": "Passage 4  A Rainy Sunday",
+     "subtitle": "考点：现在进行时",
+     "kind": "reading",
+     "count": 21
+    },
+    {
+     "id": "g7r5",
+     "file": "sets/g7r5.json",
+     "title": "Passage 5  Our School Trip",
+     "subtitle": "考点：一般将来时",
+     "kind": "reading",
+     "count": 21
+    },
+    {
+     "id": "g7r6",
+     "file": "sets/g7r6.json",
+     "title": "Passage 6  Sam's Healthy Habits",
+     "subtitle": "考点：综合时态（一般过去 / 现在 / 将来）",
+     "kind": "reading",
+     "count": 20
+    }
+   ]
+  },
+  {
+   "id": "g7listening",
+   "title": "英语听力",
+   "icon": "🎧",
+   "desc": "6 组，听两遍再作答",
+   "sets": [
+    {
+     "id": "g7l1",
+     "file": "sets/g7l1.json",
+     "title": "Listening 1  Meeting a New Friend",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5
+    },
+    {
+     "id": "g7l2",
+     "file": "sets/g7l2.json",
+     "title": "Listening 2  Buying a T-shirt",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5
+    },
+    {
+     "id": "g7l3",
+     "file": "sets/g7l3.json",
+     "title": "Listening 3  Lucy's Weekend",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5
+    },
+    {
+     "id": "g7l4",
+     "file": "sets/g7l4.json",
+     "title": "Listening 4  Kate's Day",
+     "subtitle": "短文",
+     "kind": "listening",
+     "count": 5
+    },
+    {
+     "id": "g7l5",
+     "file": "sets/g7l5.json",
+     "title": "Listening 5  A Bad Cold",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5
+    },
+    {
+     "id": "g7l6",
+     "file": "sets/g7l6.json",
+     "title": "Listening 6  Where Is the Post Office?",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5
+    }
+   ]
+  },
+  {
+   "id": "g4reading",
+   "title": "英语阅读理解",
+   "icon": "📖",
+   "desc": "4 套对话，对应课本 Unit 1–2",
+   "sets": [
+    {
+     "id": "g4r1",
+     "file": "sets/g4r1.json",
+     "title": "Set 1  Our New Classroom",
+     "subtitle": "对应课本：Unit 1 My classroom",
+     "kind": "reading",
+     "count": 6
+    },
+    {
+     "id": "g4r2",
+     "file": "sets/g4r2.json",
+     "title": "Set 2  Let's Clean the Classroom!",
+     "subtitle": "对应课本：Unit 1 My classroom",
+     "kind": "reading",
+     "count": 6
+    },
+    {
+     "id": "g4r3",
+     "file": "sets/g4r3.json",
+     "title": "Set 3  What's in My Schoolbag?",
+     "subtitle": "对应课本：Unit 2 My schoolbag",
+     "kind": "reading",
+     "count": 6
+    },
+    {
+     "id": "g4r4",
+     "file": "sets/g4r4.json",
+     "title": "Set 4  My New Schoolbag",
+     "subtitle": "对应课本：Unit 2 My schoolbag",
+     "kind": "reading",
+     "count": 6
+    }
+   ]
+  },
+  {
+   "id": "g4speaking",
+   "title": "每日口语打卡",
+   "icon": "🗣️",
+   "desc": "跟读、分角色演，7 天打卡",
+   "sets": [
+    {
+     "id": "g4sp",
+     "file": "sets/g4sp.json",
+     "title": "每日口语朗读",
+     "subtitle": "做完 4 套阅读后，每天 5–10 分钟",
+     "kind": "speaking",
+     "count": 7
+    }
+   ]
+  },
+  {
+   "id": "g4listening",
+   "title": "英语听力",
+   "icon": "🎧",
+   "desc": "6 组，每段听两遍",
+   "sets": [
+    {
+     "id": "g4l1",
+     "file": "sets/g4l1.json",
+     "title": "Listening 1  My Family",
+     "subtitle": "每段听两遍",
+     "kind": "listening",
+     "count": 5
+    },
+    {
+     "id": "g4l2",
+     "file": "sets/g4l2.json",
+     "title": "Listening 2  At the Fruit Shop",
+     "subtitle": "每段听两遍",
+     "kind": "listening",
+     "count": 5
+    },
+    {
+     "id": "g4l3",
+     "file": "sets/g4l3.json",
+     "title": "Listening 3  The Weather",
+     "subtitle": "每段听两遍",
+     "kind": "listening",
+     "count": 5
+    },
+    {
+     "id": "g4l4",
+     "file": "sets/g4l4.json",
+     "title": "Listening 4  My Favourite Subject",
+     "subtitle": "每段听两遍",
+     "kind": "listening",
+     "count": 5
+    },
+    {
+     "id": "g4l5",
+     "file": "sets/g4l5.json",
+     "title": "Listening 5  Time to Get Up",
+     "subtitle": "每段听两遍",
+     "kind": "listening",
+     "count": 5
+    },
+    {
+     "id": "g4l6",
+     "file": "sets/g4l6.json",
+     "title": "Listening 6  At the Zoo",
+     "subtitle": "每段听两遍",
+     "kind": "listening",
+     "count": 5
+    }
+   ]
+  }
+ ]
+}

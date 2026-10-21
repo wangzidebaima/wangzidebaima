@@ -1,0 +1,129 @@
+{
+ "id": "g7l6",
+ "kind": "listening",
+ "title": "Listening 6  Where Is the Post Office?",
+ "subtitle": "对话",
+ "audio": "audio/g7l6.mp3",
+ "rate": "-5%",
+ "speakers": {
+  "Man": "m1",
+  "Woman": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Man",
+   "t": "Excuse me, where is the post office?"
+  },
+  {
+   "s": "Woman",
+   "t": "Go along this street and turn left at the second crossing. It's next to the bank."
+  },
+  {
+   "s": "Man",
+   "t": "Is it far from here?"
+  },
+  {
+   "s": "Woman",
+   "t": "No. It's about five minutes' walk."
+  },
+  {
+   "s": "Man",
+   "t": "What time does it open?"
+  },
+  {
+   "s": "Woman",
+   "t": "It opens at nine in the morning."
+  },
+  {
+   "s": "Man",
+   "t": "Thank you very much."
+  },
+  {
+   "s": "Woman",
+   "t": "You're welcome."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l6-A1",
+     "type": "choice",
+     "stem": "What is the man looking for?",
+     "options": [
+      "The bank.",
+      "The post office.",
+      "The hospital."
+     ],
+     "answer": "B",
+     "why": "Man: where is the post office?",
+     "pts": 1
+    },
+    {
+     "id": "g7l6-A2",
+     "type": "choice",
+     "stem": "Where should he turn left?",
+     "options": [
+      "At the first crossing.",
+      "At the second crossing.",
+      "At the third crossing."
+     ],
+     "answer": "B",
+     "why": "turn left at the second crossing.",
+     "pts": 1
+    },
+    {
+     "id": "g7l6-A3",
+     "type": "choice",
+     "stem": "How long does it take on foot?",
+     "options": [
+      "Five minutes.",
+      "Ten minutes.",
+      "Fifteen minutes."
+     ],
+     "answer": "A",
+     "why": "It's about five minutes' walk.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l6-B1",
+     "type": "fill",
+     "stem": "The post office is next to the ____.",
+     "answers": [
+      [
+       "bank"
+      ]
+     ],
+     "why": "It's next to the bank.",
+     "pts": 1
+    },
+    {
+     "id": "g7l6-B2",
+     "type": "fill",
+     "stem": "It opens at ____ in the morning.",
+     "answers": [
+      [
+       "nine",
+       "9",
+       "9:00",
+       "9 o'clock",
+       "nine o'clock"
+      ]
+     ],
+     "why": "It opens at nine in the morning.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,305 @@
+{
+ "id": "g7r4",
+ "kind": "reading",
+ "title": "Passage 4  A Rainy Sunday",
+ "subtitle": "考点：现在进行时",
+ "passage": [
+  "It is Sunday today. It is raining heavily, so we aren't going out. My father is reading a newspaper in the living room, and my mother is cooking lunch in the kitchen.",
+  "My little brother Tom is playing with our dog, Coco. Coco is running around the sofa and Tom is laughing loudly. I am sitting at my desk and writing this passage. I like rainy days, but I like sunny days better."
+ ],
+ "vocab": "heavily（雨）大地 · newspaper 报纸 · living room 客厅 · laugh 笑 · sofa 沙发 · desk 书桌",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题（每题 2 分）",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r4-A1",
+     "type": "choice",
+     "stem": "What is the weather like today?",
+     "options": [
+      "Sunny.",
+      "Rainy.",
+      "Windy.",
+      "Cloudy."
+     ],
+     "answer": "B",
+     "why": "原文：It is raining heavily.",
+     "pts": 2
+    },
+    {
+     "id": "g7r4-A2",
+     "type": "choice",
+     "stem": "Where is the father?",
+     "options": [
+      "In the kitchen.",
+      "In the living room.",
+      "In the garden.",
+      "In his room."
+     ],
+     "answer": "B",
+     "why": "原文：My father is reading a newspaper in the living room. 厨房里的是妈妈。",
+     "pts": 2
+    },
+    {
+     "id": "g7r4-A3",
+     "type": "choice",
+     "stem": "Who is playing with Coco?",
+     "options": [
+      "The father.",
+      "The mother.",
+      "Tom.",
+      "The writer."
+     ],
+     "answer": "C",
+     "why": "原文：My little brother Tom is playing with our dog, Coco.",
+     "pts": 2
+    },
+    {
+     "id": "g7r4-A4",
+     "type": "choice",
+     "stem": "What is the writer doing?",
+     "options": [
+      "Cooking lunch.",
+      "Watching TV.",
+      "Writing.",
+      "Sleeping."
+     ],
+     "answer": "C",
+     "why": "原文：I am sitting at my desk and writing this passage.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r4-B1",
+     "type": "tf",
+     "stem": "Today is Saturday.",
+     "answer": "F",
+     "why": "原文：It is Sunday today.",
+     "pts": 1
+    },
+    {
+     "id": "g7r4-B2",
+     "type": "tf",
+     "stem": "The family is going out today.",
+     "answer": "F",
+     "why": "原文：we aren't going out（不出门）。",
+     "pts": 1
+    },
+    {
+     "id": "g7r4-B3",
+     "type": "tf",
+     "stem": "Coco is running around the sofa.",
+     "answer": "T",
+     "why": "原文：Coco is running around the sofa.",
+     "pts": 1
+    },
+    {
+     "id": "g7r4-B4",
+     "type": "tf",
+     "stem": "The writer likes sunny days better than rainy days.",
+     "answer": "T",
+     "why": "原文：I like rainy days, but I like sunny days better.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "bank": [
+    "in",
+    "and",
+    "with",
+    "around",
+    "so",
+    "at",
+    "but"
+   ],
+   "bankMode": "select",
+   "questions": [
+    {
+     "id": "g7r4-C1",
+     "type": "fill",
+     "stem": "It is raining heavily, ____ we aren't going out.",
+     "answers": [
+      [
+       "so"
+      ]
+     ],
+     "why": "前面是原因（下大雨），后面是结果（不出门），用 so。",
+     "pts": 1
+    },
+    {
+     "id": "g7r4-C2",
+     "type": "fill",
+     "stem": "My father is reading a newspaper ____ the living room.",
+     "answers": [
+      [
+       "in"
+      ]
+     ],
+     "why": "in the living room 在客厅里。",
+     "pts": 1
+    },
+    {
+     "id": "g7r4-C3",
+     "type": "fill",
+     "stem": "My father is reading, ____ my mother is cooking lunch.",
+     "answers": [
+      [
+       "and"
+      ]
+     ],
+     "why": "并列两件同时进行的事，用 and。",
+     "pts": 1
+    },
+    {
+     "id": "g7r4-C4",
+     "type": "fill",
+     "stem": "Tom is playing ____ the dog.",
+     "answers": [
+      [
+       "with"
+      ]
+     ],
+     "why": "play with sb./sth. 和…玩。",
+     "pts": 1
+    },
+    {
+     "id": "g7r4-C5",
+     "type": "fill",
+     "stem": "Coco is running ____ the sofa.",
+     "answers": [
+      [
+       "around"
+      ]
+     ],
+     "why": "run around the sofa 绕着沙发跑。",
+     "pts": 1
+    },
+    {
+     "id": "g7r4-C6",
+     "type": "fill",
+     "stem": "I am sitting ____ my desk.",
+     "answers": [
+      [
+       "at"
+      ]
+     ],
+     "why": "at my desk 在书桌旁。",
+     "pts": 1
+    },
+    {
+     "id": "g7r4-C7",
+     "type": "fill",
+     "stem": "I like rainy days, ____ I like sunny days better.",
+     "answers": [
+      [
+       "but"
+      ]
+     ],
+     "why": "前后转折，用 but。",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "D",
+   "title": "四、用动词的适当形式填空",
+   "type": "fill",
+   "bank": [
+    "play",
+    "sleep",
+    "cook",
+    "do",
+    "sing",
+    "read"
+   ],
+   "bankMode": "hint",
+   "questions": [
+    {
+     "id": "g7r4-D1",
+     "type": "fill",
+     "stem": "Look! The children ____ in the playground.",
+     "answers": [
+      [
+       "are playing"
+      ]
+     ],
+     "why": "Look! 提示动作正在进行，用现在进行时 be + doing；children 是复数，用 are playing。",
+     "pts": 1
+    },
+    {
+     "id": "g7r4-D2",
+     "type": "fill",
+     "stem": "Be quiet! The baby ____ now.",
+     "answers": [
+      [
+       "is sleeping"
+      ]
+     ],
+     "why": "now 提示正在进行；The baby 是单数，用 is sleeping。",
+     "pts": 1
+    },
+    {
+     "id": "g7r4-D3",
+     "type": "fill",
+     "stem": "My mother ____ dinner in the kitchen now.",
+     "answers": [
+      [
+       "is cooking"
+      ]
+     ],
+     "why": "now 提示正在进行；My mother 是单数，用 is cooking。",
+     "pts": 1
+    },
+    {
+     "id": "g7r4-D4",
+     "type": "fill",
+     "stem": "What are you ____ now?",
+     "answers": [
+      [
+       "doing"
+      ]
+     ],
+     "why": "are you … now? 是现在进行时，do 要用 doing。",
+     "pts": 1,
+     "hint": "用 do 的正确形式"
+    },
+    {
+     "id": "g7r4-D5",
+     "type": "fill",
+     "stem": "Listen! Someone ____ in the music room.",
+     "answers": [
+      [
+       "is singing"
+      ]
+     ],
+     "why": "Listen! 提示正在进行；Someone 是单数，用 is singing。",
+     "pts": 1
+    },
+    {
+     "id": "g7r4-D6",
+     "type": "fill",
+     "stem": "They ____ an English book at the moment.",
+     "answers": [
+      [
+       "are reading"
+      ]
+     ],
+     "why": "at the moment 此刻，用现在进行时；They 是复数，用 are reading。",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

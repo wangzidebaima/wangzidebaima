@@ -1,0 +1,98 @@
+{
+ "id": "g7l4",
+ "kind": "listening",
+ "title": "Listening 4  Kate's Day",
+ "subtitle": "短文",
+ "audio": "audio/g7l4.mp3",
+ "rate": "-5%",
+ "speakers": {
+  "Kate": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Kate",
+   "t": "My name is Kate. I usually get up at 6:40. For breakfast, I have bread and milk. I go to school by subway, and it takes 25 minutes. My favourite subject is science. After school, I play basketball for an hour. I go to bed at 9:30."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l4-A1",
+     "type": "choice",
+     "stem": "What does Kate have for breakfast?",
+     "options": [
+      "Bread and milk.",
+      "Eggs and rice.",
+      "Noodles."
+     ],
+     "answer": "A",
+     "why": "For breakfast, I have bread and milk.",
+     "pts": 1
+    },
+    {
+     "id": "g7l4-A2",
+     "type": "choice",
+     "stem": "How does Kate go to school?",
+     "options": [
+      "On foot.",
+      "By subway.",
+      "By bus."
+     ],
+     "answer": "B",
+     "why": "I go to school by subway.",
+     "pts": 1
+    },
+    {
+     "id": "g7l4-A3",
+     "type": "choice",
+     "stem": "What does she do after school?",
+     "options": [
+      "Plays basketball for an hour.",
+      "Does her homework.",
+      "Watches TV."
+     ],
+     "answer": "A",
+     "why": "After school, I play basketball for an hour.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l4-B1",
+     "type": "fill",
+     "stem": "Kate gets up at ____.",
+     "answers": [
+      [
+       "6:40",
+       "6.40",
+       "six forty"
+      ]
+     ],
+     "why": "I usually get up at 6:40.",
+     "pts": 1
+    },
+    {
+     "id": "g7l4-B2",
+     "type": "fill",
+     "stem": "Her favourite subject is ____.",
+     "answers": [
+      [
+       "science"
+      ]
+     ],
+     "why": "My favourite subject is science.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

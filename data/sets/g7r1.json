@@ -1,0 +1,283 @@
+{
+ "id": "g7r1",
+ "kind": "reading",
+ "title": "Passage 1  Mike's Day",
+ "subtitle": "考点：一般现在时",
+ "passage": [
+  "Mike is a 12-year-old boy. He lives in a small town with his parents. Every morning, he gets up at 6:30 and has breakfast at 7:00. He usually has milk and eggs. Then he goes to school by bike. School starts at 8:00.",
+  "Mike likes English and music, but he doesn't like math because it is difficult. After school, he plays football with his friends. In the evening, he does his homework and reads a book. He goes to bed at 9:30."
+ ],
+ "vocab": "parents 父母 · usually 通常 · difficult 困难的 · homework 家庭作业 · evening 晚上 · start 开始",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题（每题 2 分）",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r1-A1",
+     "type": "choice",
+     "stem": "How old is Mike?",
+     "options": [
+      "11.",
+      "12.",
+      "13.",
+      "14."
+     ],
+     "answer": "B",
+     "why": "第一句：Mike is a 12-year-old boy.",
+     "pts": 2
+    },
+    {
+     "id": "g7r1-A2",
+     "type": "choice",
+     "stem": "How does Mike go to school?",
+     "options": [
+      "On foot.",
+      "By bus.",
+      "By bike.",
+      "By car."
+     ],
+     "answer": "C",
+     "why": "原文：Then he goes to school by bike.",
+     "pts": 2
+    },
+    {
+     "id": "g7r1-A3",
+     "type": "choice",
+     "stem": "Why doesn't Mike like math?",
+     "options": [
+      "It is boring.",
+      "It is too easy.",
+      "It is difficult.",
+      "His teacher is strict."
+     ],
+     "answer": "C",
+     "why": "原文：he doesn't like math because it is difficult.",
+     "pts": 2
+    },
+    {
+     "id": "g7r1-A4",
+     "type": "choice",
+     "stem": "What does Mike do after school?",
+     "options": [
+      "He plays football with his friends.",
+      "He does his homework.",
+      "He reads a book.",
+      "He watches TV."
+     ],
+     "answer": "A",
+     "why": "原文：After school, he plays football with his friends. 做作业和看书是在晚上。",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r1-B1",
+     "type": "tf",
+     "stem": "Mike has breakfast at 6:30.",
+     "answer": "F",
+     "why": "6:30 是起床时间，早饭是 7:00（has breakfast at 7:00）。",
+     "pts": 1
+    },
+    {
+     "id": "g7r1-B2",
+     "type": "tf",
+     "stem": "Mike likes English and music.",
+     "answer": "T",
+     "why": "原文：Mike likes English and music.",
+     "pts": 1
+    },
+    {
+     "id": "g7r1-B3",
+     "type": "tf",
+     "stem": "Mike goes to bed at 10:00.",
+     "answer": "F",
+     "why": "原文是 He goes to bed at 9:30.，不是 10:00。",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "bank": [
+    "with",
+    "at",
+    "by",
+    "but",
+    "because",
+    "after",
+    "and"
+   ],
+   "bankMode": "select",
+   "questions": [
+    {
+     "id": "g7r1-C1",
+     "type": "fill",
+     "stem": "Mike lives in a small town ____ his parents.",
+     "answers": [
+      [
+       "with"
+      ]
+     ],
+     "why": "live with sb. 和某人住在一起。",
+     "pts": 1
+    },
+    {
+     "id": "g7r1-C2",
+     "type": "fill",
+     "stem": "He gets up ____ 6:30 every morning.",
+     "answers": [
+      [
+       "at"
+      ]
+     ],
+     "why": "具体的钟点前用 at：at 6:30。",
+     "pts": 1
+    },
+    {
+     "id": "g7r1-C3",
+     "type": "fill",
+     "stem": "He goes to school ____ bike.",
+     "answers": [
+      [
+       "by"
+      ]
+     ],
+     "why": "by bike 骑自行车（交通方式用 by）。",
+     "pts": 1
+    },
+    {
+     "id": "g7r1-C4",
+     "type": "fill",
+     "stem": "Mike likes English ____ he doesn't like math.",
+     "answers": [
+      [
+       "but"
+      ]
+     ],
+     "why": "前后意思相反（喜欢英语 / 不喜欢数学），用转折词 but。",
+     "pts": 1
+    },
+    {
+     "id": "g7r1-C5",
+     "type": "fill",
+     "stem": "He doesn't like math ____ it is difficult.",
+     "answers": [
+      [
+       "because"
+      ]
+     ],
+     "why": "后面说明原因，用 because（因为）。",
+     "pts": 1
+    },
+    {
+     "id": "g7r1-C6",
+     "type": "fill",
+     "stem": "____ school, he plays football with his friends.",
+     "answers": [
+      [
+       "after"
+      ]
+     ],
+     "why": "After school 放学后（放在句首，首字母大写）。",
+     "pts": 1
+    },
+    {
+     "id": "g7r1-C7",
+     "type": "fill",
+     "stem": "In the evening, he does his homework ____ reads a book.",
+     "answers": [
+      [
+       "and"
+      ]
+     ],
+     "why": "并列两个动作，用 and。",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "D",
+   "title": "四、用动词的适当形式填空",
+   "type": "fill",
+   "bank": [
+    "have",
+    "go",
+    "play",
+    "watch",
+    "like"
+   ],
+   "bankMode": "hint",
+   "questions": [
+    {
+     "id": "g7r1-D1",
+     "type": "fill",
+     "stem": "Mike ____ breakfast at 7:00 every day.",
+     "answers": [
+      [
+       "has"
+      ]
+     ],
+     "why": "every day 表示经常性动作，用一般现在时；Mike 是第三人称单数，have → has。",
+     "pts": 1
+    },
+    {
+     "id": "g7r1-D2",
+     "type": "fill",
+     "stem": "His sister ____ to school on foot.",
+     "answers": [
+      [
+       "goes"
+      ]
+     ],
+     "why": "His sister 是第三人称单数，go → goes。",
+     "pts": 1
+    },
+    {
+     "id": "g7r1-D3",
+     "type": "fill",
+     "stem": "They ____ football on Saturdays.",
+     "answers": [
+      [
+       "play"
+      ]
+     ],
+     "why": "They 是复数，用动词原形 play。",
+     "pts": 1
+    },
+    {
+     "id": "g7r1-D4",
+     "type": "fill",
+     "stem": "My father ____ TV in the evening.",
+     "answers": [
+      [
+       "watches"
+      ]
+     ],
+     "why": "My father 是第三人称单数；watch 以 ch 结尾，加 es → watches。",
+     "pts": 1
+    },
+    {
+     "id": "g7r1-D5",
+     "type": "fill",
+     "stem": "I ____ English very much.",
+     "answers": [
+      [
+       "like"
+      ]
+     ],
+     "why": "主语是 I，用动词原形 like。",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

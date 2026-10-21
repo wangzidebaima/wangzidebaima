@@ -1,0 +1,314 @@
+{
+ "id": "g7r5",
+ "kind": "reading",
+ "title": "Passage 5  Our School Trip",
+ "subtitle": "考点：一般将来时",
+ "passage": [
+  "Next Friday, our class will go to the Science Museum. We will meet at the school gate at 8:00 a.m. and go there by bus. It is about 20 kilometres from our school.",
+  "In the museum, we will watch a film about space and learn about robots. We will have lunch there, so we need to bring some food and water. Mr. Wang says that we mustn't run or shout in the museum. We will come back at 4:00 p.m. I am very excited because I love science."
+ ],
+ "vocab": "museum 博物馆 · meet 集合；见面 · kilometre 公里 · space 太空 · robot 机器人 · shout 大喊",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题（每题 2 分）",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r5-A1",
+     "type": "choice",
+     "stem": "Where will the class go?",
+     "options": [
+      "To the zoo.",
+      "To the Science Museum.",
+      "To the park.",
+      "To the library."
+     ],
+     "answer": "B",
+     "why": "原文第一句：our class will go to the Science Museum.",
+     "pts": 2
+    },
+    {
+     "id": "g7r5-A2",
+     "type": "choice",
+     "stem": "How will they get there?",
+     "options": [
+      "By bus.",
+      "By bike.",
+      "On foot.",
+      "By subway."
+     ],
+     "answer": "A",
+     "why": "原文：go there by bus.",
+     "pts": 2
+    },
+    {
+     "id": "g7r5-A3",
+     "type": "choice",
+     "stem": "What will they do in the museum?",
+     "options": [
+      "Play football.",
+      "Watch a film and learn about robots.",
+      "Have a test.",
+      "Go swimming."
+     ],
+     "answer": "B",
+     "why": "原文：we will watch a film about space and learn about robots.",
+     "pts": 2
+    },
+    {
+     "id": "g7r5-A4",
+     "type": "choice",
+     "stem": "Why do they need to bring food and water?",
+     "options": [
+      "They will have lunch there.",
+      "The museum is far from the bus stop.",
+      "There are no shops near the school.",
+      "The teacher likes food."
+     ],
+     "answer": "A",
+     "why": "原文：We will have lunch there, so we need to bring some food and water.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r5-B1",
+     "type": "tf",
+     "stem": "They will meet at the school gate at 8:00 a.m.",
+     "answer": "T",
+     "why": "原文：We will meet at the school gate at 8:00 a.m.",
+     "pts": 1
+    },
+    {
+     "id": "g7r5-B2",
+     "type": "tf",
+     "stem": "The museum is 2 kilometres from the school.",
+     "answer": "F",
+     "why": "原文：about 20 kilometres，不是 2。",
+     "pts": 1
+    },
+    {
+     "id": "g7r5-B3",
+     "type": "tf",
+     "stem": "The students can run in the museum.",
+     "answer": "F",
+     "why": "原文：we mustn't run or shout（不许跑、不许喊）。",
+     "pts": 1
+    },
+    {
+     "id": "g7r5-B4",
+     "type": "tf",
+     "stem": "They will come back at 4:00 p.m.",
+     "answer": "T",
+     "why": "原文：We will come back at 4:00 p.m.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "bank": [
+    "at",
+    "by",
+    "from",
+    "about",
+    "and",
+    "so",
+    "because"
+   ],
+   "bankMode": "select",
+   "questions": [
+    {
+     "id": "g7r5-C1",
+     "type": "fill",
+     "stem": "We will meet ____ the school gate.",
+     "answers": [
+      [
+       "at"
+      ]
+     ],
+     "why": "at the school gate 在校门口。",
+     "pts": 1
+    },
+    {
+     "id": "g7r5-C2",
+     "type": "fill",
+     "stem": "We will go there ____ bus.",
+     "answers": [
+      [
+       "by"
+      ]
+     ],
+     "why": "by bus 乘公共汽车。",
+     "pts": 1
+    },
+    {
+     "id": "g7r5-C3",
+     "type": "fill",
+     "stem": "It is about 20 kilometres ____ our school.",
+     "answers": [
+      [
+       "from"
+      ]
+     ],
+     "why": "be … kilometres from… 离…有…公里。",
+     "pts": 1
+    },
+    {
+     "id": "g7r5-C4",
+     "type": "fill",
+     "stem": "We will watch a film ____ space.",
+     "answers": [
+      [
+       "about"
+      ]
+     ],
+     "why": "a film about space 一部关于太空的电影。",
+     "pts": 1
+    },
+    {
+     "id": "g7r5-C5",
+     "type": "fill",
+     "stem": "We will watch a film ____ learn about robots.",
+     "answers": [
+      [
+       "and"
+      ]
+     ],
+     "why": "并列两件事，用 and。",
+     "pts": 1
+    },
+    {
+     "id": "g7r5-C6",
+     "type": "fill",
+     "stem": "We will have lunch there, ____ we need to bring some food.",
+     "answers": [
+      [
+       "so"
+      ]
+     ],
+     "why": "前面是原因，后面是结果，用 so。",
+     "pts": 1
+    },
+    {
+     "id": "g7r5-C7",
+     "type": "fill",
+     "stem": "I am very excited ____ I love science.",
+     "answers": [
+      [
+       "because"
+      ]
+     ],
+     "why": "说明原因，用 because。",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "D",
+   "title": "四、用动词的适当形式填空",
+   "type": "fill",
+   "bank": [
+    "rain",
+    "be",
+    "have",
+    "visit",
+    "come",
+    "do"
+   ],
+   "bankMode": "hint",
+   "questions": [
+    {
+     "id": "g7r5-D1",
+     "type": "fill",
+     "stem": "It ____ soon.",
+     "answers": [
+      [
+       "is going to rain"
+      ]
+     ],
+     "why": "Look at the dark clouds（看到乌云）是有迹象的将来，用 be going to：is going to rain。",
+     "pts": 1,
+     "hint": "用 be going to；Look at the dark clouds."
+    },
+    {
+     "id": "g7r5-D2",
+     "type": "fill",
+     "stem": "I ____ 13 years old next year.",
+     "answers": [
+      [
+       "will be"
+      ]
+     ],
+     "why": "next year 将来，will + 动词原形：will be。",
+     "pts": 1,
+     "hint": "用 will"
+    },
+    {
+     "id": "g7r5-D3",
+     "type": "fill",
+     "stem": "We ____ a sports meeting next week.",
+     "answers": [
+      [
+       "will have"
+      ]
+     ],
+     "why": "next week 将来，will + 原形：will have。",
+     "pts": 1,
+     "hint": "用 will"
+    },
+    {
+     "id": "g7r5-D4",
+     "type": "fill",
+     "stem": "Tom ____ his grandparents this Sunday.",
+     "answers": [
+      [
+       "is going to visit"
+      ]
+     ],
+     "why": "be going to + 原形，Tom 单数：is going to visit。",
+     "pts": 1,
+     "hint": "用 be going to"
+    },
+    {
+     "id": "g7r5-D5",
+     "type": "fill",
+     "stem": "She ____ to the party tomorrow.",
+     "answers": [
+      [
+       "won't come",
+       "will not come"
+      ]
+     ],
+     "why": "will 的否定式是 will not / won't，后接原形 come。",
+     "pts": 1,
+     "hint": "用 will 的否定式"
+    },
+    {
+     "id": "g7r5-D6",
+     "type": "fill",
+     "stem": "What ____ you ____ this weekend?",
+     "answers": [
+      [
+       "will"
+      ],
+      [
+       "do"
+      ]
+     ],
+     "why": "will 引导将来时：What will you do this weekend?（两个空依次填 will、do）",
+     "pts": 1,
+     "hint": "用 will；共两空"
+    }
+   ]
+  }
+ ]
+}
