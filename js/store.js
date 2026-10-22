@@ -58,7 +58,7 @@ export function recordAttempt(uid, setId, rec) {
     const o = p.sets[setId] || { n: 0, best: 0 };
     p.sets[setId] = { n: o.n + 1, best: Math.max(o.best, rec.ok), last: rec };
   }
-  p.log.push({ d: today(), t: Date.now(), setId: setId || null, title: rec.title, ok: rec.ok, total: rec.total, stars: rec.stars });
+  p.log.push({ d: today(), t: Date.now(), setId: setId || null, title: rec.title, ok: rec.ok, total: rec.total, stars: rec.stars, src: rec.src, sub: rec.sub });
   if (p.log.length > 300) p.log = p.log.slice(-300);
   save(uid);
 }
@@ -75,3 +75,26 @@ export function stats(uid) {
 }
 
 export function markSpeak(uid, key) { const p = P(uid); p.speak[key] = Date.now(); save(uid); }
+
+// 英语小测：每个孩子选过的「学过的单元」，按课本分开记
+export function getUnits(uid, book, dflt) { const e = P(uid).eng; return (e && e[book]) || dflt || []; }
+export function setUnits(uid, book, arr) { const p = P(uid); p.eng = p.eng || {}; p.eng[book] = arr; save(uid); }
+
+const dayOf = (ts) => { const d = new Date(ts); return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`; };
+// 连续练习天数：今天还没练就从昨天往回数
+export function streak(uid) {
+  const p = P(uid), days = new Set(p.log.map(x => x.d));
+  Object.values(p.speak).forEach(ts => days.add(dayOf(ts)));
+  let n = 0; const d = new Date();
+  if (!days.has(dayOf(d))) d.setDate(d.getDate() - 1);
+  while (days.has(dayOf(d))) { n++; d.setDate(d.getDate() - 1); }
+  return n;
+}
+// 今日任务完成了多少：bank=题库组数，rand=随机题数，speak=口语打卡
+export function taskDone(uid, t) {
+  const p = P(uid), tod = today(), logs = p.log.filter(x => x.d === tod);
+  if (t.kind === 'bank') return logs.filter(x => x.setId).length;
+  if (t.kind === 'rand') return logs.filter(x => x.sub === t.sub).reduce((a, x) => a + (x.total || 0), 0);
+  if (t.kind === 'speak') return Object.values(p.speak).filter(ts => dayOf(ts) === tod).length;
+  return 0;
+}

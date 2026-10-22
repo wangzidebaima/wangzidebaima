@@ -60,3 +60,23 @@ export const keypad = {
     document.body.classList.remove('kbopen');
   },
 };
+
+// 播放发音：优先用上传的真人 MP3（audio/w/<key>.mp3），没有就用手机自带的美式朗读
+let curAudio = null;
+export function playSay(key, text, avail) {
+  const file = 'audio/w/' + key + '.mp3';
+  const fallback = () => {
+    try {
+      const ss = window.speechSynthesis; if (!ss) throw new Error('no tts');
+      ss.cancel(); const u = new SpeechSynthesisUtterance(text); u.lang = 'en-US'; u.rate = 0.85;
+      const v = (ss.getVoices() || []).find(x => /en[-_]US/i.test(x.lang)); if (v) u.voice = v; ss.speak(u);
+    } catch (e) { toast('这台手机暂时发不出声音'); }
+  };
+  try { if (curAudio) curAudio.pause(); } catch (e) { /* ignore */ }
+  if (avail && avail.has(file)) {
+    try { curAudio = new Audio(file); curAudio.play().catch(fallback); return; } catch (e) { /* 用朗读兜底 */ }
+  }
+  fallback();
+}
+
+export const slug = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');

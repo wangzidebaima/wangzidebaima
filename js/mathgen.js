@@ -381,14 +381,24 @@ const vocabQ = (kind, list) => {
 };
 export const TV = [{ id: 'en2zh', name: '看英文选中文' }, { id: 'zh2en', name: '看中文选英文' }, { id: 'spell', name: '拼写' }];
 
+export const TW = [{ id: 'e-en2zh', name: '看英文选中文' }, { id: 'e-zh2en', name: '看中文选英文' }, { id: 'e-listen', name: '听音选中文' }, { id: 'e-spell', name: '拼写（只考黑体词）' }, { id: 'e-dict', name: '听写（只考黑体词）' }];
+export const TS = [{ id: 'e-en2zh', name: '看英文选中文' }, { id: 'e-zh2en', name: '看中文选英文' }, { id: 'e-listen', name: '听音选中文' }, { id: 'e-cloze', name: '句子填空' }];
+
+import { CHAP_TYPES } from './chapgen.js';
+import { CHAP4_TYPES } from './chapgen4.js';
 export const RANDOM = {
+  chap4: { title: '四年级数学章节练习', icon: '📐', subject: 'chap4', types: CHAP4_TYPES, levels: ['简单', '适中', '挑战'] },
+  chap7: { title: '七年级数学章节练习', icon: '📐', subject: 'chap7', types: CHAP_TYPES, levels: ['简单', '适中', '挑战'] },
   math7: { title: '有理数随机练习', icon: '🎲', subject: 'math7', types: T7, levels: ['简单', '适中', '挑战'], gen: (t, l) => G7[t](l) },
   math4: { title: '口算随机练习', icon: '🎲', subject: 'math4', types: T4, levels: ['简单', '适中', '挑战'], gen: (t, l) => G4[t](l) },
-  vocab7: { title: '英语词汇小测', icon: '🔤', subject: 'vocab7', vocab: 'g7', types: TV, levels: null, gen: (t, l, v) => vocabQ(t, v) },
-  vocab4: { title: '英语词汇小测', icon: '🔤', subject: 'vocab4', vocab: 'g4', types: TV, levels: null, gen: (t, l, v) => vocabQ(t, v) },
+  vocab7: { title: '英语单词小测', icon: '🔤', subject: 'vocab7', types: TW, levels: null },
+  phrase7: { title: '英语短语小测', icon: '💬', subject: 'phrase7', types: TW, levels: null },
+  vocab4: { title: '英语单词小测', icon: '🔤', subject: 'vocab4', types: TW, levels: null },
+  phrase4: { title: '英语短语小测', icon: '💬', subject: 'phrase4', types: TW, levels: null },
+  sent4: { title: '英语句子小测', icon: '📝', subject: 'sent4', types: TS, levels: null },
 };
 
-const weighted = (ids, stats) => {
+export const weighted = (ids, stats) => {
   const w = ids.map(id => { const s = stats[id] || { n: 0, w: 0 }; return 1 + 4 * (s.w + 1) / (s.n + 2); });
   let r = Math.random() * w.reduce((a, b) => a + b, 0);
   for (let i = 0; i < ids.length; i++) { r -= w[i]; if (r <= 0) return ids[i]; }

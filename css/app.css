@@ -174,3 +174,27 @@ textarea.sum { width: 100%; border: 1.5px solid var(--line); border-radius: 14px
   .print { padding: 0; max-width: none; } .print .passage { background: #fff; } .pagebreak { break-before: page; }
   :root { --surface: #fff; --bg: #fff; --ink: #000; --muted: #444; --line: #bbb; }
 }
+
+/* 英语小测：发音、音标、黑体提示 */
+.speakrow { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin: 8px 0 2px 36px; }
+.spk { flex: none; border: 1.5px solid var(--accent); background: var(--accent-soft); color: var(--accent); border-radius: 99px; padding: 6px 14px; font-size: 15px; font-weight: 600; min-height: 38px; cursor: pointer; }
+.ipa { color: var(--muted); font-size: 17px; font-family: "Lucida Sans Unicode", "Segoe UI", "Noto Sans", "DejaVu Sans", sans-serif; }
+.bmark { font-size: 13px; color: var(--ink); background: var(--line); border-radius: 99px; padding: 2px 11px; }
+.rvsay { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin: 8px 0; }
+.row .spk { margin-left: auto; }
+
+/* 阅读题重点词 */
+.vlist b { display: block; font-size: 14px; color: var(--muted); font-weight: 500; margin-bottom: 8px; }
+.vwrap { display: flex; flex-wrap: wrap; gap: 8px; }
+.vchip { border: 1.5px solid var(--line); background: var(--surface); border-radius: 12px; padding: 7px 12px; display: flex; flex-direction: column; align-items: flex-start; gap: 1px; text-align: left; cursor: pointer; min-height: 44px; color: var(--ink); }
+.vchip .ve { font-weight: 600; font-size: 16px; } .vchip .ve::after { content: ' 🔊'; font-size: 13px; }
+.vchip .vz { font-size: 13px; color: var(--muted); }
+.ipa.sm { font-size: 14px; }
+
+/* 今日任务、字号 */
+.tasks { background: var(--surface); border-radius: var(--r); padding: 6px 16px 10px; box-shadow: var(--shadow); margin-top: 14px; }
+.tasks .sh { margin: 10px 0 4px; }
+.task { display: flex; align-items: center; gap: 10px; padding: 9px 0; border-top: 1px dashed var(--line); }
+.task .tl { flex: 1; } .task.done .tl { color: var(--muted); text-decoration: line-through; } .task .tn { color: var(--muted); font-size: 14px; }
+.hbtns { display: flex; gap: 16px; align-items: center; }
+html[data-fs="1"] body { zoom: 1.12; } html[data-fs="2"] body { zoom: 1.25; }

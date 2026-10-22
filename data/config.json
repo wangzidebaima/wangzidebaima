@@ -1,5 +1,5 @@
 {
- "version": "2026-10-21-1",
+ "version": "2026-10-22-3",
  "appName": "每日练习",
  "dailyRandomStarCap": 20,
  "rewards": [
@@ -32,7 +32,28 @@
    ],
    "random": [
     "math7",
-    "vocab7"
+    "chap7",
+    "vocab7",
+    "phrase7"
+   ],
+   "tasks": [
+    {
+     "label": "做 1 组题库练习",
+     "kind": "bank",
+     "goal": 1
+    },
+    {
+     "label": "有理数随机练习 10 题",
+     "kind": "rand",
+     "sub": "math7",
+     "goal": 10
+    },
+    {
+     "label": "英语单词小测 10 题",
+     "kind": "rand",
+     "sub": "vocab7",
+     "goal": 10
+    }
    ]
   },
   {
@@ -50,8 +71,40 @@
    ],
    "random": [
     "math4",
-    "vocab4"
+    "chap4",
+    "vocab4",
+    "phrase4",
+    "sent4"
+   ],
+   "tasks": [
+    {
+     "label": "做 1 组题库练习",
+     "kind": "bank",
+     "goal": 1
+    },
+    {
+     "label": "口算随机练习 10 题",
+     "kind": "rand",
+     "sub": "math4",
+     "goal": 10
+    },
+    {
+     "label": "英语单词小测 10 题",
+     "kind": "rand",
+     "sub": "vocab4",
+     "goal": 10
+    },
+    {
+     "label": "口语跟读打卡",
+     "kind": "speak",
+     "goal": 1
+    }
    ]
   }
- ]
+ ],
+ "parent": {
+  "name": "美好的世界",
+  "salt": "463366f282f7907d",
+  "hash": "fe783f5acebb1d0b764455ebaa95166d1611b5293a2a67ce805009ddc0fe2155"
+ }
 }

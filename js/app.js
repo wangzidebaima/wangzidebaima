@@ -1,5 +1,7 @@
 import * as V from './views.js';
 import * as S from './store.js';
+import * as E from './english.js';
+import * as CV from './chapview.js';
 
 const getJSON = (u) => fetch(u).then(r => { if (!r.ok) throw new Error(u + ' ' + r.status); return r.json(); });
 
@@ -16,14 +18,16 @@ async function render() {
     const hash = location.hash.replace(/^#\/?/, '');
     const [r, a, b] = hash.split('/');
     const u = V.user();
-    if (!u && r !== 'login') { location.replace('#/login'); return; }
+    if (!u && r !== 'login' && r !== 'parent') { location.replace('#/login'); return; }
     V.setTheme(u);
     switch (r) {
       case 'login': return V.login();
+      case 'parent': return V.parentHome();
       case 's': return V.subject(a);
       case 'set': return await V.setView(a);
       case 'speak': return await V.speak(a);
-      case 'rand': return V.randSetup(a);
+      case 'rand': if (CV.isChap(a)) return CV.chapSetup(a); return E.isEng(a) ? await E.engSetup(a) : V.randSetup(a);
+      case 'words': return await E.engWords(a);
       case 'errors': return V.errors();
       case 'me': return V.records();
       case 'print': return await V.printView(a, b === 'a');
@@ -39,6 +43,7 @@ async function boot() {
   try {
     const [cfg, lib, vocab] = await Promise.all([getJSON('data/config.json'), getJSON('data/library.json'), getJSON('data/vocab.json')]);
     V.X.cfg = cfg; V.X.lib = lib; V.X.vocab = vocab;
+    V.X.ipa = await getJSON('data/ipa.json').catch(() => ({}));
   } catch (e) {
     V.showError('第一次打开需要连上网络。连上网络后点「重新加载」。'); return;
   }

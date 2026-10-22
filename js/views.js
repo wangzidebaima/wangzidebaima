@@ -1,16 +1,16 @@
 // 所有页面：登录、首页、题库、答题、结果、错题本、随机练习、记录、打印
-import { h, esc, mathHtml, toast, keypad, praiseText } from './ui.js';
+import { h, esc, mathHtml, toast, keypad, praiseText, playSay, slug } from './ui.js';
 import * as S from './store.js';
 import { gradeQuestion, answerText, userText, isAnswered } from './grade.js';
 import { RANDOM, makeSession } from './mathgen.js';
 
-export const X = { cfg: null, lib: null, vocab: {}, audio: new Set(), sets: {} };
+export const X = { cfg: null, lib: null, vocab: {}, audio: new Set(), sets: {}, ipa: {} };
 const app = () => document.getElementById('app');
 export const nav = (hash) => { if (location.hash === hash) window.dispatchEvent(new Event('hashchange')); else location.hash = hash; };
 export const user = () => X.cfg.users.find(u => u.id === S.getUser()) || null;
-export function setTheme(u) { document.documentElement.dataset.theme = u ? u.theme : ''; }
+export function setTheme(u) { document.documentElement.dataset.theme = u ? u.theme : ''; document.documentElement.dataset.fs = u ? String(S.P(u.id).font || 0) : '0'; }
 export function mount(node) { app().replaceChildren(node); window.scrollTo(0, 0); keypad.close(); }
-const cap = () => X.cfg.dailyRandomStarCap || 20;
+export const cap = () => X.cfg.dailyRandomStarCap || 20;
 
 function page(title, content, { back = '#/', right = null } = {}) {
   return h('div', { class: 'page' },
@@ -35,12 +35,37 @@ export async function loadSet(id) {
 }
 
 // ---------------- 登录 ----------------
+const sha256 = async (s) => [...new Uint8Array(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(s)))].map(b => b.toString(16).padStart(2, '0')).join('');
+function askPassword() {
+  const P = X.cfg.parent;
+  const inp = h('input', { class: 'big', type: 'password', inputmode: 'numeric', placeholder: '请输入密码', autocomplete: 'off', enterkeyhint: 'go' });
+  const msg = h('p', { class: 'msg' });
+  const go = async () => {
+    try {
+      if (await sha256(P.salt + inp.value.trim()) === P.hash) { try { sessionStorage.setItem('kp_parent', '1'); } catch (e) { window.__kpParent = true; } nav('#/parent'); }
+      else { msg.textContent = '密码不对，再试一次'; inp.value = ''; }
+    } catch (e) { msg.textContent = '这个浏览器暂时无法验证密码'; }
+  };
+  inp.addEventListener('keydown', e => { if (e.key === 'Enter') go(); });
+  setTheme(null);
+  mount(h('div', { class: 'login' }, h('div', { class: 'logo' }, '🔒'), h('h1', {}, P.name), h('p', { class: 'sub' }, '请输入密码'), inp,
+    h('button', { class: 'btn primary wide', onclick: go }, '进入'), h('button', { class: 'btn ghost wide', style: 'margin-top:10px', onclick: () => nav('#/login') }, '返回'), msg));
+  setTimeout(() => inp.focus(), 50);
+}
+export function parentHome() {
+  let ok = false; try { ok = sessionStorage.getItem('kp_parent') === '1'; } catch (e) { ok = !!window.__kpParent; }
+  if (!ok) { nav('#/login'); return; }
+  setTheme(null);
+  mount(h('div', { class: 'login' }, h('div', { class: 'logo' }, '🔒'), h('h1', {}, X.cfg.parent.name), h('p', { class: 'sub' }, '家长入口。这里的内容还在准备中。'),
+    h('button', { class: 'btn primary wide', onclick: () => { try { sessionStorage.removeItem('kp_parent'); } catch (e) { window.__kpParent = false; } nav('#/login'); } }, '退出')));
+}
 export function login() {
   const inp = h('input', { class: 'big', placeholder: '输入你的名字', autocomplete: 'off', autocapitalize: 'off', autocorrect: 'off', spellcheck: 'false', enterkeyhint: 'go' });
   const msg = h('p', { class: 'msg' });
   const enter = () => {
     const v = inp.value.trim().toLowerCase();
     const u = X.cfg.users.find(x => x.names.some(n => n.toLowerCase() === v));
+    if (!u && X.cfg.parent && v === X.cfg.parent.name.toLowerCase()) { askPassword(); return; }
     if (!u) { msg.textContent = '没有找到这个名字，再检查一下～'; return; }
     S.setUser(u.id); setTheme(u); nav('#/');
   };
@@ -52,13 +77,19 @@ export function login() {
 }
 
 // ---------------- 首页 ----------------
+function taskCard(u) {
+  const tasks = u.tasks || []; if (!tasks.length) return null;
+  const done = tasks.map(t => S.taskDone(u.id, t)), all = tasks.every((t, i) => done[i] >= t.goal);
+  return h('section', { class: 'tasks' }, h('h2', { class: 'sh' }, all ? '🎉 今天的任务都完成啦' : '今天的任务'),
+    tasks.map((t, i) => h('div', { class: 'task' + (done[i] >= t.goal ? ' done' : '') }, h('span', { class: 'tk' }, done[i] >= t.goal ? '✅' : '⬜'), h('span', { class: 'tl' }, t.label), h('span', { class: 'tn' }, `${Math.min(done[i], t.goal)}/${t.goal}`))));
+}
 export function home() {
   const u = user(), st = S.stats(u.id), p = S.P(u.id);
   const rewards = (X.cfg.rewards || []).slice().sort((a, b) => a.stars - b.stars);
   const next = rewards.find(r => r.stars > st.total), prev = [...rewards].reverse().find(r => r.stars <= st.total);
   const from = prev ? prev.stars : 0, pct = next ? Math.round((st.total - from) / (next.stars - from) * 100) : 100;
   const jar = h('section', { class: 'jar' },
-    h('div', { class: 'jar-top' }, h('div', { class: 'jar-n' }, '⭐ ', h('b', {}, st.total)), h('div', { class: 'jar-s' }, `今天 +${st.today}`)),
+    h('div', { class: 'jar-top' }, h('div', { class: 'jar-n' }, '⭐ ', h('b', {}, st.total)), h('div', { class: 'jar-s' }, `今天 +${st.today}` + (S.streak(u.id) ? ` · 🔥连续 ${S.streak(u.id)} 天` : ''))),
     h('div', { class: 'bar' }, h('i', { style: `width:${pct}%` })),
     h('p', { class: 'jar-t' }, next ? `再得 ${next.stars - st.total} 颗星，就能换「${next.label}」` : rewards.length ? '所有奖励都拿到啦！' : '多做题，多攒星星！'));
   const subjectCards = u.subjects.map(id => {
@@ -72,8 +103,8 @@ export function home() {
   });
   const wrongN = st.wrong;
   mount(h('div', { class: 'page home' },
-    h('header', { class: 'hello' }, h('div', {}, h('small', {}, '你好，'), h('h1', {}, u.display + ' 👋')), h('button', { class: 'link', onclick: () => { if (confirm('切换同学？')) { S.setUser(null); nav('#/login'); } } }, '切换')),
-    jar,
+    h('header', { class: 'hello' }, h('div', {}, h('small', {}, '你好，'), h('h1', {}, u.display + ' 👋')), h('div', { class: 'hbtns' }, h('button', { class: 'link', onclick: () => { const f = ((p.font || 0) + 1) % 3; p.font = f; S.save(u.id); setTheme(u); toast(['字号：标准', '字号：大', '字号：特大'][f]); } }, 'Aa'), h('button', { class: 'link', onclick: () => { if (confirm('切换同学？')) { S.setUser(null); nav('#/login'); } } }, '切换'))),
+    jar, taskCard(u),
     h('h2', { class: 'sh' }, '题库练习'), h('div', { class: 'grid' }, subjectCards),
     randCards.length ? [h('h2', { class: 'sh' }, '随机练习'), h('div', { class: 'grid' }, randCards)] : null,
     h('h2', { class: 'sh' }, '我的'),
@@ -108,7 +139,7 @@ function passageNode(set) {
   const box = h('section', { class: 'passage' });
   if (set.dialogue) set.dialogue.forEach(l => box.append(h('p', { class: 'dlg' }, h('b', {}, l.s + ': '), l.t)));
   else (set.passage || []).forEach(t => box.append(h('p', {}, t)));
-  if (set.vocab) box.append(h('p', { class: 'vocab' }, '重点词：' + set.vocab));
+  if (set.vocab) box.append(vocabNode(set.vocab));
   return box;
 }
 function transcriptNode(set) {
@@ -140,8 +171,26 @@ function startBank(set) {
   }));
 }
 
+// ---------------- 重点词：音标 + 发音 ----------------
+const ipaFor = (en) => {
+  const m = X.ipa || {}, t = m[en] || m[en.toLowerCase()]; if (t) return t;
+  const parts = en.split(/\s+/).map(w => m[w] || m[w.toLowerCase()]);
+  return parts.length && parts.every(Boolean) ? parts.join(' ') : '';
+};
+function vocabNode(str) {
+  const items = String(str).split(/\s*·\s*/).map(part => { const m = part.trim().match(/^(.*?)\s*([（(]?[\u4e00-\u9fff].*)$/); return m ? { en: m[1].trim(), zh: m[2].trim() } : { en: part.trim(), zh: '' }; }).filter(x => x.en);
+  return h('div', { class: 'vocab vlist' }, h('b', {}, '重点词（点一下听发音）'),
+    h('div', { class: 'vwrap' }, items.map(it => { const ip = ipaFor(it.en); return h('button', { type: 'button', class: 'vchip', onclick: () => playSay(slug(it.en), it.en, X.audio) },
+      h('span', { class: 've' }, it.en), ip ? h('span', { class: 'ipa sm' }, '/' + ip + '/') : null, h('span', { class: 'vz' }, it.zh)); })));
+}
+
 // ---------------- 答题引擎 ----------------
-const stemHtml = (q) => (q.type === 'math' || String(q.id).startsWith('r-') ? mathHtml(q.stem) : esc(q.stem));
+const mathish = (q) => !q.plain && (q.type === 'math' || String(q.id).startsWith('r-'));
+const stemHtml = (q) => (mathish(q) ? mathHtml(q.stem) : esc(q.stem));
+const speakRow = (q) => h('div', { class: 'speakrow' },
+  q.say ? h('button', { type: 'button', class: 'spk', onclick: () => playSay(q.sayKey, q.say, X.audio) }, '🔊 听发音') : null,
+  q.ipaQ ? h('span', { class: 'ipa' }, '/' + q.ipaQ + '/') : null,
+  q.bold ? h('span', { class: 'bmark' }, '★ 重点词，要会拼写') : null);
 
 function ctxDetails(meta) {
   const body = h('div', { class: 'ctxbody' }); let loaded = false;
@@ -156,6 +205,7 @@ function renderQ(q, no, ans, update) {
   const head = (html) => h('div', { class: 'stem' }, h('span', { class: 'no' }, no), h('div', { class: 'qt', html }));
   if (q.type === 'choice') {
     box.append(head(stemHtml(q)));
+    if (q.say || q.bold) box.append(speakRow(q));
     const btns = q.options.map((t, k) => h('button', { type: 'button', class: 'opt', onclick: () => { btns.forEach((x, j) => x.classList.toggle('on', j === k)); setA('ABCD'[k]); } }, h('b', {}, 'ABCD'[k]), h('span', {}, t)));
     box.append(h('div', { class: 'opts' }, btns));
   } else if (q.type === 'tf') {
@@ -165,6 +215,7 @@ function renderQ(q, no, ans, update) {
     box.append(h('div', { class: 'opts two' }, bs));
   } else if (q.type === 'fill') {
     if (q.hint) box.append(h('span', { class: 'pill' }, q.hint));
+    if (q.say || q.bold) box.append(speakRow(q));
     const parts = q.stem.split(/_{2,}/), inputs = [];
     const line = h('div', { class: 'qt fillq' });
     const read = () => setA(inputs.map(e => e.value));
@@ -223,7 +274,8 @@ function runQuiz(o) {
         if (s === 'new') newStars++; if (s === 'capped') capped++;
       } else S.addWrong(o.uid, clean, meta);
     });
-    S.recordAttempt(o.uid, o.recId || null, { title: o.recTitle || o.title, ok: okN, total: qs.length, pts, ptsAll, stars: newStars });
+    const m0 = qs.length ? o.metaFor(qs[0]) : {};
+    S.recordAttempt(o.uid, o.recId || null, { title: o.recTitle || o.title, ok: okN, total: qs.length, pts, ptsAll, stars: newStars, src: m0.src, sub: m0.sub });
     keypad.close();
     mount(resultsNode(o, results, { newStars, capped, okN, pts, ptsAll }));
   }
@@ -259,11 +311,12 @@ function reviewItem(r, no) {
   const body = h('div', { class: 'rvb' },
     ok ? null : h('p', { class: 'mine' }, h('b', {}, '你的答案：'), h('span', { html: q.type === 'math' ? mathHtml(userText(q, r.a)) : esc(userText(q, r.a)) })),
     h('p', { class: 'right' }, h('b', {}, '正确答案：'), h('span', { html: q.type === 'math' ? mathHtml(answerText(q)) : esc(answerText(q)) })),
+    q.rv ? h('p', { class: 'rvsay' }, h('button', { type: 'button', class: 'spk', onclick: () => playSay(q.rv.key, q.rv.say, X.audio) }, '🔊'), q.rv.ipa ? h('span', { class: 'ipa' }, '/' + q.rv.ipa + '/') : null, q.bold ? h('span', { class: 'bmark' }, '★ 重点词，要会拼写') : null) : null,
     r.g.note ? h('p', { class: 'note' }, r.g.note) : null,
     q.why ? h('p', { class: 'why' }, h('b', {}, '解析：'), ...String(q.why).split('\n').flatMap((t, i) => [i ? h('br') : null, t])) : null,
     r.star === 'new' ? h('p', { class: 'got' }, '⭐ +1') : null);
   return h('details', { class: 'rv ' + (ok ? 'ok' : 'bad'), open: !ok },
-    h('summary', {}, h('span', { class: 'mark' }, ok ? '✓' : '✗'), h('span', { class: 'no' }, no), h('span', { class: 'rvs', html: q.type === 'math' || String(q.id).startsWith('r-') ? mathHtml(short) : esc(short) })), body);
+    h('summary', {}, h('span', { class: 'mark' }, ok ? '✓' : '✗'), h('span', { class: 'no' }, no), h('span', { class: 'rvs', html: mathish(q) ? mathHtml(short) : esc(short) })), body);
 }
 
 // ---------------- 随机练习 ----------------
@@ -326,13 +379,20 @@ function summaryText(u) {
   const p = S.P(u.id), st = S.stats(u.id), t = S.today();
   const todays = p.log.filter(x => x.d === t);
   const rewards = (X.cfg.rewards || []).slice().sort((a, b) => a.stars - b.stars), next = rewards.find(r => r.stars > st.total);
+  const names = {}; Object.values(RANDOM).forEach(R => R.types.forEach(x => { names[x.id] = x.name; }));
+  const weakT = Object.entries(p.rand.types).filter(([, s]) => s.n >= 3 && s.w / s.n >= 0.4).sort((a, b) => b[1].w / b[1].n - a[1].w / a[1].n).slice(0, 3).map(([id]) => names[id] || id);
+  const weakW = Object.values(p.wrong).filter(x => x.q && x.q.rv && x.q.rv.say).sort((a, b) => b.n - a.n).map(x => x.q.rv.say).filter((w, i, a) => a.indexOf(w) === i).slice(0, 8);
+  const tasks = u.tasks || [], tdone = tasks.filter(x => S.taskDone(u.id, x) >= x.goal).length;
   const lines = [`【${u.display}的练习小结】${t}`,
-    `今天：做了 ${todays.length} 组，新得 ⭐${st.today} 颗`,
+    `今天：做了 ${todays.length} 组，新得 ⭐${st.today} 颗` + (tasks.length ? `，任务 ${tdone}/${tasks.length}` : ''),
+    S.streak(u.id) ? `🔥 连续练习 ${S.streak(u.id)} 天` : null,
     ...todays.slice(-6).map(x => `  · ${x.title}：${x.ok}/${x.total}`),
     `累计：⭐${st.total} 颗（题库 ${st.bank} · 随机 ${st.rand}）`,
     `错题本：还有 ${st.wrong} 道没掌握`];
+  if (weakT.length) lines.push(`最近容易错：${weakT.join('、')}`);
+  if (weakW.length) lines.push(`还没掌握的单词：${weakW.join('、')}`);
   if (next) lines.push(`下一个奖励「${next.label}」：${next.stars} 颗，还差 ${next.stars - st.total} 颗`);
-  return lines.join('\n');
+  return lines.filter(Boolean).join('\n');
 }
 export function records() {
   const u = user(), p = S.P(u.id), st = S.stats(u.id);
@@ -419,3 +479,4 @@ export async function printView(id, withAns) {
   }
   mount(doc);
 }
+export { page, runQuiz };

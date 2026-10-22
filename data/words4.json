@@ -1,0 +1,1284 @@
+{
+"book": "四年级 英语",
+"units": [
+{
+"id": "U1",
+"name": "Unit 1",
+"items": [
+{
+"id": "U1-1",
+"en": "PE",
+"pos": "",
+"zh": "体育（课）",
+"zh1": "体育",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U1-2",
+"en": "job",
+"pos": "",
+"zh": "工作；职业",
+"zh1": "工作",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U1-3",
+"en": "doctor",
+"pos": "",
+"zh": "医生",
+"zh1": "医生",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-4",
+"en": "farmer",
+"pos": "",
+"zh": "农场主；农民",
+"zh1": "农场主",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-5",
+"en": "nurse",
+"pos": "",
+"zh": "护士",
+"zh1": "护士",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-6",
+"en": "office worker",
+"pos": "",
+"zh": "公司职员",
+"zh1": "公司职员",
+"bold": true,
+"kind": "phrase"
+},
+{
+"id": "U1-7",
+"en": "factory worker",
+"pos": "",
+"zh": "工厂工人",
+"zh1": "工厂工人",
+"bold": true,
+"kind": "phrase"
+},
+{
+"id": "U1-8",
+"en": "busy",
+"pos": "",
+"zh": "忙碌的",
+"zh1": "忙碌的",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U1-9",
+"en": "tired",
+"pos": "",
+"zh": "疲倦的",
+"zh1": "疲倦的",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U1-10",
+"en": "chore",
+"pos": "",
+"zh": "家庭杂务",
+"zh1": "家庭杂务",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U1-11",
+"en": "cook",
+"pos": "",
+"zh": "烹饪；煮",
+"zh1": "烹饪",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U1-12",
+"en": "clean",
+"pos": "",
+"zh": "打扫；干净的",
+"zh1": "打扫",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U1-13",
+"en": "room",
+"pos": "",
+"zh": "房间",
+"zh1": "房间",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U1-14",
+"en": "look after",
+"pos": "",
+"zh": "照顾",
+"zh1": "照顾",
+"bold": true,
+"kind": "phrase"
+},
+{
+"id": "U1-15",
+"en": "sweep",
+"pos": "",
+"zh": "扫",
+"zh1": "扫",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-16",
+"en": "floor",
+"pos": "",
+"zh": "地板；地面",
+"zh1": "地板",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-17",
+"en": "together",
+"pos": "",
+"zh": "在一起；共同",
+"zh1": "在一起",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U1-18",
+"en": "people",
+"pos": "",
+"zh": "人；人们",
+"zh1": "人",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U1-19",
+"en": "child",
+"pos": "",
+"zh": "儿童；小孩（复数 children）",
+"zh1": "儿童",
+"bold": false,
+"kind": "word"
+}
+],
+"sentences": [
+{
+"id": "U1-s1",
+"en": "What's your mother's job?",
+"zh": "你妈妈做什么工作？"
+},
+{
+"id": "U1-s2",
+"en": "She's a doctor.",
+"zh": "她是医生。"
+},
+{
+"id": "U1-s3",
+"en": "Mum and Dad are busy and tired.",
+"zh": "爸爸妈妈又忙又累。"
+},
+{
+"id": "U1-s4",
+"en": "What can we do for them?",
+"zh": "我们能为他们做些什么？"
+},
+{
+"id": "U1-s5",
+"en": "We can do some chores.",
+"zh": "我们可以做一些家务活。"
+}
+]
+},
+{
+"id": "U2",
+"name": "Unit 2",
+"items": [
+{
+"id": "U2-1",
+"en": "his",
+"pos": "",
+"zh": "他的",
+"zh1": "他的",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U2-2",
+"en": "strong",
+"pos": "",
+"zh": "强壮的",
+"zh1": "强壮的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-3",
+"en": "hair",
+"pos": "",
+"zh": "头发",
+"zh1": "头发",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-4",
+"en": "kind",
+"pos": "",
+"zh": "友好的",
+"zh1": "友好的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-5",
+"en": "quiet",
+"pos": "",
+"zh": "文静的",
+"zh1": "文静的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-6",
+"en": "best",
+"pos": "",
+"zh": "最好的",
+"zh1": "最好的",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U2-7",
+"en": "read",
+"pos": "",
+"zh": "阅读",
+"zh1": "阅读",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-8",
+"en": "Chinese",
+"pos": "",
+"zh": "中文；中国人；中国的",
+"zh1": "中文",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-9",
+"en": "play",
+"pos": "",
+"zh": "玩耍",
+"zh1": "玩耍",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-10",
+"en": "game",
+"pos": "",
+"zh": "游戏",
+"zh1": "游戏",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-11",
+"en": "football",
+"pos": "",
+"zh": "足球运动",
+"zh1": "足球运动",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-12",
+"en": "basketball",
+"pos": "",
+"zh": "篮球运动",
+"zh1": "篮球运动",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U2-13",
+"en": "always",
+"pos": "",
+"zh": "总是",
+"zh1": "总是",
+"bold": false,
+"kind": "word"
+}
+],
+"sentences": [
+{
+"id": "U2-s1",
+"en": "What's your friend's name?",
+"zh": "你的朋友叫什么名字？"
+},
+{
+"id": "U2-s2",
+"en": "His name is Zhang Peng.",
+"zh": "他叫张鹏。"
+},
+{
+"id": "U2-s3",
+"en": "He's tall and strong.",
+"zh": "他又高又壮。"
+},
+{
+"id": "U2-s4",
+"en": "He's also kind.",
+"zh": "他也很友善。"
+},
+{
+"id": "U2-s5",
+"en": "He often helps me.",
+"zh": "他经常帮助我。"
+},
+{
+"id": "U2-s6",
+"en": "Who's your best friend?",
+"zh": "谁是你最好的朋友？"
+},
+{
+"id": "U2-s7",
+"en": "Chen Jie.",
+"zh": "陈杰。"
+},
+{
+"id": "U2-s8",
+"en": "She's funny.",
+"zh": "她很有趣。"
+},
+{
+"id": "U2-s9",
+"en": "She often makes me smile.",
+"zh": "她经常让我开心。"
+}
+]
+},
+{
+"id": "U3",
+"name": "Unit 3",
+"items": [
+{
+"id": "U3-1",
+"en": "afternoon",
+"pos": "",
+"zh": "下午",
+"zh1": "下午",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U3-2",
+"en": "there",
+"pos": "",
+"zh": "（表示存在或发生）；在那里",
+"zh1": "在那里",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U3-3",
+"en": "playground",
+"pos": "",
+"zh": "游乐场；操场",
+"zh1": "游乐场",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-4",
+"en": "park",
+"pos": "",
+"zh": "公园",
+"zh1": "公园",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-5",
+"en": "over",
+"pos": "",
+"zh": "在……的远端（或对面）",
+"zh1": "在……的远端",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U3-6",
+"en": "hospital",
+"pos": "",
+"zh": "医院",
+"zh1": "医院",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-7",
+"en": "shop",
+"pos": "",
+"zh": "商店",
+"zh1": "商店",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-8",
+"en": "toilet",
+"pos": "",
+"zh": "厕所；卫生间",
+"zh1": "厕所",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-9",
+"en": "bus stop",
+"pos": "",
+"zh": "公共汽车站",
+"zh1": "公共汽车站",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U3-10",
+"en": "library",
+"pos": "",
+"zh": "图书馆",
+"zh1": "图书馆",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U3-11",
+"en": "sport",
+"pos": "",
+"zh": "体育运动",
+"zh1": "体育运动",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-12",
+"en": "walk",
+"pos": "",
+"zh": "散步；行走",
+"zh1": "散步",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-13",
+"en": "community",
+"pos": "",
+"zh": "社区",
+"zh1": "社区",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U3-14",
+"en": "favourite",
+"pos": "",
+"zh": "最喜欢的",
+"zh1": "最喜欢的",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U3-15",
+"en": "place",
+"pos": "",
+"zh": "地方；场所",
+"zh1": "地方",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U3-16",
+"en": "photo",
+"pos": "",
+"zh": "照片",
+"zh1": "照片",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U3-17",
+"en": "story",
+"pos": "",
+"zh": "故事",
+"zh1": "故事",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U3-18",
+"en": "buy",
+"pos": "",
+"zh": "购买",
+"zh1": "购买",
+"bold": false,
+"kind": "word"
+}
+],
+"sentences": [
+{
+"id": "U3-s1",
+"en": "There is a playground.",
+"zh": "那里有个游乐场。"
+},
+{
+"id": "U3-s2",
+"en": "We often play there.",
+"zh": "我们经常在那里玩儿。"
+},
+{
+"id": "U3-s3",
+"en": "There is a taijiquan club.",
+"zh": "这里有一个太极拳俱乐部。"
+},
+{
+"id": "U3-s4",
+"en": "There are many people.",
+"zh": "这里有好多人。"
+},
+{
+"id": "U3-s5",
+"en": "There is a gym too.",
+"zh": "这里还有一个体育馆。"
+},
+{
+"id": "U3-s6",
+"en": "Great! Let's do some sports.",
+"zh": "太棒了！我们一起做运动吧。"
+},
+{
+"id": "U3-s7",
+"en": "My favourite place is the museum.",
+"zh": "我最喜欢的地方是博物馆。"
+}
+]
+},
+{
+"id": "U4",
+"name": "Unit 4",
+"items": [
+{
+"id": "U4-1",
+"en": "firefighter",
+"pos": "",
+"zh": "消防队员",
+"zh1": "消防队员",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U4-2",
+"en": "why",
+"pos": "",
+"zh": "为什么",
+"zh1": "为什么",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U4-3",
+"en": "driver",
+"pos": "",
+"zh": "司机",
+"zh1": "司机",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-4",
+"en": "important",
+"pos": "",
+"zh": "重要的",
+"zh1": "重要的",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U4-5",
+"en": "cleaner",
+"pos": "",
+"zh": "清洁工",
+"zh1": "清洁工",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-6",
+"en": "cook",
+"pos": "",
+"zh": "厨师",
+"zh1": "厨师",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-7",
+"en": "delivery worker",
+"pos": "",
+"zh": "快递员",
+"zh1": "快递员",
+"bold": true,
+"kind": "phrase"
+},
+{
+"id": "U4-8",
+"en": "police officer",
+"pos": "",
+"zh": "警察；警员",
+"zh1": "警察",
+"bold": true,
+"kind": "phrase"
+},
+{
+"id": "U4-9",
+"en": "a lot of",
+"pos": "",
+"zh": "大量；许多",
+"zh1": "大量",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U4-10",
+"en": "now",
+"pos": "",
+"zh": "现在",
+"zh1": "现在",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U4-11",
+"en": "make the bed",
+"pos": "",
+"zh": "铺床",
+"zh1": "铺床",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U4-12",
+"en": "old",
+"pos": "",
+"zh": "过去的；年纪大的；老的",
+"zh1": "过去的",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U4-13",
+"en": "tell",
+"pos": "",
+"zh": "讲述；告诉",
+"zh1": "讲述",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-14",
+"en": "everyone",
+"pos": "",
+"zh": "每人",
+"zh1": "每人",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U4-15",
+"en": "Ms",
+"pos": "",
+"zh": "（用于女子的姓氏或姓名前，不指明婚否）女士",
+"zh1": "女士",
+"bold": false,
+"kind": "word"
+}
+],
+"sentences": [
+{
+"id": "U4-s1",
+"en": "Our neighbour is a firefighter.",
+"zh": "我们的邻居是消防员。"
+},
+{
+"id": "U4-s2",
+"en": "He often helps people.",
+"zh": "他经常帮助别人。"
+},
+{
+"id": "U4-s3",
+"en": "He's a school bus driver.",
+"zh": "他是校车司机。"
+},
+{
+"id": "U4-s4",
+"en": "He takes us to school every day.",
+"zh": "他每天送我们去学校。"
+},
+{
+"id": "U4-s5",
+"en": "That's an important job too!",
+"zh": "那个工作也很重要！"
+},
+{
+"id": "U4-s6",
+"en": "Chen Jie is making the bed.",
+"zh": "陈杰正在铺床。"
+},
+{
+"id": "U4-s7",
+"en": "In the kindergarten, John and Class One are singing songs together.",
+"zh": "在幼儿园，约翰和一班（的小朋友们）在一起唱歌。"
+}
+]
+},
+{
+"id": "U5",
+"name": "Unit 5",
+"items": [
+{
+"id": "U5-1",
+"en": "speak",
+"pos": "",
+"zh": "说话；发言",
+"zh1": "说话",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-2",
+"en": "weather",
+"pos": "",
+"zh": "天气",
+"zh1": "天气",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U5-3",
+"en": "sunny",
+"pos": "",
+"zh": "阳光充足的",
+"zh1": "阳光充足的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-4",
+"en": "hot",
+"pos": "",
+"zh": "热的",
+"zh1": "热的",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U5-5",
+"en": "bad",
+"pos": "",
+"zh": "令人不快的；坏的",
+"zh1": "令人不快的",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U5-6",
+"en": "cold",
+"pos": "",
+"zh": "冷的",
+"zh1": "冷的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-7",
+"en": "windy",
+"pos": "",
+"zh": "多风的",
+"zh1": "多风的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-8",
+"en": "cloudy",
+"pos": "",
+"zh": "多云的",
+"zh1": "多云的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-9",
+"en": "rainy",
+"pos": "",
+"zh": "阴雨的",
+"zh1": "阴雨的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-10",
+"en": "snowy",
+"pos": "",
+"zh": "多雪的",
+"zh1": "多雪的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-11",
+"en": "cool",
+"pos": "",
+"zh": "凉爽的",
+"zh1": "凉爽的",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U5-12",
+"en": "warm",
+"pos": "",
+"zh": "温暖的",
+"zh1": "温暖的",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U5-13",
+"en": "tomorrow",
+"pos": "",
+"zh": "在明天",
+"zh1": "在明天",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U5-14",
+"en": "rain",
+"pos": "",
+"zh": "下雨；雨",
+"zh1": "下雨",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U5-15",
+"en": "closed",
+"pos": "",
+"zh": "关闭的",
+"zh1": "关闭的",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U5-16",
+"en": "film",
+"pos": "",
+"zh": "电影",
+"zh1": "电影",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U5-17",
+"en": "idea",
+"pos": "",
+"zh": "想法；主意",
+"zh1": "想法",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U5-18",
+"en": "fly",
+"pos": "",
+"zh": "操纵（飞行器等）；飞",
+"zh1": "操纵",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-19",
+"en": "kite",
+"pos": "",
+"zh": "风筝",
+"zh1": "风筝",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-20",
+"en": "snowman",
+"pos": "",
+"zh": "雪人",
+"zh1": "雪人",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-21",
+"en": "fun",
+"pos": "",
+"zh": "享乐；乐趣",
+"zh1": "享乐",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U5-22",
+"en": "their",
+"pos": "",
+"zh": "他们的；她们的；它们的",
+"zh1": "他们的",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U5-23",
+"en": "swim",
+"pos": "",
+"zh": "游泳",
+"zh1": "游泳",
+"bold": false,
+"kind": "word"
+}
+],
+"sentences": [
+{
+"id": "U5-s1",
+"en": "Hello! Mark speaking.",
+"zh": "你好！我是马克。"
+},
+{
+"id": "U5-s2",
+"en": "Hi, Mark! This is John.",
+"zh": "嗨，马克！我是约翰。"
+},
+{
+"id": "U5-s3",
+"en": "What's the weather like in Sydney?",
+"zh": "悉尼的天气怎么样？"
+},
+{
+"id": "U5-s4",
+"en": "Well, it's sunny today.",
+"zh": "噢，今天是晴天。"
+},
+{
+"id": "U5-s5",
+"en": "It's only two degrees in Beijing.",
+"zh": "北京只有两度。"
+},
+{
+"id": "U5-s6",
+"en": "It's raining now.",
+"zh": "现在下雨了。"
+},
+{
+"id": "U5-s7",
+"en": "We can't play basketball in the park.",
+"zh": "我们不能在公园打篮球了。"
+},
+{
+"id": "U5-s8",
+"en": "It's OK. We can go to the library.",
+"zh": "没关系。我们可以去图书馆。"
+},
+{
+"id": "U5-s9",
+"en": "It's hot and sunny here.",
+"zh": "这里很热，是个大晴天。"
+},
+{
+"id": "U5-s10",
+"en": "Their children swim in the pool.",
+"zh": "他们的孩子在泳池里游泳。"
+}
+]
+},
+{
+"id": "U6",
+"name": "Unit 6",
+"items": [
+{
+"id": "U6-1",
+"en": "whose",
+"pos": "",
+"zh": "谁的",
+"zh1": "谁的",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U6-2",
+"en": "sweater",
+"pos": "",
+"zh": "毛衣",
+"zh1": "毛衣",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-3",
+"en": "sock",
+"pos": "",
+"zh": "短袜",
+"zh1": "短袜",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-4",
+"en": "mine",
+"pos": "",
+"zh": "我的",
+"zh1": "我的",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U6-5",
+"en": "wear",
+"pos": "",
+"zh": "穿；戴",
+"zh1": "穿",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U6-6",
+"en": "shirt",
+"pos": "",
+"zh": "衬衫",
+"zh1": "衬衫",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-7",
+"en": "coat",
+"pos": "",
+"zh": "大衣；外套",
+"zh1": "大衣",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-8",
+"en": "dress",
+"pos": "",
+"zh": "连衣裙",
+"zh1": "连衣裙",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-9",
+"en": "which",
+"pos": "",
+"zh": "哪一个；哪一些",
+"zh1": "哪一个",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U6-10",
+"en": "season",
+"pos": "",
+"zh": "季节",
+"zh1": "季节",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U6-11",
+"en": "winter",
+"pos": "",
+"zh": "冬天",
+"zh1": "冬天",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-12",
+"en": "snow",
+"pos": "",
+"zh": "下雪；雪",
+"zh1": "下雪",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U6-13",
+"en": "get together",
+"pos": "",
+"zh": "聚会",
+"zh1": "聚会",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U6-14",
+"en": "spring",
+"pos": "",
+"zh": "春天",
+"zh1": "春天",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-15",
+"en": "summer",
+"pos": "",
+"zh": "夏天",
+"zh1": "夏天",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-16",
+"en": "autumn",
+"pos": "",
+"zh": "秋天",
+"zh1": "秋天",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-17",
+"en": "T-shirt",
+"pos": "",
+"zh": "T恤衫",
+"zh1": "T恤衫",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U6-18",
+"en": "fall",
+"pos": "",
+"zh": "落下",
+"zh1": "落下",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U6-19",
+"en": "leaf",
+"pos": "",
+"zh": "叶（复数 leaves）",
+"zh1": "叶",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U6-20",
+"en": "glove",
+"pos": "",
+"zh": "手套",
+"zh1": "手套",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U6-21",
+"en": "then",
+"pos": "",
+"zh": "然后；那时",
+"zh1": "然后",
+"bold": false,
+"kind": "word"
+}
+],
+"sentences": [
+{
+"id": "U6-s1",
+"en": "Whose sweater is this, Mum?",
+"zh": "这是谁的毛衣，妈妈？"
+},
+{
+"id": "U6-s2",
+"en": "It's your dad's.",
+"zh": "是你爸爸的。"
+},
+{
+"id": "U6-s3",
+"en": "Can I wear this new shirt today?",
+"zh": "我今天可以穿这件新衬衫吗？"
+},
+{
+"id": "U6-s4",
+"en": "Yes, but wear a coat too.",
+"zh": "可以，但是再穿一件外套吧。"
+},
+{
+"id": "U6-s5",
+"en": "It's cold and windy outside.",
+"zh": "外面有风，很冷。"
+},
+{
+"id": "U6-s6",
+"en": "Which season do you like?",
+"zh": "你喜欢哪个季节？"
+},
+{
+"id": "U6-s7",
+"en": "Winter. It snows a lot.",
+"zh": "冬天。冬天经常下雪。"
+},
+{
+"id": "U6-s8",
+"en": "I like winter too.",
+"zh": "我也喜欢冬天。"
+},
+{
+"id": "U6-s9",
+"en": "There are many festivals.",
+"zh": "（在冬天）有很多节日。"
+},
+{
+"id": "U6-s10",
+"en": "It's full of life.",
+"zh": "（春天）充满生机。"
+},
+{
+"id": "U6-s11",
+"en": "And enjoy mooncakes.",
+"zh": "还品尝月饼。"
+},
+{
+"id": "U6-s12",
+"en": "Then spring comes again.",
+"zh": "接着春天又来了。"
+}
+]
+}
+]
+}
