@@ -1,5 +1,5 @@
 // 离线缓存：先用手机里存的（秒开），同时悄悄检查有没有新内容；有就提示刷新。
-const VER = 'kp-v2';
+const VER = 'kp-v3';
 const AUDIO = 'kp-audio';
 const SHELL = ['./', 'index.html', 'manifest.webmanifest', 'css/app.css', 'js/app.js', 'js/store.js', 'js/grade.js', 'js/mathgen.js',
   'js/views.js', 'js/ui.js', 'js/english.js', 'js/chapgen.js', 'js/chapview.js', 'js/chapgen4.js', 'data/words7.json', 'data/words4.json', 'data/ipa.json', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png',
@@ -31,21 +31,24 @@ self.addEventListener('activate', (e) => {
 });
 
 const same = (a, b) => { if (a.byteLength !== b.byteLength) return false; const x = new Uint8Array(a), y = new Uint8Array(b); for (let i = 0; i < x.length; i++) if (x[i] !== y[i]) return false; return true; };
-async function notify(url) { for (const c of await self.clients.matchAll()) c.postMessage({ type: 'updated', url }); }
+// 稍等一下再通知，保证页面已经准备好接收提示
+async function notify(url) { await new Promise(r => setTimeout(r, 2500)); for (const c of await self.clients.matchAll()) c.postMessage({ type: 'updated', url }); }
 
-async function swr(req) {
+async function swr(req, e) {
   const c = await caches.open(VER);
   const cached = await c.match(req, { ignoreSearch: true });
   const net = fetch(req, { cache: 'no-cache' }).then(async (r) => {
     if (r && r.ok) {
-      if (cached) {
-        const [a, b] = await Promise.all([cached.clone().arrayBuffer(), r.clone().arrayBuffer()]);
+      // 注意：cached 已经交给页面读取了，不能再 clone；比较时重新从缓存里取一份
+      const old = cached ? await c.match(req, { ignoreSearch: true }) : null;
+      if (old) {
+        const [a, b] = await Promise.all([old.arrayBuffer(), r.clone().arrayBuffer()]);
         if (!same(a, b)) { await c.put(req, r.clone()); notify(req.url); if (req.url.endsWith('library.json')) precacheSets(c); }
       } else await c.put(req, r.clone());
     }
     return r;
   }).catch(() => null);
-  if (cached) { net.catch(() => {}); return cached; }
+  if (cached) { if (e) e.waitUntil(net.catch(() => {})); return cached; }
   const r = await net;
   if (r) return r;
   const fallback = await c.match('index.html');
@@ -82,5 +85,5 @@ self.addEventListener('fetch', (e) => {
   const url = new URL(req.url);
   if (url.origin !== location.origin) return;
   if (/\/audio\/(?:w\/)?[^/]+\.mp3$/.test(url.pathname)) { e.respondWith(audioResp(req)); return; }
-  e.respondWith(swr(req));
+  e.respondWith(swr(req, e));
 });
