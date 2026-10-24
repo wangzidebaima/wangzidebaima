@@ -43,9 +43,9 @@ export function chapSetup(kind) {
   const typeBox = h('div', {});
   const drawTypes = () => { typeBox.replaceChildren(chipRow('题型', [{ v: 'mix', n: '综合（自动盯弱项）' }, ...typeItems()], () => type, v => { type = v; })); };
   btns.forEach(b => b.addEventListener('click', () => { type = 'mix'; drawTypes(); }));
-  const n = S.randToday(u.id, R.subject);
+  const n = S.starsToday(u.id);
   mount(page(R.title, [
-    h('section', { class: 'jar mini' }, h('div', { class: 'jar-top' }, h('div', { class: 'jar-n' }, '今天的随机星星'), h('div', { class: 'jar-s' }, `${n} / ${cap()}`)),
+    h('section', { class: 'jar mini' }, h('div', { class: 'jar-top' }, h('div', { class: 'jar-n' }, '今天的星星'), h('div', { class: 'jar-s' }, `${n} / ${cap()}`)),
       h('div', { class: 'bar' }, h('i', { style: `width:${Math.min(100, n / cap() * 100)}%` }))),
     h('div', { class: 'chips' }, h('span', { class: 'lab' }, '学过的章节（只会从这些里出题）')),
     h('div', { class: 'chips' }, btns),
@@ -54,7 +54,7 @@ export function chapSetup(kind) {
     chipRow('难度', R.levels.map((x, i) => ({ v: i + 1, n: x })), () => level, v => { level = v; }),
     chipRow('题数', [{ v: 5, n: '5 题' }, { v: 10, n: '10 题' }, { v: 20, n: '20 题' }], () => count, v => { count = v; }),
     h('button', { class: 'btn primary wide', onclick: () => { if (!sel.size) { toast('先选一选学过的章节'); return; } run(); } }, '开始'),
-    h('p', { class: 'note' }, '每天每科最多 ' + cap() + ' 颗随机星星；做错的题会进错题本。'),
+    h('p', { class: 'note' }, '答对的题有星星，每天最多 ' + cap() + ' 颗；做错的题会进错题本。'),
   ]));
   upd(); drawTypes();
 }

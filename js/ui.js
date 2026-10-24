@@ -32,29 +32,47 @@ export const praiseText = (ratio) =>
   ratio === 1 ? '全对！太厉害了！' : ratio >= 0.8 ? '做得真棒！' : ratio >= 0.6 ? '不错，继续加油！' : '没关系，看看解析，下次会更好。';
 
 // 数学键盘：手机自带键盘没有负号和分数线，所以自己做一个
-let cur = null;
+let cur = null, repT = null, repI = null, repeated = false;
 const kbEl = () => document.getElementById('kb');
+const nextInput = () => {
+  const all = [...document.querySelectorAll('input.mi')], i = all.indexOf(cur);
+  const after = all.slice(i + 1), before = all.slice(0, i);
+  return after.find(x => !x.value) || before.find(x => !x.value) || null;
+};
 function press(k) {
   if (!cur) return;
   if (k === '⌫') cur.value = cur.value.slice(0, -1);
   else if (k === '清空') cur.value = '';
-  else if (k === '完成') { keypad.close(); return; }
+  else if (k === '下一题' || k === '完成') { const n = nextInput(); if (n && k === '下一题') keypad.open(n, n.dataset.full === '1'); else keypad.close(); return; }
   else cur.value += k;
   cur.dispatchEvent(new Event('input', { bubbles: true }));
 }
+const stopRep = () => { clearTimeout(repT); clearInterval(repI); repT = repI = null; };
 export const keypad = {
   open(input, full) {
     if (cur) cur.classList.remove('focus');
-    cur = input; input.classList.add('focus');
+    cur = input; input.dataset.full = full ? '1' : '0'; input.classList.add('focus');
+    const last = nextInput() ? '下一题' : '完成';
     const keys = full
-      ? ['7', '8', '9', '⌫', '4', '5', '6', '−', '1', '2', '3', '/', '0', '.', '又', '完成']
-      : ['7', '8', '9', '⌫', '4', '5', '6', '清空', '1', '2', '3', '完成', '0'];
-    const el = kbEl(); el.replaceChildren(...keys.map(k =>
-      h('button', { type: 'button', class: 'key' + (k === '完成' ? ' done' : '') + (full ? '' : ' k3'), onclick: () => press(k) }, k)));
+      ? ['7', '8', '9', '⌫', '4', '5', '6', '−', '1', '2', '3', '/', '0', '.', '又', last]
+      : ['7', '8', '9', '⌫', '4', '5', '6', '清空', '1', '2', '3', last, '0'];
+    const el = kbEl(); el.replaceChildren(...keys.map(k => {
+      const cls = 'key' + (k === '下一题' || k === '完成' ? ' done' : '') + (full ? '' : ' k3') + (k === '⌫' ? ' bs' : '');
+      const b = h('button', { type: 'button', class: cls }, k);
+      if (k === '⌫') {
+        // 长按退格：按住 0.4 秒后连续删除
+        b.addEventListener('pointerdown', () => { repeated = false; stopRep(); repT = setTimeout(() => { repeated = true; repI = setInterval(() => press('⌫'), 70); }, 400); });
+        ['pointerup', 'pointerleave', 'pointercancel'].forEach(ev => b.addEventListener(ev, stopRep));
+        b.addEventListener('contextmenu', (e) => e.preventDefault());
+        b.addEventListener('click', () => { if (!repeated) press('⌫'); repeated = false; });
+      } else b.addEventListener('click', () => press(k));
+      return b;
+    }));
     el.hidden = false; document.body.classList.add('kbopen');
     setTimeout(() => input.scrollIntoView({ block: 'center', behavior: 'smooth' }), 50);
   },
   close() {
+    stopRep();
     if (cur) cur.classList.remove('focus');
     cur = null; const el = kbEl(); if (el) el.hidden = true;
     document.body.classList.remove('kbopen');

@@ -125,7 +125,9 @@ body.kbopen .submitbar { display: none; }
 #kb[hidden] { display: none; }
 .key { border: 0; border-radius: 12px; background: var(--bg); font-size: 24px; min-height: 54px; cursor: pointer; }
 .key:active { background: var(--accent-soft); } .key.done { background: var(--accent); color: var(--accent-ink); font-size: 18px; font-weight: 600; }
-.key.k3:last-child { grid-column: span 4; }
+.key.k3:last-child { grid-column: span 3; }
+.key.k3.done { grid-row: span 2; }
+.key { user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; touch-action: manipulation; }
 
 /* 结果 */
 .result { background: var(--surface); border-radius: 20px; padding: 22px 18px; box-shadow: var(--shadow); text-align: center; display: flex; flex-direction: column; gap: 6px; align-items: center; }
@@ -198,3 +200,9 @@ textarea.sum { width: 100%; border: 1.5px solid var(--line); border-radius: 14px
 .task .tl { flex: 1; } .task.done .tl { color: var(--muted); text-decoration: line-through; } .task .tn { color: var(--muted); font-size: 14px; }
 .hbtns { display: flex; gap: 16px; align-items: center; }
 html[data-fs="1"] body { zoom: 1.12; } html[data-fs="2"] body { zoom: 1.25; }
+
+.jar-n small { font-size: 14px; color: var(--muted); }
+.marks { position: relative; height: 18px; margin: -2px 6px 6px 0; }
+.marks .mk { position: absolute; transform: translateX(-100%); font-size: 11px; color: var(--muted); padding-right: 2px; white-space: nowrap; }
+.marks .mk::before { content: '🎁'; margin-right: 1px; filter: grayscale(1); opacity: .6; }
+.marks .mk.on { color: var(--star); font-weight: 700; } .marks .mk.on::before { filter: none; opacity: 1; }

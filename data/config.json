@@ -1,19 +1,22 @@
 {
- "version": "2026-10-22-3",
+ "version": "2026-10-24-1",
  "appName": "每日练习",
- "dailyRandomStarCap": 20,
  "rewards": [
   {
-   "stars": 30,
+   "stars": 50,
    "label": "小奖励"
   },
   {
-   "stars": 60,
+   "stars": 100,
    "label": "中奖励"
   },
   {
-   "stars": 100,
+   "stars": 150,
    "label": "大奖励"
+  },
+  {
+   "stars": 300,
+   "label": "终极大奖"
   }
  ],
  "users": [
@@ -106,5 +109,7 @@
   "name": "美好的世界",
   "salt": "463366f282f7907d",
   "hash": "fe783f5acebb1d0b764455ebaa95166d1611b5293a2a67ce805009ddc0fe2155"
- }
+ },
+ "dailyStarCap": 30,
+ "starGoal": 300
 }

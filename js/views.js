@@ -10,7 +10,8 @@ export const nav = (hash) => { if (location.hash === hash) window.dispatchEvent(
 export const user = () => X.cfg.users.find(u => u.id === S.getUser()) || null;
 export function setTheme(u) { document.documentElement.dataset.theme = u ? u.theme : ''; document.documentElement.dataset.fs = u ? String(S.P(u.id).font || 0) : '0'; }
 export function mount(node) { app().replaceChildren(node); window.scrollTo(0, 0); keypad.close(); }
-export const cap = () => X.cfg.dailyRandomStarCap || 20;
+export const cap = () => X.cfg.dailyStarCap || 30;
+export const goal = () => X.cfg.starGoal || 300;
 
 function page(title, content, { back = '#/', right = null } = {}) {
   return h('div', { class: 'page' },
@@ -86,27 +87,33 @@ function taskCard(u) {
 export function home() {
   const u = user(), st = S.stats(u.id), p = S.P(u.id);
   const rewards = (X.cfg.rewards || []).slice().sort((a, b) => a.stars - b.stars);
-  const next = rewards.find(r => r.stars > st.total), prev = [...rewards].reverse().find(r => r.stars <= st.total);
-  const from = prev ? prev.stars : 0, pct = next ? Math.round((st.total - from) / (next.stars - from) * 100) : 100;
+  const next = rewards.find(r => r.stars > st.total), G = goal(), pct = Math.min(100, st.total / G * 100);
+  const marks = h('div', { class: 'marks' }, rewards.map(r => h('span', { class: 'mk' + (st.total >= r.stars ? ' on' : ''), style: `left:${Math.min(100, r.stars / G * 100)}%` }, r.stars)));
   const jar = h('section', { class: 'jar' },
-    h('div', { class: 'jar-top' }, h('div', { class: 'jar-n' }, '⭐ ', h('b', {}, st.total)), h('div', { class: 'jar-s' }, `今天 +${st.today}` + (S.streak(u.id) ? ` · 🔥连续 ${S.streak(u.id)} 天` : ''))),
-    h('div', { class: 'bar' }, h('i', { style: `width:${pct}%` })),
-    h('p', { class: 'jar-t' }, next ? `再得 ${next.stars - st.total} 颗星，就能换「${next.label}」` : rewards.length ? '所有奖励都拿到啦！' : '多做题，多攒星星！'));
+    h('div', { class: 'jar-top' }, h('div', { class: 'jar-n' }, '⭐ ', h('b', {}, st.total), h('small', {}, ` / ${G}`)), h('div', { class: 'jar-s' }, `今天 +${st.today}/${cap()}` + (S.streak(u.id) ? ` · 🔥连续 ${S.streak(u.id)} 天` : ''))),
+    h('div', { class: 'bar' }, h('i', { style: `width:${pct}%` })), marks,
+    h('p', { class: 'jar-t' }, next ? `再得 ${next.stars - st.total} 颗星，就能换「${next.label}」` : '所有奖励都拿到啦！'),
+    st.today >= cap() ? h('p', { class: 'jar-t' }, '今天的星星拿满啦，明天再来～') : null);
   const subjectCards = u.subjects.map(id => {
     const s = subj(id); if (!s) return null;
     const speak = s.sets[0].kind === 'speaking';
     const em = speak ? `已打卡 ${Object.keys(p.speak).filter(k => k.startsWith(s.sets[0].id)).length}/7 天` : `${s.sets.filter(x => p.sets[x.id]).length}/${s.sets.length} 已完成`;
-    return h('a', { class: 'card', href: '#/s/' + id }, h('span', { class: 'ic' }, s.icon), h('b', {}, s.title), h('small', {}, s.desc), h('em', {}, em));
-  });
+    const card = h('a', { class: 'card', href: '#/s/' + id }, h('span', { class: 'ic' }, s.icon), h('b', {}, s.title), h('small', {}, s.desc), h('em', {}, em));
+    card._area = /math/.test(id) ? 'math' : 'eng'; return card;
+  }).filter(Boolean);
   const randCards = (u.random || []).map(k => {
-    const R = RANDOM[k]; return h('a', { class: 'card alt', href: '#/rand/' + k }, h('span', { class: 'ic' }, R.icon), h('b', {}, R.title), h('small', {}, '随机出题，不重样'), h('em', {}, `今天 ${S.randToday(u.id, R.subject)}/${cap()} 颗`));
+    const R = RANDOM[k]; const card = h('a', { class: 'card alt', href: '#/rand/' + k }, h('span', { class: 'ic' }, R.icon), h('b', {}, R.title), h('small', {}, '随机出题，不重样'), h('em', {}, `今天 ${S.starsToday(u.id)}/${cap()} 颗`));
+    card._area = /^(math|chap)/.test(k) ? 'math' : 'eng'; return card;
+  });
+  const areas = [['math', '📐 数学'], ['eng', '🔤 英语']].map(([a, t]) => {
+    const cs = [...subjectCards, ...randCards].filter(c => c._area === a); if (!cs.length) return null;
+    return [h('h2', { class: 'sh' }, t), h('div', { class: 'grid' }, cs)];
   });
   const wrongN = st.wrong;
   mount(h('div', { class: 'page home' },
     h('header', { class: 'hello' }, h('div', {}, h('small', {}, '你好，'), h('h1', {}, u.display + ' 👋')), h('div', { class: 'hbtns' }, h('button', { class: 'link', onclick: () => { const f = ((p.font || 0) + 1) % 3; p.font = f; S.save(u.id); setTheme(u); toast(['字号：标准', '字号：大', '字号：特大'][f]); } }, 'Aa'), h('button', { class: 'link', onclick: () => { if (confirm('切换同学？')) { S.setUser(null); nav('#/login'); } } }, '切换'))),
     jar, taskCard(u),
-    h('h2', { class: 'sh' }, '题库练习'), h('div', { class: 'grid' }, subjectCards),
-    randCards.length ? [h('h2', { class: 'sh' }, '随机练习'), h('div', { class: 'grid' }, randCards)] : null,
+    areas,
     h('h2', { class: 'sh' }, '我的'),
     h('div', { class: 'grid' },
       h('a', { class: 'card plain', href: '#/errors' }, h('span', { class: 'ic' }, '📒'), h('b', {}, '错题本'), h('small', {}, wrongN ? '做错的题在这里再练' : '现在是空的，真棒'), wrongN ? h('em', { class: 'badge' }, wrongN + ' 道') : null),
@@ -236,14 +243,27 @@ function renderQ(q, no, ans, update) {
     box.append(head(mathHtml(q.stem) + (q.stem.length < 60 && !/[=＝？?]/.test(q.stem) ? ' = ？' : '')));
     if (q.kindName) box.append(h('span', { class: 'pill' }, q.kindName));
     const inp = h('input', { class: 'mi', readonly: true, inputmode: 'none', placeholder: '点这里输入答案', oninput: () => setA(inp.value) });
-    inp.addEventListener('click', () => keypad.open(inp, !q.digits));
+    inp.dataset.full = q.digits ? '0' : '1'; inp.addEventListener('click', () => keypad.open(inp, !q.digits));
     box.append(inp);
   }
   if (q._meta && (q._meta.kind === 'reading' || q._meta.kind === 'listening') && q._meta.setId) box.append(ctxDetails(q._meta));
   return box;
 }
 
+// 静默检查：有问题的题直接跳过，不让整套练习崩掉
+export function validQ(q) {
+  try {
+    if (!q || !q.id || !String(q.stem || '').trim()) return false;
+    if (q.type === 'choice') return Array.isArray(q.options) && q.options.length >= 2 && new Set(q.options).size === q.options.length && /^[A-Z]$/.test(q.answer) && q.answer.charCodeAt(0) - 65 < q.options.length;
+    if (q.type === 'tf') return q.answer === 'T' || q.answer === 'F';
+    if (q.type === 'fill') return Array.isArray(q.answers) && q.answers.length > 0 && q.answers.every(a => Array.isArray(a) && a.length);
+    if (q.type === 'short') return Array.isArray(q.accept) && q.accept.length > 0;
+    if (q.type === 'math') return String(q.answer || '').trim() !== '';
+    return false;
+  } catch (e) { return false; }
+}
 function runQuiz(o) {
+  o = { ...o, sections: o.sections.map(sec => ({ ...sec, questions: sec.questions.filter(validQ) })).filter(sec => sec.questions.length) };
   const ans = {}, qs = [];
   const info = h('span', { class: 'info' });
   const submit = h('button', { class: 'btn primary', onclick: finish }, '交卷');
@@ -294,7 +314,7 @@ function resultsNode(o, results, sum) {
     h('p', { class: 'praise' }, praiseText(ratio)),
     h('div', { class: 'earn' + (sum.newStars ? ' on' : '') }, sum.newStars ? `⭐ × ${sum.newStars}` : '这次没有新星星'),
     had > 0 ? h('p', { class: 'note' }, `有 ${had} 题以前已经得过星星，一题只得一颗哦。`) : null,
-    sum.capped ? h('p', { class: 'note' }, `今天这一科的随机星星已经拿满 ${cap()} 颗，明天再来～`) : null,
+    sum.capped ? h('p', { class: 'note' }, `今天的星星已经拿满 ${cap()} 颗，明天再来～（做对的题明天再做还能得星）`) : null,
     results.length - sum.okN ? h('p', { class: 'note' }, `做错的 ${results.length - sum.okN} 题已放进错题本，再做对就会消失。`) : null);
   const acts = h('div', { class: 'acts' },
     o.again ? h('button', { class: 'btn primary', onclick: o.again }, '再做一遍') : null,
@@ -330,16 +350,16 @@ export function randSetup(kind) {
     const btns = items.map(it => h('button', { type: 'button', class: 'chipb' + (get() === it.v ? ' on' : ''), onclick: () => { set(it.v); btns.forEach((b, i) => b.classList.toggle('on', items[i].v === it.v)); } }, it.n));
     row.append(...btns); return row;
   };
-  const n = S.randToday(u.id, R.subject);
+  const n = S.starsToday(u.id);
   mount(page(R.title, [
-    h('section', { class: 'jar mini' }, h('div', { class: 'jar-top' }, h('div', { class: 'jar-n' }, '今天的随机星星'), h('div', { class: 'jar-s' }, `${n} / ${cap()}`)),
+    h('section', { class: 'jar mini' }, h('div', { class: 'jar-top' }, h('div', { class: 'jar-n' }, '今天的星星'), h('div', { class: 'jar-s' }, `${n} / ${cap()}`)),
       h('div', { class: 'bar' }, h('i', { style: `width:${Math.min(100, n / cap() * 100)}%` }))),
     weak.length ? h('p', { class: 'note' }, '最近容易错：' + weak.map(x => x.t.name).join('、') + '。选「综合」会多出这些题。') : null,
     chipRow('题型', [{ v: 'mix', n: '综合（自动盯弱项）' }, ...R.types.map(t => ({ v: t.id, n: t.name }))], () => type, v => { type = v; }),
     R.levels ? chipRow('难度', R.levels.map((x, i) => ({ v: i + 1, n: x })), () => level, v => { level = v; }) : null,
     chipRow('题数', [{ v: 5, n: '5 题' }, { v: 10, n: '10 题' }], () => count, v => { count = v; }),
     h('button', { class: 'btn primary wide', onclick: () => startRandom(kind, () => type, () => level, () => count) }, '开始'),
-    h('p', { class: 'note' }, '随机题和题库分开算。答对的题也有星星，每天每科最多 ' + cap() + ' 颗；做错的题会进错题本。'),
+    h('p', { class: 'note' }, '答对的题有星星，每天最多 ' + cap() + ' 颗；做错的题会进错题本。'),
   ]));
 }
 function startRandom(kind, gt, gl, gc) {
@@ -360,17 +380,20 @@ function startRandom(kind, gt, gl, gc) {
 export function errors() {
   const u = user(), list = Object.values(S.P(u.id).wrong);
   if (!list.length) { mount(page('错题本', h('div', { class: 'empty' }, h('div', { class: 'logo' }, '🎉'), h('h2', {}, '错题本是空的'), h('p', {}, '做错的题会自动进来，再做对就会消失。')))); return; }
+  const tnames = {}; Object.values(RANDOM).forEach(R => R.types.forEach(t => { tnames[t.id] = t.name; }));
+  const keyOf = (e) => (e.q.typeId && tnames[e.q.typeId]) ? `${e.meta.title} · ${tnames[e.q.typeId]}` : e.meta.title;
   const groups = {};
-  list.forEach(e => { (groups[e.meta.title] = groups[e.meta.title] || []).push(e); });
-  const start = () => {
-    const pick = list.slice().sort((a, b) => (a.d < b.d ? -1 : a.d > b.d ? 1 : b.n - a.n)).slice(0, 10);
+  list.forEach(e => { (groups[keyOf(e)] = groups[keyOf(e)] || []).push(e); });
+  const start = (es, label) => {
+    const pick = es.slice().sort((a, b) => (a.d < b.d ? -1 : a.d > b.d ? 1 : b.n - a.n)).slice(0, 10);
     const qs = pick.map(e => ({ ...e.q, _meta: e.meta }));
-    mount(runQuiz({ uid: u.id, title: '错题重做', subtitle: `这次 ${qs.length} 题`, sections: [{ title: '', questions: qs }], recTitle: '错题本重做', back: '#/errors', metaFor: q => q._meta, again: () => errors() }));
+    mount(runQuiz({ uid: u.id, title: label ? '错题专项：' + label : '错题重做', subtitle: `这次 ${qs.length} 题`, sections: [{ title: '', questions: qs }], recTitle: '错题本重做', back: '#/errors', metaFor: q => q._meta, again: () => errors() }));
   };
+  const entries = Object.entries(groups).sort((a, b) => b[1].length - a[1].length);
   mount(page('错题本', [
-    h('p', { class: 'note' }, `一共 ${list.length} 道。每次练最多 10 题，做对就从这里消失，还能补得星星。`),
-    h('button', { class: 'btn primary wide', onclick: start }, '开始重做'),
-    h('div', { class: 'list' }, Object.entries(groups).map(([t, es]) => h('div', { class: 'row static' }, h('div', {}, h('b', {}, t), h('small', {}, es.map(e => e.q.stem.replace(/_{2,}/g, '__').slice(0, 24)).slice(0, 2).join(' ； '))), h('span', { class: 'chip bad' }, es.length + ' 道')))),
+    h('p', { class: 'note' }, `一共 ${list.length} 道，分成 ${entries.length} 类。点下面一类，就只练这一类；每次最多 10 题，做对就从这里消失。`),
+    h('button', { class: 'btn primary wide', onclick: () => start(list, '') }, '全部混着重做'),
+    h('div', { class: 'list' }, entries.map(([t, es]) => h('a', { class: 'row', href: 'javascript:void(0)', onclick: (ev) => { ev.preventDefault(); start(es, t); } }, h('div', {}, h('b', {}, t), h('small', {}, es.map(e => e.q.stem.replace(/_{2,}/g, '__').slice(0, 24)).slice(0, 2).join(' ； '))), h('span', { class: 'chip bad' }, es.length + ' 道')))),
   ]));
 }
 

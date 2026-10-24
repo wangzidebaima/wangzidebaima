@@ -26,19 +26,15 @@ export function P(uid) {
 }
 export function save(uid) { LS.set('kp_p_' + uid, JSON.stringify(cache[uid])); }
 
-// 发星星：一题一颗，只发一次。随机练习每天每科目有上限。
-export function award(uid, q, src, subject, cap = 20) {
+// 发星星：一题一颗，只发一次。每个孩子每天所有来源合计有上限（默认 30）。
+export const starsToday = (uid) => { const t = today(); let n = 0; for (const k in P(uid).stars) if (P(uid).stars[k].d === t) n++; return n; };
+export function award(uid, q, src, subject, cap = 30) {
   const p = P(uid);
   if (p.stars[q.id]) return 'had';
-  if (src === 'rand') {
-    const day = (p.rand.days[today()] = p.rand.days[today()] || {});
-    if ((day[subject] || 0) >= cap) return 'capped';
-    day[subject] = (day[subject] || 0) + 1;
-  }
+  if (starsToday(uid) >= cap) return 'capped';
   p.stars[q.id] = { d: today(), src, sub: subject };
   save(uid); return 'new';
 }
-export const randToday = (uid, subject) => ((P(uid).rand.days[today()] || {})[subject]) || 0;
 
 export function addWrong(uid, q, meta) {
   const p = P(uid), old = p.wrong[q.id];

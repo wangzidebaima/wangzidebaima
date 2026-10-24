@@ -148,7 +148,7 @@ export async function engSetup(kind) {
     const btns = items.map(it => h('button', { type: 'button', class: 'chipb' + (get() === it.v ? ' on' : ''), onclick: () => { set(it.v); btns.forEach((b, i) => b.classList.toggle('on', items[i].v === it.v)); } }, it.n));
     row.append(...btns); return row;
   };
-  const n = S.randToday(u.id, R.subject);
+  const n = S.starsToday(u.id);
   const run = () => {
     const ids = [...sel];
     const qs = makeEngSession(kind, type, count, ids);
@@ -160,7 +160,7 @@ export async function engSetup(kind) {
     }));
   };
   mount(page(R.title, [
-    h('section', { class: 'jar mini' }, h('div', { class: 'jar-top' }, h('div', { class: 'jar-n' }, '今天的随机星星'), h('div', { class: 'jar-s' }, `${n} / ${cap()}`)),
+    h('section', { class: 'jar mini' }, h('div', { class: 'jar-top' }, h('div', { class: 'jar-n' }, '今天的星星'), h('div', { class: 'jar-s' }, `${n} / ${cap()}`)),
       h('div', { class: 'bar' }, h('i', { style: `width:${Math.min(100, n / (cap()) * 100)}%` }))),
     h('div', { class: 'chips' }, h('span', { class: 'lab' }, '学过的单元（只会从这些里出题）')),
     h('div', { class: 'chips' }, ubtns),
