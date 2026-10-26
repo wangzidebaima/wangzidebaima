@@ -1,22 +1,36 @@
 {
- "version": "2026-10-24-1",
- "appName": "每日练习",
+ "version": "2026-10-25-1",
+ "appName": "书山小路",
  "rewards": [
   {
    "stars": 50,
-   "label": "小奖励"
+   "coins": 1,
+   "label": "1 金币"
   },
   {
    "stars": 100,
-   "label": "中奖励"
+   "coins": 1,
+   "label": "1 金币"
   },
   {
    "stars": 150,
-   "label": "大奖励"
+   "coins": 1,
+   "label": "1 金币"
+  },
+  {
+   "stars": 200,
+   "coins": 1,
+   "label": "1 金币"
+  },
+  {
+   "stars": 250,
+   "coins": 1,
+   "label": "1 金币"
   },
   {
    "stars": 300,
-   "label": "终极大奖"
+   "coins": 5,
+   "label": "5 金币"
   }
  ],
  "users": [
@@ -31,7 +45,8 @@
    "subjects": [
     "g7math",
     "g7reading",
-    "g7listening"
+    "g7listening",
+    "g7speaking"
    ],
    "random": [
     "math7",
@@ -56,8 +71,18 @@
      "kind": "rand",
      "sub": "vocab7",
      "goal": 10
+    },
+    {
+     "label": "口语跟读打卡",
+     "kind": "speak",
+     "goal": 1
     }
-   ]
+   ],
+   "grade": "七年级",
+   "publishers": {
+    "math": "北师大版",
+    "eng": "人教版"
+   }
   },
   {
    "id": "daughter",
@@ -102,7 +127,12 @@
      "kind": "speak",
      "goal": 1
     }
-   ]
+   ],
+   "grade": "四年级",
+   "publishers": {
+    "math": "北师大版",
+    "eng": "人教版 PEP"
+   }
   }
  ],
  "parent": {

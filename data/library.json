@@ -71,52 +71,364 @@
    "desc": "6 篇，按时态练习",
    "sets": [
     {
-     "id": "g7r1",
-     "file": "sets/g7r1.json",
-     "title": "Passage 1  Mike's Day",
-     "subtitle": "考点：一般现在时",
+     "id": "g7r-s1-1",
+     "file": "sets/g7r-s1-1.json",
+     "title": "Hello, I'm Lily",
+     "subtitle": "考点：自我介绍 / be 动词",
      "kind": "reading",
-     "count": 19
+     "count": 10,
+     "unit": "S1"
     },
     {
-     "id": "g7r2",
-     "file": "sets/g7r2.json",
-     "title": "Passage 2  My School",
-     "subtitle": "考点：一般现在时 / there be 句型",
+     "id": "g7r-s1-2",
+     "file": "sets/g7r-s1-2.json",
+     "title": "A New Class",
+     "subtitle": "考点：问名字 / 拼写 / Nice to meet you",
      "kind": "reading",
-     "count": 20
+     "count": 10,
+     "unit": "S1"
     },
     {
-     "id": "g7r3",
-     "file": "sets/g7r3.json",
-     "title": "Passage 3  Jack's Birthday Party",
-     "subtitle": "考点：一般过去时",
+     "id": "g7r-s1-3",
+     "file": "sets/g7r-s1-3.json",
+     "title": "Letters Around Us",
+     "subtitle": "考点：字母 / 数字 / 介词 at on in",
      "kind": "reading",
-     "count": 20
+     "count": 10,
+     "unit": "S1"
     },
     {
-     "id": "g7r4",
-     "file": "sets/g7r4.json",
-     "title": "Passage 4  A Rainy Sunday",
-     "subtitle": "考点：现在进行时",
+     "id": "g7r-s1-4",
+     "file": "sets/g7r-s1-4.json",
+     "title": "Our English Class",
+     "subtitle": "考点：一般现在时 / 时间",
      "kind": "reading",
-     "count": 21
+     "count": 10,
+     "unit": "S1"
     },
     {
-     "id": "g7r5",
-     "file": "sets/g7r5.json",
-     "title": "Passage 5  Our School Trip",
-     "subtitle": "考点：一般将来时",
+     "id": "g7r-s3-1",
+     "file": "sets/g7r-s3-1.json",
+     "title": "Grandpa's Yard",
+     "subtitle": "考点：How many / There be / 数字",
      "kind": "reading",
-     "count": 21
+     "count": 10,
+     "unit": "S3"
     },
     {
-     "id": "g7r6",
-     "file": "sets/g7r6.json",
-     "title": "Passage 6  Sam's Healthy Habits",
-     "subtitle": "考点：综合时态（一般过去 / 现在 / 将来）",
+     "id": "g7r-s3-2",
+     "file": "sets/g7r-s3-2.json",
+     "title": "Look at the Picture",
+     "subtitle": "考点：看图 / 圈出 / How many",
      "kind": "reading",
-     "count": 20
+     "count": 10,
+     "unit": "S3"
+    },
+    {
+     "id": "g7r-s3-3",
+     "file": "sets/g7r-s3-3.json",
+     "title": "A Counting Game",
+     "subtitle": "考点：一般现在时 / another",
+     "kind": "reading",
+     "count": 10,
+     "unit": "S3"
+    },
+    {
+     "id": "g7r-s3-4",
+     "file": "sets/g7r-s3-4.json",
+     "title": "Grandma's Carrots",
+     "subtitle": "考点：一般现在时 / 介词 behind",
+     "kind": "reading",
+     "count": 10,
+     "unit": "S3"
+    },
+    {
+     "id": "g7r-s2-1",
+     "file": "sets/g7r-s2-1.json",
+     "title": "Lost and Found",
+     "subtitle": "考点：Is this your…? / Whose…? / You're welcome",
+     "kind": "reading",
+     "count": 10,
+     "unit": "S2"
+    },
+    {
+     "id": "g7r-s2-2",
+     "file": "sets/g7r-s2-2.json",
+     "title": "My Tidy Desk",
+     "subtitle": "考点：There is / There are / 介词",
+     "kind": "reading",
+     "count": 10,
+     "unit": "S2"
+    },
+    {
+     "id": "g7r-s2-3",
+     "file": "sets/g7r-s2-3.json",
+     "title": "What's This in English?",
+     "subtitle": "考点：What's this? / 猜词游戏",
+     "kind": "reading",
+     "count": 10,
+     "unit": "S2"
+    },
+    {
+     "id": "g7r-s2-4",
+     "file": "sets/g7r-s2-4.json",
+     "title": "At the Shop",
+     "subtitle": "考点：购物用语 / How much",
+     "kind": "reading",
+     "count": 10,
+     "unit": "S2"
+    },
+    {
+     "id": "g7r-u1-1",
+     "file": "sets/g7r-u1-1.json",
+     "title": "Making Friends",
+     "subtitle": "考点：自我介绍 / 姓名顺序 / 同班同学",
+     "kind": "reading",
+     "count": 10,
+     "unit": "U1"
+    },
+    {
+     "id": "g7r-u1-2",
+     "file": "sets/g7r-u1-2.json",
+     "title": "An Information Card",
+     "subtitle": "考点：填写个人信息 / hobby / 改错",
+     "kind": "reading",
+     "count": 10,
+     "unit": "U1"
+    },
+    {
+     "id": "g7r-u1-3",
+     "file": "sets/g7r-u1-3.json",
+     "title": "The Twins",
+     "subtitle": "考点：一般现在时 / 不同的爱好",
+     "kind": "reading",
+     "count": 10,
+     "unit": "U1"
+    },
+    {
+     "id": "g7r-u1-4",
+     "file": "sets/g7r-u1-4.json",
+     "title": "A Hot Pot Dinner",
+     "subtitle": "考点：Would you like…? / 一般现在时",
+     "kind": "reading",
+     "count": 10,
+     "unit": "U1"
+    },
+    {
+     "id": "g7r-u2-1",
+     "file": "sets/g7r-u2-1.json",
+     "title": "Grandpa and Grandma",
+     "subtitle": "考点：家庭成员 / 一般现在时 / next to",
+     "kind": "reading",
+     "count": 10,
+     "unit": "U2"
+    },
+    {
+     "id": "g7r-u2-2",
+     "file": "sets/g7r-u2-2.json",
+     "title": "A Family Photo",
+     "subtitle": "考点：家庭成员称呼 / who 的问句",
+     "kind": "reading",
+     "count": 10,
+     "unit": "U2"
+    },
+    {
+     "id": "g7r-u2-3",
+     "file": "sets/g7r-u2-3.json",
+     "title": "Ping-pong with Dad",
+     "subtitle": "考点：一般现在时 / 频率 / have fun",
+     "kind": "reading",
+     "count": 10,
+     "unit": "U2"
+    },
+    {
+     "id": "g7r-u2-4",
+     "file": "sets/g7r-u2-4.json",
+     "title": "Our Family Activities",
+     "subtitle": "考点：一般现在时 / 活动安排",
+     "kind": "reading",
+     "count": 10,
+     "unit": "U2"
+    },
+    {
+     "id": "g7r-u3-1",
+     "file": "sets/g7r-u3-1.json",
+     "title": "Our School",
+     "subtitle": "考点：方位介词 / There be / 校园设施",
+     "kind": "reading",
+     "count": 10,
+     "unit": "U3"
+    },
+    {
+     "id": "g7r-u3-2",
+     "file": "sets/g7r-u3-2.json",
+     "title": "A Smart Classroom",
+     "subtitle": "考点：There be / 位置 / 现代教室",
+     "kind": "reading",
+     "count": 10,
+     "unit": "U3"
+    },
+    {
+     "id": "g7r-u3-3",
+     "file": "sets/g7r-u3-3.json",
+     "title": "A Tour of the School",
+     "subtitle": "考点：问路 / 方位表达",
+     "kind": "reading",
+     "count": 10,
+     "unit": "U3"
+    },
+    {
+     "id": "g7r-u3-4",
+     "file": "sets/g7r-u3-4.json",
+     "title": "A Message to a Friend",
+     "subtitle": "考点：学校对比 / different from / How about",
+     "kind": "reading",
+     "count": 10,
+     "unit": "U3"
+    },
+    {
+     "id": "g7r-u4-1",
+     "file": "sets/g7r-u4-1.json",
+     "title": "My Favourite Subject",
+     "subtitle": "考点：学科 / 形容词 / because 说明理由",
+     "kind": "reading",
+     "count": 10,
+     "unit": "U4"
+    },
+    {
+     "id": "g7r-u4-2",
+     "file": "sets/g7r-u4-2.json",
+     "title": "Class Schedule",
+     "subtitle": "考点：时间 a.m./p.m. / 询问课表",
+     "kind": "reading",
+     "count": 10,
+     "unit": "U4"
+    },
+    {
+     "id": "g7r-u4-3",
+     "file": "sets/g7r-u4-3.json",
+     "title": "Two Dreams",
+     "subtitle": "考点：will/want to be / 兴趣与职业",
+     "kind": "reading",
+     "count": 10,
+     "unit": "U4"
+    },
+    {
+     "id": "g7r-u4-4",
+     "file": "sets/g7r-u4-4.json",
+     "title": "A Busy Tuesday",
+     "subtitle": "考点：时间 / 一般现在时 / 课程安排",
+     "kind": "reading",
+     "count": 10,
+     "unit": "U4"
+    },
+    {
+     "id": "g7r-u5-1",
+     "file": "sets/g7r-u5-1.json",
+     "title": "Join a Club",
+     "subtitle": "考点：社团 / 一般过去时 / 乐器",
+     "kind": "reading",
+     "count": 10,
+     "unit": "U5"
+    },
+    {
+     "id": "g7r-u5-2",
+     "file": "sets/g7r-u5-2.json",
+     "title": "Which Club?",
+     "subtitle": "考点：兴趣爱好 / be interested in",
+     "kind": "reading",
+     "count": 10,
+     "unit": "U5"
+    },
+    {
+     "id": "g7r-u5-3",
+     "file": "sets/g7r-u5-3.json",
+     "title": "The Nature Club",
+     "subtitle": "考点：一般现在时 / 自然与野生动物",
+     "kind": "reading",
+     "count": 10,
+     "unit": "U5"
+    },
+    {
+     "id": "g7r-u5-4",
+     "file": "sets/g7r-u5-4.json",
+     "title": "A Talent Show",
+     "subtitle": "考点：能力 / 乐器 / 一般现在时",
+     "kind": "reading",
+     "count": 10,
+     "unit": "U5"
+    },
+    {
+     "id": "g7r-u6-1",
+     "file": "sets/g7r-u6-1.json",
+     "title": "My Daily Routine",
+     "subtitle": "考点：一般现在时 / 时间表达 a quarter past",
+     "kind": "reading",
+     "count": 10,
+     "unit": "U6"
+    },
+    {
+     "id": "g7r-u6-2",
+     "file": "sets/g7r-u6-2.json",
+     "title": "A Reporter's Questions",
+     "subtitle": "考点：采访 / 日常安排 / on duty",
+     "kind": "reading",
+     "count": 10,
+     "unit": "U6"
+    },
+    {
+     "id": "g7r-u6-3",
+     "file": "sets/g7r-u6-3.json",
+     "title": "My Weekend",
+     "subtitle": "考点：at weekends / 家务 / 一般现在时",
+     "kind": "reading",
+     "count": 10,
+     "unit": "U6"
+    },
+    {
+     "id": "g7r-u6-4",
+     "file": "sets/g7r-u6-4.json",
+     "title": "Daily Life in Finland",
+     "subtitle": "考点：不同地方的日常生活 / already / dark",
+     "kind": "reading",
+     "count": 10,
+     "unit": "U6"
+    },
+    {
+     "id": "g7r-u7-1",
+     "file": "sets/g7r-u7-1.json",
+     "title": "A Surprise Party",
+     "subtitle": "考点：一般现在时 / 庆祝生日 / make a wish",
+     "kind": "reading",
+     "count": 10,
+     "unit": "U7"
+    },
+    {
+     "id": "g7r-u7-2",
+     "file": "sets/g7r-u7-2.json",
+     "title": "At the Supermarket",
+     "subtitle": "考点：购物 / 价格 / 总数",
+     "kind": "reading",
+     "count": 10,
+     "unit": "U7"
+    },
+    {
+     "id": "g7r-u7-3",
+     "file": "sets/g7r-u7-3.json",
+     "title": "National Day",
+     "subtitle": "考点：节日 / 一般现在时 / celebrate",
+     "kind": "reading",
+     "count": 10,
+     "unit": "U7"
+    },
+    {
+     "id": "g7r-u7-4",
+     "file": "sets/g7r-u7-4.json",
+     "title": "Birthdays Around the World",
+     "subtitle": "考点：for example / 不同习俗",
+     "kind": "reading",
+     "count": 10,
+     "unit": "U7"
     }
    ]
   },
@@ -127,52 +439,364 @@
    "desc": "6 组，听两遍再作答",
    "sets": [
     {
-     "id": "g7l1",
-     "file": "sets/g7l1.json",
-     "title": "Listening 1  Meeting a New Friend",
+     "id": "g7l-s1-1",
+     "file": "sets/g7l-s1-1.json",
+     "title": "Meeting the Teacher",
      "subtitle": "对话",
      "kind": "listening",
-     "count": 5
+     "count": 5,
+     "unit": "S1"
     },
     {
-     "id": "g7l2",
-     "file": "sets/g7l2.json",
-     "title": "Listening 2  Buying a T-shirt",
+     "id": "g7l-s1-2",
+     "file": "sets/g7l-s1-2.json",
+     "title": "Two Friends",
      "subtitle": "对话",
      "kind": "listening",
-     "count": 5
+     "count": 5,
+     "unit": "S1"
     },
     {
-     "id": "g7l3",
-     "file": "sets/g7l3.json",
-     "title": "Listening 3  Lucy's Weekend",
-     "subtitle": "对话",
-     "kind": "listening",
-     "count": 5
-    },
-    {
-     "id": "g7l4",
-     "file": "sets/g7l4.json",
-     "title": "Listening 4  Kate's Day",
+     "id": "g7l-s1-3",
+     "file": "sets/g7l-s1-3.json",
+     "title": "My Name",
      "subtitle": "短文",
      "kind": "listening",
-     "count": 5
+     "count": 5,
+     "unit": "S1"
     },
     {
-     "id": "g7l5",
-     "file": "sets/g7l5.json",
-     "title": "Listening 5  A Bad Cold",
+     "id": "g7l-s1-4",
+     "file": "sets/g7l-s1-4.json",
+     "title": "A Spelling Game",
      "subtitle": "对话",
      "kind": "listening",
-     "count": 5
+     "count": 5,
+     "unit": "S1"
     },
     {
-     "id": "g7l6",
-     "file": "sets/g7l6.json",
-     "title": "Listening 6  Where Is the Post Office?",
+     "id": "g7l-s3-1",
+     "file": "sets/g7l-s3-1.json",
+     "title": "How Many?",
      "subtitle": "对话",
      "kind": "listening",
-     "count": 5
+     "count": 5,
+     "unit": "S3"
+    },
+    {
+     "id": "g7l-s3-2",
+     "file": "sets/g7l-s3-2.json",
+     "title": "Carrot Soup",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "S3"
+    },
+    {
+     "id": "g7l-s3-3",
+     "file": "sets/g7l-s3-3.json",
+     "title": "Our Class Game",
+     "subtitle": "短文",
+     "kind": "listening",
+     "count": 5,
+     "unit": "S3"
+    },
+    {
+     "id": "g7l-s3-4",
+     "file": "sets/g7l-s3-4.json",
+     "title": "What Is This?",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "S3"
+    },
+    {
+     "id": "g7l-s2-1",
+     "file": "sets/g7l-s2-1.json",
+     "title": "Whose Key?",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "S2"
+    },
+    {
+     "id": "g7l-s2-2",
+     "file": "sets/g7l-s2-2.json",
+     "title": "In the Pencil Box",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "S2"
+    },
+    {
+     "id": "g7l-s2-3",
+     "file": "sets/g7l-s2-3.json",
+     "title": "My Schoolbag",
+     "subtitle": "短文",
+     "kind": "listening",
+     "count": 5,
+     "unit": "S2"
+    },
+    {
+     "id": "g7l-s2-4",
+     "file": "sets/g7l-s2-4.json",
+     "title": "Tidy Up the Room",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "S2"
+    },
+    {
+     "id": "g7l-u1-1",
+     "file": "sets/g7l-u1-1.json",
+     "title": "Making Friends",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U1"
+    },
+    {
+     "id": "g7l-u1-2",
+     "file": "sets/g7l-u1-2.json",
+     "title": "Hobbies",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U1"
+    },
+    {
+     "id": "g7l-u1-3",
+     "file": "sets/g7l-u1-3.json",
+     "title": "My Twin Sister",
+     "subtitle": "短文",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U1"
+    },
+    {
+     "id": "g7l-u1-4",
+     "file": "sets/g7l-u1-4.json",
+     "title": "An Information Card",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U1"
+    },
+    {
+     "id": "g7l-u2-1",
+     "file": "sets/g7l-u2-1.json",
+     "title": "Grandpa's Hat",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U2"
+    },
+    {
+     "id": "g7l-u2-2",
+     "file": "sets/g7l-u2-2.json",
+     "title": "Ping-pong Time",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U2"
+    },
+    {
+     "id": "g7l-u2-3",
+     "file": "sets/g7l-u2-3.json",
+     "title": "My Grandparents",
+     "subtitle": "短文",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U2"
+    },
+    {
+     "id": "g7l-u2-4",
+     "file": "sets/g7l-u2-4.json",
+     "title": "A Family Dinner",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U2"
+    },
+    {
+     "id": "g7l-u3-1",
+     "file": "sets/g7l-u3-1.json",
+     "title": "Where Is the Office?",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U3"
+    },
+    {
+     "id": "g7l-u3-2",
+     "file": "sets/g7l-u3-2.json",
+     "title": "Our Dining Hall",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U3"
+    },
+    {
+     "id": "g7l-u3-3",
+     "file": "sets/g7l-u3-3.json",
+     "title": "My Locker",
+     "subtitle": "短文",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U3"
+    },
+    {
+     "id": "g7l-u3-4",
+     "file": "sets/g7l-u3-4.json",
+     "title": "A School Notice",
+     "subtitle": "短文",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U3"
+    },
+    {
+     "id": "g7l-u4-1",
+     "file": "sets/g7l-u4-1.json",
+     "title": "School Subjects",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U4"
+    },
+    {
+     "id": "g7l-u4-2",
+     "file": "sets/g7l-u4-2.json",
+     "title": "Class Time",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U4"
+    },
+    {
+     "id": "g7l-u4-3",
+     "file": "sets/g7l-u4-3.json",
+     "title": "My Future",
+     "subtitle": "短文",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U4"
+    },
+    {
+     "id": "g7l-u4-4",
+     "file": "sets/g7l-u4-4.json",
+     "title": "A Math Problem",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U4"
+    },
+    {
+     "id": "g7l-u5-1",
+     "file": "sets/g7l-u5-1.json",
+     "title": "Choosing a Club",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U5"
+    },
+    {
+     "id": "g7l-u5-2",
+     "file": "sets/g7l-u5-2.json",
+     "title": "A Hiking Trip",
+     "subtitle": "短文",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U5"
+    },
+    {
+     "id": "g7l-u5-3",
+     "file": "sets/g7l-u5-3.json",
+     "title": "My Art Club",
+     "subtitle": "短文",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U5"
+    },
+    {
+     "id": "g7l-u5-4",
+     "file": "sets/g7l-u5-4.json",
+     "title": "Violin Lessons",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U5"
+    },
+    {
+     "id": "g7l-u6-1",
+     "file": "sets/g7l-u6-1.json",
+     "title": "Morning Routine",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U6"
+    },
+    {
+     "id": "g7l-u6-2",
+     "file": "sets/g7l-u6-2.json",
+     "title": "A Short Interview",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U6"
+    },
+    {
+     "id": "g7l-u6-3",
+     "file": "sets/g7l-u6-3.json",
+     "title": "My Weekend",
+     "subtitle": "短文",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U6"
+    },
+    {
+     "id": "g7l-u6-4",
+     "file": "sets/g7l-u6-4.json",
+     "title": "On Duty Today",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U6"
+    },
+    {
+     "id": "g7l-u7-1",
+     "file": "sets/g7l-u7-1.json",
+     "title": "Planning a Surprise",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U7"
+    },
+    {
+     "id": "g7l-u7-2",
+     "file": "sets/g7l-u7-2.json",
+     "title": "At the Shop",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U7"
+    },
+    {
+     "id": "g7l-u7-3",
+     "file": "sets/g7l-u7-3.json",
+     "title": "My Birthday",
+     "subtitle": "短文",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U7"
+    },
+    {
+     "id": "g7l-u7-4",
+     "file": "sets/g7l-u7-4.json",
+     "title": "National Day Plan",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U7"
     }
    ]
   },
@@ -183,36 +807,220 @@
    "desc": "4 套对话，对应课本 Unit 1–2",
    "sets": [
     {
-     "id": "g4r1",
-     "file": "sets/g4r1.json",
-     "title": "Set 1  Our New Classroom",
-     "subtitle": "对应课本：Unit 1 My classroom",
+     "id": "g4r-u1-1",
+     "file": "sets/g4r-u1-1.json",
+     "title": "My Family Jobs",
+     "subtitle": "考点：职业 / What does ... do?",
      "kind": "reading",
-     "count": 6
+     "count": 9,
+     "unit": "U1"
     },
     {
-     "id": "g4r2",
-     "file": "sets/g4r2.json",
-     "title": "Set 2  Let's Clean the Classroom!",
-     "subtitle": "对应课本：Unit 1 My classroom",
+     "id": "g4r-u1-2",
+     "file": "sets/g4r-u1-2.json",
+     "title": "Busy Mum",
+     "subtitle": "考点：busy / tired / 家务",
      "kind": "reading",
-     "count": 6
+     "count": 9,
+     "unit": "U1"
     },
     {
-     "id": "g4r3",
-     "file": "sets/g4r3.json",
-     "title": "Set 3  What's in My Schoolbag?",
-     "subtitle": "对应课本：Unit 2 My schoolbag",
+     "id": "g4r-u1-3",
+     "file": "sets/g4r-u1-3.json",
+     "title": "Helping at Home",
+     "subtitle": "考点：look after / sweep / floor",
      "kind": "reading",
-     "count": 6
+     "count": 9,
+     "unit": "U1"
     },
     {
-     "id": "g4r4",
-     "file": "sets/g4r4.json",
-     "title": "Set 4  My New Schoolbag",
-     "subtitle": "对应课本：Unit 2 My schoolbag",
+     "id": "g4r-u1-4",
+     "file": "sets/g4r-u1-4.json",
+     "title": "People and Jobs",
+     "subtitle": "考点：people / child / PE / 职业",
      "kind": "reading",
-     "count": 6
+     "count": 9,
+     "unit": "U1"
+    },
+    {
+     "id": "g4r-u2-1",
+     "file": "sets/g4r-u2-1.json",
+     "title": "My Best Friend",
+     "subtitle": "考点：外貌与性格 / his, her",
+     "kind": "reading",
+     "count": 9,
+     "unit": "U2"
+    },
+    {
+     "id": "g4r-u2-2",
+     "file": "sets/g4r-u2-2.json",
+     "title": "A Quiet Girl",
+     "subtitle": "考点：quiet / always / his, her",
+     "kind": "reading",
+     "count": 9,
+     "unit": "U2"
+    },
+    {
+     "id": "g4r-u2-3",
+     "file": "sets/g4r-u2-3.json",
+     "title": "Our Sports Day",
+     "subtitle": "考点：basketball / football / play",
+     "kind": "reading",
+     "count": 9,
+     "unit": "U2"
+    },
+    {
+     "id": "g4r-u2-4",
+     "file": "sets/g4r-u2-4.json",
+     "title": "My New Friend",
+     "subtitle": "考点：描述人物 / his / her",
+     "kind": "reading",
+     "count": 9,
+     "unit": "U2"
+    },
+    {
+     "id": "g4r-u3-1",
+     "file": "sets/g4r-u3-1.json",
+     "title": "Our Community",
+     "subtitle": "考点：社区场所 / There is / There are",
+     "kind": "reading",
+     "count": 9,
+     "unit": "U3"
+    },
+    {
+     "id": "g4r-u3-2",
+     "file": "sets/g4r-u3-2.json",
+     "title": "Where Is the Library?",
+     "subtitle": "考点：问路 / over there / bus stop",
+     "kind": "reading",
+     "count": 9,
+     "unit": "U3"
+    },
+    {
+     "id": "g4r-u3-3",
+     "file": "sets/g4r-u3-3.json",
+     "title": "My Favourite Place",
+     "subtitle": "考点：favourite / story / photo",
+     "kind": "reading",
+     "count": 9,
+     "unit": "U3"
+    },
+    {
+     "id": "g4r-u3-4",
+     "file": "sets/g4r-u3-4.json",
+     "title": "Buy Some Books",
+     "subtitle": "考点：buy / shop / there is",
+     "kind": "reading",
+     "count": 9,
+     "unit": "U3"
+    },
+    {
+     "id": "g4r-u4-1",
+     "file": "sets/g4r-u4-1.json",
+     "title": "Heroes in Our Town",
+     "subtitle": "考点：职业 / important",
+     "kind": "reading",
+     "count": 9,
+     "unit": "U4"
+    },
+    {
+     "id": "g4r-u4-2",
+     "file": "sets/g4r-u4-2.json",
+     "title": "Why Is He Busy?",
+     "subtitle": "考点：Why / because / now",
+     "kind": "reading",
+     "count": 9,
+     "unit": "U4"
+    },
+    {
+     "id": "g4r-u4-3",
+     "file": "sets/g4r-u4-3.json",
+     "title": "My Mum Was a Teacher",
+     "subtitle": "考点：old / tell / Ms",
+     "kind": "reading",
+     "count": 9,
+     "unit": "U4"
+    },
+    {
+     "id": "g4r-u4-4",
+     "file": "sets/g4r-u4-4.json",
+     "title": "Thank You, Workers",
+     "subtitle": "考点：职业 / 感谢",
+     "kind": "reading",
+     "count": 9,
+     "unit": "U4"
+    },
+    {
+     "id": "g4r-u5-1",
+     "file": "sets/g4r-u5-1.json",
+     "title": "Today's Weather",
+     "subtitle": "考点：天气词汇 / How is the weather?",
+     "kind": "reading",
+     "count": 9,
+     "unit": "U5"
+    },
+    {
+     "id": "g4r-u5-2",
+     "file": "sets/g4r-u5-2.json",
+     "title": "A Snowy Day",
+     "subtitle": "考点：snowman / snowy / cold",
+     "kind": "reading",
+     "count": 9,
+     "unit": "U5"
+    },
+    {
+     "id": "g4r-u5-3",
+     "file": "sets/g4r-u5-3.json",
+     "title": "Fly a Kite",
+     "subtitle": "考点：fly a kite / cool / warm / idea",
+     "kind": "reading",
+     "count": 9,
+     "unit": "U5"
+    },
+    {
+     "id": "g4r-u5-4",
+     "file": "sets/g4r-u5-4.json",
+     "title": "The Four Weathers",
+     "subtitle": "考点：swim / bad / closed / rain",
+     "kind": "reading",
+     "count": 9,
+     "unit": "U5"
+    },
+    {
+     "id": "g4r-u6-1",
+     "file": "sets/g4r-u6-1.json",
+     "title": "Whose Sweater?",
+     "subtitle": "考点：Whose ...? / mine / yours",
+     "kind": "reading",
+     "count": 9,
+     "unit": "U6"
+    },
+    {
+     "id": "g4r-u6-2",
+     "file": "sets/g4r-u6-2.json",
+     "title": "Four Seasons",
+     "subtitle": "考点：spring / summer / autumn / winter",
+     "kind": "reading",
+     "count": 9,
+     "unit": "U6"
+    },
+    {
+     "id": "g4r-u6-3",
+     "file": "sets/g4r-u6-3.json",
+     "title": "What to Wear",
+     "subtitle": "考点：wear / coat / dress / glove",
+     "kind": "reading",
+     "count": 9,
+     "unit": "U6"
+    },
+    {
+     "id": "g4r-u6-4",
+     "file": "sets/g4r-u6-4.json",
+     "title": "My Favourite Season",
+     "subtitle": "考点：favourite season / then / get together",
+     "kind": "reading",
+     "count": 9,
+     "unit": "U6"
     }
    ]
   },
@@ -220,15 +1028,61 @@
    "id": "g4speaking",
    "title": "每日口语打卡",
    "icon": "🗣️",
-   "desc": "跟读、分角色演，7 天打卡",
+   "desc": "每天 5 分钟，跟读打卡",
    "sets": [
     {
-     "id": "g4sp",
-     "file": "sets/g4sp.json",
-     "title": "每日口语朗读",
-     "subtitle": "做完 4 套阅读后，每天 5–10 分钟",
+     "id": "g4sp-u1",
+     "file": "sets/g4sp-u1.json",
+     "title": "U1 口语",
+     "subtitle": "每天 5 分钟 · 共 5 天",
      "kind": "speaking",
-     "count": 7
+     "count": 5,
+     "unit": "U1"
+    },
+    {
+     "id": "g4sp-u2",
+     "file": "sets/g4sp-u2.json",
+     "title": "U2 口语",
+     "subtitle": "每天 5 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "U2"
+    },
+    {
+     "id": "g4sp-u3",
+     "file": "sets/g4sp-u3.json",
+     "title": "U3 口语",
+     "subtitle": "每天 5 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "U3"
+    },
+    {
+     "id": "g4sp-u4",
+     "file": "sets/g4sp-u4.json",
+     "title": "U4 口语",
+     "subtitle": "每天 5 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "U4"
+    },
+    {
+     "id": "g4sp-u5",
+     "file": "sets/g4sp-u5.json",
+     "title": "U5 口语",
+     "subtitle": "每天 5 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "U5"
+    },
+    {
+     "id": "g4sp-u6",
+     "file": "sets/g4sp-u6.json",
+     "title": "U6 口语",
+     "subtitle": "每天 5 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "U6"
     }
    ]
   },
@@ -239,54 +1093,332 @@
    "desc": "6 组，每段听两遍",
    "sets": [
     {
-     "id": "g4l1",
-     "file": "sets/g4l1.json",
-     "title": "Listening 1  My Family",
-     "subtitle": "每段听两遍",
+     "id": "g4l-u1-1",
+     "file": "sets/g4l-u1-1.json",
+     "title": "What Does He Do?",
+     "subtitle": "对话",
      "kind": "listening",
-     "count": 5
+     "count": 5,
+     "unit": "U1"
     },
     {
-     "id": "g4l2",
-     "file": "sets/g4l2.json",
-     "title": "Listening 2  At the Fruit Shop",
-     "subtitle": "每段听两遍",
+     "id": "g4l-u1-2",
+     "file": "sets/g4l-u1-2.json",
+     "title": "Sunday Chores",
+     "subtitle": "短文",
      "kind": "listening",
-     "count": 5
+     "count": 5,
+     "unit": "U1"
     },
     {
-     "id": "g4l3",
-     "file": "sets/g4l3.json",
-     "title": "Listening 3  The Weather",
-     "subtitle": "每段听两遍",
+     "id": "g4l-u1-3",
+     "file": "sets/g4l-u1-3.json",
+     "title": "Farmer Uncle",
+     "subtitle": "短文",
      "kind": "listening",
-     "count": 5
+     "count": 5,
+     "unit": "U1"
     },
     {
-     "id": "g4l4",
-     "file": "sets/g4l4.json",
-     "title": "Listening 4  My Favourite Subject",
-     "subtitle": "每段听两遍",
+     "id": "g4l-u1-4",
+     "file": "sets/g4l-u1-4.json",
+     "title": "Look After Baby",
+     "subtitle": "对话",
      "kind": "listening",
-     "count": 5
+     "count": 5,
+     "unit": "U1"
     },
     {
-     "id": "g4l5",
-     "file": "sets/g4l5.json",
-     "title": "Listening 5  Time to Get Up",
-     "subtitle": "每段听两遍",
+     "id": "g4l-u2-1",
+     "file": "sets/g4l-u2-1.json",
+     "title": "Who Is He?",
+     "subtitle": "对话",
      "kind": "listening",
-     "count": 5
+     "count": 5,
+     "unit": "U2"
     },
     {
-     "id": "g4l6",
-     "file": "sets/g4l6.json",
-     "title": "Listening 6  At the Zoo",
-     "subtitle": "每段听两遍",
+     "id": "g4l-u2-2",
+     "file": "sets/g4l-u2-2.json",
+     "title": "My Teacher",
+     "subtitle": "短文",
      "kind": "listening",
-     "count": 5
+     "count": 5,
+     "unit": "U2"
+    },
+    {
+     "id": "g4l-u2-3",
+     "file": "sets/g4l-u2-3.json",
+     "title": "After School",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U2"
+    },
+    {
+     "id": "g4l-u2-4",
+     "file": "sets/g4l-u2-4.json",
+     "title": "My Friends",
+     "subtitle": "短文",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U2"
+    },
+    {
+     "id": "g4l-u3-1",
+     "file": "sets/g4l-u3-1.json",
+     "title": "In My Community",
+     "subtitle": "短文",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U3"
+    },
+    {
+     "id": "g4l-u3-2",
+     "file": "sets/g4l-u3-2.json",
+     "title": "Asking the Way",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U3"
+    },
+    {
+     "id": "g4l-u3-3",
+     "file": "sets/g4l-u3-3.json",
+     "title": "My Saturday",
+     "subtitle": "短文",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U3"
+    },
+    {
+     "id": "g4l-u3-4",
+     "file": "sets/g4l-u3-4.json",
+     "title": "Our Playground",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U3"
+    },
+    {
+     "id": "g4l-u4-1",
+     "file": "sets/g4l-u4-1.json",
+     "title": "What Do They Do?",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U4"
+    },
+    {
+     "id": "g4l-u4-2",
+     "file": "sets/g4l-u4-2.json",
+     "title": "A Driver's Day",
+     "subtitle": "短文",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U4"
+    },
+    {
+     "id": "g4l-u4-3",
+     "file": "sets/g4l-u4-3.json",
+     "title": "At the Restaurant",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U4"
+    },
+    {
+     "id": "g4l-u4-4",
+     "file": "sets/g4l-u4-4.json",
+     "title": "My Cleaner Aunt",
+     "subtitle": "短文",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U4"
+    },
+    {
+     "id": "g4l-u5-1",
+     "file": "sets/g4l-u5-1.json",
+     "title": "Weather Report",
+     "subtitle": "短文",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U5"
+    },
+    {
+     "id": "g4l-u5-2",
+     "file": "sets/g4l-u5-2.json",
+     "title": "Let Us Play",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U5"
+    },
+    {
+     "id": "g4l-u5-3",
+     "file": "sets/g4l-u5-3.json",
+     "title": "Winter in the North",
+     "subtitle": "短文",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U5"
+    },
+    {
+     "id": "g4l-u5-4",
+     "file": "sets/g4l-u5-4.json",
+     "title": "A Rainy Day",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U5"
+    },
+    {
+     "id": "g4l-u6-1",
+     "file": "sets/g4l-u6-1.json",
+     "title": "Whose Coat?",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U6"
+    },
+    {
+     "id": "g4l-u6-2",
+     "file": "sets/g4l-u6-2.json",
+     "title": "Summer Fun",
+     "subtitle": "短文",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U6"
+    },
+    {
+     "id": "g4l-u6-3",
+     "file": "sets/g4l-u6-3.json",
+     "title": "Winter Clothes",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U6"
+    },
+    {
+     "id": "g4l-u6-4",
+     "file": "sets/g4l-u6-4.json",
+     "title": "The Seasons",
+     "subtitle": "短文",
+     "kind": "listening",
+     "count": 5,
+     "unit": "U6"
+    }
+   ]
+  },
+  {
+   "id": "g7speaking",
+   "title": "每日口语打卡",
+   "icon": "🗣️",
+   "desc": "每天 5 分钟，跟读打卡",
+   "sets": [
+    {
+     "id": "g7sp-s1",
+     "file": "sets/g7sp-s1.json",
+     "title": "S1 口语",
+     "subtitle": "每天 5 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "S1"
+    },
+    {
+     "id": "g7sp-s2",
+     "file": "sets/g7sp-s2.json",
+     "title": "S2 口语",
+     "subtitle": "每天 5 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "S2"
+    },
+    {
+     "id": "g7sp-s3",
+     "file": "sets/g7sp-s3.json",
+     "title": "S3 口语",
+     "subtitle": "每天 5 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "S3"
+    },
+    {
+     "id": "g7sp-u1",
+     "file": "sets/g7sp-u1.json",
+     "title": "U1 口语",
+     "subtitle": "每天 5 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "U1"
+    },
+    {
+     "id": "g7sp-u2",
+     "file": "sets/g7sp-u2.json",
+     "title": "U2 口语",
+     "subtitle": "每天 5 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "U2"
+    },
+    {
+     "id": "g7sp-u3",
+     "file": "sets/g7sp-u3.json",
+     "title": "U3 口语",
+     "subtitle": "每天 5 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "U3"
+    },
+    {
+     "id": "g7sp-u4",
+     "file": "sets/g7sp-u4.json",
+     "title": "U4 口语",
+     "subtitle": "每天 5 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "U4"
+    },
+    {
+     "id": "g7sp-u5",
+     "file": "sets/g7sp-u5.json",
+     "title": "U5 口语",
+     "subtitle": "每天 5 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "U5"
+    },
+    {
+     "id": "g7sp-u6",
+     "file": "sets/g7sp-u6.json",
+     "title": "U6 口语",
+     "subtitle": "每天 5 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "U6"
+    },
+    {
+     "id": "g7sp-u7",
+     "file": "sets/g7sp-u7.json",
+     "title": "U7 口语",
+     "subtitle": "每天 5 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "U7"
     }
    ]
   }
- ]
+ ],
+ "unitNames": {
+  "S1": "Starter Unit 1",
+  "S2": "Starter Unit 2",
+  "S3": "Starter Unit 3",
+  "U1": "Unit 1",
+  "U2": "Unit 2",
+  "U3": "Unit 3",
+  "U4": "Unit 4",
+  "U5": "Unit 5",
+  "U6": "Unit 6",
+  "U7": "Unit 7"
+ }
 }
