@@ -1,0 +1,159 @@
+{
+ "id": "g7r-u5-4",
+ "kind": "reading",
+ "title": "A Talent Show",
+ "subtitle": "考点：能力 / 乐器 / 一般现在时",
+ "unit": "U5",
+ "passage": [
+  "Our club has a talent show today. Tom plays the drums. His rhythm is great. Lily plays the violin. She can even play a long song without the music book.",
+  "Amy paints a picture on the stage. Everyone is surprised at their abilities. Mr. Hu says, \"Everyone has some ability. Find yours!\""
+ ],
+ "vocab": "ability 能力 · drum 鼓 · violin 小提琴 · paint 用颜料画 · even 甚至 · musical instrument 乐器",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r-u5-4-A1",
+     "type": "choice",
+     "stem": "What does Tom play?",
+     "options": [
+      "The violin.",
+      "The guitar.",
+      "The drums.",
+      "The piano."
+     ],
+     "answer": "C",
+     "why": "Tom plays the drums.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u5-4-A2",
+     "type": "choice",
+     "stem": "What can Lily do?",
+     "options": [
+      "Play a long song without the book.",
+      "Paint a picture.",
+      "Sing and dance.",
+      "Act in a play."
+     ],
+     "answer": "A",
+     "why": "She can even play a long song without the music book.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u5-4-A3",
+     "type": "choice",
+     "stem": "What does Amy do on the stage?",
+     "options": [
+      "She plays the drums.",
+      "She paints a picture.",
+      "She sings.",
+      "She tells jokes."
+     ],
+     "answer": "B",
+     "why": "Amy paints a picture on the stage.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u5-4-A4",
+     "type": "choice",
+     "stem": "What does Mr. Hu say?",
+     "options": [
+      "\"Everyone has some ability.\"",
+      "\"Only Tom is good.\"",
+      "\"Music is boring.\"",
+      "\"The show is over.\""
+     ],
+     "answer": "A",
+     "why": "Everyone has some ability. Find yours!",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r-u5-4-B1",
+     "type": "tf",
+     "stem": "The talent show is today.",
+     "answer": "T",
+     "why": "Our club has a talent show today.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u5-4-B2",
+     "type": "tf",
+     "stem": "Lily plays the drums.",
+     "answer": "F",
+     "why": "Lily plays the violin.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u5-4-B3",
+     "type": "tf",
+     "stem": "Everyone is surprised at the students' abilities.",
+     "answer": "T",
+     "why": "Everyone is surprised at their abilities.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7r-u5-4-C1",
+     "type": "fill",
+     "stem": "Everyone has some ____.",
+     "answers": [
+      [
+       "ability"
+      ]
+     ],
+     "why": "ability 能力。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u5-4-C2",
+     "type": "fill",
+     "stem": "She can ____ play a long song.",
+     "answers": [
+      [
+       "even"
+      ]
+     ],
+     "why": "even 甚至。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u5-4-C3",
+     "type": "fill",
+     "stem": "Amy ____ a picture on the stage.",
+     "answers": [
+      [
+       "paints"
+      ]
+     ],
+     "why": "主语第三人称单数，动词加 s。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "ability",
+    "even",
+    "paints",
+    "drums",
+    "violin"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

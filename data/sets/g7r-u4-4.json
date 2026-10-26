@@ -1,0 +1,159 @@
+{
+ "id": "g7r-u4-4",
+ "kind": "reading",
+ "title": "A Busy Tuesday",
+ "subtitle": "考点：时间 / 一般现在时 / 课程安排",
+ "unit": "U4",
+ "passage": [
+  "Tuesday is a busy day for me. At 8:00 a.m., we have history. We remember dates and events, and it is hard. At 10:00 a.m., we have biology. I like it very much.",
+  "At 2:00 p.m., we have IT. We work out problems with computers. It is exciting. After school, at 4:30 p.m., I practise my instrument for half an hour."
+ ],
+ "vocab": "history 历史 · biology 生物学 · IT 信息技术 · AM 上午 · PM 下午 · practise 练习 · instrument 乐器",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r-u4-4-A1",
+     "type": "choice",
+     "stem": "What is the first class on Tuesday?",
+     "options": [
+      "Biology.",
+      "IT.",
+      "History.",
+      "French."
+     ],
+     "answer": "C",
+     "why": "At 8:00 a.m., we have history.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u4-4-A2",
+     "type": "choice",
+     "stem": "When is the biology class?",
+     "options": [
+      "At 8:00 a.m.",
+      "At 10:00 a.m.",
+      "At 2:00 p.m.",
+      "At 4:30 p.m."
+     ],
+     "answer": "B",
+     "why": "At 10:00 a.m., we have biology.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u4-4-A3",
+     "type": "choice",
+     "stem": "What does the writer do in IT class?",
+     "options": [
+      "Remember dates.",
+      "Play the guitar.",
+      "Work out problems with computers.",
+      "Study plants."
+     ],
+     "answer": "C",
+     "why": "We work out problems with computers.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u4-4-A4",
+     "type": "choice",
+     "stem": "What does the writer do at 4:30 p.m.?",
+     "options": [
+      "Has lunch.",
+      "Practises an instrument.",
+      "Goes to bed.",
+      "Watches TV."
+     ],
+     "answer": "B",
+     "why": "I practise my instrument for half an hour.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r-u4-4-B1",
+     "type": "tf",
+     "stem": "The writer thinks history is easy.",
+     "answer": "F",
+     "why": "it is hard。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u4-4-B2",
+     "type": "tf",
+     "stem": "The writer likes biology very much.",
+     "answer": "T",
+     "why": "I like it very much.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u4-4-B3",
+     "type": "tf",
+     "stem": "The IT class is in the morning.",
+     "answer": "F",
+     "why": "2:00 p.m. 是下午。",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7r-u4-4-C1",
+     "type": "fill",
+     "stem": "We ____ dates and events in history.",
+     "answers": [
+      [
+       "remember"
+      ]
+     ],
+     "why": "remember 记住。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u4-4-C2",
+     "type": "fill",
+     "stem": "We ____ out problems with computers.",
+     "answers": [
+      [
+       "work"
+      ]
+     ],
+     "why": "work out 算出、解决。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u4-4-C3",
+     "type": "fill",
+     "stem": "I ____ my instrument for half an hour.",
+     "answers": [
+      [
+       "practise"
+      ]
+     ],
+     "why": "practise 练习。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "remember",
+    "biology",
+    "work",
+    "exciting",
+    "practise"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

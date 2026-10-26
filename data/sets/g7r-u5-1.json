@@ -1,0 +1,159 @@
+{
+ "id": "g7r-u5-1",
+ "kind": "reading",
+ "title": "Join a Club",
+ "subtitle": "考点：社团 / 一般过去时 / 乐器",
+ "unit": "U5",
+ "passage": [
+  "Our school has many clubs. There are the drama club, the music club, the art club and the hiking club. Last week, I chose the drama club because I like to act out stories.",
+  "My friend Lucy joined the music club. She plays the violin. Her brother plays the drum, but he is in the hiking club. He thinks nature is more fun than music."
+ ],
+ "vocab": "club 俱乐部 · join 参加 · choose 选择 · drama 戏剧 · act out 表演 · violin 小提琴 · drum 鼓 · musical instrument 乐器",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r-u5-1-A1",
+     "type": "choice",
+     "stem": "Which club did the writer choose?",
+     "options": [
+      "The music club.",
+      "The art club.",
+      "The drama club.",
+      "The hiking club."
+     ],
+     "answer": "C",
+     "why": "Last week, I chose the drama club.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u5-1-A2",
+     "type": "choice",
+     "stem": "Why did the writer choose it?",
+     "options": [
+      "It is easy.",
+      "The writer likes to act out stories.",
+      "A friend is in it.",
+      "It is near the classroom."
+     ],
+     "answer": "B",
+     "why": "because I like to act out stories",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u5-1-A3",
+     "type": "choice",
+     "stem": "What does Lucy play?",
+     "options": [
+      "The drum.",
+      "The guitar.",
+      "The violin.",
+      "The piano."
+     ],
+     "answer": "C",
+     "why": "She plays the violin.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u5-1-A4",
+     "type": "choice",
+     "stem": "Which club is Lucy's brother in?",
+     "options": [
+      "The music club.",
+      "The hiking club.",
+      "The drama club.",
+      "The art club."
+     ],
+     "answer": "B",
+     "why": "he is in the hiking club",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r-u5-1-B1",
+     "type": "tf",
+     "stem": "The school has only one club.",
+     "answer": "F",
+     "why": "Our school has many clubs.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u5-1-B2",
+     "type": "tf",
+     "stem": "Lucy joined the music club.",
+     "answer": "T",
+     "why": "My friend Lucy joined the music club.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u5-1-B3",
+     "type": "tf",
+     "stem": "Lucy's brother thinks music is more fun than nature.",
+     "answer": "F",
+     "why": "他认为自然（nature）比音乐更有趣。",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7r-u5-1-C1",
+     "type": "fill",
+     "stem": "I want to ____ the drama club.",
+     "answers": [
+      [
+       "join"
+      ]
+     ],
+     "why": "join 加入。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u5-1-C2",
+     "type": "fill",
+     "stem": "Last week, I ____ the drama club.",
+     "answers": [
+      [
+       "chose"
+      ]
+     ],
+     "why": "choose 的过去式是 chose。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u5-1-C3",
+     "type": "fill",
+     "stem": "Lucy plays the ____.",
+     "answers": [
+      [
+       "violin"
+      ]
+     ],
+     "why": "violin 小提琴。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "join",
+    "chose",
+    "act",
+    "violin",
+    "drum"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

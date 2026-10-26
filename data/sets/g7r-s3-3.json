@@ -1,0 +1,159 @@
+{
+ "id": "g7r-s3-3",
+ "kind": "reading",
+ "title": "A Counting Game",
+ "subtitle": "考点：一般现在时 / another",
+ "unit": "S3",
+ "passage": [
+  "Our teacher Mr. Green likes games. Today we play a counting game. He says, \"Count from one to ten.\" We count together. Then he says, \"Now count from ten to one.\" This is harder, but we like it.",
+  "At the end, Tom says, \"Mr. Green, let's play another game!\" Mr. Green laughs. \"OK, just one more.\""
+ ],
+ "vocab": "count 数数 · another 另一 · together 一起 · harder 更难的",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r-s3-3-A1",
+     "type": "choice",
+     "stem": "What game do they play today?",
+     "options": [
+      "A spelling game.",
+      "A counting game.",
+      "A card game.",
+      "A guessing game."
+     ],
+     "answer": "B",
+     "why": "Today we play a counting game.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-s3-3-A2",
+     "type": "choice",
+     "stem": "Which is harder?",
+     "options": [
+      "Counting from one to ten.",
+      "Counting from ten to one.",
+      "Spelling words.",
+      "Reading a book."
+     ],
+     "answer": "B",
+     "why": "先说 harder 的是 count from ten to one。",
+     "pts": 2
+    },
+    {
+     "id": "g7r-s3-3-A3",
+     "type": "choice",
+     "stem": "Who asks for another game?",
+     "options": [
+      "Mr. Green.",
+      "Tom.",
+      "Lily.",
+      "Amy."
+     ],
+     "answer": "B",
+     "why": "Tom says, \"let's play another game!\"",
+     "pts": 2
+    },
+    {
+     "id": "g7r-s3-3-A4",
+     "type": "choice",
+     "stem": "What does Mr. Green do at last?",
+     "options": [
+      "He gets angry.",
+      "He goes away.",
+      "He laughs.",
+      "He cries."
+     ],
+     "answer": "C",
+     "why": "Mr. Green laughs.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r-s3-3-B1",
+     "type": "tf",
+     "stem": "Mr. Green does not like games.",
+     "answer": "F",
+     "why": "Mr. Green likes games.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s3-3-B2",
+     "type": "tf",
+     "stem": "The class counts from one to ten first.",
+     "answer": "T",
+     "why": "先数 one to ten，然后才数 ten to one。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s3-3-B3",
+     "type": "tf",
+     "stem": "Mr. Green says no to Tom.",
+     "answer": "F",
+     "why": "他说 OK, just one more.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7r-s3-3-C1",
+     "type": "fill",
+     "stem": "Mr. Green ____ games.",
+     "answers": [
+      [
+       "likes"
+      ]
+     ],
+     "why": "主语是第三人称单数，动词加 s。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s3-3-C2",
+     "type": "fill",
+     "stem": "We count ____.",
+     "answers": [
+      [
+       "together"
+      ]
+     ],
+     "why": "together 一起。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s3-3-C3",
+     "type": "fill",
+     "stem": "Let's play ____ game.",
+     "answers": [
+      [
+       "another"
+      ]
+     ],
+     "why": "another + 单数名词，再一个……。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "likes",
+    "together",
+    "another",
+    "harder",
+    "count"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

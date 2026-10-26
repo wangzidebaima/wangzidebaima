@@ -1,0 +1,159 @@
+{
+ "id": "g7r-u3-2",
+ "kind": "reading",
+ "title": "A Smart Classroom",
+ "subtitle": "考点：There be / 位置 / 现代教室",
+ "unit": "U3",
+ "passage": [
+  "Our classroom is special. There is a smart whiteboard at the front. It is like a big screen. Teachers can put up pictures and videos on it. At the back of the classroom, there are two bookcases with many books.",
+  "Each student has a locker and a drawer. I keep my sports clothes in the locker and my pens in the drawer. In the corner, there is a plant. Our modern classroom is amazing."
+ ],
+ "vocab": "smart 智能的 · whiteboard 白板 · screen 屏幕 · locker 有锁存物柜 · drawer 抽屉 · bookcase 书架 · corner 角 · special 特别的 · modern 现代的",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r-u3-2-A1",
+     "type": "choice",
+     "stem": "Where is the smart whiteboard?",
+     "options": [
+      "At the back.",
+      "At the front.",
+      "In the corner.",
+      "In a locker."
+     ],
+     "answer": "B",
+     "why": "There is a smart whiteboard at the front.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u3-2-A2",
+     "type": "choice",
+     "stem": "What can teachers do on the whiteboard?",
+     "options": [
+      "Sleep.",
+      "Put up pictures and videos.",
+      "Cook food.",
+      "Wash clothes."
+     ],
+     "answer": "B",
+     "why": "Teachers can put up pictures and videos on it.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u3-2-A3",
+     "type": "choice",
+     "stem": "Where are the bookcases?",
+     "options": [
+      "At the front.",
+      "In the middle.",
+      "At the back of the classroom.",
+      "In the corner."
+     ],
+     "answer": "C",
+     "why": "At the back of the classroom, there are two bookcases.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u3-2-A4",
+     "type": "choice",
+     "stem": "Where does the writer keep the pens?",
+     "options": [
+      "In the locker.",
+      "In the drawer.",
+      "On the whiteboard.",
+      "In the corner."
+     ],
+     "answer": "B",
+     "why": "my pens in the drawer",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r-u3-2-B1",
+     "type": "tf",
+     "stem": "The whiteboard is like a big screen.",
+     "answer": "T",
+     "why": "It is like a big screen.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u3-2-B2",
+     "type": "tf",
+     "stem": "There are two lockers in the classroom.",
+     "answer": "F",
+     "why": "每个学生都有一个 locker（Each student has a locker）。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u3-2-B3",
+     "type": "tf",
+     "stem": "There is a plant in the corner.",
+     "answer": "T",
+     "why": "In the corner, there is a plant.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7r-u3-2-C1",
+     "type": "fill",
+     "stem": "There is a ____ whiteboard at the front.",
+     "answers": [
+      [
+       "smart"
+      ]
+     ],
+     "why": "smart whiteboard 智能白板。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u3-2-C2",
+     "type": "fill",
+     "stem": "I keep my sports clothes in the ____.",
+     "answers": [
+      [
+       "locker"
+      ]
+     ],
+     "why": "locker 带锁的存物柜。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u3-2-C3",
+     "type": "fill",
+     "stem": "In the ____, there is a plant.",
+     "answers": [
+      [
+       "corner"
+      ]
+     ],
+     "why": "in the corner 在角落里。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "smart",
+    "back",
+    "locker",
+    "drawer",
+    "corner"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

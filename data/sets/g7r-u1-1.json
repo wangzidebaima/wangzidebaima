@@ -1,0 +1,159 @@
+{
+ "id": "g7r-u1-1",
+ "kind": "reading",
+ "title": "Making Friends",
+ "subtitle": "考点：自我介绍 / 姓名顺序 / 同班同学",
+ "unit": "U1",
+ "passage": [
+  "On the first day of school, Wang Fang wants to make friends. She says hello to a girl next to her. \"Hi, I'm Wang Fang. What's your name?\" \"I'm Linda Brown. I'm from Canada.\"",
+  "They get to know each other. \"My last name is Wang and my first name is Fang. In China, we say the last name first,\" says Fang. \"Oh, I see,\" says Linda. \"We are in the same class, Class 3, Grade 7. We are classmates now!\""
+ ],
+ "vocab": "make friends 交朋友 · get to know 认识 · each other 互相 · last name 姓氏 · classmate 同班同学 · same 相同的",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r-u1-1-A1",
+     "type": "choice",
+     "stem": "Who is from Canada?",
+     "options": [
+      "Wang Fang.",
+      "Linda.",
+      "Their teacher.",
+      "Nobody."
+     ],
+     "answer": "B",
+     "why": "Linda: I'm Linda Brown. I'm from Canada.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u1-1-A2",
+     "type": "choice",
+     "stem": "What is Fang's last name?",
+     "options": [
+      "Fang.",
+      "Linda.",
+      "Wang.",
+      "Brown."
+     ],
+     "answer": "C",
+     "why": "My last name is Wang.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u1-1-A3",
+     "type": "choice",
+     "stem": "Which class are they in?",
+     "options": [
+      "Class 1, Grade 3.",
+      "Class 3, Grade 7.",
+      "Class 7, Grade 3.",
+      "Class 3, Grade 3."
+     ],
+     "answer": "B",
+     "why": "We are in the same class, Class 3, Grade 7.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u1-1-A4",
+     "type": "choice",
+     "stem": "What does Fang tell Linda?",
+     "options": [
+      "She is a teacher.",
+      "In China, people say the last name first.",
+      "She is from Canada.",
+      "She does not like friends."
+     ],
+     "answer": "B",
+     "why": "In China, we say the last name first.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r-u1-1-B1",
+     "type": "tf",
+     "stem": "Fang and Linda are classmates.",
+     "answer": "T",
+     "why": "We are classmates now!",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u1-1-B2",
+     "type": "tf",
+     "stem": "Linda is from China.",
+     "answer": "F",
+     "why": "Linda 来自加拿大（Canada）。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u1-1-B3",
+     "type": "tf",
+     "stem": "In China, people say the first name first.",
+     "answer": "F",
+     "why": "中国人说姓在前、名在后（last name first）。",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7r-u1-1-C1",
+     "type": "fill",
+     "stem": "Wang Fang wants to ____ friends.",
+     "answers": [
+      [
+       "make"
+      ]
+     ],
+     "why": "make friends 交朋友。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u1-1-C2",
+     "type": "fill",
+     "stem": "They get to ____ each other.",
+     "answers": [
+      [
+       "know"
+      ]
+     ],
+     "why": "get to know 认识、了解。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u1-1-C3",
+     "type": "fill",
+     "stem": "They are in the ____ class.",
+     "answers": [
+      [
+       "same"
+      ]
+     ],
+     "why": "the same class 同一个班。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "make",
+    "know",
+    "same",
+    "say",
+    "country"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

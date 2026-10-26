@@ -1,0 +1,159 @@
+{
+ "id": "g7r-u3-1",
+ "kind": "reading",
+ "title": "Our School",
+ "subtitle": "考点：方位介词 / There be / 校园设施",
+ "unit": "U3",
+ "passage": [
+  "Our school is large and beautiful. The main building is in the middle of the school. In front of it, there is a sports field. We do exercises there every morning, and we raise the flag there on Monday.",
+  "The dining hall is across from the main building. The food there is delicious. The library is at the back of the school. It is quiet and has a lot of books."
+ ],
+ "vocab": "building 建筑物 · in the middle of 在……中间 · in front of 在……前面 · across from 在……对面 · sports field 运动场 · dining hall 餐厅 · do exercises 做操 · delicious 美味的",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r-u3-1-A1",
+     "type": "choice",
+     "stem": "Where is the main building?",
+     "options": [
+      "In front of the sports field.",
+      "In the middle of the school.",
+      "At the back of the school.",
+      "Across from the library."
+     ],
+     "answer": "B",
+     "why": "The main building is in the middle of the school.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u3-1-A2",
+     "type": "choice",
+     "stem": "What do the students do on the sports field every morning?",
+     "options": [
+      "Eat lunch.",
+      "Read books.",
+      "Do exercises.",
+      "Have a class."
+     ],
+     "answer": "C",
+     "why": "We do exercises there every morning.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u3-1-A3",
+     "type": "choice",
+     "stem": "Where is the dining hall?",
+     "options": [
+      "Across from the main building.",
+      "At the back of the school.",
+      "In the middle of the field.",
+      "Next to the gym."
+     ],
+     "answer": "A",
+     "why": "The dining hall is across from the main building.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u3-1-A4",
+     "type": "choice",
+     "stem": "What is the library like?",
+     "options": [
+      "Noisy.",
+      "Quiet.",
+      "Small and dark.",
+      "Very old."
+     ],
+     "answer": "B",
+     "why": "It is quiet and has a lot of books.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r-u3-1-B1",
+     "type": "tf",
+     "stem": "The school is small.",
+     "answer": "F",
+     "why": "Our school is large and beautiful.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u3-1-B2",
+     "type": "tf",
+     "stem": "The students raise the flag on Monday.",
+     "answer": "T",
+     "why": "we raise the flag there on Monday",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u3-1-B3",
+     "type": "tf",
+     "stem": "The food in the dining hall is bad.",
+     "answer": "F",
+     "why": "The food there is delicious.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7r-u3-1-C1",
+     "type": "fill",
+     "stem": "The main building is in the ____ of the school.",
+     "answers": [
+      [
+       "middle"
+      ]
+     ],
+     "why": "in the middle of ... 在……中间。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u3-1-C2",
+     "type": "fill",
+     "stem": "In ____ of the main building, there is a sports field.",
+     "answers": [
+      [
+       "front"
+      ]
+     ],
+     "why": "in front of 在……前面。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u3-1-C3",
+     "type": "fill",
+     "stem": "The library is at the ____ of the school.",
+     "answers": [
+      [
+       "back"
+      ]
+     ],
+     "why": "at the back of 在……后部。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "middle",
+    "front",
+    "across",
+    "back",
+    "delicious"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

@@ -1,0 +1,159 @@
+{
+ "id": "g7r-s3-4",
+ "kind": "reading",
+ "title": "Grandma's Carrots",
+ "subtitle": "考点：一般现在时 / 介词 behind",
+ "unit": "S3",
+ "passage": [
+  "Tina's grandma has a small garden behind her house. There are many carrots in it. They are orange and long. Tina helps Grandma pull the carrots on Saturday.",
+  "\"Look at this big one!\" says Tina. \"What else is in the garden?\" asks Grandma. \"Some green beans!\" says Tina. In the evening, Grandma makes carrot soup. It is great."
+ ],
+ "vocab": "carrot 胡萝卜 · behind 在……后面 · pull 拔 · basket 篮子 · soup 汤",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r-s3-4-A1",
+     "type": "choice",
+     "stem": "Where is Grandma's garden?",
+     "options": [
+      "In front of the house.",
+      "Behind the house.",
+      "In the school.",
+      "In the park."
+     ],
+     "answer": "B",
+     "why": "a small garden behind her house",
+     "pts": 2
+    },
+    {
+     "id": "g7r-s3-4-A2",
+     "type": "choice",
+     "stem": "What colour are the carrots?",
+     "options": [
+      "Green.",
+      "Red.",
+      "Orange.",
+      "White."
+     ],
+     "answer": "C",
+     "why": "They are orange and long.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-s3-4-A3",
+     "type": "choice",
+     "stem": "When does Tina help Grandma?",
+     "options": [
+      "On Sunday.",
+      "On Saturday.",
+      "On Friday.",
+      "On Monday."
+     ],
+     "answer": "B",
+     "why": "Tina helps Grandma pull the carrots on Saturday.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-s3-4-A4",
+     "type": "choice",
+     "stem": "What does Grandma make in the evening?",
+     "options": [
+      "Carrot soup.",
+      "Green beans.",
+      "A cake.",
+      "Noodles."
+     ],
+     "answer": "A",
+     "why": "In the evening, Grandma makes carrot soup.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r-s3-4-B1",
+     "type": "tf",
+     "stem": "The carrots are green.",
+     "answer": "F",
+     "why": "胡萝卜是橙色的（orange）。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s3-4-B2",
+     "type": "tf",
+     "stem": "Tina helps pull the carrots.",
+     "answer": "T",
+     "why": "Tina helps Grandma pull the carrots.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s3-4-B3",
+     "type": "tf",
+     "stem": "There are some green beans in the garden.",
+     "answer": "T",
+     "why": "Some green beans!",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7r-s3-4-C1",
+     "type": "fill",
+     "stem": "The garden is ____ the house.",
+     "answers": [
+      [
+       "behind"
+      ]
+     ],
+     "why": "behind 在……后面。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s3-4-C2",
+     "type": "fill",
+     "stem": "Tina helps Grandma ____ carrots.",
+     "answers": [
+      [
+       "pull"
+      ]
+     ],
+     "why": "help sb. (to) do sth. 帮助某人做某事。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s3-4-C3",
+     "type": "fill",
+     "stem": "Grandma ____ carrot soup in the evening.",
+     "answers": [
+      [
+       "makes"
+      ]
+     ],
+     "why": "第三人称单数加 s：makes。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "behind",
+    "pull",
+    "makes",
+    "orange",
+    "small"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

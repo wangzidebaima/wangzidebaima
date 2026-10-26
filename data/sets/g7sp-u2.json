@@ -1,0 +1,82 @@
+{
+ "id": "g7sp-u2",
+ "kind": "speaking",
+ "unit": "U2",
+ "title": "口语练习",
+ "subtitle": "每天 5 分钟 · 共 5 天",
+ "steps": [
+  "点 🔊 听一遍，听清语调",
+  "一句一句跟着读，声音要大，不怕错",
+  "读完点「今天完成了」打卡"
+ ],
+ "sentences": [
+  {
+   "en": "This is my family photo.",
+   "zh": "这是我的全家福。"
+  },
+  {
+   "en": "These are my parents.",
+   "zh": "这是我的父母。"
+  },
+  {
+   "en": "My father is a doctor, and my mother is a teacher.",
+   "zh": "我爸爸是医生，妈妈是老师。"
+  },
+  {
+   "en": "Who is that boy? He's my brother.",
+   "zh": "那个男孩是谁？他是我弟弟。"
+  },
+  {
+   "en": "I have a big family.",
+   "zh": "我有一个大家庭。"
+  },
+  {
+   "en": "My grandparents live in the countryside.",
+   "zh": "我的祖父母住在乡下。"
+  },
+  {
+   "en": "How old is your sister?",
+   "zh": "你妹妹多大了？"
+  },
+  {
+   "en": "She is nine years old.",
+   "zh": "她九岁。"
+  },
+  {
+   "en": "We love each other very much.",
+   "zh": "我们彼此深爱着对方。"
+  }
+ ],
+ "plan": [
+  {
+   "day": 1,
+   "title": "跟读第 1–3 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 5
+  },
+  {
+   "day": 2,
+   "title": "跟读第 4–6 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 5
+  },
+  {
+   "day": 3,
+   "title": "跟读第 7–9 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 5
+  },
+  {
+   "day": 4,
+   "title": "不看书，说给家长听",
+   "task": "挑 5 句最喜欢的，尽量不看书说出来",
+   "minutes": 5
+  },
+  {
+   "day": 5,
+   "title": "自己说 3 句话",
+   "task": "用 “This is my … He/She is … ” 介绍 3 位家人",
+   "minutes": 5
+  }
+ ]
+}

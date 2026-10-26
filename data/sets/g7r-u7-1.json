@@ -1,0 +1,159 @@
+{
+ "id": "g7r-u7-1",
+ "kind": "reading",
+ "title": "A Surprise Party",
+ "subtitle": "考点：一般现在时 / 庆祝生日 / make a wish",
+ "unit": "U7",
+ "passage": [
+  "Tom's birthday is on October 5th. His friends plan a surprise party at his home. They buy balloons, chocolate and a big cake. When Tom comes in, everyone shouts, \"Happy birthday!\"",
+  "They sing the birthday song. Tom makes a wish and blows out the candles. \"This is the best birthday ever,\" he says. Everyone enjoys the cake and the games."
+ ],
+ "vocab": "celebrate 庆祝 · surprise 惊喜 · balloon 气球 · chocolate 巧克力 · make a wish 许愿 · blow out 吹灭 · enjoy 享受……的乐趣",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r-u7-1-A1",
+     "type": "choice",
+     "stem": "When is Tom's birthday?",
+     "options": [
+      "On October 1st.",
+      "On October 5th.",
+      "On May 5th.",
+      "On December 5th."
+     ],
+     "answer": "B",
+     "why": "Tom's birthday is on October 5th.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u7-1-A2",
+     "type": "choice",
+     "stem": "What do Tom's friends plan?",
+     "options": [
+      "A trip.",
+      "A surprise party.",
+      "A football match.",
+      "A test."
+     ],
+     "answer": "B",
+     "why": "His friends plan a surprise party at his home.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u7-1-A3",
+     "type": "choice",
+     "stem": "What do they buy?",
+     "options": [
+      "Balloons, chocolate and a cake.",
+      "Books and pens.",
+      "Shoes.",
+      "Only a cake."
+     ],
+     "answer": "A",
+     "why": "They buy balloons, chocolate and a big cake.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u7-1-A4",
+     "type": "choice",
+     "stem": "What does Tom do before he blows out the candles?",
+     "options": [
+      "He sings.",
+      "He makes a wish.",
+      "He eats cake.",
+      "He opens the door."
+     ],
+     "answer": "B",
+     "why": "Tom makes a wish and blows out the candles.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r-u7-1-B1",
+     "type": "tf",
+     "stem": "The party is at Tom's school.",
+     "answer": "F",
+     "why": "at his home（在他家）。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u7-1-B2",
+     "type": "tf",
+     "stem": "Everyone shouts \"Happy birthday!\" when Tom comes in.",
+     "answer": "T",
+     "why": "everyone shouts, \"Happy birthday!\"",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u7-1-B3",
+     "type": "tf",
+     "stem": "Tom thinks it is a bad birthday.",
+     "answer": "F",
+     "why": "This is the best birthday ever.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7r-u7-1-C1",
+     "type": "fill",
+     "stem": "His friends plan a ____ party.",
+     "answers": [
+      [
+       "surprise"
+      ]
+     ],
+     "why": "surprise party 惊喜派对。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u7-1-C2",
+     "type": "fill",
+     "stem": "They buy ____, chocolate and a big cake.",
+     "answers": [
+      [
+       "balloons"
+      ]
+     ],
+     "why": "balloon 的复数 balloons。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u7-1-C3",
+     "type": "fill",
+     "stem": "Tom ____ out the candles.",
+     "answers": [
+      [
+       "blows"
+      ]
+     ],
+     "why": "主语第三人称单数，动词加 s：blows。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "surprise",
+    "balloons",
+    "wish",
+    "blows",
+    "enjoys"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

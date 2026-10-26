@@ -1,0 +1,159 @@
+{
+ "id": "g7r-u4-1",
+ "kind": "reading",
+ "title": "My Favourite Subject",
+ "subtitle": "考点：学科 / 形容词 / because 说明理由",
+ "unit": "U4",
+ "passage": [
+  "I have many subjects this term. My favourite is geography. It is exciting because we learn about different countries and cities. History is useful because it tells us about the past, but some students think it is boring.",
+  "Biology is interesting. We study animals and plants. I am not good at math, but my teacher helps me with it. In the future, I want to be a scientist."
+ ],
+ "vocab": "geography 地理 · history 历史 · biology 生物学 · boring 乏味的 · useful 有用的 · exciting 令人激动的 · past 过去 · good at 擅长 · scientist 科学家",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r-u4-1-A1",
+     "type": "choice",
+     "stem": "What is the writer's favourite subject?",
+     "options": [
+      "History.",
+      "Biology.",
+      "Geography.",
+      "Math."
+     ],
+     "answer": "C",
+     "why": "My favourite is geography.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u4-1-A2",
+     "type": "choice",
+     "stem": "Why does the writer like it?",
+     "options": [
+      "It is easy.",
+      "It is exciting.",
+      "It is short.",
+      "The teacher is kind."
+     ],
+     "answer": "B",
+     "why": "It is exciting because we learn about different countries and cities.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u4-1-A3",
+     "type": "choice",
+     "stem": "What does history tell us about?",
+     "options": [
+      "The future.",
+      "Animals.",
+      "The past.",
+      "Plants."
+     ],
+     "answer": "C",
+     "why": "it tells us about the past",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u4-1-A4",
+     "type": "choice",
+     "stem": "What does the writer want to be in the future?",
+     "options": [
+      "A teacher.",
+      "A singer.",
+      "A scientist.",
+      "A doctor."
+     ],
+     "answer": "C",
+     "why": "In the future, I want to be a scientist.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r-u4-1-B1",
+     "type": "tf",
+     "stem": "The writer thinks math is easy.",
+     "answer": "F",
+     "why": "I am not good at math.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u4-1-B2",
+     "type": "tf",
+     "stem": "We study animals and plants in biology.",
+     "answer": "T",
+     "why": "We study animals and plants.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u4-1-B3",
+     "type": "tf",
+     "stem": "All students think history is exciting.",
+     "answer": "F",
+     "why": "some students think it is boring.（有些学生觉得无聊）",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7r-u4-1-C1",
+     "type": "fill",
+     "stem": "Geography is ____ because we learn about different countries.",
+     "answers": [
+      [
+       "exciting"
+      ]
+     ],
+     "why": "exciting 令人兴奋的。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u4-1-C2",
+     "type": "fill",
+     "stem": "History is ____ because it tells us about the past.",
+     "answers": [
+      [
+       "useful"
+      ]
+     ],
+     "why": "useful 有用的。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u4-1-C3",
+     "type": "fill",
+     "stem": "I am not ____ at math.",
+     "answers": [
+      [
+       "good"
+      ]
+     ],
+     "why": "be good at 擅长。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "exciting",
+    "useful",
+    "boring",
+    "good",
+    "past"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

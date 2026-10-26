@@ -1,0 +1,189 @@
+{
+ "id": "g7r-u4-2",
+ "kind": "reading",
+ "title": "Class Schedule",
+ "subtitle": "考点：时间 a.m./p.m. / 询问课表",
+ "unit": "U4",
+ "dialogue": [
+  {
+   "s": "Ben",
+   "t": "Ms. Gao, when is our French class?"
+  },
+  {
+   "s": "Ms. Gao",
+   "t": "At 10:00 a.m. on Tuesday."
+  },
+  {
+   "s": "Ben",
+   "t": "And our IT class?"
+  },
+  {
+   "s": "Ms. Gao",
+   "t": "At 2:00 p.m. on Thursday."
+  },
+  {
+   "s": "Ben",
+   "t": "I like IT. It is very useful."
+  },
+  {
+   "s": "Ms. Gao",
+   "t": "What is your reason?"
+  },
+  {
+   "s": "Ben",
+   "t": "Because I can work out problems with a computer."
+  },
+  {
+   "s": "Ms. Gao",
+   "t": "Good reason, Ben."
+  }
+ ],
+ "vocab": "French 法语 · IT 信息技术 · AM 上午 · PM 下午 · useful 有用的 · work out 算出 · problem 难题 · reason 原因",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r-u4-2-A1",
+     "type": "choice",
+     "stem": "When is the French class?",
+     "options": [
+      "At 10:00 a.m. on Tuesday.",
+      "At 2:00 p.m. on Tuesday.",
+      "At 10:00 a.m. on Thursday.",
+      "At 2:00 p.m. on Thursday."
+     ],
+     "answer": "A",
+     "why": "At 10:00 a.m. on Tuesday.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u4-2-A2",
+     "type": "choice",
+     "stem": "When is the IT class?",
+     "options": [
+      "At 10:00 a.m. on Tuesday.",
+      "At 2:00 p.m. on Thursday.",
+      "At 2:00 p.m. on Tuesday.",
+      "At 10:00 a.m. on Thursday."
+     ],
+     "answer": "B",
+     "why": "At 2:00 p.m. on Thursday.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u4-2-A3",
+     "type": "choice",
+     "stem": "Why does Ben like IT?",
+     "options": [
+      "It is boring.",
+      "It is easy.",
+      "Because he can work out problems with a computer.",
+      "His friend likes it."
+     ],
+     "answer": "C",
+     "why": "Because I can work out problems with a computer.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u4-2-A4",
+     "type": "choice",
+     "stem": "Who is Ms. Gao?",
+     "options": [
+      "Ben's mother.",
+      "Ben's teacher.",
+      "Ben's classmate.",
+      "Ben's sister."
+     ],
+     "answer": "B",
+     "why": "Ben 问她课表，她回答课程时间，是老师。",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r-u4-2-B1",
+     "type": "tf",
+     "stem": "The French class is in the afternoon.",
+     "answer": "F",
+     "why": "10:00 a.m. 是上午。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u4-2-B2",
+     "type": "tf",
+     "stem": "Ben thinks IT is useful.",
+     "answer": "T",
+     "why": "I like IT. It is very useful.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u4-2-B3",
+     "type": "tf",
+     "stem": "The IT class is on Tuesday.",
+     "answer": "F",
+     "why": "IT 课在 Thursday。",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7r-u4-2-C1",
+     "type": "fill",
+     "stem": "____ is our French class?",
+     "answers": [
+      [
+       "when"
+      ]
+     ],
+     "why": "when 问时间。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u4-2-C2",
+     "type": "fill",
+     "stem": "What is your ____?",
+     "answers": [
+      [
+       "reason"
+      ]
+     ],
+     "why": "reason 原因、理由。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u4-2-C3",
+     "type": "fill",
+     "stem": "I can work out ____ with a computer.",
+     "answers": [
+      [
+       "problems"
+      ]
+     ],
+     "why": "problem 的复数 problems。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "when",
+    "useful",
+    "reason",
+    "problems",
+    "class"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

@@ -1,0 +1,181 @@
+{
+ "id": "g7r-u6-2",
+ "kind": "reading",
+ "title": "A Reporter's Questions",
+ "subtitle": "考点：采访 / 日常安排 / on duty",
+ "unit": "U6",
+ "dialogue": [
+  {
+   "s": "Reporter",
+   "t": "What is your daily routine, Li Hua?"
+  },
+  {
+   "s": "Li Hua",
+   "t": "I get up at six every day. I have breakfast at half past six."
+  },
+  {
+   "s": "Reporter",
+   "t": "What do you do at school?"
+  },
+  {
+   "s": "Li Hua",
+   "t": "We have classes in the morning and afternoon. This week I am on duty. I clean the classroom with my classmates."
+  },
+  {
+   "s": "Reporter",
+   "t": "And after school?"
+  },
+  {
+   "s": "Li Hua",
+   "t": "I stay at school for a while to do my homework. Then I go home."
+  }
+ ],
+ "vocab": "reporter 记者 · on duty 值班 · duty 值日 · routine 日常 · stay 停留 · while 一段时间",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r-u6-2-A1",
+     "type": "choice",
+     "stem": "Who asks the questions?",
+     "options": [
+      "A teacher.",
+      "A reporter.",
+      "A doctor.",
+      "A mother."
+     ],
+     "answer": "B",
+     "why": "对话中的 Reporter 在采访。",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u6-2-A2",
+     "type": "choice",
+     "stem": "When does Li Hua get up?",
+     "options": [
+      "At five.",
+      "At six.",
+      "At half past six.",
+      "At seven."
+     ],
+     "answer": "B",
+     "why": "I get up at six every day. half past six 是早饭时间。",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u6-2-A3",
+     "type": "choice",
+     "stem": "What does Li Hua do this week?",
+     "options": [
+      "He is on duty.",
+      "He plays hockey.",
+      "He goes shopping.",
+      "He is ill."
+     ],
+     "answer": "A",
+     "why": "This week I am on duty.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u6-2-A4",
+     "type": "choice",
+     "stem": "What does Li Hua do after school?",
+     "options": [
+      "He plays games.",
+      "He stays at school to do homework.",
+      "He watches TV.",
+      "He goes to bed."
+     ],
+     "answer": "B",
+     "why": "I stay at school for a while to do my homework.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r-u6-2-B1",
+     "type": "tf",
+     "stem": "Li Hua has breakfast at six.",
+     "answer": "F",
+     "why": "早饭是 half past six（6:30）。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u6-2-B2",
+     "type": "tf",
+     "stem": "Li Hua cleans the classroom this week.",
+     "answer": "T",
+     "why": "I clean the classroom with my classmates.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u6-2-B3",
+     "type": "tf",
+     "stem": "Li Hua goes home before doing homework.",
+     "answer": "F",
+     "why": "他先在学校做作业，再回家。",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7r-u6-2-C1",
+     "type": "fill",
+     "stem": "What is your daily ____?",
+     "answers": [
+      [
+       "routine"
+      ]
+     ],
+     "why": "daily routine 日常生活。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u6-2-C2",
+     "type": "fill",
+     "stem": "This week I am on ____.",
+     "answers": [
+      [
+       "duty"
+      ]
+     ],
+     "why": "on duty 值日。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u6-2-C3",
+     "type": "fill",
+     "stem": "I ____ at school for a while.",
+     "answers": [
+      [
+       "stay"
+      ]
+     ],
+     "why": "stay 停留。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "routine",
+    "duty",
+    "stay",
+    "clean",
+    "homework"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

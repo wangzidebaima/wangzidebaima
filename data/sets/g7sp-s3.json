@@ -1,0 +1,82 @@
+{
+ "id": "g7sp-s3",
+ "kind": "speaking",
+ "unit": "S3",
+ "title": "口语练习",
+ "subtitle": "每天 5 分钟 · 共 5 天",
+ "steps": [
+  "点 🔊 听一遍，听清语调",
+  "一句一句跟着读，声音要大，不怕错",
+  "读完点「今天完成了」打卡"
+ ],
+ "sentences": [
+  {
+   "en": "Welcome to our school!",
+   "zh": "欢迎来到我们学校！"
+  },
+  {
+   "en": "This is our classroom. It's big and bright.",
+   "zh": "这是我们的教室，又大又明亮。"
+  },
+  {
+   "en": "There is a library on the first floor.",
+   "zh": "一楼有一个图书馆。"
+  },
+  {
+   "en": "Let me show you around.",
+   "zh": "我带你参观一下。"
+  },
+  {
+   "en": "How many students are there in your class?",
+   "zh": "你们班有多少个学生？"
+  },
+  {
+   "en": "There are forty students in my class.",
+   "zh": "我们班有四十个学生。"
+  },
+  {
+   "en": "Our playground is behind the building.",
+   "zh": "我们的操场在教学楼后面。"
+  },
+  {
+   "en": "I like my new school.",
+   "zh": "我喜欢我的新学校。"
+  },
+  {
+   "en": "Come in and have a look!",
+   "zh": "进来看看吧！"
+  }
+ ],
+ "plan": [
+  {
+   "day": 1,
+   "title": "跟读第 1–3 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 5
+  },
+  {
+   "day": 2,
+   "title": "跟读第 4–6 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 5
+  },
+  {
+   "day": 3,
+   "title": "跟读第 7–9 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 5
+  },
+  {
+   "day": 4,
+   "title": "不看书，说给家长听",
+   "task": "挑 5 句最喜欢的，尽量不看书说出来",
+   "minutes": 5
+  },
+  {
+   "day": 5,
+   "title": "自己说 3 句话",
+   "task": "用 “Welcome to … There is/are … ” 说 3 句话介绍你的学校或班级",
+   "minutes": 5
+  }
+ ]
+}

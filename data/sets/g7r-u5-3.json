@@ -1,0 +1,159 @@
+{
+ "id": "g7r-u5-3",
+ "kind": "reading",
+ "title": "The Nature Club",
+ "subtitle": "考点：一般现在时 / 自然与野生动物",
+ "unit": "U5",
+ "passage": [
+  "Ben is interested in nature, so he joined the nature club. Every weekend, the members hike in the hills. They take photos of wild animals and collect small insects.",
+  "They discover many new things. Ben falls in love with wildlife. \"The club is more than a hobby,\" he says. \"It makes me understand the world.\""
+ ],
+ "vocab": "nature 自然界 · hike 远足 · take photos 拍照 · collect 收集 · insect 昆虫 · discover 发现 · wildlife 野生动物 · fall in love with 爱上",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r-u5-3-A1",
+     "type": "choice",
+     "stem": "Why did Ben join the nature club?",
+     "options": [
+      "His friend asked him.",
+      "He is interested in nature.",
+      "He likes drama.",
+      "He wants to play ping-pong."
+     ],
+     "answer": "B",
+     "why": "Ben is interested in nature, so he joined the nature club.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u5-3-A2",
+     "type": "choice",
+     "stem": "What do the members do every weekend?",
+     "options": [
+      "Play the drums.",
+      "Hike in the hills.",
+      "Act out stories.",
+      "Paint in a room."
+     ],
+     "answer": "B",
+     "why": "Every weekend, the members hike in the hills.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u5-3-A3",
+     "type": "choice",
+     "stem": "What do they take photos of?",
+     "options": [
+      "Buildings.",
+      "Wild animals.",
+      "Teachers.",
+      "Insects only."
+     ],
+     "answer": "B",
+     "why": "They take photos of wild animals and collect small insects.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u5-3-A4",
+     "type": "choice",
+     "stem": "What does Ben say about the club?",
+     "options": [
+      "It is boring.",
+      "It is more than a hobby.",
+      "It is too hard.",
+      "It is only for girls."
+     ],
+     "answer": "B",
+     "why": "\"The club is more than a hobby,\" he says.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r-u5-3-B1",
+     "type": "tf",
+     "stem": "The members hike on school days only.",
+     "answer": "F",
+     "why": "Every weekend.（每个周末）",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u5-3-B2",
+     "type": "tf",
+     "stem": "They collect small insects.",
+     "answer": "T",
+     "why": "collect small insects",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u5-3-B3",
+     "type": "tf",
+     "stem": "Ben falls in love with wildlife.",
+     "answer": "T",
+     "why": "Ben falls in love with wildlife.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7r-u5-3-C1",
+     "type": "fill",
+     "stem": "The members ____ in the hills every weekend.",
+     "answers": [
+      [
+       "hike"
+      ]
+     ],
+     "why": "hike 远足。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u5-3-C2",
+     "type": "fill",
+     "stem": "They take ____ of wild animals.",
+     "answers": [
+      [
+       "photos"
+      ]
+     ],
+     "why": "take photos 拍照。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u5-3-C3",
+     "type": "fill",
+     "stem": "They ____ many new things.",
+     "answers": [
+      [
+       "discover"
+      ]
+     ],
+     "why": "discover 发现。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "hike",
+    "photos",
+    "collect",
+    "discover",
+    "wildlife"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

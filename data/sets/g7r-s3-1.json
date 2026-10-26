@@ -1,0 +1,159 @@
+{
+ "id": "g7r-s3-1",
+ "kind": "reading",
+ "title": "Grandpa's Yard",
+ "subtitle": "考点：How many / There be / 数字",
+ "unit": "S3",
+ "passage": [
+  "This is Grandpa's yard. It is big and green. There are four geese, two cats and one dog in the yard. Near the house, there are some carrots. Grandpa grows them himself.",
+  "\"Let's count the animals!\" says Lily. \"Four geese, two cats and one dog. That's seven animals!\" \"What else is in the yard?\" asks Grandpa. \"Carrots!\" says Lily. The yard is so much fun!"
+ ],
+ "vocab": "yard 院子 · goose 鹅 · carrot 胡萝卜 · count 数数 · else 其他的",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r-s3-1-A1",
+     "type": "choice",
+     "stem": "How many geese are there in the yard?",
+     "options": [
+      "Two.",
+      "Three.",
+      "Four.",
+      "Seven."
+     ],
+     "answer": "C",
+     "why": "four geese",
+     "pts": 2
+    },
+    {
+     "id": "g7r-s3-1-A2",
+     "type": "choice",
+     "stem": "How many animals are there in all?",
+     "options": [
+      "Four.",
+      "Six.",
+      "Seven.",
+      "Eight."
+     ],
+     "answer": "C",
+     "why": "4 + 2 + 1 = 7，原文：That's seven animals!",
+     "pts": 2
+    },
+    {
+     "id": "g7r-s3-1-A3",
+     "type": "choice",
+     "stem": "What does Grandpa grow near the house?",
+     "options": [
+      "Geese.",
+      "Carrots.",
+      "Cats.",
+      "Dogs."
+     ],
+     "answer": "B",
+     "why": "there are some carrots. Grandpa grows them.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-s3-1-A4",
+     "type": "choice",
+     "stem": "Who asks \"What else is in the yard?\"",
+     "options": [
+      "Lily.",
+      "Grandpa.",
+      "The dog.",
+      "Mom."
+     ],
+     "answer": "B",
+     "why": "\"What else is in the yard?\" asks Grandpa.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r-s3-1-B1",
+     "type": "tf",
+     "stem": "There are three cats in the yard.",
+     "answer": "F",
+     "why": "有 two cats。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s3-1-B2",
+     "type": "tf",
+     "stem": "The yard is big and green.",
+     "answer": "T",
+     "why": "It is big and green.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s3-1-B3",
+     "type": "tf",
+     "stem": "Lily counts seven animals.",
+     "answer": "T",
+     "why": "That's seven animals!",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7r-s3-1-C1",
+     "type": "fill",
+     "stem": "This is Grandpa's ____.",
+     "answers": [
+      [
+       "yard"
+      ]
+     ],
+     "why": "Grandpa's yard 爷爷的院子。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s3-1-C2",
+     "type": "fill",
+     "stem": "Let's ____ the animals.",
+     "answers": [
+      [
+       "count"
+      ]
+     ],
+     "why": "count 数数。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s3-1-C3",
+     "type": "fill",
+     "stem": "What ____ is in the yard?",
+     "answers": [
+      [
+       "else"
+      ]
+     ],
+     "why": "What else ...? 还有什么……？",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "count",
+    "else",
+    "grows",
+    "fun",
+    "yard"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

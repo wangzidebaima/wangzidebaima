@@ -1,0 +1,82 @@
+{
+ "id": "g7sp-u6",
+ "kind": "speaking",
+ "unit": "U6",
+ "title": "口语练习",
+ "subtitle": "每天 5 分钟 · 共 5 天",
+ "steps": [
+  "点 🔊 听一遍，听清语调",
+  "一句一句跟着读，声音要大，不怕错",
+  "读完点「今天完成了」打卡"
+ ],
+ "sentences": [
+  {
+   "en": "I get up at six thirty every day.",
+   "zh": "我每天六点半起床。"
+  },
+  {
+   "en": "I brush my teeth and wash my face.",
+   "zh": "我刷牙洗脸。"
+  },
+  {
+   "en": "I have breakfast at seven.",
+   "zh": "我七点吃早饭。"
+  },
+  {
+   "en": "What time do you go to school?",
+   "zh": "你几点去上学？"
+  },
+  {
+   "en": "I go to school at seven twenty.",
+   "zh": "我七点二十去上学。"
+  },
+  {
+   "en": "We have four classes in the morning.",
+   "zh": "我们上午有四节课。"
+  },
+  {
+   "en": "I do my homework after dinner.",
+   "zh": "我晚饭后做作业。"
+  },
+  {
+   "en": "I go to bed at ten o'clock.",
+   "zh": "我十点睡觉。"
+  },
+  {
+   "en": "Every day is a busy day.",
+   "zh": "每一天都很忙碌。"
+  }
+ ],
+ "plan": [
+  {
+   "day": 1,
+   "title": "跟读第 1–3 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 5
+  },
+  {
+   "day": 2,
+   "title": "跟读第 4–6 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 5
+  },
+  {
+   "day": 3,
+   "title": "跟读第 7–9 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 5
+  },
+  {
+   "day": 4,
+   "title": "不看书，说给家长听",
+   "task": "挑 5 句最喜欢的，尽量不看书说出来",
+   "minutes": 5
+  },
+  {
+   "day": 5,
+   "title": "自己说 3 句话",
+   "task": "用 “I get up at … Then I … ” 说 3 句话介绍你的一天",
+   "minutes": 5
+  }
+ ]
+}

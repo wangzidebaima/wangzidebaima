@@ -1,0 +1,159 @@
+{
+ "id": "g7r-u6-3",
+ "kind": "reading",
+ "title": "My Weekend",
+ "subtitle": "考点：at weekends / 家务 / 一般现在时",
+ "unit": "U6",
+ "passage": [
+  "At weekends, I do not get up early. At nine o'clock, I do some housework with Mom. We clean the rooms and wash clothes. In the afternoon, I play basketball outside with my friends.",
+  "In the evening, I finish my homework and prepare my school things for Monday. Weekends are short, but I enjoy them."
+ ],
+ "vocab": "weekend 周末 · at weekends 在周末 · housework 家务劳动 · outside 在外面 · prepare 准备 · finish 完成 · only 只",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r-u6-3-A1",
+     "type": "choice",
+     "stem": "What does the writer do at nine o'clock at weekends?",
+     "options": [
+      "Plays basketball.",
+      "Does housework.",
+      "Goes to school.",
+      "Watches TV."
+     ],
+     "answer": "B",
+     "why": "At nine o'clock, I do some housework with Mom.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u6-3-A2",
+     "type": "choice",
+     "stem": "Where does the writer play basketball?",
+     "options": [
+      "At home.",
+      "Outside.",
+      "In the gym.",
+      "In the classroom."
+     ],
+     "answer": "B",
+     "why": "play basketball outside with my friends",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u6-3-A3",
+     "type": "choice",
+     "stem": "What does the writer do in the evening?",
+     "options": [
+      "Cleans the rooms.",
+      "Plays with friends.",
+      "Finishes homework and prepares school things.",
+      "Goes shopping."
+     ],
+     "answer": "C",
+     "why": "I finish my homework and prepare my school things for Monday.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u6-3-A4",
+     "type": "choice",
+     "stem": "How does the writer feel about weekends?",
+     "options": [
+      "They are boring.",
+      "They are too long.",
+      "They are short but enjoyable.",
+      "They are tiring."
+     ],
+     "answer": "C",
+     "why": "Weekends are short, but I enjoy them.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r-u6-3-B1",
+     "type": "tf",
+     "stem": "The writer gets up early at weekends.",
+     "answer": "F",
+     "why": "I do not get up early.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u6-3-B2",
+     "type": "tf",
+     "stem": "The writer does housework with Mom.",
+     "answer": "T",
+     "why": "I do some housework with Mom.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u6-3-B3",
+     "type": "tf",
+     "stem": "The writer plays basketball in the morning.",
+     "answer": "F",
+     "why": "打篮球是下午（In the afternoon）。",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7r-u6-3-C1",
+     "type": "fill",
+     "stem": "I do some ____ with Mom.",
+     "answers": [
+      [
+       "housework"
+      ]
+     ],
+     "why": "housework 家务（不可数名词）。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u6-3-C2",
+     "type": "fill",
+     "stem": "I play basketball ____ with my friends.",
+     "answers": [
+      [
+       "outside"
+      ]
+     ],
+     "why": "outside 在外面。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u6-3-C3",
+     "type": "fill",
+     "stem": "I ____ my homework in the evening.",
+     "answers": [
+      [
+       "finish"
+      ]
+     ],
+     "why": "finish 完成。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "housework",
+    "outside",
+    "finish",
+    "prepare",
+    "weekends"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

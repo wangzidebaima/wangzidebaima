@@ -1,0 +1,159 @@
+{
+ "id": "g7r-u1-4",
+ "kind": "reading",
+ "title": "A Hot Pot Dinner",
+ "subtitle": "考点：Would you like…? / 一般现在时",
+ "unit": "U1",
+ "passage": [
+  "Sam is a new classmate from the UK. Today he visits Lin Tao's home. Lin Tao's mom makes hot pot and Mapo tofu. \"Would you like some Mapo tofu, Sam?\" asks Mom. \"Yes, please! But is it hot?\" \"A little,\" says Lin Tao. Sam likes it very much.",
+  "\"I'd like to visit China more,\" says Sam. \"Maybe we can go to Beijing. We can eat Beijing roast duck and visit the Great Wall,\" says Lin Tao."
+ ],
+ "vocab": "hot pot 火锅 · Mapo tofu 麻婆豆腐 · would like to 想要 · Beijing roast duck 北京烤鸭 · the Great Wall 长城 · country 国家",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r-u1-4-A1",
+     "type": "choice",
+     "stem": "Where is Sam from?",
+     "options": [
+      "China.",
+      "The UK.",
+      "Canada.",
+      "Beijing."
+     ],
+     "answer": "B",
+     "why": "Sam is a new classmate from the UK.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u1-4-A2",
+     "type": "choice",
+     "stem": "What does Lin Tao's mom make?",
+     "options": [
+      "Beijing roast duck.",
+      "Hot pot and Mapo tofu.",
+      "Noodles.",
+      "Cakes."
+     ],
+     "answer": "B",
+     "why": "Lin Tao's mom makes hot pot and Mapo tofu.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u1-4-A3",
+     "type": "choice",
+     "stem": "Is the Mapo tofu hot?",
+     "options": [
+      "No, not at all.",
+      "A little.",
+      "Very, very hot.",
+      "We do not know."
+     ],
+     "answer": "B",
+     "why": "\"A little,\" says Lin Tao.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u1-4-A4",
+     "type": "choice",
+     "stem": "What does Lin Tao say they can do in Beijing?",
+     "options": [
+      "Play tennis.",
+      "Eat Beijing roast duck and visit the Great Wall.",
+      "Make friends.",
+      "Buy a guitar."
+     ],
+     "answer": "B",
+     "why": "We can eat Beijing roast duck and visit the Great Wall.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r-u1-4-B1",
+     "type": "tf",
+     "stem": "Sam is Lin Tao's cousin.",
+     "answer": "F",
+     "why": "Sam 是新同学（new classmate）。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u1-4-B2",
+     "type": "tf",
+     "stem": "Sam likes the Mapo tofu.",
+     "answer": "T",
+     "why": "Sam likes it very much.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u1-4-B3",
+     "type": "tf",
+     "stem": "Sam has no wish to visit China.",
+     "answer": "F",
+     "why": "Sam: I'd like to visit China more.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7r-u1-4-C1",
+     "type": "fill",
+     "stem": "Sam is ____ the UK.",
+     "answers": [
+      [
+       "from"
+      ]
+     ],
+     "why": "be from 来自。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u1-4-C2",
+     "type": "fill",
+     "stem": "Lin Tao's mom ____ hot pot and Mapo tofu.",
+     "answers": [
+      [
+       "makes"
+      ]
+     ],
+     "why": "第三人称单数加 s。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u1-4-C3",
+     "type": "fill",
+     "stem": "Sam says, \"I'd like to ____ China more.\"",
+     "answers": [
+      [
+       "visit"
+      ]
+     ],
+     "why": "would like to do 想要做；visit 参观、访问。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "from",
+    "makes",
+    "visit",
+    "hot",
+    "would"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

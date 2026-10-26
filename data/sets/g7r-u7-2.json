@@ -1,0 +1,189 @@
+{
+ "id": "g7r-u7-2",
+ "kind": "reading",
+ "title": "At the Supermarket",
+ "subtitle": "考点：购物 / 价格 / 总数",
+ "unit": "U7",
+ "dialogue": [
+  {
+   "s": "Customer",
+   "t": "How much is the yogurt?"
+  },
+  {
+   "s": "Clerk",
+   "t": "It's six yuan each. Today it is on sale: two for ten yuan."
+  },
+  {
+   "s": "Customer",
+   "t": "Great. I'll take four."
+  },
+  {
+   "s": "Clerk",
+   "t": "That's twenty yuan. Anything else?"
+  },
+  {
+   "s": "Customer",
+   "t": "Yes. How much are the apples?"
+  },
+  {
+   "s": "Clerk",
+   "t": "Five yuan a kilo."
+  },
+  {
+   "s": "Customer",
+   "t": "I'll take two kilos. What's the total?"
+  },
+  {
+   "s": "Clerk",
+   "t": "Thirty yuan."
+  }
+ ],
+ "vocab": "sale 出售、减价 · price 价格 · kilo 千克 · yogurt 酸奶 · total 总数 · pizza 比萨饼",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r-u7-2-A1",
+     "type": "choice",
+     "stem": "How much is one yogurt normally?",
+     "options": [
+      "Four yuan.",
+      "Five yuan.",
+      "Six yuan.",
+      "Ten yuan."
+     ],
+     "answer": "C",
+     "why": "It's six yuan each.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u7-2-A2",
+     "type": "choice",
+     "stem": "How much are four yogurts on sale?",
+     "options": [
+      "Ten yuan.",
+      "Twenty yuan.",
+      "Twenty-four yuan.",
+      "Thirty yuan."
+     ],
+     "answer": "B",
+     "why": "two for ten yuan，所以四瓶是 20 元。",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u7-2-A3",
+     "type": "choice",
+     "stem": "How much are two kilos of apples?",
+     "options": [
+      "Five yuan.",
+      "Ten yuan.",
+      "Fifteen yuan.",
+      "Twenty yuan."
+     ],
+     "answer": "B",
+     "why": "5 × 2 = 10 元。",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u7-2-A4",
+     "type": "choice",
+     "stem": "What is the total?",
+     "options": [
+      "Twenty yuan.",
+      "Thirty yuan.",
+      "Thirty-four yuan.",
+      "Forty yuan."
+     ],
+     "answer": "B",
+     "why": "20 + 10 = 30 元。",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r-u7-2-B1",
+     "type": "tf",
+     "stem": "The yogurt is on sale today.",
+     "answer": "T",
+     "why": "Today it is on sale.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u7-2-B2",
+     "type": "tf",
+     "stem": "The customer buys three kilos of apples.",
+     "answer": "F",
+     "why": "买了 two kilos。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u7-2-B3",
+     "type": "tf",
+     "stem": "The customer buys four yogurts.",
+     "answer": "T",
+     "why": "I'll take four.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7r-u7-2-C1",
+     "type": "fill",
+     "stem": "How ____ is the yogurt?",
+     "answers": [
+      [
+       "much"
+      ]
+     ],
+     "why": "How much 问价钱。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u7-2-C2",
+     "type": "fill",
+     "stem": "Today it is on ____.",
+     "answers": [
+      [
+       "sale"
+      ]
+     ],
+     "why": "on sale 减价出售。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u7-2-C3",
+     "type": "fill",
+     "stem": "What's the ____?",
+     "answers": [
+      [
+       "total"
+      ]
+     ],
+     "why": "total 总数、总价。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "much",
+    "sale",
+    "kilo",
+    "total",
+    "price"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

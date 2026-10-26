@@ -1,0 +1,159 @@
+{
+ "id": "g7r-u2-4",
+ "kind": "reading",
+ "title": "Our Family Activities",
+ "subtitle": "考点：一般现在时 / 活动安排",
+ "unit": "U2",
+ "passage": [
+  "In my family, we have many activities. On Sunday morning, Dad and I play chess. Mom reads a book. In the afternoon, we walk in the park. At night, we watch TV and talk about our day.",
+  "My little brother plays with a toy. He is too small to play chess, but he makes everyone laugh."
+ ],
+ "vocab": "activity 活动 · chess 国际象棋 · at night 在夜晚 · laugh 笑 · talk 谈论",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r-u2-4-A1",
+     "type": "choice",
+     "stem": "What do Dad and the writer do on Sunday morning?",
+     "options": [
+      "Play chess.",
+      "Walk in the park.",
+      "Watch TV.",
+      "Read books."
+     ],
+     "answer": "A",
+     "why": "Dad and I play chess.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u2-4-A2",
+     "type": "choice",
+     "stem": "What does Mom do on Sunday morning?",
+     "options": [
+      "Plays chess.",
+      "Reads a book.",
+      "Cooks lunch.",
+      "Plays with a toy."
+     ],
+     "answer": "B",
+     "why": "Mom reads a book.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u2-4-A3",
+     "type": "choice",
+     "stem": "Where do they walk in the afternoon?",
+     "options": [
+      "At school.",
+      "On the street.",
+      "In the park.",
+      "At the club."
+     ],
+     "answer": "C",
+     "why": "we walk in the park",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u2-4-A4",
+     "type": "choice",
+     "stem": "Who makes everyone laugh?",
+     "options": [
+      "Dad.",
+      "Mom.",
+      "The writer.",
+      "The little brother."
+     ],
+     "answer": "D",
+     "why": "He makes everyone laugh.（指小弟弟）",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r-u2-4-B1",
+     "type": "tf",
+     "stem": "The family has many activities.",
+     "answer": "T",
+     "why": "In my family, we have many activities.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u2-4-B2",
+     "type": "tf",
+     "stem": "The little brother plays chess very well.",
+     "answer": "F",
+     "why": "He is too small to play chess.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u2-4-B3",
+     "type": "tf",
+     "stem": "They watch TV at night.",
+     "answer": "T",
+     "why": "At night, we watch TV...",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7r-u2-4-C1",
+     "type": "fill",
+     "stem": "We have many ____.",
+     "answers": [
+      [
+       "activities"
+      ]
+     ],
+     "why": "activity 的复数是 activities。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u2-4-C2",
+     "type": "fill",
+     "stem": "Dad and I ____ chess.",
+     "answers": [
+      [
+       "play"
+      ]
+     ],
+     "why": "主语是复数（Dad and I），动词用原形 play。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u2-4-C3",
+     "type": "fill",
+     "stem": "He makes everyone ____.",
+     "answers": [
+      [
+       "laugh"
+      ]
+     ],
+     "why": "make sb. do sth. 让某人做某事。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "activities",
+    "play",
+    "talk",
+    "small",
+    "laugh"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

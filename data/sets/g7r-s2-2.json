@@ -1,0 +1,159 @@
+{
+ "id": "g7r-s2-2",
+ "kind": "reading",
+ "title": "My Tidy Desk",
+ "subtitle": "考点：There is / There are / 介词",
+ "unit": "S2",
+ "passage": [
+  "My desk is tidy now. There is a book, a pencil box and a bottle on my desk. In my pencil box, there are three pens, one eraser and one ruler.",
+  "My key is in my schoolbag. I keep my things in the right places. A tidy desk makes me happy!"
+ ],
+ "vocab": "tidy 整洁的 · pencil box 铅笔盒 · ruler 尺子 · eraser 橡皮 · key 钥匙",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r-s2-2-A1",
+     "type": "choice",
+     "stem": "Is the writer's desk tidy now?",
+     "options": [
+      "Yes, it is.",
+      "No, it isn't.",
+      "We don't know.",
+      "It is messy."
+     ],
+     "answer": "A",
+     "why": "My desk is tidy now.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-s2-2-A2",
+     "type": "choice",
+     "stem": "How many pens are there in the pencil box?",
+     "options": [
+      "One.",
+      "Two.",
+      "Three.",
+      "Four."
+     ],
+     "answer": "C",
+     "why": "there are three pens",
+     "pts": 2
+    },
+    {
+     "id": "g7r-s2-2-A3",
+     "type": "choice",
+     "stem": "Where is the key?",
+     "options": [
+      "On the desk.",
+      "In the pencil box.",
+      "In the schoolbag.",
+      "Under the bed."
+     ],
+     "answer": "C",
+     "why": "My key is in my schoolbag.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-s2-2-A4",
+     "type": "choice",
+     "stem": "What is on the desk?",
+     "options": [
+      "A book, a pencil box and a bottle.",
+      "Three pens.",
+      "A ruler and a key.",
+      "An eraser."
+     ],
+     "answer": "A",
+     "why": "桌上是书、铅笔盒和瓶子；笔、橡皮和尺子在铅笔盒里。",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r-s2-2-B1",
+     "type": "tf",
+     "stem": "There are two erasers in the pencil box.",
+     "answer": "F",
+     "why": "只有 one eraser。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s2-2-B2",
+     "type": "tf",
+     "stem": "The bottle is on the desk.",
+     "answer": "T",
+     "why": "a bottle on my desk",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s2-2-B3",
+     "type": "tf",
+     "stem": "The writer's desk is messy now.",
+     "answer": "F",
+     "why": "现在是整洁的（tidy）。",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7r-s2-2-C1",
+     "type": "fill",
+     "stem": "There ____ a bottle on my desk.",
+     "answers": [
+      [
+       "is"
+      ]
+     ],
+     "why": "a bottle 是单数，用 There is。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s2-2-C2",
+     "type": "fill",
+     "stem": "There ____ three pens in my pencil box.",
+     "answers": [
+      [
+       "are"
+      ]
+     ],
+     "why": "three pens 是复数，用 There are。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s2-2-C3",
+     "type": "fill",
+     "stem": "My key is ____ my schoolbag.",
+     "answers": [
+      [
+       "in"
+      ]
+     ],
+     "why": "在书包里面用 in。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "is",
+    "are",
+    "on",
+    "in",
+    "tidy"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

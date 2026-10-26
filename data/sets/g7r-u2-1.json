@@ -1,0 +1,159 @@
+{
+ "id": "g7r-u2-1",
+ "kind": "reading",
+ "title": "Grandpa and Grandma",
+ "subtitle": "考点：家庭成员 / 一般现在时 / next to",
+ "unit": "U2",
+ "passage": [
+  "My grandparents live next to our house. Every day, they spend a lot of time together. Grandpa plays Chinese chess with his friends in the park. Grandma is a member of a dancing club.",
+  "At night, they sit together and listen to the radio. They laugh a lot because Grandpa is very funny."
+ ],
+ "vocab": "grandparent 祖父母 · spend 花费 · member 成员 · laugh 笑 · funny 好笑的 · listen to 听 · next to 紧邻 · at night 在夜晚",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r-u2-1-A1",
+     "type": "choice",
+     "stem": "Where do the writer's grandparents live?",
+     "options": [
+      "In the park.",
+      "Next to the writer's house.",
+      "In a club.",
+      "In another city."
+     ],
+     "answer": "B",
+     "why": "My grandparents live next to our house.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u2-1-A2",
+     "type": "choice",
+     "stem": "What does Grandpa play in the park?",
+     "options": [
+      "Football.",
+      "Ping-pong.",
+      "Chinese chess.",
+      "Cards."
+     ],
+     "answer": "C",
+     "why": "Grandpa plays Chinese chess with his friends in the park.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u2-1-A3",
+     "type": "choice",
+     "stem": "What is Grandma?",
+     "options": [
+      "A teacher.",
+      "A member of a dancing club.",
+      "A singer.",
+      "A doctor."
+     ],
+     "answer": "B",
+     "why": "Grandma is a member of a dancing club.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u2-1-A4",
+     "type": "choice",
+     "stem": "What do they do at night?",
+     "options": [
+      "They play chess.",
+      "They dance.",
+      "They listen to the radio.",
+      "They go to the park."
+     ],
+     "answer": "C",
+     "why": "At night, they sit together and listen to the radio.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r-u2-1-B1",
+     "type": "tf",
+     "stem": "The grandparents never spend time together.",
+     "answer": "F",
+     "why": "Every day, they spend a lot of time together.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u2-1-B2",
+     "type": "tf",
+     "stem": "Grandpa is funny.",
+     "answer": "T",
+     "why": "Grandpa is very funny.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u2-1-B3",
+     "type": "tf",
+     "stem": "Grandma plays Chinese chess in the park.",
+     "answer": "F",
+     "why": "下棋的是 Grandpa。",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7r-u2-1-C1",
+     "type": "fill",
+     "stem": "They ____ a lot of time together every day.",
+     "answers": [
+      [
+       "spend"
+      ]
+     ],
+     "why": "spend time 花时间。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u2-1-C2",
+     "type": "fill",
+     "stem": "Grandma is a ____ of a dancing club.",
+     "answers": [
+      [
+       "member"
+      ]
+     ],
+     "why": "a member of ... ……的成员。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u2-1-C3",
+     "type": "fill",
+     "stem": "They sit together and ____ to the radio.",
+     "answers": [
+      [
+       "listen"
+      ]
+     ],
+     "why": "listen to 听。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "spend",
+    "member",
+    "laugh",
+    "listen",
+    "together"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

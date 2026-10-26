@@ -1,0 +1,159 @@
+{
+ "id": "g7r-u2-3",
+ "kind": "reading",
+ "title": "Ping-pong with Dad",
+ "subtitle": "考点：一般现在时 / 频率 / have fun",
+ "unit": "U2",
+ "passage": [
+  "Dad and I both like ping-pong. Every Saturday, we play ping-pong at the club with our ping-pong bats. \"Hey, Dad, you are really good!\" I say. \"You are better,\" says Dad.",
+  "Mom does not play, but she watches and laughs. After the game, we eat ice cream together. We have fun every Saturday."
+ ],
+ "vocab": "ping-pong bat 乒乓球拍 · play ping-pong 打乒乓球 · really 非常 · have fun 玩得高兴 · every day 每天",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r-u2-3-A1",
+     "type": "choice",
+     "stem": "What do Dad and the writer play?",
+     "options": [
+      "Chess.",
+      "Tennis.",
+      "Ping-pong.",
+      "Football."
+     ],
+     "answer": "C",
+     "why": "Dad and I both like ping-pong.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u2-3-A2",
+     "type": "choice",
+     "stem": "When do they play?",
+     "options": [
+      "Every Sunday.",
+      "Every Saturday.",
+      "Every day.",
+      "Every night."
+     ],
+     "answer": "B",
+     "why": "Every Saturday, we play ping-pong...",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u2-3-A3",
+     "type": "choice",
+     "stem": "Where do they play?",
+     "options": [
+      "At home.",
+      "At school.",
+      "At the club.",
+      "In the park."
+     ],
+     "answer": "C",
+     "why": "at the club",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u2-3-A4",
+     "type": "choice",
+     "stem": "What does Mom do?",
+     "options": [
+      "She plays with them.",
+      "She watches and laughs.",
+      "She cooks.",
+      "She sleeps."
+     ],
+     "answer": "B",
+     "why": "Mom does not play, but she watches and laughs.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r-u2-3-B1",
+     "type": "tf",
+     "stem": "Mom plays ping-pong with them.",
+     "answer": "F",
+     "why": "Mom does not play.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u2-3-B2",
+     "type": "tf",
+     "stem": "They eat ice cream after the game.",
+     "answer": "T",
+     "why": "After the game, we eat ice cream together.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u2-3-B3",
+     "type": "tf",
+     "stem": "Dad says the writer is really good.",
+     "answer": "F",
+     "why": "是\"我\"夸 Dad 很棒；Dad 说\"你更棒\"。",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7r-u2-3-C1",
+     "type": "fill",
+     "stem": "They play with ping-pong ____.",
+     "answers": [
+      [
+       "bats"
+      ]
+     ],
+     "why": "bats 球拍，复数。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u2-3-C2",
+     "type": "fill",
+     "stem": "\"You are ____ good!\" says the writer.",
+     "answers": [
+      [
+       "really"
+      ]
+     ],
+     "why": "really 真的、非常。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u2-3-C3",
+     "type": "fill",
+     "stem": "We ____ fun every Saturday.",
+     "answers": [
+      [
+       "have"
+      ]
+     ],
+     "why": "have fun 玩得开心。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "bats",
+    "every",
+    "really",
+    "watches",
+    "have"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

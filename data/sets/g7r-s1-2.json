@@ -1,0 +1,197 @@
+{
+ "id": "g7r-s1-2",
+ "kind": "reading",
+ "title": "A New Class",
+ "subtitle": "考点：问名字 / 拼写 / Nice to meet you",
+ "unit": "S1",
+ "dialogue": [
+  {
+   "s": "Mr. Wang",
+   "t": "Hello, class! I'm Mr. Wang. I'm your new class teacher."
+  },
+  {
+   "s": "Class",
+   "t": "Hello, Mr. Wang!"
+  },
+  {
+   "s": "Mr. Wang",
+   "t": "What's your name, boy?"
+  },
+  {
+   "s": "Tom",
+   "t": "My name is Tom Smith."
+  },
+  {
+   "s": "Mr. Wang",
+   "t": "How do you spell your last name?"
+  },
+  {
+   "s": "Tom",
+   "t": "S-M-I-T-H, Smith."
+  },
+  {
+   "s": "Mr. Wang",
+   "t": "Thank you, Tom. And what's your name, girl?"
+  },
+  {
+   "s": "Anna",
+   "t": "I'm Anna Brown."
+  },
+  {
+   "s": "Mr. Wang",
+   "t": "Nice to meet you, Anna."
+  },
+  {
+   "s": "Anna",
+   "t": "Nice to meet you, too."
+  }
+ ],
+ "vocab": "class teacher 班主任 · spell 拼写 · meet 遇见",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r-s1-2-A1",
+     "type": "choice",
+     "stem": "Who is Mr. Wang?",
+     "options": [
+      "A new student.",
+      "The new class teacher.",
+      "Tom's father.",
+      "Anna's friend."
+     ],
+     "answer": "B",
+     "why": "他说：I'm your new class teacher.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-s1-2-A2",
+     "type": "choice",
+     "stem": "How does Tom spell his last name?",
+     "options": [
+      "S-M-I-T.",
+      "S-M-I-T-H.",
+      "S-N-I-T-H.",
+      "S-M-Y-T-H."
+     ],
+     "answer": "B",
+     "why": "Tom: S-M-I-T-H, Smith.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-s1-2-A3",
+     "type": "choice",
+     "stem": "What is the girl's full name?",
+     "options": [
+      "Anna Smith.",
+      "Tom Brown.",
+      "Anna Brown.",
+      "Brown Anna."
+     ],
+     "answer": "C",
+     "why": "Anna: I'm Anna Brown.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-s1-2-A4",
+     "type": "choice",
+     "stem": "Who says \"Nice to meet you, too\"?",
+     "options": [
+      "Mr. Wang.",
+      "Tom.",
+      "The class.",
+      "Anna."
+     ],
+     "answer": "D",
+     "why": "Mr. Wang 先说 Nice to meet you, Anna.，Anna 回答 Nice to meet you, too.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r-s1-2-B1",
+     "type": "tf",
+     "stem": "Mr. Wang is a new student.",
+     "answer": "F",
+     "why": "他是新的班主任（class teacher）。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s1-2-B2",
+     "type": "tf",
+     "stem": "Tom's last name is Smith.",
+     "answer": "T",
+     "why": "S-M-I-T-H, Smith.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s1-2-B3",
+     "type": "tf",
+     "stem": "Anna meets Mr. Wang for the first time.",
+     "answer": "T",
+     "why": "Mr. Wang 说 Nice to meet you, Anna.（初次见面才这样说）。",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7r-s1-2-C1",
+     "type": "fill",
+     "stem": "Mr. Wang is the new class ____.",
+     "answers": [
+      [
+       "teacher"
+      ]
+     ],
+     "why": "class teacher 班主任。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s1-2-C2",
+     "type": "fill",
+     "stem": "How do you ____ your last name?",
+     "answers": [
+      [
+       "spell"
+      ]
+     ],
+     "why": "spell 拼写。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s1-2-C3",
+     "type": "fill",
+     "stem": "Nice to ____ you.",
+     "answers": [
+      [
+       "meet"
+      ]
+     ],
+     "why": "Nice to meet you. 很高兴认识你。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "name",
+    "spell",
+    "teacher",
+    "meet",
+    "class"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

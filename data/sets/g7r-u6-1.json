@@ -1,0 +1,159 @@
+{
+ "id": "g7r-u6-1",
+ "kind": "reading",
+ "title": "My Daily Routine",
+ "subtitle": "考点：一般现在时 / 时间表达 a quarter past",
+ "unit": "U6",
+ "passage": [
+  "I usually get up at a quarter past six. First, I take a shower and get dressed. Then I brush my teeth and have breakfast. I leave home for school at around seven.",
+  "After school, I do my homework. I go to bed at half past nine. This is my daily routine."
+ ],
+ "vocab": "daily routine 日常生活 · usually 通常 · get up 起床 · take a shower 淋浴 · get dressed 穿衣服 · brush 刷 · tooth 牙齿 · around 大约 · homework 家庭作业 · go to bed 上床睡觉",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r-u6-1-A1",
+     "type": "choice",
+     "stem": "What time does the writer usually get up?",
+     "options": [
+      "At 6:15.",
+      "At 6:45.",
+      "At 7:00.",
+      "At 9:30."
+     ],
+     "answer": "A",
+     "why": "a quarter past six 是 6:15。",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u6-1-A2",
+     "type": "choice",
+     "stem": "What does the writer do first after getting up?",
+     "options": [
+      "Has breakfast.",
+      "Takes a shower and gets dressed.",
+      "Does homework.",
+      "Goes to school."
+     ],
+     "answer": "B",
+     "why": "First, I take a shower and get dressed.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u6-1-A3",
+     "type": "choice",
+     "stem": "When does the writer leave home for school?",
+     "options": [
+      "At 6:15.",
+      "At around 7:00.",
+      "At 8:30.",
+      "At 9:30."
+     ],
+     "answer": "B",
+     "why": "at around seven",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u6-1-A4",
+     "type": "choice",
+     "stem": "When does the writer go to bed?",
+     "options": [
+      "At 9:00.",
+      "At 9:30.",
+      "At 10:00.",
+      "At 10:30."
+     ],
+     "answer": "B",
+     "why": "half past nine 是 9:30。",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r-u6-1-B1",
+     "type": "tf",
+     "stem": "The writer gets up at a quarter past seven.",
+     "answer": "F",
+     "why": "是 a quarter past six（6:15）。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u6-1-B2",
+     "type": "tf",
+     "stem": "The writer does homework after school.",
+     "answer": "T",
+     "why": "After school, I do my homework.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u6-1-B3",
+     "type": "tf",
+     "stem": "The writer has breakfast before brushing teeth.",
+     "answer": "F",
+     "why": "Then I brush my teeth and have breakfast. 先刷牙，后吃早饭。",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7r-u6-1-C1",
+     "type": "fill",
+     "stem": "I ____ get up at a quarter past six.",
+     "answers": [
+      [
+       "usually"
+      ]
+     ],
+     "why": "usually 通常，放在实义动词前。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u6-1-C2",
+     "type": "fill",
+     "stem": "I take a shower and get ____.",
+     "answers": [
+      [
+       "dressed"
+      ]
+     ],
+     "why": "get dressed 穿好衣服。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u6-1-C3",
+     "type": "fill",
+     "stem": "Then I ____ my teeth.",
+     "answers": [
+      [
+       "brush"
+      ]
+     ],
+     "why": "brush one's teeth 刷牙。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "usually",
+    "dressed",
+    "brush",
+    "around",
+    "homework"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

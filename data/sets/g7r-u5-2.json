@@ -1,0 +1,185 @@
+{
+ "id": "g7r-u5-2",
+ "kind": "reading",
+ "title": "Which Club?",
+ "subtitle": "考点：兴趣爱好 / be interested in",
+ "unit": "U5",
+ "dialogue": [
+  {
+   "s": "Eva",
+   "t": "Mr. Zhou, I want to join a club, but I cannot choose."
+  },
+  {
+   "s": "Mr. Zhou",
+   "t": "What are you interested in, Eva?"
+  },
+  {
+   "s": "Eva",
+   "t": "I like painting and climbing."
+  },
+  {
+   "s": "Mr. Zhou",
+   "t": "Then you can join the art club for painting and the hiking club for climbing."
+  },
+  {
+   "s": "Eva",
+   "t": "Can I join two clubs?"
+  },
+  {
+   "s": "Mr. Zhou",
+   "t": "Yes, you can. Many students join two clubs."
+  },
+  {
+   "s": "Eva",
+   "t": "Great! Thank you."
+  }
+ ],
+ "vocab": "paint 用颜料画 · climb 攀登 · ability 能力 · interested in 对……感兴趣 · club 俱乐部",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r-u5-2-A1",
+     "type": "choice",
+     "stem": "What does Eva want to do?",
+     "options": [
+      "Join a club.",
+      "Leave school.",
+      "Buy a violin.",
+      "Make a film."
+     ],
+     "answer": "A",
+     "why": "I want to join a club.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u5-2-A2",
+     "type": "choice",
+     "stem": "What is Eva interested in?",
+     "options": [
+      "Music and drama.",
+      "Painting and climbing.",
+      "Chess and football.",
+      "Reading and writing."
+     ],
+     "answer": "B",
+     "why": "I like painting and climbing.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u5-2-A3",
+     "type": "choice",
+     "stem": "Which club is for painting?",
+     "options": [
+      "The hiking club.",
+      "The drama club.",
+      "The art club.",
+      "The music club."
+     ],
+     "answer": "C",
+     "why": "the art club for painting",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u5-2-A4",
+     "type": "choice",
+     "stem": "Can Eva join two clubs?",
+     "options": [
+      "No, she cannot.",
+      "Yes, she can.",
+      "Only on Monday.",
+      "We do not know."
+     ],
+     "answer": "B",
+     "why": "Yes, you can.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r-u5-2-B1",
+     "type": "tf",
+     "stem": "Eva can choose the club very quickly.",
+     "answer": "F",
+     "why": "I cannot choose.（她选不出来）",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u5-2-B2",
+     "type": "tf",
+     "stem": "Mr. Zhou is a teacher.",
+     "answer": "T",
+     "why": "He 在给 Eva 建议。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u5-2-B3",
+     "type": "tf",
+     "stem": "The hiking club is for painting.",
+     "answer": "F",
+     "why": "hiking club 是爬山、徒步的社团。",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7r-u5-2-C1",
+     "type": "fill",
+     "stem": "What are you ____ in?",
+     "answers": [
+      [
+       "interested"
+      ]
+     ],
+     "why": "be interested in 对……感兴趣。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u5-2-C2",
+     "type": "fill",
+     "stem": "I like to ____ pictures.",
+     "answers": [
+      [
+       "paint"
+      ]
+     ],
+     "why": "paint 用颜料画。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u5-2-C3",
+     "type": "fill",
+     "stem": "I like to ____ hills.",
+     "answers": [
+      [
+       "climb"
+      ]
+     ],
+     "why": "climb 攀登。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "interested",
+    "paint",
+    "climb",
+    "join",
+    "choose"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

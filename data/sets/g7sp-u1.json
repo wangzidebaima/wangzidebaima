@@ -1,0 +1,82 @@
+{
+ "id": "g7sp-u1",
+ "kind": "speaking",
+ "unit": "U1",
+ "title": "口语练习",
+ "subtitle": "每天 5 分钟 · 共 5 天",
+ "steps": [
+  "点 🔊 听一遍，听清语调",
+  "一句一句跟着读，声音要大，不怕错",
+  "读完点「今天完成了」打卡"
+ ],
+ "sentences": [
+  {
+   "en": "This is me. My name is Wang Lin.",
+   "zh": "这就是我。我叫王林。"
+  },
+  {
+   "en": "I'm from Shanghai, China.",
+   "zh": "我来自中国上海。"
+  },
+  {
+   "en": "I like playing football and reading books.",
+   "zh": "我喜欢踢足球和读书。"
+  },
+  {
+   "en": "My favourite colour is blue.",
+   "zh": "我最喜欢的颜色是蓝色。"
+  },
+  {
+   "en": "I'm good at maths, but not good at art.",
+   "zh": "我擅长数学，但不擅长美术。"
+  },
+  {
+   "en": "What do you like doing?",
+   "zh": "你喜欢做什么？"
+  },
+  {
+   "en": "I'm kind and friendly.",
+   "zh": "我善良又友好。"
+  },
+  {
+   "en": "I have many friends at school.",
+   "zh": "我在学校有很多朋友。"
+  },
+  {
+   "en": "Let's be friends!",
+   "zh": "我们做朋友吧！"
+  }
+ ],
+ "plan": [
+  {
+   "day": 1,
+   "title": "跟读第 1–3 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 5
+  },
+  {
+   "day": 2,
+   "title": "跟读第 4–6 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 5
+  },
+  {
+   "day": 3,
+   "title": "跟读第 7–9 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 5
+  },
+  {
+   "day": 4,
+   "title": "不看书，说给家长听",
+   "task": "挑 5 句最喜欢的，尽量不看书说出来",
+   "minutes": 5
+  },
+  {
+   "day": 5,
+   "title": "自己说 3 句话",
+   "task": "用 “My name is … I like … I am good at … ” 介绍自己",
+   "minutes": 5
+  }
+ ]
+}

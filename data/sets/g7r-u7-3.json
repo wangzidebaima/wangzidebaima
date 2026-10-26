@@ -1,0 +1,159 @@
+{
+ "id": "g7r-u7-3",
+ "kind": "reading",
+ "title": "National Day",
+ "subtitle": "考点：节日 / 一般现在时 / celebrate",
+ "unit": "U7",
+ "passage": [
+  "On October 1st, we celebrate National Day. It is a meaningful day for all Chinese people. Every year, the city is full of red flags. Many families go to the square and take photos.",
+  "My family has dinner together at home. In the evening, we watch the fireworks. The red flag is a symbol of our country. We love it."
+ ],
+ "vocab": "National Day 国庆节 · celebrate 庆祝 · meaningful 有意义的 · take photos 拍照 · symbol 象征 · celebration 庆典 · village 村庄",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r-u7-3-A1",
+     "type": "choice",
+     "stem": "When is National Day?",
+     "options": [
+      "On May 1st.",
+      "On October 1st.",
+      "On June 1st.",
+      "On January 1st."
+     ],
+     "answer": "B",
+     "why": "On October 1st, we celebrate National Day.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u7-3-A2",
+     "type": "choice",
+     "stem": "What is the city full of on National Day?",
+     "options": [
+      "Red flags.",
+      "Snow.",
+      "Cars.",
+      "Books."
+     ],
+     "answer": "A",
+     "why": "the city is full of red flags",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u7-3-A3",
+     "type": "choice",
+     "stem": "What do many families do at the square?",
+     "options": [
+      "Play football.",
+      "Take photos.",
+      "Sell things.",
+      "Have class."
+     ],
+     "answer": "B",
+     "why": "Many families go to the square and take photos.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u7-3-A4",
+     "type": "choice",
+     "stem": "What do the writer's family do in the evening?",
+     "options": [
+      "Watch the fireworks.",
+      "Go to school.",
+      "Clean the house.",
+      "Go to bed early."
+     ],
+     "answer": "A",
+     "why": "In the evening, we watch the fireworks.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r-u7-3-B1",
+     "type": "tf",
+     "stem": "National Day is a meaningful day.",
+     "answer": "T",
+     "why": "It is a meaningful day for all Chinese people.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u7-3-B2",
+     "type": "tf",
+     "stem": "The writer's family eat out in a restaurant.",
+     "answer": "F",
+     "why": "My family has dinner together at home.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u7-3-B3",
+     "type": "tf",
+     "stem": "The red flag is a symbol of the country.",
+     "answer": "T",
+     "why": "The red flag is a symbol of our country.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7r-u7-3-C1",
+     "type": "fill",
+     "stem": "We ____ National Day on October 1st.",
+     "answers": [
+      [
+       "celebrate"
+      ]
+     ],
+     "why": "celebrate 庆祝。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u7-3-C2",
+     "type": "fill",
+     "stem": "It is a ____ day for all Chinese people.",
+     "answers": [
+      [
+       "meaningful"
+      ]
+     ],
+     "why": "meaningful 有意义的。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u7-3-C3",
+     "type": "fill",
+     "stem": "Many families take ____ at the square.",
+     "answers": [
+      [
+       "photos"
+      ]
+     ],
+     "why": "take photos 拍照。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "celebrate",
+    "meaningful",
+    "photos",
+    "symbol",
+    "fireworks"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

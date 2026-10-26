@@ -1,0 +1,181 @@
+{
+ "id": "g7r-s2-4",
+ "kind": "reading",
+ "title": "At the Shop",
+ "subtitle": "考点：购物用语 / How much",
+ "unit": "S2",
+ "dialogue": [
+  {
+   "s": "Kate",
+   "t": "Excuse me, do you have an eraser?"
+  },
+  {
+   "s": "Clerk",
+   "t": "Yes, we do. Here you are."
+  },
+  {
+   "s": "Kate",
+   "t": "How much is it?"
+  },
+  {
+   "s": "Clerk",
+   "t": "It's two yuan."
+  },
+  {
+   "s": "Kate",
+   "t": "OK. Here's two yuan. Thank you!"
+  },
+  {
+   "s": "Clerk",
+   "t": "You're welcome."
+  }
+ ],
+ "vocab": "eraser 橡皮 · excuse me 打扰一下 · yuan 元 · thing 东西",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r-s2-4-A1",
+     "type": "choice",
+     "stem": "What does Kate want to buy?",
+     "options": [
+      "A bottle.",
+      "A key.",
+      "An eraser.",
+      "A ruler."
+     ],
+     "answer": "C",
+     "why": "Kate: do you have an eraser?",
+     "pts": 2
+    },
+    {
+     "id": "g7r-s2-4-A2",
+     "type": "choice",
+     "stem": "How much is it?",
+     "options": [
+      "One yuan.",
+      "Two yuan.",
+      "Three yuan.",
+      "Ten yuan."
+     ],
+     "answer": "B",
+     "why": "Clerk: It's two yuan.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-s2-4-A3",
+     "type": "choice",
+     "stem": "Who says \"Here you are\"?",
+     "options": [
+      "Kate.",
+      "The clerk.",
+      "Kate's mother.",
+      "Nobody."
+     ],
+     "answer": "B",
+     "why": "店员把橡皮递给 Kate 时说 Here you are.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-s2-4-A4",
+     "type": "choice",
+     "stem": "Where are they?",
+     "options": [
+      "In a shop.",
+      "At school.",
+      "At home.",
+      "In a park."
+     ],
+     "answer": "A",
+     "why": "一个店员、一个顾客，在买东西，所以在商店。",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r-s2-4-B1",
+     "type": "tf",
+     "stem": "The eraser is five yuan.",
+     "answer": "F",
+     "why": "是两块钱。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s2-4-B2",
+     "type": "tf",
+     "stem": "Kate says thank you.",
+     "answer": "T",
+     "why": "Thank you!",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s2-4-B3",
+     "type": "tf",
+     "stem": "The clerk has no eraser.",
+     "answer": "F",
+     "why": "Yes, we do. 店员有橡皮。",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7r-s2-4-C1",
+     "type": "fill",
+     "stem": "Do you ____ an eraser?",
+     "answers": [
+      [
+       "have"
+      ]
+     ],
+     "why": "Do you have ...? 你们有……吗？",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s2-4-C2",
+     "type": "fill",
+     "stem": "How ____ is it?",
+     "answers": [
+      [
+       "much"
+      ]
+     ],
+     "why": "How much 问价钱。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s2-4-C3",
+     "type": "fill",
+     "stem": "You're ____.",
+     "answers": [
+      [
+       "welcome"
+      ]
+     ],
+     "why": "You're welcome.",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "much",
+    "have",
+    "welcome",
+    "here",
+    "yuan"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

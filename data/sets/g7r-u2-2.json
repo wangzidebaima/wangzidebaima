@@ -1,0 +1,193 @@
+{
+ "id": "g7r-u2-2",
+ "kind": "reading",
+ "title": "A Family Photo",
+ "subtitle": "考点：家庭成员称呼 / who 的问句",
+ "unit": "U2",
+ "dialogue": [
+  {
+   "s": "Ben",
+   "t": "Who is the man in the hat?"
+  },
+  {
+   "s": "Lily",
+   "t": "He's my grandpa. He's very funny."
+  },
+  {
+   "s": "Ben",
+   "t": "And the woman next to him?"
+  },
+  {
+   "s": "Lily",
+   "t": "That's my grandma. They are my father's parents."
+  },
+  {
+   "s": "Ben",
+   "t": "So your father is their son."
+  },
+  {
+   "s": "Lily",
+   "t": "Yes, and I'm their grandchild."
+  },
+  {
+   "s": "Ben",
+   "t": "And who is the handsome man?"
+  },
+  {
+   "s": "Lily",
+   "t": "He's my father!"
+  },
+  {
+   "s": "Ben",
+   "t": "What a nice family!"
+  }
+ ],
+ "vocab": "grandchild 孙子 · son 儿子 · hat 帽子 · handsome 英俊的 · next to 紧邻 · husband 丈夫",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r-u2-2-A1",
+     "type": "choice",
+     "stem": "Who is the man in the hat?",
+     "options": [
+      "Lily's father.",
+      "Lily's grandpa.",
+      "Ben's grandpa.",
+      "Lily's uncle."
+     ],
+     "answer": "B",
+     "why": "Lily: He's my grandpa.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u2-2-A2",
+     "type": "choice",
+     "stem": "Who is next to Grandpa?",
+     "options": [
+      "Grandma.",
+      "Lily's mother.",
+      "Ben.",
+      "Lily."
+     ],
+     "answer": "A",
+     "why": "That's my grandma.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u2-2-A3",
+     "type": "choice",
+     "stem": "What is Lily's father to Grandpa and Grandma?",
+     "options": [
+      "Their husband.",
+      "Their son.",
+      "Their grandchild.",
+      "Their friend."
+     ],
+     "answer": "B",
+     "why": "So your father is their son.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u2-2-A4",
+     "type": "choice",
+     "stem": "What does Ben think of Lily's family?",
+     "options": [
+      "It is too big.",
+      "It is nice.",
+      "It is boring.",
+      "It is strange."
+     ],
+     "answer": "B",
+     "why": "Ben: What a nice family!",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r-u2-2-B1",
+     "type": "tf",
+     "stem": "Grandpa and Grandma are Lily's mother's parents.",
+     "answer": "F",
+     "why": "They are my father's parents.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u2-2-B2",
+     "type": "tf",
+     "stem": "Lily is Grandpa's grandchild.",
+     "answer": "T",
+     "why": "I'm their grandchild.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u2-2-B3",
+     "type": "tf",
+     "stem": "The handsome man is Ben.",
+     "answer": "F",
+     "why": "英俊的男人是 Lily 的爸爸。",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7r-u2-2-C1",
+     "type": "fill",
+     "stem": "I'm their ____.",
+     "answers": [
+      [
+       "grandchild"
+      ]
+     ],
+     "why": "grandchild 孙子/孙女。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u2-2-C2",
+     "type": "fill",
+     "stem": "My father is their ____.",
+     "answers": [
+      [
+       "son"
+      ]
+     ],
+     "why": "他们的儿子，所以说 son。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u2-2-C3",
+     "type": "fill",
+     "stem": "The woman ____ to him is my grandma.",
+     "answers": [
+      [
+       "next"
+      ]
+     ],
+     "why": "next to 紧邻。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "grandchild",
+    "son",
+    "next",
+    "hat",
+    "handsome"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

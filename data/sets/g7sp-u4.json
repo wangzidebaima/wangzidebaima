@@ -1,0 +1,82 @@
+{
+ "id": "g7sp-u4",
+ "kind": "speaking",
+ "unit": "U4",
+ "title": "口语练习",
+ "subtitle": "每天 5 分钟 · 共 5 天",
+ "steps": [
+  "点 🔊 听一遍，听清语调",
+  "一句一句跟着读，声音要大，不怕错",
+  "读完点「今天完成了」打卡"
+ ],
+ "sentences": [
+  {
+   "en": "What's your favourite subject?",
+   "zh": "你最喜欢的科目是什么？"
+  },
+  {
+   "en": "My favourite subject is English.",
+   "zh": "我最喜欢的科目是英语。"
+  },
+  {
+   "en": "Why do you like it? Because it's interesting.",
+   "zh": "你为什么喜欢它？因为它很有趣。"
+  },
+  {
+   "en": "I'm good at maths.",
+   "zh": "我擅长数学。"
+  },
+  {
+   "en": "Our PE teacher is very kind.",
+   "zh": "我们的体育老师非常和蔼。"
+  },
+  {
+   "en": "I have a science class on Tuesday.",
+   "zh": "我星期二有一节科学课。"
+  },
+  {
+   "en": "I want to be a doctor in the future.",
+   "zh": "我将来想当医生。"
+  },
+  {
+   "en": "Learning is fun.",
+   "zh": "学习很有趣。"
+  },
+  {
+   "en": "I work hard every day.",
+   "zh": "我每天都很努力。"
+  }
+ ],
+ "plan": [
+  {
+   "day": 1,
+   "title": "跟读第 1–3 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 5
+  },
+  {
+   "day": 2,
+   "title": "跟读第 4–6 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 5
+  },
+  {
+   "day": 3,
+   "title": "跟读第 7–9 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 5
+  },
+  {
+   "day": 4,
+   "title": "不看书，说给家长听",
+   "task": "挑 5 句最喜欢的，尽量不看书说出来",
+   "minutes": 5
+  },
+  {
+   "day": 5,
+   "title": "自己说 3 句话",
+   "task": "用 “My favourite subject is … because … ” 说 3 句话",
+   "minutes": 5
+  }
+ ]
+}

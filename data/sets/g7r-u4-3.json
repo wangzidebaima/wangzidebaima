@@ -1,0 +1,159 @@
+{
+ "id": "g7r-u4-3",
+ "kind": "reading",
+ "title": "Two Dreams",
+ "subtitle": "考点：will/want to be / 兴趣与职业",
+ "unit": "U4",
+ "passage": [
+  "Mia loves music. She plays two instruments, the piano and the guitar, and she is good at singing. She wants to be a singer in the future.",
+  "Her brother Leo likes science. He is good at math. He wants to be a scientist. \"Science is like magic,\" he says. Both of them study hard at school."
+ ],
+ "vocab": "instrument 乐器 · singer 歌手 · scientist 科学家 · future 将来 · magic 魔法 · both 两个都 · good at 擅长",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r-u4-3-A1",
+     "type": "choice",
+     "stem": "What does Mia play?",
+     "options": [
+      "The drums.",
+      "The piano and the guitar.",
+      "Only the guitar.",
+      "The violin."
+     ],
+     "answer": "B",
+     "why": "She plays two instruments, the piano and the guitar.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u4-3-A2",
+     "type": "choice",
+     "stem": "What does Mia want to be?",
+     "options": [
+      "A scientist.",
+      "A teacher.",
+      "A singer.",
+      "A doctor."
+     ],
+     "answer": "C",
+     "why": "She wants to be a singer in the future.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u4-3-A3",
+     "type": "choice",
+     "stem": "What does Leo like?",
+     "options": [
+      "Music.",
+      "Science.",
+      "History.",
+      "French."
+     ],
+     "answer": "B",
+     "why": "Her brother Leo likes science.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u4-3-A4",
+     "type": "choice",
+     "stem": "What does Leo say about science?",
+     "options": [
+      "It is boring.",
+      "It is like magic.",
+      "It is hard.",
+      "It is useless."
+     ],
+     "answer": "B",
+     "why": "\"Science is like magic,\" he says.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r-u4-3-B1",
+     "type": "tf",
+     "stem": "Mia is good at singing.",
+     "answer": "T",
+     "why": "she is good at singing",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u4-3-B2",
+     "type": "tf",
+     "stem": "Leo is not good at math.",
+     "answer": "F",
+     "why": "He is good at math.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u4-3-B3",
+     "type": "tf",
+     "stem": "Mia and Leo both study hard.",
+     "answer": "T",
+     "why": "Both of them study hard at school.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7r-u4-3-C1",
+     "type": "fill",
+     "stem": "Mia plays two ____.",
+     "answers": [
+      [
+       "instruments"
+      ]
+     ],
+     "why": "two 后面用复数 instruments。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u4-3-C2",
+     "type": "fill",
+     "stem": "She wants to be a ____ in the future.",
+     "answers": [
+      [
+       "singer"
+      ]
+     ],
+     "why": "singer 歌手。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u4-3-C3",
+     "type": "fill",
+     "stem": "Science is like ____.",
+     "answers": [
+      [
+       "magic"
+      ]
+     ],
+     "why": "like magic 像魔法一样。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "instruments",
+    "singer",
+    "scientist",
+    "magic",
+    "both"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

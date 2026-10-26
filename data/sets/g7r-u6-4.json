@@ -1,0 +1,159 @@
+{
+ "id": "g7r-u6-4",
+ "kind": "reading",
+ "title": "Daily Life in Finland",
+ "subtitle": "考点：不同地方的日常生活 / already / dark",
+ "unit": "U6",
+ "passage": [
+  "In Finland, winter days are short. At eight in the morning, it is still dark outside, and many students are already at school. After class, they often play ice hockey outside.",
+  "Home economics is an important part of school life. Students learn to cook and keep a home tidy. They finish their homework early and go to bed on time."
+ ],
+ "vocab": "Finnish 芬兰语 · hockey 曲棍球 · ice hockey 冰球运动 · already 已经 · dark 昏暗的 · outside 在外面 · home economics 家政学 · part 部分",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r-u6-4-A1",
+     "type": "choice",
+     "stem": "What are winter days like in Finland?",
+     "options": [
+      "Long.",
+      "Short.",
+      "Hot.",
+      "Windy."
+     ],
+     "answer": "B",
+     "why": "winter days are short",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u6-4-A2",
+     "type": "choice",
+     "stem": "What is it like at eight in the morning?",
+     "options": [
+      "It is dark outside.",
+      "It is very hot.",
+      "It is raining.",
+      "It is bright."
+     ],
+     "answer": "A",
+     "why": "it is still dark outside",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u6-4-A3",
+     "type": "choice",
+     "stem": "What do students often do after class?",
+     "options": [
+      "Play ice hockey outside.",
+      "Watch TV.",
+      "Go shopping.",
+      "Sleep."
+     ],
+     "answer": "A",
+     "why": "they often play ice hockey outside",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u6-4-A4",
+     "type": "choice",
+     "stem": "What do students learn in home economics?",
+     "options": [
+      "To play hockey.",
+      "To cook and keep a home tidy.",
+      "To speak Finnish.",
+      "To draw."
+     ],
+     "answer": "B",
+     "why": "Students learn to cook and keep a home tidy.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r-u6-4-B1",
+     "type": "tf",
+     "stem": "Winter days in Finland are long.",
+     "answer": "F",
+     "why": "winter days are short.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u6-4-B2",
+     "type": "tf",
+     "stem": "Many students are already at school at eight.",
+     "answer": "T",
+     "why": "many students are already at school",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u6-4-B3",
+     "type": "tf",
+     "stem": "Finnish students never finish homework.",
+     "answer": "F",
+     "why": "他们很早完成作业（finish their homework early）。",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7r-u6-4-C1",
+     "type": "fill",
+     "stem": "It is still ____ outside at eight in the morning.",
+     "answers": [
+      [
+       "dark"
+      ]
+     ],
+     "why": "dark 昏暗的。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u6-4-C2",
+     "type": "fill",
+     "stem": "Many students are ____ at school.",
+     "answers": [
+      [
+       "already"
+      ]
+     ],
+     "why": "already 已经。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u6-4-C3",
+     "type": "fill",
+     "stem": "They often play ice ____ outside.",
+     "answers": [
+      [
+       "hockey"
+      ]
+     ],
+     "why": "ice hockey 冰球。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "dark",
+    "already",
+    "hockey",
+    "part",
+    "learn"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

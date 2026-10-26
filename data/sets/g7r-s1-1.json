@@ -1,0 +1,159 @@
+{
+ "id": "g7r-s1-1",
+ "kind": "reading",
+ "title": "Hello, I'm Lily",
+ "subtitle": "考点：自我介绍 / be 动词",
+ "unit": "S1",
+ "passage": [
+  "Hello, everyone! My name is Lily Green. L-I-L-Y, Lily. I am twelve years old. I am a student at No. 3 Middle School. I'm in Class 5, Grade 7.",
+  "My English teacher is Miss Gao. She is very nice. In class, she says, \"Good morning, everyone!\" and we say, \"Good morning, Miss Gao!\" Then we start our English class. I like English."
+ ],
+ "vocab": "everyone 每人 · greet 招呼 · spell 拼写 · start 开始",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r-s1-1-A1",
+     "type": "choice",
+     "stem": "What is the girl's family name?",
+     "options": [
+      "Lily.",
+      "Green.",
+      "Gao.",
+      "Miss."
+     ],
+     "answer": "B",
+     "why": "Lily Green 里，Lily 是名，Green 是姓（family name）。",
+     "pts": 2
+    },
+    {
+     "id": "g7r-s1-1-A2",
+     "type": "choice",
+     "stem": "How old is Lily?",
+     "options": [
+      "Eleven.",
+      "Twelve.",
+      "Thirteen.",
+      "Fourteen."
+     ],
+     "answer": "B",
+     "why": "原文：I am twelve years old.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-s1-1-A3",
+     "type": "choice",
+     "stem": "Which class is Lily in?",
+     "options": [
+      "Class 3.",
+      "Class 5.",
+      "Class 7.",
+      "Class 12."
+     ],
+     "answer": "B",
+     "why": "原文：I'm in Class 5, Grade 7. No. 3 是学校的编号，Grade 7 是年级。",
+     "pts": 2
+    },
+    {
+     "id": "g7r-s1-1-A4",
+     "type": "choice",
+     "stem": "Who is Lily's English teacher?",
+     "options": [
+      "Miss Green.",
+      "Mr. Gao.",
+      "Miss Gao.",
+      "Lily."
+     ],
+     "answer": "C",
+     "why": "原文：My English teacher is Miss Gao.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r-s1-1-B1",
+     "type": "tf",
+     "stem": "Lily is a teacher.",
+     "answer": "F",
+     "why": "Lily 是学生：I am a student.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s1-1-B2",
+     "type": "tf",
+     "stem": "Lily likes English.",
+     "answer": "T",
+     "why": "最后一句：I like English.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s1-1-B3",
+     "type": "tf",
+     "stem": "Miss Gao says \"Good afternoon\" in class.",
+     "answer": "F",
+     "why": "她说的是 Good morning, everyone!",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7r-s1-1-C1",
+     "type": "fill",
+     "stem": "I ____ twelve years old.",
+     "answers": [
+      [
+       "am"
+      ]
+     ],
+     "why": "主语是 I，be 动词用 am。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s1-1-C2",
+     "type": "fill",
+     "stem": "Lily is ____ Class 5.",
+     "answers": [
+      [
+       "in"
+      ]
+     ],
+     "why": "in Class 5 在五班。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s1-1-C3",
+     "type": "fill",
+     "stem": "Miss Gao ____ \"Good morning, everyone!\"",
+     "answers": [
+      [
+       "says"
+      ]
+     ],
+     "why": "主语是第三人称单数 Miss Gao，动词加 s：says。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "am",
+    "in",
+    "says",
+    "is",
+    "like"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

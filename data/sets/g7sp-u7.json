@@ -1,0 +1,82 @@
+{
+ "id": "g7sp-u7",
+ "kind": "speaking",
+ "unit": "U7",
+ "title": "口语练习",
+ "subtitle": "每天 5 分钟 · 共 5 天",
+ "steps": [
+  "点 🔊 听一遍，听清语调",
+  "一句一句跟着读，声音要大，不怕错",
+  "读完点「今天完成了」打卡"
+ ],
+ "sentences": [
+  {
+   "en": "Happy birthday to you!",
+   "zh": "祝你生日快乐！"
+  },
+  {
+   "en": "When is your birthday? It's on May 20th.",
+   "zh": "你的生日是什么时候？是五月二十日。"
+  },
+  {
+   "en": "Let's have a surprise party for him.",
+   "zh": "我们给他办一个惊喜派对吧。"
+  },
+  {
+   "en": "Make a wish and blow out the candles.",
+   "zh": "许个愿，吹灭蜡烛。"
+  },
+  {
+   "en": "How much is the cake? It's thirty yuan.",
+   "zh": "蛋糕多少钱？三十元。"
+  },
+  {
+   "en": "We celebrate National Day on October 1st.",
+   "zh": "我们在十月一日庆祝国庆节。"
+  },
+  {
+   "en": "I'll take two kilos of apples.",
+   "zh": "我要两公斤苹果。"
+  },
+  {
+   "en": "Thank you for the present.",
+   "zh": "谢谢你的礼物。"
+  },
+  {
+   "en": "This is the best birthday ever!",
+   "zh": "这是我过得最好的生日！"
+  }
+ ],
+ "plan": [
+  {
+   "day": 1,
+   "title": "跟读第 1–3 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 5
+  },
+  {
+   "day": 2,
+   "title": "跟读第 4–6 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 5
+  },
+  {
+   "day": 3,
+   "title": "跟读第 7–9 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 5
+  },
+  {
+   "day": 4,
+   "title": "不看书，说给家长听",
+   "task": "挑 5 句最喜欢的，尽量不看书说出来",
+   "minutes": 5
+  },
+  {
+   "day": 5,
+   "title": "自己说 3 句话",
+   "task": "用 “My birthday is on … I will … ” 说 3 句话介绍你的生日",
+   "minutes": 5
+  }
+ ]
+}

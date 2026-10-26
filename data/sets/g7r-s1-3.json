@@ -1,0 +1,159 @@
+{
+ "id": "g7r-s1-3",
+ "kind": "reading",
+ "title": "Letters Around Us",
+ "subtitle": "考点：字母 / 数字 / 介词 at on in",
+ "unit": "S1",
+ "passage": [
+  "Letters are everywhere. Look at the street. You can see \"BUS\" at the bus stop, \"P\" for parking and \"WC\" on the door. At home, we watch TV and listen to a CD.",
+  "At school, we have PE class on Tuesday. English letters are fun! There are twenty-six letters in the English alphabet."
+ ],
+ "vocab": "letter 字母 · everywhere 到处 · alphabet 字母表 · fun 有趣的",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r-s1-3-A1",
+     "type": "choice",
+     "stem": "How many letters are there in the English alphabet?",
+     "options": [
+      "Twenty-four.",
+      "Twenty-five.",
+      "Twenty-six.",
+      "Twenty-seven."
+     ],
+     "answer": "C",
+     "why": "最后一句：twenty-six letters。",
+     "pts": 2
+    },
+    {
+     "id": "g7r-s1-3-A2",
+     "type": "choice",
+     "stem": "Where can you see \"BUS\"?",
+     "options": [
+      "At the bus stop.",
+      "On the door.",
+      "At home.",
+      "At school."
+     ],
+     "answer": "A",
+     "why": "原文：You can see \"BUS\" at the bus stop.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-s1-3-A3",
+     "type": "choice",
+     "stem": "What do we watch at home?",
+     "options": [
+      "A CD.",
+      "TV.",
+      "PE.",
+      "A bus."
+     ],
+     "answer": "B",
+     "why": "At home, we watch TV.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-s1-3-A4",
+     "type": "choice",
+     "stem": "When is PE class?",
+     "options": [
+      "On Monday.",
+      "On Tuesday.",
+      "On Friday.",
+      "On Sunday."
+     ],
+     "answer": "B",
+     "why": "PE class on Tuesday.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r-s1-3-B1",
+     "type": "tf",
+     "stem": "We can see letters only at school.",
+     "answer": "F",
+     "why": "开头就说 Letters are everywhere.（到处都有）。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s1-3-B2",
+     "type": "tf",
+     "stem": "\"P\" is for parking.",
+     "answer": "T",
+     "why": "原文：\"P\" for parking.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s1-3-B3",
+     "type": "tf",
+     "stem": "The writer thinks English letters are fun.",
+     "answer": "T",
+     "why": "English letters are fun!",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7r-s1-3-C1",
+     "type": "fill",
+     "stem": "You can ____ many letters on the street.",
+     "answers": [
+      [
+       "see"
+      ]
+     ],
+     "why": "can 后面用动词原形 see。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s1-3-C2",
+     "type": "fill",
+     "stem": "We have PE class ____ Tuesday.",
+     "answers": [
+      [
+       "on"
+      ]
+     ],
+     "why": "具体星期前用 on。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s1-3-C3",
+     "type": "fill",
+     "stem": "We ____ to a CD at home.",
+     "answers": [
+      [
+       "listen"
+      ]
+     ],
+     "why": "listen to 听。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "see",
+    "on",
+    "listen",
+    "at",
+    "has"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

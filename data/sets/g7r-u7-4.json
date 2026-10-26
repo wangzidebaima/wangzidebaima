@@ -1,0 +1,159 @@
+{
+ "id": "g7r-u7-4",
+ "kind": "reading",
+ "title": "Birthdays Around the World",
+ "subtitle": "考点：for example / 不同习俗",
+ "unit": "U7",
+ "passage": [
+  "People celebrate birthdays in different ways. In China, many people eat long noodles on their birthdays. The noodles are a symbol of a long life. In the UK, people put candles on a cake. The birthday boy or girl makes a wish and blows out the candles.",
+  "In Mexico, children break a pinata full of sweets at the party. For example, in some families the child can choose the game. Birthdays are a happy time for everyone, in every language."
+ ],
+ "vocab": "celebration 庆典 · for example 例如 · symbol 象征 · international 国际的 · language 语言 · own 自己的",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r-u7-4-A1",
+     "type": "choice",
+     "stem": "What do many Chinese people eat on their birthdays?",
+     "options": [
+      "Cakes.",
+      "Long noodles.",
+      "Pizza.",
+      "Chocolate."
+     ],
+     "answer": "B",
+     "why": "many people eat long noodles on their birthdays",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u7-4-A2",
+     "type": "choice",
+     "stem": "What are the long noodles a symbol of?",
+     "options": [
+      "A long life.",
+      "A big family.",
+      "A rich life.",
+      "A new year."
+     ],
+     "answer": "A",
+     "why": "The noodles are a symbol of a long life.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u7-4-A3",
+     "type": "choice",
+     "stem": "What do people in the UK put on a cake?",
+     "options": [
+      "Flags.",
+      "Candles.",
+      "Noodles.",
+      "Fruit only."
+     ],
+     "answer": "B",
+     "why": "people put candles on a cake",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u7-4-A4",
+     "type": "choice",
+     "stem": "What do children in Mexico break at the party?",
+     "options": [
+      "A plate.",
+      "A cake.",
+      "A pinata full of sweets.",
+      "A balloon only."
+     ],
+     "answer": "C",
+     "why": "children break a pinata full of sweets",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r-u7-4-B1",
+     "type": "tf",
+     "stem": "People celebrate birthdays in the same way everywhere.",
+     "answer": "F",
+     "why": "People celebrate birthdays in different ways.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u7-4-B2",
+     "type": "tf",
+     "stem": "In the UK, the birthday child makes a wish.",
+     "answer": "T",
+     "why": "The birthday boy or girl makes a wish and blows out the candles.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u7-4-B3",
+     "type": "tf",
+     "stem": "Birthdays are not happy times.",
+     "answer": "F",
+     "why": "Birthdays are a happy time for everyone.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7r-u7-4-C1",
+     "type": "fill",
+     "stem": "People celebrate birthdays in different ____.",
+     "answers": [
+      [
+       "ways"
+      ]
+     ],
+     "why": "in different ways 以不同的方式。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u7-4-C2",
+     "type": "fill",
+     "stem": "The noodles are a ____ of a long life.",
+     "answers": [
+      [
+       "symbol"
+      ]
+     ],
+     "why": "symbol 象征。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u7-4-C3",
+     "type": "fill",
+     "stem": "The child can ____ the game.",
+     "answers": [
+      [
+       "choose"
+      ]
+     ],
+     "why": "choose 选择。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "ways",
+    "symbol",
+    "candles",
+    "break",
+    "choose"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

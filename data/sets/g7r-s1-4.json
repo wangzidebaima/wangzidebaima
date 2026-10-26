@@ -1,0 +1,159 @@
+{
+ "id": "g7r-s1-4",
+ "kind": "reading",
+ "title": "Our English Class",
+ "subtitle": "考点：一般现在时 / 时间",
+ "unit": "S1",
+ "passage": [
+  "Our English class starts at eight o'clock. When the bell rings, everyone stands up. The teacher says, \"Good morning, class!\" and we greet her with \"Good morning, Ms. Li!\"",
+  "First, we have a conversation in pairs. Then we spell some words. Spelling is hard but fun. At 8:45, the bell rings again, and class is over."
+ ],
+ "vocab": "bell 铃 · greet 招呼 · conversation 谈话 · spell 拼写 · start 开始",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r-s1-4-A1",
+     "type": "choice",
+     "stem": "When does the English class start?",
+     "options": [
+      "At 7:50.",
+      "At 8:00.",
+      "At 8:45.",
+      "At 9:00."
+     ],
+     "answer": "B",
+     "why": "原文：starts at eight o'clock。",
+     "pts": 2
+    },
+    {
+     "id": "g7r-s1-4-A2",
+     "type": "choice",
+     "stem": "What do the students do first?",
+     "options": [
+      "Spell some words.",
+      "Stand up.",
+      "Have a conversation in pairs.",
+      "Read a book."
+     ],
+     "answer": "C",
+     "why": "First, we have a conversation in pairs.（先对话，再拼写。）",
+     "pts": 2
+    },
+    {
+     "id": "g7r-s1-4-A3",
+     "type": "choice",
+     "stem": "What do the students say to the teacher?",
+     "options": [
+      "Good afternoon, Ms. Li!",
+      "Good morning, Ms. Li!",
+      "Good night, Ms. Li!",
+      "Hello, Miss Gao!"
+     ],
+     "answer": "B",
+     "why": "原文：Good morning, Ms. Li!",
+     "pts": 2
+    },
+    {
+     "id": "g7r-s1-4-A4",
+     "type": "choice",
+     "stem": "When is the class over?",
+     "options": [
+      "At 8:00.",
+      "At 8:15.",
+      "At 8:45.",
+      "At 9:45."
+     ],
+     "answer": "C",
+     "why": "At 8:45, ... class is over.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r-s1-4-B1",
+     "type": "tf",
+     "stem": "Everyone sits down when the bell rings.",
+     "answer": "F",
+     "why": "铃响时大家是站起来（stands up）。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s1-4-B2",
+     "type": "tf",
+     "stem": "They have a conversation in pairs.",
+     "answer": "T",
+     "why": "First, we have a conversation in pairs.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s1-4-B3",
+     "type": "tf",
+     "stem": "Spelling is easy for them.",
+     "answer": "F",
+     "why": "Spelling is hard but fun.（难但有趣）。",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7r-s1-4-C1",
+     "type": "fill",
+     "stem": "Our class ____ at eight o'clock.",
+     "answers": [
+      [
+       "starts"
+      ]
+     ],
+     "why": "主语 class 是第三人称单数，动词加 s：starts。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s1-4-C2",
+     "type": "fill",
+     "stem": "We ____ the teacher with \"Good morning\".",
+     "answers": [
+      [
+       "greet"
+      ]
+     ],
+     "why": "greet sb. with ... 用……向某人问候。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s1-4-C3",
+     "type": "fill",
+     "stem": "At 8:45, the class is ____.",
+     "answers": [
+      [
+       "over"
+      ]
+     ],
+     "why": "be over 结束。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "starts",
+    "greet",
+    "over",
+    "rings",
+    "spell"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

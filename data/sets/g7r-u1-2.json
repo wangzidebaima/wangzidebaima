@@ -1,0 +1,189 @@
+{
+ "id": "g7r-u1-2",
+ "kind": "reading",
+ "title": "An Information Card",
+ "subtitle": "考点：填写个人信息 / hobby / 改错",
+ "unit": "U1",
+ "dialogue": [
+  {
+   "s": "Mr. Li",
+   "t": "Jim, please fill in your information card."
+  },
+  {
+   "s": "Jim",
+   "t": "What do I write?"
+  },
+  {
+   "s": "Mr. Li",
+   "t": "Your full name, age, grade and hobby."
+  },
+  {
+   "s": "Jim",
+   "t": "My full name is Jim Green. I'm twelve. I'm in Grade 7."
+  },
+  {
+   "s": "Mr. Li",
+   "t": "What's your hobby?"
+  },
+  {
+   "s": "Jim",
+   "t": "I like playing tennis."
+  },
+  {
+   "s": "Mr. Li",
+   "t": "Good. Please write \"tennis\" in the box."
+  },
+  {
+   "s": "Jim",
+   "t": "Oh, I made a mistake. I wrote \"ten\" first."
+  }
+ ],
+ "vocab": "information 信息 · full name 全名 · grade 年级 · hobby 业余爱好 · mistake 错误 · tennis 网球",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r-u1-2-A1",
+     "type": "choice",
+     "stem": "What does Jim fill in?",
+     "options": [
+      "A letter.",
+      "An information card.",
+      "A story.",
+      "A test."
+     ],
+     "answer": "B",
+     "why": "Jim, please fill in your information card.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u1-2-A2",
+     "type": "choice",
+     "stem": "What is Jim's hobby?",
+     "options": [
+      "Playing the guitar.",
+      "Playing football.",
+      "Playing tennis.",
+      "Reading."
+     ],
+     "answer": "C",
+     "why": "I like playing tennis.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u1-2-A3",
+     "type": "choice",
+     "stem": "How old is Jim?",
+     "options": [
+      "Eleven.",
+      "Twelve.",
+      "Thirteen.",
+      "Seven."
+     ],
+     "answer": "B",
+     "why": "I'm twelve. Grade 7 是年级，不是年龄。",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u1-2-A4",
+     "type": "choice",
+     "stem": "What mistake does Jim make?",
+     "options": [
+      "He writes \"ten\" first.",
+      "He forgets his name.",
+      "He writes the wrong grade.",
+      "He has no pen."
+     ],
+     "answer": "A",
+     "why": "I wrote \"ten\" first.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r-u1-2-B1",
+     "type": "tf",
+     "stem": "Jim's full name is Jim Green.",
+     "answer": "T",
+     "why": "My full name is Jim Green.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u1-2-B2",
+     "type": "tf",
+     "stem": "Jim is in Grade 8.",
+     "answer": "F",
+     "why": "I'm in Grade 7.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u1-2-B3",
+     "type": "tf",
+     "stem": "Mr. Li is a student.",
+     "answer": "F",
+     "why": "Mr. Li 在指导 Jim 填表，是老师。",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7r-u1-2-C1",
+     "type": "fill",
+     "stem": "Please write your ____ name, age, grade and hobby.",
+     "answers": [
+      [
+       "full"
+      ]
+     ],
+     "why": "full name 全名。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u1-2-C2",
+     "type": "fill",
+     "stem": "What's your ____?",
+     "answers": [
+      [
+       "hobby"
+      ]
+     ],
+     "why": "hobby 业余爱好。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u1-2-C3",
+     "type": "fill",
+     "stem": "Oh, I made a ____.",
+     "answers": [
+      [
+       "mistake"
+      ]
+     ],
+     "why": "make a mistake 犯错。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "full",
+    "grade",
+    "hobby",
+    "mistake",
+    "write"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

@@ -1,0 +1,159 @@
+{
+ "id": "g7r-s2-3",
+ "kind": "reading",
+ "title": "What's This in English?",
+ "subtitle": "考点：What's this? / 猜词游戏",
+ "unit": "S2",
+ "passage": [
+  "In our English class, we play a guessing game. Mr. Hu puts a thing in a box. We ask, \"What's this in English?\" He gives hints: \"It's small. You can open the door with it.\"",
+  "Tina says, \"It's a key!\" \"Yes! K-E-Y,\" says Mr. Hu. The next thing is bigger. \"You can drink water from it.\" \"It's a bottle!\" We love this game."
+ ],
+ "vocab": "guess 猜 · hint 提示 · open 打开 · bottle 瓶子 · key 钥匙",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r-s2-3-A1",
+     "type": "choice",
+     "stem": "Where does Mr. Hu put the thing?",
+     "options": [
+      "On the desk.",
+      "In a box.",
+      "In a bag.",
+      "In the key."
+     ],
+     "answer": "B",
+     "why": "Mr. Hu puts a thing in a box.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-s2-3-A2",
+     "type": "choice",
+     "stem": "What is the first thing?",
+     "options": [
+      "A bottle.",
+      "A box.",
+      "A key.",
+      "A door."
+     ],
+     "answer": "C",
+     "why": "Tina 猜到的第一件东西是 key。",
+     "pts": 2
+    },
+    {
+     "id": "g7r-s2-3-A3",
+     "type": "choice",
+     "stem": "What can you do with a bottle?",
+     "options": [
+      "Open a door.",
+      "Drink water from it.",
+      "Write with it.",
+      "Read it."
+     ],
+     "answer": "B",
+     "why": "You can drink water from it.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-s2-3-A4",
+     "type": "choice",
+     "stem": "Who guesses \"key\"?",
+     "options": [
+      "Mr. Hu.",
+      "Tina.",
+      "The class.",
+      "Tom."
+     ],
+     "answer": "B",
+     "why": "Tina says, \"It's a key!\"",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r-s2-3-B1",
+     "type": "tf",
+     "stem": "The key is big.",
+     "answer": "F",
+     "why": "It's small.（钥匙很小）。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s2-3-B2",
+     "type": "tf",
+     "stem": "The class loves the game.",
+     "answer": "T",
+     "why": "We love this game.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s2-3-B3",
+     "type": "tf",
+     "stem": "The second thing is a pen.",
+     "answer": "F",
+     "why": "第二件东西是 bottle。",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7r-s2-3-C1",
+     "type": "fill",
+     "stem": "Mr. Hu ____ a thing in a box.",
+     "answers": [
+      [
+       "puts"
+      ]
+     ],
+     "why": "第三人称单数加 s：puts。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s2-3-C2",
+     "type": "fill",
+     "stem": "You can ____ the door with a key.",
+     "answers": [
+      [
+       "open"
+      ]
+     ],
+     "why": "open the door 开门。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s2-3-C3",
+     "type": "fill",
+     "stem": "We ____ this game.",
+     "answers": [
+      [
+       "love"
+      ]
+     ],
+     "why": "love 喜爱。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "puts",
+    "open",
+    "love",
+    "drink",
+    "guess"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

@@ -1,0 +1,189 @@
+{
+ "id": "g7r-s3-2",
+ "kind": "reading",
+ "title": "Look at the Picture",
+ "subtitle": "考点：看图 / 圈出 / How many",
+ "unit": "S3",
+ "dialogue": [
+  {
+   "s": "Ms. Zhao",
+   "t": "Look at the picture, class. What do you see?"
+  },
+  {
+   "s": "Ben",
+   "t": "I see a goose."
+  },
+  {
+   "s": "Ms. Zhao",
+   "t": "Good. How many geese are there?"
+  },
+  {
+   "s": "Ben",
+   "t": "Two."
+  },
+  {
+   "s": "Ms. Zhao",
+   "t": "What else?"
+  },
+  {
+   "s": "Amy",
+   "t": "I see a carrot."
+  },
+  {
+   "s": "Ms. Zhao",
+   "t": "Great! Now circle the carrot in your book."
+  },
+  {
+   "s": "Class",
+   "t": "OK!"
+  }
+ ],
+ "vocab": "picture 图画 · circle 圈出 · else 其他的 · goose 鹅 · carrot 胡萝卜",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r-s3-2-A1",
+     "type": "choice",
+     "stem": "What does Ben see?",
+     "options": [
+      "A carrot.",
+      "A goose.",
+      "A dog.",
+      "A cat."
+     ],
+     "answer": "B",
+     "why": "Ben: I see a goose.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-s3-2-A2",
+     "type": "choice",
+     "stem": "How many geese are there?",
+     "options": [
+      "One.",
+      "Two.",
+      "Three.",
+      "Four."
+     ],
+     "answer": "B",
+     "why": "Ben: Two.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-s3-2-A3",
+     "type": "choice",
+     "stem": "What does Amy see?",
+     "options": [
+      "A goose.",
+      "A bottle.",
+      "A carrot.",
+      "A key."
+     ],
+     "answer": "C",
+     "why": "Amy: I see a carrot.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-s3-2-A4",
+     "type": "choice",
+     "stem": "What do the students do in their books?",
+     "options": [
+      "Count the geese.",
+      "Circle the carrot.",
+      "Spell a word.",
+      "Draw a picture."
+     ],
+     "answer": "B",
+     "why": "Now circle the carrot in your book.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r-s3-2-B1",
+     "type": "tf",
+     "stem": "There are three geese in the picture.",
+     "answer": "F",
+     "why": "是 two（Two.）。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s3-2-B2",
+     "type": "tf",
+     "stem": "Amy sees a carrot.",
+     "answer": "T",
+     "why": "I see a carrot.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s3-2-B3",
+     "type": "tf",
+     "stem": "The class circles the goose.",
+     "answer": "F",
+     "why": "要圈的是 carrot。",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7r-s3-2-C1",
+     "type": "fill",
+     "stem": "____ at the picture.",
+     "answers": [
+      [
+       "look"
+      ]
+     ],
+     "why": "Look at ...（看……）。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s3-2-C2",
+     "type": "fill",
+     "stem": "How ____ geese are there?",
+     "answers": [
+      [
+       "many"
+      ]
+     ],
+     "why": "How many + 可数名词复数。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s3-2-C3",
+     "type": "fill",
+     "stem": "Now ____ the carrot in your book.",
+     "answers": [
+      [
+       "circle"
+      ]
+     ],
+     "why": "circle 圈出。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "look",
+    "circle",
+    "else",
+    "many",
+    "see"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

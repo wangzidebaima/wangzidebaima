@@ -1,0 +1,159 @@
+{
+ "id": "g7r-u1-3",
+ "kind": "reading",
+ "title": "The Twins",
+ "subtitle": "考点：一般现在时 / 不同的爱好",
+ "unit": "U1",
+ "passage": [
+  "Tom and Tim are twins. They look the same, but they have different hobbies. Tom plays the guitar and Tim plays tennis. They are in the same class, Class 4. Their classmates often make mistakes about their names.",
+  "Ms. Hu, their class teacher, says, \"Tom wears a red cap. Tim wears a blue one.\" Now everyone knows who is who."
+ ],
+ "vocab": "twin 双胞胎之一 · guitar 吉他 · tennis 网球 · class teacher 班主任 · mistake 错误",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r-u1-3-A1",
+     "type": "choice",
+     "stem": "What do Tom and Tim look like?",
+     "options": [
+      "Different.",
+      "The same.",
+      "Old.",
+      "Tall."
+     ],
+     "answer": "B",
+     "why": "They look the same.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u1-3-A2",
+     "type": "choice",
+     "stem": "What does Tim play?",
+     "options": [
+      "The guitar.",
+      "Tennis.",
+      "Football.",
+      "Basketball."
+     ],
+     "answer": "B",
+     "why": "Tom plays the guitar and Tim plays tennis.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u1-3-A3",
+     "type": "choice",
+     "stem": "Who is Ms. Hu?",
+     "options": [
+      "Their mother.",
+      "Their classmate.",
+      "Their class teacher.",
+      "Their sister."
+     ],
+     "answer": "C",
+     "why": "Ms. Hu, their class teacher",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u1-3-A4",
+     "type": "choice",
+     "stem": "How does Ms. Hu tell the twins apart?",
+     "options": [
+      "By their hobbies.",
+      "By their caps.",
+      "By their names.",
+      "By their classes."
+     ],
+     "answer": "B",
+     "why": "Tom wears a red cap. Tim wears a blue one.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r-u1-3-B1",
+     "type": "tf",
+     "stem": "Tom and Tim are in different classes.",
+     "answer": "F",
+     "why": "They are in the same class, Class 4.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u1-3-B2",
+     "type": "tf",
+     "stem": "The classmates often make mistakes about the names.",
+     "answer": "T",
+     "why": "Their classmates often make mistakes about their names.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u1-3-B3",
+     "type": "tf",
+     "stem": "Tim wears a red cap.",
+     "answer": "F",
+     "why": "红帽子是 Tom 的，Tim 戴蓝色的。",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7r-u1-3-C1",
+     "type": "fill",
+     "stem": "Tom and Tim are ____.",
+     "answers": [
+      [
+       "twins"
+      ]
+     ],
+     "why": "twins 双胞胎。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u1-3-C2",
+     "type": "fill",
+     "stem": "Tom ____ the guitar.",
+     "answers": [
+      [
+       "plays"
+      ]
+     ],
+     "why": "主语是第三人称单数，动词加 s。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u1-3-C3",
+     "type": "fill",
+     "stem": "Tom ____ a red cap.",
+     "answers": [
+      [
+       "wears"
+      ]
+     ],
+     "why": "wear 穿、戴，第三人称单数加 s。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "twins",
+    "same",
+    "plays",
+    "wears",
+    "teacher"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

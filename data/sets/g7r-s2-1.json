@@ -1,0 +1,182 @@
+{
+ "id": "g7r-s2-1",
+ "kind": "reading",
+ "title": "Lost and Found",
+ "subtitle": "考点：Is this your…? / Whose…? / You're welcome",
+ "unit": "S2",
+ "dialogue": [
+  {
+   "s": "Ms. Chen",
+   "t": "Whose key is this? Is this your key, Jim?"
+  },
+  {
+   "s": "Jim",
+   "t": "No, it isn't. I think it's Lucy's."
+  },
+  {
+   "s": "Lucy",
+   "t": "Yes, it is. Thank you, Jim."
+  },
+  {
+   "s": "Jim",
+   "t": "You're welcome."
+  },
+  {
+   "s": "Ms. Chen",
+   "t": "And this bottle? Is it yours, Tom?"
+  },
+  {
+   "s": "Tom",
+   "t": "Yes, it is. It's my water bottle. Thanks, Ms. Chen."
+  }
+ ],
+ "vocab": "key 钥匙 · bottle 瓶子 · thing 东西 · welcome 欢迎",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r-s2-1-A1",
+     "type": "choice",
+     "stem": "Whose key is it?",
+     "options": [
+      "Jim's.",
+      "Lucy's.",
+      "Tom's.",
+      "Ms. Chen's."
+     ],
+     "answer": "B",
+     "why": "Lucy: Yes, it is. 钥匙是 Lucy 的。",
+     "pts": 2
+    },
+    {
+     "id": "g7r-s2-1-A2",
+     "type": "choice",
+     "stem": "What is Tom's thing?",
+     "options": [
+      "A key.",
+      "A book.",
+      "A water bottle.",
+      "An eraser."
+     ],
+     "answer": "C",
+     "why": "Tom: It's my water bottle.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-s2-1-A3",
+     "type": "choice",
+     "stem": "Who says \"You're welcome\"?",
+     "options": [
+      "Lucy.",
+      "Jim.",
+      "Tom.",
+      "Ms. Chen."
+     ],
+     "answer": "B",
+     "why": "Lucy 说谢谢，Jim 回答 You're welcome.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-s2-1-A4",
+     "type": "choice",
+     "stem": "Who asks the questions?",
+     "options": [
+      "Jim.",
+      "Lucy.",
+      "Ms. Chen.",
+      "Tom."
+     ],
+     "answer": "C",
+     "why": "钥匙和瓶子的问题都是 Ms. Chen 问的。",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r-s2-1-B1",
+     "type": "tf",
+     "stem": "The key is Jim's.",
+     "answer": "F",
+     "why": "Jim 说 No, it isn't.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s2-1-B2",
+     "type": "tf",
+     "stem": "Lucy says thank you to Jim.",
+     "answer": "T",
+     "why": "Lucy: Thank you, Jim.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s2-1-B3",
+     "type": "tf",
+     "stem": "The bottle is Lucy's.",
+     "answer": "F",
+     "why": "瓶子是 Tom 的。",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7r-s2-1-C1",
+     "type": "fill",
+     "stem": "Whose key is ____?",
+     "answers": [
+      [
+       "this",
+       "it"
+      ]
+     ],
+     "why": "Whose key is this/it? 这是谁的钥匙？",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s2-1-C2",
+     "type": "fill",
+     "stem": "You're ____.",
+     "answers": [
+      [
+       "welcome"
+      ]
+     ],
+     "why": "You're welcome. 不客气。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-s2-1-C3",
+     "type": "fill",
+     "stem": "Is the bottle ____, Tom?",
+     "answers": [
+      [
+       "yours"
+      ]
+     ],
+     "why": "yours 你的（名词性物主代词，后面不跟名词）。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "this",
+    "it",
+    "yours",
+    "thing",
+    "welcome"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

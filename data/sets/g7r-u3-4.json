@@ -1,0 +1,159 @@
+{
+ "id": "g7r-u3-4",
+ "kind": "reading",
+ "title": "A Message to a Friend",
+ "subtitle": "考点：学校对比 / different from / How about",
+ "unit": "U3",
+ "passage": [
+  "Dear Jenny, How is your school? My new school is different from my old one. It is very modern. Every classroom has a smart whiteboard and a big screen. The computers are amazing.",
+  "Most classes start at 8:00. We have lunch in the delicious dining hall at 12:00. How about your school? Please send me a message soon. Bye for now! Linda"
+ ],
+ "vocab": "different from 与……不同 · modern 现代的 · amazing 令人惊奇的 · most 大多数 · How about…? ……怎么样 · send 发送 · Bye for now 再见",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7r-u3-4-A1",
+     "type": "choice",
+     "stem": "Who writes the message?",
+     "options": [
+      "Jenny.",
+      "Linda.",
+      "A teacher.",
+      "A student's mother."
+     ],
+     "answer": "B",
+     "why": "落款是 Linda。",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u3-4-A2",
+     "type": "choice",
+     "stem": "What is Linda's new school like?",
+     "options": [
+      "Old and small.",
+      "Quiet and old.",
+      "Very modern.",
+      "Dark."
+     ],
+     "answer": "C",
+     "why": "It is very modern.",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u3-4-A3",
+     "type": "choice",
+     "stem": "When do most classes start?",
+     "options": [
+      "At 7:00.",
+      "At 8:00.",
+      "At 9:00.",
+      "At 12:00."
+     ],
+     "answer": "B",
+     "why": "Most classes start at 8:00. 12:00 是午饭时间。",
+     "pts": 2
+    },
+    {
+     "id": "g7r-u3-4-A4",
+     "type": "choice",
+     "stem": "What does Linda want Jenny to do?",
+     "options": [
+      "Come to her school.",
+      "Send her a message.",
+      "Buy a computer.",
+      "Call her teacher."
+     ],
+     "answer": "B",
+     "why": "Please send me a message soon.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g7r-u3-4-B1",
+     "type": "tf",
+     "stem": "Linda's new school is the same as her old school.",
+     "answer": "F",
+     "why": "It is different from my old one.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u3-4-B2",
+     "type": "tf",
+     "stem": "Every classroom has a smart whiteboard.",
+     "answer": "T",
+     "why": "Every classroom has a smart whiteboard and a big screen.",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u3-4-B3",
+     "type": "tf",
+     "stem": "The dining hall food is bad.",
+     "answer": "F",
+     "why": "原文说 delicious。",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7r-u3-4-C1",
+     "type": "fill",
+     "stem": "My new school is ____ from my old one.",
+     "answers": [
+      [
+       "different"
+      ]
+     ],
+     "why": "be different from 与……不同。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u3-4-C2",
+     "type": "fill",
+     "stem": "____ classes start at 8:00.",
+     "answers": [
+      [
+       "most"
+      ]
+     ],
+     "why": "most 大多数。",
+     "pts": 1
+    },
+    {
+     "id": "g7r-u3-4-C3",
+     "type": "fill",
+     "stem": "Please ____ me a message.",
+     "answers": [
+      [
+       "send"
+      ]
+     ],
+     "why": "send sb. sth. 给某人发送某物。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "different",
+    "modern",
+    "most",
+    "send",
+    "amazing"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}
