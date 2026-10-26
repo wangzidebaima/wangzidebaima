@@ -206,3 +206,12 @@ html[data-fs="1"] body { zoom: 1.12; } html[data-fs="2"] body { zoom: 1.25; }
 .marks .mk { position: absolute; transform: translateX(-100%); font-size: 11px; color: var(--muted); padding-right: 2px; white-space: nowrap; }
 .marks .mk::before { content: '🎁'; margin-right: 1px; filter: grayscale(1); opacity: .6; }
 .marks .mk.on { color: var(--star); font-weight: 700; } .marks .mk.on::before { filter: none; opacity: 1; }
+
+.grade { display: inline-block; margin-left: 10px; padding: 2px 10px; border-radius: 99px; background: var(--accent-soft); color: var(--accent); font-size: 14px; font-weight: 600; vertical-align: middle; }
+#updm{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:9999;display:flex;align-items:center;justify-content:center;padding:24px}
+#updm .updbox{background:var(--surface);border-radius:18px;padding:22px 20px;max-width:320px;width:100%;text-align:center;box-shadow:0 8px 30px rgba(0,0,0,.25)}
+#updm .updt{font-size:20px;font-weight:700;margin-bottom:8px}
+#updm .updp{font-size:15px;color:var(--muted);margin-bottom:16px;line-height:1.5}
+#updm .btn{display:block;width:100%;margin:8px 0 0}
+#updm .updp.small{font-size:13px;margin:12px 0 0}
+.hear .btn{margin-top:12px}.hear .big{min-height:72px;font-size:22px}
