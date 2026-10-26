@@ -97,4 +97,26 @@ export function playSay(key, text, avail) {
   fallback();
 }
 
+// 听力原文朗读：没有 MP3 时，用手机自带的美式语音；男女声用音高区分。每次播放读两遍。
+let scriptRun = 0;
+export function stopScript() { scriptRun++; try { window.speechSynthesis && window.speechSynthesis.cancel(); } catch (e) { /* ignore */ } }
+export function playScript(lines, speakers, opts = {}) {
+  const ss = window.speechSynthesis; if (!ss) { toast('这台手机暂时发不出声音'); return; }
+  stopScript(); const run = scriptRun, times = opts.times || 2, rate = opts.rate || 0.9;
+  const voices = ss.getVoices() || [], v = voices.find(x => /en[-_]US/i.test(x.lang)) || voices.find(x => /^en/i.test(x.lang));
+  const items = [];
+  for (let k = 0; k < times; k++) { lines.forEach(l => items.push({ t: l.t, who: (speakers && speakers[l.s]) || '' })); if (k < times - 1) items.push({ gap: 2200 }); }
+  let i = 0;
+  const next = () => {
+    if (run !== scriptRun || i >= items.length) { if (run === scriptRun && opts.onend) opts.onend(); return; }
+    const it = items[i++];
+    if (it.gap) { setTimeout(next, it.gap); return; }
+    const u = new SpeechSynthesisUtterance(it.t); u.lang = 'en-US'; u.rate = rate; if (v) u.voice = v;
+    u.pitch = /^f/.test(it.who) ? 1.25 : /^m/.test(it.who) ? 0.8 : /^c/.test(it.who) ? 1.4 : 1;
+    u.onend = () => setTimeout(next, 450); u.onerror = () => setTimeout(next, 100);
+    ss.speak(u);
+  };
+  next();
+}
+
 export const slug = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');

@@ -6,11 +6,19 @@ import * as CV from './chapview.js';
 const getJSON = (u) => fetch(u).then(r => { if (!r.ok) throw new Error(u + ' ' + r.status); return r.json(); });
 
 function showUpdate() {
-  if (document.getElementById('upd')) return;
-  const b = document.createElement('button');
-  b.id = 'upd'; b.textContent = '✨ 有新内容，点这里刷新';
-  b.onclick = () => location.reload();
-  document.body.append(b);
+  if (document.getElementById('updm')) return;
+  const m = document.createElement('div'); m.id = 'updm';
+  m.innerHTML = '<div class="updbox"><div class="updt">✨ 有新版本啦</div><div class="updp">怎么更新：点下面绿色的「立即更新」，页面会自动刷新，几秒钟就好。你的星星和记录都会保留。</div>' +
+    '<button class="btn primary" id="updgo">立即更新</button><button class="btn ghost" id="updlater">稍后</button><div class="updp small">点「稍后」也行：之后点屏幕下方的「✨ 有新内容，点这里刷新」就能更新。</div></div>';
+  document.body.append(m);
+  m.querySelector('#updgo').onclick = () => location.reload();
+  m.querySelector('#updlater').onclick = () => {
+    m.remove();
+    if (!document.getElementById('upd')) {
+      const b = document.createElement('button'); b.id = 'upd'; b.textContent = '✨ 有新内容，点这里刷新';
+      b.onclick = () => location.reload(); document.body.append(b);
+    }
+  };
 }
 
 async function render() {
@@ -18,11 +26,12 @@ async function render() {
     const hash = location.hash.replace(/^#\/?/, '');
     const [r, a, b] = hash.split('/');
     const u = V.user();
-    if (!u && r !== 'login' && r !== 'parent') { location.replace('#/login'); return; }
+    if (!u && r !== 'login' && r !== 'parent' && r !== 'hear') { location.replace('#/login'); return; }
     V.setTheme(u);
     switch (r) {
       case 'login': return V.login();
       case 'parent': return V.parentHome();
+      case 'hear': return await V.hear(a);
       case 's': return V.subject(a);
       case 'set': return await V.setView(a);
       case 'speak': return await V.speak(a);
@@ -55,7 +64,15 @@ async function boot() {
   });
   render();
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js').catch(() => {});
+    const had = !!navigator.serviceWorker.controller;
+    navigator.serviceWorker.register('sw.js').then((reg) => {
+      // 一直不关页面的用户：回到页面、或每 20 分钟，主动检查一次新版本
+      let last = Date.now();
+      const check = () => { last = Date.now(); reg.update().catch(() => {}); fetch('data/library.json', { cache: 'no-cache' }).catch(() => {}); };
+      document.addEventListener('visibilitychange', () => { if (!document.hidden && Date.now() - last > 60000) check(); });
+      setInterval(() => { if (!document.hidden) check(); }, 20 * 60 * 1000);
+    }).catch(() => {});
+    navigator.serviceWorker.addEventListener('controllerchange', () => { if (had) showUpdate(); });
     navigator.serviceWorker.addEventListener('message', (e) => { if (e.data && e.data.type === 'updated') showUpdate(); });
   }
 }

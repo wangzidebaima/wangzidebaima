@@ -1,5 +1,5 @@
 // 所有页面：登录、首页、题库、答题、结果、错题本、随机练习、记录、打印
-import { h, esc, mathHtml, toast, keypad, praiseText, playSay, slug } from './ui.js';
+import { h, esc, mathHtml, toast, keypad, praiseText, playSay, slug, playScript, stopScript } from './ui.js';
 import * as S from './store.js';
 import { gradeQuestion, answerText, userText, isAnswered } from './grade.js';
 import { RANDOM, makeSession } from './mathgen.js';
@@ -84,6 +84,7 @@ function taskCard(u) {
   return h('section', { class: 'tasks' }, h('h2', { class: 'sh' }, all ? '🎉 今天的任务都完成啦' : '今天的任务'),
     tasks.map((t, i) => h('div', { class: 'task' + (done[i] >= t.goal ? ' done' : '') }, h('span', { class: 'tk' }, done[i] >= t.goal ? '✅' : '⬜'), h('span', { class: 'tl' }, t.label), h('span', { class: 'tn' }, `${Math.min(done[i], t.goal)}/${t.goal}`))));
 }
+const coinsGot = (rewards, total) => rewards.filter(r => total >= r.stars).reduce((a, r) => a + (r.coins || 0), 0);
 export function home() {
   const u = user(), st = S.stats(u.id), p = S.P(u.id);
   const rewards = (X.cfg.rewards || []).slice().sort((a, b) => a.stars - b.stars);
@@ -92,12 +93,13 @@ export function home() {
   const jar = h('section', { class: 'jar' },
     h('div', { class: 'jar-top' }, h('div', { class: 'jar-n' }, '⭐ ', h('b', {}, st.total), h('small', {}, ` / ${G}`)), h('div', { class: 'jar-s' }, `今天 +${st.today}/${cap()}` + (S.streak(u.id) ? ` · 🔥连续 ${S.streak(u.id)} 天` : ''))),
     h('div', { class: 'bar' }, h('i', { style: `width:${pct}%` })), marks,
-    h('p', { class: 'jar-t' }, next ? `再得 ${next.stars - st.total} 颗星，就能换「${next.label}」` : '所有奖励都拿到啦！'),
+    h('p', { class: 'jar-t' }, next ? `再得 ${next.stars - st.total} 颗星，就能得 ${next.label}（找家长领取）` : '所有奖励都拿到啦！'),
+    coinsGot(rewards, st.total) ? h('p', { class: 'jar-t' }, `🪙 已达成 ${coinsGot(rewards, st.total)} 个金币，找家长领取`) : null,
     st.today >= cap() ? h('p', { class: 'jar-t' }, '今天的星星拿满啦，明天再来～') : null);
   const subjectCards = u.subjects.map(id => {
     const s = subj(id); if (!s) return null;
     const speak = s.sets[0].kind === 'speaking';
-    const em = speak ? `已打卡 ${Object.keys(p.speak).filter(k => k.startsWith(s.sets[0].id)).length}/7 天` : `${s.sets.filter(x => p.sets[x.id]).length}/${s.sets.length} 已完成`;
+    const em = speak ? `已打卡 ${Object.keys(p.speak).filter(k => s.sets.some(x => k.startsWith(x.id + '-'))).length}/${s.sets.reduce((a, x) => a + (x.count || 5), 0)} 天` : `${s.sets.filter(x => p.sets[x.id]).length}/${s.sets.length} 已完成`;
     const card = h('a', { class: 'card', href: '#/s/' + id }, h('span', { class: 'ic' }, s.icon), h('b', {}, s.title), h('small', {}, s.desc), h('em', {}, em));
     card._area = /math/.test(id) ? 'math' : 'eng'; return card;
   }).filter(Boolean);
@@ -105,13 +107,14 @@ export function home() {
     const R = RANDOM[k]; const card = h('a', { class: 'card alt', href: '#/rand/' + k }, h('span', { class: 'ic' }, R.icon), h('b', {}, R.title), h('small', {}, '随机出题，不重样'), h('em', {}, `今天 ${S.starsToday(u.id)}/${cap()} 颗`));
     card._area = /^(math|chap)/.test(k) ? 'math' : 'eng'; return card;
   });
-  const areas = [['math', '📐 数学'], ['eng', '🔤 英语']].map(([a, t]) => {
+  const areas = [['math', '📐 数学'], ['eng', '🔤 英语']].map(([a, t0]) => {
+    const pub = (u.publishers || {})[a], t = pub ? `${t0}（${pub}）` : t0;
     const cs = [...subjectCards, ...randCards].filter(c => c._area === a); if (!cs.length) return null;
     return [h('h2', { class: 'sh' }, t), h('div', { class: 'grid' }, cs)];
   });
   const wrongN = st.wrong;
   mount(h('div', { class: 'page home' },
-    h('header', { class: 'hello' }, h('div', {}, h('small', {}, '你好，'), h('h1', {}, u.display + ' 👋')), h('div', { class: 'hbtns' }, h('button', { class: 'link', onclick: () => { const f = ((p.font || 0) + 1) % 3; p.font = f; S.save(u.id); setTheme(u); toast(['字号：标准', '字号：大', '字号：特大'][f]); } }, 'Aa'), h('button', { class: 'link', onclick: () => { if (confirm('切换同学？')) { S.setUser(null); nav('#/login'); } } }, '切换'))),
+    h('header', { class: 'hello' }, h('div', {}, h('small', {}, '你好，'), h('h1', {}, u.display + ' 👋', u.grade ? h('span', { class: 'grade' }, u.grade) : null)), h('div', { class: 'hbtns' }, h('button', { class: 'link', onclick: () => { const f = ((p.font || 0) + 1) % 3; p.font = f; S.save(u.id); setTheme(u); toast(['字号：标准', '字号：大', '字号：特大'][f]); } }, 'Aa'), h('button', { class: 'link', onclick: () => { if (confirm('切换同学？')) { S.setUser(null); nav('#/login'); } } }, '切换'))),
     jar, taskCard(u),
     areas,
     h('h2', { class: 'sh' }, '我的'),
@@ -123,15 +126,32 @@ export function home() {
 // ---------------- 科目页 ----------------
 export function subject(id) {
   const u = user(), s = subj(id), p = S.P(u.id);
-  const rows = s.sets.map(m => {
+  const unitsPresent = [...new Set(s.sets.filter(m => m.unit).map(m => m.unit))];
+  const unitName = (x) => (X.lib.unitNames && X.lib.unitNames[x]) || x;
+  const sel = new Set(S.getUnits(u.id, 'sub-' + id, []));
+  const rowOf = (m) => {
     let chip;
-    if (m.kind === 'speaking') { const n = Object.keys(p.speak).filter(k => k.startsWith(m.id)).length; chip = h('span', { class: 'chip' + (n ? ' ok' : '') }, n ? `${n}/7 天` : '开始'); }
+    if (m.kind === 'speaking') { const n = Object.keys(p.speak).filter(k => k.startsWith(m.id + '-')).length; chip = h('span', { class: 'chip' + (n ? ' ok' : '') }, n ? `${n}/${m.count || 5} 天` : '开始'); }
     else { const rec = p.sets[m.id]; chip = rec ? h('span', { class: 'chip ok' }, `上次 ${rec.last.ok}/${rec.last.total}`) : h('span', { class: 'chip' }, '未做'); }
     return h('a', { class: 'row', href: (m.kind === 'speaking' ? '#/speak/' : '#/set/') + m.id }, h('div', {}, h('b', {}, m.title), h('small', {}, m.subtitle)), chip);
-  });
+  };
   const extra = s.sets.some(x => x.kind === 'listening')
     ? h('button', { class: 'btn ghost wide', onclick: () => prefetchAudio(s) }, '⬇ 把这一科的听力保存到手机（没网也能听）') : null;
-  mount(page(s.title, [h('div', { class: 'list' }, rows), extra]));
+  const listBox = h('div', {});
+  const draw = () => {
+    const show = (m) => !m.unit || !sel.size || sel.has(m.unit);
+    const nodes = [];
+    const plain = s.sets.filter(m => !m.unit && show(m));
+    if (plain.length) nodes.push(h('div', { class: 'list' }, plain.map(rowOf)));
+    unitsPresent.filter(x => !sel.size || sel.has(x)).forEach(x => {
+      const ms = s.sets.filter(m => m.unit === x); nodes.push(h('h2', { class: 'sh' }, unitName(x)), h('div', { class: 'list' }, ms.map(rowOf)));
+    });
+    listBox.replaceChildren(...nodes);
+  };
+  const chips = unitsPresent.length ? h('div', {}, h('div', { class: 'chips' }, h('span', { class: 'lab' }, '选单元（不选就是全部）')),
+    h('div', { class: 'chips' }, unitsPresent.map(x => { const b = h('button', { type: 'button', class: 'chipb' + (sel.has(x) ? ' on' : ''), onclick: () => { sel.has(x) ? sel.delete(x) : sel.add(x); b.classList.toggle('on', sel.has(x)); S.setUnits(u.id, 'sub-' + id, [...sel]); draw(); } }, unitName(x)); return b; }))) : null;
+  mount(page(s.title, [chips, listBox, extra]));
+  draw();
 }
 async function prefetchAudio(s) {
   const files = s.sets.map(m => `audio/${m.id}.mp3`).filter(f => X.audio.has(f));
@@ -157,9 +177,26 @@ function transcriptNode(set) {
 function listenNode(set, withScript) {
   const box = h('section', { class: 'listen' }, h('h3', {}, '🎧 听力'));
   if (X.audio.has(set.audio)) box.append(h('audio', { controls: true, preload: 'none', src: set.audio }), h('p', { class: 'hint' }, '音频里已经读了两遍。先看题，再听，听的时候不要看原文。'));
-  else box.append(h('p', { class: 'note' }, '这一组的音频还没有放进来。可以请家长先把原文读两遍（原文在交卷后显示）。'));
+  else {
+    let rate = 0.9;
+    const status = h('p', { class: 'hint' }, '先看题，再点播放。每次会读两遍，听的时候不要看原文。');
+    const play = (r) => { rate = r; status.textContent = '正在播放…（读两遍）'; playScript(set.transcript, set.speakers, { rate: r, times: 2, onend: () => { status.textContent = '读完啦。想再听就再点一次。'; } }); };
+    box.append(h('div', { class: 'acts' }, h('button', { type: 'button', class: 'btn primary', onclick: () => play(0.9) }, '▶ 播放（读两遍）'), h('button', { type: 'button', class: 'btn ghost', onclick: () => play(0.7) }, '🐢 慢一点'), h('button', { type: 'button', class: 'btn ghost', onclick: () => { stopScript(); status.textContent = '已停止。'; } }, '■ 停')), status);
+  }
   if (withScript) box.append(h('details', { class: 'ctx', open: true }, h('summary', {}, '听力原文'), transcriptNode(set)));
   return box;
+}
+
+// ---------------- 试卷听力（扫二维码进入，不用登录，不显示原文） ----------------
+export async function hear(id) {
+  let set; try { set = await loadSet(id); } catch (e) { set = null; }
+  if (!set || !set.transcript) { mount(h('div', { class: 'page' }, h('h1', {}, '没有找到这段听力'), h('p', { class: 'hint' }, '请确认二维码是最新的，或者联网后再试。'))); return; }
+  const status = h('p', { class: 'hint' }, '先看试卷上的题，再点「播放」。每次读两遍，听的时候不要看原文。');
+  const play = (r) => { status.textContent = '正在播放…（读两遍）'; playScript(set.transcript, set.speakers, { rate: r, times: 2, onend: () => { status.textContent = '读完啦。想再听就再点一次。'; } }); };
+  mount(h('div', { class: 'page hear' }, h('h1', {}, '🎧 听力：' + set.title), h('p', { class: 'hint' }, '只能听，不显示原文。'),
+    h('button', { type: 'button', class: 'btn primary wide big', onclick: () => play(0.9) }, '▶ 播放（读两遍）'),
+    h('button', { type: 'button', class: 'btn ghost wide', onclick: () => play(0.7) }, '🐢 慢一点再听'),
+    h('button', { type: 'button', class: 'btn ghost wide', onclick: () => { stopScript(); status.textContent = '已停止。'; } }, '■ 停'), status));
 }
 
 // ---------------- 题库套题 ----------------
@@ -167,14 +204,26 @@ export async function setView(id) {
   const set = await loadSet(id);
   startBank(set);
 }
-function startBank(set) {
-  const u = user(), sm = setMeta(set.id);
+// 新题集（带单元）：每次做选择题时打乱选项顺序，重做时不会一模一样
+function shuffled(set) {
+  if (!set.unit) return set;
+  const out = JSON.parse(JSON.stringify(set));
+  out.sections.forEach(sec => sec.questions.forEach(q => {
+    if (q.type !== 'choice' || !q.options || q.keepOrder) return;
+    const right = q.options['ABCDEFG'.indexOf(q.answer)], opts = q.options.slice();
+    for (let i = opts.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [opts[i], opts[j]] = [opts[j], opts[i]]; }
+    q.options = opts; q.answer = 'ABCDEFG'[opts.indexOf(right)];
+  }));
+  return out;
+}
+function startBank(set0) {
+  const set = shuffled(set0), u = user(), sm = setMeta(set.id);
   const ctxFn = (done) => set.kind === 'listening' ? listenNode(set, done) : set.kind === 'reading' ? (done ? h('details', { class: 'ctx' }, h('summary', {}, '📖 原文'), passageNode(set)) : passageNode(set)) : set.tip ? h('div', { class: 'tip' }, '💡 ' + set.tip) : null;
   mount(runQuiz({
     uid: u.id, title: set.title, subtitle: set.subtitle, ctxFn, sections: set.sections, recId: set.id,
     back: '#/s/' + sm.subject.id, printHref: '#/print/' + set.id,
     metaFor: () => ({ setId: set.id, title: set.title, src: 'bank', sub: sm.subject.id, kind: set.kind }),
-    again: () => startBank(set),
+    again: () => startBank(set0),
   }));
 }
 
@@ -414,7 +463,8 @@ function summaryText(u) {
     `错题本：还有 ${st.wrong} 道没掌握`];
   if (weakT.length) lines.push(`最近容易错：${weakT.join('、')}`);
   if (weakW.length) lines.push(`还没掌握的单词：${weakW.join('、')}`);
-  if (next) lines.push(`下一个奖励「${next.label}」：${next.stars} 颗，还差 ${next.stars - st.total} 颗`);
+  if (next) lines.push(`下一个奖励 ${next.label}：${next.stars} 颗，还差 ${next.stars - st.total} 颗`);
+  if (coinsGot(rewards, st.total)) lines.push(`已达成金币：${coinsGot(rewards, st.total)} 个（找家长领取）`);
   return lines.filter(Boolean).join('\n');
 }
 export function records() {
@@ -461,8 +511,8 @@ export async function speak(id) {
         done ? h('span', { class: 'chip ok' }, '⭐ 已打卡') : h('button', { class: 'btn small primary', onclick: () => { const r = S.award(u.id, { id: 'speak-' + key }, 'bank', set.id, cap()); S.markSpeak(u.id, key); toast(r === 'new' ? '⭐ +1  今天的口语完成啦！' : '已打卡'); render(); } }, '今天完成了'));
     });
     const sents = set.sentences.map(s => h('div', { class: 'sent' }, h('div', {}, h('b', {}, s.en), h('small', {}, s.zh)),
-      X.audio.has(s.audio) ? h('button', { class: 'btn small ghost', onclick: () => { new Audio(s.audio).play().catch(() => toast('播放失败')); } }, '🔊') : null));
-    mount(page(set.title, [h('ol', { class: 'steps' }, set.steps.map(t => h('li', {}, t))), h('h2', { class: 'sh' }, '7 天打卡'), h('div', { class: 'list' }, days), h('h2', { class: 'sh' }, '重点句子（每天大声读 3 遍）'), h('div', { class: 'list' }, sents)], { back: '#/s/g4speaking' }));
+      h('button', { class: 'btn small ghost', onclick: () => { if (s.audio && X.audio.has(s.audio)) new Audio(s.audio).play().catch(() => toast('播放失败')); else playSay('sp-' + slug(s.en), s.en, X.audio); } }, '🔊')));
+    mount(page(set.title, [h('ol', { class: 'steps' }, set.steps.map(t => h('li', {}, t))), h('h2', { class: 'sh' }, `${set.plan.length} 天打卡`), h('div', { class: 'list' }, days), h('h2', { class: 'sh' }, '本单元句子（点 🔊 听，再大声读 3 遍）'), h('div', { class: 'list' }, sents)], { back: '#/s/' + (set.id.startsWith('g7') ? 'g7speaking' : 'g4speaking') }));
   };
   render();
 }

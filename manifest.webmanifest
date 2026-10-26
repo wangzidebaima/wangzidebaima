@@ -1,6 +1,6 @@
 {
-  "name": "每日练习",
-  "short_name": "每日练习",
+  "name": "书山小路",
+  "short_name": "书山小路",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
