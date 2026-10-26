@@ -43,21 +43,31 @@ function press(k) {
   if (!cur) return;
   if (k === '⌫') cur.value = cur.value.slice(0, -1);
   else if (k === '清空') cur.value = '';
-  else if (k === '下一题' || k === '完成') { const n = nextInput(); if (n && k === '下一题') keypad.open(n, n.dataset.full === '1'); else keypad.close(); return; }
-  else cur.value += k;
+  else if (k === '下一题' || k === '完成') { const n = nextInput(); if (n && k === '下一题') keypad.open(n, n.dataset.kb === 'abc' ? 'abc' : n.dataset.full === '1'); else keypad.close(); return; }
+  else {
+    if (cur.dataset.kb === 'abc' && +cur.dataset.len && cur.value.length >= +cur.dataset.len) return;
+    cur.value += k;
+    const pat = cur.dataset.pat || ''; if (cur.dataset.kb === 'abc' && pat[cur.value.length] === ' ') cur.value += ' ';   // 词和词之间的空格自动补上
+  }
   cur.dispatchEvent(new Event('input', { bubbles: true }));
+  // 整数答案：位数填够了，自动跳到下一个空（等 0.25 秒，让孩子看到自己输入的数）
+  const need = +cur.dataset.len || 0;
+  if (need && (/^[0-9]$/.test(k) || (cur.dataset.kb === 'abc' && /^[a-z]$/.test(k))) && cur.value.length >= need) { const me = cur; setTimeout(() => { if (cur === me) press('下一题'); }, 250); }
 }
 const stopRep = () => { clearTimeout(repT); clearInterval(repI); repT = repI = null; };
 export const keypad = {
   open(input, full) {
-    if (cur) cur.classList.remove('focus');
-    cur = input; input.dataset.full = full ? '1' : '0'; input.classList.add('focus');
+    const abc = full === 'abc';
+    if (cur) { cur.classList.remove('focus'); cur.dispatchEvent(new Event('kbfocus')); }
+    cur = input; input.dataset.full = full ? '1' : '0'; input.classList.add('focus'); input.dispatchEvent(new Event('kbfocus'));
     const last = nextInput() ? '下一题' : '完成';
-    const keys = full
-      ? ['7', '8', '9', '⌫', '4', '5', '6', '−', '1', '2', '3', '/', '0', '.', '又', last]
+    const keys = abc
+      ? [...'qwertyuiop', ...'asdfghjkl', '⌫', ...'zxcvbnm', last]
+      : full
+      ? ['7', '8', '9', '⌫', '4', '5', '6', '−', '1', '2', '3', '/', '0', '.', '又', last, '清空']
       : ['7', '8', '9', '⌫', '4', '5', '6', '清空', '1', '2', '3', last, '0'];
-    const el = kbEl(); el.replaceChildren(...keys.map(k => {
-      const cls = 'key' + (k === '下一题' || k === '完成' ? ' done' : '') + (full ? '' : ' k3') + (k === '⌫' ? ' bs' : '');
+    const el = kbEl(); el.classList.toggle('abcmode', abc); el.replaceChildren(...keys.map(k => {
+      const cls = 'key' + (k === '下一题' || k === '完成' ? ' done' : '') + (full ? '' : ' k3') + (abc ? ' abc' + (k === '空格' ? ' sp' : '') : '') + (k === '⌫' ? ' bs' : '') + (full && k === '清空' ? ' wide4' : '');
       const b = h('button', { type: 'button', class: cls }, k);
       if (k === '⌫') {
         // 长按退格：按住 0.4 秒后连续删除
@@ -73,7 +83,7 @@ export const keypad = {
   },
   close() {
     stopRep();
-    if (cur) cur.classList.remove('focus');
+    if (cur) { cur.classList.remove('focus'); cur.dispatchEvent(new Event('kbfocus')); }
     cur = null; const el = kbEl(); if (el) el.hidden = true;
     document.body.classList.remove('kbopen');
   },
@@ -113,7 +123,7 @@ export function playScript(lines, speakers, opts = {}) {
     if (it.gap) { setTimeout(next, it.gap); return; }
     const u = new SpeechSynthesisUtterance(it.t); u.lang = 'en-US'; u.rate = rate; if (v) u.voice = v;
     u.pitch = /^f/.test(it.who) ? 1.25 : /^m/.test(it.who) ? 0.8 : /^c/.test(it.who) ? 1.4 : 1;
-    u.onend = () => setTimeout(next, 450); u.onerror = () => setTimeout(next, 100);
+    u.onend = () => setTimeout(next, opts.pause || 450); u.onerror = () => setTimeout(next, 100);
     ss.speak(u);
   };
   next();

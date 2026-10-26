@@ -215,3 +215,29 @@ html[data-fs="1"] body { zoom: 1.12; } html[data-fs="2"] body { zoom: 1.25; }
 #updm .btn{display:block;width:100%;margin:8px 0 0}
 #updm .updp.small{font-size:13px;margin:12px 0 0}
 .hear .btn{margin-top:12px}.hear .big{min-height:72px;font-size:22px}
+.key.wide4 { grid-column: span 4; min-height: 44px; font-size: 18px; }
+.modebar { margin: 4px 0 10px; }
+.q .livebtn { margin-top: 10px; }
+.q.locked .opt { pointer-events: none; opacity: .85; } .q.locked.lok .opt.on { background: var(--accent-soft); border-color: var(--accent); } .q.locked.lbad .opt.on { border-color: #c0504d; }
+.livefb { margin-top: 8px; }
+.abcin { position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none; padding: 0; border: 0; }
+.tiles { display: inline-flex; flex-wrap: wrap; gap: 5px; vertical-align: middle; cursor: pointer; margin: 4px 2px; }
+.tile { width: 30px; height: 38px; display: inline-flex; align-items: center; justify-content: center; border: 1.5px solid var(--line); border-radius: 8px; background: var(--surface); font-size: 20px; font-weight: 600; text-transform: lowercase; }
+.tile.f { border-color: var(--accent); background: var(--accent-soft); } .tile.cur { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-soft); }
+.tgap { width: 14px; }
+#kb.abcmode { grid-template-columns: repeat(10, 1fr); gap: 6px; }
+.key.abc { font-size: 20px; min-height: 46px; padding: 0; text-transform: lowercase; }
+.key.abc.sp { grid-column: span 3; font-size: 16px; }
+.key.abc.done { grid-column: span 3; grid-row: auto; font-size: 15px; }
+.key.abc.bs { grid-column: span 1; }
+.q.locked .tiles { pointer-events: none; }
+
+.cal{background:var(--card,#fff);border-radius:16px;padding:12px;margin:8px 0}
+.cal-h{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.cal-w,.cal-g{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;text-align:center}
+.cal-w span{font-size:12px;color:#888}
+.cal-g i{font-style:normal;min-height:40px;border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:14px;background:rgba(0,0,0,.04)}
+.cal-g i.blank{background:none}
+.cal-g i.on{background:#ffe08a;font-weight:700}
+.cal-g i.today{outline:2px solid #4a90e2}
+.cal-g i small{font-size:10px;line-height:1}

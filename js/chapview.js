@@ -34,7 +34,7 @@ export function chapSetup(kind) {
     const qs = buildChapSession(cfg.CH, cfg.pre, [...sel], level, count, stats, type);
     if (!qs.length) { toast('出题失败，请换个章节或题型'); return; }
     mount(runQuiz({
-      uid: u.id, title: R.title, subtitle: `已选 ${sel.size} 章`, sections: [{ title: '', questions: qs }],
+      uid: u.id, mk: type === 'mix' ? 'chapmix' : 'chaptype', title: R.title, subtitle: `已选 ${sel.size} 章`, sections: [{ title: '', questions: qs }],
       recTitle: R.title + '（随机）', back: '#/rand/' + kind,
       metaFor: () => ({ title: R.title, src: 'rand', sub: R.subject, kind: 'rand' }), again: run,
     }));

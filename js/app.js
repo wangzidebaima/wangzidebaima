@@ -39,6 +39,7 @@ async function render() {
       case 'words': return await E.engWords(a);
       case 'errors': return V.errors();
       case 'me': return V.records();
+      case 'weekrev': return V.weekReview(a === 'a');
       case 'print': return await V.printView(a, b === 'a');
       default: return V.home();
     }

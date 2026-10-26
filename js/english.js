@@ -1,5 +1,5 @@
 // 英语：单词 / 短语 / 句子小测，按单元出题；黑体词要会拼写，非黑体词只考意思和发音
-import { h, toast, playSay, slug } from './ui.js';
+import { h, toast, playSay, slug, playScript, stopScript } from './ui.js';
 import * as S from './store.js';
 import { X, user, mount, page, runQuiz, cap } from './views.js';
 import { RANDOM, TW, TS, weighted } from './mathgen.js';
@@ -85,8 +85,8 @@ function build(type, it, content, pool, all, vocabSet) {
     const letters = it.en.replace(/[^A-Za-z]/g, '').length;
     const hint = it.kind === 'phrase' ? `${it.en.split(' ').length} 个单词，首字母 ${it.en[0]}` : `首字母 ${it.en[0]}，共 ${letters} 个字母`;
     const noun = it.kind === 'phrase' ? '短语' : '单词';
-    if (type === 'spell') return { ...base, type: 'fill', stem: `「${it.zh}」的英文是：____`, answers: [alts], hint, why };
-    return { ...base, type: 'fill', stem: `听发音，写出${noun}：____`, answers: [alts], hint: it.kind === 'phrase' ? `${it.en.split(' ').length} 个单词` : `共 ${letters} 个字母`, why, say: base.rv.say, sayKey: key };
+    if (type === 'spell') return { ...base, type: 'fill', stem: `「${it.zh}」的英文是：____`, answers: [alts], hint, why, tiles: it.en };
+    return { ...base, type: 'fill', stem: `听发音，写出${noun}：____`, answers: [alts], hint: it.kind === 'phrase' ? `${it.en.split(' ').length} 个单词` : `共 ${letters} 个字母`, why, say: base.rv.say, sayKey: key, tiles: it.en };
   }
   if (type === 'cloze') {
     const toks = (it.en.match(/[A-Za-z']+/g) || []);
@@ -127,6 +127,57 @@ export function makeEngSession(kind, typeId, count, unitIds) {
 // ---------- 页面 ----------
 const unitLabel = (u) => u.name.replace('Starter Unit', 'Starter');
 
+// 听写：先把全部词听完（每个词读两遍，间隔留给孩子写在纸上），听完后孩子自己点“显示答案”，再自己判对错
+function dictFlow(u, R, qs, kind) {
+  const meta = { title: R.title, src: 'rand', sub: R.subject, kind: 'rand' };
+  const backTo = '#/rand/' + kind;
+  const status = h('p', { class: 'note dstat' }, `一共 ${qs.length} 个，准备好纸和笔，点“开始听”。`);
+  const showBtn = h('button', { class: 'btn primary wide', style: 'margin-top:10px', disabled: true, onclick: () => { stopScript(); review(); } }, '显示答案');
+  const playBtn = h('button', { class: 'btn primary wide', onclick: () => {
+    showBtn.disabled = true; playBtn.textContent = '正在听…（点这里重听）';
+    status.textContent = `一共 ${qs.length} 个词，每个读两遍，请边听边写在纸上。`;
+    const lines = []; qs.forEach(q => { lines.push({ t: q.say, s: 'x' }); lines.push({ t: q.say, s: 'x' }); });
+    playScript(lines, {}, { times: 1, rate: 0.85, pause: 2600, onend: () => {
+      showBtn.disabled = false; playBtn.textContent = '🔁 再听一遍';
+      status.textContent = '听完啦！检查一下纸上写的，然后点“显示答案”。';
+    } });
+  } }, '▶ 开始听');
+  mount(page('听写', [
+    h('p', { class: 'note' }, '不用在手机上打字：先听完全部，写在纸上；写完自己点“显示答案”，再对一对。'),
+    status, playBtn, showBtn,
+  ], { back: backTo }));
+  function review() {
+    const mark = {};
+    const done = h('button', { class: 'btn primary wide', onclick: () => {
+      const left = qs.filter(q => mark[q.id] === undefined).length;
+      if (left && !confirm(`还有 ${left} 个没判，没判的算错，确定吗？`)) return;
+      let ok = 0, ns = 0, cp = 0;
+      qs.forEach(q => {
+        const { _meta, ...clean } = q;
+        S.typeStat(u.id, q.typeId, mark[q.id] === true);
+        if (mark[q.id] === true) { ok++; S.clearWrong(u.id, q.id); const r = S.award(u.id, q, meta.src, meta.sub, cap()); if (r === 'new') ns++; if (r === 'capped') cp++; }
+        else S.addWrong(u.id, clean, meta);
+      });
+      S.recordAttempt(u.id, null, { title: R.title + '（随机）', ok, total: qs.length, pts: ok, ptsAll: qs.length, stars: ns, src: meta.src, sub: meta.sub });
+      mount(page('听写结果', [
+        h('section', { class: 'result' }, h('div', { class: 'big' }, h('b', {}, ok), h('small', {}, ` / ${qs.length} 个写对`)),
+          h('p', { class: 'praise' }, ok === qs.length ? '全对！太棒了！' : '写错的已放进错题本，记得再练一练。'),
+          h('p', { class: 'pts' }, `⭐ 新得 ${ns} 颗星` + (cp ? `（今天星星已满，${cp} 个不再加星）` : ''))),
+        h('a', { class: 'btn primary wide', href: backTo }, '再听写一组'),
+        h('a', { class: 'btn ghost wide', style: 'margin-top:10px', href: '#/' }, '回首页'),
+      ], { back: backTo }));
+    } }, '完成');
+    const rows = qs.map((q, i) => {
+      const w = q.answers[0][0], ip = q.rv && q.rv.ipa;
+      const yes = h('button', { type: 'button', class: 'chipb', onclick: () => { mark[q.id] = true; yes.classList.add('on'); no.classList.remove('on'); } }, '✅ 写对了');
+      const no = h('button', { type: 'button', class: 'chipb', onclick: () => { mark[q.id] = false; no.classList.add('on'); yes.classList.remove('on'); } }, '❌ 写错了');
+      return h('div', { class: 'row dr' }, h('div', {}, h('b', {}, `${i + 1}. ${w}`), h('small', {}, (ip ? '/' + ip + '/  ' : '') + String(q.why).split('\n').pop().replace('意思：', ''))),
+        h('button', { type: 'button', class: 'spk', onclick: () => playSay(slug(w), q.say) }, '🔊'), h('div', { class: 'chips' }, yes, no));
+    });
+    mount(page('对答案', [h('p', { class: 'note' }, '对照纸上写的，一个一个点“写对了 / 写错了”。拼写要完全一样才算对。'), h('div', { class: 'list' }, rows), done], { back: backTo }));
+  }
+}
+
 export async function engSetup(kind) {
   const u = user(), R = RANDOM[kind], cfg = ENG[kind];
   mount(page(R.title, h('p', { class: 'note' }, '加载中…')));
@@ -153,8 +204,9 @@ export async function engSetup(kind) {
     const ids = [...sel];
     const qs = makeEngSession(kind, type, count, ids);
     if (!qs.length) { toast(type === 'e-spell' || type === 'e-dict' ? '选中的单元里没有要拼写的黑体词' : '出题失败，请多选几个单元'); return; }
+    if (type === 'e-dict') { dictFlow(u, R, qs, kind); return; }
     mount(runQuiz({
-      uid: u.id, title: R.title, subtitle: `已选 ${ids.length} 个单元`, sections: [{ title: '', questions: qs }],
+      uid: u.id, mk: 'engquiz', title: R.title, subtitle: `已选 ${ids.length} 个单元`, sections: [{ title: '', questions: qs }],
       recTitle: R.title + '（随机）', back: '#/rand/' + kind,
       metaFor: () => ({ title: R.title, src: 'rand', sub: R.subject, kind: 'rand' }), again: run,
     }));

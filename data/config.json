@@ -3,17 +3,7 @@
  "appName": "书山小路",
  "rewards": [
   {
-   "stars": 50,
-   "coins": 1,
-   "label": "1 金币"
-  },
-  {
    "stars": 100,
-   "coins": 1,
-   "label": "1 金币"
-  },
-  {
-   "stars": 150,
    "coins": 1,
    "label": "1 金币"
   },
@@ -23,14 +13,14 @@
    "label": "1 金币"
   },
   {
-   "stars": 250,
+   "stars": 300,
    "coins": 1,
    "label": "1 金币"
   },
   {
-   "stars": 300,
-   "coins": 5,
-   "label": "5 金币"
+   "stars": 400,
+   "coins": 2,
+   "label": "2 金币"
   }
  ],
  "users": [
@@ -82,6 +72,16 @@
    "publishers": {
     "math": "北师大版",
     "eng": "人教版"
+   },
+   "modes": {
+    "chaptype": "live",
+    "chapmix": "exam",
+    "randmath": "exam",
+    "mathbank": "live",
+    "engquiz": "live",
+    "reading": "exam",
+    "listening": "exam",
+    "errors": "live"
    }
   },
   {
@@ -132,6 +132,18 @@
    "publishers": {
     "math": "北师大版",
     "eng": "人教版 PEP"
+   },
+   "modes": {
+    "chaptype": "live",
+    "chapmix": "exam",
+    "randmath": "exam",
+    "mathbank": "live",
+    "engquiz": "live",
+    "reading": "exam",
+    "listening": "exam",
+    "errors": "live",
+    "reading#1": "live",
+    "reading#2": "live"
    }
   }
  ],
@@ -141,5 +153,5 @@
   "hash": "fe783f5acebb1d0b764455ebaa95166d1611b5293a2a67ce805009ddc0fe2155"
  },
  "dailyStarCap": 30,
- "starGoal": 300
+ "starGoal": 400
 }
