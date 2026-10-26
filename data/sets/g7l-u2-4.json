@@ -1,0 +1,113 @@
+{
+ "id": "g7l-u2-4",
+ "kind": "listening",
+ "title": "A Family Dinner",
+ "subtitle": "对话",
+ "unit": "U2",
+ "speakers": {
+  "Mom": "f1",
+  "Jim": "m1"
+ },
+ "transcript": [
+  {
+   "s": "Mom",
+   "t": "Jim, dinner is ready. Where is your father?"
+  },
+  {
+   "s": "Jim",
+   "t": "He is in the study. He's reading a newspaper."
+  },
+  {
+   "s": "Mom",
+   "t": "Please ask him and your grandparents to come."
+  },
+  {
+   "s": "Jim",
+   "t": "OK. Dad, Grandpa, Grandma! Dinner!"
+  },
+  {
+   "s": "Mom",
+   "t": "Good. Everyone is here. Let's have fun at dinner."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l-u2-4-A1",
+     "type": "choice",
+     "stem": "What's ready?",
+     "options": [
+      "Breakfast.",
+      "Dinner.",
+      "Lunch."
+     ],
+     "answer": "B",
+     "why": "Jim, dinner is ready.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u2-4-A2",
+     "type": "choice",
+     "stem": "Where is Jim's father?",
+     "options": [
+      "In the study.",
+      "In the kitchen.",
+      "In the park."
+     ],
+     "answer": "A",
+     "why": "He is in the study.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u2-4-A3",
+     "type": "choice",
+     "stem": "What is Jim's father doing?",
+     "options": [
+      "Cooking.",
+      "Reading a newspaper.",
+      "Watching TV."
+     ],
+     "answer": "B",
+     "why": "He's reading a newspaper.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l-u2-4-B1",
+     "type": "fill",
+     "stem": "Jim's father is ____ a newspaper.",
+     "answers": [
+      [
+       "reading"
+      ]
+     ],
+     "why": "He's reading a newspaper.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u2-4-B2",
+     "type": "fill",
+     "stem": "Jim asks Dad, Grandpa and ____ to come.",
+     "answers": [
+      [
+       "Grandma",
+       "grandma"
+      ]
+     ],
+     "why": "Dad, Grandpa, Grandma! Dinner!",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

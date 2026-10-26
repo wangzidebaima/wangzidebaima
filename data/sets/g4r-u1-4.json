@@ -1,0 +1,141 @@
+{
+ "id": "g4r-u1-4",
+ "kind": "reading",
+ "title": "People and Jobs",
+ "subtitle": "考点：people / child / PE / 职业",
+ "unit": "U1",
+ "passage": [
+  "There are many people in my town. Mr. Li is a doctor. He works in a hospital. Mrs. Zhang is a PE teacher. She likes sports. Uncle Wang is a farmer. He has a big farm.",
+  "Every job is important. The children in the town like these people very much."
+ ],
+ "vocab": "people 人们 · child 孩子 · PE 体育课 · job 职业",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4r-u1-4-A1",
+     "type": "choice",
+     "stem": "Who is Mr. Li?",
+     "options": [
+      "A doctor.",
+      "A teacher.",
+      "A farmer."
+     ],
+     "answer": "A",
+     "why": "Mr. Li is a doctor.",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u1-4-A2",
+     "type": "choice",
+     "stem": "What does Mrs. Zhang teach?",
+     "options": [
+      "English.",
+      "PE.",
+      "Music."
+     ],
+     "answer": "B",
+     "why": "PE teacher。",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u1-4-A3",
+     "type": "choice",
+     "stem": "Who has a big farm?",
+     "options": [
+      "Mr. Li.",
+      "Mrs. Zhang.",
+      "Uncle Wang."
+     ],
+     "answer": "C",
+     "why": "Uncle Wang is a farmer. He has a big farm.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g4r-u1-4-B1",
+     "type": "tf",
+     "stem": "Mr. Li works in a school.",
+     "answer": "F",
+     "why": "He works in a hospital.",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u1-4-B2",
+     "type": "tf",
+     "stem": "Mrs. Zhang likes sports.",
+     "answer": "T",
+     "why": "She likes sports.",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u1-4-B3",
+     "type": "tf",
+     "stem": "The children like these people very much.",
+     "answer": "T",
+     "why": "最后一句。",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4r-u1-4-C1",
+     "type": "fill",
+     "stem": "Mr. Li is a ____.",
+     "answers": [
+      [
+       "doctor"
+      ]
+     ],
+     "why": "doctor 医生。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u1-4-C2",
+     "type": "fill",
+     "stem": "Uncle Wang is a ____.",
+     "answers": [
+      [
+       "farmer"
+      ]
+     ],
+     "why": "farmer 农民。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u1-4-C3",
+     "type": "fill",
+     "stem": "The ____ in the town like them.",
+     "answers": [
+      [
+       "children"
+      ]
+     ],
+     "why": "children 孩子们。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "doctor",
+    "teacher",
+    "farmer",
+    "children"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

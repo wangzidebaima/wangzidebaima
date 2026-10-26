@@ -1,0 +1,141 @@
+{
+ "id": "g4r-u2-1",
+ "kind": "reading",
+ "title": "My Best Friend",
+ "subtitle": "考点：外貌与性格 / his, her",
+ "unit": "U2",
+ "passage": [
+  "Ben is my best friend. He is tall and strong. He has short black hair. He is kind to everyone.",
+  "We play football together after school. Sometimes we read books in the library. Ben is a great friend."
+ ],
+ "vocab": "strong 强壮的 · hair 头发 · kind 友好的 · quiet 文静的 · best 最好的",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4r-u2-1-A1",
+     "type": "choice",
+     "stem": "Who is the writer's best friend?",
+     "options": [
+      "Ben.",
+      "Tom.",
+      "Sam."
+     ],
+     "answer": "A",
+     "why": "Ben is my best friend.",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u2-1-A2",
+     "type": "choice",
+     "stem": "What colour is his hair?",
+     "options": [
+      "Brown.",
+      "Black.",
+      "Yellow."
+     ],
+     "answer": "B",
+     "why": "short black hair",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u2-1-A3",
+     "type": "choice",
+     "stem": "What do they play after school?",
+     "options": [
+      "Basketball.",
+      "Football.",
+      "Games."
+     ],
+     "answer": "B",
+     "why": "play football together",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g4r-u2-1-B1",
+     "type": "tf",
+     "stem": "Ben is short and thin.",
+     "answer": "F",
+     "why": "tall and strong。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u2-1-B2",
+     "type": "tf",
+     "stem": "Ben is kind to everyone.",
+     "answer": "T",
+     "why": "He is kind to everyone.",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u2-1-B3",
+     "type": "tf",
+     "stem": "They read books in the library sometimes.",
+     "answer": "T",
+     "why": "Sometimes we read books in the library.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4r-u2-1-C1",
+     "type": "fill",
+     "stem": "Ben is tall and ____.",
+     "answers": [
+      [
+       "strong"
+      ]
+     ],
+     "why": "tall and strong。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u2-1-C2",
+     "type": "fill",
+     "stem": "He has short black ____.",
+     "answers": [
+      [
+       "hair"
+      ]
+     ],
+     "why": "hair 头发。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u2-1-C3",
+     "type": "fill",
+     "stem": "He is ____ to everyone.",
+     "answers": [
+      [
+       "kind"
+      ]
+     ],
+     "why": "kind 友好的。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "strong",
+    "hair",
+    "kind",
+    "football"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

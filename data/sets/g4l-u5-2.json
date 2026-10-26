@@ -1,0 +1,108 @@
+{
+ "id": "g4l-u5-2",
+ "kind": "listening",
+ "title": "Let Us Play",
+ "subtitle": "对话",
+ "unit": "U5",
+ "speakers": {
+  "Ben": "c2",
+  "Amy": "c1"
+ },
+ "transcript": [
+  {
+   "s": "Ben",
+   "t": "Amy, it is sunny. Let us fly a kite."
+  },
+  {
+   "s": "Amy",
+   "t": "Good idea! But is it windy?"
+  },
+  {
+   "s": "Ben",
+   "t": "Yes, it is a little windy. It is perfect."
+  },
+  {
+   "s": "Amy",
+   "t": "Great! I will get my kite."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4l-u5-2-A1",
+     "type": "choice",
+     "stem": "How is the weather?",
+     "options": [
+      "Sunny and a little windy.",
+      "Rainy.",
+      "Snowy."
+     ],
+     "answer": "A",
+     "why": "sunny / a little windy",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u5-2-A2",
+     "type": "choice",
+     "stem": "What will they do?",
+     "options": [
+      "Fly a kite.",
+      "Make a snowman.",
+      "Swim."
+     ],
+     "answer": "A",
+     "why": "fly a kite",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u5-2-A3",
+     "type": "choice",
+     "stem": "Who will get a kite?",
+     "options": [
+      "Amy.",
+      "Ben.",
+      "Mum."
+     ],
+     "answer": "A",
+     "why": "I will get my kite（Amy）。",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4l-u5-2-B1",
+     "type": "fill",
+     "stem": "Let us fly a ____.",
+     "answers": [
+      [
+       "kite"
+      ]
+     ],
+     "why": "fly a kite",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u5-2-B2",
+     "type": "fill",
+     "stem": "Amy says, \"Good ____!\"",
+     "answers": [
+      [
+       "idea"
+      ]
+     ],
+     "why": "Good idea!",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

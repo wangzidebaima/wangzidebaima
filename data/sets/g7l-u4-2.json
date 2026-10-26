@@ -1,0 +1,120 @@
+{
+ "id": "g7l-u4-2",
+ "kind": "listening",
+ "title": "Class Time",
+ "subtitle": "对话",
+ "unit": "U4",
+ "speakers": {
+  "Sam": "m1",
+  "Ms. Li": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Sam",
+   "t": "Ms. Li, when is the French class?"
+  },
+  {
+   "s": "Ms. Li",
+   "t": "At ten a.m. on Monday."
+  },
+  {
+   "s": "Sam",
+   "t": "And biology?"
+  },
+  {
+   "s": "Ms. Li",
+   "t": "At two p.m. on Wednesday."
+  },
+  {
+   "s": "Sam",
+   "t": "OK. I'm good at biology."
+  },
+  {
+   "s": "Ms. Li",
+   "t": "Great!"
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l-u4-2-A1",
+     "type": "choice",
+     "stem": "When is the French class?",
+     "options": [
+      "On Monday morning.",
+      "On Monday afternoon.",
+      "On Wednesday morning."
+     ],
+     "answer": "A",
+     "why": "At ten a.m. on Monday.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u4-2-A2",
+     "type": "choice",
+     "stem": "When is the biology class?",
+     "options": [
+      "On Monday.",
+      "On Wednesday.",
+      "On Friday."
+     ],
+     "answer": "B",
+     "why": "At two p.m. on Wednesday.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u4-2-A3",
+     "type": "choice",
+     "stem": "What is Sam good at?",
+     "options": [
+      "French.",
+      "Biology.",
+      "History."
+     ],
+     "answer": "B",
+     "why": "I'm good at biology.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l-u4-2-B1",
+     "type": "fill",
+     "stem": "The French class is at ten ____.",
+     "answers": [
+      [
+       "a.m.",
+       "am",
+       "a.m",
+       "AM"
+      ]
+     ],
+     "why": "十点钟 a.m. 是上午。",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u4-2-B2",
+     "type": "fill",
+     "stem": "The biology class is on ____.",
+     "answers": [
+      [
+       "Wednesday",
+       "wednesday"
+      ]
+     ],
+     "why": "on Wednesday",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

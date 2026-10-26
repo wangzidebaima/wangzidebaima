@@ -1,0 +1,117 @@
+{
+ "id": "g7l-u5-1",
+ "kind": "listening",
+ "title": "Choosing a Club",
+ "subtitle": "对话",
+ "unit": "U5",
+ "speakers": {
+  "Jack": "m1",
+  "Mary": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Jack",
+   "t": "Which club will you join, Mary?"
+  },
+  {
+   "s": "Mary",
+   "t": "I'm interested in drama."
+  },
+  {
+   "s": "Jack",
+   "t": "Really? I want to join the music club. I play the drums."
+  },
+  {
+   "s": "Mary",
+   "t": "Cool! The music club meets on Monday."
+  },
+  {
+   "s": "Jack",
+   "t": "And the drama club?"
+  },
+  {
+   "s": "Mary",
+   "t": "On Thursday."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l-u5-1-A1",
+     "type": "choice",
+     "stem": "Which club is Mary interested in?",
+     "options": [
+      "The drama club.",
+      "The music club.",
+      "The art club."
+     ],
+     "answer": "A",
+     "why": "I'm interested in drama.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u5-1-A2",
+     "type": "choice",
+     "stem": "What does Jack play?",
+     "options": [
+      "The violin.",
+      "The drums.",
+      "The guitar."
+     ],
+     "answer": "B",
+     "why": "I play the drums.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u5-1-A3",
+     "type": "choice",
+     "stem": "When does the drama club meet?",
+     "options": [
+      "On Monday.",
+      "On Wednesday.",
+      "On Thursday."
+     ],
+     "answer": "C",
+     "why": "On Thursday.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l-u5-1-B1",
+     "type": "fill",
+     "stem": "Jack wants to join the ____ club.",
+     "answers": [
+      [
+       "music"
+      ]
+     ],
+     "why": "I want to join the music club.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u5-1-B2",
+     "type": "fill",
+     "stem": "The music club meets on ____.",
+     "answers": [
+      [
+       "Monday",
+       "monday"
+      ]
+     ],
+     "why": "The music club meets on Monday.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

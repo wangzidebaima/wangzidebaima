@@ -1,0 +1,108 @@
+{
+ "id": "g4l-u4-3",
+ "kind": "listening",
+ "title": "At the Restaurant",
+ "subtitle": "对话",
+ "unit": "U4",
+ "speakers": {
+  "Mum": "f1",
+  "Sam": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Sam",
+   "t": "Mum, who is that man in white?"
+  },
+  {
+   "s": "Mum",
+   "t": "He is a cook. He makes the food."
+  },
+  {
+   "s": "Sam",
+   "t": "Why is he so busy?"
+  },
+  {
+   "s": "Mum",
+   "t": "Because a lot of people are hungry now."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4l-u4-3-A1",
+     "type": "choice",
+     "stem": "Who is the man in white?",
+     "options": [
+      "A cook.",
+      "A doctor.",
+      "A driver."
+     ],
+     "answer": "A",
+     "why": "He is a cook.",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u4-3-A2",
+     "type": "choice",
+     "stem": "What does he make?",
+     "options": [
+      "The food.",
+      "The bed.",
+      "The car."
+     ],
+     "answer": "A",
+     "why": "He makes the food.",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u4-3-A3",
+     "type": "choice",
+     "stem": "Why is he busy?",
+     "options": [
+      "Many people are hungry.",
+      "It is late.",
+      "He is new."
+     ],
+     "answer": "A",
+     "why": "a lot of people are hungry",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4l-u4-3-B1",
+     "type": "fill",
+     "stem": "The man wears ____.",
+     "answers": [
+      [
+       "white"
+      ]
+     ],
+     "why": "in white",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u4-3-B2",
+     "type": "fill",
+     "stem": "He makes the ____.",
+     "answers": [
+      [
+       "food"
+      ]
+     ],
+     "why": "makes the food",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

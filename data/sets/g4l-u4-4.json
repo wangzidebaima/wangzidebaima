@@ -1,0 +1,96 @@
+{
+ "id": "g4l-u4-4",
+ "kind": "listening",
+ "title": "My Cleaner Aunt",
+ "subtitle": "短文",
+ "unit": "U4",
+ "speakers": {
+  "Kate": "c1"
+ },
+ "transcript": [
+  {
+   "s": "Kate",
+   "t": "My aunt is a cleaner. She cleans the street every morning. She makes the town beautiful. Now she is tired, but she is always kind. I want to say thank you to her."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4l-u4-4-A1",
+     "type": "choice",
+     "stem": "What is Kate's aunt?",
+     "options": [
+      "A cleaner.",
+      "A nurse.",
+      "A teacher."
+     ],
+     "answer": "A",
+     "why": "My aunt is a cleaner.",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u4-4-A2",
+     "type": "choice",
+     "stem": "When does she clean the street?",
+     "options": [
+      "Every morning.",
+      "Every evening.",
+      "Every night."
+     ],
+     "answer": "A",
+     "why": "every morning",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u4-4-A3",
+     "type": "choice",
+     "stem": "How is the aunt now?",
+     "options": [
+      "Tired.",
+      "Hungry.",
+      "Angry."
+     ],
+     "answer": "A",
+     "why": "Now she is tired",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4l-u4-4-B1",
+     "type": "fill",
+     "stem": "She makes the town ____.",
+     "answers": [
+      [
+       "beautiful"
+      ]
+     ],
+     "why": "beautiful",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u4-4-B2",
+     "type": "fill",
+     "stem": "Kate wants to say ____ to her.",
+     "answers": [
+      [
+       "thank you",
+       "thanks"
+      ]
+     ],
+     "why": "say thank you",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

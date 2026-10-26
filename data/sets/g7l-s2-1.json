@@ -1,0 +1,117 @@
+{
+ "id": "g7l-s2-1",
+ "kind": "listening",
+ "title": "Whose Key?",
+ "subtitle": "对话",
+ "unit": "S2",
+ "speakers": {
+  "Ms. Wu": "f1",
+  "Ben": "m1",
+  "Dale": "m2"
+ },
+ "transcript": [
+  {
+   "s": "Ms. Wu",
+   "t": "Look! There is a key on the desk. Is it your key, Ben?"
+  },
+  {
+   "s": "Ben",
+   "t": "No, it isn't. My key is in my pocket."
+  },
+  {
+   "s": "Ms. Wu",
+   "t": "Is it Dale's?"
+  },
+  {
+   "s": "Ben",
+   "t": "Maybe. Ask him."
+  },
+  {
+   "s": "Dale",
+   "t": "Yes, it's mine! Thank you."
+  },
+  {
+   "s": "Ms. Wu",
+   "t": "You're welcome."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l-s2-1-A1",
+     "type": "choice",
+     "stem": "Where is the key?",
+     "options": [
+      "On the desk.",
+      "In the pocket.",
+      "In the bag."
+     ],
+     "answer": "A",
+     "why": "There is a key on the desk.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-s2-1-A2",
+     "type": "choice",
+     "stem": "Is the key Ben's?",
+     "options": [
+      "Yes, it is.",
+      "No, it isn't.",
+      "We don't know."
+     ],
+     "answer": "B",
+     "why": "Ben: No, it isn't.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-s2-1-A3",
+     "type": "choice",
+     "stem": "Whose key is it?",
+     "options": [
+      "Ben's.",
+      "Dale's.",
+      "Ms. Wu's."
+     ],
+     "answer": "B",
+     "why": "Dale: Yes, it's mine!",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l-s2-1-B1",
+     "type": "fill",
+     "stem": "Ben's key is in his ____.",
+     "answers": [
+      [
+       "pocket"
+      ]
+     ],
+     "why": "My key is in my pocket.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-s2-1-B2",
+     "type": "fill",
+     "stem": "Ms. Wu says, \"You're ____.\"",
+     "answers": [
+      [
+       "welcome"
+      ]
+     ],
+     "why": "You're welcome.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

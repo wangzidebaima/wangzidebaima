@@ -1,0 +1,163 @@
+{
+ "id": "g4r-u5-3",
+ "kind": "reading",
+ "title": "Fly a Kite",
+ "subtitle": "考点：fly a kite / cool / warm / idea",
+ "unit": "U5",
+ "dialogue": [
+  {
+   "s": "Tom",
+   "t": "Let us fly a kite tomorrow."
+  },
+  {
+   "s": "Amy",
+   "t": "Good idea! How is the weather tomorrow?"
+  },
+  {
+   "s": "Tom",
+   "t": "It will be cool and windy."
+  },
+  {
+   "s": "Amy",
+   "t": "Great for flying kites!"
+  },
+  {
+   "s": "Tom",
+   "t": "If it rains, we can watch a film at home."
+  },
+  {
+   "s": "Amy",
+   "t": "OK. That is also fun."
+  }
+ ],
+ "vocab": "fly a kite 放风筝 · idea 主意 · cool 凉爽的 · warm 温暖的 · tomorrow 明天 · film 电影",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4r-u5-3-A1",
+     "type": "choice",
+     "stem": "What will they do tomorrow?",
+     "options": [
+      "Fly a kite.",
+      "Swim.",
+      "Make a snowman."
+     ],
+     "answer": "A",
+     "why": "fly a kite",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u5-3-A2",
+     "type": "choice",
+     "stem": "How will the weather be?",
+     "options": [
+      "Cool and windy.",
+      "Hot and sunny.",
+      "Cold and snowy."
+     ],
+     "answer": "A",
+     "why": "cool and windy",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u5-3-A3",
+     "type": "choice",
+     "stem": "What can they do if it rains?",
+     "options": [
+      "Watch a film.",
+      "Play football.",
+      "Go swimming."
+     ],
+     "answer": "A",
+     "why": "watch a film at home",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g4r-u5-3-B1",
+     "type": "tf",
+     "stem": "Amy likes the idea.",
+     "answer": "T",
+     "why": "Good idea!",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u5-3-B2",
+     "type": "tf",
+     "stem": "It is good weather for swimming.",
+     "answer": "F",
+     "why": "是放风筝的好天气。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u5-3-B3",
+     "type": "tf",
+     "stem": "They can stay at home if it rains.",
+     "answer": "T",
+     "why": "watch a film at home",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4r-u5-3-C1",
+     "type": "fill",
+     "stem": "Let us fly a ____.",
+     "answers": [
+      [
+       "kite"
+      ]
+     ],
+     "why": "kite 风筝。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u5-3-C2",
+     "type": "fill",
+     "stem": "Good ____!",
+     "answers": [
+      [
+       "idea"
+      ]
+     ],
+     "why": "Good idea! 好主意。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u5-3-C3",
+     "type": "fill",
+     "stem": "We can watch a ____ at home.",
+     "answers": [
+      [
+       "film"
+      ]
+     ],
+     "why": "film 电影。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "kite",
+    "idea",
+    "windy",
+    "film"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

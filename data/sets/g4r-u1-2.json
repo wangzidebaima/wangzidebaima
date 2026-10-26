@@ -1,0 +1,141 @@
+{
+ "id": "g4r-u1-2",
+ "kind": "reading",
+ "title": "Busy Mum",
+ "subtitle": "考点：busy / tired / 家务",
+ "unit": "U1",
+ "passage": [
+  "My mother is an office worker. She is busy every day. After work, she is tired. But she still cooks dinner for us.",
+  "On Sunday, I help my mother. I clean my room. My father cooks lunch. We are a happy family."
+ ],
+ "vocab": "busy 忙碌的 · tired 疲倦的 · chore 家务 · clean 打扫 · cook 烹饪 · room 房间",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4r-u1-2-A1",
+     "type": "choice",
+     "stem": "What is the writer's mother?",
+     "options": [
+      "A nurse.",
+      "An office worker.",
+      "A farmer."
+     ],
+     "answer": "B",
+     "why": "My mother is an office worker.",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u1-2-A2",
+     "type": "choice",
+     "stem": "How is she after work?",
+     "options": [
+      "Tired.",
+      "Happy.",
+      "Hungry."
+     ],
+     "answer": "A",
+     "why": "After work, she is tired.",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u1-2-A3",
+     "type": "choice",
+     "stem": "Who cooks lunch on Sunday?",
+     "options": [
+      "The writer.",
+      "The mother.",
+      "The father."
+     ],
+     "answer": "C",
+     "why": "My father cooks lunch.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g4r-u1-2-B1",
+     "type": "tf",
+     "stem": "The mother is not busy.",
+     "answer": "F",
+     "why": "She is busy every day.",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u1-2-B2",
+     "type": "tf",
+     "stem": "The writer cleans his/her room on Sunday.",
+     "answer": "T",
+     "why": "I clean my room.",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u1-2-B3",
+     "type": "tf",
+     "stem": "The mother does not cook dinner.",
+     "answer": "F",
+     "why": "She still cooks dinner.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4r-u1-2-C1",
+     "type": "fill",
+     "stem": "After work, she is ____.",
+     "answers": [
+      [
+       "tired"
+      ]
+     ],
+     "why": "she is tired.",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u1-2-C2",
+     "type": "fill",
+     "stem": "She ____ dinner for us.",
+     "answers": [
+      [
+       "cooks"
+      ]
+     ],
+     "why": "She cooks dinner.",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u1-2-C3",
+     "type": "fill",
+     "stem": "I ____ my room on Sunday.",
+     "answers": [
+      [
+       "clean"
+      ]
+     ],
+     "why": "I clean my room.",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "tired",
+    "cooks",
+    "clean",
+    "Sunday"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

@@ -1,0 +1,163 @@
+{
+ "id": "g4r-u4-2",
+ "kind": "reading",
+ "title": "Why Is He Busy?",
+ "subtitle": "考点：Why / because / now",
+ "unit": "U4",
+ "dialogue": [
+  {
+   "s": "Amy",
+   "t": "Look! The delivery worker is running."
+  },
+  {
+   "s": "Tom",
+   "t": "Why is he so busy?"
+  },
+  {
+   "s": "Amy",
+   "t": "Because he has a lot of boxes to take to people."
+  },
+  {
+   "s": "Tom",
+   "t": "And the cook? Why is she busy now?"
+  },
+  {
+   "s": "Amy",
+   "t": "Because it is lunch time. A lot of people are hungry."
+  },
+  {
+   "s": "Tom",
+   "t": "Their jobs are important!"
+  }
+ ],
+ "vocab": "why 为什么 · because 因为 · cook 厨师 · delivery worker 快递员 · now 现在 · a lot of 许多",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4r-u4-2-A1",
+     "type": "choice",
+     "stem": "Who is running?",
+     "options": [
+      "A delivery worker.",
+      "A police officer.",
+      "A driver."
+     ],
+     "answer": "A",
+     "why": "The delivery worker is running.",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u4-2-A2",
+     "type": "choice",
+     "stem": "Why is he busy?",
+     "options": [
+      "He has a lot of boxes.",
+      "He is late for school.",
+      "He is hungry."
+     ],
+     "answer": "A",
+     "why": "a lot of boxes",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u4-2-A3",
+     "type": "choice",
+     "stem": "Why is the cook busy now?",
+     "options": [
+      "It is lunch time.",
+      "It is night.",
+      "It is Sunday."
+     ],
+     "answer": "A",
+     "why": "it is lunch time",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g4r-u4-2-B1",
+     "type": "tf",
+     "stem": "The delivery worker has a lot of boxes.",
+     "answer": "T",
+     "why": "a lot of boxes",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u4-2-B2",
+     "type": "tf",
+     "stem": "The cook is busy at night.",
+     "answer": "F",
+     "why": "午餐时间忙。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u4-2-B3",
+     "type": "tf",
+     "stem": "Tom thinks their jobs are important.",
+     "answer": "T",
+     "why": "Their jobs are important!",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4r-u4-2-C1",
+     "type": "fill",
+     "stem": "Why is he so ____?",
+     "answers": [
+      [
+       "busy"
+      ]
+     ],
+     "why": "busy 忙碌的。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u4-2-C2",
+     "type": "fill",
+     "stem": "____ he has a lot of boxes.",
+     "answers": [
+      [
+       "because"
+      ]
+     ],
+     "why": "Because 因为。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u4-2-C3",
+     "type": "fill",
+     "stem": "A lot of people are ____.",
+     "answers": [
+      [
+       "hungry"
+      ]
+     ],
+     "why": "hungry 饿的。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "busy",
+    "because",
+    "boxes",
+    "hungry"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

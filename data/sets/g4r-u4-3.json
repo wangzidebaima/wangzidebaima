@@ -1,0 +1,141 @@
+{
+ "id": "g4r-u4-3",
+ "kind": "reading",
+ "title": "My Mum Was a Teacher",
+ "subtitle": "考点：old / tell / Ms",
+ "unit": "U4",
+ "passage": [
+  "Ms Li is our English teacher. She tells us many stories in class. In the old days, she was a cook in a small restaurant.",
+  "Now she is a teacher. She says every job is important. At home, she makes the bed and cleans the room. Everyone likes her."
+ ],
+ "vocab": "old 过去的 · tell 讲述 · Ms 女士 · make the bed 铺床 · everyone 每个人",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4r-u4-3-A1",
+     "type": "choice",
+     "stem": "Who is Ms Li?",
+     "options": [
+      "A cook.",
+      "An English teacher.",
+      "A nurse."
+     ],
+     "answer": "B",
+     "why": "our English teacher",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u4-3-A2",
+     "type": "choice",
+     "stem": "What was Ms Li in the old days?",
+     "options": [
+      "A cook.",
+      "A driver.",
+      "A farmer."
+     ],
+     "answer": "A",
+     "why": "was a cook",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u4-3-A3",
+     "type": "choice",
+     "stem": "What does she do at home?",
+     "options": [
+      "Makes the bed.",
+      "Plays football.",
+      "Drives a bus."
+     ],
+     "answer": "A",
+     "why": "makes the bed",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g4r-u4-3-B1",
+     "type": "tf",
+     "stem": "Ms Li tells stories in class.",
+     "answer": "T",
+     "why": "She tells us many stories.",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u4-3-B2",
+     "type": "tf",
+     "stem": "Ms Li is a cook now.",
+     "answer": "F",
+     "why": "Now she is a teacher.",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u4-3-B3",
+     "type": "tf",
+     "stem": "Everyone likes Ms Li.",
+     "answer": "T",
+     "why": "Everyone likes her.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4r-u4-3-C1",
+     "type": "fill",
+     "stem": "She ____ us many stories.",
+     "answers": [
+      [
+       "tells"
+      ]
+     ],
+     "why": "第三人称单数 tells。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u4-3-C2",
+     "type": "fill",
+     "stem": "She was a ____ in the old days.",
+     "answers": [
+      [
+       "cook"
+      ]
+     ],
+     "why": "a cook 厨师。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u4-3-C3",
+     "type": "fill",
+     "stem": "She says every job is ____.",
+     "answers": [
+      [
+       "important"
+      ]
+     ],
+     "why": "important 重要的。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "tells",
+    "cook",
+    "important",
+    "bed"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

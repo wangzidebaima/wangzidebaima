@@ -1,0 +1,141 @@
+{
+ "id": "g4r-u3-1",
+ "kind": "reading",
+ "title": "Our Community",
+ "subtitle": "考点：社区场所 / There is / There are",
+ "unit": "U3",
+ "passage": [
+  "I live in a nice community. There is a big park near my home. There is a playground in the park. Children play there in the afternoon.",
+  "There is a hospital next to the park. There are two shops and a library on the street. I like my community very much."
+ ],
+ "vocab": "community 社区 · playground 操场 · park 公园 · hospital 医院 · shop 商店 · library 图书馆",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4r-u3-1-A1",
+     "type": "choice",
+     "stem": "Where is the big park?",
+     "options": [
+      "Near the writer's home.",
+      "Near the school.",
+      "Near the shop."
+     ],
+     "answer": "A",
+     "why": "a big park near my home",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u3-1-A2",
+     "type": "choice",
+     "stem": "What is in the park?",
+     "options": [
+      "A shop.",
+      "A playground.",
+      "A hospital."
+     ],
+     "answer": "B",
+     "why": "There is a playground in the park.",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u3-1-A3",
+     "type": "choice",
+     "stem": "How many shops are there?",
+     "options": [
+      "One.",
+      "Two.",
+      "Three."
+     ],
+     "answer": "B",
+     "why": "two shops",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g4r-u3-1-B1",
+     "type": "tf",
+     "stem": "Children play in the park in the afternoon.",
+     "answer": "T",
+     "why": "Children play there in the afternoon.",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u3-1-B2",
+     "type": "tf",
+     "stem": "The hospital is next to the library.",
+     "answer": "F",
+     "why": "医院在公园旁边（next to the park）。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u3-1-B3",
+     "type": "tf",
+     "stem": "The writer likes the community.",
+     "answer": "T",
+     "why": "I like my community very much.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4r-u3-1-C1",
+     "type": "fill",
+     "stem": "There is a big ____ near my home.",
+     "answers": [
+      [
+       "park"
+      ]
+     ],
+     "why": "park 公园。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u3-1-C2",
+     "type": "fill",
+     "stem": "There is a ____ in the park.",
+     "answers": [
+      [
+       "playground"
+      ]
+     ],
+     "why": "playground 操场。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u3-1-C3",
+     "type": "fill",
+     "stem": "There is a ____ next to the park.",
+     "answers": [
+      [
+       "hospital"
+      ]
+     ],
+     "why": "hospital 医院。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "park",
+    "playground",
+    "hospital",
+    "library"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

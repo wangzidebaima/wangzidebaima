@@ -1,0 +1,167 @@
+{
+ "id": "g4r-u3-2",
+ "kind": "reading",
+ "title": "Where Is the Library?",
+ "subtitle": "考点：问路 / over there / bus stop",
+ "unit": "U3",
+ "dialogue": [
+  {
+   "s": "Tom",
+   "t": "Excuse me. Where is the library?"
+  },
+  {
+   "s": "Man",
+   "t": "It is over there, next to the shop."
+  },
+  {
+   "s": "Tom",
+   "t": "Is there a bus stop near here?"
+  },
+  {
+   "s": "Man",
+   "t": "Yes. It is in front of the library."
+  },
+  {
+   "s": "Tom",
+   "t": "Where is the toilet?"
+  },
+  {
+   "s": "Man",
+   "t": "It is behind the shop."
+  },
+  {
+   "s": "Tom",
+   "t": "Thank you!"
+  }
+ ],
+ "vocab": "library 图书馆 · bus stop 公共汽车站 · over there 在那边 · toilet 厕所 · shop 商店",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4r-u3-2-A1",
+     "type": "choice",
+     "stem": "Where is the library?",
+     "options": [
+      "Next to the shop.",
+      "Behind the shop.",
+      "In the park."
+     ],
+     "answer": "A",
+     "why": "next to the shop",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u3-2-A2",
+     "type": "choice",
+     "stem": "Where is the bus stop?",
+     "options": [
+      "Behind the shop.",
+      "In front of the library.",
+      "Next to the toilet."
+     ],
+     "answer": "B",
+     "why": "in front of the library",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u3-2-A3",
+     "type": "choice",
+     "stem": "Where is the toilet?",
+     "options": [
+      "Behind the shop.",
+      "In the library.",
+      "Near the park."
+     ],
+     "answer": "A",
+     "why": "behind the shop",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g4r-u3-2-B1",
+     "type": "tf",
+     "stem": "Tom is looking for the library.",
+     "answer": "T",
+     "why": "Where is the library?",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u3-2-B2",
+     "type": "tf",
+     "stem": "The bus stop is far from the library.",
+     "answer": "F",
+     "why": "在图书馆前面。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u3-2-B3",
+     "type": "tf",
+     "stem": "Tom says thank you at last.",
+     "answer": "T",
+     "why": "Thank you!",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4r-u3-2-C1",
+     "type": "fill",
+     "stem": "The ____ is next to the shop.",
+     "answers": [
+      [
+       "library"
+      ]
+     ],
+     "why": "library 图书馆。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u3-2-C2",
+     "type": "fill",
+     "stem": "The ____ stop is in front of the library.",
+     "answers": [
+      [
+       "bus"
+      ]
+     ],
+     "why": "bus stop 公共汽车站。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u3-2-C3",
+     "type": "fill",
+     "stem": "The ____ is behind the shop.",
+     "answers": [
+      [
+       "toilet"
+      ]
+     ],
+     "why": "toilet 厕所。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "library",
+    "bus",
+    "toilet",
+    "shop"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

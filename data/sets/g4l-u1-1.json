@@ -1,0 +1,108 @@
+{
+ "id": "g4l-u1-1",
+ "kind": "listening",
+ "title": "What Does He Do?",
+ "subtitle": "对话",
+ "unit": "U1",
+ "speakers": {
+  "Amy": "c1",
+  "Tom": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Amy",
+   "t": "Tom, what does your father do?"
+  },
+  {
+   "s": "Tom",
+   "t": "He is a doctor. He works in a hospital."
+  },
+  {
+   "s": "Amy",
+   "t": "And your mother?"
+  },
+  {
+   "s": "Tom",
+   "t": "She is a nurse. They are very busy."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4l-u1-1-A1",
+     "type": "choice",
+     "stem": "What is Tom's father?",
+     "options": [
+      "A doctor.",
+      "A farmer.",
+      "A cook."
+     ],
+     "answer": "A",
+     "why": "He is a doctor.",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u1-1-A2",
+     "type": "choice",
+     "stem": "What is Tom's mother?",
+     "options": [
+      "A teacher.",
+      "A nurse.",
+      "A driver."
+     ],
+     "answer": "B",
+     "why": "She is a nurse.",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u1-1-A3",
+     "type": "choice",
+     "stem": "Where does Tom's father work?",
+     "options": [
+      "In a hospital.",
+      "In a school.",
+      "On a farm."
+     ],
+     "answer": "A",
+     "why": "He works in a hospital.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4l-u1-1-B1",
+     "type": "fill",
+     "stem": "Tom's mother is a ____.",
+     "answers": [
+      [
+       "nurse"
+      ]
+     ],
+     "why": "She is a nurse.",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u1-1-B2",
+     "type": "fill",
+     "stem": "They are very ____.",
+     "answers": [
+      [
+       "busy"
+      ]
+     ],
+     "why": "They are very busy.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

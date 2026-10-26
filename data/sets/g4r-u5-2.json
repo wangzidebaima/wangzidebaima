@@ -1,0 +1,141 @@
+{
+ "id": "g4r-u5-2",
+ "kind": "reading",
+ "title": "A Snowy Day",
+ "subtitle": "考点：snowman / snowy / cold",
+ "unit": "U5",
+ "passage": [
+  "It is snowy today. It is very cold outside. The children wear warm coats and hats. They make a big snowman in the park.",
+  "The snowman has a red nose and a long scarf. The children have a lot of fun. After that, they go home and drink hot milk."
+ ],
+ "vocab": "snowy 下雪的 · snowman 雪人 · cold 冷的 · warm 暖和的 · fun 乐趣 · their 他们的",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4r-u5-2-A1",
+     "type": "choice",
+     "stem": "How is the weather?",
+     "options": [
+      "Snowy and cold.",
+      "Sunny and hot.",
+      "Windy and warm."
+     ],
+     "answer": "A",
+     "why": "snowy ... very cold",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u5-2-A2",
+     "type": "choice",
+     "stem": "What do the children make?",
+     "options": [
+      "A kite.",
+      "A snowman.",
+      "A cake."
+     ],
+     "answer": "B",
+     "why": "make a big snowman",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u5-2-A3",
+     "type": "choice",
+     "stem": "What do they drink at home?",
+     "options": [
+      "Hot milk.",
+      "Cold water.",
+      "Juice."
+     ],
+     "answer": "A",
+     "why": "drink hot milk",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g4r-u5-2-B1",
+     "type": "tf",
+     "stem": "The children wear warm coats.",
+     "answer": "T",
+     "why": "wear warm coats and hats",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u5-2-B2",
+     "type": "tf",
+     "stem": "The snowman has a blue nose.",
+     "answer": "F",
+     "why": "红鼻子 red nose。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u5-2-B3",
+     "type": "tf",
+     "stem": "The children have a lot of fun.",
+     "answer": "T",
+     "why": "a lot of fun",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4r-u5-2-C1",
+     "type": "fill",
+     "stem": "It is ____ today.",
+     "answers": [
+      [
+       "snowy"
+      ]
+     ],
+     "why": "snowy 下雪的。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u5-2-C2",
+     "type": "fill",
+     "stem": "They make a big ____.",
+     "answers": [
+      [
+       "snowman"
+      ]
+     ],
+     "why": "snowman 雪人。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u5-2-C3",
+     "type": "fill",
+     "stem": "The children have a lot of ____.",
+     "answers": [
+      [
+       "fun"
+      ]
+     ],
+     "why": "have fun 玩得开心。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "snowy",
+    "cold",
+    "snowman",
+    "fun"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

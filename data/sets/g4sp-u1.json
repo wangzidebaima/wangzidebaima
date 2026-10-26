@@ -1,0 +1,82 @@
+{
+ "id": "g4sp-u1",
+ "kind": "speaking",
+ "unit": "U1",
+ "title": "口语练习",
+ "subtitle": "每天 5 分钟 · 共 5 天",
+ "steps": [
+  "点 🔊 听一遍，听清语调",
+  "一句一句跟着读，声音要大，不怕错",
+  "读完点「今天完成了」打卡"
+ ],
+ "sentences": [
+  {
+   "en": "What does your mother do?",
+   "zh": "你妈妈做什么工作？"
+  },
+  {
+   "en": "She is a nurse. She works in a hospital.",
+   "zh": "她是护士，在医院工作。"
+  },
+  {
+   "en": "My father is a farmer.",
+   "zh": "我爸爸是农民。"
+  },
+  {
+   "en": "He is busy and tired.",
+   "zh": "他又忙又累。"
+  },
+  {
+   "en": "I help my mother at home.",
+   "zh": "我在家帮妈妈。"
+  },
+  {
+   "en": "I clean my room.",
+   "zh": "我打扫我的房间。"
+  },
+  {
+   "en": "I sweep the floor.",
+   "zh": "我扫地。"
+  },
+  {
+   "en": "I look after my little sister.",
+   "zh": "我照顾我的小妹妹。"
+  },
+  {
+   "en": "Let's do the chores together!",
+   "zh": "我们一起做家务吧！"
+  }
+ ],
+ "plan": [
+  {
+   "day": 1,
+   "title": "跟读第 1–3 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 5
+  },
+  {
+   "day": 2,
+   "title": "跟读第 4–6 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 5
+  },
+  {
+   "day": 3,
+   "title": "跟读第 7–9 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 5
+  },
+  {
+   "day": 4,
+   "title": "不看书，说给家长听",
+   "task": "挑 5 句最喜欢的，尽量不看书说出来",
+   "minutes": 5
+  },
+  {
+   "day": 5,
+   "title": "自己说 3 句话",
+   "task": "用 “My mother/father is a … He/She works in … ” 说 3 句话介绍家人的工作",
+   "minutes": 5
+  }
+ ]
+}

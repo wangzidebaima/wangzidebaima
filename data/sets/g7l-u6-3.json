@@ -1,0 +1,96 @@
+{
+ "id": "g7l-u6-3",
+ "kind": "listening",
+ "title": "My Weekend",
+ "subtitle": "短文",
+ "unit": "U6",
+ "speakers": {
+  "Jim": "m1"
+ },
+ "transcript": [
+  {
+   "s": "Jim",
+   "t": "I'm Jim. At weekends, I get up late. At ten, I do housework with my mom. In the afternoon, I play hockey with my friends. In the evening, I finish my homework and go to bed at ten."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l-u6-3-A1",
+     "type": "choice",
+     "stem": "When does Jim get up at weekends?",
+     "options": [
+      "Early.",
+      "Late.",
+      "At five."
+     ],
+     "answer": "B",
+     "why": "I get up late.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u6-3-A2",
+     "type": "choice",
+     "stem": "What does Jim do with his mom at ten?",
+     "options": [
+      "Plays hockey.",
+      "Does housework.",
+      "Does homework."
+     ],
+     "answer": "B",
+     "why": "At ten, I do housework with my mom.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u6-3-A3",
+     "type": "choice",
+     "stem": "What does Jim do in the afternoon?",
+     "options": [
+      "He plays hockey.",
+      "He goes to bed.",
+      "He cooks."
+     ],
+     "answer": "A",
+     "why": "In the afternoon, I play hockey with my friends.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l-u6-3-B1",
+     "type": "fill",
+     "stem": "Jim does ____ with his mom.",
+     "answers": [
+      [
+       "housework"
+      ]
+     ],
+     "why": "housework 家务。",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u6-3-B2",
+     "type": "fill",
+     "stem": "He goes to bed at ____.",
+     "answers": [
+      [
+       "ten",
+       "10"
+      ]
+     ],
+     "why": "at ten",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

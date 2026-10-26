@@ -1,0 +1,163 @@
+{
+ "id": "g4r-u6-3",
+ "kind": "reading",
+ "title": "What to Wear",
+ "subtitle": "考点：wear / coat / dress / glove",
+ "unit": "U6",
+ "dialogue": [
+  {
+   "s": "Mum",
+   "t": "It is cold today. Which coat do you want to wear?"
+  },
+  {
+   "s": "Amy",
+   "t": "The red one, Mum."
+  },
+  {
+   "s": "Mum",
+   "t": "Put on your gloves, too."
+  },
+  {
+   "s": "Amy",
+   "t": "OK. Can I wear my new dress?"
+  },
+  {
+   "s": "Mum",
+   "t": "No. It is too cold for a dress. Wear your sweater."
+  },
+  {
+   "s": "Amy",
+   "t": "All right."
+  }
+ ],
+ "vocab": "wear 穿 · coat 外套 · dress 连衣裙 · glove 手套 · T-shirt T恤衫 · which 哪一个",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4r-u6-3-A1",
+     "type": "choice",
+     "stem": "How is the weather?",
+     "options": [
+      "Hot.",
+      "Cold.",
+      "Warm."
+     ],
+     "answer": "B",
+     "why": "It is cold today.",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u6-3-A2",
+     "type": "choice",
+     "stem": "Which coat does Amy want?",
+     "options": [
+      "The red one.",
+      "The blue one.",
+      "The black one."
+     ],
+     "answer": "A",
+     "why": "The red one",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u6-3-A3",
+     "type": "choice",
+     "stem": "What does Mum say about the dress?",
+     "options": [
+      "It is too cold for a dress.",
+      "It is too big.",
+      "It is dirty."
+     ],
+     "answer": "A",
+     "why": "too cold for a dress",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g4r-u6-3-B1",
+     "type": "tf",
+     "stem": "Amy wears a red coat.",
+     "answer": "T",
+     "why": "The red one",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u6-3-B2",
+     "type": "tf",
+     "stem": "Amy wears the new dress.",
+     "answer": "F",
+     "why": "No。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u6-3-B3",
+     "type": "tf",
+     "stem": "Mum tells Amy to wear gloves.",
+     "answer": "T",
+     "why": "Put on your gloves.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4r-u6-3-C1",
+     "type": "fill",
+     "stem": "Which ____ do you want to wear?",
+     "answers": [
+      [
+       "coat"
+      ]
+     ],
+     "why": "coat 外套。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u6-3-C2",
+     "type": "fill",
+     "stem": "Put on your ____, too.",
+     "answers": [
+      [
+       "gloves"
+      ]
+     ],
+     "why": "gloves 手套。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u6-3-C3",
+     "type": "fill",
+     "stem": "Wear your ____.",
+     "answers": [
+      [
+       "sweater"
+      ]
+     ],
+     "why": "sweater 毛衣。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "coat",
+    "gloves",
+    "dress",
+    "sweater"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

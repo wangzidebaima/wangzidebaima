@@ -1,0 +1,96 @@
+{
+ "id": "g4l-u3-1",
+ "kind": "listening",
+ "title": "In My Community",
+ "subtitle": "短文",
+ "unit": "U3",
+ "speakers": {
+  "Amy": "c1"
+ },
+ "transcript": [
+  {
+   "s": "Amy",
+   "t": "There is a hospital, a library and two shops in my community. There is a big park, too. I like to walk in the park in the afternoon."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4l-u3-1-A1",
+     "type": "choice",
+     "stem": "How many shops are there?",
+     "options": [
+      "One.",
+      "Two.",
+      "Three."
+     ],
+     "answer": "B",
+     "why": "two shops",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u3-1-A2",
+     "type": "choice",
+     "stem": "What is big?",
+     "options": [
+      "The park.",
+      "The shop.",
+      "The library."
+     ],
+     "answer": "A",
+     "why": "a big park",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u3-1-A3",
+     "type": "choice",
+     "stem": "When does she walk in the park?",
+     "options": [
+      "In the morning.",
+      "In the afternoon.",
+      "In the evening."
+     ],
+     "answer": "B",
+     "why": "in the afternoon",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4l-u3-1-B1",
+     "type": "fill",
+     "stem": "There is a ____ in her community.",
+     "answers": [
+      [
+       "hospital",
+       "library"
+      ]
+     ],
+     "why": "hospital 或 library 均在原文。",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u3-1-B2",
+     "type": "fill",
+     "stem": "She likes to ____ in the park.",
+     "answers": [
+      [
+       "walk"
+      ]
+     ],
+     "why": "walk in the park",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

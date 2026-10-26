@@ -1,0 +1,95 @@
+{
+ "id": "g4l-u2-4",
+ "kind": "listening",
+ "title": "My Friends",
+ "subtitle": "短文",
+ "unit": "U2",
+ "speakers": {
+  "Sue": "c1"
+ },
+ "transcript": [
+  {
+   "s": "Sue",
+   "t": "I have two good friends. Lily is quiet. She likes reading. Nick is strong. He likes basketball. We always play together on Saturday."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4l-u2-4-A1",
+     "type": "choice",
+     "stem": "How many good friends does Sue have?",
+     "options": [
+      "One.",
+      "Two.",
+      "Three."
+     ],
+     "answer": "B",
+     "why": "two good friends",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u2-4-A2",
+     "type": "choice",
+     "stem": "What does Lily like?",
+     "options": [
+      "Reading.",
+      "Basketball.",
+      "Football."
+     ],
+     "answer": "A",
+     "why": "She likes reading.",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u2-4-A3",
+     "type": "choice",
+     "stem": "When do they play together?",
+     "options": [
+      "On Saturday.",
+      "On Sunday.",
+      "On Friday."
+     ],
+     "answer": "A",
+     "why": "on Saturday",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4l-u2-4-B1",
+     "type": "fill",
+     "stem": "Nick is ____.",
+     "answers": [
+      [
+       "strong"
+      ]
+     ],
+     "why": "Nick is strong.",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u2-4-B2",
+     "type": "fill",
+     "stem": "Nick likes ____.",
+     "answers": [
+      [
+       "basketball"
+      ]
+     ],
+     "why": "He likes basketball.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

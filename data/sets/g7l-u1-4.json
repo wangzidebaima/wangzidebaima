@@ -1,0 +1,131 @@
+{
+ "id": "g7l-u1-4",
+ "kind": "listening",
+ "title": "An Information Card",
+ "subtitle": "对话",
+ "unit": "U1",
+ "speakers": {
+  "Teacher": "f1",
+  "Sam": "m1"
+ },
+ "transcript": [
+  {
+   "s": "Teacher",
+   "t": "Sam, please tell me about you for the information card."
+  },
+  {
+   "s": "Sam",
+   "t": "OK. My full name is Sam Green."
+  },
+  {
+   "s": "Teacher",
+   "t": "How old are you?"
+  },
+  {
+   "s": "Sam",
+   "t": "I'm twelve."
+  },
+  {
+   "s": "Teacher",
+   "t": "What's your hobby?"
+  },
+  {
+   "s": "Sam",
+   "t": "I like playing the guitar."
+  },
+  {
+   "s": "Teacher",
+   "t": "Which country are you from?"
+  },
+  {
+   "s": "Sam",
+   "t": "I am from the UK."
+  },
+  {
+   "s": "Teacher",
+   "t": "Thank you, Sam."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l-u1-4-A1",
+     "type": "choice",
+     "stem": "What is Sam's full name?",
+     "options": [
+      "Sam Brown.",
+      "Sam Green.",
+      "Green Sam."
+     ],
+     "answer": "B",
+     "why": "My full name is Sam Green.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u1-4-A2",
+     "type": "choice",
+     "stem": "How old is Sam?",
+     "options": [
+      "Eleven.",
+      "Twelve.",
+      "Thirteen."
+     ],
+     "answer": "B",
+     "why": "I'm twelve.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u1-4-A3",
+     "type": "choice",
+     "stem": "What is Sam's hobby?",
+     "options": [
+      "Playing tennis.",
+      "Playing the guitar.",
+      "Reading."
+     ],
+     "answer": "B",
+     "why": "I like playing the guitar.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l-u1-4-B1",
+     "type": "fill",
+     "stem": "Sam is from the ____.",
+     "answers": [
+      [
+       "UK",
+       "uk",
+       "U.K."
+      ]
+     ],
+     "why": "I am from the UK.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u1-4-B2",
+     "type": "fill",
+     "stem": "Sam's last name is ____.",
+     "answers": [
+      [
+       "Green",
+       "green"
+      ]
+     ],
+     "why": "Sam Green 里，Green 是姓。",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

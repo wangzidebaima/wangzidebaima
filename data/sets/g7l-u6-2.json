@@ -1,0 +1,118 @@
+{
+ "id": "g7l-u6-2",
+ "kind": "listening",
+ "title": "A Short Interview",
+ "subtitle": "对话",
+ "unit": "U6",
+ "speakers": {
+  "Reporter": "m1",
+  "Kate": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Reporter",
+   "t": "What time do you usually get up, Kate?"
+  },
+  {
+   "s": "Kate",
+   "t": "At around six thirty."
+  },
+  {
+   "s": "Reporter",
+   "t": "What do you do after school?"
+  },
+  {
+   "s": "Kate",
+   "t": "I do my homework, and then I play outside."
+  },
+  {
+   "s": "Reporter",
+   "t": "When do you go to bed?"
+  },
+  {
+   "s": "Kate",
+   "t": "At nine o'clock."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l-u6-2-A1",
+     "type": "choice",
+     "stem": "What time does Kate usually get up?",
+     "options": [
+      "At 6:30.",
+      "At 7:30.",
+      "At 8:30."
+     ],
+     "answer": "A",
+     "why": "six thirty 就是 6:30。",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u6-2-A2",
+     "type": "choice",
+     "stem": "What does Kate do after school?",
+     "options": [
+      "She does homework and plays outside.",
+      "She sleeps.",
+      "She goes shopping."
+     ],
+     "answer": "A",
+     "why": "I do my homework, and then I play outside.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u6-2-A3",
+     "type": "choice",
+     "stem": "When does Kate go to bed?",
+     "options": [
+      "At 8:00.",
+      "At 9:00.",
+      "At 10:00."
+     ],
+     "answer": "B",
+     "why": "At nine o'clock.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l-u6-2-B1",
+     "type": "fill",
+     "stem": "Kate usually gets up at around six ____.",
+     "answers": [
+      [
+       "thirty",
+       "30"
+      ]
+     ],
+     "why": "six thirty",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u6-2-B2",
+     "type": "fill",
+     "stem": "She goes to bed at ____ o'clock.",
+     "answers": [
+      [
+       "nine",
+       "9"
+      ]
+     ],
+     "why": "At nine o'clock.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

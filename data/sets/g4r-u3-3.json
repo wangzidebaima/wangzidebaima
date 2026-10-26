@@ -1,0 +1,141 @@
+{
+ "id": "g4r-u3-3",
+ "kind": "reading",
+ "title": "My Favourite Place",
+ "subtitle": "考点：favourite / story / photo",
+ "unit": "U3",
+ "passage": [
+  "My favourite place is the library in our community. I go there on Saturday afternoon. I read stories and look at photos of old places.",
+  "My father likes the park. He walks there every day and does sports. We both love our community."
+ ],
+ "vocab": "favourite 最喜欢的 · place 地方 · story 故事 · photo 照片 · sport 运动 · walk 散步",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4r-u3-3-A1",
+     "type": "choice",
+     "stem": "What is the writer's favourite place?",
+     "options": [
+      "The park.",
+      "The library.",
+      "The shop."
+     ],
+     "answer": "B",
+     "why": "My favourite place is the library.",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u3-3-A2",
+     "type": "choice",
+     "stem": "When does the writer go there?",
+     "options": [
+      "On Saturday afternoon.",
+      "On Sunday morning.",
+      "Every evening."
+     ],
+     "answer": "A",
+     "why": "on Saturday afternoon",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u3-3-A3",
+     "type": "choice",
+     "stem": "Where does the father like to go?",
+     "options": [
+      "The hospital.",
+      "The park.",
+      "The library."
+     ],
+     "answer": "B",
+     "why": "My father likes the park.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g4r-u3-3-B1",
+     "type": "tf",
+     "stem": "The writer reads stories in the library.",
+     "answer": "T",
+     "why": "I read stories.",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u3-3-B2",
+     "type": "tf",
+     "stem": "The father walks in the park every day.",
+     "answer": "T",
+     "why": "He walks there every day.",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u3-3-B3",
+     "type": "tf",
+     "stem": "The writer does not love the community.",
+     "answer": "F",
+     "why": "We both love our community.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4r-u3-3-C1",
+     "type": "fill",
+     "stem": "My ____ place is the library.",
+     "answers": [
+      [
+       "favourite"
+      ]
+     ],
+     "why": "favourite 最喜欢的。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u3-3-C2",
+     "type": "fill",
+     "stem": "I read ____ there.",
+     "answers": [
+      [
+       "stories"
+      ]
+     ],
+     "why": "stories 故事。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u3-3-C3",
+     "type": "fill",
+     "stem": "My father ____ in the park every day.",
+     "answers": [
+      [
+       "walks"
+      ]
+     ],
+     "why": "第三人称单数 walks。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "favourite",
+    "stories",
+    "walks",
+    "sports"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

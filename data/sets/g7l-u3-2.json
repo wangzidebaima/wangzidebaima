@@ -1,0 +1,116 @@
+{
+ "id": "g7l-u3-2",
+ "kind": "listening",
+ "title": "Our Dining Hall",
+ "subtitle": "对话",
+ "unit": "U3",
+ "speakers": {
+  "Ann": "f1",
+  "Ben": "m1"
+ },
+ "transcript": [
+  {
+   "s": "Ann",
+   "t": "Ben, let's go to the dining hall."
+  },
+  {
+   "s": "Ben",
+   "t": "OK. What's for lunch today?"
+  },
+  {
+   "s": "Ann",
+   "t": "Chicken, rice and tomato soup."
+  },
+  {
+   "s": "Ben",
+   "t": "Great! The food there is delicious."
+  },
+  {
+   "s": "Ann",
+   "t": "Yes. How about the juice?"
+  },
+  {
+   "s": "Ben",
+   "t": "It's good too. Let's hurry."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l-u3-2-A1",
+     "type": "choice",
+     "stem": "Where are they going?",
+     "options": [
+      "To the gym.",
+      "To the dining hall.",
+      "To the library."
+     ],
+     "answer": "B",
+     "why": "Ann: let's go to the dining hall.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u3-2-A2",
+     "type": "choice",
+     "stem": "What is for lunch?",
+     "options": [
+      "Chicken, rice and tomato soup.",
+      "Noodles and fish.",
+      "Bread and milk."
+     ],
+     "answer": "A",
+     "why": "Chicken, rice and tomato soup.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u3-2-A3",
+     "type": "choice",
+     "stem": "What does Ben think of the food?",
+     "options": [
+      "It is delicious.",
+      "It is bad.",
+      "It is cold."
+     ],
+     "answer": "A",
+     "why": "The food there is delicious.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l-u3-2-B1",
+     "type": "fill",
+     "stem": "There is chicken, rice and tomato ____ for lunch.",
+     "answers": [
+      [
+       "soup"
+      ]
+     ],
+     "why": "tomato soup",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u3-2-B2",
+     "type": "fill",
+     "stem": "Ben says the food there is ____.",
+     "answers": [
+      [
+       "delicious"
+      ]
+     ],
+     "why": "The food there is delicious.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

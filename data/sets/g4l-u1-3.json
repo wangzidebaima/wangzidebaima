@@ -1,0 +1,96 @@
+{
+ "id": "g4l-u1-3",
+ "kind": "listening",
+ "title": "Farmer Uncle",
+ "subtitle": "短文",
+ "unit": "U1",
+ "speakers": {
+  "Ben": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Ben",
+   "t": "My uncle is a farmer. He gets up at five in the morning. He has a big farm. He has many cows and sheep. He is tired in the evening, but he likes his job."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4l-u1-3-A1",
+     "type": "choice",
+     "stem": "What is Ben's uncle?",
+     "options": [
+      "A farmer.",
+      "A driver.",
+      "A doctor."
+     ],
+     "answer": "A",
+     "why": "My uncle is a farmer.",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u1-3-A2",
+     "type": "choice",
+     "stem": "When does he get up?",
+     "options": [
+      "At five.",
+      "At six.",
+      "At seven."
+     ],
+     "answer": "A",
+     "why": "at five in the morning",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u1-3-A3",
+     "type": "choice",
+     "stem": "How is he in the evening?",
+     "options": [
+      "Happy.",
+      "Tired.",
+      "Angry."
+     ],
+     "answer": "B",
+     "why": "He is tired in the evening.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4l-u1-3-B1",
+     "type": "fill",
+     "stem": "He has a big ____.",
+     "answers": [
+      [
+       "farm"
+      ]
+     ],
+     "why": "He has a big farm.",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u1-3-B2",
+     "type": "fill",
+     "stem": "He ____ his job.",
+     "answers": [
+      [
+       "likes",
+       "loves"
+      ]
+     ],
+     "why": "he likes his job.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

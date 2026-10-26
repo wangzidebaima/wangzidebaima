@@ -1,0 +1,141 @@
+{
+ "id": "g4r-u5-4",
+ "kind": "reading",
+ "title": "The Four Weathers",
+ "subtitle": "考点：swim / bad / closed / rain",
+ "unit": "U5",
+ "passage": [
+  "Lily loves summer. In summer, it is hot and sunny, so she can swim in the pool. But today the weather is bad. It rains a lot, and the pool is closed.",
+  "Lily is a little sad. Her father speaks to her, \"Let us read books at home.\" Now she is happy again."
+ ],
+ "vocab": "swim 游泳 · bad 糟糕的 · closed 关闭的 · rain 雨 · speak 说话 · weather 天气",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4r-u5-4-A1",
+     "type": "choice",
+     "stem": "What does Lily love?",
+     "options": [
+      "Summer.",
+      "Winter.",
+      "Spring."
+     ],
+     "answer": "A",
+     "why": "Lily loves summer.",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u5-4-A2",
+     "type": "choice",
+     "stem": "Why is the pool closed?",
+     "options": [
+      "It is a holiday.",
+      "It rains a lot.",
+      "It is too hot."
+     ],
+     "answer": "B",
+     "why": "It rains a lot",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u5-4-A3",
+     "type": "choice",
+     "stem": "What do they do at home?",
+     "options": [
+      "Read books.",
+      "Swim.",
+      "Fly kites."
+     ],
+     "answer": "A",
+     "why": "read books at home",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g4r-u5-4-B1",
+     "type": "tf",
+     "stem": "The weather is good today.",
+     "answer": "F",
+     "why": "the weather is bad",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u5-4-B2",
+     "type": "tf",
+     "stem": "Lily can swim in summer.",
+     "answer": "T",
+     "why": "she can swim in the pool",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u5-4-B3",
+     "type": "tf",
+     "stem": "Lily is happy again at last.",
+     "answer": "T",
+     "why": "Now she is happy again.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4r-u5-4-C1",
+     "type": "fill",
+     "stem": "In summer, she can ____ in the pool.",
+     "answers": [
+      [
+       "swim"
+      ]
+     ],
+     "why": "swim 游泳。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u5-4-C2",
+     "type": "fill",
+     "stem": "Today the weather is ____.",
+     "answers": [
+      [
+       "bad"
+      ]
+     ],
+     "why": "bad 糟糕的。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u5-4-C3",
+     "type": "fill",
+     "stem": "The pool is ____.",
+     "answers": [
+      [
+       "closed"
+      ]
+     ],
+     "why": "closed 关闭的。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "swim",
+    "bad",
+    "closed",
+    "sad"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

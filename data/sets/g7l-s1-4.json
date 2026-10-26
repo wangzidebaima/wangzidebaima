@@ -1,0 +1,113 @@
+{
+ "id": "g7l-s1-4",
+ "kind": "listening",
+ "title": "A Spelling Game",
+ "subtitle": "对话",
+ "unit": "S1",
+ "speakers": {
+  "Ms. Li": "f1",
+  "Sam": "m1",
+  "Ann": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Ms. Li",
+   "t": "Let's play a spelling game. Sam, how do you spell \"bell\"?"
+  },
+  {
+   "s": "Sam",
+   "t": "B-E-L-L."
+  },
+  {
+   "s": "Ms. Li",
+   "t": "Good! Now Ann, spell \"unit\"."
+  },
+  {
+   "s": "Ann",
+   "t": "U-N-I-T."
+  },
+  {
+   "s": "Ms. Li",
+   "t": "Great! You both get a star."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l-s1-4-A1",
+     "type": "choice",
+     "stem": "What game do they play?",
+     "options": [
+      "A spelling game.",
+      "A football game.",
+      "A card game."
+     ],
+     "answer": "A",
+     "why": "Ms. Li: Let's play a spelling game.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-s1-4-A2",
+     "type": "choice",
+     "stem": "How does Sam spell \"bell\"?",
+     "options": [
+      "B-E-L-L.",
+      "B-A-L-L.",
+      "B-E-L."
+     ],
+     "answer": "A",
+     "why": "Sam: B-E-L-L.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-s1-4-A3",
+     "type": "choice",
+     "stem": "What do Sam and Ann get?",
+     "options": [
+      "A book.",
+      "A star.",
+      "A bell."
+     ],
+     "answer": "B",
+     "why": "Ms. Li: You both get a star.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l-s1-4-B1",
+     "type": "fill",
+     "stem": "Ann spells the word \"____\".",
+     "answers": [
+      [
+       "unit"
+      ]
+     ],
+     "why": "Ann: U-N-I-T.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-s1-4-B2",
+     "type": "fill",
+     "stem": "Sam's word is \"____\".",
+     "answers": [
+      [
+       "bell"
+      ]
+     ],
+     "why": "Sam: B-E-L-L.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

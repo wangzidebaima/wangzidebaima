@@ -1,0 +1,163 @@
+{
+ "id": "g4r-u3-4",
+ "kind": "reading",
+ "title": "Buy Some Books",
+ "subtitle": "考点：buy / shop / there is",
+ "unit": "U3",
+ "dialogue": [
+  {
+   "s": "Mum",
+   "t": "Let us go to the shop this afternoon."
+  },
+  {
+   "s": "Amy",
+   "t": "Great! I want to buy some books."
+  },
+  {
+   "s": "Mum",
+   "t": "Is there a bookshop near here?"
+  },
+  {
+   "s": "Amy",
+   "t": "Yes, there is one next to the hospital."
+  },
+  {
+   "s": "Mum",
+   "t": "OK. We can buy some fruit there, too."
+  },
+  {
+   "s": "Amy",
+   "t": "Wonderful!"
+  }
+ ],
+ "vocab": "buy 买 · shop 商店 · afternoon 下午 · there 在那里 · place 地方",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4r-u3-4-A1",
+     "type": "choice",
+     "stem": "When will they go to the shop?",
+     "options": [
+      "This morning.",
+      "This afternoon.",
+      "Tonight."
+     ],
+     "answer": "B",
+     "why": "this afternoon",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u3-4-A2",
+     "type": "choice",
+     "stem": "What does Amy want to buy?",
+     "options": [
+      "Some books.",
+      "Some toys.",
+      "Some clothes."
+     ],
+     "answer": "A",
+     "why": "buy some books",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u3-4-A3",
+     "type": "choice",
+     "stem": "Where is the bookshop?",
+     "options": [
+      "Next to the hospital.",
+      "Next to the park.",
+      "In the library."
+     ],
+     "answer": "A",
+     "why": "next to the hospital",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g4r-u3-4-B1",
+     "type": "tf",
+     "stem": "Amy and Mum will go to the shop.",
+     "answer": "T",
+     "why": "Let us go to the shop.",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u3-4-B2",
+     "type": "tf",
+     "stem": "The bookshop is far from the hospital.",
+     "answer": "F",
+     "why": "就在医院旁边。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u3-4-B3",
+     "type": "tf",
+     "stem": "They can buy fruit there, too.",
+     "answer": "T",
+     "why": "buy some fruit there, too",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4r-u3-4-C1",
+     "type": "fill",
+     "stem": "Let us go to the ____ this afternoon.",
+     "answers": [
+      [
+       "shop"
+      ]
+     ],
+     "why": "shop 商店。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u3-4-C2",
+     "type": "fill",
+     "stem": "I want to ____ some books.",
+     "answers": [
+      [
+       "buy"
+      ]
+     ],
+     "why": "buy 买。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u3-4-C3",
+     "type": "fill",
+     "stem": "We can buy some ____, too.",
+     "answers": [
+      [
+       "fruit"
+      ]
+     ],
+     "why": "some fruit。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "shop",
+    "buy",
+    "bookshop",
+    "fruit"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

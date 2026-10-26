@@ -1,0 +1,82 @@
+{
+ "id": "g4sp-u4",
+ "kind": "speaking",
+ "unit": "U4",
+ "title": "口语练习",
+ "subtitle": "每天 5 分钟 · 共 5 天",
+ "steps": [
+  "点 🔊 听一遍，听清语调",
+  "一句一句跟着读，声音要大，不怕错",
+  "读完点「今天完成了」打卡"
+ ],
+ "sentences": [
+  {
+   "en": "A firefighter puts out fires.",
+   "zh": "消防员灭火。"
+  },
+  {
+   "en": "A police officer keeps us safe.",
+   "zh": "警察保护我们的安全。"
+  },
+  {
+   "en": "A driver takes us to school.",
+   "zh": "司机送我们上学。"
+  },
+  {
+   "en": "A cleaner makes the street clean.",
+   "zh": "清洁工让街道变干净。"
+  },
+  {
+   "en": "The cook is busy now.",
+   "zh": "厨师现在很忙。"
+  },
+  {
+   "en": "Why is he busy?",
+   "zh": "他为什么忙？"
+  },
+  {
+   "en": "Because he has a lot of boxes.",
+   "zh": "因为他有很多包裹。"
+  },
+  {
+   "en": "Every job is important.",
+   "zh": "每一种工作都很重要。"
+  },
+  {
+   "en": "Thank you, everyone!",
+   "zh": "谢谢大家！"
+  }
+ ],
+ "plan": [
+  {
+   "day": 1,
+   "title": "跟读第 1–3 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 5
+  },
+  {
+   "day": 2,
+   "title": "跟读第 4–6 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 5
+  },
+  {
+   "day": 3,
+   "title": "跟读第 7–9 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 5
+  },
+  {
+   "day": 4,
+   "title": "不看书，说给家长听",
+   "task": "挑 5 句最喜欢的，尽量不看书说出来",
+   "minutes": 5
+  },
+  {
+   "day": 5,
+   "title": "自己说 3 句话",
+   "task": "用 “A … is important. He/She … ” 说 3 句话介绍一种职业",
+   "minutes": 5
+  }
+ ]
+}

@@ -1,0 +1,97 @@
+{
+ "id": "g7l-s1-3",
+ "kind": "listening",
+ "title": "My Name",
+ "subtitle": "短文",
+ "unit": "S1",
+ "speakers": {
+  "Jack": "m1"
+ },
+ "transcript": [
+  {
+   "s": "Jack",
+   "t": "Hello, everyone. My name is Jack Black. My first name is Jack, J-A-C-K. My last name is Black, B-L-A-C-K. I'm twelve. I'm in Class 2, Grade 7. My class teacher is Mr. Zhou."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l-s1-3-A1",
+     "type": "choice",
+     "stem": "What is Jack's first name?",
+     "options": [
+      "Jack.",
+      "Black.",
+      "Zhou."
+     ],
+     "answer": "A",
+     "why": "My first name is Jack.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-s1-3-A2",
+     "type": "choice",
+     "stem": "Which class is Jack in?",
+     "options": [
+      "Class 1.",
+      "Class 2.",
+      "Class 7."
+     ],
+     "answer": "B",
+     "why": "I'm in Class 2, Grade 7. Grade 7 是年级。",
+     "pts": 1
+    },
+    {
+     "id": "g7l-s1-3-A3",
+     "type": "choice",
+     "stem": "How old is Jack?",
+     "options": [
+      "Eleven.",
+      "Twelve.",
+      "Thirteen."
+     ],
+     "answer": "B",
+     "why": "I'm twelve.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l-s1-3-B1",
+     "type": "fill",
+     "stem": "Jack's last name is B-L-A-C-____.",
+     "answers": [
+      [
+       "K",
+       "k"
+      ]
+     ],
+     "why": "B-L-A-C-K, Black.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-s1-3-B2",
+     "type": "fill",
+     "stem": "His class teacher is Mr. ____.",
+     "answers": [
+      [
+       "Zhou",
+       "zhou"
+      ]
+     ],
+     "why": "My class teacher is Mr. Zhou.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

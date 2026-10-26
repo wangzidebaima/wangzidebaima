@@ -1,0 +1,116 @@
+{
+ "id": "g7l-u6-1",
+ "kind": "listening",
+ "title": "Morning Routine",
+ "subtitle": "对话",
+ "unit": "U6",
+ "speakers": {
+  "Mom": "f1",
+  "Tim": "m1"
+ },
+ "transcript": [
+  {
+   "s": "Mom",
+   "t": "Tim, get up! It's a quarter past six."
+  },
+  {
+   "s": "Tim",
+   "t": "OK, Mom."
+  },
+  {
+   "s": "Mom",
+   "t": "Take a shower and get dressed. Do not forget to brush your teeth."
+  },
+  {
+   "s": "Tim",
+   "t": "I know. What's for breakfast?"
+  },
+  {
+   "s": "Mom",
+   "t": "Eggs and milk."
+  },
+  {
+   "s": "Tim",
+   "t": "Great!"
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l-u6-1-A1",
+     "type": "choice",
+     "stem": "What time is it?",
+     "options": [
+      "6:15.",
+      "6:45.",
+      "7:15."
+     ],
+     "answer": "A",
+     "why": "a quarter past six 是 6:15。",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u6-1-A2",
+     "type": "choice",
+     "stem": "What should Tim do first?",
+     "options": [
+      "Have breakfast.",
+      "Take a shower and get dressed.",
+      "Go to school."
+     ],
+     "answer": "B",
+     "why": "Take a shower and get dressed.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u6-1-A3",
+     "type": "choice",
+     "stem": "What's for breakfast?",
+     "options": [
+      "Eggs and milk.",
+      "Noodles.",
+      "Bread and juice."
+     ],
+     "answer": "A",
+     "why": "Eggs and milk.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l-u6-1-B1",
+     "type": "fill",
+     "stem": "Mom says it is a ____ past six.",
+     "answers": [
+      [
+       "quarter"
+      ]
+     ],
+     "why": "It's a quarter past six.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u6-1-B2",
+     "type": "fill",
+     "stem": "Tim should brush his ____.",
+     "answers": [
+      [
+       "teeth"
+      ]
+     ],
+     "why": "brush your teeth",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

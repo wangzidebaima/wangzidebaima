@@ -1,0 +1,95 @@
+{
+ "id": "g4l-u4-2",
+ "kind": "listening",
+ "title": "A Driver's Day",
+ "subtitle": "短文",
+ "unit": "U4",
+ "speakers": {
+  "Ben": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Ben",
+   "t": "My father is a bus driver. He gets up at five. He drives a lot of people to work and to school. He is busy every day. But he likes his job."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4l-u4-2-A1",
+     "type": "choice",
+     "stem": "What is Ben's father?",
+     "options": [
+      "A bus driver.",
+      "A cook.",
+      "A doctor."
+     ],
+     "answer": "A",
+     "why": "a bus driver",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u4-2-A2",
+     "type": "choice",
+     "stem": "When does he get up?",
+     "options": [
+      "At five.",
+      "At six.",
+      "At seven."
+     ],
+     "answer": "A",
+     "why": "at five",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u4-2-A3",
+     "type": "choice",
+     "stem": "How does Ben's father feel about his job?",
+     "options": [
+      "He likes it.",
+      "He hates it.",
+      "He is afraid."
+     ],
+     "answer": "A",
+     "why": "he likes his job",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4l-u4-2-B1",
+     "type": "fill",
+     "stem": "He drives a lot of ____ to work.",
+     "answers": [
+      [
+       "people"
+      ]
+     ],
+     "why": "a lot of people",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u4-2-B2",
+     "type": "fill",
+     "stem": "He is ____ every day.",
+     "answers": [
+      [
+       "busy"
+      ]
+     ],
+     "why": "busy every day",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

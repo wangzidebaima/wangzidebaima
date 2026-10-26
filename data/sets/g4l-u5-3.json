@@ -1,0 +1,95 @@
+{
+ "id": "g4l-u5-3",
+ "kind": "listening",
+ "title": "Winter in the North",
+ "subtitle": "短文",
+ "unit": "U5",
+ "speakers": {
+  "Sam": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Sam",
+   "t": "I live in the north. In winter, it is very cold and snowy. We wear warm coats. We make snowmen and play in the snow. We have a lot of fun."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4l-u5-3-A1",
+     "type": "choice",
+     "stem": "Where does Sam live?",
+     "options": [
+      "In the north.",
+      "In the south.",
+      "In the east."
+     ],
+     "answer": "A",
+     "why": "the north",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u5-3-A2",
+     "type": "choice",
+     "stem": "How is winter there?",
+     "options": [
+      "Cold and snowy.",
+      "Hot and rainy.",
+      "Warm and windy."
+     ],
+     "answer": "A",
+     "why": "very cold and snowy",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u5-3-A3",
+     "type": "choice",
+     "stem": "What do they make?",
+     "options": [
+      "Snowmen.",
+      "Kites.",
+      "Cakes."
+     ],
+     "answer": "A",
+     "why": "make snowmen",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4l-u5-3-B1",
+     "type": "fill",
+     "stem": "They wear ____ coats.",
+     "answers": [
+      [
+       "warm"
+      ]
+     ],
+     "why": "warm coats",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u5-3-B2",
+     "type": "fill",
+     "stem": "They have a lot of ____.",
+     "answers": [
+      [
+       "fun"
+      ]
+     ],
+     "why": "a lot of fun",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

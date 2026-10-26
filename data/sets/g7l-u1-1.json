@@ -1,0 +1,126 @@
+{
+ "id": "g7l-u1-1",
+ "kind": "listening",
+ "title": "Making Friends",
+ "subtitle": "对话",
+ "unit": "U1",
+ "speakers": {
+  "Mei": "f1",
+  "Jenny": "f2"
+ },
+ "transcript": [
+  {
+   "s": "Mei",
+   "t": "Hi, I'm Li Mei. What's your name?"
+  },
+  {
+   "s": "Jenny",
+   "t": "I'm Jenny Smith."
+  },
+  {
+   "s": "Mei",
+   "t": "Which country are you from?"
+  },
+  {
+   "s": "Jenny",
+   "t": "I'm from the US. And you?"
+  },
+  {
+   "s": "Mei",
+   "t": "I'm from China. Nice to meet you."
+  },
+  {
+   "s": "Jenny",
+   "t": "Are you in Grade 7?"
+  },
+  {
+   "s": "Mei",
+   "t": "Yes, I'm in Class 6."
+  },
+  {
+   "s": "Jenny",
+   "t": "Me, too! We are classmates."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l-u1-1-A1",
+     "type": "choice",
+     "stem": "Where is Jenny from?",
+     "options": [
+      "The UK.",
+      "The US.",
+      "China."
+     ],
+     "answer": "B",
+     "why": "Jenny: I'm from the US.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u1-1-A2",
+     "type": "choice",
+     "stem": "Which class is Mei in?",
+     "options": [
+      "Class 5.",
+      "Class 6.",
+      "Class 7."
+     ],
+     "answer": "B",
+     "why": "Mei: I'm in Class 6.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u1-1-A3",
+     "type": "choice",
+     "stem": "What are Mei and Jenny?",
+     "options": [
+      "Sisters.",
+      "Teachers.",
+      "Classmates."
+     ],
+     "answer": "C",
+     "why": "Jenny: We are classmates.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l-u1-1-B1",
+     "type": "fill",
+     "stem": "Jenny's last name is ____.",
+     "answers": [
+      [
+       "Smith",
+       "smith"
+      ]
+     ],
+     "why": "I'm Jenny Smith.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u1-1-B2",
+     "type": "fill",
+     "stem": "Mei is from ____.",
+     "answers": [
+      [
+       "China",
+       "china"
+      ]
+     ],
+     "why": "I'm from China.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

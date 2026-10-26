@@ -1,0 +1,141 @@
+{
+ "id": "g4r-u6-4",
+ "kind": "reading",
+ "title": "My Favourite Season",
+ "subtitle": "考点：favourite season / then / get together",
+ "unit": "U6",
+ "passage": [
+  "My favourite season is autumn. It is cool and sunny. Leaves are yellow and red, and they fall down from the trees. I collect leaves with my friends.",
+  "In autumn, my family also gets together for the Mid-Autumn Festival. We eat mooncakes. Then we look at the moon."
+ ],
+ "vocab": "favourite 最喜欢的 · season 季节 · autumn 秋天 · fall 落下 · leaf 叶子 · get together 聚会 · then 然后",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4r-u6-4-A1",
+     "type": "choice",
+     "stem": "What is the writer's favourite season?",
+     "options": [
+      "Autumn.",
+      "Spring.",
+      "Summer."
+     ],
+     "answer": "A",
+     "why": "My favourite season is autumn.",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u6-4-A2",
+     "type": "choice",
+     "stem": "What colour are the leaves?",
+     "options": [
+      "Yellow and red.",
+      "Green.",
+      "White."
+     ],
+     "answer": "A",
+     "why": "yellow and red",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u6-4-A3",
+     "type": "choice",
+     "stem": "What do they eat at the festival?",
+     "options": [
+      "Mooncakes.",
+      "Noodles.",
+      "Ice cream."
+     ],
+     "answer": "A",
+     "why": "eat mooncakes",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g4r-u6-4-B1",
+     "type": "tf",
+     "stem": "Autumn is cool and sunny.",
+     "answer": "T",
+     "why": "It is cool and sunny.",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u6-4-B2",
+     "type": "tf",
+     "stem": "The writer collects leaves alone.",
+     "answer": "F",
+     "why": "with my friends",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u6-4-B3",
+     "type": "tf",
+     "stem": "They look at the moon after eating.",
+     "answer": "T",
+     "why": "Then we look at the moon.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4r-u6-4-C1",
+     "type": "fill",
+     "stem": "My favourite season is ____.",
+     "answers": [
+      [
+       "autumn"
+      ]
+     ],
+     "why": "autumn 秋天。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u6-4-C2",
+     "type": "fill",
+     "stem": "I collect ____ with my friends.",
+     "answers": [
+      [
+       "leaves"
+      ]
+     ],
+     "why": "leaves 叶子。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u6-4-C3",
+     "type": "fill",
+     "stem": "My family gets ____.",
+     "answers": [
+      [
+       "together"
+      ]
+     ],
+     "why": "get together 聚会。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "autumn",
+    "leaves",
+    "together",
+    "moon"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

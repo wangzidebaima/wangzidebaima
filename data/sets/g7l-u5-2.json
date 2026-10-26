@@ -1,0 +1,99 @@
+{
+ "id": "g7l-u5-2",
+ "kind": "listening",
+ "title": "A Hiking Trip",
+ "subtitle": "短文",
+ "unit": "U5",
+ "speakers": {
+  "Leader": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Leader",
+   "t": "Welcome to the hiking club. This Saturday, we will hike in the mountains. Please bring water, food and a camera. We will meet at the school gate at seven a.m. Don't be late. Wear good shoes. See you on Saturday!"
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l-u5-2-A1",
+     "type": "choice",
+     "stem": "When will they hike?",
+     "options": [
+      "This Saturday.",
+      "This Sunday.",
+      "Next week."
+     ],
+     "answer": "A",
+     "why": "This Saturday, we will hike in the mountains.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u5-2-A2",
+     "type": "choice",
+     "stem": "Where will they meet?",
+     "options": [
+      "At the school gate.",
+      "In the mountains.",
+      "At the park."
+     ],
+     "answer": "A",
+     "why": "We will meet at the school gate.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u5-2-A3",
+     "type": "choice",
+     "stem": "What should they bring?",
+     "options": [
+      "Water, food and a camera.",
+      "Books.",
+      "A violin."
+     ],
+     "answer": "A",
+     "why": "Please bring water, food and a camera.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l-u5-2-B1",
+     "type": "fill",
+     "stem": "They will meet at seven ____.",
+     "answers": [
+      [
+       "a.m.",
+       "am",
+       "a.m",
+       "AM",
+       "o'clock"
+      ]
+     ],
+     "why": "seven a.m. 早上七点。",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u5-2-B2",
+     "type": "fill",
+     "stem": "They should wear good ____.",
+     "answers": [
+      [
+       "shoes"
+      ]
+     ],
+     "why": "Wear good shoes.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

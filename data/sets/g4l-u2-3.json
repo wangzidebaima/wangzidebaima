@@ -1,0 +1,112 @@
+{
+ "id": "g4l-u2-3",
+ "kind": "listening",
+ "title": "After School",
+ "subtitle": "对话",
+ "unit": "U2",
+ "speakers": {
+  "Mike": "c2",
+  "Amy": "c1"
+ },
+ "transcript": [
+  {
+   "s": "Mike",
+   "t": "Amy, what do you do after school?"
+  },
+  {
+   "s": "Amy",
+   "t": "I play games with my friends."
+  },
+  {
+   "s": "Mike",
+   "t": "I play football with my best friend, Tom."
+  },
+  {
+   "s": "Amy",
+   "t": "Is Tom strong?"
+  },
+  {
+   "s": "Mike",
+   "t": "Yes, he is. He is also very kind."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4l-u2-3-A1",
+     "type": "choice",
+     "stem": "What does Amy do after school?",
+     "options": [
+      "Plays games.",
+      "Reads books.",
+      "Plays football."
+     ],
+     "answer": "A",
+     "why": "I play games",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u2-3-A2",
+     "type": "choice",
+     "stem": "Who is Mike's best friend?",
+     "options": [
+      "Tom.",
+      "Jack.",
+      "Ben."
+     ],
+     "answer": "A",
+     "why": "my best friend, Tom",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u2-3-A3",
+     "type": "choice",
+     "stem": "What does Mike play with Tom?",
+     "options": [
+      "Basketball.",
+      "Football.",
+      "Cards."
+     ],
+     "answer": "B",
+     "why": "play football",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4l-u2-3-B1",
+     "type": "fill",
+     "stem": "Tom is ____.",
+     "answers": [
+      [
+       "strong"
+      ]
+     ],
+     "why": "Yes, he is. 即 Tom is strong.",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u2-3-B2",
+     "type": "fill",
+     "stem": "Tom is also very ____.",
+     "answers": [
+      [
+       "kind"
+      ]
+     ],
+     "why": "very kind",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

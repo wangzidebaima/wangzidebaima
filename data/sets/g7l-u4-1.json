@@ -1,0 +1,120 @@
+{
+ "id": "g7l-u4-1",
+ "kind": "listening",
+ "title": "School Subjects",
+ "subtitle": "对话",
+ "unit": "U4",
+ "speakers": {
+  "Tom": "m1",
+  "Jane": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Tom",
+   "t": "What's your favourite subject, Jane?"
+  },
+  {
+   "s": "Jane",
+   "t": "Geography. It's exciting."
+  },
+  {
+   "s": "Tom",
+   "t": "Why?"
+  },
+  {
+   "s": "Jane",
+   "t": "Because I learn about different countries."
+  },
+  {
+   "s": "Tom",
+   "t": "I like history. It's useful."
+  },
+  {
+   "s": "Jane",
+   "t": "But some students think it is boring."
+  },
+  {
+   "s": "Tom",
+   "t": "Not for me."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l-u4-1-A1",
+     "type": "choice",
+     "stem": "What is Jane's favourite subject?",
+     "options": [
+      "History.",
+      "Geography.",
+      "Biology."
+     ],
+     "answer": "B",
+     "why": "Geography.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u4-1-A2",
+     "type": "choice",
+     "stem": "Why does Jane like it?",
+     "options": [
+      "Because it is exciting.",
+      "Because it is easy.",
+      "Because it is short."
+     ],
+     "answer": "A",
+     "why": "It's exciting.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u4-1-A3",
+     "type": "choice",
+     "stem": "What does Tom like?",
+     "options": [
+      "Math.",
+      "History.",
+      "French."
+     ],
+     "answer": "B",
+     "why": "I like history.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l-u4-1-B1",
+     "type": "fill",
+     "stem": "Jane's favourite subject is ____.",
+     "answers": [
+      [
+       "geography"
+      ]
+     ],
+     "why": "Geography.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u4-1-B2",
+     "type": "fill",
+     "stem": "Tom thinks history is ____.",
+     "answers": [
+      [
+       "useful"
+      ]
+     ],
+     "why": "It's useful.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

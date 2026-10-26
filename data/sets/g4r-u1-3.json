@@ -1,0 +1,163 @@
+{
+ "id": "g4r-u1-3",
+ "kind": "reading",
+ "title": "Helping at Home",
+ "subtitle": "考点：look after / sweep / floor",
+ "unit": "U1",
+ "dialogue": [
+  {
+   "s": "Mum",
+   "t": "Tom, can you help me today?"
+  },
+  {
+   "s": "Tom",
+   "t": "Sure, Mum. What can I do?"
+  },
+  {
+   "s": "Mum",
+   "t": "Please sweep the floor."
+  },
+  {
+   "s": "Tom",
+   "t": "OK. Then I can look after my little sister."
+  },
+  {
+   "s": "Mum",
+   "t": "Thank you. You are a good boy."
+  },
+  {
+   "s": "Tom",
+   "t": "Let us do the chores together!"
+  }
+ ],
+ "vocab": "look after 照顾 · sweep 扫 · floor 地板 · together 一起 · chore 家务",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4r-u1-3-A1",
+     "type": "choice",
+     "stem": "Who is Tom talking to?",
+     "options": [
+      "His mother.",
+      "His teacher.",
+      "His friend."
+     ],
+     "answer": "A",
+     "why": "Mum 是妈妈。",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u1-3-A2",
+     "type": "choice",
+     "stem": "What does Tom sweep?",
+     "options": [
+      "The desk.",
+      "The floor.",
+      "The window."
+     ],
+     "answer": "B",
+     "why": "Please sweep the floor.",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u1-3-A3",
+     "type": "choice",
+     "stem": "Who will Tom look after?",
+     "options": [
+      "His brother.",
+      "His little sister.",
+      "His grandma."
+     ],
+     "answer": "B",
+     "why": "look after my little sister.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g4r-u1-3-B1",
+     "type": "tf",
+     "stem": "Tom does not want to help.",
+     "answer": "F",
+     "why": "Sure, Mum.",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u1-3-B2",
+     "type": "tf",
+     "stem": "Mum says Tom is a good boy.",
+     "answer": "T",
+     "why": "You are a good boy.",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u1-3-B3",
+     "type": "tf",
+     "stem": "Tom sweeps the floor after he looks after his sister.",
+     "answer": "F",
+     "why": "先 sweep the floor，然后照顾妹妹。",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4r-u1-3-C1",
+     "type": "fill",
+     "stem": "Please ____ the floor.",
+     "answers": [
+      [
+       "sweep"
+      ]
+     ],
+     "why": "sweep the floor 扫地。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u1-3-C2",
+     "type": "fill",
+     "stem": "I can ____ after my little sister.",
+     "answers": [
+      [
+       "look"
+      ]
+     ],
+     "why": "look after 照顾。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u1-3-C3",
+     "type": "fill",
+     "stem": "Let us do the chores ____!",
+     "answers": [
+      [
+       "together"
+      ]
+     ],
+     "why": "together 一起。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "sweep",
+    "floor",
+    "look",
+    "together"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

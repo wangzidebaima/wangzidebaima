@@ -1,0 +1,82 @@
+{
+ "id": "g4sp-u2",
+ "kind": "speaking",
+ "unit": "U2",
+ "title": "口语练习",
+ "subtitle": "每天 5 分钟 · 共 5 天",
+ "steps": [
+  "点 🔊 听一遍，听清语调",
+  "一句一句跟着读，声音要大，不怕错",
+  "读完点「今天完成了」打卡"
+ ],
+ "sentences": [
+  {
+   "en": "Who is your best friend?",
+   "zh": "你最好的朋友是谁？"
+  },
+  {
+   "en": "My best friend is Ben.",
+   "zh": "我最好的朋友是本。"
+  },
+  {
+   "en": "He is tall and strong.",
+   "zh": "他又高又壮。"
+  },
+  {
+   "en": "He has short black hair.",
+   "zh": "他有一头黑色短发。"
+  },
+  {
+   "en": "He is kind to everyone.",
+   "zh": "他对每个人都很友好。"
+  },
+  {
+   "en": "She is quiet. She likes reading.",
+   "zh": "她很文静，喜欢读书。"
+  },
+  {
+   "en": "We play football together.",
+   "zh": "我们一起踢足球。"
+  },
+  {
+   "en": "She always reads Chinese books.",
+   "zh": "她总是读语文书。"
+  },
+  {
+   "en": "I love my friends!",
+   "zh": "我爱我的朋友们！"
+  }
+ ],
+ "plan": [
+  {
+   "day": 1,
+   "title": "跟读第 1–3 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 5
+  },
+  {
+   "day": 2,
+   "title": "跟读第 4–6 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 5
+  },
+  {
+   "day": 3,
+   "title": "跟读第 7–9 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 5
+  },
+  {
+   "day": 4,
+   "title": "不看书，说给家长听",
+   "task": "挑 5 句最喜欢的，尽量不看书说出来",
+   "minutes": 5
+  },
+  {
+   "day": 5,
+   "title": "自己说 3 句话",
+   "task": "用 “He/She is … He/She likes … ” 说 3 句话介绍你的好朋友",
+   "minutes": 5
+  }
+ ]
+}

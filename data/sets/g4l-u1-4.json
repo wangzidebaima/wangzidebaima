@@ -1,0 +1,108 @@
+{
+ "id": "g4l-u1-4",
+ "kind": "listening",
+ "title": "Look After Baby",
+ "subtitle": "对话",
+ "unit": "U1",
+ "speakers": {
+  "Mum": "f1",
+  "Sam": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Mum",
+   "t": "Sam, can you look after baby Amy?"
+  },
+  {
+   "s": "Sam",
+   "t": "Yes, Mum. I can read her a story."
+  },
+  {
+   "s": "Mum",
+   "t": "Thank you. I will cook dinner in the kitchen."
+  },
+  {
+   "s": "Sam",
+   "t": "OK. Then we can clean the room together."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4l-u1-4-A1",
+     "type": "choice",
+     "stem": "Who will Sam look after?",
+     "options": [
+      "Baby Amy.",
+      "Grandpa.",
+      "His dog."
+     ],
+     "answer": "A",
+     "why": "look after baby Amy",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u1-4-A2",
+     "type": "choice",
+     "stem": "What can Sam do for her?",
+     "options": [
+      "Sing a song.",
+      "Read a story.",
+      "Play football."
+     ],
+     "answer": "B",
+     "why": "I can read her a story.",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u1-4-A3",
+     "type": "choice",
+     "stem": "What will Mum do?",
+     "options": [
+      "Cook dinner.",
+      "Clean the floor.",
+      "Go to work."
+     ],
+     "answer": "A",
+     "why": "I will cook dinner.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4l-u1-4-B1",
+     "type": "fill",
+     "stem": "Sam can read her a ____.",
+     "answers": [
+      [
+       "story"
+      ]
+     ],
+     "why": "read her a story",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u1-4-B2",
+     "type": "fill",
+     "stem": "They can clean the ____ together.",
+     "answers": [
+      [
+       "room"
+      ]
+     ],
+     "why": "clean the room together",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

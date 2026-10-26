@@ -1,0 +1,95 @@
+{
+ "id": "g7l-s2-3",
+ "kind": "listening",
+ "title": "My Schoolbag",
+ "subtitle": "短文",
+ "unit": "S2",
+ "speakers": {
+  "Mary": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Mary",
+   "t": "Hi, I'm Mary. This is my schoolbag. It's blue. In my schoolbag, there are two books, a key and a water bottle. The bottle is red. My mother gives me the key. She says, \"Keep it safe.\""
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l-s2-3-A1",
+     "type": "choice",
+     "stem": "What colour is the schoolbag?",
+     "options": [
+      "Blue.",
+      "Red.",
+      "Green."
+     ],
+     "answer": "A",
+     "why": "It's blue.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-s2-3-A2",
+     "type": "choice",
+     "stem": "How many books are there in the bag?",
+     "options": [
+      "One.",
+      "Two.",
+      "Three."
+     ],
+     "answer": "B",
+     "why": "two books",
+     "pts": 1
+    },
+    {
+     "id": "g7l-s2-3-A3",
+     "type": "choice",
+     "stem": "What colour is the bottle?",
+     "options": [
+      "Blue.",
+      "Red.",
+      "Yellow."
+     ],
+     "answer": "B",
+     "why": "The bottle is red.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l-s2-3-B1",
+     "type": "fill",
+     "stem": "Mary has a ____ in her bag.",
+     "answers": [
+      [
+       "key"
+      ]
+     ],
+     "why": "a key",
+     "pts": 1
+    },
+    {
+     "id": "g7l-s2-3-B2",
+     "type": "fill",
+     "stem": "Her mother says, \"Keep it ____.\"",
+     "answers": [
+      [
+       "safe"
+      ]
+     ],
+     "why": "Keep it safe. 妈妈让她把钥匙收好。",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

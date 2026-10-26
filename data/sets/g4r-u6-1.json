@@ -1,0 +1,163 @@
+{
+ "id": "g4r-u6-1",
+ "kind": "reading",
+ "title": "Whose Sweater?",
+ "subtitle": "考点：Whose ...? / mine / yours",
+ "unit": "U6",
+ "dialogue": [
+  {
+   "s": "Mum",
+   "t": "Whose sweater is this?"
+  },
+  {
+   "s": "Tom",
+   "t": "It is not mine. It is Amy's."
+  },
+  {
+   "s": "Mum",
+   "t": "And whose socks are these?"
+  },
+  {
+   "s": "Tom",
+   "t": "They are mine. I wear them for PE class."
+  },
+  {
+   "s": "Mum",
+   "t": "Whose shirt is on the chair?"
+  },
+  {
+   "s": "Tom",
+   "t": "It is my father's."
+  }
+ ],
+ "vocab": "whose 谁的 · sweater 毛衣 · sock 短袜 · mine 我的 · wear 穿 · shirt 衬衫",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4r-u6-1-A1",
+     "type": "choice",
+     "stem": "Whose sweater is it?",
+     "options": [
+      "Tom's.",
+      "Amy's.",
+      "Dad's."
+     ],
+     "answer": "B",
+     "why": "It is Amy's.",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u6-1-A2",
+     "type": "choice",
+     "stem": "Whose socks are they?",
+     "options": [
+      "Tom's.",
+      "Amy's.",
+      "Mum's."
+     ],
+     "answer": "A",
+     "why": "They are mine（Tom）。",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u6-1-A3",
+     "type": "choice",
+     "stem": "Whose shirt is on the chair?",
+     "options": [
+      "Tom's father's.",
+      "Tom's.",
+      "Amy's."
+     ],
+     "answer": "A",
+     "why": "my father's",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g4r-u6-1-B1",
+     "type": "tf",
+     "stem": "The sweater is Tom's.",
+     "answer": "F",
+     "why": "It is not mine。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u6-1-B2",
+     "type": "tf",
+     "stem": "Tom wears the socks for PE class.",
+     "answer": "T",
+     "why": "I wear them for PE class.",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u6-1-B3",
+     "type": "tf",
+     "stem": "The shirt is on the chair.",
+     "answer": "T",
+     "why": "Whose shirt is on the chair?",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4r-u6-1-C1",
+     "type": "fill",
+     "stem": "Whose ____ is this?",
+     "answers": [
+      [
+       "sweater"
+      ]
+     ],
+     "why": "sweater 毛衣。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u6-1-C2",
+     "type": "fill",
+     "stem": "The socks are ____.",
+     "answers": [
+      [
+       "mine"
+      ]
+     ],
+     "why": "mine 我的。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u6-1-C3",
+     "type": "fill",
+     "stem": "The ____ is on the chair.",
+     "answers": [
+      [
+       "shirt"
+      ]
+     ],
+     "why": "shirt 衬衫。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "sweater",
+    "socks",
+    "mine",
+    "shirt"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

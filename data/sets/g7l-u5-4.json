@@ -1,0 +1,117 @@
+{
+ "id": "g7l-u5-4",
+ "kind": "listening",
+ "title": "Violin Lessons",
+ "subtitle": "对话",
+ "unit": "U5",
+ "speakers": {
+  "Mom": "f1",
+  "Ken": "m1"
+ },
+ "transcript": [
+  {
+   "s": "Mom",
+   "t": "Ken, do you want to take violin lessons?"
+  },
+  {
+   "s": "Ken",
+   "t": "Yes! I'm interested in music."
+  },
+  {
+   "s": "Mom",
+   "t": "Which do you like, the violin or the drums?"
+  },
+  {
+   "s": "Ken",
+   "t": "The violin."
+  },
+  {
+   "s": "Mom",
+   "t": "OK. The lessons are on Saturday at ten a.m."
+  },
+  {
+   "s": "Ken",
+   "t": "Great!"
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l-u5-4-A1",
+     "type": "choice",
+     "stem": "What is Ken interested in?",
+     "options": [
+      "Sports.",
+      "Music.",
+      "Drama."
+     ],
+     "answer": "B",
+     "why": "I'm interested in music.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u5-4-A2",
+     "type": "choice",
+     "stem": "Which does Ken like?",
+     "options": [
+      "The violin.",
+      "The drums.",
+      "The guitar."
+     ],
+     "answer": "A",
+     "why": "The violin.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u5-4-A3",
+     "type": "choice",
+     "stem": "When are the lessons?",
+     "options": [
+      "On Saturday at ten a.m.",
+      "On Sunday at ten a.m.",
+      "On Saturday at two p.m."
+     ],
+     "answer": "A",
+     "why": "The lessons are on Saturday at ten a.m.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l-u5-4-B1",
+     "type": "fill",
+     "stem": "Ken wants to take ____ lessons.",
+     "answers": [
+      [
+       "violin"
+      ]
+     ],
+     "why": "violin lessons",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u5-4-B2",
+     "type": "fill",
+     "stem": "The lessons are on ____.",
+     "answers": [
+      [
+       "Saturday",
+       "saturday"
+      ]
+     ],
+     "why": "on Saturday",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

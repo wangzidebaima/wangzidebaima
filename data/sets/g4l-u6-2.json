@@ -1,0 +1,97 @@
+{
+ "id": "g4l-u6-2",
+ "kind": "listening",
+ "title": "Summer Fun",
+ "subtitle": "短文",
+ "unit": "U6",
+ "speakers": {
+  "Lily": "c1"
+ },
+ "transcript": [
+  {
+   "s": "Lily",
+   "t": "I like summer. It is hot, so I wear a T-shirt and shorts. I swim with my friends. We eat ice cream, too. Summer is my favourite season."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4l-u6-2-A1",
+     "type": "choice",
+     "stem": "What does Lily like?",
+     "options": [
+      "Summer.",
+      "Winter.",
+      "Spring."
+     ],
+     "answer": "A",
+     "why": "I like summer.",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u6-2-A2",
+     "type": "choice",
+     "stem": "What does she wear?",
+     "options": [
+      "A T-shirt and shorts.",
+      "A coat.",
+      "A sweater."
+     ],
+     "answer": "A",
+     "why": "T-shirt and shorts",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u6-2-A3",
+     "type": "choice",
+     "stem": "What do they eat?",
+     "options": [
+      "Ice cream.",
+      "Mooncakes.",
+      "Noodles."
+     ],
+     "answer": "A",
+     "why": "ice cream",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4l-u6-2-B1",
+     "type": "fill",
+     "stem": "She ____ with her friends.",
+     "answers": [
+      [
+       "swims",
+       "swim"
+      ]
+     ],
+     "why": "I swim with my friends.",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u6-2-B2",
+     "type": "fill",
+     "stem": "Summer is her ____ season.",
+     "answers": [
+      [
+       "favourite",
+       "favorite"
+      ]
+     ],
+     "why": "favourite season",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

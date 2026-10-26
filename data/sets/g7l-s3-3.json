@@ -1,0 +1,96 @@
+{
+ "id": "g7l-s3-3",
+ "kind": "listening",
+ "title": "Our Class Game",
+ "subtitle": "短文",
+ "unit": "S3",
+ "speakers": {
+  "Peter": "m1"
+ },
+ "transcript": [
+  {
+   "s": "Peter",
+   "t": "Hello, I'm Peter. Today we have a fun class. Our teacher says, \"Let's count the books.\" There are ten books on the desk. We count them together. Then we circle the right word in our books. I get all of them right!"
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l-s3-3-A1",
+     "type": "choice",
+     "stem": "What do they count?",
+     "options": [
+      "The books.",
+      "The geese.",
+      "The carrots."
+     ],
+     "answer": "A",
+     "why": "Let's count the books.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-s3-3-A2",
+     "type": "choice",
+     "stem": "How many books are there on the desk?",
+     "options": [
+      "Eight.",
+      "Nine.",
+      "Ten."
+     ],
+     "answer": "C",
+     "why": "There are ten books on the desk.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-s3-3-A3",
+     "type": "choice",
+     "stem": "What do they circle?",
+     "options": [
+      "The right word.",
+      "The big book.",
+      "The teacher."
+     ],
+     "answer": "A",
+     "why": "we circle the right word in our books",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l-s3-3-B1",
+     "type": "fill",
+     "stem": "There are ____ books on the desk.",
+     "answers": [
+      [
+       "ten",
+       "10"
+      ]
+     ],
+     "why": "ten books",
+     "pts": 1
+    },
+    {
+     "id": "g7l-s3-3-B2",
+     "type": "fill",
+     "stem": "Peter gets all of them ____.",
+     "answers": [
+      [
+       "right"
+      ]
+     ],
+     "why": "I get all of them right!",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

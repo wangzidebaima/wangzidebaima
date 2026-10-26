@@ -1,0 +1,113 @@
+{
+ "id": "g7l-s3-1",
+ "kind": "listening",
+ "title": "How Many?",
+ "subtitle": "对话",
+ "unit": "S3",
+ "speakers": {
+  "Tom": "m1",
+  "Amy": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Tom",
+   "t": "Look at the yard. How many geese are there?"
+  },
+  {
+   "s": "Amy",
+   "t": "One, two, three, four, five. There are five geese."
+  },
+  {
+   "s": "Tom",
+   "t": "What else do you see?"
+  },
+  {
+   "s": "Amy",
+   "t": "I see two dogs and a cat."
+  },
+  {
+   "s": "Tom",
+   "t": "Wow, so many animals!"
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l-s3-1-A1",
+     "type": "choice",
+     "stem": "How many geese are there?",
+     "options": [
+      "Three.",
+      "Five.",
+      "Six."
+     ],
+     "answer": "B",
+     "why": "There are five geese.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-s3-1-A2",
+     "type": "choice",
+     "stem": "How many dogs does Amy see?",
+     "options": [
+      "One.",
+      "Two.",
+      "Three."
+     ],
+     "answer": "B",
+     "why": "two dogs",
+     "pts": 1
+    },
+    {
+     "id": "g7l-s3-1-A3",
+     "type": "choice",
+     "stem": "What else does Amy see?",
+     "options": [
+      "A cat.",
+      "A goose.",
+      "A carrot."
+     ],
+     "answer": "A",
+     "why": "two dogs and a cat",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l-s3-1-B1",
+     "type": "fill",
+     "stem": "Amy sees ____ geese.",
+     "answers": [
+      [
+       "five",
+       "5"
+      ]
+     ],
+     "why": "There are five geese.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-s3-1-B2",
+     "type": "fill",
+     "stem": "There is a ____ in the yard, too.",
+     "answers": [
+      [
+       "cat"
+      ]
+     ],
+     "why": "a cat",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

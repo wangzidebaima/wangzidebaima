@@ -1,0 +1,163 @@
+{
+ "id": "g4r-u2-4",
+ "kind": "reading",
+ "title": "My New Friend",
+ "subtitle": "考点：描述人物 / his / her",
+ "unit": "U2",
+ "dialogue": [
+  {
+   "s": "Amy",
+   "t": "Look! This is my new friend, Sam."
+  },
+  {
+   "s": "Mum",
+   "t": "He is tall. What is his hair like?"
+  },
+  {
+   "s": "Amy",
+   "t": "It is short and brown. He is very kind."
+  },
+  {
+   "s": "Mum",
+   "t": "Does he like games?"
+  },
+  {
+   "s": "Amy",
+   "t": "Yes! He likes computer games, but he always reads before bed."
+  },
+  {
+   "s": "Mum",
+   "t": "Good boy!"
+  }
+ ],
+ "vocab": "his 他的 · hair 头发 · kind 友好的 · quiet 文静的 · game 游戏",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4r-u2-4-A1",
+     "type": "choice",
+     "stem": "Who is Sam?",
+     "options": [
+      "Amy's new friend.",
+      "Amy's brother.",
+      "Amy's teacher."
+     ],
+     "answer": "A",
+     "why": "my new friend, Sam",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u2-4-A2",
+     "type": "choice",
+     "stem": "What is his hair like?",
+     "options": [
+      "Long and black.",
+      "Short and brown.",
+      "Short and yellow."
+     ],
+     "answer": "B",
+     "why": "short and brown",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u2-4-A3",
+     "type": "choice",
+     "stem": "What does Sam always do before bed?",
+     "options": [
+      "Plays games.",
+      "Reads.",
+      "Sings."
+     ],
+     "answer": "B",
+     "why": "he always reads before bed",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g4r-u2-4-B1",
+     "type": "tf",
+     "stem": "Sam is short.",
+     "answer": "F",
+     "why": "Mum 说 He is tall.",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u2-4-B2",
+     "type": "tf",
+     "stem": "Sam is kind.",
+     "answer": "T",
+     "why": "He is very kind.",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u2-4-B3",
+     "type": "tf",
+     "stem": "Sam likes computer games.",
+     "answer": "T",
+     "why": "He likes computer games.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4r-u2-4-C1",
+     "type": "fill",
+     "stem": "Sam is ____.",
+     "answers": [
+      [
+       "tall"
+      ]
+     ],
+     "why": "He is tall.",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u2-4-C2",
+     "type": "fill",
+     "stem": "His hair is short and ____.",
+     "answers": [
+      [
+       "brown"
+      ]
+     ],
+     "why": "short and brown",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u2-4-C3",
+     "type": "fill",
+     "stem": "He likes computer ____.",
+     "answers": [
+      [
+       "games"
+      ]
+     ],
+     "why": "computer games",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "tall",
+    "brown",
+    "kind",
+    "games"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

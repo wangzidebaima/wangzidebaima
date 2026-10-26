@@ -1,0 +1,120 @@
+{
+ "id": "g7l-s2-4",
+ "kind": "listening",
+ "title": "Tidy Up the Room",
+ "subtitle": "对话",
+ "unit": "S2",
+ "speakers": {
+  "Mom": "f1",
+  "Jack": "m1"
+ },
+ "transcript": [
+  {
+   "s": "Mom",
+   "t": "Jack, your room is messy. Let's keep it tidy."
+  },
+  {
+   "s": "Jack",
+   "t": "OK, Mom. Where's my English book?"
+  },
+  {
+   "s": "Mom",
+   "t": "It's on the bed."
+  },
+  {
+   "s": "Jack",
+   "t": "And my bottle?"
+  },
+  {
+   "s": "Mom",
+   "t": "It's under the desk."
+  },
+  {
+   "s": "Jack",
+   "t": "Thanks, Mom."
+  },
+  {
+   "s": "Mom",
+   "t": "You're welcome. Now put the things in the right places."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l-s2-4-A1",
+     "type": "choice",
+     "stem": "What's wrong with Jack's room?",
+     "options": [
+      "It is messy.",
+      "It is small.",
+      "It is new."
+     ],
+     "answer": "A",
+     "why": "Mom: your room is messy.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-s2-4-A2",
+     "type": "choice",
+     "stem": "Where's the English book?",
+     "options": [
+      "On the bed.",
+      "On the desk.",
+      "Under the desk."
+     ],
+     "answer": "A",
+     "why": "It's on the bed.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-s2-4-A3",
+     "type": "choice",
+     "stem": "Where's the bottle?",
+     "options": [
+      "On the bed.",
+      "Under the desk.",
+      "In the bag."
+     ],
+     "answer": "B",
+     "why": "It's under the desk.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l-s2-4-B1",
+     "type": "fill",
+     "stem": "The bottle is under the ____.",
+     "answers": [
+      [
+       "desk"
+      ]
+     ],
+     "why": "It's under the desk.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-s2-4-B2",
+     "type": "fill",
+     "stem": "Mom says, \"Let's keep it ____.\"",
+     "answers": [
+      [
+       "tidy"
+      ]
+     ],
+     "why": "Let's keep it tidy.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

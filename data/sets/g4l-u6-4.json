@@ -1,0 +1,95 @@
+{
+ "id": "g4l-u6-4",
+ "kind": "listening",
+ "title": "The Seasons",
+ "subtitle": "短文",
+ "unit": "U6",
+ "speakers": {
+  "Amy": "c1"
+ },
+ "transcript": [
+  {
+   "s": "Amy",
+   "t": "There are four seasons. Spring is warm. Summer is hot. Autumn is cool. Winter is cold. In autumn, the leaves fall from the trees. I like to walk in the park and look at them."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4l-u6-4-A1",
+     "type": "choice",
+     "stem": "How many seasons are there?",
+     "options": [
+      "Three.",
+      "Four.",
+      "Five."
+     ],
+     "answer": "B",
+     "why": "four seasons",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u6-4-A2",
+     "type": "choice",
+     "stem": "How is autumn?",
+     "options": [
+      "Cool.",
+      "Hot.",
+      "Cold."
+     ],
+     "answer": "A",
+     "why": "Autumn is cool.",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u6-4-A3",
+     "type": "choice",
+     "stem": "What does Amy like to do in autumn?",
+     "options": [
+      "Walk in the park.",
+      "Swim.",
+      "Make a snowman."
+     ],
+     "answer": "A",
+     "why": "walk in the park",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4l-u6-4-B1",
+     "type": "fill",
+     "stem": "Spring is ____.",
+     "answers": [
+      [
+       "warm"
+      ]
+     ],
+     "why": "Spring is warm.",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u6-4-B2",
+     "type": "fill",
+     "stem": "The ____ fall from the trees.",
+     "answers": [
+      [
+       "leaves"
+      ]
+     ],
+     "why": "the leaves fall",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

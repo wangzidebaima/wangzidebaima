@@ -1,0 +1,126 @@
+{
+ "id": "g7l-s1-1",
+ "kind": "listening",
+ "title": "Meeting the Teacher",
+ "subtitle": "对话",
+ "unit": "S1",
+ "speakers": {
+  "Mr. Li": "m1",
+  "Lily": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Mr. Li",
+   "t": "Good morning! What's your name?"
+  },
+  {
+   "s": "Lily",
+   "t": "Good morning, Mr. Li. My name is Lily White."
+  },
+  {
+   "s": "Mr. Li",
+   "t": "How do you spell \"White\"?"
+  },
+  {
+   "s": "Lily",
+   "t": "W-H-I-T-E."
+  },
+  {
+   "s": "Mr. Li",
+   "t": "Thank you. Are you in Class 3?"
+  },
+  {
+   "s": "Lily",
+   "t": "No, I'm in Class 4."
+  },
+  {
+   "s": "Mr. Li",
+   "t": "OK. Welcome to our school!"
+  },
+  {
+   "s": "Lily",
+   "t": "Thank you."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l-s1-1-A1",
+     "type": "choice",
+     "stem": "What is the girl's last name?",
+     "options": [
+      "White.",
+      "Wright.",
+      "Wait."
+     ],
+     "answer": "A",
+     "why": "Lily: My name is Lily White.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-s1-1-A2",
+     "type": "choice",
+     "stem": "Which class is Lily in?",
+     "options": [
+      "Class 3.",
+      "Class 4.",
+      "Class 5."
+     ],
+     "answer": "B",
+     "why": "Lily: No, I'm in Class 4.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-s1-1-A3",
+     "type": "choice",
+     "stem": "Who is Mr. Li?",
+     "options": [
+      "A student.",
+      "Lily's friend.",
+      "A teacher."
+     ],
+     "answer": "C",
+     "why": "Lily 叫他 Mr. Li，并且他在欢迎她来学校，他是老师。",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l-s1-1-B1",
+     "type": "fill",
+     "stem": "Lily is in Class ____.",
+     "answers": [
+      [
+       "4",
+       "four"
+      ]
+     ],
+     "why": "Lily: I'm in Class 4.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-s1-1-B2",
+     "type": "fill",
+     "stem": "Lily spells her last name W-____-I-T-E.",
+     "answers": [
+      [
+       "H",
+       "h"
+      ]
+     ],
+     "why": "她拼的是 W-H-I-T-E。",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

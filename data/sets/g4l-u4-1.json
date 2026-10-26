@@ -1,0 +1,108 @@
+{
+ "id": "g4l-u4-1",
+ "kind": "listening",
+ "title": "What Do They Do?",
+ "subtitle": "对话",
+ "unit": "U4",
+ "speakers": {
+  "Amy": "c1",
+  "Tom": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Amy",
+   "t": "Tom, what does your uncle do?"
+  },
+  {
+   "s": "Tom",
+   "t": "He is a firefighter. He is very strong."
+  },
+  {
+   "s": "Amy",
+   "t": "My aunt is a police officer."
+  },
+  {
+   "s": "Tom",
+   "t": "Wow! Their jobs are important."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4l-u4-1-A1",
+     "type": "choice",
+     "stem": "What is Tom's uncle?",
+     "options": [
+      "A firefighter.",
+      "A driver.",
+      "A cook."
+     ],
+     "answer": "A",
+     "why": "He is a firefighter.",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u4-1-A2",
+     "type": "choice",
+     "stem": "What is Amy's aunt?",
+     "options": [
+      "A nurse.",
+      "A police officer.",
+      "A cleaner."
+     ],
+     "answer": "B",
+     "why": "My aunt is a police officer.",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u4-1-A3",
+     "type": "choice",
+     "stem": "What does Tom think?",
+     "options": [
+      "Their jobs are important.",
+      "Their jobs are easy.",
+      "Their jobs are boring."
+     ],
+     "answer": "A",
+     "why": "Their jobs are important.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4l-u4-1-B1",
+     "type": "fill",
+     "stem": "Tom's uncle is very ____.",
+     "answers": [
+      [
+       "strong"
+      ]
+     ],
+     "why": "very strong",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u4-1-B2",
+     "type": "fill",
+     "stem": "Amy's ____ is a police officer.",
+     "answers": [
+      [
+       "aunt"
+      ]
+     ],
+     "why": "My aunt",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

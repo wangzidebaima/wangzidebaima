@@ -1,0 +1,120 @@
+{
+ "id": "g7l-s1-2",
+ "kind": "listening",
+ "title": "Two Friends",
+ "subtitle": "对话",
+ "unit": "S1",
+ "speakers": {
+  "Ben": "m1",
+  "Kate": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Ben",
+   "t": "Hello, Kate! How are you?"
+  },
+  {
+   "s": "Kate",
+   "t": "I'm fine, thanks. And you?"
+  },
+  {
+   "s": "Ben",
+   "t": "I'm OK. Is this your new bag?"
+  },
+  {
+   "s": "Kate",
+   "t": "Yes, it is."
+  },
+  {
+   "s": "Ben",
+   "t": "It's nice!"
+  },
+  {
+   "s": "Kate",
+   "t": "Thanks. See you tomorrow, Ben."
+  },
+  {
+   "s": "Ben",
+   "t": "Goodbye!"
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l-s1-2-A1",
+     "type": "choice",
+     "stem": "How is Kate?",
+     "options": [
+      "She is fine.",
+      "She is tired.",
+      "She is ill."
+     ],
+     "answer": "A",
+     "why": "Kate: I'm fine, thanks.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-s1-2-A2",
+     "type": "choice",
+     "stem": "What is new?",
+     "options": [
+      "Kate's book.",
+      "Kate's bag.",
+      "Ben's bag."
+     ],
+     "answer": "B",
+     "why": "Ben: Is this your new bag? Kate: Yes, it is.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-s1-2-A3",
+     "type": "choice",
+     "stem": "When will they see each other again?",
+     "options": [
+      "Today.",
+      "Tomorrow.",
+      "On Sunday."
+     ],
+     "answer": "B",
+     "why": "Kate: See you tomorrow.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l-s1-2-B1",
+     "type": "fill",
+     "stem": "Kate is ____, thanks.",
+     "answers": [
+      [
+       "fine"
+      ]
+     ],
+     "why": "Kate: I'm fine, thanks.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-s1-2-B2",
+     "type": "fill",
+     "stem": "Kate says, \"See you ____.\"",
+     "answers": [
+      [
+       "tomorrow"
+      ]
+     ],
+     "why": "See you tomorrow.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

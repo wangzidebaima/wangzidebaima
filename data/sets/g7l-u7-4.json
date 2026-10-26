@@ -1,0 +1,114 @@
+{
+ "id": "g7l-u7-4",
+ "kind": "listening",
+ "title": "National Day Plan",
+ "subtitle": "对话",
+ "unit": "U7",
+ "speakers": {
+  "Dad": "m1",
+  "Kate": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Dad",
+   "t": "What will we do on National Day, Kate?"
+  },
+  {
+   "s": "Kate",
+   "t": "Let's go to the village to see Grandma."
+  },
+  {
+   "s": "Dad",
+   "t": "Good idea. We can take some photos there."
+  },
+  {
+   "s": "Kate",
+   "t": "And we can watch the fireworks in the evening."
+  },
+  {
+   "s": "Dad",
+   "t": "Great. Let me call Grandma now."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l-u7-4-A1",
+     "type": "choice",
+     "stem": "Where will they go?",
+     "options": [
+      "To the city.",
+      "To the village.",
+      "To the school."
+     ],
+     "answer": "B",
+     "why": "Let's go to the village to see Grandma.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u7-4-A2",
+     "type": "choice",
+     "stem": "What can they do there?",
+     "options": [
+      "Take photos.",
+      "Play ping-pong.",
+      "Go to class."
+     ],
+     "answer": "A",
+     "why": "We can take some photos there.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u7-4-A3",
+     "type": "choice",
+     "stem": "When will they watch the fireworks?",
+     "options": [
+      "In the morning.",
+      "In the afternoon.",
+      "In the evening."
+     ],
+     "answer": "C",
+     "why": "in the evening",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l-u7-4-B1",
+     "type": "fill",
+     "stem": "They will see ____ in the village.",
+     "answers": [
+      [
+       "Grandma",
+       "grandma"
+      ]
+     ],
+     "why": "to see Grandma",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u7-4-B2",
+     "type": "fill",
+     "stem": "Dad will call ____ now.",
+     "answers": [
+      [
+       "Grandma",
+       "grandma"
+      ]
+     ],
+     "why": "Let me call Grandma now.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

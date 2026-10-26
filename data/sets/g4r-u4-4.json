@@ -1,0 +1,163 @@
+{
+ "id": "g4r-u4-4",
+ "kind": "reading",
+ "title": "Thank You, Workers",
+ "subtitle": "考点：职业 / 感谢",
+ "unit": "U4",
+ "dialogue": [
+  {
+   "s": "Teacher",
+   "t": "Class, who works for us every day?"
+  },
+  {
+   "s": "Mike",
+   "t": "The cleaner! She cleans our school."
+  },
+  {
+   "s": "Sue",
+   "t": "The driver! He takes us home."
+  },
+  {
+   "s": "Teacher",
+   "t": "Yes. What about police officers?"
+  },
+  {
+   "s": "Mike",
+   "t": "They keep us safe."
+  },
+  {
+   "s": "Teacher",
+   "t": "Good. Every worker is important. Let us say thank you."
+  }
+ ],
+ "vocab": "cleaner 清洁工 · driver 司机 · police officer 警察 · firefighter 消防员 · important 重要的",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4r-u4-4-A1",
+     "type": "choice",
+     "stem": "Who cleans the school?",
+     "options": [
+      "The cleaner.",
+      "The driver.",
+      "The cook."
+     ],
+     "answer": "A",
+     "why": "The cleaner! She cleans our school.",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u4-4-A2",
+     "type": "choice",
+     "stem": "Who takes the children home?",
+     "options": [
+      "The driver.",
+      "The teacher.",
+      "The nurse."
+     ],
+     "answer": "A",
+     "why": "The driver! He takes us home.",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u4-4-A3",
+     "type": "choice",
+     "stem": "What do police officers do?",
+     "options": [
+      "Keep us safe.",
+      "Cook lunch.",
+      "Plant trees."
+     ],
+     "answer": "A",
+     "why": "They keep us safe.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g4r-u4-4-B1",
+     "type": "tf",
+     "stem": "The teacher asks about people who work for us.",
+     "answer": "T",
+     "why": "who works for us every day",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u4-4-B2",
+     "type": "tf",
+     "stem": "Sue says the cleaner takes them home.",
+     "answer": "F",
+     "why": "Sue 说的是 driver。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u4-4-B3",
+     "type": "tf",
+     "stem": "Every worker is important.",
+     "answer": "T",
+     "why": "Teacher 说 Every worker is important.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4r-u4-4-C1",
+     "type": "fill",
+     "stem": "The ____ cleans our school.",
+     "answers": [
+      [
+       "cleaner"
+      ]
+     ],
+     "why": "cleaner 清洁工。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u4-4-C2",
+     "type": "fill",
+     "stem": "The ____ takes us home.",
+     "answers": [
+      [
+       "driver"
+      ]
+     ],
+     "why": "driver 司机。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u4-4-C3",
+     "type": "fill",
+     "stem": "Police officers keep us ____.",
+     "answers": [
+      [
+       "safe"
+      ]
+     ],
+     "why": "safe 安全的。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "cleaner",
+    "driver",
+    "safe",
+    "important"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

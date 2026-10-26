@@ -1,0 +1,113 @@
+{
+ "id": "g4l-u6-1",
+ "kind": "listening",
+ "title": "Whose Coat?",
+ "subtitle": "对话",
+ "unit": "U6",
+ "speakers": {
+  "Mum": "f1",
+  "Sam": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Mum",
+   "t": "Sam, whose coat is this?"
+  },
+  {
+   "s": "Sam",
+   "t": "It is mine, Mum."
+  },
+  {
+   "s": "Mum",
+   "t": "And whose gloves are these?"
+  },
+  {
+   "s": "Sam",
+   "t": "They are my sister's."
+  },
+  {
+   "s": "Mum",
+   "t": "Please put them in her room."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4l-u6-1-A1",
+     "type": "choice",
+     "stem": "Whose coat is it?",
+     "options": [
+      "Sam's.",
+      "Mum's.",
+      "Sister's."
+     ],
+     "answer": "A",
+     "why": "It is mine.",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u6-1-A2",
+     "type": "choice",
+     "stem": "Whose gloves are they?",
+     "options": [
+      "Sam's.",
+      "His sister's.",
+      "Dad's."
+     ],
+     "answer": "B",
+     "why": "my sister's",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u6-1-A3",
+     "type": "choice",
+     "stem": "Where should Sam put the gloves?",
+     "options": [
+      "In her room.",
+      "On the chair.",
+      "In the bag."
+     ],
+     "answer": "A",
+     "why": "in her room",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4l-u6-1-B1",
+     "type": "fill",
+     "stem": "Whose ____ is this?",
+     "answers": [
+      [
+       "coat"
+      ]
+     ],
+     "why": "Whose coat",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u6-1-B2",
+     "type": "fill",
+     "stem": "They are my ____'s.",
+     "answers": [
+      [
+       "sister",
+       "sisters"
+      ]
+     ],
+     "why": "sister's",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

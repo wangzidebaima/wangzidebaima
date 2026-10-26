@@ -1,0 +1,122 @@
+{
+ "id": "g7l-u4-4",
+ "kind": "listening",
+ "title": "A Math Problem",
+ "subtitle": "对话",
+ "unit": "U4",
+ "speakers": {
+  "Teacher": "f1",
+  "Kim": "m1"
+ },
+ "transcript": [
+  {
+   "s": "Teacher",
+   "t": "Can you work out this problem, Kim?"
+  },
+  {
+   "s": "Kim",
+   "t": "Let me think. Is the answer twelve?"
+  },
+  {
+   "s": "Teacher",
+   "t": "Yes! How did you do it?"
+  },
+  {
+   "s": "Kim",
+   "t": "I added eight and four."
+  },
+  {
+   "s": "Teacher",
+   "t": "Good. You are really good at math."
+  },
+  {
+   "s": "Kim",
+   "t": "Thanks. But I'm not good at French."
+  },
+  {
+   "s": "Teacher",
+   "t": "Don't worry. I can help you with it."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l-u4-4-A1",
+     "type": "choice",
+     "stem": "What is the answer?",
+     "options": [
+      "Ten.",
+      "Twelve.",
+      "Fourteen."
+     ],
+     "answer": "B",
+     "why": "Is the answer twelve? Yes!",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u4-4-A2",
+     "type": "choice",
+     "stem": "What does Kim add?",
+     "options": [
+      "Eight and four.",
+      "Ten and two.",
+      "Six and four."
+     ],
+     "answer": "A",
+     "why": "I added eight and four.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u4-4-A3",
+     "type": "choice",
+     "stem": "What is Kim not good at?",
+     "options": [
+      "Math.",
+      "French.",
+      "History."
+     ],
+     "answer": "B",
+     "why": "I'm not good at French.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l-u4-4-B1",
+     "type": "fill",
+     "stem": "The answer is ____.",
+     "answers": [
+      [
+       "twelve",
+       "12"
+      ]
+     ],
+     "why": "twelve",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u4-4-B2",
+     "type": "fill",
+     "stem": "The teacher can help Kim with ____.",
+     "answers": [
+      [
+       "French",
+       "french"
+      ]
+     ],
+     "why": "I can help you with it（指 French）。",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

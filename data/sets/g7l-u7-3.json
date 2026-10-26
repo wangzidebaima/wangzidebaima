@@ -1,0 +1,95 @@
+{
+ "id": "g7l-u7-3",
+ "kind": "listening",
+ "title": "My Birthday",
+ "subtitle": "短文",
+ "unit": "U7",
+ "speakers": {
+  "Amy": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Amy",
+   "t": "My birthday is on May 20th. This year I will be thirteen. My parents will take me and my friends to a restaurant. We will eat pizza and cake. I will make a wish and blow out the candles. I can't wait."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l-u7-3-A1",
+     "type": "choice",
+     "stem": "When is Amy's birthday?",
+     "options": [
+      "On May 2nd.",
+      "On May 20th.",
+      "On June 20th."
+     ],
+     "answer": "B",
+     "why": "My birthday is on May 20th.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u7-3-A2",
+     "type": "choice",
+     "stem": "How old will she be?",
+     "options": [
+      "Twelve.",
+      "Thirteen.",
+      "Fourteen."
+     ],
+     "answer": "B",
+     "why": "I will be thirteen.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u7-3-A3",
+     "type": "choice",
+     "stem": "Where will they celebrate?",
+     "options": [
+      "At home.",
+      "At a restaurant.",
+      "In a park."
+     ],
+     "answer": "B",
+     "why": "to a restaurant",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l-u7-3-B1",
+     "type": "fill",
+     "stem": "They will eat pizza and ____.",
+     "answers": [
+      [
+       "cake"
+      ]
+     ],
+     "why": "pizza and cake",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u7-3-B2",
+     "type": "fill",
+     "stem": "Amy will make a ____ and blow out the candles.",
+     "answers": [
+      [
+       "wish"
+      ]
+     ],
+     "why": "make a wish",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

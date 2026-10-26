@@ -1,0 +1,95 @@
+{
+ "id": "g4l-u3-3",
+ "kind": "listening",
+ "title": "My Saturday",
+ "subtitle": "短文",
+ "unit": "U3",
+ "speakers": {
+  "Jack": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Jack",
+   "t": "On Saturday, I go to the library with my mother. I read a story. Then we go to the shop and buy some fruit. After that, we take a photo in the park."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4l-u3-3-A1",
+     "type": "choice",
+     "stem": "Who does Jack go with?",
+     "options": [
+      "His mother.",
+      "His father.",
+      "His friend."
+     ],
+     "answer": "A",
+     "why": "with my mother",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u3-3-A2",
+     "type": "choice",
+     "stem": "What do they buy?",
+     "options": [
+      "Books.",
+      "Fruit.",
+      "Toys."
+     ],
+     "answer": "B",
+     "why": "buy some fruit",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u3-3-A3",
+     "type": "choice",
+     "stem": "Where do they take a photo?",
+     "options": [
+      "In the park.",
+      "In the library.",
+      "In the shop."
+     ],
+     "answer": "A",
+     "why": "take a photo in the park",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4l-u3-3-B1",
+     "type": "fill",
+     "stem": "Jack reads a ____ in the library.",
+     "answers": [
+      [
+       "story"
+      ]
+     ],
+     "why": "I read a story.",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u3-3-B2",
+     "type": "fill",
+     "stem": "They buy some ____.",
+     "answers": [
+      [
+       "fruit"
+      ]
+     ],
+     "why": "buy some fruit",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

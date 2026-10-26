@@ -1,0 +1,112 @@
+{
+ "id": "g4l-u5-4",
+ "kind": "listening",
+ "title": "A Rainy Day",
+ "subtitle": "对话",
+ "unit": "U5",
+ "speakers": {
+  "Mum": "f1",
+  "Tom": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Tom",
+   "t": "Mum, it is rainy. Can I go to the park?"
+  },
+  {
+   "s": "Mum",
+   "t": "No, Tom. The weather is bad."
+  },
+  {
+   "s": "Tom",
+   "t": "What can I do at home?"
+  },
+  {
+   "s": "Mum",
+   "t": "You can read a book or watch a film."
+  },
+  {
+   "s": "Tom",
+   "t": "OK. I will watch a film."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4l-u5-4-A1",
+     "type": "choice",
+     "stem": "How is the weather?",
+     "options": [
+      "Rainy.",
+      "Sunny.",
+      "Windy."
+     ],
+     "answer": "A",
+     "why": "it is rainy",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u5-4-A2",
+     "type": "choice",
+     "stem": "Can Tom go to the park?",
+     "options": [
+      "Yes.",
+      "No.",
+      "Maybe."
+     ],
+     "answer": "B",
+     "why": "No, Tom.",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u5-4-A3",
+     "type": "choice",
+     "stem": "What will Tom do?",
+     "options": [
+      "Watch a film.",
+      "Read a book.",
+      "Sleep."
+     ],
+     "answer": "A",
+     "why": "I will watch a film.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4l-u5-4-B1",
+     "type": "fill",
+     "stem": "The weather is ____.",
+     "answers": [
+      [
+       "bad"
+      ]
+     ],
+     "why": "The weather is bad.",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u5-4-B2",
+     "type": "fill",
+     "stem": "Tom can read a ____.",
+     "answers": [
+      [
+       "book"
+      ]
+     ],
+     "why": "read a book",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

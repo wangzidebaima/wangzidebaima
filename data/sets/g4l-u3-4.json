@@ -1,0 +1,108 @@
+{
+ "id": "g4l-u3-4",
+ "kind": "listening",
+ "title": "Our Playground",
+ "subtitle": "对话",
+ "unit": "U3",
+ "speakers": {
+  "Lily": "c1",
+  "Ben": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Lily",
+   "t": "Ben, what do you like in our community?"
+  },
+  {
+   "s": "Ben",
+   "t": "I like the playground. I play football there."
+  },
+  {
+   "s": "Lily",
+   "t": "I like the library. It is quiet and I can read stories."
+  },
+  {
+   "s": "Ben",
+   "t": "Let us go to the playground this afternoon!"
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4l-u3-4-A1",
+     "type": "choice",
+     "stem": "What does Ben like?",
+     "options": [
+      "The playground.",
+      "The library.",
+      "The park."
+     ],
+     "answer": "A",
+     "why": "I like the playground.",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u3-4-A2",
+     "type": "choice",
+     "stem": "What does Ben play there?",
+     "options": [
+      "Football.",
+      "Basketball.",
+      "Games."
+     ],
+     "answer": "A",
+     "why": "I play football there.",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u3-4-A3",
+     "type": "choice",
+     "stem": "Why does Lily like the library?",
+     "options": [
+      "It is big.",
+      "It is quiet.",
+      "It is new."
+     ],
+     "answer": "B",
+     "why": "It is quiet",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4l-u3-4-B1",
+     "type": "fill",
+     "stem": "Lily can read ____ in the library.",
+     "answers": [
+      [
+       "stories"
+      ]
+     ],
+     "why": "read stories",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u3-4-B2",
+     "type": "fill",
+     "stem": "They will go to the playground this ____.",
+     "answers": [
+      [
+       "afternoon"
+      ]
+     ],
+     "why": "this afternoon",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

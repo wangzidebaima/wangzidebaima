@@ -1,0 +1,117 @@
+{
+ "id": "g7l-u2-1",
+ "kind": "listening",
+ "title": "Grandpa's Hat",
+ "subtitle": "对话",
+ "unit": "U2",
+ "speakers": {
+  "Tom": "m1",
+  "Grandpa": "m2"
+ },
+ "transcript": [
+  {
+   "s": "Tom",
+   "t": "Grandpa, is this your hat?"
+  },
+  {
+   "s": "Grandpa",
+   "t": "Yes, thank you. It's my favourite."
+  },
+  {
+   "s": "Tom",
+   "t": "It's funny!"
+  },
+  {
+   "s": "Grandpa",
+   "t": "Haha, your grandma says that too."
+  },
+  {
+   "s": "Tom",
+   "t": "Where is Grandma?"
+  },
+  {
+   "s": "Grandpa",
+   "t": "She's next to the tree. Let's go."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l-u2-1-A1",
+     "type": "choice",
+     "stem": "Whose hat is it?",
+     "options": [
+      "Tom's.",
+      "Grandpa's.",
+      "Grandma's."
+     ],
+     "answer": "B",
+     "why": "Grandpa: Yes, thank you. It's my favourite.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u2-1-A2",
+     "type": "choice",
+     "stem": "What does Tom say about the hat?",
+     "options": [
+      "It is funny.",
+      "It is big.",
+      "It is old."
+     ],
+     "answer": "A",
+     "why": "Tom: It's funny!",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u2-1-A3",
+     "type": "choice",
+     "stem": "Where is Grandma?",
+     "options": [
+      "In the house.",
+      "Next to the tree.",
+      "At the club."
+     ],
+     "answer": "B",
+     "why": "She's next to the tree.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l-u2-1-B1",
+     "type": "fill",
+     "stem": "The hat is Grandpa's ____ hat.",
+     "answers": [
+      [
+       "favourite",
+       "favorite"
+      ]
+     ],
+     "why": "It's my favourite.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u2-1-B2",
+     "type": "fill",
+     "stem": "Grandma is next to the ____.",
+     "answers": [
+      [
+       "tree"
+      ]
+     ],
+     "why": "She's next to the tree.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

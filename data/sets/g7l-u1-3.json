@@ -1,0 +1,96 @@
+{
+ "id": "g7l-u1-3",
+ "kind": "listening",
+ "title": "My Twin Sister",
+ "subtitle": "短文",
+ "unit": "U1",
+ "speakers": {
+  "Kate": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Kate",
+   "t": "Hi, I'm Kate. I have a twin sister, Jane. We look the same, but we are different. I like tennis. Jane likes the guitar. We are in the same class, but we sit in different rows. Our class teacher is Mr. Zhang. He is kind."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l-u1-3-A1",
+     "type": "choice",
+     "stem": "Who is Jane?",
+     "options": [
+      "Kate's mother.",
+      "Kate's twin sister.",
+      "Kate's teacher."
+     ],
+     "answer": "B",
+     "why": "I have a twin sister, Jane.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u1-3-A2",
+     "type": "choice",
+     "stem": "What does Kate like?",
+     "options": [
+      "The guitar.",
+      "Tennis.",
+      "Football."
+     ],
+     "answer": "B",
+     "why": "I like tennis.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u1-3-A3",
+     "type": "choice",
+     "stem": "Are Kate and Jane in the same class?",
+     "options": [
+      "Yes, they are.",
+      "No, they are not.",
+      "We do not know."
+     ],
+     "answer": "A",
+     "why": "We are in the same class.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l-u1-3-B1",
+     "type": "fill",
+     "stem": "Jane likes the ____.",
+     "answers": [
+      [
+       "guitar"
+      ]
+     ],
+     "why": "Jane likes the guitar.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u1-3-B2",
+     "type": "fill",
+     "stem": "Their class teacher is Mr. ____.",
+     "answers": [
+      [
+       "Zhang",
+       "zhang"
+      ]
+     ],
+     "why": "Our class teacher is Mr. Zhang.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

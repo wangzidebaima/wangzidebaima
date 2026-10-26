@@ -1,0 +1,95 @@
+{
+ "id": "g7l-u4-3",
+ "kind": "listening",
+ "title": "My Future",
+ "subtitle": "短文",
+ "unit": "U4",
+ "speakers": {
+  "Nick": "m1"
+ },
+ "transcript": [
+  {
+   "s": "Nick",
+   "t": "I'm Nick. I like music. I play the guitar and I am good at singing. I want to be a singer in the future. My sister wants to be a scientist. She says science is like magic."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l-u4-3-A1",
+     "type": "choice",
+     "stem": "What does Nick play?",
+     "options": [
+      "The piano.",
+      "The guitar.",
+      "The drums."
+     ],
+     "answer": "B",
+     "why": "I play the guitar.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u4-3-A2",
+     "type": "choice",
+     "stem": "What does Nick want to be?",
+     "options": [
+      "A scientist.",
+      "A singer.",
+      "A teacher."
+     ],
+     "answer": "B",
+     "why": "I want to be a singer.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u4-3-A3",
+     "type": "choice",
+     "stem": "What does Nick's sister want to be?",
+     "options": [
+      "A singer.",
+      "A doctor.",
+      "A scientist."
+     ],
+     "answer": "C",
+     "why": "My sister wants to be a scientist.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l-u4-3-B1",
+     "type": "fill",
+     "stem": "Nick wants to be a ____ in the future.",
+     "answers": [
+      [
+       "singer"
+      ]
+     ],
+     "why": "a singer",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u4-3-B2",
+     "type": "fill",
+     "stem": "His sister says science is like ____.",
+     "answers": [
+      [
+       "magic"
+      ]
+     ],
+     "why": "science is like magic",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

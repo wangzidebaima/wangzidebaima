@@ -1,0 +1,95 @@
+{
+ "id": "g7l-u5-3",
+ "kind": "listening",
+ "title": "My Art Club",
+ "subtitle": "短文",
+ "unit": "U5",
+ "speakers": {
+  "Ella": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Ella",
+   "t": "I'm Ella. I joined the art club last month. I like to paint nature. Last week, I painted a bird. My art teacher said it was great. I will join the art show next month."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l-u5-3-A1",
+     "type": "choice",
+     "stem": "When did Ella join the art club?",
+     "options": [
+      "Last week.",
+      "Last month.",
+      "This month."
+     ],
+     "answer": "B",
+     "why": "I joined the art club last month.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u5-3-A2",
+     "type": "choice",
+     "stem": "What did Ella paint last week?",
+     "options": [
+      "A bird.",
+      "A hill.",
+      "A violin."
+     ],
+     "answer": "A",
+     "why": "Last week, I painted a bird.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u5-3-A3",
+     "type": "choice",
+     "stem": "What did her teacher say?",
+     "options": [
+      "It was great.",
+      "It was hard.",
+      "It was small."
+     ],
+     "answer": "A",
+     "why": "My art teacher said it was great.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l-u5-3-B1",
+     "type": "fill",
+     "stem": "Ella likes to paint ____.",
+     "answers": [
+      [
+       "nature"
+      ]
+     ],
+     "why": "I like to paint nature.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u5-3-B2",
+     "type": "fill",
+     "stem": "She will join the art show next ____.",
+     "answers": [
+      [
+       "month"
+      ]
+     ],
+     "why": "next month",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

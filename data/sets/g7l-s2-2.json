@@ -1,0 +1,118 @@
+{
+ "id": "g7l-s2-2",
+ "kind": "listening",
+ "title": "In the Pencil Box",
+ "subtitle": "对话",
+ "unit": "S2",
+ "speakers": {
+  "Amy": "f1",
+  "Lisa": "f2"
+ },
+ "transcript": [
+  {
+   "s": "Amy",
+   "t": "What's in your pencil box, Lisa?"
+  },
+  {
+   "s": "Lisa",
+   "t": "A pen, a ruler and an eraser."
+  },
+  {
+   "s": "Amy",
+   "t": "Can I use your eraser?"
+  },
+  {
+   "s": "Lisa",
+   "t": "Sure. Here you are."
+  },
+  {
+   "s": "Amy",
+   "t": "Thanks!"
+  },
+  {
+   "s": "Lisa",
+   "t": "No problem."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l-s2-2-A1",
+     "type": "choice",
+     "stem": "What's in Lisa's pencil box?",
+     "options": [
+      "A pen, a ruler and an eraser.",
+      "A key and a bottle.",
+      "Two books."
+     ],
+     "answer": "A",
+     "why": "A pen, a ruler and an eraser.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-s2-2-A2",
+     "type": "choice",
+     "stem": "What does Amy want to use?",
+     "options": [
+      "A pen.",
+      "An eraser.",
+      "A ruler."
+     ],
+     "answer": "B",
+     "why": "Can I use your eraser?",
+     "pts": 1
+    },
+    {
+     "id": "g7l-s2-2-A3",
+     "type": "choice",
+     "stem": "What does Lisa say when she gives the thing to Amy?",
+     "options": [
+      "Here you are.",
+      "You're welcome.",
+      "Goodbye."
+     ],
+     "answer": "A",
+     "why": "Lisa: Sure. Here you are.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l-s2-2-B1",
+     "type": "fill",
+     "stem": "Lisa has a pen, a ruler and an ____.",
+     "answers": [
+      [
+       "eraser"
+      ]
+     ],
+     "why": "a pen, a ruler and an eraser",
+     "pts": 1
+    },
+    {
+     "id": "g7l-s2-2-B2",
+     "type": "fill",
+     "stem": "Amy says, \"____!\"",
+     "answers": [
+      [
+       "thanks",
+       "Thanks",
+       "thank you"
+      ]
+     ],
+     "why": "Amy: Thanks!",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

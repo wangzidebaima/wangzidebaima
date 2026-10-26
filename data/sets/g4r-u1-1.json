@@ -1,0 +1,167 @@
+{
+ "id": "g4r-u1-1",
+ "kind": "reading",
+ "title": "My Family Jobs",
+ "subtitle": "考点：职业 / What does ... do?",
+ "unit": "U1",
+ "dialogue": [
+  {
+   "s": "Mike",
+   "t": "Amy, what does your mother do?"
+  },
+  {
+   "s": "Amy",
+   "t": "She is a nurse. She works in a hospital."
+  },
+  {
+   "s": "Mike",
+   "t": "What about your father?"
+  },
+  {
+   "s": "Amy",
+   "t": "He is a doctor. He is very busy."
+  },
+  {
+   "s": "Amy",
+   "t": "What does your father do, Mike?"
+  },
+  {
+   "s": "Mike",
+   "t": "He is a farmer. My mother is a factory worker."
+  },
+  {
+   "s": "Amy",
+   "t": "Great! They all have good jobs."
+  }
+ ],
+ "vocab": "doctor 医生 · nurse 护士 · farmer 农民 · office worker 公司职员 · factory worker 工厂工人 · job 工作",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4r-u1-1-A1",
+     "type": "choice",
+     "stem": "What is Amy's mother?",
+     "options": [
+      "A nurse.",
+      "A doctor.",
+      "A farmer."
+     ],
+     "answer": "A",
+     "why": "She is a nurse.",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u1-1-A2",
+     "type": "choice",
+     "stem": "What is Mike's father?",
+     "options": [
+      "A doctor.",
+      "A farmer.",
+      "A cook."
+     ],
+     "answer": "B",
+     "why": "He is a farmer.",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u1-1-A3",
+     "type": "choice",
+     "stem": "Where does Amy's mother work?",
+     "options": [
+      "In a school.",
+      "In a hospital.",
+      "In a factory."
+     ],
+     "answer": "B",
+     "why": "She works in a hospital.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g4r-u1-1-B1",
+     "type": "tf",
+     "stem": "Amy's father is a doctor.",
+     "answer": "T",
+     "why": "He is a doctor.",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u1-1-B2",
+     "type": "tf",
+     "stem": "Mike's mother is an office worker.",
+     "answer": "F",
+     "why": "She is a factory worker.",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u1-1-B3",
+     "type": "tf",
+     "stem": "Amy's father is very busy.",
+     "answer": "T",
+     "why": "He is very busy.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4r-u1-1-C1",
+     "type": "fill",
+     "stem": "Amy's mother is a ____.",
+     "answers": [
+      [
+       "nurse"
+      ]
+     ],
+     "why": "She is a nurse.",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u1-1-C2",
+     "type": "fill",
+     "stem": "Amy's father is a ____.",
+     "answers": [
+      [
+       "doctor"
+      ]
+     ],
+     "why": "He is a doctor.",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u1-1-C3",
+     "type": "fill",
+     "stem": "Mike's father is a ____.",
+     "answers": [
+      [
+       "farmer"
+      ]
+     ],
+     "why": "He is a farmer.",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "nurse",
+    "doctor",
+    "farmer",
+    "busy"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

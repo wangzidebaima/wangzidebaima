@@ -1,0 +1,113 @@
+{
+ "id": "g7l-u6-4",
+ "kind": "listening",
+ "title": "On Duty Today",
+ "subtitle": "对话",
+ "unit": "U6",
+ "speakers": {
+  "Ms. Wang": "f1",
+  "Lily": "f2"
+ },
+ "transcript": [
+  {
+   "s": "Ms. Wang",
+   "t": "Lily, are you on duty today?"
+  },
+  {
+   "s": "Lily",
+   "t": "Yes, I am. I clean the blackboard and the floor."
+  },
+  {
+   "s": "Ms. Wang",
+   "t": "Good. Please finish before eight."
+  },
+  {
+   "s": "Lily",
+   "t": "OK. Tom helps me."
+  },
+  {
+   "s": "Ms. Wang",
+   "t": "Thank you both."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l-u6-4-A1",
+     "type": "choice",
+     "stem": "Who is on duty today?",
+     "options": [
+      "Ms. Wang.",
+      "Lily.",
+      "Tom."
+     ],
+     "answer": "B",
+     "why": "Lily: Yes, I am.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u6-4-A2",
+     "type": "choice",
+     "stem": "What does Lily clean?",
+     "options": [
+      "The blackboard and the floor.",
+      "The window.",
+      "The desk."
+     ],
+     "answer": "A",
+     "why": "I clean the blackboard and the floor.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u6-4-A3",
+     "type": "choice",
+     "stem": "When should they finish?",
+     "options": [
+      "Before seven.",
+      "Before eight.",
+      "Before nine."
+     ],
+     "answer": "B",
+     "why": "Please finish before eight.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l-u6-4-B1",
+     "type": "fill",
+     "stem": "Lily is on ____ today.",
+     "answers": [
+      [
+       "duty"
+      ]
+     ],
+     "why": "on duty 值日。",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u6-4-B2",
+     "type": "fill",
+     "stem": "____ helps Lily.",
+     "answers": [
+      [
+       "Tom",
+       "tom"
+      ]
+     ],
+     "why": "Tom helps me.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

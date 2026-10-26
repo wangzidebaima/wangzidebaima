@@ -1,0 +1,108 @@
+{
+ "id": "g4l-u2-1",
+ "kind": "listening",
+ "title": "Who Is He?",
+ "subtitle": "对话",
+ "unit": "U2",
+ "speakers": {
+  "Amy": "c1",
+  "Tom": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Amy",
+   "t": "Who is that boy?"
+  },
+  {
+   "s": "Tom",
+   "t": "He is Jack. He is tall and strong."
+  },
+  {
+   "s": "Amy",
+   "t": "What does he like?"
+  },
+  {
+   "s": "Tom",
+   "t": "He likes playing basketball. He is kind, too."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4l-u2-1-A1",
+     "type": "choice",
+     "stem": "Who is the boy?",
+     "options": [
+      "Jack.",
+      "Sam.",
+      "Ben."
+     ],
+     "answer": "A",
+     "why": "He is Jack.",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u2-1-A2",
+     "type": "choice",
+     "stem": "What is Jack like?",
+     "options": [
+      "Tall and strong.",
+      "Short and thin.",
+      "Quiet."
+     ],
+     "answer": "A",
+     "why": "tall and strong",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u2-1-A3",
+     "type": "choice",
+     "stem": "What does Jack like?",
+     "options": [
+      "Football.",
+      "Basketball.",
+      "Reading."
+     ],
+     "answer": "B",
+     "why": "playing basketball",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4l-u2-1-B1",
+     "type": "fill",
+     "stem": "Jack is tall and ____.",
+     "answers": [
+      [
+       "strong"
+      ]
+     ],
+     "why": "tall and strong",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u2-1-B2",
+     "type": "fill",
+     "stem": "He is ____, too.",
+     "answers": [
+      [
+       "kind"
+      ]
+     ],
+     "why": "He is kind, too.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

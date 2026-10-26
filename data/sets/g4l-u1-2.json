@@ -1,0 +1,95 @@
+{
+ "id": "g4l-u1-2",
+ "kind": "listening",
+ "title": "Sunday Chores",
+ "subtitle": "短文",
+ "unit": "U1",
+ "speakers": {
+  "Lily": "c1"
+ },
+ "transcript": [
+  {
+   "s": "Lily",
+   "t": "On Sunday, I help my mother at home. I clean my room. I sweep the floor. My father cooks lunch. We eat together. I am happy."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4l-u1-2-A1",
+     "type": "choice",
+     "stem": "When does Lily help her mother?",
+     "options": [
+      "On Saturday.",
+      "On Sunday.",
+      "On Monday."
+     ],
+     "answer": "B",
+     "why": "On Sunday",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u1-2-A2",
+     "type": "choice",
+     "stem": "What does Lily clean?",
+     "options": [
+      "Her room.",
+      "The window.",
+      "The car."
+     ],
+     "answer": "A",
+     "why": "I clean my room.",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u1-2-A3",
+     "type": "choice",
+     "stem": "Who cooks lunch?",
+     "options": [
+      "Lily.",
+      "Her father.",
+      "Her mother."
+     ],
+     "answer": "B",
+     "why": "My father cooks lunch.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4l-u1-2-B1",
+     "type": "fill",
+     "stem": "Lily sweeps the ____.",
+     "answers": [
+      [
+       "floor"
+      ]
+     ],
+     "why": "I sweep the floor.",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u1-2-B2",
+     "type": "fill",
+     "stem": "They eat ____.",
+     "answers": [
+      [
+       "together"
+      ]
+     ],
+     "why": "We eat together.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

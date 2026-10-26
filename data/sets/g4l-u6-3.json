@@ -1,0 +1,109 @@
+{
+ "id": "g4l-u6-3",
+ "kind": "listening",
+ "title": "Winter Clothes",
+ "subtitle": "对话",
+ "unit": "U6",
+ "speakers": {
+  "Ben": "c2",
+  "Dad": "m1"
+ },
+ "transcript": [
+  {
+   "s": "Dad",
+   "t": "Ben, it snows today. What do you wear?"
+  },
+  {
+   "s": "Ben",
+   "t": "I wear my coat, my sweater and my gloves."
+  },
+  {
+   "s": "Dad",
+   "t": "What about your socks?"
+  },
+  {
+   "s": "Ben",
+   "t": "I wear two socks, Dad. It is very cold!"
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4l-u6-3-A1",
+     "type": "choice",
+     "stem": "How is the weather?",
+     "options": [
+      "Snowy.",
+      "Sunny.",
+      "Hot."
+     ],
+     "answer": "A",
+     "why": "it snows",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u6-3-A2",
+     "type": "choice",
+     "stem": "What does Ben wear?",
+     "options": [
+      "A coat, a sweater and gloves.",
+      "A T-shirt.",
+      "A dress."
+     ],
+     "answer": "A",
+     "why": "coat, sweater and gloves",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u6-3-A3",
+     "type": "choice",
+     "stem": "How many socks does Ben wear?",
+     "options": [
+      "One.",
+      "Two.",
+      "Three."
+     ],
+     "answer": "B",
+     "why": "two socks",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4l-u6-3-B1",
+     "type": "fill",
+     "stem": "It ____ today.",
+     "answers": [
+      [
+       "snows"
+      ]
+     ],
+     "why": "it snows",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u6-3-B2",
+     "type": "fill",
+     "stem": "Ben wears gloves and a ____.",
+     "answers": [
+      [
+       "sweater",
+       "coat"
+      ]
+     ],
+     "why": "coat / sweater 均在原文。",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

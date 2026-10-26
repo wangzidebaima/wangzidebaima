@@ -1,0 +1,141 @@
+{
+ "id": "g4r-u4-1",
+ "kind": "reading",
+ "title": "Heroes in Our Town",
+ "subtitle": "考点：职业 / important",
+ "unit": "U4",
+ "passage": [
+  "Many people work hard in our town. A firefighter puts out fires. A police officer helps people on the street. A driver takes us to school.",
+  "A cleaner makes the street clean. Every job is important. We should say thank you to everyone."
+ ],
+ "vocab": "firefighter 消防员 · police officer 警察 · driver 司机 · cleaner 清洁工 · important 重要的 · everyone 每个人",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4r-u4-1-A1",
+     "type": "choice",
+     "stem": "Who puts out fires?",
+     "options": [
+      "A firefighter.",
+      "A cook.",
+      "A driver."
+     ],
+     "answer": "A",
+     "why": "A firefighter puts out fires.",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u4-1-A2",
+     "type": "choice",
+     "stem": "Who takes us to school?",
+     "options": [
+      "A police officer.",
+      "A driver.",
+      "A cleaner."
+     ],
+     "answer": "B",
+     "why": "A driver takes us to school.",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u4-1-A3",
+     "type": "choice",
+     "stem": "Who makes the street clean?",
+     "options": [
+      "A cleaner.",
+      "A nurse.",
+      "A farmer."
+     ],
+     "answer": "A",
+     "why": "A cleaner makes the street clean.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g4r-u4-1-B1",
+     "type": "tf",
+     "stem": "A police officer helps people on the street.",
+     "answer": "T",
+     "why": "原文第三句。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u4-1-B2",
+     "type": "tf",
+     "stem": "Only some jobs are important.",
+     "answer": "F",
+     "why": "Every job is important.",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u4-1-B3",
+     "type": "tf",
+     "stem": "We should say thank you to everyone.",
+     "answer": "T",
+     "why": "最后一句。",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4r-u4-1-C1",
+     "type": "fill",
+     "stem": "A ____ puts out fires.",
+     "answers": [
+      [
+       "firefighter"
+      ]
+     ],
+     "why": "firefighter 消防员。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u4-1-C2",
+     "type": "fill",
+     "stem": "A ____ officer helps people.",
+     "answers": [
+      [
+       "police"
+      ]
+     ],
+     "why": "police officer 警察。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u4-1-C3",
+     "type": "fill",
+     "stem": "A ____ takes us to school.",
+     "answers": [
+      [
+       "driver"
+      ]
+     ],
+     "why": "driver 司机。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "firefighter",
+    "police",
+    "driver",
+    "cleaner"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

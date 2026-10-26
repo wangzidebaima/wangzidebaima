@@ -1,0 +1,163 @@
+{
+ "id": "g4r-u2-2",
+ "kind": "reading",
+ "title": "A Quiet Girl",
+ "subtitle": "考点：quiet / always / his, her",
+ "unit": "U2",
+ "dialogue": [
+  {
+   "s": "Tom",
+   "t": "Who is that girl?"
+  },
+  {
+   "s": "Jane",
+   "t": "She is Lucy. She is quiet."
+  },
+  {
+   "s": "Tom",
+   "t": "What does she like?"
+  },
+  {
+   "s": "Jane",
+   "t": "She likes reading. She always reads Chinese books."
+  },
+  {
+   "s": "Tom",
+   "t": "Does she play games?"
+  },
+  {
+   "s": "Jane",
+   "t": "Yes, but not often. She is kind and she is my best friend."
+  }
+ ],
+ "vocab": "quiet 文静的 · always 总是 · Chinese 语文 · game 游戏",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4r-u2-2-A1",
+     "type": "choice",
+     "stem": "Who is Lucy?",
+     "options": [
+      "Tom's sister.",
+      "Jane's friend.",
+      "A teacher."
+     ],
+     "answer": "B",
+     "why": "She is my best friend（Jane 说）。",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u2-2-A2",
+     "type": "choice",
+     "stem": "What is Lucy like?",
+     "options": [
+      "Quiet.",
+      "Noisy.",
+      "Strong."
+     ],
+     "answer": "A",
+     "why": "She is quiet.",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u2-2-A3",
+     "type": "choice",
+     "stem": "What books does she always read?",
+     "options": [
+      "English books.",
+      "Chinese books.",
+      "Maths books."
+     ],
+     "answer": "B",
+     "why": "She always reads Chinese books.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g4r-u2-2-B1",
+     "type": "tf",
+     "stem": "Lucy likes reading.",
+     "answer": "T",
+     "why": "She likes reading.",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u2-2-B2",
+     "type": "tf",
+     "stem": "Lucy plays games all the time.",
+     "answer": "F",
+     "why": "but not often。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u2-2-B3",
+     "type": "tf",
+     "stem": "Lucy is kind.",
+     "answer": "T",
+     "why": "She is kind.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4r-u2-2-C1",
+     "type": "fill",
+     "stem": "Lucy is ____.",
+     "answers": [
+      [
+       "quiet"
+      ]
+     ],
+     "why": "She is quiet.",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u2-2-C2",
+     "type": "fill",
+     "stem": "She likes ____.",
+     "answers": [
+      [
+       "reading"
+      ]
+     ],
+     "why": "She likes reading.",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u2-2-C3",
+     "type": "fill",
+     "stem": "She ____ reads Chinese books.",
+     "answers": [
+      [
+       "always"
+      ]
+     ],
+     "why": "always 总是。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "quiet",
+    "reading",
+    "always",
+    "kind"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

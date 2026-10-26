@@ -1,0 +1,121 @@
+{
+ "id": "g7l-s3-4",
+ "kind": "listening",
+ "title": "What Is This?",
+ "subtitle": "对话",
+ "unit": "S3",
+ "speakers": {
+  "Teacher": "f1",
+  "Nina": "f2"
+ },
+ "transcript": [
+  {
+   "s": "Teacher",
+   "t": "Look at this. What is this in English?"
+  },
+  {
+   "s": "Nina",
+   "t": "It's a bottle."
+  },
+  {
+   "s": "Teacher",
+   "t": "Good. And this?"
+  },
+  {
+   "s": "Nina",
+   "t": "It's a key. K-E-Y."
+  },
+  {
+   "s": "Teacher",
+   "t": "Great! What else do you know?"
+  },
+  {
+   "s": "Nina",
+   "t": "An eraser!"
+  },
+  {
+   "s": "Teacher",
+   "t": "Wow, you know a lot."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l-s3-4-A1",
+     "type": "choice",
+     "stem": "What is the first thing?",
+     "options": [
+      "A bottle.",
+      "A key.",
+      "An eraser."
+     ],
+     "answer": "A",
+     "why": "Nina: It's a bottle.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-s3-4-A2",
+     "type": "choice",
+     "stem": "How does Nina spell \"key\"?",
+     "options": [
+      "K-E-Y.",
+      "K-I-Y.",
+      "C-E-Y."
+     ],
+     "answer": "A",
+     "why": "K-E-Y.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-s3-4-A3",
+     "type": "choice",
+     "stem": "What else does Nina know?",
+     "options": [
+      "A ruler.",
+      "An eraser.",
+      "A book."
+     ],
+     "answer": "B",
+     "why": "An eraser!",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l-s3-4-B1",
+     "type": "fill",
+     "stem": "Nina knows \"bottle\", \"key\" and \"____\".",
+     "answers": [
+      [
+       "eraser"
+      ]
+     ],
+     "why": "An eraser!",
+     "pts": 1
+    },
+    {
+     "id": "g7l-s3-4-B2",
+     "type": "fill",
+     "stem": "The word \"key\" is spelled K-E-____.",
+     "answers": [
+      [
+       "Y",
+       "y"
+      ]
+     ],
+     "why": "K-E-Y.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

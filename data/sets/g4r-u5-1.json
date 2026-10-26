@@ -1,0 +1,163 @@
+{
+ "id": "g4r-u5-1",
+ "kind": "reading",
+ "title": "Today's Weather",
+ "subtitle": "考点：天气词汇 / How is the weather?",
+ "unit": "U5",
+ "dialogue": [
+  {
+   "s": "Mum",
+   "t": "Amy, how is the weather today?"
+  },
+  {
+   "s": "Amy",
+   "t": "It is sunny and hot."
+  },
+  {
+   "s": "Mum",
+   "t": "What about tomorrow?"
+  },
+  {
+   "s": "Amy",
+   "t": "The radio says it will be cloudy and windy."
+  },
+  {
+   "s": "Mum",
+   "t": "And the day after tomorrow?"
+  },
+  {
+   "s": "Amy",
+   "t": "It will be rainy. We need an umbrella."
+  }
+ ],
+ "vocab": "weather 天气 · sunny 晴朗的 · cloudy 多云的 · windy 多风的 · rainy 下雨的 · snowy 下雪的 · hot 热的 · cold 冷的",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4r-u5-1-A1",
+     "type": "choice",
+     "stem": "How is the weather today?",
+     "options": [
+      "Sunny and hot.",
+      "Cold and snowy.",
+      "Rainy and cool."
+     ],
+     "answer": "A",
+     "why": "It is sunny and hot.",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u5-1-A2",
+     "type": "choice",
+     "stem": "How will the weather be tomorrow?",
+     "options": [
+      "Cloudy and windy.",
+      "Sunny.",
+      "Snowy."
+     ],
+     "answer": "A",
+     "why": "cloudy and windy",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u5-1-A3",
+     "type": "choice",
+     "stem": "What do they need on the rainy day?",
+     "options": [
+      "A hat.",
+      "An umbrella.",
+      "A kite."
+     ],
+     "answer": "B",
+     "why": "We need an umbrella.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g4r-u5-1-B1",
+     "type": "tf",
+     "stem": "It is cold today.",
+     "answer": "F",
+     "why": "It is sunny and hot.",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u5-1-B2",
+     "type": "tf",
+     "stem": "Tomorrow will be windy.",
+     "answer": "T",
+     "why": "cloudy and windy",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u5-1-B3",
+     "type": "tf",
+     "stem": "The weather report is from the radio.",
+     "answer": "T",
+     "why": "The radio says...",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4r-u5-1-C1",
+     "type": "fill",
+     "stem": "It is ____ and hot today.",
+     "answers": [
+      [
+       "sunny"
+      ]
+     ],
+     "why": "sunny 晴朗的。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u5-1-C2",
+     "type": "fill",
+     "stem": "Tomorrow will be cloudy and ____.",
+     "answers": [
+      [
+       "windy"
+      ]
+     ],
+     "why": "windy 多风的。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u5-1-C3",
+     "type": "fill",
+     "stem": "The day after tomorrow will be ____.",
+     "answers": [
+      [
+       "rainy"
+      ]
+     ],
+     "why": "rainy 下雨的。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "sunny",
+    "hot",
+    "windy",
+    "rainy"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

@@ -1,0 +1,112 @@
+{
+ "id": "g4l-u3-2",
+ "kind": "listening",
+ "title": "Asking the Way",
+ "subtitle": "对话",
+ "unit": "U3",
+ "speakers": {
+  "Tom": "c2",
+  "Woman": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Tom",
+   "t": "Excuse me. Is there a toilet near here?"
+  },
+  {
+   "s": "Woman",
+   "t": "Yes. It is next to the park."
+  },
+  {
+   "s": "Tom",
+   "t": "And where is the bus stop?"
+  },
+  {
+   "s": "Woman",
+   "t": "It is over there, in front of the hospital."
+  },
+  {
+   "s": "Tom",
+   "t": "Thank you very much."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4l-u3-2-A1",
+     "type": "choice",
+     "stem": "What is Tom looking for first?",
+     "options": [
+      "A toilet.",
+      "A shop.",
+      "A library."
+     ],
+     "answer": "A",
+     "why": "Is there a toilet near here?",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u3-2-A2",
+     "type": "choice",
+     "stem": "Where is the toilet?",
+     "options": [
+      "Next to the park.",
+      "Behind the shop.",
+      "In the hospital."
+     ],
+     "answer": "A",
+     "why": "next to the park",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u3-2-A3",
+     "type": "choice",
+     "stem": "Where is the bus stop?",
+     "options": [
+      "In front of the hospital.",
+      "Behind the library.",
+      "In the park."
+     ],
+     "answer": "A",
+     "why": "in front of the hospital",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4l-u3-2-B1",
+     "type": "fill",
+     "stem": "The toilet is next to the ____.",
+     "answers": [
+      [
+       "park"
+      ]
+     ],
+     "why": "next to the park",
+     "pts": 1
+    },
+    {
+     "id": "g4l-u3-2-B2",
+     "type": "fill",
+     "stem": "The ____ stop is over there.",
+     "answers": [
+      [
+       "bus"
+      ]
+     ],
+     "why": "bus stop",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

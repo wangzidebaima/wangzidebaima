@@ -1,0 +1,121 @@
+{
+ "id": "g7l-s3-2",
+ "kind": "listening",
+ "title": "Carrot Soup",
+ "subtitle": "对话",
+ "unit": "S3",
+ "speakers": {
+  "Mom": "f1",
+  "Lucy": "f2"
+ },
+ "transcript": [
+  {
+   "s": "Mom",
+   "t": "Lucy, can you get some carrots?"
+  },
+  {
+   "s": "Lucy",
+   "t": "How many do you need?"
+  },
+  {
+   "s": "Mom",
+   "t": "Three, please."
+  },
+  {
+   "s": "Lucy",
+   "t": "Here you are. Look at this big one!"
+  },
+  {
+   "s": "Mom",
+   "t": "Great. Thanks."
+  },
+  {
+   "s": "Lucy",
+   "t": "You're welcome. What else do you need?"
+  },
+  {
+   "s": "Mom",
+   "t": "An onion."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l-s3-2-A1",
+     "type": "choice",
+     "stem": "How many carrots does Mom need?",
+     "options": [
+      "Two.",
+      "Three.",
+      "Four."
+     ],
+     "answer": "B",
+     "why": "Three, please.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-s3-2-A2",
+     "type": "choice",
+     "stem": "What else does Mom need?",
+     "options": [
+      "A bottle.",
+      "An onion.",
+      "A key."
+     ],
+     "answer": "B",
+     "why": "An onion.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-s3-2-A3",
+     "type": "choice",
+     "stem": "What does Lucy say about the big carrot?",
+     "options": [
+      "\"Look at this big one!\"",
+      "\"It is small.\"",
+      "\"I do not like it.\""
+     ],
+     "answer": "A",
+     "why": "Lucy: Look at this big one!",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l-s3-2-B1",
+     "type": "fill",
+     "stem": "Mom needs ____ carrots.",
+     "answers": [
+      [
+       "three",
+       "3"
+      ]
+     ],
+     "why": "Three, please.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-s3-2-B2",
+     "type": "fill",
+     "stem": "She also needs an ____.",
+     "answers": [
+      [
+       "onion"
+      ]
+     ],
+     "why": "An onion.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

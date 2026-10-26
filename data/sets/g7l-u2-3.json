@@ -1,0 +1,95 @@
+{
+ "id": "g7l-u2-3",
+ "kind": "listening",
+ "title": "My Grandparents",
+ "subtitle": "短文",
+ "unit": "U2",
+ "speakers": {
+  "Kevin": "m1"
+ },
+ "transcript": [
+  {
+   "s": "Kevin",
+   "t": "I'm Kevin. I live with my grandparents. Every day, Grandpa and I play chess after school. Grandma cooks dinner. At night, we watch TV together. My grandparents are funny. They make me laugh a lot. I love my family."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l-u2-3-A1",
+     "type": "choice",
+     "stem": "Who does Kevin live with?",
+     "options": [
+      "His parents.",
+      "His grandparents.",
+      "His uncle."
+     ],
+     "answer": "B",
+     "why": "I live with my grandparents.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u2-3-A2",
+     "type": "choice",
+     "stem": "What does Kevin do with Grandpa after school?",
+     "options": [
+      "Plays chess.",
+      "Plays ping-pong.",
+      "Watches TV."
+     ],
+     "answer": "A",
+     "why": "Grandpa and I play chess after school.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u2-3-A3",
+     "type": "choice",
+     "stem": "What does Grandma do?",
+     "options": [
+      "She cooks dinner.",
+      "She plays chess.",
+      "She goes to school."
+     ],
+     "answer": "A",
+     "why": "Grandma cooks dinner.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l-u2-3-B1",
+     "type": "fill",
+     "stem": "Kevin plays ____ with Grandpa.",
+     "answers": [
+      [
+       "chess"
+      ]
+     ],
+     "why": "play chess",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u2-3-B2",
+     "type": "fill",
+     "stem": "Grandma ____ dinner.",
+     "answers": [
+      [
+       "cooks"
+      ]
+     ],
+     "why": "主语是第三人称单数，动词加 s：cooks。",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

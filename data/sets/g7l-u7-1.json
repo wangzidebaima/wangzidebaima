@@ -1,0 +1,113 @@
+{
+ "id": "g7l-u7-1",
+ "kind": "listening",
+ "title": "Planning a Surprise",
+ "subtitle": "对话",
+ "unit": "U7",
+ "speakers": {
+  "Ann": "f1",
+  "Ben": "m1"
+ },
+ "transcript": [
+  {
+   "s": "Ann",
+   "t": "Let's plan a surprise party for Lucy next Saturday."
+  },
+  {
+   "s": "Ben",
+   "t": "Good idea! I'll buy the cake."
+  },
+  {
+   "s": "Ann",
+   "t": "I'll buy balloons and chocolate."
+  },
+  {
+   "s": "Ben",
+   "t": "Don't tell Lucy. It's a surprise."
+  },
+  {
+   "s": "Ann",
+   "t": "Of course not."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l-u7-1-A1",
+     "type": "choice",
+     "stem": "Who is the party for?",
+     "options": [
+      "Ann.",
+      "Ben.",
+      "Lucy."
+     ],
+     "answer": "C",
+     "why": "a surprise party for Lucy",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u7-1-A2",
+     "type": "choice",
+     "stem": "When is the party?",
+     "options": [
+      "Next Saturday.",
+      "Next Sunday.",
+      "This Friday."
+     ],
+     "answer": "A",
+     "why": "next Saturday",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u7-1-A3",
+     "type": "choice",
+     "stem": "What will Ann buy?",
+     "options": [
+      "The cake.",
+      "Balloons and chocolate.",
+      "Pizza."
+     ],
+     "answer": "B",
+     "why": "I'll buy balloons and chocolate.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l-u7-1-B1",
+     "type": "fill",
+     "stem": "Ben will buy the ____.",
+     "answers": [
+      [
+       "cake"
+      ]
+     ],
+     "why": "I'll buy the cake.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u7-1-B2",
+     "type": "fill",
+     "stem": "They will not tell ____.",
+     "answers": [
+      [
+       "Lucy",
+       "lucy"
+      ]
+     ],
+     "why": "Don't tell Lucy.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

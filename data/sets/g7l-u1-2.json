@@ -1,0 +1,116 @@
+{
+ "id": "g7l-u1-2",
+ "kind": "listening",
+ "title": "Hobbies",
+ "subtitle": "对话",
+ "unit": "U1",
+ "speakers": {
+  "Ann": "f1",
+  "Tom": "m1"
+ },
+ "transcript": [
+  {
+   "s": "Ann",
+   "t": "What's your hobby, Tom?"
+  },
+  {
+   "s": "Tom",
+   "t": "I like playing the guitar. Do you play any instrument?"
+  },
+  {
+   "s": "Ann",
+   "t": "No, but I play tennis."
+  },
+  {
+   "s": "Tom",
+   "t": "Great! Would you like to join the music club?"
+  },
+  {
+   "s": "Ann",
+   "t": "No, thanks. I'm in the tennis club already. But you can join the music club."
+  },
+  {
+   "s": "Tom",
+   "t": "Yes, I'd like to."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l-u1-2-A1",
+     "type": "choice",
+     "stem": "What is Tom's hobby?",
+     "options": [
+      "Playing tennis.",
+      "Playing the guitar.",
+      "Playing football."
+     ],
+     "answer": "B",
+     "why": "I like playing the guitar.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u1-2-A2",
+     "type": "choice",
+     "stem": "What does Ann play?",
+     "options": [
+      "The guitar.",
+      "Tennis.",
+      "Basketball."
+     ],
+     "answer": "B",
+     "why": "I play tennis.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u1-2-A3",
+     "type": "choice",
+     "stem": "Which club would Tom like to join?",
+     "options": [
+      "The tennis club.",
+      "The music club.",
+      "The art club."
+     ],
+     "answer": "B",
+     "why": "Tom: Yes, I'd like to.（加入 music club）",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l-u1-2-B1",
+     "type": "fill",
+     "stem": "Tom plays the ____.",
+     "answers": [
+      [
+       "guitar"
+      ]
+     ],
+     "why": "I like playing the guitar.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u1-2-B2",
+     "type": "fill",
+     "stem": "Ann is in the ____ club already.",
+     "answers": [
+      [
+       "tennis"
+      ]
+     ],
+     "why": "I'm in the tennis club already.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

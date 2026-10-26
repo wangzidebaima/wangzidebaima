@@ -1,0 +1,96 @@
+{
+ "id": "g7l-u3-4",
+ "kind": "listening",
+ "title": "A School Notice",
+ "subtitle": "短文",
+ "unit": "U3",
+ "speakers": {
+  "Voice": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Voice",
+   "t": "Attention, please. This is a notice for all students. The gym will be closed on Friday. Please do your exercises on the sports field in the morning. The sports meeting starts at nine o'clock. Please come in sports clothes. Thank you."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l-u3-4-A1",
+     "type": "choice",
+     "stem": "What is closed on Friday?",
+     "options": [
+      "The dining hall.",
+      "The gym.",
+      "The library."
+     ],
+     "answer": "B",
+     "why": "The gym will be closed on Friday.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u3-4-A2",
+     "type": "choice",
+     "stem": "Where should students do exercises?",
+     "options": [
+      "In the gym.",
+      "In the hall.",
+      "On the sports field."
+     ],
+     "answer": "C",
+     "why": "Please do your exercises on the sports field.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u3-4-A3",
+     "type": "choice",
+     "stem": "When does the sports meeting start?",
+     "options": [
+      "At eight.",
+      "At nine.",
+      "At ten."
+     ],
+     "answer": "B",
+     "why": "The sports meeting starts at nine o'clock.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l-u3-4-B1",
+     "type": "fill",
+     "stem": "Students should come in ____ clothes.",
+     "answers": [
+      [
+       "sports"
+      ]
+     ],
+     "why": "Please come in sports clothes.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u3-4-B2",
+     "type": "fill",
+     "stem": "The gym will be closed on ____.",
+     "answers": [
+      [
+       "Friday",
+       "friday"
+      ]
+     ],
+     "why": "The gym will be closed on Friday.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

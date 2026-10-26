@@ -1,0 +1,95 @@
+{
+ "id": "g7l-u3-3",
+ "kind": "listening",
+ "title": "My Locker",
+ "subtitle": "短文",
+ "unit": "U3",
+ "speakers": {
+  "Sara": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Sara",
+   "t": "Hi, I'm Sara. Every student in our class has a locker. My locker is at the back of the classroom. It is next to Amy's locker. I keep my sports clothes and my school bag in it. In my drawer, I keep my pens and my notebook. My locker is always tidy."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l-u3-3-A1",
+     "type": "choice",
+     "stem": "Where is Sara's locker?",
+     "options": [
+      "At the front.",
+      "At the back of the classroom.",
+      "In the corner."
+     ],
+     "answer": "B",
+     "why": "My locker is at the back of the classroom.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u3-3-A2",
+     "type": "choice",
+     "stem": "Whose locker is next to hers?",
+     "options": [
+      "Amy's.",
+      "Lucy's.",
+      "Tom's."
+     ],
+     "answer": "A",
+     "why": "It is next to Amy's locker.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u3-3-A3",
+     "type": "choice",
+     "stem": "What does Sara keep in the drawer?",
+     "options": [
+      "Her sports clothes.",
+      "Her pens and notebook.",
+      "Her lunch."
+     ],
+     "answer": "B",
+     "why": "In my drawer, I keep my pens and my notebook.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l-u3-3-B1",
+     "type": "fill",
+     "stem": "Sara's locker is at the ____ of the classroom.",
+     "answers": [
+      [
+       "back"
+      ]
+     ],
+     "why": "at the back of the classroom",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u3-3-B2",
+     "type": "fill",
+     "stem": "Her locker is always ____.",
+     "answers": [
+      [
+       "tidy"
+      ]
+     ],
+     "why": "My locker is always tidy.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

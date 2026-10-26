@@ -1,0 +1,116 @@
+{
+ "id": "g7l-u2-2",
+ "kind": "listening",
+ "title": "Ping-pong Time",
+ "subtitle": "对话",
+ "unit": "U2",
+ "speakers": {
+  "Lucy": "f1",
+  "Dad": "m1"
+ },
+ "transcript": [
+  {
+   "s": "Lucy",
+   "t": "Dad, let's play ping-pong."
+  },
+  {
+   "s": "Dad",
+   "t": "OK. Where are the ping-pong bats?"
+  },
+  {
+   "s": "Lucy",
+   "t": "They are in the box."
+  },
+  {
+   "s": "Dad",
+   "t": "Oh, I see them. Let's go!"
+  },
+  {
+   "s": "Lucy",
+   "t": "Dad, you're really good."
+  },
+  {
+   "s": "Dad",
+   "t": "Thanks. You too."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l-u2-2-A1",
+     "type": "choice",
+     "stem": "What do they play?",
+     "options": [
+      "Tennis.",
+      "Chess.",
+      "Ping-pong."
+     ],
+     "answer": "C",
+     "why": "Lucy: let's play ping-pong.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u2-2-A2",
+     "type": "choice",
+     "stem": "Where are the bats?",
+     "options": [
+      "In the box.",
+      "On the desk.",
+      "In the bag."
+     ],
+     "answer": "A",
+     "why": "They are in the box.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u2-2-A3",
+     "type": "choice",
+     "stem": "What does Lucy say to Dad?",
+     "options": [
+      "\"You are really good.\"",
+      "\"You are late.\"",
+      "\"I am tired.\""
+     ],
+     "answer": "A",
+     "why": "Lucy: Dad, you're really good.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l-u2-2-B1",
+     "type": "fill",
+     "stem": "The ping-pong bats are in the ____.",
+     "answers": [
+      [
+       "box"
+      ]
+     ],
+     "why": "They are in the box.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u2-2-B2",
+     "type": "fill",
+     "stem": "Lucy says, \"Dad, you're ____ good.\"",
+     "answers": [
+      [
+       "really"
+      ]
+     ],
+     "why": "you're really good",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

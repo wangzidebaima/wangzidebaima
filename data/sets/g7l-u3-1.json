@@ -1,0 +1,116 @@
+{
+ "id": "g7l-u3-1",
+ "kind": "listening",
+ "title": "Where Is the Office?",
+ "subtitle": "对话",
+ "unit": "U3",
+ "speakers": {
+  "Boy": "m1",
+  "Teacher": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Boy",
+   "t": "Excuse me, Ms. Lin. Where is the teachers' office?"
+  },
+  {
+   "s": "Teacher",
+   "t": "It is across from the dining hall."
+  },
+  {
+   "s": "Boy",
+   "t": "Is it near the gym?"
+  },
+  {
+   "s": "Teacher",
+   "t": "No. The gym is next to the sports field."
+  },
+  {
+   "s": "Boy",
+   "t": "Thank you."
+  },
+  {
+   "s": "Teacher",
+   "t": "You're welcome."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l-u3-1-A1",
+     "type": "choice",
+     "stem": "Where is the teachers' office?",
+     "options": [
+      "Across from the dining hall.",
+      "Next to the gym.",
+      "In the hall."
+     ],
+     "answer": "A",
+     "why": "It is across from the dining hall.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u3-1-A2",
+     "type": "choice",
+     "stem": "Where is the gym?",
+     "options": [
+      "Next to the sports field.",
+      "In front of the office.",
+      "In the middle of the school."
+     ],
+     "answer": "A",
+     "why": "The gym is next to the sports field.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u3-1-A3",
+     "type": "choice",
+     "stem": "Is the office near the gym?",
+     "options": [
+      "Yes, it is.",
+      "No, it is not.",
+      "We do not know."
+     ],
+     "answer": "B",
+     "why": "Teacher: No.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l-u3-1-B1",
+     "type": "fill",
+     "stem": "The office is across from the dining ____.",
+     "answers": [
+      [
+       "hall"
+      ]
+     ],
+     "why": "across from the dining hall",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u3-1-B2",
+     "type": "fill",
+     "stem": "The gym is next to the sports ____.",
+     "answers": [
+      [
+       "field"
+      ]
+     ],
+     "why": "next to the sports field",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "id": "g4r-u2-3",
+ "kind": "reading",
+ "title": "Our Sports Day",
+ "subtitle": "考点：basketball / football / play",
+ "unit": "U2",
+ "passage": [
+  "Today is our Sports Day. Mike plays basketball. He is strong and fast. Jack plays football. He is the best player in our class.",
+  "Anna is quiet, but she runs very well. We all play games and have fun. We are very happy."
+ ],
+ "vocab": "basketball 篮球 · football 足球 · play 玩 · strong 强壮的 · best 最好的",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4r-u2-3-A1",
+     "type": "choice",
+     "stem": "What does Mike play?",
+     "options": [
+      "Football.",
+      "Basketball.",
+      "Ping-pong."
+     ],
+     "answer": "B",
+     "why": "Mike plays basketball.",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u2-3-A2",
+     "type": "choice",
+     "stem": "Who is the best football player?",
+     "options": [
+      "Mike.",
+      "Jack.",
+      "Anna."
+     ],
+     "answer": "B",
+     "why": "Jack ... the best player",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u2-3-A3",
+     "type": "choice",
+     "stem": "What is Anna like?",
+     "options": [
+      "Strong.",
+      "Quiet.",
+      "Tall."
+     ],
+     "answer": "B",
+     "why": "Anna is quiet.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g4r-u2-3-B1",
+     "type": "tf",
+     "stem": "Today is Sports Day.",
+     "answer": "T",
+     "why": "Today is our Sports Day.",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u2-3-B2",
+     "type": "tf",
+     "stem": "Mike is weak.",
+     "answer": "F",
+     "why": "He is strong and fast.",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u2-3-B3",
+     "type": "tf",
+     "stem": "Anna runs very well.",
+     "answer": "T",
+     "why": "she runs very well.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4r-u2-3-C1",
+     "type": "fill",
+     "stem": "Mike plays ____.",
+     "answers": [
+      [
+       "basketball"
+      ]
+     ],
+     "why": "basketball 篮球。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u2-3-C2",
+     "type": "fill",
+     "stem": "Jack plays ____.",
+     "answers": [
+      [
+       "football"
+      ]
+     ],
+     "why": "football 足球。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u2-3-C3",
+     "type": "fill",
+     "stem": "Anna is ____, but she runs well.",
+     "answers": [
+      [
+       "quiet"
+      ]
+     ],
+     "why": "quiet 文静的。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "basketball",
+    "football",
+    "quiet",
+    "fun"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}

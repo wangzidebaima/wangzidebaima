@@ -1,0 +1,118 @@
+{
+ "id": "g7l-u7-2",
+ "kind": "listening",
+ "title": "At the Shop",
+ "subtitle": "对话",
+ "unit": "U7",
+ "speakers": {
+  "Customer": "f1",
+  "Clerk": "m1"
+ },
+ "transcript": [
+  {
+   "s": "Customer",
+   "t": "I'd like two kilos of apples and one pizza."
+  },
+  {
+   "s": "Clerk",
+   "t": "The apples are six yuan a kilo. The pizza is twenty yuan."
+  },
+  {
+   "s": "Customer",
+   "t": "What's the total?"
+  },
+  {
+   "s": "Clerk",
+   "t": "It is thirty-two yuan."
+  },
+  {
+   "s": "Customer",
+   "t": "Here you are."
+  },
+  {
+   "s": "Clerk",
+   "t": "Thank you."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g7l-u7-2-A1",
+     "type": "choice",
+     "stem": "How many kilos of apples does she buy?",
+     "options": [
+      "One.",
+      "Two.",
+      "Three."
+     ],
+     "answer": "B",
+     "why": "two kilos of apples",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u7-2-A2",
+     "type": "choice",
+     "stem": "How much is the pizza?",
+     "options": [
+      "Ten yuan.",
+      "Twenty yuan.",
+      "Thirty yuan."
+     ],
+     "answer": "B",
+     "why": "The pizza is twenty yuan.",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u7-2-A3",
+     "type": "choice",
+     "stem": "What is the total?",
+     "options": [
+      "Thirty yuan.",
+      "Thirty-two yuan.",
+      "Thirty-six yuan."
+     ],
+     "answer": "B",
+     "why": "6 × 2 + 20 = 32。",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7l-u7-2-B1",
+     "type": "fill",
+     "stem": "The apples are ____ yuan a kilo.",
+     "answers": [
+      [
+       "six",
+       "6"
+      ]
+     ],
+     "why": "six yuan a kilo",
+     "pts": 1
+    },
+    {
+     "id": "g7l-u7-2-B2",
+     "type": "fill",
+     "stem": "The total is thirty-____ yuan.",
+     "answers": [
+      [
+       "two",
+       "2"
+      ]
+     ],
+     "why": "thirty-two yuan",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "id": "g4r-u6-2",
+ "kind": "reading",
+ "title": "Four Seasons",
+ "subtitle": "考点：spring / summer / autumn / winter",
+ "unit": "U6",
+ "passage": [
+  "There are four seasons in a year. In spring, it is warm and flowers come out. In summer, it is hot, and we wear T-shirts and swim.",
+  "In autumn, it is cool and the leaves fall from the trees. In winter, it is cold and it snows. My favourite season is autumn."
+ ],
+ "vocab": "season 季节 · spring 春天 · summer 夏天 · autumn 秋天 · winter 冬天 · leaf 叶子 · snow 雪",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4r-u6-2-A1",
+     "type": "choice",
+     "stem": "How many seasons are there in a year?",
+     "options": [
+      "Three.",
+      "Four.",
+      "Five."
+     ],
+     "answer": "B",
+     "why": "four seasons",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u6-2-A2",
+     "type": "choice",
+     "stem": "How is the weather in summer?",
+     "options": [
+      "Hot.",
+      "Cold.",
+      "Cool."
+     ],
+     "answer": "A",
+     "why": "In summer, it is hot",
+     "pts": 2
+    },
+    {
+     "id": "g4r-u6-2-A3",
+     "type": "choice",
+     "stem": "What fall from the trees in autumn?",
+     "options": [
+      "Leaves.",
+      "Flowers.",
+      "Snow."
+     ],
+     "answer": "A",
+     "why": "the leaves fall",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g4r-u6-2-B1",
+     "type": "tf",
+     "stem": "Flowers come out in spring.",
+     "answer": "T",
+     "why": "In spring ... flowers come out.",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u6-2-B2",
+     "type": "tf",
+     "stem": "It is warm in winter.",
+     "answer": "F",
+     "why": "In winter, it is cold.",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u6-2-B3",
+     "type": "tf",
+     "stem": "The writer's favourite season is autumn.",
+     "answer": "T",
+     "why": "My favourite season is autumn.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g4r-u6-2-C1",
+     "type": "fill",
+     "stem": "In ____, it is warm.",
+     "answers": [
+      [
+       "spring"
+      ]
+     ],
+     "why": "spring 春天。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u6-2-C2",
+     "type": "fill",
+     "stem": "In ____, we swim and wear T-shirts.",
+     "answers": [
+      [
+       "summer"
+      ]
+     ],
+     "why": "summer 夏天。",
+     "pts": 1
+    },
+    {
+     "id": "g4r-u6-2-C3",
+     "type": "fill",
+     "stem": "In winter, it ____.",
+     "answers": [
+      [
+       "snows"
+      ]
+     ],
+     "why": "it snows 下雪。",
+     "pts": 1
+    }
+   ],
+   "bank": [
+    "spring",
+    "summer",
+    "leaves",
+    "snows"
+   ],
+   "bankMode": "select"
+  }
+ ]
+}
