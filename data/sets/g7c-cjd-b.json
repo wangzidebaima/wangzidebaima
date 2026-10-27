@@ -1,0 +1,65 @@
+{
+ "id": "g7c-cjd-b",
+ "kind": "cn",
+ "title": "《穿井得一人》默写",
+ "subtitle": "先背一背，再默写（不显示原文）",
+ "unit": "Z6",
+ "mk": "cnpoem",
+ "sections": [
+  {
+   "id": "C",
+   "title": "三、默写",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7c-cjd-b-C1",
+     "type": "fill",
+     "stem": "宋之丁氏，家无井而出____，常一人居外。",
+     "answers": [
+      [
+       "溉汲"
+      ]
+     ],
+     "why": "“出溉汲”",
+     "pts": 2
+    },
+    {
+     "id": "g7c-cjd-b-C2",
+     "type": "fill",
+     "stem": "丁氏对曰：“得一人之____，非得一人于井中也。”",
+     "answers": [
+      [
+       "使"
+      ]
+     ],
+     "why": "“得一人之使”",
+     "pts": 2
+    },
+    {
+     "id": "g7c-cjd-b-C3",
+     "type": "fill",
+     "stem": "求闻之若此，____。",
+     "answers": [
+      [
+       "不若无闻也"
+      ]
+     ],
+     "why": "“求闻之若此，不若无闻也”",
+     "pts": 2
+    },
+    {
+     "id": "g7c-cjd-b-C4",
+     "type": "fill",
+     "stem": "及其家____，告人曰：“吾穿井得一人。”",
+     "answers": [
+      [
+       "穿井"
+      ]
+     ],
+     "why": "“及其家穿井”",
+     "pts": 2
+    }
+   ]
+  }
+ ]
+}

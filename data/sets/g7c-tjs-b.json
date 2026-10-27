@@ -1,0 +1,77 @@
+{
+ "id": "g7c-tjs-b",
+ "kind": "cn",
+ "title": "《天净沙·秋思》默写",
+ "subtitle": "先背一背，再默写（不显示原诗）",
+ "unit": "Z1",
+ "mk": "cnpoem",
+ "sections": [
+  {
+   "id": "C",
+   "title": "三、默写",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7c-tjs-b-C1",
+     "type": "fill",
+     "stem": "枯藤老树昏鸦，____。",
+     "answers": [
+      [
+       "小桥流水人家"
+      ]
+     ],
+     "why": "“小桥流水人家”",
+     "pts": 2
+    },
+    {
+     "id": "g7c-tjs-b-C2",
+     "type": "fill",
+     "stem": "小桥流水人家，____。",
+     "answers": [
+      [
+       "古道西风瘦马"
+      ]
+     ],
+     "why": "“古道西风瘦马”",
+     "pts": 2
+    },
+    {
+     "id": "g7c-tjs-b-C3",
+     "type": "fill",
+     "stem": "古道西风瘦马，____。",
+     "answers": [
+      [
+       "夕阳西下"
+      ]
+     ],
+     "why": "“夕阳西下”",
+     "pts": 2
+    },
+    {
+     "id": "g7c-tjs-b-C4",
+     "type": "fill",
+     "stem": "夕阳西下，____。",
+     "answers": [
+      [
+       "断肠人在天涯"
+      ]
+     ],
+     "why": "“断肠人在天涯”",
+     "pts": 2
+    },
+    {
+     "id": "g7c-tjs-b-C5",
+     "type": "fill",
+     "stem": "____老树昏鸦",
+     "answers": [
+      [
+       "枯藤"
+      ]
+     ],
+     "why": "“枯藤老树昏鸦”",
+     "pts": 2
+    }
+   ]
+  }
+ ]
+}

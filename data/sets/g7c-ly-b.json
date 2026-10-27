@@ -1,0 +1,65 @@
+{
+ "id": "g7c-ly-b",
+ "kind": "cn",
+ "title": "《十一月四日风雨大作（其二）》默写",
+ "subtitle": "先背一背，再默写（不显示原诗）",
+ "unit": "Z0",
+ "mk": "cnpoem",
+ "sections": [
+  {
+   "id": "C",
+   "title": "三、默写",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7c-ly-b-C1",
+     "type": "fill",
+     "stem": "僵卧孤村不自哀，____。",
+     "answers": [
+      [
+       "尚思为国戍轮台"
+      ]
+     ],
+     "why": "“尚思为国戍轮台”",
+     "pts": 2
+    },
+    {
+     "id": "g7c-ly-b-C2",
+     "type": "fill",
+     "stem": "夜阑卧听风吹雨，____。",
+     "answers": [
+      [
+       "铁马冰河入梦来"
+      ]
+     ],
+     "why": "“铁马冰河入梦来”",
+     "pts": 2
+    },
+    {
+     "id": "g7c-ly-b-C3",
+     "type": "fill",
+     "stem": "尚思为国____轮台",
+     "answers": [
+      [
+       "戍"
+      ]
+     ],
+     "why": "“尚思为国戍轮台”",
+     "pts": 2
+    },
+    {
+     "id": "g7c-ly-b-C4",
+     "type": "fill",
+     "stem": "____马冰河入梦来",
+     "answers": [
+      [
+       "铁"
+      ]
+     ],
+     "why": "“铁马冰河入梦来”",
+     "pts": 2
+    }
+   ]
+  }
+ ]
+}

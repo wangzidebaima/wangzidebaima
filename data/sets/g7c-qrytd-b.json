@@ -1,0 +1,65 @@
+{
+ "id": "g7c-qrytd-b",
+ "kind": "cn",
+ "title": "《杞人忧天》默写",
+ "subtitle": "先背一背，再默写（不显示原文）",
+ "unit": "Z6",
+ "mk": "cnpoem",
+ "sections": [
+  {
+   "id": "C",
+   "title": "三、默写",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7c-qrytd-b-C1",
+     "type": "fill",
+     "stem": "杞国有人忧天地崩坠，身亡所寄，____食者。",
+     "answers": [
+      [
+       "废寝"
+      ]
+     ],
+     "why": "“废寝食者”",
+     "pts": 2
+    },
+    {
+     "id": "g7c-qrytd-b-C2",
+     "type": "fill",
+     "stem": "天，____耳，亡处亡气。",
+     "answers": [
+      [
+       "积气"
+      ]
+     ],
+     "why": "“天，积气耳”",
+     "pts": 2
+    },
+    {
+     "id": "g7c-qrytd-b-C3",
+     "type": "fill",
+     "stem": "其人____大喜，晓之者亦舍然大喜。",
+     "answers": [
+      [
+       "舍然"
+      ]
+     ],
+     "why": "“其人舍然大喜”",
+     "pts": 2
+    },
+    {
+     "id": "g7c-qrytd-b-C4",
+     "type": "fill",
+     "stem": "又有忧彼之忧者，因往____之",
+     "answers": [
+      [
+       "晓"
+      ]
+     ],
+     "why": "“因往晓之”",
+     "pts": 2
+    }
+   ]
+  }
+ ]
+}

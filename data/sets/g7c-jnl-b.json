@@ -1,0 +1,65 @@
+{
+ "id": "g7c-jnl-b",
+ "kind": "cn",
+ "title": "《江南逢李龟年》默写",
+ "subtitle": "先背一背，再默写（不显示原诗）",
+ "unit": "Z0",
+ "mk": "cnpoem",
+ "sections": [
+  {
+   "id": "C",
+   "title": "三、默写",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7c-jnl-b-C1",
+     "type": "fill",
+     "stem": "岐王宅里寻常见，____。",
+     "answers": [
+      [
+       "崔九堂前几度闻"
+      ]
+     ],
+     "why": "“崔九堂前几度闻”",
+     "pts": 2
+    },
+    {
+     "id": "g7c-jnl-b-C2",
+     "type": "fill",
+     "stem": "正是江南好风景，____。",
+     "answers": [
+      [
+       "落花时节又逢君"
+      ]
+     ],
+     "why": "“落花时节又逢君”",
+     "pts": 2
+    },
+    {
+     "id": "g7c-jnl-b-C3",
+     "type": "fill",
+     "stem": "____王宅里寻常见",
+     "answers": [
+      [
+       "岐"
+      ]
+     ],
+     "why": "“岐王宅里寻常见”",
+     "pts": 2
+    },
+    {
+     "id": "g7c-jnl-b-C4",
+     "type": "fill",
+     "stem": "____九堂前几度闻",
+     "answers": [
+      [
+       "崔"
+      ]
+     ],
+     "why": "“崔九堂前几度闻”",
+     "pts": 2
+    }
+   ]
+  }
+ ]
+}
