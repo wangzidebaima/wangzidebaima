@@ -91,13 +91,28 @@ export const keypad = {
 
 // 播放发音：优先用上传的真人 MP3（audio/w/<key>.mp3），没有就用手机自带的美式朗读
 let curAudio = null;
+// 选最自然的语音：优先“增强/高品质/神经网络”语音，其次系统自带的好声音
+const GOOD = /enhanced|premium|natural|neural|siri|google|samantha|ava\b|allison|susan|zoe|alex|aaron|nicky|evan|tian|xiaoxiao|xiaoyi|yunxi|ting-?ting|mei-?jia|lili|microsoft.*(online|aria|jenny|guy|xiao|yun)/i;
+const FEM = /female|samantha|ava\b|allison|susan|zoe|karen|victoria|aria|jenny|zira|nicky|joelle|ting|mei|xiaoxiao|xiaoyi|lili/i, MAL = /\bmale\b|alex|aaron|tom|david|mark|guy|evan|daniel|fred|yunxi|yunyang|eric/i;
+function voicesFor(ss, lang) {
+  const pre = lang.slice(0, 2).toLowerCase(), all = (ss.getVoices() || []).filter(x => x.lang && x.lang.toLowerCase().startsWith(pre));
+  const exact = all.filter(x => x.lang.replace('_', '-').toLowerCase() === lang.toLowerCase());
+  const pool = exact.length ? exact : all;
+  const score = (x) => (GOOD.test(x.name) ? 2 : 0) + (/enhanced|premium|natural|neural|online/i.test(x.name) ? 3 : 0) + (x.localService === false ? 1 : 0);
+  return pool.slice().sort((a, b) => score(b) - score(a));
+}
+export function pickVoice(ss, lang, who) {
+  const vs = voicesFor(ss, lang); if (!vs.length) return null;
+  const want = /^f|^c/.test(who || '') ? FEM : /^m/.test(who || '') ? MAL : null;
+  return (want && vs.find(x => want.test(x.name))) || vs[0];
+}
 export function playSay(key, text, avail) {
   const file = 'audio/w/' + key + '.mp3';
   const fallback = () => {
     try {
       const ss = window.speechSynthesis; if (!ss) throw new Error('no tts');
       ss.cancel(); const u = new SpeechSynthesisUtterance(text); u.lang = 'en-US'; u.rate = 0.85;
-      const v = (ss.getVoices() || []).find(x => /en[-_]US/i.test(x.lang)); if (v) u.voice = v; ss.speak(u);
+      const v = pickVoice(ss, 'en-US'); if (v) u.voice = v; u.rate = 0.9; ss.speak(u);
     } catch (e) { toast('这台手机暂时发不出声音'); }
   };
   try { if (curAudio) curAudio.pause(); } catch (e) { /* ignore */ }
@@ -118,8 +133,8 @@ export function stopAllSound() {
 }
 export function playScript(lines, speakers, opts = {}) {
   const ss = window.speechSynthesis; if (!ss) { toast('这台手机暂时发不出声音'); return; }
-  stopScript(); const run = scriptRun, times = opts.times || 2, rate = opts.rate || 0.9;
-  const lang = opts.lang || 'en-US', pre = lang.slice(0, 2), voices = ss.getVoices() || [], v = voices.find(x => x.lang && x.lang.replace('_', '-').toLowerCase() === lang.toLowerCase()) || voices.find(x => x.lang && x.lang.toLowerCase().startsWith(pre));
+  stopScript(); const run = scriptRun, times = opts.times || 2, rate = opts.rate || 0.95;
+  const lang = opts.lang || 'en-US';
   const items = [];
   for (let k = 0; k < times; k++) { lines.forEach(l => items.push({ t: l.t, who: (speakers && speakers[l.s]) || '' })); if (k < times - 1) items.push({ gap: 2200 }); }
   let i = 0;
@@ -127,8 +142,10 @@ export function playScript(lines, speakers, opts = {}) {
     if (run !== scriptRun || i >= items.length) { if (run === scriptRun && opts.onend) opts.onend(); return; }
     const it = items[i++];
     if (it.gap) { setTimeout(next, it.gap); return; }
-    const u = new SpeechSynthesisUtterance(it.t); u.lang = lang; u.rate = rate; if (v) u.voice = v;
-    u.pitch = /^f/.test(it.who) ? 1.25 : /^m/.test(it.who) ? 0.8 : /^c/.test(it.who) ? 1.4 : 1;
+    const u = new SpeechSynthesisUtterance(it.t); u.lang = lang; u.rate = rate;
+    const v = pickVoice(ss, lang, it.who), vs = voicesFor(ss, lang), distinct = v && vs.length > 1 && (FEM.test(v.name) !== MAL.test(v.name));
+    if (v) u.voice = v;
+    u.pitch = distinct ? 1 : /^f/.test(it.who) ? 1.1 : /^m/.test(it.who) ? 0.9 : /^c/.test(it.who) ? 1.2 : 1;
     u.onend = () => setTimeout(next, opts.pause || 450); u.onerror = () => setTimeout(next, 100);
     ss.speak(u);
   };
