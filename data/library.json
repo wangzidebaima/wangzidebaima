@@ -68,7 +68,7 @@
    "id": "g7reading",
    "title": "英语阅读理解",
    "icon": "📖",
-   "desc": "6 篇，按时态练习",
+   "desc": "按单元，每个单元 4 套",
    "sets": [
     {
      "id": "g7r-s1-1",
@@ -436,7 +436,7 @@
    "id": "g7listening",
    "title": "英语听力",
    "icon": "🎧",
-   "desc": "6 组，听两遍再作答",
+   "desc": "按单元，每段听两遍再作答",
    "sets": [
     {
      "id": "g7l-s1-1",
@@ -804,7 +804,7 @@
    "id": "g4reading",
    "title": "英语阅读理解",
    "icon": "📖",
-   "desc": "4 套对话，对应课本 Unit 1–2",
+   "desc": "按单元，每个单元 4 套",
    "sets": [
     {
      "id": "g4r-u1-1",
@@ -1028,13 +1028,13 @@
    "id": "g4speaking",
    "title": "每日口语打卡",
    "icon": "🗣️",
-   "desc": "每天 5 分钟，跟读打卡",
+   "desc": "每天 10 分钟，跟读打卡",
    "sets": [
     {
      "id": "g4sp-u1",
      "file": "sets/g4sp-u1.json",
      "title": "U1 口语",
-     "subtitle": "每天 5 分钟 · 共 5 天",
+     "subtitle": "每天 10 分钟 · 共 5 天",
      "kind": "speaking",
      "count": 5,
      "unit": "U1"
@@ -1043,7 +1043,7 @@
      "id": "g4sp-u2",
      "file": "sets/g4sp-u2.json",
      "title": "U2 口语",
-     "subtitle": "每天 5 分钟 · 共 5 天",
+     "subtitle": "每天 10 分钟 · 共 5 天",
      "kind": "speaking",
      "count": 5,
      "unit": "U2"
@@ -1052,7 +1052,7 @@
      "id": "g4sp-u3",
      "file": "sets/g4sp-u3.json",
      "title": "U3 口语",
-     "subtitle": "每天 5 分钟 · 共 5 天",
+     "subtitle": "每天 10 分钟 · 共 5 天",
      "kind": "speaking",
      "count": 5,
      "unit": "U3"
@@ -1061,7 +1061,7 @@
      "id": "g4sp-u4",
      "file": "sets/g4sp-u4.json",
      "title": "U4 口语",
-     "subtitle": "每天 5 分钟 · 共 5 天",
+     "subtitle": "每天 10 分钟 · 共 5 天",
      "kind": "speaking",
      "count": 5,
      "unit": "U4"
@@ -1070,7 +1070,7 @@
      "id": "g4sp-u5",
      "file": "sets/g4sp-u5.json",
      "title": "U5 口语",
-     "subtitle": "每天 5 分钟 · 共 5 天",
+     "subtitle": "每天 10 分钟 · 共 5 天",
      "kind": "speaking",
      "count": 5,
      "unit": "U5"
@@ -1079,7 +1079,7 @@
      "id": "g4sp-u6",
      "file": "sets/g4sp-u6.json",
      "title": "U6 口语",
-     "subtitle": "每天 5 分钟 · 共 5 天",
+     "subtitle": "每天 10 分钟 · 共 5 天",
      "kind": "speaking",
      "count": 5,
      "unit": "U6"
@@ -1090,7 +1090,7 @@
    "id": "g4listening",
    "title": "英语听力",
    "icon": "🎧",
-   "desc": "6 组，每段听两遍",
+   "desc": "按单元，每段听两遍再作答",
    "sets": [
     {
      "id": "g4l-u1-1",
@@ -1314,13 +1314,13 @@
    "id": "g7speaking",
    "title": "每日口语打卡",
    "icon": "🗣️",
-   "desc": "每天 5 分钟，跟读打卡",
+   "desc": "每天 10 分钟，跟读打卡",
    "sets": [
     {
      "id": "g7sp-s1",
      "file": "sets/g7sp-s1.json",
      "title": "S1 口语",
-     "subtitle": "每天 5 分钟 · 共 5 天",
+     "subtitle": "每天 10 分钟 · 共 5 天",
      "kind": "speaking",
      "count": 5,
      "unit": "S1"
@@ -1329,7 +1329,7 @@
      "id": "g7sp-s2",
      "file": "sets/g7sp-s2.json",
      "title": "S2 口语",
-     "subtitle": "每天 5 分钟 · 共 5 天",
+     "subtitle": "每天 10 分钟 · 共 5 天",
      "kind": "speaking",
      "count": 5,
      "unit": "S2"
@@ -1338,7 +1338,7 @@
      "id": "g7sp-s3",
      "file": "sets/g7sp-s3.json",
      "title": "S3 口语",
-     "subtitle": "每天 5 分钟 · 共 5 天",
+     "subtitle": "每天 10 分钟 · 共 5 天",
      "kind": "speaking",
      "count": 5,
      "unit": "S3"
@@ -1347,7 +1347,7 @@
      "id": "g7sp-u1",
      "file": "sets/g7sp-u1.json",
      "title": "U1 口语",
-     "subtitle": "每天 5 分钟 · 共 5 天",
+     "subtitle": "每天 10 分钟 · 共 5 天",
      "kind": "speaking",
      "count": 5,
      "unit": "U1"
@@ -1356,7 +1356,7 @@
      "id": "g7sp-u2",
      "file": "sets/g7sp-u2.json",
      "title": "U2 口语",
-     "subtitle": "每天 5 分钟 · 共 5 天",
+     "subtitle": "每天 10 分钟 · 共 5 天",
      "kind": "speaking",
      "count": 5,
      "unit": "U2"
@@ -1365,7 +1365,7 @@
      "id": "g7sp-u3",
      "file": "sets/g7sp-u3.json",
      "title": "U3 口语",
-     "subtitle": "每天 5 分钟 · 共 5 天",
+     "subtitle": "每天 10 分钟 · 共 5 天",
      "kind": "speaking",
      "count": 5,
      "unit": "U3"
@@ -1374,7 +1374,7 @@
      "id": "g7sp-u4",
      "file": "sets/g7sp-u4.json",
      "title": "U4 口语",
-     "subtitle": "每天 5 分钟 · 共 5 天",
+     "subtitle": "每天 10 分钟 · 共 5 天",
      "kind": "speaking",
      "count": 5,
      "unit": "U4"
@@ -1383,7 +1383,7 @@
      "id": "g7sp-u5",
      "file": "sets/g7sp-u5.json",
      "title": "U5 口语",
-     "subtitle": "每天 5 分钟 · 共 5 天",
+     "subtitle": "每天 10 分钟 · 共 5 天",
      "kind": "speaking",
      "count": 5,
      "unit": "U5"
@@ -1392,7 +1392,7 @@
      "id": "g7sp-u6",
      "file": "sets/g7sp-u6.json",
      "title": "U6 口语",
-     "subtitle": "每天 5 分钟 · 共 5 天",
+     "subtitle": "每天 10 分钟 · 共 5 天",
      "kind": "speaking",
      "count": 5,
      "unit": "U6"
@@ -1401,10 +1401,872 @@
      "id": "g7sp-u7",
      "file": "sets/g7sp-u7.json",
      "title": "U7 口语",
-     "subtitle": "每天 5 分钟 · 共 5 天",
+     "subtitle": "每天 10 分钟 · 共 5 天",
      "kind": "speaking",
      "count": 5,
      "unit": "U7"
+    }
+   ]
+  },
+  {
+   "id": "g7chinese",
+   "title": "语文练习",
+   "icon": "📖",
+   "desc": "古诗文、文学常识、阅读、美文",
+   "sets": [
+    {
+     "id": "g7c-gch-a",
+     "file": "sets/g7c-gch-a.json",
+     "title": "《观沧海》理解",
+     "subtitle": "曹操 · 汉乐府体·写景言志",
+     "kind": "cn",
+     "count": 6,
+     "unit": "Z1"
+    },
+    {
+     "id": "g7c-gch-b",
+     "file": "sets/g7c-gch-b.json",
+     "title": "《观沧海》默写",
+     "subtitle": "先背一背，再默写（不显示原诗）",
+     "kind": "cn",
+     "count": 7,
+     "unit": "Z1"
+    },
+    {
+     "id": "g7c-bgs-a",
+     "file": "sets/g7c-bgs-a.json",
+     "title": "《次北固山下》理解",
+     "subtitle": "王湾 · 唐诗·写景思乡",
+     "kind": "cn",
+     "count": 5,
+     "unit": "Z1"
+    },
+    {
+     "id": "g7c-bgs-b",
+     "file": "sets/g7c-bgs-b.json",
+     "title": "《次北固山下》默写",
+     "subtitle": "先背一背，再默写（不显示原诗）",
+     "kind": "cn",
+     "count": 6,
+     "unit": "Z1"
+    },
+    {
+     "id": "g7c-wcl-a",
+     "file": "sets/g7c-wcl-a.json",
+     "title": "《闻王昌龄左迁龙标遥有此寄》理解",
+     "subtitle": "李白 · 唐诗·友情",
+     "kind": "cn",
+     "count": 5,
+     "unit": "Z1"
+    },
+    {
+     "id": "g7c-wcl-b",
+     "file": "sets/g7c-wcl-b.json",
+     "title": "《闻王昌龄左迁龙标遥有此寄》默写",
+     "subtitle": "先背一背，再默写（不显示原诗）",
+     "kind": "cn",
+     "count": 5,
+     "unit": "Z1"
+    },
+    {
+     "id": "g7c-tjs-a",
+     "file": "sets/g7c-tjs-a.json",
+     "title": "《天净沙·秋思》理解",
+     "subtitle": "马致远 · 元曲·羁旅",
+     "kind": "cn",
+     "count": 5,
+     "unit": "Z1"
+    },
+    {
+     "id": "g7c-tjs-b",
+     "file": "sets/g7c-tjs-b.json",
+     "title": "《天净沙·秋思》默写",
+     "subtitle": "先背一背，再默写（不显示原诗）",
+     "kind": "cn",
+     "count": 5,
+     "unit": "Z1"
+    },
+    {
+     "id": "g7c-k1",
+     "file": "sets/g7c-k1.json",
+     "title": "第一单元·文学常识",
+     "subtitle": "春 / 济南的冬天 / 雨的四季",
+     "kind": "cn",
+     "count": 7,
+     "unit": "Z1"
+    },
+    {
+     "id": "g7c-k1b",
+     "file": "sets/g7c-k1b.json",
+     "title": "第一单元·古诗常识",
+     "subtitle": "古代诗歌四首",
+     "kind": "cn",
+     "count": 5,
+     "unit": "Z1"
+    },
+    {
+     "id": "g7c-r1",
+     "file": "sets/g7c-r1.json",
+     "title": "清晨的菜市场",
+     "subtitle": "阅读·记叙散文（写景抒情）",
+     "kind": "reading",
+     "count": 6,
+     "unit": "Z1"
+    },
+    {
+     "id": "g7c-ysn-a",
+     "file": "sets/g7c-ysn-a.json",
+     "title": "《咏雪》理解",
+     "subtitle": "《世说新语》 · 文言文",
+     "kind": "cn",
+     "count": 5,
+     "unit": "Z2"
+    },
+    {
+     "id": "g7c-ysn-b",
+     "file": "sets/g7c-ysn-b.json",
+     "title": "《咏雪》默写",
+     "subtitle": "先背一背，再默写（不显示原文）",
+     "kind": "cn",
+     "count": 4,
+     "unit": "Z2"
+    },
+    {
+     "id": "g7c-ctq-a",
+     "file": "sets/g7c-ctq-a.json",
+     "title": "《陈太丘与友期行》理解",
+     "subtitle": "《世说新语》 · 文言文",
+     "kind": "cn",
+     "count": 6,
+     "unit": "Z2"
+    },
+    {
+     "id": "g7c-ctq-b",
+     "file": "sets/g7c-ctq-b.json",
+     "title": "《陈太丘与友期行》默写",
+     "subtitle": "先背一背，再默写（不显示原文）",
+     "kind": "cn",
+     "count": 5,
+     "unit": "Z2"
+    },
+    {
+     "id": "g7c-k2",
+     "file": "sets/g7c-k2.json",
+     "title": "第二单元·文学常识",
+     "subtitle": "秋天的怀念 / 散步 / 散文诗 / 世说新语",
+     "kind": "cn",
+     "count": 7,
+     "unit": "Z2"
+    },
+    {
+     "id": "g7c-r2",
+     "file": "sets/g7c-r2.json",
+     "title": "母亲的灯",
+     "subtitle": "阅读·记叙散文（亲情）",
+     "kind": "reading",
+     "count": 6,
+     "unit": "Z2"
+    },
+    {
+     "id": "g7c-ly12-a",
+     "file": "sets/g7c-ly12-a.json",
+     "title": "《《论语》十二章（节选）》理解",
+     "subtitle": "《论语》 · 文言文",
+     "kind": "cn",
+     "count": 7,
+     "unit": "Z3"
+    },
+    {
+     "id": "g7c-ly12-b",
+     "file": "sets/g7c-ly12-b.json",
+     "title": "《《论语》十二章（节选）》默写",
+     "subtitle": "先背一背，再默写（不显示原文）",
+     "kind": "cn",
+     "count": 6,
+     "unit": "Z3"
+    },
+    {
+     "id": "g7c-k3",
+     "file": "sets/g7c-k3.json",
+     "title": "第三单元·文学常识",
+     "subtitle": "从百草园到三味书屋 / 往事依依 / 再塑生命的人 / 论语",
+     "kind": "cn",
+     "count": 7,
+     "unit": "Z3"
+    },
+    {
+     "id": "g7c-r3",
+     "file": "sets/g7c-r3.json",
+     "title": "书店里的下午",
+     "subtitle": "阅读·成长感悟",
+     "kind": "reading",
+     "count": 6,
+     "unit": "Z3"
+    },
+    {
+     "id": "g7c-zzs-a",
+     "file": "sets/g7c-zzs-a.json",
+     "title": "《诫子书》理解",
+     "subtitle": "诸葛亮 · 文言文",
+     "kind": "cn",
+     "count": 5,
+     "unit": "Z4"
+    },
+    {
+     "id": "g7c-zzs-b",
+     "file": "sets/g7c-zzs-b.json",
+     "title": "《诫子书》默写",
+     "subtitle": "先背一背，再默写（不显示原文）",
+     "kind": "cn",
+     "count": 6,
+     "unit": "Z4"
+    },
+    {
+     "id": "g7c-k4",
+     "file": "sets/g7c-k4.json",
+     "title": "第四单元·文学常识",
+     "subtitle": "纪念白求恩 / 回忆我的母亲 / 梅岭三章 / 诫子书",
+     "kind": "cn",
+     "count": 6,
+     "unit": "Z4"
+    },
+    {
+     "id": "g7c-r4",
+     "file": "sets/g7c-r4.json",
+     "title": "修鞋老人",
+     "subtitle": "阅读·人物品质",
+     "kind": "reading",
+     "count": 6,
+     "unit": "Z4"
+    },
+    {
+     "id": "g7c-k5",
+     "file": "sets/g7c-k5.json",
+     "title": "第五单元·文学常识",
+     "subtitle": "猫 / 我的白鸽 / 大雁归来 / 狼",
+     "kind": "cn",
+     "count": 6,
+     "unit": "Z5"
+    },
+    {
+     "id": "g7c-r5",
+     "file": "sets/g7c-r5.json",
+     "title": "邻居家的老猫",
+     "subtitle": "阅读·动物描写",
+     "kind": "reading",
+     "count": 6,
+     "unit": "Z5"
+    },
+    {
+     "id": "g7c-cjd-a",
+     "file": "sets/g7c-cjd-a.json",
+     "title": "《穿井得一人》理解",
+     "subtitle": "《吕氏春秋》 · 文言文",
+     "kind": "cn",
+     "count": 4,
+     "unit": "Z6"
+    },
+    {
+     "id": "g7c-cjd-b",
+     "file": "sets/g7c-cjd-b.json",
+     "title": "《穿井得一人》默写",
+     "subtitle": "先背一背，再默写（不显示原文）",
+     "kind": "cn",
+     "count": 4,
+     "unit": "Z6"
+    },
+    {
+     "id": "g7c-qrytd-a",
+     "file": "sets/g7c-qrytd-a.json",
+     "title": "《杞人忧天》理解",
+     "subtitle": "《列子》 · 文言文",
+     "kind": "cn",
+     "count": 5,
+     "unit": "Z6"
+    },
+    {
+     "id": "g7c-qrytd-b",
+     "file": "sets/g7c-qrytd-b.json",
+     "title": "《杞人忧天》默写",
+     "subtitle": "先背一背，再默写（不显示原文）",
+     "kind": "cn",
+     "count": 4,
+     "unit": "Z6"
+    },
+    {
+     "id": "g7c-k6",
+     "file": "sets/g7c-k6.json",
+     "title": "第六单元·文学常识",
+     "subtitle": "小圣施威降大圣 / 皇帝的新装 / 女娲造人 / 寓言四则",
+     "kind": "cn",
+     "count": 6,
+     "unit": "Z6"
+    },
+    {
+     "id": "g7c-r6",
+     "file": "sets/g7c-r6.json",
+     "title": "会说话的影子",
+     "subtitle": "阅读·想象寓言",
+     "kind": "reading",
+     "count": 6,
+     "unit": "Z6"
+    },
+    {
+     "id": "g7c-emss-a",
+     "file": "sets/g7c-emss-a.json",
+     "title": "《峨眉山月歌》理解",
+     "subtitle": "李白 · 唐诗·出蜀",
+     "kind": "cn",
+     "count": 4,
+     "unit": "Z0"
+    },
+    {
+     "id": "g7c-emss-b",
+     "file": "sets/g7c-emss-b.json",
+     "title": "《峨眉山月歌》默写",
+     "subtitle": "先背一背，再默写（不显示原诗）",
+     "kind": "cn",
+     "count": 4,
+     "unit": "Z0"
+    },
+    {
+     "id": "g7c-jnl-a",
+     "file": "sets/g7c-jnl-a.json",
+     "title": "《江南逢李龟年》理解",
+     "subtitle": "杜甫 · 唐诗·感怀",
+     "kind": "cn",
+     "count": 4,
+     "unit": "Z0"
+    },
+    {
+     "id": "g7c-jnl-b",
+     "file": "sets/g7c-jnl-b.json",
+     "title": "《江南逢李龟年》默写",
+     "subtitle": "先背一背，再默写（不显示原诗）",
+     "kind": "cn",
+     "count": 4,
+     "unit": "Z0"
+    },
+    {
+     "id": "g7c-ycjb-a",
+     "file": "sets/g7c-ycjb-a.json",
+     "title": "《夜雨寄北》理解",
+     "subtitle": "李商隐 · 唐诗·思亲",
+     "kind": "cn",
+     "count": 4,
+     "unit": "Z0"
+    },
+    {
+     "id": "g7c-ycjb-b",
+     "file": "sets/g7c-ycjb-b.json",
+     "title": "《夜雨寄北》默写",
+     "subtitle": "先背一背，再默写（不显示原诗）",
+     "kind": "cn",
+     "count": 4,
+     "unit": "Z0"
+    },
+    {
+     "id": "g7c-qc-a",
+     "file": "sets/g7c-qc-a.json",
+     "title": "《秋词（其一）》理解",
+     "subtitle": "刘禹锡 · 唐诗·咏秋",
+     "kind": "cn",
+     "count": 4,
+     "unit": "Z0"
+    },
+    {
+     "id": "g7c-qc-b",
+     "file": "sets/g7c-qc-b.json",
+     "title": "《秋词（其一）》默写",
+     "subtitle": "先背一背，再默写（不显示原诗）",
+     "kind": "cn",
+     "count": 4,
+     "unit": "Z0"
+    },
+    {
+     "id": "g7c-ysj-a",
+     "file": "sets/g7c-ysj-a.json",
+     "title": "《夜上受降城闻笛》理解",
+     "subtitle": "李益 · 唐诗·边塞思乡",
+     "kind": "cn",
+     "count": 3,
+     "unit": "Z0"
+    },
+    {
+     "id": "g7c-ysj-b",
+     "file": "sets/g7c-ysj-b.json",
+     "title": "《夜上受降城闻笛》默写",
+     "subtitle": "先背一背，再默写（不显示原诗）",
+     "kind": "cn",
+     "count": 3,
+     "unit": "Z0"
+    },
+    {
+     "id": "g7c-ly-a",
+     "file": "sets/g7c-ly-a.json",
+     "title": "《十一月四日风雨大作（其二）》理解",
+     "subtitle": "陆游 · 宋诗·爱国",
+     "kind": "cn",
+     "count": 4,
+     "unit": "Z0"
+    },
+    {
+     "id": "g7c-ly-b",
+     "file": "sets/g7c-ly-b.json",
+     "title": "《十一月四日风雨大作（其二）》默写",
+     "subtitle": "先背一背，再默写（不显示原诗）",
+     "kind": "cn",
+     "count": 4,
+     "unit": "Z0"
+    },
+    {
+     "id": "g7c-m1",
+     "file": "sets/g7c-m1.json",
+     "title": "名著导读·《朝花夕拾》",
+     "subtitle": "鲁迅 回忆性散文集",
+     "kind": "cn",
+     "count": 6,
+     "unit": "Z7"
+    },
+    {
+     "id": "g7c-m2",
+     "file": "sets/g7c-m2.json",
+     "title": "名著导读·《西游记》",
+     "subtitle": "吴承恩 神魔小说",
+     "kind": "cn",
+     "count": 7,
+     "unit": "Z7"
+    },
+    {
+     "id": "g7c-j1",
+     "file": "sets/g7c-j1.json",
+     "title": "语文基础·修辞与表达",
+     "subtitle": "比喻 / 拟人 / 排比 / 对偶",
+     "kind": "cn",
+     "count": 6,
+     "unit": "Z7"
+    },
+    {
+     "id": "g7c-j2",
+     "file": "sets/g7c-j2.json",
+     "title": "语文基础·字词与病句",
+     "subtitle": "字音字形 / 成语 / 病句",
+     "kind": "cn",
+     "count": 5,
+     "unit": "Z7"
+    },
+    {
+     "id": "g7c-r7",
+     "file": "sets/g7c-r7.json",
+     "title": "植物也会“睡觉”",
+     "subtitle": "阅读·说明文",
+     "kind": "reading",
+     "count": 6,
+     "unit": "Z7"
+    },
+    {
+     "id": "g7c-r8",
+     "file": "sets/g7c-r8.json",
+     "title": "说“坚持”",
+     "subtitle": "阅读·议论文",
+     "kind": "reading",
+     "count": 6,
+     "unit": "Z7"
+    },
+    {
+     "id": "g7c-e1",
+     "file": "sets/g7c-e1.json",
+     "title": "《一盏灯的陪伴》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 4,
+     "unit": "E"
+    },
+    {
+     "id": "g7c-e2",
+     "file": "sets/g7c-e2.json",
+     "title": "《山中的雨》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 4,
+     "unit": "E"
+    },
+    {
+     "id": "g7c-e3",
+     "file": "sets/g7c-e3.json",
+     "title": "《老街的早晨》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 4,
+     "unit": "E"
+    },
+    {
+     "id": "g7c-e4",
+     "file": "sets/g7c-e4.json",
+     "title": "《麦田里的风》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 4,
+     "unit": "E"
+    },
+    {
+     "id": "g7c-e5",
+     "file": "sets/g7c-e5.json",
+     "title": "《月下荷塘》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 4,
+     "unit": "E"
+    },
+    {
+     "id": "g7c-e6",
+     "file": "sets/g7c-e6.json",
+     "title": "《大海的呼吸》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 4,
+     "unit": "E"
+    }
+   ]
+  },
+  {
+   "id": "g4chinese",
+   "title": "语文练习",
+   "icon": "📖",
+   "desc": "古诗、课文积累、阅读、美文",
+   "sets": [
+    {
+     "id": "g4c-k1",
+     "file": "sets/g4c-k1.json",
+     "title": "第一单元·课文小测",
+     "subtitle": "观潮 / 繁星 / 现代诗",
+     "kind": "cn",
+     "count": 7,
+     "unit": "Y1"
+    },
+    {
+     "id": "g4c-r1",
+     "file": "sets/g4c-r1.json",
+     "title": "海边的日出",
+     "subtitle": "阅读·写景",
+     "kind": "reading",
+     "count": 6,
+     "unit": "Y1"
+    },
+    {
+     "id": "g4c-k2",
+     "file": "sets/g4c-k2.json",
+     "title": "第二单元·课文小测",
+     "subtitle": "豆荚 / 夜间飞行 / 方帽子店 / 田忌赛马",
+     "kind": "cn",
+     "count": 6,
+     "unit": "Y2"
+    },
+    {
+     "id": "g4c-r2",
+     "file": "sets/g4c-r2.json",
+     "title": "聪明的小松鼠",
+     "subtitle": "阅读·对话式童话",
+     "kind": "reading",
+     "count": 6,
+     "unit": "Y2"
+    },
+    {
+     "id": "g4c-muj-a",
+     "file": "sets/g4c-muj-a.json",
+     "title": "《暮江吟》理解",
+     "subtitle": "白居易 · 唐诗·写景",
+     "kind": "cn",
+     "count": 7,
+     "unit": "Y3"
+    },
+    {
+     "id": "g4c-muj-b",
+     "file": "sets/g4c-muj-b.json",
+     "title": "《暮江吟》默写",
+     "subtitle": "先背一背，再默写（不显示原诗）",
+     "kind": "cn",
+     "count": 6,
+     "unit": "Y3"
+    },
+    {
+     "id": "g4c-tx-a",
+     "file": "sets/g4c-tx-a.json",
+     "title": "《题西林壁》理解",
+     "subtitle": "苏轼 · 宋诗·哲理",
+     "kind": "cn",
+     "count": 6,
+     "unit": "Y3"
+    },
+    {
+     "id": "g4c-tx-b",
+     "file": "sets/g4c-tx-b.json",
+     "title": "《题西林壁》默写",
+     "subtitle": "先背一背，再默写（不显示原诗）",
+     "kind": "cn",
+     "count": 6,
+     "unit": "Y3"
+    },
+    {
+     "id": "g4c-xm-a",
+     "file": "sets/g4c-xm-a.json",
+     "title": "《雪梅》理解",
+     "subtitle": "卢梅坡 · 宋诗·说理",
+     "kind": "cn",
+     "count": 6,
+     "unit": "Y3"
+    },
+    {
+     "id": "g4c-xm-b",
+     "file": "sets/g4c-xm-b.json",
+     "title": "《雪梅》默写",
+     "subtitle": "先背一背，再默写（不显示原诗）",
+     "kind": "cn",
+     "count": 6,
+     "unit": "Y3"
+    },
+    {
+     "id": "g4c-k3",
+     "file": "sets/g4c-k3.json",
+     "title": "第三单元·课文小测",
+     "subtitle": "古诗三首 / 爬山虎的脚 / 蟋蟀的住宅",
+     "kind": "cn",
+     "count": 6,
+     "unit": "Y3"
+    },
+    {
+     "id": "g4c-r3",
+     "file": "sets/g4c-r3.json",
+     "title": "我的绿豆芽观察日记",
+     "subtitle": "阅读·观察日记",
+     "kind": "reading",
+     "count": 6,
+     "unit": "Y3"
+    },
+    {
+     "id": "g4c-k4",
+     "file": "sets/g4c-k4.json",
+     "title": "第四单元·神话小测",
+     "subtitle": "盘古开天地 / 精卫填海 / 普罗米修斯 / 女娲补天",
+     "kind": "cn",
+     "count": 7,
+     "unit": "Y4"
+    },
+    {
+     "id": "g4c-r4",
+     "file": "sets/g4c-r4.json",
+     "title": "太阳为什么早上才出来",
+     "subtitle": "阅读·想象故事",
+     "kind": "reading",
+     "count": 6,
+     "unit": "Y4"
+    },
+    {
+     "id": "g4c-k5",
+     "file": "sets/g4c-k5.json",
+     "title": "第五单元·课文小测",
+     "subtitle": "麻雀 / 爬天都峰 / 习作",
+     "kind": "cn",
+     "count": 5,
+     "unit": "Y5"
+    },
+    {
+     "id": "g4c-r5",
+     "file": "sets/g4c-r5.json",
+     "title": "和爷爷一起爬山",
+     "subtitle": "阅读·互相鼓励",
+     "kind": "reading",
+     "count": 6,
+     "unit": "Y5"
+    },
+    {
+     "id": "g4c-k6",
+     "file": "sets/g4c-k6.json",
+     "title": "第六单元·课文小测",
+     "subtitle": "长城 / 颐和园 / 秦兵马俑",
+     "kind": "cn",
+     "count": 6,
+     "unit": "Y6"
+    },
+    {
+     "id": "g4c-r6",
+     "file": "sets/g4c-r6.json",
+     "title": "赵州桥",
+     "subtitle": "阅读·说明性短文",
+     "kind": "reading",
+     "count": 6,
+     "unit": "Y6"
+    },
+    {
+     "id": "g4c-k7",
+     "file": "sets/g4c-k7.json",
+     "title": "第七单元·课文小测",
+     "subtitle": "牛和鹅 / 一只窝囊的大老虎 / 陀螺 / 王戎不取道旁李",
+     "kind": "cn",
+     "count": 4,
+     "unit": "Y7"
+    },
+    {
+     "id": "g4c-r7",
+     "file": "sets/g4c-r7.json",
+     "title": "谁偷吃了桃子",
+     "subtitle": "阅读·对话推理",
+     "kind": "reading",
+     "count": 6,
+     "unit": "Y7"
+    },
+    {
+     "id": "g4c-lzc-a",
+     "file": "sets/g4c-lzc-a.json",
+     "title": "《凉州词》理解",
+     "subtitle": "王翰 · 唐诗·边塞",
+     "kind": "cn",
+     "count": 6,
+     "unit": "Y8"
+    },
+    {
+     "id": "g4c-lzc-b",
+     "file": "sets/g4c-lzc-b.json",
+     "title": "《凉州词》默写",
+     "subtitle": "先背一背，再默写（不显示原诗）",
+     "kind": "cn",
+     "count": 6,
+     "unit": "Y8"
+    },
+    {
+     "id": "g4c-cs-a",
+     "file": "sets/g4c-cs-a.json",
+     "title": "《出塞》理解",
+     "subtitle": "王昌龄 · 唐诗·边塞",
+     "kind": "cn",
+     "count": 6,
+     "unit": "Y8"
+    },
+    {
+     "id": "g4c-cs-b",
+     "file": "sets/g4c-cs-b.json",
+     "title": "《出塞》默写",
+     "subtitle": "先背一背，再默写（不显示原诗）",
+     "kind": "cn",
+     "count": 6,
+     "unit": "Y8"
+    },
+    {
+     "id": "g4c-xr-a",
+     "file": "sets/g4c-xr-a.json",
+     "title": "《夏日绝句》理解",
+     "subtitle": "李清照 · 宋词人·豪放",
+     "kind": "cn",
+     "count": 6,
+     "unit": "Y8"
+    },
+    {
+     "id": "g4c-xr-b",
+     "file": "sets/g4c-xr-b.json",
+     "title": "《夏日绝句》默写",
+     "subtitle": "先背一背，再默写（不显示原诗）",
+     "kind": "cn",
+     "count": 6,
+     "unit": "Y8"
+    },
+    {
+     "id": "g4c-k8",
+     "file": "sets/g4c-k8.json",
+     "title": "第八单元·课文小测",
+     "subtitle": "为中华之崛起而读书 / 延安，我把你追寻 / 古诗三首 / 写信",
+     "kind": "cn",
+     "count": 4,
+     "unit": "Y8"
+    },
+    {
+     "id": "g4c-r8",
+     "file": "sets/g4c-r8.json",
+     "title": "给远方小朋友的一封信",
+     "subtitle": "阅读·书信",
+     "kind": "reading",
+     "count": 6,
+     "unit": "Y8"
+    },
+    {
+     "id": "g4c-j1",
+     "file": "sets/g4c-j1.json",
+     "title": "词语积累·近义词反义词",
+     "subtitle": "词语小练习",
+     "kind": "cn",
+     "count": 7,
+     "unit": "Y0"
+    },
+    {
+     "id": "g4c-j2",
+     "file": "sets/g4c-j2.json",
+     "title": "句子积累·修辞手法",
+     "subtitle": "比喻 / 拟人 / 排比 / 夸张",
+     "kind": "cn",
+     "count": 7,
+     "unit": "Y0"
+    },
+    {
+     "id": "g4c-j3",
+     "file": "sets/g4c-j3.json",
+     "title": "标点与关联词",
+     "subtitle": "标点符号 / 关联词语",
+     "kind": "cn",
+     "count": 6,
+     "unit": "Y0"
+    },
+    {
+     "id": "g4c-e1",
+     "file": "sets/g4c-e1.json",
+     "title": "《秋天的树叶》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 4,
+     "unit": "E"
+    },
+    {
+     "id": "g4c-e2",
+     "file": "sets/g4c-e2.json",
+     "title": "《雨后的彩虹》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 4,
+     "unit": "E"
+    },
+    {
+     "id": "g4c-e3",
+     "file": "sets/g4c-e3.json",
+     "title": "《夜晚的星空》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 4,
+     "unit": "E"
+    },
+    {
+     "id": "g4c-e4",
+     "file": "sets/g4c-e4.json",
+     "title": "《小溪的歌》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 4,
+     "unit": "E"
+    },
+    {
+     "id": "g4c-e5",
+     "file": "sets/g4c-e5.json",
+     "title": "《冬天的第一场雪》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 4,
+     "unit": "E"
+    },
+    {
+     "id": "g4c-e6",
+     "file": "sets/g4c-e6.json",
+     "title": "《春天的早晨》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 4,
+     "unit": "E"
     }
    ]
   }
@@ -1419,6 +2281,24 @@
   "U4": "Unit 4",
   "U5": "Unit 5",
   "U6": "Unit 6",
-  "U7": "Unit 7"
+  "U7": "Unit 7",
+  "Z1": "第一单元 春·济南的冬天·古诗四首",
+  "Z2": "第二单元 秋天的怀念·散步·《世说新语》",
+  "Z3": "第三单元 百草园·《论语》十二章",
+  "Z4": "第四单元 纪念白求恩·诫子书",
+  "Z5": "第五单元 动物笔下的世界",
+  "Z6": "第六单元 想象与寓言",
+  "Z0": "课外古诗词诵读",
+  "Y1": "第一单元 观潮·繁星·现代诗",
+  "Y2": "第二单元 豆荚·夜间飞行·田忌赛马",
+  "Y3": "第三单元 古诗三首·爬山虎·蟋蟀",
+  "Y4": "第四单元 神话故事",
+  "Y5": "第五单元 麻雀·爬天都峰",
+  "Y6": "第六单元 长城·颐和园·兵马俑",
+  "Y7": "第七单元 牛和鹅·王戎不取道旁李",
+  "Y8": "第八单元 为中华之崛起而读书·古诗三首",
+  "Y0": "语文积累（词语·句子·标点）",
+  "Z7": "语文积累·名著导读",
+  "E": "优美美文（每 3 天听一篇）"
  }
 }

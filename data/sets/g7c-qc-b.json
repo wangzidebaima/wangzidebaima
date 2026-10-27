@@ -1,0 +1,65 @@
+{
+ "id": "g7c-qc-b",
+ "kind": "cn",
+ "title": "《秋词（其一）》默写",
+ "subtitle": "先背一背，再默写（不显示原诗）",
+ "unit": "Z0",
+ "mk": "cnpoem",
+ "sections": [
+  {
+   "id": "C",
+   "title": "三、默写",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g7c-qc-b-C1",
+     "type": "fill",
+     "stem": "自古逢秋悲寂寥，____。",
+     "answers": [
+      [
+       "我言秋日胜春朝"
+      ]
+     ],
+     "why": "“我言秋日胜春朝”",
+     "pts": 2
+    },
+    {
+     "id": "g7c-qc-b-C2",
+     "type": "fill",
+     "stem": "晴空一鹤排云上，____。",
+     "answers": [
+      [
+       "便引诗情到碧霄"
+      ]
+     ],
+     "why": "“便引诗情到碧霄”",
+     "pts": 2
+    },
+    {
+     "id": "g7c-qc-b-C3",
+     "type": "fill",
+     "stem": "自古逢秋____寂寥",
+     "answers": [
+      [
+       "悲"
+      ]
+     ],
+     "why": "“自古逢秋悲寂寥”",
+     "pts": 2
+    },
+    {
+     "id": "g7c-qc-b-C4",
+     "type": "fill",
+     "stem": "便引诗情到____",
+     "answers": [
+      [
+       "碧霄"
+      ]
+     ],
+     "why": "“便引诗情到碧霄”",
+     "pts": 2
+    }
+   ]
+  }
+ ]
+}

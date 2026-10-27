@@ -388,7 +388,7 @@ import { CHAP_TYPES } from './chapgen.js';
 import { CHAP4_TYPES } from './chapgen4.js';
 export const RANDOM = {
   chap4: { title: '四年级数学章节练习', icon: '📐', subject: 'chap4', types: CHAP4_TYPES, levels: ['简单', '适中', '挑战'] },
-  chap7: { title: '七年级数学章节练习', icon: '📐', subject: 'chap7', types: CHAP_TYPES, levels: ['简单', '适中', '挑战'] },
+  chap7: { title: '七年级数学章节练习', icon: '📐', subject: 'chap7', types: [...CHAP_TYPES.filter(t => t.cid === 'c1'), ...T7.map(t => ({ id: 'm7-c2-' + t.id.replace('-', ''), name: t.name, cid: 'c2' })), ...CHAP_TYPES.filter(t => t.cid !== 'c1')], levels: ['简单', '适中', '挑战'] },
   math7: { title: '有理数随机练习', icon: '🎲', subject: 'math7', types: T7, levels: ['简单', '适中', '挑战'], gen: (t, l) => G7[t](l) },
   math4: { title: '口算随机练习', icon: '🎲', subject: 'math4', types: T4, levels: ['简单', '适中', '挑战'], gen: (t, l) => G4[t](l) },
   vocab7: { title: '英语单词小测', icon: '🔤', subject: 'vocab7', types: TW, levels: null },

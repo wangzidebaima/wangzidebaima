@@ -1,0 +1,116 @@
+{
+ "id": "g4c-j1",
+ "kind": "cn",
+ "title": "词语积累·近义词反义词",
+ "subtitle": "词语小练习",
+ "unit": "Y0",
+ "mk": "cnknow",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g4c-j1-A1",
+     "type": "choice",
+     "stem": "下面哪一组是近义词？",
+     "options": [
+      "美丽—漂亮",
+      "高兴—难过",
+      "勇敢—胆小",
+      "光明—黑暗"
+     ],
+     "answer": "A",
+     "why": "“美丽”和“漂亮”意思相近。",
+     "pts": 2
+    },
+    {
+     "id": "g4c-j1-A2",
+     "type": "choice",
+     "stem": "下面哪一组是反义词？",
+     "options": [
+      "勤奋—懒惰",
+      "安静—宁静",
+      "快乐—高兴",
+      "明亮—光亮"
+     ],
+     "answer": "A",
+     "why": "“勤奋”与“懒惰”意思相反。",
+     "pts": 2
+    },
+    {
+     "id": "g4c-j1-A3",
+     "type": "choice",
+     "stem": "“欢天喜地”属于哪一种词语形式？",
+     "options": [
+      "ABAC",
+      "AABB",
+      "ABAB",
+      "ABCC"
+     ],
+     "answer": "A",
+     "why": "“欢天喜地”是 ABAC 式。",
+     "pts": 2
+    },
+    {
+     "id": "g4c-j1-A4",
+     "type": "choice",
+     "stem": "下面哪个词语是 AABB 式？",
+     "options": [
+      "高高兴兴",
+      "干干净净地",
+      "一心一意",
+      "你来我往"
+     ],
+     "answer": "A",
+     "why": "“高高兴兴”是 AABB 式。",
+     "pts": 2
+    },
+    {
+     "id": "g4c-j1-A5",
+     "type": "choice",
+     "stem": "“春暖花开”“山清水秀”这类四字词语，主要在描写什么？",
+     "options": [
+      "景色",
+      "心情",
+      "动作",
+      "声音"
+     ],
+     "answer": "A",
+     "why": "这些词语在写自然景色。",
+     "pts": 2
+    },
+    {
+     "id": "g4c-j1-A6",
+     "type": "choice",
+     "stem": "“他做事总是认认真真的。”句中的“认认真真”是什么类型的词？",
+     "options": [
+      "AABB 式叠词",
+      "拟声词",
+      "数量词",
+      "动词"
+     ],
+     "answer": "A",
+     "why": "“认认真真”是 AABB 式的形容词。",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g4c-j1-B1",
+     "type": "tf",
+     "stem": "“小心翼翼”和“粗心大意”是一对反义词。",
+     "answer": "T",
+     "why": "一个谨慎，一个马虎。",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

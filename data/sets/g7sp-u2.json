@@ -3,7 +3,7 @@
  "kind": "speaking",
  "unit": "U2",
  "title": "口语练习",
- "subtitle": "每天 5 分钟 · 共 5 天",
+ "subtitle": "每天 10 分钟 · 共 5 天",
  "steps": [
   "点 🔊 听一遍，听清语调",
   "一句一句跟着读，声音要大，不怕错",
@@ -52,31 +52,31 @@
    "day": 1,
    "title": "跟读第 1–3 句",
    "task": "先听一遍，再跟读 3 遍",
-   "minutes": 5
+   "minutes": 10
   },
   {
    "day": 2,
    "title": "跟读第 4–6 句",
    "task": "先听一遍，再跟读 3 遍",
-   "minutes": 5
+   "minutes": 10
   },
   {
    "day": 3,
    "title": "跟读第 7–9 句",
    "task": "先听一遍，再跟读 3 遍",
-   "minutes": 5
+   "minutes": 10
   },
   {
    "day": 4,
    "title": "不看书，说给家长听",
    "task": "挑 5 句最喜欢的，尽量不看书说出来",
-   "minutes": 5
+   "minutes": 10
   },
   {
    "day": 5,
    "title": "自己说 3 句话",
    "task": "用 “This is my … He/She is … ” 介绍 3 位家人",
-   "minutes": 5
+   "minutes": 10
   }
  ]
 }

@@ -2,6 +2,7 @@ import * as V from './views.js';
 import * as S from './store.js';
 import * as E from './english.js';
 import * as CV from './chapview.js';
+import { stopAllSound } from './ui.js';
 
 const getJSON = (u) => fetch(u).then(r => { if (!r.ok) throw new Error(u + ' ' + r.status); return r.json(); });
 
@@ -21,16 +22,44 @@ function showUpdate() {
   };
 }
 
+// ---------- 学习休息提醒：累计用满 N 分钟，弹出休息页，倒计时结束才能继续 ----------
+const BRK = { active: 0, last: Date.now(), shown: false, snoozed: false };
+['pointerdown', 'keydown', 'touchstart', 'scroll'].forEach(ev => window.addEventListener(ev, () => { BRK.last = Date.now(); }, { passive: true, capture: true }));
+function showBreak(restMin) {
+  if (document.getElementById('brkm')) return;
+  BRK.shown = true; try { window.speechSynthesis && window.speechSynthesis.cancel(); } catch (e) { /* ignore */ }
+  const m = document.createElement('div'); m.id = 'brkm';
+  m.innerHTML = '<div class="updbox"><div class="updt">🌿 休息一下吧</div><div class="updp">已经学习一会儿啦！现在请：站起来走一走，看看窗外远处，喝几口水。<br>倒计时结束后，点「休息好了，继续」就能接着学。</div><div class="brkt" id="brkt"></div>' +
+    '<button class="btn primary" id="brkgo" disabled>休息好了，继续</button><button class="btn ghost" id="brkmore">还差一点没做完，再给我 2 分钟</button></div>';
+  document.body.append(m);
+  let left = restMin * 60; const t = m.querySelector('#brkt'), go = m.querySelector('#brkgo'), more = m.querySelector('#brkmore');
+  const draw = () => { t.textContent = left > 0 ? `${String(Math.floor(left / 60)).padStart(2, '0')}:${String(left % 60).padStart(2, '0')}` : '休息好啦 👍'; go.disabled = left > 0; };
+  const iv = setInterval(() => { left--; draw(); if (left <= 0) clearInterval(iv); }, 1000); draw();
+  const close = () => { clearInterval(iv); m.remove(); BRK.shown = false; BRK.last = Date.now(); };
+  go.onclick = () => { close(); BRK.active = 0; BRK.snoozed = false; };
+  if (BRK.snoozed) more.remove(); else more.onclick = () => { close(); BRK.snoozed = true; BRK.active = Math.max(0, BRK.limit - 120); };
+}
+setInterval(() => {
+  const r = location.hash.replace(/^#\/?/, '').split('/')[0];
+  if (BRK.shown || document.visibilityState !== 'visible' || !V.user() || ['login', 'parent', 'hear', 'install'].includes(r)) return;
+  if (Date.now() - BRK.last > 90000) return;       // 90 秒没有操作，不算在学习
+  BRK.active++;
+  const cfg = (V.X && V.X.cfg) || {}; BRK.limit = (cfg.breakMinutes || 15) * 60;
+  if (BRK.active >= BRK.limit) showBreak(cfg.breakRestMinutes || 3);
+}, 1000);
+
 async function render() {
   try {
+    stopAllSound();
     const hash = location.hash.replace(/^#\/?/, '');
     const [r, a, b] = hash.split('/');
     const u = V.user();
-    if (!u && r !== 'login' && r !== 'parent' && r !== 'hear') { location.replace('#/login'); return; }
+    if (!u && r !== 'login' && r !== 'parent' && r !== 'hear' && r !== 'install') { location.replace('#/login'); return; }
     V.setTheme(u);
     switch (r) {
       case 'login': return V.login();
       case 'parent': return V.parentHome();
+      case 'install': return V.install();
       case 'hear': return await V.hear(a);
       case 's': return V.subject(a);
       case 'set': return await V.setView(a);

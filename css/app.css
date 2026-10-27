@@ -8,11 +8,13 @@
 }
 :root[data-theme=blue] { --accent: #3f6fa6; --accent-soft: #e2ebf6; }
 :root[data-theme=rose] { --accent: #c0607a; --accent-soft: #f8e5ea; }
+:root[data-theme=leaf] { --accent: #4f9a54; --accent-soft: #e4f3e4; }
 @media (prefers-color-scheme: dark) {
   :root { --bg: #1e2126; --surface: #282c33; --ink: #e8e5dc; --muted: #a09e95; --line: #3a3f48; --accent: #7fb28d; --accent-ink: #14201a; --accent-soft: #28382d;
     --good: #7cc99a; --good-soft: #25382c; --bad: #e08c85; --bad-soft: #3d2926; --star: #f0b84a; --star-soft: #3a3320; --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 22px rgba(0, 0, 0, .25); }
   :root[data-theme=blue] { --accent: #7fa7d6; --accent-soft: #27384c; }
   :root[data-theme=rose] { --accent: #e08ca3; --accent-soft: #432c34; }
+  :root[data-theme=leaf] { --accent: #86c98a; --accent-soft: #28402a; }
 }
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 html { -webkit-text-size-adjust: 100%; }
@@ -241,3 +243,23 @@ html[data-fs="1"] body { zoom: 1.12; } html[data-fs="2"] body { zoom: 1.25; }
 .cal-g i.on{background:#ffe08a;font-weight:700}
 .cal-g i.today{outline:2px solid #4a90e2}
 .cal-g i small{font-size:10px;line-height:1}
+
+.instl{display:block;text-align:center;margin:16px auto;padding:10px;font-size:14px}
+.ins .steps li{margin:6px 0;line-height:1.6}
+.okbox{background:#e6f7e6;border-radius:12px;padding:10px}
+
+.soonbox{text-align:center;background:var(--accent-soft);border-radius:16px;padding:18px;margin:12px 0}
+.soonbox .logo{font-size:40px}
+
+.cal-g i small.ics{font-size:11px;line-height:1.1;letter-spacing:0}
+.cal-g i{min-height:46px}
+.calnote{margin:8px 0 0;font-size:12px;text-align:center}
+
+#brkm{position:fixed;inset:0;z-index:99;background:rgba(0,0,0,.55);display:flex;align-items:center;justify-content:center;padding:20px}
+.brkt{font-size:44px;font-weight:700;text-align:center;margin:10px 0;color:var(--accent)}
+#brkm .btn{display:block;width:100%;margin-top:10px}
+#brkm{z-index:9998}
+#brkm .updbox{background:var(--surface);border-radius:18px;padding:22px 20px;max-width:320px;width:100%;text-align:center;box-shadow:0 8px 30px rgba(0,0,0,.25)}
+#brkm .updt{font-size:20px;font-weight:700;margin-bottom:8px}
+#brkm .updp{font-size:15px;line-height:1.6;color:var(--muted)}
+.task{color:inherit;text-decoration:none}

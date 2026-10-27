@@ -6,8 +6,13 @@ import { RANDOM } from './mathgen.js';
 import { CH7, buildChapSession } from './chapgen.js';
 import { CH4 } from './chapgen4.js';
 
+// 第二章「有理数及其运算」：直接用原来「有理数随机练习」的出题器，并入七年级章节练习
+const C2 = { id: 'c2', name: '第二章 有理数及其运算', types: RANDOM.math7.types.map(t => ({
+  id: t.id, name: t.name, gen: (L) => { const q = RANDOM.math7.gen(t.id, L); return q ? { ...q, typeId: 'm7-c2-' + t.id.replace('-', '') } : q; } })) };
+export const CH7X = [CH7[0], C2, ...CH7.slice(1)];
+
 export const CHAP = {
-  chap7: { book: 'math7', CH: CH7, pre: 'm7-' },
+  chap7: { book: 'math7', CH: CH7X, pre: 'm7-' },
   chap4: { book: 'math4', CH: CH4, pre: 'm4-' },
 };
 export const isChap = (k) => !!CHAP[k];

@@ -33,45 +33,54 @@
    ],
    "theme": "blue",
    "subjects": [
-    "g7math",
     "g7reading",
     "g7listening",
-    "g7speaking"
+    "g7speaking",
+    "g7chinese"
    ],
    "random": [
-    "math7",
     "chap7",
     "vocab7",
     "phrase7"
    ],
    "tasks": [
     {
-     "label": "做 1 组题库练习",
-     "kind": "bank",
+     "label": "数学随机练习 10 题",
+     "kind": "rand",
+     "subs": [
+      "chap7",
+      "math7"
+     ],
+     "goal": 10
+    },
+    {
+     "label": "阅读理解 1 套",
+     "kind": "cat",
+     "cat": "reading",
      "goal": 1
     },
     {
-     "label": "有理数随机练习 10 题",
-     "kind": "rand",
-     "sub": "math7",
-     "goal": 10
+     "label": "英语听力 1 套",
+     "kind": "cat",
+     "cat": "listening",
+     "goal": 1
     },
     {
-     "label": "英语单词小测 10 题",
-     "kind": "rand",
-     "sub": "vocab7",
-     "goal": 10
-    },
-    {
-     "label": "口语跟读打卡",
+     "label": "口语打卡（10 分钟）",
      "kind": "speak",
+     "goal": 1
+    },
+    {
+     "label": "听一篇美文",
+     "kind": "essay",
      "goal": 1
     }
    ],
    "grade": "七年级",
    "publishers": {
     "math": "北师大版",
-    "eng": "人教版"
+    "eng": "人教版",
+    "cn": "统编版"
    },
    "modes": {
     "chaptype": "live",
@@ -81,7 +90,10 @@
     "engquiz": "live",
     "reading": "exam",
     "listening": "exam",
-    "errors": "live"
+    "errors": "live",
+    "cnpoem": "live",
+    "cnknow": "live",
+    "cnread": "exam"
    }
   },
   {
@@ -95,7 +107,8 @@
    "subjects": [
     "g4reading",
     "g4speaking",
-    "g4listening"
+    "g4listening",
+    "g4chinese"
    ],
    "random": [
     "math4",
@@ -106,32 +119,42 @@
    ],
    "tasks": [
     {
-     "label": "做 1 组题库练习",
-     "kind": "bank",
+     "label": "数学随机练习 10 题",
+     "kind": "rand",
+     "subs": [
+      "math4",
+      "chap4"
+     ],
+     "goal": 10
+    },
+    {
+     "label": "阅读理解 1 套",
+     "kind": "cat",
+     "cat": "reading",
      "goal": 1
     },
     {
-     "label": "口算随机练习 10 题",
-     "kind": "rand",
-     "sub": "math4",
-     "goal": 10
+     "label": "英语听力 1 套",
+     "kind": "cat",
+     "cat": "listening",
+     "goal": 1
     },
     {
-     "label": "英语单词小测 10 题",
-     "kind": "rand",
-     "sub": "vocab4",
-     "goal": 10
-    },
-    {
-     "label": "口语跟读打卡",
+     "label": "口语打卡（10 分钟）",
      "kind": "speak",
+     "goal": 1
+    },
+    {
+     "label": "听一篇美文",
+     "kind": "essay",
      "goal": 1
     }
    ],
    "grade": "四年级",
    "publishers": {
     "math": "北师大版",
-    "eng": "人教版 PEP"
+    "eng": "人教版 PEP",
+    "cn": "统编版"
    },
    "modes": {
     "chaptype": "live",
@@ -143,8 +166,35 @@
     "listening": "exam",
     "errors": "live",
     "reading#1": "live",
-    "reading#2": "live"
+    "reading#2": "live",
+    "cnpoem": "live",
+    "cnknow": "live",
+    "cnread": "exam"
    }
+  },
+  {
+   "id": "yezi",
+   "display": "叶子",
+   "names": [
+    "叶子",
+    "徐叶子"
+   ],
+   "theme": "leaf",
+   "subjects": [],
+   "random": [],
+   "tasks": [],
+   "grade": "二年级",
+   "publishers": {},
+   "modes": {
+    "chaptype": "live",
+    "mathbank": "live",
+    "engquiz": "live",
+    "errors": "live",
+    "cnpoem": "live",
+    "cnknow": "live",
+    "cnread": "exam"
+   },
+   "soon": true
   }
  ],
  "parent": {
@@ -153,5 +203,7 @@
   "hash": "fe783f5acebb1d0b764455ebaa95166d1611b5293a2a67ce805009ddc0fe2155"
  },
  "dailyStarCap": 30,
- "starGoal": 400
+ "starGoal": 400,
+ "breakMinutes": 15,
+ "breakRestMinutes": 3
 }

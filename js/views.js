@@ -76,15 +76,47 @@ export function login() {
   setTheme(null);
   mount(h('div', { class: 'login' }, h('div', { class: 'logo' }, '⭐'), h('h1', {}, X.cfg.appName),
     h('p', { class: 'sub' }, '输入你的名字，开始今天的练习'), inp,
-    h('button', { class: 'btn primary wide', onclick: enter }, '开始'), msg));
+    h('button', { class: 'btn primary wide', onclick: enter }, '开始'), msg,
+    h('a', { class: 'link instl', href: '#/install' }, '📲 怎么把它装到手机桌面？')));
+}
+
+// ---------------- 装到桌面教程（不用登录） ----------------
+const standalone = () => { try { return window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true; } catch (e) { return false; } };
+export function install() {
+  const u = user(), sec = (t, body) => h('section', { class: 'ins' }, h('h2', { class: 'sh' }, t), body);
+  const ol = (...a) => h('ol', { class: 'steps' }, a.map(t => h('li', {}, t)));
+  mount(page('装到手机桌面', [
+    standalone() ? h('p', { class: 'note okbox' }, '✅ 你现在就是从桌面图标打开的，已经装好啦，不用再装。') : null,
+    sec('装了有什么好处？', ol('点一下桌面图标就能开始，不用再找网址、不用登录页面翻来翻去。', '打开后是全屏的，像一个真正的 App，没有浏览器的网址栏，不容易分心。', '图标就是「书山小路」，和别的 App 放在一起，孩子自己能找到。', '打开更快；星星、错题和记录都留在这台手机里，不会丢。', '有新版本时会自动弹出「立即更新」，点一下就好。')),
+    sec('第一步：用对浏览器', h('div', {}, h('p', {}, '不需要谷歌浏览器，也不需要下载任何东西。用手机自带的浏览器就行：'),
+      h('p', { class: 'note' }, '苹果手机：用「Safari」（蓝色指南针图标）。'),
+      h('p', { class: 'note' }, '安卓手机：用手机自带的浏览器（华为/荣耀「浏览器」、小米「浏览器」、OPPO/vivo「浏览器」等），或者夸克、UC、QQ 浏览器都可以。'),
+      h('p', { class: 'note' }, '注意：不要在微信里直接装。在微信里点开链接后，点右上角「…」，选「在浏览器打开」（苹果选「在 Safari 中打开」），再往下做。'))),
+    sec('苹果手机（iPhone）', ol('用 Safari 打开这个网址，进到登录页。', '点屏幕最下面中间的「分享」按钮（一个方框加向上的箭头）。', '往下滑，找到「添加到主屏幕」，点它。', '右上角点「添加」。桌面上就出现「书山小路」图标了。', '以后点这个图标打开，不要再用 Safari 打开网址。')),
+    sec('安卓手机', h('div', {}, ol('用手机自带的浏览器打开这个网址，进到登录页。', '点浏览器的菜单（一般在右下角或右上角，是「☰」或「⋮」）。', '找「添加到桌面」（有的叫「添加到主屏幕」「添加快捷方式」「添加书签到桌面」，在「工具箱」或「更多」里）。', '确认名字是「书山小路」，点「添加」；如果弹出「允许创建快捷方式」，选「允许」。', '回到手机桌面，找到图标就行。'),
+      h('p', { class: 'note' }, '不同品牌的菜单名字有一点差别，看到「桌面」两个字的选项就是它。找不到就在菜单里往下翻，或者问问身边用同款手机的人。'))),
+    sec('电脑或平板', h('div', {}, h('p', { class: 'note' }, 'Windows 电脑：用自带的「Edge」浏览器打开，点右上角「…」→「应用」→「将此站点作为应用安装」。'),
+      h('p', { class: 'note' }, '苹果电脑（Mac）：用 Safari 打开，点菜单栏「文件」→「添加到程序坞」。'),
+      h('p', { class: 'note' }, 'iPad：和 iPhone 一样，用 Safari 的「分享」→「添加到主屏幕」。'))),
+    sec('装好以后', ol('第一次装完，先用图标打开，登录输入名字，让它把内容加载好。', '之后没有网络也能做大部分题，听力和语音用手机自带的声音。', '如果换了新手机，或者图标不见了，重新照上面做一遍就行；换手机后星星会从零开始（记录只保存在每台手机里）。')),
+    h('a', { class: 'btn primary wide', href: user() ? '#/' : '#/login' }, u ? '回首页' : '回登录页'),
+  ], { back: u ? '#/' : '#/login' }));
 }
 
 // ---------------- 首页 ----------------
+// 美文：这个孩子的语文科目里所有 kind=essay 的题集，每 3 天轮换一篇
+export const essayList = (u) => (u.subjects || []).flatMap(id => { const s = subj(id); return s ? s.sets.filter(x => x.kind === 'essay') : []; });
+export const essayNow = (u) => S.essayWindow(essayList(u));
 function taskCard(u) {
   const tasks = u.tasks || []; if (!tasks.length) return null;
-  const done = tasks.map(t => S.taskDone(u.id, t)), all = tasks.every((t, i) => done[i] >= t.goal);
+  const ew = essayNow(u), shown = tasks.filter(t => t.kind !== 'essay' || ew);
+  const done = shown.map(t => S.taskDone(u.id, t, { window: ew })), all = shown.every((t, i) => done[i] >= t.goal);
   return h('section', { class: 'tasks' }, h('h2', { class: 'sh' }, all ? '🎉 今天的任务都完成啦' : '今天的任务'),
-    tasks.map((t, i) => h('div', { class: 'task' + (done[i] >= t.goal ? ' done' : '') }, h('span', { class: 'tk' }, done[i] >= t.goal ? '✅' : '⬜'), h('span', { class: 'tl' }, t.label), h('span', { class: 'tn' }, `${Math.min(done[i], t.goal)}/${t.goal}`))));
+    shown.map((t, i) => {
+      const ok = done[i] >= t.goal, label = t.kind === 'essay' ? `听美文《${ew.item.title.replace(/^《|》$/g, '')}》（${ew.end.slice(5)} 前）` : t.label;
+      const row = h(t.kind === 'essay' ? 'a' : 'div', { class: 'task' + (ok ? ' done' : ''), href: t.kind === 'essay' ? '#/set/' + ew.item.id : undefined }, h('span', { class: 'tk' }, ok ? '✅' : '⬜'), h('span', { class: 'tl' }, label), h('span', { class: 'tn' }, `${Math.min(done[i], t.goal)}/${t.goal}`));
+      return row;
+    }));
 }
 const coinsGot = (rewards, pos) => rewards.filter(r => pos >= r.stars).reduce((a, r) => a + (r.coins || 0), 0);
 export function home() {
@@ -100,17 +132,17 @@ export function home() {
     cy.laps ? h('p', { class: 'jar-t' }, `已完成 ${cy.laps} 轮（每轮 ${rewards.reduce((a, r) => a + (r.coins || 0), 0)} 个金币）`) : null,
     st.today >= cap() ? h('p', { class: 'jar-t' }, '今天的星星拿满啦，明天再来～') : null);
   const subjectCards = u.subjects.map(id => {
-    const s = subj(id); if (!s) return null;
+    const s = subj(id); if (!s || !s.sets.length) return null;
     const speak = s.sets[0].kind === 'speaking';
     const em = speak ? `已打卡 ${Object.keys(p.speak).filter(k => s.sets.some(x => k.startsWith(x.id + '-'))).length}/${s.sets.reduce((a, x) => a + (x.count || 5), 0)} 天` : `${s.sets.filter(x => p.sets[x.id]).length}/${s.sets.length} 已完成`;
     const card = h('a', { class: 'card', href: '#/s/' + id }, h('span', { class: 'ic' }, s.icon), h('b', {}, s.title), h('small', {}, s.desc), h('em', {}, em));
-    card._area = /math/.test(id) ? 'math' : 'eng'; return card;
+    card._area = /math/.test(id) ? 'math' : /chinese/.test(id) ? 'cn' : 'eng'; return card;
   }).filter(Boolean);
   const randCards = (u.random || []).map(k => {
     const R = RANDOM[k]; const card = h('a', { class: 'card alt', href: '#/rand/' + k }, h('span', { class: 'ic' }, R.icon), h('b', {}, R.title), h('small', {}, '随机出题，不重样'), h('em', {}, `今天 ${S.starsToday(u.id)}/${cap()} 颗`));
     card._area = /^(math|chap)/.test(k) ? 'math' : 'eng'; return card;
   });
-  const areas = [['math', '📐 数学'], ['eng', '🔤 英语']].map(([a, t0]) => {
+  const areas = [['math', '📐 数学'], ['cn', '📖 语文'], ['eng', '🔤 英语']].map(([a, t0]) => {
     const pub = (u.publishers || {})[a], t = pub ? `${t0}（${pub}）` : t0;
     const cs = [...subjectCards, ...randCards].filter(c => c._area === a); if (!cs.length) return null;
     return [h('h2', { class: 'sh' }, t), h('div', { class: 'grid' }, cs)];
@@ -119,11 +151,13 @@ export function home() {
   mount(h('div', { class: 'page home' },
     h('header', { class: 'hello' }, h('div', {}, h('small', {}, '你好，'), h('h1', {}, u.display + ' 👋', u.grade ? h('span', { class: 'grade' }, u.grade) : null)), h('div', { class: 'hbtns' }, h('button', { class: 'link', onclick: () => { const f = ((p.font || 0) + 1) % 3; p.font = f; S.save(u.id); setTheme(u); toast(['字号：标准', '字号：大', '字号：特大'][f]); } }, 'Aa'), h('button', { class: 'link', onclick: () => { if (confirm('切换同学？')) { S.setUser(null); nav('#/login'); } } }, '切换'))),
     jar, taskCard(u),
+    u.soon && !u.subjects.length ? h('section', { class: 'soonbox' }, h('div', { class: 'logo' }, '🌱'), h('h2', {}, `${u.grade}的练习正在准备中`), h('p', { class: 'note' }, '课本内容马上就来，先把这个小窝准备好啦。')) : null,
     areas,
     h('h2', { class: 'sh' }, '我的'),
     h('div', { class: 'grid' },
       h('a', { class: 'card plain', href: '#/errors' }, h('span', { class: 'ic' }, '📒'), h('b', {}, '错题本'), h('small', {}, wrongN ? '做错的题在这里再练' : '现在是空的，真棒'), wrongN ? h('em', { class: 'badge' }, wrongN + ' 道') : null),
-      h('a', { class: 'card plain', href: '#/me' }, h('span', { class: 'ic' }, '📊'), h('b', {}, '我的记录'), h('small', {}, '星星、进度、发给家长')))));
+      h('a', { class: 'card plain', href: '#/me' }, h('span', { class: 'ic' }, '📊'), h('b', {}, '我的记录'), h('small', {}, '星星、进度、发给家长'))),
+    standalone() ? null : h('a', { class: 'link instl', href: '#/install' }, '📲 装到手机桌面，打开更方便')));
 }
 
 // ---------------- 科目页 ----------------
@@ -205,7 +239,29 @@ export async function hear(id) {
 // ---------------- 题库套题 ----------------
 export async function setView(id) {
   const set = await loadSet(id);
+  if (set.kind === 'essay') return startEssay(set);
   startBank(set);
+}
+// ---------------- 美文听读：先听，再看好词好句，最后做小题 ----------------
+function startEssay(set) {
+  const u = user(), sm = setMeta(set.id), P = set.paras || [];
+  const state = h('p', { class: 'note' }, '准备好了就点「开始听」。听的时候先不看原文，闭上眼睛想象画面。');
+  const textBox = h('section', { class: 'passage essaytext', hidden: true }, P.map(t => h('p', {}, t)));
+  const playBtn = h('button', { class: 'btn primary wide', onclick: () => {
+    playBtn.textContent = '正在朗读…（点这里重听）'; state.textContent = '听一听，哪些词语、句子让你觉得很美？';
+    playScript(P.map(t => ({ t, s: '' })), {}, { lang: 'zh-CN', times: 1, rate: 0.82, pause: 900, onend: () => { playBtn.textContent = '🔁 再听一遍'; state.textContent = '听完啦！可以看原文，再学一学好词好句，然后做小题。'; textBtn.disabled = false; } });
+  } }, '▶ 开始听');
+  const textBtn = h('button', { class: 'btn ghost wide', style: 'margin-top:10px', onclick: () => { textBox.hidden = !textBox.hidden; textBtn.textContent = textBox.hidden ? '📖 看原文' : '收起原文'; } }, '📖 看原文');
+  const words = h('section', {}, h('h2', { class: 'sh' }, '好词'), h('div', { class: 'chips' }, (set.words || []).map(w => h('span', { class: 'chip' }, w))),
+    h('h2', { class: 'sh' }, '好句'), h('div', { class: 'list' }, (set.sents || []).map(x => h('div', { class: 'row static' }, h('div', {}, h('b', {}, x[0]), x[1] ? h('small', {}, x[1]) : null),
+      h('button', { type: 'button', class: 'spk', onclick: () => playScript([{ t: x[0], s: '' }], {}, { lang: 'zh-CN', times: 1, rate: 0.8 }) }, '🔊')))));
+  const go = h('button', { class: 'btn primary wide', style: 'margin-top:14px', onclick: () => {
+    stopScript();
+    mount(runQuiz({ uid: u.id, mk: 'cnread', mode: 'exam', title: set.title, subtitle: '美文小题', ctxFn: (done) => h('details', { class: 'ctx', open: !done }, h('summary', {}, '📖 原文'), h('section', { class: 'passage' }, P.map(t => h('p', {}, t)))),
+      sections: set.sections, recId: set.id, back: '#/set/' + set.id,
+      metaFor: () => ({ setId: set.id, title: set.title, src: 'bank', sub: sm.subject.id, kind: 'essay' }), again: () => startEssay(set) }));
+  } }, '做小题（算今天的美文任务）');
+  mount(page(set.title, [h('p', { class: 'subtitle' }, set.subtitle || ''), state, playBtn, textBtn, textBox, words, go], { back: '#/s/' + sm.subject.id }));
 }
 // 新题集（带单元）：每次做选择题时打乱选项顺序，重做时不会一模一样
 function shuffled(set) {
@@ -221,9 +277,9 @@ function shuffled(set) {
 }
 function startBank(set0) {
   const set = shuffled(set0), u = user(), sm = setMeta(set.id);
-  const ctxFn = (done) => set.kind === 'listening' ? listenNode(set, done) : set.kind === 'reading' ? (done ? h('details', { class: 'ctx' }, h('summary', {}, '📖 原文'), passageNode(set)) : passageNode(set)) : set.tip ? h('div', { class: 'tip' }, '💡 ' + set.tip) : null;
+  const ctxFn = (done) => set.kind === 'listening' ? listenNode(set, done) : (set.kind === 'reading' || (set.kind === 'cn' && set.passage)) ? (done ? h('details', { class: 'ctx' }, h('summary', {}, '📖 原文'), passageNode(set)) : passageNode(set)) : set.tip ? h('div', { class: 'tip' }, '💡 ' + set.tip) : null;
   mount(runQuiz({
-    uid: u.id, mk: set.kind === 'reading' ? 'reading#' + (String(set.id).split('-').pop()) : set.kind === 'listening' ? 'listening' : 'mathbank', title: set.title, subtitle: set.subtitle, ctxFn, sections: set.sections, recId: set.id,
+    uid: u.id, mk: set.mk ? set.mk : set.kind === 'reading' ? 'reading#' + (String(set.id).split('-').pop()) : set.kind === 'listening' ? 'listening' : 'mathbank', title: set.title, subtitle: set.subtitle, ctxFn, sections: set.sections, recId: set.id,
     back: '#/s/' + sm.subject.id, printHref: '#/print/' + set.id,
     metaFor: () => ({ setId: set.id, title: set.title, src: 'bank', sub: sm.subject.id, kind: set.kind }),
     again: () => startBank(set0),
@@ -297,7 +353,7 @@ function renderQ(q, no, ans, update) {
           inp.addEventListener('input', () => { draw(); read(); }); inp.addEventListener('kbfocus', draw);
           draw(); inputs.push(inp); line.append(tiles, inp); return;
         }
-        else { const len = Math.max(...q.answers[i].map(s => s.length)); el = h('input', { class: 'blank', type: 'text', autocapitalize: 'off', autocomplete: 'off', autocorrect: 'off', spellcheck: 'false', style: `width:${Math.max(6, len + 3)}ch`, oninput: read }); }
+        else { const len = Math.max(...q.answers[i].map(s => [...s].reduce((a, c) => a + (c.charCodeAt(0) > 255 ? 2 : 1), 0))); el = h('input', { class: 'blank', type: 'text', autocapitalize: 'off', autocomplete: 'off', autocorrect: 'off', spellcheck: 'false', style: `width:${Math.max(6, len + 3)}ch`, oninput: read }); }
         inputs.push(el); line.append(el);
       }
     });
@@ -396,7 +452,7 @@ function runQuiz(o) {
       if (r.g.ok) { okN++; pts += r.q.pts || 1; if (r.star === 'new') newStars++; if (r.star === 'capped') capped++; }
     });
     const m0 = qs.length ? o.metaFor(qs[0]) : {};
-    S.recordAttempt(o.uid, o.recId || null, { title: o.recTitle || o.title, ok: okN, total: qs.length, pts, ptsAll, stars: newStars, src: m0.src, sub: m0.sub });
+    S.recordAttempt(o.uid, o.recId || null, { title: o.recTitle || o.title, ok: okN, total: qs.length, pts, ptsAll, stars: newStars, src: m0.src, sub: m0.sub, kind: m0.kind });
     keypad.close();
     mount(resultsNode(o, results, { newStars, capped, okN, pts, ptsAll }));
   }
@@ -507,11 +563,12 @@ function summaryText(u) {
   const names = {}; Object.values(RANDOM).forEach(R => R.types.forEach(x => { names[x.id] = x.name; }));
   const weakT = Object.entries(p.rand.types).filter(([, s]) => s.n >= 3 && s.w / s.n >= 0.4).sort((a, b) => b[1].w / b[1].n - a[1].w / a[1].n).slice(0, 3).map(([id]) => names[id] || id);
   const weakW = Object.values(p.wrong).filter(x => x.q && x.q.rv && x.q.rv.say).sort((a, b) => b.n - a.n).map(x => x.q.rv.say).filter((w, i, a) => a.indexOf(w) === i).slice(0, 8);
-  const tasks = u.tasks || [], tdone = tasks.filter(x => S.taskDone(u.id, x) >= x.goal).length;
+  const ew = essayNow(u), tasks = (u.tasks || []).filter(x => x.kind !== 'essay' || ew), tdone = tasks.filter(x => S.taskDone(u.id, x, { window: ew }) >= x.goal).length;
   const lines = [`【${u.display}的练习小结】${t}`,
     `今天：做了 ${todays.length} 组，新得 ⭐${st.today} 颗` + (tasks.length ? `，任务 ${tdone}/${tasks.length}` : ''),
     S.streak(u.id) ? `🔥 连续练习 ${S.streak(u.id)} 天` : null,
     ...todays.slice(-6).map(x => `  · ${x.title}：${x.ok}/${x.total}`),
+    `今天分项：${catLine(u, [t])}`,
     `累计：⭐${st.total} 颗（题库 ${st.bank} · 随机 ${st.rand}）`,
     `错题本：还有 ${st.wrong} 道没掌握`];
   if (weakT.length) lines.push(`最近容易错：${weakT.join('、')}`);
@@ -520,6 +577,8 @@ function summaryText(u) {
   if (coinsGot(rewards, cy.pos)) lines.push(`这一轮已达成金币：${coinsGot(rewards, cy.pos)} 个（找家长领取）` + (cy.laps ? `；已完成 ${cy.laps} 轮` : ''));
   return lines.filter(Boolean).join('\n');
 }
+const CATN = [['reading', '阅读理解', '📖'], ['listening', '听力', '🎧'], ['speaking', '口语', '🗣'], ['essay', '美文', '🌸']];
+const catLine = (u, days) => CATN.map(([k, n]) => { const c = days.reduce((a, d) => a + S.dayCats(u.id, d)[k], 0); return `${n}${c ? ' ' + c + (k === 'speaking' ? ' 次' : ' 套') : ' 0'}`; }).join('，');
 // 家长周报：最近 7 天（含今天）
 function weeklyText(u) {
   const p = S.P(u.id), st = S.stats(u.id), pad = (n) => String(n).padStart(2, '0');
@@ -535,6 +594,7 @@ function weeklyText(u) {
   const cy = cycle(st.total), rewards = (X.cfg.rewards || []).slice().sort((a, b) => a.stars - b.stars), next = rewards.find(r => r.stars > cy.pos);
   const lines = [`【${u.display}的本周小结】${ds[0].slice(5)} ～ ${ds[6].slice(5)}`,
     `练习了 ${active.size} / 7 天，共做 ${logs.length} 组` + (totN ? `，答对率 ${Math.round(okN / totN * 100)}%` : ''),
+    `本周分项：${catLine(u, ds)}`,
     `这周新得 ⭐${stars} 颗；进度条 ${cy.pos} / ${goal()}` + (next ? `，离下一个奖励（${next.label}）还差 ${next.stars - cy.pos} 颗` : ''),
     weakU.length ? `本周错得多的内容：${weakU.join('、')}` : '本周没有新增错题，很棒！',
     weakT.length ? `容易错的题型：${weakT.join('、')}` : '',
@@ -547,17 +607,18 @@ function calendarNode(u) {
   p.log.forEach(x => { days[x.d] = days[x.d] || 0; });
   Object.values(p.stars).forEach(x => { days[x.d] = (days[x.d] || 0) + 1; });
   let ym = new Date(); ym.setDate(1);
-  const box = h('section', { class: 'cal' });
+  const box = h('section', { class: 'cal' }), legend = h('p', { class: 'note calnote' }, '📖 阅读理解　🎧 听力　🗣 口语　🌸 美文');
   const draw = () => {
     const y = ym.getFullYear(), m = ym.getMonth(), first = new Date(y, m, 1).getDay(), n = new Date(y, m + 1, 0).getDate(), t = S.today();
     const cells = []; for (let i = 0; i < first; i++) cells.push(h('i', { class: 'blank' }));
     let cnt = 0;
     for (let d = 1; d <= n; d++) {
       const key = `${y}-${pad(m + 1)}-${pad(d)}`, on = key in days; if (on) cnt++;
-      cells.push(h('i', { class: 'd' + (on ? ' on' : '') + (key === t ? ' today' : '') }, String(d), on && days[key] ? h('small', {}, '⭐' + days[key]) : null));
+      const dc = S.dayCats(u.id, key), ic = CATN.filter(([k]) => dc[k]).map(([, , e]) => e).join('');
+      cells.push(h('i', { class: 'd' + (on ? ' on' : '') + (key === t ? ' today' : '') }, String(d), ic ? h('small', { class: 'ics' }, ic) : (on && days[key] ? h('small', {}, '⭐' + days[key]) : null)));
     }
     box.replaceChildren(h('div', { class: 'cal-h' }, h('button', { type: 'button', class: 'btn ghost small', onclick: () => { ym = new Date(y, m - 1, 1); draw(); } }, '‹'), h('b', {}, `${y} 年 ${m + 1} 月 · 练习 ${cnt} 天`), h('button', { type: 'button', class: 'btn ghost small', onclick: () => { ym = new Date(y, m + 1, 1); draw(); } }, '›')),
-      h('div', { class: 'cal-w' }, ['日', '一', '二', '三', '四', '五', '六'].map(x => h('span', {}, x))), h('div', { class: 'cal-g' }, cells));
+      h('div', { class: 'cal-w' }, ['日', '一', '二', '三', '四', '五', '六'].map(x => h('span', {}, x))), h('div', { class: 'cal-g' }, cells), legend);
   };
   draw(); return box;
 }
