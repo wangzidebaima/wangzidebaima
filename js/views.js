@@ -220,7 +220,20 @@ export function nextTask(u) {
   return null;
 }
 import { dueCount } from './learn.js';
-function reviewLine(u) { let n = 0; try { n = dueCount(u.id); } catch (e) { n = 0; } return n ? h('a', { class: 'btn ghost wide', style: 'margin-top:10px', href: '#/learn/review' }, `🔁 今天有 ${n} 个单词该复习啦`) : null; }
+// 今日复习卡片：把「该复习的单词」和「错后 3 天还没做对的错题」聚合在首页，
+// 有到期内容才显示，不打扰没有欠账的日子
+function reviewCard(u) {
+  let words = 0; try { words = dueCount(u.id); } catch (e) { words = 0; }
+  const p = S.P(u.id);
+  const dt = new Date(); dt.setDate(dt.getDate() - 3);
+  const lim = `${dt.getFullYear()}-${String(dt.getMonth() + 1).padStart(2, '0')}-${String(dt.getDate()).padStart(2, '0')}`;
+  const stale = Object.values(p.wrong || {}).filter(e => (e.d || '0000') <= lim).length;
+  const rows = [];
+  if (words) rows.push(h('a', { class: 'row', href: '#/learn/review' }, h('div', {}, h('b', {}, `🔁 单词复习 ${words} 个`), h('small', {}, '到了该再见一面的日子，记更牢')), h('span', { class: 'chip' }, '开始')));
+  if (stale) rows.push(h('a', { class: 'row', href: '#/errors' }, h('div', {}, h('b', {}, `📕 错题复习 ${stale} 道`), h('small', {}, '做错超过 3 天还没做对，最容易忘')), h('span', { class: 'chip' }, '开始')));
+  if (!rows.length) return null;
+  return h('section', { class: 'tasks' }, h('h2', { class: 'sh' }, '今日复习'), h('div', { class: 'list' }, rows));
+}
 function taskCard(u) {
   const tasks = u.tasks || []; if (!tasks.length) return null;
   const ew = essayNow(u), shown = tasks.filter(t => t.kind !== 'essay' || ew);
@@ -272,7 +285,7 @@ export function home() {
   const wrongN = st.wrong;
   mount(h('div', { class: 'page home' },
     h('header', { class: 'hello' }, h('div', {}, h('small', {}, '你好，'), h('h1', {}, u.display + ' 👋', u.grade ? h('span', { class: 'grade' }, u.grade) : null)), h('div', { class: 'hbtns' }, h('button', { class: 'link', onclick: () => { const f = ((p.font || 0) + 1) % 3; p.font = f; S.save(u.id); setTheme(u); toast(['字号：标准', '字号：大', '字号：特大'][f]); } }, 'Aa'), h('button', { class: 'link', onclick: () => { if (confirm('切换同学？')) { S.setUser(null); nav('#/login'); } } }, '切换'))),
-    healthBanner(), jar, taskCard(u), reviewLine(u),
+    healthBanner(), jar, taskCard(u), reviewCard(u),
     u.soon && !u.subjects.length ? h('section', { class: 'soonbox' }, h('div', { class: 'logo' }, '🌱'), h('h2', {}, `${u.grade}的练习正在准备中`), h('p', { class: 'note' }, '课本内容马上就来，先把这个小窝准备好啦。')) : null,
     u.tasks && u.tasks.length ? h('p', { class: 'more' }, '想多练一点？从下面自己选：') : null,
     areas,
