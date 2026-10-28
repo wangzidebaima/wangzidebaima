@@ -55,6 +55,7 @@ const normProfile = (p) => {
   p.days = p.days || {}; p.year = p.year || {};
   p.coins = p.coins || [];
   p.ach = p.ach || {};
+  p.vip = p.vip || null; // VIP 占位：只存字段，不做任何拦截；将来收费时再接
   if (p.stars && typeof p.stars === 'object') {
     for (const k in p.stars) {
       const s = p.stars[k] || {}, d = s.d;
@@ -167,6 +168,11 @@ export function payCoins(uid, lap, goal, n) {
   (p.coins = p.coins || []).push({ d: today(), lap, goal, n });
   save(uid);
 }
+
+// ---------- VIP 占位（现在没有任何功能读它做拦截，纯为将来收费铺路） ----------
+// vip: { exp: '2027-06-30', code: '兑换码', at: '激活日' }
+export const isVip = (uid) => { const v = P(uid).vip; return !!(v && v.exp && String(v.exp) >= today()); };
+export function setVip(uid, exp, code) { const p = P(uid); p.vip = { exp, code: code || '', at: today() }; save(uid); }
 
 // 英语小测：每个孩子选过的「学过的单元」，按课本分开记
 export function getUnits(uid, book, dflt) { const e = P(uid).eng; return (e && e[book]) || dflt || []; }

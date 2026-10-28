@@ -117,6 +117,9 @@ export function parentHome() {
         if (!confirm(`确认已经把这一轮的 ${got} 个金币给 ${u.display} 了吗？\n记下后，孩子首页会显示「家长已经发放啦」。`)) return;
         S.payCoins(u.id, cyk.laps, goal(), got); toast('记好啦'); parentHome();
       } }, `记一笔：发 ${got} 个`) : null);
+    // 会员占位：只显示状态，现在没有任何功能用它做拦截
+    const vipRow = h('div', { class: 'row static' }, h('div', {}, h('b', {}, '👑 会员'),
+      h('small', {}, S.isVip(u.id) ? `已开通，到期：${S.P(u.id).vip.exp}` : '未开通（功能准备中）')));
     return h('div', { class: 'list' },
       file,
       h('div', { class: 'row static' }, h('div', {}, h('b', {}, u.display), h('small', {}, `${u.grade} · ⭐${st.total} 颗 · 错题 ${st.wrong} 道`)),
@@ -134,6 +137,7 @@ export function parentHome() {
         h('button', { type: 'button', class: 'btn small ghost', onclick: () => file.click() }, '导入记录')),
       bak,
       coinRow,
+      vipRow,
       h('p', { class: 'note' }, '换手机或清过浏览器数据后：在新手机上先登录孩子，再到这里点「导入记录」选文件即可恢复。'));
   });
   mount(h('div', { class: 'login' }, h('div', { class: 'logo' }, '🔒'), h('h1', {}, X.cfg.parent.name), h('p', { class: 'sub' }, '备份孩子的学习记录（星星、错题都保存在这台手机的浏览器里，换手机前先导出）'),
