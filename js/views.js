@@ -126,28 +126,35 @@ export function parentHome() {
   });
   mount(h('div', { class: 'login' }, h('div', { class: 'logo' }, '🔒'), h('h1', {}, X.cfg.parent.name), h('p', { class: 'sub' }, '备份孩子的学习记录（星星、错题都保存在这台手机的浏览器里，换手机前先导出）'),
     ...rows,
-    h('button', { class: 'btn ghost wide', style: 'margin-top:14px', onclick: () => { try { sessionStorage.removeItem('kp_parent'); } catch (e) { window.__kpParent = false; } nav('#/login'); } }, '退出')));
+    h('button', { class: 'btn ghost wide', style: 'margin-top:14px', onclick: () => { noticeReset(); toast('好啦，下次打开会重新显示使用须知'); } }, '重新显示使用须知'),
+    h('button', { class: 'btn ghost wide', style: 'margin-top:10px', onclick: () => { try { sessionStorage.removeItem('kp_parent'); } catch (e) { window.__kpParent = false; } nav('#/login'); } }, '退出')));
   bsz();
 }
-// ---------------- 公告确认：进 App 前必须确认 N 次（默认 3），防止提示被随手划过 ----------------
-export function noticeOk() { try { return sessionStorage.getItem('kp_notice') === '1'; } catch (e) { return !!window.__kpNotice; } }
+// ---------------- 使用须知：一台设备只弹一次，点过就永久记住 ----------------
+// 存在 localStorage 里，并带上须知版本号（config.json 的 notice.ver）。
+// 以后想让所有手机重新看一遍，只要把 ver 改成 2 就行，不用改代码。
+const NOTICE_KEY = 'kp_notice_v';
+const noticeVer = () => String(((X.cfg || {}).notice || {}).ver || 1);
+export function noticeOk() {
+  try { return localStorage.getItem(NOTICE_KEY) === noticeVer(); } catch (e) { return !!window.__kpNotice; }
+}
+// 家长页的「重新显示」按钮用：清掉记录，下次打开会再弹一次
+export function noticeReset() {
+  try { localStorage.removeItem(NOTICE_KEY); } catch (e) { window.__kpNotice = false; }
+}
 export function noticeGate(done) {
-  const N = X.cfg.notice || {}, times = Math.max(1, N.times || 3), items = N.items || [];
-  let n = 0;
+  const N = (X.cfg || {}).notice || {}, items = N.items || [];
+  let closed = false;
+  const close = () => {
+    if (closed) return; closed = true;
+    try { localStorage.setItem(NOTICE_KEY, noticeVer()); } catch (e) { window.__kpNotice = true; }
+    done();
+  };
   const box = h('div', { class: 'updbox' },
-    h('div', { class: 'updt' }, '📢 ' + (N.title || '公告')),
-    h('div', { class: 'updp' }, items.map(t => h('p', {}, t))),
-    h('div', { class: 'bigcnt' }, `0 / ${times}`),
-    h('button', { class: 'btn primary', onclick: () => {
-      n++;
-      if (n >= times) {
-        try { sessionStorage.setItem('kp_notice', '1'); } catch (e) { window.__kpNotice = true; }
-        done(); return;
-      }
-      box.querySelector('.bigcnt').textContent = `${n} / ${times}`;
-      go.textContent = n === times - 1 ? '最后再确认一次' : '再确认一次';
-    } }, '我看到了'));
-  const go = box.querySelector('.btn');
+    h('div', { class: 'updt' }, '📢 ' + (N.title || '使用须知')),
+    h('div', { class: 'updp' }, items.map((t, i) => h('p', { class: 'nw' }, h('b', {}, (i + 1) + '. '), t))),
+    h('button', { class: 'btn primary', onclick: close }, '知道了，开始吧'),
+    h('p', { class: 'updp small' }, '这条提示以后不会再弹了。想再看一遍，让家长在「家长入口」点「重新显示使用须知」。'));
   mount(h('div', { id: 'ntcm' }, box));
 }
 export function login() {
