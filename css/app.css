@@ -224,6 +224,7 @@ html[data-fs="1"] body { zoom: 1.12; } html[data-fs="2"] body { zoom: 1.25; }
 #ntcm .updp p{margin:7px 0}
 #ntcm .btn{display:block;width:100%;margin:8px 0 0}
 #ntcm .bigcnt{font-size:32px;font-weight:700;color:var(--accent);margin:2px 0 6px}
+#bsz{position:fixed;left:0;right:0;bottom:6px;text-align:center;font-size:12px;color:var(--muted);pointer-events:none;z-index:5;opacity:.85}
 .key.wide4 { grid-column: span 4; min-height: 44px; font-size: 18px; }
 .modebar { margin: 4px 0 10px; }
 .q .livebtn { margin-top: 10px; }

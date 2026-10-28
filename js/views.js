@@ -9,7 +9,9 @@ const app = () => document.getElementById('app');
 export const nav = (hash) => { if (location.hash === hash) window.dispatchEvent(new Event('hashchange')); else location.hash = hash; };
 export const user = () => X.cfg.users.find(u => u.id === S.getUser()) || null;
 export function setTheme(u) { document.documentElement.dataset.theme = u ? u.theme : ''; document.documentElement.dataset.fs = u ? String(S.P(u.id).font || 0) : '0'; }
-export function mount(node) { app().replaceChildren(node); window.scrollTo(0, 0); keypad.close(); }
+export function mount(node) { app().replaceChildren(node); window.scrollTo(0, 0); keypad.close(); const b = document.getElementById('bsz'); if (b) b.hidden = true; }
+// 访问统计角标：只在登录页和家长页显示（统计脚本挂了会由 app.js 兜底隐藏）
+export const bsz = () => { const b = document.getElementById('bsz'); if (b) b.hidden = false; };
 export const cap = () => X.cfg.dailyStarCap || 30;
 export const goal = () => X.cfg.starGoal || 400;
 // 进度条每满一轮（默认 400 颗）就重置：pos = 本轮已得的星星，laps = 已经完成的轮数
@@ -112,6 +114,7 @@ export function parentHome() {
   mount(h('div', { class: 'login' }, h('div', { class: 'logo' }, '🔒'), h('h1', {}, X.cfg.parent.name), h('p', { class: 'sub' }, '备份孩子的学习记录（星星、错题都保存在这台手机的浏览器里，换手机前先导出）'),
     ...rows,
     h('button', { class: 'btn ghost wide', style: 'margin-top:14px', onclick: () => { try { sessionStorage.removeItem('kp_parent'); } catch (e) { window.__kpParent = false; } nav('#/login'); } }, '退出')));
+  bsz();
 }
 // ---------------- 公告确认：进 App 前必须确认 N 次（默认 3），防止提示被随手划过 ----------------
 export function noticeOk() { try { return sessionStorage.getItem('kp_notice') === '1'; } catch (e) { return !!window.__kpNotice; } }
@@ -152,6 +155,7 @@ export function login() {
     h('p', { class: 'sub' }, '输入你的年级（比如：七年级），开始今天的练习'), inp,
     h('button', { class: 'btn primary wide', onclick: enter }, '开始'), msg,
     h('a', { class: 'link instl', href: '#/install' }, '📲 怎么把它装到手机桌面？')));
+  bsz();
 }
 
 // ---------------- 装到桌面教程（不用登录） ----------------

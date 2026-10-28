@@ -122,6 +122,8 @@ async function boot() {
     if (a && a.getAttribute('href') === location.hash) { e.preventDefault(); render(); }
   });
   render();
+  // 访问统计（不蒜子）：8 秒后还没加载出数字，说明服务不可用，就把角标整个撤掉，不留占位
+  setTimeout(() => { const b = document.getElementById('bsz'); if (b && document.getElementById('busuanzi_value_site_pv').textContent === '…') b.remove(); }, 8000);
   selfCheck();
   if ('serviceWorker' in navigator) {
     const had = !!navigator.serviceWorker.controller;
