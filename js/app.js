@@ -1,5 +1,6 @@
 import * as V from './views.js';
 import * as S from './store.js';
+
 import * as E from './english.js';
 import * as CN from './cndict.js';
 import * as LN from './learn.js';
@@ -28,14 +29,18 @@ function showUpdate() {
   };
 }
 
-// ---------- 学习休息提醒：累计用满 N 分钟，弹出休息页，倒计时结束才能继续 ----------
-const BRK = { active: 0, last: Date.now(), shown: false, snoozed: false };
+// ---------- 学习休息提醒：学满 N 分钟弹休息页，倒计时结束才能继续 ----------
+// 计时按“真实经过的时间”算：孩子看题、听听力的时候手是不动屏幕的，
+// 以前要求每秒都有操作才累加，结果学满 15 分钟也弹不出来（孩子反馈过）。
+const BRK = { active: 0, last: Date.now(), shown: false, snoozed: false, limit: 15 * 60, sec: 0 };
+const IDLE_STOP = 3 * 60 * 1000;    // 连续 3 分钟没碰屏幕：多半去干别的了，先停表
+const IDLE_RESET = 8 * 60 * 1000;   // 连续 8 分钟没碰：相当于已经歇过了，重新计时
 ['pointerdown', 'keydown', 'touchstart', 'scroll'].forEach(ev => window.addEventListener(ev, () => { BRK.last = Date.now(); }, { passive: true, capture: true }));
-function showBreak(restMin) {
+function showBreak(restMin, learnMin) {
   if (document.getElementById('brkm')) return;
   BRK.shown = true; try { window.speechSynthesis && window.speechSynthesis.cancel(); } catch (e) { /* ignore */ }
   const m = document.createElement('div'); m.id = 'brkm';
-  m.innerHTML = '<div class="updbox"><div class="updt">🌿 休息一下吧</div><div class="updp">已经学习一会儿啦！现在请：站起来走一走，看看窗外远处，喝几口水。<br>倒计时结束后，点「休息好了，继续」就能接着学。</div><div class="brkt" id="brkt"></div>' +
+  m.innerHTML = '<div class="updbox"><div class="updt">🌿 休息一下吧</div><div class="updp">已经学了 ' + learnMin + ' 分钟啦！现在请：站起来走一走，看看窗外远处，喝几口水。<br>倒计时结束前不能继续，先歇一会儿。</div><div class="brkt" id="brkt"></div>' +
     '<button class="btn primary" id="brkgo" disabled>休息好了，继续</button><button class="btn ghost" id="brkmore">还差一点没做完，再给我 2 分钟</button></div>';
   document.body.append(m);
   let left = restMin * 60; const t = m.querySelector('#brkt'), go = m.querySelector('#brkgo'), more = m.querySelector('#brkmore');
@@ -48,10 +53,14 @@ function showBreak(restMin) {
 setInterval(() => {
   const r = location.hash.replace(/^#\/?/, '').split('/')[0];
   if (BRK.shown || document.visibilityState !== 'visible' || !V.user() || ['login', 'parent', 'zone', 'hear', 'install'].includes(r)) return;
-  if (Date.now() - BRK.last > 90000) return;       // 90 秒没有操作，不算在学习
-  BRK.active++;
+  const idle = Date.now() - BRK.last;
+  if (idle > IDLE_RESET) { BRK.active = 0; return; }   // 离开这么久，算休息过了
+  if (idle > IDLE_STOP) return;                        // 暂时停表，不加也不清
   const cfg = (V.X && V.X.cfg) || {}; BRK.limit = (cfg.breakMinutes || 15) * 60;
-  if (BRK.active >= BRK.limit) showBreak(cfg.breakRestMinutes || 3);
+  BRK.active++;
+  // 顺手记一下今天学了多少分钟，家长在「我的记录」里能看到
+  if (++BRK.sec >= 60) { BRK.sec = 0; try { S.addStudyMinute(); } catch (e) { /* ignore */ } }
+  if (BRK.active >= BRK.limit) showBreak(cfg.breakRestMinutes || 3, Math.round(BRK.limit / 60));
 }, 1000);
 
 async function render() {

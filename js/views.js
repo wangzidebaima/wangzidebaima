@@ -301,9 +301,11 @@ export function noticeGate(done) {
     try { localStorage.setItem(NOTICE_KEY, noticeVer()); } catch (e) { window.__kpNotice = true; }
     done();
   };
+  const goZone = h('button', { class: 'btn ghost', onclick: () => { close(); nav('#/zone'); } }, '👨‍👩‍👧 现在就去设家长密码');
   const box = h('div', { class: 'updbox' },
     h('div', { class: 'updt' }, '📢 ' + (N.title || '使用须知')),
     h('div', { class: 'updp' }, items.map((t, i) => h('p', { class: 'nw' }, h('b', {}, (i + 1) + '. '), t))),
+    !S.pinHas() ? goZone : null,
     h('button', { class: 'btn primary', onclick: close }, '知道了，开始吧'),
     h('p', { class: 'updp small' }, '这条提示以后不会再弹了。想再看一遍，让家长到「家长专区」里看。'));
   mount(h('div', { id: 'ntcm' }, box));
@@ -327,7 +329,7 @@ export function login() {
     h('button', { class: 'btn primary wide', onclick: enter }, '开始'), msg,
     h('a', { class: 'link instl', href: '#/install' }, '📲 怎么把它装到手机桌面？'),
     h('a', { class: 'link instl', href: '#/help' }, '🩺 打不开 / 没声音 / 更新不了？看这里'),
-    h('a', { class: 'link instl', href: '#/zone' }, '👨‍👩‍👧 家长专区：发金币 / 备份 / 打印试卷')));
+    h('a', { class: 'link instl' + (S.pinHas() ? '' : ' hi'), href: '#/zone' }, S.pinHas() ? '👨‍👩‍👧 家长专区：发金币 / 备份 / 打印试卷' : '👨‍👩‍👧 家长专区：还没设密码，点这里先设一个')));
 }
 
 // ---------------- 装到桌面教程（不用登录） ----------------
@@ -844,16 +846,50 @@ function resultsNode(o, results, sum) {
   return page('结果', [head, acts, o.ctxFn ? o.ctxFn(true) : null, h('div', { class: 'rvhead' }, h('h2', {}, '答案与解析'), results.length - sum.okN ? toggle : null), list], { back: o.back });
 }
 
+// 把一道题抄成一段能发微信的文字：孩子不会时点一下，直接发给家长或老师
+export const askText = (u, q) => {
+  const stem = q.type === 'fill' ? q.stem.replace(/_{2,}/g, '____') : (q.stem || '').replace(/\s+$/, '');
+  let s = `【${u.display}有道题不会，想请教一下】\n${stem}`;
+  if (q.type === 'choice' && q.options) s += '\n选项：' + q.options.map((t, i) => 'ABCD'[i] + '. ' + t).join('　');
+  try { s += '\n（书里给的答案是：' + answerText(q) + '，但还是没弄懂为什么）'; } catch (e) { /* 有的题型没答案文本 */ }
+  return s;
+};
+// 复制好题目再打开微信；复制不成功就让孩子长按手动复制
+export async function askForHelp(u, q) {
+  const text = askText(u, q);
+  let ok = false;
+  try { await navigator.clipboard.writeText(text); ok = true; } catch (e) { /* 下面兜底 */ }
+  if (!ok) {
+    try {
+      const ta = h('textarea', { class: 'sum', readonly: true, rows: 5 }, text);
+      ta.style.position = 'fixed'; ta.style.left = '-9999px';
+      document.body.append(ta); ta.removeAttribute('readonly'); ta.select(); ok = document.execCommand('copy'); ta.remove();
+    } catch (e) { ok = false; }
+  }
+  toast(ok ? '题目已复制，正在打开微信，粘贴发给家长或老师' : '请长按题目手动复制，再去微信粘贴', 4000);
+  if (ok) setTimeout(() => { location.href = 'weixin://'; }, 900);
+}
+
 function reviewItem(r, no) {
-  const q = r.q, ok = r.g.ok;
+  const q = r.q, ok = r.g.ok, u = user();
   const short = q.type === 'fill' ? q.stem.replace(/_{2,}/g, '____') : q.stem;
   const body = h('div', { class: 'rvb' },
+    // 解析放最前面：做错了第一眼就看到“为什么”
+    q.why ? h('p', { class: 'why top' }, h('b', {}, '💡 为什么：'), ...String(q.why).split('\n').flatMap((t, i) => [i ? h('br') : null, t])) : null,
     ok ? null : h('p', { class: 'mine' }, h('b', {}, '你的答案：'), h('span', { html: q.type === 'math' ? mathHtml(userText(q, r.a)) : esc(userText(q, r.a)) })),
     h('p', { class: 'right' }, h('b', {}, '正确答案：'), h('span', { html: q.type === 'math' ? mathHtml(answerText(q)) : esc(answerText(q)) })),
     q.rv ? h('p', { class: 'rvsay' }, h('button', { type: 'button', class: 'spk', onclick: () => playSay(q.rv.key, q.rv.say, X.audio) }, '🔊'), q.rv.ipa ? h('span', { class: 'ipa' }, '/' + q.rv.ipa + '/') : null, q.bold ? h('span', { class: 'bmark' }, '★ 重点词，要会拼写') : null) : null,
     r.g.note ? h('p', { class: 'note' }, r.g.note) : null,
-    q.why ? h('p', { class: 'why' }, h('b', {}, '解析：'), ...String(q.why).split('\n').flatMap((t, i) => [i ? h('br') : null, t])) : null,
-    r.star === 'new' ? h('p', { class: 'got' }, '⭐ +1') : null);
+    r.star === 'new' ? h('p', { class: 'got' }, '⭐ +1') : null,
+    // 看完解析还不明白：标一下，家长在专区里能看到；或者直接把题发给家长/老师
+    !ok && u ? h('div', { class: 'chips askrow' },
+      h('button', { type: 'button', class: 'btn small ghost', onclick: (e) => {
+        const on = !S.isStuck(u.id, q.id);
+        S.setStuck(u.id, q.id, on);
+        e.currentTarget.textContent = on ? '🙋 已标记：还是不会' : '🙋 还是不会';
+        toast(on ? '记下了，家长在「家长专区」里能看到这道题' : '好啦，取消标记');
+      } }, S.isStuck(u.id, q.id) ? '🙋 已标记：还是不会' : '🙋 还是不会'),
+      h('button', { type: 'button', class: 'btn small ghost', onclick: () => askForHelp(u, q) }, '📤 问家长 / 问老师')) : null);
   return h('details', { class: 'rv ' + (ok ? 'ok' : 'bad'), open: !ok },
     h('summary', {}, h('span', { class: 'mark' }, ok ? '✓' : '✗'), h('span', { class: 'no' }, no), h('span', { class: 'rvs', html: mathish(q) ? mathHtml(short) : esc(short) })), body);
 }
@@ -909,9 +945,19 @@ export function errors() {
     mount(runQuiz({ uid: u.id, mk: 'errors', title: label ? '错题专项：' + label : '错题重做', subtitle: `这次 ${qs.length} 题`, sections: [{ title: '', questions: qs }], recTitle: '错题本重做', back: '#/errors', metaFor: q => q._meta, again: () => errors() }));
   };
   const entries = Object.entries(groups).sort((a, b) => b[1].length - a[1].length);
+  // 「还是不会」：看完解析也不懂的题，孩子自己标的，家长在专区里能看到同一份清单
+  const stuckRows = () => S.stuckList(u.id).map(e => h('div', { class: 'row static' },
+    h('div', {}, h('b', {}, (e.meta && e.meta.title) || '练习题'), h('small', {}, String(e.q.stem || '').replace(/_{2,}/g, '__').slice(0, 40))),
+    h('div', { class: 'chips' },
+      h('button', { type: 'button', class: 'btn small ghost', onclick: () => askForHelp(u, e.q) }, '📤 问家长'),
+      h('button', { type: 'button', class: 'btn small ghost', onclick: (ev) => { S.setStuck(u.id, e.q.id, false); toast('好啦，弄懂了！'); const box = ev.currentTarget.closest('.list'); box.replaceChildren(...stuckRows()); } }, '✓ 弄懂了'))));
+  const stuck = S.stuckList(u.id);
   mount(page('错题本', [
     h('p', { class: 'note' }, `一共 ${list.length} 道，分成 ${entries.length} 类。点下面一类，就只练这一类；每次最多 10 题。答对 1 次先打上「待巩固」，隔天再做对就从这里毕业。`),
     h('button', { class: 'btn primary wide', onclick: () => start(list, '') }, '全部混着重做'),
+    stuck.length ? h('h2', { class: 'sh' }, `🙋 我说「还是不会」的题（${stuck.length}）`) : null,
+    stuck.length ? h('div', { class: 'list' }, stuckRows()) : null,
+    stuck.length ? h('p', { class: 'note' }, '这些题已经告诉家长了。弄懂之后点「✓ 弄懂了」，清单里就去掉。') : null,
     h('a', { class: 'btn ghost wide', style: 'margin-top:10px', href: '#/weekrev' }, '🖨 本周错题复习卷（打印 / 存 PDF）'),
     h('div', { class: 'list' }, entries.map(([t, es]) => h('a', { class: 'row', href: 'javascript:void(0)', onclick: (ev) => { ev.preventDefault(); start(es, t); } }, h('div', {}, h('b', {}, t), h('small', {}, es.map(e => e.q.stem.replace(/_{2,}/g, '__').slice(0, 24)).slice(0, 2).join(' ； '))), h('span', { class: 'chip bad' }, es.length + ' 道')))),
   ]));
@@ -975,7 +1021,7 @@ function calendarNode(u) {
   p.log.forEach(x => { days[x.d] = days[x.d] || 0; });
   Object.keys(p.days).forEach(d => { days[d] = (days[d] || 0) + (p.days[d].n || 0); });
   let ym = new Date(); ym.setDate(1);
-  const box = h('section', { class: 'cal' }), legend = h('p', { class: 'note calnote' }, '📖 阅读理解　🎧 听力　🗣 口语　🌸 美文');
+  const box = h('section', { class: 'cal' }), legend = h('p', { class: 'note calnote' }, '📖 阅读理解　🎧 听力　🗣 口语　🌸 美文', h('br', {}, ''), '颜色越深 = 那天得的星星越多；金圈是今天。');
   const draw = () => {
     const y = ym.getFullYear(), m = ym.getMonth(), first = new Date(y, m, 1).getDay(), n = new Date(y, m + 1, 0).getDate(), t = S.today();
     const cells = []; for (let i = 0; i < first; i++) cells.push(h('i', { class: 'blank' }));
@@ -983,7 +1029,9 @@ function calendarNode(u) {
     for (let d = 1; d <= n; d++) {
       const key = `${y}-${pad(m + 1)}-${pad(d)}`, on = key in days; if (on) cnt++;
       const dc = S.dayCats(u.id, key), ic = CATN.filter(([k]) => dc[k]).map(([, , e]) => e).join('');
-      cells.push(h('i', { class: 'd' + (on ? ' on' : '') + (key === t ? ' today' : '') }, String(d), ic ? h('small', { class: 'ics' }, ic) : (on && days[key] ? h('small', {}, '⭐' + days[key]) : null)));
+      // 三档深浅：1~9 颗 / 10~19 颗 / 20 颗以上
+      const lv = !on ? '' : days[key] >= 20 ? ' l3' : days[key] >= 10 ? ' l2' : ' l1';
+      cells.push(h('i', { class: 'd' + (on ? ' on' + lv : '') + (key === t ? ' today' : '') }, String(d), ic ? h('small', { class: 'ics' }, ic) : (on && days[key] ? h('small', {}, '⭐' + days[key]) : null)));
     }
     box.replaceChildren(h('div', { class: 'cal-h' }, h('button', { type: 'button', class: 'btn ghost small', onclick: () => { ym = new Date(y, m - 1, 1); draw(); } }, '‹'), h('b', {}, `${y} 年 ${m + 1} 月 · 练习 ${cnt} 天`), h('button', { type: 'button', class: 'btn ghost small', onclick: () => { ym = new Date(y, m + 1, 1); draw(); } }, '›')),
       h('div', { class: 'cal-w' }, ['日', '一', '二', '三', '四', '五', '六'].map(x => h('span', {}, x))), h('div', { class: 'cal-g' }, cells), legend);
@@ -1119,6 +1167,8 @@ export function records() {
   };
   mount(page('我的记录', [
     h('section', { class: 'jar mini' }, h('div', { class: 'jar-top' }, h('div', { class: 'jar-n' }, '⭐ ', h('b', {}, st.total)), h('div', { class: 'jar-s' }, `题库 ${st.bank} · 随机 ${st.rand}`))),
+    h('div', { class: 'row static' }, h('div', {}, h('b', {}, '⏱ 今天学了'), h('small', {}, `满 ${Math.round((X.cfg.breakMinutes || 15))} 分钟会提醒休息 ${X.cfg.breakRestMinutes || 3} 分钟`)),
+      h('span', { class: 'chip' }, `${S.studyMinutes()} 分钟`)),
     h('h2', { class: 'sh' }, '最近 7 天'), h('div', { class: 'list' }, dayRows.length ? dayRows : h('p', { class: 'note' }, '还没有记录，去做一组题吧。')),
     weak.length ? [h('h2', { class: 'sh' }, '随机练习里的弱项'), h('div', { class: 'list' }, weak.map(w => h('div', { class: 'row static' }, h('div', {}, h('b', {}, names[w.id] || w.id)), h('span', { class: 'chip' + (w.rate >= 0.4 ? ' bad' : ' ok') }, `错 ${w.s.w}/${w.s.n}`))))] : null,
     h('h2', { class: 'sh' }, '学习日历'), calendarNode(u),
@@ -1168,21 +1218,34 @@ export async function speak(id) {
         box.classList.add('ok');
         info.className = 'srres good';
         info.textContent = `读对 ${sc.hit}/${sc.total} 个词 · ${sc.pct >= 85 ? '很棒！' : '通过了'}（我听到：${r.heard}）`;
+        sync();   // 读对了一句，下面的打卡按钮可以点亮了
       } else {
         info.className = 'srres bad';
         info.textContent = `我听到：「${r.heard}」只对上 ${sc.hit}/${sc.total} 个词，再大声读一次`;
       }
     };
+    // 打卡按钮：还没读对一句时是灰的，点它会提示先去读
+    const dayBtns = [];
+    const canCheck = () => !needRead || readOk.size > 0;
+    const sync = () => dayBtns.forEach(b => {
+      const ok = canCheck();
+      b.className = 'btn small ' + (ok ? 'primary' : 'primary off');
+      b.textContent = ok ? '今天读完了 ✅' : '先读一句 🎤';
+    });
     const days = set.plan.map(d => {
       const key = `${set.id}-d${d.day}`, done = !!p.speak[key];
       return h('div', { class: 'day' + (done ? ' done' : '') }, h('div', {}, h('b', {}, `Day ${d.day}  ${d.title}`), h('small', {}, `${d.task} · ${d.minutes} 分钟`)),
-        done ? h('span', { class: 'chip ok' }, '⭐ 已打卡') : h('button', { class: 'btn small primary', onclick: () => {
-          if (needRead && !readOk.size) { toast('先点 🎤 读一句，读对了才能打卡', 3500); return; }
-          const r = S.award(u.id, { id: 'speak-' + key }, 'bank', set.id, cap()); S.markSpeak(u.id, key);
-          toast(r === 'new' ? (readOk.size ? `⭐ +1  读了 ${readOk.size} 句，今天的口语完成啦！` : '⭐ +1  今天的口语完成啦！') : '已打卡');
-          render();
-        } }, '今天完成了'));
+        done ? h('span', { class: 'chip ok' }, '⭐ 已打卡') : (() => {
+          const b = h('button', { class: 'btn small primary', onclick: () => {
+            if (!canCheck()) { toast('先点一句的 🎤 读给手机听，读对了就能打卡', 3500); return; }
+            const r = S.award(u.id, { id: 'speak-' + key }, 'bank', set.id, cap()); S.markSpeak(u.id, key);
+            toast(r === 'new' ? (readOk.size ? `⭐ +1  读了 ${readOk.size} 句，今天的口语完成啦！` : '⭐ +1  今天的口语完成啦！') : '已打卡');
+            render();
+          } }, '今天读完了 ✅');
+          dayBtns.push(b); return b;
+        })());
     });
+    sync();
     const sents = set.sentences.map((s, i) => {
       const info = h('small', { class: 'srres' }, '');
       const box = h('div', { class: 'sent' + (readOk.has(i) ? ' ok' : '') },
@@ -1194,9 +1257,12 @@ export async function speak(id) {
       return box;
     });
     const tip = needRead
-      ? h('p', { class: 'note' }, '点「🎤 读这句」读给手机听：读对了才算，打卡前至少读对一句。只在点按钮时才听，录音不会保存。')
+      ? h('p', { class: 'note' }, '先点 🔊 听，再点 🎤 读给手机听：读对一句，下面才能打卡。只在点 🎤 时才听，录音不会保存。')
       : h('p', { class: 'note' }, srBroken ? '这台手机听不了朗读（可能没给麦克风权限，或者没联网），已经换成原来的打卡方式，不影响打卡。' : '这台手机的浏览器听不懂说话（微信里打开就会这样），按原来的方式打卡就行。想用跟读检查，用系统浏览器（Safari / Chrome）打开。');
-    mount(page(set.title, [h('ol', { class: 'steps' }, set.steps.map(t => h('li', {}, t))), tip, h('h2', { class: 'sh' }, `${set.plan.length} 天打卡`), h('div', { class: 'list' }, days), h('h2', { class: 'sh' }, '本单元句子（点 🔊 听，点 🎤 读给手机听）'), h('div', { class: 'list' }, sents)], { back: '#/s/' + (set.id.startsWith('g7') ? 'g7speaking' : 'g4speaking') }));
+    // 顺序：先听 → 再读 → 最后打卡（以前打卡在上面，孩子还没读就能点）
+    mount(page(set.title, [h('ol', { class: 'steps' }, set.steps.map(t => h('li', {}, t))), tip,
+      h('h2', { class: 'sh' }, '本单元句子（点 🔊 听，点 🎤 读给手机听）'), h('div', { class: 'list' }, sents),
+      h('h2', { class: 'sh' }, `${set.plan.length} 天打卡`), h('div', { class: 'list' }, days)], { back: '#/s/' + (set.id.startsWith('g7') ? 'g7speaking' : 'g4speaking') }));
   };
   render();
 }

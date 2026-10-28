@@ -8,6 +8,10 @@ const mem = {};
 const pad = (n) => String(n).padStart(2, '0');
 export const today = () => { const d = new Date(); return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`; };
 
+// ---------- 今天学了多少分钟（休息提醒顺手记的，给家长看，也用来确认提醒有没有生效） ----------
+export const studyMinutes = () => Number(LS.get('kp_min_' + today()) || 0);
+export function addStudyMinute() { LS.set('kp_min_' + today(), String(studyMinutes() + 1)); }
+
 // ---------- 备份提醒：记下最近一次导出备份的日期（只存日期字符串，很小） ----------
 export const lastBackup = (uid) => LS.get('kp_bak_' + uid) || '';
 export const markBackup = (uid) => LS.set('kp_bak_' + uid, today());
@@ -129,6 +133,11 @@ export function rightWrong(uid, qid) {
   e.ok = 1; e.next = shiftDay(-1); save(uid); return false;
 }
 export function clearWrong(uid, qid) { const p = P(uid); if (p.wrong[qid]) { delete p.wrong[qid]; save(uid); } }
+
+// ---------- 「还是不会」：看完解析仍然不懂，孩子自己标一下，家长在专区能看到清单 ----------
+export const isStuck = (uid, qid) => !!(P(uid).wrong[qid] || {}).stuck;
+export function setStuck(uid, qid, on) { const p = P(uid), e = p.wrong[qid]; if (!e) return false; if (on) e.stuck = today(); else delete e.stuck; save(uid); return true; }
+export const stuckList = (uid) => Object.values(P(uid).wrong).filter(e => e.stuck && e.q).sort((a, b) => (a.stuck < b.stuck ? 1 : -1));
 
 export function typeStat(uid, typeId, ok) {
   const t = (P(uid).rand.types[typeId] = P(uid).rand.types[typeId] || { n: 0, w: 0 });

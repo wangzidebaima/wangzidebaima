@@ -53,6 +53,23 @@ export async function learnUnit(unitId) {
   let batchNo = 0;
   function batch() {
     const pool = todo(), deck = pool.slice(0, 5), queue = shuf(deck), total = deck.length, first = {};
+    // 翻过的卡片：孩子点快了想回头看一眼（或改判），点「◀ 上一个」就退回去
+    const hist = [];
+    const undo = (rec) => {
+      const k = key(rec.it);
+      delete first[k];
+      if (rec.before) L[k] = rec.before; else delete L[k];
+      S.save(u.id);
+    };
+    const prev = () => {
+      if (!hist.length) { toast('这是这一组的第一张'); return; }
+      const rec = hist.pop();
+      undo(rec);
+      queue.unshift(rec.it);
+      // 当时点的「不会」：这个词已经排到队尾等着再来一遍，退回去时把队尾那份去掉，免得重复出现
+      if (rec.again) { const i = queue.lastIndexOf(rec.it); if (i > 0) queue.splice(i, 1); }
+      step();
+    };
     batchNo++;
     const step = () => {
       stopAllSound();
@@ -61,13 +78,17 @@ export async function learnUnit(unitId) {
       const iv = X.ipa && (X.ipa[it.en] || X.ipa[it.en.toLowerCase()]), ipa = iv ? '/' + iv + '/' : '';
       const back_ = h('div', { class: 'cardback', style: 'display:none' }, h('div', { class: 'zh' }, it.zh), it.pos ? h('small', {}, it.pos) : null,
         h('div', { class: 'chips' },
-          h('button', { class: 'btn primary', onclick: () => { if (first[key(it)] === undefined) first[key(it)] = true; mark(it, true, first); S.save(u.id); queue.shift(); step(); } }, '😀 会了'),
-          h('button', { class: 'btn ghost', onclick: () => { first[key(it)] = false; if (review) { mark(it, false, first); S.save(u.id); } queue.push(queue.shift()); step(); } }, '🤔 不会')));
+          h('button', { class: 'btn primary', onclick: () => { if (first[key(it)] === undefined) first[key(it)] = true; hist.push({ it, again: false, before: L[key(it)] ? Object.assign({}, L[key(it)]) : null }); mark(it, true, first); S.save(u.id); queue.shift(); step(); } }, '😀 会了'),
+          h('button', { class: 'btn ghost', onclick: () => { first[key(it)] = false; hist.push({ it, again: true, before: L[key(it)] ? Object.assign({}, L[key(it)]) : null }); if (review) { mark(it, false, first); S.save(u.id); } queue.push(queue.shift()); step(); } }, '🤔 不会')));
       const face = h('button', { type: 'button', class: 'flash', onclick: () => { if (flipped) return; flipped = true; hint.style.display = 'none'; back_.style.display = ''; } },
         h('div', { class: 'en' }, it.en), ipa ? h('div', { class: 'ipa' }, ipa) : null, it.bold ? h('small', { class: 'bmark' }, '★ 要会拼写') : null);
       const hint = h('p', { class: 'note' }, '点一下卡片，看中文意思');
       mount(page('单词卡片', [h('p', { class: 'note' }, `${uname(un)} · 第 ${batchNo} 组 · 还剩 ${queue.length} 张`),
-        face, h('button', { class: 'btn ghost wide', onclick: () => play(it) }, '🔊 再听一遍'), hint, back_], { back }));
+        face,
+        h('div', { class: 'chips' },
+          hist.length ? h('button', { type: 'button', class: 'btn ghost', onclick: prev }, '◀ 上一个') : null,
+          h('button', { type: 'button', class: 'btn ghost', onclick: () => play(it) }, '🔊 再听一遍')),
+        hint, back_], { back }));
       play(it);
     };
     const finish = () => {

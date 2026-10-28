@@ -243,26 +243,41 @@ html[data-fs="1"] body { zoom: 1.12; } html[data-fs="2"] body { zoom: 1.25; }
 .key.abc.bs { grid-column: span 1; }
 .q.locked .tiles { pointer-events: none; }
 
-.cal{background:var(--card,#fff);border-radius:16px;padding:12px;margin:8px 0}
-.cal-h{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
-.cal-w,.cal-g{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;text-align:center}
-.cal-w span{font-size:12px;color:#888}
-.cal-g i{font-style:normal;min-height:40px;border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:14px;background:rgba(0,0,0,.04)}
-.cal-g i.blank{background:none}
-.cal-g i.on{background:#ffe08a;font-weight:700}
-.cal-g i.today{outline:2px solid #4a90e2}
-.cal-g i small{font-size:10px;line-height:1}
+/* 学习日历：练过的日子用主题色，星星越多颜色越深；今天用金圈圈出来 */
+.cal{background:var(--surface);border-radius:18px;padding:12px;margin:8px 0;box-shadow:var(--shadow)}
+.cal-h{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+.cal-h b{font-size:15px;color:var(--ink)}
+.cal-w,.cal-g{display:grid;grid-template-columns:repeat(7,1fr);gap:5px;text-align:center}
+.cal-w span{font-size:12px;color:var(--muted);font-weight:600}
+.cal-g i{font-style:normal;min-height:48px;padding:4px 2px;border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;font-size:14px;font-weight:600;color:var(--muted);background:transparent;border:1.5px solid var(--line)}
+.cal-g i.blank{background:none;border:0}
+.cal-g i.on{background:var(--accent-soft);color:var(--ink);border-color:transparent}
+.cal-g i.on.l2{background:color-mix(in srgb,var(--accent) 45%,var(--surface))}
+.cal-g i.on.l3{background:var(--accent);color:var(--accent-ink)}
+.cal-g i.today{outline:2.5px solid var(--star);outline-offset:1px}
+.cal-g i small{font-size:11px;line-height:1.1;opacity:.9;font-weight:500}
+.cal-g i small.ics{font-size:12px;letter-spacing:0}
+/* 结果页：解析提前到第一眼能看到的位置；「还是不会 / 问家长」两个小按钮 */
+.why.top{background:var(--star-soft);border-radius:12px;padding:10px 12px;margin-bottom:6px}
+.askrow{margin-top:8px}
+.calnote{margin:10px 0 0;font-size:12px;text-align:center;color:var(--muted);line-height:1.7}
 
 .instl{display:block;text-align:center;margin:16px auto;padding:10px;font-size:14px}
+/* 还没读对一句时的打卡按钮：灰着，点了会提示先去读 */
+.btn.off{opacity:.45;filter:grayscale(.55)}
+/* 家长还没设密码时，登录页那条入口亮一下，提醒一眼看到 */
+.instl.hi{color:var(--accent);font-weight:700}
+.instl.hi::after{content:' 🔴';font-size:11px;vertical-align:2px}
 .ins .steps li{margin:6px 0;line-height:1.6}
 .okbox{background:#e6f7e6;border-radius:12px;padding:10px}
 
 .soonbox{text-align:center;background:var(--accent-soft);border-radius:16px;padding:18px;margin:12px 0}
 .soonbox .logo{font-size:40px}
 
-.cal-g i small.ics{font-size:11px;line-height:1.1;letter-spacing:0}
-.cal-g i{min-height:46px}
-.calnote{margin:8px 0 0;font-size:12px;text-align:center}
+.cal-g i small.ics{font-size:12px;letter-spacing:0}
+/* 结果页：解析提前到第一眼能看到的位置；「还是不会 / 问家长」两个小按钮 */
+.why.top{background:var(--star-soft);border-radius:12px;padding:10px 12px;margin-bottom:6px}
+.askrow{margin-top:8px}
 
 #brkm{position:fixed;inset:0;z-index:99;background:rgba(0,0,0,.55);display:flex;align-items:center;justify-content:center;padding:20px}
 .brkt{font-size:44px;font-weight:700;text-align:center;margin:10px 0;color:var(--accent)}

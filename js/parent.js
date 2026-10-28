@@ -8,7 +8,7 @@
 
 import { h, toast } from './ui.js';
 import * as S from './store.js';
-import { X, nav, page, mount, setTheme, kidCard, voiceNow } from './views.js';
+import { X, nav, page, mount, setTheme, kidCard, voiceNow, askText } from './views.js';
 
 const SES = 'kp_zone';   // 这次打开已经进过专区（关掉页面就失效）
 
@@ -76,10 +76,25 @@ export function zoneGate() {
   return askPinPage();
 }
 
+// 孩子自己标了「还是不会」的题：家长在这里看，讲明白了就勾掉
+function stuckBlock(u, redraw) {
+  const list = S.stuckList(u.id);
+  if (!list.length) return null;
+  const copy = async (t) => { try { await navigator.clipboard.writeText(t); toast('题目已复制，可以发给老师'); } catch (e) { toast('复制没成功，长按上面的文字手动复制'); } };
+  const rows = () => list.map(e => h('div', { class: 'row static' },
+    h('div', {}, h('b', {}, (e.meta && e.meta.title) || '练习题'), h('small', {}, String(e.q.stem || '').replace(/_{2,}/g, '__').slice(0, 46))),
+    h('div', { class: 'chips' },
+      h('button', { type: 'button', class: 'btn small ghost', onclick: () => copy(askText(u, e.q)) }, '📋 复制题目'),
+      h('button', { type: 'button', class: 'btn small ghost', onclick: () => { S.setStuck(u.id, e.q.id, false); toast('勾掉啦'); redraw(); } }, '✓ 讲过了'))));
+  return h('div', {}, h('h2', { class: 'sh' }, `🙋 ${u.display} 说「还是不会」的题（${list.length}）`),
+    h('div', { class: 'list' }, rows()),
+    h('p', { class: 'note' }, '孩子在错题里自己标的。讲明白之后点「✓ 讲过了」，从清单里去掉；也可以复制下来发给老师。'));
+}
+
 export function zoneHome() {
   if (!zoneOk()) { nav('#/login'); return; }
   setTheme(null);
-  const rows = X.cfg.users.map(u => kidCard(u, { vip: false, redraw: zoneHome }));
+  const rows = X.cfg.users.map(u => h('div', {}, kidCard(u, { vip: false, redraw: zoneHome }), stuckBlock(u, zoneHome)));
   mount(page('家长专区', [
     h('p', { class: 'note' }, '这里只给家长看：给孩子发金币、导出备份（换手机前一定要导出）、换朗读声音、下载打印试卷。孩子的星星和错题都存在这台手机里，清浏览器数据或换手机之前，请先导出备份。'),
     ...rows,
