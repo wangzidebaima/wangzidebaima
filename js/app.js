@@ -115,7 +115,6 @@ async function boot() {
   } catch (e) {
     V.showError('第一次打开需要连上网络。连上网络后点「重新加载」。'); return;
   }
-  try { const a = await getJSON('audio/index.json'); V.X.audio = new Set(a.files || []); } catch (e) { /* 还没有音频 */ }
   window.addEventListener('hashchange', render);
   document.addEventListener('click', (e) => {
     const a = e.target.closest && e.target.closest('a[href^="#/"]');
