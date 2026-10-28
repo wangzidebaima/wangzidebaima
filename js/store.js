@@ -13,20 +13,54 @@ export function setUser(id) {
   if (id) { LS.set('kp_user', id); mem.user = id; } else { LS.del('kp_user'); delete mem.user; }
 }
 
+// ---------- 星星账本：每日一页 + 每年一页 ----------
+// days: { '2026-10-26': { n: 28, b: 10, r: 18 } }  近半年每天得了几颗（n 总数 / b 题库 / r 随机）
+// year: { '2026': { n: 3200, b: 1200, r: 2000 } }  半年前的明细按年累计，永久保留
+// 说明：只记“每天几颗”，不再记“哪道题得过星”（同一道题重做可以再得星，每天上限 30 颗兜底）
+const KEEP_DAYS = 180;
+const shiftDay = (n) => { const d = new Date(); d.setDate(d.getDate() - n); return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`; };
+const blank = () => ({ n: 0, b: 0, r: 0 });
+// 把超过半年的每日账并进年账，保证 days 永远只有半年份量
+function sealOld(p) {
+  const cut = shiftDay(KEEP_DAYS);
+  for (const k of Object.keys(p.days)) {
+    if (k >= cut) continue;
+    const o = p.days[k] || {}, y = (p.year[k.slice(0, 4)] = p.year[k.slice(0, 4)] || blank());
+    y.n += o.n || 0; y.b += o.b || 0; y.r += o.r || 0;
+    delete p.days[k];
+  }
+}
+
 const cache = {};
 // 补全字段：读出来的旧数据、导入的数据都要过一遍，保证结构完整
+// 老格式（按题记的 stars）会在这一步汇总成每日账，星星总数一颗不少
 const normProfile = (p) => {
   p = p || {};
-  p.stars = p.stars || {}; p.sets = p.sets || {}; p.wrong = p.wrong || {};
+  p.sets = p.sets || {}; p.wrong = p.wrong || {};
   p.rand = p.rand || { days: {}, types: {} }; p.rand.days = p.rand.days || {}; p.rand.types = p.rand.types || {};
   p.speak = p.speak || {}; p.log = p.log || [];
+  p.days = p.days || {}; p.year = p.year || {};
+  if (p.stars && typeof p.stars === 'object') {
+    for (const k in p.stars) {
+      const s = p.stars[k] || {}, d = s.d;
+      if (!d) continue;
+      const o = (p.days[d] = p.days[d] || blank());
+      o.n++; if (s.src === 'rand') o.r++; else o.b++;
+    }
+    delete p.stars;
+  }
+  p.ver = 2;
+  sealOld(p);
   return p;
 };
 export function P(uid) {
   if (cache[uid]) return cache[uid];
   let p = null;
   try { const raw = LS.get('kp_p_' + uid); p = raw ? JSON.parse(raw) : null; } catch (e) { p = null; }
-  cache[uid] = normProfile(p); return cache[uid];
+  const old = !!(p && p.stars && Object.keys(p.stars).length); // 需要搬家：老格式
+  cache[uid] = normProfile(p);
+  if (old) save(uid); // 搬家结果立刻写回，不用等下一次操作
+  return cache[uid];
 }
 export function save(uid) {
   const ok = LS.set('kp_p_' + uid, JSON.stringify(cache[uid]));
@@ -46,18 +80,20 @@ export function importProfile(uid, raw) {
   try { d = JSON.parse(raw); } catch (e) { return false; }
   const prof = d && d.kp === 1 ? d.profile : d;
   if (!prof || typeof prof !== 'object' || Array.isArray(prof)) return false;
-  if (!prof.stars || typeof prof.stars !== 'object') return false; // 至少要有星星记录，防止导错文件
+  // 要有星星账（新格式 days/year，老格式 stars），防止导错文件
+  if (!prof.days && !prof.year && !prof.stars) return false;
   cache[uid] = normProfile(prof);
   save(uid); return true;
 }
 
-// 发星星：一题一颗，只发一次。每个孩子每天所有来源合计有上限（默认 30）。
-export const starsToday = (uid) => { const t = today(); let n = 0; for (const k in P(uid).stars) if (P(uid).stars[k].d === t) n++; return n; };
+// 发星星：做一题给一颗（同一题重做也能再得），每个孩子每天合计上限 30 颗
+export const starsToday = (uid) => { const o = P(uid).days[today()]; return o ? o.n || 0 : 0; };
 export function award(uid, q, src, subject, cap = 30) {
-  const p = P(uid);
-  if (p.stars[q.id]) return 'had';
-  if (starsToday(uid) >= cap) return 'capped';
-  p.stars[q.id] = { d: today(), src, sub: subject };
+  const p = P(uid), t = today();
+  const day = (p.days[t] = p.days[t] || blank());
+  if (day.n >= cap) return 'capped';
+  day.n++; if (src === 'rand') day.r++; else day.b++;
+  if (Object.keys(p.days).length > KEEP_DAYS + 40) sealOld(p); // 偶尔封一次旧账，几乎零开销
   save(uid); return 'new';
 }
 
@@ -86,13 +122,11 @@ export function recordAttempt(uid, setId, rec) {
 
 export function stats(uid) {
   const p = P(uid), t = today();
-  let total = 0, bank = 0, rand = 0, todayN = 0;
-  for (const k in p.stars) {
-    total++; const s = p.stars[k];
-    if (s.src === 'rand') rand++; else bank++;
-    if (s.d === t) todayN++;
-  }
-  return { total, bank, rand, today: todayN, wrong: Object.keys(p.wrong).length };
+  let total = 0, bank = 0, rand = 0;
+  for (const y in p.year) { const o = p.year[y]; total += o.n || 0; bank += o.b || 0; rand += o.r || 0; }
+  for (const d in p.days) { const o = p.days[d]; total += o.n || 0; bank += o.b || 0; rand += o.r || 0; }
+  const td = p.days[t];
+  return { total, bank, rand, today: td ? td.n || 0 : 0, wrong: Object.keys(p.wrong).length };
 }
 
 export function markSpeak(uid, key) { const p = P(uid); p.speak[key] = Date.now(); save(uid); }

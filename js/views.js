@@ -744,8 +744,8 @@ function weeklyText(u) {
   const p = S.P(u.id), st = S.stats(u.id), pad = (n) => String(n).padStart(2, '0');
   const ds = []; for (let i = 6; i >= 0; i--) { const d = new Date(); d.setDate(d.getDate() - i); ds.push(`${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`); }
   const set = new Set(ds), logs = p.log.filter(x => set.has(x.d));
-  const active = new Set([...logs.map(x => x.d), ...Object.values(p.stars).filter(x => set.has(x.d)).map(x => x.d)]);
-  const stars = Object.values(p.stars).filter(x => set.has(x.d)).length;
+  const active = new Set([...logs.map(x => x.d), ...Object.keys(p.days).filter(d => set.has(d))]);
+  const stars = Object.keys(p.days).filter(d => set.has(d)).reduce((a, d) => a + (p.days[d].n || 0), 0);
   const okN = logs.reduce((a, x) => a + (x.ok || 0), 0), totN = logs.reduce((a, x) => a + (x.total || 0), 0);
   const names = {}; Object.values(RANDOM).forEach(R => R.types.forEach(x => { names[x.id] = x.name; }));
   const weakT = Object.entries(p.rand.types).filter(([, s]) => s.n >= 3 && s.w / s.n >= 0.4).sort((a, b) => b[1].w / b[1].n - a[1].w / a[1].n).slice(0, 3).map(([id]) => names[id] || id);
@@ -771,7 +771,7 @@ function weeklyText(u) {
 function calendarNode(u) {
   const p = S.P(u.id), pad = (n) => String(n).padStart(2, '0'), days = {};
   p.log.forEach(x => { days[x.d] = days[x.d] || 0; });
-  Object.values(p.stars).forEach(x => { days[x.d] = (days[x.d] || 0) + 1; });
+  Object.keys(p.days).forEach(d => { days[d] = (days[d] || 0) + (p.days[d].n || 0); });
   let ym = new Date(); ym.setDate(1);
   const box = h('section', { class: 'cal' }), legend = h('p', { class: 'note calnote' }, '📖 阅读理解　🎧 听力　🗣 口语　🌸 美文');
   const draw = () => {
