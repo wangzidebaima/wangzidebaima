@@ -54,16 +54,18 @@
      "goal": 10
     },
     {
-     "label": "阅读理解 1 套",
+     "label": "阅读理解 10 分钟",
      "kind": "cat",
      "cat": "reading",
-     "goal": 1
+     "goal": 10,
+     "minutes": true
     },
     {
-     "label": "英语听力 1 套",
+     "label": "英语听力 10 分钟",
      "kind": "cat",
      "cat": "listening",
-     "goal": 1
+     "goal": 10,
+     "minutes": true
     },
     {
      "label": "口语打卡（10 分钟）",
@@ -129,16 +131,18 @@
      "goal": 10
     },
     {
-     "label": "阅读理解 1 套",
+     "label": "阅读理解 10 分钟",
      "kind": "cat",
      "cat": "reading",
-     "goal": 1
+     "goal": 10,
+     "minutes": true
     },
     {
-     "label": "英语听力 1 套",
+     "label": "英语听力 10 分钟",
      "kind": "cat",
      "cat": "listening",
-     "goal": 1
+     "goal": 10,
+     "minutes": true
     },
     {
      "label": "口语打卡（10 分钟）",
@@ -208,10 +212,11 @@
      "goal": 10
     },
     {
-     "label": "阅读理解 1 套",
+     "label": "阅读理解 10 分钟",
      "kind": "cat",
      "cat": "reading",
-     "goal": 1
+     "goal": 10,
+     "minutes": true
     },
     {
      "label": "听一篇美文",
