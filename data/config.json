@@ -244,8 +244,8 @@
  ],
  "parent": {
   "name": "美好的世界",
-  "salt": "463366f282f7907d",
-  "hash": "fe783f5acebb1d0b764455ebaa95166d1611b5293a2a67ce805009ddc0fe2155"
+  "salt": "d2aab7a455a2db33",
+  "hash": "6a380a8ce0e9737d34bf2a5813ba7e6b3de012ab235719da97a5befaf04732ec"
  },
  "dailyStarCap": 30,
  "starGoal": 400,

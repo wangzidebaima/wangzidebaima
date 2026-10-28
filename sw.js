@@ -1,5 +1,5 @@
 // 离线缓存：先用手机里存的（秒开），同时悄悄检查有没有新内容；有就提示刷新。
-const VER = 'kp-v31';
+const VER = 'kp-v32';
 const AUDIO = 'kp-audio';
 const SHELL = ['./', 'index.html', 'manifest.webmanifest', 'css/app.css', 'js/app.js', 'js/store.js', 'js/grade.js', 'js/mathgen.js',
   'js/views.js', 'js/ui.js', 'js/english.js', 'js/cndict.js', 'js/learn.js', 'js/poem.js', 'js/chapgen.js', 'js/chapview.js', 'js/chapgen4.js', 'js/chapgen2.js', 'data/words7.json', 'data/words4.json', 'data/cnwords4.json', 'data/cnwords2.json', 'data/poems.json', 'data/tips.json', 'data/ipa.json', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png',
