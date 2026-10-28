@@ -94,17 +94,70 @@ let curAudio = null;
 // 选最自然的语音：优先“增强/高品质/神经网络”语音，其次系统自带的好声音
 const GOOD = /enhanced|premium|natural|neural|siri|google|samantha|ava\b|allison|susan|zoe|alex|aaron|nicky|evan|tian|xiaoxiao|xiaoyi|yunxi|ting-?ting|mei-?jia|lili|microsoft.*(online|aria|jenny|guy|xiao|yun)/i;
 const FEM = /female|samantha|ava\b|allison|susan|zoe|karen|victoria|aria|jenny|zira|nicky|joelle|ting|mei|xiaoxiao|xiaoyi|lili/i, MAL = /\bmale\b|alex|aaron|tom|david|mark|guy|evan|daniel|fred|yunxi|yunyang|eric/i;
+
+// 语音代码归一：zh_CN / zh-Hans-CN 都算普通话那一族
+const nlang = (l) => String(l || '').replace(/_/g, '-').toLowerCase();
+export const voiceKey = (v) => (v && v.name ? v.name : '') + '|' + (v && v.lang ? v.lang : '');
+// 粤语 / 台湾腔 / 上海话：拿它们读普通话就是“咬舌”“大舌头”，一定要排到最后
+const NOT_MANDARIN = /^zh-(hk|tw)|-(hk|tw)$|hant|cantonese|hongkong|^yue|^wuu|shanghai/i;
+const NOT_MANDARIN_NAME = /粤|善怡|上海|台湾|台灣|cantonese|sin-?ji|mei-?jia/i;
+
+// 家长在「朗读声音」页里挑好的声音（存本机，三个孩子共用一台手机就共用一个）
+const VOICE_PREF = 'kp_voice_zh';
+export const getVoicePref = () => { try { return localStorage.getItem(VOICE_PREF) || ''; } catch (e) { return ''; } };
+export const setVoicePref = (k) => { try { if (k) localStorage.setItem(VOICE_PREF, k); else localStorage.removeItem(VOICE_PREF); } catch (e) { /* ignore */ } };
+
+// 打分：语言越对得上越高，粤语/台湾腔/上海话重罚
+function scoreOf(v, lang) {
+  const l = nlang(v.lang), base = nlang(lang), pre = base.slice(0, 2), nm = String(v.name || '');
+  let s = 0;
+  if (l === base) s += 60;
+  else if (new RegExp('^' + pre + '-(cn|hans|sg)').test(l)) s += 45;
+  else if (l.startsWith(pre)) s += 18;
+  if (pre === 'zh' && (NOT_MANDARIN.test(l) || NOT_MANDARIN_NAME.test(nm))) s -= 90;
+  if (/enhanced|premium|natural|neural|online|高音质|增强|超清/i.test(nm)) s += 8;
+  if (GOOD.test(nm)) s += 3;
+  return s;
+}
 function voicesFor(ss, lang) {
-  const pre = lang.slice(0, 2).toLowerCase(), all = (ss.getVoices() || []).filter(x => x.lang && x.lang.toLowerCase().startsWith(pre));
-  const exact = all.filter(x => x.lang.replace('_', '-').toLowerCase() === lang.toLowerCase());
-  const pool = exact.length ? exact : all;
-  const score = (x) => (GOOD.test(x.name) ? 2 : 0) + (/enhanced|premium|natural|neural|online/i.test(x.name) ? 3 : 0) + (x.localService === false ? 1 : 0);
-  return pool.slice().sort((a, b) => score(b) - score(a));
+  const pre = nlang(lang).slice(0, 2);
+  const all = (ss.getVoices() || []).filter(x => {
+    const l = nlang(x.lang); if (!l) return false;
+    if (l.startsWith(pre)) return true;
+    return pre === 'zh' && /^(yue|wuu|cmn)/.test(l);
+  });
+  return all.slice().sort((a, b) => scoreOf(b, lang) - scoreOf(a, lang));
 }
 export function pickVoice(ss, lang, who) {
   const vs = voicesFor(ss, lang); if (!vs.length) return null;
+  const pref = getVoicePref();
+  if (pref) { const hit = vs.find(x => voiceKey(x) === pref); if (hit) return hit; }
   const want = /^f|^c/.test(who || '') ? FEM : /^m/.test(who || '') ? MAL : null;
-  return (want && vs.find(x => want.test(x.name))) || vs[0];
+  const top = scoreOf(vs[0], lang);
+  const tier = vs.filter(x => scoreOf(x, lang) === top);
+  return (want && tier.find(x => want.test(x.name))) || vs[0];
+}
+// 手机里所有中文语音（含粤语等，供家长试听挑选）
+export function zhVoices() {
+  const ss = window.speechSynthesis; if (!ss) return [];
+  try { ss.getVoices(); } catch (e) { /* ignore */ }
+  return voicesFor(ss, 'zh-CN').map(v => ({ v, key: voiceKey(v), name: v.name || '未命名', lang: v.lang || '', score: scoreOf(v, 'zh-CN') }));
+}
+// 试听：用和课文朗读一样的语速读一句
+export function testVoice(v, text) {
+  const ss = window.speechSynthesis; if (!ss || !v) return;
+  stopScript();
+  const u = new SpeechSynthesisUtterance(text || '春天来了，小草从土里钻出来，燕子从南方飞回来了。');
+  u.lang = v.lang || 'zh-CN'; u.voice = v; u.rate = 0.82; u.pitch = 1;
+  try { ss.speak(u); } catch (e) { toast('这台手机暂时发不出声音'); }
+}
+// 启动时先把语音列表预热：iOS 第一次取常是空的，要等 voiceschanged 事件
+export function warmVoices() {
+  const ss = window.speechSynthesis; if (!ss) return;
+  try {
+    ss.getVoices();
+    ss.addEventListener('voiceschanged', () => { try { ss.getVoices(); } catch (e) { /* ignore */ } });
+  } catch (e) { /* ignore */ }
 }
 export function playSay(key, text, avail) {
   const file = 'audio/w/' + key + '.mp3';
@@ -149,7 +202,15 @@ export function playScript(lines, speakers, opts = {}) {
     u.onend = () => setTimeout(next, opts.pause || 450); u.onerror = () => setTimeout(next, 100);
     ss.speak(u);
   };
-  next();
+  // iOS 刚打开时语音列表常常是空的，这时直接播系统会自己乱挑一个（可能挑到粤语 → 咬舌）。
+  // 给它 300ms 等 voiceschanged；等不到也照常播，不能让孩子点了没反应。
+  if ((ss.getVoices() || []).length) next();
+  else {
+    let started = false;
+    const go = () => { if (started) return; started = true; if (run === scriptRun) next(); };
+    try { ss.addEventListener('voiceschanged', go); } catch (e) { /* ignore */ }
+    setTimeout(go, 300);
+  }
 }
 
 export const slug = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');

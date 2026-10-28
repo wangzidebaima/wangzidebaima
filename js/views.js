@@ -1,5 +1,5 @@
 // 所有页面：登录、首页、题库、答题、结果、错题本、随机练习、记录、打印
-import { h, esc, mathHtml, toast, keypad, praiseText, playSay, slug, playScript, stopScript } from './ui.js';
+import { h, esc, mathHtml, toast, keypad, praiseText, playSay, slug, playScript, stopScript, zhVoices, testVoice, getVoicePref, setVoicePref } from './ui.js';
 import * as B from './badges.js';
 import * as S from './store.js';
 import { gradeQuestion, answerText, userText, isAnswered } from './grade.js';
@@ -140,10 +140,50 @@ export function parentHome() {
       vipRow,
       h('p', { class: 'note' }, '换手机或清过浏览器数据后：在新手机上先登录孩子，再到这里点「导入记录」选文件即可恢复。'));
   });
+  // 朗读声音：这是设备级设置（三个孩子共用），显示一次就够；苹果老机型语文“咬舌”时来这换
+  const vrow = h('a', { class: 'row', href: '#/voice' }, h('div', {}, h('b', {}, '🔊 朗读声音'),
+    h('small', {}, voiceNow())), h('span', { class: 'chip' }, '试听 / 换'));
   mount(h('div', { class: 'login' }, h('div', { class: 'logo' }, '🔒'), h('h1', {}, X.cfg.parent.name), h('p', { class: 'sub' }, '备份孩子的学习记录（星星、错题都保存在这台手机的浏览器里，换手机前先导出）'),
     ...rows,
+    h('div', { class: 'list', style: 'margin-top:12px' }, vrow),
     h('button', { class: 'btn ghost wide', style: 'margin-top:14px', onclick: () => { noticeReset(); toast('好啦，下次打开会重新显示使用须知'); } }, '重新显示使用须知'),
     h('button', { class: 'btn ghost wide', style: 'margin-top:10px', onclick: () => { try { sessionStorage.removeItem('kp_parent'); } catch (e) { window.__kpParent = false; } nav('#/login'); } }, '退出')));
+  bsz();
+}
+// ---------------- 朗读声音：家长页那一行显示“现在用的是哪个中文语音” ----------------
+function voiceNow() {
+  const pref = getVoicePref(), list = zhVoices();
+  if (!list.length) return '刚打开还没读到手机里的语音，点进去看';
+  const hit = pref ? list.find(x => x.key === pref) : null, cur = hit || list[0];
+  return `${hit ? '已选' : '自动选'}：${cur.name}（${cur.lang}）`;
+}
+// 语音不对（苹果老机型语文“咬舌”）时，家长在这里一个个试听、换掉
+export function voicePage() {
+  let ok = false; try { ok = sessionStorage.getItem('kp_parent') === '1'; } catch (e) { ok = !!window.__kpParent; }
+  if (!ok) { nav('#/login'); return; }
+  setTheme(null);
+  const box = h('div', {});
+  const draw = () => {
+    if (!box.isConnected) return;
+    const list = zhVoices(), pref = getVoicePref();
+    const rows = list.map(x => {
+      const on = pref ? pref === x.key : x === list[0];
+      const bad = /^zh-(hk|tw)|^yue|^wuu/i.test(x.lang || '') || /粤|上海|台湾|台灣|cantonese/i.test(x.name);
+      return h('div', { class: 'row static' },
+        h('div', {}, h('b', {}, (on ? '✅ 当前：' : '') + x.name), h('small', {}, x.lang + (bad ? ' · 不是普通话，读中文会咬舌' : ''))),
+        h('div', { class: 'chips' },
+          h('button', { type: 'button', class: 'btn small ghost', onclick: () => testVoice(x.v) }, '🔊 试听'),
+          on ? null : h('button', { type: 'button', class: 'btn small primary', onclick: () => { setVoicePref(x.key); toast('记住啦，以后就用这个声音'); draw(); } }, '用这个')));
+    });
+    box.replaceChildren(
+      h('p', { class: 'note' }, '先点「试听」听一句，觉得哪个顺耳就点「用这个」。选好回到课文点播放，用的就是它。'),
+      list.length ? h('div', { class: 'list' }, rows)
+        : h('p', { class: 'note bakwarn' }, '这台手机还没读到中文语音。先到「设置 → 辅助功能 → 朗读内容 → 声音 → 中文」下载一个「普通话」，再回来看这一页。'),
+      ...(pref ? [h('button', { class: 'btn ghost wide', style: 'margin-top:12px', onclick: () => { setVoicePref(''); toast('已恢复自动选择'); draw(); } }, '恢复自动选择')] : []));
+  };
+  mount(page('朗读声音', box, { back: '#/parent' }));
+  draw();
+  try { const ss = window.speechSynthesis; if (ss && ss.addEventListener) ss.addEventListener('voiceschanged', () => { if (box.isConnected) draw(); }); } catch (e) { /* ignore */ }
   bsz();
 }
 // ---------------- 使用须知：一台设备只弹一次，点过就永久记住 ----------------
