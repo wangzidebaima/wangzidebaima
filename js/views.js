@@ -22,6 +22,27 @@ function page(title, content, { back = '#/', right = null } = {}) {
       h('h1', {}, title), right || h('span', { class: 'back' })),
     h('main', {}, content));
 }
+// 自检页：把需要的文件逐个请求一遍，哪个没传上就列出来
+export async function checkPage() {
+  const out = h('div', { class: 'list' }), sum = h('p', { class: 'note' }, '正在检查…');
+  mount(page('检查文件', [sum, out], { back: '#/me' }));
+  let files = [];
+  try {
+    const t = await (await fetch('sw.js', { cache: 'no-store' })).text(); const m = t.match(/const SHELL = \[([\s\S]*?)\];/);
+    files = (m ? [...m[1].matchAll(/'([^']+\.(?:js|json|css|png|webmanifest|html))'/g)].map(x => x[1]) : []);
+    const lib = await (await fetch('data/library.json', { cache: 'no-store' })).json();
+    lib.subjects.forEach(sb => sb.sets.forEach(x => files.push('data/' + x.file)));
+  } catch (e) { sum.textContent = '读不到文件列表，请连上网络再试。'; return; }
+  const bad = []; let n = 0;
+  for (let i = 0; i < files.length; i += 12) {
+    await Promise.all(files.slice(i, i + 12).map(async f => { try { const r = await fetch(f, { cache: 'no-store' }); if (!r.ok) bad.push(f); } catch (e) { bad.push(f); } n++; }));
+    sum.textContent = `正在检查… ${Math.min(n, files.length)}/${files.length}`;
+  }
+  try { localStorage.setItem('kp_hc', JSON.stringify({ t: Date.now(), bad })); } catch (e) { /* 无痕模式 */ }
+  if (!bad.length) { sum.textContent = `✅ ${files.length} 个文件都在，没有缺的。`; return; }
+  sum.textContent = `有 ${bad.length} 个文件没找到。把下面的截图发给爸爸，请他重新上传：`;
+  bad.forEach(f => out.append(h('div', { class: 'row' }, h('div', {}, h('b', {}, f)))));
+}
 export function showError(msg) {
   mount(h('div', { class: 'login' }, h('div', { class: 'logo' }, '📡'), h('h1', {}, '打不开'), h('p', { class: 'sub' }, msg),
     h('button', { class: 'btn primary wide', onclick: () => location.reload() }, '重新加载')));
@@ -138,10 +159,16 @@ function taskCard(u) {
     nx ? h('a', { class: 'btn primary wide gobtn', href: nx.href }, `▶ 开始：${nx.label}`) : h('p', { class: 'note' }, '真棒！还想多练的话，往下选一个就行。'),
     shown.map((t, i) => {
       const ok = done[i] >= t.goal, label = t.kind === 'essay' ? `听美文《${ew.item.title.replace(/^《|》$/g, '')}》（${ew.end.slice(5)} 前）` : t.label;
-      return h('a', { class: 'task' + (ok ? ' done' : ''), href: taskTarget(u, t, ew) }, h('span', { class: 'tk' }, ok ? '✅' : '⬜'), h('span', { class: 'tl' }, label), h('span', { class: 'tn' }, `${Math.min(done[i], t.goal)}/${t.goal}`));
+      return h('a', { class: 'task' + (ok ? ' done' : ''), href: taskTarget(u, t, ew) }, h('span', { class: 'tk' }, ok ? '✅' : '⬜'), h('span', { class: 'tl' }, label), h('span', { class: 'tn' }, `${Math.min(done[i], t.goal)}/${t.goal}${t.minutes ? ' 分钟' : ''}`));
     }));
 }
 const coinsGot = (rewards, pos) => rewards.filter(r => pos >= r.stars).reduce((a, r) => a + (r.coins || 0), 0);
+// 自检结果横幅：app 每天自动检查一次文件，有缺的就在首页亮红条
+function healthBanner() {
+  try { const r = JSON.parse(localStorage.getItem('kp_hc') || 'null'); if (!r || !r.bad || !r.bad.length) return null;
+    return h('a', { class: 'hcbar', href: '#/check', style: 'display:block;margin:8px 0;padding:10px 12px;border-radius:12px;background:#c0392b;color:#fff;text-decoration:none;font-size:14px' }, `⚠️ 有 ${r.bad.length} 个文件没找到，部分内容可能打不开。点这里看看，并告诉爸爸。`);
+  } catch (e) { return null; }
+}
 export function home() {
   const u = user(), st = S.stats(u.id), p = S.P(u.id);
   const rewards = (X.cfg.rewards || []).slice().sort((a, b) => a.stars - b.stars);
@@ -175,7 +202,7 @@ export function home() {
   const wrongN = st.wrong;
   mount(h('div', { class: 'page home' },
     h('header', { class: 'hello' }, h('div', {}, h('small', {}, '你好，'), h('h1', {}, u.display + ' 👋', u.grade ? h('span', { class: 'grade' }, u.grade) : null)), h('div', { class: 'hbtns' }, h('button', { class: 'link', onclick: () => { const f = ((p.font || 0) + 1) % 3; p.font = f; S.save(u.id); setTheme(u); toast(['字号：标准', '字号：大', '字号：特大'][f]); } }, 'Aa'), h('button', { class: 'link', onclick: () => { if (confirm('切换同学？')) { S.setUser(null); nav('#/login'); } } }, '切换'))),
-    jar, taskCard(u), reviewLine(u),
+    healthBanner(), jar, taskCard(u), reviewLine(u),
     u.soon && !u.subjects.length ? h('section', { class: 'soonbox' }, h('div', { class: 'logo' }, '🌱'), h('h2', {}, `${u.grade}的练习正在准备中`), h('p', { class: 'note' }, '课本内容马上就来，先把这个小窝准备好啦。')) : null,
     u.tasks && u.tasks.length ? h('p', { class: 'more' }, '想多练一点？从下面自己选：') : null,
     areas,
@@ -207,8 +234,7 @@ export function cnSubject(id) {
     doneUnits.length ? h('details', { class: 'ctx' }, h('summary', {}, `已学完的单元（${doneUnits.length}）`), h('div', { class: 'list' }, doneUnits.map(row))) : null,
     h('h2', { class: 'sh' }, '随时可以'),
     h('div', { class: 'list' },
-      essay ? h('a', { class: 'row', href: '#/s/' + id + '/essay' }, h('div', {}, h('b', {}, '🌸 听美文'), h('small', {}, `${essay} 篇，听一听，学好词好句`)), h('span', { class: 'chip' }, '去听')) : null,
-      (u.random || []).some(k => /^cnw/.test(k)) ? h('a', { class: 'row', href: '#/rand/' + u.random.find(k => /^cnw/.test(k)) }, h('div', {}, h('b', {}, '✍️ 词语听写'), h('small', {}, '听词语，写在纸上')), h('span', { class: 'chip' }, '去写')) : null),
+      essay ? h('a', { class: 'row', href: '#/s/' + id + '/essay' }, h('div', {}, h('b', {}, '🌸 听美文'), h('small', {}, `${essay} 篇，听一听，学好词好句`)), h('span', { class: 'chip' }, '去听')) : null),
   ]));
 }
 export function cnEssays(id) {
@@ -468,6 +494,7 @@ const modeOf = (uid, mk) => {
   return m[mk] || m[base] || 'exam';
 };
 function runQuiz(o) {
+  o.t0 = o.t0 || Date.now();
   o = { ...o, sections: o.sections.map(sec => ({ ...sec, questions: sec.questions.filter(validQ) })).filter(sec => sec.questions.length) };
   const live = (o.mode || modeOf(o.uid, o.mk)) === 'live';
   const ans = {}, qs = [], done = {}, nodes = {};
@@ -526,7 +553,7 @@ function runQuiz(o) {
       if (r.g.ok) { okN++; pts += r.q.pts || 1; if (r.star === 'new') newStars++; if (r.star === 'capped') capped++; }
     });
     const m0 = qs.length ? o.metaFor(qs[0]) : {};
-    S.recordAttempt(o.uid, o.recId || null, { title: o.recTitle || o.title, ok: okN, total: qs.length, pts, ptsAll, stars: newStars, src: m0.src, sub: m0.sub, kind: m0.kind });
+    S.recordAttempt(o.uid, o.recId || null, { title: o.recTitle || o.title, ok: okN, total: qs.length, pts, ptsAll, stars: newStars, src: m0.src, sub: m0.sub, kind: m0.kind, secs: Math.min(1500, Math.round((Date.now() - o.t0) / 1000)) });
     keypad.close();
     mount(resultsNode(o, results, { newStars, capped, okN, pts, ptsAll }));
   }
@@ -739,6 +766,7 @@ export function records() {
     h('button', { class: 'btn primary wide', onclick: toWechat }, '复制并打开微信'),
     h('button', { class: 'btn ghost wide', style: 'margin-top:10px', onclick: shareOther }, '用其他方式分享'),
     h('p', { class: 'note' }, '打开微信后，找到家长的对话，长按输入框选「粘贴」，再发送。'),
+    h('a', { class: 'link instl', href: '#/check' }, '🔧 有的内容打不开？点这里检查文件'),
   ]));
 }
 

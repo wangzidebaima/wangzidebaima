@@ -54,7 +54,7 @@ export function recordAttempt(uid, setId, rec) {
     const o = p.sets[setId] || { n: 0, best: 0 };
     p.sets[setId] = { n: o.n + 1, best: Math.max(o.best, rec.ok), last: rec };
   }
-  p.log.push({ d: today(), t: Date.now(), setId: setId || null, title: rec.title, ok: rec.ok, total: rec.total, stars: rec.stars, src: rec.src, sub: rec.sub, kind: rec.kind || null });
+  p.log.push({ d: today(), t: Date.now(), setId: setId || null, title: rec.title, ok: rec.ok, total: rec.total, stars: rec.stars, src: rec.src, sub: rec.sub, kind: rec.kind || null, secs: rec.secs || 0 });
   if (p.log.length > 300) p.log = p.log.slice(-300);
   save(uid);
 }
@@ -116,7 +116,7 @@ export function taskDone(uid, t, extra) {
   const p = P(uid), tod = today(), logs = p.log.filter(x => x.d === tod);
   if (t.kind === 'bank') return logs.filter(x => x.setId).length;
   if (t.kind === 'rand') { const subs = t.subs || [t.sub]; return logs.filter(x => subs.includes(x.sub)).reduce((a, x) => a + (x.total || 0), 0); }
-  if (t.kind === 'cat') return logs.filter(x => logCat(x) === t.cat).length;
+  if (t.kind === 'cat') { const l = logs.filter(x => logCat(x) === t.cat); return t.minutes ? Math.floor(l.reduce((a, x) => a + (x.secs || 0), 0) / 60) : l.length; }
   if (t.kind === 'speak') return Object.values(p.speak).filter(ts => dayOf(ts) === tod).length;
   if (t.kind === 'essay') { const w = extra && extra.window; if (!w) return 0; return p.log.filter(x => x.setId === w.item.id && x.d >= w.start && x.d <= w.end).length ? 1 : 0; }
   return 0;

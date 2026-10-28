@@ -75,6 +75,7 @@ async function render() {
       case 'learn': return a ? await LN.learnUnit(a) : await LN.learnHome();
       case 'errors': return V.errors();
       case 'me': return V.records();
+      case 'check': return await V.checkPage();
       case 'weekrev': return V.weekReview(a === 'a');
       case 'print': return await V.printView(a, b === 'a');
       default: return V.home();
@@ -83,6 +84,22 @@ async function render() {
     console.error(e);
     V.showError(String(e.message || e));
   }
+}
+
+// 自检：每 12 小时在后台把需要的文件逐个问一遍，缺了就记下来，首页会亮红条
+async function selfCheck() {
+  try {
+    const last = JSON.parse(localStorage.getItem('kp_hc') || 'null');
+    if (last && Date.now() - last.t < 12 * 3600 * 1000 && (!last.bad || !last.bad.length)) return;
+    await new Promise(r => setTimeout(r, 4000));
+    const t = await (await fetch('sw.js', { cache: 'no-store' })).text(); const m = t.match(/const SHELL = \[([\s\S]*?)\];/);
+    const files = (m ? [...m[1].matchAll(/'([^']+\.(?:js|json|css|png|webmanifest|html))'/g)].map(x => x[1]) : []);
+    (V.X.lib.subjects || []).forEach(sb => sb.sets.forEach(x => files.push('data/' + x.file)));
+    const bad = [];
+    for (let i = 0; i < files.length; i += 8) await Promise.all(files.slice(i, i + 8).map(async f => { try { const r = await fetch(f, { method: 'HEAD', cache: 'no-store' }); if (!r.ok) bad.push(f); } catch (e) { /* 没网络不算缺文件 */ } }));
+    localStorage.setItem('kp_hc', JSON.stringify({ t: Date.now(), bad }));
+    if (bad.length && /^#\/?$/.test(location.hash)) render();
+  } catch (e) { /* 自检本身不能影响使用 */ }
 }
 
 async function boot() {
@@ -103,6 +120,7 @@ async function boot() {
     if (a && a.getAttribute('href') === location.hash) { e.preventDefault(); render(); }
   });
   render();
+  selfCheck();
   if ('serviceWorker' in navigator) {
     const had = !!navigator.serviceWorker.controller;
     navigator.serviceWorker.register('sw.js').then((reg) => {
