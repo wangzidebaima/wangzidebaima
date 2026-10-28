@@ -113,20 +113,43 @@ export function parentHome() {
     ...rows,
     h('button', { class: 'btn ghost wide', style: 'margin-top:14px', onclick: () => { try { sessionStorage.removeItem('kp_parent'); } catch (e) { window.__kpParent = false; } nav('#/login'); } }, '退出')));
 }
+// ---------------- 公告确认：进 App 前必须确认 N 次（默认 3），防止提示被随手划过 ----------------
+export function noticeOk() { try { return sessionStorage.getItem('kp_notice') === '1'; } catch (e) { return !!window.__kpNotice; } }
+export function noticeGate(done) {
+  const N = X.cfg.notice || {}, times = Math.max(1, N.times || 3), items = N.items || [];
+  let n = 0;
+  const box = h('div', { class: 'updbox' },
+    h('div', { class: 'updt' }, '📢 ' + (N.title || '公告')),
+    h('div', { class: 'updp' }, items.map(t => h('p', {}, t))),
+    h('div', { class: 'bigcnt' }, `0 / ${times}`),
+    h('button', { class: 'btn primary', onclick: () => {
+      n++;
+      if (n >= times) {
+        try { sessionStorage.setItem('kp_notice', '1'); } catch (e) { window.__kpNotice = true; }
+        done(); return;
+      }
+      box.querySelector('.bigcnt').textContent = `${n} / ${times}`;
+      go.textContent = n === times - 1 ? '最后再确认一次' : '再确认一次';
+    } }, '我看到了'));
+  const go = box.querySelector('.btn');
+  mount(h('div', { id: 'ntcm' }, box));
+}
 export function login() {
-  const inp = h('input', { class: 'big', placeholder: '输入你的名字', autocomplete: 'off', autocapitalize: 'off', autocorrect: 'off', spellcheck: 'false', enterkeyhint: 'go' });
+  const inp = h('input', { class: 'big', placeholder: '输入你的年级或名字', autocomplete: 'off', autocapitalize: 'off', autocorrect: 'off', spellcheck: 'false', enterkeyhint: 'go' });
   const msg = h('p', { class: 'msg' });
+  // 「七年级」「七」「7年级」「7」都能对上；名字也照旧能用
+  const norm = (s) => String(s || '').replace(/\s+/g, '').replace(/年级$/, '').replace(/[0-9]/g, d => '零一二三四五六七八九'[+d] || d);
   const enter = () => {
-    const v = inp.value.trim().toLowerCase();
-    const u = X.cfg.users.find(x => x.names.some(n => n.toLowerCase() === v));
-    if (!u && X.cfg.parent && v === X.cfg.parent.name.toLowerCase()) { askPassword(); return; }
-    if (!u) { msg.textContent = '没有找到这个名字，再检查一下～'; return; }
+    const v = inp.value.trim();
+    const u = X.cfg.users.find(x => x.names.some(n => norm(n) === norm(v))) || X.cfg.users.find(x => norm(x.grade) === norm(v));
+    if (!u && X.cfg.parent && v.toLowerCase() === X.cfg.parent.name.toLowerCase()) { askPassword(); return; }
+    if (!u) { msg.textContent = '没有找到这个年级或名字，再检查一下～'; return; }
     S.setUser(u.id); setTheme(u); nav('#/');
   };
   inp.addEventListener('keydown', e => { if (e.key === 'Enter') enter(); });
   setTheme(null);
   mount(h('div', { class: 'login' }, h('div', { class: 'logo' }, '⭐'), h('h1', {}, X.cfg.appName),
-    h('p', { class: 'sub' }, '输入你的名字，开始今天的练习'), inp,
+    h('p', { class: 'sub' }, '输入你的年级（比如：七年级），开始今天的练习'), inp,
     h('button', { class: 'btn primary wide', onclick: enter }, '开始'), msg,
     h('a', { class: 'link instl', href: '#/install' }, '📲 怎么把它装到手机桌面？')));
 }

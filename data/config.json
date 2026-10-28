@@ -250,5 +250,14 @@
  "dailyStarCap": 30,
  "starGoal": 400,
  "breakMinutes": 15,
- "breakRestMinutes": 3
+ "breakRestMinutes": 3,
+ "notice": {
+  "title": "使用须知",
+  "times": 3,
+  "items": [
+   "练习记录只保存在这台手机的浏览器里，换手机或清理浏览器前，请家长先到「家长入口」导出备份",
+   "每次连续练习 15 分钟会提醒休息，请让孩子劳逸结合",
+   "星星攒满可以换金币（见首页进度条），记得找家长兑换哦"
+  ]
+ }
 }

@@ -56,6 +56,8 @@ async function render() {
     stopAllSound();
     const hash = location.hash.replace(/^#\/?/, '');
     const [r, a, b, c] = hash.split('/');
+    // 公告确认：每次打开 App 都要先确认看到公告（ hear 页是扫码听力，不拦外面的人 ）
+    if (r !== 'hear' && !V.noticeOk()) { V.noticeGate(render); return; }
     const u = V.user();
     if (!u && r !== 'login' && r !== 'parent' && r !== 'hear' && r !== 'install') { location.replace('#/login'); return; }
     V.setTheme(u);

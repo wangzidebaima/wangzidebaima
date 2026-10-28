@@ -217,6 +217,13 @@ html[data-fs="1"] body { zoom: 1.12; } html[data-fs="2"] body { zoom: 1.25; }
 #updm .btn{display:block;width:100%;margin:8px 0 0}
 #updm .updp.small{font-size:13px;margin:12px 0 0}
 .hear .btn{margin-top:12px}.hear .big{min-height:72px;font-size:22px}
+#ntcm{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:9999;display:flex;align-items:center;justify-content:center;padding:24px}
+#ntcm .updbox{background:var(--surface);border-radius:18px;padding:22px 20px;max-width:320px;width:100%;text-align:center;box-shadow:0 8px 30px rgba(0,0,0,.25)}
+#ntcm .updt{font-size:20px;font-weight:700;margin-bottom:8px}
+#ntcm .updp{font-size:15px;color:var(--muted);margin-bottom:12px;line-height:1.6;text-align:left}
+#ntcm .updp p{margin:7px 0}
+#ntcm .btn{display:block;width:100%;margin:8px 0 0}
+#ntcm .bigcnt{font-size:32px;font-weight:700;color:var(--accent);margin:2px 0 6px}
 .key.wide4 { grid-column: span 4; min-height: 44px; font-size: 18px; }
 .modebar { margin: 4px 0 10px; }
 .q .livebtn { margin-top: 10px; }
