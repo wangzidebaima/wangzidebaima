@@ -1,9 +1,16 @@
 // 离线缓存：先用手机里存的（秒开），同时悄悄检查有没有新内容；有就提示刷新。
-const VER = 'kp-v36';
+const VER = 'kp-v37';
 const AUDIO = 'kp-audio';
-const SHELL = ['./', 'index.html', 'manifest.webmanifest', 'css/app.css', 'js/app.js', 'js/store.js', 'js/grade.js', 'js/mathgen.js',
-  'js/views.js', 'js/ui.js', 'js/english.js', 'js/cndict.js', 'js/learn.js', 'js/poem.js', 'js/chapgen.js', 'js/chapview.js', 'js/chapgen4.js', 'js/chapgen2.js', 'data/words7.json', 'data/words4.json', 'data/cnwords4.json', 'data/cnwords2.json', 'data/poems.json', 'data/tips.json', 'data/ipa.json', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png',
-  'data/config.json', 'data/library.json', 'data/vocab.json', 'audio/index.json'];
+// 下面这份清单由 tools/gen_shell.py 自动生成，不要手改；
+// 加了新文件后跑一次 python tools/gen_shell.py 即可。
+const SHELL = ['./', 'index.html', 'manifest.webmanifest', 'css/app.css',
+  'js/app.js', 'js/chapgen.js', 'js/chapgen2.js', 'js/chapgen4.js',
+  'js/chapview.js', 'js/cndict.js', 'js/english.js', 'js/grade.js',
+  'js/learn.js', 'js/mathgen.js', 'js/poem.js', 'js/store.js',
+  'js/ui.js', 'js/views.js', 'icons/apple-touch-icon.png', 'icons/icon-192.png',
+  'icons/icon-512.png', 'data/cnwords2.json', 'data/cnwords4.json', 'data/config.json',
+  'data/ipa.json', 'data/library.json', 'data/poems.json', 'data/tips.json',
+  'data/vocab.json', 'data/words4.json', 'data/words7.json'];
 
 async function precacheSets(c) {
   try {
@@ -14,10 +21,37 @@ async function precacheSets(c) {
   } catch (e) { /* 离线时跳过 */ }
 }
 
+// 保险丝：清单是自动生成的，万一有人加了新 js/css 却忘了跑生成脚本，
+// 这里再从 index.html 的 <script>/<link> 和 js 文件里的 import 里把漏的补上。
+// 全部 try/catch，出错就当没做，不影响正常使用。
+async function fillMissing(c) {
+  const add = async (p) => {
+    p = String(p || '').replace(/^\.\//, '').replace(/^\/+/, '').split('?')[0].split('#')[0];
+    if (!p || /^https?:/i.test(p) || !/\.(js|css)$/i.test(p)) return;
+    if (await c.match(p)) return;
+    await c.add(new Request(p, { cache: 'reload' })).catch(() => {});
+  };
+  try {
+    const hr = await c.match('index.html');
+    if (hr) {
+      const html = await hr.text();
+      for (const m of html.matchAll(/(?:src|href)="([^"]+)"/g)) await add(m[1]);
+    }
+    for (const f of SHELL.filter(x => x.endsWith('.js'))) {
+      const r = await c.match(f); if (!r) continue;
+      const src = await r.text();
+      for (const m of src.matchAll(/from\s*['"]([^'"]+)['"]/g)) {
+        try { await add(new URL(m[1], 'https://local/' + f).pathname); } catch (e) { /* ignore */ }
+      }
+    }
+  } catch (e) { /* ignore */ }
+}
+
 self.addEventListener('install', (e) => {
   e.waitUntil((async () => {
     const c = await caches.open(VER);
     await Promise.all(SHELL.map(u => c.add(new Request(u, { cache: 'reload' })).catch(() => {})));
+    await fillMissing(c);
     await precacheSets(c);
     self.skipWaiting();
   })());

@@ -7,4 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: python3 tools/check_site.py
+      # 先确认 sw.js 的离线缓存清单没有过期（加了新文件忘更新，手机离线会打不开）
+      - name: 校验离线缓存清单
+        run: python3 tools/gen_shell.py --check
+      - name: 检查网站文件与题集
+        run: python3 tools/check_site.py
