@@ -8,6 +8,7 @@ import * as CV from './chapview.js';
 import { stopAllSound, toast, warmVoices } from './ui.js';
 import * as HP from './help.js';
 import * as B from './badges.js';
+import * as P from './parent.js';
 
 const getJSON = (u) => fetch(u).then(r => { if (!r.ok) throw new Error(u + ' ' + r.status); return r.json(); });
 
@@ -46,7 +47,7 @@ function showBreak(restMin) {
 }
 setInterval(() => {
   const r = location.hash.replace(/^#\/?/, '').split('/')[0];
-  if (BRK.shown || document.visibilityState !== 'visible' || !V.user() || ['login', 'parent', 'hear', 'install'].includes(r)) return;
+  if (BRK.shown || document.visibilityState !== 'visible' || !V.user() || ['login', 'parent', 'zone', 'hear', 'install'].includes(r)) return;
   if (Date.now() - BRK.last > 90000) return;       // 90 秒没有操作，不算在学习
   BRK.active++;
   const cfg = (V.X && V.X.cfg) || {}; BRK.limit = (cfg.breakMinutes || 15) * 60;
@@ -61,13 +62,14 @@ async function render() {
     // 公告确认：每次打开 App 都要先确认看到公告（ hear 页是扫码听力，不拦外面的人 ）
     if (r !== 'hear' && !V.noticeOk()) { V.noticeGate(render); return; }
     const u = V.user();
-    if (!u && r !== 'login' && r !== 'parent' && r !== 'hear' && r !== 'install' && r !== 'voice' && r !== 'help' && r !== 'traffic' && r !== 'papers') { location.replace('#/login'); return; }
+    if (!u && r !== 'login' && r !== 'parent' && r !== 'zone' && r !== 'hear' && r !== 'install' && r !== 'voice' && r !== 'help' && r !== 'traffic' && r !== 'papers') { location.replace('#/login'); return; }
     V.setTheme(u);
     // 成就徽章：每次页面切换顺手查一遍，有新解锁就弹提示（拿到永久点亮，重复调用安全）
-    if (u && !['login', 'parent', 'voice', 'help', 'hear', 'install'].includes(r)) B.checkAndGrant(u.id).forEach(x => toast(`🏅 解锁成就：${x.icon} ${x.name}`, 4000));
+    if (u && !['login', 'parent', 'zone', 'voice', 'help', 'hear', 'install'].includes(r)) B.checkAndGrant(u.id).forEach(x => toast(`🏅 解锁成就：${x.icon} ${x.name}`, 4000));
     switch (r) {
       case 'login': return V.login();
       case 'parent': return V.parentHome();
+      case 'zone': return P.zoneGate();
       case 'voice': return V.voicePage();
       case 'help': return HP.helpPage();
       case 'traffic': return V.trafficPage();

@@ -3,20 +3,18 @@
 //
 // 三条底线：
 //   1. 只在孩子点 🎤 的那一刻才开始听，别的时候不开麦克风
-//   2. 浏览器不支持（微信内置、老系统、家长关掉了）就自动退回原来的自评打卡，功能不会缺
-//   3. 听出来的文字只在这台手机上比对，不上传、不保存
-
-const KEY = 'kp_sr';           // '0' 表示家长关掉了跟读检查
-
-export const srOn = () => { try { return localStorage.getItem(KEY) !== '0'; } catch (e) { return true; } };
-export const setSr = (on) => { try { localStorage.setItem(KEY, on ? '1' : '0'); } catch (e) { /* ignore */ } };
+//   2. 浏览器不支持（微信内置、老系统）就自动退回原来的自评打卡，功能不会缺
+//   3. 听出来的文字只在这台手机上比对，不保存
+//
+// 常开，不提供开关：听不出来、听不清都会自动退回老打卡方式，不会把孩子卡住，
+// 所以不需要家长去开/关（家长页是开发者后台，客户本来就看不到）。
 
 // 有的浏览器带前缀；微信内置浏览器两者都没有
 export function srApi() {
   return window.SpeechRecognition || window.webkitSpeechRecognition || null;
 }
-// 真的能用吗：家长没关 + 浏览器支持
-export const srReady = () => srOn() && !!srApi();
+// 真的能用吗：只看这台手机的浏览器支不支持
+export const srReady = () => !!srApi();
 
 // 单词化：统一小写，去掉标点和撇号（I'm → im，识别结果多半也是 im），只留词
 const words = (s) => String(s || '')

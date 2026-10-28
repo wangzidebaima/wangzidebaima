@@ -4,10 +4,14 @@ import * as B from './badges.js';
 import * as S from './store.js';
 import { gradeQuestion, answerText, userText, isAnswered } from './grade.js';
 import { RANDOM, makeSession } from './mathgen.js';
-import { srReady, srOn, setSr, listen, similarity, errText } from './speech.js';
+import { srReady, listen, similarity, errText } from './speech.js';
 
 export const X = { cfg: null, lib: null, vocab: {}, audio: new Set(), sets: {}, ipa: {} };
 const app = () => document.getElementById('app');
+// 两个门：adminOk = 开发者后台（config.json 里那个密码）；parentOk = 家长专区或后台都算过
+const ses = (k, fb) => { try { return sessionStorage.getItem(k) === '1'; } catch (e) { return !!window[fb]; } };
+export const adminOk = () => ses('kp_parent', '__kpParent');
+export const parentOk = () => adminOk() || ses('kp_zone', '__kpZone');
 export const nav = (hash) => { if (location.hash === hash) window.dispatchEvent(new Event('hashchange')); else location.hash = hash; };
 export const user = () => X.cfg.users.find(u => u.id === S.getUser()) || null;
 export function setTheme(u) { document.documentElement.dataset.theme = u ? u.theme : ''; document.documentElement.dataset.fs = u ? String(S.P(u.id).font || 0) : '0'; }
@@ -87,8 +91,7 @@ const PAPERS = [
   { g: 'g4', name: '小四 · 四年级', math: 5, eng: 6 },
 ];
 export function papersPage() {
-  let ok = false; try { ok = sessionStorage.getItem('kp_parent') === '1'; } catch (e) { ok = !!window.__kpParent; }
-  if (!ok) { nav('#/login'); return; }
+  if (!parentOk()) { nav('#/login'); return; }
   setTheme(null);
   const dl = (f, t) => h('a', { class: 'chip', href: 'papers/' + f + '.docx', download: f + '.docx' }, t);
   const blocks = PAPERS.map(x => h('section', { style: 'margin:14px 0' },
@@ -104,86 +107,92 @@ export function papersPage() {
     h('p', { class: 'note' }, '语文没有做试卷；叶子（二年级）也没有试卷。想让孩子在手机上做题，用「单元小测」更快。'),
   ], { back: '#/parent' }));
 }
-export function parentHome() {
-  let ok = false; try { ok = sessionStorage.getItem('kp_parent') === '1'; } catch (e) { ok = !!window.__kpParent; }
-  if (!ok) { nav('#/login'); return; }
-  setTheme(null);
-  const rows = X.cfg.users.map(u => {
-    const st = S.stats(u.id);
-    const file = h('input', { type: 'file', accept: '.json,application/json', style: 'display:none', onchange: (ev) => {
-      const f = ev.target.files && ev.target.files[0]; if (!f) return;
-      const rd = new FileReader();
-      rd.onload = () => {
-        const name = f.name || '';
-        if (!confirm(`用「${name}」里的记录覆盖 ${u.display} 在这台手机上的现有记录吗？\n覆盖后星星、错题以文件里的为准，现有记录会被替换。`)) return;
-        if (S.importProfile(u.id, String(rd.result))) { toast('导入成功，正在刷新…'); setTimeout(() => location.reload(), 900); }
-        else toast('导入失败：这个文件不是「书山小路」导出的记录文件');
-      };
-      rd.readAsText(f);
-    } });
-    // 上次导出提醒：没导出过 / 超过 30 天都会标红
-    const bak = h('p', { class: 'note' });
-    const setBak = () => {
-      const d = S.backupDaysAgo(u.id);
-      if (d < 0) { bak.className = 'note bakwarn'; bak.textContent = '⚠️ 还没有导出过备份，建议现在就导出一次'; return; }
-      const m = Number(S.lastBackup(u.id).slice(5, 7)), dd = Number(S.lastBackup(u.id).slice(8, 10));
-      if (d === 0) { bak.className = 'note'; bak.textContent = '上次导出：今天'; return; }
-      if (d > 30) { bak.className = 'note bakwarn'; bak.textContent = `⚠️ 上次导出：${m} 月 ${dd} 日（已过 ${d} 天，建议再导出一次）`; return; }
-      bak.className = 'note'; bak.textContent = `上次导出：${m} 月 ${dd} 日`;
+// ---------------- 一个孩子的卡片：导出备份 / 导入备份 / 发金币 ----------------
+// 家长专区（家长自己进来）和开发者后台（#/parent，只有我能进）共用同一份，别写两遍
+export function kidCard(u, { vip = false, redraw = null } = {}) {
+  const again = redraw || (() => {});
+  const st = S.stats(u.id);
+  const file = h('input', { type: 'file', accept: '.json,application/json', style: 'display:none', onchange: (ev) => {
+    const f = ev.target.files && ev.target.files[0]; if (!f) return;
+    const rd = new FileReader();
+    rd.onload = () => {
+      const name = f.name || '';
+      if (!confirm(`用「${name}」里的记录覆盖 ${u.display} 在这台手机上的现有记录吗？\n覆盖后星星、错题以文件里的为准，现有记录会被替换。`)) return;
+      if (S.importProfile(u.id, String(rd.result))) { toast('导入成功，正在刷新…'); setTimeout(() => location.reload(), 900); }
+      else toast('导入失败：这个文件不是「书山小路」导出的记录文件');
     };
-    setBak();
-    // 金币：这一轮攒到的 + 家长已发放的流水
-    const rews = (X.cfg.rewards || []).slice().sort((a, b) => a.stars - b.stars);
-    const cyk = cycle(st.total), got = coinsGot(rews, cyk.pos), given = S.coinGivenLap(u.id, cyk.laps, goal());
-    const paidAll = S.coinsPaid(u.id), lastCoin = S.coinList(u.id).slice(-1)[0];
-    const coinRow = h('div', { class: 'row static' }, h('div', {}, h('b', {}, '🪙 金币'),
-      h('small', {}, (got ? (given ? `本轮 ${got} 个已发放` : `本轮可领 ${got} 个`) : '本轮还没攒到') + (paidAll ? ` · 累计已发 ${paidAll} 个` : ' · 还没发过') + (lastCoin ? `，上次 ${Number(lastCoin.d.slice(5, 7))} 月 ${Number(lastCoin.d.slice(8, 10))} 日` : ''))),
-      got && !given ? h('button', { type: 'button', class: 'btn small primary', onclick: () => {
-        if (!confirm(`确认已经把这一轮的 ${got} 个金币给 ${u.display} 了吗？\n记下后，孩子首页会显示「家长已经发放啦」。`)) return;
-        S.payCoins(u.id, cyk.laps, goal(), got); toast('记好啦'); parentHome();
-      } }, `记一笔：发 ${got} 个`) : null);
-    // 会员占位：只显示状态，现在没有任何功能用它做拦截
-    const vipRow = h('div', { class: 'row static' }, h('div', {}, h('b', {}, '👑 会员'),
-      h('small', {}, S.isVip(u.id) ? `已开通，到期：${S.P(u.id).vip.exp}` : '未开通（功能准备中）')));
-    return h('div', { class: 'list' },
-      file,
-      h('div', { class: 'row static' }, h('div', {}, h('b', {}, u.display), h('small', {}, `${u.grade} · ⭐${st.total} 颗 · 错题 ${st.wrong} 道`)),
-        h('span', { class: 'chip' }, S.getUser() === u.id ? '当前登录' : ' ')),
-      h('div', { class: 'chips' },
-        h('button', { type: 'button', class: 'btn small primary', onclick: () => {
-          try {
-            const blob = new Blob([S.exportProfile(u.id)], { type: 'application/json' });
-            const a = h('a', { href: URL.createObjectURL(blob), download: `书山小路-${u.display}-记录-${S.today()}.json` });
-            document.body.append(a); a.click(); a.remove();
-            S.markBackup(u.id); setBak();
-            toast('已导出，请把文件保存好或发到家长微信/电脑');
-          } catch (e) { toast('导出失败，请换浏览器再试'); }
-        } }, '导出记录'),
-        h('button', { type: 'button', class: 'btn small ghost', onclick: () => file.click() }, '导入记录')),
-      bak,
-      coinRow,
-      vipRow,
-      h('p', { class: 'note' }, '换手机或清过浏览器数据后：在新手机上先登录孩子，再到这里点「导入记录」选文件即可恢复。'));
-  });
+    rd.readAsText(f);
+  } });
+  // 上次导出提醒：没导出过 / 超过 30 天都会标红
+  const bak = h('p', { class: 'note' });
+  const setBak = () => {
+    const d = S.backupDaysAgo(u.id);
+    if (d < 0) { bak.className = 'note bakwarn'; bak.textContent = '⚠️ 还没有导出过备份，建议现在就导出一次'; return; }
+    const m = Number(S.lastBackup(u.id).slice(5, 7)), dd = Number(S.lastBackup(u.id).slice(8, 10));
+    if (d === 0) { bak.className = 'note'; bak.textContent = '上次导出：今天'; return; }
+    if (d > 30) { bak.className = 'note bakwarn'; bak.textContent = `⚠️ 上次导出：${m} 月 ${dd} 日（已过 ${d} 天，建议再导出一次）`; return; }
+    bak.className = 'note'; bak.textContent = `上次导出：${m} 月 ${dd} 日`;
+  };
+  setBak();
+  // 金币：这一轮攒到的 + 家长已发放的流水
+  const rews = (X.cfg.rewards || []).slice().sort((a, b) => a.stars - b.stars);
+  const cyk = cycle(st.total), got = coinsGot(rews, cyk.pos), given = S.coinGivenLap(u.id, cyk.laps, goal());
+  const paidAll = S.coinsPaid(u.id), lastCoin = S.coinList(u.id).slice(-1)[0];
+  const coinRow = h('div', { class: 'row static' }, h('div', {}, h('b', {}, '🪙 金币'),
+    h('small', {}, (got ? (given ? `本轮 ${got} 个已发放` : `本轮可领 ${got} 个`) : '本轮还没攒到') + (paidAll ? ` · 累计已发 ${paidAll} 个` : ' · 还没发过') + (lastCoin ? `，上次 ${Number(lastCoin.d.slice(5, 7))} 月 ${Number(lastCoin.d.slice(8, 10))} 日` : ''))),
+    got && !given ? h('button', { type: 'button', class: 'btn small primary', onclick: () => {
+      if (!confirm(`确认已经把这一轮的 ${got} 个金币给 ${u.display} 了吗？\n记下后，孩子首页会显示「家长已经发放啦」。`)) return;
+      S.payCoins(u.id, cyk.laps, goal(), got); toast('记好啦'); again();
+    } }, `记一笔：发 ${got} 个`) : null);
+  // 会员占位：只在我的后台显示，家长专区里没有（现在没有任何功能用它做拦截）
+  const vipRow = vip ? h('div', { class: 'row static' }, h('div', {}, h('b', {}, '👑 会员'),
+    h('small', {}, S.isVip(u.id) ? `已开通，到期：${S.P(u.id).vip.exp}` : '未开通（功能准备中）'))) : null;
+  return h('div', { class: 'list' },
+    file,
+    h('div', { class: 'row static' }, h('div', {}, h('b', {}, u.display), h('small', {}, `${u.grade} · ⭐${st.total} 颗 · 错题 ${st.wrong} 道`)),
+      h('span', { class: 'chip' }, S.getUser() === u.id ? '当前登录' : ' ')),
+    h('div', { class: 'chips' },
+      h('button', { type: 'button', class: 'btn small primary', onclick: () => {
+        try {
+          const blob = new Blob([S.exportProfile(u.id)], { type: 'application/json' });
+          const a = h('a', { href: URL.createObjectURL(blob), download: `书山小路-${u.display}-记录-${S.today()}.json` });
+          document.body.append(a); a.click(); a.remove();
+          S.markBackup(u.id); setBak();
+          toast('已导出，请把文件保存好或发到家长微信/电脑');
+        } catch (e) { toast('导出失败，请换浏览器再试'); }
+      } }, '导出记录'),
+      h('button', { type: 'button', class: 'btn small ghost', onclick: () => file.click() }, '导入记录')),
+    bak,
+    coinRow,
+    vipRow,
+    h('p', { class: 'note' }, '换手机或清过浏览器数据后：在新手机上先登录孩子，再到这里点「导入记录」选文件即可恢复。'));
+}
+// ---------------- 开发者后台：只有我能进（密码写在 config.json 里），客户看不到 ----------------
+// 客户家长要用的都在「家长专区」（#/zone），别往这里加
+export function parentHome() {
+  if (!adminOk()) { nav('#/login'); return; }
+  setTheme(null);
+  const rows = X.cfg.users.map(u => kidCard(u, { vip: true, redraw: parentHome }));
   // 朗读声音：这是设备级设置（三个孩子共用），显示一次就够；苹果老机型语文“咬舌”时来这换
   const vrow = h('a', { class: 'row', href: '#/voice' }, h('div', {}, h('b', {}, '🔊 朗读声音'),
     h('small', {}, voiceNow())), h('span', { class: 'chip' }, '试听 / 换'));
-  mount(h('div', { class: 'login' }, h('div', { class: 'logo' }, '🔒'), h('h1', {}, X.cfg.parent.name), h('p', { class: 'sub' }, '备份孩子的学习记录（星星、错题都保存在这台手机的浏览器里，换手机前先导出）'),
+  mount(h('div', { class: 'login' }, h('div', { class: 'logo' }, '🔒'), h('h1', {}, X.cfg.parent.name),
+    h('p', { class: 'sub' }, '这是开发者后台：看访问统计、处理家长的问题。家长自己要用的在「家长专区」。'),
     ...rows,
     h('div', { class: 'list', style: 'margin-top:12px' }, vrow,
-      h('div', { class: 'row static' }, h('div', {}, h('b', {}, '🎤 口语跟读检查'),
-        h('small', {}, srOn() ? (srReady() ? '现在开着：读对一句才能打卡' : '现在开着，但这台手机的浏览器听不了朗读，实际按老方式打卡') : '现在关着：点一下就能打卡')),
-        h('button', { type: 'button', class: 'btn small ' + (srOn() ? 'ghost' : 'primary'), onclick: () => { setSr(!srOn()); toast(srOn() ? '已打开跟读检查' : '已关掉，回到点一下就打卡'); parentHome(); } }, srOn() ? '关掉' : '打开')),
+      h('a', { class: 'row', href: '#/zone' }, h('div', {}, h('b', {}, '👨‍👩‍👧 家长专区'),
+        h('small', {}, '家长自己设密码进来：发金币 / 备份 / 试卷')), h('span', { class: 'chip' }, '去看看')),
       h('a', { class: 'row', href: '#/papers' }, h('div', {}, h('b', {}, '📄 试卷下载'),
         h('small', {}, '数学、英语各单元 + 期中期末，共 34 份 Word')), h('span', { class: 'chip' }, '去下载')),
       h('a', { class: 'row', href: '#/traffic' }, h('div', {}, h('b', {}, '📈 访问统计'),
         h('small', {}, '有多少人打开过这个网站（GitHub 官方数据）')), h('span', { class: 'chip' }, '看看')),
       h('a', { class: 'row', href: '#/help' }, h('div', {}, h('b', {}, '🩺 遇到问题'), h('small', {}, '没声音、打不开、更新不了怎么办；一键自检把状态查出来')), h('span', { class: 'chip' }, '看看'))),
-    h('button', { class: 'btn ghost wide', style: 'margin-top:14px', onclick: () => { noticeReset(); toast('好啦，下次打开会重新显示使用须知'); } }, '重新显示使用须知'),
+    h('button', { class: 'btn ghost wide', style: 'margin-top:14px', onclick: () => { if (confirm('家长忘了自己设的密码时，用这个清掉：他会重新设一个。孩子的星星和错题不受影响。确定清掉吗？')) { S.pinClear(); toast('已清掉，家长下次进专区会重新设一个'); } } }, '清除本机家长密码（家长忘密码时用）'),
+    h('button', { class: 'btn ghost wide', style: 'margin-top:10px', onclick: () => { noticeReset(); toast('好啦，下次打开会重新显示使用须知'); } }, '重新显示使用须知'),
     h('button', { class: 'btn ghost wide', style: 'margin-top:10px', onclick: () => { try { sessionStorage.removeItem('kp_parent'); } catch (e) { window.__kpParent = false; } nav('#/login'); } }, '退出')));
 }
 // ---------------- 朗读声音：家长页那一行显示“现在用的是哪个中文语音” ----------------
-function voiceNow() {
+export function voiceNow() {
   const pref = getVoicePref(), list = zhVoices();
   if (!list.length) return '刚打开还没读到手机里的语音，点进去看';
   const hit = pref ? list.find(x => x.key === pref) : null, cur = hit || list[0];
@@ -296,7 +305,7 @@ export function noticeGate(done) {
     h('div', { class: 'updt' }, '📢 ' + (N.title || '使用须知')),
     h('div', { class: 'updp' }, items.map((t, i) => h('p', { class: 'nw' }, h('b', {}, (i + 1) + '. '), t))),
     h('button', { class: 'btn primary', onclick: close }, '知道了，开始吧'),
-    h('p', { class: 'updp small' }, '这条提示以后不会再弹了。想再看一遍，让家长在「家长入口」点「重新显示使用须知」。'));
+    h('p', { class: 'updp small' }, '这条提示以后不会再弹了。想再看一遍，让家长到「家长专区」里看。'));
   mount(h('div', { id: 'ntcm' }, box));
 }
 export function login() {
@@ -317,7 +326,8 @@ export function login() {
     h('p', { class: 'sub' }, '输入你的年级（比如：七年级），开始今天的练习'), inp,
     h('button', { class: 'btn primary wide', onclick: enter }, '开始'), msg,
     h('a', { class: 'link instl', href: '#/install' }, '📲 怎么把它装到手机桌面？'),
-    h('a', { class: 'link instl', href: '#/help' }, '🩺 打不开 / 没声音 / 更新不了？看这里')));
+    h('a', { class: 'link instl', href: '#/help' }, '🩺 打不开 / 没声音 / 更新不了？看这里'),
+    h('a', { class: 'link instl', href: '#/zone' }, '👨‍👩‍👧 家长专区：发金币 / 备份 / 打印试卷')));
 }
 
 // ---------------- 装到桌面教程（不用登录） ----------------
@@ -396,7 +406,7 @@ function taskCard(u) {
       return h('a', { class: 'task' + (ok ? ' done' : ''), href: taskTarget(u, t, ew) }, h('span', { class: 'tk' }, ok ? '✅' : '⬜'), h('span', { class: 'tl' }, label), h('span', { class: 'tn' }, `${Math.min(done[i], t.goal)}/${t.goal}${t.minutes ? ' 分钟' : ''}`));
     }));
 }
-const coinsGot = (rewards, pos) => rewards.filter(r => pos >= r.stars).reduce((a, r) => a + (r.coins || 0), 0);
+export const coinsGot = (rewards, pos) => rewards.filter(r => pos >= r.stars).reduce((a, r) => a + (r.coins || 0), 0);
 // 自检结果横幅：app 每天自动检查一次文件，有缺的就在首页亮红条
 function healthBanner() {
   try { const r = JSON.parse(localStorage.getItem('kp_hc') || 'null'); if (!r || !r.bad || !r.bad.length) return null;
@@ -1119,12 +1129,14 @@ export function records() {
     h('p', { class: 'note' }, '打开微信后，找到家长的对话，长按输入框选「粘贴」，再发送。'),
     h('a', { class: 'link instl', href: '#/check' }, '🔧 有的内容打不开？点这里检查文件'),
     h('a', { class: 'link instl', href: '#/help' }, '🩺 没声音、打不开、更新不了？看看怎么办'),
+    h('a', { class: 'link instl', href: '#/zone' }, '👨‍👩‍👧 家长专区：发金币 / 备份 / 打印试卷'),
   ]));
 }
 
 // ---------------- 口语打卡 ----------------
 // 支持语音识别的浏览器上：点 🎤 读一句，读对了才能打卡（不再是点一下就给星）。
-// 不支持（微信内置浏览器、老系统）或家长关掉了：完全按原来的方式，打卡按钮直接可用。
+// 不支持（微信内置浏览器、老系统）：完全按原来的方式，打卡按钮直接可用。跟读检查常开，
+// 听不出来会自动退回老方式，所以不需要家长去开/关它。
 export async function speak(id) {
   const set = await loadSet(id), u = user();
   const readOk = new Set();     // 本次打开页面里读对了第几句
@@ -1183,7 +1195,7 @@ export async function speak(id) {
     });
     const tip = needRead
       ? h('p', { class: 'note' }, '点「🎤 读这句」读给手机听：读对了才算，打卡前至少读对一句。只在点按钮时才听，录音不会保存。')
-      : h('p', { class: 'note' }, srBroken ? '这台手机听不了朗读（可能没给麦克风权限，或者没联网），已经换成原来的打卡方式，不影响打卡。' : srOn() ? '这台手机的浏览器听不懂说话（微信里打开就会这样），按原来的方式打卡就行。想用跟读检查，用系统浏览器（Safari / Chrome）打开。' : '家长关掉了跟读检查，按原来的方式打卡就行。');
+      : h('p', { class: 'note' }, srBroken ? '这台手机听不了朗读（可能没给麦克风权限，或者没联网），已经换成原来的打卡方式，不影响打卡。' : '这台手机的浏览器听不懂说话（微信里打开就会这样），按原来的方式打卡就行。想用跟读检查，用系统浏览器（Safari / Chrome）打开。');
     mount(page(set.title, [h('ol', { class: 'steps' }, set.steps.map(t => h('li', {}, t))), tip, h('h2', { class: 'sh' }, `${set.plan.length} 天打卡`), h('div', { class: 'list' }, days), h('h2', { class: 'sh' }, '本单元句子（点 🔊 听，点 🎤 读给手机听）'), h('div', { class: 'list' }, sents)], { back: '#/s/' + (set.id.startsWith('g7') ? 'g7speaking' : 'g4speaking') }));
   };
   render();

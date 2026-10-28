@@ -169,6 +169,23 @@ export function payCoins(uid, lap, goal, n) {
   save(uid);
 }
 
+// ---------- 家长专区密码：家长第一次进来自己设，只存在这台手机里 ----------
+// 没有服务器，所以它就是「防孩子顺手点进去」，不是真加密。
+// 存的是 salt + SHA256(salt+密码)，和开发者后台那个密码一个做法。
+const PIN = 'kp_pin';
+export const sha256 = async (s) => [...new Uint8Array(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(s)))].map(b => b.toString(16).padStart(2, '0')).join('');
+export const pinHas = () => !!LS.get(PIN);
+export function pinSet(v) {
+  const salt = [...crypto.getRandomValues(new Uint8Array(8))].map(b => b.toString(16).padStart(2, '0')).join('');
+  return sha256(salt + v).then(hash => { LS.set(PIN, JSON.stringify({ salt, hash })); });
+}
+export async function pinCheck(v) {
+  let o = null; try { o = JSON.parse(LS.get(PIN) || 'null'); } catch (e) { o = null; }
+  if (!o || !o.salt) return false;
+  try { return await sha256(o.salt + v) === o.hash; } catch (e) { return false; }
+}
+export const pinClear = () => LS.del(PIN);
+
 // ---------- VIP 占位（现在没有任何功能读它做拦截，纯为将来收费铺路） ----------
 // vip: { exp: '2027-06-30', code: '兑换码', at: '激活日' }
 export const isVip = (uid) => { const v = P(uid).vip; return !!(v && v.exp && String(v.exp) >= today()); };
