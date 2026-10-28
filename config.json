@@ -1,0 +1,254 @@
+{
+ "version": "2026-10-25-1",
+ "appName": "书山小路",
+ "rewards": [
+  {
+   "stars": 100,
+   "coins": 1,
+   "label": "1 金币"
+  },
+  {
+   "stars": 200,
+   "coins": 1,
+   "label": "1 金币"
+  },
+  {
+   "stars": 300,
+   "coins": 1,
+   "label": "1 金币"
+  },
+  {
+   "stars": 400,
+   "coins": 2,
+   "label": "2 金币"
+  }
+ ],
+ "users": [
+  {
+   "id": "son",
+   "display": "梓逸",
+   "names": [
+    "徐梓逸",
+    "梓逸"
+   ],
+   "theme": "blue",
+   "subjects": [
+    "g7reading",
+    "g7listening",
+    "g7speaking",
+    "g7chinese"
+   ],
+   "random": [
+    "chap7",
+    "vocab7",
+    "phrase7"
+   ],
+   "tasks": [
+    {
+     "label": "数学随机练习 10 题",
+     "kind": "rand",
+     "subs": [
+      "chap7",
+      "math7"
+     ],
+     "goal": 10
+    },
+    {
+     "label": "阅读理解 10 分钟",
+     "kind": "cat",
+     "cat": "reading",
+     "goal": 10,
+     "minutes": true
+    },
+    {
+     "label": "英语听力 10 分钟",
+     "kind": "cat",
+     "cat": "listening",
+     "goal": 10,
+     "minutes": true
+    },
+    {
+     "label": "口语打卡（10 分钟）",
+     "kind": "speak",
+     "goal": 1
+    },
+    {
+     "label": "听一篇美文",
+     "kind": "essay",
+     "goal": 1
+    }
+   ],
+   "grade": "七年级",
+   "publishers": {
+    "math": "北师大版",
+    "eng": "人教版",
+    "cn": "统编版"
+   },
+   "modes": {
+    "chaptype": "live",
+    "chapmix": "exam",
+    "randmath": "exam",
+    "mathbank": "live",
+    "engquiz": "live",
+    "reading": "exam",
+    "listening": "exam",
+    "errors": "live",
+    "cnpoem": "live",
+    "cnknow": "live",
+    "cnread": "exam"
+   }
+  },
+  {
+   "id": "daughter",
+   "display": "清湲",
+   "names": [
+    "徐清湲",
+    "清湲"
+   ],
+   "theme": "rose",
+   "subjects": [
+    "g4reading",
+    "g4speaking",
+    "g4listening",
+    "g4chinese"
+   ],
+   "random": [
+    "math4",
+    "chap4",
+    "vocab4",
+    "phrase4",
+    "sent4",
+    "cnw4"
+   ],
+   "tasks": [
+    {
+     "label": "数学随机练习 10 题",
+     "kind": "rand",
+     "subs": [
+      "math4",
+      "chap4"
+     ],
+     "goal": 10
+    },
+    {
+     "label": "阅读理解 10 分钟",
+     "kind": "cat",
+     "cat": "reading",
+     "goal": 10,
+     "minutes": true
+    },
+    {
+     "label": "英语听力 10 分钟",
+     "kind": "cat",
+     "cat": "listening",
+     "goal": 10,
+     "minutes": true
+    },
+    {
+     "label": "口语打卡（10 分钟）",
+     "kind": "speak",
+     "goal": 1
+    },
+    {
+     "label": "听一篇美文",
+     "kind": "essay",
+     "goal": 1
+    }
+   ],
+   "grade": "四年级",
+   "publishers": {
+    "math": "北师大版",
+    "eng": "人教版 PEP",
+    "cn": "统编版"
+   },
+   "modes": {
+    "chaptype": "live",
+    "chapmix": "exam",
+    "randmath": "exam",
+    "mathbank": "live",
+    "engquiz": "live",
+    "reading": "exam",
+    "listening": "exam",
+    "errors": "live",
+    "reading#1": "live",
+    "reading#2": "live",
+    "cnpoem": "live",
+    "cnknow": "live",
+    "cnread": "exam"
+   }
+  },
+  {
+   "id": "yezi",
+   "display": "叶子",
+   "names": [
+    "叶子",
+    "徐叶子"
+   ],
+   "theme": "leaf",
+   "subjects": [
+    "g2chinese"
+   ],
+   "random": [
+    "math2",
+    "chap2",
+    "cnw2"
+   ],
+   "tasks": [
+    {
+     "label": "数学随机练习 10 题",
+     "kind": "rand",
+     "subs": [
+      "math2",
+      "chap2"
+     ],
+     "goal": 10
+    },
+    {
+     "label": "词语听写 10 个",
+     "kind": "rand",
+     "subs": [
+      "cnw2"
+     ],
+     "goal": 10
+    },
+    {
+     "label": "阅读理解 10 分钟",
+     "kind": "cat",
+     "cat": "reading",
+     "goal": 10,
+     "minutes": true
+    },
+    {
+     "label": "听一篇美文",
+     "kind": "essay",
+     "goal": 1
+    }
+   ],
+   "grade": "二年级",
+   "publishers": {
+    "math": "北师大版",
+    "cn": "统编版"
+   },
+   "modes": {
+    "chaptype": "live",
+    "mathbank": "live",
+    "engquiz": "live",
+    "errors": "live",
+    "cnpoem": "live",
+    "cnknow": "live",
+    "cnread": "exam",
+    "randmath": "exam",
+    "chapmix": "exam"
+   }
+  }
+ ],
+ "parent": {
+  "name": "美好的世界",
+  "salt": "463366f282f7907d",
+  "hash": "fe783f5acebb1d0b764455ebaa95166d1611b5293a2a67ce805009ddc0fe2155"
+ },
+ "dailyStarCap": 30,
+ "starGoal": 400,
+ "breakMinutes": 15,
+ "breakRestMinutes": 3
+}
