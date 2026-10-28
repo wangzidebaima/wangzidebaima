@@ -791,6 +791,107 @@ function calendarNode(u) {
   };
   draw(); return box;
 }
+// ---------------- 周报图片：家长存到相册/发朋友圈 ----------------
+// 纯 canvas 画，不联网、不依赖任何库，离线也能用
+function weekData(u) {
+  const p = S.P(u.id), st = S.stats(u.id), pad = (n) => String(n).padStart(2, '0');
+  const ds = []; for (let i = 6; i >= 0; i--) { const d = new Date(); d.setDate(d.getDate() - i); ds.push(`${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`); }
+  const set = new Set(ds), logs = p.log.filter(x => set.has(x.d));
+  const per = ds.map(d => (p.days[d] && p.days[d].n) || 0);
+  const active = new Set([...logs.map(x => x.d), ...ds.filter(d => (p.days[d] && p.days[d].n) > 0)]);
+  const stars = per.reduce((a, n) => a + n, 0);
+  const okN = logs.reduce((a, x) => a + (x.ok || 0), 0), totN = logs.reduce((a, x) => a + (x.total || 0), 0);
+  const units = {}; Object.values(p.wrong).filter(e => set.has(e.d) && e.meta).forEach(e => { units[e.meta.title] = (units[e.meta.title] || 0) + 1; });
+  const weakU = Object.entries(units).sort((a, b) => b[1] - a[1]).slice(0, 3).map(([t, n]) => `${t}（${n} 道）`);
+  const cy = cycle(st.total);
+  const tip = active.size < 4 ? '这周练习天数偏少，每天完成「今天做什么」里的任务就好，坚持比一次做很多更重要'
+    : (totN && okN / totN < 0.6) ? '答对率偏低，建议先用「单词卡片 / 学一学」再做题，别急着多做'
+      : weakU.length ? `周末陪孩子把「${weakU[0].replace(/（.*$/, '')}」再过一遍` : '这周状态不错，保持节奏，可以适当鼓励一下孩子';
+  return { ds, per, active: active.size, stars, okN, totN, weakU, cy, tip, groups: logs.length };
+}
+function weekCard(u) {
+  const d = weekData(u), W = 750, H = 1040, R = 2;
+  const cv = document.createElement('canvas'); cv.width = W * R; cv.height = H * R;
+  const c = cv.getContext('2d'); c.scale(R, R);
+  const cssv = (k, fb) => { try { return getComputedStyle(document.documentElement).getPropertyValue(k).trim() || fb; } catch (e) { return fb; } };
+  const accent = cssv('--accent', '#2f6fd0'), ink = '#1f2430', muted = '#8b93a3', lineC = '#e8ecf3';
+  const rr = (x, y, w, h, r) => { c.beginPath(); c.moveTo(x + r, y); c.arcTo(x + w, y, x + w, y + h, r); c.arcTo(x + w, y + h, x, y + h, r); c.arcTo(x, y + h, x, y, r); c.arcTo(x, y, x + w, y, r); c.closePath(); };
+  const font = (w, s) => `${w} ${s}px "PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",sans-serif`;
+  // 背景 + 卡片
+  c.fillStyle = '#f2f5fa'; c.fillRect(0, 0, W, H);
+  c.save(); c.shadowColor = 'rgba(20,40,80,.10)'; c.shadowBlur = 24; c.shadowOffsetY = 8;
+  c.fillStyle = '#fff'; rr(32, 32, W - 64, H - 64, 28); c.fill(); c.restore();
+  // 顶部色带
+  c.save(); rr(32, 32, W - 64, 250, 28); c.clip();
+  const g = c.createLinearGradient(32, 32, W - 32, 282); g.addColorStop(0, accent); g.addColorStop(1, '#7aa7ea');
+  c.fillStyle = g; c.fillRect(32, 32, W - 64, 250); c.restore();
+  c.fillStyle = 'rgba(255,255,255,.92)'; c.font = font(500, 26); c.textBaseline = 'top';
+  c.fillText('书山小路 · 本周小结', 68, 76);
+  c.fillStyle = '#fff'; c.font = font(700, 54);
+  c.fillText(`${u.display}`, 68, 118);
+  c.font = font(500, 26); c.fillStyle = 'rgba(255,255,255,.9)';
+  c.fillText(`${d.ds[0].slice(5)} ～ ${d.ds[6].slice(5)} · ${u.grade}`, 68, 190);
+  // 三个数字
+  const stats = [[String(d.active) + '/7', '练习天数'], ['⭐' + d.stars, '本周新得'], [d.totN ? Math.round(d.okN / d.totN * 100) + '%' : '—', '答对率']];
+  stats.forEach(([v, t], i) => {
+    const x = 32 + (W - 64) / 3 * i, w = (W - 64) / 3;
+    c.textAlign = 'center';
+    c.fillStyle = ink; c.font = font(700, 46); c.fillText(v, x + w / 2, 330);
+    c.fillStyle = muted; c.font = font(400, 24); c.fillText(t, x + w / 2, 392);
+  });
+  // 每日星星柱状图
+  const baseY = 620, topY = 470, barW = 52, gap = (W - 128 - barW * 7) / 6, max = Math.max(30, ...d.per);
+  c.strokeStyle = lineC; c.lineWidth = 2; c.beginPath(); c.moveTo(64, baseY); c.lineTo(W - 64, baseY); c.stroke();
+  d.per.forEach((n, i) => {
+    const x = 64 + (barW + gap) * i, h = Math.max(n ? 8 : 2, (n / max) * (baseY - topY));
+    c.fillStyle = n ? accent : '#e3e8f0';
+    rr(x, baseY - h, barW, h, 10); c.fill();
+    c.textAlign = 'center'; c.fillStyle = n ? ink : muted; c.font = font(600, 22);
+    if (n) c.fillText(String(n), x + barW / 2, baseY - h - 30);
+    c.fillStyle = muted; c.font = font(400, 20);
+    c.fillText(d.ds[i].slice(8) + '日', x + barW / 2, baseY + 12);
+  });
+  c.textAlign = 'left';
+  // 本周错得多的内容
+  let y = 700;
+  c.fillStyle = ink; c.font = font(700, 28); c.fillText('本周错得较多的内容', 64, y); y += 46;
+  const list = d.weakU.length ? d.weakU : ['本周没有新增错题，很棒！'];
+  c.font = font(400, 26); c.fillStyle = d.weakU.length ? '#3a4252' : accent;
+  list.forEach(t => { c.fillText('· ' + t, 64, y); y += 40; });
+  // 建议
+  y += 12;
+  c.fillStyle = ink; c.font = font(700, 28); c.fillText('给家长的建议', 64, y); y += 44;
+  c.font = font(400, 26); c.fillStyle = '#3a4252';
+  const maxW = W - 128; let line = '';
+  for (const ch of d.tip) {
+    if (c.measureText(line + ch).width > maxW) { c.fillText(line, 64, y); y += 40; line = ch; } else line += ch;
+  }
+  if (line) { c.fillText(line, 64, y); y += 40; }
+  // 底部
+  c.fillStyle = muted; c.font = font(400, 22);
+  c.fillText(`累计 ⭐${S.stats(u.id).total} 颗 · 进度条 ${d.cy.pos} / ${goal()} · 错题本 ${S.stats(u.id).wrong} 道`, 64, H - 96);
+  c.fillStyle = '#c3cad6'; c.font = font(400, 20);
+  c.fillText('书山小路 · 每天十分钟', 64, H - 62);
+  return cv.toDataURL('image/png');
+}
+function showCard(url, name) {
+  const box = h('div', { style: 'position:fixed;inset:0;background:rgba(12,18,30,.78);z-index:999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:16px' },
+    h('img', { src: url, style: 'max-width:100%;max-height:70vh;border-radius:14px;box-shadow:0 10px 34px rgba(0,0,0,.45)' }),
+    h('p', { style: 'color:#fff;font-size:15px;margin:0;text-align:center;line-height:1.6' }, '长按图片保存到相册，或者点下面的按钮下载'),
+    h('div', { style: 'display:flex;gap:10px' },
+      h('a', { class: 'btn primary', href: url, download: name, style: 'text-decoration:none' }, '⬇ 下载图片'),
+      h('button', { class: 'btn ghost', style: 'color:#fff;border-color:rgba(255,255,255,.55)', onclick: () => box.remove() }, '关闭')));
+  box.addEventListener('click', (e) => { if (e.target === box) box.remove(); });
+  document.body.append(box);
+}
+function saveWeekCard(u, btn) {
+  try {
+    const url = weekCard(u);
+    showCard(url, `书山小路-${u.display}-周报-${S.today()}.png`);
+    if (btn) { const t = btn.textContent; btn.textContent = '✓ 已生成'; setTimeout(() => { btn.textContent = t; }, 1600); }
+  } catch (e) { toast('生成图片失败，可以先复制文字发给家长'); }
+}
+
 export function records() {
   const u = user(), p = S.P(u.id), st = S.stats(u.id);
   const days = {};
@@ -823,7 +924,8 @@ export function records() {
     weak.length ? [h('h2', { class: 'sh' }, '随机练习里的弱项'), h('div', { class: 'list' }, weak.map(w => h('div', { class: 'row static' }, h('div', {}, h('b', {}, names[w.id] || w.id)), h('span', { class: 'chip' + (w.rate >= 0.4 ? ' bad' : ' ok') }, `错 ${w.s.w}/${w.s.n}`))))] : null,
     h('h2', { class: 'sh' }, '学习日历'), calendarNode(u),
     h('h2', { class: 'sh' }, '发给家长'), sumTabs, ta,
-    h('button', { class: 'btn primary wide', onclick: toWechat }, '复制并打开微信'),
+    h('button', { class: 'btn primary wide', onclick: (ev) => saveWeekCard(u, ev.currentTarget) }, '📷 周报存成图片（可发朋友圈）'),
+    h('button', { class: 'btn primary wide', style: 'margin-top:10px', onclick: toWechat }, '复制并打开微信'),
     h('button', { class: 'btn ghost wide', style: 'margin-top:10px', onclick: shareOther }, '用其他方式分享'),
     h('p', { class: 'note' }, '打开微信后，找到家长的对话，长按输入框选「粘贴」，再发送。'),
     h('a', { class: 'link instl', href: '#/check' }, '🔧 有的内容打不开？点这里检查文件'),
