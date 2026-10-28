@@ -14,17 +14,42 @@ export function setUser(id) {
 }
 
 const cache = {};
-export function P(uid) {
-  if (cache[uid]) return cache[uid];
-  let p = null;
-  try { const raw = LS.get('kp_p_' + uid); p = raw ? JSON.parse(raw) : null; } catch (e) { p = null; }
+// 补全字段：读出来的旧数据、导入的数据都要过一遍，保证结构完整
+const normProfile = (p) => {
   p = p || {};
   p.stars = p.stars || {}; p.sets = p.sets || {}; p.wrong = p.wrong || {};
   p.rand = p.rand || { days: {}, types: {} }; p.rand.days = p.rand.days || {}; p.rand.types = p.rand.types || {};
   p.speak = p.speak || {}; p.log = p.log || [];
-  cache[uid] = p; return p;
+  return p;
+};
+export function P(uid) {
+  if (cache[uid]) return cache[uid];
+  let p = null;
+  try { const raw = LS.get('kp_p_' + uid); p = raw ? JSON.parse(raw) : null; } catch (e) { p = null; }
+  cache[uid] = normProfile(p); return cache[uid];
 }
-export function save(uid) { LS.set('kp_p_' + uid, JSON.stringify(cache[uid])); }
+export function save(uid) {
+  const ok = LS.set('kp_p_' + uid, JSON.stringify(cache[uid]));
+  if (!ok) { try { window.dispatchEvent(new CustomEvent('kpsavefail')); } catch (e) { /* ignore */ } }
+  return ok;
+}
+
+// ---------- 备份：导出 / 导入（给家长页用，防止换手机或清浏览器后记录丢失） ----------
+// 导出：带一层说明信息的 JSON 文本（导入时也兼容不带说明的裸 profile）
+export function exportProfile(uid) {
+  const p = P(uid);
+  return JSON.stringify({ kp: 1, uid, exportedAt: today(), profile: p }, null, 1);
+}
+// 导入：成功返回 true 并立即保存；数据不对返回 false（不会动现有记录）
+export function importProfile(uid, raw) {
+  let d = null;
+  try { d = JSON.parse(raw); } catch (e) { return false; }
+  const prof = d && d.kp === 1 ? d.profile : d;
+  if (!prof || typeof prof !== 'object' || Array.isArray(prof)) return false;
+  if (!prof.stars || typeof prof.stars !== 'object') return false; // 至少要有星星记录，防止导错文件
+  cache[uid] = normProfile(prof);
+  save(uid); return true;
+}
 
 // 发星星：一题一颗，只发一次。每个孩子每天所有来源合计有上限（默认 30）。
 export const starsToday = (uid) => { const t = today(); let n = 0; for (const k in P(uid).stars) if (P(uid).stars[k].d === t) n++; return n; };

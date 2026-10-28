@@ -5,7 +5,7 @@ import * as CN from './cndict.js';
 import * as LN from './learn.js';
 import * as PM from './poem.js';
 import * as CV from './chapview.js';
-import { stopAllSound } from './ui.js';
+import { stopAllSound, toast } from './ui.js';
 
 const getJSON = (u) => fetch(u).then(r => { if (!r.ok) throw new Error(u + ' ' + r.status); return r.json(); });
 
@@ -135,3 +135,8 @@ async function boot() {
   }
 }
 boot();
+// 存储写入失败（空间满/隐私模式）：提示一次，别让孩子的练习悄悄白做
+window.addEventListener('kpsavefail', () => {
+  if (window.__kpSaveWarned) return; window.__kpSaveWarned = true;
+  toast('⚠️ 记录保存失败了！可能是手机存储空间不足或浏览器处于无痕模式，请联系家长处理', 8000);
+});

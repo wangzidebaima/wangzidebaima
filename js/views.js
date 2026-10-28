@@ -80,8 +80,38 @@ export function parentHome() {
   let ok = false; try { ok = sessionStorage.getItem('kp_parent') === '1'; } catch (e) { ok = !!window.__kpParent; }
   if (!ok) { nav('#/login'); return; }
   setTheme(null);
-  mount(h('div', { class: 'login' }, h('div', { class: 'logo' }, '🔒'), h('h1', {}, X.cfg.parent.name), h('p', { class: 'sub' }, '家长入口。这里的内容还在准备中。'),
-    h('button', { class: 'btn primary wide', onclick: () => { try { sessionStorage.removeItem('kp_parent'); } catch (e) { window.__kpParent = false; } nav('#/login'); } }, '退出')));
+  const rows = X.cfg.users.map(u => {
+    const st = S.stats(u.id);
+    const file = h('input', { type: 'file', accept: '.json,application/json', style: 'display:none', onchange: (ev) => {
+      const f = ev.target.files && ev.target.files[0]; if (!f) return;
+      const rd = new FileReader();
+      rd.onload = () => {
+        const name = f.name || '';
+        if (!confirm(`用「${name}」里的记录覆盖 ${u.display} 在这台手机上的现有记录吗？\n覆盖后星星、错题以文件里的为准，现有记录会被替换。`)) return;
+        if (S.importProfile(u.id, String(rd.result))) { toast('导入成功，正在刷新…'); setTimeout(() => location.reload(), 900); }
+        else toast('导入失败：这个文件不是「书山小路」导出的记录文件');
+      };
+      rd.readAsText(f);
+    } });
+    return h('div', { class: 'list' },
+      file,
+      h('div', { class: 'row static' }, h('div', {}, h('b', {}, u.display), h('small', {}, `${u.grade} · ⭐${st.total} 颗 · 错题 ${st.wrong} 道`)),
+        h('span', { class: 'chip' }, S.getUser() === u.id ? '当前登录' : ' ')),
+      h('div', { class: 'chips' },
+        h('button', { type: 'button', class: 'btn small primary', onclick: () => {
+          try {
+            const blob = new Blob([S.exportProfile(u.id)], { type: 'application/json' });
+            const a = h('a', { href: URL.createObjectURL(blob), download: `书山小路-${u.display}-记录-${S.today()}.json` });
+            document.body.append(a); a.click(); a.remove();
+            toast('已导出，请把文件保存好或发到家长微信/电脑');
+          } catch (e) { toast('导出失败，请换浏览器再试'); }
+        } }, '导出记录'),
+        h('button', { type: 'button', class: 'btn small ghost', onclick: () => file.click() }, '导入记录')),
+      h('p', { class: 'note' }, '换手机或清过浏览器数据后：在新手机上先登录孩子，再到这里点「导入记录」选文件即可恢复。'));
+  });
+  mount(h('div', { class: 'login' }, h('div', { class: 'logo' }, '🔒'), h('h1', {}, X.cfg.parent.name), h('p', { class: 'sub' }, '备份孩子的学习记录（星星、错题都保存在这台手机的浏览器里，换手机前先导出）'),
+    ...rows,
+    h('button', { class: 'btn ghost wide', style: 'margin-top:14px', onclick: () => { try { sessionStorage.removeItem('kp_parent'); } catch (e) { window.__kpParent = false; } nav('#/login'); } }, '退出')));
 }
 export function login() {
   const inp = h('input', { class: 'big', placeholder: '输入你的名字', autocomplete: 'off', autocapitalize: 'off', autocorrect: 'off', spellcheck: 'false', enterkeyhint: 'go' });
