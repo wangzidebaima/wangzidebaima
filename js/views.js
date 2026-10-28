@@ -10,9 +10,7 @@ const app = () => document.getElementById('app');
 export const nav = (hash) => { if (location.hash === hash) window.dispatchEvent(new Event('hashchange')); else location.hash = hash; };
 export const user = () => X.cfg.users.find(u => u.id === S.getUser()) || null;
 export function setTheme(u) { document.documentElement.dataset.theme = u ? u.theme : ''; document.documentElement.dataset.fs = u ? String(S.P(u.id).font || 0) : '0'; }
-export function mount(node) { app().replaceChildren(node); window.scrollTo(0, 0); keypad.close(); const b = document.getElementById('bsz'); if (b) b.hidden = true; }
-// 访问统计角标：只在登录页和家长页显示（统计脚本挂了会由 app.js 兜底隐藏）
-export const bsz = () => { const b = document.getElementById('bsz'); if (b) b.hidden = false; };
+export function mount(node) { app().replaceChildren(node); window.scrollTo(0, 0); keypad.close(); }
 export const cap = () => X.cfg.dailyStarCap || 30;
 export const goal = () => X.cfg.starGoal || 400;
 // 进度条每满一轮（默认 400 颗）就重置：pos = 本轮已得的星星，laps = 已经完成的轮数
@@ -149,10 +147,11 @@ export function parentHome() {
   mount(h('div', { class: 'login' }, h('div', { class: 'logo' }, '🔒'), h('h1', {}, X.cfg.parent.name), h('p', { class: 'sub' }, '备份孩子的学习记录（星星、错题都保存在这台手机的浏览器里，换手机前先导出）'),
     ...rows,
     h('div', { class: 'list', style: 'margin-top:12px' }, vrow,
+      h('a', { class: 'row', href: '#/traffic' }, h('div', {}, h('b', {}, '📈 访问统计'),
+        h('small', {}, '有多少人打开过这个网站（GitHub 官方数据）')), h('span', { class: 'chip' }, '看看')),
       h('a', { class: 'row', href: '#/help' }, h('div', {}, h('b', {}, '🩺 遇到问题'), h('small', {}, '没声音、打不开、更新不了怎么办；一键自检把状态查出来')), h('span', { class: 'chip' }, '看看'))),
     h('button', { class: 'btn ghost wide', style: 'margin-top:14px', onclick: () => { noticeReset(); toast('好啦，下次打开会重新显示使用须知'); } }, '重新显示使用须知'),
     h('button', { class: 'btn ghost wide', style: 'margin-top:10px', onclick: () => { try { sessionStorage.removeItem('kp_parent'); } catch (e) { window.__kpParent = false; } nav('#/login'); } }, '退出')));
-  bsz();
 }
 // ---------------- 朗读声音：家长页那一行显示“现在用的是哪个中文语音” ----------------
 function voiceNow() {
@@ -188,7 +187,61 @@ export function voicePage() {
   mount(page('朗读声音', box, { back }));
   draw();
   try { const ss = window.speechSynthesis; if (ss && ss.addEventListener) ss.addEventListener('voiceschanged', () => { if (box.isConnected) draw(); }); } catch (e) { /* ignore */ }
-  bsz();
+}
+// ---------------- 访问统计：数据由 GitHub Actions 每天两次写进 data/traffic.json ----------------
+// 为什么绕这一圈：GitHub 的流量接口必须要 token，而网页是公开的，token 写进去就等于泄露。
+// 所以让 Actions 抓下来提交成静态文件，这里只负责显示——不需要 token，也不怕外网接口挂了。
+const tvDay = (d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+// GitHub 给的来源是域名，翻译成人话
+const refName = (r) => !r ? '直接打开' : /^github\./.test(r) ? 'GitHub 站内' : /weixin|wechat/i.test(r) ? '微信分享' : /baidu/i.test(r) ? '百度搜索' : /google/i.test(r) ? '谷歌搜索' : /bing/i.test(r) ? '必应搜索' : r;
+function trafficView(d) {
+  if (!d) {
+    return [
+      h('div', { class: 'empty' }, h('div', { class: 'logo' }, '📈'), h('h2', {}, '还没有数据'),
+        h('p', {}, '还没开始统计。这是新功能，需要在 GitHub 仓库里加一个 TRAFFIC_TOKEN（一次性，约 2 分钟），加好后这里每天自动更新两次。')),
+      h('p', { class: 'note' }, '配好后回来点「重新读取」就能看到。'),
+      h('button', { class: 'btn ghost wide', onclick: () => trafficPage() }, '重新读取'),
+    ];
+  }
+  const days = (d.days || []).slice(-14);
+  const sum = d.sum || {}, all = d.all || {};
+  const now = new Date(), today = tvDay(now), yes = tvDay(new Date(Date.now() - 864e5));
+  const pick = (k) => days.find(x => x.d === k) || { v: 0, u: 0 };
+  const max = Math.max(1, ...days.map(x => x.v));
+  const refs = d.refs || [];
+  const card = (n, t) => h('div', { class: 'tcard' }, h('b', {}, String(n)), h('small', {}, t));
+  return [
+    h('div', { class: 'tcards' }, card(sum.v || 0, '近 14 天浏览'), card(sum.u || 0, '近 14 天访客')),
+    h('p', { class: 'note' }, `今天 ${pick(today).v} 次（${pick(today).u} 人） · 昨天 ${pick(yes).v} 次（${pick(yes).u} 人）`),
+    days.length ? h('div', { class: 'tbar' }, days.map((x, i) => h('div', { class: 'tbarc', title: `${x.d}：${x.v} 次 / ${x.u} 人` },
+      h('i', { class: x.v ? '' : 'z', style: `height:${Math.max(4, Math.round(x.v / max * 100))}%` }),
+      h('span', {}, i === 0 || i === days.length - 1 || i === 6 ? x.d.slice(5) : '')))) : null,
+    h('p', { class: 'note' }, all.v ? `从 ${all.since} 开始攒，累计浏览 ${all.v} 次（共记录 ${all.days} 天）。GitHub 官方只留最近 14 天，所以这里自己攒了一份长账。` : ''),
+    ...(refs.length ? [
+      h('h3', { class: 'tvh' }, '从哪来'),
+      h('div', { class: 'list' }, refs.map(x => h('div', { class: 'row static' },
+        h('div', {}, h('b', {}, refName(x.r)), h('small', {}, `${x.u} 位访客`)),
+        h('span', { class: 'chip' }, `${x.v} 次`)))),
+    ] : []),
+    h('p', { class: 'note' }, `数据来自 GitHub 官方统计，更新于 ${d.at}（每天 9:40 / 21:40 自动更新一次）。`),
+    h('p', { class: 'note' }, '说明：算的是「有人打开这个网址」，离线做题不计入；所有页面都在同一个网址下，所以分不出是哪个孩子、哪一页。'),
+    h('button', { class: 'btn ghost wide', style: 'margin-top:12px', onclick: () => trafficPage() }, '重新读取'),
+  ];
+}
+export function trafficPage() {
+  setTheme(null);
+  const box = h('div', {}, h('p', { class: 'note' }, '正在读取…'));
+  const back = () => { if (history.length > 1) history.back(); else nav('#/parent'); };
+  mount(page('访问统计', box, { back }));
+  let cached = null;
+  try { cached = JSON.parse(localStorage.getItem('kp_traffic') || 'null'); } catch (e) { cached = null; }
+  fetch('data/traffic.json', { cache: 'no-store' })
+    .then(r => r.ok ? r.json() : null).catch(() => null)
+    .then(d => {
+      const ok = d && d.at && !d.none;
+      if (ok) { try { localStorage.setItem('kp_traffic', JSON.stringify(d)); } catch (e) { /* ignore */ } }
+      if (box.isConnected) box.replaceChildren(...trafficView(ok ? d : cached));
+    });
 }
 // ---------------- 使用须知：一台设备只弹一次，点过就永久记住 ----------------
 // 存在 localStorage 里，并带上须知版本号（config.json 的 notice.ver）。
@@ -236,7 +289,6 @@ export function login() {
     h('button', { class: 'btn primary wide', onclick: enter }, '开始'), msg,
     h('a', { class: 'link instl', href: '#/install' }, '📲 怎么把它装到手机桌面？'),
     h('a', { class: 'link instl', href: '#/help' }, '🩺 打不开 / 没声音 / 更新不了？看这里')));
-  bsz();
 }
 
 // ---------------- 装到桌面教程（不用登录） ----------------

@@ -61,7 +61,7 @@ async function render() {
     // 公告确认：每次打开 App 都要先确认看到公告（ hear 页是扫码听力，不拦外面的人 ）
     if (r !== 'hear' && !V.noticeOk()) { V.noticeGate(render); return; }
     const u = V.user();
-    if (!u && r !== 'login' && r !== 'parent' && r !== 'hear' && r !== 'install' && r !== 'voice' && r !== 'help') { location.replace('#/login'); return; }
+    if (!u && r !== 'login' && r !== 'parent' && r !== 'hear' && r !== 'install' && r !== 'voice' && r !== 'help' && r !== 'traffic') { location.replace('#/login'); return; }
     V.setTheme(u);
     // 成就徽章：每次页面切换顺手查一遍，有新解锁就弹提示（拿到永久点亮，重复调用安全）
     if (u && !['login', 'parent', 'voice', 'help', 'hear', 'install'].includes(r)) B.checkAndGrant(u.id).forEach(x => toast(`🏅 解锁成就：${x.icon} ${x.name}`, 4000));
@@ -70,6 +70,7 @@ async function render() {
       case 'parent': return V.parentHome();
       case 'voice': return V.voicePage();
       case 'help': return HP.helpPage();
+      case 'traffic': return V.trafficPage();
       case 'badges': return B.badgesView(u ? u.id : null);
       case 'install': return V.install();
       case 'hear': return await V.hear(a);
@@ -133,8 +134,6 @@ async function boot() {
     if (a && a.getAttribute('href') === location.hash) { e.preventDefault(); render(); }
   });
   render();
-  // 访问统计（不蒜子）：8 秒后还没加载出数字，说明服务不可用，就把角标整个撤掉，不留占位
-  setTimeout(() => { const b = document.getElementById('bsz'); if (b && document.getElementById('busuanzi_value_site_pv').textContent === '…') b.remove(); }, 8000);
   selfCheck();
   if ('serviceWorker' in navigator) {
     const had = !!navigator.serviceWorker.controller;

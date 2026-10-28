@@ -226,7 +226,6 @@ html[data-fs="1"] body { zoom: 1.12; } html[data-fs="2"] body { zoom: 1.25; }
 #ntcm .updp p.nw b{color:var(--ink);font-weight:700}
 #ntcm .btn{display:block;width:100%;margin:8px 0 0}
 #ntcm .bigcnt{font-size:32px;font-weight:700;color:var(--accent);margin:2px 0 6px}
-#bsz{position:fixed;left:0;right:0;bottom:6px;text-align:center;font-size:12px;color:var(--muted);pointer-events:none;z-index:5;opacity:.85}
 .key.wide4 { grid-column: span 4; min-height: 44px; font-size: 18px; }
 .modebar { margin: 4px 0 10px; }
 .q .livebtn { margin-top: 10px; }
@@ -309,3 +308,15 @@ a.task { color: inherit; text-decoration: none; }
 .faq ul{margin:10px 0 2px;padding-left:19px;font-size:14px;color:var(--muted);line-height:1.7}
 .faq li{margin:6px 0}
 .dgn{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12.5px;line-height:1.7;white-space:pre-wrap;word-break:break-all;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-top:10px;color:var(--ink)}
+
+/* ---- 访问统计（家长页 → 📈） ---- */
+.tcards{display:flex;gap:10px;margin:4px 0 10px}
+.tcard{flex:1;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 12px;text-align:center}
+.tcard b{display:block;font-size:26px;line-height:1.25;color:var(--ink)}
+.tcard small{color:var(--muted);font-size:12px}
+.tbar{display:flex;align-items:flex-end;gap:4px;height:132px;margin:8px 0 2px}
+.tbarc{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:100%}
+.tbarc i{display:block;width:100%;border-radius:4px 4px 0 0;background:var(--accent)}
+.tbarc i.z{background:var(--line)}
+.tbarc span{font-size:9px;color:var(--muted);margin-top:3px;white-space:nowrap;height:12px;line-height:12px}
+.tvh{font-size:13px;font-weight:600;margin:14px 0 6px;color:var(--muted)}

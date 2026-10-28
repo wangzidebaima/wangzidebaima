@@ -1,5 +1,5 @@
 // 离线缓存：先用手机里存的（秒开），同时悄悄检查有没有新内容；有就提示刷新。
-const VER = 'kp-v47';
+const VER = 'kp-v48';
 const AUDIO = 'kp-audio';
 // 下面这份清单由 tools/gen_shell.py 自动生成，不要手改；
 // 加了新文件后跑一次 python tools/gen_shell.py 即可。
@@ -90,6 +90,18 @@ async function swr(req, e) {
   return fallback || new Response('现在没有网络，而且这个页面还没有保存到手机里。', { status: 503, headers: { 'Content-Type': 'text/plain; charset=utf-8' } });
 }
 
+// 访问统计：GitHub Actions 每天中午/晚上更新一次，走网络优先。
+// 不能走上面的 swr——数据一变就会被判定为“有新内容”，天天弹“有新版本”骚扰人。
+async function trafficResp(req) {
+  const c = await caches.open(VER);
+  try {
+    const r = await fetch(req.url, { cache: 'no-store' });
+    if (r && r.ok) { await c.put(req, r.clone()); return r; }
+  } catch (e) { /* 离线或网络不通，用上次的 */ }
+  const hit = await c.match(req);
+  return hit || new Response('{"none":1}', { status: 200, headers: { 'Content-Type': 'application/json' } });
+}
+
 // 音频：第一次播放时存下来；iPhone 播放需要支持「分段读取」(Range)
 async function audioResp(req) {
   const c = await caches.open(AUDIO);
@@ -119,6 +131,7 @@ self.addEventListener('fetch', (e) => {
   if (req.method !== 'GET') return;
   const url = new URL(req.url);
   if (url.origin !== location.origin) return;
+  if (/\/data\/traffic[\w-]*\.json$/.test(url.pathname)) { e.respondWith(trafficResp(req)); return; }
   if (/\/audio\/(?:w\/)?[^/]+\.mp3$/.test(url.pathname)) { e.respondWith(audioResp(req)); return; }
   e.respondWith(swr(req, e));
 });

@@ -25,7 +25,9 @@ PATTERNS = [
     ('js', r'.*\.js$'),
     ('icons', r'.*\.png$'),
 ]
-DATA = r'^[^/]+\.json$'   # 只收 data/ 下一层的 json，data/sets/*.json 不列
+# 只收 data/ 下一层的 json，data/sets/*.json 不列；
+# traffic*.json 是 GitHub Actions 每天改的访问统计，也不预缓存（sw.js 里走网络优先）
+DATA = r'^(?!traffic)[^/]+\.json$'
 
 
 def collect():

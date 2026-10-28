@@ -1,7 +1,7 @@
 // 遇到问题：常见毛病按“症状”排，能自己修的先自己修；真修不了就一键自检 + 复制给家长
 import { h, toast, zhVoices, getVoicePref } from './ui.js';
 import * as S from './store.js';
-import { X, mount, page, nav, bsz } from './views.js';
+import { X, mount, page, nav } from './views.js';
 
 // ---------------- 报错记录：只存本机、只留 10 条，出问题时才有用 ----------------
 const ERR_KEY = 'kp_err';
@@ -269,5 +269,4 @@ export function helpPage() {
       h('button', { type: 'button', class: 'btn primary wide', onclick: () => nav('#/voice') }, '去换朗读声音')),
     diagSection(),
   ], { back }));
-  bsz();
 }
