@@ -155,7 +155,7 @@ function dictFlow(u, R, qs, kind) {
       qs.forEach(q => {
         const { _meta, ...clean } = q;
         S.typeStat(u.id, q.typeId, mark[q.id] === true);
-        if (mark[q.id] === true) { ok++; S.clearWrong(u.id, q.id); const r = S.award(u.id, q, meta.src, meta.sub, cap()); if (r === 'new') ns++; if (r === 'capped') cp++; }
+        if (mark[q.id] === true) { ok++; S.rightWrong(u.id, q.id); const r = S.award(u.id, q, meta.src, meta.sub, cap()); if (r === 'new') ns++; if (r === 'capped') cp++; }
         else S.addWrong(u.id, clean, meta);
       });
       S.recordAttempt(u.id, null, { title: R.title + '（随机）', ok, total: qs.length, pts: ok, ptsAll: qs.length, stars: ns, src: meta.src, sub: meta.sub });

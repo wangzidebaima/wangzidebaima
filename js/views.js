@@ -234,10 +234,11 @@ function reviewCard(u) {
   const p = S.P(u.id);
   const dt = new Date(); dt.setDate(dt.getDate() - 3);
   const lim = `${dt.getFullYear()}-${String(dt.getMonth() + 1).padStart(2, '0')}-${String(dt.getDate()).padStart(2, '0')}`;
-  const stale = Object.values(p.wrong || {}).filter(e => (e.d || '0000') <= lim).length;
+  // 有 next 的按调度日期提醒（新记录）；老记录没有 next，退回「错后 3 天」的旧规则
+  const stale = Object.values(p.wrong || {}).filter(e => e.next ? e.next <= S.today() : (e.d || '0000') <= lim).length;
   const rows = [];
   if (words) rows.push(h('a', { class: 'row', href: '#/learn/review' }, h('div', {}, h('b', {}, `🔁 单词复习 ${words} 个`), h('small', {}, '到了该再见一面的日子，记更牢')), h('span', { class: 'chip' }, '开始')));
-  if (stale) rows.push(h('a', { class: 'row', href: '#/errors' }, h('div', {}, h('b', {}, `📕 错题复习 ${stale} 道`), h('small', {}, '做错超过 3 天还没做对，最容易忘')), h('span', { class: 'chip' }, '开始')));
+  if (stale) rows.push(h('a', { class: 'row', href: '#/errors' }, h('div', {}, h('b', {}, `📕 错题复习 ${stale} 道`), h('small', {}, '到了该再见面的日子，答对一次、隔天再对就毕业')), h('span', { class: 'chip' }, '开始')));
   if (!rows.length) return null;
   return h('section', { class: 'tasks' }, h('h2', { class: 'sh' }, '今日复习'), h('div', { class: 'list' }, rows));
 }
@@ -592,7 +593,7 @@ function runQuiz(o) {
     const g = gradeQuestion(q, ans[q.id]), meta = o.metaFor(q), { _meta, ...clean } = q;
     const r = { q, a: ans[q.id], g };
     if (String(q.id).startsWith('r-') && q.typeId) S.typeStat(o.uid, q.typeId, g.ok);
-    if (g.ok) { S.clearWrong(o.uid, q.id); r.star = S.award(o.uid, q, meta.src, meta.sub, cap()); } else S.addWrong(o.uid, clean, meta);
+    if (g.ok) { r.gone = S.rightWrong(o.uid, q.id); r.star = S.award(o.uid, q, meta.src, meta.sub, cap()); } else S.addWrong(o.uid, clean, meta);
     done[q.id] = r; return r;
   }
   const modeBar = o.mk ? h('div', { class: 'chips modebar' }, h('span', { class: 'lab' }, '做题方式'),
@@ -653,7 +654,7 @@ function resultsNode(o, results, sum) {
     h('div', { class: 'earn' + (sum.newStars ? ' on' : '') }, sum.newStars ? `⭐ × ${sum.newStars}` : '这次没有新星星'),
     had > 0 ? h('p', { class: 'note' }, `有 ${had} 题以前已经得过星星，一题只得一颗哦。`) : null,
     sum.capped ? h('p', { class: 'note' }, `今天的星星已经拿满 ${cap()} 颗，明天再来～（做对的题明天再做还能得星）`) : null,
-    results.length - sum.okN ? h('p', { class: 'note' }, `做错的 ${results.length - sum.okN} 题已放进错题本，再做对就会消失。`) : null);
+    results.length - sum.okN ? h('p', { class: 'note' }, `做错的 ${results.length - sum.okN} 题已放进错题本：先答对 1 次，隔天再答对就毕业。`) : null);
   const nextT = user() ? nextTask(user()) : null;
   const acts = h('div', { class: 'acts' },
     nextT ? h('a', { class: 'btn primary', href: nextT.href }, `下一项：${nextT.label} →`) : null,
@@ -719,7 +720,7 @@ function startRandom(kind, gt, gl, gc) {
 // ---------------- 错题本 ----------------
 export function errors() {
   const u = user(), list = Object.values(S.P(u.id).wrong);
-  if (!list.length) { mount(page('错题本', h('div', { class: 'empty' }, h('div', { class: 'logo' }, '🎉'), h('h2', {}, '错题本是空的'), h('p', {}, '做错的题会自动进来，再做对就会消失。')))); return; }
+  if (!list.length) { mount(page('错题本', h('div', { class: 'empty' }, h('div', { class: 'logo' }, '🎉'), h('h2', {}, '错题本是空的'), h('p', {}, '做错的题会自动进来；答对 1 次先打上「待巩固」，隔天再做对就从这里毕业。')))); return; }
   const tnames = {}; Object.values(RANDOM).forEach(R => R.types.forEach(t => { tnames[t.id] = t.name; }));
   const keyOf = (e) => (e.q.typeId && tnames[e.q.typeId]) ? `${e.meta.title} · ${tnames[e.q.typeId]}` : e.meta.title;
   const groups = {};
@@ -731,7 +732,7 @@ export function errors() {
   };
   const entries = Object.entries(groups).sort((a, b) => b[1].length - a[1].length);
   mount(page('错题本', [
-    h('p', { class: 'note' }, `一共 ${list.length} 道，分成 ${entries.length} 类。点下面一类，就只练这一类；每次最多 10 题，做对就从这里消失。`),
+    h('p', { class: 'note' }, `一共 ${list.length} 道，分成 ${entries.length} 类。点下面一类，就只练这一类；每次最多 10 题。答对 1 次先打上「待巩固」，隔天再做对就从这里毕业。`),
     h('button', { class: 'btn primary wide', onclick: () => start(list, '') }, '全部混着重做'),
     h('a', { class: 'btn ghost wide', style: 'margin-top:10px', href: '#/weekrev' }, '🖨 本周错题复习卷（打印 / 存 PDF）'),
     h('div', { class: 'list' }, entries.map(([t, es]) => h('a', { class: 'row', href: 'javascript:void(0)', onclick: (ev) => { ev.preventDefault(); start(es, t); } }, h('div', {}, h('b', {}, t), h('small', {}, es.map(e => e.q.stem.replace(/_{2,}/g, '__').slice(0, 24)).slice(0, 2).join(' ； '))), h('span', { class: 'chip bad' }, es.length + ' 道')))),

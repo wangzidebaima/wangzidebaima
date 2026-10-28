@@ -110,10 +110,19 @@ export function award(uid, q, src, subject, cap = 30) {
   save(uid); return 'new';
 }
 
+// 错题本：做错进来（3 天后再提醒），答对一次先「待巩固」，隔天再答对才真正出库
 export function addWrong(uid, q, meta) {
   const p = P(uid), old = p.wrong[q.id];
-  p.wrong[q.id] = { q, meta, n: old ? old.n + 1 : 1, d: today() };
+  p.wrong[q.id] = { q, meta, n: old ? old.n + 1 : 1, d: today(), ok: 0, next: shiftDay(-3) };
   save(uid);
+}
+// 答对一道错题。返回 true 表示已毕业（从错题本删掉）；
+// 返回 false 表示先记一次「待巩固」，隔天再来对一次才算掌握。
+export function rightWrong(uid, qid) {
+  const p = P(uid), e = p.wrong[qid];
+  if (!e) return true;
+  if ((e.ok || 0) >= 1 && e.next && e.next <= today()) { delete p.wrong[qid]; save(uid); return true; }
+  e.ok = 1; e.next = shiftDay(-1); save(uid); return false;
 }
 export function clearWrong(uid, qid) { const p = P(uid); if (p.wrong[qid]) { delete p.wrong[qid]; save(uid); } }
 
