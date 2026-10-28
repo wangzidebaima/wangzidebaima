@@ -4,7 +4,7 @@ import * as B from './badges.js';
 import * as S from './store.js';
 import { gradeQuestion, answerText, userText, isAnswered } from './grade.js';
 import { RANDOM, makeSession } from './mathgen.js';
-import { srReady, srOn, listen, similarity, errText } from './speech.js';
+import { srReady, srOn, setSr, listen, similarity, errText } from './speech.js';
 
 export const X = { cfg: null, lib: null, vocab: {}, audio: new Set(), sets: {}, ipa: {} };
 const app = () => document.getElementById('app');
@@ -171,6 +171,9 @@ export function parentHome() {
   mount(h('div', { class: 'login' }, h('div', { class: 'logo' }, '🔒'), h('h1', {}, X.cfg.parent.name), h('p', { class: 'sub' }, '备份孩子的学习记录（星星、错题都保存在这台手机的浏览器里，换手机前先导出）'),
     ...rows,
     h('div', { class: 'list', style: 'margin-top:12px' }, vrow,
+      h('div', { class: 'row static' }, h('div', {}, h('b', {}, '🎤 口语跟读检查'),
+        h('small', {}, srOn() ? (srReady() ? '现在开着：读对一句才能打卡' : '现在开着，但这台手机的浏览器听不了朗读，实际按老方式打卡') : '现在关着：点一下就能打卡')),
+        h('button', { type: 'button', class: 'btn small ' + (srOn() ? 'ghost' : 'primary'), onclick: () => { setSr(!srOn()); toast(srOn() ? '已打开跟读检查' : '已关掉，回到点一下就打卡'); parentHome(); } }, srOn() ? '关掉' : '打开')),
       h('a', { class: 'row', href: '#/papers' }, h('div', {}, h('b', {}, '📄 试卷下载'),
         h('small', {}, '数学、英语各单元 + 期中期末，共 34 份 Word')), h('span', { class: 'chip' }, '去下载')),
       h('a', { class: 'row', href: '#/traffic' }, h('div', {}, h('b', {}, '📈 访问统计'),
