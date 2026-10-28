@@ -26,10 +26,9 @@
  "users": [
   {
    "id": "son",
-   "display": "梓逸",
+   "display": "小七",
    "names": [
-    "徐梓逸",
-    "梓逸"
+    "小七"
    ],
    "theme": "blue",
    "subjects": [
@@ -100,10 +99,9 @@
   },
   {
    "id": "daughter",
-   "display": "清湲",
+   "display": "小四",
    "names": [
-    "徐清湲",
-    "清湲"
+    "小四"
    ],
    "theme": "rose",
    "subjects": [
@@ -179,10 +177,9 @@
   },
   {
    "id": "yezi",
-   "display": "叶子",
+   "display": "小二",
    "names": [
-    "叶子",
-    "徐叶子"
+    "小二"
    ],
    "theme": "leaf",
    "subjects": [
