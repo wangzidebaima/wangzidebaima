@@ -1,0 +1,199 @@
+{
+ "id": "g2c-py-W1a",
+ "kind": "cn",
+ "title": "看字选拼音（一）",
+ "subtitle": "写字表里的字，选出正确的拼音",
+ "unit": "W1",
+ "mk": "cnknow",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g2c-py-W1a-A1",
+     "type": "choice",
+     "stem": "“两”怎么读？",
+     "options": [
+      "liǎng",
+      "lú",
+      "liàng",
+      "xiàng"
+     ],
+     "answer": "A",
+     "why": "“两”读 liǎng（写字表 1）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W1a-A2",
+     "type": "choice",
+     "stem": "“哪”怎么读？",
+     "options": [
+      "fā",
+      "ná",
+      "nǎ",
+      "nà"
+     ],
+     "answer": "C",
+     "why": "“哪”读 nǎ（写字表 1）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W1a-A3",
+     "type": "choice",
+     "stem": "“那”怎么读？",
+     "options": [
+      "nín",
+      "nǎ",
+      "nà",
+      "ná"
+     ],
+     "answer": "C",
+     "why": "“那”读 nà（写字表 1）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W1a-A4",
+     "type": "choice",
+     "stem": "“孩”怎么读？",
+     "options": [
+      "hǎi",
+      "hào",
+      "cǎi",
+      "hái"
+     ],
+     "answer": "D",
+     "why": "“孩”读 hái（写字表 1）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W1a-A5",
+     "type": "choice",
+     "stem": "“升”怎么读？",
+     "options": [
+      "shēng",
+      "shèng",
+      "shòu",
+      "shì"
+     ],
+     "answer": "A",
+     "why": "“升”读 shēng（写字表 2）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W1a-A6",
+     "type": "choice",
+     "stem": "“起”怎么读？",
+     "options": [
+      "qì",
+      "qǐ",
+      "qí",
+      "dì"
+     ],
+     "answer": "B",
+     "why": "“起”读 qǐ（写字表 2）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W1a-A7",
+     "type": "choice",
+     "stem": "“洋”怎么读？",
+     "options": [
+      "yóu",
+      "zhāng",
+      "yáng",
+      "yuán"
+     ],
+     "answer": "C",
+     "why": "“洋”读 yáng（写字表 2）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W1a-A8",
+     "type": "choice",
+     "stem": "“作”怎么读？",
+     "options": [
+      "zěn",
+      "zán",
+      "zuò",
+      "zǐ"
+     ],
+     "answer": "C",
+     "why": "“作”读 zuò（写字表 2）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W1a-A9",
+     "type": "choice",
+     "stem": "“法”怎么读？",
+     "options": [
+      "fǎn",
+      "fǎ",
+      "fā",
+      "fēng"
+     ],
+     "answer": "B",
+     "why": "“法”读 fǎ（写字表 2）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W1a-A10",
+     "type": "choice",
+     "stem": "“已”怎么读？",
+     "options": [
+      "yǐ",
+      "zǐ",
+      "yī",
+      "dī"
+     ],
+     "answer": "A",
+     "why": "“已”读 yǐ（写字表 3）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W1a-A11",
+     "type": "choice",
+     "stem": "“别”怎么读？",
+     "options": [
+      "bǎo",
+      "bì",
+      "xiē",
+      "bié"
+     ],
+     "answer": "D",
+     "why": "“别”读 bié（写字表 3）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W1a-A12",
+     "type": "choice",
+     "stem": "“发”怎么读？",
+     "options": [
+      "fǎ",
+      "a",
+      "dá",
+      "fā"
+     ],
+     "answer": "D",
+     "why": "“发”读 fā（写字表 3）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W1a-A13",
+     "type": "choice",
+     "stem": "“肚”怎么读？",
+     "options": [
+      "yú",
+      "kǔ",
+      "dù",
+      "dú"
+     ],
+     "answer": "C",
+     "why": "“肚”读 dù（写字表 3）。",
+     "pts": 2
+    }
+   ]
+  }
+ ]
+}

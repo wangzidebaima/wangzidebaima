@@ -1,0 +1,185 @@
+{
+ "id": "g2c-py-W7a",
+ "kind": "cn",
+ "title": "看字选拼音（一）",
+ "subtitle": "写字表里的字，选出正确的拼音",
+ "unit": "W7",
+ "mk": "cnknow",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g2c-py-W7a-A1",
+     "type": "choice",
+     "stem": "“绝”怎么读？",
+     "options": [
+      "jiè",
+      "jiù",
+      "jué",
+      "jì"
+     ],
+     "answer": "C",
+     "why": "“绝”读 jué（写字表 18）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W7a-A2",
+     "type": "choice",
+     "stem": "“舟”怎么读？",
+     "options": [
+      "zhōu",
+      "chǒu",
+      "gǒu",
+      "yóu"
+     ],
+     "answer": "A",
+     "why": "“舟”读 zhōu（写字表 18）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W7a-A3",
+     "type": "choice",
+     "stem": "“阴”怎么读？",
+     "options": [
+      "yīn",
+      "yǒu",
+      "yín",
+      "mín"
+     ],
+     "answer": "A",
+     "why": "“阴”读 yīn（写字表 18）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W7a-A4",
+     "type": "choice",
+     "stem": "“野”怎么读？",
+     "options": [
+      "yě",
+      "yuán",
+      "de",
+      "yé"
+     ],
+     "answer": "A",
+     "why": "“野”读 yě（写字表 18）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W7a-A5",
+     "type": "choice",
+     "stem": "“论”怎么读？",
+     "options": [
+      "lìng",
+      "cūn",
+      "liàng",
+      "lùn"
+     ],
+     "answer": "D",
+     "why": "“论”读 lùn（写字表 19）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W7a-A6",
+     "type": "choice",
+     "stem": "“猫”怎么读？",
+     "options": [
+      "māo",
+      "máng",
+      "bǎo",
+      "chǎo"
+     ],
+     "answer": "A",
+     "why": "“猫”读 māo（写字表 19）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W7a-A7",
+     "type": "choice",
+     "stem": "“步”怎么读？",
+     "options": [
+      "tú",
+      "qǔ",
+      "bù",
+      "bì"
+     ],
+     "answer": "C",
+     "why": "“步”读 bù（写字表 19）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W7a-A8",
+     "type": "choice",
+     "stem": "“伙”怎么读？",
+     "options": [
+      "huǒ",
+      "huò",
+      "huán",
+      "huó"
+     ],
+     "answer": "A",
+     "why": "“伙”读 huǒ（写字表 20）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W7a-A9",
+     "type": "choice",
+     "stem": "“歌”怎么读？",
+     "options": [
+      "gāi",
+      "yě",
+      "gē",
+      "gěi"
+     ],
+     "answer": "C",
+     "why": "“歌”读 gē（写字表 20）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W7a-A10",
+     "type": "choice",
+     "stem": "“忙”怎么读？",
+     "options": [
+      "míng",
+      "miè",
+      "měi",
+      "máng"
+     ],
+     "answer": "D",
+     "why": "“忙”读 máng（写字表 20）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W7a-A11",
+     "type": "choice",
+     "stem": "“汽”怎么读？",
+     "options": [
+      "qì",
+      "jí",
+      "qí",
+      "qǐ"
+     ],
+     "answer": "A",
+     "why": "“汽”读 qì（写字表 20）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W7a-A12",
+     "type": "choice",
+     "stem": "“饿”怎么读？",
+     "options": [
+      "gē",
+      "kè",
+      "è",
+      "ne"
+     ],
+     "answer": "C",
+     "why": "“饿”读 è（写字表 园地七）。",
+     "pts": 2
+    }
+   ]
+  }
+ ]
+}

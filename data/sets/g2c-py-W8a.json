@@ -1,0 +1,199 @@
+{
+ "id": "g2c-py-W8a",
+ "kind": "cn",
+ "title": "看字选拼音（一）",
+ "subtitle": "写字表里的字，选出正确的拼音",
+ "unit": "W8",
+ "mk": "cnknow",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g2c-py-W8a-A1",
+     "type": "choice",
+     "stem": "“拿”怎么读？",
+     "options": [
+      "nà",
+      "fǎ",
+      "ná",
+      "nǎ"
+     ],
+     "answer": "C",
+     "why": "“拿”读 ná（写字表 21）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W8a-A2",
+     "type": "choice",
+     "stem": "“极”怎么读？",
+     "options": [
+      "jī",
+      "jì",
+      "jí",
+      "jué"
+     ],
+     "answer": "C",
+     "why": "“极”读 jí（写字表 21）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W8a-A3",
+     "type": "choice",
+     "stem": "“椅”怎么读？",
+     "options": [
+      "dī",
+      "yī",
+      "yǐ",
+      "yín"
+     ],
+     "answer": "C",
+     "why": "“椅”读 yǐ（写字表 21）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W8a-A4",
+     "type": "choice",
+     "stem": "“拉”怎么读？",
+     "options": [
+      "lā",
+      "fā",
+      "lóu",
+      "nǎ"
+     ],
+     "answer": "A",
+     "why": "“拉”读 lā（写字表 21）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W8a-A5",
+     "type": "choice",
+     "stem": "“接”怎么读？",
+     "options": [
+      "tiě",
+      "jiè",
+      "jiē",
+      "jiù"
+     ],
+     "answer": "C",
+     "why": "“接”读 jiē（写字表 21）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W8a-A6",
+     "type": "choice",
+     "stem": "“抓”怎么读？",
+     "options": [
+      "guà",
+      "zhuā",
+      "zhòng",
+      "zhào"
+     ],
+     "answer": "B",
+     "why": "“抓”读 zhuā（写字表 22）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W8a-A7",
+     "type": "choice",
+     "stem": "“吵”怎么读？",
+     "options": [
+      "chuàn",
+      "chāo",
+      "chù",
+      "chǎo"
+     ],
+     "answer": "D",
+     "why": "“吵”读 chǎo（写字表 22）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W8a-A8",
+     "type": "choice",
+     "stem": "“受”怎么读？",
+     "options": [
+      "shòu",
+      "shēng",
+      "shōu",
+      "shì"
+     ],
+     "answer": "A",
+     "why": "“受”读 shòu（写字表 22）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W8a-A9",
+     "type": "choice",
+     "stem": "“哭”怎么读？",
+     "options": [
+      "kǔ",
+      "kū",
+      "jù",
+      "kù"
+     ],
+     "answer": "B",
+     "why": "“哭”读 kū（写字表 22）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W8a-A10",
+     "type": "choice",
+     "stem": "“戏”怎么读？",
+     "options": [
+      "zhī",
+      "dí",
+      "xì",
+      "xī"
+     ],
+     "answer": "C",
+     "why": "“戏”读 xì（写字表 23）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W8a-A11",
+     "type": "choice",
+     "stem": "“呢”怎么读？",
+     "options": [
+      "de",
+      "ná",
+      "yě",
+      "ne"
+     ],
+     "answer": "D",
+     "why": "“呢”读 ne（写字表 23）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W8a-A12",
+     "type": "choice",
+     "stem": "“咱”怎么读？",
+     "options": [
+      "zuò",
+      "zán",
+      "wān",
+      "nán"
+     ],
+     "answer": "B",
+     "why": "“咱”读 zán（写字表 23）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W8a-A13",
+     "type": "choice",
+     "stem": "“蛇”怎么读？",
+     "options": [
+      "de",
+      "shé",
+      "shōu",
+      "shǎn"
+     ],
+     "answer": "B",
+     "why": "“蛇”读 shé（写字表 园地八）。",
+     "pts": 2
+    }
+   ]
+  }
+ ]
+}

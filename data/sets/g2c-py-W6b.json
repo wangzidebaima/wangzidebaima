@@ -1,0 +1,255 @@
+{
+ "id": "g2c-py-W6b",
+ "kind": "cn",
+ "title": "看字选拼音（二）",
+ "subtitle": "写字表里的字，选出正确的拼音",
+ "unit": "W6",
+ "mk": "cnknow",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g2c-py-W6b-A1",
+     "type": "choice",
+     "stem": "“代”怎么读？",
+     "options": [
+      "ài",
+      "dìng",
+      "de",
+      "dài"
+     ],
+     "answer": "D",
+     "why": "“代”读 dài（写字表 14）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W6b-A2",
+     "type": "choice",
+     "stem": "“视”怎么读？",
+     "options": [
+      "shí",
+      "shì",
+      "sì",
+      "shī"
+     ],
+     "answer": "B",
+     "why": "“视”读 shì（写字表 14）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W6b-A3",
+     "type": "choice",
+     "stem": "“路”怎么读？",
+     "options": [
+      "lā",
+      "lú",
+      "kù",
+      "lù"
+     ],
+     "answer": "D",
+     "why": "“路”读 lù（写字表 14）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W6b-A4",
+     "type": "choice",
+     "stem": "“志”怎么读？",
+     "options": [
+      "zhí",
+      "zhī",
+      "zhǐ",
+      "zhì"
+     ],
+     "answer": "D",
+     "why": "“志”读 zhì（写字表 15）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W6b-A5",
+     "type": "choice",
+     "stem": "“敌”怎么读？",
+     "options": [
+      "dí",
+      "dī",
+      "dì",
+      "duǎn"
+     ],
+     "answer": "A",
+     "why": "“敌”读 dí（写字表 15）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W6b-A6",
+     "type": "choice",
+     "stem": "“非”怎么读？",
+     "options": [
+      "wèi",
+      "féi",
+      "fēi",
+      "fēng"
+     ],
+     "answer": "C",
+     "why": "“非”读 fēi（写字表 15）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W6b-A7",
+     "type": "choice",
+     "stem": "“战”怎么读？",
+     "options": [
+      "zhǐ",
+      "zhāng",
+      "hàn",
+      "zhàn"
+     ],
+     "answer": "D",
+     "why": "“战”读 zhàn（写字表 15）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W6b-A8",
+     "type": "choice",
+     "stem": "“戴”怎么读？",
+     "options": [
+      "de",
+      "hái",
+      "pāi",
+      "dài"
+     ],
+     "answer": "D",
+     "why": "“戴”读 dài（写字表 15）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W6b-A9",
+     "type": "choice",
+     "stem": "“民”怎么读？",
+     "options": [
+      "mín",
+      "māo",
+      "yín",
+      "měi"
+     ],
+     "answer": "A",
+     "why": "“民”读 mín（写字表 16）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W6b-A10",
+     "type": "choice",
+     "stem": "“理”怎么读？",
+     "options": [
+      "lǐ",
+      "tǐ",
+      "shī",
+      "lì"
+     ],
+     "answer": "A",
+     "why": "“理”读 lǐ（写字表 16）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W6b-A11",
+     "type": "choice",
+     "stem": "“裤”怎么读？",
+     "options": [
+      "kǔ",
+      "kù",
+      "xǔ",
+      "kū"
+     ],
+     "answer": "B",
+     "why": "“裤”读 kù（写字表 16）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W6b-A12",
+     "type": "choice",
+     "stem": "“反”怎么读？",
+     "options": [
+      "shǎn",
+      "wǎn",
+      "fǎ",
+      "fǎn"
+     ],
+     "answer": "D",
+     "why": "“反”读 fǎn（写字表 17）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W6b-A13",
+     "type": "choice",
+     "stem": "“由”怎么读？",
+     "options": [
+      "shòu",
+      "yǒu",
+      "yǐ",
+      "yóu"
+     ],
+     "answer": "D",
+     "why": "“由”读 yóu（写字表 17）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W6b-A14",
+     "type": "choice",
+     "stem": "“员”怎么读？",
+     "options": [
+      "ya",
+      "chuán",
+      "yuán",
+      "zhuǎn"
+     ],
+     "answer": "C",
+     "why": "“员”读 yuán（写字表 17）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W6b-A15",
+     "type": "choice",
+     "stem": "“声”怎么读？",
+     "options": [
+      "shèng",
+      "chéng",
+      "shēng",
+      "shī"
+     ],
+     "answer": "C",
+     "why": "“声”读 shēng（写字表 17）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W6b-A16",
+     "type": "choice",
+     "stem": "“消”怎么读？",
+     "options": [
+      "xiāo",
+      "xiū",
+      "xiē",
+      "xī"
+     ],
+     "answer": "A",
+     "why": "“消”读 xiāo（写字表 17）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W6b-A17",
+     "type": "choice",
+     "stem": "“抄”怎么读？",
+     "options": [
+      "chǎo",
+      "yào",
+      "chāo",
+      "zhào"
+     ],
+     "answer": "C",
+     "why": "“抄”读 chāo（写字表 园地六）。",
+     "pts": 2
+    }
+   ]
+  }
+ ]
+}

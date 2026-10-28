@@ -1,0 +1,199 @@
+{
+ "id": "g2c-py-W3b",
+ "kind": "cn",
+ "title": "看字选拼音（二）",
+ "subtitle": "写字表里的字，选出正确的拼音",
+ "unit": "W3",
+ "mk": "cnknow",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g2c-py-W3b-A1",
+     "type": "choice",
+     "stem": "“吗”怎么读？",
+     "options": [
+      "lā",
+      "ma",
+      "miè",
+      "ná"
+     ],
+     "answer": "B",
+     "why": "“吗”读 ma（写字表 4）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W3b-A2",
+     "type": "choice",
+     "stem": "“哥”怎么读？",
+     "options": [
+      "gē",
+      "guì",
+      "gèng",
+      "guà"
+     ],
+     "answer": "A",
+     "why": "“哥”读 gē（写字表 4）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W3b-A3",
+     "type": "choice",
+     "stem": "“挂”怎么读？",
+     "options": [
+      "guì",
+      "gāi",
+      "guà",
+      "zhuā"
+     ],
+     "answer": "C",
+     "why": "“挂”读 guà（写字表 4）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W3b-A4",
+     "type": "choice",
+     "stem": "“宝”怎么读？",
+     "options": [
+      "chāo",
+      "bié",
+      "bǎo",
+      "bù"
+     ],
+     "answer": "C",
+     "why": "“宝”读 bǎo（写字表 5）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W3b-A5",
+     "type": "choice",
+     "stem": "“些”怎么读？",
+     "options": [
+      "xiàng",
+      "xī",
+      "xǔ",
+      "xiē"
+     ],
+     "answer": "D",
+     "why": "“些”读 xiē（写字表 5）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W3b-A6",
+     "type": "choice",
+     "stem": "“诉”怎么读？",
+     "options": [
+      "jū",
+      "kǔ",
+      "sàn",
+      "sù"
+     ],
+     "answer": "D",
+     "why": "“诉”读 sù（写字表 5）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W3b-A7",
+     "type": "choice",
+     "stem": "“香”怎么读？",
+     "options": [
+      "xiàng",
+      "xiāng",
+      "xiū",
+      "xiǎng"
+     ],
+     "answer": "B",
+     "why": "“香”读 xiāng（写字表 5）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W3b-A8",
+     "type": "choice",
+     "stem": "“奶”怎么读？",
+     "options": [
+      "pāi",
+      "hái",
+      "nǎ",
+      "nǎi"
+     ],
+     "answer": "D",
+     "why": "“奶”读 nǎi（写字表 6）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W3b-A9",
+     "type": "choice",
+     "stem": "“爷”怎么读？",
+     "options": [
+      "ne",
+      "yé",
+      "è",
+      "yě"
+     ],
+     "answer": "B",
+     "why": "“爷”读 yé（写字表 6）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W3b-A10",
+     "type": "choice",
+     "stem": "“变”怎么读？",
+     "options": [
+      "biàn",
+      "bèi",
+      "bàn",
+      "bīng"
+     ],
+     "answer": "A",
+     "why": "“变”读 biàn（写字表 6）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W3b-A11",
+     "type": "choice",
+     "stem": "“张”怎么读？",
+     "options": [
+      "zhǐ",
+      "zhuǎn",
+      "zhāng",
+      "yáng"
+     ],
+     "answer": "C",
+     "why": "“张”读 zhāng（写字表 6）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W3b-A12",
+     "type": "choice",
+     "stem": "“图”怎么读？",
+     "options": [
+      "tiě",
+      "tú",
+      "qū",
+      "hú"
+     ],
+     "answer": "B",
+     "why": "“图”读 tú（写字表 园地三）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W3b-A13",
+     "type": "choice",
+     "stem": "“铁”怎么读？",
+     "options": [
+      "jiē",
+      "xiē",
+      "tiě",
+      "miè"
+     ],
+     "answer": "C",
+     "why": "“铁”读 tiě（写字表 园地三）。",
+     "pts": 2
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,80 @@
+{
+ "id": "g2c-dgql-b",
+ "kind": "cn",
+ "title": "《登鹳雀楼》默写",
+ "subtitle": "先背一背，再默写（不显示原诗）",
+ "unit": "W4",
+ "mk": "cnpoem",
+ "sections": [
+  {
+   "id": "C",
+   "title": "三、默写",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g2c-dgql-b-C1",
+     "type": "fill",
+     "stem": "白日依山尽，____。",
+     "answers": [
+      [
+       "黄河入海流"
+      ]
+     ],
+     "why": "“黄河入海流”",
+     "pts": 2
+    },
+    {
+     "id": "g2c-dgql-b-C2",
+     "type": "fill",
+     "stem": "____依山尽，黄河入海流。",
+     "answers": [
+      [
+       "白日"
+      ]
+     ],
+     "why": "“白日依山尽”",
+     "pts": 2
+    },
+    {
+     "id": "g2c-dgql-b-C3",
+     "type": "fill",
+     "stem": "欲穷千里目，____。",
+     "answers": [
+      [
+       "更上一层楼"
+      ]
+     ],
+     "why": "“更上一层楼”",
+     "pts": 2
+    },
+    {
+     "id": "g2c-dgql-b-C4",
+     "type": "fill",
+     "stem": "欲穷____目，更上一层楼。",
+     "answers": [
+      [
+       "千里"
+      ]
+     ],
+     "why": "“欲穷千里目”",
+     "pts": 2
+    },
+    {
+     "id": "g2c-dgql-b-C5",
+     "type": "fill",
+     "stem": "白日依山尽，____。欲穷千里目，____。",
+     "answers": [
+      [
+       "黄河入海流"
+      ],
+      [
+       "更上一层楼"
+      ]
+     ],
+     "why": "全诗：白日依山尽，黄河入海流。欲穷千里目，更上一层楼。",
+     "pts": 2
+    }
+   ]
+  }
+ ]
+}

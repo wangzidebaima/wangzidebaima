@@ -1,0 +1,199 @@
+{
+ "id": "g2c-py-W5a",
+ "kind": "cn",
+ "title": "看字选拼音（一）",
+ "subtitle": "写字表里的字，选出正确的拼音",
+ "unit": "W5",
+ "mk": "cnknow",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g2c-py-W5a-A1",
+     "type": "choice",
+     "stem": "“观”怎么读？",
+     "options": [
+      "zhuǎn",
+      "guà",
+      "guān",
+      "kuān"
+     ],
+     "answer": "C",
+     "why": "“观”读 guān（写字表 11）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W5a-A2",
+     "type": "choice",
+     "stem": "“答”怎么读？",
+     "options": [
+      "dá",
+      "fā",
+      "de",
+      "dú"
+     ],
+     "answer": "A",
+     "why": "“答”读 dá（写字表 11）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W5a-A3",
+     "type": "choice",
+     "stem": "“抬”怎么读？",
+     "options": [
+      "tái",
+      "tiào",
+      "tú",
+      "hái"
+     ],
+     "answer": "A",
+     "why": "“抬”读 tái（写字表 11）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W5a-A4",
+     "type": "choice",
+     "stem": "“信”怎么读？",
+     "options": [
+      "yín",
+      "nín",
+      "xìn",
+      "xīn"
+     ],
+     "answer": "C",
+     "why": "“信”读 xìn（写字表 11）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W5a-A5",
+     "type": "choice",
+     "stem": "“做”怎么读？",
+     "options": [
+      "zuò",
+      "zǐ",
+      "huó",
+      "zěn"
+     ],
+     "answer": "A",
+     "why": "“做”读 zuò（写字表 12）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W5a-A6",
+     "type": "choice",
+     "stem": "“第”怎么读？",
+     "options": [
+      "dí",
+      "jī",
+      "dì",
+      "dī"
+     ],
+     "answer": "C",
+     "why": "“第”读 dì（写字表 12）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W5a-A7",
+     "type": "choice",
+     "stem": "“冷”怎么读？",
+     "options": [
+      "lùn",
+      "lù",
+      "lú",
+      "lěng"
+     ],
+     "answer": "D",
+     "why": "“冷”读 lěng（写字表 12）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W5a-A8",
+     "type": "choice",
+     "stem": "“亮”怎么读？",
+     "options": [
+      "lù",
+      "liàng",
+      "liǎng",
+      "láng"
+     ],
+     "answer": "B",
+     "why": "“亮”读 liàng（写字表 12）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W5a-A9",
+     "type": "choice",
+     "stem": "“以”怎么读？",
+     "options": [
+      "yī",
+      "yǐ",
+      "jí",
+      "zhì"
+     ],
+     "answer": "B",
+     "why": "“以”读 yǐ（写字表 13）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W5a-A10",
+     "type": "choice",
+     "stem": "“想”怎么读？",
+     "options": [
+      "xiàng",
+      "xiāng",
+      "xiǎng",
+      "xíng"
+     ],
+     "answer": "C",
+     "why": "“想”读 xiǎng（写字表 13）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W5a-A11",
+     "type": "choice",
+     "stem": "“居”怎么读？",
+     "options": [
+      "jù",
+      "yú",
+      "jū",
+      "jiè"
+     ],
+     "answer": "C",
+     "why": "“居”读 jū（写字表 13）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W5a-A12",
+     "type": "choice",
+     "stem": "“奇”怎么读？",
+     "options": [
+      "qí",
+      "sì",
+      "qǐ",
+      "qì"
+     ],
+     "answer": "A",
+     "why": "“奇”读 qí（写字表 13）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W5a-A13",
+     "type": "choice",
+     "stem": "“货”怎么读？",
+     "options": [
+      "huà",
+      "huó",
+      "huò",
+      "huǒ"
+     ],
+     "answer": "C",
+     "why": "“货”读 huò（写字表 园地五）。",
+     "pts": 2
+    }
+   ]
+  }
+ ]
+}

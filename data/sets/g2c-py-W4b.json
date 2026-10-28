@@ -1,0 +1,255 @@
+{
+ "id": "g2c-py-W4b",
+ "kind": "cn",
+ "title": "看字选拼音（二）",
+ "subtitle": "写字表里的字，选出正确的拼音",
+ "unit": "W4",
+ "mk": "cnknow",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g2c-py-W4b-A1",
+     "type": "choice",
+     "stem": "“尽”怎么读？",
+     "options": [
+      "jìn",
+      "jī",
+      "mín",
+      "jīn"
+     ],
+     "answer": "A",
+     "why": "“尽”读 jìn（写字表 7）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W4b-A2",
+     "type": "choice",
+     "stem": "“层”怎么读？",
+     "options": [
+      "cǎi",
+      "cūn",
+      "fēng",
+      "céng"
+     ],
+     "answer": "D",
+     "why": "“层”读 céng（写字表 7）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W4b-A3",
+     "type": "choice",
+     "stem": "“炉”怎么读？",
+     "options": [
+      "hù",
+      "lù",
+      "lú",
+      "lián"
+     ],
+     "answer": "C",
+     "why": "“炉”读 lú（写字表 7）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W4b-A4",
+     "type": "choice",
+     "stem": "“川”怎么读？",
+     "options": [
+      "chuán",
+      "chuàn",
+      "chuān",
+      "huán"
+     ],
+     "answer": "C",
+     "why": "“川”读 chuān（写字表 7）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W4b-A5",
+     "type": "choice",
+     "stem": "“银”怎么读？",
+     "options": [
+      "yín",
+      "yīn",
+      "jìn",
+      "yáng"
+     ],
+     "answer": "A",
+     "why": "“银”读 yín（写字表 7）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W4b-A6",
+     "type": "choice",
+     "stem": "“顶”怎么读？",
+     "options": [
+      "lǐng",
+      "dìng",
+      "de",
+      "dǐng"
+     ],
+     "answer": "D",
+     "why": "“顶”读 dǐng（写字表 8）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W4b-A7",
+     "type": "choice",
+     "stem": "“位”怎么读？",
+     "options": [
+      "wèi",
+      "wài",
+      "bèi",
+      "wàng"
+     ],
+     "answer": "A",
+     "why": "“位”读 wèi（写字表 8）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W4b-A8",
+     "type": "choice",
+     "stem": "“狗”怎么读？",
+     "options": [
+      "lóu",
+      "gē",
+      "gǒu",
+      "guà"
+     ],
+     "answer": "C",
+     "why": "“狗”读 gǒu（写字表 8）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W4b-A9",
+     "type": "choice",
+     "stem": "“状”怎么读？",
+     "options": [
+      "zhèn",
+      "zhì",
+      "zhuàng",
+      "zhī"
+     ],
+     "answer": "C",
+     "why": "“状”读 zhuàng（写字表 8）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W4b-A10",
+     "type": "choice",
+     "stem": "“区”怎么读？",
+     "options": [
+      "qū",
+      "gǔ",
+      "qǔ",
+      "dù"
+     ],
+     "answer": "A",
+     "why": "“区”读 qū（写字表 9）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W4b-A11",
+     "type": "choice",
+     "stem": "“岛”怎么读？",
+     "options": [
+      "chāo",
+      "māo",
+      "de",
+      "dǎo"
+     ],
+     "answer": "D",
+     "why": "“岛”读 dǎo（写字表 9）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W4b-A12",
+     "type": "choice",
+     "stem": "“现”怎么读？",
+     "options": [
+      "xiāng",
+      "xiān",
+      "xiàn",
+      "xìn"
+     ],
+     "answer": "C",
+     "why": "“现”读 xiàn（写字表 9）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W4b-A13",
+     "type": "choice",
+     "stem": "“外”怎么读？",
+     "options": [
+      "wài",
+      "wǎn",
+      "hǎi",
+      "tái"
+     ],
+     "answer": "A",
+     "why": "“外”读 wài（写字表 9）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W4b-A14",
+     "type": "choice",
+     "stem": "“枝”怎么读？",
+     "options": [
+      "zhī",
+      "zhǐ",
+      "zhí",
+      "zhì"
+     ],
+     "answer": "A",
+     "why": "“枝”读 zhī（写字表 10）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W4b-A15",
+     "type": "choice",
+     "stem": "“城”怎么读？",
+     "options": [
+      "chuàn",
+      "chù",
+      "lěng",
+      "chéng"
+     ],
+     "answer": "D",
+     "why": "“城”读 chéng（写字表 10）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W4b-A16",
+     "type": "choice",
+     "stem": "“孔”怎么读？",
+     "options": [
+      "kū",
+      "kē",
+      "kè",
+      "kǒng"
+     ],
+     "answer": "D",
+     "why": "“孔”读 kǒng（写字表 10）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W4b-A17",
+     "type": "choice",
+     "stem": "“味”怎么读？",
+     "options": [
+      "fēi",
+      "féi",
+      "wān",
+      "wèi"
+     ],
+     "answer": "D",
+     "why": "“味”读 wèi（写字表 10）。",
+     "pts": 2
+    }
+   ]
+  }
+ ]
+}

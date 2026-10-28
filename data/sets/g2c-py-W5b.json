@@ -1,0 +1,199 @@
+{
+ "id": "g2c-py-W5b",
+ "kind": "cn",
+ "title": "看字选拼音（二）",
+ "subtitle": "写字表里的字，选出正确的拼音",
+ "unit": "W5",
+ "mk": "cnknow",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g2c-py-W5b-A1",
+     "type": "choice",
+     "stem": "“呀”怎么读？",
+     "options": [
+      "ya",
+      "yě",
+      "yīn",
+      "yān"
+     ],
+     "answer": "A",
+     "why": "“呀”读 ya（写字表 11）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W5b-A2",
+     "type": "choice",
+     "stem": "“话”怎么读？",
+     "options": [
+      "hái",
+      "huà",
+      "huó",
+      "hěn"
+     ],
+     "answer": "B",
+     "why": "“话”读 huà（写字表 11）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W5b-A3",
+     "type": "choice",
+     "stem": "“能”怎么读？",
+     "options": [
+      "fēng",
+      "néng",
+      "nìng",
+      "chéng"
+     ],
+     "answer": "B",
+     "why": "“能”读 néng（写字表 11）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W5b-A4",
+     "type": "choice",
+     "stem": "“阵”怎么读？",
+     "options": [
+      "zhuā",
+      "zhèn",
+      "zhuàng",
+      "zěn"
+     ],
+     "answer": "B",
+     "why": "“阵”读 zhèn（写字表 12）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W5b-A5",
+     "type": "choice",
+     "stem": "“冻”怎么读？",
+     "options": [
+      "dì",
+      "dòng",
+      "dá",
+      "dú"
+     ],
+     "answer": "B",
+     "why": "“冻”读 dòng（写字表 12）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W5b-A6",
+     "type": "choice",
+     "stem": "“像”怎么读？",
+     "options": [
+      "xiāng",
+      "xiàng",
+      "xiū",
+      "xiǎng"
+     ],
+     "answer": "B",
+     "why": "“像”读 xiàng（写字表 12）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W5b-A7",
+     "type": "choice",
+     "stem": "“冰”怎么读？",
+     "options": [
+      "jīng",
+      "bié",
+      "bīng",
+      "lǐng"
+     ],
+     "answer": "C",
+     "why": "“冰”读 bīng（写字表 12）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W5b-A8",
+     "type": "choice",
+     "stem": "“棵”怎么读？",
+     "options": [
+      "kǔ",
+      "kē",
+      "kù",
+      "kè"
+     ],
+     "answer": "B",
+     "why": "“棵”读 kē（写字表 13）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W5b-A9",
+     "type": "choice",
+     "stem": "“次”怎么读？",
+     "options": [
+      "céng",
+      "shī",
+      "zhí",
+      "cì"
+     ],
+     "answer": "D",
+     "why": "“次”读 cì（写字表 13）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W5b-A10",
+     "type": "choice",
+     "stem": "“邻”怎么读？",
+     "options": [
+      "nín",
+      "jīn",
+      "lìng",
+      "lín"
+     ],
+     "answer": "D",
+     "why": "“邻”读 lín（写字表 13）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W5b-A11",
+     "type": "choice",
+     "stem": "“吧”怎么读？",
+     "options": [
+      "ba",
+      "bǎi",
+      "ma",
+      "ná"
+     ],
+     "answer": "A",
+     "why": "“吧”读 ba（写字表 13）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W5b-A12",
+     "type": "choice",
+     "stem": "“怪”怎么读？",
+     "options": [
+      "guān",
+      "guài",
+      "gǔ",
+      "kuài"
+     ],
+     "answer": "B",
+     "why": "“怪”读 guài（写字表 13）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W5b-A13",
+     "type": "choice",
+     "stem": "“科”怎么读？",
+     "options": [
+      "è",
+      "kè",
+      "kē",
+      "yě"
+     ],
+     "answer": "C",
+     "why": "“科”读 kē（写字表 园地五）。",
+     "pts": 2
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,269 @@
+{
+ "id": "g2c-py-W6a",
+ "kind": "cn",
+ "title": "看字选拼音（一）",
+ "subtitle": "写字表里的字，选出正确的拼音",
+ "unit": "W6",
+ "mk": "cnknow",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g2c-py-W6a-A1",
+     "type": "choice",
+     "stem": "“楼”怎么读？",
+     "options": [
+      "lóu",
+      "lù",
+      "lián",
+      "zhōu"
+     ],
+     "answer": "A",
+     "why": "“楼”读 lóu（写字表 14）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W6a-A2",
+     "type": "choice",
+     "stem": "“穿”怎么读？",
+     "options": [
+      "cháng",
+      "chuān",
+      "chuàn",
+      "chuán"
+     ],
+     "answer": "B",
+     "why": "“穿”读 chuān（写字表 14）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W6a-A3",
+     "type": "choice",
+     "stem": "“利”怎么读？",
+     "options": [
+      "lì",
+      "dí",
+      "lǐ",
+      "xī"
+     ],
+     "answer": "A",
+     "why": "“利”读 lì（写字表 14）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W6a-A4",
+     "type": "choice",
+     "stem": "“同”怎么读？",
+     "options": [
+      "tiáo",
+      "tóng",
+      "tǐ",
+      "kǒng"
+     ],
+     "answer": "B",
+     "why": "“同”读 tóng（写字表 15）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W6a-A5",
+     "type": "choice",
+     "stem": "“军”怎么读？",
+     "options": [
+      "jūn",
+      "jiù",
+      "jīng",
+      "cūn"
+     ],
+     "answer": "A",
+     "why": "“军”读 jūn（写字表 15）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W6a-A6",
+     "type": "choice",
+     "stem": "“常”怎么读？",
+     "options": [
+      "cháng",
+      "chuán",
+      "chū",
+      "chāo"
+     ],
+     "answer": "A",
+     "why": "“常”读 cháng（写字表 15）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W6a-A7",
+     "type": "choice",
+     "stem": "“每”怎么读？",
+     "options": [
+      "wèi",
+      "míng",
+      "gěi",
+      "měi"
+     ],
+     "answer": "D",
+     "why": "“每”读 měi（写字表 15）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W6a-A8",
+     "type": "choice",
+     "stem": "“士”怎么读？",
+     "options": [
+      "qǐ",
+      "shí",
+      "shì",
+      "shī"
+     ],
+     "answer": "C",
+     "why": "“士”读 shì（写字表 15）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W6a-A9",
+     "type": "choice",
+     "stem": "“忘”怎么读？",
+     "options": [
+      "láng",
+      "wàng",
+      "zhāng",
+      "wài"
+     ],
+     "answer": "B",
+     "why": "“忘”读 wàng（写字表 16）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W6a-A10",
+     "type": "choice",
+     "stem": "“因”怎么读？",
+     "options": [
+      "yóu",
+      "yín",
+      "yīn",
+      "yān"
+     ],
+     "answer": "C",
+     "why": "“因”读 yīn（写字表 16）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W6a-A11",
+     "type": "choice",
+     "stem": "“串”怎么读？",
+     "options": [
+      "chuán",
+      "chuān",
+      "chuàn",
+      "kuān"
+     ],
+     "answer": "C",
+     "why": "“串”读 chuàn（写字表 16）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W6a-A12",
+     "type": "choice",
+     "stem": "“令”怎么读？",
+     "options": [
+      "láng",
+      "lìng",
+      "lěng",
+      "lǐng"
+     ],
+     "answer": "B",
+     "why": "“令”读 lìng（写字表 16）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W6a-A13",
+     "type": "choice",
+     "stem": "“村”怎么读？",
+     "options": [
+      "cǎi",
+      "cūn",
+      "jūn",
+      "cì"
+     ],
+     "answer": "B",
+     "why": "“村”读 cūn（写字表 17）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W6a-A14",
+     "type": "choice",
+     "stem": "“于”怎么读？",
+     "options": [
+      "yě",
+      "yān",
+      "hù",
+      "yú"
+     ],
+     "answer": "D",
+     "why": "“于”读 yú（写字表 17）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W6a-A15",
+     "type": "choice",
+     "stem": "“被”怎么读？",
+     "options": [
+      "bù",
+      "gěi",
+      "bèi",
+      "fēi"
+     ],
+     "answer": "C",
+     "why": "“被”读 bèi（写字表 17）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W6a-A16",
+     "type": "choice",
+     "stem": "“岁”怎么读？",
+     "options": [
+      "suì",
+      "suī",
+      "sōng",
+      "sàn"
+     ],
+     "answer": "A",
+     "why": "“岁”读 suì（写字表 17）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W6a-A17",
+     "type": "choice",
+     "stem": "“息”怎么读？",
+     "options": [
+      "zhì",
+      "xī",
+      "dī",
+      "xì"
+     ],
+     "answer": "B",
+     "why": "“息”读 xī（写字表 17）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W6a-A18",
+     "type": "choice",
+     "stem": "“炒”怎么读？",
+     "options": [
+      "chǎo",
+      "chù",
+      "chāo",
+      "chuàn"
+     ],
+     "answer": "A",
+     "why": "“炒”读 chǎo（写字表 园地六）。",
+     "pts": 2
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,213 @@
+{
+ "id": "g2c-py-W3a",
+ "kind": "cn",
+ "title": "看字选拼音（一）",
+ "subtitle": "写字表里的字，选出正确的拼音",
+ "unit": "W3",
+ "mk": "cnknow",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g2c-py-W3a-A1",
+     "type": "choice",
+     "stem": "“丽”怎么读？",
+     "options": [
+      "lì",
+      "cì",
+      "bì",
+      "lǐ"
+     ],
+     "answer": "A",
+     "why": "“丽”读 lì（写字表 4）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W3a-A2",
+     "type": "choice",
+     "stem": "“圆”怎么读？",
+     "options": [
+      "yé",
+      "duǎn",
+      "yuán",
+      "ya"
+     ],
+     "answer": "C",
+     "why": "“圆”读 yuán（写字表 4）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W3a-A3",
+     "type": "choice",
+     "stem": "“秋”怎么读？",
+     "options": [
+      "qí",
+      "qiū",
+      "xiū",
+      "qióng"
+     ],
+     "answer": "B",
+     "why": "“秋”读 qiū（写字表 4）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W3a-A4",
+     "type": "choice",
+     "stem": "“啊”怎么读？",
+     "options": [
+      "a",
+      "dá",
+      "nǎ",
+      "lā"
+     ],
+     "answer": "A",
+     "why": "“啊”读 a（写字表 4）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W3a-A5",
+     "type": "choice",
+     "stem": "“活”怎么读？",
+     "options": [
+      "huǒ",
+      "huò",
+      "huó",
+      "hú"
+     ],
+     "answer": "C",
+     "why": "“活”读 huó（写字表 5）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W3a-A6",
+     "type": "choice",
+     "stem": "“总”怎么读？",
+     "options": [
+      "zǐ",
+      "zǒng",
+      "sōng",
+      "zhòng"
+     ],
+     "answer": "B",
+     "why": "“总”读 zǒng（写字表 5）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W3a-A7",
+     "type": "choice",
+     "stem": "“名”怎么读？",
+     "options": [
+      "ma",
+      "māo",
+      "míng",
+      "nìng"
+     ],
+     "answer": "C",
+     "why": "“名”读 míng（写字表 5）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W3a-A8",
+     "type": "choice",
+     "stem": "“晚”怎么读？",
+     "options": [
+      "dǎn",
+      "wàng",
+      "wān",
+      "wǎn"
+     ],
+     "answer": "D",
+     "why": "“晚”读 wǎn（写字表 6）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W3a-A9",
+     "type": "choice",
+     "stem": "“您”怎么读？",
+     "options": [
+      "xìn",
+      "nín",
+      "jīn",
+      "xīn"
+     ],
+     "answer": "B",
+     "why": "“您”读 nín（写字表 6）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W3a-A10",
+     "type": "choice",
+     "stem": "“很”怎么读？",
+     "options": [
+      "zhèn",
+      "hú",
+      "huó",
+      "hěn"
+     ],
+     "answer": "D",
+     "why": "“很”读 hěn（写字表 6）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W3a-A11",
+     "type": "choice",
+     "stem": "“勺”怎么读？",
+     "options": [
+      "shí",
+      "dǎo",
+      "zhào",
+      "sháo"
+     ],
+     "answer": "D",
+     "why": "“勺”读 sháo（写字表 6）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W3a-A12",
+     "type": "choice",
+     "stem": "“汉”怎么读？",
+     "options": [
+      "hái",
+      "hàn",
+      "sàn",
+      "wǎn"
+     ],
+     "answer": "B",
+     "why": "“汉”读 hàn（写字表 6）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W3a-A13",
+     "type": "choice",
+     "stem": "“泥”怎么读？",
+     "options": [
+      "bì",
+      "ná",
+      "ní",
+      "néng"
+     ],
+     "answer": "C",
+     "why": "“泥”读 ní（写字表 园地三）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W3a-A14",
+     "type": "choice",
+     "stem": "“环”怎么读？",
+     "options": [
+      "huà",
+      "hú",
+      "huán",
+      "zhuǎn"
+     ],
+     "answer": "C",
+     "why": "“环”读 huán（写字表 园地三）。",
+     "pts": 2
+    }
+   ]
+  }
+ ]
+}

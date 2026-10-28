@@ -1,0 +1,185 @@
+{
+ "id": "g2c-py-W7b",
+ "kind": "cn",
+ "title": "看字选拼音（二）",
+ "subtitle": "写字表里的字，选出正确的拼音",
+ "unit": "W7",
+ "mk": "cnknow",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g2c-py-W7b-A1",
+     "type": "choice",
+     "stem": "“灭”怎么读？",
+     "options": [
+      "míng",
+      "miè",
+      "tiě",
+      "ma"
+     ],
+     "answer": "B",
+     "why": "“灭”读 miè（写字表 18）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W7b-A2",
+     "type": "choice",
+     "stem": "“独”怎么读？",
+     "options": [
+      "dù",
+      "dòng",
+      "dú",
+      "dá"
+     ],
+     "answer": "C",
+     "why": "“独”读 dú（写字表 18）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W7b-A3",
+     "type": "choice",
+     "stem": "“似”怎么读？",
+     "options": [
+      "tǐ",
+      "sì",
+      "ní",
+      "xī"
+     ],
+     "answer": "B",
+     "why": "“似”读 sì（写字表 18）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W7b-A4",
+     "type": "choice",
+     "stem": "“低”怎么读？",
+     "options": [
+      "dí",
+      "dī",
+      "dì",
+      "dàn"
+     ],
+     "answer": "B",
+     "why": "“低”读 dī（写字表 18）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W7b-A5",
+     "type": "choice",
+     "stem": "“船”怎么读？",
+     "options": [
+      "chuān",
+      "chuán",
+      "chuàn",
+      "chāo"
+     ],
+     "answer": "B",
+     "why": "“船”读 chuán（写字表 19）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W7b-A6",
+     "type": "choice",
+     "stem": "“该”怎么读？",
+     "options": [
+      "gē",
+      "gāi",
+      "pāi",
+      "bǎi"
+     ],
+     "answer": "B",
+     "why": "“该”读 gāi（写字表 19）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W7b-A7",
+     "type": "choice",
+     "stem": "“失”怎么读？",
+     "options": [
+      "shī",
+      "jí",
+      "shì",
+      "shí"
+     ],
+     "answer": "A",
+     "why": "“失”读 shī（写字表 19）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W7b-A8",
+     "type": "choice",
+     "stem": "“伴”怎么读？",
+     "options": [
+      "bàn",
+      "bù",
+      "bì",
+      "yān"
+     ],
+     "answer": "A",
+     "why": "“伴”读 bàn（写字表 20）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W7b-A9",
+     "type": "choice",
+     "stem": "“闭”怎么读？",
+     "options": [
+      "biàn",
+      "shì",
+      "jì",
+      "bì"
+     ],
+     "answer": "D",
+     "why": "“闭”读 bì（写字表 20）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W7b-A10",
+     "type": "choice",
+     "stem": "“谁”怎么读？",
+     "options": [
+      "shōu",
+      "shuí",
+      "shì",
+      "duì"
+     ],
+     "answer": "B",
+     "why": "“谁”读 shuí（写字表 20）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W7b-A11",
+     "type": "choice",
+     "stem": "“饥”怎么读？",
+     "options": [
+      "jì",
+      "jí",
+      "jūn",
+      "jī"
+     ],
+     "answer": "D",
+     "why": "“饥”读 jī（写字表 园地七）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W7b-A12",
+     "type": "choice",
+     "stem": "“库”怎么读？",
+     "options": [
+      "xǔ",
+      "kǔ",
+      "kū",
+      "kù"
+     ],
+     "answer": "D",
+     "why": "“库”读 kù（写字表 园地七）。",
+     "pts": 2
+    }
+   ]
+  }
+ ]
+}

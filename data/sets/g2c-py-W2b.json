@@ -1,0 +1,269 @@
+{
+ "id": "g2c-py-W2b",
+ "kind": "cn",
+ "title": "看字选拼音（二）",
+ "subtitle": "写字表里的字，选出正确的拼音",
+ "unit": "W2",
+ "mk": "cnknow",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g2c-py-W2b-A1",
+     "type": "choice",
+     "stem": "“块”怎么读？",
+     "options": [
+      "kǒng",
+      "kuài",
+      "kè",
+      "kù"
+     ],
+     "answer": "B",
+     "why": "“块”读 kuài（写字表 识字1）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W2b-A2",
+     "type": "choice",
+     "stem": "“园”怎么读？",
+     "options": [
+      "yuán",
+      "zhuǎn",
+      "huán",
+      "yě"
+     ],
+     "answer": "A",
+     "why": "“园”读 yuán（写字表 识字1）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W2b-A3",
+     "type": "choice",
+     "stem": "“队”怎么读？",
+     "options": [
+      "dǎo",
+      "duì",
+      "dì",
+      "dá"
+     ],
+     "answer": "B",
+     "why": "“队”读 duì（写字表 识字1）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W2b-A4",
+     "type": "choice",
+     "stem": "“树”怎么读？",
+     "options": [
+      "shù",
+      "qǔ",
+      "shì",
+      "jù"
+     ],
+     "answer": "A",
+     "why": "“树”读 shù（写字表 识字2）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W2b-A5",
+     "type": "choice",
+     "stem": "“杨”怎么读？",
+     "options": [
+      "yuán",
+      "ya",
+      "yáng",
+      "yóu"
+     ],
+     "answer": "C",
+     "why": "“杨”读 yáng（写字表 识字2）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W2b-A6",
+     "type": "choice",
+     "stem": "“柏”怎么读？",
+     "options": [
+      "pāi",
+      "nǎi",
+      "bǎi",
+      "dài"
+     ],
+     "answer": "C",
+     "why": "“柏”读 bǎi（写字表 识字2）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W2b-A7",
+     "type": "choice",
+     "stem": "“金”怎么读？",
+     "options": [
+      "jì",
+      "jiù",
+      "jīn",
+      "jìn"
+     ],
+     "answer": "C",
+     "why": "“金”读 jīn（写字表 识字2）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W2b-A8",
+     "type": "choice",
+     "stem": "“拍”怎么读？",
+     "options": [
+      "hǎi",
+      "péng",
+      "cǎi",
+      "pāi"
+     ],
+     "answer": "D",
+     "why": "“拍”读 pāi（写字表 识字3）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W2b-A9",
+     "type": "choice",
+     "stem": "“界”怎么读？",
+     "options": [
+      "jīng",
+      "jiù",
+      "jiè",
+      "jiē"
+     ],
+     "answer": "C",
+     "why": "“界”读 jiè（写字表 识字3）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W2b-A10",
+     "type": "choice",
+     "stem": "“丛”怎么读？",
+     "options": [
+      "dòng",
+      "cǎi",
+      "tóng",
+      "cóng"
+     ],
+     "answer": "D",
+     "why": "“丛”读 cóng（写字表 识字3）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W2b-A11",
+     "type": "choice",
+     "stem": "“朋”怎么读？",
+     "options": [
+      "lěng",
+      "péng",
+      "céng",
+      "chéng"
+     ],
+     "answer": "B",
+     "why": "“朋”读 péng（写字表 识字3）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W2b-A12",
+     "type": "choice",
+     "stem": "“保”怎么读？",
+     "options": [
+      "sháo",
+      "bǎo",
+      "bèi",
+      "bǎi"
+     ],
+     "answer": "B",
+     "why": "“保”读 bǎo（写字表 识字3）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W2b-A13",
+     "type": "choice",
+     "stem": "“季”怎么读？",
+     "options": [
+      "jī",
+      "jì",
+      "jí",
+      "zǐ"
+     ],
+     "answer": "B",
+     "why": "“季”读 jì（写字表 识字4）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W2b-A14",
+     "type": "choice",
+     "stem": "“农”怎么读？",
+     "options": [
+      "nóng",
+      "nà",
+      "cóng",
+      "tóng"
+     ],
+     "answer": "A",
+     "why": "“农”读 nóng（写字表 识字4）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W2b-A15",
+     "type": "choice",
+     "stem": "“谷”怎么读？",
+     "options": [
+      "rú",
+      "bù",
+      "hú",
+      "gǔ"
+     ],
+     "answer": "D",
+     "why": "“谷”读 gǔ（写字表 识字4）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W2b-A16",
+     "type": "choice",
+     "stem": "“虽”怎么读？",
+     "options": [
+      "suì",
+      "suī",
+      "sòng",
+      "guì"
+     ],
+     "answer": "B",
+     "why": "“虽”读 suī（写字表 识字4）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W2b-A17",
+     "type": "choice",
+     "stem": "“苦”怎么读？",
+     "options": [
+      "kū",
+      "kǔ",
+      "gǔ",
+      "kù"
+     ],
+     "answer": "B",
+     "why": "“苦”读 kǔ（写字表 识字4）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W2b-A18",
+     "type": "choice",
+     "stem": "“丑”怎么读？",
+     "options": [
+      "yóu",
+      "chǒu",
+      "shōu",
+      "cháng"
+     ],
+     "answer": "B",
+     "why": "“丑”读 chǒu（写字表 园地二）。",
+     "pts": 2
+    }
+   ]
+  }
+ ]
+}

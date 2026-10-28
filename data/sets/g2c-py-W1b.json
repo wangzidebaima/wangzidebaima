@@ -1,0 +1,185 @@
+{
+ "id": "g2c-py-W1b",
+ "kind": "cn",
+ "title": "看字选拼音（二）",
+ "subtitle": "写字表里的字，选出正确的拼音",
+ "unit": "W1",
+ "mk": "cnknow",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g2c-py-W1b-A1",
+     "type": "choice",
+     "stem": "“条”怎么读？",
+     "options": [
+      "tiáo",
+      "tái",
+      "tú",
+      "tiào"
+     ],
+     "answer": "A",
+     "why": "“条”读 tiáo（写字表 1）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W1b-A2",
+     "type": "choice",
+     "stem": "“宽”怎么读？",
+     "options": [
+      "kuài",
+      "kǒng",
+      "kù",
+      "kuān"
+     ],
+     "answer": "D",
+     "why": "“宽”读 kuān（写字表 1）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W1b-A3",
+     "type": "choice",
+     "stem": "“短”怎么读？",
+     "options": [
+      "duǎn",
+      "de",
+      "dī",
+      "dǎn"
+     ],
+     "answer": "A",
+     "why": "“短”读 duǎn（写字表 1）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W1b-A4",
+     "type": "choice",
+     "stem": "“成”怎么读？",
+     "options": [
+      "chū",
+      "chéng",
+      "lěng",
+      "chuān"
+     ],
+     "answer": "B",
+     "why": "“成”读 chéng（写字表 1）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W1b-A5",
+     "type": "choice",
+     "stem": "“连”怎么读？",
+     "options": [
+      "lián",
+      "liǎng",
+      "lóu",
+      "lù"
+     ],
+     "answer": "A",
+     "why": "“连”读 lián（写字表 2）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W1b-A6",
+     "type": "choice",
+     "stem": "“海”怎么读？",
+     "options": [
+      "wài",
+      "hǎi",
+      "huò",
+      "hái"
+     ],
+     "answer": "B",
+     "why": "“海”读 hǎi（写字表 2）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W1b-A7",
+     "type": "choice",
+     "stem": "“许”怎么读？",
+     "options": [
+      "kù",
+      "xiàn",
+      "xīn",
+      "xǔ"
+     ],
+     "answer": "D",
+     "why": "“许”读 xǔ（写字表 2）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W1b-A8",
+     "type": "choice",
+     "stem": "“办”怎么读？",
+     "options": [
+      "bàn",
+      "sàn",
+      "bù",
+      "zán"
+     ],
+     "answer": "A",
+     "why": "“办”读 bàn（写字表 2）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W1b-A9",
+     "type": "choice",
+     "stem": "“如”怎么读？",
+     "options": [
+      "kù",
+      "qǔ",
+      "gǔ",
+      "rú"
+     ],
+     "answer": "D",
+     "why": "“如”读 rú（写字表 3）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W1b-A10",
+     "type": "choice",
+     "stem": "“经”怎么读？",
+     "options": [
+      "míng",
+      "jué",
+      "lǐng",
+      "jīng"
+     ],
+     "answer": "D",
+     "why": "“经”读 jīng（写字表 3）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W1b-A11",
+     "type": "choice",
+     "stem": "“轻”怎么读？",
+     "options": [
+      "qīng",
+      "qióng",
+      "qǔ",
+      "míng"
+     ],
+     "answer": "A",
+     "why": "“轻”读 qīng（写字表 3）。",
+     "pts": 2
+    },
+    {
+     "id": "g2c-py-W1b-A12",
+     "type": "choice",
+     "stem": "“胆”怎么读？",
+     "options": [
+      "dòng",
+      "dǎn",
+      "dá",
+      "dàn"
+     ],
+     "answer": "B",
+     "why": "“胆”读 dǎn（写字表 3）。",
+     "pts": 2
+    }
+   ]
+  }
+ ]
+}
