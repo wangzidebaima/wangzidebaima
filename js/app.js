@@ -6,6 +6,7 @@ import * as LN from './learn.js';
 import * as PM from './poem.js';
 import * as CV from './chapview.js';
 import { stopAllSound, toast, warmVoices } from './ui.js';
+import * as HP from './help.js';
 import * as B from './badges.js';
 
 const getJSON = (u) => fetch(u).then(r => { if (!r.ok) throw new Error(u + ' ' + r.status); return r.json(); });
@@ -60,14 +61,15 @@ async function render() {
     // 公告确认：每次打开 App 都要先确认看到公告（ hear 页是扫码听力，不拦外面的人 ）
     if (r !== 'hear' && !V.noticeOk()) { V.noticeGate(render); return; }
     const u = V.user();
-    if (!u && r !== 'login' && r !== 'parent' && r !== 'hear' && r !== 'install' && r !== 'voice') { location.replace('#/login'); return; }
+    if (!u && r !== 'login' && r !== 'parent' && r !== 'hear' && r !== 'install' && r !== 'voice' && r !== 'help') { location.replace('#/login'); return; }
     V.setTheme(u);
     // 成就徽章：每次页面切换顺手查一遍，有新解锁就弹提示（拿到永久点亮，重复调用安全）
-    if (u && !['login', 'parent', 'voice', 'hear', 'install'].includes(r)) B.checkAndGrant(u.id).forEach(x => toast(`🏅 解锁成就：${x.icon} ${x.name}`, 4000));
+    if (u && !['login', 'parent', 'voice', 'help', 'hear', 'install'].includes(r)) B.checkAndGrant(u.id).forEach(x => toast(`🏅 解锁成就：${x.icon} ${x.name}`, 4000));
     switch (r) {
       case 'login': return V.login();
       case 'parent': return V.parentHome();
       case 'voice': return V.voicePage();
+      case 'help': return HP.helpPage();
       case 'badges': return B.badgesView(u ? u.id : null);
       case 'install': return V.install();
       case 'hear': return await V.hear(a);
@@ -112,6 +114,8 @@ async function selfCheck() {
 async function boot() {
   // 先把语音列表预热：iOS 第一次取常是空的，等真要朗读时才取就会挑错声音（语文“咬舌”）
   warmVoices();
+  // 悄悄记下脚本报错，出问题时在「遇到问题 → 一键自检」里能看到
+  HP.installErrorLog();
   try {
     const [cfg, lib, vocab] = await Promise.all([getJSON('data/config.json'), getJSON('data/library.json'), getJSON('data/vocab.json')]);
     V.X.cfg = cfg; V.X.lib = lib; V.X.vocab = vocab;

@@ -19,10 +19,13 @@ export const goal = () => X.cfg.starGoal || 400;
 export const cycle = (total) => { const G = goal(); const laps = total > 0 ? Math.floor((total - 1) / G) : 0; return { pos: total - laps * G, laps }; };
 
 function page(title, content, { back = '#/', right = null } = {}) {
+  // back 也可以是一个函数（比如「从哪来的回哪去」用 history.back）
+  const backNode = !back ? h('span', { class: 'back' })
+    : typeof back === 'function'
+      ? h('button', { type: 'button', class: 'back', style: 'background:none;border:0;padding:0;font:inherit;color:inherit', onclick: back }, '‹ 返回')
+      : h('a', { class: 'back', href: back }, '‹ 返回');
   return h('div', { class: 'page' },
-    h('header', { class: 'top' },
-      back ? h('a', { class: 'back', href: back }, '‹ 返回') : h('span', { class: 'back' }),
-      h('h1', {}, title), right || h('span', { class: 'back' })),
+    h('header', { class: 'top' }, backNode, h('h1', {}, title), right || h('span', { class: 'back' })),
     h('main', {}, content));
 }
 // 自检页：把需要的文件逐个请求一遍，哪个没传上就列出来
@@ -145,7 +148,8 @@ export function parentHome() {
     h('small', {}, voiceNow())), h('span', { class: 'chip' }, '试听 / 换'));
   mount(h('div', { class: 'login' }, h('div', { class: 'logo' }, '🔒'), h('h1', {}, X.cfg.parent.name), h('p', { class: 'sub' }, '备份孩子的学习记录（星星、错题都保存在这台手机的浏览器里，换手机前先导出）'),
     ...rows,
-    h('div', { class: 'list', style: 'margin-top:12px' }, vrow),
+    h('div', { class: 'list', style: 'margin-top:12px' }, vrow,
+      h('a', { class: 'row', href: '#/help' }, h('div', {}, h('b', {}, '🩺 遇到问题'), h('small', {}, '没声音、打不开、更新不了怎么办；一键自检把状态查出来')), h('span', { class: 'chip' }, '看看'))),
     h('button', { class: 'btn ghost wide', style: 'margin-top:14px', onclick: () => { noticeReset(); toast('好啦，下次打开会重新显示使用须知'); } }, '重新显示使用须知'),
     h('button', { class: 'btn ghost wide', style: 'margin-top:10px', onclick: () => { try { sessionStorage.removeItem('kp_parent'); } catch (e) { window.__kpParent = false; } nav('#/login'); } }, '退出')));
   bsz();
@@ -157,10 +161,9 @@ function voiceNow() {
   const hit = pref ? list.find(x => x.key === pref) : null, cur = hit || list[0];
   return `${hit ? '已选' : '自动选'}：${cur.name}（${cur.lang}）`;
 }
-// 语音不对（苹果老机型语文“咬舌”）时，家长在这里一个个试听、换掉
+// 语音不对（苹果老机型语文“咬舌”）时，家长在这里一个个试听、换掉。
+// 不锁家长密码：这不涉及孩子的记录，从「遇到问题」页也能直接进来（别的家长找得到）
 export function voicePage() {
-  let ok = false; try { ok = sessionStorage.getItem('kp_parent') === '1'; } catch (e) { ok = !!window.__kpParent; }
-  if (!ok) { nav('#/login'); return; }
   setTheme(null);
   const box = h('div', {});
   const draw = () => {
@@ -181,7 +184,8 @@ export function voicePage() {
         : h('p', { class: 'note bakwarn' }, '这台手机还没读到中文语音。先到「设置 → 辅助功能 → 朗读内容 → 声音 → 中文」下载一个「普通话」，再回来看这一页。'),
       ...(pref ? [h('button', { class: 'btn ghost wide', style: 'margin-top:12px', onclick: () => { setVoicePref(''); toast('已恢复自动选择'); draw(); } }, '恢复自动选择')] : []));
   };
-  mount(page('朗读声音', box, { back: '#/parent' }));
+  const back = () => { if (history.length > 1) history.back(); else nav('#/help'); };
+  mount(page('朗读声音', box, { back }));
   draw();
   try { const ss = window.speechSynthesis; if (ss && ss.addEventListener) ss.addEventListener('voiceschanged', () => { if (box.isConnected) draw(); }); } catch (e) { /* ignore */ }
   bsz();
@@ -230,7 +234,8 @@ export function login() {
   mount(h('div', { class: 'login' }, h('div', { class: 'logo' }, '⭐'), h('h1', {}, X.cfg.appName),
     h('p', { class: 'sub' }, '输入你的年级（比如：七年级），开始今天的练习'), inp,
     h('button', { class: 'btn primary wide', onclick: enter }, '开始'), msg,
-    h('a', { class: 'link instl', href: '#/install' }, '📲 怎么把它装到手机桌面？')));
+    h('a', { class: 'link instl', href: '#/install' }, '📲 怎么把它装到手机桌面？'),
+    h('a', { class: 'link instl', href: '#/help' }, '🩺 打不开 / 没声音 / 更新不了？看这里')));
   bsz();
 }
 
@@ -1009,6 +1014,7 @@ export function records() {
     h('button', { class: 'btn ghost wide', style: 'margin-top:10px', onclick: shareOther }, '用其他方式分享'),
     h('p', { class: 'note' }, '打开微信后，找到家长的对话，长按输入框选「粘贴」，再发送。'),
     h('a', { class: 'link instl', href: '#/check' }, '🔧 有的内容打不开？点这里检查文件'),
+    h('a', { class: 'link instl', href: '#/help' }, '🩺 没声音、打不开、更新不了？看看怎么办'),
   ]));
 }
 
