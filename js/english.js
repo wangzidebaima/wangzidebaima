@@ -214,6 +214,7 @@ export async function engSetup(kind) {
   mount(page(R.title, [
     h('section', { class: 'jar mini' }, h('div', { class: 'jar-top' }, h('div', { class: 'jar-n' }, '今天的星星'), h('div', { class: 'jar-s' }, `${n} / ${cap()}`)),
       h('div', { class: 'bar' }, h('i', { style: `width:${Math.min(100, n / (cap()) * 100)}%` }))),
+    kind.startsWith('sent') ? null : h('a', { class: 'btn ghost wide', href: '#/learn/' }, '🃏 还没学？先用单词卡片学一学'),
     h('div', { class: 'chips' }, h('span', { class: 'lab' }, '学过的单元（只会从这些里出题）')),
     h('div', { class: 'chips' }, ubtns),
     h('div', { class: 'chips' }, h('button', { type: 'button', class: 'btn ghost small', onclick: () => setAll(true) }, '全选'), h('button', { type: 'button', class: 'btn ghost small', onclick: () => setAll(false) }, '清空')),

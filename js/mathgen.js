@@ -364,6 +364,22 @@ const G4 = {
 };
 export const T4 = [{ id: 'add', name: '加法' }, { id: 'sub', name: '减法' }, { id: 'mul', name: '乘法' }, { id: 'div', name: '除法' }, { id: 'mix', name: '混合运算' }, { id: 'fast', name: '速算' }];
 
+
+// ---------- 二年级口算 ----------
+const q2 = (typeId, stem, ans, why) => ({ type: 'math', typeId, stem, answer: String(ans), why: why + `\n答案：${ans}`, pts: 1, id: 'r-' + typeId + '-' + hash(stem), digits: true });
+const G2 = {
+  add: (L) => { let a, b; do { a = ri(L === 1 ? 10 : 11, L === 1 ? 50 : 89); b = ri(L === 1 ? 2 : 11, L === 1 ? 9 : 89); } while (a + b > 99 || (L === 3 && (a % 10) + (b % 10) < 10)); return q2('add', `${a}+${b}`, a + b, `${a}+${b}：个位加个位${(a % 10) + (b % 10) >= 10 ? '，满十要向十位进 1' : ''}，十位再加，得 ${a + b}。`); },
+  sub: (L) => { let a, b; do { a = ri(20, 99); b = ri(L === 1 ? 2 : 11, L === 1 ? 9 : a - 1); } while (b >= a || (L === 3 && (a % 10) >= (b % 10))); return q2('sub', `${a}−${b}`, a - b, `${a}−${b}：${(a % 10) < (b % 10) ? '个位不够减，向十位借 1 当 10，' : ''}得 ${a - b}。`); },
+  mul: (L) => { const hi = L === 1 ? 5 : 9, a = ri(2, hi), b = ri(2, hi); return q2('mul', `${a}×${b}`, a * b, `想乘法口诀：${Math.min(a, b)}×${Math.max(a, b)}=${a * b}。`); },
+  div: (L) => { const hi = L === 1 ? 5 : 9, a = ri(2, hi), q = ri(2, hi); return q2('div', `${a * q}÷${a}`, q, `想口诀：${a}×${q}=${a * q}，所以 ${a * q}÷${a}=${q}。`); },
+  mix: (L) => {
+    if (L === 1) { const a = ri(10, 40), b = ri(5, 30), c = ri(2, 20); return q2('mix', `${a}+${b}+${c}`, a + b + c, `从左往右：${a}+${b}=${a + b}，${a + b}+${c}=${a + b + c}。`); }
+    if (L === 2) { const a = ri(60, 99), b = ri(5, 30), c = ri(2, 25); return q2('mix', `${a}−${b}−${c}`, a - b - c, `从左往右：${a}−${b}=${a - b}，${a - b}−${c}=${a - b - c}。`); }
+    const a = ri(2, 9), b = ri(2, 9), c = ri(1, 20); return q2('mix', `${a}×${b}+${c}`, a * b + c, `先算乘法：${a}×${b}=${a * b}；再加 ${c}，得 ${a * b + c}。`);
+  },
+};
+export const T2 = [{ id: 'add', name: '加法' }, { id: 'sub', name: '减法' }, { id: 'mul', name: '乘法口诀' }, { id: 'div', name: '除法口诀' }, { id: 'mix', name: '连加连减·乘加' }];
+
 // ---------- 英语词汇 ----------
 const vocabQ = (kind, list) => {
   const w = pick(list), pool = shuf(list.filter(x => x.en !== w.en)).slice(0, 3);
@@ -386,7 +402,11 @@ export const TS = [{ id: 'e-en2zh', name: '看英文选中文' }, { id: 'e-zh2en
 
 import { CHAP_TYPES } from './chapgen.js';
 import { CHAP4_TYPES } from './chapgen4.js';
+import { CHAP2_TYPES } from './chapgen2.js';
 export const RANDOM = {
+  chap2: { title: '二年级数学章节练习', icon: '📐', subject: 'chap2', types: CHAP2_TYPES, levels: ['简单', '适中', '挑战'] },
+  math2: { title: '口算随机练习', icon: '🎲', subject: 'math2', types: T2, levels: ['简单', '适中', '挑战'], gen: (t, l) => G2[t](l) },
+  cnw2: { title: '词语听写', icon: '✍️', subject: 'cnw', types: [], levels: null },
   chap4: { title: '四年级数学章节练习', icon: '📐', subject: 'chap4', types: CHAP4_TYPES, levels: ['简单', '适中', '挑战'] },
   chap7: { title: '七年级数学章节练习', icon: '📐', subject: 'chap7', types: [...CHAP_TYPES.filter(t => t.cid === 'c1'), ...T7.map(t => ({ id: 'm7-c2-' + t.id.replace('-', ''), name: t.name, cid: 'c2' })), ...CHAP_TYPES.filter(t => t.cid !== 'c1')], levels: ['简单', '适中', '挑战'] },
   math7: { title: '有理数随机练习', icon: '🎲', subject: 'math7', types: T7, levels: ['简单', '适中', '挑战'], gen: (t, l) => G7[t](l) },
@@ -395,6 +415,7 @@ export const RANDOM = {
   phrase7: { title: '英语短语小测', icon: '💬', subject: 'phrase7', types: TW, levels: null },
   vocab4: { title: '英语单词小测', icon: '🔤', subject: 'vocab4', types: TW, levels: null },
   phrase4: { title: '英语短语小测', icon: '💬', subject: 'phrase4', types: TW, levels: null },
+  cnw4: { title: '词语听写', icon: '✍️', subject: 'cnw', types: [], levels: null },
   sent4: { title: '英语句子小测', icon: '📝', subject: 'sent4', types: TS, levels: null },
 };
 

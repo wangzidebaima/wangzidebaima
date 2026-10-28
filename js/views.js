@@ -107,15 +107,38 @@ export function install() {
 // 美文：这个孩子的语文科目里所有 kind=essay 的题集，每 3 天轮换一篇
 export const essayList = (u) => (u.subjects || []).flatMap(id => { const s = subj(id); return s ? s.sets.filter(x => x.kind === 'essay') : []; });
 export const essayNow = (u) => S.essayWindow(essayList(u));
+// 每个任务点进去去哪儿：阅读/听力自动挑一套“做得最少”的，语文和英语的阅读隔天轮换
+function taskTarget(u, t, ew) {
+  const p = S.P(u.id), dn = Math.floor(Date.now() / 86400000);
+  if (t.kind === 'rand') return '#/rand/' + (t.subs || [t.sub])[0];
+  if (t.kind === 'speak') { const id = (u.subjects || []).find(x => /speaking$/.test(x)); return id ? '#/s/' + id : '#/'; }
+  if (t.kind === 'essay') return ew ? '#/set/' + ew.item.id : '#/';
+  if (t.kind === 'cat') {
+    const groups = (u.subjects || []).map(id => subj(id)).filter(Boolean).map(sb => sb.sets.filter(x => x.kind === t.cat)).filter(a => a.length);
+    if (!groups.length) return '#/';
+    const g = groups[dn % groups.length];
+    const best = g.map((m, i) => ({ m, i, n: (p.sets[m.id] || { n: 0 }).n })).sort((a, b) => a.n - b.n || a.i - b.i)[0].m;
+    return '#/set/' + best.id;
+  }
+  return '#/';
+}
+export function nextTask(u) {
+  const tasks = (u && u.tasks) || []; if (!tasks.length) return null;
+  const ew = essayNow(u), shown = tasks.filter(t => t.kind !== 'essay' || ew);
+  for (const t of shown) if (S.taskDone(u.id, t, { window: ew }) < t.goal) return { label: t.kind === 'essay' ? '听美文' : t.label, href: taskTarget(u, t, ew), left: shown.filter(x => S.taskDone(u.id, x, { window: ew }) < x.goal).length };
+  return null;
+}
+import { dueCount } from './learn.js';
+function reviewLine(u) { let n = 0; try { n = dueCount(u.id); } catch (e) { n = 0; } return n ? h('a', { class: 'btn ghost wide', style: 'margin-top:10px', href: '#/learn/review' }, `🔁 今天有 ${n} 个单词该复习啦`) : null; }
 function taskCard(u) {
   const tasks = u.tasks || []; if (!tasks.length) return null;
   const ew = essayNow(u), shown = tasks.filter(t => t.kind !== 'essay' || ew);
-  const done = shown.map(t => S.taskDone(u.id, t, { window: ew })), all = shown.every((t, i) => done[i] >= t.goal);
-  return h('section', { class: 'tasks' }, h('h2', { class: 'sh' }, all ? '🎉 今天的任务都完成啦' : '今天的任务'),
+  const done = shown.map(t => S.taskDone(u.id, t, { window: ew })), all = shown.every((t, i) => done[i] >= t.goal), nx = nextTask(u);
+  return h('section', { class: 'tasks' }, h('h2', { class: 'sh' }, all ? '🎉 今天的任务都完成啦' : '今天做什么'),
+    nx ? h('a', { class: 'btn primary wide gobtn', href: nx.href }, `▶ 开始：${nx.label}`) : h('p', { class: 'note' }, '真棒！还想多练的话，往下选一个就行。'),
     shown.map((t, i) => {
       const ok = done[i] >= t.goal, label = t.kind === 'essay' ? `听美文《${ew.item.title.replace(/^《|》$/g, '')}》（${ew.end.slice(5)} 前）` : t.label;
-      const row = h(t.kind === 'essay' ? 'a' : 'div', { class: 'task' + (ok ? ' done' : ''), href: t.kind === 'essay' ? '#/set/' + ew.item.id : undefined }, h('span', { class: 'tk' }, ok ? '✅' : '⬜'), h('span', { class: 'tl' }, label), h('span', { class: 'tn' }, `${Math.min(done[i], t.goal)}/${t.goal}`));
-      return row;
+      return h('a', { class: 'task' + (ok ? ' done' : ''), href: taskTarget(u, t, ew) }, h('span', { class: 'tk' }, ok ? '✅' : '⬜'), h('span', { class: 'tl' }, label), h('span', { class: 'tn' }, `${Math.min(done[i], t.goal)}/${t.goal}`));
     }));
 }
 const coinsGot = (rewards, pos) => rewards.filter(r => pos >= r.stars).reduce((a, r) => a + (r.coins || 0), 0);
@@ -139,19 +162,22 @@ export function home() {
     card._area = /math/.test(id) ? 'math' : /chinese/.test(id) ? 'cn' : 'eng'; return card;
   }).filter(Boolean);
   const randCards = (u.random || []).map(k => {
-    const R = RANDOM[k]; const card = h('a', { class: 'card alt', href: '#/rand/' + k }, h('span', { class: 'ic' }, R.icon), h('b', {}, R.title), h('small', {}, '随机出题，不重样'), h('em', {}, `今天 ${S.starsToday(u.id)}/${cap()} 颗`));
-    card._area = /^(math|chap)/.test(k) ? 'math' : 'eng'; return card;
+    const R = RANDOM[k]; const card = h('a', { class: 'card alt', href: '#/rand/' + k }, h('span', { class: 'ic' }, R.icon), h('b', {}, R.title), h('small', {}, /^cnw/.test(k) ? '听词语，写在纸上' : '随机出题，不重样'), h('em', {}, `今天 ${S.starsToday(u.id)}/${cap()} 颗`));
+    card._area = /^(math|chap)/.test(k) ? 'math' : /^cn/.test(k) ? 'cn' : 'eng'; return card;
   });
+  const hasEng = (u.subjects || []).some(x => /reading$|listening$/.test(x)) && (u.random || []).some(k => /^vocab/.test(k));
+  const learnCard = hasEng ? Object.assign(h('a', { class: 'card', href: '#/learn' }, h('span', { class: 'ic' }, '🃏'), h('b', {}, '单词卡片'), h('small', {}, '先学一学，再去测'), h('em', {}, '看词·听音·记意思')), { _area: 'eng' }) : null;
   const areas = [['math', '📐 数学'], ['cn', '📖 语文'], ['eng', '🔤 英语']].map(([a, t0]) => {
     const pub = (u.publishers || {})[a], t = pub ? `${t0}（${pub}）` : t0;
-    const cs = [...subjectCards, ...randCards].filter(c => c._area === a); if (!cs.length) return null;
+    const cs = [...(learnCard ? [learnCard] : []), ...subjectCards, ...randCards].filter(c => c._area === a); if (!cs.length) return null;
     return [h('h2', { class: 'sh' }, t), h('div', { class: 'grid' }, cs)];
   });
   const wrongN = st.wrong;
   mount(h('div', { class: 'page home' },
     h('header', { class: 'hello' }, h('div', {}, h('small', {}, '你好，'), h('h1', {}, u.display + ' 👋', u.grade ? h('span', { class: 'grade' }, u.grade) : null)), h('div', { class: 'hbtns' }, h('button', { class: 'link', onclick: () => { const f = ((p.font || 0) + 1) % 3; p.font = f; S.save(u.id); setTheme(u); toast(['字号：标准', '字号：大', '字号：特大'][f]); } }, 'Aa'), h('button', { class: 'link', onclick: () => { if (confirm('切换同学？')) { S.setUser(null); nav('#/login'); } } }, '切换'))),
-    jar, taskCard(u),
+    jar, taskCard(u), reviewLine(u),
     u.soon && !u.subjects.length ? h('section', { class: 'soonbox' }, h('div', { class: 'logo' }, '🌱'), h('h2', {}, `${u.grade}的练习正在准备中`), h('p', { class: 'note' }, '课本内容马上就来，先把这个小窝准备好啦。')) : null,
+    u.tasks && u.tasks.length ? h('p', { class: 'more' }, '想多练一点？从下面自己选：') : null,
     areas,
     h('h2', { class: 'sh' }, '我的'),
     h('div', { class: 'grid' },
@@ -160,8 +186,56 @@ export function home() {
     standalone() ? null : h('a', { class: 'link instl', href: '#/install' }, '📲 装到手机桌面，打开更方便')));
 }
 
+// ---------------- 语文：按单元学 ----------------
+const unitDone = (p, ms) => ms.length && ms.every(m => p.sets[m.id]);
+export function cnSubject(id) {
+  const u = user(), s = subj(id), p = S.P(u.id);
+  const unitName = (x) => (X.lib.unitNames && X.lib.unitNames[x]) || x;
+  const order = Object.keys(X.lib.unitNames || {});
+  const units = [...new Set(s.sets.filter(m => m.unit && m.unit !== 'E').map(m => m.unit))].sort((a, b) => order.indexOf(a) - order.indexOf(b));
+  const msOf = (x) => s.sets.filter(m => m.unit === x && m.kind !== 'essay');
+  const cur = units.find(x => !unitDone(p, msOf(x))) || units[0];
+  const row = (x) => { const ms = msOf(x), n = ms.filter(m => p.sets[m.id]).length;
+    return h('a', { class: 'row' + (x === cur ? ' cur' : ''), href: `#/unit/${id}/${x}` }, h('div', {}, h('b', {}, unitName(x)), h('small', {}, n === ms.length ? '都做过啦 ✅' : `做了 ${n}/${ms.length} 套`)), h('span', { class: 'chip' + (n === ms.length ? ' ok' : '') }, n === ms.length ? '再看看' : (x === cur ? '继续' : '去学'))); };
+  const doneUnits = units.filter(x => x !== cur && unitDone(p, msOf(x))), openUnits = units.filter(x => x !== cur && !doneUnits.includes(x));
+  const essay = s.sets.filter(m => m.kind === 'essay').length;
+  mount(page(s.title, [
+    cur ? h('a', { class: 'btn primary wide gobtn', href: `#/unit/${id}/${cur}` }, `▶ 继续：${unitName(cur)}`) : null,
+    h('p', { class: 'note' }, '每个单元三步：学一学 → 练一练 → 读一读。'),
+    cur ? h('div', { class: 'list' }, row(cur)) : null,
+    openUnits.length ? [h('h2', { class: 'sh' }, '后面的单元'), h('div', { class: 'list' }, openUnits.map(row))] : null,
+    doneUnits.length ? h('details', { class: 'ctx' }, h('summary', {}, `已学完的单元（${doneUnits.length}）`), h('div', { class: 'list' }, doneUnits.map(row))) : null,
+    h('h2', { class: 'sh' }, '随时可以'),
+    h('div', { class: 'list' },
+      essay ? h('a', { class: 'row', href: '#/s/' + id + '/essay' }, h('div', {}, h('b', {}, '🌸 听美文'), h('small', {}, `${essay} 篇，听一听，学好词好句`)), h('span', { class: 'chip' }, '去听')) : null,
+      (u.random || []).some(k => /^cnw/.test(k)) ? h('a', { class: 'row', href: '#/rand/' + u.random.find(k => /^cnw/.test(k)) }, h('div', {}, h('b', {}, '✍️ 词语听写'), h('small', {}, '听词语，写在纸上')), h('span', { class: 'chip' }, '去写')) : null),
+  ]));
+}
+export function cnEssays(id) {
+  const u = user(), s = subj(id), p = S.P(u.id);
+  mount(page('听美文', [h('p', { class: 'note' }, '一篇一篇听，听完学好词好句，再做小题。'), h('div', { class: 'list' }, s.sets.filter(m => m.kind === 'essay').map(m => { const rec = p.sets[m.id]; return h('a', { class: 'row', href: '#/set/' + m.id }, h('div', {}, h('b', {}, m.title), h('small', {}, m.subtitle)), h('span', { class: 'chip' + (rec ? ' ok' : '') }, rec ? '听过' : '没听过')); }))], { back: '#/s/' + id }));
+}
+export function unitPage(id, x) {
+  const u = user(), s = subj(id), p = S.P(u.id), name = (X.lib.unitNames && X.lib.unitNames[x]) || x;
+  const ms = s.sets.filter(m => m.unit === x && m.kind !== 'essay');
+  const rowOf = (m) => { const rec = p.sets[m.id]; return h('a', { class: 'row', href: '#/set/' + m.id }, h('div', {}, h('b', {}, m.title), h('small', {}, m.subtitle)), h('span', { class: 'chip' + (rec ? ' ok' : '') }, rec ? `上次 ${rec.last.ok}/${rec.last.total}` : '未做')); };
+  const practice = ms.filter(m => m.kind !== 'reading'), reads = ms.filter(m => m.kind === 'reading');
+  const learn = [];
+  if ((/^g4/.test(id) && /^Y[1-8]$/.test(x)) || (/^g2/.test(id) && /^W[1-8]$/.test(x))) learn.push(h('a', { class: 'row', href: '#/words/' + (/^g2/.test(id) ? 'cnw2' : 'cnw4') + '/' + x }, h('div', {}, h('b', {}, '📖 本单元词语'), h('small', {}, '点一点，听手机读')), h('span', { class: 'chip' }, '去学')));
+  learnHook(learn, id, x, ms, p);
+  mount(page(name, [
+    learn.length ? [h('h2', { class: 'sh' }, '① 学一学'), h('div', { class: 'list' }, learn)] : null,
+    practice.length ? [h('h2', { class: 'sh' }, '② 练一练'), h('div', { class: 'list' }, practice.map(rowOf))] : null,
+    reads.length ? [h('h2', { class: 'sh' }, '③ 读一读'), h('div', { class: 'list' }, reads.map(rowOf))] : null,
+  ], { back: '#/s/' + id }));
+}
+let learnHook = () => {};
+export const setLearnHook = (f) => { learnHook = f; };
+
 // ---------------- 科目页 ----------------
-export function subject(id) {
+export function subject(id, sub) {
+  if (/chinese$/.test(id)) return sub === 'essay' ? cnEssays(id) : cnSubject(id);
+
   const u = user(), s = subj(id), p = S.P(u.id);
   const unitsPresent = [...new Set(s.sets.filter(m => m.unit).map(m => m.unit))];
   const unitName = (x) => (X.lib.unitNames && X.lib.unitNames[x]) || x;
@@ -473,8 +547,10 @@ function resultsNode(o, results, sum) {
     had > 0 ? h('p', { class: 'note' }, `有 ${had} 题以前已经得过星星，一题只得一颗哦。`) : null,
     sum.capped ? h('p', { class: 'note' }, `今天的星星已经拿满 ${cap()} 颗，明天再来～（做对的题明天再做还能得星）`) : null,
     results.length - sum.okN ? h('p', { class: 'note' }, `做错的 ${results.length - sum.okN} 题已放进错题本，再做对就会消失。`) : null);
+  const nextT = user() ? nextTask(user()) : null;
   const acts = h('div', { class: 'acts' },
-    o.again ? h('button', { class: 'btn primary', onclick: o.again }, '再做一遍') : null,
+    nextT ? h('a', { class: 'btn primary', href: nextT.href }, `下一项：${nextT.label} →`) : null,
+    o.again ? h('button', { class: nextT ? 'btn ghost' : 'btn primary', onclick: o.again }, '再做一遍') : null,
     h('a', { class: 'btn ghost', href: o.back || '#/' }, '返回'));
   let only = false;
   const list = h('div', { class: 'rvlist' }, results.map((r, i) => reviewItem(r, i + 1)));
@@ -599,6 +675,12 @@ function weeklyText(u) {
     weakU.length ? `本周错得多的内容：${weakU.join('、')}` : '本周没有新增错题，很棒！',
     weakT.length ? `容易错的题型：${weakT.join('、')}` : '',
     `错题本里还有 ${st.wrong} 道没掌握（可以在「错题本」里打印本周错题复习卷）`];
+  const tips = [];
+  if (active.size < 4) tips.push('这周练习天数偏少，每天只要完成“今天做什么”里的任务，坚持比一次做很多更重要');
+  if (weakU.length) tips.push(`周末陪孩子把「${weakU[0].replace(/（.*$/, '')}」再过一遍`);
+  if (totN && okN / totN < 0.6) tips.push('答对率偏低，建议先用“单词卡片/学一学”再做题，别急着多做');
+  if (!tips.length) tips.push('这周状态不错，保持节奏，可以适当鼓励一下孩子');
+  lines.push('建议：' + tips.join('；') + '。');
   return lines.filter(Boolean).join('\n');
 }
 // 学习日历：某个月，哪天练习过

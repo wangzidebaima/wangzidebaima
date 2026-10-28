@@ -263,3 +263,18 @@ html[data-fs="1"] body { zoom: 1.12; } html[data-fs="2"] body { zoom: 1.25; }
 #brkm .updt{font-size:20px;font-weight:700;margin-bottom:8px}
 #brkm .updp{font-size:15px;line-height:1.6;color:var(--muted)}
 .task{color:inherit;text-decoration:none}
+
+.gobtn { display: block; text-align: center; margin: 8px 0 6px; font-size: 18px; padding: 14px; }
+a.task { color: inherit; text-decoration: none; }
+.more { color: var(--muted); font-size: 14px; margin: 18px 2px 0; }
+
+.flash { display: block; width: 100%; background: var(--surface); border: 2px solid var(--line); border-radius: 22px; padding: 38px 12px; margin: 10px 0; box-shadow: var(--shadow); text-align: center; font: inherit; color: inherit; }
+.flash .en { font-size: 34px; font-weight: 700; word-break: break-word; } .flash .ipa { color: var(--muted); margin-top: 8px; font-size: 18px; }
+.cardback { text-align: center; } .cardback .zh { font-size: 26px; font-weight: 700; margin: 6px 0; } .cardback .chips { justify-content: center; margin-top: 14px; gap: 12px; }
+.row.cur { border-color: var(--accent, #4a90e2); }
+
+.poem { background: var(--surface); border-radius: var(--r); padding: 14px 16px; box-shadow: var(--shadow); margin: 8px 0; }
+.poem .pl { font-size: 21px; line-height: 1.9; margin: 2px 0; letter-spacing: 2px; text-align: center; } .poem.prose .pl { text-align: left; font-size: 18px; letter-spacing: 0; text-indent: 2em; }
+.poem .pl.hide { color: var(--muted); cursor: pointer; } .mean { line-height: 1.8; margin: 6px 2px; } .notes .row { cursor: default; }
+
+.tip { background: var(--surface); border-radius: var(--r); padding: 10px 16px; margin: 10px 0; box-shadow: var(--shadow); } .tip h3 { margin: 4px 0; font-size: 16px; } .tip p { margin: 4px 0 6px; line-height: 1.7; }

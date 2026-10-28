@@ -115,7 +115,8 @@
     "chap4",
     "vocab4",
     "phrase4",
-    "sent4"
+    "sent4",
+    "cnw4"
    ],
    "tasks": [
     {
@@ -180,11 +181,49 @@
     "徐叶子"
    ],
    "theme": "leaf",
-   "subjects": [],
-   "random": [],
-   "tasks": [],
+   "subjects": [
+    "g2chinese"
+   ],
+   "random": [
+    "math2",
+    "chap2",
+    "cnw2"
+   ],
+   "tasks": [
+    {
+     "label": "数学随机练习 10 题",
+     "kind": "rand",
+     "subs": [
+      "math2",
+      "chap2"
+     ],
+     "goal": 10
+    },
+    {
+     "label": "词语听写 10 个",
+     "kind": "rand",
+     "subs": [
+      "cnw2"
+     ],
+     "goal": 10
+    },
+    {
+     "label": "阅读理解 1 套",
+     "kind": "cat",
+     "cat": "reading",
+     "goal": 1
+    },
+    {
+     "label": "听一篇美文",
+     "kind": "essay",
+     "goal": 1
+    }
+   ],
    "grade": "二年级",
-   "publishers": {},
+   "publishers": {
+    "math": "北师大版",
+    "cn": "统编版"
+   },
    "modes": {
     "chaptype": "live",
     "mathbank": "live",
@@ -192,9 +231,10 @@
     "errors": "live",
     "cnpoem": "live",
     "cnknow": "live",
-    "cnread": "exam"
-   },
-   "soon": true
+    "cnread": "exam",
+    "randmath": "exam",
+    "chapmix": "exam"
+   }
   }
  ],
  "parent": {

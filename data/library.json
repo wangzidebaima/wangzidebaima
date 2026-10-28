@@ -1514,6 +1514,24 @@
      "unit": "Z1"
     },
     {
+     "id": "g7c-r9",
+     "file": "sets/g7c-r9.json",
+     "title": "雨夜",
+     "subtitle": "阅读·写景抒情",
+     "kind": "reading",
+     "count": 6,
+     "unit": "Z1"
+    },
+    {
+     "id": "g7c-r10",
+     "file": "sets/g7c-r10.json",
+     "title": "老槐树",
+     "subtitle": "阅读·借物抒情",
+     "kind": "reading",
+     "count": 6,
+     "unit": "Z1"
+    },
+    {
      "id": "g7c-ysn-a",
      "file": "sets/g7c-ysn-a.json",
      "title": "《咏雪》理解",
@@ -1568,6 +1586,24 @@
      "unit": "Z2"
     },
     {
+     "id": "g7c-r11",
+     "file": "sets/g7c-r11.json",
+     "title": "外婆的蒲扇",
+     "subtitle": "阅读·亲情",
+     "kind": "reading",
+     "count": 6,
+     "unit": "Z2"
+    },
+    {
+     "id": "g7c-r12",
+     "file": "sets/g7c-r12.json",
+     "title": "一碗热汤面",
+     "subtitle": "阅读·亲情",
+     "kind": "reading",
+     "count": 6,
+     "unit": "Z2"
+    },
+    {
      "id": "g7c-ly12-a",
      "file": "sets/g7c-ly12-a.json",
      "title": "《《论语》十二章（节选）》理解",
@@ -1599,6 +1635,24 @@
      "file": "sets/g7c-r3.json",
      "title": "书店里的下午",
      "subtitle": "阅读·成长感悟",
+     "kind": "reading",
+     "count": 6,
+     "unit": "Z3"
+    },
+    {
+     "id": "g7c-r13",
+     "file": "sets/g7c-r13.json",
+     "title": "一支旧钢笔",
+     "subtitle": "阅读·成长感悟",
+     "kind": "reading",
+     "count": 6,
+     "unit": "Z3"
+    },
+    {
+     "id": "g7c-r14",
+     "file": "sets/g7c-r14.json",
+     "title": "第一次独自上学",
+     "subtitle": "阅读·成长",
      "kind": "reading",
      "count": 6,
      "unit": "Z3"
@@ -1640,6 +1694,24 @@
      "unit": "Z4"
     },
     {
+     "id": "g7c-r15",
+     "file": "sets/g7c-r15.json",
+     "title": "守塔人",
+     "subtitle": "阅读·人物品质",
+     "kind": "reading",
+     "count": 6,
+     "unit": "Z4"
+    },
+    {
+     "id": "g7c-r16",
+     "file": "sets/g7c-r16.json",
+     "title": "读书与思考",
+     "subtitle": "阅读·议论文",
+     "kind": "reading",
+     "count": 6,
+     "unit": "Z4"
+    },
+    {
      "id": "g7c-k5",
      "file": "sets/g7c-k5.json",
      "title": "第五单元·文学常识",
@@ -1652,6 +1724,24 @@
      "id": "g7c-r5",
      "file": "sets/g7c-r5.json",
      "title": "邻居家的老猫",
+     "subtitle": "阅读·动物描写",
+     "kind": "reading",
+     "count": 6,
+     "unit": "Z5"
+    },
+    {
+     "id": "g7c-r17",
+     "file": "sets/g7c-r17.json",
+     "title": "蜘蛛织网",
+     "subtitle": "阅读·说明文",
+     "kind": "reading",
+     "count": 6,
+     "unit": "Z5"
+    },
+    {
+     "id": "g7c-r18",
+     "file": "sets/g7c-r18.json",
+     "title": "倔强的小鸟",
      "subtitle": "阅读·动物描写",
      "kind": "reading",
      "count": 6,
@@ -1707,6 +1797,15 @@
      "file": "sets/g7c-r6.json",
      "title": "会说话的影子",
      "subtitle": "阅读·想象寓言",
+     "kind": "reading",
+     "count": 6,
+     "unit": "Z6"
+    },
+    {
+     "id": "g7c-r19",
+     "file": "sets/g7c-r19.json",
+     "title": "镜子里的国王",
+     "subtitle": "阅读·寓言",
      "kind": "reading",
      "count": 6,
      "unit": "Z6"
@@ -1874,6 +1973,15 @@
      "unit": "Z7"
     },
     {
+     "id": "g7c-r20",
+     "file": "sets/g7c-r20.json",
+     "title": "天空为什么是蓝色的",
+     "subtitle": "阅读·说明文",
+     "kind": "reading",
+     "count": 6,
+     "unit": "Z7"
+    },
+    {
      "id": "g7c-e1",
      "file": "sets/g7c-e1.json",
      "title": "《一盏灯的陪伴》",
@@ -1954,6 +2062,24 @@
      "unit": "Y1"
     },
     {
+     "id": "g4c-r9",
+     "file": "sets/g4c-r9.json",
+     "title": "雨后的校园",
+     "subtitle": "阅读·写景",
+     "kind": "reading",
+     "count": 6,
+     "unit": "Y1"
+    },
+    {
+     "id": "g4c-r10",
+     "file": "sets/g4c-r10.json",
+     "title": "小河和白云",
+     "subtitle": "阅读·对话式童话",
+     "kind": "reading",
+     "count": 6,
+     "unit": "Y1"
+    },
+    {
      "id": "g4c-k2",
      "file": "sets/g4c-k2.json",
      "title": "第二单元·课文小测",
@@ -1967,6 +2093,24 @@
      "file": "sets/g4c-r2.json",
      "title": "聪明的小松鼠",
      "subtitle": "阅读·对话式童话",
+     "kind": "reading",
+     "count": 6,
+     "unit": "Y2"
+    },
+    {
+     "id": "g4c-r11",
+     "file": "sets/g4c-r11.json",
+     "title": "搬家的小蚂蚁",
+     "subtitle": "阅读·观察记录",
+     "kind": "reading",
+     "count": 6,
+     "unit": "Y2"
+    },
+    {
+     "id": "g4c-r12",
+     "file": "sets/g4c-r12.json",
+     "title": "小明的小实验",
+     "subtitle": "阅读·对话式科学",
      "kind": "reading",
      "count": 6,
      "unit": "Y2"
@@ -2044,6 +2188,24 @@
      "unit": "Y3"
     },
     {
+     "id": "g4c-r13",
+     "file": "sets/g4c-r13.json",
+     "title": "蜗牛的家",
+     "subtitle": "阅读·说明性短文",
+     "kind": "reading",
+     "count": 6,
+     "unit": "Y3"
+    },
+    {
+     "id": "g4c-r14",
+     "file": "sets/g4c-r14.json",
+     "title": "秋天的银杏路",
+     "subtitle": "阅读·写景",
+     "kind": "reading",
+     "count": 6,
+     "unit": "Y3"
+    },
+    {
      "id": "g4c-k4",
      "file": "sets/g4c-k4.json",
      "title": "第四单元·神话小测",
@@ -2056,6 +2218,15 @@
      "id": "g4c-r4",
      "file": "sets/g4c-r4.json",
      "title": "太阳为什么早上才出来",
+     "subtitle": "阅读·想象故事",
+     "kind": "reading",
+     "count": 6,
+     "unit": "Y4"
+    },
+    {
+     "id": "g4c-r15",
+     "file": "sets/g4c-r15.json",
+     "title": "小种子的梦",
      "subtitle": "阅读·想象故事",
      "kind": "reading",
      "count": 6,
@@ -2080,6 +2251,15 @@
      "unit": "Y5"
     },
     {
+     "id": "g4c-r16",
+     "file": "sets/g4c-r16.json",
+     "title": "一次难忘的跳绳比赛",
+     "subtitle": "阅读·叙事",
+     "kind": "reading",
+     "count": 6,
+     "unit": "Y5"
+    },
+    {
      "id": "g4c-k6",
      "file": "sets/g4c-k6.json",
      "title": "第六单元·课文小测",
@@ -2092,6 +2272,15 @@
      "id": "g4c-r6",
      "file": "sets/g4c-r6.json",
      "title": "赵州桥",
+     "subtitle": "阅读·说明性短文",
+     "kind": "reading",
+     "count": 6,
+     "unit": "Y6"
+    },
+    {
+     "id": "g4c-r17",
+     "file": "sets/g4c-r17.json",
+     "title": "古老的城墙",
      "subtitle": "阅读·说明性短文",
      "kind": "reading",
      "count": 6,
@@ -2111,6 +2300,24 @@
      "file": "sets/g4c-r7.json",
      "title": "谁偷吃了桃子",
      "subtitle": "阅读·对话推理",
+     "kind": "reading",
+     "count": 6,
+     "unit": "Y7"
+    },
+    {
+     "id": "g4c-r18",
+     "file": "sets/g4c-r18.json",
+     "title": "我的同桌",
+     "subtitle": "阅读·人物描写",
+     "kind": "reading",
+     "count": 6,
+     "unit": "Y7"
+    },
+    {
+     "id": "g4c-r19",
+     "file": "sets/g4c-r19.json",
+     "title": "摔倒以后",
+     "subtitle": "阅读·对话",
      "kind": "reading",
      "count": 6,
      "unit": "Y7"
@@ -2183,6 +2390,15 @@
      "file": "sets/g4c-r8.json",
      "title": "给远方小朋友的一封信",
      "subtitle": "阅读·书信",
+     "kind": "reading",
+     "count": 6,
+     "unit": "Y8"
+    },
+    {
+     "id": "g4c-r20",
+     "file": "sets/g4c-r20.json",
+     "title": "小书虫的读书角",
+     "subtitle": "阅读·读书",
      "kind": "reading",
      "count": 6,
      "unit": "Y8"
@@ -2269,6 +2485,428 @@
      "unit": "E"
     }
    ]
+  },
+  {
+   "id": "g2chinese",
+   "title": "语文练习",
+   "icon": "📖",
+   "desc": "古诗、课文积累、阅读",
+   "sets": [
+    {
+     "id": "g2c-e1",
+     "file": "sets/g2c-e1.json",
+     "title": "《小雨点》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 4,
+     "unit": "E"
+    },
+    {
+     "id": "g2c-e2",
+     "file": "sets/g2c-e2.json",
+     "title": "《秋天的田野》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 4,
+     "unit": "E"
+    },
+    {
+     "id": "g2c-e3",
+     "file": "sets/g2c-e3.json",
+     "title": "《我的小台灯》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 4,
+     "unit": "E"
+    },
+    {
+     "id": "g2c-e4",
+     "file": "sets/g2c-e4.json",
+     "title": "《雪花》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 4,
+     "unit": "E"
+    },
+    {
+     "id": "g2c-e5",
+     "file": "sets/g2c-e5.json",
+     "title": "《小蚂蚁搬家》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 4,
+     "unit": "E"
+    },
+    {
+     "id": "g2c-e6",
+     "file": "sets/g2c-e6.json",
+     "title": "《月亮船》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 4,
+     "unit": "E"
+    },
+    {
+     "id": "g2c-e7",
+     "file": "sets/g2c-e7.json",
+     "title": "《春天来了》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 4,
+     "unit": "E"
+    },
+    {
+     "id": "g2c-e8",
+     "file": "sets/g2c-e8.json",
+     "title": "《我和影子》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 4,
+     "unit": "E"
+    },
+    {
+     "id": "g2c-k1",
+     "file": "sets/g2c-k1.json",
+     "title": "第一单元·课文小测",
+     "subtitle": "小蝌蚪找妈妈 / 我是什么 / 植物妈妈有办法",
+     "kind": "cn",
+     "count": 8,
+     "unit": "W1"
+    },
+    {
+     "id": "g2c-r1",
+     "file": "sets/g2c-r1.json",
+     "title": "小鱼和小河",
+     "subtitle": "阅读·小故事",
+     "kind": "reading",
+     "count": 4,
+     "unit": "W1"
+    },
+    {
+     "id": "g2c-py-W1a",
+     "file": "sets/g2c-py-W1a.json",
+     "title": "看字选拼音（一）",
+     "subtitle": "写字表里的字，选出正确的拼音",
+     "kind": "cn",
+     "count": 13,
+     "unit": "W1"
+    },
+    {
+     "id": "g2c-py-W1b",
+     "file": "sets/g2c-py-W1b.json",
+     "title": "看字选拼音（二）",
+     "subtitle": "写字表里的字，选出正确的拼音",
+     "kind": "cn",
+     "count": 12,
+     "unit": "W1"
+    },
+    {
+     "id": "g2c-k2",
+     "file": "sets/g2c-k2.json",
+     "title": "第二单元·识字小测",
+     "subtitle": "场景歌 / 树之歌 / 拍手歌 / 田家四季歌",
+     "kind": "cn",
+     "count": 8,
+     "unit": "W2"
+    },
+    {
+     "id": "g2c-py-W2a",
+     "file": "sets/g2c-py-W2a.json",
+     "title": "看字选拼音（一）",
+     "subtitle": "写字表里的字，选出正确的拼音",
+     "kind": "cn",
+     "count": 19,
+     "unit": "W2"
+    },
+    {
+     "id": "g2c-py-W2b",
+     "file": "sets/g2c-py-W2b.json",
+     "title": "看字选拼音（二）",
+     "subtitle": "写字表里的字，选出正确的拼音",
+     "kind": "cn",
+     "count": 18,
+     "unit": "W2"
+    },
+    {
+     "id": "g2c-k3",
+     "file": "sets/g2c-k3.json",
+     "title": "第三单元·课文小测",
+     "subtitle": "彩虹 / 去外婆家 / 数星星的孩子",
+     "kind": "cn",
+     "count": 8,
+     "unit": "W3"
+    },
+    {
+     "id": "g2c-r2",
+     "file": "sets/g2c-r2.json",
+     "title": "雨后",
+     "subtitle": "阅读·写景",
+     "kind": "reading",
+     "count": 4,
+     "unit": "W3"
+    },
+    {
+     "id": "g2c-py-W3a",
+     "file": "sets/g2c-py-W3a.json",
+     "title": "看字选拼音（一）",
+     "subtitle": "写字表里的字，选出正确的拼音",
+     "kind": "cn",
+     "count": 14,
+     "unit": "W3"
+    },
+    {
+     "id": "g2c-py-W3b",
+     "file": "sets/g2c-py-W3b.json",
+     "title": "看字选拼音（二）",
+     "subtitle": "写字表里的字，选出正确的拼音",
+     "kind": "cn",
+     "count": 13,
+     "unit": "W3"
+    },
+    {
+     "id": "g2c-dgql-a",
+     "file": "sets/g2c-dgql-a.json",
+     "title": "《登鹳雀楼》理解",
+     "subtitle": "王之涣 · 唐诗",
+     "kind": "cn",
+     "count": 6,
+     "unit": "W4"
+    },
+    {
+     "id": "g2c-dgql-b",
+     "file": "sets/g2c-dgql-b.json",
+     "title": "《登鹳雀楼》默写",
+     "subtitle": "先背一背，再默写（不显示原诗）",
+     "kind": "cn",
+     "count": 5,
+     "unit": "W4"
+    },
+    {
+     "id": "g2c-wlsbp-a",
+     "file": "sets/g2c-wlsbp-a.json",
+     "title": "《望庐山瀑布》理解",
+     "subtitle": "李白 · 唐诗",
+     "kind": "cn",
+     "count": 6,
+     "unit": "W4"
+    },
+    {
+     "id": "g2c-wlsbp-b",
+     "file": "sets/g2c-wlsbp-b.json",
+     "title": "《望庐山瀑布》默写",
+     "subtitle": "先背一背，再默写（不显示原诗）",
+     "kind": "cn",
+     "count": 5,
+     "unit": "W4"
+    },
+    {
+     "id": "g2c-k4",
+     "file": "sets/g2c-k4.json",
+     "title": "第四单元·课文小测",
+     "subtitle": "黄山奇石 / 日月潭 / 葡萄沟",
+     "kind": "cn",
+     "count": 8,
+     "unit": "W4"
+    },
+    {
+     "id": "g2c-r3",
+     "file": "sets/g2c-r3.json",
+     "title": "我的家乡",
+     "subtitle": "阅读·写景",
+     "kind": "reading",
+     "count": 4,
+     "unit": "W4"
+    },
+    {
+     "id": "g2c-py-W4a",
+     "file": "sets/g2c-py-W4a.json",
+     "title": "看字选拼音（一）",
+     "subtitle": "写字表里的字，选出正确的拼音",
+     "kind": "cn",
+     "count": 18,
+     "unit": "W4"
+    },
+    {
+     "id": "g2c-py-W4b",
+     "file": "sets/g2c-py-W4b.json",
+     "title": "看字选拼音（二）",
+     "subtitle": "写字表里的字，选出正确的拼音",
+     "kind": "cn",
+     "count": 17,
+     "unit": "W4"
+    },
+    {
+     "id": "g2c-k5",
+     "file": "sets/g2c-k5.json",
+     "title": "第五单元·课文小测",
+     "subtitle": "坐井观天 / 寒号鸟 / 我要的是葫芦",
+     "kind": "cn",
+     "count": 8,
+     "unit": "W5"
+    },
+    {
+     "id": "g2c-r4",
+     "file": "sets/g2c-r4.json",
+     "title": "小兔种萝卜",
+     "subtitle": "阅读·小故事",
+     "kind": "reading",
+     "count": 4,
+     "unit": "W5"
+    },
+    {
+     "id": "g2c-py-W5a",
+     "file": "sets/g2c-py-W5a.json",
+     "title": "看字选拼音（一）",
+     "subtitle": "写字表里的字，选出正确的拼音",
+     "kind": "cn",
+     "count": 13,
+     "unit": "W5"
+    },
+    {
+     "id": "g2c-py-W5b",
+     "file": "sets/g2c-py-W5b.json",
+     "title": "看字选拼音（二）",
+     "subtitle": "写字表里的字，选出正确的拼音",
+     "kind": "cn",
+     "count": 13,
+     "unit": "W5"
+    },
+    {
+     "id": "g2c-k6",
+     "file": "sets/g2c-k6.json",
+     "title": "第六单元·课文小测",
+     "subtitle": "八角楼上 / 朱德的扁担 / 难忘的泼水节 / 刘胡兰",
+     "kind": "cn",
+     "count": 8,
+     "unit": "W6"
+    },
+    {
+     "id": "g2c-py-W6a",
+     "file": "sets/g2c-py-W6a.json",
+     "title": "看字选拼音（一）",
+     "subtitle": "写字表里的字，选出正确的拼音",
+     "kind": "cn",
+     "count": 18,
+     "unit": "W6"
+    },
+    {
+     "id": "g2c-py-W6b",
+     "file": "sets/g2c-py-W6b.json",
+     "title": "看字选拼音（二）",
+     "subtitle": "写字表里的字，选出正确的拼音",
+     "kind": "cn",
+     "count": 17,
+     "unit": "W6"
+    },
+    {
+     "id": "g2c-jx-a",
+     "file": "sets/g2c-jx-a.json",
+     "title": "《江雪》理解",
+     "subtitle": "柳宗元 · 唐诗",
+     "kind": "cn",
+     "count": 6,
+     "unit": "W7"
+    },
+    {
+     "id": "g2c-jx-b",
+     "file": "sets/g2c-jx-b.json",
+     "title": "《江雪》默写",
+     "subtitle": "先背一背，再默写（不显示原诗）",
+     "kind": "cn",
+     "count": 5,
+     "unit": "W7"
+    },
+    {
+     "id": "g2c-qlg-a",
+     "file": "sets/g2c-qlg-a.json",
+     "title": "《敕勒歌》理解",
+     "subtitle": "北朝民歌 · 民歌",
+     "kind": "cn",
+     "count": 5,
+     "unit": "W7"
+    },
+    {
+     "id": "g2c-qlg-b",
+     "file": "sets/g2c-qlg-b.json",
+     "title": "《敕勒歌》默写",
+     "subtitle": "先背一背，再默写（不显示原诗）",
+     "kind": "cn",
+     "count": 4,
+     "unit": "W7"
+    },
+    {
+     "id": "g2c-k7",
+     "file": "sets/g2c-k7.json",
+     "title": "第七单元·课文小测",
+     "subtitle": "古诗二首 / 雾在哪里 / 雪孩子",
+     "kind": "cn",
+     "count": 8,
+     "unit": "W7"
+    },
+    {
+     "id": "g2c-r5",
+     "file": "sets/g2c-r5.json",
+     "title": "下雪了",
+     "subtitle": "阅读·写景",
+     "kind": "reading",
+     "count": 4,
+     "unit": "W7"
+    },
+    {
+     "id": "g2c-py-W7a",
+     "file": "sets/g2c-py-W7a.json",
+     "title": "看字选拼音（一）",
+     "subtitle": "写字表里的字，选出正确的拼音",
+     "kind": "cn",
+     "count": 12,
+     "unit": "W7"
+    },
+    {
+     "id": "g2c-py-W7b",
+     "file": "sets/g2c-py-W7b.json",
+     "title": "看字选拼音（二）",
+     "subtitle": "写字表里的字，选出正确的拼音",
+     "kind": "cn",
+     "count": 12,
+     "unit": "W7"
+    },
+    {
+     "id": "g2c-k8",
+     "file": "sets/g2c-k8.json",
+     "title": "第八单元·课文小测",
+     "subtitle": "称赞 / 纸船和风筝 / 快乐的小河",
+     "kind": "cn",
+     "count": 8,
+     "unit": "W8"
+    },
+    {
+     "id": "g2c-r6",
+     "file": "sets/g2c-r6.json",
+     "title": "好朋友",
+     "subtitle": "阅读·小故事",
+     "kind": "reading",
+     "count": 4,
+     "unit": "W8"
+    },
+    {
+     "id": "g2c-py-W8a",
+     "file": "sets/g2c-py-W8a.json",
+     "title": "看字选拼音（一）",
+     "subtitle": "写字表里的字，选出正确的拼音",
+     "kind": "cn",
+     "count": 13,
+     "unit": "W8"
+    },
+    {
+     "id": "g2c-py-W8b",
+     "file": "sets/g2c-py-W8b.json",
+     "title": "看字选拼音（二）",
+     "subtitle": "写字表里的字，选出正确的拼音",
+     "kind": "cn",
+     "count": 12,
+     "unit": "W8"
+    }
+   ]
   }
  ],
  "unitNames": {
@@ -2299,6 +2937,14 @@
   "Y8": "第八单元 为中华之崛起而读书·古诗三首",
   "Y0": "语文积累（词语·句子·标点）",
   "Z7": "语文积累·名著导读",
-  "E": "优美美文（每 3 天听一篇）"
+  "E": "优美美文（每 3 天听一篇）",
+  "W1": "第一单元 小蝌蚪找妈妈·我是什么·植物妈妈有办法",
+  "W2": "第二单元 识字（场景歌·树之歌·拍手歌·田家四季歌）",
+  "W3": "第三单元 彩虹·去外婆家·数星星的孩子",
+  "W4": "第四单元 古诗二首·黄山奇石·日月潭·葡萄沟",
+  "W5": "第五单元 坐井观天·寒号鸟·我要的是葫芦",
+  "W6": "第六单元 八角楼上·朱德的扁担·难忘的泼水节·刘胡兰",
+  "W7": "第七单元 古诗二首·雾在哪里·雪孩子",
+  "W8": "第八单元 称赞·纸船和风筝·快乐的小河"
  }
 }

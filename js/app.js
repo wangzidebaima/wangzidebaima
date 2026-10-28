@@ -1,6 +1,9 @@
 import * as V from './views.js';
 import * as S from './store.js';
 import * as E from './english.js';
+import * as CN from './cndict.js';
+import * as LN from './learn.js';
+import * as PM from './poem.js';
 import * as CV from './chapview.js';
 import { stopAllSound } from './ui.js';
 
@@ -52,7 +55,7 @@ async function render() {
   try {
     stopAllSound();
     const hash = location.hash.replace(/^#\/?/, '');
-    const [r, a, b] = hash.split('/');
+    const [r, a, b, c] = hash.split('/');
     const u = V.user();
     if (!u && r !== 'login' && r !== 'parent' && r !== 'hear' && r !== 'install') { location.replace('#/login'); return; }
     V.setTheme(u);
@@ -61,11 +64,15 @@ async function render() {
       case 'parent': return V.parentHome();
       case 'install': return V.install();
       case 'hear': return await V.hear(a);
-      case 's': return V.subject(a);
+      case 's': return V.subject(a, b);
+      case 'tips': return LN.tipsView(a + (b ? '/' + b : ''));
+      case 'poem': return PM.poemView(a);
+      case 'unit': return V.unitPage(a, b);
       case 'set': return await V.setView(a);
       case 'speak': return await V.speak(a);
-      case 'rand': if (CV.isChap(a)) return CV.chapSetup(a); return E.isEng(a) ? await E.engSetup(a) : V.randSetup(a);
-      case 'words': return await E.engWords(a);
+      case 'rand': if (/^cnw\d$/.test(a)) return await CN.cnSetup(); if (CV.isChap(a)) return CV.chapSetup(a); return E.isEng(a) ? await E.engSetup(a) : V.randSetup(a);
+      case 'words': return /^cnw\d$/.test(a) ? await CN.cnWords(b) : await E.engWords(a);
+      case 'learn': return a ? await LN.learnUnit(a) : await LN.learnHome();
       case 'errors': return V.errors();
       case 'me': return V.records();
       case 'weekrev': return V.weekReview(a === 'a');
@@ -83,6 +90,9 @@ async function boot() {
     const [cfg, lib, vocab] = await Promise.all([getJSON('data/config.json'), getJSON('data/library.json'), getJSON('data/vocab.json')]);
     V.X.cfg = cfg; V.X.lib = lib; V.X.vocab = vocab;
     V.X.ipa = await getJSON('data/ipa.json').catch(() => ({}));
+    V.X.poems = await getJSON('data/poems.json').catch(() => ({}));
+    V.X.tips = await getJSON('data/tips.json').catch(() => ({}));
+    PM.registerPoemHook();
   } catch (e) {
     V.showError('第一次打开需要连上网络。连上网络后点「重新加载」。'); return;
   }
