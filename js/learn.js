@@ -33,6 +33,8 @@ export async function learnHome() {
     h('a', { class: 'btn primary wide gobtn', href: '#/learn/' + cur.id }, `▶ 学 ${uname(cur)}`),
     (X.tips || {})['e' + book + '-' + cur.id] ? h('div', { class: 'list' }, tipsLink('e' + book + '-' + cur.id)) : null,
     h('div', { class: 'list' }, rows),
+    h('h2', { class: 'sh' }, '📝 单元小测（10 题）'),
+    h('div', { class: 'chips' }, data.units.map(un => h('a', { class: 'chipb', href: '#/utest/eng/' + un.id }, uname(un)))),
     h('a', { class: 'btn ghost wide', style: 'margin-top:12px', href: '#/rand/vocab' + book }, '学完了？去测一测'),
   ], { back: '#/' }));
 }

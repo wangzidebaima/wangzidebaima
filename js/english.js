@@ -249,3 +249,17 @@ export async function engWords(kind) {
   mount(page(cfg.content === 'sent' ? '句子' : cfg.content === 'phrase' ? '短语表' : '单词表', [
     h('p', { class: 'note' }, (chosen.length ? '只显示你选的单元。' : '你还没选单元，先显示全部。') + (cfg.content === 'sent' ? '' : ' ★ 是黑体词，要会拼写。点 🔊 听发音。')), blocks], { back: '#/rand/' + kind }));
 }
+
+// 单元小测：某一个单元的 10 道词汇题
+export async function unitTestEng(unitId) {
+  const u = user(), kind = (u.random || []).find(k => /^vocab\d$/.test(k)) || 'vocab7', cfg = ENG[kind], R = RANDOM[kind];
+  let data; try { data = await loadBook(cfg.book); } catch (e) { toast('词表加载失败，请连上网络再试'); return; }
+  const un = data.units.find(x => x.id === unitId); if (!un) { location.hash = '#/learn'; return; }
+  const run = () => {
+    const qs = makeEngSession(kind, 'mix', 10, [unitId]);
+    if (!qs.length) { toast('出题失败'); return; }
+    mount(runQuiz({ uid: u.id, mk: 'engquiz', mode: 'exam', title: unitLabel(un) + ' 单元小测', subtitle: '10 题，做完看分数', sections: [{ title: '', questions: qs }], recTitle: unitLabel(un) + ' 单元小测',
+      back: '#/learn', metaFor: () => ({ title: R.title, src: 'rand', sub: R.subject, kind: 'rand' }), again: run }));
+  };
+  run();
+}

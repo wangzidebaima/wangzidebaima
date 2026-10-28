@@ -53,6 +53,11 @@
      "goal": 10
     },
     {
+     "label": "学习 5 个单词",
+     "kind": "learn",
+     "goal": 5
+    },
+    {
      "label": "阅读理解 10 分钟",
      "kind": "cat",
      "cat": "reading",
@@ -127,6 +132,11 @@
       "chap4"
      ],
      "goal": 10
+    },
+    {
+     "label": "学习 5 个单词",
+     "kind": "learn",
+     "goal": 5
     },
     {
      "label": "阅读理解 10 分钟",

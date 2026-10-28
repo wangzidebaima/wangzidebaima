@@ -237,6 +237,7 @@ export function taskDone(uid, t, extra) {
   if (t.kind === 'bank') return logs.filter(x => x.setId).length;
   if (t.kind === 'rand') { const subs = t.subs || [t.sub]; return logs.filter(x => subs.includes(x.sub)).reduce((a, x) => a + (x.total || 0), 0); }
   if (t.kind === 'cat') { const l = logs.filter(x => logCat(x) === t.cat); return t.minutes ? Math.floor(l.reduce((a, x) => a + (x.secs || 0), 0) / 60) : l.length; }
+  if (t.kind === 'learn') { let n = 0; for (const b of Object.values(p.learn || {})) for (const v of Object.values(b)) if (v && v.d === tod) n++; return n; }
   if (t.kind === 'speak') return Object.values(p.speak).filter(ts => dayOf(ts) === tod).length;
   if (t.kind === 'essay') { const w = extra && extra.window; if (!w) return 0; return p.log.filter(x => x.setId === w.item.id && x.d >= w.start && x.d <= w.end).length ? 1 : 0; }
   return 0;

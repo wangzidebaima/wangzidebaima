@@ -4,6 +4,7 @@ import * as B from './badges.js';
 import * as S from './store.js';
 import { gradeQuestion, answerText, userText, isAnswered } from './grade.js';
 import { RANDOM, makeSession } from './mathgen.js';
+import { srReady, srOn, listen, similarity, errText } from './speech.js';
 
 export const X = { cfg: null, lib: null, vocab: {}, audio: new Set(), sets: {}, ipa: {} };
 const app = () => document.getElementById('app');
@@ -80,6 +81,29 @@ function askPassword() {
     h('button', { class: 'btn primary wide', onclick: go }, '进入'), h('button', { class: 'btn ghost wide', style: 'margin-top:10px', onclick: () => nav('#/login') }, '返回'), msg));
   setTimeout(() => inp.focus(), 50);
 }
+// ---------------- 试卷下载：Word 文件放在 papers/ 里，家长点一下下载打印 ----------------
+const PAPERS = [
+  { g: 'g7', name: '小七 · 七年级', math: 5, eng: 10 },
+  { g: 'g4', name: '小四 · 四年级', math: 5, eng: 6 },
+];
+export function papersPage() {
+  let ok = false; try { ok = sessionStorage.getItem('kp_parent') === '1'; } catch (e) { ok = !!window.__kpParent; }
+  if (!ok) { nav('#/login'); return; }
+  setTheme(null);
+  const dl = (f, t) => h('a', { class: 'chip', href: 'papers/' + f + '.docx', download: f + '.docx' }, t);
+  const blocks = PAPERS.map(x => h('section', { style: 'margin:14px 0' },
+    h('h2', { class: 'sh' }, x.name),
+    [['math', '📐 数学'], ['eng', '🔤 英语']].map(([sb, t]) => h('div', { style: 'margin:8px 0' },
+      h('b', {}, t),
+      h('div', { class: 'chips', style: 'margin-top:6px' },
+        Array.from({ length: x[sb] }, (_, i) => dl(`${x.g}-${sb}-${i + 1}`, `第 ${i + 1} 单元`)),
+        dl(`${x.g}-${sb}-mid`, '期中'), dl(`${x.g}-${sb}-fin`, '期末'))))));
+  mount(page('试卷下载', [
+    h('p', { class: 'note' }, '点一下下载 Word 文件，用电脑打开打印。手机上点开会先下载，需要用 WPS 之类的打开。'),
+    ...blocks,
+    h('p', { class: 'note' }, '语文没有做试卷；叶子（二年级）也没有试卷。想让孩子在手机上做题，用「单元小测」更快。'),
+  ], { back: '#/parent' }));
+}
 export function parentHome() {
   let ok = false; try { ok = sessionStorage.getItem('kp_parent') === '1'; } catch (e) { ok = !!window.__kpParent; }
   if (!ok) { nav('#/login'); return; }
@@ -147,6 +171,8 @@ export function parentHome() {
   mount(h('div', { class: 'login' }, h('div', { class: 'logo' }, '🔒'), h('h1', {}, X.cfg.parent.name), h('p', { class: 'sub' }, '备份孩子的学习记录（星星、错题都保存在这台手机的浏览器里，换手机前先导出）'),
     ...rows,
     h('div', { class: 'list', style: 'margin-top:12px' }, vrow,
+      h('a', { class: 'row', href: '#/papers' }, h('div', {}, h('b', {}, '📄 试卷下载'),
+        h('small', {}, '数学、英语各单元 + 期中期末，共 34 份 Word')), h('span', { class: 'chip' }, '去下载')),
       h('a', { class: 'row', href: '#/traffic' }, h('div', {}, h('b', {}, '📈 访问统计'),
         h('small', {}, '有多少人打开过这个网站（GitHub 官方数据）')), h('span', { class: 'chip' }, '看看')),
       h('a', { class: 'row', href: '#/help' }, h('div', {}, h('b', {}, '🩺 遇到问题'), h('small', {}, '没声音、打不开、更新不了怎么办；一键自检把状态查出来')), h('span', { class: 'chip' }, '看看'))),
@@ -322,6 +348,7 @@ export const essayNow = (u) => S.essayWindow(essayList(u));
 function taskTarget(u, t, ew) {
   const p = S.P(u.id), dn = Math.floor(Date.now() / 86400000);
   if (t.kind === 'rand') return '#/rand/' + (t.subs || [t.sub])[0];
+  if (t.kind === 'learn') return '#/learn';
   if (t.kind === 'speak') { const id = (u.subjects || []).find(x => /speaking$/.test(x)); return id ? '#/s/' + id : '#/'; }
   if (t.kind === 'essay') return ew ? '#/set/' + ew.item.id : '#/';
   if (t.kind === 'cat') {
@@ -398,9 +425,11 @@ export function home() {
   });
   const hasEng = (u.subjects || []).some(x => /reading$|listening$/.test(x)) && (u.random || []).some(k => /^vocab/.test(k));
   const learnCard = hasEng ? Object.assign(h('a', { class: 'card', href: '#/learn' }, h('span', { class: 'ic' }, '🃏'), h('b', {}, '单词卡片'), h('small', {}, '先学一学，再去测'), h('em', {}, '看词·听音·记意思')), { _area: 'eng' }) : null;
+  const ew0 = essayNow(u);
+  const essayCard = ew0 ? Object.assign(h('a', { class: 'card', href: '#/set/' + ew0.item.id }, h('span', { class: 'ic' }, '🌸'), h('b', {}, '听美文'), h('small', {}, '《' + String(ew0.item.title || '').replace(/^《|》$/g, '') + '》'), h('em', {}, ew0.end.slice(5) + ' 前听完')), { _area: 'cn' }) : null;
   const areas = [['math', '📐 数学'], ['cn', '📖 语文'], ['eng', '🔤 英语']].map(([a, t0]) => {
     const pub = (u.publishers || {})[a], t = pub ? `${t0}（${pub}）` : t0;
-    const cs = [...(learnCard ? [learnCard] : []), ...subjectCards, ...randCards].filter(c => c._area === a); if (!cs.length) return null;
+    const cs = [...(learnCard ? [learnCard] : []), ...(essayCard ? [essayCard] : []), ...subjectCards, ...randCards].filter(c => c._area === a); if (!cs.length) return null;
     return [h('h2', { class: 'sh' }, t), h('div', { class: 'grid' }, cs)];
   });
   const wrongN = st.wrong;
@@ -458,7 +487,27 @@ export function unitPage(id, x) {
     learn.length ? [h('h2', { class: 'sh' }, '① 学一学'), h('div', { class: 'list' }, learn)] : null,
     practice.length ? [h('h2', { class: 'sh' }, '② 练一练'), h('div', { class: 'list' }, practice.map(rowOf))] : null,
     reads.length ? [h('h2', { class: 'sh' }, '③ 读一读'), h('div', { class: 'list' }, reads.map(rowOf))] : null,
+    ms.some(m => m.kind === 'cn') ? [h('h2', { class: 'sh' }, '④ 测一测'), h('div', { class: 'list' }, h('a', { class: 'row', href: '#/utest/cn/' + id + '/' + x }, h('div', {}, h('b', {}, '📝 单元小测'), h('small', {}, '从本单元的题里随机抽 10 题，做完看分数')), h('span', { class: 'chip' }, '去测')))] : null,
   ], { back: '#/s/' + id }));
+}
+// 单元小测：语文从本单元的题里随机抽 10 题（阅读理解跳过，因为要配原文）
+export async function unitTest(kind, a, b) {
+  const u = user();
+  if (kind === 'cn') {
+    const s2 = subj(a), x = b, name = (X.lib.unitNames && X.lib.unitNames[x]) || x;
+    mount(page('单元小测', h('p', { class: 'note' }, '出题中…'), { back: '#/unit/' + a + '/' + x }));
+    const ms = s2.sets.filter(m => m.unit === x && m.kind === 'cn'); let pool = [];
+    for (const m of ms) { try { const st = await loadSet(m.id); if (st.passage) continue; st.sections.forEach(sec => sec.questions.forEach(q => pool.push(q))); } catch (e) { /* 单个题集失败不影响整体 */ } }
+    const sh = (arr) => { arr = arr.slice(); for (let i = arr.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [arr[i], arr[j]] = [arr[j], arr[i]]; } return arr; };
+    const run = () => {
+      const qs = JSON.parse(JSON.stringify(sh(pool).slice(0, 10)));
+      qs.forEach(q => { if (q.type !== 'choice' || !q.options) return; const right = q.options['ABCDEFG'.indexOf(q.answer)], o = sh(q.options); q.options = o; q.answer = 'ABCDEFG'[o.indexOf(right)]; });
+      mount(runQuiz({ uid: u.id, mk: 'cnknow', mode: 'exam', title: name + ' 单元小测', subtitle: `${qs.length} 题，做完看分数`, sections: [{ title: '', questions: qs }], recTitle: name + ' 单元小测',
+        back: '#/unit/' + a + '/' + x, metaFor: () => ({ title: name + ' 单元小测', src: 'rand', sub: a, kind: 'rand' }), again: run }));
+    };
+    if (!pool.length) { toast('这个单元还没有小测题'); nav('#/unit/' + a + '/' + x); return; }
+    run(); return;
+  }
 }
 let learnHook = () => {};
 export const setLearnHook = (f) => { learnHook = f; };
@@ -1071,18 +1120,68 @@ export function records() {
 }
 
 // ---------------- 口语打卡 ----------------
+// 支持语音识别的浏览器上：点 🎤 读一句，读对了才能打卡（不再是点一下就给星）。
+// 不支持（微信内置浏览器、老系统）或家长关掉了：完全按原来的方式，打卡按钮直接可用。
 export async function speak(id) {
   const set = await loadSet(id), u = user();
+  const readOk = new Set();     // 本次打开页面里读对了第几句
+  let busy = false;
+  // 识别彻底用不了（没麦克风权限、没网、浏览器骗人）就自动退回原来的打卡方式，
+  // 绝不能因为设备问题把孩子卡在这儿打不了卡
+  let srBroken = false, srFails = 0;   // 连续听不清 3 次也放行，别让孩子一直卡在识别上
   const render = () => {
     const p = S.P(u.id);
+    const needRead = srReady() && !srBroken;
+    const listenOne = async (s, i, btn, info, box) => {
+      if (busy) return;
+      busy = true;
+      const old = btn.textContent;
+      btn.disabled = true; btn.textContent = '🎤 正在听…';
+      info.className = 'srres'; info.textContent = '请大声读这句话（读完自己会停）';
+      const r = await listen(s.en, { lang: /[\u4e00-\u9fa5]/.test(s.en) ? 'zh-CN' : 'en-US' });
+      busy = false; btn.disabled = false; btn.textContent = old;
+      if (r.err) {
+        if (['not-allowed', 'service-not-allowed', 'audio-capture', 'network', 'unsupported', 'start'].includes(r.err)) {
+          srBroken = true; toast('这台手机听不了朗读，已换成原来的打卡方式', 4000); render(); return;
+        }
+        if (++srFails >= 3) { srBroken = true; toast('这台手机老是听不清，先换成原来的打卡方式', 4000); render(); return; }
+        info.className = 'srres bad'; info.textContent = errText(r.err); return;
+      }
+      const sc = similarity(s.en, r.heard);
+      if (sc.pct >= 60) {
+        readOk.add(i);
+        box.classList.add('ok');
+        info.className = 'srres good';
+        info.textContent = `读对 ${sc.hit}/${sc.total} 个词 · ${sc.pct >= 85 ? '很棒！' : '通过了'}（我听到：${r.heard}）`;
+      } else {
+        info.className = 'srres bad';
+        info.textContent = `我听到：「${r.heard}」只对上 ${sc.hit}/${sc.total} 个词，再大声读一次`;
+      }
+    };
     const days = set.plan.map(d => {
       const key = `${set.id}-d${d.day}`, done = !!p.speak[key];
       return h('div', { class: 'day' + (done ? ' done' : '') }, h('div', {}, h('b', {}, `Day ${d.day}  ${d.title}`), h('small', {}, `${d.task} · ${d.minutes} 分钟`)),
-        done ? h('span', { class: 'chip ok' }, '⭐ 已打卡') : h('button', { class: 'btn small primary', onclick: () => { const r = S.award(u.id, { id: 'speak-' + key }, 'bank', set.id, cap()); S.markSpeak(u.id, key); toast(r === 'new' ? '⭐ +1  今天的口语完成啦！' : '已打卡'); render(); } }, '今天完成了'));
+        done ? h('span', { class: 'chip ok' }, '⭐ 已打卡') : h('button', { class: 'btn small primary', onclick: () => {
+          if (needRead && !readOk.size) { toast('先点 🎤 读一句，读对了才能打卡', 3500); return; }
+          const r = S.award(u.id, { id: 'speak-' + key }, 'bank', set.id, cap()); S.markSpeak(u.id, key);
+          toast(r === 'new' ? (readOk.size ? `⭐ +1  读了 ${readOk.size} 句，今天的口语完成啦！` : '⭐ +1  今天的口语完成啦！') : '已打卡');
+          render();
+        } }, '今天完成了'));
     });
-    const sents = set.sentences.map(s => h('div', { class: 'sent' }, h('div', {}, h('b', {}, s.en), h('small', {}, s.zh)),
-      h('button', { class: 'btn small ghost', onclick: () => playSay('sp-' + slug(s.en), s.en, X.audio) }, '🔊')));
-    mount(page(set.title, [h('ol', { class: 'steps' }, set.steps.map(t => h('li', {}, t))), h('h2', { class: 'sh' }, `${set.plan.length} 天打卡`), h('div', { class: 'list' }, days), h('h2', { class: 'sh' }, '本单元句子（点 🔊 听，再大声读 3 遍）'), h('div', { class: 'list' }, sents)], { back: '#/s/' + (set.id.startsWith('g7') ? 'g7speaking' : 'g4speaking') }));
+    const sents = set.sentences.map((s, i) => {
+      const info = h('small', { class: 'srres' }, '');
+      const box = h('div', { class: 'sent' + (readOk.has(i) ? ' ok' : '') },
+        h('div', {}, h('b', {}, s.en), h('small', {}, s.zh)),
+        h('div', { class: 'chips' },
+          h('button', { class: 'btn small ghost', onclick: () => playSay('sp-' + slug(s.en), s.en, X.audio) }, '🔊'),
+          needRead ? h('button', { class: 'btn small ghost', onclick: (e) => listenOne(s, i, e.currentTarget, info, box) }, '🎤 读这句') : null),
+        info);
+      return box;
+    });
+    const tip = needRead
+      ? h('p', { class: 'note' }, '点「🎤 读这句」读给手机听：读对了才算，打卡前至少读对一句。只在点按钮时才听，录音不会保存。')
+      : h('p', { class: 'note' }, srBroken ? '这台手机听不了朗读（可能没给麦克风权限，或者没联网），已经换成原来的打卡方式，不影响打卡。' : srOn() ? '这台手机的浏览器听不懂说话（微信里打开就会这样），按原来的方式打卡就行。想用跟读检查，用系统浏览器（Safari / Chrome）打开。' : '家长关掉了跟读检查，按原来的方式打卡就行。');
+    mount(page(set.title, [h('ol', { class: 'steps' }, set.steps.map(t => h('li', {}, t))), tip, h('h2', { class: 'sh' }, `${set.plan.length} 天打卡`), h('div', { class: 'list' }, days), h('h2', { class: 'sh' }, '本单元句子（点 🔊 听，点 🎤 读给手机听）'), h('div', { class: 'list' }, sents)], { back: '#/s/' + (set.id.startsWith('g7') ? 'g7speaking' : 'g4speaking') }));
   };
   render();
 }

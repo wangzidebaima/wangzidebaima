@@ -320,3 +320,10 @@ a.task { color: inherit; text-decoration: none; }
 .tbarc i.z{background:var(--line)}
 .tbarc span{font-size:9px;color:var(--muted);margin-top:3px;white-space:nowrap;height:12px;line-height:12px}
 .tvh{font-size:13px;font-weight:600;margin:14px 0 6px;color:var(--muted)}
+
+/* ---- 口语跟读检查 ---- */
+.sent{flex-wrap:wrap}
+.sent.ok{background:var(--good-soft)}
+.srres{flex-basis:100%;margin-top:2px;line-height:1.5;color:var(--muted)}
+.srres.good{color:var(--good)}
+.srres.bad{color:var(--bad)}
