@@ -1,5 +1,6 @@
 // 所有页面：登录、首页、题库、答题、结果、错题本、随机练习、记录、打印
 import { h, esc, mathHtml, toast, keypad, praiseText, playSay, slug, playScript, stopScript } from './ui.js';
+import * as B from './badges.js';
 import * as S from './store.js';
 import { gradeQuestion, answerText, userText, isAnswered } from './grade.js';
 import { RANDOM, makeSession } from './mathgen.js';
@@ -310,6 +311,7 @@ export function home() {
     areas,
     h('h2', { class: 'sh' }, '我的'),
     h('div', { class: 'grid' },
+      h('a', { class: 'card plain', href: '#/badges' }, h('span', { class: 'ic' }, '🏅'), h('b', {}, '成就徽章'), h('small', {}, '拿到就永远是你的'), h('em', {}, `${B.unlockedCount(u.id)}/${B.totalCount(u.id)}`)),
       h('a', { class: 'card plain', href: '#/errors' }, h('span', { class: 'ic' }, '📒'), h('b', {}, '错题本'), h('small', {}, wrongN ? '做错的题在这里再练' : '现在是空的，真棒'), wrongN ? h('em', { class: 'badge' }, wrongN + ' 道') : null),
       h('a', { class: 'card plain', href: '#/me' }, h('span', { class: 'ic' }, '📊'), h('b', {}, '我的记录'), h('small', {}, '星星、进度、发给家长'))),
     standalone() ? null : h('a', { class: 'link instl', href: '#/install' }, '📲 装到手机桌面，打开更方便')));
@@ -646,6 +648,8 @@ function runQuiz(o) {
     });
     const m0 = qs.length ? o.metaFor(qs[0]) : {};
     S.recordAttempt(o.uid, o.recId || null, { title: o.recTitle || o.title, ok: okN, total: qs.length, pts, ptsAll, stars: newStars, src: m0.src, sub: m0.sub, kind: m0.kind, secs: Math.min(1500, Math.round((Date.now() - o.t0) / 1000)) });
+    // 做完当场查一遍成就，有新解锁立刻报喜
+    B.checkAndGrant(o.uid).forEach(x => toast(`🏅 解锁成就：${x.icon} ${x.name}`, 4000));
     keypad.close();
     mount(resultsNode(o, results, { newStars, capped, okN, pts, ptsAll }));
   }

@@ -54,6 +54,7 @@ const normProfile = (p) => {
   p.speak = p.speak || {}; p.log = p.log || [];
   p.days = p.days || {}; p.year = p.year || {};
   p.coins = p.coins || [];
+  p.ach = p.ach || {};
   if (p.stars && typeof p.stars === 'object') {
     for (const k in p.stars) {
       const s = p.stars[k] || {}, d = s.d;
@@ -114,6 +115,7 @@ export function award(uid, q, src, subject, cap = 30) {
 // 错题本：做错进来（3 天后再提醒），答对一次先「待巩固」，隔天再答对才真正出库
 export function addWrong(uid, q, meta) {
   const p = P(uid), old = p.wrong[q.id];
+  p.wrongHad = true; // 记「曾经有过错题」，错题清零徽章用
   p.wrong[q.id] = { q, meta, n: old ? old.n + 1 : 1, d: today(), ok: 0, next: shiftDay(-3) };
   save(uid);
 }
@@ -170,16 +172,34 @@ export function payCoins(uid, lap, goal, n) {
 export function getUnits(uid, book, dflt) { const e = P(uid).eng; return (e && e[book]) || dflt || []; }
 export function setUnits(uid, book, arr) { const p = P(uid); p.eng = p.eng || {}; p.eng[book] = arr; save(uid); }
 
+// ---------- 成就徽章：拿到就永久点亮（ach 里存解锁日期，永不撤销、断了也不掉） ----------
+export const hasAch = (uid, id) => !!(P(uid).ach || {})[id];
+export function grantAch(uid, id) {
+  const p = P(uid);
+  p.ach = p.ach || {};
+  if (p.ach[id]) return false;
+  p.ach[id] = today(); save(uid); return true;
+}
+
 const dayOf = (ts) => { const d = new Date(ts); return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`; };
-// 连续练习天数：今天还没练就从昨天往回数
+// 「练过的日子」集合：星星账本（存 180 天）+ 练习记录 + 口语打卡，三者合并。
+// 之前只看 log（只留 300 条，约几十天），连续天数会被截断算不准。
+const activeDays = (uid) => {
+  const p = P(uid), s = new Set(Object.keys(p.days));
+  p.log.forEach(x => s.add(x.d));
+  Object.values(p.speak).forEach(ts => s.add(dayOf(ts)));
+  return s;
+};
+// 连续练习天数：今天还没练就从昨天往回数；打开 App 不算，得真练过
 export function streak(uid) {
-  const p = P(uid), days = new Set(p.log.map(x => x.d));
-  Object.values(p.speak).forEach(ts => days.add(dayOf(ts)));
+  const days = activeDays(uid);
   let n = 0; const d = new Date();
   if (!days.has(dayOf(d))) d.setDate(d.getDate() - 1);
   while (days.has(dayOf(d))) { n++; d.setDate(d.getDate() - 1); }
   return n;
 }
+// 累计练过的天数（不是连续，断一天也不归零）
+export const totalDays = (uid) => activeDays(uid).size;
 // 每条记录属于哪一类：reading 阅读理解 / listening 听力 / essay 美文 / 其余按 sub 猜
 export function logCat(x) {
   if (x.kind === 'essay') return 'essay';
