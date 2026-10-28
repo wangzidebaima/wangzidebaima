@@ -8,6 +8,19 @@ const mem = {};
 const pad = (n) => String(n).padStart(2, '0');
 export const today = () => { const d = new Date(); return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`; };
 
+// ---------- 备份提醒：记下最近一次导出备份的日期（只存日期字符串，很小） ----------
+export const lastBackup = (uid) => LS.get('kp_bak_' + uid) || '';
+export const markBackup = (uid) => LS.set('kp_bak_' + uid, today());
+// 距上次导出过了多少天：没导出过返回 -1
+export function backupDaysAgo(uid) {
+  const d = lastBackup(uid);
+  if (!d) return -1;
+  const t = Date.parse(d + 'T00:00:00');
+  if (!t) return -1;
+  const now = Date.parse(today() + 'T00:00:00');
+  return Math.max(0, Math.round((now - t) / 86400000));
+}
+
 export const getUser = () => LS.get('kp_user') || mem.user || null;
 export function setUser(id) {
   if (id) { LS.set('kp_user', id); mem.user = id; } else { LS.del('kp_user'); delete mem.user; }

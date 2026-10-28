@@ -95,6 +95,17 @@ export function parentHome() {
       };
       rd.readAsText(f);
     } });
+    // 上次导出提醒：没导出过 / 超过 30 天都会标红
+    const bak = h('p', { class: 'note' });
+    const setBak = () => {
+      const d = S.backupDaysAgo(u.id);
+      if (d < 0) { bak.className = 'note bakwarn'; bak.textContent = '⚠️ 还没有导出过备份，建议现在就导出一次'; return; }
+      const m = Number(S.lastBackup(u.id).slice(5, 7)), dd = Number(S.lastBackup(u.id).slice(8, 10));
+      if (d === 0) { bak.className = 'note'; bak.textContent = '上次导出：今天'; return; }
+      if (d > 30) { bak.className = 'note bakwarn'; bak.textContent = `⚠️ 上次导出：${m} 月 ${dd} 日（已过 ${d} 天，建议再导出一次）`; return; }
+      bak.className = 'note'; bak.textContent = `上次导出：${m} 月 ${dd} 日`;
+    };
+    setBak();
     return h('div', { class: 'list' },
       file,
       h('div', { class: 'row static' }, h('div', {}, h('b', {}, u.display), h('small', {}, `${u.grade} · ⭐${st.total} 颗 · 错题 ${st.wrong} 道`)),
@@ -105,10 +116,12 @@ export function parentHome() {
             const blob = new Blob([S.exportProfile(u.id)], { type: 'application/json' });
             const a = h('a', { href: URL.createObjectURL(blob), download: `书山小路-${u.display}-记录-${S.today()}.json` });
             document.body.append(a); a.click(); a.remove();
+            S.markBackup(u.id); setBak();
             toast('已导出，请把文件保存好或发到家长微信/电脑');
           } catch (e) { toast('导出失败，请换浏览器再试'); }
         } }, '导出记录'),
         h('button', { type: 'button', class: 'btn small ghost', onclick: () => file.click() }, '导入记录')),
+      bak,
       h('p', { class: 'note' }, '换手机或清过浏览器数据后：在新手机上先登录孩子，再到这里点「导入记录」选文件即可恢复。'));
   });
   mount(h('div', { class: 'login' }, h('div', { class: 'logo' }, '🔒'), h('h1', {}, X.cfg.parent.name), h('p', { class: 'sub' }, '备份孩子的学习记录（星星、错题都保存在这台手机的浏览器里，换手机前先导出）'),

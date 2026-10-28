@@ -34,6 +34,7 @@ main > * + * { margin-top: 14px; }
 .subtitle { color: var(--muted); font-size: 15px; margin-top: 0; }
 .sh { font-size: 15px; color: var(--muted); font-weight: 600; margin: 22px 0 8px; letter-spacing: .02em; }
 .note { color: var(--muted); font-size: 15px; line-height: 1.6; }
+.note.bakwarn { color: var(--bad); font-weight: 600; }
 
 /* 按钮 */
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; border: 0; border-radius: 14px; padding: 12px 20px; font-weight: 600; cursor: pointer; background: var(--accent-soft); color: var(--accent); min-height: 48px; }
