@@ -53,6 +53,7 @@ const normProfile = (p) => {
   p.rand = p.rand || { days: {}, types: {} }; p.rand.days = p.rand.days || {}; p.rand.types = p.rand.types || {};
   p.speak = p.speak || {}; p.log = p.log || [];
   p.days = p.days || {}; p.year = p.year || {};
+  p.coins = p.coins || [];
   if (p.stars && typeof p.stars === 'object') {
     for (const k in p.stars) {
       const s = p.stars[k] || {}, d = s.d;
@@ -152,6 +153,18 @@ export function stats(uid) {
 }
 
 export function markSpeak(uid, key) { const p = P(uid); p.speak[key] = Date.now(); save(uid); }
+
+// ---------- 金币流水：家长在家长页记一笔「已发放」，孩子首页能看到领没领 ----------
+// coins: [{ d: '2026-10-28', lap: 2, goal: 400, n: 2 }]  每次发放一条
+// lap+goal 一起记：中途改过攒星目标也不怕对错轮次
+export const coinList = (uid) => P(uid).coins || [];
+export const coinsPaid = (uid) => coinList(uid).reduce((a, c) => a + (c.n || 0), 0);
+export const coinGivenLap = (uid, lap, goal) => coinList(uid).some(c => c.lap === lap && c.goal === goal);
+export function payCoins(uid, lap, goal, n) {
+  const p = P(uid);
+  (p.coins = p.coins || []).push({ d: today(), lap, goal, n });
+  save(uid);
+}
 
 // 英语小测：每个孩子选过的「学过的单元」，按课本分开记
 export function getUnits(uid, book, dflt) { const e = P(uid).eng; return (e && e[book]) || dflt || []; }

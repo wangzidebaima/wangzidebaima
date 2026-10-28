@@ -106,6 +106,16 @@ export function parentHome() {
       bak.className = 'note'; bak.textContent = `上次导出：${m} 月 ${dd} 日`;
     };
     setBak();
+    // 金币：这一轮攒到的 + 家长已发放的流水
+    const rews = (X.cfg.rewards || []).slice().sort((a, b) => a.stars - b.stars);
+    const cyk = cycle(st.total), got = coinsGot(rews, cyk.pos), given = S.coinGivenLap(u.id, cyk.laps, goal());
+    const paidAll = S.coinsPaid(u.id), lastCoin = S.coinList(u.id).slice(-1)[0];
+    const coinRow = h('div', { class: 'row static' }, h('div', {}, h('b', {}, '🪙 金币'),
+      h('small', {}, (got ? (given ? `本轮 ${got} 个已发放` : `本轮可领 ${got} 个`) : '本轮还没攒到') + (paidAll ? ` · 累计已发 ${paidAll} 个` : ' · 还没发过') + (lastCoin ? `，上次 ${Number(lastCoin.d.slice(5, 7))} 月 ${Number(lastCoin.d.slice(8, 10))} 日` : ''))),
+      got && !given ? h('button', { type: 'button', class: 'btn small primary', onclick: () => {
+        if (!confirm(`确认已经把这一轮的 ${got} 个金币给 ${u.display} 了吗？\n记下后，孩子首页会显示「家长已经发放啦」。`)) return;
+        S.payCoins(u.id, cyk.laps, goal(), got); toast('记好啦'); parentHome();
+      } }, `记一笔：发 ${got} 个`) : null);
     return h('div', { class: 'list' },
       file,
       h('div', { class: 'row static' }, h('div', {}, h('b', {}, u.display), h('small', {}, `${u.grade} · ⭐${st.total} 颗 · 错题 ${st.wrong} 道`)),
@@ -122,6 +132,7 @@ export function parentHome() {
         } }, '导出记录'),
         h('button', { type: 'button', class: 'btn small ghost', onclick: () => file.click() }, '导入记录')),
       bak,
+      coinRow,
       h('p', { class: 'note' }, '换手机或清过浏览器数据后：在新手机上先登录孩子，再到这里点「导入记录」选文件即可恢复。'));
   });
   mount(h('div', { class: 'login' }, h('div', { class: 'logo' }, '🔒'), h('h1', {}, X.cfg.parent.name), h('p', { class: 'sub' }, '备份孩子的学习记录（星星、错题都保存在这台手机的浏览器里，换手机前先导出）'),
@@ -269,7 +280,7 @@ export function home() {
     h('div', { class: 'jar-top' }, h('div', { class: 'jar-n' }, '⭐ ', h('b', {}, cy.pos), h('small', {}, ` / ${G}`)), h('div', { class: 'jar-s' }, `今天 +${st.today}/${cap()}` + (S.streak(u.id) ? ` · 🔥连续 ${S.streak(u.id)} 天` : ''))),
     h('div', { class: 'bar' }, h('i', { style: `width:${pct}%` })), marks,
     h('p', { class: 'jar-t' }, next ? `再得 ${next.stars - cy.pos} 颗星，就能得 ${next.label}（找家长领取）` : '这一轮满啦！再得一颗星，进度条就重新开始。'),
-    coinsGot(rewards, cy.pos) ? h('p', { class: 'jar-t' }, `🪙 这一轮已达成 ${coinsGot(rewards, cy.pos)} 个金币，找家长领取`) : null,
+    coinsGot(rewards, cy.pos) ? h('p', { class: 'jar-t' }, `🪙 这一轮已达成 ${coinsGot(rewards, cy.pos)} 个金币，${S.coinGivenLap(u.id, cy.laps, G) ? '家长已经发放啦' : '找家长领取'}`) : null,
     cy.laps ? h('p', { class: 'jar-t' }, `已完成 ${cy.laps} 轮（每轮 ${rewards.reduce((a, r) => a + (r.coins || 0), 0)} 个金币）`) : null,
     st.today >= cap() ? h('p', { class: 'jar-t' }, '今天的星星拿满啦，明天再来～') : null);
   const subjectCards = u.subjects.map(id => {
@@ -758,7 +769,7 @@ function summaryText(u) {
   if (weakT.length) lines.push(`最近容易错：${weakT.join('、')}`);
   if (weakW.length) lines.push(`还没掌握的单词：${weakW.join('、')}`);
   if (next) lines.push(`下一个奖励 ${next.label}：${next.stars} 颗，还差 ${next.stars - cy.pos} 颗`);
-  if (coinsGot(rewards, cy.pos)) lines.push(`这一轮已达成金币：${coinsGot(rewards, cy.pos)} 个（找家长领取）` + (cy.laps ? `；已完成 ${cy.laps} 轮` : ''));
+  if (coinsGot(rewards, cy.pos)) lines.push(`这一轮已达成金币：${coinsGot(rewards, cy.pos)} 个（${S.coinGivenLap(u.id, cy.laps, goal()) ? '家长已发放' : '找家长领取'}，累计已发 ${S.coinsPaid(u.id)} 个）` + (cy.laps ? `；已完成 ${cy.laps} 轮` : ''));
   return lines.filter(Boolean).join('\n');
 }
 const CATN = [['reading', '阅读理解', '📖'], ['listening', '听力', '🎧'], ['speaking', '口语', '🗣'], ['essay', '美文', '🌸']];
