@@ -186,6 +186,19 @@ export function kidCard(u, { vip = false, redraw = null } = {}) {
     bak.className = 'note'; bak.textContent = `上次导出：${m} 月 ${dd} 日`;
   };
   setBak();
+  // 导出之后必须说清楚：文件只是下到了这台手机上，换手机带不过去。
+  // 很多家长点了「导出记录」就以为备份好了，等换手机才发现文件跟着旧手机一起没了。
+  const bakTip = h('div', { class: 'dltip', style: 'display:none' });
+  const showBakTip = (name) => {
+    bakTip.replaceChildren(
+      h('b', {}, `✅ 记录已导出：${name}`),
+      h('p', {}, '文件现在在这台手机的「下载」文件夹里（苹果在「文件」App → 下载）。'),
+      h('p', { class: 'warn' }, '⚠️ 这一步只是把文件下到了这台手机上，换手机的时候它带不过去。'),
+      h('p', {}, '现在就顺手做一下：把文件发到自己的微信，或者传到电脑上存一份。这样换手机、清缓存都不怕。'),
+      h('button', { type: 'button', class: 'btn ghost wide', style: 'margin-top:8px', onclick: () => { bakTip.style.display = 'none'; } }, '知道了'));
+    bakTip.style.display = '';
+    bakTip.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  };
   // 金币：这一轮攒到的 + 家长已发放的流水
   const rews = (X.cfg.rewards || []).slice().sort((a, b) => a.stars - b.stars);
   const cyk = cycle(st.total), got = coinsGot(rews, cyk.pos), given = S.coinGivenLap(u.id, cyk.laps, goal());
@@ -206,18 +219,20 @@ export function kidCard(u, { vip = false, redraw = null } = {}) {
     h('div', { class: 'chips' },
       h('button', { type: 'button', class: 'btn small primary', onclick: () => {
         try {
+          const name = `书山小路-${u.display}-记录-${S.today()}.json`;
           const blob = new Blob([S.exportProfile(u.id)], { type: 'application/json' });
-          const a = h('a', { href: URL.createObjectURL(blob), download: `书山小路-${u.display}-记录-${S.today()}.json` });
+          const a = h('a', { href: URL.createObjectURL(blob), download: name });
           document.body.append(a); a.click(); a.remove();
           S.markBackup(u.id); setBak();
-          toast('已导出，请把文件保存好或发到家长微信/电脑');
+          showBakTip(name);
+          toast('已导出，记得发到自己的微信或电脑上');
         } catch (e) { toast('导出失败，请换浏览器再试'); }
       } }, '导出记录'),
       h('button', { type: 'button', class: 'btn small ghost', onclick: () => file.click() }, '导入记录')),
-    bak,
+    bak, bakTip,
     coinRow,
     vipRow,
-    h('p', { class: 'note' }, '换手机或清过浏览器数据后：在新手机上先登录孩子，再到这里点「导入记录」选文件即可恢复。'));
+    h('p', { class: 'note' }, '换手机之前：在这台旧手机上点「导出记录」，把文件发到自己的微信或电脑上；到新手机装好之后，先登录孩子，再到这里点「导入记录」选那个文件，星星和错题就都回来了。'));
 }
 // ---------------- 开发者后台：只有我能进（密码写在 config.json 里），客户看不到 ----------------
 // 客户家长要用的都在「家长专区」（#/zone），别往这里加
@@ -1069,6 +1084,9 @@ function weeklyText(u) {
   if (totN && okN / totN < 0.6) tips.push('答对率偏低，建议先用“单词卡片/学一学”再做题，别急着多做');
   if (!tips.length) tips.push('这周状态不错，保持节奏，可以适当鼓励一下孩子');
   lines.push('建议：' + tips.join('；') + '。');
+  // 只在「从没导出过」或「超过 30 天没导出」时提一句，别每周都说，说多了就没人看了
+  const bd = S.backupDaysAgo(u.id);
+  if (bd < 0 || bd > 30) lines.push('💾 这些记录只存在这台手机里。换手机、清缓存之前，记得先到「家长专区」导出记录存一份。');
   return lines.filter(Boolean).join('\n');
 }
 // 学习日历：某个月，哪天练习过
