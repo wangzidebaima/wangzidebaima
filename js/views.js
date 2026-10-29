@@ -90,22 +90,45 @@ const PAPERS = [
   { g: 'g7', name: '小七 · 七年级', math: 5, eng: 10 },
   { g: 'g4', name: '小四 · 四年级', math: 5, eng: 6 },
 ];
+// 一份英语卷子里嵌了哪几段听力二维码（顺序跟 docx 里二维码的排列一致）
+// 规律：单元卷 = 该单元的第 3、4 段；期中 = s1-1 + u3-1；期末 = s1-1 + u2-1 + u7-1
+function hearsOf(key) {
+  const m = /^(g\d)-eng-(\d+|mid|fin)$/.exec(key); if (!m) return [];
+  const g = m[1], n = m[2];
+  const c = (k) => g + 'l-' + k;
+  if (n === 'mid') return [c('s1-1'), c('u3-1')];
+  if (n === 'fin') return [c('s1-1'), c('u2-1'), c('u7-1')];
+  const i = Number(n);
+  const u = (g === 'g7' && i <= 3) ? 's' + i : 'u' + (g === 'g7' ? i - 3 : i);
+  return [c(u + '-3'), c(u + '-4')];
+}
 export function papersPage() {
   if (!parentOk()) { nav('#/login'); return; }
   setTheme(null);
   const dl = (f, t) => h('a', { class: 'chip', href: 'papers/' + f + '.docx', download: f + '.docx' }, t);
+  const keys = (n) => Array.from({ length: n }, (_, i) => [String(i + 1), `第 ${i + 1} 单元`]).concat([['mid', '期中'], ['fin', '期末']]);
+  // 英语：下载按钮后面跟一个小耳机，点它直接在手机上放这段听力
+  const engItem = (g, k, label) => {
+    const ids = hearsOf(`${g}-eng-${k}`);
+    return h('span', { class: 'pgroup' }, dl(`${g}-eng-${k}`, label),
+      ...ids.map((id, i) => h('a', { class: 'chip hear', href: '#/hear/' + id, title: '点开直接听，不用扫码' }, '🎧' + (ids.length > 1 ? (i + 1) : ''))));
+  };
   const blocks = PAPERS.map(x => h('section', { style: 'margin:14px 0' },
     h('h2', { class: 'sh' }, x.name),
-    [['math', '📐 数学'], ['eng', '🔤 英语']].map(([sb, t]) => h('div', { style: 'margin:8px 0' },
-      h('b', {}, t),
-      h('div', { class: 'chips', style: 'margin-top:6px' },
-        Array.from({ length: x[sb] }, (_, i) => dl(`${x.g}-${sb}-${i + 1}`, `第 ${i + 1} 单元`)),
-        dl(`${x.g}-${sb}-mid`, '期中'), dl(`${x.g}-${sb}-fin`, '期末'))))));
+    h('div', { style: 'margin:8px 0' }, h('b', {}, '📐 数学'),
+      h('div', { class: 'chips', style: 'margin-top:6px' }, keys(x.math).map(([k, t]) => dl(`${x.g}-math-${k}`, t)))),
+    h('div', { style: 'margin:8px 0' }, h('b', {}, '🔤 英语'),
+      h('div', { class: 'chips', style: 'margin-top:6px' }, keys(x.eng).map(([k, t]) => engItem(x.g, k, t))))));
   mount(page('试卷下载', [
+    h('div', { class: 'tipbox' },
+      h('b', {}, '🎧 英语卷子带听力'),
+      h('p', {}, '卷子上有二维码，扫一下就能听，每段读两遍。'),
+      h('p', { class: 'warn' }, '⚠️ 请用手机自带的「相机」扫，不要用微信里的「扫一扫」——微信里听不到声音。'),
+      h('p', {}, '嫌扫码麻烦的话：直接在下面点 🎧，手机上就能放给孩子听，不用扫。')),
     h('p', { class: 'note' }, '点一下下载 Word 文件，用电脑打开打印。手机上点开会先下载，需要用 WPS 之类的打开。'),
     ...blocks,
     h('p', { class: 'note' }, '语文没有做试卷；叶子（二年级）也没有试卷。想让孩子在手机上做题，用「单元小测」更快。'),
-  ], { back: '#/parent' }));
+  ], { back: ses('kp_zone', '__kpZone') ? '#/zone' : '#/parent' }));
 }
 // ---------------- 一个孩子的卡片：导出备份 / 导入备份 / 发金币 ----------------
 // 家长专区（家长自己进来）和开发者后台（#/parent，只有我能进）共用同一份，别写两遍

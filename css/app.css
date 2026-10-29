@@ -269,6 +269,16 @@ html[data-fs="1"] body { zoom: 1.12; } html[data-fs="2"] body { zoom: 1.25; }
 .instl.hi{color:var(--accent);font-weight:700}
 .instl.hi::after{content:' 🔴';font-size:11px;vertical-align:2px}
 .ins .steps li{margin:6px 0;line-height:1.6}
+
+/* 试卷下载：顶部那条「英语卷子带听力」的提醒 */
+.tipbox{background:var(--star-soft);border-radius:14px;padding:12px 14px;margin:10px 0;line-height:1.75}
+.tipbox b{display:block;font-size:15px;margin-bottom:4px}
+.tipbox p{margin:2px 0;font-size:14px;color:var(--muted)}
+.tipbox p.warn{color:var(--bad);font-weight:600;margin-top:6px}
+/* 一个单元的下载按钮 + 它自己的听力小耳机，别让它们被挤到两行去 */
+.pgroup{display:inline-flex;align-items:center;gap:5px;flex:none}
+.pgroup .chip.hear{background:var(--accent-soft);color:var(--accent);padding:3px 9px;font-weight:600}
+.pgroup .chip.hear:active{filter:brightness(.94)}
 .okbox{background:#e6f7e6;border-radius:12px;padding:10px}
 
 .soonbox{text-align:center;background:var(--accent-soft);border-radius:16px;padding:18px;margin:12px 0}
