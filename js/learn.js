@@ -3,8 +3,10 @@ import { h, toast, playSay, slug, stopAllSound } from './ui.js';
 import * as S from './store.js';
 import { X, user, mount, page } from './views.js';
 import { loadBook } from './english.js';
+import { ginfo } from './grades.js';
 
-const bookOf = (u) => (u.grade && /七/.test(u.grade)) ? '7' : '4';
+// 年级 → 用哪本单词书，见 js/grades.js（二年级不开英语，配了 words:'' 就会走兜底）
+const bookOf = (u) => (ginfo(u) && ginfo(u).words) || '4';
 const sayText = (en) => en.replace(/\([^)]*\)/g, '').replace(/\s*\/.*$/, '').replace(/\.\.\./g, '').replace(/[?.]+$/, '').trim();
 const shuf = (a) => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
 const learned = (uid, book) => { const p = S.P(uid); p.learn = p.learn || {}; return (p.learn[book] = p.learn[book] || {}); };

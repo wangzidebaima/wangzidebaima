@@ -5,6 +5,7 @@ import * as S from './store.js';
 import { gradeQuestion, answerText, userText, isAnswered } from './grade.js';
 import { RANDOM, makeSession } from './mathgen.js';
 import { recReady, startRec, micErrText } from './speech.js';
+import { GRADES, engUnit, PAPER_HEARS } from './grades.js';
 
 export const X = { cfg: null, lib: null, vocab: {}, audio: new Set(), sets: {}, ipa: {} };
 const app = () => document.getElementById('app');
@@ -86,20 +87,21 @@ function askPassword() {
   setTimeout(() => inp.focus(), 50);
 }
 // ---------------- 试卷下载：Word 文件放在 papers/ 里，家长点一下下载打印 ----------------
-const PAPERS = [
-  { g: 'g7', name: '小七 · 七年级', math: 5, eng: 10 },
-  { g: 'g4', name: '小四 · 四年级', math: 5, eng: 6 },
-];
-// 一份英语卷子里嵌了哪几段听力二维码（顺序跟 docx 里二维码的排列一致）
-// 规律：单元卷 = 该单元的第 3、4 段；期中 = s1-1 + u3-1；期末 = s1-1 + u2-1 + u7-1
+// 哪些年级有卷子、各有几份，见 js/grades.js。年级名直接用「七年级」——试卷页对外开放，
+// 游客也能进，不能再把孩子的名字挂上去
+const PAPERS = Object.entries(GRADES).filter(([, v]) => v.papers)
+  .map(([g, v]) => ({ g, name: v.name, math: v.papers.math, eng: v.papers.eng })).reverse();
+// 一份英语卷子里嵌了哪几段听力二维码：优先用卷子里真实印的值（见 js/grades.js 的 PAPER_HEARS），
+// 表里没有的（比如新年级的卷子）才按规则推，推出来的必须跑 tools/check_data.py 验证
 function hearsOf(key) {
+  if (PAPER_HEARS[key]) return PAPER_HEARS[key];
   const m = /^(g\d)-eng-(\d+|mid|fin)$/.exec(key); if (!m) return [];
   const g = m[1], n = m[2];
   const c = (k) => g + 'l-' + k;
-  if (n === 'mid') return [c('s1-1'), c('u3-1')];
-  if (n === 'fin') return [c('s1-1'), c('u2-1'), c('u7-1')];
+  if (n === 'mid') return [c('u1-1'), c('u3-1')];
+  if (n === 'fin') return [c('u1-1'), c('u3-1'), c('u6-1')];
   const i = Number(n);
-  const u = (g === 'g7' && i <= 3) ? 's' + i : 'u' + (g === 'g7' ? i - 3 : i);
+  const u = engUnit(g, i);
   return [c(u + '-3'), c(u + '-4')];
 }
 // 下载之后告诉家长：下到哪了、去哪儿找、用什么打开。手机上点了下载常常一点反应都没有，
@@ -1364,7 +1366,7 @@ export async function speak(id) {
     // 顺序：先听 → 再录 → 听自己的 → 最后打卡（以前打卡在上面，孩子还没读就能点）
     mount(page(set.title, [h('ol', { class: 'steps' }, set.steps.map(t => h('li', {}, t))), tip,
       h('h2', { class: 'sh' }, '本单元句子（🔊 听 · 🎤 录 · ▶️ 听自己）'), h('div', { class: 'list' }, sents),
-      h('h2', { class: 'sh' }, `${set.plan.length} 天打卡`), h('div', { class: 'list' }, days)], { back: '#/s/' + (set.id.startsWith('g7') ? 'g7speaking' : 'g4speaking') }));
+      h('h2', { class: 'sh' }, `${set.plan.length} 天打卡`), h('div', { class: 'list' }, days)], { back: '#/s/' + ((GRADES[set.id.slice(0, 2)] || {}).speak || 'g4speaking') }));
   };
   render();
 }

@@ -3,9 +3,11 @@ import { h, toast, playScript, stopScript } from './ui.js';
 import * as S from './store.js';
 import { user, mount, page, cap } from './views.js';
 
+import { ginfo, gcode } from './grades.js';
+
 const D = {};
-// 四年级 → cnw4，二年级 → cnw2
-export const kindOf = (u) => (u.grade && /二/.test(u.grade)) ? 'cnw2' : 'cnw4';
+// 年级 → 用哪本词语表，见 js/grades.js。年级没配过词表的先按四年级的给，不让孩子打开是个空页
+export const kindOf = (u) => (ginfo(u) && ginfo(u).cnw) || 'cnw4';
 async function load(k) {
   if (!D[k]) { const r = await fetch(`data/cn${k.replace('cnw', 'words')}.json`); if (!r.ok) throw new Error('词表加载失败'); D[k] = await r.json(); }
   return D[k];
@@ -88,5 +90,5 @@ export async function cnWords(only) {
     const ls = [...new Set(x.items.map(i => i.l))];
     return [h('h2', { class: 'sh' }, x.name), ...ls.map(l => h('div', {}, h('p', { class: 'note' }, l), h('div', { class: 'chips' }, x.items.filter(i => i.l === l).map(i => h('button', { type: 'button', class: 'chipb', onclick: () => say(i.w) }, '🔊 ' + i.w)))))];
   });
-  mount(page('词语表', [h('p', { class: 'note' }, '点一个词，听手机读。' + (chosen.length ? '（只显示你选的单元）' : '')), ...blocks], { back: only ? '#/unit/' + (KIND === 'cnw2' ? 'g2' : 'g4') + 'chinese/' + (KIND === 'cnw2' ? only.replace('W', 'W') : only) : '#/rand/' + KIND }));
+  mount(page('词语表', [h('p', { class: 'note' }, '点一个词，听手机读。' + (chosen.length ? '（只显示你选的单元）' : '')), ...blocks], { back: only ? '#/unit/' + gcode(u) + 'chinese/' + only : '#/rand/' + KIND }));
 }
