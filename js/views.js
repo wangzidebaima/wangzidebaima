@@ -733,6 +733,36 @@ function vocabNode(str) {
 
 // ---------------- 答题引擎 ----------------
 const mathish = (q) => !q.plain && (q.type === 'math' || String(q.id).startsWith('r-'));
+// 题目配图：SVG 以字符串形式内嵌在 JSON 里（不走外部图片文件，离线缓存和备份导入导出自动跟着走）。
+// 内嵌前必须净化：数据来自外部，要挡住 on* 事件、外链引用和非 SVG 标签。
+const SVG_TAGS = { svg: 1, g: 1, defs: 1, symbol: 1, use: 1, title: 1, desc: 1, style: 1, path: 1, circle: 1, ellipse: 1, rect: 1, line: 1, polyline: 1, polygon: 1, text: 1, tspan: 1, marker: 1, lineargradient: 1, radialgradient: 1, stop: 1, clippath: 1, mask: 1, pattern: 1 };
+function safeSvg(src) {
+  const raw = String(src == null ? '' : src);
+  if (!raw.trim() || raw.length > 24000) return '';
+  let doc;
+  try { doc = new DOMParser().parseFromString(raw, 'image/svg+xml'); } catch (e) { return ''; }
+  if (!doc || doc.getElementsByTagName('parsererror').length) return '';
+  const root = doc.documentElement;
+  if (!root || String(root.tagName).toLowerCase() !== 'svg') return '';
+  const sweep = (el) => {
+    for (const a of [...el.attributes]) {
+      const n = a.name.toLowerCase();
+      if (n.startsWith('on')) { el.removeAttribute(a.name); continue; }
+      if ((n === 'href' || n === 'xlink:href') && !String(a.value).trim().startsWith('#')) el.removeAttribute(a.name);
+    }
+  };
+  (function walk(el) {
+    sweep(el);
+    for (const c of [...el.children]) {
+      if (!SVG_TAGS[String(c.tagName).toLowerCase()]) { c.remove(); continue; }
+      walk(c);
+    }
+  })(root);
+  if (!root.getAttribute('viewBox')) return '';
+  root.removeAttribute('width'); root.removeAttribute('height');
+  root.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+  return root.outerHTML;
+}
 const stemHtml = (q) => (mathish(q) ? mathHtml(q.stem) : esc(q.stem));
 const speakRow = (q) => h('div', { class: 'speakrow' },
   q.say ? h('button', { type: 'button', class: 'spk', onclick: () => playSay(q.sayKey, q.say, X.audio) }, '🔊 听发音') : null,
@@ -749,11 +779,16 @@ function ctxDetails(meta) {
 function renderQ(q, no, ans, update) {
   const box = h('article', { class: 'q', id: 'q-' + q.id });
   const setA = (v) => { ans[q.id] = v; update(); };
-  const head = (html) => h('div', { class: 'stem' }, h('span', { class: 'no' }, no), h('div', { class: 'qt', html }));
+  const head = (html) => h('div', { class: 'stem' }, h('span', { class: 'no' }, no),
+    h('div', { class: 'qt', html: html + (q.img ? '<div class="qimg">' + safeSvg(q.img) + '</div>' : '') }));
   if (q.type === 'choice') {
     box.append(head(stemHtml(q)));
     if (q.say || q.bold) box.append(speakRow(q));
-    const btns = q.options.map((t, k) => h('button', { type: 'button', class: 'opt', onclick: () => { btns.forEach((x, j) => x.classList.toggle('on', j === k)); setA('ABCD'[k]); } }, h('b', {}, 'ABCD'[k]), h('span', {}, t)));
+    const btns = q.options.map((t, k) => h('button', { type: 'button', class: 'opt' + ((q.optImgs && q.optImgs[k]) ? ' hasimg' : ''), onclick: () => { btns.forEach((x, j) => x.classList.toggle('on', j === k)); setA('ABCD'[k]); } },
+      h('b', {}, 'ABCD'[k]),
+      (q.optImgs && q.optImgs[k])
+        ? h('span', { class: 'ob' }, t ? h('em', {}, t) : null, h('span', { class: 'oi', html: safeSvg(q.optImgs[k]) }))
+        : h('span', {}, t)));
     box.append(h('div', { class: 'opts' }, btns));
   } else if (q.type === 'tf') {
     box.append(head(esc(q.stem)));
@@ -761,6 +796,7 @@ function renderQ(q, no, ans, update) {
     const bs = [mk('T', '对  T'), mk('F', '错  F')];
     box.append(h('div', { class: 'opts two' }, bs));
   } else if (q.type === 'fill') {
+    if (q.img) box.append(h('div', { class: 'qimg wide', html: safeSvg(q.img) }));
     if (q.hint) box.append(h('span', { class: 'pill' }, q.hint));
     if (q.say || q.bold) box.append(speakRow(q));
     const parts = q.stem.split(/_{2,}/), inputs = [];
@@ -1409,7 +1445,12 @@ function renderPrint(set, withAns, backHref, toggleHref) {
     sec.questions.forEach(q => {
       no++;
       const b = h('div', { class: 'pq' });
-      if (q.type === 'choice') b.append(h('p', {}, `${no}. ${q.stem}`), h('p', { class: 'po' }, q.options.map((t, k) => `${'ABCD'[k]}. ${t}`).join('     ')));
+      if (q.img) b.append(h('div', { class: 'pqimg', html: safeSvg(q.img) }));
+      if (q.type === 'choice') {
+        b.append(h('p', {}, `${no}. ${q.stem}`));
+        if (q.optImgs) b.append(h('div', { class: 'poimg' }, q.options.map((t, k) => h('div', { class: 'poi' }, h('b', {}, `${'ABCD'[k]}.`), h('span', { html: safeSvg(q.optImgs[k] || '') })))));
+        b.append(h('p', { class: 'po' }, q.options.map((t, k) => `${'ABCD'[k]}. ${t}`).join('     ')));
+      }
       else if (q.type === 'tf') b.append(h('p', {}, `( )  ${no}. ${q.stem}`));
       else if (q.type === 'fill') b.append(h('p', {}, `${no}. ${q.stem}`, q.hint ? `  （${q.hint}）` : ''));
       else if (q.type === 'short') b.append(h('p', {}, `${no}. ${q.stem}`), h('p', {}, 'Answer: ______________________________'));

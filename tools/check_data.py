@@ -14,8 +14,12 @@ load = lambda p: json.load(open(p, encoding='utf-8'))
 
 KINDS = {'essay', 'reading', 'cn', 'listening', 'speaking', 'math'}
 BAD_WHY = re.compile(r'选\s*[ABCD]|第\s*[一二三四五六七八九]?\s*(?:个)?选项|[ABCD]\s*项')
+# 裸序数词：不自动判错（容易误伤），列出来人工复核。
+# 历史豁免：Command 022 / 026 里的「第二个」不是指选项。
+NUM_WHY = re.compile(r'第\s*[一二三四五六七八九十]\s*个')
 
 ERR = collections.Counter()
+REVIEW = collections.defaultdict(list)
 BAD = collections.defaultdict(list)
 
 
@@ -107,6 +111,8 @@ def main():
                     if BAD_WHY.search(why):
                         ERR['解析里提到了选项位置（会被打乱）'] += 1
                         BAD['解析里提到了选项位置（会被打乱）'].append('%s/%s %s' % (sid, qid, why[:40]))
+                    if NUM_WHY.search(why):
+                        REVIEW['解析里有裸序数词，请确认是不是在指选项'].append('%s/%s 「%s」' % (sid, qid, why[:60]))
                     if len(why) <= 6:
                         ERR['选择题解析过短（只写了位置）'] += 1
                         BAD['选择题解析过短（只写了位置）'].append('%s/%s 「%s」' % (sid, qid, why))
@@ -192,15 +198,21 @@ def main():
     print('\n' + '=' * 46)
     if not ERR:
         print('内容体检通过，没发现问题')
-        return 0
     for k, v in ERR.most_common():
         print('\n[%d] %s' % (v, k))
         for x in BAD[k][:8]:
             print('    · %s' % x)
         if len(BAD[k]) > 8:
             print('    …… 还有 %d 条' % (len(BAD[k]) - 8))
+    if REVIEW:
+        print('\n' + '=' * 46)
+        print('以下不判错，只列出来给人工看一眼（正则判断内容容易误伤）：')
+        for k, xs in REVIEW.items():
+            print('\n[待确认 %d] %s' % (len(xs), k))
+            for x in xs[:8]:
+                print('    · %s' % x)
     print('\n共 %d 类问题' % len(ERR))
-    return 1
+    return 1 if ERR else 0
 
 
 if __name__ == '__main__':
