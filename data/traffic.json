@@ -1,12 +1,7 @@
 {
- "at": "2026-10-29 15:38",
+ "at": "2026-10-30 03:12",
  "repo": "wangzidebaima/wangzidebaima",
  "days": [
-  {
-   "d": "2026-10-14",
-   "v": 0,
-   "u": 0
-  },
   {
    "d": "2026-10-15",
    "v": 0,
@@ -71,43 +66,48 @@
    "d": "2026-10-27",
    "v": 25,
    "u": 1
+  },
+  {
+   "d": "2026-10-28",
+   "v": 145,
+   "u": 1
   }
  ],
  "sum": {
-  "v": 83,
+  "v": 228,
   "u": 1
  },
  "paths": [
   {
-   "p": "/wangzidebaima/wangzidebaima/upload",
-   "v": 20,
-   "u": 1
-  },
-  {
    "p": "/wangzidebaima/wangzidebaima",
-   "v": 18,
-   "u": 1
-  },
-  {
-   "p": "/wangzidebaima/wangzidebaima/upload/main",
-   "v": 17,
-   "u": 1
-  },
-  {
-   "p": "/wangzidebaima/wangzidebaima/tree/main/data",
-   "v": 7,
+   "v": 40,
    "u": 1
   },
   {
    "p": "/wangzidebaima/wangzidebaima/tree/main",
-   "v": 4,
+   "v": 37,
+   "u": 1
+  },
+  {
+   "p": "/wangzidebaima/wangzidebaima/upload",
+   "v": 29,
+   "u": 1
+  },
+  {
+   "p": "/wangzidebaima/wangzidebaima/upload/main",
+   "v": 23,
+   "u": 1
+  },
+  {
+   "p": "/wangzidebaima/wangzidebaima/tree/main/data",
+   "v": 8,
    "u": 1
   }
  ],
  "refs": [],
  "all": {
-  "v": 83,
-  "days": 14,
+  "v": 228,
+  "days": 15,
   "since": "2026-10-14"
  }
 }
