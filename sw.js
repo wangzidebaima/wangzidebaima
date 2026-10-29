@@ -78,7 +78,13 @@ async function swr(req, e) {
       const old = cached ? await c.match(req, { ignoreSearch: true }) : null;
       if (old) {
         const [a, b] = await Promise.all([old.arrayBuffer(), r.clone().arrayBuffer()]);
-        if (!same(a, b)) { await c.put(req, r.clone()); notify(req.url); if (req.url.endsWith('library.json')) precacheSets(c); }
+        if (!same(a, b)) {
+          await c.put(req, r.clone());
+          // 题集/词表这类数据文件变了不要弹提示：下次打开自然就是新的，
+          // 弹了反而打断孩子做题（内容更新动辄上百个文件，会一直弹）
+          if (!/\/data\//.test(req.url)) notify(req.url);
+          if (req.url.endsWith('library.json')) precacheSets(c);
+        }
       } else await c.put(req, r.clone());
     }
     return r;
