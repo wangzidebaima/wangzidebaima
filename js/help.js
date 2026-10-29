@@ -2,6 +2,7 @@
 import { h, toast, zhVoices, getVoicePref } from './ui.js';
 import * as S from './store.js';
 import { X, mount, page, nav } from './views.js';
+import { WECHAT, copyWechat } from './parent.js';
 
 // ---------------- 报错记录：只存本机、只留 10 条，出问题时才有用 ----------------
 const ERR_KEY = 'kp_err';
@@ -279,5 +280,10 @@ export function helpPage() {
       h('p', { class: 'note' }, '读得怪、没声音，多半是这台手机用来念书的声音不合适。点进去一个个试听，挑顺耳的点「用这个」——三个孩子共用这一个选择。'),
       h('button', { type: 'button', class: 'btn primary wide', onclick: () => nav('#/voice') }, '去换朗读声音')),
     diagSection(),
+    h('section', { class: 'faq' },
+      h('h2', { class: 'sh' }, '💬 联系我'),
+      h('p', { class: 'note' }, '上面的办法都试过还是不行，或者发现题目里有错、想加点新内容，直接加我微信说一声，看到就回。'),
+      h('button', { type: 'button', class: 'btn primary wide', onclick: copyWechat }, `复制微信号：${WECHAT}`),
+      h('p', { class: 'note', style: 'margin-top:8px' }, '复制好以后，打开微信 → 右上角「+」→ 添加朋友 → 粘贴，就能找到我。')),
   ], { back }));
 }
