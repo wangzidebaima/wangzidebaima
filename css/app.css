@@ -280,6 +280,21 @@ html[data-fs="1"] body { zoom: 1.12; } html[data-fs="2"] body { zoom: 1.25; }
 .pgroup .chip.hear{background:var(--accent-soft);color:var(--accent);padding:3px 9px;font-weight:600}
 .pgroup .chip.hear:active{filter:brightness(.94)}
 .okbox{background:#e6f7e6;border-radius:12px;padding:10px}
+/* 点了下载之后的回话：下到哪了、去哪儿找、用什么打开（不给提示家长以为没反应） */
+.dltip{background:var(--good-soft);border-radius:14px;padding:12px 14px;margin:10px 0;line-height:1.75}
+.dltip b{display:block;font-size:15px;margin-bottom:4px}
+.dltip p{margin:2px 0;font-size:14px;color:var(--muted)}
+.dltip p.find{margin-left:2px}
+.dltip p.warn{color:var(--bad);font-weight:600;margin-top:6px}
+/* 试卷页「第一次来？先下这两份」 */
+.trybox{background:var(--accent-soft);border-radius:14px;padding:12px 14px;margin:12px 0}
+.trybox .lab{font-size:14px;color:var(--muted);margin:0 0 8px}
+/* 登录页那块「34 份试卷」的大入口 */
+.paper-cta{display:flex;align-items:center;gap:12px;background:var(--surface);border-radius:var(--r);padding:14px 16px;box-shadow:var(--shadow);margin:18px 0 4px;text-decoration:none;color:inherit}
+.paper-cta .ico{font-size:26px;flex:none}
+.paper-cta b{display:block;font-size:16px}
+.paper-cta small{display:block;color:var(--muted);font-size:13px;margin-top:2px;line-height:1.5}
+.paper-cta .go{margin-left:auto;font-size:22px;color:var(--muted);flex:none}
 
 .soonbox{text-align:center;background:var(--accent-soft);border-radius:16px;padding:18px;margin:12px 0}
 .soonbox .logo{font-size:40px}

@@ -102,10 +102,29 @@ function hearsOf(key) {
   const u = (g === 'g7' && i <= 3) ? 's' + i : 'u' + (g === 'g7' ? i - 3 : i);
   return [c(u + '-3'), c(u + '-4')];
 }
+// 下载之后告诉家长：下到哪了、去哪儿找、用什么打开。手机上点了下载常常一点反应都没有，
+// 不给个回话家长根本不知道成了没有，所以这里必须说清楚。
+function dlTipBox() {
+  const box = h('div', { class: 'dltip', style: 'display:none' });
+  const say = (name) => {
+    box.replaceChildren(
+      h('b', {}, `⬇️ ${name} 已经开始下载`),
+      h('p', {}, '下载好的文件去这里找：'),
+      h('p', { class: 'find' }, '安卓手机：「文件管理」→「下载」（也叫 Download）文件夹；浏览器右上角的「⋮」里也有「下载」'),
+      h('p', { class: 'find' }, '苹果手机：屏幕下方（或右上角）的下载图标 ↓，打开就是刚下的文件'),
+      h('p', { class: 'find' }, '电脑上：浏览器右上角的下载列表，或「下载」文件夹'),
+      h('p', { class: 'warn' }, '手机上要用 WPS 之类的办公软件才打得开；要打印的话，传到电脑上更省事。'),
+      h('button', { type: 'button', class: 'btn ghost wide', style: 'margin-top:8px', onclick: () => { box.style.display = 'none'; } }, '知道了'));
+    box.style.display = '';
+    box.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  };
+  return { box, say };
+}
 export function papersPage() {
-  if (!parentOk()) { nav('#/login'); return; }
   setTheme(null);
-  const dl = (f, t) => h('a', { class: 'chip', href: 'papers/' + f + '.docx', download: f + '.docx' }, t);
+  const tip = dlTipBox();
+  const dl = (f, t) => h('a', { class: 'chip', href: 'papers/' + f + '.docx', download: f + '.docx',
+    onclick: () => { tip.say(f + '.docx'); toast(`正在下载 ${f}.docx…`); } }, t);
   const keys = (n) => Array.from({ length: n }, (_, i) => [String(i + 1), `第 ${i + 1} 单元`]).concat([['mid', '期中'], ['fin', '期末']]);
   // 英语：下载按钮后面跟一个小耳机，点它直接在手机上放这段听力
   const engItem = (g, k, label) => {
@@ -119,16 +138,26 @@ export function papersPage() {
       h('div', { class: 'chips', style: 'margin-top:6px' }, keys(x.math).map(([k, t]) => dl(`${x.g}-math-${k}`, t)))),
     h('div', { style: 'margin:8px 0' }, h('b', {}, '🔤 英语'),
       h('div', { class: 'chips', style: 'margin-top:6px' }, keys(x.eng).map(([k, t]) => engItem(x.g, k, t))))));
+  const backTo = ses('kp_zone', '__kpZone') ? '#/zone' : (S.getUser() ? '#/' : '#/login');
   mount(page('试卷下载', [
     h('div', { class: 'tipbox' },
-      h('b', {}, '🎧 英语卷子带听力'),
-      h('p', {}, '卷子上有二维码，扫一下就能听，每段读两遍。'),
-      h('p', { class: 'warn' }, '⚠️ 请用手机自带的「相机」扫，不要用微信里的「扫一扫」——微信里听不到声音。'),
-      h('p', {}, '嫌扫码麻烦的话：直接在下面点 🎧，手机上就能放给孩子听，不用扫。')),
-    h('p', { class: 'note' }, '点一下下载 Word 文件，用电脑打开打印。手机上点开会先下载，需要用 WPS 之类的打开。'),
+      h('b', {}, '📄 34 份卷子，免费下载打印'),
+      h('p', {}, '四年级 15 份 · 七年级 19 份；数学 + 英语；每个单元一份，另外还有期中、期末。'),
+      h('p', {}, '都带答案。英语卷带听力：卷子上有二维码，扫一下就能听，每段读两遍。'),
+      h('p', { class: 'warn' }, '⚠️ 听力请用手机自带的「相机」扫，不要用微信里的「扫一扫」——微信里听不到声音。'),
+      h('p', {}, '嫌扫码麻烦：下面每份英语卷后面都有 🎧，点一下手机上直接放给孩子听，不用扫。')),
+    h('div', { class: 'trybox' },
+      h('p', { class: 'lab' }, '第一次来？先下这两份看看合不合适'),
+      h('div', { class: 'chips' }, dl('g4-math-1', '📐 四年级数学 第1单元'), dl('g7-math-1', '📐 七年级数学 第1单元'))),
+    tip.box,
+    h('p', { class: 'note' }, '点一下就下载 Word 文件（.docx），用电脑打开打印最省事；手机上要用 WPS 之类的打开。'),
     ...blocks,
-    h('p', { class: 'note' }, '语文没有做试卷；叶子（二年级）也没有试卷。想让孩子在手机上做题，用「单元小测」更快。'),
-  ], { back: ses('kp_zone', '__kpZone') ? '#/zone' : '#/parent' }));
+    h('p', { class: 'note' }, '语文没有做试卷；二年级也没有。想让孩子在手机上做题，用「单元小测」更快。'),
+    h('div', { class: 'tipbox' },
+      h('b', {}, '💡 卷子打印着做，平时在手机上练'),
+      h('p', {}, '手机上做完自动判卷，错的进错题本，第二天自动再练一遍。'),
+      h('a', { class: 'link instl', href: '#/install' }, '📲 怎么把它装到手机桌面？')),
+  ], { back: backTo }));
 }
 // ---------------- 一个孩子的卡片：导出备份 / 导入备份 / 发金币 ----------------
 // 家长专区（家长自己进来）和开发者后台（#/parent，只有我能进）共用同一份，别写两遍
@@ -350,6 +379,10 @@ export function login() {
   mount(h('div', { class: 'login' }, h('div', { class: 'logo' }, '⭐'), h('h1', {}, X.cfg.appName),
     h('p', { class: 'sub' }, '输入你的年级（比如：七年级），开始今天的练习'), inp,
     h('button', { class: 'btn primary wide', onclick: enter }, '开始'), msg,
+    h('a', { class: 'paper-cta', href: '#/papers' }, h('span', { class: 'ico' }, '📄'),
+      h('span', {}, h('b', {}, '34 份试卷，免费下载打印'),
+        h('small', {}, '四年级 / 七年级 · 数学 + 英语 · 带答案，英语卷含听力')),
+      h('span', { class: 'go' }, '›')),
     h('a', { class: 'link instl', href: '#/install' }, '📲 怎么把它装到手机桌面？'),
     h('a', { class: 'link instl', href: '#/help' }, '🩺 打不开 / 没声音 / 更新不了？看这里'),
     h('a', { class: 'link instl' + (S.pinHas() ? '' : ' hi'), href: '#/zone' }, S.pinHas() ? '👨‍👩‍👧 家长专区：发金币 / 备份 / 打印试卷' : '👨‍👩‍👧 家长专区：还没设密码，点这里先设一个')));

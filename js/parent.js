@@ -12,6 +12,14 @@ import { X, nav, page, mount, setTheme, kidCard, voiceNow, askText } from './vie
 
 const SES = 'kp_zone';   // 这次打开已经进过专区（关掉页面就失效）
 
+// 家长碰到处理不了的问题（打不开、没声音、想加新内容），加这个微信找我
+export const WECHAT = 'steel441000';
+export function copyWechat() {
+  const done = (ok) => toast(ok ? `微信号已复制：${WECHAT}，去微信里加我就行` : `复制没成功，微信号是 ${WECHAT}，手动记一下`);
+  try { navigator.clipboard.writeText(WECHAT).then(() => done(true), () => done(false)); }
+  catch (e) { done(false); }
+}
+
 export const zoneOk = () => { try { return sessionStorage.getItem(SES) === '1'; } catch (e) { return !!window.__kpZone; } };
 const mark = () => { try { sessionStorage.setItem(SES, '1'); } catch (e) { window.__kpZone = true; } };
 const unmark = () => { try { sessionStorage.removeItem(SES); } catch (e) { window.__kpZone = false; } };
@@ -104,7 +112,10 @@ export function zoneHome() {
       h('a', { class: 'row', href: '#/papers' }, h('div', {}, h('b', {}, '📄 试卷下载'),
         h('small', {}, '数学、英语各单元 + 期中期末，打印给孩子做')), h('span', { class: 'chip' }, '去下载')),
       h('a', { class: 'row', href: '#/help' }, h('div', {}, h('b', {}, '🩺 遇到问题'),
-        h('small', {}, '没声音、打不开、更新不了怎么办')), h('span', { class: 'chip' }, '看看'))),
+        h('small', {}, '没声音、打不开、更新不了怎么办')), h('span', { class: 'chip' }, '看看')),
+      h('button', { type: 'button', class: 'row', style: 'width:100%;border:0;text-align:left;cursor:pointer', onclick: copyWechat },
+        h('div', {}, h('b', {}, '💬 联系我'), h('small', {}, `处理不了的问题，加微信 ${WECHAT} 找我，看到就回`)),
+        h('span', { class: 'chip' }, '复制微信号'))),
     h('button', { class: 'btn ghost wide', style: 'margin-top:14px', onclick: () => setPinPage(true) }, '修改家长密码'),
     h('button', { class: 'btn ghost wide', style: 'margin-top:10px', onclick: () => { unmark(); nav('#/login'); } }, '退出'),
   ], { back: '#/login' }));
