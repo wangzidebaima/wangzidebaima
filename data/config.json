@@ -113,7 +113,8 @@
     "g4reading",
     "g4speaking",
     "g4listening",
-    "g4chinese"
+    "g4chinese",
+    "g4sci"
    ],
    "random": [
     "math4",
@@ -167,7 +168,8 @@
    "publishers": {
     "math": "北师大版",
     "eng": "人教版 PEP",
-    "cn": "统编版"
+    "cn": "统编版",
+    "sci": "苏教版"
    },
    "modes": {
     "chaptype": "live",
