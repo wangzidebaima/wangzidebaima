@@ -4,7 +4,7 @@ import * as B from './badges.js';
 import * as S from './store.js';
 import { gradeQuestion, answerText, userText, isAnswered } from './grade.js';
 import { RANDOM, makeSession } from './mathgen.js';
-import { srReady, listen, similarity, errText } from './speech.js';
+import { recReady, startRec, micErrText } from './speech.js';
 
 export const X = { cfg: null, lib: null, vocab: {}, audio: new Set(), sets: {}, ipa: {} };
 const app = () => document.getElementById('app');
@@ -1258,60 +1258,84 @@ export function records() {
 }
 
 // ---------------- 口语打卡 ----------------
-// 支持语音识别的浏览器上：点 🎤 读一句，读对了才能打卡（不再是点一下就给星）。
-// 不支持（微信内置浏览器、老系统）：完全按原来的方式，打卡按钮直接可用。跟读检查常开，
-// 听不出来会自动退回老方式，所以不需要家长去开/关它。
+// 点 🎤 录下自己读的句子，放一遍给自己听，听过了才能打卡。
+// 录音是纯本地的：不联网、不上传、退出页面就没了，所以微信里、断网、老手机都能用。
+// 手机没有麦克风或者没给权限，就自动退回原来的直接打卡，绝不把孩子卡在这儿。
 export async function speak(id) {
   const set = await loadSet(id), u = user();
-  const readOk = new Set();     // 本次打开页面里读对了第几句
-  let busy = false;
-  // 识别彻底用不了（没麦克风权限、没网、浏览器骗人）就自动退回原来的打卡方式，
-  // 绝不能因为设备问题把孩子卡在这儿打不了卡
-  let srBroken = false, srFails = 0;   // 连续听不清 3 次也放行，别让孩子一直卡在识别上
+  const readOk = new Set();     // 本次打开页面里录过第几句
+  let busy = false, micBroken = false;
+  const canRec = () => recReady() && !micBroken;
   const render = () => {
     const p = S.P(u.id);
-    const needRead = srReady() && !srBroken;
-    const listenOne = async (s, i, btn, info, box) => {
-      if (busy) return;
-      busy = true;
-      const old = btn.textContent;
-      btn.disabled = true; btn.textContent = '🎤 正在听…';
-      info.className = 'srres'; info.textContent = '请大声读这句话（读完自己会停）';
-      const r = await listen(s.en, { lang: /[\u4e00-\u9fa5]/.test(s.en) ? 'zh-CN' : 'en-US' });
-      busy = false; btn.disabled = false; btn.textContent = old;
-      if (r.err) {
-        if (['not-allowed', 'service-not-allowed', 'audio-capture', 'network', 'unsupported', 'start'].includes(r.err)) {
-          srBroken = true; toast('这台手机听不了朗读，已换成原来的打卡方式', 4000); render(); return;
+    // 录一句：点一下开录，再点一下停，录完就能放给自己听
+    const recOne = async (s, i, btn, info, infoTxt, box, bars, play) => {
+      // 第二次点（这一句正在录）：停掉，出回放
+      if (box._rec) {
+        clearTimeout(box._timer);
+        const r = await box._rec.stop();
+        box._rec = null;
+        busy = false;
+        box.classList.remove('recing');
+        bars.style.display = 'none';
+        btn.textContent = '🔄 重录';
+        if (!r.blob.size) {
+          info.className = 'srres bad';
+          infoTxt.textContent = '没录到声音，离手机近一点，再录一次';
+          return;
         }
-        if (++srFails >= 3) { srBroken = true; toast('这台手机老是听不清，先换成原来的打卡方式', 4000); render(); return; }
-        info.className = 'srres bad'; info.textContent = errText(r.err); return;
-      }
-      const sc = similarity(s.en, r.heard);
-      if (sc.pct >= 60) {
         readOk.add(i);
-        box.classList.add('ok');
+        if (box._url) URL.revokeObjectURL(box._url);
+        box._url = r.url;
+        const sec = Math.max(1, Math.round(r.ms / 1000));
+        const a = new Audio(r.url);
+        a.onended = () => { play.textContent = `▶️ 再听一遍（${sec} 秒）`; };
+        play.textContent = `▶️ 听我读的（${sec} 秒）`;
+        play.style.display = '';
+        play.onclick = () => { a.play(); };
         info.className = 'srres good';
-        info.textContent = `读对 ${sc.hit}/${sc.total} 个词 · ${sc.pct >= 85 ? '很棒！' : '通过了'}（我听到：${r.heard}）`;
-        sync();   // 读对了一句，下面的打卡按钮可以点亮了
-      } else {
-        info.className = 'srres bad';
-        info.textContent = `我听到：「${r.heard}」只对上 ${sc.hit}/${sc.total} 个词，再大声读一次`;
+        infoTxt.textContent = '录好啦，点 ▶️ 听一遍自己读的';
+        sync();
+        return;
       }
+      if (busy) return;
+      let ctl;
+      try {
+        ctl = await startRec({
+          onLevel: (v) => bars.childNodes.forEach((b, k) => {
+            const t = Date.now() / 100;
+            b.style.transform = `scaleY(${1 + v * (1.6 + Math.sin(t + k * 1.3) * 1.2)})`;
+          }),
+          onTick: (sec) => { btn.textContent = `⏹ 停（已录 ${sec} 秒）`; },
+          maxMs: 20000,
+        });
+      } catch (e) {
+        micBroken = true; toast(micErrText(e), 4500); render(); return;
+      }
+      box._rec = ctl; busy = true;
+      box.classList.add('recing');
+      bars.style.display = '';
+      info.className = 'srres recing';
+      infoTxt.textContent = '正在录…大声读出来，读完点一下就停';
+      btn.textContent = '⏹ 停（已录 0 秒）';
+      play.style.display = 'none';
+      // 录够 15 秒自己停，免得孩子忘按
+      box._timer = setTimeout(() => recOne(s, i, btn, info, infoTxt, box, bars, play), 15000);
     };
-    // 打卡按钮：还没读对一句时是灰的，点它会提示先去读
+    // 打卡按钮：还没录过一句时是灰的，点它会提示先去录
     const dayBtns = [];
-    const canCheck = () => !needRead || readOk.size > 0;
+    const canCheck = () => !canRec() || readOk.size > 0;
     const sync = () => dayBtns.forEach(b => {
       const ok = canCheck();
       b.className = 'btn small ' + (ok ? 'primary' : 'primary off');
-      b.textContent = ok ? '今天读完了 ✅' : '先读一句 🎤';
+      b.textContent = ok ? '今天读完了 ✅' : '先录一句 🎤';
     });
     const days = set.plan.map(d => {
       const key = `${set.id}-d${d.day}`, done = !!p.speak[key];
       return h('div', { class: 'day' + (done ? ' done' : '') }, h('div', {}, h('b', {}, `Day ${d.day}  ${d.title}`), h('small', {}, `${d.task} · ${d.minutes} 分钟`)),
         done ? h('span', { class: 'chip ok' }, '⭐ 已打卡') : (() => {
           const b = h('button', { class: 'btn small primary', onclick: () => {
-            if (!canCheck()) { toast('先点一句的 🎤 读给手机听，读对了就能打卡', 3500); return; }
+            if (!canCheck()) { toast('先点一句的 🎤 录给手机听，录完就能打卡', 3500); return; }
             const r = S.award(u.id, { id: 'speak-' + key }, 'bank', set.id, cap()); S.markSpeak(u.id, key);
             toast(r === 'new' ? (readOk.size ? `⭐ +1  读了 ${readOk.size} 句，今天的口语完成啦！` : '⭐ +1  今天的口语完成啦！') : '已打卡');
             render();
@@ -1321,21 +1345,25 @@ export async function speak(id) {
     });
     sync();
     const sents = set.sentences.map((s, i) => {
-      const info = h('small', { class: 'srres' }, '');
+      const bars = h('span', { class: 'recbars', style: 'display:none' }, [0, 1, 2, 3, 4].map(() => h('i', {})));
+      const infoTxt = h('span', {}, '');
+      const info = h('small', { class: 'srres' }, bars, infoTxt);
+      const play = h('button', { class: 'btn small ghost', style: 'display:none' }, '▶️ 听我读的');
       const box = h('div', { class: 'sent' + (readOk.has(i) ? ' ok' : '') },
         h('div', {}, h('b', {}, s.en), h('small', {}, s.zh)),
         h('div', { class: 'chips' },
           h('button', { class: 'btn small ghost', onclick: () => playSay('sp-' + slug(s.en), s.en, X.audio) }, '🔊'),
-          needRead ? h('button', { class: 'btn small ghost', onclick: (e) => listenOne(s, i, e.currentTarget, info, box) }, '🎤 读这句') : null),
+          canRec() ? h('button', { class: 'btn small ghost', onclick: (e) => recOne(s, i, e.currentTarget, info, infoTxt, box, bars, play) }, '🎤 录这句') : null,
+          play),
         info);
       return box;
     });
-    const tip = needRead
-      ? h('p', { class: 'note' }, '先点 🔊 听，再点 🎤 读给手机听：读对一句，下面才能打卡。只在点 🎤 时才听，录音不会保存。')
-      : h('p', { class: 'note' }, srBroken ? '这台手机听不了朗读（可能没给麦克风权限，或者没联网），已经换成原来的打卡方式，不影响打卡。' : '这台手机的浏览器听不懂说话（微信里打开就会这样），按原来的方式打卡就行。想用跟读检查，用系统浏览器（Safari / Chrome）打开。');
-    // 顺序：先听 → 再读 → 最后打卡（以前打卡在上面，孩子还没读就能点）
+    const tip = canRec()
+      ? h('p', { class: 'note' }, '先点 🔊 听老师怎么读，再点 🎤 录下自己读的，然后点 ▶️ 听一遍。录过一句，下面才能打卡。录音只留在这台手机上，不会上传。')
+      : h('p', { class: 'note' }, micBroken ? '这台手机用不了麦克风，已经换成原来的打卡方式，不影响打卡。' : '这台手机录不了音（在微信里打开就会这样），按原来的方式打卡就行。想听自己读的，用手机自带的浏览器（Safari / Chrome）打开。');
+    // 顺序：先听 → 再录 → 听自己的 → 最后打卡（以前打卡在上面，孩子还没读就能点）
     mount(page(set.title, [h('ol', { class: 'steps' }, set.steps.map(t => h('li', {}, t))), tip,
-      h('h2', { class: 'sh' }, '本单元句子（点 🔊 听，点 🎤 读给手机听）'), h('div', { class: 'list' }, sents),
+      h('h2', { class: 'sh' }, '本单元句子（🔊 听 · 🎤 录 · ▶️ 听自己）'), h('div', { class: 'list' }, sents),
       h('h2', { class: 'sh' }, `${set.plan.length} 天打卡`), h('div', { class: 'list' }, days)], { back: '#/s/' + (set.id.startsWith('g7') ? 'g7speaking' : 'g4speaking') }));
   };
   render();
