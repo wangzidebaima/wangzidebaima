@@ -3978,12 +3978,211 @@
     }
    ]
   },
-  {
+    {
    "id": "g7bio",
    "title": "生物练习",
    "icon": "🧬",
    "desc": "按课本的课，每课一练",
-   "sets": []
+   "sets": [
+    {
+     "id": "g7bio-1",
+     "file": "sets/g7bio-1.json",
+     "title": "第1课 观察周边环境中的生物",
+     "subtitle": "第一单元 生物和细胞",
+     "kind": "cn",
+     "unit": "BI1",
+     "count": 10
+    },
+    {
+     "id": "g7bio-2",
+     "file": "sets/g7bio-2.json",
+     "title": "第2课 生物的特征",
+     "subtitle": "第一单元 生物和细胞",
+     "kind": "cn",
+     "unit": "BI1",
+     "count": 10
+    },
+    {
+     "id": "g7bio-3",
+     "file": "sets/g7bio-3.json",
+     "title": "第3课 学习使用显微镜",
+     "subtitle": "第一单元 生物和细胞",
+     "kind": "cn",
+     "unit": "BI1",
+     "count": 10
+    },
+    {
+     "id": "g7bio-4",
+     "file": "sets/g7bio-4.json",
+     "title": "第4课 植物细胞",
+     "subtitle": "第一单元 生物和细胞",
+     "kind": "cn",
+     "unit": "BI1",
+     "count": 10
+    },
+    {
+     "id": "g7bio-5",
+     "file": "sets/g7bio-5.json",
+     "title": "第5课 动物细胞",
+     "subtitle": "第一单元 生物和细胞",
+     "kind": "cn",
+     "unit": "BI1",
+     "count": 10
+    },
+    {
+     "id": "g7bio-6",
+     "file": "sets/g7bio-6.json",
+     "title": "第6课 细胞的生活",
+     "subtitle": "第一单元 生物和细胞",
+     "kind": "cn",
+     "unit": "BI1",
+     "count": 10
+    },
+    {
+     "id": "g7bio-7",
+     "file": "sets/g7bio-7.json",
+     "title": "第7课 细胞通过分裂产生新细胞",
+     "subtitle": "第一单元 生物和细胞",
+     "kind": "cn",
+     "unit": "BI1",
+     "count": 10
+    },
+    {
+     "id": "g7bio-8",
+     "file": "sets/g7bio-8.json",
+     "title": "第8课 动物体的结构层次",
+     "subtitle": "第一单元 生物和细胞",
+     "kind": "cn",
+     "unit": "BI1",
+     "count": 10
+    },
+    {
+     "id": "g7bio-9",
+     "file": "sets/g7bio-9.json",
+     "title": "第9课 植物体的结构层次",
+     "subtitle": "第一单元 生物和细胞",
+     "kind": "cn",
+     "unit": "BI1",
+     "count": 10
+    },
+    {
+     "id": "g7bio-10",
+     "file": "sets/g7bio-10.json",
+     "title": "第10课 单细胞生物",
+     "subtitle": "第一单元 生物和细胞",
+     "kind": "cn",
+     "unit": "BI1",
+     "count": 10
+    },
+    {
+     "id": "g7bio-11",
+     "file": "sets/g7bio-11.json",
+     "title": "第11课 藻类、苔藓植物和蕨类植物",
+     "subtitle": "第二单元 多种多样的生物",
+     "kind": "cn",
+     "unit": "BI2",
+     "count": 10
+    },
+    {
+     "id": "g7bio-12",
+     "file": "sets/g7bio-12.json",
+     "title": "第12课 种子植物",
+     "subtitle": "第二单元 多种多样的生物",
+     "kind": "cn",
+     "unit": "BI2",
+     "count": 10
+    },
+    {
+     "id": "g7bio-13",
+     "file": "sets/g7bio-13.json",
+     "title": "第13课 无脊椎动物",
+     "subtitle": "第二单元 多种多样的生物",
+     "kind": "cn",
+     "unit": "BI2",
+     "count": 10
+    },
+    {
+     "id": "g7bio-14",
+     "file": "sets/g7bio-14.json",
+     "title": "第14课 脊椎动物·鱼",
+     "subtitle": "第二单元 多种多样的生物",
+     "kind": "cn",
+     "unit": "BI2",
+     "count": 10
+    },
+    {
+     "id": "g7bio-15",
+     "file": "sets/g7bio-15.json",
+     "title": "第15课 脊椎动物·两栖动物和爬行动物",
+     "subtitle": "第二单元 多种多样的生物",
+     "kind": "cn",
+     "unit": "BI2",
+     "count": 10
+    },
+    {
+     "id": "g7bio-16",
+     "file": "sets/g7bio-16.json",
+     "title": "第16课 脊椎动物·鸟和哺乳动物",
+     "subtitle": "第二单元 多种多样的生物",
+     "kind": "cn",
+     "unit": "BI2",
+     "count": 10
+    },
+    {
+     "id": "g7bio-17",
+     "file": "sets/g7bio-17.json",
+     "title": "第17课 微生物的分布",
+     "subtitle": "第二单元 多种多样的生物",
+     "kind": "cn",
+     "unit": "BI2",
+     "count": 10
+    },
+    {
+     "id": "g7bio-18",
+     "file": "sets/g7bio-18.json",
+     "title": "第18课 细菌",
+     "subtitle": "第二单元 多种多样的生物",
+     "kind": "cn",
+     "unit": "BI2",
+     "count": 10
+    },
+    {
+     "id": "g7bio-19",
+     "file": "sets/g7bio-19.json",
+     "title": "第19课 真菌",
+     "subtitle": "第二单元 多种多样的生物",
+     "kind": "cn",
+     "unit": "BI2",
+     "count": 10
+    },
+    {
+     "id": "g7bio-20",
+     "file": "sets/g7bio-20.json",
+     "title": "第20课 病毒",
+     "subtitle": "第二单元 多种多样的生物",
+     "kind": "cn",
+     "unit": "BI2",
+     "count": 10
+    },
+    {
+     "id": "g7bio-21",
+     "file": "sets/g7bio-21.json",
+     "title": "第21课 尝试对生物进行分类",
+     "subtitle": "第二单元 多种多样的生物",
+     "kind": "cn",
+     "unit": "BI2",
+     "count": 10
+    },
+    {
+     "id": "g7bio-22",
+     "file": "sets/g7bio-22.json",
+     "title": "第22课 从种到界",
+     "subtitle": "第二单元 多种多样的生物",
+     "kind": "cn",
+     "unit": "BI2",
+     "count": 10
+    }
+   ]
   }
 ,
   {
