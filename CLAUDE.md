@@ -114,7 +114,7 @@ essay(120)  reading(110)  cn(98)  listening(64)  speaking(16)  math(7)
 
 ```jsonc
 // 选择题
-{"id":"g7hist-u1-a-A1","type":"choice",
+{"id":"g7hist-1-A1","type":"choice",
  "stem":"我国境内目前已确认的最早古人类是？",
  "options":["元谋人","北京人","山顶洞人","蓝田人"],
  "answer":"A",                 // 只能是 A/B/C/D 单个字母
@@ -122,14 +122,14 @@ essay(120)  reading(110)  cn(98)  listening(64)  speaking(16)  math(7)
  "pts":2}
 
 // 判断题
-{"id":"g7hist-u1-a-B1","type":"tf",
+{"id":"g7hist-1-B1","type":"tf",
  "stem":"北京人已经会人工取火。",
  "answer":"F",                 // 只能是 "T" 或 "F"
  "why":"课文第2课：北京人只会使用天然火，还会长时间保存火种，不会人工取火。",
  "pts":1}
 
 // 填空题 —— 注意是 answers（数组），不是 answer
-{"id":"g7hist-u1-a-C1","type":"fill",
+{"id":"g7hist-1-C1","type":"fill",
  "stem":"距今约____万年的____人，是我国境内目前已确认的最早古人类。",
  "answers":[["170"],["元谋"]],     // 每个空一组，组内是可选答案
  "why":"170 万年、元谋人。",
@@ -139,14 +139,14 @@ essay(120)  reading(110)  cn(98)  listening(64)  speaking(16)  math(7)
 {"id":"g7m1-1","type":"math","stem":"(−8)+5","answer":"-6","why":"……","kindName":"加减法","pts":1}
 
 // 排序题（第二批新增）—— items 按【正确顺序】写，显示顺序由 App 自动打乱
-{"id":"g7bio-u3-a-D1","type":"order",
+{"id":"g7bio-3-D1","type":"order",
  "stem":"把食物经过消化道的顺序排一排",
  "items":["口腔","胃","小肠","大肠"],   // 至少 4 项，按正确顺序；不要写 answer 字段
  "why":"第3课：食物依次经过口腔→胃→小肠→大肠。",
  "pts":2}
 
 // 简答自评（第二批新增）—— 孩子自己说对没对，不计星星、不进错题本
-{"id":"g7bio-u3-a-E1","type":"self",
+{"id":"g7bio-3-E1","type":"self",
  "stem":"说说为什么饭后不适合马上剧烈运动",
  "ref":"饭后血液集中在胃肠帮助消化，马上运动会让血液流向肌肉，容易肚子疼。",  // ref 和 points 至少写一个
  "points":["饭后血液要去胃肠帮忙消化","马上运动容易肚子疼"],

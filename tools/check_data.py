@@ -85,6 +85,11 @@ def main():
                 qid, t = q.get('id'), q.get('type')
                 if qid:
                     qids[qid] += 1
+                    # 题号必须「题集 id + '-' + section id + 序号」，例如 g7hist-1-A1。
+                    # 契约示例里出现过 g7hist-u1-a-A1 这种写法，照抄会让题号对不上题集。
+                    if not qid.startswith(sid + '-'):
+                        ERR['题号前缀和题集 id 不一致'] += 1
+                        BAD['题号前缀和题集 id 不一致'].append('%s/%s 应为 %s-…' % (sid, qid, sid))
                 if not q.get('stem'):
                     ERR['题目缺题干'] += 1
                     BAD['题目缺题干'].append('%s/%s' % (sid, qid))
