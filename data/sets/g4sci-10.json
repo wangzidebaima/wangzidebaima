@@ -23,7 +23,8 @@
      ],
      "answer": "D",
      "why": "灯泡亮说明电流通过了盒子，从1到2一路畅通，所以盒里1和2是连通的。",
-     "pts": 2
+     "pts": 2,
+     "img": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"78\" y=\"6\" width=\"148\" height=\"64\" rx=\"4\" fill=\"#f7f3e8\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"126\" y=\"30\" font-size=\"13\" fill=\"#555\">暗 盒</text><text x=\"104\" y=\"48\" font-size=\"11\" fill=\"#999\">里面怎么连，看不到</text><circle cx=\"112\" cy=\"70\" r=\"6\" fill=\"#ddd\" stroke=\"#333\" stroke-width=\"2\"/><circle cx=\"152\" cy=\"70\" r=\"6\" fill=\"#ddd\" stroke=\"#333\" stroke-width=\"2\"/><circle cx=\"192\" cy=\"70\" r=\"6\" fill=\"#ddd\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"109\" y=\"64\" font-size=\"10\" fill=\"#777\">1</text><text x=\"149\" y=\"64\" font-size=\"10\" fill=\"#777\">2</text><text x=\"189\" y=\"64\" font-size=\"10\" fill=\"#777\">3</text><rect x=\"30\" y=\"108\" width=\"60\" height=\"22\" rx=\"2\" fill=\"#f2c14e\" stroke=\"#333\" stroke-width=\"2\"/><rect x=\"24\" y=\"113\" width=\"6\" height=\"12\" fill=\"#333\"/><text x=\"40\" y=\"124\" font-size=\"12\" fill=\"#333\">+</text><text x=\"76\" y=\"124\" font-size=\"12\" fill=\"#333\">-</text><circle cx=\"252\" cy=\"74\" r=\"16\" fill=\"#fff6cf\" stroke=\"#333\" stroke-width=\"2\"/><path d=\"M244 66 L260 82 M260 66 L244 82\" stroke=\"#333\" stroke-width=\"1.6\" fill=\"none\"/><rect x=\"246\" y=\"90\" width=\"12\" height=\"14\" fill=\"#ddd\" stroke=\"#333\" stroke-width=\"2\"/><path d=\"M246 94 H258 M246 98 H258\" stroke=\"#333\" stroke-width=\"1\" fill=\"none\"/><rect x=\"250\" y=\"104\" width=\"4\" height=\"5\" fill=\"#333\"/><path d=\"M27 119 V92 H112 V76\" stroke=\"#333\" stroke-width=\"2.5\" fill=\"none\"/><path d=\"M152 76 V96 H246\" stroke=\"#333\" stroke-width=\"2.5\" fill=\"none\"/><path d=\"M252 109 V136 H90 V130\" stroke=\"#333\" stroke-width=\"2.5\" fill=\"none\"/></svg>"
     },
     {
      "id": "g4sci-10-A2",

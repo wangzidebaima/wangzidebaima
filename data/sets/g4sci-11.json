@@ -23,7 +23,8 @@
      ],
      "answer": "A",
      "why": "开关合上电路接通，打开电路断开，所以开关用来控制电路的通和断。",
-     "pts": 2
+     "pts": 2,
+     "img": "<svg viewBox=\"0 0 300 150\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"20\" y=\"100\" width=\"64\" height=\"24\" rx=\"2\" fill=\"#f2c14e\" stroke=\"#333\" stroke-width=\"2\"/><rect x=\"14\" y=\"105\" width=\"6\" height=\"14\" fill=\"#333\"/><text x=\"32\" y=\"117\" font-size=\"12\" fill=\"#333\">+</text><text x=\"70\" y=\"117\" font-size=\"12\" fill=\"#333\">-</text><circle cx=\"252\" cy=\"52\" r=\"17\" fill=\"#fff6cf\" stroke=\"#333\" stroke-width=\"2\"/><path d=\"M243 43 L261 61 M261 43 L243 61\" stroke=\"#333\" stroke-width=\"1.6\" fill=\"none\"/><rect x=\"246\" y=\"69\" width=\"12\" height=\"14\" fill=\"#ddd\" stroke=\"#333\" stroke-width=\"2\"/><path d=\"M246 73 H258 M246 77 H258\" stroke=\"#333\" stroke-width=\"1\" fill=\"none\"/><rect x=\"250\" y=\"83\" width=\"4\" height=\"5\" fill=\"#333\"/><path d=\"M27 112 H12 V30 H132\" stroke=\"#333\" stroke-width=\"2.5\" fill=\"none\"/><path d=\"M196 30 H252 V35\" stroke=\"#333\" stroke-width=\"2.5\" fill=\"none\"/><circle cx=\"136\" cy=\"30\" r=\"5\" fill=\"#333\"/><circle cx=\"192\" cy=\"30\" r=\"5\" fill=\"#333\"/><path d=\"M140 28 L191 27\" stroke=\"#333\" stroke-width=\"3.5\" fill=\"none\"/><path d=\"M189 26 L192 12\" stroke=\"#333\" stroke-width=\"2\" fill=\"none\"/><text x=\"146\" y=\"44\" font-size=\"11\" fill=\"#666\">开关（合上）</text><path d=\"M252 88 V112 H84\" stroke=\"#333\" stroke-width=\"2.5\" fill=\"none\"/></svg>"
     },
     {
      "id": "g4sci-11-A2",
