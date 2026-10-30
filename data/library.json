@@ -4185,28 +4185,445 @@
    ]
   }
 ,
-  {
+    {
    "id": "g7hist",
    "title": "历史练习",
    "icon": "📜",
    "desc": "按课本的课，每课一练",
-   "sets": []
+   "sets": [
+    {
+     "id": "g7hist-1",
+     "file": "sets/g7hist-1.json",
+     "title": "第1课 远古时期的人类活动",
+     "subtitle": "第一单元 史前时期：原始社会与中华文明的起源",
+     "kind": "cn",
+     "unit": "HI1",
+     "count": 10
+    },
+    {
+     "id": "g7hist-2",
+     "file": "sets/g7hist-2.json",
+     "title": "第2课 原始农业与史前社会",
+     "subtitle": "第一单元 史前时期：原始社会与中华文明的起源",
+     "kind": "cn",
+     "unit": "HI1",
+     "count": 10
+    },
+    {
+     "id": "g7hist-3",
+     "file": "sets/g7hist-3.json",
+     "title": "第3课 中华文明的起源",
+     "subtitle": "第一单元 史前时期：原始社会与中华文明的起源",
+     "kind": "cn",
+     "unit": "HI1",
+     "count": 10
+    },
+    {
+     "id": "g7hist-4",
+     "file": "sets/g7hist-4.json",
+     "title": "第4课 夏商西周王朝的更替",
+     "subtitle": "第二单元 夏商周时期：奴隶制王朝的更替和向封建社会的过渡",
+     "kind": "cn",
+     "unit": "HI2",
+     "count": 10
+    },
+    {
+     "id": "g7hist-5",
+     "file": "sets/g7hist-5.json",
+     "title": "第5课 动荡变化中的春秋时期",
+     "subtitle": "第二单元 夏商周时期：奴隶制王朝的更替和向封建社会的过渡",
+     "kind": "cn",
+     "unit": "HI2",
+     "count": 10
+    },
+    {
+     "id": "g7hist-6",
+     "file": "sets/g7hist-6.json",
+     "title": "第6课 战国时期的社会变革",
+     "subtitle": "第二单元 夏商周时期：奴隶制王朝的更替和向封建社会的过渡",
+     "kind": "cn",
+     "unit": "HI2",
+     "count": 10
+    },
+    {
+     "id": "g7hist-7",
+     "file": "sets/g7hist-7.json",
+     "title": "第7课 百家争鸣",
+     "subtitle": "第二单元 夏商周时期：奴隶制王朝的更替和向封建社会的过渡",
+     "kind": "cn",
+     "unit": "HI2",
+     "count": 10
+    },
+    {
+     "id": "g7hist-8",
+     "file": "sets/g7hist-8.json",
+     "title": "第8课 夏商周时期的科技与文化",
+     "subtitle": "第二单元 夏商周时期：奴隶制王朝的更替和向封建社会的过渡",
+     "kind": "cn",
+     "unit": "HI2",
+     "count": 10
+    },
+    {
+     "id": "g7hist-9",
+     "file": "sets/g7hist-9.json",
+     "title": "第9课 秦统一中国",
+     "subtitle": "第三单元 秦汉时期：统一多民族封建国家的建立和巩固",
+     "kind": "cn",
+     "unit": "HI3",
+     "count": 10
+    },
+    {
+     "id": "g7hist-10",
+     "file": "sets/g7hist-10.json",
+     "title": "第10课 秦末农民大起义",
+     "subtitle": "第三单元 秦汉时期：统一多民族封建国家的建立和巩固",
+     "kind": "cn",
+     "unit": "HI3",
+     "count": 10
+    },
+    {
+     "id": "g7hist-11",
+     "file": "sets/g7hist-11.json",
+     "title": "第11课 西汉建立和“文景之治”",
+     "subtitle": "第三单元 秦汉时期：统一多民族封建国家的建立和巩固",
+     "kind": "cn",
+     "unit": "HI3",
+     "count": 10
+    },
+    {
+     "id": "g7hist-12",
+     "file": "sets/g7hist-12.json",
+     "title": "第12课 大一统王朝的巩固",
+     "subtitle": "第三单元 秦汉时期：统一多民族封建国家的建立和巩固",
+     "kind": "cn",
+     "unit": "HI3",
+     "count": 10
+    },
+    {
+     "id": "g7hist-13",
+     "file": "sets/g7hist-13.json",
+     "title": "第13课 东汉的兴衰",
+     "subtitle": "第三单元 秦汉时期：统一多民族封建国家的建立和巩固",
+     "kind": "cn",
+     "unit": "HI3",
+     "count": 10
+    },
+    {
+     "id": "g7hist-14",
+     "file": "sets/g7hist-14.json",
+     "title": "第14课 丝绸之路的开通与经营西域",
+     "subtitle": "第三单元 秦汉时期：统一多民族封建国家的建立和巩固",
+     "kind": "cn",
+     "unit": "HI3",
+     "count": 10
+    },
+    {
+     "id": "g7hist-15",
+     "file": "sets/g7hist-15.json",
+     "title": "第15课 秦汉时期的科技与文化",
+     "subtitle": "第三单元 秦汉时期：统一多民族封建国家的建立和巩固",
+     "kind": "cn",
+     "unit": "HI3",
+     "count": 10
+    },
+    {
+     "id": "g7hist-16",
+     "file": "sets/g7hist-16.json",
+     "title": "第16课 三国鼎立",
+     "subtitle": "第四单元 三国两晋南北朝时期：政权分立与民族交融",
+     "kind": "cn",
+     "unit": "HI4",
+     "count": 10
+    },
+    {
+     "id": "g7hist-17",
+     "file": "sets/g7hist-17.json",
+     "title": "第17课 西晋的短暂统一和北方各族的内迁",
+     "subtitle": "第四单元 三国两晋南北朝时期：政权分立与民族交融",
+     "kind": "cn",
+     "unit": "HI4",
+     "count": 10
+    },
+    {
+     "id": "g7hist-18",
+     "file": "sets/g7hist-18.json",
+     "title": "第18课 东晋南朝政治和江南地区开发",
+     "subtitle": "第四单元 三国两晋南北朝时期：政权分立与民族交融",
+     "kind": "cn",
+     "unit": "HI4",
+     "count": 10
+    },
+    {
+     "id": "g7hist-19",
+     "file": "sets/g7hist-19.json",
+     "title": "第19课 北朝政治和北方民族大交融",
+     "subtitle": "第四单元 三国两晋南北朝时期：政权分立与民族交融",
+     "kind": "cn",
+     "unit": "HI4",
+     "count": 10
+    },
+    {
+     "id": "g7hist-20",
+     "file": "sets/g7hist-20.json",
+     "title": "第20课 三国两晋南北朝时期的科技与文化",
+     "subtitle": "第四单元 三国两晋南北朝时期：政权分立与民族交融",
+     "kind": "cn",
+     "unit": "HI4",
+     "count": 10
+    }
+   ]
   }
 ,
-  {
+    {
    "id": "g7poli",
    "title": "道法练习",
    "icon": "⚖️",
    "desc": "按课本的课，每课一练",
-   "sets": []
+   "sets": [
+    {
+     "id": "g7poli-1",
+     "file": "sets/g7poli-1.json",
+     "title": "第1课 开启初中生活",
+     "subtitle": "第一单元 少年有梦",
+     "kind": "cn",
+     "unit": "PO1",
+     "count": 10
+    },
+    {
+     "id": "g7poli-2",
+     "file": "sets/g7poli-2.json",
+     "title": "第2课 正确认识自我",
+     "subtitle": "第一单元 少年有梦",
+     "kind": "cn",
+     "unit": "PO1",
+     "count": 10
+    },
+    {
+     "id": "g7poli-3",
+     "file": "sets/g7poli-3.json",
+     "title": "第3课 梦想始于当下",
+     "subtitle": "第一单元 少年有梦",
+     "kind": "cn",
+     "unit": "PO1",
+     "count": 10
+    },
+    {
+     "id": "g7poli-4",
+     "file": "sets/g7poli-4.json",
+     "title": "第4课 幸福和睦的家庭",
+     "subtitle": "第二单元 成长的时空",
+     "kind": "cn",
+     "unit": "PO2",
+     "count": 10
+    },
+    {
+     "id": "g7poli-5",
+     "file": "sets/g7poli-5.json",
+     "title": "第5课 和谐的师生关系",
+     "subtitle": "第二单元 成长的时空",
+     "kind": "cn",
+     "unit": "PO2",
+     "count": 10
+    },
+    {
+     "id": "g7poli-6",
+     "file": "sets/g7poli-6.json",
+     "title": "第6课 友谊之树常青",
+     "subtitle": "第二单元 成长的时空",
+     "kind": "cn",
+     "unit": "PO2",
+     "count": 10
+    },
+    {
+     "id": "g7poli-7",
+     "file": "sets/g7poli-7.json",
+     "title": "第7课 在集体中成长",
+     "subtitle": "第二单元 成长的时空",
+     "kind": "cn",
+     "unit": "PO2",
+     "count": 10
+    },
+    {
+     "id": "g7poli-8",
+     "file": "sets/g7poli-8.json",
+     "title": "第8课 生命可贵",
+     "subtitle": "第三单元 珍爱我们的生命",
+     "kind": "cn",
+     "unit": "PO3",
+     "count": 10
+    },
+    {
+     "id": "g7poli-9",
+     "file": "sets/g7poli-9.json",
+     "title": "第9课 守护生命安全",
+     "subtitle": "第三单元 珍爱我们的生命",
+     "kind": "cn",
+     "unit": "PO3",
+     "count": 10
+    },
+    {
+     "id": "g7poli-10",
+     "file": "sets/g7poli-10.json",
+     "title": "第10课 保持身心健康",
+     "subtitle": "第三单元 珍爱我们的生命",
+     "kind": "cn",
+     "unit": "PO3",
+     "count": 10
+    },
+    {
+     "id": "g7poli-11",
+     "file": "sets/g7poli-11.json",
+     "title": "第11课 确立人生目标",
+     "subtitle": "第四单元 追求美好人生",
+     "kind": "cn",
+     "unit": "PO4",
+     "count": 10
+    },
+    {
+     "id": "g7poli-12",
+     "file": "sets/g7poli-12.json",
+     "title": "第12课 端正人生态度",
+     "subtitle": "第四单元 追求美好人生",
+     "kind": "cn",
+     "unit": "PO4",
+     "count": 10
+    },
+    {
+     "id": "g7poli-13",
+     "file": "sets/g7poli-13.json",
+     "title": "第13课 实现人生价值",
+     "subtitle": "第四单元 追求美好人生",
+     "kind": "cn",
+     "unit": "PO4",
+     "count": 10
+    }
+   ]
   }
 ,
-  {
+    {
    "id": "g7geo",
    "title": "地理练习",
    "icon": "🌏",
    "desc": "按课本的节，每节一练",
-   "sets": []
+   "sets": [
+    {
+     "id": "g7geo-1",
+     "file": "sets/g7geo-1.json",
+     "title": "第1节 地球在宇宙中",
+     "subtitle": "第一章 地球的宇宙环境",
+     "kind": "cn",
+     "unit": "GE1",
+     "count": 10
+    },
+    {
+     "id": "g7geo-2",
+     "file": "sets/g7geo-2.json",
+     "title": "第2节 太空探索",
+     "subtitle": "第一章 地球的宇宙环境",
+     "kind": "cn",
+     "unit": "GE1",
+     "count": 10
+    },
+    {
+     "id": "g7geo-3",
+     "file": "sets/g7geo-3.json",
+     "title": "第3节 地球和地球仪",
+     "subtitle": "第二章 地球和地图",
+     "kind": "cn",
+     "unit": "GE2",
+     "count": 10
+    },
+    {
+     "id": "g7geo-4",
+     "file": "sets/g7geo-4.json",
+     "title": "第4节 地图",
+     "subtitle": "第二章 地球和地图",
+     "kind": "cn",
+     "unit": "GE2",
+     "count": 10
+    },
+    {
+     "id": "g7geo-5",
+     "file": "sets/g7geo-5.json",
+     "title": "第5节 地形图",
+     "subtitle": "第二章 地球和地图",
+     "kind": "cn",
+     "unit": "GE2",
+     "count": 10
+    },
+    {
+     "id": "g7geo-6",
+     "file": "sets/g7geo-6.json",
+     "title": "第6节 疆域和行政区划",
+     "subtitle": "第三章 中国的疆域和人口",
+     "kind": "cn",
+     "unit": "GE3",
+     "count": 10
+    },
+    {
+     "id": "g7geo-7",
+     "file": "sets/g7geo-7.json",
+     "title": "第7节 众多的人口",
+     "subtitle": "第三章 中国的疆域和人口",
+     "kind": "cn",
+     "unit": "GE3",
+     "count": 10
+    },
+    {
+     "id": "g7geo-8",
+     "file": "sets/g7geo-8.json",
+     "title": "第8节 统一的多民族国家",
+     "subtitle": "第三章 中国的疆域和人口",
+     "kind": "cn",
+     "unit": "GE3",
+     "count": 10
+    },
+    {
+     "id": "g7geo-9",
+     "file": "sets/g7geo-9.json",
+     "title": "第9节 地势与地形",
+     "subtitle": "第四章 中国的自然环境",
+     "kind": "cn",
+     "unit": "GE4",
+     "count": 10
+    },
+    {
+     "id": "g7geo-10",
+     "file": "sets/g7geo-10.json",
+     "title": "第10节 气温和降水",
+     "subtitle": "第四章 中国的自然环境",
+     "kind": "cn",
+     "unit": "GE4",
+     "count": 10
+    },
+    {
+     "id": "g7geo-11",
+     "file": "sets/g7geo-11.json",
+     "title": "第11节 天气与气候",
+     "subtitle": "第四章 中国的自然环境",
+     "kind": "cn",
+     "unit": "GE4",
+     "count": 10
+    },
+    {
+     "id": "g7geo-12",
+     "file": "sets/g7geo-12.json",
+     "title": "第12节 河流和湖泊",
+     "subtitle": "第四章 中国的自然环境",
+     "kind": "cn",
+     "unit": "GE4",
+     "count": 10
+    },
+    {
+     "id": "g7geo-13",
+     "file": "sets/g7geo-13.json",
+     "title": "第13节 重要地理分界线及主要分区",
+     "subtitle": "第四章 中国的自然环境",
+     "kind": "cn",
+     "unit": "GE4",
+     "count": 10
+    }
+   ]
   }
  ],
  "unitNames": {
