@@ -79,6 +79,11 @@ export function gradeQuestion(q, a) {
       return { ok };
     }
     case 'math': return gradeMath(a, q.answer);
+    // 排序题：items 按正确顺序存，a 是孩子排出来的 items 下标序列。
+    // 只有全部排对才算对——不是苛刻，是因为半对没法进星星/错题本的二值模型。
+    case 'order': return { ok: Array.isArray(a) && Array.isArray(q.items) && a.length === q.items.length && a.every((x, i) => x === i) };
+    // 简答自评：孩子自己说对没对，结果只用来显示，不发星星也不进错题本
+    case 'self': return { ok: a === 'ok' };
   }
   return { ok: false };
 }
@@ -86,6 +91,7 @@ export function gradeQuestion(q, a) {
 export function isAnswered(q, a) {
   if (a == null) return false;
   if (q.type === 'fill') return Array.isArray(a) && q.answers.every((_, i) => a[i] && String(a[i]).trim());
+  if (q.type === 'order') return Array.isArray(a) && Array.isArray(q.items) && a.length === q.items.length;
   return String(a).trim() !== '';
 }
 
@@ -97,6 +103,9 @@ export function answerText(q) {
     case 'fill': return q.answers.map(x => x[0]).join(' ，');
     case 'short': return q.ref || q.accept[0];
     case 'math': return showMinus(q.answer);
+    // 不带序号：打印的答案卷前面已经有「1. 」，再带就变成「1. 1. 口腔」
+    case 'order': return (q.items || []).join(' → ');
+    case 'self': return q.ref || ((q.points || []).join('；') || '见解析');
   }
   return '';
 }
@@ -106,6 +115,8 @@ export function userText(q, a) {
     case 'choice': return a + '. ' + q.options['ABCD'.indexOf(a)];
     case 'tf': return a === 'T' ? '对 (T)' : '错 (F)';
     case 'fill': return (Array.isArray(a) ? a : [a]).map(x => x || '（空）').join(' ，');
+    case 'order': return Array.isArray(a) ? a.map((x, i) => `${i + 1}. ${(q.items || [])[x]}`).join(' → ') : showMinus(a);
+    case 'self': return a === 'ok' ? '自评：说对了' : '自评：还要加油';
     default: return showMinus(a);
   }
 }

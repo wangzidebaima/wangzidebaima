@@ -107,6 +107,19 @@ details.ctx summary { cursor: pointer; color: var(--accent); font-weight: 600; f
 .opt b { flex: none; width: 24px; height: 24px; border-radius: 99px; border: 1.5px solid var(--line); display: grid; place-items: center; font-size: 13px; color: var(--muted); }
 .opt.on { border-color: var(--accent); background: var(--accent-soft); } .opt.on b { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
 .pill { display: inline-block; margin: 6px 0 0 36px; font-size: 13px; color: var(--muted); background: var(--bg); border-radius: 99px; padding: 1px 11px; }
+/* 排序题：上面「排好的」点一下撤回来，下面「待选的」点一下排进去。不做拖拽——手机上拖不准 */
+.ordpick, .ordpool { display: flex; flex-direction: column; gap: 8px; margin: 10px 0 0 36px; }
+.ordpick { min-height: 50px; }
+.ordit { display: flex; align-items: center; gap: 12px; width: 100%; text-align: left; background: var(--bg); border: 1.5px solid var(--line); border-radius: 13px; padding: 11px 14px; min-height: 48px; cursor: pointer; font-size: 16.5px; }
+.ordit b { flex: none; width: 24px; height: 24px; border-radius: 99px; display: grid; place-items: center; font-size: 13px; background: var(--accent); border: 1.5px solid var(--accent); color: var(--accent-ink); }
+.ordit.on { border-color: var(--accent); background: var(--accent-soft); }
+.ordpool .ordit { border-style: dashed; }   /* 虚线 = 还没排进去的 */
+.ordit:disabled { opacity: .6; cursor: default; }
+.ordph { font-size: 14px; color: var(--muted); }
+.selfb { justify-content: center; }
+.ansdet { margin: 10px 0 0 36px; font-size: 15px; }
+.ansdet ul { margin: 8px 0; padding-left: 20px; }
+.ansdet li { margin: 4px 0; }
 .fillq { line-height: 2.3; }
 .blank { font-size: 16px; border: 0; border-bottom: 2px solid var(--line); background: var(--bg); border-radius: 8px 8px 0 0; padding: 4px 8px; outline: none; margin: 0 4px; min-height: 38px; }
 .blank:focus { border-bottom-color: var(--accent); } .blank.sel { padding: 4px 6px; border-bottom-color: var(--accent); }
@@ -144,6 +157,7 @@ body.kbopen .submitbar { display: none; }
 .rvlist { display: flex; flex-direction: column; gap: 10px; margin-top: 10px; } .rvlist.onlybad .rv.ok { display: none; }
 .rv { background: var(--surface); border-radius: var(--r); padding: 4px 14px; box-shadow: var(--shadow); border-left: 5px solid var(--good); }
 .rv.bad { border-left-color: var(--bad); }
+.rv.self { border-left-color: var(--muted); } .rv.self .mark { color: var(--muted); }
 .rv summary { display: flex; gap: 10px; align-items: center; padding: 10px 0; cursor: pointer; list-style: none; font-size: 16px; }
 .rv summary::-webkit-details-marker { display: none; }
 .mark { flex: none; font-weight: 700; width: 20px; } .rv.ok .mark { color: var(--good); } .rv.bad .mark { color: var(--bad); }

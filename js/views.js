@@ -775,6 +775,14 @@ function shuffled(set) {
 function shuffleOpts(set, rand) {
   const out = JSON.parse(JSON.stringify(set));
   out.sections.forEach(sec => sec.questions.forEach(q => {
+    // 排序题：把显示顺序算好存进 q.show（items 的下标序列）。
+    // 刷题用 Math.random（每次不一样），打印用固定种子（题目卷和答案卷必须是同一份）。
+    if (q.type === 'order' && Array.isArray(q.items) && q.items.length && !q.keepOrder) {
+      const idx = q.items.map((_, i) => i);
+      for (let i = idx.length - 1; i > 0; i--) { const j = Math.floor(rand() * (i + 1)); [idx[i], idx[j]] = [idx[j], idx[i]]; }
+      q.show = idx;
+      return;
+    }
     if (q.type !== 'choice' || !q.options || q.keepOrder) return;
     const right = q.options['ABCDEFG'.indexOf(q.answer)], opts = q.options.slice(), imgs = (q.optImgs || []).slice();
     // 选项图和选项文字必须一起打乱：optImgs 是按选项下标对位的，
@@ -916,6 +924,42 @@ function renderQ(q, no, ans, update) {
     inp.dataset.full = q.digits ? '0' : '1'; if (q.digits && /^[0-9]{1,9}$/.test(String(q.answer))) inp.dataset.len = String(String(q.answer).length);
     inp.addEventListener('click', () => keypad.open(inp, !q.digits));
     box.append(inp);
+  } else if (q.type === 'order') {
+    box.append(head(esc(q.stem)));
+    box.append(h('span', { class: 'pill' }, `点卡片，排出正确的顺序（共 ${q.items.length} 项）`));
+    // 显示顺序：优先用打乱时算好的 q.show（打印那条链路是固定种子）；没有就现打乱一次
+    // items 本身永远是正确顺序，判分只认下标序列，跟显示顺序无关
+    const pool = (Array.isArray(q.show) && q.show.length === q.items.length) ? q.show.slice() : q.items.map((_, i) => i);
+    if (!Array.isArray(q.show)) for (let i = pool.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [pool[i], pool[j]] = [pool[j], pool[i]]; }
+    // slot = 刚撤回留下的空位。不记这个的话，撤回第 2 项再点它会被追加到末尾，
+    // 想调一下中间的顺序就只能整题清空重排，孩子会觉得点得莫名其妙。
+    let picked = [], slot = -1;
+    const pickedBox = h('div', { class: 'ordpick' }), poolBox = h('div', { class: 'ordpool' });
+    const draw = () => {
+      const rest = pool.filter(ix => !picked.includes(ix));
+      pickedBox.replaceChildren(...picked.map((ix, k) => h('button', { type: 'button', class: 'ordit on', onclick: () => { slot = k; picked.splice(k, 1); setA(picked.slice()); draw(); } },
+        h('b', {}, '①②③④⑤⑥⑦⑧⑨'[k] || String(k + 1)), h('span', {}, q.items[ix]))));
+      if (!picked.length) pickedBox.append(h('span', { class: 'ordph' }, '点下面的卡片，一个一个排进来'));
+      poolBox.replaceChildren(...rest.map(ix => h('button', { type: 'button', class: 'ordit', onclick: () => {
+        const at = (slot >= 0 && slot <= picked.length) ? slot : picked.length;
+        slot = -1; picked.splice(at, 0, ix); setA(picked.slice()); draw();
+      } }, h('span', {}, q.items[ix]))));
+      resetBtn.style.display = picked.length ? '' : 'none';
+    };
+    const resetBtn = h('button', { type: 'button', class: 'btn ghost small', onclick: () => { picked = []; slot = -1; setA([]); draw(); } }, '重排');
+    draw();
+    box.append(pickedBox, poolBox, resetBtn);
+  } else if (q.type === 'self') {
+    box.append(head(esc(q.stem)));
+    box.append(h('span', { class: 'pill' }, '先自己说一遍，再点开对答案'));
+    const body = h('div', {});
+    if (Array.isArray(q.points) && q.points.length) body.append(h('ul', { class: 'pts' }, q.points.map(p => h('li', {}, p))));
+    if (q.ref) body.append(h('p', {}, q.ref));
+    box.append(h('details', { class: 'ansdet' }, h('summary', {}, '参考答案'), body));
+    const mk = (v, label) => h('button', { type: 'button', class: 'opt selfb', onclick: (e) => { bs.forEach(x => x.classList.remove('on')); e.currentTarget.classList.add('on'); setA(v); } }, label);
+    const bs = [mk('ok', '✅ 我说对了'), mk('no', '🤔 还要加油')];
+    box.append(h('div', { class: 'opts two' }, bs));
+    box.append(h('p', { class: 'note' }, '这题自己评，不算星星、也不进错题本'));
   }
   if (q._meta && (q._meta.kind === 'reading' || q._meta.kind === 'listening') && q._meta.setId) box.append(ctxDetails(q._meta));
   return box;
@@ -930,6 +974,9 @@ export function validQ(q) {
     if (q.type === 'fill') return Array.isArray(q.answers) && q.answers.length > 0 && q.answers.every(a => Array.isArray(a) && a.length);
     if (q.type === 'short') return Array.isArray(q.accept) && q.accept.length > 0;
     if (q.type === 'math') return String(q.answer || '').trim() !== '';
+    // 排序题至少 4 项，少于 4 项一次交换就蒙对了，没意义
+    if (q.type === 'order') return Array.isArray(q.items) && q.items.length >= 4 && new Set(q.items).size === q.items.length && q.items.every(t => String(t || '').trim());
+    if (q.type === 'self') return !!(String(q.ref || '').trim() || (Array.isArray(q.points) && q.points.length));
     return false;
   } catch (e) { return false; }
 }
@@ -960,7 +1007,12 @@ function runQuiz(o) {
     const g = gradeQuestion(q, ans[q.id]), meta = o.metaFor(q), { _meta, ...clean } = q;
     const r = { q, a: ans[q.id], g };
     if (String(q.id).startsWith('r-') && q.typeId) S.typeStat(o.uid, q.typeId, g.ok);
-    if (g.ok) { r.gone = S.rightWrong(o.uid, q.id); r.star = S.award(o.uid, q, meta.src, meta.sub, cap()); } else S.addWrong(o.uid, clean, meta);
+    if (q.type === 'self') {
+      // 简答自评只记孩子自己那句话，不进星星账也不进错题本。
+      // 星星和错题本是「客观做对/做错」的账，自评掺进去会把它搅浑；
+      // 更要紧的是错题本会把这题反复推给孩子重做，可它本来就没有标准答案可练。
+      r.self = true;
+    } else if (g.ok) { r.gone = S.rightWrong(o.uid, q.id); r.star = S.award(o.uid, q, meta.src, meta.sub, cap()); } else S.addWrong(o.uid, clean, meta);
     done[q.id] = r; return r;
   }
   const modeBar = o.mk ? h('div', { class: 'chips modebar' }, h('span', { class: 'lab' }, '做题方式'),
@@ -981,7 +1033,7 @@ function runQuiz(o) {
         const ok = h('button', { type: 'button', class: 'btn primary small livebtn', disabled: true, onclick: () => {
           const r = settle(q); ok.remove(); keypad.close();
           node.classList.add('locked', r.g.ok ? 'lok' : 'lbad');
-          node.querySelectorAll('.opt, input, select').forEach(x => { x.disabled = true; });
+          node.querySelectorAll('.opt, .ordit, .selfb, input, select').forEach(x => { x.disabled = true; });
           fb.replaceChildren(reviewItem(r, qs.indexOf(q) + 1)); fb.firstChild.open = true;
           update();
         } }, '确定');
@@ -995,17 +1047,20 @@ function runQuiz(o) {
     const left = qs.filter(q => !done[q.id] && !isAnswered(q, ans[q.id])).length;
     if (left && !confirm(`还有 ${left} 题没做，确定${live ? '看结果' : '交卷'}吗？没做的算错。`)) return;
     const results = qs.map(q => settle(q));
-    let newStars = 0, capped = 0, pts = 0, ptsAll = 0, okN = 0;
+    let newStars = 0, capped = 0, pts = 0, ptsAll = 0, okN = 0, selfN = 0, selfOk = 0, wrongN = 0;
     results.forEach(r => {
+      // 自评题走单独一路账：不进对错统计、不进星星、不进错题本，只告诉孩子自己评得怎么样
+      if (r.self) { selfN++; if (r.g.ok) selfOk++; return; }
       ptsAll += r.q.pts || 1;
-      if (r.g.ok) { okN++; pts += r.q.pts || 1; if (r.star === 'new') newStars++; if (r.star === 'capped') capped++; }
+      if (r.g.ok) { okN++; pts += r.q.pts || 1; if (r.star === 'new') newStars++; if (r.star === 'capped') capped++; } else wrongN++;
     });
+    const total = results.length - selfN;
     const m0 = qs.length ? o.metaFor(qs[0]) : {};
-    S.recordAttempt(o.uid, o.recId || null, { title: o.recTitle || o.title, ok: okN, total: qs.length, pts, ptsAll, stars: newStars, src: m0.src, sub: m0.sub, kind: m0.kind, secs: Math.min(1500, Math.round((Date.now() - o.t0) / 1000)) });
+    S.recordAttempt(o.uid, o.recId || null, { title: o.recTitle || o.title, ok: okN, total, pts, ptsAll, stars: newStars, src: m0.src, sub: m0.sub, kind: m0.kind, secs: Math.min(1500, Math.round((Date.now() - o.t0) / 1000)) });
     // 做完当场查一遍成就，有新解锁立刻报喜
     B.checkAndGrant(o.uid).forEach(x => toast(`🏅 解锁成就：${x.icon} ${x.name}`, 4000));
     keypad.close();
-    mount(resultsNode(o, results, { newStars, capped, okN, pts, ptsAll }));
+    mount(resultsNode(o, results, { newStars, capped, okN, pts, ptsAll, total, selfN, selfOk, wrongN }));
   }
   return page(o.title, [
     o.subtitle ? h('p', { class: 'subtitle' }, o.subtitle) : null, modeBar,
@@ -1014,7 +1069,7 @@ function runQuiz(o) {
 }
 
 function resultsNode(o, results, sum) {
-  const total = results.length, ratio = sum.okN / total;
+  const total = sum.total != null ? sum.total : results.length, ratio = total ? sum.okN / total : 0;
   const had = sum.okN - sum.newStars - sum.capped;
   const head = h('section', { class: 'result' },
     h('div', { class: 'big' }, h('b', {}, sum.okN), h('small', {}, ` / ${total} 题答对`)),
@@ -1023,7 +1078,8 @@ function resultsNode(o, results, sum) {
     h('div', { class: 'earn' + (sum.newStars ? ' on' : '') }, sum.newStars ? `⭐ × ${sum.newStars}` : '这次没有新星星'),
     had > 0 ? h('p', { class: 'note' }, `有 ${had} 题以前已经得过星星，一题只得一颗哦。`) : null,
     sum.capped ? h('p', { class: 'note' }, `今天的星星已经拿满 ${cap()} 颗，明天再来～（做对的题明天再做还能得星）`) : null,
-    results.length - sum.okN ? h('p', { class: 'note' }, `做错的 ${results.length - sum.okN} 题已放进错题本：先答对 1 次，隔天再答对就毕业。`) : null);
+    sum.selfN ? h('p', { class: 'note' }, `另有 ${sum.selfN} 道自评题（自己评的：${sum.selfOk} 题说对了）——不算星星也不进错题本。`) : null,
+    sum.wrongN ? h('p', { class: 'note' }, `做错的 ${sum.wrongN} 题已放进错题本：先答对 1 次，隔天再答对就毕业。`) : null);
   const nextT = user() ? nextTask(user()) : null;
   const acts = h('div', { class: 'acts' },
     nextT ? h('a', { class: 'btn primary', href: nextT.href }, `下一项：${nextT.label} →`) : null,
@@ -1032,7 +1088,7 @@ function resultsNode(o, results, sum) {
   let only = false;
   const list = h('div', { class: 'rvlist' }, results.map((r, i) => reviewItem(r, i + 1)));
   const toggle = h('button', { class: 'btn ghost small', onclick: () => { only = !only; list.classList.toggle('onlybad', only); toggle.textContent = only ? '看全部' : '只看错题'; } }, '只看错题');
-  return page('结果', [head, acts, o.ctxFn ? o.ctxFn(true) : null, h('div', { class: 'rvhead' }, h('h2', {}, '答案与解析'), results.length - sum.okN ? toggle : null), list], { back: o.back });
+  return page('结果', [head, acts, o.ctxFn ? o.ctxFn(true) : null, h('div', { class: 'rvhead' }, h('h2', {}, '答案与解析'), sum.wrongN ? toggle : null), list], { back: o.back });
 }
 
 // 把一道题抄成一段能发微信的文字：孩子不会时点一下，直接发给家长或老师
@@ -1060,18 +1116,20 @@ export async function askForHelp(u, q) {
 }
 
 function reviewItem(r, no) {
-  const q = r.q, ok = r.g.ok, u = user();
+  // self = 简答自评题。它没有客观对错，打绿勾会让孩子以为「自评说对了」等于「做对了」，
+  // 所以单独一个中性标记，「正确答案」也改成「参考答案」。
+  const q = r.q, ok = r.g.ok, u = user(), self = !!r.self;
   const short = q.type === 'fill' ? q.stem.replace(/_{2,}/g, '____') : q.stem;
   const body = h('div', { class: 'rvb' },
     // 解析放最前面：做错了第一眼就看到“为什么”
     q.why ? h('p', { class: 'why top' }, h('b', {}, '💡 为什么：'), ...String(q.why).split('\n').flatMap((t, i) => [i ? h('br') : null, t])) : null,
     ok ? null : h('p', { class: 'mine' }, h('b', {}, '你的答案：'), h('span', { html: q.type === 'math' ? mathHtml(userText(q, r.a)) : esc(userText(q, r.a)) })),
-    h('p', { class: 'right' }, h('b', {}, '正确答案：'), h('span', { html: q.type === 'math' ? mathHtml(answerText(q)) : esc(answerText(q)) })),
+    h('p', { class: 'right' }, h('b', {}, self ? '参考答案：' : '正确答案：'), h('span', { html: q.type === 'math' ? mathHtml(answerText(q)) : esc(answerText(q)) })),
     q.rv ? h('p', { class: 'rvsay' }, h('button', { type: 'button', class: 'spk', onclick: () => playSay(q.rv.key, q.rv.say, X.audio) }, '🔊'), q.rv.ipa ? h('span', { class: 'ipa' }, '/' + q.rv.ipa + '/') : null, q.bold ? h('span', { class: 'bmark' }, '★ 重点词，要会拼写') : null) : null,
     r.g.note ? h('p', { class: 'note' }, r.g.note) : null,
     r.star === 'new' ? h('p', { class: 'got' }, '⭐ +1') : null,
     // 看完解析还不明白：标一下，家长在专区里能看到；或者直接把题发给家长/老师
-    !ok && u ? h('div', { class: 'chips askrow' },
+    !ok && !self && u ? h('div', { class: 'chips askrow' },
       h('button', { type: 'button', class: 'btn small ghost', onclick: (e) => {
         const on = !S.isStuck(u.id, q.id);
         S.setStuck(u.id, q.id, on);
@@ -1079,8 +1137,8 @@ function reviewItem(r, no) {
         toast(on ? '记下了，家长在「家长专区」里能看到这道题' : '好啦，取消标记');
       } }, S.isStuck(u.id, q.id) ? '🙋 已标记：还是不会' : '🙋 还是不会'),
       h('button', { type: 'button', class: 'btn small ghost', onclick: () => askForHelp(u, q) }, '📤 问家长 / 问老师')) : null);
-  return h('details', { class: 'rv ' + (ok ? 'ok' : 'bad'), open: !ok },
-    h('summary', {}, h('span', { class: 'mark' }, ok ? '✓' : '✗'), h('span', { class: 'no' }, no), h('span', { class: 'rvs', html: mathish(q) ? mathHtml(short) : esc(short) })), body);
+  return h('details', { class: 'rv ' + (self ? 'self' : (ok ? 'ok' : 'bad')), open: !ok && !self },
+    h('summary', {}, h('span', { class: 'mark' }, self ? '💬' : (ok ? '✓' : '✗')), h('span', { class: 'no' }, no), h('span', { class: 'rvs', html: mathish(q) ? mathHtml(short) : esc(short) })), body);
 }
 
 // ---------------- 随机练习 ----------------
@@ -1539,6 +1597,12 @@ function renderPrint(set, withAns, backHref, toggleHref) {
       else if (q.type === 'tf') b.append(h('p', {}, `( )  ${no}. ${q.stem}`));
       else if (q.type === 'fill') b.append(h('p', {}, `${no}. ${q.stem}`, q.hint ? `  （${q.hint}）` : ''));
       else if (q.type === 'short') b.append(h('p', {}, `${no}. ${q.stem}`), h('p', {}, 'Answer: ______________________________'));
+      else if (q.type === 'order') {
+        // 纸上没法点，写成「( ) 项」让孩子填序号；显示顺序用打乱时算好的 q.show
+        b.append(h('p', {}, `${no}. ${q.stem}`));
+        const show = (Array.isArray(q.show) && q.show.length === q.items.length) ? q.show : q.items.map((_, i) => i);
+        b.append(h('p', { class: 'po' }, show.map(ix => `(   ) ${q.items[ix]}`).join('     ')));
+      } else if (q.type === 'self') b.append(h('p', {}, `${no}. ${q.stem}`), h('p', {}, '答：________________________________________'));
       else b.append(h('p', { html: `${no}. ${mathHtml(q.stem)} =` }), h('div', { class: 'work' }, '解：'), h('p', {}, '答案：____________'));
       doc.append(b);
     });

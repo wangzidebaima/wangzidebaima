@@ -134,6 +134,30 @@ def main():
                             ERR['填空题有空答案'] += 1
                             BAD['填空题有空答案'].append('%s/%s' % (sid, qid))
 
+                elif t == 'order':
+                    items = q.get('items') or []
+                    if len(items) < 4:
+                        ERR['排序题少于 4 项'] += 1
+                        BAD['排序题少于 4 项'].append('%s/%s 只有%d项' % (sid, qid, len(items)))
+                    if len(set(map(str, items))) != len(items):
+                        ERR['排序题有重复项'] += 1
+                        BAD['排序题有重复项'].append('%s/%s %r' % (sid, qid, items))
+                    if any(not str(x).strip() for x in items):
+                        ERR['排序题有空项'] += 1
+                        BAD['排序题有空项'].append('%s/%s' % (sid, qid))
+                    # 写了 answer 最危险：出题的人会以为顺序在这里，其实是 items 的顺序
+                    if 'answer' in q:
+                        ERR['排序题写了 answer 字段（顺序由 items 决定）'] += 1
+                        BAD['排序题写了 answer 字段（顺序由 items 决定）'].append('%s/%s answer=%r' % (sid, qid, q.get('answer')))
+                    if BAD_WHY.search(why):
+                        ERR['解析里提到了选项位置（会被打乱）'] += 1
+                        BAD['解析里提到了选项位置（会被打乱）'].append('%s/%s %s' % (sid, qid, why[:40]))
+
+                elif t == 'self':
+                    if not (str(q.get('ref') or '').strip() or (q.get('points') or [])):
+                        ERR['简答自评没有参考答案'] += 1
+                        BAD['简答自评没有参考答案'].append('%s/%s' % (sid, qid))
+
                 elif t not in ('math',):
                     ERR['未知题型'] += 1
                     BAD['未知题型'].append('%s/%s type=%r' % (sid, qid, t))
