@@ -589,19 +589,58 @@ export async function unitTest(kind, a, b) {
   const u = user();
   if (kind === 'cn') {
     const s2 = subj(a), x = b, name = (X.lib.unitNames && X.lib.unitNames[x]) || x;
-    mount(page('单元小测', h('p', { class: 'note' }, '出题中…'), { back: '#/unit/' + a + '/' + x }));
-    const ms = s2.sets.filter(m => m.unit === x && m.kind === 'cn'); let pool = [];
-    for (const m of ms) { try { const st = await loadSet(m.id); if (st.passage) continue; st.sections.forEach(sec => sec.questions.forEach(q => pool.push(q))); } catch (e) { /* 单个题集失败不影响整体 */ } }
+    // 语文有自己的「单元」页（学/练/读/测四步）；科学、生物、历史这些按课排的科目
+    // 没有那一页，测完直接回科目页，别跳到语文那套单元页上去。
+    const backTo = /chinese$/.test(a) ? `#/unit/${a}/${x}` : `#/s/${a}`;
+    mount(page('单元小测', h('p', { class: 'note' }, '出题中…'), { back: backTo }));
+    const ms = s2.sets.filter(m => m.unit === x && m.kind === 'cn'); const pools = [];
+    for (const m of ms) { try { const st = await loadSet(m.id); if (st.passage) continue; const qs = []; st.sections.forEach(sec => sec.questions.forEach(q => qs.push(q))); if (qs.length) pools.push(qs); } catch (e) { /* 单个题集失败不影响整体 */ } }
+    const pool = pools.reduce((a, x2) => a + x2.length, 0);
     const sh = (arr) => { arr = arr.slice(); for (let i = arr.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [arr[i], arr[j]] = [arr[j], arr[i]]; } return arr; };
     const run = () => {
-      const qs = JSON.parse(JSON.stringify(sh(pool).slice(0, 10)));
+      const qs = JSON.parse(JSON.stringify(sh(pickSpread(pools.map(sh), 10))));
       qs.forEach(q => { if (q.type !== 'choice' || !q.options) return; const right = q.options['ABCDEFG'.indexOf(q.answer)], o = sh(q.options); q.options = o; q.answer = 'ABCDEFG'[o.indexOf(right)]; });
       mount(runQuiz({ uid: u.id, mk: 'cnknow', mode: 'exam', title: name + ' 单元小测', subtitle: `${qs.length} 题，做完看分数`, sections: [{ title: '', questions: qs }], recTitle: name + ' 单元小测',
-        back: '#/unit/' + a + '/' + x, metaFor: () => ({ title: name + ' 单元小测', src: 'rand', sub: a, kind: 'rand' }), again: run }));
+        back: backTo, metaFor: () => ({ title: name + ' 单元小测', src: 'rand', sub: a, kind: 'rand' }), again: run }));
     };
-    if (!pool.length) { toast('这个单元还没有小测题'); nav('#/unit/' + a + '/' + x); return; }
+    if (!pool) { toast('这个单元还没有小测题'); nav(backTo); return; }
     run(); return;
   }
+}
+
+// 跨单元的「综合测」（期中、期末那种范围）：从整科或勾选的若干单元里随机抽 20 题。
+// 不用额外出题，题库本身就有题，抽出来就是一张卷。
+// 抽法按题集轮转，不纯随机：纯随机会出现某几课一道没有、另几课抽四道的情况，
+// 卷子就不像卷子了。轮转能保证每课至少分到一题。
+const pickSpread = (poolsIn, n) => {
+  const pools = poolsIn.map(p => p.slice());
+  const out = [];
+  while (out.length < n && pools.some(p => p.length)) {
+    for (const p of pools) { if (out.length >= n) break; if (p.length) out.push(p.shift()); }
+  }
+  return out;
+};
+export async function mixedTest(id) {
+  const u = user(), s = subj(id), p = S.P(u.id);
+  const unitName = (x) => (X.lib.unitNames && X.lib.unitNames[x]) || x;
+  const sel = new Set(S.getUnits(u.id, 'sub-' + id, []));
+  const ms = s.sets.filter(m => m.kind === 'cn' && m.unit && (!sel.size || sel.has(m.unit)));
+  const back = `#/s/${id}`;
+  const name = sel.size ? `${[...sel].map(unitName).join('、')}（${sel.size} 个单元）` : s.title + '（全部）';
+  mount(page('综合测', h('p', { class: 'note' }, '出题中…'), { back }));
+  const pools = [];
+  for (const m of ms) { try { const st = await loadSet(m.id); if (st.passage) continue; const qs = []; st.sections.forEach(sec => sec.questions.forEach(q => qs.push(q))); if (qs.length) pools.push(qs); } catch (e) { /* 单个题集失败不影响整体 */ } }
+  const total = pools.reduce((a, x) => a + x.length, 0);
+  if (!total) { toast('这里还没有能抽的题'); nav(back); return; }
+  const N = Math.min(20, total);
+  const sh = (arr) => { arr = arr.slice(); for (let i = arr.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [arr[i], arr[j]] = [arr[j], arr[i]]; } return arr; };
+  const run = () => {
+    const qs = JSON.parse(JSON.stringify(sh(pickSpread(pools.map(sh), N))));
+    qs.forEach(q => { if (q.type !== 'choice' || !q.options) return; const right = q.options['ABCDEFG'.indexOf(q.answer)], o = sh(q.options); q.options = o; q.answer = 'ABCDEFG'[o.indexOf(right)]; });
+    mount(runQuiz({ uid: u.id, mk: 'cnknow', mode: 'exam', title: s.title + ' 综合测', subtitle: `${qs.length} 题 · ${name}，做完看分数`, sections: [{ title: '', questions: qs }], recTitle: s.title + ' 综合测',
+      back, metaFor: () => ({ title: s.title + ' 综合测', src: 'rand', sub: id, kind: 'rand' }), again: run }));
+  };
+  run();
 }
 let learnHook = () => {};
 export const setLearnHook = (f) => { learnHook = f; };
@@ -628,12 +667,23 @@ export function subject(id, sub) {
     if (plain.length) nodes.push(h('div', { class: 'list' }, plain.map(rowOf)));
     unitsPresent.filter(x => !sel.size || sel.has(x)).forEach(x => {
       const ms = s.sets.filter(m => m.unit === x); nodes.push(h('h2', { class: 'sh' }, unitName(x)), h('div', { class: 'list' }, ms.map(rowOf)));
+      // 有知识题的单元，给一个单元小测入口：从本单元的题里随机抽，每次不重样。
+      if (ms.some(m => m.kind === 'cn')) nodes.push(h('div', { class: 'list' }, h('a', { class: 'row', href: `#/utest/cn/${id}/${x}` }, h('div', {}, h('b', {}, '📝 本单元小测'), h('small', {}, '从本单元的题里随机抽 10 题，做完看分数')), h('span', { class: 'chip' }, '去测'))));
     });
     listBox.replaceChildren(...nodes);
+    updTestRow();
   };
   const chips = unitsPresent.length ? h('div', {}, h('div', { class: 'chips' }, h('span', { class: 'lab' }, '选单元（不选就是全部）')),
     h('div', { class: 'chips' }, unitsPresent.map(x => { const b = h('button', { type: 'button', class: 'chipb' + (sel.has(x) ? ' on' : ''), onclick: () => { sel.has(x) ? sel.delete(x) : sel.add(x); b.classList.toggle('on', sel.has(x)); S.setUnits(u.id, 'sub-' + id, [...sel]); draw(); } }, unitName(x)); return b; }))) : null;
-  mount(page(s.title, [chips, listBox]));
+  // 综合测（期中/期末那种范围）：勾了哪几个单元就从哪几个单元抽，不勾就是整科抽。
+  let testRow = null, updTestRow = () => {};
+  if (unitsPresent.length && s.sets.some(m => m.kind === 'cn' && m.unit)) {
+    const small = h('small', {}, '');
+    updTestRow = () => { small.textContent = sel.size ? `从你勾选的 ${sel.size} 个单元里抽 20 题` : '从全部单元里抽 20 题，像一张期末卷'; };
+    updTestRow();
+    testRow = h('div', { class: 'list' }, h('a', { class: 'row', href: '#/utest/mix/' + id }, h('div', {}, h('b', {}, '📝 综合测（期中 / 期末）'), small), h('span', { class: 'chip' }, '去测')));
+  }
+  mount(page(s.title, [chips, testRow, listBox]));
   draw();
 }
 
