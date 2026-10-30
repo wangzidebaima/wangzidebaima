@@ -35,7 +35,11 @@
     "g7reading",
     "g7listening",
     "g7speaking",
-    "g7chinese"
+    "g7chinese",
+    "g7bio",
+    "g7hist",
+    "g7poli",
+    "g7geo"
    ],
    "random": [
     "chap7",
@@ -86,7 +90,11 @@
    "publishers": {
     "math": "北师大版",
     "eng": "人教版",
-    "cn": "统编版"
+    "cn": "统编版",
+    "hist": "人教版",
+    "poli": "人教版",
+    "bio": "人教版",
+    "geo": "中图版"
    },
    "modes": {
     "chaptype": "live",

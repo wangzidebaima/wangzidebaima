@@ -507,7 +507,10 @@ export function home() {
     const card = h('a', { class: 'card', href: '#/s/' + id }, h('span', { class: 'ic' }, s.icon), h('b', {}, s.title), h('small', {}, s.desc), h('em', {}, em));
     // 分区靠科目 id 认：新增科目（如科学的 g4sci）必须能自己落对位置，
     // 否则会掉进兜底的英语区，卡片出现在「🔤 英语」标题下面。
-    card._area = /math/.test(id) ? 'math' : /chinese/.test(id) ? 'cn' : /sci|science/.test(id) ? 'sci' : 'eng'; return card;
+    // 后面这几科（历史/道法/生物/地理）id 里自带科目关键字，靠它自己落位，
+    // 别再往 eng 那个兜底里掉——掉了孩子会在英语区看到历史卡片。
+    card._area = /math/.test(id) ? 'math' : /chinese/.test(id) ? 'cn' : /sci|science/.test(id) ? 'sci'
+      : /hist/.test(id) ? 'hist' : /poli/.test(id) ? 'poli' : /bio/.test(id) ? 'bio' : /geo/.test(id) ? 'geo' : 'eng'; return card;
   }).filter(Boolean);
   const randCards = (u.random || []).map(k => {
     const R = RANDOM[k]; const card = h('a', { class: 'card alt', href: '#/rand/' + k }, h('span', { class: 'ic' }, R.icon), h('b', {}, R.title), h('small', {}, /^cnw/.test(k) ? '听词语，写在纸上' : '随机出题，不重样'), h('em', {}, `今天 ${S.starsToday(u.id)}/${cap()} 颗`));
@@ -517,7 +520,8 @@ export function home() {
   const learnCard = hasEng ? Object.assign(h('a', { class: 'card', href: '#/learn' }, h('span', { class: 'ic' }, '🃏'), h('b', {}, '单词卡片'), h('small', {}, '先学一学，再去测'), h('em', {}, '看词·听音·记意思')), { _area: 'eng' }) : null;
   const ew0 = essayNow(u);
   const essayCard = ew0 ? Object.assign(h('a', { class: 'card', href: '#/set/' + ew0.item.id }, h('span', { class: 'ic' }, '🌸'), h('b', {}, '听美文'), h('small', {}, '《' + String(ew0.item.title || '').replace(/^《|》$/g, '') + '》'), h('em', {}, ew0.end.slice(5) + ' 前听完')), { _area: 'cn' }) : null;
-  const areas = [['math', '📐 数学'], ['cn', '📖 语文'], ['eng', '🔤 英语'], ['sci', '🔬 科学']].map(([a, t0]) => {
+  const areas = [['math', '📐 数学'], ['cn', '📖 语文'], ['eng', '🔤 英语'], ['sci', '🔬 科学'],
+    ['hist', '📜 历史'], ['poli', '⚖️ 道德与法治'], ['bio', '🧬 生物'], ['geo', '🌏 地理']].map(([a, t0]) => {
     const pub = (u.publishers || {})[a], t = pub ? `${t0}（${pub}）` : t0;
     const cs = [...(learnCard ? [learnCard] : []), ...(essayCard ? [essayCard] : []), ...subjectCards, ...randCards].filter(c => c._area === a); if (!cs.length) return null;
     return [h('h2', { class: 'sh' }, t), h('div', { class: 'grid' }, cs)];
