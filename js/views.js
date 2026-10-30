@@ -1122,7 +1122,7 @@ function reviewItem(r, no) {
   const short = q.type === 'fill' ? q.stem.replace(/_{2,}/g, '____') : q.stem;
   const body = h('div', { class: 'rvb' },
     // 解析放最前面：做错了第一眼就看到“为什么”
-    q.why ? h('p', { class: 'why top' }, h('b', {}, '💡 为什么：'), ...String(q.why).split('\n').flatMap((t, i) => [i ? h('br') : null, t])) : null,
+    q.why ? h('p', { class: 'why why-first' }, h('b', {}, '💡 为什么：'), ...String(q.why).split('\n').flatMap((t, i) => [i ? h('br') : null, t])) : null,
     ok ? null : h('p', { class: 'mine' }, h('b', {}, '你的答案：'), h('span', { html: q.type === 'math' ? mathHtml(userText(q, r.a)) : esc(userText(q, r.a)) })),
     h('p', { class: 'right' }, h('b', {}, self ? '参考答案：' : '正确答案：'), h('span', { html: q.type === 'math' ? mathHtml(answerText(q)) : esc(answerText(q)) })),
     q.rv ? h('p', { class: 'rvsay' }, h('button', { type: 'button', class: 'spk', onclick: () => playSay(q.rv.key, q.rv.say, X.audio) }, '🔊'), q.rv.ipa ? h('span', { class: 'ipa' }, '/' + q.rv.ipa + '/') : null, q.bold ? h('span', { class: 'bmark' }, '★ 重点词，要会拼写') : null) : null,

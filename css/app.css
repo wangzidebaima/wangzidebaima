@@ -275,7 +275,7 @@ html[data-fs="1"] body { zoom: 1.12; } html[data-fs="2"] body { zoom: 1.25; }
 .cal-g i small{font-size:11px;line-height:1.1;opacity:.9;font-weight:500}
 .cal-g i small.ics{font-size:12px;letter-spacing:0}
 /* 结果页：解析提前到第一眼能看到的位置；「还是不会 / 问家长」两个小按钮 */
-.why.top{background:var(--star-soft);border-radius:12px;padding:10px 12px;margin-bottom:6px}
+.why-first{background:var(--star-soft);border-radius:12px;padding:10px 12px;margin-bottom:6px}
 .askrow{margin-top:8px}
 .calnote{margin:10px 0 0;font-size:12px;text-align:center;color:var(--muted);line-height:1.7}
 
@@ -318,7 +318,7 @@ html[data-fs="1"] body { zoom: 1.12; } html[data-fs="2"] body { zoom: 1.25; }
 
 .cal-g i small.ics{font-size:12px;letter-spacing:0}
 /* 结果页：解析提前到第一眼能看到的位置；「还是不会 / 问家长」两个小按钮 */
-.why.top{background:var(--star-soft);border-radius:12px;padding:10px 12px;margin-bottom:6px}
+.why-first{background:var(--star-soft);border-radius:12px;padding:10px 12px;margin-bottom:6px}
 .askrow{margin-top:8px}
 
 #brkm{position:fixed;inset:0;z-index:99;background:rgba(0,0,0,.55);display:flex;align-items:center;justify-content:center;padding:20px}
