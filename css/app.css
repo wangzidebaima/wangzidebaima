@@ -27,7 +27,10 @@ button, input, select, textarea { font: inherit; color: inherit; }
 
 /* 页面骨架 */
 .page { max-width: 640px; margin: 0 auto; padding: 0 16px 96px; }
-.top { position: sticky; top: 0; z-index: 5; display: grid; grid-template-columns: 72px 1fr 72px; align-items: center; padding: calc(env(safe-area-inset-top) + 10px) 0 10px; background: color-mix(in srgb, var(--bg) 92%, transparent); backdrop-filter: blur(8px); }
+/* 注意：这里原来是「92% 半透明 + backdrop-filter: blur(8px)」的毛玻璃效果。
+   iOS Safari 上 backdrop-filter 配合 sticky 会把滚过的内容残留在屏幕上（尤其图片题这样的大块图形），
+   要滚很远才重绘消失。改成不透明实色，视觉几乎没差别，但彻底去掉这个渲染 bug。别再加回 backdrop-filter。 */
+.top { position: sticky; top: 0; z-index: 5; display: grid; grid-template-columns: 72px 1fr 72px; align-items: center; padding: calc(env(safe-area-inset-top) + 10px) 0 10px; background: var(--bg); }
 .top h1 { font-size: 17px; text-align: center; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .back { color: var(--accent); font-size: 16px; padding: 6px 0; } .back.r { text-align: right; }
 main > * + * { margin-top: 14px; }
@@ -127,7 +130,7 @@ details.ctx summary { cursor: pointer; color: var(--accent); font-weight: 600; f
 .mi { display: block; width: 100%; margin-top: 12px; font-size: 22px; text-align: center; border: 2px solid var(--line); border-radius: 13px; padding: 10px; background: var(--bg); outline: none; min-height: 54px; }
 .mi.focus { border-color: var(--accent); background: var(--surface); }
 .qt.math { font-size: 20px; }
-.submitbar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 6; display: flex; justify-content: space-between; align-items: center; gap: 12px; max-width: 640px; margin: 0 auto; padding: 10px 16px calc(env(safe-area-inset-bottom) + 10px); background: color-mix(in srgb, var(--bg) 94%, transparent); backdrop-filter: blur(10px); border-top: 1px solid var(--line); }
+.submitbar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 6; display: flex; justify-content: space-between; align-items: center; gap: 12px; max-width: 640px; margin: 0 auto; padding: 10px 16px calc(env(safe-area-inset-bottom) + 10px); background: var(--bg); border-top: 1px solid var(--line); }
 .info { color: var(--muted); font-size: 15px; } .submitbar .btn { min-width: 120px; opacity: .55; } .submitbar .btn.ready { opacity: 1; }
 body.kbopen .submitbar { display: none; }
 
