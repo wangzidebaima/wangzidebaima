@@ -751,9 +751,28 @@ function startEssay(set) {
   } }, '做小题（算今天的美文任务）');
   mount(page(set.title, [h('p', { class: 'subtitle' }, set.subtitle || ''), state, playBtn, textBtn, textBox, words, go], { back: '#/s/' + sm.subject.id }));
 }
+// 确定性伪随机（xmur3 播种 + mulberry32）：打印卷必须每次生成同一份，
+// 否则「题目卷」和「含答案卷」是两次渲染，打乱结果不同，答案就会对不上。
+function seededRand(seed) {
+  let h = 2166136261 >>> 0;
+  for (let i = 0; i < seed.length; i++) { h ^= seed.charCodeAt(i); h = Math.imul(h, 16777619); }
+  let a = h >>> 0;
+  return function () {
+    a = (a + 0x6D2B79F5) | 0;
+    let t = Math.imul(a ^ (a >>> 15), 1 | a);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
 // 新题集（带单元）：每次做选择题时打乱选项顺序，重做时不会一模一样
 function shuffled(set) {
   if (!set.unit) return set;
+  return shuffleOpts(set, Math.random);
+}
+// 打乱选择题选项。rand 是 () => [0,1)：
+//   刷题传 Math.random —— 每次不同，重做不会一模一样
+//   打印传 seededRand(...) —— 固定种子，题目卷 / 答案卷 / 重复打印都是同一份
+function shuffleOpts(set, rand) {
   const out = JSON.parse(JSON.stringify(set));
   out.sections.forEach(sec => sec.questions.forEach(q => {
     if (q.type !== 'choice' || !q.options || q.keepOrder) return;
@@ -761,7 +780,7 @@ function shuffled(set) {
     // 选项图和选项文字必须一起打乱：optImgs 是按选项下标对位的，
     // 只动 options 会让图跑到别的选项下面，选中正确答案却看到错的图。
     const idx = opts.map((_, i) => i);
-    for (let i = idx.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [idx[i], idx[j]] = [idx[j], idx[i]]; }
+    for (let i = idx.length - 1; i > 0; i--) { const j = Math.floor(rand() * (i + 1)); [idx[i], idx[j]] = [idx[j], idx[i]]; }
     q.options = idx.map(i => opts[i]);
     if (imgs.length) q.optImgs = idx.map(i => imgs[i]);
     q.answer = 'ABCDEFG'[q.options.indexOf(right)];
@@ -1481,12 +1500,17 @@ export function weekReview(withAns) {
   const secs = {}; pick.forEach(e => { (secs[e.meta.title] = secs[e.meta.title] || []).push({ ...e.q }); });
   const set = { title: `${u.display}的错题复习卷`, subtitle: `${S.today()} · 共 ${pick.length} 题` + (recent ? '（本周做错的题）' : '（错题本里最近的题）'),
     sections: Object.entries(secs).map(([title, questions]) => ({ title, questions })) };
-  return renderPrint(set, withAns, '#/errors', '#/weekrev' + (withAns ? '' : '/a'));
+  // 错题卷同样打乱，原因同 printView；种子跟题目 id 挂钩：题变了顺序跟着变，题不变顺序稳定
+  const seed = 'weekrev:' + pick.map(e => (e.q && e.q.id) || '').join('|');
+  return renderPrint(shuffleOpts(set, seededRand(seed)), withAns, '#/errors', '#/weekrev' + (withAns ? '' : '/a'));
 }
 
 export async function printView(id, withAns) {
   const set = await loadSet(id);
-  return renderPrint(set, withAns, '#/set/' + id, '#/print/' + id + (withAns ? '' : '/a'));
+  // 打印卷也要打乱选项：老题集（尤其语文）正确答案几乎全在第一个位置，
+  // 不打乱等于把答案位置印在卷子上（七年级语文 282 题 100% 在 A）。
+  // 固定种子保证「题目卷」「含答案卷」以及重复打印出来的是同一份。
+  return renderPrint(shuffleOpts(set, seededRand('print:' + id)), withAns, '#/set/' + id, '#/print/' + id + (withAns ? '' : '/a'));
 }
 
 function renderPrint(set, withAns, backHref, toggleHref) {
