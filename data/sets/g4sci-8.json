@@ -23,7 +23,13 @@
      ],
      "answer": "B",
      "why": "电流要从电池出发，沿导线流过灯丝再回到电池，中间不断开，灯泡才会亮。",
-     "pts": 2
+     "pts": 2,
+     "optImgs": [
+      "<svg viewBox=\"0 0 140 90\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"70\" cy=\"22\" r=\"13\" fill=\"#fff6cf\" stroke=\"#333\" stroke-width=\"2\"/><path d=\"M63 16 L77 30 M77 16 L63 30\" stroke=\"#333\" stroke-width=\"1.4\" fill=\"none\"/><rect x=\"63\" y=\"34\" width=\"14\" height=\"12\" fill=\"#ddd\" stroke=\"#333\" stroke-width=\"2\"/><path d=\"M63 38 H77 M63 42 H77\" stroke=\"#333\" stroke-width=\"1\" fill=\"none\"/><rect x=\"67\" y=\"46\" width=\"6\" height=\"4\" fill=\"#333\"/><path d=\"M63 40 H28 V72 H112 V40 H77\" stroke=\"#333\" stroke-width=\"2.5\" fill=\"none\"/></svg>",
+      "<svg viewBox=\"0 0 140 90\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"70\" cy=\"18\" r=\"13\" fill=\"#fff6cf\" stroke=\"#333\" stroke-width=\"2\"/><path d=\"M63 12 L77 26 M77 12 L63 26\" stroke=\"#333\" stroke-width=\"1.4\" fill=\"none\"/><rect x=\"63\" y=\"30\" width=\"14\" height=\"12\" fill=\"#ddd\" stroke=\"#333\" stroke-width=\"2\"/><path d=\"M63 34 H77 M63 38 H77\" stroke=\"#333\" stroke-width=\"1\" fill=\"none\"/><rect x=\"67\" y=\"42\" width=\"6\" height=\"4\" fill=\"#333\"/><rect x=\"30\" y=\"64\" width=\"50\" height=\"18\" rx=\"2\" fill=\"#f2c14e\" stroke=\"#333\" stroke-width=\"2\"/><rect x=\"24\" y=\"69\" width=\"7\" height=\"8\" fill=\"#333\"/><text x=\"36\" y=\"78\" font-size=\"11\" fill=\"#333\">+</text><text x=\"66\" y=\"78\" font-size=\"11\" fill=\"#333\">-</text><path d=\"M24 73 V38 H63\" stroke=\"#333\" stroke-width=\"2.5\" fill=\"none\"/><path d=\"M70 52 V73 H80\" stroke=\"#333\" stroke-width=\"2.5\" fill=\"none\"/></svg>",
+      "<svg viewBox=\"0 0 140 90\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"45\" cy=\"16\" r=\"13\" fill=\"#fff6cf\" stroke=\"#333\" stroke-width=\"2\"/><path d=\"M38 10 L52 24 M52 10 L38 24\" stroke=\"#333\" stroke-width=\"1.4\" fill=\"none\"/><rect x=\"38\" y=\"28\" width=\"14\" height=\"12\" fill=\"#ddd\" stroke=\"#333\" stroke-width=\"2\"/><path d=\"M38 32 H52 M38 36 H52\" stroke=\"#333\" stroke-width=\"1\" fill=\"none\"/><rect x=\"42\" y=\"40\" width=\"6\" height=\"4\" fill=\"#333\"/><rect x=\"70\" y=\"62\" width=\"50\" height=\"18\" rx=\"2\" fill=\"#f2c14e\" stroke=\"#333\" stroke-width=\"2\"/><rect x=\"64\" y=\"67\" width=\"7\" height=\"8\" fill=\"#333\"/><text x=\"76\" y=\"76\" font-size=\"11\" fill=\"#333\">+</text><text x=\"106\" y=\"76\" font-size=\"11\" fill=\"#333\">-</text></svg>",
+      "<svg viewBox=\"0 0 140 90\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"38\" y=\"58\" width=\"50\" height=\"18\" rx=\"2\" fill=\"#f2c14e\" stroke=\"#333\" stroke-width=\"2\"/><rect x=\"32\" y=\"63\" width=\"7\" height=\"8\" fill=\"#333\"/><text x=\"44\" y=\"72\" font-size=\"11\" fill=\"#333\">+</text><text x=\"74\" y=\"72\" font-size=\"11\" fill=\"#333\">-</text><circle cx=\"70\" cy=\"30\" r=\"12\" fill=\"#fff6cf\" stroke=\"#333\" stroke-width=\"2\"/><path d=\"M63 24 L77 38 M77 24 L63 38\" stroke=\"#333\" stroke-width=\"1.4\" fill=\"none\"/><rect x=\"63\" y=\"42\" width=\"14\" height=\"12\" fill=\"#ddd\" stroke=\"#333\" stroke-width=\"2\"/><path d=\"M63 46 H77 M63 50 H77\" stroke=\"#333\" stroke-width=\"1\" fill=\"none\"/><rect x=\"67\" y=\"54\" width=\"6\" height=\"4\" fill=\"#333\"/></svg>"
+     ]
     },
     {
      "id": "g4sci-8-A2",
@@ -37,7 +43,8 @@
      ],
      "answer": "C",
      "why": "电池负极没有连接，电流走不完一整圈，回路没有闭合，灯泡就不会亮。",
-     "pts": 2
+     "pts": 2,
+     "img": "<svg viewBox=\"0 0 300 150\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"40\" y=\"100\" width=\"74\" height=\"28\" rx=\"2\" fill=\"#f2c14e\" stroke=\"#333\" stroke-width=\"2\"/><rect x=\"34\" y=\"105\" width=\"7\" height=\"8\" fill=\"#333\"/><text x=\"46\" y=\"114\" font-size=\"11\" fill=\"#333\">+</text><text x=\"100\" y=\"114\" font-size=\"11\" fill=\"#333\">-</text><circle cx=\"215\" cy=\"46\" r=\"24\" fill=\"#fff6cf\" stroke=\"#333\" stroke-width=\"2\"/><path d=\"M204 34 L226 58 M226 34 L204 58\" stroke=\"#333\" stroke-width=\"1.6\" fill=\"none\"/><rect x=\"200\" y=\"70\" width=\"30\" height=\"22\" fill=\"#ddd\" stroke=\"#333\" stroke-width=\"2\"/><path d=\"M200 76 H230 M200 82 H230 M200 88 H230\" stroke=\"#333\" stroke-width=\"1\" fill=\"none\"/><rect x=\"210\" y=\"92\" width=\"10\" height=\"6\" fill=\"#333\"/><path d=\"M44 100 V82 H200\" stroke=\"#333\" stroke-width=\"3\" fill=\"none\"/><path d=\"M120 114 H164\" stroke=\"#333\" stroke-width=\"3\" fill=\"none\"/><circle cx=\"170\" cy=\"114\" r=\"5\" fill=\"none\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"120\" y=\"140\" font-size=\"13\" fill=\"#555\">负极什么也没接</text></svg>"
     },
     {
      "id": "g4sci-8-A3",
@@ -51,7 +58,8 @@
      ],
      "answer": "D",
      "why": "灯泡的螺纹金属壳和底部触点分别连着灯丝的两端，两处都接上电，电流才能通过灯丝。",
-     "pts": 2
+     "pts": 2,
+     "img": "<svg viewBox=\"0 0 300 150\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"120\" cy=\"42\" r=\"28\" fill=\"#fff6cf\" stroke=\"#333\" stroke-width=\"2\"/><path d=\"M107 29 L133 55 M133 29 L107 55\" stroke=\"#333\" stroke-width=\"1.6\" fill=\"none\"/><rect x=\"102\" y=\"70\" width=\"36\" height=\"30\" fill=\"#ddd\" stroke=\"#333\" stroke-width=\"2\"/><path d=\"M102 78 H138 M102 86 H138 M102 94 H138\" stroke=\"#333\" stroke-width=\"1\" fill=\"none\"/><rect x=\"114\" y=\"100\" width=\"12\" height=\"7\" fill=\"#333\"/><path d=\"M140 84 H170\" stroke=\"#333\" stroke-width=\"1.5\" fill=\"none\"/><path d=\"M126 110 H170\" stroke=\"#333\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"174\" y=\"88\" font-size=\"14\" fill=\"#333\">① 螺纹金属壳</text><text x=\"174\" y=\"114\" font-size=\"14\" fill=\"#333\">② 底部金属触点</text></svg>"
     },
     {
      "id": "g4sci-8-A4",

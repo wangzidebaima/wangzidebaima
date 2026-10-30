@@ -707,9 +707,14 @@ function shuffled(set) {
   const out = JSON.parse(JSON.stringify(set));
   out.sections.forEach(sec => sec.questions.forEach(q => {
     if (q.type !== 'choice' || !q.options || q.keepOrder) return;
-    const right = q.options['ABCDEFG'.indexOf(q.answer)], opts = q.options.slice();
-    for (let i = opts.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [opts[i], opts[j]] = [opts[j], opts[i]]; }
-    q.options = opts; q.answer = 'ABCDEFG'[opts.indexOf(right)];
+    const right = q.options['ABCDEFG'.indexOf(q.answer)], opts = q.options.slice(), imgs = (q.optImgs || []).slice();
+    // 选项图和选项文字必须一起打乱：optImgs 是按选项下标对位的，
+    // 只动 options 会让图跑到别的选项下面，选中正确答案却看到错的图。
+    const idx = opts.map((_, i) => i);
+    for (let i = idx.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [idx[i], idx[j]] = [idx[j], idx[i]]; }
+    q.options = idx.map(i => opts[i]);
+    if (imgs.length) q.optImgs = idx.map(i => imgs[i]);
+    q.answer = 'ABCDEFG'[q.options.indexOf(right)];
   }));
   return out;
 }
