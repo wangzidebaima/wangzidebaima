@@ -3857,7 +3857,7 @@
      "subtitle": "第二单元 物体的运动",
      "kind": "cn",
      "unit": "SC2",
-     "count": 10
+     "count": 11
     },
     {
      "id": "g4sci-6",
@@ -3893,7 +3893,7 @@
      "subtitle": "第三单元 简单电路",
      "kind": "cn",
      "unit": "SC3",
-     "count": 10
+     "count": 11
     },
     {
      "id": "g4sci-10",
@@ -3902,7 +3902,7 @@
      "subtitle": "第三单元 简单电路",
      "kind": "cn",
      "unit": "SC3",
-     "count": 10
+     "count": 11
     },
     {
      "id": "g4sci-11",
@@ -3956,7 +3956,7 @@
      "subtitle": "第五单元 研究磁铁",
      "kind": "cn",
      "unit": "SC5",
-     "count": 10
+     "count": 11
     },
     {
      "id": "g4sci-17",
@@ -3965,7 +3965,7 @@
      "subtitle": "第五单元 研究磁铁",
      "kind": "cn",
      "unit": "SC5",
-     "count": 10
+     "count": 11
     },
     {
      "id": "g4sci-18",
@@ -4009,7 +4009,7 @@
      "subtitle": "第一单元 生物和细胞",
      "kind": "cn",
      "unit": "BI1",
-     "count": 10
+     "count": 11
     },
     {
      "id": "g7bio-4",
@@ -4018,7 +4018,7 @@
      "subtitle": "第一单元 生物和细胞",
      "kind": "cn",
      "unit": "BI1",
-     "count": 10
+     "count": 11
     },
     {
      "id": "g7bio-5",
@@ -4045,7 +4045,7 @@
      "subtitle": "第一单元 生物和细胞",
      "kind": "cn",
      "unit": "BI1",
-     "count": 10
+     "count": 11
     },
     {
      "id": "g7bio-8",
@@ -4054,7 +4054,7 @@
      "subtitle": "第一单元 生物和细胞",
      "kind": "cn",
      "unit": "BI1",
-     "count": 10
+     "count": 11
     },
     {
      "id": "g7bio-9",
@@ -4063,7 +4063,7 @@
      "subtitle": "第一单元 生物和细胞",
      "kind": "cn",
      "unit": "BI1",
-     "count": 10
+     "count": 11
     },
     {
      "id": "g7bio-10",
@@ -4090,7 +4090,7 @@
      "subtitle": "第二单元 多种多样的生物",
      "kind": "cn",
      "unit": "BI2",
-     "count": 10
+     "count": 11
     },
     {
      "id": "g7bio-13",
@@ -4135,7 +4135,7 @@
      "subtitle": "第二单元 多种多样的生物",
      "kind": "cn",
      "unit": "BI2",
-     "count": 10
+     "count": 11
     },
     {
      "id": "g7bio-18",
@@ -4144,7 +4144,7 @@
      "subtitle": "第二单元 多种多样的生物",
      "kind": "cn",
      "unit": "BI2",
-     "count": 10
+     "count": 11
     },
     {
      "id": "g7bio-19",
@@ -4180,7 +4180,7 @@
      "subtitle": "第二单元 多种多样的生物",
      "kind": "cn",
      "unit": "BI2",
-     "count": 10
+     "count": 11
     }
    ]
   }
@@ -4198,7 +4198,7 @@
      "subtitle": "第一单元 史前时期：原始社会与中华文明的起源",
      "kind": "cn",
      "unit": "HI1",
-     "count": 10
+     "count": 11
     },
     {
      "id": "g7hist-2",
@@ -4216,7 +4216,7 @@
      "subtitle": "第一单元 史前时期：原始社会与中华文明的起源",
      "kind": "cn",
      "unit": "HI1",
-     "count": 10
+     "count": 11
     },
     {
      "id": "g7hist-4",
@@ -4225,7 +4225,7 @@
      "subtitle": "第二单元 夏商周时期：奴隶制王朝的更替和向封建社会的过渡",
      "kind": "cn",
      "unit": "HI2",
-     "count": 10
+     "count": 11
     },
     {
      "id": "g7hist-5",
@@ -4234,7 +4234,7 @@
      "subtitle": "第二单元 夏商周时期：奴隶制王朝的更替和向封建社会的过渡",
      "kind": "cn",
      "unit": "HI2",
-     "count": 10
+     "count": 11
     },
     {
      "id": "g7hist-6",
@@ -4243,7 +4243,7 @@
      "subtitle": "第二单元 夏商周时期：奴隶制王朝的更替和向封建社会的过渡",
      "kind": "cn",
      "unit": "HI2",
-     "count": 10
+     "count": 11
     },
     {
      "id": "g7hist-7",
@@ -4252,7 +4252,7 @@
      "subtitle": "第二单元 夏商周时期：奴隶制王朝的更替和向封建社会的过渡",
      "kind": "cn",
      "unit": "HI2",
-     "count": 10
+     "count": 11
     },
     {
      "id": "g7hist-8",
@@ -4270,7 +4270,7 @@
      "subtitle": "第三单元 秦汉时期：统一多民族封建国家的建立和巩固",
      "kind": "cn",
      "unit": "HI3",
-     "count": 10
+     "count": 12
     },
     {
      "id": "g7hist-10",
@@ -4279,7 +4279,7 @@
      "subtitle": "第三单元 秦汉时期：统一多民族封建国家的建立和巩固",
      "kind": "cn",
      "unit": "HI3",
-     "count": 10
+     "count": 11
     },
     {
      "id": "g7hist-11",
@@ -4288,7 +4288,7 @@
      "subtitle": "第三单元 秦汉时期：统一多民族封建国家的建立和巩固",
      "kind": "cn",
      "unit": "HI3",
-     "count": 10
+     "count": 11
     },
     {
      "id": "g7hist-12",
@@ -4297,7 +4297,7 @@
      "subtitle": "第三单元 秦汉时期：统一多民族封建国家的建立和巩固",
      "kind": "cn",
      "unit": "HI3",
-     "count": 10
+     "count": 12
     },
     {
      "id": "g7hist-13",
@@ -4306,7 +4306,7 @@
      "subtitle": "第三单元 秦汉时期：统一多民族封建国家的建立和巩固",
      "kind": "cn",
      "unit": "HI3",
-     "count": 10
+     "count": 11
     },
     {
      "id": "g7hist-14",
@@ -4315,7 +4315,7 @@
      "subtitle": "第三单元 秦汉时期：统一多民族封建国家的建立和巩固",
      "kind": "cn",
      "unit": "HI3",
-     "count": 10
+     "count": 12
     },
     {
      "id": "g7hist-15",
@@ -4324,7 +4324,7 @@
      "subtitle": "第三单元 秦汉时期：统一多民族封建国家的建立和巩固",
      "kind": "cn",
      "unit": "HI3",
-     "count": 10
+     "count": 12
     },
     {
      "id": "g7hist-16",
@@ -4333,7 +4333,7 @@
      "subtitle": "第四单元 三国两晋南北朝时期：政权分立与民族交融",
      "kind": "cn",
      "unit": "HI4",
-     "count": 10
+     "count": 11
     },
     {
      "id": "g7hist-17",
@@ -4342,7 +4342,7 @@
      "subtitle": "第四单元 三国两晋南北朝时期：政权分立与民族交融",
      "kind": "cn",
      "unit": "HI4",
-     "count": 10
+     "count": 11
     },
     {
      "id": "g7hist-18",
@@ -4351,7 +4351,7 @@
      "subtitle": "第四单元 三国两晋南北朝时期：政权分立与民族交融",
      "kind": "cn",
      "unit": "HI4",
-     "count": 10
+     "count": 12
     },
     {
      "id": "g7hist-19",
@@ -4360,7 +4360,7 @@
      "subtitle": "第四单元 三国两晋南北朝时期：政权分立与民族交融",
      "kind": "cn",
      "unit": "HI4",
-     "count": 10
+     "count": 11
     },
     {
      "id": "g7hist-20",
@@ -4369,7 +4369,7 @@
      "subtitle": "第四单元 三国两晋南北朝时期：政权分立与民族交融",
      "kind": "cn",
      "unit": "HI4",
-     "count": 10
+     "count": 12
     }
    ]
   }
@@ -4387,7 +4387,7 @@
      "subtitle": "第一单元 少年有梦",
      "kind": "cn",
      "unit": "PO1",
-     "count": 10
+     "count": 11
     },
     {
      "id": "g7poli-2",
@@ -4396,7 +4396,7 @@
      "subtitle": "第一单元 少年有梦",
      "kind": "cn",
      "unit": "PO1",
-     "count": 10
+     "count": 11
     },
     {
      "id": "g7poli-3",
@@ -4405,7 +4405,7 @@
      "subtitle": "第一单元 少年有梦",
      "kind": "cn",
      "unit": "PO1",
-     "count": 10
+     "count": 11
     },
     {
      "id": "g7poli-4",
@@ -4414,7 +4414,7 @@
      "subtitle": "第二单元 成长的时空",
      "kind": "cn",
      "unit": "PO2",
-     "count": 10
+     "count": 11
     },
     {
      "id": "g7poli-5",
@@ -4423,7 +4423,7 @@
      "subtitle": "第二单元 成长的时空",
      "kind": "cn",
      "unit": "PO2",
-     "count": 10
+     "count": 11
     },
     {
      "id": "g7poli-6",
@@ -4432,7 +4432,7 @@
      "subtitle": "第二单元 成长的时空",
      "kind": "cn",
      "unit": "PO2",
-     "count": 10
+     "count": 11
     },
     {
      "id": "g7poli-7",
@@ -4441,7 +4441,7 @@
      "subtitle": "第二单元 成长的时空",
      "kind": "cn",
      "unit": "PO2",
-     "count": 10
+     "count": 11
     },
     {
      "id": "g7poli-8",
@@ -4450,7 +4450,7 @@
      "subtitle": "第三单元 珍爱我们的生命",
      "kind": "cn",
      "unit": "PO3",
-     "count": 10
+     "count": 11
     },
     {
      "id": "g7poli-9",
@@ -4459,7 +4459,7 @@
      "subtitle": "第三单元 珍爱我们的生命",
      "kind": "cn",
      "unit": "PO3",
-     "count": 10
+     "count": 11
     },
     {
      "id": "g7poli-10",
@@ -4468,7 +4468,7 @@
      "subtitle": "第三单元 珍爱我们的生命",
      "kind": "cn",
      "unit": "PO3",
-     "count": 10
+     "count": 11
     },
     {
      "id": "g7poli-11",
@@ -4477,7 +4477,7 @@
      "subtitle": "第四单元 追求美好人生",
      "kind": "cn",
      "unit": "PO4",
-     "count": 10
+     "count": 11
     },
     {
      "id": "g7poli-12",
@@ -4486,7 +4486,7 @@
      "subtitle": "第四单元 追求美好人生",
      "kind": "cn",
      "unit": "PO4",
-     "count": 10
+     "count": 11
     },
     {
      "id": "g7poli-13",
@@ -4495,7 +4495,7 @@
      "subtitle": "第四单元 追求美好人生",
      "kind": "cn",
      "unit": "PO4",
-     "count": 10
+     "count": 11
     }
    ]
   }
@@ -4585,7 +4585,7 @@
      "subtitle": "第四章 中国的自然环境",
      "kind": "cn",
      "unit": "GE4",
-     "count": 10
+     "count": 11
     },
     {
      "id": "g7geo-10",
@@ -4612,7 +4612,7 @@
      "subtitle": "第四章 中国的自然环境",
      "kind": "cn",
      "unit": "GE4",
-     "count": 10
+     "count": 11
     },
     {
      "id": "g7geo-13",
