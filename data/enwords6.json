@@ -1,0 +1,1336 @@
+{
+ "units": [
+  {
+   "id": "U1",
+   "name": "Unit 1 Amazing places",
+   "items": [
+    {
+     "w": "was",
+     "ipa": "/wəz/",
+     "cn": "（be 的第一和第三人称单数过去式）",
+     "pos": "",
+     "part": "",
+     "page": 4,
+     "lv2": true
+    },
+    {
+     "w": "climb",
+     "ipa": "/klaɪm/",
+     "cn": "攀登；爬",
+     "pos": "",
+     "part": "",
+     "page": 4,
+     "lv2": false
+    },
+    {
+     "w": "kilometre",
+     "ipa": "/kɪˈlɒmɪtə(r)/",
+     "cn": "（=km）千米；公里",
+     "pos": "",
+     "part": "",
+     "page": 4,
+     "lv2": false
+    },
+    {
+     "w": "gingerbread house",
+     "ipa": "/ˈdʒɪndʒəbred/",
+     "cn": "姜饼屋",
+     "pos": "",
+     "part": "",
+     "page": 4,
+     "lv2": false
+    },
+    {
+     "w": "send",
+     "ipa": "/send/",
+     "cn": "邮寄；发送",
+     "pos": "",
+     "part": "",
+     "page": 4,
+     "lv2": false
+    },
+    {
+     "w": "go",
+     "ipa": "/ɡəʊ/",
+     "cn": "（过去式 went /went/）去；走",
+     "pos": "",
+     "part": "",
+     "page": 6,
+     "lv2": true
+    },
+    {
+     "w": "thousand",
+     "ipa": "/ˈθaʊznd/",
+     "cn": "一千",
+     "pos": "",
+     "part": "",
+     "page": 6,
+     "lv2": false
+    },
+    {
+     "w": "clay",
+     "ipa": "/kleɪ/",
+     "cn": "黏土；陶土",
+     "pos": "",
+     "part": "",
+     "page": 6,
+     "lv2": false
+    },
+    {
+     "w": "see",
+     "ipa": "/siː/",
+     "cn": "（过去式 saw /sɔː/）看见",
+     "pos": "",
+     "part": "",
+     "page": 6,
+     "lv2": true
+    },
+    {
+     "w": "village",
+     "ipa": "/ˈvɪlɪdʒ/",
+     "cn": "村庄；村镇",
+     "pos": "",
+     "part": "",
+     "page": 7,
+     "lv2": false
+    },
+    {
+     "w": "eat",
+     "ipa": "/iːt/",
+     "cn": "（过去式 ate /eɪt/）吃",
+     "pos": "",
+     "part": "",
+     "page": 7,
+     "lv2": true
+    },
+    {
+     "w": "dry",
+     "ipa": "/draɪ/",
+     "cn": "干的",
+     "pos": "",
+     "part": "",
+     "page": 7,
+     "lv2": false
+    },
+    {
+     "w": "take",
+     "ipa": "/teɪk/",
+     "cn": "（过去式 took /tʊk/）做（某个动作；和名词连用代替某个动词）",
+     "pos": "",
+     "part": "",
+     "page": 7,
+     "lv2": true
+    },
+    {
+     "w": "view",
+     "ipa": "/vjuː/",
+     "cn": "景色",
+     "pos": "",
+     "part": "",
+     "page": 7,
+     "lv2": false
+    },
+    {
+     "w": "inspiring",
+     "ipa": "/ɪnˈspaɪərɪŋ/",
+     "cn": "鼓舞人心的",
+     "pos": "",
+     "part": "",
+     "page": 8,
+     "lv2": false
+    },
+    {
+     "w": "bamboo",
+     "ipa": "/ˌbæmˈbuː/",
+     "cn": "竹；竹子",
+     "pos": "",
+     "part": "",
+     "page": 8,
+     "lv2": false
+    },
+    {
+     "w": "pumpkin",
+     "ipa": "/ˈpʌmpkɪn/",
+     "cn": "南瓜",
+     "pos": "",
+     "part": "",
+     "page": 8,
+     "lv2": false
+    },
+    {
+     "w": "restaurant",
+     "ipa": "/ˈrestrɒnt/",
+     "cn": "餐馆；餐厅",
+     "pos": "",
+     "part": "",
+     "page": 8,
+     "lv2": false
+    },
+    {
+     "w": "airport",
+     "ipa": "/ˈeəpɔːt/",
+     "cn": "机场",
+     "pos": "",
+     "part": "",
+     "page": 8,
+     "lv2": false
+    },
+    {
+     "w": "New Zealand",
+     "ipa": "/ˌnjuː ˈziːlənd/",
+     "cn": "新西兰",
+     "pos": "",
+     "part": "",
+     "page": 4,
+     "lv2": false
+    },
+    {
+     "w": "Hong Kong-Zhuhai-Macao Bridge",
+     "ipa": "/ˌhɒŋ ˈkɒŋ/ /məˈkaʊ/ /brɪdʒ/",
+     "cn": "港珠澳大桥",
+     "pos": "",
+     "part": "",
+     "page": 5,
+     "lv2": false
+    },
+    {
+     "w": "Paris",
+     "ipa": "/ˈpærɪs/",
+     "cn": "巴黎",
+     "pos": "",
+     "part": "",
+     "page": 5,
+     "lv2": false
+    },
+    {
+     "w": "Eiffel Tower",
+     "ipa": "/ˈaɪfəl/",
+     "cn": "埃菲尔铁塔",
+     "pos": "",
+     "part": "",
+     "page": 5,
+     "lv2": false
+    },
+    {
+     "w": "Terracotta Warriors",
+     "ipa": "/ˌterəˈkɒtə/ /ˈwɒriəz/",
+     "cn": "兵马俑",
+     "pos": "",
+     "part": "",
+     "page": 6,
+     "lv2": false
+    },
+    {
+     "w": "Jinggangshan Revolution Museum",
+     "ipa": "/ˌrevəˈluːʃn/",
+     "cn": "井冈山革命博物馆",
+     "pos": "",
+     "part": "",
+     "page": 8,
+     "lv2": false
+    },
+    {
+     "w": "the Red Army",
+     "ipa": "",
+     "cn": "红军",
+     "pos": "",
+     "part": "",
+     "page": 8,
+     "lv2": false
+    }
+   ]
+  },
+  {
+   "id": "U2",
+   "name": "Unit 2 Getting together",
+   "items": [
+    {
+     "w": "paste",
+     "ipa": "/peɪst/",
+     "cn": "粘贴",
+     "pos": "",
+     "part": "",
+     "page": 16,
+     "lv2": false
+    },
+    {
+     "w": "dress",
+     "ipa": "/dres/",
+     "cn": "穿衣服",
+     "pos": "",
+     "part": "",
+     "page": 17,
+     "lv2": true
+    },
+    {
+     "w": "gala",
+     "ipa": "/ˈɡɑːlə/",
+     "cn": "演出；庆典",
+     "pos": "",
+     "part": "",
+     "page": 17,
+     "lv2": false
+    },
+    {
+     "w": "count down",
+     "ipa": "/kaʊnt/ /daʊn/",
+     "cn": "倒计时",
+     "pos": "",
+     "part": "",
+     "page": 17,
+     "lv2": false
+    },
+    {
+     "w": "marathon",
+     "ipa": "/ˈmærəθən/",
+     "cn": "马拉松赛跑",
+     "pos": "",
+     "part": "",
+     "page": 18,
+     "lv2": false
+    },
+    {
+     "w": "as",
+     "ipa": "/əz/",
+     "cn": "作为",
+     "pos": "",
+     "part": "",
+     "page": 18,
+     "lv2": false
+    },
+    {
+     "w": "race",
+     "ipa": "/reɪs/",
+     "cn": "赛跑；速度竞赛",
+     "pos": "",
+     "part": "",
+     "page": 18,
+     "lv2": false
+    },
+    {
+     "w": "run",
+     "ipa": "/rʌn/",
+     "cn": "（过去式 ran /ræn/）跑；奔跑",
+     "pos": "",
+     "part": "",
+     "page": 18,
+     "lv2": true
+    },
+    {
+     "w": "cheer",
+     "ipa": "/tʃɪə(r)/",
+     "cn": "欢呼；加油",
+     "pos": "",
+     "part": "",
+     "page": 18,
+     "lv2": false
+    },
+    {
+     "w": "book fair",
+     "ipa": "/feə(r)/",
+     "cn": "书市",
+     "pos": "",
+     "part": "",
+     "page": 18,
+     "lv2": false
+    },
+    {
+     "w": "writer",
+     "ipa": "/ˈraɪtə(r)/",
+     "cn": "作家；作者",
+     "pos": "",
+     "part": "",
+     "page": 19,
+     "lv2": false
+    },
+    {
+     "w": "read",
+     "ipa": "/riːd/",
+     "cn": "（过去式 read /red/）阅读",
+     "pos": "",
+     "part": "",
+     "page": 19,
+     "lv2": true
+    },
+    {
+     "w": "make",
+     "ipa": "/meɪk/",
+     "cn": "（过去式 made /meɪd/）做；使出现",
+     "pos": "",
+     "part": "",
+     "page": 19,
+     "lv2": true
+    },
+    {
+     "w": "sing",
+     "ipa": "/sɪŋ/",
+     "cn": "（过去式 sang /sæŋ/）唱（歌）；演唱",
+     "pos": "",
+     "part": "",
+     "page": 19,
+     "lv2": true
+    },
+    {
+     "w": "wear",
+     "ipa": "/weə(r)/",
+     "cn": "（过去式 wore /wɔː(r)/）穿；戴",
+     "pos": "",
+     "part": "",
+     "page": 19,
+     "lv2": true
+    },
+    {
+     "w": "yesterday",
+     "ipa": "/ˈjestədeɪ/",
+     "cn": "昨天",
+     "pos": "",
+     "part": "",
+     "page": 19,
+     "lv2": true
+    },
+    {
+     "w": "notice",
+     "ipa": "/ˈnəʊtɪs/",
+     "cn": "通知",
+     "pos": "",
+     "part": "",
+     "page": 20,
+     "lv2": false
+    },
+    {
+     "w": "wake",
+     "ipa": "/weɪk/",
+     "cn": "（过去式 woke /wəʊk/）醒；醒来",
+     "pos": "",
+     "part": "",
+     "page": 20,
+     "lv2": true
+    },
+    {
+     "w": "later",
+     "ipa": "/ˈleɪtə(r)/",
+     "cn": "随后；后来",
+     "pos": "",
+     "part": "",
+     "page": 20,
+     "lv2": false
+    },
+    {
+     "w": "judge",
+     "ipa": "/dʒʌdʒ/",
+     "cn": "裁判",
+     "pos": "",
+     "part": "",
+     "page": 20,
+     "lv2": false
+    },
+    {
+     "w": "begin",
+     "ipa": "/bɪˈɡɪn/",
+     "cn": "（过去式 began /bɪˈɡæn/）开始",
+     "pos": "",
+     "part": "",
+     "page": 20,
+     "lv2": true
+    },
+    {
+     "w": "win",
+     "ipa": "/wɪn/",
+     "cn": "（过去式 won /wʌn/）获胜",
+     "pos": "",
+     "part": "",
+     "page": 20,
+     "lv2": true
+    },
+    {
+     "w": "winner",
+     "ipa": "/ˈwɪnə(r)/",
+     "cn": "获胜的人（或队）；成功者",
+     "pos": "",
+     "part": "",
+     "page": 20,
+     "lv2": false
+    },
+    {
+     "w": "ever",
+     "ipa": "/ˈevə(r)/",
+     "cn": "（进行比较时用于加强语气）以往任何时候",
+     "pos": "",
+     "part": "",
+     "page": 20,
+     "lv2": false
+    },
+    {
+     "w": "exciting",
+     "ipa": "/ɪkˈsaɪtɪŋ/",
+     "cn": "令人激动的",
+     "pos": "",
+     "part": "",
+     "page": 20,
+     "lv2": false
+    }
+   ]
+  },
+  {
+   "id": "U3",
+   "name": "Unit 3 Healthy life",
+   "items": [
+    {
+     "w": "cold",
+     "ipa": "/kəʊld/",
+     "cn": "感冒",
+     "pos": "",
+     "part": "",
+     "page": 28,
+     "lv2": true
+    },
+    {
+     "w": "ill",
+     "ipa": "/ɪl/",
+     "cn": "不舒服；生病的",
+     "pos": "",
+     "part": "",
+     "page": 28,
+     "lv2": true
+    },
+    {
+     "w": "head",
+     "ipa": "/hed/",
+     "cn": "头；头部",
+     "pos": "",
+     "part": "",
+     "page": 28,
+     "lv2": true
+    },
+    {
+     "w": "runny nose",
+     "ipa": "/ˈrʌni/",
+     "cn": "流鼻涕",
+     "pos": "",
+     "part": "",
+     "page": 28,
+     "lv2": false
+    },
+    {
+     "w": "soon",
+     "ipa": "/suːn/",
+     "cn": "很快；马上",
+     "pos": "",
+     "part": "",
+     "page": 28,
+     "lv2": false
+    },
+    {
+     "w": "fever",
+     "ipa": "/ˈfiːvə(r)/",
+     "cn": "发烧；发热",
+     "pos": "",
+     "part": "",
+     "page": 29,
+     "lv2": false
+    },
+    {
+     "w": "cough",
+     "ipa": "/kɒf/",
+     "cn": "咳嗽",
+     "pos": "",
+     "part": "",
+     "page": 29,
+     "lv2": false
+    },
+    {
+     "w": "discuss",
+     "ipa": "/dɪˈskʌs/",
+     "cn": "讨论；商量",
+     "pos": "",
+     "part": "",
+     "page": 30,
+     "lv2": false
+    },
+    {
+     "w": "diet",
+     "ipa": "/ˈdaɪət/",
+     "cn": "日常饮食",
+     "pos": "",
+     "part": "",
+     "page": 31,
+     "lv2": false
+    },
+    {
+     "w": "stay up",
+     "ipa": "",
+     "cn": "熬夜",
+     "pos": "",
+     "part": "",
+     "page": 31,
+     "lv2": false
+    },
+    {
+     "w": "cry",
+     "ipa": "/kraɪ/",
+     "cn": "哭；哭泣",
+     "pos": "",
+     "part": "",
+     "page": 32,
+     "lv2": true
+    },
+    {
+     "w": "another",
+     "ipa": "/əˈnʌðə(r)/",
+     "cn": "另一；不同的（人或事物）",
+     "pos": "",
+     "part": "",
+     "page": 32,
+     "lv2": false
+    },
+    {
+     "w": "call",
+     "ipa": "/kɔːl/",
+     "cn": "（给……）打电话",
+     "pos": "",
+     "part": "",
+     "page": 32,
+     "lv2": true
+    },
+    {
+     "w": "email",
+     "ipa": "/ˈiːmeɪl/",
+     "cn": "电子邮件",
+     "pos": "",
+     "part": "",
+     "page": 32,
+     "lv2": true
+    },
+    {
+     "w": "unhappy",
+     "ipa": "/ʌnˈhæpi/",
+     "cn": "不快乐的；难过的",
+     "pos": "",
+     "part": "",
+     "page": 32,
+     "lv2": false
+    },
+    {
+     "w": "glass",
+     "ipa": "/ɡlɑːs/",
+     "cn": "一杯（的量）；玻璃",
+     "pos": "",
+     "part": "",
+     "page": 32,
+     "lv2": true
+    },
+    {
+     "w": "may",
+     "ipa": "/meɪ/",
+     "cn": "也许；可能",
+     "pos": "",
+     "part": "",
+     "page": 32,
+     "lv2": true
+    },
+    {
+     "w": "add",
+     "ipa": "/æd/",
+     "cn": "补充说；增加",
+     "pos": "",
+     "part": "",
+     "page": 32,
+     "lv2": false
+    },
+    {
+     "w": "video",
+     "ipa": "/ˈvɪdiəʊ/",
+     "cn": "视频；录像",
+     "pos": "",
+     "part": "",
+     "page": 32,
+     "lv2": false
+    },
+    {
+     "w": "better",
+     "ipa": "/ˈbetə(r)/",
+     "cn": "舒畅些的；（病势）好转的",
+     "pos": "",
+     "part": "",
+     "page": 32,
+     "lv2": false
+    }
+   ]
+  },
+  {
+   "id": "U4",
+   "name": "Unit 4 Managing money well",
+   "items": [
+    {
+     "w": "money",
+     "ipa": "/ˈmʌni/",
+     "cn": "钱",
+     "pos": "",
+     "part": "",
+     "page": 40,
+     "lv2": true
+    },
+    {
+     "w": "pocket money",
+     "ipa": "/ˈpɒkɪt/",
+     "cn": "零花钱",
+     "pos": "",
+     "part": "",
+     "page": 40,
+     "lv2": false
+    },
+    {
+     "w": "schoolbag",
+     "ipa": "/ˈskuːlbæɡ/",
+     "cn": "书包",
+     "pos": "",
+     "part": "",
+     "page": 40,
+     "lv2": true
+    },
+    {
+     "w": "goods",
+     "ipa": "/ɡʊdz/",
+     "cn": "商品",
+     "pos": "",
+     "part": "",
+     "page": 41,
+     "lv2": false
+    },
+    {
+     "w": "drink",
+     "ipa": "/drɪŋk/",
+     "cn": "饮料",
+     "pos": "",
+     "part": "",
+     "page": 41,
+     "lv2": true
+    },
+    {
+     "w": "service",
+     "ipa": "/ˈsɜːvɪs/",
+     "cn": "服务",
+     "pos": "",
+     "part": "",
+     "page": 41,
+     "lv2": false
+    },
+    {
+     "w": "haircut",
+     "ipa": "/ˈheəkʌt/",
+     "cn": "理发；发型",
+     "pos": "",
+     "part": "",
+     "page": 41,
+     "lv2": false
+    },
+    {
+     "w": "microscope",
+     "ipa": "/ˈmaɪkrəskəʊp/",
+     "cn": "显微镜",
+     "pos": "",
+     "part": "",
+     "page": 42,
+     "lv2": false
+    },
+    {
+     "w": "lucky",
+     "ipa": "/ˈlʌki/",
+     "cn": "幸运的",
+     "pos": "",
+     "part": "",
+     "page": 42,
+     "lv2": false
+    },
+    {
+     "w": "half",
+     "ipa": "/hɑːf/",
+     "cn": "一半",
+     "pos": "",
+     "part": "",
+     "page": 42,
+     "lv2": true
+    },
+    {
+     "w": "save up",
+     "ipa": "",
+     "cn": "攒钱",
+     "pos": "",
+     "part": "",
+     "page": 43,
+     "lv2": false
+    },
+    {
+     "w": "sale",
+     "ipa": "/seɪl/",
+     "cn": "特价销售；出售",
+     "pos": "",
+     "part": "",
+     "page": 43,
+     "lv2": false
+    },
+    {
+     "w": "ticket",
+     "ipa": "/ˈtɪkɪt/",
+     "cn": "票",
+     "pos": "",
+     "part": "",
+     "page": 43,
+     "lv2": false
+    },
+    {
+     "w": "manage",
+     "ipa": "/ˈmænɪdʒ/",
+     "cn": "管理",
+     "pos": "",
+     "part": "",
+     "page": 44,
+     "lv2": false
+    },
+    {
+     "w": "sell",
+     "ipa": "/sel/",
+     "cn": "出售；售卖",
+     "pos": "",
+     "part": "",
+     "page": 44,
+     "lv2": true
+    },
+    {
+     "w": "jar",
+     "ipa": "/dʒɑː(r)/",
+     "cn": "罐子",
+     "pos": "",
+     "part": "",
+     "page": 44,
+     "lv2": false
+    },
+    {
+     "w": "for example",
+     "ipa": "/ɪɡˈzɑːmpl/",
+     "cn": "例如",
+     "pos": "",
+     "part": "",
+     "page": 44,
+     "lv2": false
+    }
+   ]
+  },
+  {
+   "id": "U5",
+   "name": "Unit 5 Exploring space",
+   "items": [
+    {
+     "w": "planet",
+     "ipa": "/ˈplænɪt/",
+     "cn": "行星",
+     "pos": "",
+     "part": "",
+     "page": 52,
+     "lv2": false
+    },
+    {
+     "w": "earth",
+     "ipa": "/ɜːθ/ (also Earth)",
+     "cn": "地球",
+     "pos": "",
+     "part": "",
+     "page": 52,
+     "lv2": true
+    },
+    {
+     "w": "sky",
+     "ipa": "/skaɪ/",
+     "cn": "天；天空",
+     "pos": "",
+     "part": "",
+     "page": 52,
+     "lv2": false
+    },
+    {
+     "w": "daytime",
+     "ipa": "/ˈdeɪtaɪm/",
+     "cn": "白天",
+     "pos": "",
+     "part": "",
+     "page": 52,
+     "lv2": false
+    },
+    {
+     "w": "cloud",
+     "ipa": "/klaʊd/",
+     "cn": "云",
+     "pos": "",
+     "part": "",
+     "page": 52,
+     "lv2": false
+    },
+    {
+     "w": "moon",
+     "ipa": "/muːn/ (also the Moon)",
+     "cn": "月球；月亮；卫星",
+     "pos": "",
+     "part": "",
+     "page": 52,
+     "lv2": true
+    },
+    {
+     "w": "star",
+     "ipa": "/stɑː(r)/",
+     "cn": "恒星；星",
+     "pos": "",
+     "part": "",
+     "page": 52,
+     "lv2": true
+    },
+    {
+     "w": "space",
+     "ipa": "/speɪs/",
+     "cn": "太空；空间",
+     "pos": "",
+     "part": "",
+     "page": 52,
+     "lv2": true
+    },
+    {
+     "w": "outer space",
+     "ipa": "/ˈaʊtə(r)/",
+     "cn": "外太空",
+     "pos": "",
+     "part": "",
+     "page": 52,
+     "lv2": false
+    },
+    {
+     "w": "space station",
+     "ipa": "",
+     "cn": "空间站",
+     "pos": "",
+     "part": "",
+     "page": 52,
+     "lv2": false
+    },
+    {
+     "w": "ocean",
+     "ipa": "/ˈəʊʃn/",
+     "cn": "大海；海洋",
+     "pos": "",
+     "part": "",
+     "page": 52,
+     "lv2": false
+    },
+    {
+     "w": "marble",
+     "ipa": "/ˈmɑːbl/",
+     "cn": "（玻璃）弹子",
+     "pos": "",
+     "part": "",
+     "page": 52,
+     "lv2": false
+    },
+    {
+     "w": "satellite",
+     "ipa": "/ˈsætəlaɪt/",
+     "cn": "人造卫星",
+     "pos": "",
+     "part": "",
+     "page": 53,
+     "lv2": false
+    },
+    {
+     "w": "soil",
+     "ipa": "/sɔɪl/",
+     "cn": "土壤",
+     "pos": "",
+     "part": "",
+     "page": 54,
+     "lv2": false
+    },
+    {
+     "w": "alien",
+     "ipa": "/ˈeɪliən/",
+     "cn": "外星生物",
+     "pos": "",
+     "part": "",
+     "page": 54,
+     "lv2": false
+    },
+    {
+     "w": "sunrise",
+     "ipa": "/ˈsʌnraɪz/",
+     "cn": "日出",
+     "pos": "",
+     "part": "",
+     "page": 54,
+     "lv2": false
+    },
+    {
+     "w": "rover",
+     "ipa": "/ˈrəʊvə(r)/",
+     "cn": "探测器",
+     "pos": "",
+     "part": "",
+     "page": 54,
+     "lv2": false
+    },
+    {
+     "w": "into",
+     "ipa": "/ˈɪntə/",
+     "cn": "朝；进入",
+     "pos": "",
+     "part": "",
+     "page": 55,
+     "lv2": false
+    },
+    {
+     "w": "telescope",
+     "ipa": "/ˈtelɪskəʊp/",
+     "cn": "望远镜",
+     "pos": "",
+     "part": "",
+     "page": 55,
+     "lv2": false
+    },
+    {
+     "w": "astronaut",
+     "ipa": "/ˈæstrənɔːt/",
+     "cn": "航天员；宇航员",
+     "pos": "",
+     "part": "",
+     "page": 55,
+     "lv2": true
+    },
+    {
+     "w": "spaceship",
+     "ipa": "/ˈspeɪsʃɪp/",
+     "cn": "宇宙飞船",
+     "pos": "",
+     "part": "",
+     "page": 55,
+     "lv2": false
+    },
+    {
+     "w": "month",
+     "ipa": "/mʌnθ/",
+     "cn": "月；月份",
+     "pos": "",
+     "part": "",
+     "page": 55,
+     "lv2": true
+    },
+    {
+     "w": "taikonaut",
+     "ipa": "/ˈtaɪkənɔːt/",
+     "cn": "中国航天员",
+     "pos": "",
+     "part": "",
+     "page": 56,
+     "lv2": false
+    },
+    {
+     "w": "cloth",
+     "ipa": "/klɒθ/",
+     "cn": "（一块）布；织物",
+     "pos": "",
+     "part": "",
+     "page": 56,
+     "lv2": false
+    },
+    {
+     "w": "toothpaste",
+     "ipa": "/ˈtuːθpeɪst/",
+     "cn": "牙膏",
+     "pos": "",
+     "part": "",
+     "page": 56,
+     "lv2": false
+    },
+    {
+     "w": "question",
+     "ipa": "/ˈkwestʃən/",
+     "cn": "问题",
+     "pos": "",
+     "part": "",
+     "page": 56,
+     "lv2": true
+    },
+    {
+     "w": "sunset",
+     "ipa": "/ˈsʌnset/",
+     "cn": "日落",
+     "pos": "",
+     "part": "",
+     "page": 56,
+     "lv2": false
+    },
+    {
+     "w": "time",
+     "ipa": "/taɪm/",
+     "cn": "次；回",
+     "pos": "",
+     "part": "",
+     "page": 56,
+     "lv2": true
+    },
+    {
+     "w": "Mars",
+     "ipa": "/mɑːz/",
+     "cn": "火星",
+     "pos": "",
+     "part": "",
+     "page": 54,
+     "lv2": false
+    }
+   ]
+  },
+  {
+   "id": "U6",
+   "name": "Unit 6 Energy, nature and us",
+   "items": [
+    {
+     "w": "power",
+     "ipa": "/ˈpaʊə(r)/",
+     "cn": "能；能量",
+     "pos": "",
+     "part": "",
+     "page": 64,
+     "lv2": false
+    },
+    {
+     "w": "electricity",
+     "ipa": "/ˌɪlekˈtrɪsəti/",
+     "cn": "电",
+     "pos": "",
+     "part": "",
+     "page": 64,
+     "lv2": false
+    },
+    {
+     "w": "solar",
+     "ipa": "/ˈsəʊlə(r)/",
+     "cn": "太阳的",
+     "pos": "",
+     "part": "",
+     "page": 65,
+     "lv2": false
+    },
+    {
+     "w": "type",
+     "ipa": "/taɪp/",
+     "cn": "类型；种类",
+     "pos": "",
+     "part": "",
+     "page": 65,
+     "lv2": false
+    },
+    {
+     "w": "energy",
+     "ipa": "/ˈenədʒi/",
+     "cn": "能源",
+     "pos": "",
+     "part": "",
+     "page": 65,
+     "lv2": false
+    },
+    {
+     "w": "light",
+     "ipa": "/laɪt/",
+     "cn": "照亮",
+     "pos": "",
+     "part": "",
+     "page": 65,
+     "lv2": true
+    },
+    {
+     "w": "heat",
+     "ipa": "/hiːt/",
+     "cn": "加热；（使）变暖；热量",
+     "pos": "",
+     "part": "",
+     "page": 65,
+     "lv2": false
+    },
+    {
+     "w": "cool",
+     "ipa": "/kuːl/",
+     "cn": "（使）变凉，冷却",
+     "pos": "",
+     "part": "",
+     "page": 65,
+     "lv2": true
+    },
+    {
+     "w": "run",
+     "ipa": "/rʌn/",
+     "cn": "（使）运转",
+     "pos": "",
+     "part": "",
+     "page": 65,
+     "lv2": true
+    },
+    {
+     "w": "resource",
+     "ipa": "/rɪˈsɔːs/",
+     "cn": "资源",
+     "pos": "",
+     "part": "",
+     "page": 66,
+     "lv2": false
+    },
+    {
+     "w": "run out",
+     "ipa": "",
+     "cn": "用完",
+     "pos": "",
+     "part": "",
+     "page": 66,
+     "lv2": false
+    },
+    {
+     "w": "change",
+     "ipa": "/tʃeɪndʒ/",
+     "cn": "（使）不同；改变",
+     "pos": "",
+     "part": "",
+     "page": 66,
+     "lv2": false
+    },
+    {
+     "w": "quick",
+     "ipa": "/kwɪk/",
+     "cn": "迅速的；快的",
+     "pos": "",
+     "part": "",
+     "page": 66,
+     "lv2": false
+    },
+    {
+     "w": "shower",
+     "ipa": "/ˈʃaʊə(r)/",
+     "cn": "淋浴",
+     "pos": "",
+     "part": "",
+     "page": 66,
+     "lv2": false
+    },
+    {
+     "w": "unplug",
+     "ipa": "/ˌʌnˈplʌɡ/",
+     "cn": "拔掉……的电源插头",
+     "pos": "",
+     "part": "",
+     "page": 66,
+     "lv2": false
+    },
+    {
+     "w": "difference",
+     "ipa": "/ˈdɪfrəns/",
+     "cn": "差别；不同（之处）",
+     "pos": "",
+     "part": "",
+     "page": 66,
+     "lv2": false
+    },
+    {
+     "w": "reduce",
+     "ipa": "/rɪˈdjuːs/",
+     "cn": "减少",
+     "pos": "",
+     "part": "",
+     "page": 67,
+     "lv2": false
+    },
+    {
+     "w": "air conditioner",
+     "ipa": "/ˈeə kənˌdɪʃənə(r)/",
+     "cn": "空调机",
+     "pos": "",
+     "part": "",
+     "page": 67,
+     "lv2": false
+    },
+    {
+     "w": "drive",
+     "ipa": "/draɪv/",
+     "cn": "驾驶；开车",
+     "pos": "",
+     "part": "",
+     "page": 67,
+     "lv2": false
+    },
+    {
+     "w": "reuse",
+     "ipa": "/ˌriːˈjuːz/",
+     "cn": "再次使用；重复使用",
+     "pos": "",
+     "part": "",
+     "page": 67,
+     "lv2": false
+    },
+    {
+     "w": "own",
+     "ipa": "/əʊn/",
+     "cn": "自己的",
+     "pos": "",
+     "part": "",
+     "page": 67,
+     "lv2": false
+    },
+    {
+     "w": "market",
+     "ipa": "/ˈmɑːkɪt/",
+     "cn": "集市；市场",
+     "pos": "",
+     "part": "",
+     "page": 67,
+     "lv2": false
+    },
+    {
+     "w": "bottle",
+     "ipa": "/ˈbɒtl/",
+     "cn": "瓶子",
+     "pos": "",
+     "part": "",
+     "page": 67,
+     "lv2": false
+    },
+    {
+     "w": "top",
+     "ipa": "/tɒp/",
+     "cn": "（位置、级别或程度）最高的",
+     "pos": "",
+     "part": "",
+     "page": 68,
+     "lv2": true
+    },
+    {
+     "w": "useful",
+     "ipa": "/ˈjuːsfl/",
+     "cn": "有用的；有益的",
+     "pos": "",
+     "part": "",
+     "page": 68,
+     "lv2": false
+    },
+    {
+     "w": "dirty",
+     "ipa": "/ˈdɜːti/",
+     "cn": "脏的",
+     "pos": "",
+     "part": "",
+     "page": 68,
+     "lv2": true
+    },
+    {
+     "w": "side",
+     "ipa": "/saɪd/",
+     "cn": "一面；一边",
+     "pos": "",
+     "part": "",
+     "page": 68,
+     "lv2": false
+    }
+   ]
+  }
+ ]
+}

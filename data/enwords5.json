@@ -1,0 +1,873 @@
+{
+ "units": [
+  {
+   "id": "U1",
+   "name": "Unit 1 Different friends",
+   "items": [
+    {
+     "w": "team",
+     "ipa": "/tiːm/",
+     "cn": "（游戏或运动的）队；（一起工作的）组，班",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "player",
+     "ipa": "/ˈpleɪə(r)/",
+     "cn": "运动员；参赛选手",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "him",
+     "ipa": "/hɪm/",
+     "cn": "他",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "lovely",
+     "ipa": "/ˈlʌvli/",
+     "cn": "美丽的；优美的",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "clever",
+     "ipa": "/ˈklevə(r)/",
+     "cn": "聪明的；聪颖的",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "young",
+     "ipa": "/jʌŋ/",
+     "cn": "幼小的；年轻的",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "hard-working",
+     "ipa": "/ˌhɑːd ˈwɜːkɪŋ/",
+     "cn": "工作努力的；辛勤的",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "science",
+     "ipa": "/ˈsaɪəns/",
+     "cn": "科学；自然科学",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "robot",
+     "ipa": "/ˈrəʊbɒt/",
+     "cn": "机器人",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "jump",
+     "ipa": "/dʒʌmp/",
+     "cn": "跳；跃",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "rope",
+     "ipa": "/rəʊp/",
+     "cn": "绳；粗绳",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "piano",
+     "ipa": "/piˈænəʊ/",
+     "cn": "钢琴",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "chess",
+     "ipa": "/tʃes/",
+     "cn": "国际象棋",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "front",
+     "ipa": "/frʌnt/",
+     "cn": "前部",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "easy",
+     "ipa": "/ˈiːzi/",
+     "cn": "容易的；轻易的",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "star",
+     "ipa": "/stɑː/",
+     "cn": "歌唱（或表演）明星",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "wonderful",
+     "ipa": "/ˈwʌndəfl/",
+     "cn": "令人赞叹的；精彩的；绝妙的",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "Australia",
+     "ipa": "/ɒˈstreɪliə/",
+     "cn": "澳大利亚",
+     "pos": "",
+     "part": ""
+    }
+   ]
+  },
+  {
+   "id": "U2",
+   "name": "Unit 2 My feelings",
+   "items": [
+    {
+     "w": "sad",
+     "ipa": "/sæd/",
+     "cn": "悲哀的；难过的",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "matter",
+     "ipa": "/ˈmætə(r)/",
+     "cn": "事情；问题",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "project",
+     "ipa": "/ˈprɒdʒekt/",
+     "cn": "项目；方案",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "centre",
+     "ipa": "/ˈsentə(r)/",
+     "cn": "中心",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "agree",
+     "ipa": "/əˈɡriː/",
+     "cn": "同意；赞成",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "finish",
+     "ipa": "/ˈfɪnɪʃ/",
+     "cn": "完成；做好",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "worried",
+     "ipa": "/ˈwʌrid/",
+     "cn": "担心的；担忧的",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "both",
+     "ipa": "/bəʊθ/",
+     "cn": "两者",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "excited",
+     "ipa": "/ɪkˈsaɪtɪd/",
+     "cn": "激动的；兴奋的",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "wrong",
+     "ipa": "/rɒŋ/",
+     "cn": "错误的",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "angry",
+     "ipa": "/ˈæŋɡri/",
+     "cn": "愤怒的；生气的",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "afraid",
+     "ipa": "/əˈfreɪd/",
+     "cn": "担心；害怕",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "parent",
+     "ipa": "/ˈpeərənt/",
+     "cn": "父亲；母亲",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "ask",
+     "ipa": "/ɑːsk/",
+     "cn": "问；询问",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "laugh",
+     "ipa": "/lɑːf/",
+     "cn": "笑",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "move",
+     "ipa": "/muːv/",
+     "cn": "搬家；移动",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "yours",
+     "ipa": "/jɔːz/",
+     "cn": "您的（用于书信结尾的签名前）",
+     "pos": "",
+     "part": ""
+    }
+   ]
+  },
+  {
+   "id": "U3",
+   "name": "Unit 3 Work and play",
+   "items": [
+    {
+     "w": "Wednesday",
+     "ipa": "/ˈwenzdeɪ/",
+     "cn": "星期三",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "subject",
+     "ipa": "/ˈsʌbdʒɪkt/",
+     "cn": "科目；学科",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "Tuesday",
+     "ipa": "/ˈtjuːzdeɪ/",
+     "cn": "星期二",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "Friday",
+     "ipa": "/ˈfraɪdeɪ/",
+     "cn": "星期五",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "because",
+     "ipa": "/bɪˈkɒz/",
+     "cn": "因为",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "Monday",
+     "ipa": "/ˈmʌndeɪ/",
+     "cn": "星期一",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "Thursday",
+     "ipa": "/ˈθɜːzdeɪ/",
+     "cn": "星期四",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "start",
+     "ipa": "/stɑːt/",
+     "cn": "开始",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "usually",
+     "ipa": "/ˈjuːʒuəli/",
+     "cn": "通常地；经常地",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "weekend",
+     "ipa": "/ˌwiːkˈend/",
+     "cn": "周末",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "sometimes",
+     "ipa": "/ˈsʌmtaɪmz/",
+     "cn": "有时；间或",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "Saturday",
+     "ipa": "/ˈsætədeɪ/",
+     "cn": "星期六",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "Sunday",
+     "ipa": "/ˈsʌndeɪ/",
+     "cn": "星期日",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "lesson",
+     "ipa": "/ˈlesn/",
+     "cn": "课；一节课",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "evening",
+     "ipa": "/ˈiːvnɪŋ/",
+     "cn": "晚上；傍晚",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "answer",
+     "ipa": "/ˈɑːnsə/",
+     "cn": "答复；回答",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "ping-pong",
+     "ipa": "/ˈpɪŋˌpɒŋ/",
+     "cn": "乒乓球",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "night",
+     "ipa": "/naɪt/",
+     "cn": "夜；夜晚",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "visit",
+     "ipa": "/ˈvɪzɪt/",
+     "cn": "看望；拜访；参观",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "grandparent",
+     "ipa": "/ˈɡrænpeərənt/",
+     "cn": "祖父；祖母；外祖父；外祖母",
+     "pos": "",
+     "part": ""
+    }
+   ]
+  },
+  {
+   "id": "U4",
+   "name": "Unit 4 Healthy habits",
+   "items": [
+    {
+     "w": "stay",
+     "ipa": "/steɪ/",
+     "cn": "待；保持；继续是",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "should",
+     "ipa": "/ʃʊd/",
+     "cn": "（提出或征询建议）该，可以",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "flu",
+     "ipa": "/fluː/",
+     "cn": "流行性感冒；流感",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "else",
+     "ipa": "/els/",
+     "cn": "其他的；别的",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "exercise",
+     "ipa": "/ˈeksəsaɪz/",
+     "cn": "锻炼；训练；操练",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "enough",
+     "ipa": "/ɪˈnʌf/",
+     "cn": "足够的；充足的；充分的",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "if",
+     "ipa": "/ɪf/",
+     "cn": "如果；假若；倘若",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "habit",
+     "ipa": "/ˈhæbɪt/",
+     "cn": "习惯",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "house",
+     "ipa": "/haʊs/",
+     "cn": "房子",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "show",
+     "ipa": "/ʃəʊ/",
+     "cn": "（电视或广播）节目",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "phone",
+     "ipa": "/fəʊn/",
+     "cn": "电话；电话机",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "then",
+     "ipa": "/ðen/",
+     "cn": "那么；因此；既然如此",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "rest",
+     "ipa": "/rest/",
+     "cn": "休息；放松",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "take care of",
+     "ipa": "",
+     "cn": "爱护；照顾",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "check",
+     "ipa": "/tʃek/",
+     "cn": "查看；查明",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "less",
+     "ipa": "/les/",
+     "cn": "（与不可数名词连用）较少的，更少的",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "brush",
+     "ipa": "/brʌʃ/",
+     "cn": "（用刷子）刷净，刷亮，刷平顺",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "tooth",
+     "ipa": "/tuːθ/",
+     "cn": "（复数 teeth /tiːθ/）牙；齿",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "twice",
+     "ipa": "/twaɪs/",
+     "cn": "两次；两遍",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "hour",
+     "ipa": "/ˈaʊə(r)/",
+     "cn": "小时",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "free",
+     "ipa": "/friː/",
+     "cn": "没有安排活动的；空闲的",
+     "pos": "",
+     "part": ""
+    }
+   ]
+  },
+  {
+   "id": "U5",
+   "name": "Unit 5 Food we eat",
+   "items": [
+    {
+     "w": "hungry",
+     "ipa": "/ˈhʌŋɡri/",
+     "cn": "感到饿的",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "beef",
+     "ipa": "/biːf/",
+     "cn": "牛肉",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "ice cream",
+     "ipa": "/ˌaɪs ˈkriːm/",
+     "cn": "（一份）冰激凌",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "little",
+     "ipa": "/ˈlɪtl/",
+     "cn": "少许；一点",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "dumpling",
+     "ipa": "/ˈdʌmplɪŋ/",
+     "cn": "饺子；汤圆",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "tea",
+     "ipa": "/tiː/",
+     "cn": "茶叶；茶；茶水",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "hamburger",
+     "ipa": "/ˈhæmbɜːɡə(r)/",
+     "cn": "汉堡包；汉堡牛肉饼",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "Mrs",
+     "ipa": "/ˈmɪsɪz/",
+     "cn": "（用于女子的姓氏或姓名前）太太，夫人",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "coconut",
+     "ipa": "/ˈkəʊkənʌt/",
+     "cn": "椰子",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "interesting",
+     "ipa": "/ˈɪntrəstɪŋ/",
+     "cn": "有趣的；有吸引力的",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "seed",
+     "ipa": "/siːd/",
+     "cn": "种子；籽",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "pull",
+     "ipa": "/pʊl/",
+     "cn": "拔出；抽出",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "stem",
+     "ipa": "/stem/",
+     "cn": "（花草的）茎；（花或叶的）梗，柄",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "root",
+     "ipa": "/ruːt/",
+     "cn": "根；根茎",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "lotus",
+     "ipa": "/ˈləʊtəs/",
+     "cn": "莲属植物",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "lake",
+     "ipa": "/leɪk/",
+     "cn": "湖；湖泊",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "world",
+     "ipa": "/wɜːld/",
+     "cn": "世界；地球；天下",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "round",
+     "ipa": "/raʊnd/",
+     "cn": "圆形的；环形的；球形的",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "different",
+     "ipa": "/ˈdɪfrənt/",
+     "cn": "不同的；有区别的；有差异的",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "way",
+     "ipa": "/weɪ/",
+     "cn": "方法；手段；途径；方式",
+     "pos": "",
+     "part": ""
+    }
+   ]
+  },
+  {
+   "id": "U6",
+   "name": "Unit 6 Nature and us",
+   "items": [
+    {
+     "w": "river",
+     "ipa": "/ˈrɪvə(r)/",
+     "cn": "河；江",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "nature",
+     "ipa": "/ˈneɪtʃə(r)/",
+     "cn": "自然界；大自然",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "waterfall",
+     "ipa": "/ˈwɔːtəfɔːl/",
+     "cn": "瀑布",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "forest",
+     "ipa": "/ˈfɒrɪst/",
+     "cn": "森林；林区",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "famous",
+     "ipa": "/ˈfeɪməs/",
+     "cn": "著名的；出名的",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "mountain",
+     "ipa": "/ˈmaʊntən/",
+     "cn": "高山；山岳",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "wind",
+     "ipa": "/wɪnd/",
+     "cn": "风；气流",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "trip",
+     "ipa": "/trɪp/",
+     "cn": "（尤指短程往返的）旅行，旅游，出行",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "dangerous",
+     "ipa": "/ˈdeɪndʒərəs/",
+     "cn": "有危险的；不安全的",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "heavy",
+     "ipa": "/ˈhevi/",
+     "cn": "程度大的；严重的",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "hotel",
+     "ipa": "/həʊˈtel/",
+     "cn": "旅馆；旅社",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "close",
+     "ipa": "/kləʊz/",
+     "cn": "关；关闭；闭上",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "umbrella",
+     "ipa": "/ʌmˈbrelə/",
+     "cn": "伞；雨伞",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "raincoat",
+     "ipa": "/ˈreɪnkəʊt/",
+     "cn": "雨衣",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "worry",
+     "ipa": "/ˈwʌri/",
+     "cn": "担心；担忧；发愁",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "fine",
+     "ipa": "/faɪn/",
+     "cn": "晴朗的",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "fog",
+     "ipa": "/fɒɡ/",
+     "cn": "雾",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "flood",
+     "ipa": "/flʌd/",
+     "cn": "洪水；水灾",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "fire",
+     "ipa": "/ˈfaɪə(r)/",
+     "cn": "火；火灾",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "know",
+     "ipa": "/nəʊ/",
+     "cn": "知道；了解",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "before",
+     "ipa": "/bɪˈfɔː(r)/",
+     "cn": "在……之前",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "go hiking",
+     "ipa": "/ˈhaɪkɪŋ/",
+     "cn": "徒步旅行",
+     "pos": "",
+     "part": ""
+    },
+    {
+     "w": "bring",
+     "ipa": "/brɪŋ/",
+     "cn": "带……到某处；带来；取来",
+     "pos": "",
+     "part": ""
+    }
+   ]
+  }
+ ]
+}

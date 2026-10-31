@@ -1,0 +1,1012 @@
+{
+ "units": [
+  {
+   "id": "U1",
+   "name": "Unit 1 Making friends",
+   "items": [
+    {
+     "w": "name",
+     "ipa": "/neɪm/",
+     "cn": "名字",
+     "pos": "",
+     "part": "",
+     "page": "p. 4",
+     "star": true
+    },
+    {
+     "w": "nice",
+     "ipa": "/naɪs/",
+     "cn": "令人愉快的；友好的",
+     "pos": "",
+     "part": "",
+     "page": "p. 4",
+     "star": true
+    },
+    {
+     "w": "ear",
+     "ipa": "/ɪə(r)/",
+     "cn": "耳朵",
+     "pos": "",
+     "part": "",
+     "page": "p. 5",
+     "star": true
+    },
+    {
+     "w": "hand",
+     "ipa": "/hænd/",
+     "cn": "手",
+     "pos": "",
+     "part": "",
+     "page": "p. 5",
+     "star": true
+    },
+    {
+     "w": "eye",
+     "ipa": "/aɪ/",
+     "cn": "眼睛",
+     "pos": "",
+     "part": "",
+     "page": "p. 5",
+     "star": true
+    },
+    {
+     "w": "mouth",
+     "ipa": "/maʊθ/",
+     "cn": "嘴",
+     "pos": "",
+     "part": "",
+     "page": "p. 5",
+     "star": true
+    },
+    {
+     "w": "arm",
+     "ipa": "/ɑːm/",
+     "cn": "胳膊",
+     "pos": "",
+     "part": "",
+     "page": "p. 5",
+     "star": true
+    },
+    {
+     "w": "can",
+     "ipa": "/kən, kæn/",
+     "cn": "可以",
+     "pos": "",
+     "part": "",
+     "page": "p. 7",
+     "star": true
+    },
+    {
+     "w": "share",
+     "ipa": "/ʃeə(r)/",
+     "cn": "分享",
+     "pos": "",
+     "part": "",
+     "page": "p. 7",
+     "star": true
+    },
+    {
+     "w": "smile",
+     "ipa": "/smaɪl/",
+     "cn": "微笑；笑",
+     "pos": "",
+     "part": "",
+     "page": "p. 8",
+     "star": false
+    },
+    {
+     "w": "listen",
+     "ipa": "/ˈlɪsn/",
+     "cn": "听；倾听",
+     "pos": "",
+     "part": "",
+     "page": "p. 8",
+     "star": true
+    },
+    {
+     "w": "help",
+     "ipa": "/help/",
+     "cn": "帮助",
+     "pos": "",
+     "part": "",
+     "page": "p. 8",
+     "star": true
+    },
+    {
+     "w": "say",
+     "ipa": "/seɪ/",
+     "cn": "说；讲",
+     "pos": "",
+     "part": "",
+     "page": "p. 9",
+     "star": true
+    },
+    {
+     "w": "friend",
+     "ipa": "/frend/",
+     "cn": "朋友",
+     "pos": "",
+     "part": "",
+     "page": "p. 9",
+     "star": true
+    },
+    {
+     "w": "good",
+     "ipa": "/ɡʊd/",
+     "cn": "好的",
+     "pos": "",
+     "part": "",
+     "page": "p. 9",
+     "star": true
+    }
+   ]
+  },
+  {
+   "id": "U2",
+   "name": "Unit 2 Different families",
+   "items": [
+    {
+     "w": "mum",
+     "ipa": "/mʌm/",
+     "cn": "（口语）妈妈",
+     "pos": "",
+     "part": "",
+     "page": "p. 16",
+     "star": true
+    },
+    {
+     "w": "dad",
+     "ipa": "/dæd/",
+     "cn": "（口语）爸爸；爹爹",
+     "pos": "",
+     "part": "",
+     "page": "p. 16",
+     "star": true
+    },
+    {
+     "w": "grandma",
+     "ipa": "/ˈɡrænmɑː/",
+     "cn": "奶奶；姥姥",
+     "pos": "",
+     "part": "",
+     "page": "p. 16",
+     "star": true
+    },
+    {
+     "w": "grandpa",
+     "ipa": "/ˈɡrænpɑː/",
+     "cn": "爷爷；姥爷",
+     "pos": "",
+     "part": "",
+     "page": "p. 16",
+     "star": true
+    },
+    {
+     "w": "grandfather",
+     "ipa": "/ˈɡrænfɑːðə(r)/",
+     "cn": "（外）祖父；爷爷；姥爷；外公",
+     "pos": "",
+     "part": "",
+     "page": "p. 17",
+     "star": true
+    },
+    {
+     "w": "grandmother",
+     "ipa": "/ˈɡrænmʌðə(r)/",
+     "cn": "（外）祖母；奶奶；姥姥；外婆",
+     "pos": "",
+     "part": "",
+     "page": "p. 17",
+     "star": true
+    },
+    {
+     "w": "mother",
+     "ipa": "/ˈmʌðə(r)/",
+     "cn": "母亲；妈妈",
+     "pos": "",
+     "part": "",
+     "page": "p. 17",
+     "star": true
+    },
+    {
+     "w": "father",
+     "ipa": "/ˈfɑːðə(r)/",
+     "cn": "父亲；爸爸",
+     "pos": "",
+     "part": "",
+     "page": "p. 17",
+     "star": true
+    },
+    {
+     "w": "me",
+     "ipa": "/miː/",
+     "cn": "我",
+     "pos": "",
+     "part": "",
+     "page": "p. 17",
+     "star": true
+    },
+    {
+     "w": "sister",
+     "ipa": "/ˈsɪstə(r)/",
+     "cn": "姐；妹",
+     "pos": "",
+     "part": "",
+     "page": "p. 17",
+     "star": true
+    },
+    {
+     "w": "family",
+     "ipa": "/ˈfæməli/",
+     "cn": "家；家庭",
+     "pos": "",
+     "part": "",
+     "page": "p. 17",
+     "star": true
+    },
+    {
+     "w": "have",
+     "ipa": "/hæv/",
+     "cn": "有",
+     "pos": "",
+     "part": "",
+     "page": "p. 19",
+     "star": true
+    },
+    {
+     "w": "big",
+     "ipa": "/bɪɡ/",
+     "cn": "大的",
+     "pos": "",
+     "part": "",
+     "page": "p. 19",
+     "star": true
+    },
+    {
+     "w": "cousin",
+     "ipa": "/ˈkʌzn/",
+     "cn": "堂（表）兄弟；堂（表）姐妹",
+     "pos": "",
+     "part": "",
+     "page": "p. 19",
+     "star": true
+    },
+    {
+     "w": "brother",
+     "ipa": "/ˈbrʌðə(r)/",
+     "cn": "哥；弟",
+     "pos": "",
+     "part": "",
+     "page": "p. 19",
+     "star": true
+    },
+    {
+     "w": "baby",
+     "ipa": "/ˈbeɪbi/",
+     "cn": "婴儿",
+     "pos": "",
+     "part": "",
+     "page": "p. 20",
+     "star": true
+    },
+    {
+     "w": "uncle",
+     "ipa": "/ˈʌŋkl/",
+     "cn": "伯父；叔父；舅父；姑父；姨父",
+     "pos": "",
+     "part": "",
+     "page": "p. 20",
+     "star": true
+    },
+    {
+     "w": "aunt",
+     "ipa": "/ɑːnt/",
+     "cn": "伯母；婶母；舅母；姑母；姨母",
+     "pos": "",
+     "part": "",
+     "page": "p. 20",
+     "star": true
+    },
+    {
+     "w": "small",
+     "ipa": "/smɔːl/",
+     "cn": "小的",
+     "pos": "",
+     "part": "",
+     "page": "p. 21",
+     "star": true
+    }
+   ]
+  },
+  {
+   "id": "U3",
+   "name": "Unit 3 Amazing animals",
+   "items": [
+    {
+     "w": "like",
+     "ipa": "/laɪk/",
+     "cn": "喜欢",
+     "pos": "",
+     "part": "",
+     "page": "p. 28",
+     "star": true
+    },
+    {
+     "w": "dog",
+     "ipa": "/dɒɡ/",
+     "cn": "狗",
+     "pos": "",
+     "part": "",
+     "page": "p. 28",
+     "star": true
+    },
+    {
+     "w": "pet",
+     "ipa": "/pet/",
+     "cn": "宠物",
+     "pos": "",
+     "part": "",
+     "page": "p. 28",
+     "star": true
+    },
+    {
+     "w": "cat",
+     "ipa": "/kæt/",
+     "cn": "猫",
+     "pos": "",
+     "part": "",
+     "page": "p. 28",
+     "star": true
+    },
+    {
+     "w": "fish",
+     "ipa": "/fɪʃ/",
+     "cn": "鱼；鱼肉",
+     "pos": "",
+     "part": "",
+     "page": "p. 29",
+     "star": true
+    },
+    {
+     "w": "bird",
+     "ipa": "/bɜːd/",
+     "cn": "鸟",
+     "pos": "",
+     "part": "",
+     "page": "p. 29",
+     "star": true
+    },
+    {
+     "w": "rabbit",
+     "ipa": "/ˈræbɪt/",
+     "cn": "兔",
+     "pos": "",
+     "part": "",
+     "page": "p. 29",
+     "star": true
+    },
+    {
+     "w": "go",
+     "ipa": "/ɡəʊ/",
+     "cn": "去；走",
+     "pos": "",
+     "part": "",
+     "page": "p. 31",
+     "star": true
+    },
+    {
+     "w": "zoo",
+     "ipa": "/zuː/",
+     "cn": "动物园",
+     "pos": "",
+     "part": "",
+     "page": "p. 31",
+     "star": true
+    },
+    {
+     "w": "fox",
+     "ipa": "/fɒks/",
+     "cn": "狐狸",
+     "pos": "",
+     "part": "",
+     "page": "p. 31",
+     "star": false
+    },
+    {
+     "w": "Miss",
+     "ipa": "/mɪs/",
+     "cn": "（学生对女教师的称呼）老师；女士",
+     "pos": "",
+     "part": "",
+     "page": "p. 31",
+     "star": true
+    },
+    {
+     "w": "panda",
+     "ipa": "/ˈpændə/",
+     "cn": "大熊猫",
+     "pos": "",
+     "part": "",
+     "page": "p. 31",
+     "star": true
+    },
+    {
+     "w": "red panda",
+     "ipa": "/red/",
+     "cn": "小熊猫",
+     "pos": "",
+     "part": "",
+     "page": "p. 31",
+     "star": false
+    },
+    {
+     "w": "cute",
+     "ipa": "/kjuːt/",
+     "cn": "可爱的",
+     "pos": "",
+     "part": "",
+     "page": "p. 31",
+     "star": true
+    },
+    {
+     "w": "monkey",
+     "ipa": "/ˈmʌŋki/",
+     "cn": "猴子",
+     "pos": "",
+     "part": "",
+     "page": "p. 32",
+     "star": true
+    },
+    {
+     "w": "tiger",
+     "ipa": "/ˈtaɪɡə(r)/",
+     "cn": "老虎",
+     "pos": "",
+     "part": "",
+     "page": "p. 32",
+     "star": true
+    },
+    {
+     "w": "elephant",
+     "ipa": "/ˈelɪfənt/",
+     "cn": "大象",
+     "pos": "",
+     "part": "",
+     "page": "p. 32",
+     "star": true
+    },
+    {
+     "w": "lion",
+     "ipa": "/ˈlaɪən/",
+     "cn": "狮；狮子",
+     "pos": "",
+     "part": "",
+     "page": "p. 32",
+     "star": true
+    },
+    {
+     "w": "animal",
+     "ipa": "/ˈænɪml/",
+     "cn": "动物",
+     "pos": "",
+     "part": "",
+     "page": "p. 33",
+     "star": true
+    },
+    {
+     "w": "giraffe",
+     "ipa": "/dʒəˈrɑːf/",
+     "cn": "长颈鹿",
+     "pos": "",
+     "part": "",
+     "page": "p. 33",
+     "star": false
+    },
+    {
+     "w": "tall",
+     "ipa": "/tɔːl/",
+     "cn": "高的",
+     "pos": "",
+     "part": "",
+     "page": "p. 33",
+     "star": true
+    },
+    {
+     "w": "fast",
+     "ipa": "/fɑːst/",
+     "cn": "快的",
+     "pos": "",
+     "part": "",
+     "page": "p. 33",
+     "star": true
+    }
+   ]
+  },
+  {
+   "id": "U4",
+   "name": "Unit 4 Plants around us",
+   "items": [
+    {
+     "w": "apple",
+     "ipa": "/ˈæpl/",
+     "cn": "苹果",
+     "pos": "",
+     "part": "",
+     "page": "p. 40",
+     "star": true
+    },
+    {
+     "w": "banana",
+     "ipa": "/bəˈnɑːnə/",
+     "cn": "香蕉",
+     "pos": "",
+     "part": "",
+     "page": "p. 40",
+     "star": true
+    },
+    {
+     "w": "farm",
+     "ipa": "/fɑːm/",
+     "cn": "农场",
+     "pos": "",
+     "part": "",
+     "page": "p. 40",
+     "star": true
+    },
+    {
+     "w": "air",
+     "ipa": "/eə(r)/",
+     "cn": "空气",
+     "pos": "",
+     "part": "",
+     "page": "p. 40",
+     "star": true
+    },
+    {
+     "w": "orange",
+     "ipa": "/ˈɒrɪndʒ/",
+     "cn": "橙子；柑橘",
+     "pos": "",
+     "part": "",
+     "page": "p. 41",
+     "star": true
+    },
+    {
+     "w": "grape",
+     "ipa": "/ɡreɪp/",
+     "cn": "葡萄",
+     "pos": "",
+     "part": "",
+     "page": "p. 41",
+     "star": true
+    },
+    {
+     "w": "school",
+     "ipa": "/skuːl/",
+     "cn": "学校",
+     "pos": "",
+     "part": "",
+     "page": "p. 43",
+     "star": true
+    },
+    {
+     "w": "garden",
+     "ipa": "/ˈɡɑːdn/",
+     "cn": "花园",
+     "pos": "",
+     "part": "",
+     "page": "p. 43",
+     "star": true
+    },
+    {
+     "w": "need",
+     "ipa": "/niːd/",
+     "cn": "需要",
+     "pos": "",
+     "part": "",
+     "page": "p. 43",
+     "star": false
+    },
+    {
+     "w": "water",
+     "ipa": "/ˈwɔːtə(r)/",
+     "cn": "给……浇水；水",
+     "pos": "",
+     "part": "",
+     "page": "p. 43",
+     "star": true
+    },
+    {
+     "w": "flower",
+     "ipa": "/ˈflaʊə(r)/",
+     "cn": "花；花朵",
+     "pos": "",
+     "part": "",
+     "page": "p. 43",
+     "star": true
+    },
+    {
+     "w": "grass",
+     "ipa": "/ɡrɑːs/",
+     "cn": "草；草地",
+     "pos": "",
+     "part": "",
+     "page": "p. 43",
+     "star": true
+    },
+    {
+     "w": "plant",
+     "ipa": "/plɑːnt/",
+     "cn": "种植；植物",
+     "pos": "",
+     "part": "",
+     "page": "p. 43",
+     "star": true
+    },
+    {
+     "w": "new",
+     "ipa": "/njuː/",
+     "cn": "新的",
+     "pos": "",
+     "part": "",
+     "page": "p. 43",
+     "star": true
+    },
+    {
+     "w": "tree",
+     "ipa": "/triː/",
+     "cn": "树",
+     "pos": "",
+     "part": "",
+     "page": "p. 43",
+     "star": true
+    },
+    {
+     "w": "sun",
+     "ipa": "/sʌn/",
+     "cn": "阳光；太阳",
+     "pos": "",
+     "part": "",
+     "page": "p. 44",
+     "star": true
+    },
+    {
+     "w": "give",
+     "ipa": "/ɡɪv/",
+     "cn": "给",
+     "pos": "",
+     "part": "",
+     "page": "p. 45",
+     "star": true
+    },
+    {
+     "w": "us",
+     "ipa": "/ʌs/",
+     "cn": "我们",
+     "pos": "",
+     "part": "",
+     "page": "p. 45",
+     "star": true
+    },
+    {
+     "w": "them",
+     "ipa": "/ðəm, ðem/",
+     "cn": "它们；他们；她们",
+     "pos": "",
+     "part": "",
+     "page": "p. 45",
+     "star": true
+    }
+   ]
+  },
+  {
+   "id": "U5",
+   "name": "Unit 5 The colourful world",
+   "items": [
+    {
+     "w": "colour",
+     "ipa": "/ˈkʌlə(r)/",
+     "cn": "颜色",
+     "pos": "",
+     "part": "",
+     "page": "p. 52",
+     "star": true
+    },
+    {
+     "w": "orange",
+     "ipa": "/ˈɒrɪndʒ/",
+     "cn": "橙红色；橙红色的",
+     "pos": "",
+     "part": "",
+     "page": "p. 52",
+     "star": true
+    },
+    {
+     "w": "green",
+     "ipa": "/ɡriːn/",
+     "cn": "绿色；绿色的",
+     "pos": "",
+     "part": "",
+     "page": "p. 52",
+     "star": true
+    },
+    {
+     "w": "red",
+     "ipa": "/red/",
+     "cn": "红色；红色的",
+     "pos": "",
+     "part": "",
+     "page": "p. 52",
+     "star": true
+    },
+    {
+     "w": "blue",
+     "ipa": "/bluː/",
+     "cn": "蓝色；蓝色的",
+     "pos": "",
+     "part": "",
+     "page": "p. 52",
+     "star": true
+    },
+    {
+     "w": "make",
+     "ipa": "/meɪk/",
+     "cn": "使出现；做",
+     "pos": "",
+     "part": "",
+     "page": "p. 52",
+     "star": true
+    },
+    {
+     "w": "purple",
+     "ipa": "/ˈpɜːpl/",
+     "cn": "紫色；紫色的",
+     "pos": "",
+     "part": "",
+     "page": "p. 52",
+     "star": false
+    },
+    {
+     "w": "brown",
+     "ipa": "/braʊn/",
+     "cn": "棕色；棕色的",
+     "pos": "",
+     "part": "",
+     "page": "p. 53",
+     "star": true
+    },
+    {
+     "w": "bear",
+     "ipa": "/beə(r)/",
+     "cn": "熊",
+     "pos": "",
+     "part": "",
+     "page": "p. 53",
+     "star": true
+    },
+    {
+     "w": "yellow",
+     "ipa": "/ˈjeləʊ/",
+     "cn": "黄色；黄色的",
+     "pos": "",
+     "part": "",
+     "page": "p. 53",
+     "star": true
+    },
+    {
+     "w": "duck",
+     "ipa": "/dʌk/",
+     "cn": "鸭",
+     "pos": "",
+     "part": "",
+     "page": "p. 53",
+     "star": true
+    },
+    {
+     "w": "sea",
+     "ipa": "/siː/",
+     "cn": "海；海洋",
+     "pos": "",
+     "part": "",
+     "page": "p. 53",
+     "star": true
+    },
+    {
+     "w": "some",
+     "ipa": "/səm, sʌm/",
+     "cn": "一些",
+     "pos": "",
+     "part": "",
+     "page": "p. 55",
+     "star": true
+    },
+    {
+     "w": "pink",
+     "ipa": "/pɪŋk/",
+     "cn": "粉色；粉色的",
+     "pos": "",
+     "part": "",
+     "page": "p. 55",
+     "star": true
+    },
+    {
+     "w": "draw",
+     "ipa": "/drɔː/",
+     "cn": "画",
+     "pos": "",
+     "part": "",
+     "page": "p. 55",
+     "star": true
+    },
+    {
+     "w": "white",
+     "ipa": "/waɪt/",
+     "cn": "白色；白色的",
+     "pos": "",
+     "part": "",
+     "page": "p. 56",
+     "star": true
+    },
+    {
+     "w": "black",
+     "ipa": "/blæk/",
+     "cn": "黑色；黑色的",
+     "pos": "",
+     "part": "",
+     "page": "p. 56",
+     "star": true
+    }
+   ]
+  },
+  {
+   "id": "U6",
+   "name": "Unit 6 Useful numbers",
+   "items": [
+    {
+     "w": "old",
+     "ipa": "/əʊld/",
+     "cn": "（多少）岁；年纪；旧的",
+     "pos": "",
+     "part": "",
+     "page": "p. 64",
+     "star": true
+    },
+    {
+     "w": "five",
+     "ipa": "/faɪv/",
+     "cn": "五",
+     "pos": "",
+     "part": "",
+     "page": "p. 64",
+     "star": false
+    },
+    {
+     "w": "year",
+     "ipa": "/jɪə(r)/",
+     "cn": "年纪；年",
+     "pos": "",
+     "part": "",
+     "page": "p. 64",
+     "star": true
+    },
+    {
+     "w": "one",
+     "ipa": "/wʌn/",
+     "cn": "一",
+     "pos": "",
+     "part": "",
+     "page": "p. 65",
+     "star": false
+    },
+    {
+     "w": "two",
+     "ipa": "/tuː/",
+     "cn": "二",
+     "pos": "",
+     "part": "",
+     "page": "p. 65",
+     "star": false
+    },
+    {
+     "w": "three",
+     "ipa": "/θriː/",
+     "cn": "三",
+     "pos": "",
+     "part": "",
+     "page": "p. 65",
+     "star": false
+    },
+    {
+     "w": "four",
+     "ipa": "/fɔː(r)/",
+     "cn": "四",
+     "pos": "",
+     "part": "",
+     "page": "p. 65",
+     "star": false
+    },
+    {
+     "w": "ten",
+     "ipa": "/ten/",
+     "cn": "十",
+     "pos": "",
+     "part": "",
+     "page": "p. 67",
+     "star": false
+    },
+    {
+     "w": "six",
+     "ipa": "/sɪks/",
+     "cn": "六",
+     "pos": "",
+     "part": "",
+     "page": "p. 67",
+     "star": false
+    },
+    {
+     "w": "seven",
+     "ipa": "/ˈsevn/",
+     "cn": "七",
+     "pos": "",
+     "part": "",
+     "page": "p. 68",
+     "star": false
+    },
+    {
+     "w": "eight",
+     "ipa": "/eɪt/",
+     "cn": "八",
+     "pos": "",
+     "part": "",
+     "page": "p. 68",
+     "star": false
+    },
+    {
+     "w": "nine",
+     "ipa": "/naɪn/",
+     "cn": "九",
+     "pos": "",
+     "part": "",
+     "page": "p. 68",
+     "star": false
+    },
+    {
+     "w": "o'clock",
+     "ipa": "/əˈklɒk/",
+     "cn": "（表示整点）……点钟",
+     "pos": "",
+     "part": "",
+     "page": "p. 69",
+     "star": true
+    },
+    {
+     "w": "cut",
+     "ipa": "/kʌt/",
+     "cn": "切块",
+     "pos": "",
+     "part": "",
+     "page": "p. 69",
+     "star": true
+    },
+    {
+     "w": "eat",
+     "ipa": "/iːt/",
+     "cn": "吃",
+     "pos": "",
+     "part": "",
+     "page": "p. 69",
+     "star": true
+    },
+    {
+     "w": "cake",
+     "ipa": "/keɪk/",
+     "cn": "蛋糕",
+     "pos": "",
+     "part": "",
+     "page": "p. 69",
+     "star": true
+    }
+   ]
+  }
+ ]
+}

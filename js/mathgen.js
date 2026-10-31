@@ -415,6 +415,9 @@ export const RANDOM = {
   phrase7: { title: '英语短语小测', icon: '💬', subject: 'phrase7', types: TW, levels: null },
   vocab4: { title: '英语单词小测', icon: '🔤', subject: 'vocab4', types: TW, levels: null },
   phrase4: { title: '英语短语小测', icon: '💬', subject: 'phrase4', types: TW, levels: null },
+  cnw3: { title: '词语听写', icon: '✍️', subject: 'cnw', types: [], levels: null },
+  cnw5: { title: '词语听写', icon: '✍️', subject: 'cnw', types: [], levels: null },
+  cnw6: { title: '词语听写', icon: '✍️', subject: 'cnw', types: [], levels: null },
   cnw4: { title: '词语听写', icon: '✍️', subject: 'cnw', types: [], levels: null },
   sent4: { title: '英语句子小测', icon: '📝', subject: 'sent4', types: TS, levels: null },
 };

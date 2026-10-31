@@ -530,7 +530,7 @@ export function home() {
   mount(h('div', { class: 'page home' },
     h('header', { class: 'hello' }, h('div', {}, h('small', {}, '你好，'), h('h1', {}, u.display + ' 👋', u.grade ? h('span', { class: 'grade' }, u.grade) : null)), h('div', { class: 'hbtns' }, h('button', { class: 'link', onclick: () => { const f = ((p.font || 0) + 1) % 3; p.font = f; S.save(u.id); setTheme(u); toast(['字号：标准', '字号：大', '字号：特大'][f]); } }, 'Aa'), h('button', { class: 'link', onclick: () => { if (confirm('切换同学？')) { S.setUser(null); nav('#/login'); } } }, '切换'))),
     healthBanner(), jar, taskCard(u), reviewCard(u),
-    u.soon && !u.subjects.length ? h('section', { class: 'soonbox' }, h('div', { class: 'logo' }, '🌱'), h('h2', {}, `${u.grade}的练习正在准备中`), h('p', { class: 'note' }, '课本内容马上就来，先把这个小窝准备好啦。')) : null,
+    u.soon && !u.subjects.length && !(u.random || []).length ? h('section', { class: 'soonbox' }, h('div', { class: 'logo' }, '🌱'), h('h2', {}, `${u.grade}的练习正在准备中`), h('p', { class: 'note' }, '课本内容马上就来，先把这个小窝准备好啦。')) : null,
     u.tasks && u.tasks.length ? h('p', { class: 'more' }, '想多练一点？从下面自己选：') : null,
     areas,
     h('h2', { class: 'sh' }, '我的'),
@@ -554,6 +554,7 @@ export function cnSubject(id) {
     return h('a', { class: 'row' + (x === cur ? ' cur' : ''), href: `#/unit/${id}/${x}` }, h('div', {}, h('b', {}, unitName(x)), h('small', {}, n === ms.length ? '都做过啦 ✅' : `做了 ${n}/${ms.length} 套`)), h('span', { class: 'chip' + (n === ms.length ? ' ok' : '') }, n === ms.length ? '再看看' : (x === cur ? '继续' : '去学'))); };
   const doneUnits = units.filter(x => x !== cur && unitDone(p, msOf(x))), openUnits = units.filter(x => x !== cur && !doneUnits.includes(x));
   const essay = s.sets.filter(m => m.kind === 'essay').length;
+  const nread = s.sets.filter(m => m.kind === 'reading').length;
   mount(page(s.title, [
     cur ? h('a', { class: 'btn primary wide gobtn', href: `#/unit/${id}/${cur}` }, `▶ 继续：${unitName(cur)}`) : null,
     h('p', { class: 'note' }, '每个单元三步：学一学 → 练一练 → 读一读。'),
@@ -562,8 +563,16 @@ export function cnSubject(id) {
     doneUnits.length ? h('details', { class: 'ctx' }, h('summary', {}, `已学完的单元（${doneUnits.length}）`), h('div', { class: 'list' }, doneUnits.map(row))) : null,
     h('h2', { class: 'sh' }, '随时可以'),
     h('div', { class: 'list' },
+      nread ? h('a', { class: 'row', href: '#/s/' + id + '/reading' }, h('div', {}, h('b', {}, '📖 阅读理解'), h('small', {}, `${nread} 篇短文，读一读，答问题`)), h('span', { class: 'chip' }, '去读')) : null,
       essay ? h('a', { class: 'row', href: '#/s/' + id + '/essay' }, h('div', {}, h('b', {}, '🌸 听美文'), h('small', {}, `${essay} 篇，听一听，学好词好句`)), h('span', { class: 'chip' }, '去听')) : null),
   ]));
+}
+export function cnReadings(id) {
+  const u = user(), s = subj(id), p = S.P(u.id);
+  const unitName = (x) => (X.lib.unitNames && X.lib.unitNames[x]) || x;
+  const order = Object.keys(X.lib.unitNames || {});
+  const ms = s.sets.filter(m => m.kind === 'reading').sort((a, b) => order.indexOf(a.unit) - order.indexOf(b.unit));
+  mount(page('阅读理解', [h('p', { class: 'note' }, '先读短文，再回答问题。不认识的字，点题目下面的“听题”，手机读给你听。'), h('div', { class: 'list' }, ms.map(m => { const rec = p.sets[m.id]; return h('a', { class: 'row', href: '#/set/' + m.id }, h('div', {}, h('b', {}, m.title), h('small', {}, `${m.subtitle} · ${(unitName(m.unit) || '').split(' ')[0]}`)), h('span', { class: 'chip' + (rec ? ' ok' : '') }, rec ? `上次 ${rec.last.ok}/${rec.last.total}` : '未做')); }))], { back: '#/s/' + id }));
 }
 export function cnEssays(id) {
   const u = user(), s = subj(id), p = S.P(u.id);
@@ -575,7 +584,7 @@ export function unitPage(id, x) {
   const rowOf = (m) => { const rec = p.sets[m.id]; return h('a', { class: 'row', href: '#/set/' + m.id }, h('div', {}, h('b', {}, m.title), h('small', {}, m.subtitle)), h('span', { class: 'chip' + (rec ? ' ok' : '') }, rec ? `上次 ${rec.last.ok}/${rec.last.total}` : '未做')); };
   const practice = ms.filter(m => m.kind !== 'reading'), reads = ms.filter(m => m.kind === 'reading');
   const learn = [];
-  if ((/^g4/.test(id) && /^Y[1-8]$/.test(x)) || (/^g2/.test(id) && /^W[1-8]$/.test(x))) learn.push(h('a', { class: 'row', href: '#/words/' + (/^g2/.test(id) ? 'cnw2' : 'cnw4') + '/' + x }, h('div', {}, h('b', {}, '📖 本单元词语'), h('small', {}, '点一点，听手机读')), h('span', { class: 'chip' }, '去学')));
+  if ((/^g4/.test(id) && /^Y[1-8]$/.test(x)) || (/^g[2356]/.test(id) && /^W[1-8]$/.test(x))) learn.push(h('a', { class: 'row', href: '#/words/' + (/^g[2356]/.test(id) ? 'cnw' + id[1] : 'cnw4') + '/' + x }, h('div', {}, h('b', {}, '📖 本单元词语'), h('small', {}, '点一点，听手机读')), h('span', { class: 'chip' }, '去学')));
   learnHook(learn, id, x, ms, p);
   mount(page(name, [
     learn.length ? [h('h2', { class: 'sh' }, '① 学一学'), h('div', { class: 'list' }, learn)] : null,
@@ -647,7 +656,7 @@ export const setLearnHook = (f) => { learnHook = f; };
 
 // ---------------- 科目页 ----------------
 export function subject(id, sub) {
-  if (/chinese$/.test(id)) return sub === 'essay' ? cnEssays(id) : cnSubject(id);
+  if (/chinese$/.test(id)) return sub === 'essay' ? cnEssays(id) : sub === 'reading' ? cnReadings(id) : cnSubject(id);
 
   const u = user(), s = subj(id), p = S.P(u.id);
   const unitsPresent = [...new Set(s.sets.filter(m => m.unit).map(m => m.unit))];
@@ -962,6 +971,15 @@ function renderQ(q, no, ans, update) {
     box.append(h('p', { class: 'note' }, '这题自己评，不算星星、也不进错题本'));
   }
   if (q._meta && (q._meta.kind === 'reading' || q._meta.kind === 'listening') && q._meta.setId) box.append(ctxDetails(q._meta));
+  // 低年级（config 里 readAloud:true）：孩子识字少，每题加「听题」，手机把题目和选项读出来
+  const me = user();
+  if (me && me.readAloud && ['choice', 'tf', 'fill'].includes(q.type)) {
+    const lines = [{ t: String(q.stem || '').replace(/_{2,}/g, '空'), s: 'x' }];
+    if (q.type === 'choice') (q.options || []).forEach((o, k) => { if (o) lines.push({ t: 'ABCD'[k] + '，' + o, s: 'x' }); });
+    if (q.type === 'tf') lines.push({ t: '对，还是错？', s: 'x' });
+    const b = h('button', { type: 'button', class: 'spk listenq', onclick: () => { stopScript(); playScript(lines, {}, { lang: 'zh-CN', times: 1, rate: 0.8, pause: 500 }); } }, '🔊 听题');
+    const first = box.querySelector('.stem'); if (first) first.after(h('div', { class: 'speakrow' }, b)); else box.prepend(b);
+  }
   return box;
 }
 

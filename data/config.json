@@ -256,6 +256,177 @@
     "cnread": "exam",
     "randmath": "exam",
     "chapmix": "exam"
+   },
+   "readAloud": true
+  },
+  {
+   "id": "g1",
+   "display": "小一",
+   "names": [
+    "小一"
+   ],
+   "theme": "rose",
+   "subjects": [],
+   "random": [],
+   "tasks": [],
+   "grade": "一年级",
+   "soon": true,
+   "readAloud": true,
+   "publishers": {
+    "cn": "统编版",
+    "math": "北师大版"
+   },
+   "modes": {
+    "chaptype": "live",
+    "mathbank": "live",
+    "engquiz": "live",
+    "errors": "live",
+    "cnpoem": "live",
+    "cnknow": "live",
+    "cnread": "exam",
+    "randmath": "exam",
+    "chapmix": "exam"
+   }
+  },
+  {
+   "id": "g3",
+   "display": "小三",
+   "names": [
+    "小三"
+   ],
+   "theme": "blue",
+   "subjects": [],
+   "random": [
+    "cnw3"
+   ],
+   "tasks": [
+    {
+     "label": "词语听写 10 个",
+     "kind": "rand",
+     "subs": [
+      "cnw3"
+     ],
+     "goal": 10
+    },
+    {
+     "label": "听一篇美文",
+     "kind": "essay",
+     "goal": 1
+    }
+   ],
+   "grade": "三年级",
+   "soon": true,
+   "readAloud": false,
+   "publishers": {
+    "cn": "统编版",
+    "math": "北师大版",
+    "eng": "人教版 PEP",
+    "sci": "苏教版"
+   },
+   "modes": {
+    "chaptype": "live",
+    "mathbank": "live",
+    "engquiz": "live",
+    "errors": "live",
+    "cnpoem": "live",
+    "cnknow": "live",
+    "cnread": "exam",
+    "randmath": "exam",
+    "chapmix": "exam"
+   }
+  },
+  {
+   "id": "g5",
+   "display": "小五",
+   "names": [
+    "小五"
+   ],
+   "theme": "leaf",
+   "subjects": [],
+   "random": [
+    "cnw5"
+   ],
+   "tasks": [
+    {
+     "label": "词语听写 10 个",
+     "kind": "rand",
+     "subs": [
+      "cnw5"
+     ],
+     "goal": 10
+    },
+    {
+     "label": "听一篇美文",
+     "kind": "essay",
+     "goal": 1
+    }
+   ],
+   "grade": "五年级",
+   "soon": true,
+   "readAloud": false,
+   "publishers": {
+    "cn": "统编版",
+    "math": "北师大版",
+    "eng": "人教版 PEP",
+    "sci": "苏教版"
+   },
+   "modes": {
+    "chaptype": "live",
+    "mathbank": "live",
+    "engquiz": "live",
+    "errors": "live",
+    "cnpoem": "live",
+    "cnknow": "live",
+    "cnread": "exam",
+    "randmath": "exam",
+    "chapmix": "exam"
+   }
+  },
+  {
+   "id": "g6",
+   "display": "小六",
+   "names": [
+    "小六"
+   ],
+   "theme": "rose",
+   "subjects": [],
+   "random": [
+    "cnw6"
+   ],
+   "tasks": [
+    {
+     "label": "词语听写 10 个",
+     "kind": "rand",
+     "subs": [
+      "cnw6"
+     ],
+     "goal": 10
+    },
+    {
+     "label": "听一篇美文",
+     "kind": "essay",
+     "goal": 1
+    }
+   ],
+   "grade": "六年级",
+   "soon": true,
+   "readAloud": false,
+   "publishers": {
+    "cn": "统编版",
+    "math": "北师大版",
+    "eng": "人教版 PEP",
+    "sci": "苏教版"
+   },
+   "modes": {
+    "chaptype": "live",
+    "mathbank": "live",
+    "engquiz": "live",
+    "errors": "live",
+    "cnpoem": "live",
+    "cnknow": "live",
+    "cnread": "exam",
+    "randmath": "exam",
+    "chapmix": "exam"
    }
   }
  ],
