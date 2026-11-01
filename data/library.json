@@ -5762,6 +5762,194 @@
      "unit": "T0"
     }
    ]
+  },
+  {
+   "id": "g3sci",
+   "title": "科学练习",
+   "icon": "🔬",
+   "desc": "按课本的课，每课一练",
+   "sets": [
+    {
+     "id": "g3sci-1",
+     "file": "sets/g3sci-1.json",
+     "title": "第1课 土壤里面有什么",
+     "subtitle": "第一单元 研究土壤",
+     "kind": "cn",
+     "unit": "TS1",
+     "count": 10
+    },
+    {
+     "id": "g3sci-2",
+     "file": "sets/g3sci-2.json",
+     "title": "第2课 不同的土壤",
+     "subtitle": "第一单元 研究土壤",
+     "kind": "cn",
+     "unit": "TS1",
+     "count": 10
+    },
+    {
+     "id": "g3sci-3",
+     "file": "sets/g3sci-3.json",
+     "title": "第3课 肥沃的土壤",
+     "subtitle": "第一单元 研究土壤",
+     "kind": "cn",
+     "unit": "TS1",
+     "count": 11
+    },
+    {
+     "id": "g3sci-4",
+     "file": "sets/g3sci-4.json",
+     "title": "第4课 植被与土壤",
+     "subtitle": "第一单元 研究土壤",
+     "kind": "cn",
+     "unit": "TS1",
+     "count": 11
+    },
+    {
+     "id": "g3sci-5",
+     "file": "sets/g3sci-5.json",
+     "title": "第5课 认识液体",
+     "subtitle": "第二单元 固体和液体",
+     "kind": "cn",
+     "unit": "TS2",
+     "count": 10
+    },
+    {
+     "id": "g3sci-6",
+     "file": "sets/g3sci-6.json",
+     "title": "第6课 认识固体",
+     "subtitle": "第二单元 固体和液体",
+     "kind": "cn",
+     "unit": "TS2",
+     "count": 10
+    },
+    {
+     "id": "g3sci-7",
+     "file": "sets/g3sci-7.json",
+     "title": "第7课 固体的混合与分离",
+     "subtitle": "第二单元 固体和液体",
+     "kind": "cn",
+     "unit": "TS2",
+     "count": 10
+    },
+    {
+     "id": "g3sci-8",
+     "file": "sets/g3sci-8.json",
+     "title": "第8课 固体、液体的混合与分离",
+     "subtitle": "第二单元 固体和液体",
+     "kind": "cn",
+     "unit": "TS2",
+     "count": 11
+    },
+    {
+     "id": "g3sci-9",
+     "file": "sets/g3sci-9.json",
+     "title": "第9课 河流与湖泊",
+     "subtitle": "第三单元 地球上的水体",
+     "kind": "cn",
+     "unit": "TS3",
+     "count": 10
+    },
+    {
+     "id": "g3sci-10",
+     "file": "sets/g3sci-10.json",
+     "title": "第10课 地下水",
+     "subtitle": "第三单元 地球上的水体",
+     "kind": "cn",
+     "unit": "TS3",
+     "count": 10
+    },
+    {
+     "id": "g3sci-11",
+     "file": "sets/g3sci-11.json",
+     "title": "第11课 海洋",
+     "subtitle": "第三单元 地球上的水体",
+     "kind": "cn",
+     "unit": "TS3",
+     "count": 10
+    },
+    {
+     "id": "g3sci-12",
+     "file": "sets/g3sci-12.json",
+     "title": "第12课 珍惜水资源",
+     "subtitle": "第三单元 地球上的水体",
+     "kind": "cn",
+     "unit": "TS3",
+     "count": 12
+    },
+    {
+     "id": "g3sci-13",
+     "file": "sets/g3sci-13.json",
+     "title": "第13课 吹气球",
+     "subtitle": "第四单元 空气的性质",
+     "kind": "cn",
+     "unit": "TS4",
+     "count": 10
+    },
+    {
+     "id": "g3sci-14",
+     "file": "sets/g3sci-14.json",
+     "title": "第14课 称空气",
+     "subtitle": "第四单元 空气的性质",
+     "kind": "cn",
+     "unit": "TS4",
+     "count": 11
+    },
+    {
+     "id": "g3sci-15",
+     "file": "sets/g3sci-15.json",
+     "title": "第15课 热气球",
+     "subtitle": "第四单元 空气的性质",
+     "kind": "cn",
+     "unit": "TS4",
+     "count": 11
+    },
+    {
+     "id": "g3sci-16",
+     "file": "sets/g3sci-16.json",
+     "title": "第16课 风的形成",
+     "subtitle": "第四单元 空气的性质",
+     "kind": "cn",
+     "unit": "TS4",
+     "count": 11
+    },
+    {
+     "id": "g3sci-17",
+     "file": "sets/g3sci-17.json",
+     "title": "第17课 天然材料与人造材料",
+     "subtitle": "第五单元 材料的演变",
+     "kind": "cn",
+     "unit": "TS5",
+     "count": 11
+    },
+    {
+     "id": "g3sci-18",
+     "file": "sets/g3sci-18.json",
+     "title": "第18课 纺织材料",
+     "subtitle": "第五单元 材料的演变",
+     "kind": "cn",
+     "unit": "TS5",
+     "count": 10
+    },
+    {
+     "id": "g3sci-19",
+     "file": "sets/g3sci-19.json",
+     "title": "第19课 建筑材料",
+     "subtitle": "第五单元 材料的演变",
+     "kind": "cn",
+     "unit": "TS5",
+     "count": 10
+    },
+    {
+     "id": "g3sci-20",
+     "file": "sets/g3sci-20.json",
+     "title": "第20课 纳米材料",
+     "subtitle": "第五单元 材料的演变",
+     "kind": "cn",
+     "unit": "TS5",
+     "count": 11
+    }
+   ]
   }
  ],
  "unitNames": {
@@ -5836,6 +6024,11 @@
   "T6": "第六单元 富饶的西沙群岛·海滨小城·美丽的小兴安岭",
   "T7": "第七单元 古诗三首·大自然的声音·读不完的大书",
   "T8": "第八单元 司马光·一定要争气·手术台就是阵地",
-  "T0": "语文积累（词语·句子·标点）"
+  "T0": "语文积累（词语·句子·标点）",
+  "TS1": "第一单元 研究土壤",
+  "TS2": "第二单元 固体和液体",
+  "TS3": "第三单元 地球上的水体",
+  "TS4": "第四单元 空气的性质",
+  "TS5": "第五单元 材料的演变"
  }
 }
