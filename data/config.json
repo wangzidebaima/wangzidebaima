@@ -309,7 +309,9 @@
     "小三"
    ],
    "theme": "blue",
-   "subjects": [],
+   "subjects": [
+    "g3chinese"
+   ],
    "random": [
     "cnw3"
    ],
@@ -329,7 +331,6 @@
     }
    ],
    "grade": "三年级",
-   "soon": true,
    "readAloud": false,
    "publishers": {
     "cn": "统编版",

@@ -5349,6 +5349,419 @@
      "count": 10
     }
    ]
+  },
+  {
+   "id": "g3chinese",
+   "title": "语文练习",
+   "icon": "📖",
+   "desc": "按课本单元：课文小测、阅读、古诗、美文",
+   "sets": [
+    {
+     "id": "g3c-k1",
+     "file": "sets/g3c-k1.json",
+     "title": "第一单元·课文小测",
+     "subtitle": "大青树下的小学 / 花的学校 / 不懂就要问",
+     "kind": "cn",
+     "count": 9,
+     "unit": "T1"
+    },
+    {
+     "id": "g3c-k2",
+     "file": "sets/g3c-k2.json",
+     "title": "第二单元·课文小测",
+     "subtitle": "古诗三首（山行 / 赠刘景文 / 夜书所见）/ 铺满金色巴掌的水泥道 / 秋天的雨",
+     "kind": "cn",
+     "count": 9,
+     "unit": "T2"
+    },
+    {
+     "id": "g3c-k3",
+     "file": "sets/g3c-k3.json",
+     "title": "第三单元·课文小测",
+     "subtitle": "听听，秋的声音 / 总也倒不了的老屋 / 犟龟 / 小狗学叫",
+     "kind": "cn",
+     "count": 9,
+     "unit": "T3"
+    },
+    {
+     "id": "g3c-k4",
+     "file": "sets/g3c-k4.json",
+     "title": "第四单元·课文小测",
+     "subtitle": "宝葫芦的秘密 / 在牛肚子里旅行 / 一块奶酪",
+     "kind": "cn",
+     "count": 9,
+     "unit": "T4"
+    },
+    {
+     "id": "g3c-k5",
+     "file": "sets/g3c-k5.json",
+     "title": "第五单元·课文小测",
+     "subtitle": "搭船的鸟 / 金色的草地",
+     "kind": "cn",
+     "count": 9,
+     "unit": "T5"
+    },
+    {
+     "id": "g3c-k6",
+     "file": "sets/g3c-k6.json",
+     "title": "第六单元·课文小测",
+     "subtitle": "富饶的西沙群岛 / 海滨小城 / 美丽的小兴安岭 / 香港，璀璨的明珠",
+     "kind": "cn",
+     "count": 9,
+     "unit": "T6"
+    },
+    {
+     "id": "g3c-k7",
+     "file": "sets/g3c-k7.json",
+     "title": "第七单元·课文小测",
+     "subtitle": "古诗三首（望天门山 / 饮湖上初晴后雨 / 望洞庭）/ 大自然的声音 / 读不完的大书",
+     "kind": "cn",
+     "count": 9,
+     "unit": "T7"
+    },
+    {
+     "id": "g3c-k8",
+     "file": "sets/g3c-k8.json",
+     "title": "第八单元·课文小测",
+     "subtitle": "司马光 / 一定要争气 / 手术台就是阵地 / 一个粗瓷大碗",
+     "kind": "cn",
+     "count": 9,
+     "unit": "T8"
+    },
+    {
+     "id": "g3c-r1",
+     "file": "sets/g3c-r1.json",
+     "title": "开学第一天",
+     "subtitle": "阅读·校园",
+     "kind": "reading",
+     "count": 6,
+     "unit": "T1"
+    },
+    {
+     "id": "g3c-r2",
+     "file": "sets/g3c-r2.json",
+     "title": "秋天的田野",
+     "subtitle": "阅读·写景",
+     "kind": "reading",
+     "count": 6,
+     "unit": "T2"
+    },
+    {
+     "id": "g3c-r3",
+     "file": "sets/g3c-r3.json",
+     "title": "落叶",
+     "subtitle": "阅读·写景",
+     "kind": "reading",
+     "count": 6,
+     "unit": "T2"
+    },
+    {
+     "id": "g3c-r4",
+     "file": "sets/g3c-r4.json",
+     "title": "小熊搬家",
+     "subtitle": "阅读·童话",
+     "kind": "reading",
+     "count": 6,
+     "unit": "T3"
+    },
+    {
+     "id": "g3c-r5",
+     "file": "sets/g3c-r5.json",
+     "title": "蜗牛的路",
+     "subtitle": "阅读·童话",
+     "kind": "reading",
+     "count": 6,
+     "unit": "T3"
+    },
+    {
+     "id": "g3c-r6",
+     "file": "sets/g3c-r6.json",
+     "title": "小蚂蚁的旅行",
+     "subtitle": "阅读·科普童话",
+     "kind": "reading",
+     "count": 6,
+     "unit": "T4"
+    },
+    {
+     "id": "g3c-r7",
+     "file": "sets/g3c-r7.json",
+     "title": "池塘边",
+     "subtitle": "阅读·写景",
+     "kind": "reading",
+     "count": 6,
+     "unit": "T5"
+    },
+    {
+     "id": "g3c-r8",
+     "file": "sets/g3c-r8.json",
+     "title": "小麻雀",
+     "subtitle": "阅读·小故事",
+     "kind": "reading",
+     "count": 6,
+     "unit": "T5"
+    },
+    {
+     "id": "g3c-r9",
+     "file": "sets/g3c-r9.json",
+     "title": "海边的早晨",
+     "subtitle": "阅读·写景",
+     "kind": "reading",
+     "count": 6,
+     "unit": "T6"
+    },
+    {
+     "id": "g3c-r10",
+     "file": "sets/g3c-r10.json",
+     "title": "森林的早晨",
+     "subtitle": "阅读·写景",
+     "kind": "reading",
+     "count": 6,
+     "unit": "T6"
+    },
+    {
+     "id": "g3c-r11",
+     "file": "sets/g3c-r11.json",
+     "title": "风的声音",
+     "subtitle": "阅读·写景",
+     "kind": "reading",
+     "count": 6,
+     "unit": "T7"
+    },
+    {
+     "id": "g3c-r12",
+     "file": "sets/g3c-r12.json",
+     "title": "小林和放大镜",
+     "subtitle": "阅读·小故事",
+     "kind": "reading",
+     "count": 6,
+     "unit": "T8"
+    },
+    {
+     "id": "g3c-e1",
+     "file": "sets/g3c-e1.json",
+     "title": "《清晨的小路》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 4,
+     "unit": "E"
+    },
+    {
+     "id": "g3c-e2",
+     "file": "sets/g3c-e2.json",
+     "title": "《雨后》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 4,
+     "unit": "E"
+    },
+    {
+     "id": "g3c-e3",
+     "file": "sets/g3c-e3.json",
+     "title": "《我的小书桌》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 4,
+     "unit": "E"
+    },
+    {
+     "id": "g3c-e4",
+     "file": "sets/g3c-e4.json",
+     "title": "《小花猫》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 4,
+     "unit": "E"
+    },
+    {
+     "id": "g3c-e5",
+     "file": "sets/g3c-e5.json",
+     "title": "《月亮船》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 4,
+     "unit": "E"
+    },
+    {
+     "id": "g3c-e6",
+     "file": "sets/g3c-e6.json",
+     "title": "《小雪花》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 4,
+     "unit": "E"
+    },
+    {
+     "id": "g3c-e7",
+     "file": "sets/g3c-e7.json",
+     "title": "《爷爷的菜园》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 4,
+     "unit": "E"
+    },
+    {
+     "id": "g3c-e8",
+     "file": "sets/g3c-e8.json",
+     "title": "《放风筝》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 4,
+     "unit": "E"
+    },
+    {
+     "id": "g3c-e9",
+     "file": "sets/g3c-e9.json",
+     "title": "《夏夜》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 4,
+     "unit": "E"
+    },
+    {
+     "id": "g3c-e10",
+     "file": "sets/g3c-e10.json",
+     "title": "《我的好朋友》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 4,
+     "unit": "E"
+    },
+    {
+     "id": "g3c-sx-a",
+     "file": "sets/g3c-sx-a.json",
+     "title": "《山行》理解",
+     "subtitle": "杜牧 · 古诗",
+     "kind": "cn",
+     "count": 6,
+     "unit": "T2"
+    },
+    {
+     "id": "g3c-sx-b",
+     "file": "sets/g3c-sx-b.json",
+     "title": "《山行》默写",
+     "subtitle": "先背一背，再默写（不显示原诗）",
+     "kind": "cn",
+     "count": 4,
+     "unit": "T2"
+    },
+    {
+     "id": "g3c-zljw-a",
+     "file": "sets/g3c-zljw-a.json",
+     "title": "《赠刘景文》理解",
+     "subtitle": "苏轼 · 古诗",
+     "kind": "cn",
+     "count": 6,
+     "unit": "T2"
+    },
+    {
+     "id": "g3c-zljw-b",
+     "file": "sets/g3c-zljw-b.json",
+     "title": "《赠刘景文》默写",
+     "subtitle": "先背一背，再默写（不显示原诗）",
+     "kind": "cn",
+     "count": 4,
+     "unit": "T2"
+    },
+    {
+     "id": "g3c-ysjs-a",
+     "file": "sets/g3c-ysjs-a.json",
+     "title": "《夜书所见》理解",
+     "subtitle": "叶绍翁 · 古诗",
+     "kind": "cn",
+     "count": 6,
+     "unit": "T2"
+    },
+    {
+     "id": "g3c-ysjs-b",
+     "file": "sets/g3c-ysjs-b.json",
+     "title": "《夜书所见》默写",
+     "subtitle": "先背一背，再默写（不显示原诗）",
+     "kind": "cn",
+     "count": 4,
+     "unit": "T2"
+    },
+    {
+     "id": "g3c-wtms-a",
+     "file": "sets/g3c-wtms-a.json",
+     "title": "《望天门山》理解",
+     "subtitle": "李白 · 古诗",
+     "kind": "cn",
+     "count": 6,
+     "unit": "T7"
+    },
+    {
+     "id": "g3c-wtms-b",
+     "file": "sets/g3c-wtms-b.json",
+     "title": "《望天门山》默写",
+     "subtitle": "先背一背，再默写（不显示原诗）",
+     "kind": "cn",
+     "count": 4,
+     "unit": "T7"
+    },
+    {
+     "id": "g3c-yhs-a",
+     "file": "sets/g3c-yhs-a.json",
+     "title": "《饮湖上初晴后雨》理解",
+     "subtitle": "苏轼 · 古诗",
+     "kind": "cn",
+     "count": 6,
+     "unit": "T7"
+    },
+    {
+     "id": "g3c-yhs-b",
+     "file": "sets/g3c-yhs-b.json",
+     "title": "《饮湖上初晴后雨》默写",
+     "subtitle": "先背一背，再默写（不显示原诗）",
+     "kind": "cn",
+     "count": 4,
+     "unit": "T7"
+    },
+    {
+     "id": "g3c-wdt-a",
+     "file": "sets/g3c-wdt-a.json",
+     "title": "《望洞庭》理解",
+     "subtitle": "刘禹锡 · 古诗",
+     "kind": "cn",
+     "count": 6,
+     "unit": "T7"
+    },
+    {
+     "id": "g3c-wdt-b",
+     "file": "sets/g3c-wdt-b.json",
+     "title": "《望洞庭》默写",
+     "subtitle": "先背一背，再默写（不显示原诗）",
+     "kind": "cn",
+     "count": 4,
+     "unit": "T7"
+    },
+    {
+     "id": "g3c-j1",
+     "file": "sets/g3c-j1.json",
+     "title": "词语积累·近义词反义词",
+     "subtitle": "词语小练习",
+     "kind": "cn",
+     "count": 10,
+     "unit": "T0"
+    },
+    {
+     "id": "g3c-j2",
+     "file": "sets/g3c-j2.json",
+     "title": "句子积累·修辞手法",
+     "subtitle": "比喻 / 拟人",
+     "kind": "cn",
+     "count": 9,
+     "unit": "T0"
+    },
+    {
+     "id": "g3c-j3",
+     "file": "sets/g3c-j3.json",
+     "title": "标点与关联词",
+     "subtitle": "标点符号 / 关联词语",
+     "kind": "cn",
+     "count": 9,
+     "unit": "T0"
+    }
+   ]
   }
  ],
  "unitNames": {
@@ -5414,6 +5827,15 @@
   "X5": "第五单元 秋天·江南·雪地里的小画家·四季",
   "X6": "第六单元 识字（对韵歌·日月明·小书包·升国旗）",
   "X7": "第七单元 小小的船·影子·两件宝",
-  "X8": "第八单元 比尾巴·乌鸦喝水·雨点儿"
+  "X8": "第八单元 比尾巴·乌鸦喝水·雨点儿",
+  "T1": "第一单元 大青树下的小学·花的学校·不懂就要问",
+  "T2": "第二单元 古诗三首·铺满金色巴掌的水泥道·秋天的雨",
+  "T3": "第三单元 总也倒不了的老屋·犟龟·小狗学叫",
+  "T4": "第四单元 宝葫芦的秘密·在牛肚子里旅行·一块奶酪",
+  "T5": "第五单元 搭船的鸟·金色的草地",
+  "T6": "第六单元 富饶的西沙群岛·海滨小城·美丽的小兴安岭",
+  "T7": "第七单元 古诗三首·大自然的声音·读不完的大书",
+  "T8": "第八单元 司马光·一定要争气·手术台就是阵地",
+  "T0": "语文积累（词语·句子·标点）"
  }
 }

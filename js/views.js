@@ -584,7 +584,7 @@ export function unitPage(id, x) {
   const rowOf = (m) => { const rec = p.sets[m.id]; return h('a', { class: 'row', href: '#/set/' + m.id }, h('div', {}, h('b', {}, m.title), h('small', {}, m.subtitle)), h('span', { class: 'chip' + (rec ? ' ok' : '') }, rec ? `上次 ${rec.last.ok}/${rec.last.total}` : '未做')); };
   const practice = ms.filter(m => m.kind !== 'reading'), reads = ms.filter(m => m.kind === 'reading');
   const learn = [];
-  if ((/^g4/.test(id) && /^Y[1-8]$/.test(x)) || (/^g[2356]/.test(id) && /^W[1-8]$/.test(x))) learn.push(h('a', { class: 'row', href: '#/words/' + (/^g[2356]/.test(id) ? 'cnw' + id[1] : 'cnw4') + '/' + x }, h('div', {}, h('b', {}, '📖 本单元词语'), h('small', {}, '点一点，听手机读')), h('span', { class: 'chip' }, '去学')));
+  if ((/^g4/.test(id) && /^Y[1-8]$/.test(x)) || (/^g[2356]/.test(id) && /^[WTFL][1-8]$/.test(x))) learn.push(h('a', { class: 'row', href: '#/words/' + (/^g[2356]/.test(id) ? 'cnw' + id[1] : 'cnw4') + '/' + (/^g[2356]/.test(id) ? 'W' + x[1] : x) }, h('div', {}, h('b', {}, '📖 本单元词语'), h('small', {}, '点一点，听手机读')), h('span', { class: 'chip' }, '去学')));
   learnHook(learn, id, x, ms, p);
   mount(page(name, [
     learn.length ? [h('h2', { class: 'sh' }, '① 学一学'), h('div', { class: 'list' }, learn)] : null,
