@@ -314,14 +314,36 @@
     "g3sci"
    ],
    "random": [
-    "cnw3"
+    "math3",
+    "chap3",
+    "cnw3",
+    "vocab3",
+    "sent3"
    ],
    "tasks": [
+    {
+     "label": "数学随机练习 10 题",
+     "kind": "rand",
+     "subs": [
+      "math3",
+      "chap3"
+     ],
+     "goal": 10
+    },
     {
      "label": "词语听写 10 个",
      "kind": "rand",
      "subs": [
       "cnw3"
+     ],
+     "goal": 10
+    },
+    {
+     "label": "英语单词或句子小测 10 题",
+     "kind": "rand",
+     "subs": [
+      "vocab3",
+      "sent3"
      ],
      "goal": 10
     },

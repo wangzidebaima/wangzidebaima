@@ -393,6 +393,25 @@ const G2 = {
 };
 export const T2 = [{ id: 'add', name: '加法' }, { id: 'sub', name: '减法' }, { id: 'mul', name: '乘法口诀' }, { id: 'div', name: '除法口诀' }, { id: 'mix', name: '连加连减·乘加' }];
 
+// ---------- 三年级口算（万以内加减、表内乘除、一位数乘除多位数、简单小数） ----------
+const q3 = (typeId, stem, ans, why) => ({ type: 'math', typeId, stem, answer: String(ans), why: why + `\n答案：${ans}`, pts: 1, id: 'r-' + typeId + '-' + hash(stem), digits: typeId !== 'dec' });
+const G3 = {
+  add: (L) => { const hi = L === 1 ? 99 : L === 2 ? 499 : 999, a = ri(L === 1 ? 20 : 100, hi), b = ri(L === 1 ? 20 : 100, hi); return q3('add', `${a}+${b}`, a + b, `从个位加起，满十向前一位进 1：${a}+${b}=${a + b}。`); },
+  sub: (L) => { const a = ri(L === 1 ? 50 : 200, L === 1 ? 99 : 999), b = ri(L === 1 ? 11 : 100, a - 1); return q3('sub', `${a}−${b}`, a - b, `从个位减起，不够减向前一位借 1 当 10：${a}−${b}=${a - b}。`); },
+  mul: (L) => { if (L === 1) { const a = ri(2, 9), b = ri(2, 9); return q3('mul', `${a}×${b}`, a * b, `想乘法口诀：${Math.min(a, b)}×${Math.max(a, b)}=${a * b}。`); }
+    if (L === 2) { const a = ri(11, 49), b = ri(2, 9); return q3('mul', `${a}×${b}`, a * b, `拆开算：${a - a % 10}×${b}=${(a - a % 10) * b}，${a % 10}×${b}=${(a % 10) * b}，相加得 ${a * b}。`); }
+    const a = ri(101, 399), b = ri(2, 6); return q3('mul', `${a}×${b}`, a * b, `按位算：百位、十位、个位分别乘 ${b} 再相加，得 ${a * b}。`); },
+  div: (L) => { if (L === 1) { const a = ri(2, 9), q = ri(2, 9); return q3('div', `${a * q}÷${a}`, q, `想口诀：${a}×${q}=${a * q}，所以 ${a * q}÷${a}=${q}。`); }
+    const b = ri(2, 9), q = L === 2 ? ri(11, 49) : ri(101, 199); return q3('div', `${b * q}÷${b}`, q, `想：${b} 乘几得 ${b * q}？${b}×${q}=${b * q}，所以商是 ${q}。`); },
+  mix: (L) => { if (L === 1) { const a = ri(10, 50), b = ri(2, 9), c = ri(2, 9); return q3('mix', `${a}+${b}×${c}`, a + b * c, `先算乘法：${b}×${c}=${b * c}；再算加法：${a}+${b * c}=${a + b * c}。`); }
+    if (L === 2) { const a = ri(5, 30), b = ri(2, 9), c = ri(2, 9); return q3('mix', `(${a}+${b})×${c}`, (a + b) * c, `先算括号里的：${a}+${b}=${a + b}；再算乘法：${a + b}×${c}=${(a + b) * c}。`); }
+    const c = ri(2, 9), q = ri(3, 12), a = ri(10, 60) + c * q; return q3('mix', `${a}−${c * q}÷${c}`, a - q, `先算除法：${c * q}÷${c}=${q}；再算减法：${a}−${q}=${a - q}。`); },
+  dec: (L) => { const x = ri(1, 79), y = ri(1, 79), a = (x / 10).toFixed(1), b = (y / 10).toFixed(1);
+    if (Math.random() < 0.5 || x <= y) return q3('dec', `${a}+${b}`, String((x + y) / 10), `小数点对齐再加：${a}+${b}=${(x + y) / 10}。`);
+    return q3('dec', `${a}−${b}`, String((x - y) / 10), `小数点对齐再减：${a}−${b}=${(x - y) / 10}。`); },
+};
+export const T3 = [{ id: 'add', name: '三位数加法' }, { id: 'sub', name: '三位数减法' }, { id: 'mul', name: '乘法' }, { id: 'div', name: '除法' }, { id: 'mix', name: '混合运算' }, { id: 'dec', name: '一位小数加减' }];
+
 // ---------- 英语词汇 ----------
 const vocabQ = (kind, list) => {
   const w = pick(list), pool = shuf(list.filter(x => x.en !== w.en)).slice(0, 3);
@@ -417,9 +436,14 @@ import { CHAP_TYPES } from './chapgen.js';
 import { CHAP4_TYPES } from './chapgen4.js';
 import { CHAP2_TYPES } from './chapgen2.js';
 import { CHAP1_TYPES } from './chapgen1.js';
+import { CHAP3_TYPES } from './chapgen3.js';
 export const RANDOM = {
   chap1: { title: '一年级数学章节练习', icon: '📐', subject: 'chap1', types: CHAP1_TYPES, levels: ['简单', '适中', '挑战'] },
   math1: { title: '口算随机练习', icon: '🎲', subject: 'math1', types: T1, levels: ['简单', '适中', '挑战'], gen: (t, l) => G1[t](l) },
+  chap3: { title: '三年级数学章节练习', icon: '📐', subject: 'chap3', types: CHAP3_TYPES, levels: ['简单', '适中', '挑战'] },
+  math3: { title: '口算随机练习', icon: '🎲', subject: 'math3', types: T3, levels: ['简单', '适中', '挑战'], gen: (t, l) => G3[t](l) },
+  vocab3: { title: '英语单词小测', icon: '🔤', subject: 'vocab3', types: TW, levels: null },
+  sent3: { title: '英语句子小测', icon: '📝', subject: 'sent3', types: TS, levels: null },
   chap2: { title: '二年级数学章节练习', icon: '📐', subject: 'chap2', types: CHAP2_TYPES, levels: ['简单', '适中', '挑战'] },
   math2: { title: '口算随机练习', icon: '🎲', subject: 'math2', types: T2, levels: ['简单', '适中', '挑战'], gen: (t, l) => G2[t](l) },
   cnw2: { title: '词语听写', icon: '✍️', subject: 'cnw', types: [], levels: null },

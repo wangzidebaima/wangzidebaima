@@ -1,0 +1,1205 @@
+{
+"book": "三年级 英语",
+"units": [
+{
+"id": "U1",
+"name": "Unit 1 Making friends",
+"items": [
+{
+"id": "U1-1",
+"en": "name",
+"pos": "",
+"zh": "名字",
+"zh1": "名字",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-2",
+"en": "nice",
+"pos": "",
+"zh": "令人愉快的；友好的",
+"zh1": "令人愉快的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-3",
+"en": "ear",
+"pos": "",
+"zh": "耳朵",
+"zh1": "耳朵",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-4",
+"en": "hand",
+"pos": "",
+"zh": "手",
+"zh1": "手",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-5",
+"en": "eye",
+"pos": "",
+"zh": "眼睛",
+"zh1": "眼睛",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-6",
+"en": "mouth",
+"pos": "",
+"zh": "嘴",
+"zh1": "嘴",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-7",
+"en": "arm",
+"pos": "",
+"zh": "胳膊",
+"zh1": "胳膊",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-8",
+"en": "can",
+"pos": "",
+"zh": "可以",
+"zh1": "可以",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-9",
+"en": "share",
+"pos": "",
+"zh": "分享",
+"zh1": "分享",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-10",
+"en": "smile",
+"pos": "",
+"zh": "微笑；笑",
+"zh1": "微笑",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U1-11",
+"en": "listen",
+"pos": "",
+"zh": "听；倾听",
+"zh1": "听",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-12",
+"en": "help",
+"pos": "",
+"zh": "帮助",
+"zh1": "帮助",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-13",
+"en": "say",
+"pos": "",
+"zh": "说；讲",
+"zh1": "说",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-14",
+"en": "friend",
+"pos": "",
+"zh": "朋友",
+"zh1": "朋友",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-15",
+"en": "good",
+"pos": "",
+"zh": "好的",
+"zh1": "好的",
+"bold": true,
+"kind": "word"
+}
+],
+"sentences": [
+{
+"id": "U1-s1",
+"en": "What's your name?",
+"zh": "你叫什么名字？"
+},
+{
+"id": "U1-s2",
+"en": "My name is Amy.",
+"zh": "我的名字叫艾米。"
+},
+{
+"id": "U1-s3",
+"en": "Nice to meet you.",
+"zh": "很高兴见到你。"
+},
+{
+"id": "U1-s4",
+"en": "I can share my book.",
+"zh": "我可以分享我的书。"
+},
+{
+"id": "U1-s5",
+"en": "Let's be friends.",
+"zh": "我们做朋友吧。"
+},
+{
+"id": "U1-s6",
+"en": "Smile and say hello.",
+"zh": "微笑着说你好。"
+}
+]
+},
+{
+"id": "U2",
+"name": "Unit 2 Different families",
+"items": [
+{
+"id": "U2-1",
+"en": "mum",
+"pos": "",
+"zh": "（口语）妈妈",
+"zh1": "妈妈",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-2",
+"en": "dad",
+"pos": "",
+"zh": "（口语）爸爸；爹爹",
+"zh1": "爸爸",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-3",
+"en": "grandma",
+"pos": "",
+"zh": "奶奶；姥姥",
+"zh1": "奶奶",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-4",
+"en": "grandpa",
+"pos": "",
+"zh": "爷爷；姥爷",
+"zh1": "爷爷",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-5",
+"en": "grandfather",
+"pos": "",
+"zh": "（外）祖父；爷爷；姥爷；外公",
+"zh1": "（外）祖父",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-6",
+"en": "grandmother",
+"pos": "",
+"zh": "（外）祖母；奶奶；姥姥；外婆",
+"zh1": "（外）祖母",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-7",
+"en": "mother",
+"pos": "",
+"zh": "母亲；妈妈",
+"zh1": "母亲",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-8",
+"en": "father",
+"pos": "",
+"zh": "父亲；爸爸",
+"zh1": "父亲",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-9",
+"en": "me",
+"pos": "",
+"zh": "我",
+"zh1": "我",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-10",
+"en": "sister",
+"pos": "",
+"zh": "姐；妹",
+"zh1": "姐姐；妹妹",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-11",
+"en": "family",
+"pos": "",
+"zh": "家；家庭",
+"zh1": "家庭",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-12",
+"en": "have",
+"pos": "",
+"zh": "有",
+"zh1": "有",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-13",
+"en": "big",
+"pos": "",
+"zh": "大的",
+"zh1": "大的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-14",
+"en": "cousin",
+"pos": "",
+"zh": "堂（表）兄弟；堂（表）姐妹",
+"zh1": "堂（表）兄弟姐妹",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-15",
+"en": "brother",
+"pos": "",
+"zh": "哥；弟",
+"zh1": "哥哥；弟弟",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-16",
+"en": "baby",
+"pos": "",
+"zh": "婴儿",
+"zh1": "婴儿",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-17",
+"en": "uncle",
+"pos": "",
+"zh": "伯父；叔父；舅父；姑父；姨父",
+"zh1": "伯父",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-18",
+"en": "aunt",
+"pos": "",
+"zh": "伯母；婶母；舅母；姑母；姨母",
+"zh1": "伯母",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-19",
+"en": "small",
+"pos": "",
+"zh": "小的",
+"zh1": "小的",
+"bold": true,
+"kind": "word"
+}
+],
+"sentences": [
+{
+"id": "U2-s1",
+"en": "This is my family.",
+"zh": "这是我的家人。"
+},
+{
+"id": "U2-s2",
+"en": "I have a big family.",
+"zh": "我有一个大家庭。"
+},
+{
+"id": "U2-s3",
+"en": "She is my grandma.",
+"zh": "她是我的奶奶（外婆）。"
+},
+{
+"id": "U2-s4",
+"en": "He is my father.",
+"zh": "他是我的爸爸。"
+},
+{
+"id": "U2-s5",
+"en": "I have one sister.",
+"zh": "我有一个姐姐（妹妹）。"
+},
+{
+"id": "U2-s6",
+"en": "The baby is my cousin.",
+"zh": "这个婴儿是我的堂（表）弟或堂（表）妹。"
+}
+]
+},
+{
+"id": "U3",
+"name": "Unit 3 Amazing animals",
+"items": [
+{
+"id": "U3-1",
+"en": "like",
+"pos": "",
+"zh": "喜欢",
+"zh1": "喜欢",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-2",
+"en": "dog",
+"pos": "",
+"zh": "狗",
+"zh1": "狗",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-3",
+"en": "pet",
+"pos": "",
+"zh": "宠物",
+"zh1": "宠物",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-4",
+"en": "cat",
+"pos": "",
+"zh": "猫",
+"zh1": "猫",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-5",
+"en": "fish",
+"pos": "",
+"zh": "鱼；鱼肉",
+"zh1": "鱼",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-6",
+"en": "bird",
+"pos": "",
+"zh": "鸟",
+"zh1": "鸟",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-7",
+"en": "rabbit",
+"pos": "",
+"zh": "兔",
+"zh1": "兔子",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-8",
+"en": "go",
+"pos": "",
+"zh": "去；走",
+"zh1": "去；走",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-9",
+"en": "zoo",
+"pos": "",
+"zh": "动物园",
+"zh1": "动物园",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-10",
+"en": "fox",
+"pos": "",
+"zh": "狐狸",
+"zh1": "狐狸",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U3-11",
+"en": "Miss",
+"pos": "",
+"zh": "（学生对女教师的称呼）老师；女士",
+"zh1": "老师",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-12",
+"en": "panda",
+"pos": "",
+"zh": "大熊猫",
+"zh1": "大熊猫",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-13",
+"en": "red panda",
+"pos": "",
+"zh": "小熊猫",
+"zh1": "小熊猫",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U3-14",
+"en": "cute",
+"pos": "",
+"zh": "可爱的",
+"zh1": "可爱的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-15",
+"en": "monkey",
+"pos": "",
+"zh": "猴子",
+"zh1": "猴子",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-16",
+"en": "tiger",
+"pos": "",
+"zh": "老虎",
+"zh1": "老虎",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-17",
+"en": "elephant",
+"pos": "",
+"zh": "大象",
+"zh1": "大象",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-18",
+"en": "lion",
+"pos": "",
+"zh": "狮；狮子",
+"zh1": "狮子",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-19",
+"en": "animal",
+"pos": "",
+"zh": "动物",
+"zh1": "动物",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-20",
+"en": "giraffe",
+"pos": "",
+"zh": "长颈鹿",
+"zh1": "长颈鹿",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U3-21",
+"en": "tall",
+"pos": "",
+"zh": "高的",
+"zh1": "高的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-22",
+"en": "fast",
+"pos": "",
+"zh": "快的",
+"zh1": "快的",
+"bold": true,
+"kind": "word"
+}
+],
+"sentences": [
+{
+"id": "U3-s1",
+"en": "I like dogs.",
+"zh": "我喜欢狗。"
+},
+{
+"id": "U3-s2",
+"en": "Do you like cats?",
+"zh": "你喜欢猫吗？"
+},
+{
+"id": "U3-s3",
+"en": "Pandas are cute.",
+"zh": "大熊猫很可爱。"
+},
+{
+"id": "U3-s4",
+"en": "The tiger is fast.",
+"zh": "老虎跑得很快。"
+},
+{
+"id": "U3-s5",
+"en": "The giraffe is tall.",
+"zh": "长颈鹿很高。"
+},
+{
+"id": "U3-s6",
+"en": "Let's go to the zoo.",
+"zh": "我们去动物园吧。"
+}
+]
+},
+{
+"id": "U4",
+"name": "Unit 4 Plants around us",
+"items": [
+{
+"id": "U4-1",
+"en": "apple",
+"pos": "",
+"zh": "苹果",
+"zh1": "苹果",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-2",
+"en": "banana",
+"pos": "",
+"zh": "香蕉",
+"zh1": "香蕉",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-3",
+"en": "farm",
+"pos": "",
+"zh": "农场",
+"zh1": "农场",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-4",
+"en": "air",
+"pos": "",
+"zh": "空气",
+"zh1": "空气",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-5",
+"en": "orange",
+"pos": "",
+"zh": "橙子；柑橘",
+"zh1": "橙子",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-6",
+"en": "grape",
+"pos": "",
+"zh": "葡萄",
+"zh1": "葡萄",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-7",
+"en": "school",
+"pos": "",
+"zh": "学校",
+"zh1": "学校",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-8",
+"en": "garden",
+"pos": "",
+"zh": "花园",
+"zh1": "花园",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-9",
+"en": "need",
+"pos": "",
+"zh": "需要",
+"zh1": "需要",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U4-10",
+"en": "water",
+"pos": "",
+"zh": "给……浇水；水",
+"zh1": "给……浇水",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-11",
+"en": "flower",
+"pos": "",
+"zh": "花；花朵",
+"zh1": "花",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-12",
+"en": "grass",
+"pos": "",
+"zh": "草；草地",
+"zh1": "草",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-13",
+"en": "plant",
+"pos": "",
+"zh": "种植；植物",
+"zh1": "种植",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-14",
+"en": "new",
+"pos": "",
+"zh": "新的",
+"zh1": "新的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-15",
+"en": "tree",
+"pos": "",
+"zh": "树",
+"zh1": "树",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-16",
+"en": "sun",
+"pos": "",
+"zh": "阳光；太阳",
+"zh1": "阳光",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-17",
+"en": "give",
+"pos": "",
+"zh": "给",
+"zh1": "给",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-18",
+"en": "us",
+"pos": "",
+"zh": "我们",
+"zh1": "我们",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-19",
+"en": "them",
+"pos": "",
+"zh": "它们；他们；她们",
+"zh1": "它们",
+"bold": true,
+"kind": "word"
+}
+],
+"sentences": [
+{
+"id": "U4-s1",
+"en": "I like apples and bananas.",
+"zh": "我喜欢苹果和香蕉。"
+},
+{
+"id": "U4-s2",
+"en": "Plants need water.",
+"zh": "植物需要水。"
+},
+{
+"id": "U4-s3",
+"en": "Plants need sun and air.",
+"zh": "植物需要阳光和空气。"
+},
+{
+"id": "U4-s4",
+"en": "Water the flowers.",
+"zh": "给花浇水。"
+},
+{
+"id": "U4-s5",
+"en": "Let's go to the garden.",
+"zh": "我们去花园吧。"
+},
+{
+"id": "U4-s6",
+"en": "The grapes are on the farm.",
+"zh": "葡萄在农场里。"
+}
+]
+},
+{
+"id": "U5",
+"name": "Unit 5 The colourful world",
+"items": [
+{
+"id": "U5-1",
+"en": "colour",
+"pos": "",
+"zh": "颜色",
+"zh1": "颜色",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-2",
+"en": "orange",
+"pos": "",
+"zh": "橙红色；橙红色的",
+"zh1": "橙红色",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-3",
+"en": "green",
+"pos": "",
+"zh": "绿色；绿色的",
+"zh1": "绿色",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-4",
+"en": "red",
+"pos": "",
+"zh": "红色；红色的",
+"zh1": "红色",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-5",
+"en": "blue",
+"pos": "",
+"zh": "蓝色；蓝色的",
+"zh1": "蓝色",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-6",
+"en": "make",
+"pos": "",
+"zh": "使出现；做",
+"zh1": "使出现；做",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-7",
+"en": "purple",
+"pos": "",
+"zh": "紫色；紫色的",
+"zh1": "紫色",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U5-8",
+"en": "brown",
+"pos": "",
+"zh": "棕色；棕色的",
+"zh1": "棕色",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-9",
+"en": "bear",
+"pos": "",
+"zh": "熊",
+"zh1": "熊",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-10",
+"en": "yellow",
+"pos": "",
+"zh": "黄色；黄色的",
+"zh1": "黄色",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-11",
+"en": "duck",
+"pos": "",
+"zh": "鸭",
+"zh1": "鸭子",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-12",
+"en": "sea",
+"pos": "",
+"zh": "海；海洋",
+"zh1": "海",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-13",
+"en": "some",
+"pos": "",
+"zh": "一些",
+"zh1": "一些",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-14",
+"en": "pink",
+"pos": "",
+"zh": "粉色；粉色的",
+"zh1": "粉色",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-15",
+"en": "draw",
+"pos": "",
+"zh": "画",
+"zh1": "画",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-16",
+"en": "white",
+"pos": "",
+"zh": "白色；白色的",
+"zh1": "白色",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-17",
+"en": "black",
+"pos": "",
+"zh": "黑色；黑色的",
+"zh1": "黑色",
+"bold": true,
+"kind": "word"
+}
+],
+"sentences": [
+{
+"id": "U5-s1",
+"en": "What colour is it?",
+"zh": "它是什么颜色的？"
+},
+{
+"id": "U5-s2",
+"en": "It is red.",
+"zh": "它是红色的。"
+},
+{
+"id": "U5-s3",
+"en": "I like pink and purple.",
+"zh": "我喜欢粉色和紫色。"
+},
+{
+"id": "U5-s4",
+"en": "The sea is blue.",
+"zh": "大海是蓝色的。"
+},
+{
+"id": "U5-s5",
+"en": "The bear is brown.",
+"zh": "这只熊是棕色的。"
+},
+{
+"id": "U5-s6",
+"en": "Let's draw a white cat.",
+"zh": "我们画一只白猫吧。"
+}
+]
+},
+{
+"id": "U6",
+"name": "Unit 6 Useful numbers",
+"items": [
+{
+"id": "U6-1",
+"en": "old",
+"pos": "",
+"zh": "（多少）岁；年纪；旧的",
+"zh1": "岁；旧的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-2",
+"en": "five",
+"pos": "",
+"zh": "五",
+"zh1": "五",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U6-3",
+"en": "year",
+"pos": "",
+"zh": "年纪；年",
+"zh1": "年纪",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-4",
+"en": "one",
+"pos": "",
+"zh": "一",
+"zh1": "一",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U6-5",
+"en": "two",
+"pos": "",
+"zh": "二",
+"zh1": "二",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U6-6",
+"en": "three",
+"pos": "",
+"zh": "三",
+"zh1": "三",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U6-7",
+"en": "four",
+"pos": "",
+"zh": "四",
+"zh1": "四",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U6-8",
+"en": "ten",
+"pos": "",
+"zh": "十",
+"zh1": "十",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U6-9",
+"en": "six",
+"pos": "",
+"zh": "六",
+"zh1": "六",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U6-10",
+"en": "seven",
+"pos": "",
+"zh": "七",
+"zh1": "七",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U6-11",
+"en": "eight",
+"pos": "",
+"zh": "八",
+"zh1": "八",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U6-12",
+"en": "nine",
+"pos": "",
+"zh": "九",
+"zh1": "九",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U6-13",
+"en": "o'clock",
+"pos": "",
+"zh": "（表示整点）……点钟",
+"zh1": "……点钟",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-14",
+"en": "cut",
+"pos": "",
+"zh": "切块",
+"zh1": "切块",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-15",
+"en": "eat",
+"pos": "",
+"zh": "吃",
+"zh1": "吃",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-16",
+"en": "cake",
+"pos": "",
+"zh": "蛋糕",
+"zh1": "蛋糕",
+"bold": true,
+"kind": "word"
+}
+],
+"sentences": [
+{
+"id": "U6-s1",
+"en": "How old are you?",
+"zh": "你几岁了？"
+},
+{
+"id": "U6-s2",
+"en": "I am eight years old.",
+"zh": "我八岁了。"
+},
+{
+"id": "U6-s3",
+"en": "She is five years old.",
+"zh": "她五岁了。"
+},
+{
+"id": "U6-s4",
+"en": "It is seven o'clock.",
+"zh": "现在七点钟。"
+},
+{
+"id": "U6-s5",
+"en": "Let's eat the cake.",
+"zh": "我们吃蛋糕吧。"
+},
+{
+"id": "U6-s6",
+"en": "Cut the cake, please.",
+"zh": "请把蛋糕切开。"
+}
+]
+}
+]
+}

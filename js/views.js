@@ -516,7 +516,7 @@ export function home() {
     const R = RANDOM[k]; const card = h('a', { class: 'card alt', href: '#/rand/' + k }, h('span', { class: 'ic' }, R.icon), h('b', {}, R.title), h('small', {}, /^cnw/.test(k) ? '听词语，写在纸上' : '随机出题，不重样'), h('em', {}, `今天 ${S.starsToday(u.id)}/${cap()} 颗`));
     card._area = /^(math|chap)/.test(k) ? 'math' : /^cn/.test(k) ? 'cn' : 'eng'; return card;
   });
-  const hasEng = (u.subjects || []).some(x => /reading$|listening$/.test(x)) && (u.random || []).some(k => /^vocab/.test(k));
+  const hasEng = (u.random || []).some(k => /^vocab/.test(k));
   const learnCard = hasEng ? Object.assign(h('a', { class: 'card', href: '#/learn' }, h('span', { class: 'ic' }, '🃏'), h('b', {}, '单词卡片'), h('small', {}, '先学一学，再去测'), h('em', {}, '看词·听音·记意思')), { _area: 'eng' }) : null;
   const ew0 = essayNow(u);
   const essayCard = ew0 ? Object.assign(h('a', { class: 'card', href: '#/set/' + ew0.item.id }, h('span', { class: 'ic' }, '🌸'), h('b', {}, '听美文'), h('small', {}, '《' + String(ew0.item.title || '').replace(/^《|》$/g, '') + '》'), h('em', {}, ew0.end.slice(5) + ' 前听完')), { _area: 'cn' }) : null;
