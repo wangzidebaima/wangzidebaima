@@ -1,0 +1,177 @@
+{
+ "id": "g1c-X1-pin-b",
+ "title": "看拼音选字（二）",
+ "subtitle": "看拼音，选出对应的字",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X1-pin-b-A1",
+     "type": "choice",
+     "stem": "看拼音「xià」，是哪个字？",
+     "options": [
+      "禾",
+      "下",
+      "一",
+      "九"
+     ],
+     "answer": "B",
+     "why": "xià 就是“下”（2 金木水火土）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-pin-b-A2",
+     "type": "choice",
+     "stem": "看拼音「kǒu」，是哪个字？",
+     "options": [
+      "田",
+      "口",
+      "五",
+      "目"
+     ],
+     "answer": "B",
+     "why": "kǒu 就是“口”（3 口耳目手足）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-pin-b-A3",
+     "type": "choice",
+     "stem": "看拼音「ěr」，是哪个字？",
+     "options": [
+      "六",
+      "耳",
+      "足",
+      "二"
+     ],
+     "answer": "B",
+     "why": "ěr 就是“耳”（3 口耳目手足）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-pin-b-A4",
+     "type": "choice",
+     "stem": "看拼音「mù」，是哪个字？",
+     "options": [
+      "火",
+      "目",
+      "他",
+      "三"
+     ],
+     "answer": "B",
+     "why": "mù 就是“目”（3 口耳目手足）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-pin-b-A5",
+     "type": "choice",
+     "stem": "看拼音「shǒu」，是哪个字？",
+     "options": [
+      "目",
+      "他",
+      "手",
+      "六"
+     ],
+     "answer": "C",
+     "why": "shǒu 就是“手”（3 口耳目手足）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-pin-b-A6",
+     "type": "choice",
+     "stem": "看拼音「zú」，是哪个字？",
+     "options": [
+      "七",
+      "二",
+      "足",
+      "月"
+     ],
+     "answer": "C",
+     "why": "zú 就是“足”（3 口耳目手足）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-pin-b-A7",
+     "type": "choice",
+     "stem": "看拼音「zhàn」，是哪个字？",
+     "options": [
+      "六",
+      "九",
+      "二",
+      "站"
+     ],
+     "answer": "D",
+     "why": "zhàn 就是“站”（3 口耳目手足）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-pin-b-A8",
+     "type": "choice",
+     "stem": "看拼音「zuò」，是哪个字？",
+     "options": [
+      "五",
+      "站",
+      "坐",
+      "二"
+     ],
+     "answer": "C",
+     "why": "zuò 就是“坐”（3 口耳目手足）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-pin-b-A9",
+     "type": "choice",
+     "stem": "看拼音「rì」，是哪个字？",
+     "options": [
+      "上",
+      "山",
+      "日",
+      "五"
+     ],
+     "answer": "C",
+     "why": "rì 就是“日”（4 日月山川）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-pin-b-A10",
+     "type": "choice",
+     "stem": "看拼音「yuè」，是哪个字？",
+     "options": [
+      "我",
+      "月",
+      "耳",
+      "五"
+     ],
+     "answer": "B",
+     "why": "yuè 就是“月”（4 日月山川）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X1",
+ "mk": "cnknow"
+}

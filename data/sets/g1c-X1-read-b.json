@@ -1,0 +1,177 @@
+{
+ "id": "g1c-X1-read-b",
+ "title": "看字选拼音（二）",
+ "subtitle": "认识的字，选出正确的拼音",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X1-read-b-A1",
+     "type": "choice",
+     "stem": "“下”怎么读？",
+     "options": [
+      "èr",
+      "liù",
+      "tián",
+      "xià"
+     ],
+     "answer": "D",
+     "why": "“下”读 xià（2 金木水火土）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-read-b-A2",
+     "type": "choice",
+     "stem": "“口”怎么读？",
+     "options": [
+      "yī",
+      "chuān",
+      "qī",
+      "kǒu"
+     ],
+     "answer": "D",
+     "why": "“口”读 kǒu（3 口耳目手足）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-read-b-A3",
+     "type": "choice",
+     "stem": "“耳”怎么读？",
+     "options": [
+      "zuò",
+      "ěr",
+      "chuān",
+      "jiǔ"
+     ],
+     "answer": "B",
+     "why": "“耳”读 ěr（3 口耳目手足）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-read-b-A4",
+     "type": "choice",
+     "stem": "“目”怎么读？",
+     "options": [
+      "ěr",
+      "kǒu",
+      "shuǐ",
+      "mù"
+     ],
+     "answer": "D",
+     "why": "“目”读 mù（3 口耳目手足）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-read-b-A5",
+     "type": "choice",
+     "stem": "“手”怎么读？",
+     "options": [
+      "sān",
+      "liù",
+      "wǔ",
+      "shǒu"
+     ],
+     "answer": "D",
+     "why": "“手”读 shǒu（3 口耳目手足）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-read-b-A6",
+     "type": "choice",
+     "stem": "“足”怎么读？",
+     "options": [
+      "liù",
+      "zú",
+      "tián",
+      "shàng"
+     ],
+     "answer": "B",
+     "why": "“足”读 zú（3 口耳目手足）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-read-b-A7",
+     "type": "choice",
+     "stem": "“站”怎么读？",
+     "options": [
+      "tián",
+      "wǒ",
+      "zhàn",
+      "zhān"
+     ],
+     "answer": "C",
+     "why": "“站”读 zhàn（3 口耳目手足）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-read-b-A8",
+     "type": "choice",
+     "stem": "“坐”怎么读？",
+     "options": [
+      "hé",
+      "wǔ",
+      "èr",
+      "zuò"
+     ],
+     "answer": "D",
+     "why": "“坐”读 zuò（3 口耳目手足）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-read-b-A9",
+     "type": "choice",
+     "stem": "“日”怎么读？",
+     "options": [
+      "qī",
+      "shàng",
+      "jiǔ",
+      "rì"
+     ],
+     "answer": "D",
+     "why": "“日”读 rì（4 日月山川）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-read-b-A10",
+     "type": "choice",
+     "stem": "“月”怎么读？",
+     "options": [
+      "huǒ",
+      "yuè",
+      "dì",
+      "liù"
+     ],
+     "answer": "B",
+     "why": "“月”读 yuè（4 日月山川）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X1",
+ "mk": "cnknow"
+}

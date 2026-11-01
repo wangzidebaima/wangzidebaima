@@ -1,0 +1,177 @@
+{
+ "id": "g1c-X8-pin-b",
+ "title": "看拼音选字（二）",
+ "subtitle": "看拼音，选出对应的字",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X8-pin-b-A1",
+     "type": "choice",
+     "stem": "看拼音「zhǎo」，是哪个字？",
+     "options": [
+      "找",
+      "桃",
+      "棋",
+      "风"
+     ],
+     "answer": "A",
+     "why": "zhǎo 就是“找”（9 乌鸦喝水）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-pin-b-A2",
+     "type": "choice",
+     "stem": "看拼音「xǔ」，是哪个字？",
+     "options": [
+      "许",
+      "七",
+      "林",
+      "去"
+     ],
+     "answer": "A",
+     "why": "xǔ 就是“许”（9 乌鸦喝水）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-pin-b-A3",
+     "type": "choice",
+     "stem": "看拼音「shí」，是哪个字？",
+     "options": [
+      "儿",
+      "石",
+      "贝",
+      "雪"
+     ],
+     "answer": "B",
+     "why": "shí 就是“石”（9 乌鸦喝水）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-pin-b-A4",
+     "type": "choice",
+     "stem": "看拼音「chū」，是哪个字？",
+     "options": [
+      "出",
+      "六",
+      "鸡",
+      "加"
+     ],
+     "answer": "A",
+     "why": "chū 就是“出”（9 乌鸦喝水）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-pin-b-A5",
+     "type": "choice",
+     "stem": "看拼音「fǎ」，是哪个字？",
+     "options": [
+      "法",
+      "关",
+      "明",
+      "见"
+     ],
+     "answer": "A",
+     "why": "fǎ 就是“法”（9 乌鸦喝水）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-pin-b-A6",
+     "type": "choice",
+     "stem": "看拼音「fàng」，是哪个字？",
+     "options": [
+      "夏",
+      "放",
+      "棋",
+      "级"
+     ],
+     "answer": "B",
+     "why": "fàng 就是“放”（9 乌鸦喝水）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-pin-b-A7",
+     "type": "choice",
+     "stem": "看拼音「jìn」，是哪个字？",
+     "options": [
+      "进",
+      "清",
+      "里",
+      "鸭"
+     ],
+     "answer": "A",
+     "why": "jìn 就是“进”（9 乌鸦喝水）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-pin-b-A8",
+     "type": "choice",
+     "stem": "看拼音「gāo」，是哪个字？",
+     "options": [
+      "国",
+      "出",
+      "本",
+      "高"
+     ],
+     "answer": "D",
+     "why": "gāo 就是“高”（9 乌鸦喝水）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-pin-b-A9",
+     "type": "choice",
+     "stem": "看拼音「diǎn」，是哪个字？",
+     "options": [
+      "点",
+      "我",
+      "金",
+      "山"
+     ],
+     "answer": "A",
+     "why": "diǎn 就是“点”（10 雨点儿）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-pin-b-A10",
+     "type": "choice",
+     "stem": "看拼音「cǎi」，是哪个字？",
+     "options": [
+      "江",
+      "积",
+      "彩",
+      "到"
+     ],
+     "answer": "C",
+     "why": "cǎi 就是“彩”（10 雨点儿）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X8",
+ "mk": "cnknow"
+}

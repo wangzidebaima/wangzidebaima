@@ -1,0 +1,187 @@
+{
+ "id": "g1c-X8-listen-a",
+ "title": "听音选字（一）",
+ "subtitle": "听手机读一个字，选出来",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X8-listen-a-A1",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "棋",
+      "出",
+      "冬",
+      "比"
+     ],
+     "answer": "D",
+     "why": "这个字是“比”，读 bǐ（8 比尾巴）。",
+     "pts": 2,
+     "sayzh": "比。比。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-listen-a-A2",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "羊",
+      "尾",
+      "公",
+      "会"
+     ],
+     "answer": "B",
+     "why": "这个字是“尾”，读 wěi（8 比尾巴）。",
+     "pts": 2,
+     "sayzh": "尾。尾。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-listen-a-A3",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "巴",
+      "子",
+      "黑",
+      "气"
+     ],
+     "answer": "A",
+     "why": "这个字是“巴”，读 bā（8 比尾巴）。",
+     "pts": 2,
+     "sayzh": "巴。巴。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-listen-a-A4",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "姓",
+      "谁",
+      "文",
+      "在"
+     ],
+     "answer": "B",
+     "why": "这个字是“谁”，读 shuí（8 比尾巴）。",
+     "pts": 2,
+     "sayzh": "谁。谁。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-listen-a-A5",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "左",
+      "写",
+      "桥",
+      "短"
+     ],
+     "answer": "D",
+     "why": "这个字是“短”，读 duǎn（8 比尾巴）。",
+     "pts": 2,
+     "sayzh": "短。短。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-listen-a-A6",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "昨",
+      "能",
+      "把",
+      "影"
+     ],
+     "answer": "C",
+     "why": "这个字是“把”，读 bǎ（8 比尾巴）。",
+     "pts": 2,
+     "sayzh": "把。把。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-listen-a-A7",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "伞",
+      "点",
+      "短",
+      "回"
+     ],
+     "answer": "A",
+     "why": "这个字是“伞”，读 sǎn（8 比尾巴）。",
+     "pts": 2,
+     "sayzh": "伞。伞。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-listen-a-A8",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "气",
+      "右",
+      "做",
+      "兔"
+     ],
+     "answer": "D",
+     "why": "这个字是“兔”，读 tù（8 比尾巴）。",
+     "pts": 2,
+     "sayzh": "兔。兔。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-listen-a-A9",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "期",
+      "最",
+      "六",
+      "和"
+     ],
+     "answer": "B",
+     "why": "这个字是“最”，读 zuì（8 比尾巴）。",
+     "pts": 2,
+     "sayzh": "最。最。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-listen-a-A10",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "公",
+      "皮",
+      "它",
+      "雨"
+     ],
+     "answer": "A",
+     "why": "这个字是“公”，读 gōng（8 比尾巴）。",
+     "pts": 2,
+     "sayzh": "公。公。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X8",
+ "mk": "cnknow"
+}

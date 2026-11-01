@@ -1,0 +1,177 @@
+{
+ "id": "g1c-X7-pin-c",
+ "title": "看拼音选字（三）",
+ "subtitle": "看拼音，选出对应的字",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X7-pin-c-A1",
+     "type": "choice",
+     "stem": "看拼音「zuò」，是哪个字？",
+     "options": [
+      "办",
+      "做",
+      "常",
+      "用"
+     ],
+     "answer": "B",
+     "why": "zuò 就是“做”（7 两件宝）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-pin-c-A2",
+     "type": "choice",
+     "stem": "看拼音「yě」，是哪个字？",
+     "options": [
+      "厂",
+      "也",
+      "路",
+      "它"
+     ],
+     "answer": "B",
+     "why": "yě 就是“也”（7 两件宝）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-pin-c-A3",
+     "type": "choice",
+     "stem": "看拼音「bàn」，是哪个字？",
+     "options": [
+      "正",
+      "办",
+      "语",
+      "卫"
+     ],
+     "answer": "B",
+     "why": "bàn 就是“办”（7 两件宝）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-pin-c-A4",
+     "type": "choice",
+     "stem": "看拼音「dào」，是哪个字？",
+     "options": [
+      "到",
+      "柳",
+      "黑",
+      "三"
+     ],
+     "answer": "A",
+     "why": "dào 就是“到”（7 两件宝）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-pin-c-A5",
+     "type": "choice",
+     "stem": "看拼音「yòu」，是哪个字？",
+     "options": [
+      "又",
+      "先",
+      "画",
+      "雨"
+     ],
+     "answer": "A",
+     "why": "yòu 就是“又”（7 两件宝）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-pin-c-A6",
+     "type": "choice",
+     "stem": "看拼音「cái」，是哪个字？",
+     "options": [
+      "黑",
+      "才",
+      "闪",
+      "鸟"
+     ],
+     "answer": "B",
+     "why": "cái 就是“才”（7 两件宝）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-pin-c-A7",
+     "type": "choice",
+     "stem": "看拼音「néng」，是哪个字？",
+     "options": [
+      "原",
+      "关",
+      "能",
+      "师"
+     ],
+     "answer": "C",
+     "why": "néng 就是“能”（7 两件宝）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-pin-c-A8",
+     "type": "choice",
+     "stem": "看拼音「yé」，是哪个字？",
+     "options": [
+      "里",
+      "飞",
+      "学",
+      "爷"
+     ],
+     "answer": "D",
+     "why": "yé 就是“爷”（语文园地七）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-pin-c-A9",
+     "type": "choice",
+     "stem": "看拼音「nǎi」，是哪个字？",
+     "options": [
+      "奶",
+      "蛙",
+      "小",
+      "写"
+     ],
+     "answer": "A",
+     "why": "nǎi 就是“奶”（语文园地七）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-pin-c-A10",
+     "type": "choice",
+     "stem": "看拼音「shū」，是哪个字？",
+     "options": [
+      "起",
+      "叔",
+      "宝",
+      "众"
+     ],
+     "answer": "B",
+     "why": "shū 就是“叔”（语文园地七）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X7",
+ "mk": "cnknow"
+}

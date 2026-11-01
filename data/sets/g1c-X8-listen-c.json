@@ -1,0 +1,187 @@
+{
+ "id": "g1c-X8-listen-c",
+ "title": "听音选字（三）",
+ "subtitle": "听手机读一个字，选出来",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X8-listen-c-A1",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "问",
+      "友",
+      "门",
+      "流"
+     ],
+     "answer": "A",
+     "why": "这个字是“问”，读 wèn（10 雨点儿）。",
+     "pts": 2,
+     "sayzh": "问。问。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-listen-c-A2",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "回",
+      "少",
+      "文",
+      "生"
+     ],
+     "answer": "A",
+     "why": "这个字是“回”，读 huí（10 雨点儿）。",
+     "pts": 2,
+     "sayzh": "回。回。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-listen-c-A3",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "答",
+      "五",
+      "期",
+      "声"
+     ],
+     "answer": "A",
+     "why": "这个字是“答”，读 dá（10 雨点儿）。",
+     "pts": 2,
+     "sayzh": "答。答。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-listen-c-A4",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "语",
+      "会",
+      "方",
+      "旗"
+     ],
+     "answer": "C",
+     "why": "这个字是“方”，读 fāng（10 雨点儿）。",
+     "pts": 2,
+     "sayzh": "方。方。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-listen-c-A5",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "虫",
+      "读",
+      "久",
+      "姓"
+     ],
+     "answer": "C",
+     "why": "这个字是“久”，读 jiǔ（10 雨点儿）。",
+     "pts": 2,
+     "sayzh": "久。久。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-listen-c-A6",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "飞",
+      "美",
+      "牛",
+      "鸟"
+     ],
+     "answer": "C",
+     "why": "这个字是“牛”，读 niú（语文园地八）。",
+     "pts": 2,
+     "sayzh": "牛。牛。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-listen-c-A7",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "把",
+      "门",
+      "前",
+      "羊"
+     ],
+     "answer": "D",
+     "why": "这个字是“羊”，读 yáng（语文园地八）。",
+     "pts": 2,
+     "sayzh": "羊。羊。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-listen-c-A8",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "鱼",
+      "爪",
+      "巴",
+      "词"
+     ],
+     "answer": "B",
+     "why": "这个字是“爪”，读 zhuǎ（语文园地八）。",
+     "pts": 2,
+     "sayzh": "爪。爪。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-listen-c-A9",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "下",
+      "元",
+      "开",
+      "间"
+     ],
+     "answer": "B",
+     "why": "这个字是“元”，读 yuán（语文园地八）。",
+     "pts": 2,
+     "sayzh": "元。元。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-listen-c-A10",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "众",
+      "又",
+      "拼",
+      "彩"
+     ],
+     "answer": "C",
+     "why": "这个字是“拼”，读 pīn（语文园地八）。",
+     "pts": 2,
+     "sayzh": "拼。拼。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X8",
+ "mk": "cnknow"
+}

@@ -1,0 +1,170 @@
+{
+ "id": "g1c-X4-listen-c",
+ "title": "听音选字（三）",
+ "subtitle": "听手机读一个字，选出来",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X4-listen-c-A1",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "车",
+      "菜",
+      "纸",
+      "流"
+     ],
+     "answer": "A",
+     "why": "这个字是“车”，读 chē（拼音14 ang eng ing ong）。",
+     "pts": 2,
+     "sayzh": "车。车。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-listen-c-A2",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "星",
+      "大",
+      "晚",
+      "书"
+     ],
+     "answer": "C",
+     "why": "这个字是“晚”，读 wǎn（语文园地四）。",
+     "pts": 2,
+     "sayzh": "晚。晚。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-listen-c-A3",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "桌",
+      "昨",
+      "美",
+      "他"
+     ],
+     "answer": "B",
+     "why": "这个字是“昨”，读 zuó（语文园地四）。",
+     "pts": 2,
+     "sayzh": "昨。昨。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-listen-c-A4",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "今",
+      "写",
+      "桌",
+      "五"
+     ],
+     "answer": "A",
+     "why": "这个字是“今”，读 jīn（语文园地四）。",
+     "pts": 2,
+     "sayzh": "今。今。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-listen-c-A5",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "火",
+      "木",
+      "明",
+      "会"
+     ],
+     "answer": "C",
+     "why": "这个字是“明”，读 míng（语文园地四）。",
+     "pts": 2,
+     "sayzh": "明。明。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-listen-c-A6",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "乌",
+      "个",
+      "坐",
+      "流"
+     ],
+     "answer": "B",
+     "why": "这个字是“个”，读 gè（语文园地四）。",
+     "pts": 2,
+     "sayzh": "个。个。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-listen-c-A7",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "他",
+      "上",
+      "开",
+      "这"
+     ],
+     "answer": "D",
+     "why": "这个字是“这”，读 zhè（语文园地四）。",
+     "pts": 2,
+     "sayzh": "这。这。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-listen-c-A8",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "名",
+      "云",
+      "去",
+      "鸭"
+     ],
+     "answer": "C",
+     "why": "这个字是“去”，读 qù（语文园地四）。",
+     "pts": 2,
+     "sayzh": "去。去。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-listen-c-A9",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "年",
+      "桥",
+      "手",
+      "五"
+     ],
+     "answer": "A",
+     "why": "这个字是“年”，读 nián（语文园地四）。",
+     "pts": 2,
+     "sayzh": "年。年。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X4",
+ "mk": "cnknow"
+}

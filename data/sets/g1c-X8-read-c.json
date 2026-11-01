@@ -1,0 +1,177 @@
+{
+ "id": "g1c-X8-read-c",
+ "title": "看字选拼音（三）",
+ "subtitle": "认识的字，选出正确的拼音",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X8-read-c-A1",
+     "type": "choice",
+     "stem": "“问”怎么读？",
+     "options": [
+      "sēn",
+      "ér",
+      "huā",
+      "wèn"
+     ],
+     "answer": "D",
+     "why": "“问”读 wèn（10 雨点儿）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-read-c-A2",
+     "type": "choice",
+     "stem": "“回”怎么读？",
+     "options": [
+      "bǐ",
+      "zhèng",
+      "kāi",
+      "huí"
+     ],
+     "answer": "D",
+     "why": "“回”读 huí（10 雨点儿）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-read-c-A3",
+     "type": "choice",
+     "stem": "“答”怎么读？",
+     "options": [
+      "dá",
+      "dào",
+      "yuè",
+      "tǔ"
+     ],
+     "answer": "A",
+     "why": "“答”读 dá（10 雨点儿）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-read-c-A4",
+     "type": "choice",
+     "stem": "“方”怎么读？",
+     "options": [
+      "fāng",
+      "chén",
+      "měi",
+      "liǎng"
+     ],
+     "answer": "A",
+     "why": "“方”读 fāng（10 雨点儿）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-read-c-A5",
+     "type": "choice",
+     "stem": "“久”怎么读？",
+     "options": [
+      "yòu",
+      "zhī",
+      "dì",
+      "jiǔ"
+     ],
+     "answer": "D",
+     "why": "“久”读 jiǔ（10 雨点儿）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-read-c-A6",
+     "type": "choice",
+     "stem": "“牛”怎么读？",
+     "options": [
+      "dà",
+      "niú",
+      "jiàn",
+      "zhǎo"
+     ],
+     "answer": "B",
+     "why": "“牛”读 niú（语文园地八）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-read-c-A7",
+     "type": "choice",
+     "stem": "“羊”怎么读？",
+     "options": [
+      "yáng",
+      "shuǐ",
+      "nǚ",
+      "yún"
+     ],
+     "answer": "A",
+     "why": "“羊”读 yáng（语文园地八）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-read-c-A8",
+     "type": "choice",
+     "stem": "“爪”怎么读？",
+     "options": [
+      "nián",
+      "nèi",
+      "zháo",
+      "zhuǎ"
+     ],
+     "answer": "D",
+     "why": "“爪”读 zhuǎ（语文园地八）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-read-c-A9",
+     "type": "choice",
+     "stem": "“元”怎么读？",
+     "options": [
+      "zǎo",
+      "měi",
+      "yuán",
+      "tián"
+     ],
+     "answer": "C",
+     "why": "“元”读 yuán（语文园地八）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-read-c-A10",
+     "type": "choice",
+     "stem": "“拼”怎么读？",
+     "options": [
+      "huáng",
+      "pīn",
+      "diǎn",
+      "xiàng"
+     ],
+     "answer": "B",
+     "why": "“拼”读 pīn（语文园地八）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X8",
+ "mk": "cnknow"
+}

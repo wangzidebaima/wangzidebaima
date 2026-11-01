@@ -1,0 +1,177 @@
+{
+ "id": "g1c-X5-pin-c",
+ "title": "看拼音选字（三）",
+ "subtitle": "看拼音，选出对应的字",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X5-pin-c-A1",
+     "type": "choice",
+     "stem": "看拼音「qīng」，是哪个字？",
+     "options": [
+      "黄",
+      "班",
+      "天",
+      "青"
+     ],
+     "answer": "D",
+     "why": "qīng 就是“青”（4 四季）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-pin-c-A2",
+     "type": "choice",
+     "stem": "看拼音「wā」，是哪个字？",
+     "options": [
+      "蛙",
+      "说",
+      "这",
+      "加"
+     ],
+     "answer": "A",
+     "why": "wā 就是“蛙”（4 四季）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-pin-c-A3",
+     "type": "choice",
+     "stem": "看拼音「xià」，是哪个字？",
+     "options": [
+      "口",
+      "夏",
+      "姓",
+      "文"
+     ],
+     "answer": "B",
+     "why": "xià 就是“夏”（4 四季）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-pin-c-A4",
+     "type": "choice",
+     "stem": "看拼音「pí」，是哪个字？",
+     "options": [
+      "词",
+      "柳",
+      "皮",
+      "积"
+     ],
+     "answer": "C",
+     "why": "pí 就是“皮”（4 四季）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-pin-c-A5",
+     "type": "choice",
+     "stem": "看拼音「jiù」，是哪个字？",
+     "options": [
+      "火",
+      "天",
+      "就",
+      "棋"
+     ],
+     "answer": "C",
+     "why": "jiù 就是“就”（4 四季）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-pin-c-A6",
+     "type": "choice",
+     "stem": "看拼音「dōng」，是哪个字？",
+     "options": [
+      "加",
+      "关",
+      "冬",
+      "口"
+     ],
+     "answer": "C",
+     "why": "dōng 就是“冬”（4 四季）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-pin-c-A7",
+     "type": "choice",
+     "stem": "看拼音「nán」，是哪个字？",
+     "options": [
+      "柳",
+      "男",
+      "花",
+      "内"
+     ],
+     "answer": "B",
+     "why": "nán 就是“男”（语文园地五）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-pin-c-A8",
+     "type": "choice",
+     "stem": "看拼音「nǚ」，是哪个字？",
+     "options": [
+      "鸡",
+      "积",
+      "女",
+      "站"
+     ],
+     "answer": "C",
+     "why": "nǚ 就是“女”（语文园地五）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-pin-c-A9",
+     "type": "choice",
+     "stem": "看拼音「guān」，是哪个字？",
+     "options": [
+      "上",
+      "色",
+      "七",
+      "关"
+     ],
+     "answer": "D",
+     "why": "guān 就是“关”（语文园地五）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-pin-c-A10",
+     "type": "choice",
+     "stem": "看拼音「zhèng」，是哪个字？",
+     "options": [
+      "正",
+      "本",
+      "王",
+      "叶"
+     ],
+     "answer": "A",
+     "why": "zhèng 就是“正”（语文园地五）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X5",
+ "mk": "cnknow"
+}

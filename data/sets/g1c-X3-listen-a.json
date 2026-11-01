@@ -1,0 +1,170 @@
+{
+ "id": "g1c-X3-listen-a",
+ "title": "听音选字（一）",
+ "subtitle": "听手机读一个字，选出来",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X3-listen-a-A1",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "子",
+      "上",
+      "文",
+      "哥"
+     ],
+     "answer": "D",
+     "why": "这个字是“哥”，读 gē（拼音5 g k h）。",
+     "pts": 2,
+     "sayzh": "哥。哥。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-listen-a-A2",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "校",
+      "弟",
+      "花",
+      "我"
+     ],
+     "answer": "B",
+     "why": "这个字是“弟”，读 dì（拼音5 g k h）。",
+     "pts": 2,
+     "sayzh": "弟。弟。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-listen-a-A3",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "你",
+      "画",
+      "手",
+      "月"
+     ],
+     "answer": "B",
+     "why": "这个字是“画”，读 huà（拼音5 g k h）。",
+     "pts": 2,
+     "sayzh": "画。画。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-listen-a-A4",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "月",
+      "花",
+      "下",
+      "五"
+     ],
+     "answer": "B",
+     "why": "这个字是“花”，读 huā（拼音5 g k h）。",
+     "pts": 2,
+     "sayzh": "花。花。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-listen-a-A5",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "打",
+      "二",
+      "口",
+      "八"
+     ],
+     "answer": "A",
+     "why": "这个字是“打”，读 dǎ（拼音6 j q x）。",
+     "pts": 2,
+     "sayzh": "打。打。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-listen-a-A6",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "棋",
+      "我",
+      "级",
+      "大"
+     ],
+     "answer": "A",
+     "why": "这个字是“棋”，读 qí（拼音6 j q x）。",
+     "pts": 2,
+     "sayzh": "棋。棋。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-listen-a-A7",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "站",
+      "积",
+      "三",
+      "哥"
+     ],
+     "answer": "B",
+     "why": "这个字是“积”，读 jī（拼音6 j q x）。",
+     "pts": 2,
+     "sayzh": "积。积。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-listen-a-A8",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "木",
+      "二",
+      "词",
+      "鸭"
+     ],
+     "answer": "A",
+     "why": "这个字是“木”，读 mù（拼音6 j q x）。",
+     "pts": 2,
+     "sayzh": "木。木。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-listen-a-A9",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "田",
+      "八",
+      "九",
+      "字"
+     ],
+     "answer": "D",
+     "why": "这个字是“字”，读 zì（拼音7 z c s）。",
+     "pts": 2,
+     "sayzh": "字。字。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X3",
+ "mk": "cnknow"
+}

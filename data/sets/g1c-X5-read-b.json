@@ -1,0 +1,177 @@
+{
+ "id": "g1c-X5-read-b",
+ "title": "看字选拼音（二）",
+ "subtitle": "认识的字，选出正确的拼音",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X5-read-b-A1",
+     "type": "choice",
+     "stem": "“间”怎么读？",
+     "options": [
+      "bā",
+      "yī",
+      "huǒ",
+      "jiān"
+     ],
+     "answer": "D",
+     "why": "“间”读 jiān（2 江南）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-read-b-A2",
+     "type": "choice",
+     "stem": "“东”怎么读？",
+     "options": [
+      "dōng",
+      "tā",
+      "xué",
+      "yuán"
+     ],
+     "answer": "A",
+     "why": "“东”读 dōng（2 江南）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-read-b-A3",
+     "type": "choice",
+     "stem": "“北”怎么读？",
+     "options": [
+      "běi",
+      "mā",
+      "pí",
+      "měi"
+     ],
+     "answer": "A",
+     "why": "“北”读 běi（2 江南）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-read-b-A4",
+     "type": "choice",
+     "stem": "“家”怎么读？",
+     "options": [
+      "bā",
+      "jiā",
+      "tā",
+      "wū"
+     ],
+     "answer": "B",
+     "why": "“家”读 jiā（3 雪地里的小画家）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-read-b-A5",
+     "type": "choice",
+     "stem": "“鸡”怎么读？",
+     "options": [
+      "qīng",
+      "zhè",
+      "xīng",
+      "jī"
+     ],
+     "answer": "D",
+     "why": "“鸡”读 jī（3 雪地里的小画家）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-read-b-A6",
+     "type": "choice",
+     "stem": "“竹”怎么读？",
+     "options": [
+      "tiān",
+      "zhú",
+      "dǎ",
+      "zhǐ"
+     ],
+     "answer": "B",
+     "why": "“竹”读 zhú（3 雪地里的小画家）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-read-b-A7",
+     "type": "choice",
+     "stem": "“牙”怎么读？",
+     "options": [
+      "rén",
+      "yá",
+      "zhuō",
+      "huà"
+     ],
+     "answer": "B",
+     "why": "“牙”读 yá（3 雪地里的小画家）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-read-b-A8",
+     "type": "choice",
+     "stem": "“用”怎么读？",
+     "options": [
+      "jù",
+      "xiě",
+      "xiào",
+      "yòng"
+     ],
+     "answer": "D",
+     "why": "“用”读 yòng（3 雪地里的小画家）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-read-b-A9",
+     "type": "choice",
+     "stem": "“几”怎么读？",
+     "options": [
+      "gē",
+      "bà",
+      "jǐ",
+      "le"
+     ],
+     "answer": "C",
+     "why": "“几”读 jǐ（3 雪地里的小画家）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-read-b-A10",
+     "type": "choice",
+     "stem": "“步”怎么读？",
+     "options": [
+      "nián",
+      "bù",
+      "hòu",
+      "xī"
+     ],
+     "answer": "B",
+     "why": "“步”读 bù（3 雪地里的小画家）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X5",
+ "mk": "cnknow"
+}

@@ -1,0 +1,129 @@
+{
+ "id": "g1c-X2-read-b",
+ "title": "看字选拼音（二）",
+ "subtitle": "认识的字，选出正确的拼音",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X2-read-b-A1",
+     "type": "choice",
+     "stem": "“学”怎么读？",
+     "options": [
+      "wáng",
+      "yī",
+      "sì",
+      "xué"
+     ],
+     "answer": "D",
+     "why": "“学”读 xué（语文园地二）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X2-read-b-A2",
+     "type": "choice",
+     "stem": "“校”怎么读？",
+     "options": [
+      "tián",
+      "xiào",
+      "wǒ",
+      "dì"
+     ],
+     "answer": "B",
+     "why": "“校”读 xiào（语文园地二）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X2-read-b-A3",
+     "type": "choice",
+     "stem": "“班”怎么读？",
+     "options": [
+      "kǒu",
+      "bān",
+      "jiǔ",
+      "mù"
+     ],
+     "answer": "B",
+     "why": "“班”读 bān（语文园地二）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X2-read-b-A4",
+     "type": "choice",
+     "stem": "“级”怎么读？",
+     "options": [
+      "hé",
+      "dà",
+      "èr",
+      "jí"
+     ],
+     "answer": "D",
+     "why": "“级”读 jí（语文园地二）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X2-read-b-A5",
+     "type": "choice",
+     "stem": "“姓”怎么读？",
+     "options": [
+      "shí",
+      "xìng",
+      "xià",
+      "lù"
+     ],
+     "answer": "B",
+     "why": "“姓”读 xìng（语文园地二）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X2-read-b-A6",
+     "type": "choice",
+     "stem": "“名”怎么读？",
+     "options": [
+      "ěr",
+      "xià",
+      "míng",
+      "jí"
+     ],
+     "answer": "C",
+     "why": "“名”读 míng（语文园地二）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X2-read-b-A7",
+     "type": "choice",
+     "stem": "“王”怎么读？",
+     "options": [
+      "chuān",
+      "mù",
+      "shàng",
+      "wáng"
+     ],
+     "answer": "D",
+     "why": "“王”读 wáng（语文园地二）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X2",
+ "mk": "cnknow"
+}

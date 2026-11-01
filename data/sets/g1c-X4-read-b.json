@@ -1,0 +1,177 @@
+{
+ "id": "g1c-X4-read-b",
+ "title": "看字选拼音（二）",
+ "subtitle": "认识的字，选出正确的拼音",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X4-read-b-A1",
+     "type": "choice",
+     "stem": "“雪”怎么读？",
+     "options": [
+      "xuě",
+      "cí",
+      "shàng",
+      "zuó"
+     ],
+     "answer": "A",
+     "why": "“雪”读 xuě（拼音12 ie üe er）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-read-b-A2",
+     "type": "choice",
+     "stem": "“夜”怎么读？",
+     "options": [
+      "wǎn",
+      "shù",
+      "yè",
+      "yē"
+     ],
+     "answer": "C",
+     "why": "“夜”读 yè（拼音12 ie üe er）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-read-b-A3",
+     "type": "choice",
+     "stem": "“色”怎么读？",
+     "options": [
+      "bān",
+      "yuè",
+      "sè",
+      "xiě"
+     ],
+     "answer": "C",
+     "why": "“色”读 sè（拼音12 ie üe er）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-read-b-A4",
+     "type": "choice",
+     "stem": "“美”怎么读？",
+     "options": [
+      "xià",
+      "huǒ",
+      "měi",
+      "bīng"
+     ],
+     "answer": "C",
+     "why": "“美”读 měi（拼音12 ie üe er）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-read-b-A5",
+     "type": "choice",
+     "stem": "“蓝”怎么读？",
+     "options": [
+      "lán",
+      "mā",
+      "wǎn",
+      "wǒ"
+     ],
+     "answer": "A",
+     "why": "“蓝”读 lán（拼音13 an en in un ün）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-read-b-A6",
+     "type": "choice",
+     "stem": "“云”怎么读？",
+     "options": [
+      "mù",
+      "yún",
+      "zhuō",
+      "yī"
+     ],
+     "answer": "B",
+     "why": "“云”读 yún（拼音13 an en in un ün）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-read-b-A7",
+     "type": "choice",
+     "stem": "“草”怎么读？",
+     "options": [
+      "cǎo",
+      "qī",
+      "rén",
+      "liú"
+     ],
+     "answer": "A",
+     "why": "“草”读 cǎo（拼音13 an en in un ün）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-read-b-A8",
+     "type": "choice",
+     "stem": "“原”怎么读？",
+     "options": [
+      "sè",
+      "shí",
+      "yuán",
+      "yuān"
+     ],
+     "answer": "C",
+     "why": "“原”读 yuán（拼音13 an en in un ün）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-read-b-A9",
+     "type": "choice",
+     "stem": "“冰”怎么读？",
+     "options": [
+      "bīng",
+      "guā",
+      "zhè",
+      "xuě"
+     ],
+     "answer": "A",
+     "why": "“冰”读 bīng（拼音14 ang eng ing ong）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-read-b-A10",
+     "type": "choice",
+     "stem": "“自”怎么读？",
+     "options": [
+      "zì",
+      "dǎ",
+      "jù",
+      "shān"
+     ],
+     "answer": "A",
+     "why": "“自”读 zì（拼音14 ang eng ing ong）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X4",
+ "mk": "cnknow"
+}

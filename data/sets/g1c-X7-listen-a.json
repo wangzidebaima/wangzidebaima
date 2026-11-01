@@ -1,0 +1,187 @@
+{
+ "id": "g1c-X7-listen-a",
+ "title": "听音选字（一）",
+ "subtitle": "听手机读一个字，选出来",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X7-listen-a-A1",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "色",
+      "多",
+      "早",
+      "船"
+     ],
+     "answer": "D",
+     "why": "这个字是“船”，读 chuán（5 小小的船）。",
+     "pts": 2,
+     "sayzh": "船。船。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-listen-a-A2",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "弯",
+      "对",
+      "头",
+      "先"
+     ],
+     "answer": "A",
+     "why": "这个字是“弯”，读 wān（5 小小的船）。",
+     "pts": 2,
+     "sayzh": "弯。弯。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-listen-a-A3",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "夏",
+      "儿",
+      "对",
+      "山"
+     ],
+     "answer": "B",
+     "why": "这个字是“儿”，读 ér（5 小小的船）。",
+     "pts": 2,
+     "sayzh": "儿。儿。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-listen-a-A4",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "打",
+      "间",
+      "双",
+      "两"
+     ],
+     "answer": "D",
+     "why": "这个字是“两”，读 liǎng（5 小小的船）。",
+     "pts": 2,
+     "sayzh": "两。两。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-listen-a-A5",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "头",
+      "川",
+      "妈",
+      "力"
+     ],
+     "answer": "A",
+     "why": "这个字是“头”，读 tóu（5 小小的船）。",
+     "pts": 2,
+     "sayzh": "头。头。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-listen-a-A6",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "闪",
+      "在",
+      "菜",
+      "鱼"
+     ],
+     "answer": "B",
+     "why": "这个字是“在”，读 zài（5 小小的船）。",
+     "pts": 2,
+     "sayzh": "在。在。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-listen-a-A7",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "字",
+      "足",
+      "女",
+      "里"
+     ],
+     "answer": "D",
+     "why": "这个字是“里”，读 lǐ（5 小小的船）。",
+     "pts": 2,
+     "sayzh": "里。里。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-listen-a-A8",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "关",
+      "奶",
+      "看",
+      "夜"
+     ],
+     "answer": "C",
+     "why": "这个字是“看”，读 kàn（5 小小的船）。",
+     "pts": 2,
+     "sayzh": "看。看。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-listen-a-A9",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "见",
+      "蓝",
+      "四",
+      "双"
+     ],
+     "answer": "A",
+     "why": "这个字是“见”，读 jiàn（5 小小的船）。",
+     "pts": 2,
+     "sayzh": "见。见。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-listen-a-A10",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "闪",
+      "又",
+      "马",
+      "厂"
+     ],
+     "answer": "A",
+     "why": "这个字是“闪”，读 shǎn（5 小小的船）。",
+     "pts": 2,
+     "sayzh": "闪。闪。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X7",
+ "mk": "cnknow"
+}

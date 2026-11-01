@@ -1,0 +1,187 @@
+{
+ "id": "g1c-X7-listen-b",
+ "title": "听音选字（二）",
+ "subtitle": "听手机读一个字，选出来",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X7-listen-b-A1",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "会",
+      "前",
+      "气",
+      "常"
+     ],
+     "answer": "D",
+     "why": "这个字是“常”，读 cháng（6 影子）。",
+     "pts": 2,
+     "sayzh": "常。常。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-listen-b-A2",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "昨",
+      "中",
+      "土",
+      "黑"
+     ],
+     "answer": "D",
+     "why": "这个字是“黑”，读 hēi（6 影子）。",
+     "pts": 2,
+     "sayzh": "黑。黑。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-listen-b-A3",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "春",
+      "桌",
+      "学",
+      "狗"
+     ],
+     "answer": "D",
+     "why": "这个字是“狗”，读 gǒu（6 影子）。",
+     "pts": 2,
+     "sayzh": "狗。狗。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-listen-b-A4",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "耳",
+      "花",
+      "用",
+      "左"
+     ],
+     "answer": "D",
+     "why": "这个字是“左”，读 zuǒ（6 影子）。",
+     "pts": 2,
+     "sayzh": "左。左。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-listen-b-A5",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "右",
+      "男",
+      "江",
+      "木"
+     ],
+     "answer": "A",
+     "why": "这个字是“右”，读 yòu（6 影子）。",
+     "pts": 2,
+     "sayzh": "右。右。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-listen-b-A6",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "晚",
+      "五",
+      "件",
+      "它"
+     ],
+     "answer": "D",
+     "why": "这个字是“它”，读 tā（6 影子）。",
+     "pts": 2,
+     "sayzh": "它。它。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-listen-b-A7",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "好",
+      "田",
+      "尖",
+      "弯"
+     ],
+     "answer": "A",
+     "why": "这个字是“好”，读 hǎo（6 影子）。",
+     "pts": 2,
+     "sayzh": "好。好。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-listen-b-A8",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "歌",
+      "朋",
+      "黄",
+      "写"
+     ],
+     "answer": "B",
+     "why": "这个字是“朋”，读 péng（6 影子）。",
+     "pts": 2,
+     "sayzh": "朋。朋。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-listen-b-A9",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "从",
+      "内",
+      "友",
+      "月"
+     ],
+     "answer": "C",
+     "why": "这个字是“友”，读 yǒu（6 影子）。",
+     "pts": 2,
+     "sayzh": "友。友。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-listen-b-A10",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "两",
+      "件",
+      "闪",
+      "原"
+     ],
+     "answer": "B",
+     "why": "这个字是“件”，读 jiàn（7 两件宝）。",
+     "pts": 2,
+     "sayzh": "件。件。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X7",
+ "mk": "cnknow"
+}

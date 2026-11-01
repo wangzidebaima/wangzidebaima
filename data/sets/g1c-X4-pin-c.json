@@ -1,0 +1,161 @@
+{
+ "id": "g1c-X4-pin-c",
+ "title": "看拼音选字（三）",
+ "subtitle": "看拼音，选出对应的字",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X4-pin-c-A1",
+     "type": "choice",
+     "stem": "看拼音「chē」，是哪个字？",
+     "options": [
+      "车",
+      "草",
+      "站",
+      "去"
+     ],
+     "answer": "A",
+     "why": "chē 就是“车”（拼音14 ang eng ing ong）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-pin-c-A2",
+     "type": "choice",
+     "stem": "看拼音「wǎn」，是哪个字？",
+     "options": [
+      "晚",
+      "今",
+      "云",
+      "语"
+     ],
+     "answer": "A",
+     "why": "wǎn 就是“晚”（语文园地四）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-pin-c-A3",
+     "type": "choice",
+     "stem": "看拼音「zuó」，是哪个字？",
+     "options": [
+      "昨",
+      "坐",
+      "班",
+      "美"
+     ],
+     "answer": "A",
+     "why": "zuó 就是“昨”（语文园地四）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-pin-c-A4",
+     "type": "choice",
+     "stem": "看拼音「jīn」，是哪个字？",
+     "options": [
+      "原",
+      "耳",
+      "今",
+      "纸"
+     ],
+     "answer": "C",
+     "why": "jīn 就是“今”（语文园地四）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-pin-c-A5",
+     "type": "choice",
+     "stem": "看拼音「míng」，是哪个字？",
+     "options": [
+      "明",
+      "西",
+      "川",
+      "乌"
+     ],
+     "answer": "A",
+     "why": "míng 就是“明”（语文园地四）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-pin-c-A6",
+     "type": "choice",
+     "stem": "看拼音「gè」，是哪个字？",
+     "options": [
+      "书",
+      "坐",
+      "个",
+      "耳"
+     ],
+     "answer": "C",
+     "why": "gè 就是“个”（语文园地四）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-pin-c-A7",
+     "type": "choice",
+     "stem": "看拼音「zhè」，是哪个字？",
+     "options": [
+      "语",
+      "花",
+      "桥",
+      "这"
+     ],
+     "answer": "D",
+     "why": "zhè 就是“这”（语文园地四）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-pin-c-A8",
+     "type": "choice",
+     "stem": "看拼音「qù」，是哪个字？",
+     "options": [
+      "学",
+      "天",
+      "会",
+      "去"
+     ],
+     "answer": "D",
+     "why": "qù 就是“去”（语文园地四）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-pin-c-A9",
+     "type": "choice",
+     "stem": "看拼音「nián」，是哪个字？",
+     "options": [
+      "日",
+      "年",
+      "色",
+      "文"
+     ],
+     "answer": "B",
+     "why": "nián 就是“年”（语文园地四）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X4",
+ "mk": "cnknow"
+}

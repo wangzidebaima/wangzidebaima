@@ -1,0 +1,136 @@
+{
+ "id": "g1c-X2-listen-a",
+ "title": "听音选字（一）",
+ "subtitle": "听手机读一个字，选出来",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X2-listen-a-A1",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "校",
+      "爸",
+      "水",
+      "禾"
+     ],
+     "answer": "B",
+     "why": "这个字是“爸”，读 bà（拼音3 b p m f）。",
+     "pts": 2,
+     "sayzh": "爸。爸。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X2-listen-a-A2",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "妈",
+      "本",
+      "土",
+      "路"
+     ],
+     "answer": "A",
+     "why": "这个字是“妈”，读 mā（拼音3 b p m f）。",
+     "pts": 2,
+     "sayzh": "妈。妈。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X2-listen-a-A3",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "口",
+      "三",
+      "大",
+      "我"
+     ],
+     "answer": "C",
+     "why": "这个字是“大”，读 dà（拼音4 d t n l）。",
+     "pts": 2,
+     "sayzh": "大。大。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X2-listen-a-A4",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "耳",
+      "爸",
+      "马",
+      "天"
+     ],
+     "answer": "C",
+     "why": "这个字是“马”，读 mǎ（拼音4 d t n l）。",
+     "pts": 2,
+     "sayzh": "马。马。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X2-listen-a-A5",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "路",
+      "马",
+      "下",
+      "妈"
+     ],
+     "answer": "A",
+     "why": "这个字是“路”，读 lù（拼音4 d t n l）。",
+     "pts": 2,
+     "sayzh": "路。路。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X2-listen-a-A6",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "土",
+      "王",
+      "六",
+      "三"
+     ],
+     "answer": "A",
+     "why": "这个字是“土”，读 tǔ（拼音4 d t n l）。",
+     "pts": 2,
+     "sayzh": "土。土。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X2-listen-a-A7",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "本",
+      "校",
+      "大",
+      "妈"
+     ],
+     "answer": "A",
+     "why": "这个字是“本”，读 běn（语文园地二）。",
+     "pts": 2,
+     "sayzh": "本。本。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X2",
+ "mk": "cnknow"
+}

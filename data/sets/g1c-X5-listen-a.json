@@ -1,0 +1,187 @@
+{
+ "id": "g1c-X5-listen-a",
+ "title": "听音选字（一）",
+ "subtitle": "听手机读一个字，选出来",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X5-listen-a-A1",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "秋",
+      "树",
+      "口",
+      "自"
+     ],
+     "answer": "A",
+     "why": "这个字是“秋”，读 qiū（1 秋天）。",
+     "pts": 2,
+     "sayzh": "秋。秋。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-listen-a-A2",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "可",
+      "打",
+      "东",
+      "气"
+     ],
+     "answer": "D",
+     "why": "这个字是“气”，读 qì（1 秋天）。",
+     "pts": 2,
+     "sayzh": "气。气。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-listen-a-A3",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "树",
+      "桌",
+      "爸",
+      "色"
+     ],
+     "answer": "A",
+     "why": "这个字是“树”，读 shù（1 秋天）。",
+     "pts": 2,
+     "sayzh": "树。树。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-listen-a-A4",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "弟",
+      "书",
+      "雪",
+      "叶"
+     ],
+     "answer": "D",
+     "why": "这个字是“叶”，读 yè（1 秋天）。",
+     "pts": 2,
+     "sayzh": "叶。叶。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-listen-a-A5",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "目",
+      "花",
+      "黄",
+      "草"
+     ],
+     "answer": "C",
+     "why": "这个字是“黄”，读 huáng（1 秋天）。",
+     "pts": 2,
+     "sayzh": "黄。黄。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-listen-a-A6",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "片",
+      "皮",
+      "坐",
+      "字"
+     ],
+     "answer": "A",
+     "why": "这个字是“片”，读 piàn（1 秋天）。",
+     "pts": 2,
+     "sayzh": "片。片。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-listen-a-A7",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "几",
+      "从",
+      "白",
+      "戏"
+     ],
+     "answer": "B",
+     "why": "这个字是“从”，读 cóng（1 秋天）。",
+     "pts": 2,
+     "sayzh": "从。从。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-listen-a-A8",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "晚",
+      "来",
+      "树",
+      "秋"
+     ],
+     "answer": "B",
+     "why": "这个字是“来”，读 lái（1 秋天）。",
+     "pts": 2,
+     "sayzh": "来。来。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-listen-a-A9",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "飞",
+      "鸟",
+      "上",
+      "加"
+     ],
+     "answer": "A",
+     "why": "这个字是“飞”，读 fēi（1 秋天）。",
+     "pts": 2,
+     "sayzh": "飞。飞。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-listen-a-A10",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "妈",
+      "江",
+      "名",
+      "昨"
+     ],
+     "answer": "B",
+     "why": "这个字是“江”，读 jiāng（2 江南）。",
+     "pts": 2,
+     "sayzh": "江。江。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X5",
+ "mk": "cnknow"
+}

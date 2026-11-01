@@ -1,0 +1,177 @@
+{
+ "id": "g1c-X1-read-a",
+ "title": "看字选拼音（一）",
+ "subtitle": "认识的字，选出正确的拼音",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X1-read-a-A1",
+     "type": "choice",
+     "stem": "“天”怎么读？",
+     "options": [
+      "tiān",
+      "rì",
+      "wǔ",
+      "kǒu"
+     ],
+     "answer": "A",
+     "why": "“天”读 tiān（1 天地人）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-read-a-A2",
+     "type": "choice",
+     "stem": "“人”怎么读？",
+     "options": [
+      "sì",
+      "rén",
+      "liù",
+      "dì"
+     ],
+     "answer": "B",
+     "why": "“人”读 rén（1 天地人）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-read-a-A3",
+     "type": "choice",
+     "stem": "“你”怎么读？",
+     "options": [
+      "shàng",
+      "zú",
+      "tiān",
+      "nǐ"
+     ],
+     "answer": "D",
+     "why": "“你”读 nǐ（1 天地人）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-read-a-A4",
+     "type": "choice",
+     "stem": "“我”怎么读？",
+     "options": [
+      "shuǐ",
+      "yī",
+      "chuān",
+      "wǒ"
+     ],
+     "answer": "D",
+     "why": "“我”读 wǒ（1 天地人）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-read-a-A5",
+     "type": "choice",
+     "stem": "“他”怎么读？",
+     "options": [
+      "tā",
+      "sì",
+      "ěr",
+      "wǒ"
+     ],
+     "answer": "A",
+     "why": "“他”读 tā（1 天地人）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-read-a-A6",
+     "type": "choice",
+     "stem": "“一”怎么读？",
+     "options": [
+      "yī",
+      "kǒu",
+      "jiǔ",
+      "shān"
+     ],
+     "answer": "A",
+     "why": "“一”读 yī（2 金木水火土）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-read-a-A7",
+     "type": "choice",
+     "stem": "“二”怎么读？",
+     "options": [
+      "dì",
+      "èr",
+      "wǔ",
+      "rì"
+     ],
+     "answer": "B",
+     "why": "“二”读 èr（2 金木水火土）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-read-a-A8",
+     "type": "choice",
+     "stem": "“三”怎么读？",
+     "options": [
+      "tiān",
+      "shān",
+      "sān",
+      "èr"
+     ],
+     "answer": "C",
+     "why": "“三”读 sān（2 金木水火土）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-read-a-A9",
+     "type": "choice",
+     "stem": "“四”怎么读？",
+     "options": [
+      "tā",
+      "bā",
+      "qī",
+      "sì"
+     ],
+     "answer": "D",
+     "why": "“四”读 sì（2 金木水火土）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-read-a-A10",
+     "type": "choice",
+     "stem": "“五”怎么读？",
+     "options": [
+      "wǔ",
+      "jiǔ",
+      "tiān",
+      "wú"
+     ],
+     "answer": "A",
+     "why": "“五”读 wǔ（2 金木水火土）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X1",
+ "mk": "cnknow"
+}

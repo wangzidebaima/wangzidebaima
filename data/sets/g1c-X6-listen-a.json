@@ -1,0 +1,187 @@
+{
+ "id": "g1c-X6-listen-a",
+ "title": "听音选字（一）",
+ "subtitle": "听手机读一个字，选出来",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X6-listen-a-A1",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "歌",
+      "对",
+      "禾",
+      "六"
+     ],
+     "answer": "B",
+     "why": "这个字是“对”，读 duì（5 对韵歌）。",
+     "pts": 2,
+     "sayzh": "对。对。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-listen-a-A2",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "歌",
+      "文",
+      "禾",
+      "升"
+     ],
+     "answer": "A",
+     "why": "这个字是“歌”，读 gē（5 对韵歌）。",
+     "pts": 2,
+     "sayzh": "歌。歌。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-listen-a-A3",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "口",
+      "一",
+      "雨",
+      "从"
+     ],
+     "answer": "C",
+     "why": "这个字是“雨”，读 yǔ（5 对韵歌）。",
+     "pts": 2,
+     "sayzh": "雨。雨。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-listen-a-A4",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "校",
+      "十",
+      "口",
+      "风"
+     ],
+     "answer": "D",
+     "why": "这个字是“风”，读 fēng（5 对韵歌）。",
+     "pts": 2,
+     "sayzh": "风。风。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-listen-a-A5",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "小",
+      "田",
+      "星",
+      "虫"
+     ],
+     "answer": "D",
+     "why": "这个字是“虫”，读 chóng（5 对韵歌）。",
+     "pts": 2,
+     "sayzh": "虫。虫。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-listen-a-A6",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "本",
+      "鸭",
+      "弟",
+      "清"
+     ],
+     "answer": "D",
+     "why": "这个字是“清”，读 qīng（5 对韵歌）。",
+     "pts": 2,
+     "sayzh": "清。清。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-listen-a-A7",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "夜",
+      "绿",
+      "少",
+      "四"
+     ],
+     "answer": "B",
+     "why": "这个字是“绿”，读 lǜ（5 对韵歌）。",
+     "pts": 2,
+     "sayzh": "绿。绿。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-listen-a-A8",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "桃",
+      "七",
+      "贝",
+      "夜"
+     ],
+     "answer": "A",
+     "why": "这个字是“桃”，读 táo（5 对韵歌）。",
+     "pts": 2,
+     "sayzh": "桃。桃。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-listen-a-A9",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "今",
+      "虫",
+      "厂",
+      "红"
+     ],
+     "answer": "D",
+     "why": "这个字是“红”，读 hóng（5 对韵歌）。",
+     "pts": 2,
+     "sayzh": "红。红。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-listen-a-A10",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "力",
+      "去",
+      "早",
+      "他"
+     ],
+     "answer": "A",
+     "why": "这个字是“力”，读 lì（6 日月明）。",
+     "pts": 2,
+     "sayzh": "力。力。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X6",
+ "mk": "cnknow"
+}

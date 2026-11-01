@@ -1,0 +1,129 @@
+{
+ "id": "g1c-X2-pin-b",
+ "title": "看拼音选字（二）",
+ "subtitle": "看拼音，选出对应的字",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X2-pin-b-A1",
+     "type": "choice",
+     "stem": "看拼音「xué」，是哪个字？",
+     "options": [
+      "六",
+      "四",
+      "我",
+      "学"
+     ],
+     "answer": "D",
+     "why": "xué 就是“学”（语文园地二）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X2-pin-b-A2",
+     "type": "choice",
+     "stem": "看拼音「xiào」，是哪个字？",
+     "options": [
+      "本",
+      "目",
+      "校",
+      "他"
+     ],
+     "answer": "C",
+     "why": "xiào 就是“校”（语文园地二）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X2-pin-b-A3",
+     "type": "choice",
+     "stem": "看拼音「bān」，是哪个字？",
+     "options": [
+      "上",
+      "班",
+      "天",
+      "他"
+     ],
+     "answer": "B",
+     "why": "bān 就是“班”（语文园地二）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X2-pin-b-A4",
+     "type": "choice",
+     "stem": "看拼音「jí」，是哪个字？",
+     "options": [
+      "十",
+      "马",
+      "级",
+      "口"
+     ],
+     "answer": "C",
+     "why": "jí 就是“级”（语文园地二）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X2-pin-b-A5",
+     "type": "choice",
+     "stem": "看拼音「xìng」，是哪个字？",
+     "options": [
+      "爸",
+      "姓",
+      "八",
+      "田"
+     ],
+     "answer": "B",
+     "why": "xìng 就是“姓”（语文园地二）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X2-pin-b-A6",
+     "type": "choice",
+     "stem": "看拼音「míng」，是哪个字？",
+     "options": [
+      "火",
+      "天",
+      "名",
+      "八"
+     ],
+     "answer": "C",
+     "why": "míng 就是“名”（语文园地二）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X2-pin-b-A7",
+     "type": "choice",
+     "stem": "看拼音「wáng」，是哪个字？",
+     "options": [
+      "下",
+      "他",
+      "手",
+      "王"
+     ],
+     "answer": "D",
+     "why": "wáng 就是“王”（语文园地二）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X2",
+ "mk": "cnknow"
+}

@@ -3099,6 +3099,716 @@
    ]
   },
   {
+   "id": "g1chinese",
+   "title": "语文练习",
+   "icon": "📖",
+   "desc": "拼音和识字：听一听、看一看、选一选",
+   "sets": [
+    {
+     "id": "g1c-X1-listen-a",
+     "file": "sets/g1c-X1-listen-a.json",
+     "title": "听音选字（一）",
+     "subtitle": "听手机读一个字，选出来",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X1"
+    },
+    {
+     "id": "g1c-X1-listen-b",
+     "file": "sets/g1c-X1-listen-b.json",
+     "title": "听音选字（二）",
+     "subtitle": "听手机读一个字，选出来",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X1"
+    },
+    {
+     "id": "g1c-X1-listen-c",
+     "file": "sets/g1c-X1-listen-c.json",
+     "title": "听音选字（三）",
+     "subtitle": "听手机读一个字，选出来",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X1"
+    },
+    {
+     "id": "g1c-X1-pin-a",
+     "file": "sets/g1c-X1-pin-a.json",
+     "title": "看拼音选字（一）",
+     "subtitle": "看拼音，选出对应的字",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X1"
+    },
+    {
+     "id": "g1c-X1-pin-b",
+     "file": "sets/g1c-X1-pin-b.json",
+     "title": "看拼音选字（二）",
+     "subtitle": "看拼音，选出对应的字",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X1"
+    },
+    {
+     "id": "g1c-X1-pin-c",
+     "file": "sets/g1c-X1-pin-c.json",
+     "title": "看拼音选字（三）",
+     "subtitle": "看拼音，选出对应的字",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X1"
+    },
+    {
+     "id": "g1c-X1-read-a",
+     "file": "sets/g1c-X1-read-a.json",
+     "title": "看字选拼音（一）",
+     "subtitle": "认识的字，选出正确的拼音",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X1"
+    },
+    {
+     "id": "g1c-X1-read-b",
+     "file": "sets/g1c-X1-read-b.json",
+     "title": "看字选拼音（二）",
+     "subtitle": "认识的字，选出正确的拼音",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X1"
+    },
+    {
+     "id": "g1c-X1-read-c",
+     "file": "sets/g1c-X1-read-c.json",
+     "title": "看字选拼音（三）",
+     "subtitle": "认识的字，选出正确的拼音",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X1"
+    },
+    {
+     "id": "g1c-X2-listen-a",
+     "file": "sets/g1c-X2-listen-a.json",
+     "title": "听音选字（一）",
+     "subtitle": "听手机读一个字，选出来",
+     "kind": "cn",
+     "count": 7,
+     "unit": "X2"
+    },
+    {
+     "id": "g1c-X2-listen-b",
+     "file": "sets/g1c-X2-listen-b.json",
+     "title": "听音选字（二）",
+     "subtitle": "听手机读一个字，选出来",
+     "kind": "cn",
+     "count": 7,
+     "unit": "X2"
+    },
+    {
+     "id": "g1c-X2-pin-a",
+     "file": "sets/g1c-X2-pin-a.json",
+     "title": "看拼音选字（一）",
+     "subtitle": "看拼音，选出对应的字",
+     "kind": "cn",
+     "count": 7,
+     "unit": "X2"
+    },
+    {
+     "id": "g1c-X2-pin-b",
+     "file": "sets/g1c-X2-pin-b.json",
+     "title": "看拼音选字（二）",
+     "subtitle": "看拼音，选出对应的字",
+     "kind": "cn",
+     "count": 7,
+     "unit": "X2"
+    },
+    {
+     "id": "g1c-X2-read-a",
+     "file": "sets/g1c-X2-read-a.json",
+     "title": "看字选拼音（一）",
+     "subtitle": "认识的字，选出正确的拼音",
+     "kind": "cn",
+     "count": 7,
+     "unit": "X2"
+    },
+    {
+     "id": "g1c-X2-read-b",
+     "file": "sets/g1c-X2-read-b.json",
+     "title": "看字选拼音（二）",
+     "subtitle": "认识的字，选出正确的拼音",
+     "kind": "cn",
+     "count": 7,
+     "unit": "X2"
+    },
+    {
+     "id": "g1c-X2-sheng",
+     "file": "sets/g1c-X2-sheng.json",
+     "title": "找声母",
+     "subtitle": "看拼音，声母",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X2"
+    },
+    {
+     "id": "g1c-X2-yun",
+     "file": "sets/g1c-X2-yun.json",
+     "title": "找韵母",
+     "subtitle": "看拼音，韵母",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X2"
+    },
+    {
+     "id": "g1c-X2-diao",
+     "file": "sets/g1c-X2-diao.json",
+     "title": "数声调",
+     "subtitle": "看拼音，声调",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X2"
+    },
+    {
+     "id": "g1c-X3-listen-a",
+     "file": "sets/g1c-X3-listen-a.json",
+     "title": "听音选字（一）",
+     "subtitle": "听手机读一个字，选出来",
+     "kind": "cn",
+     "count": 9,
+     "unit": "X3"
+    },
+    {
+     "id": "g1c-X3-listen-b",
+     "file": "sets/g1c-X3-listen-b.json",
+     "title": "听音选字（二）",
+     "subtitle": "听手机读一个字，选出来",
+     "kind": "cn",
+     "count": 9,
+     "unit": "X3"
+    },
+    {
+     "id": "g1c-X3-listen-c",
+     "file": "sets/g1c-X3-listen-c.json",
+     "title": "听音选字（三）",
+     "subtitle": "听手机读一个字，选出来",
+     "kind": "cn",
+     "count": 9,
+     "unit": "X3"
+    },
+    {
+     "id": "g1c-X3-pin-a",
+     "file": "sets/g1c-X3-pin-a.json",
+     "title": "看拼音选字（一）",
+     "subtitle": "看拼音，选出对应的字",
+     "kind": "cn",
+     "count": 9,
+     "unit": "X3"
+    },
+    {
+     "id": "g1c-X3-pin-b",
+     "file": "sets/g1c-X3-pin-b.json",
+     "title": "看拼音选字（二）",
+     "subtitle": "看拼音，选出对应的字",
+     "kind": "cn",
+     "count": 9,
+     "unit": "X3"
+    },
+    {
+     "id": "g1c-X3-pin-c",
+     "file": "sets/g1c-X3-pin-c.json",
+     "title": "看拼音选字（三）",
+     "subtitle": "看拼音，选出对应的字",
+     "kind": "cn",
+     "count": 9,
+     "unit": "X3"
+    },
+    {
+     "id": "g1c-X3-read-a",
+     "file": "sets/g1c-X3-read-a.json",
+     "title": "看字选拼音（一）",
+     "subtitle": "认识的字，选出正确的拼音",
+     "kind": "cn",
+     "count": 9,
+     "unit": "X3"
+    },
+    {
+     "id": "g1c-X3-read-b",
+     "file": "sets/g1c-X3-read-b.json",
+     "title": "看字选拼音（二）",
+     "subtitle": "认识的字，选出正确的拼音",
+     "kind": "cn",
+     "count": 9,
+     "unit": "X3"
+    },
+    {
+     "id": "g1c-X3-read-c",
+     "file": "sets/g1c-X3-read-c.json",
+     "title": "看字选拼音（三）",
+     "subtitle": "认识的字，选出正确的拼音",
+     "kind": "cn",
+     "count": 9,
+     "unit": "X3"
+    },
+    {
+     "id": "g1c-X3-sheng",
+     "file": "sets/g1c-X3-sheng.json",
+     "title": "找声母",
+     "subtitle": "看拼音，声母",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X3"
+    },
+    {
+     "id": "g1c-X3-yun",
+     "file": "sets/g1c-X3-yun.json",
+     "title": "找韵母",
+     "subtitle": "看拼音，韵母",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X3"
+    },
+    {
+     "id": "g1c-X3-diao",
+     "file": "sets/g1c-X3-diao.json",
+     "title": "数声调",
+     "subtitle": "看拼音，声调",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X3"
+    },
+    {
+     "id": "g1c-X4-listen-a",
+     "file": "sets/g1c-X4-listen-a.json",
+     "title": "听音选字（一）",
+     "subtitle": "听手机读一个字，选出来",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X4"
+    },
+    {
+     "id": "g1c-X4-listen-b",
+     "file": "sets/g1c-X4-listen-b.json",
+     "title": "听音选字（二）",
+     "subtitle": "听手机读一个字，选出来",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X4"
+    },
+    {
+     "id": "g1c-X4-listen-c",
+     "file": "sets/g1c-X4-listen-c.json",
+     "title": "听音选字（三）",
+     "subtitle": "听手机读一个字，选出来",
+     "kind": "cn",
+     "count": 9,
+     "unit": "X4"
+    },
+    {
+     "id": "g1c-X4-pin-a",
+     "file": "sets/g1c-X4-pin-a.json",
+     "title": "看拼音选字（一）",
+     "subtitle": "看拼音，选出对应的字",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X4"
+    },
+    {
+     "id": "g1c-X4-pin-b",
+     "file": "sets/g1c-X4-pin-b.json",
+     "title": "看拼音选字（二）",
+     "subtitle": "看拼音，选出对应的字",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X4"
+    },
+    {
+     "id": "g1c-X4-pin-c",
+     "file": "sets/g1c-X4-pin-c.json",
+     "title": "看拼音选字（三）",
+     "subtitle": "看拼音，选出对应的字",
+     "kind": "cn",
+     "count": 9,
+     "unit": "X4"
+    },
+    {
+     "id": "g1c-X4-read-a",
+     "file": "sets/g1c-X4-read-a.json",
+     "title": "看字选拼音（一）",
+     "subtitle": "认识的字，选出正确的拼音",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X4"
+    },
+    {
+     "id": "g1c-X4-read-b",
+     "file": "sets/g1c-X4-read-b.json",
+     "title": "看字选拼音（二）",
+     "subtitle": "认识的字，选出正确的拼音",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X4"
+    },
+    {
+     "id": "g1c-X4-read-c",
+     "file": "sets/g1c-X4-read-c.json",
+     "title": "看字选拼音（三）",
+     "subtitle": "认识的字，选出正确的拼音",
+     "kind": "cn",
+     "count": 9,
+     "unit": "X4"
+    },
+    {
+     "id": "g1c-X4-sheng",
+     "file": "sets/g1c-X4-sheng.json",
+     "title": "找声母",
+     "subtitle": "看拼音，声母",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X4"
+    },
+    {
+     "id": "g1c-X4-yun",
+     "file": "sets/g1c-X4-yun.json",
+     "title": "找韵母",
+     "subtitle": "看拼音，韵母",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X4"
+    },
+    {
+     "id": "g1c-X4-diao",
+     "file": "sets/g1c-X4-diao.json",
+     "title": "数声调",
+     "subtitle": "看拼音，声调",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X4"
+    },
+    {
+     "id": "g1c-X5-listen-a",
+     "file": "sets/g1c-X5-listen-a.json",
+     "title": "听音选字（一）",
+     "subtitle": "听手机读一个字，选出来",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X5"
+    },
+    {
+     "id": "g1c-X5-listen-b",
+     "file": "sets/g1c-X5-listen-b.json",
+     "title": "听音选字（二）",
+     "subtitle": "听手机读一个字，选出来",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X5"
+    },
+    {
+     "id": "g1c-X5-listen-c",
+     "file": "sets/g1c-X5-listen-c.json",
+     "title": "听音选字（三）",
+     "subtitle": "听手机读一个字，选出来",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X5"
+    },
+    {
+     "id": "g1c-X5-pin-a",
+     "file": "sets/g1c-X5-pin-a.json",
+     "title": "看拼音选字（一）",
+     "subtitle": "看拼音，选出对应的字",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X5"
+    },
+    {
+     "id": "g1c-X5-pin-b",
+     "file": "sets/g1c-X5-pin-b.json",
+     "title": "看拼音选字（二）",
+     "subtitle": "看拼音，选出对应的字",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X5"
+    },
+    {
+     "id": "g1c-X5-pin-c",
+     "file": "sets/g1c-X5-pin-c.json",
+     "title": "看拼音选字（三）",
+     "subtitle": "看拼音，选出对应的字",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X5"
+    },
+    {
+     "id": "g1c-X5-read-a",
+     "file": "sets/g1c-X5-read-a.json",
+     "title": "看字选拼音（一）",
+     "subtitle": "认识的字，选出正确的拼音",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X5"
+    },
+    {
+     "id": "g1c-X5-read-b",
+     "file": "sets/g1c-X5-read-b.json",
+     "title": "看字选拼音（二）",
+     "subtitle": "认识的字，选出正确的拼音",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X5"
+    },
+    {
+     "id": "g1c-X5-read-c",
+     "file": "sets/g1c-X5-read-c.json",
+     "title": "看字选拼音（三）",
+     "subtitle": "认识的字，选出正确的拼音",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X5"
+    },
+    {
+     "id": "g1c-X6-listen-a",
+     "file": "sets/g1c-X6-listen-a.json",
+     "title": "听音选字（一）",
+     "subtitle": "听手机读一个字，选出来",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X6"
+    },
+    {
+     "id": "g1c-X6-listen-b",
+     "file": "sets/g1c-X6-listen-b.json",
+     "title": "听音选字（二）",
+     "subtitle": "听手机读一个字，选出来",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X6"
+    },
+    {
+     "id": "g1c-X6-listen-c",
+     "file": "sets/g1c-X6-listen-c.json",
+     "title": "听音选字（三）",
+     "subtitle": "听手机读一个字，选出来",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X6"
+    },
+    {
+     "id": "g1c-X6-pin-a",
+     "file": "sets/g1c-X6-pin-a.json",
+     "title": "看拼音选字（一）",
+     "subtitle": "看拼音，选出对应的字",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X6"
+    },
+    {
+     "id": "g1c-X6-pin-b",
+     "file": "sets/g1c-X6-pin-b.json",
+     "title": "看拼音选字（二）",
+     "subtitle": "看拼音，选出对应的字",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X6"
+    },
+    {
+     "id": "g1c-X6-pin-c",
+     "file": "sets/g1c-X6-pin-c.json",
+     "title": "看拼音选字（三）",
+     "subtitle": "看拼音，选出对应的字",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X6"
+    },
+    {
+     "id": "g1c-X6-read-a",
+     "file": "sets/g1c-X6-read-a.json",
+     "title": "看字选拼音（一）",
+     "subtitle": "认识的字，选出正确的拼音",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X6"
+    },
+    {
+     "id": "g1c-X6-read-b",
+     "file": "sets/g1c-X6-read-b.json",
+     "title": "看字选拼音（二）",
+     "subtitle": "认识的字，选出正确的拼音",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X6"
+    },
+    {
+     "id": "g1c-X6-read-c",
+     "file": "sets/g1c-X6-read-c.json",
+     "title": "看字选拼音（三）",
+     "subtitle": "认识的字，选出正确的拼音",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X6"
+    },
+    {
+     "id": "g1c-X7-listen-a",
+     "file": "sets/g1c-X7-listen-a.json",
+     "title": "听音选字（一）",
+     "subtitle": "听手机读一个字，选出来",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X7"
+    },
+    {
+     "id": "g1c-X7-listen-b",
+     "file": "sets/g1c-X7-listen-b.json",
+     "title": "听音选字（二）",
+     "subtitle": "听手机读一个字，选出来",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X7"
+    },
+    {
+     "id": "g1c-X7-listen-c",
+     "file": "sets/g1c-X7-listen-c.json",
+     "title": "听音选字（三）",
+     "subtitle": "听手机读一个字，选出来",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X7"
+    },
+    {
+     "id": "g1c-X7-pin-a",
+     "file": "sets/g1c-X7-pin-a.json",
+     "title": "看拼音选字（一）",
+     "subtitle": "看拼音，选出对应的字",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X7"
+    },
+    {
+     "id": "g1c-X7-pin-b",
+     "file": "sets/g1c-X7-pin-b.json",
+     "title": "看拼音选字（二）",
+     "subtitle": "看拼音，选出对应的字",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X7"
+    },
+    {
+     "id": "g1c-X7-pin-c",
+     "file": "sets/g1c-X7-pin-c.json",
+     "title": "看拼音选字（三）",
+     "subtitle": "看拼音，选出对应的字",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X7"
+    },
+    {
+     "id": "g1c-X7-read-a",
+     "file": "sets/g1c-X7-read-a.json",
+     "title": "看字选拼音（一）",
+     "subtitle": "认识的字，选出正确的拼音",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X7"
+    },
+    {
+     "id": "g1c-X7-read-b",
+     "file": "sets/g1c-X7-read-b.json",
+     "title": "看字选拼音（二）",
+     "subtitle": "认识的字，选出正确的拼音",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X7"
+    },
+    {
+     "id": "g1c-X7-read-c",
+     "file": "sets/g1c-X7-read-c.json",
+     "title": "看字选拼音（三）",
+     "subtitle": "认识的字，选出正确的拼音",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X7"
+    },
+    {
+     "id": "g1c-X8-listen-a",
+     "file": "sets/g1c-X8-listen-a.json",
+     "title": "听音选字（一）",
+     "subtitle": "听手机读一个字，选出来",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X8"
+    },
+    {
+     "id": "g1c-X8-listen-b",
+     "file": "sets/g1c-X8-listen-b.json",
+     "title": "听音选字（二）",
+     "subtitle": "听手机读一个字，选出来",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X8"
+    },
+    {
+     "id": "g1c-X8-listen-c",
+     "file": "sets/g1c-X8-listen-c.json",
+     "title": "听音选字（三）",
+     "subtitle": "听手机读一个字，选出来",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X8"
+    },
+    {
+     "id": "g1c-X8-pin-a",
+     "file": "sets/g1c-X8-pin-a.json",
+     "title": "看拼音选字（一）",
+     "subtitle": "看拼音，选出对应的字",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X8"
+    },
+    {
+     "id": "g1c-X8-pin-b",
+     "file": "sets/g1c-X8-pin-b.json",
+     "title": "看拼音选字（二）",
+     "subtitle": "看拼音，选出对应的字",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X8"
+    },
+    {
+     "id": "g1c-X8-pin-c",
+     "file": "sets/g1c-X8-pin-c.json",
+     "title": "看拼音选字（三）",
+     "subtitle": "看拼音，选出对应的字",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X8"
+    },
+    {
+     "id": "g1c-X8-read-a",
+     "file": "sets/g1c-X8-read-a.json",
+     "title": "看字选拼音（一）",
+     "subtitle": "认识的字，选出正确的拼音",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X8"
+    },
+    {
+     "id": "g1c-X8-read-b",
+     "file": "sets/g1c-X8-read-b.json",
+     "title": "看字选拼音（二）",
+     "subtitle": "认识的字，选出正确的拼音",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X8"
+    },
+    {
+     "id": "g1c-X8-read-c",
+     "file": "sets/g1c-X8-read-c.json",
+     "title": "看字选拼音（三）",
+     "subtitle": "认识的字，选出正确的拼音",
+     "kind": "cn",
+     "count": 10,
+     "unit": "X8"
+    }
+   ]
+  },
+  {
    "id": "g2chinese",
    "title": "语文练习",
    "icon": "📖",
@@ -4696,6 +5406,14 @@
   "GE1": "第一章 地球的宇宙环境",
   "GE2": "第二章 地球和地图",
   "GE3": "第三章 中国的疆域和人口",
-  "GE4": "第四章 中国的自然环境"
+  "GE4": "第四章 中国的自然环境",
+  "X1": "第一单元 识字（天地人·金木水火土·口耳目手足·日月山川）",
+  "X2": "第二单元 汉语拼音（a o e · i u ü · b p m f · d t n l）",
+  "X3": "第三单元 汉语拼音（g k h · j q x · z c s · zh ch sh r · y w）",
+  "X4": "第四单元 汉语拼音（ai ei ui · ao ou iu · ie üe er · an en in un ün · ang eng ing ong）",
+  "X5": "第五单元 秋天·江南·雪地里的小画家·四季",
+  "X6": "第六单元 识字（对韵歌·日月明·小书包·升国旗）",
+  "X7": "第七单元 小小的船·影子·两件宝",
+  "X8": "第八单元 比尾巴·乌鸦喝水·雨点儿"
  }
 }

@@ -1,0 +1,177 @@
+{
+ "id": "g1c-X7-read-c",
+ "title": "看字选拼音（三）",
+ "subtitle": "认识的字，选出正确的拼音",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X7-read-c-A1",
+     "type": "choice",
+     "stem": "“做”怎么读？",
+     "options": [
+      "yuán",
+      "chén",
+      "chǐ",
+      "zuò"
+     ],
+     "answer": "D",
+     "why": "“做”读 zuò（7 两件宝）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-read-c-A2",
+     "type": "choice",
+     "stem": "“也”怎么读？",
+     "options": [
+      "bīng",
+      "yě",
+      "zǐ",
+      "huáng"
+     ],
+     "answer": "B",
+     "why": "“也”读 yě（7 两件宝）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-read-c-A3",
+     "type": "choice",
+     "stem": "“办”怎么读？",
+     "options": [
+      "xīng",
+      "qiáo",
+      "shàng",
+      "bàn"
+     ],
+     "answer": "D",
+     "why": "“办”读 bàn（7 两件宝）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-read-c-A4",
+     "type": "choice",
+     "stem": "“到”怎么读？",
+     "options": [
+      "fēng",
+      "dào",
+      "zhe",
+      "shǒu"
+     ],
+     "answer": "B",
+     "why": "“到”读 dào（7 两件宝）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-read-c-A5",
+     "type": "choice",
+     "stem": "“又”怎么读？",
+     "options": [
+      "duì",
+      "le",
+      "bāo",
+      "yòu"
+     ],
+     "answer": "D",
+     "why": "“又”读 yòu（7 两件宝）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-read-c-A6",
+     "type": "choice",
+     "stem": "“才”怎么读？",
+     "options": [
+      "kě",
+      "cái",
+      "bèi",
+      "zhè"
+     ],
+     "answer": "B",
+     "why": "“才”读 cái（7 两件宝）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-read-c-A7",
+     "type": "choice",
+     "stem": "“能”怎么读？",
+     "options": [
+      "bā",
+      "sì",
+      "néng",
+      "zhòng"
+     ],
+     "answer": "C",
+     "why": "“能”读 néng（7 两件宝）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-read-c-A8",
+     "type": "choice",
+     "stem": "“爷”怎么读？",
+     "options": [
+      "yé",
+      "qián",
+      "zì",
+      "wài"
+     ],
+     "answer": "A",
+     "why": "“爷”读 yé（语文园地七）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-read-c-A9",
+     "type": "choice",
+     "stem": "“奶”怎么读？",
+     "options": [
+      "nǎi",
+      "ěr",
+      "pí",
+      "lǜ"
+     ],
+     "answer": "A",
+     "why": "“奶”读 nǎi（语文园地七）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-read-c-A10",
+     "type": "choice",
+     "stem": "“叔”怎么读？",
+     "options": [
+      "shǔ",
+      "shū",
+      "jīn",
+      "bǐ"
+     ],
+     "answer": "B",
+     "why": "“叔”读 shū（语文园地七）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X7",
+ "mk": "cnknow"
+}

@@ -973,12 +973,14 @@ function renderQ(q, no, ans, update) {
   if (q._meta && (q._meta.kind === 'reading' || q._meta.kind === 'listening') && q._meta.setId) box.append(ctxDetails(q._meta));
   // 低年级（config 里 readAloud:true）：孩子识字少，每题加「听题」，手机把题目和选项读出来
   const me = user();
-  if (me && me.readAloud && ['choice', 'tf', 'fill'].includes(q.type)) {
-    const lines = [{ t: String(q.stem || '').replace(/_{2,}/g, '空'), s: 'x' }];
-    if (q.type === 'choice') (q.options || []).forEach((o, k) => { if (o) lines.push({ t: 'ABCD'[k] + '，' + o, s: 'x' }); });
+  if (me && me.readAloud && ['choice', 'tf', 'fill', 'math'].includes(q.type)) {
+    const say0 = q.sayText || String(q.stem || '').replace(/_{2,}|□/g, '空').replace(/\s*[+＋]\s*/g, '加').replace(/\s*[−-]\s*/g, '减').replace(/\s*=\s*\?*/g, '等于几');
+    const lines = [{ t: say0, s: 'x' }];
+    if (q.type === 'choice' && !q.noOptSay) (q.options || []).forEach((o, k) => { if (o) lines.push({ t: 'ABCD'[k] + '，' + o, s: 'x' }); });
     if (q.type === 'tf') lines.push({ t: '对，还是错？', s: 'x' });
     const b = h('button', { type: 'button', class: 'spk listenq', onclick: () => { stopScript(); playScript(lines, {}, { lang: 'zh-CN', times: 1, rate: 0.8, pause: 500 }); } }, '🔊 听题');
-    const first = box.querySelector('.stem'); if (first) first.after(h('div', { class: 'speakrow' }, b)); else box.prepend(b);
+    const b2 = q.sayzh ? h('button', { type: 'button', class: 'spk listenq', onclick: () => { stopScript(); playScript([{ t: q.sayzh, s: 'x' }], {}, { lang: 'zh-CN', times: 1, rate: 0.7, pause: 400 }); } }, '🔊 听一听') : null;
+    const first = box.querySelector('.stem'); const rowEl = h('div', { class: 'speakrow' }, b2, b); if (first) first.after(rowEl); else box.prepend(rowEl);
   }
   return box;
 }

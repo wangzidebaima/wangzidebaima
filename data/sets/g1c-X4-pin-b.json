@@ -1,0 +1,177 @@
+{
+ "id": "g1c-X4-pin-b",
+ "title": "看拼音选字（二）",
+ "subtitle": "看拼音，选出对应的字",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X4-pin-b-A1",
+     "type": "choice",
+     "stem": "看拼音「xuě」，是哪个字？",
+     "options": [
+      "会",
+      "下",
+      "雪",
+      "期"
+     ],
+     "answer": "C",
+     "why": "xuě 就是“雪”（拼音12 ie üe er）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-pin-b-A2",
+     "type": "choice",
+     "stem": "看拼音「yè」，是哪个字？",
+     "options": [
+      "水",
+      "这",
+      "夜",
+      "我"
+     ],
+     "answer": "C",
+     "why": "yè 就是“夜”（拼音12 ie üe er）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-pin-b-A3",
+     "type": "choice",
+     "stem": "看拼音「sè」，是哪个字？",
+     "options": [
+      "鸦",
+      "色",
+      "六",
+      "小"
+     ],
+     "answer": "B",
+     "why": "sè 就是“色”（拼音12 ie üe er）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-pin-b-A4",
+     "type": "choice",
+     "stem": "看拼音「měi」，是哪个字？",
+     "options": [
+      "今",
+      "禾",
+      "下",
+      "美"
+     ],
+     "answer": "D",
+     "why": "měi 就是“美”（拼音12 ie üe er）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-pin-b-A5",
+     "type": "choice",
+     "stem": "看拼音「lán」，是哪个字？",
+     "options": [
+      "美",
+      "桌",
+      "蓝",
+      "色"
+     ],
+     "answer": "C",
+     "why": "lán 就是“蓝”（拼音13 an en in un ün）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-pin-b-A6",
+     "type": "choice",
+     "stem": "看拼音「yún」，是哪个字？",
+     "options": [
+      "语",
+      "云",
+      "蓝",
+      "瓜"
+     ],
+     "answer": "B",
+     "why": "yún 就是“云”（拼音13 an en in un ün）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-pin-b-A7",
+     "type": "choice",
+     "stem": "看拼音「cǎo」，是哪个字？",
+     "options": [
+      "妈",
+      "桥",
+      "坐",
+      "草"
+     ],
+     "answer": "D",
+     "why": "cǎo 就是“草”（拼音13 an en in un ün）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-pin-b-A8",
+     "type": "choice",
+     "stem": "看拼音「yuán」，是哪个字？",
+     "options": [
+      "五",
+      "路",
+      "纸",
+      "原"
+     ],
+     "answer": "D",
+     "why": "yuán 就是“原”（拼音13 an en in un ün）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-pin-b-A9",
+     "type": "choice",
+     "stem": "看拼音「bīng」，是哪个字？",
+     "options": [
+      "级",
+      "土",
+      "昨",
+      "冰"
+     ],
+     "answer": "D",
+     "why": "bīng 就是“冰”（拼音14 ang eng ing ong）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-pin-b-A10",
+     "type": "choice",
+     "stem": "看拼音「zì」，是哪个字？",
+     "options": [
+      "自",
+      "四",
+      "文",
+      "个"
+     ],
+     "answer": "A",
+     "why": "zì 就是“自”（拼音14 ang eng ing ong）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X4",
+ "mk": "cnknow"
+}

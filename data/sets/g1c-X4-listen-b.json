@@ -1,0 +1,187 @@
+{
+ "id": "g1c-X4-listen-b",
+ "title": "听音选字（二）",
+ "subtitle": "听手机读一个字，选出来",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X4-listen-b-A1",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "雪",
+      "句",
+      "西",
+      "期"
+     ],
+     "answer": "A",
+     "why": "这个字是“雪”，读 xuě（拼音12 ie üe er）。",
+     "pts": 2,
+     "sayzh": "雪。雪。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-listen-b-A2",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "弟",
+      "三",
+      "夜",
+      "水"
+     ],
+     "answer": "C",
+     "why": "这个字是“夜”，读 yè（拼音12 ie üe er）。",
+     "pts": 2,
+     "sayzh": "夜。夜。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-listen-b-A3",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "会",
+      "色",
+      "口",
+      "去"
+     ],
+     "answer": "B",
+     "why": "这个字是“色”，读 sè（拼音12 ie üe er）。",
+     "pts": 2,
+     "sayzh": "色。色。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-listen-b-A4",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "坐",
+      "九",
+      "美",
+      "晚"
+     ],
+     "answer": "C",
+     "why": "这个字是“美”，读 měi（拼音12 ie üe er）。",
+     "pts": 2,
+     "sayzh": "美。美。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-listen-b-A5",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "明",
+      "写",
+      "一",
+      "蓝"
+     ],
+     "answer": "D",
+     "why": "这个字是“蓝”，读 lán（拼音13 an en in un ün）。",
+     "pts": 2,
+     "sayzh": "蓝。蓝。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-listen-b-A6",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "站",
+      "画",
+      "小",
+      "云"
+     ],
+     "answer": "D",
+     "why": "这个字是“云”，读 yún（拼音13 an en in un ün）。",
+     "pts": 2,
+     "sayzh": "云。云。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-listen-b-A7",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "桌",
+      "西",
+      "草",
+      "三"
+     ],
+     "answer": "C",
+     "why": "这个字是“草”，读 cǎo（拼音13 an en in un ün）。",
+     "pts": 2,
+     "sayzh": "草。草。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-listen-b-A8",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "姓",
+      "白",
+      "人",
+      "原"
+     ],
+     "answer": "D",
+     "why": "这个字是“原”，读 yuán（拼音13 an en in un ün）。",
+     "pts": 2,
+     "sayzh": "原。原。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-listen-b-A9",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "妈",
+      "火",
+      "自",
+      "冰"
+     ],
+     "answer": "D",
+     "why": "这个字是“冰”，读 bīng（拼音14 ang eng ing ong）。",
+     "pts": 2,
+     "sayzh": "冰。冰。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-listen-b-A10",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "自",
+      "九",
+      "读",
+      "棋"
+     ],
+     "answer": "A",
+     "why": "这个字是“自”，读 zì（拼音14 ang eng ing ong）。",
+     "pts": 2,
+     "sayzh": "自。自。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X4",
+ "mk": "cnknow"
+}

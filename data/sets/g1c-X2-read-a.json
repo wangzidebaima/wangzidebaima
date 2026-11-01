@@ -1,0 +1,129 @@
+{
+ "id": "g1c-X2-read-a",
+ "title": "看字选拼音（一）",
+ "subtitle": "认识的字，选出正确的拼音",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X2-read-a-A1",
+     "type": "choice",
+     "stem": "“爸”怎么读？",
+     "options": [
+      "bà",
+      "tiān",
+      "mǎ",
+      "chuān"
+     ],
+     "answer": "A",
+     "why": "“爸”读 bà（拼音3 b p m f）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X2-read-a-A2",
+     "type": "choice",
+     "stem": "“妈”怎么读？",
+     "options": [
+      "běn",
+      "shí",
+      "zhàn",
+      "mā"
+     ],
+     "answer": "D",
+     "why": "“妈”读 mā（拼音3 b p m f）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X2-read-a-A3",
+     "type": "choice",
+     "stem": "“大”怎么读？",
+     "options": [
+      "hé",
+      "dà",
+      "zuò",
+      "lù"
+     ],
+     "answer": "B",
+     "why": "“大”读 dà（拼音4 d t n l）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X2-read-a-A4",
+     "type": "choice",
+     "stem": "“马”怎么读？",
+     "options": [
+      "xìng",
+      "nǐ",
+      "tā",
+      "mǎ"
+     ],
+     "answer": "D",
+     "why": "“马”读 mǎ（拼音4 d t n l）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X2-read-a-A5",
+     "type": "choice",
+     "stem": "“路”怎么读？",
+     "options": [
+      "lū",
+      "kǒu",
+      "dì",
+      "lù"
+     ],
+     "answer": "D",
+     "why": "“路”读 lù（拼音4 d t n l）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X2-read-a-A6",
+     "type": "choice",
+     "stem": "“土”怎么读？",
+     "options": [
+      "xià",
+      "tǔ",
+      "huǒ",
+      "xué"
+     ],
+     "answer": "B",
+     "why": "“土”读 tǔ（拼音4 d t n l）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X2-read-a-A7",
+     "type": "choice",
+     "stem": "“本”怎么读？",
+     "options": [
+      "huǒ",
+      "tā",
+      "běn",
+      "bēn"
+     ],
+     "answer": "C",
+     "why": "“本”读 běn（语文园地二）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X2",
+ "mk": "cnknow"
+}

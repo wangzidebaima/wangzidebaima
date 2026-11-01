@@ -1,0 +1,177 @@
+{
+ "id": "g1c-X7-pin-a",
+ "title": "看拼音选字（一）",
+ "subtitle": "看拼音，选出对应的字",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X7-pin-a-A1",
+     "type": "choice",
+     "stem": "看拼音「chuán」，是哪个字？",
+     "options": [
+      "船",
+      "东",
+      "水",
+      "六"
+     ],
+     "answer": "A",
+     "why": "chuán 就是“船”（5 小小的船）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-pin-a-A2",
+     "type": "choice",
+     "stem": "看拼音「wān」，是哪个字？",
+     "options": [
+      "风",
+      "弯",
+      "日",
+      "鱼"
+     ],
+     "answer": "B",
+     "why": "wān 就是“弯”（5 小小的船）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-pin-a-A3",
+     "type": "choice",
+     "stem": "看拼音「ér」，是哪个字？",
+     "options": [
+      "儿",
+      "戏",
+      "日",
+      "升"
+     ],
+     "answer": "A",
+     "why": "ér 就是“儿”（5 小小的船）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-pin-a-A4",
+     "type": "choice",
+     "stem": "看拼音「liǎng」，是哪个字？",
+     "options": [
+      "竹",
+      "菜",
+      "两",
+      "今"
+     ],
+     "answer": "C",
+     "why": "liǎng 就是“两”（5 小小的船）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-pin-a-A5",
+     "type": "choice",
+     "stem": "看拼音「tóu」，是哪个字？",
+     "options": [
+      "间",
+      "头",
+      "爸",
+      "自"
+     ],
+     "answer": "B",
+     "why": "tóu 就是“头”（5 小小的船）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-pin-a-A6",
+     "type": "choice",
+     "stem": "看拼音「zài」，是哪个字？",
+     "options": [
+      "名",
+      "在",
+      "二",
+      "风"
+     ],
+     "answer": "B",
+     "why": "zài 就是“在”（5 小小的船）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-pin-a-A7",
+     "type": "choice",
+     "stem": "看拼音「lǐ」，是哪个字？",
+     "options": [
+      "校",
+      "里",
+      "草",
+      "多"
+     ],
+     "answer": "B",
+     "why": "lǐ 就是“里”（5 小小的船）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-pin-a-A8",
+     "type": "choice",
+     "stem": "看拼音「kàn」，是哪个字？",
+     "options": [
+      "月",
+      "男",
+      "看",
+      "尘"
+     ],
+     "answer": "C",
+     "why": "kàn 就是“看”（5 小小的船）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-pin-a-A9",
+     "type": "choice",
+     "stem": "看拼音「jiàn」，是哪个字？",
+     "options": [
+      "果",
+      "见",
+      "禾",
+      "秋"
+     ],
+     "answer": "B",
+     "why": "jiàn 就是“见”（5 小小的船）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-pin-a-A10",
+     "type": "choice",
+     "stem": "看拼音「shǎn」，是哪个字？",
+     "options": [
+      "闪",
+      "戏",
+      "川",
+      "清"
+     ],
+     "answer": "A",
+     "why": "shǎn 就是“闪”（5 小小的船）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X7",
+ "mk": "cnknow"
+}

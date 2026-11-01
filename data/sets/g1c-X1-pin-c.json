@@ -1,0 +1,177 @@
+{
+ "id": "g1c-X1-pin-c",
+ "title": "看拼音选字（三）",
+ "subtitle": "看拼音，选出对应的字",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X1-pin-c-A1",
+     "type": "choice",
+     "stem": "看拼音「chuān」，是哪个字？",
+     "options": [
+      "站",
+      "川",
+      "十",
+      "九"
+     ],
+     "answer": "B",
+     "why": "chuān 就是“川”（4 日月山川）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-pin-c-A2",
+     "type": "choice",
+     "stem": "看拼音「shuǐ」，是哪个字？",
+     "options": [
+      "一",
+      "九",
+      "水",
+      "五"
+     ],
+     "answer": "C",
+     "why": "shuǐ 就是“水”（4 日月山川）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-pin-c-A3",
+     "type": "choice",
+     "stem": "看拼音「huǒ」，是哪个字？",
+     "options": [
+      "他",
+      "二",
+      "火",
+      "口"
+     ],
+     "answer": "C",
+     "why": "huǒ 就是“火”（4 日月山川）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-pin-c-A4",
+     "type": "choice",
+     "stem": "看拼音「tián」，是哪个字？",
+     "options": [
+      "天",
+      "田",
+      "坐",
+      "山"
+     ],
+     "answer": "B",
+     "why": "tián 就是“田”（4 日月山川）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-pin-c-A5",
+     "type": "choice",
+     "stem": "看拼音「hé」，是哪个字？",
+     "options": [
+      "禾",
+      "目",
+      "四",
+      "火"
+     ],
+     "answer": "A",
+     "why": "hé 就是“禾”（4 日月山川）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-pin-c-A6",
+     "type": "choice",
+     "stem": "看拼音「liù」，是哪个字？",
+     "options": [
+      "目",
+      "六",
+      "川",
+      "山"
+     ],
+     "answer": "B",
+     "why": "liù 就是“六”（语文园地一）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-pin-c-A7",
+     "type": "choice",
+     "stem": "看拼音「qī」，是哪个字？",
+     "options": [
+      "火",
+      "七",
+      "你",
+      "二"
+     ],
+     "answer": "B",
+     "why": "qī 就是“七”（语文园地一）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-pin-c-A8",
+     "type": "choice",
+     "stem": "看拼音「bā」，是哪个字？",
+     "options": [
+      "川",
+      "足",
+      "八",
+      "我"
+     ],
+     "answer": "C",
+     "why": "bā 就是“八”（语文园地一）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-pin-c-A9",
+     "type": "choice",
+     "stem": "看拼音「jiǔ」，是哪个字？",
+     "options": [
+      "田",
+      "火",
+      "九",
+      "日"
+     ],
+     "answer": "C",
+     "why": "jiǔ 就是“九”（语文园地一）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-pin-c-A10",
+     "type": "choice",
+     "stem": "看拼音「shí」，是哪个字？",
+     "options": [
+      "一",
+      "四",
+      "九",
+      "十"
+     ],
+     "answer": "D",
+     "why": "shí 就是“十”（语文园地一）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X1",
+ "mk": "cnknow"
+}

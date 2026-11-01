@@ -1,0 +1,161 @@
+{
+ "id": "g1c-X4-read-c",
+ "title": "看字选拼音（三）",
+ "subtitle": "认识的字，选出正确的拼音",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X4-read-c-A1",
+     "type": "choice",
+     "stem": "“车”怎么读？",
+     "options": [
+      "lán",
+      "shù",
+      "chē",
+      "shàng"
+     ],
+     "answer": "C",
+     "why": "“车”读 chē（拼音14 ang eng ing ong）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-read-c-A2",
+     "type": "choice",
+     "stem": "“晚”怎么读？",
+     "options": [
+      "huì",
+      "zhàn",
+      "wǎn",
+      "qù"
+     ],
+     "answer": "C",
+     "why": "“晚”读 wǎn（语文园地四）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-read-c-A3",
+     "type": "choice",
+     "stem": "“昨”怎么读？",
+     "options": [
+      "zuó",
+      "yú",
+      "wén",
+      "jí"
+     ],
+     "answer": "A",
+     "why": "“昨”读 zuó（语文园地四）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-read-c-A4",
+     "type": "choice",
+     "stem": "“今”怎么读？",
+     "options": [
+      "jīn",
+      "bái",
+      "chē",
+      "rén"
+     ],
+     "answer": "A",
+     "why": "“今”读 jīn（语文园地四）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-read-c-A5",
+     "type": "choice",
+     "stem": "“明”怎么读？",
+     "options": [
+      "míng",
+      "gē",
+      "xià",
+      "dǎ"
+     ],
+     "answer": "A",
+     "why": "“明”读 míng（语文园地四）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-read-c-A6",
+     "type": "choice",
+     "stem": "“个”怎么读？",
+     "options": [
+      "gè",
+      "nián",
+      "yā",
+      "dǎ"
+     ],
+     "answer": "A",
+     "why": "“个”读 gè（语文园地四）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-read-c-A7",
+     "type": "choice",
+     "stem": "“这”怎么读？",
+     "options": [
+      "wén",
+      "yǔ",
+      "xīng",
+      "zhè"
+     ],
+     "answer": "D",
+     "why": "“这”读 zhè（语文园地四）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-read-c-A8",
+     "type": "choice",
+     "stem": "“去”怎么读？",
+     "options": [
+      "qù",
+      "yú",
+      "míng",
+      "chuān"
+     ],
+     "answer": "A",
+     "why": "“去”读 qù（语文园地四）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-read-c-A9",
+     "type": "choice",
+     "stem": "“年”怎么读？",
+     "options": [
+      "měi",
+      "ěr",
+      "nián",
+      "zì"
+     ],
+     "answer": "C",
+     "why": "“年”读 nián（语文园地四）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X4",
+ "mk": "cnknow"
+}

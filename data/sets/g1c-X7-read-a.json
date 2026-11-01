@@ -1,0 +1,177 @@
+{
+ "id": "g1c-X7-read-a",
+ "title": "看字选拼音（一）",
+ "subtitle": "认识的字，选出正确的拼音",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X7-read-a-A1",
+     "type": "choice",
+     "stem": "“船”怎么读？",
+     "options": [
+      "chuán",
+      "jù",
+      "èr",
+      "gōng"
+     ],
+     "answer": "A",
+     "why": "“船”读 chuán（5 小小的船）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-read-a-A2",
+     "type": "choice",
+     "stem": "“弯”怎么读？",
+     "options": [
+      "wān",
+      "shí",
+      "chūn",
+      "zhè"
+     ],
+     "answer": "A",
+     "why": "“弯”读 wān（5 小小的船）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-read-a-A3",
+     "type": "choice",
+     "stem": "“儿”怎么读？",
+     "options": [
+      "tǔ",
+      "zhōng",
+      "cái",
+      "ér"
+     ],
+     "answer": "D",
+     "why": "“儿”读 ér（5 小小的船）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-read-a-A4",
+     "type": "choice",
+     "stem": "“两”怎么读？",
+     "options": [
+      "táo",
+      "bīng",
+      "xīn",
+      "liǎng"
+     ],
+     "answer": "D",
+     "why": "“两”读 liǎng（5 小小的船）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-read-a-A5",
+     "type": "choice",
+     "stem": "“头”怎么读？",
+     "options": [
+      "wā",
+      "jiàn",
+      "tóu",
+      "jiā"
+     ],
+     "answer": "C",
+     "why": "“头”读 tóu（5 小小的船）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-read-a-A6",
+     "type": "choice",
+     "stem": "“在”怎么读？",
+     "options": [
+      "men",
+      "zài",
+      "shān",
+      "xuě"
+     ],
+     "answer": "B",
+     "why": "“在”读 zài（5 小小的船）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-read-a-A7",
+     "type": "choice",
+     "stem": "“里”怎么读？",
+     "options": [
+      "hé",
+      "lǐ",
+      "wài",
+      "cóng"
+     ],
+     "answer": "B",
+     "why": "“里”读 lǐ（5 小小的船）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-read-a-A8",
+     "type": "choice",
+     "stem": "“看”怎么读？",
+     "options": [
+      "xī",
+      "néng",
+      "kàn",
+      "yòu"
+     ],
+     "answer": "C",
+     "why": "“看”读 kàn（5 小小的船）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-read-a-A9",
+     "type": "choice",
+     "stem": "“见”怎么读？",
+     "options": [
+      "jiàn",
+      "shàng",
+      "lǐ",
+      "lián"
+     ],
+     "answer": "A",
+     "why": "“见”读 jiàn（5 小小的船）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-read-a-A10",
+     "type": "choice",
+     "stem": "“闪”怎么读？",
+     "options": [
+      "shǎn",
+      "sè",
+      "kě",
+      "zuó"
+     ],
+     "answer": "A",
+     "why": "“闪”读 shǎn（5 小小的船）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X7",
+ "mk": "cnknow"
+}

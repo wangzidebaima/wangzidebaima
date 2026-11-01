@@ -266,11 +266,25 @@
     "小一"
    ],
    "theme": "rose",
-   "subjects": [],
-   "random": [],
-   "tasks": [],
+   "subjects": [
+    "g1chinese"
+   ],
+   "random": [
+    "math1",
+    "chap1"
+   ],
+   "tasks": [
+    {
+     "label": "数学随机练习 10 题",
+     "kind": "rand",
+     "subs": [
+      "math1",
+      "chap1"
+     ],
+     "goal": 10
+    }
+   ],
    "grade": "一年级",
-   "soon": true,
    "readAloud": true,
    "publishers": {
     "cn": "统编版",

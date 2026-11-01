@@ -1,0 +1,187 @@
+{
+ "id": "g1c-X8-listen-b",
+ "title": "听音选字（二）",
+ "subtitle": "听手机读一个字，选出来",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X8-listen-b-A1",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "找",
+      "去",
+      "巴",
+      "这"
+     ],
+     "answer": "A",
+     "why": "这个字是“找”，读 zhǎo（9 乌鸦喝水）。",
+     "pts": 2,
+     "sayzh": "找。找。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-listen-b-A2",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "人",
+      "许",
+      "见",
+      "久"
+     ],
+     "answer": "B",
+     "why": "这个字是“许”，读 xǔ（9 乌鸦喝水）。",
+     "pts": 2,
+     "sayzh": "许。许。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-listen-b-A3",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "东",
+      "放",
+      "石",
+      "哥"
+     ],
+     "answer": "C",
+     "why": "这个字是“石”，读 shí（9 乌鸦喝水）。",
+     "pts": 2,
+     "sayzh": "石。石。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-listen-b-A4",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "喝",
+      "王",
+      "金",
+      "出"
+     ],
+     "answer": "D",
+     "why": "这个字是“出”，读 chū（9 乌鸦喝水）。",
+     "pts": 2,
+     "sayzh": "出。出。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-listen-b-A5",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "元",
+      "旗",
+      "法",
+      "红"
+     ],
+     "answer": "C",
+     "why": "这个字是“法”，读 fǎ（9 乌鸦喝水）。",
+     "pts": 2,
+     "sayzh": "法。法。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-listen-b-A6",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "狗",
+      "鸟",
+      "打",
+      "放"
+     ],
+     "answer": "D",
+     "why": "这个字是“放”，读 fàng（9 乌鸦喝水）。",
+     "pts": 2,
+     "sayzh": "放。放。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-listen-b-A7",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "白",
+      "进",
+      "家",
+      "花"
+     ],
+     "answer": "B",
+     "why": "这个字是“进”，读 jìn（9 乌鸦喝水）。",
+     "pts": 2,
+     "sayzh": "进。进。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-listen-b-A8",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "夏",
+      "先",
+      "高",
+      "晚"
+     ],
+     "answer": "C",
+     "why": "这个字是“高”，读 gāo（9 乌鸦喝水）。",
+     "pts": 2,
+     "sayzh": "高。高。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-listen-b-A9",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "点",
+      "下",
+      "词",
+      "飞"
+     ],
+     "answer": "A",
+     "why": "这个字是“点”，读 diǎn（10 雨点儿）。",
+     "pts": 2,
+     "sayzh": "点。点。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-listen-b-A10",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "内",
+      "东",
+      "彩",
+      "八"
+     ],
+     "answer": "C",
+     "why": "这个字是“彩”，读 cǎi（10 雨点儿）。",
+     "pts": 2,
+     "sayzh": "彩。彩。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X8",
+ "mk": "cnknow"
+}

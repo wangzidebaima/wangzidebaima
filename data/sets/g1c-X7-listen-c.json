@@ -1,0 +1,187 @@
+{
+ "id": "g1c-X7-listen-c",
+ "title": "听音选字（三）",
+ "subtitle": "听手机读一个字，选出来",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X7-listen-c-A1",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "五",
+      "到",
+      "做",
+      "多"
+     ],
+     "answer": "C",
+     "why": "这个字是“做”，读 zuò（7 两件宝）。",
+     "pts": 2,
+     "sayzh": "做。做。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-listen-c-A2",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "也",
+      "他",
+      "鸭",
+      "早"
+     ],
+     "answer": "A",
+     "why": "这个字是“也”，读 yě（7 两件宝）。",
+     "pts": 2,
+     "sayzh": "也。也。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-listen-c-A3",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "读",
+      "办",
+      "他",
+      "这"
+     ],
+     "answer": "B",
+     "why": "这个字是“办”，读 bàn（7 两件宝）。",
+     "pts": 2,
+     "sayzh": "办。办。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-listen-c-A4",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "早",
+      "这",
+      "到",
+      "虫"
+     ],
+     "answer": "C",
+     "why": "这个字是“到”，读 dào（7 两件宝）。",
+     "pts": 2,
+     "sayzh": "到。到。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-listen-c-A5",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "会",
+      "又",
+      "瓜",
+      "南"
+     ],
+     "answer": "B",
+     "why": "这个字是“又”，读 yòu（7 两件宝）。",
+     "pts": 2,
+     "sayzh": "又。又。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-listen-c-A6",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "蓝",
+      "坐",
+      "六",
+      "才"
+     ],
+     "answer": "D",
+     "why": "这个字是“才”，读 cái（7 两件宝）。",
+     "pts": 2,
+     "sayzh": "才。才。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-listen-c-A7",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "木",
+      "气",
+      "这",
+      "能"
+     ],
+     "answer": "D",
+     "why": "这个字是“能”，读 néng（7 两件宝）。",
+     "pts": 2,
+     "sayzh": "能。能。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-listen-c-A8",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "门",
+      "爷",
+      "竹",
+      "船"
+     ],
+     "answer": "B",
+     "why": "这个字是“爷”，读 yé（语文园地七）。",
+     "pts": 2,
+     "sayzh": "爷。爷。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-listen-c-A9",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "看",
+      "森",
+      "起",
+      "奶"
+     ],
+     "answer": "D",
+     "why": "这个字是“奶”，读 nǎi（语文园地七）。",
+     "pts": 2,
+     "sayzh": "奶。奶。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-listen-c-A10",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "鸦",
+      "前",
+      "叔",
+      "师"
+     ],
+     "answer": "C",
+     "why": "这个字是“叔”，读 shū（语文园地七）。",
+     "pts": 2,
+     "sayzh": "叔。叔。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X7",
+ "mk": "cnknow"
+}

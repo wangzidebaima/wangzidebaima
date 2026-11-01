@@ -1,0 +1,177 @@
+{
+ "id": "g1c-X4-sheng",
+ "title": "找声母",
+ "subtitle": "看拼音，声母",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X4-sheng-A1",
+     "type": "choice",
+     "stem": "“开”读 kāi，声母是哪个？",
+     "options": [
+      "f",
+      "k",
+      "x",
+      "b"
+     ],
+     "answer": "B",
+     "why": "kāi 里，前面的音是声母 k。",
+     "pts": 2,
+     "sayText": "看一看拼音，声母是哪个？",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-sheng-A2",
+     "type": "choice",
+     "stem": "“今”读 jīn，声母是哪个？",
+     "options": [
+      "s",
+      "t",
+      "n",
+      "j"
+     ],
+     "answer": "D",
+     "why": "jīn 里，前面的音是声母 j。",
+     "pts": 2,
+     "sayText": "看一看拼音，声母是哪个？",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-sheng-A3",
+     "type": "choice",
+     "stem": "“晚”读 wǎn，声母是哪个？",
+     "options": [
+      "z",
+      "p",
+      "w",
+      "m"
+     ],
+     "answer": "C",
+     "why": "wǎn 里，前面的音是声母 w。",
+     "pts": 2,
+     "sayText": "看一看拼音，声母是哪个？",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-sheng-A4",
+     "type": "choice",
+     "stem": "“柳”读 liǔ，声母是哪个？",
+     "options": [
+      "p",
+      "z",
+      "zh",
+      "l"
+     ],
+     "answer": "D",
+     "why": "liǔ 里，前面的音是声母 l。",
+     "pts": 2,
+     "sayText": "看一看拼音，声母是哪个？",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-sheng-A5",
+     "type": "choice",
+     "stem": "“菜”读 cài，声母是哪个？",
+     "options": [
+      "f",
+      "c",
+      "x",
+      "y"
+     ],
+     "answer": "B",
+     "why": "cài 里，前面的音是声母 c。",
+     "pts": 2,
+     "sayText": "看一看拼音，声母是哪个？",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-sheng-A6",
+     "type": "choice",
+     "stem": "“果”读 guǒ，声母是哪个？",
+     "options": [
+      "c",
+      "sh",
+      "g",
+      "y"
+     ],
+     "answer": "C",
+     "why": "guǒ 里，前面的音是声母 g。",
+     "pts": 2,
+     "sayText": "看一看拼音，声母是哪个？",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-sheng-A7",
+     "type": "choice",
+     "stem": "“年”读 nián，声母是哪个？",
+     "options": [
+      "n",
+      "f",
+      "r",
+      "t"
+     ],
+     "answer": "A",
+     "why": "nián 里，前面的音是声母 n。",
+     "pts": 2,
+     "sayText": "看一看拼音，声母是哪个？",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-sheng-A8",
+     "type": "choice",
+     "stem": "“草”读 cǎo，声母是哪个？",
+     "options": [
+      "c",
+      "d",
+      "sh",
+      "p"
+     ],
+     "answer": "A",
+     "why": "cǎo 里，前面的音是声母 c。",
+     "pts": 2,
+     "sayText": "看一看拼音，声母是哪个？",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-sheng-A9",
+     "type": "choice",
+     "stem": "“冰”读 bīng，声母是哪个？",
+     "options": [
+      "b",
+      "sh",
+      "l",
+      "ch"
+     ],
+     "answer": "A",
+     "why": "bīng 里，前面的音是声母 b。",
+     "pts": 2,
+     "sayText": "看一看拼音，声母是哪个？",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-sheng-A10",
+     "type": "choice",
+     "stem": "“夜”读 yè，声母是哪个？",
+     "options": [
+      "x",
+      "sh",
+      "l",
+      "y"
+     ],
+     "answer": "D",
+     "why": "yè 里，前面的音是声母 y。",
+     "pts": 2,
+     "sayText": "看一看拼音，声母是哪个？",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X4",
+ "mk": "cnknow"
+}

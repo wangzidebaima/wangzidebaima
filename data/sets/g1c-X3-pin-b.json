@@ -1,0 +1,161 @@
+{
+ "id": "g1c-X3-pin-b",
+ "title": "看拼音选字（二）",
+ "subtitle": "看拼音，选出对应的字",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X3-pin-b-A1",
+     "type": "choice",
+     "stem": "看拼音「cí」，是哪个字？",
+     "options": [
+      "书",
+      "词",
+      "木",
+      "二"
+     ],
+     "answer": "B",
+     "why": "cí 就是“词”（拼音7 z c s）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-pin-b-A2",
+     "type": "choice",
+     "stem": "看拼音「jù」，是哪个字？",
+     "options": [
+      "级",
+      "句",
+      "名",
+      "三"
+     ],
+     "answer": "B",
+     "why": "jù 就是“句”（拼音7 z c s）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-pin-b-A3",
+     "type": "choice",
+     "stem": "看拼音「zǐ」，是哪个字？",
+     "options": [
+      "棋",
+      "路",
+      "期",
+      "子"
+     ],
+     "answer": "D",
+     "why": "zǐ 就是“子”（拼音7 z c s）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-pin-b-A4",
+     "type": "choice",
+     "stem": "看拼音「zhuō」，是哪个字？",
+     "options": [
+      "川",
+      "桌",
+      "坐",
+      "火"
+     ],
+     "answer": "B",
+     "why": "zhuō 就是“桌”（拼音8 zh ch sh r）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-pin-b-A5",
+     "type": "choice",
+     "stem": "看拼音「zhǐ」，是哪个字？",
+     "options": [
+      "王",
+      "口",
+      "午",
+      "纸"
+     ],
+     "answer": "D",
+     "why": "zhǐ 就是“纸”（拼音8 zh ch sh r）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-pin-b-A6",
+     "type": "choice",
+     "stem": "看拼音「dú」，是哪个字？",
+     "options": [
+      "写",
+      "词",
+      "读",
+      "日"
+     ],
+     "answer": "C",
+     "why": "dú 就是“读”（拼音8 zh ch sh r）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-pin-b-A7",
+     "type": "choice",
+     "stem": "看拼音「shū」，是哪个字？",
+     "options": [
+      "川",
+      "马",
+      "书",
+      "午"
+     ],
+     "answer": "C",
+     "why": "shū 就是“书”（拼音8 zh ch sh r）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-pin-b-A8",
+     "type": "choice",
+     "stem": "看拼音「yú」，是哪个字？",
+     "options": [
+      "鱼",
+      "文",
+      "哥",
+      "花"
+     ],
+     "answer": "A",
+     "why": "yú 就是“鱼”（拼音9 y w）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-pin-b-A9",
+     "type": "choice",
+     "stem": "看拼音「yā」，是哪个字？",
+     "options": [
+      "语",
+      "鸭",
+      "坐",
+      "十"
+     ],
+     "answer": "B",
+     "why": "yā 就是“鸭”（拼音9 y w）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X3",
+ "mk": "cnknow"
+}

@@ -1,0 +1,161 @@
+{
+ "id": "g1c-X3-pin-c",
+ "title": "看拼音选字（三）",
+ "subtitle": "看拼音，选出对应的字",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X3-pin-c-A1",
+     "type": "choice",
+     "stem": "看拼音「wū」，是哪个字？",
+     "options": [
+      "乌",
+      "路",
+      "字",
+      "大"
+     ],
+     "answer": "A",
+     "why": "wū 就是“乌”（拼音9 y w）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-pin-c-A2",
+     "type": "choice",
+     "stem": "看拼音「yā」，是哪个字？",
+     "options": [
+      "鸦",
+      "大",
+      "足",
+      "学"
+     ],
+     "answer": "A",
+     "why": "yā 就是“鸦”（拼音9 y w）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-pin-c-A3",
+     "type": "choice",
+     "stem": "看拼音「wǔ」，是哪个字？",
+     "options": [
+      "目",
+      "月",
+      "午",
+      "姓"
+     ],
+     "answer": "C",
+     "why": "wǔ 就是“午”（语文园地三）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-pin-c-A4",
+     "type": "choice",
+     "stem": "看拼音「xīng」，是哪个字？",
+     "options": [
+      "画",
+      "星",
+      "七",
+      "校"
+     ],
+     "answer": "B",
+     "why": "xīng 就是“星”（语文园地三）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-pin-c-A5",
+     "type": "choice",
+     "stem": "看拼音「qī」，是哪个字？",
+     "options": [
+      "弟",
+      "期",
+      "我",
+      "路"
+     ],
+     "answer": "B",
+     "why": "qī 就是“期”（语文园地三）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-pin-c-A6",
+     "type": "choice",
+     "stem": "看拼音「yǔ」，是哪个字？",
+     "options": [
+      "爸",
+      "鱼",
+      "王",
+      "语"
+     ],
+     "answer": "D",
+     "why": "yǔ 就是“语”（语文园地三）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-pin-c-A7",
+     "type": "choice",
+     "stem": "看拼音「wén」，是哪个字？",
+     "options": [
+      "文",
+      "鸭",
+      "土",
+      "姓"
+     ],
+     "answer": "A",
+     "why": "wén 就是“文”（语文园地三）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-pin-c-A8",
+     "type": "choice",
+     "stem": "看拼音「xiě」，是哪个字？",
+     "options": [
+      "棋",
+      "写",
+      "词",
+      "二"
+     ],
+     "answer": "B",
+     "why": "xiě 就是“写”（语文园地三）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-pin-c-A9",
+     "type": "choice",
+     "stem": "看拼音「huì」，是哪个字？",
+     "options": [
+      "会",
+      "九",
+      "火",
+      "读"
+     ],
+     "answer": "A",
+     "why": "huì 就是“会”（语文园地三）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X3",
+ "mk": "cnknow"
+}

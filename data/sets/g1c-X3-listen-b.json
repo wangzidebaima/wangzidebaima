@@ -1,0 +1,170 @@
+{
+ "id": "g1c-X3-listen-b",
+ "title": "听音选字（二）",
+ "subtitle": "听手机读一个字，选出来",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X3-listen-b-A1",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "打",
+      "棋",
+      "山",
+      "词"
+     ],
+     "answer": "D",
+     "why": "这个字是“词”，读 cí（拼音7 z c s）。",
+     "pts": 2,
+     "sayzh": "词。词。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-listen-b-A2",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "句",
+      "会",
+      "字",
+      "鸦"
+     ],
+     "answer": "A",
+     "why": "这个字是“句”，读 jù（拼音7 z c s）。",
+     "pts": 2,
+     "sayzh": "句。句。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-listen-b-A3",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "月",
+      "日",
+      "子",
+      "鸦"
+     ],
+     "answer": "C",
+     "why": "这个字是“子”，读 zǐ（拼音7 z c s）。",
+     "pts": 2,
+     "sayzh": "子。子。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-listen-b-A4",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "桌",
+      "校",
+      "词",
+      "花"
+     ],
+     "answer": "A",
+     "why": "这个字是“桌”，读 zhuō（拼音8 zh ch sh r）。",
+     "pts": 2,
+     "sayzh": "桌。桌。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-listen-b-A5",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "五",
+      "他",
+      "级",
+      "纸"
+     ],
+     "answer": "D",
+     "why": "这个字是“纸”，读 zhǐ（拼音8 zh ch sh r）。",
+     "pts": 2,
+     "sayzh": "纸。纸。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-listen-b-A6",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "大",
+      "足",
+      "读",
+      "木"
+     ],
+     "answer": "C",
+     "why": "这个字是“读”，读 dú（拼音8 zh ch sh r）。",
+     "pts": 2,
+     "sayzh": "读。读。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-listen-b-A7",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "星",
+      "字",
+      "书",
+      "级"
+     ],
+     "answer": "C",
+     "why": "这个字是“书”，读 shū（拼音8 zh ch sh r）。",
+     "pts": 2,
+     "sayzh": "书。书。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-listen-b-A8",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "马",
+      "学",
+      "哥",
+      "鱼"
+     ],
+     "answer": "D",
+     "why": "这个字是“鱼”，读 yú（拼音9 y w）。",
+     "pts": 2,
+     "sayzh": "鱼。鱼。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-listen-b-A9",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "鸭",
+      "本",
+      "山",
+      "校"
+     ],
+     "answer": "A",
+     "why": "这个字是“鸭”，读 yā（拼音9 y w）。",
+     "pts": 2,
+     "sayzh": "鸭。鸭。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X3",
+ "mk": "cnknow"
+}

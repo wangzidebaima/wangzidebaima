@@ -1,0 +1,177 @@
+{
+ "id": "g1c-X4-read-a",
+ "title": "看字选拼音（一）",
+ "subtitle": "认识的字，选出正确的拼音",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X4-read-a-A1",
+     "type": "choice",
+     "stem": "“白”怎么读？",
+     "options": [
+      "sān",
+      "rén",
+      "shū",
+      "bái"
+     ],
+     "answer": "D",
+     "why": "“白”读 bái（拼音10 ai ei ui）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-read-a-A2",
+     "type": "choice",
+     "stem": "“菜”怎么读？",
+     "options": [
+      "chē",
+      "zì",
+      "nǐ",
+      "cài"
+     ],
+     "answer": "D",
+     "why": "“菜”读 cài（拼音10 ai ei ui）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-read-a-A3",
+     "type": "choice",
+     "stem": "“西”怎么读？",
+     "options": [
+      "gè",
+      "shuǐ",
+      "běn",
+      "xī"
+     ],
+     "answer": "D",
+     "why": "“西”读 xī（拼音10 ai ei ui）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-read-a-A4",
+     "type": "choice",
+     "stem": "“瓜”怎么读？",
+     "options": [
+      "zì",
+      "xiǎo",
+      "guā",
+      "rì"
+     ],
+     "answer": "C",
+     "why": "“瓜”读 guā（拼音10 ai ei ui）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-read-a-A5",
+     "type": "choice",
+     "stem": "“果”怎么读？",
+     "options": [
+      "lán",
+      "kāi",
+      "ěr",
+      "guǒ"
+     ],
+     "answer": "D",
+     "why": "“果”读 guǒ（拼音10 ai ei ui）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-read-a-A6",
+     "type": "choice",
+     "stem": "“小”怎么读？",
+     "options": [
+      "rì",
+      "yún",
+      "xiǎo",
+      "shí"
+     ],
+     "answer": "C",
+     "why": "“小”读 xiǎo（拼音11 ao ou iu）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-read-a-A7",
+     "type": "choice",
+     "stem": "“桥”怎么读？",
+     "options": [
+      "qiáo",
+      "wǔ",
+      "guā",
+      "rì"
+     ],
+     "answer": "A",
+     "why": "“桥”读 qiáo（拼音11 ao ou iu）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-read-a-A8",
+     "type": "choice",
+     "stem": "“流”怎么读？",
+     "options": [
+      "wǒ",
+      "zǐ",
+      "hé",
+      "liú"
+     ],
+     "answer": "D",
+     "why": "“流”读 liú（拼音11 ao ou iu）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-read-a-A9",
+     "type": "choice",
+     "stem": "“柳”怎么读？",
+     "options": [
+      "chuān",
+      "dú",
+      "liǔ",
+      "dì"
+     ],
+     "answer": "C",
+     "why": "“柳”读 liǔ（拼音11 ao ou iu）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-read-a-A10",
+     "type": "choice",
+     "stem": "“开”怎么读？",
+     "options": [
+      "kāi",
+      "jí",
+      "èr",
+      "tián"
+     ],
+     "answer": "A",
+     "why": "“开”读 kāi（拼音12 ie üe er）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X4",
+ "mk": "cnknow"
+}

@@ -1,0 +1,177 @@
+{
+ "id": "g1c-X5-pin-a",
+ "title": "看拼音选字（一）",
+ "subtitle": "看拼音，选出对应的字",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X5-pin-a-A1",
+     "type": "choice",
+     "stem": "看拼音「qiū」，是哪个字？",
+     "options": [
+      "句",
+      "秋",
+      "色",
+      "语"
+     ],
+     "answer": "B",
+     "why": "qiū 就是“秋”（1 秋天）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-pin-a-A2",
+     "type": "choice",
+     "stem": "看拼音「qì」，是哪个字？",
+     "options": [
+      "反",
+      "午",
+      "气",
+      "江"
+     ],
+     "answer": "C",
+     "why": "qì 就是“气”（1 秋天）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-pin-a-A3",
+     "type": "choice",
+     "stem": "看拼音「shù」，是哪个字？",
+     "options": [
+      "年",
+      "五",
+      "用",
+      "树"
+     ],
+     "answer": "D",
+     "why": "shù 就是“树”（1 秋天）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-pin-a-A4",
+     "type": "choice",
+     "stem": "看拼音「yè」，是哪个字？",
+     "options": [
+      "冬",
+      "叶",
+      "年",
+      "莲"
+     ],
+     "answer": "B",
+     "why": "yè 就是“叶”（1 秋天）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-pin-a-A5",
+     "type": "choice",
+     "stem": "看拼音「huáng」，是哪个字？",
+     "options": [
+      "瓜",
+      "女",
+      "黄",
+      "莲"
+     ],
+     "answer": "C",
+     "why": "huáng 就是“黄”（1 秋天）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-pin-a-A6",
+     "type": "choice",
+     "stem": "看拼音「piàn」，是哪个字？",
+     "options": [
+      "山",
+      "马",
+      "蛙",
+      "片"
+     ],
+     "answer": "D",
+     "why": "piàn 就是“片”（1 秋天）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-pin-a-A7",
+     "type": "choice",
+     "stem": "看拼音「cóng」，是哪个字？",
+     "options": [
+      "柳",
+      "从",
+      "路",
+      "关"
+     ],
+     "answer": "B",
+     "why": "cóng 就是“从”（1 秋天）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-pin-a-A8",
+     "type": "choice",
+     "stem": "看拼音「lái」，是哪个字？",
+     "options": [
+      "鸭",
+      "来",
+      "春",
+      "山"
+     ],
+     "answer": "B",
+     "why": "lái 就是“来”（1 秋天）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-pin-a-A9",
+     "type": "choice",
+     "stem": "看拼音「fēi」，是哪个字？",
+     "options": [
+      "车",
+      "棋",
+      "飞",
+      "词"
+     ],
+     "answer": "C",
+     "why": "fēi 就是“飞”（1 秋天）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-pin-a-A10",
+     "type": "choice",
+     "stem": "看拼音「jiāng」，是哪个字？",
+     "options": [
+      "流",
+      "手",
+      "江",
+      "花"
+     ],
+     "answer": "C",
+     "why": "jiāng 就是“江”（2 江南）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X5",
+ "mk": "cnknow"
+}

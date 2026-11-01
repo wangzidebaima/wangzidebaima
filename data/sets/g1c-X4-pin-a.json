@@ -1,0 +1,177 @@
+{
+ "id": "g1c-X4-pin-a",
+ "title": "看拼音选字（一）",
+ "subtitle": "看拼音，选出对应的字",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X4-pin-a-A1",
+     "type": "choice",
+     "stem": "看拼音「bái」，是哪个字？",
+     "options": [
+      "语",
+      "冰",
+      "白",
+      "桌"
+     ],
+     "answer": "C",
+     "why": "bái 就是“白”（拼音10 ai ei ui）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-pin-a-A2",
+     "type": "choice",
+     "stem": "看拼音「cài」，是哪个字？",
+     "options": [
+      "四",
+      "班",
+      "路",
+      "菜"
+     ],
+     "answer": "D",
+     "why": "cài 就是“菜”（拼音10 ai ei ui）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-pin-a-A3",
+     "type": "choice",
+     "stem": "看拼音「xī」，是哪个字？",
+     "options": [
+      "西",
+      "积",
+      "本",
+      "山"
+     ],
+     "answer": "A",
+     "why": "xī 就是“西”（拼音10 ai ei ui）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-pin-a-A4",
+     "type": "choice",
+     "stem": "看拼音「guā」，是哪个字？",
+     "options": [
+      "姓",
+      "原",
+      "晚",
+      "瓜"
+     ],
+     "answer": "D",
+     "why": "guā 就是“瓜”（拼音10 ai ei ui）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-pin-a-A5",
+     "type": "choice",
+     "stem": "看拼音「guǒ」，是哪个字？",
+     "options": [
+      "果",
+      "手",
+      "桌",
+      "期"
+     ],
+     "answer": "A",
+     "why": "guǒ 就是“果”（拼音10 ai ei ui）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-pin-a-A6",
+     "type": "choice",
+     "stem": "看拼音「xiǎo」，是哪个字？",
+     "options": [
+      "哥",
+      "小",
+      "冰",
+      "火"
+     ],
+     "answer": "B",
+     "why": "xiǎo 就是“小”（拼音11 ao ou iu）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-pin-a-A7",
+     "type": "choice",
+     "stem": "看拼音「qiáo」，是哪个字？",
+     "options": [
+      "打",
+      "桥",
+      "星",
+      "流"
+     ],
+     "answer": "B",
+     "why": "qiáo 就是“桥”（拼音11 ao ou iu）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-pin-a-A8",
+     "type": "choice",
+     "stem": "看拼音「liú」，是哪个字？",
+     "options": [
+      "八",
+      "流",
+      "柳",
+      "鸦"
+     ],
+     "answer": "B",
+     "why": "liú 就是“流”（拼音11 ao ou iu）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-pin-a-A9",
+     "type": "choice",
+     "stem": "看拼音「liǔ」，是哪个字？",
+     "options": [
+      "期",
+      "九",
+      "哥",
+      "柳"
+     ],
+     "answer": "D",
+     "why": "liǔ 就是“柳”（拼音11 ao ou iu）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-pin-a-A10",
+     "type": "choice",
+     "stem": "看拼音「kāi」，是哪个字？",
+     "options": [
+      "田",
+      "他",
+      "美",
+      "开"
+     ],
+     "answer": "D",
+     "why": "kāi 就是“开”（拼音12 ie üe er）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X4",
+ "mk": "cnknow"
+}

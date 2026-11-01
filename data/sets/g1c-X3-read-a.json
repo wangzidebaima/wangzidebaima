@@ -1,0 +1,161 @@
+{
+ "id": "g1c-X3-read-a",
+ "title": "看字选拼音（一）",
+ "subtitle": "认识的字，选出正确的拼音",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X3-read-a-A1",
+     "type": "choice",
+     "stem": "“哥”怎么读？",
+     "options": [
+      "liù",
+      "gē",
+      "mǎ",
+      "jí"
+     ],
+     "answer": "B",
+     "why": "“哥”读 gē（拼音5 g k h）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-read-a-A2",
+     "type": "choice",
+     "stem": "“弟”怎么读？",
+     "options": [
+      "qí",
+      "dì",
+      "dú",
+      "yuè"
+     ],
+     "answer": "B",
+     "why": "“弟”读 dì（拼音5 g k h）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-read-a-A3",
+     "type": "choice",
+     "stem": "“画”怎么读？",
+     "options": [
+      "mù",
+      "huì",
+      "míng",
+      "huà"
+     ],
+     "answer": "D",
+     "why": "“画”读 huà（拼音5 g k h）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-read-a-A4",
+     "type": "choice",
+     "stem": "“花”怎么读？",
+     "options": [
+      "yuè",
+      "huā",
+      "shǒu",
+      "tǔ"
+     ],
+     "answer": "B",
+     "why": "“花”读 huā（拼音5 g k h）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-read-a-A5",
+     "type": "choice",
+     "stem": "“打”怎么读？",
+     "options": [
+      "zì",
+      "liù",
+      "shù",
+      "dǎ"
+     ],
+     "answer": "D",
+     "why": "“打”读 dǎ（拼音6 j q x）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-read-a-A6",
+     "type": "choice",
+     "stem": "“棋”怎么读？",
+     "options": [
+      "qí",
+      "sì",
+      "shuǐ",
+      "xīng"
+     ],
+     "answer": "A",
+     "why": "“棋”读 qí（拼音6 j q x）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-read-a-A7",
+     "type": "choice",
+     "stem": "“积”怎么读？",
+     "options": [
+      "jī",
+      "qī",
+      "yuè",
+      "zhǐ"
+     ],
+     "answer": "A",
+     "why": "“积”读 jī（拼音6 j q x）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-read-a-A8",
+     "type": "choice",
+     "stem": "“木”怎么读？",
+     "options": [
+      "xué",
+      "mù",
+      "huà",
+      "èr"
+     ],
+     "answer": "B",
+     "why": "“木”读 mù（拼音6 j q x）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-read-a-A9",
+     "type": "choice",
+     "stem": "“字”怎么读？",
+     "options": [
+      "nǐ",
+      "zì",
+      "jī",
+      "zuò"
+     ],
+     "answer": "B",
+     "why": "“字”读 zì（拼音7 z c s）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X3",
+ "mk": "cnknow"
+}

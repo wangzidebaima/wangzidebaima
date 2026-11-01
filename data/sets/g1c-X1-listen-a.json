@@ -1,0 +1,187 @@
+{
+ "id": "g1c-X1-listen-a",
+ "title": "听音选字（一）",
+ "subtitle": "听手机读一个字，选出来",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X1-listen-a-A1",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "月",
+      "目",
+      "天",
+      "坐"
+     ],
+     "answer": "C",
+     "why": "这个字是“天”，读 tiān（1 天地人）。",
+     "pts": 2,
+     "sayzh": "天。天。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-listen-a-A2",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "五",
+      "人",
+      "足",
+      "一"
+     ],
+     "answer": "B",
+     "why": "这个字是“人”，读 rén（1 天地人）。",
+     "pts": 2,
+     "sayzh": "人。人。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-listen-a-A3",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "九",
+      "上",
+      "目",
+      "你"
+     ],
+     "answer": "D",
+     "why": "这个字是“你”，读 nǐ（1 天地人）。",
+     "pts": 2,
+     "sayzh": "你。你。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-listen-a-A4",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "四",
+      "日",
+      "山",
+      "我"
+     ],
+     "answer": "D",
+     "why": "这个字是“我”，读 wǒ（1 天地人）。",
+     "pts": 2,
+     "sayzh": "我。我。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-listen-a-A5",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "你",
+      "山",
+      "他",
+      "六"
+     ],
+     "answer": "C",
+     "why": "这个字是“他”，读 tā（1 天地人）。",
+     "pts": 2,
+     "sayzh": "他。他。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-listen-a-A6",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "目",
+      "下",
+      "二",
+      "一"
+     ],
+     "answer": "D",
+     "why": "这个字是“一”，读 yī（2 金木水火土）。",
+     "pts": 2,
+     "sayzh": "一。一。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-listen-a-A7",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "上",
+      "二",
+      "手",
+      "四"
+     ],
+     "answer": "B",
+     "why": "这个字是“二”，读 èr（2 金木水火土）。",
+     "pts": 2,
+     "sayzh": "二。二。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-listen-a-A8",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "六",
+      "三",
+      "水",
+      "人"
+     ],
+     "answer": "B",
+     "why": "这个字是“三”，读 sān（2 金木水火土）。",
+     "pts": 2,
+     "sayzh": "三。三。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-listen-a-A9",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "五",
+      "八",
+      "四",
+      "三"
+     ],
+     "answer": "C",
+     "why": "这个字是“四”，读 sì（2 金木水火土）。",
+     "pts": 2,
+     "sayzh": "四。四。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-listen-a-A10",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "五",
+      "一",
+      "八",
+      "坐"
+     ],
+     "answer": "A",
+     "why": "这个字是“五”，读 wǔ（2 金木水火土）。",
+     "pts": 2,
+     "sayzh": "五。五。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X1",
+ "mk": "cnknow"
+}

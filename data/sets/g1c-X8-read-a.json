@@ -1,0 +1,177 @@
+{
+ "id": "g1c-X8-read-a",
+ "title": "看字选拼音（一）",
+ "subtitle": "认识的字，选出正确的拼音",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X8-read-a-A1",
+     "type": "choice",
+     "stem": "“比”怎么读？",
+     "options": [
+      "nǚ",
+      "bǐ",
+      "pīn",
+      "huà"
+     ],
+     "answer": "B",
+     "why": "“比”读 bǐ（8 比尾巴）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-read-a-A2",
+     "type": "choice",
+     "stem": "“尾”怎么读？",
+     "options": [
+      "wěi",
+      "tóu",
+      "zǐ",
+      "yīn"
+     ],
+     "answer": "A",
+     "why": "“尾”读 wěi（8 比尾巴）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-read-a-A3",
+     "type": "choice",
+     "stem": "“巴”怎么读？",
+     "options": [
+      "shàng",
+      "bā",
+      "huà",
+      "lián"
+     ],
+     "answer": "B",
+     "why": "“巴”读 bā（8 比尾巴）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-read-a-A4",
+     "type": "choice",
+     "stem": "“谁”怎么读？",
+     "options": [
+      "shuí",
+      "xíng",
+      "zhǎng",
+      "shù"
+     ],
+     "answer": "A",
+     "why": "“谁”读 shuí（8 比尾巴）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-read-a-A5",
+     "type": "choice",
+     "stem": "“短”怎么读？",
+     "options": [
+      "dú",
+      "gāo",
+      "cái",
+      "duǎn"
+     ],
+     "answer": "D",
+     "why": "“短”读 duǎn（8 比尾巴）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-read-a-A6",
+     "type": "choice",
+     "stem": "“把”怎么读？",
+     "options": [
+      "jiù",
+      "bǎ",
+      "zhuǎ",
+      "me"
+     ],
+     "answer": "B",
+     "why": "“把”读 bǎ（8 比尾巴）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-read-a-A7",
+     "type": "choice",
+     "stem": "“伞”怎么读？",
+     "options": [
+      "nǐ",
+      "yě",
+      "sǎn",
+      "chē"
+     ],
+     "answer": "C",
+     "why": "“伞”读 sǎn（8 比尾巴）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-read-a-A8",
+     "type": "choice",
+     "stem": "“兔”怎么读？",
+     "options": [
+      "méi",
+      "nán",
+      "tù",
+      "hóng"
+     ],
+     "answer": "C",
+     "why": "“兔”读 tù（8 比尾巴）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-read-a-A9",
+     "type": "choice",
+     "stem": "“最”怎么读？",
+     "options": [
+      "zuì",
+      "chū",
+      "xuě",
+      "běi"
+     ],
+     "answer": "A",
+     "why": "“最”读 zuì（8 比尾巴）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-read-a-A10",
+     "type": "choice",
+     "stem": "“公”怎么读？",
+     "options": [
+      "gōng",
+      "tǔ",
+      "kàn",
+      "guó"
+     ],
+     "answer": "A",
+     "why": "“公”读 gōng（8 比尾巴）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X8",
+ "mk": "cnknow"
+}

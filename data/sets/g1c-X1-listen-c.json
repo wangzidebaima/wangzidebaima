@@ -1,0 +1,187 @@
+{
+ "id": "g1c-X1-listen-c",
+ "title": "听音选字（三）",
+ "subtitle": "听手机读一个字，选出来",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X1-listen-c-A1",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "火",
+      "五",
+      "一",
+      "川"
+     ],
+     "answer": "D",
+     "why": "这个字是“川”，读 chuān（4 日月山川）。",
+     "pts": 2,
+     "sayzh": "川。川。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-listen-c-A2",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "下",
+      "日",
+      "水",
+      "六"
+     ],
+     "answer": "C",
+     "why": "这个字是“水”，读 shuǐ（4 日月山川）。",
+     "pts": 2,
+     "sayzh": "水。水。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-listen-c-A3",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "日",
+      "上",
+      "天",
+      "火"
+     ],
+     "answer": "D",
+     "why": "这个字是“火”，读 huǒ（4 日月山川）。",
+     "pts": 2,
+     "sayzh": "火。火。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-listen-c-A4",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "山",
+      "田",
+      "我",
+      "六"
+     ],
+     "answer": "B",
+     "why": "这个字是“田”，读 tián（4 日月山川）。",
+     "pts": 2,
+     "sayzh": "田。田。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-listen-c-A5",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "禾",
+      "上",
+      "八",
+      "月"
+     ],
+     "answer": "A",
+     "why": "这个字是“禾”，读 hé（4 日月山川）。",
+     "pts": 2,
+     "sayzh": "禾。禾。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-listen-c-A6",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "手",
+      "人",
+      "六",
+      "你"
+     ],
+     "answer": "C",
+     "why": "这个字是“六”，读 liù（语文园地一）。",
+     "pts": 2,
+     "sayzh": "六。六。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-listen-c-A7",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "月",
+      "六",
+      "人",
+      "七"
+     ],
+     "answer": "D",
+     "why": "这个字是“七”，读 qī（语文园地一）。",
+     "pts": 2,
+     "sayzh": "七。七。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-listen-c-A8",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "坐",
+      "站",
+      "八",
+      "月"
+     ],
+     "answer": "C",
+     "why": "这个字是“八”，读 bā（语文园地一）。",
+     "pts": 2,
+     "sayzh": "八。八。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-listen-c-A9",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "禾",
+      "九",
+      "我",
+      "四"
+     ],
+     "answer": "B",
+     "why": "这个字是“九”，读 jiǔ（语文园地一）。",
+     "pts": 2,
+     "sayzh": "九。九。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-listen-c-A10",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "十",
+      "人",
+      "川",
+      "水"
+     ],
+     "answer": "A",
+     "why": "这个字是“十”，读 shí（语文园地一）。",
+     "pts": 2,
+     "sayzh": "十。十。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X1",
+ "mk": "cnknow"
+}

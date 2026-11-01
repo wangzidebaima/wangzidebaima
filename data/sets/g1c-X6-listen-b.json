@@ -1,0 +1,187 @@
+{
+ "id": "g1c-X6-listen-b",
+ "title": "听音选字（二）",
+ "subtitle": "听手机读一个字，选出来",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X6-listen-b-A1",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "作",
+      "冰",
+      "条",
+      "他"
+     ],
+     "answer": "C",
+     "why": "这个字是“条”，读 tiáo（6 日月明）。",
+     "pts": 2,
+     "sayzh": "条。条。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-listen-b-A2",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "我",
+      "冰",
+      "心",
+      "院"
+     ],
+     "answer": "C",
+     "why": "这个字是“心”，读 xīn（6 日月明）。",
+     "pts": 2,
+     "sayzh": "心。心。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-listen-b-A3",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "绿",
+      "早",
+      "禾",
+      "金"
+     ],
+     "answer": "D",
+     "why": "这个字是“金”，读 jīn（6 日月明）。",
+     "pts": 2,
+     "sayzh": "金。金。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-listen-b-A4",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "包",
+      "多",
+      "正",
+      "画"
+     ],
+     "answer": "A",
+     "why": "这个字是“包”，读 bāo（7 小书包）。",
+     "pts": 2,
+     "sayzh": "包。包。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-listen-b-A5",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "开",
+      "三",
+      "本",
+      "尺"
+     ],
+     "answer": "D",
+     "why": "这个字是“尺”，读 chǐ（7 小书包）。",
+     "pts": 2,
+     "sayzh": "尺。尺。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-listen-b-A6",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "厂",
+      "作",
+      "步",
+      "会"
+     ],
+     "answer": "B",
+     "why": "这个字是“作”，读 zuò（7 小书包）。",
+     "pts": 2,
+     "sayzh": "作。作。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-listen-b-A7",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "火",
+      "色",
+      "业",
+      "刀"
+     ],
+     "answer": "C",
+     "why": "这个字是“业”，读 yè（7 小书包）。",
+     "pts": 2,
+     "sayzh": "业。业。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-listen-b-A8",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "这",
+      "笔",
+      "瓜",
+      "手"
+     ],
+     "answer": "B",
+     "why": "这个字是“笔”，读 bǐ（7 小书包）。",
+     "pts": 2,
+     "sayzh": "笔。笔。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-listen-b-A9",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "向",
+      "书",
+      "业",
+      "刀"
+     ],
+     "answer": "D",
+     "why": "这个字是“刀”，读 dāo（7 小书包）。",
+     "pts": 2,
+     "sayzh": "刀。刀。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-listen-b-A10",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "流",
+      "宝",
+      "画",
+      "加"
+     ],
+     "answer": "B",
+     "why": "这个字是“宝”，读 bǎo（7 小书包）。",
+     "pts": 2,
+     "sayzh": "宝。宝。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X6",
+ "mk": "cnknow"
+}

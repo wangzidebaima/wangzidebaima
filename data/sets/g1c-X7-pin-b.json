@@ -1,0 +1,177 @@
+{
+ "id": "g1c-X7-pin-b",
+ "title": "看拼音选字（二）",
+ "subtitle": "看拼音，选出对应的字",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X7-pin-b-A1",
+     "type": "choice",
+     "stem": "看拼音「cháng」，是哪个字？",
+     "options": [
+      "风",
+      "常",
+      "外",
+      "日"
+     ],
+     "answer": "B",
+     "why": "cháng 就是“常”（6 影子）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-pin-b-A2",
+     "type": "choice",
+     "stem": "看拼音「hēi」，是哪个字？",
+     "options": [
+      "坐",
+      "黑",
+      "林",
+      "山"
+     ],
+     "answer": "B",
+     "why": "hēi 就是“黑”（6 影子）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-pin-b-A3",
+     "type": "choice",
+     "stem": "看拼音「gǒu」，是哪个字？",
+     "options": [
+      "狗",
+      "和",
+      "声",
+      "闪"
+     ],
+     "answer": "A",
+     "why": "gǒu 就是“狗”（6 影子）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-pin-b-A4",
+     "type": "choice",
+     "stem": "看拼音「zuǒ」，是哪个字？",
+     "options": [
+      "左",
+      "大",
+      "内",
+      "宝"
+     ],
+     "answer": "A",
+     "why": "zuǒ 就是“左”（6 影子）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-pin-b-A5",
+     "type": "choice",
+     "stem": "看拼音「yòu」，是哪个字？",
+     "options": [
+      "禾",
+      "厂",
+      "右",
+      "耳"
+     ],
+     "answer": "C",
+     "why": "yòu 就是“右”（6 影子）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-pin-b-A6",
+     "type": "choice",
+     "stem": "看拼音「tā」，是哪个字？",
+     "options": [
+      "它",
+      "个",
+      "开",
+      "我"
+     ],
+     "answer": "A",
+     "why": "tā 就是“它”（6 影子）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-pin-b-A7",
+     "type": "choice",
+     "stem": "看拼音「hǎo」，是哪个字？",
+     "options": [
+      "秋",
+      "好",
+      "字",
+      "内"
+     ],
+     "answer": "B",
+     "why": "hǎo 就是“好”（6 影子）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-pin-b-A8",
+     "type": "choice",
+     "stem": "看拼音「péng」，是哪个字？",
+     "options": [
+      "读",
+      "朋",
+      "闪",
+      "妹"
+     ],
+     "answer": "B",
+     "why": "péng 就是“朋”（6 影子）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-pin-b-A9",
+     "type": "choice",
+     "stem": "看拼音「yǒu」，是哪个字？",
+     "options": [
+      "鸟",
+      "友",
+      "王",
+      "路"
+     ],
+     "answer": "B",
+     "why": "yǒu 就是“友”（6 影子）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-pin-b-A10",
+     "type": "choice",
+     "stem": "看拼音「jiàn」，是哪个字？",
+     "options": [
+      "树",
+      "件",
+      "不",
+      "足"
+     ],
+     "answer": "B",
+     "why": "jiàn 就是“件”（7 两件宝）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X7",
+ "mk": "cnknow"
+}

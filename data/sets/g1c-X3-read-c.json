@@ -1,0 +1,161 @@
+{
+ "id": "g1c-X3-read-c",
+ "title": "看字选拼音（三）",
+ "subtitle": "认识的字，选出正确的拼音",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X3-read-c-A1",
+     "type": "choice",
+     "stem": "“乌”怎么读？",
+     "options": [
+      "wū",
+      "cí",
+      "huǒ",
+      "shān"
+     ],
+     "answer": "A",
+     "why": "“乌”读 wū（拼音9 y w）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-read-c-A2",
+     "type": "choice",
+     "stem": "“鸦”怎么读？",
+     "options": [
+      "wū",
+      "yī",
+      "yā",
+      "huà"
+     ],
+     "answer": "C",
+     "why": "“鸦”读 yā（拼音9 y w）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-read-c-A3",
+     "type": "choice",
+     "stem": "“午”怎么读？",
+     "options": [
+      "zhǐ",
+      "wǔ",
+      "cí",
+      "qí"
+     ],
+     "answer": "B",
+     "why": "“午”读 wǔ（语文园地三）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-read-c-A4",
+     "type": "choice",
+     "stem": "“星”怎么读？",
+     "options": [
+      "kǒu",
+      "rì",
+      "shàng",
+      "xīng"
+     ],
+     "answer": "D",
+     "why": "“星”读 xīng（语文园地三）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-read-c-A5",
+     "type": "choice",
+     "stem": "“期”怎么读？",
+     "options": [
+      "shù",
+      "qī",
+      "chuān",
+      "shǒu"
+     ],
+     "answer": "B",
+     "why": "“期”读 qī（语文园地三）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-read-c-A6",
+     "type": "choice",
+     "stem": "“语”怎么读？",
+     "options": [
+      "yuè",
+      "wǔ",
+      "mǎ",
+      "yǔ"
+     ],
+     "answer": "D",
+     "why": "“语”读 yǔ（语文园地三）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-read-c-A7",
+     "type": "choice",
+     "stem": "“文”怎么读？",
+     "options": [
+      "xià",
+      "yuè",
+      "wēn",
+      "wén"
+     ],
+     "answer": "D",
+     "why": "“文”读 wén（语文园地三）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-read-c-A8",
+     "type": "choice",
+     "stem": "“写”怎么读？",
+     "options": [
+      "xiě",
+      "wǒ",
+      "rén",
+      "jù"
+     ],
+     "answer": "A",
+     "why": "“写”读 xiě（语文园地三）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-read-c-A9",
+     "type": "choice",
+     "stem": "“会”怎么读？",
+     "options": [
+      "shǒu",
+      "sān",
+      "huì",
+      "wǔ"
+     ],
+     "answer": "C",
+     "why": "“会”读 huì（语文园地三）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X3",
+ "mk": "cnknow"
+}

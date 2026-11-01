@@ -1,0 +1,136 @@
+{
+ "id": "g1c-X2-listen-b",
+ "title": "听音选字（二）",
+ "subtitle": "听手机读一个字，选出来",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X2-listen-b-A1",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "学",
+      "我",
+      "四",
+      "路"
+     ],
+     "answer": "A",
+     "why": "这个字是“学”，读 xué（语文园地二）。",
+     "pts": 2,
+     "sayzh": "学。学。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X2-listen-b-A2",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "五",
+      "大",
+      "校",
+      "九"
+     ],
+     "answer": "C",
+     "why": "这个字是“校”，读 xiào（语文园地二）。",
+     "pts": 2,
+     "sayzh": "校。校。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X2-listen-b-A3",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "班",
+      "大",
+      "十",
+      "耳"
+     ],
+     "answer": "A",
+     "why": "这个字是“班”，读 bān（语文园地二）。",
+     "pts": 2,
+     "sayzh": "班。班。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X2-listen-b-A4",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "川",
+      "土",
+      "十",
+      "级"
+     ],
+     "answer": "D",
+     "why": "这个字是“级”，读 jí（语文园地二）。",
+     "pts": 2,
+     "sayzh": "级。级。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X2-listen-b-A5",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "日",
+      "站",
+      "姓",
+      "耳"
+     ],
+     "answer": "C",
+     "why": "这个字是“姓”，读 xìng（语文园地二）。",
+     "pts": 2,
+     "sayzh": "姓。姓。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X2-listen-b-A6",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "上",
+      "火",
+      "名",
+      "二"
+     ],
+     "answer": "C",
+     "why": "这个字是“名”，读 míng（语文园地二）。",
+     "pts": 2,
+     "sayzh": "名。名。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X2-listen-b-A7",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "六",
+      "王",
+      "马",
+      "月"
+     ],
+     "answer": "B",
+     "why": "这个字是“王”，读 wáng（语文园地二）。",
+     "pts": 2,
+     "sayzh": "王。王。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X2",
+ "mk": "cnknow"
+}

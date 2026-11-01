@@ -1,0 +1,187 @@
+{
+ "id": "g1c-X1-listen-b",
+ "title": "听音选字（二）",
+ "subtitle": "听手机读一个字，选出来",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X1-listen-b-A1",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "你",
+      "下",
+      "足",
+      "二"
+     ],
+     "answer": "B",
+     "why": "这个字是“下”，读 xià（2 金木水火土）。",
+     "pts": 2,
+     "sayzh": "下。下。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-listen-b-A2",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "口",
+      "一",
+      "站",
+      "他"
+     ],
+     "answer": "A",
+     "why": "这个字是“口”，读 kǒu（3 口耳目手足）。",
+     "pts": 2,
+     "sayzh": "口。口。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-listen-b-A3",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "足",
+      "山",
+      "耳",
+      "八"
+     ],
+     "answer": "C",
+     "why": "这个字是“耳”，读 ěr（3 口耳目手足）。",
+     "pts": 2,
+     "sayzh": "耳。耳。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-listen-b-A4",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "坐",
+      "目",
+      "下",
+      "你"
+     ],
+     "answer": "B",
+     "why": "这个字是“目”，读 mù（3 口耳目手足）。",
+     "pts": 2,
+     "sayzh": "目。目。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-listen-b-A5",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "人",
+      "足",
+      "手",
+      "我"
+     ],
+     "answer": "C",
+     "why": "这个字是“手”，读 shǒu（3 口耳目手足）。",
+     "pts": 2,
+     "sayzh": "手。手。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-listen-b-A6",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "三",
+      "禾",
+      "七",
+      "足"
+     ],
+     "answer": "D",
+     "why": "这个字是“足”，读 zú（3 口耳目手足）。",
+     "pts": 2,
+     "sayzh": "足。足。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-listen-b-A7",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "月",
+      "站",
+      "六",
+      "口"
+     ],
+     "answer": "B",
+     "why": "这个字是“站”，读 zhàn（3 口耳目手足）。",
+     "pts": 2,
+     "sayzh": "站。站。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-listen-b-A8",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "坐",
+      "八",
+      "一",
+      "月"
+     ],
+     "answer": "A",
+     "why": "这个字是“坐”，读 zuò（3 口耳目手足）。",
+     "pts": 2,
+     "sayzh": "坐。坐。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-listen-b-A9",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "川",
+      "目",
+      "日",
+      "我"
+     ],
+     "answer": "C",
+     "why": "这个字是“日”，读 rì（4 日月山川）。",
+     "pts": 2,
+     "sayzh": "日。日。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-listen-b-A10",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "月",
+      "三",
+      "你",
+      "七"
+     ],
+     "answer": "A",
+     "why": "这个字是“月”，读 yuè（4 日月山川）。",
+     "pts": 2,
+     "sayzh": "月。月。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X1",
+ "mk": "cnknow"
+}

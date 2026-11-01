@@ -365,6 +365,19 @@ const G4 = {
 export const T4 = [{ id: 'add', name: '加法' }, { id: 'sub', name: '减法' }, { id: 'mul', name: '乘法' }, { id: 'div', name: '除法' }, { id: 'mix', name: '混合运算' }, { id: 'fast', name: '速算' }];
 
 
+// ---------- 一年级口算（10 以内） ----------
+const q1 = (typeId, stem, ans, why, say) => ({ type: 'math', typeId, stem, answer: String(ans), why: why + `\n答案：${ans}`, pts: 1, id: 'r-' + typeId + '-' + hash(stem), digits: true, sayText: say });
+const G1 = {
+  add5: () => { const s = ri(1, 5), a = ri(0, s), b = s - a; return q1('add5', `${a}+${b}`, s, `${a} 和 ${b} 合起来是 ${s}。`, `${a}加${b}等于几？`); },
+  sub5: () => { const a = ri(1, 5), b = ri(0, a); return q1('sub5', `${a}−${b}`, a - b, `${a} 去掉 ${b}，还剩 ${a - b}。`, `${a}减${b}等于几？`); },
+  add10: (L) => { const s = ri(L === 1 ? 6 : 7, 10), a = ri(1, s - 1), b = s - a; return q1('add10', `${a}+${b}`, s, `${a} 和 ${b} 合起来是 ${s}。`, `${a}加${b}等于几？`); },
+  sub10: (L) => { const a = ri(L === 1 ? 6 : 7, 10), b = ri(1, a - 1); return q1('sub10', `${a}−${b}`, a - b, `想：${b} 加几得 ${a}？得 ${a - b}。`, `${a}减${b}等于几？`); },
+  ten: () => { const a = ri(1, 9); return q1('ten', `${a}+□=10`, 10 - a, `${a} 和 ${10 - a} 合起来是 10。`, `${a}加几等于十？`); },
+  mix: (L) => { if (L < 3) { const a = ri(1, 4), b = ri(1, 4), c = ri(1, 4); const t = a + b + c; return q1('mix', `${a}+${b}+${c}`, t, `从左往右：${a}+${b}=${a + b}，${a + b}+${c}=${t}。`, `${a}加${b}加${c}等于几？`); }
+    const a = ri(6, 10), b = ri(1, 3), c = ri(1, Math.min(3, a - b)); return q1('mix', `${a}−${b}−${c}`, a - b - c, `从左往右：${a}−${b}=${a - b}，${a - b}−${c}=${a - b - c}。`, `${a}减${b}减${c}等于几？`); },
+};
+export const T1 = [{ id: 'add5', name: '5以内加法' }, { id: 'sub5', name: '5以内减法' }, { id: 'add10', name: '10以内加法' }, { id: 'sub10', name: '10以内减法' }, { id: 'ten', name: '凑十' }, { id: 'mix', name: '连加连减' }];
+
 // ---------- 二年级口算 ----------
 const q2 = (typeId, stem, ans, why) => ({ type: 'math', typeId, stem, answer: String(ans), why: why + `\n答案：${ans}`, pts: 1, id: 'r-' + typeId + '-' + hash(stem), digits: true });
 const G2 = {
@@ -403,7 +416,10 @@ export const TS = [{ id: 'e-en2zh', name: '看英文选中文' }, { id: 'e-zh2en
 import { CHAP_TYPES } from './chapgen.js';
 import { CHAP4_TYPES } from './chapgen4.js';
 import { CHAP2_TYPES } from './chapgen2.js';
+import { CHAP1_TYPES } from './chapgen1.js';
 export const RANDOM = {
+  chap1: { title: '一年级数学章节练习', icon: '📐', subject: 'chap1', types: CHAP1_TYPES, levels: ['简单', '适中', '挑战'] },
+  math1: { title: '口算随机练习', icon: '🎲', subject: 'math1', types: T1, levels: ['简单', '适中', '挑战'], gen: (t, l) => G1[t](l) },
   chap2: { title: '二年级数学章节练习', icon: '📐', subject: 'chap2', types: CHAP2_TYPES, levels: ['简单', '适中', '挑战'] },
   math2: { title: '口算随机练习', icon: '🎲', subject: 'math2', types: T2, levels: ['简单', '适中', '挑战'], gen: (t, l) => G2[t](l) },
   cnw2: { title: '词语听写', icon: '✍️', subject: 'cnw', types: [], levels: null },

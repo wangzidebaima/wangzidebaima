@@ -1,0 +1,177 @@
+{
+ "id": "g1c-X6-read-c",
+ "title": "看字选拼音（三）",
+ "subtitle": "认识的字，选出正确的拼音",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X6-read-c-A1",
+     "type": "choice",
+     "stem": "“中”怎么读？",
+     "options": [
+      "kǒu",
+      "nèi",
+      "zhōng",
+      "lán"
+     ],
+     "answer": "C",
+     "why": "“中”读 zhōng（8 升国旗）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-read-c-A2",
+     "type": "choice",
+     "stem": "“声”怎么读？",
+     "options": [
+      "shēng",
+      "shéng",
+      "jǐ",
+      "dú"
+     ],
+     "answer": "A",
+     "why": "“声”读 shēng（8 升国旗）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-read-c-A3",
+     "type": "choice",
+     "stem": "“起”怎么读？",
+     "options": [
+      "mù",
+      "chǐ",
+      "qǐ",
+      "sì"
+     ],
+     "answer": "C",
+     "why": "“起”读 qǐ（8 升国旗）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-read-c-A4",
+     "type": "choice",
+     "stem": "“多”怎么读？",
+     "options": [
+      "dōng",
+      "cóng",
+      "duō",
+      "xiǎo"
+     ],
+     "answer": "C",
+     "why": "“多”读 duō（8 升国旗）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-read-c-A5",
+     "type": "choice",
+     "stem": "“向”怎么读？",
+     "options": [
+      "xiàng",
+      "shuǐ",
+      "bèi",
+      "xīng"
+     ],
+     "answer": "A",
+     "why": "“向”读 xiàng（8 升国旗）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-read-c-A6",
+     "type": "choice",
+     "stem": "“立”怎么读？",
+     "options": [
+      "nèi",
+      "míng",
+      "lì",
+      "gè"
+     ],
+     "answer": "C",
+     "why": "“立”读 lì（8 升国旗）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-read-c-A7",
+     "type": "choice",
+     "stem": "“老”怎么读？",
+     "options": [
+      "chūn",
+      "lǎo",
+      "jī",
+      "cóng"
+     ],
+     "answer": "B",
+     "why": "“老”读 lǎo（语文园地六）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-read-c-A8",
+     "type": "choice",
+     "stem": "“师”怎么读？",
+     "options": [
+      "shī",
+      "chǐ",
+      "kǒu",
+      "bā"
+     ],
+     "answer": "A",
+     "why": "“师”读 shī（语文园地六）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-read-c-A9",
+     "type": "choice",
+     "stem": "“工”怎么读？",
+     "options": [
+      "gōng",
+      "míng",
+      "zuó",
+      "mā"
+     ],
+     "answer": "A",
+     "why": "“工”读 gōng（语文园地六）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-read-c-A10",
+     "type": "choice",
+     "stem": "“厂”怎么读？",
+     "options": [
+      "chǎng",
+      "jīn",
+      "shǎo",
+      "chūn"
+     ],
+     "answer": "A",
+     "why": "“厂”读 chǎng（语文园地六）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X6",
+ "mk": "cnknow"
+}

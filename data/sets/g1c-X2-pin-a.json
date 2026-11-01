@@ -1,0 +1,129 @@
+{
+ "id": "g1c-X2-pin-a",
+ "title": "看拼音选字（一）",
+ "subtitle": "看拼音，选出对应的字",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X2-pin-a-A1",
+     "type": "choice",
+     "stem": "看拼音「bà」，是哪个字？",
+     "options": [
+      "爸",
+      "级",
+      "马",
+      "足"
+     ],
+     "answer": "A",
+     "why": "bà 就是“爸”（拼音3 b p m f）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X2-pin-a-A2",
+     "type": "choice",
+     "stem": "看拼音「mā」，是哪个字？",
+     "options": [
+      "马",
+      "爸",
+      "足",
+      "妈"
+     ],
+     "answer": "D",
+     "why": "mā 就是“妈”（拼音3 b p m f）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X2-pin-a-A3",
+     "type": "choice",
+     "stem": "看拼音「dà」，是哪个字？",
+     "options": [
+      "耳",
+      "王",
+      "大",
+      "水"
+     ],
+     "answer": "C",
+     "why": "dà 就是“大”（拼音4 d t n l）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X2-pin-a-A4",
+     "type": "choice",
+     "stem": "看拼音「mǎ」，是哪个字？",
+     "options": [
+      "九",
+      "马",
+      "站",
+      "一"
+     ],
+     "answer": "B",
+     "why": "mǎ 就是“马”（拼音4 d t n l）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X2-pin-a-A5",
+     "type": "choice",
+     "stem": "看拼音「lù」，是哪个字？",
+     "options": [
+      "路",
+      "口",
+      "大",
+      "水"
+     ],
+     "answer": "A",
+     "why": "lù 就是“路”（拼音4 d t n l）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X2-pin-a-A6",
+     "type": "choice",
+     "stem": "看拼音「tǔ」，是哪个字？",
+     "options": [
+      "土",
+      "坐",
+      "口",
+      "七"
+     ],
+     "answer": "A",
+     "why": "tǔ 就是“土”（拼音4 d t n l）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X2-pin-a-A7",
+     "type": "choice",
+     "stem": "看拼音「běn」，是哪个字？",
+     "options": [
+      "大",
+      "一",
+      "本",
+      "五"
+     ],
+     "answer": "C",
+     "why": "běn 就是“本”（语文园地二）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X2",
+ "mk": "cnknow"
+}

@@ -1,0 +1,177 @@
+{
+ "id": "g1c-X6-read-b",
+ "title": "看字选拼音（二）",
+ "subtitle": "认识的字，选出正确的拼音",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X6-read-b-A1",
+     "type": "choice",
+     "stem": "“条”怎么读？",
+     "options": [
+      "yā",
+      "tiáo",
+      "dǎ",
+      "shuāng"
+     ],
+     "answer": "B",
+     "why": "“条”读 tiáo（6 日月明）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-read-b-A2",
+     "type": "choice",
+     "stem": "“心”怎么读？",
+     "options": [
+      "xīn",
+      "zhú",
+      "cóng",
+      "wáng"
+     ],
+     "answer": "A",
+     "why": "“心”读 xīn（6 日月明）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-read-b-A3",
+     "type": "choice",
+     "stem": "“金”怎么读？",
+     "options": [
+      "lǜ",
+      "xiàng",
+      "běn",
+      "jīn"
+     ],
+     "answer": "D",
+     "why": "“金”读 jīn（6 日月明）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-read-b-A4",
+     "type": "choice",
+     "stem": "“包”怎么读？",
+     "options": [
+      "jiù",
+      "bāo",
+      "duō",
+      "jiǔ"
+     ],
+     "answer": "B",
+     "why": "“包”读 bāo（7 小书包）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-read-b-A5",
+     "type": "choice",
+     "stem": "“尺”怎么读？",
+     "options": [
+      "chǐ",
+      "wǎn",
+      "méi",
+      "dōng"
+     ],
+     "answer": "A",
+     "why": "“尺”读 chǐ（7 小书包）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-read-b-A6",
+     "type": "choice",
+     "stem": "“作”怎么读？",
+     "options": [
+      "wèi",
+      "qiū",
+      "mā",
+      "zuò"
+     ],
+     "answer": "D",
+     "why": "“作”读 zuò（7 小书包）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-read-b-A7",
+     "type": "choice",
+     "stem": "“业”怎么读？",
+     "options": [
+      "xiān",
+      "yè",
+      "tiān",
+      "nán"
+     ],
+     "answer": "B",
+     "why": "“业”读 yè（7 小书包）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-read-b-A8",
+     "type": "choice",
+     "stem": "“笔”怎么读？",
+     "options": [
+      "bǐ",
+      "guān",
+      "lián",
+      "wài"
+     ],
+     "answer": "A",
+     "why": "“笔”读 bǐ（7 小书包）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-read-b-A9",
+     "type": "choice",
+     "stem": "“刀”怎么读？",
+     "options": [
+      "pí",
+      "cóng",
+      "dāo",
+      "jiù"
+     ],
+     "answer": "C",
+     "why": "“刀”读 dāo（7 小书包）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-read-b-A10",
+     "type": "choice",
+     "stem": "“宝”怎么读？",
+     "options": [
+      "kě",
+      "chǎng",
+      "gē",
+      "bǎo"
+     ],
+     "answer": "D",
+     "why": "“宝”读 bǎo（7 小书包）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X6",
+ "mk": "cnknow"
+}

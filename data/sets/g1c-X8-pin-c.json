@@ -1,0 +1,177 @@
+{
+ "id": "g1c-X8-pin-c",
+ "title": "看拼音选字（三）",
+ "subtitle": "看拼音，选出对应的字",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X8-pin-c-A1",
+     "type": "choice",
+     "stem": "看拼音「wèn」，是哪个字？",
+     "options": [
+      "天",
+      "先",
+      "问",
+      "午"
+     ],
+     "answer": "C",
+     "why": "wèn 就是“问”（10 雨点儿）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-pin-c-A2",
+     "type": "choice",
+     "stem": "看拼音「huí」，是哪个字？",
+     "options": [
+      "名",
+      "力",
+      "回",
+      "级"
+     ],
+     "answer": "C",
+     "why": "huí 就是“回”（10 雨点儿）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-pin-c-A3",
+     "type": "choice",
+     "stem": "看拼音「dá」，是哪个字？",
+     "options": [
+      "法",
+      "答",
+      "点",
+      "业"
+     ],
+     "answer": "B",
+     "why": "dá 就是“答”（10 雨点儿）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-pin-c-A4",
+     "type": "choice",
+     "stem": "看拼音「fāng」，是哪个字？",
+     "options": [
+      "方",
+      "卫",
+      "间",
+      "院"
+     ],
+     "answer": "A",
+     "why": "fāng 就是“方”（10 雨点儿）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-pin-c-A5",
+     "type": "choice",
+     "stem": "看拼音「jiǔ」，是哪个字？",
+     "options": [
+      "院",
+      "久",
+      "朋",
+      "马"
+     ],
+     "answer": "B",
+     "why": "jiǔ 就是“久”（10 雨点儿）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-pin-c-A6",
+     "type": "choice",
+     "stem": "看拼音「niú」，是哪个字？",
+     "options": [
+      "牛",
+      "蛙",
+      "宝",
+      "秋"
+     ],
+     "answer": "A",
+     "why": "niú 就是“牛”（语文园地八）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-pin-c-A7",
+     "type": "choice",
+     "stem": "看拼音「yáng」，是哪个字？",
+     "options": [
+      "羊",
+      "夏",
+      "坐",
+      "鸭"
+     ],
+     "answer": "A",
+     "why": "yáng 就是“羊”（语文园地八）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-pin-c-A8",
+     "type": "choice",
+     "stem": "看拼音「zhuǎ」，是哪个字？",
+     "options": [
+      "爪",
+      "班",
+      "级",
+      "反"
+     ],
+     "answer": "A",
+     "why": "zhuǎ 就是“爪”（语文园地八）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-pin-c-A9",
+     "type": "choice",
+     "stem": "看拼音「yuán」，是哪个字？",
+     "options": [
+      "乌",
+      "头",
+      "鸭",
+      "元"
+     ],
+     "answer": "D",
+     "why": "yuán 就是“元”（语文园地八）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-pin-c-A10",
+     "type": "choice",
+     "stem": "看拼音「pīn」，是哪个字？",
+     "options": [
+      "期",
+      "拼",
+      "火",
+      "白"
+     ],
+     "answer": "B",
+     "why": "pīn 就是“拼”（语文园地八）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X8",
+ "mk": "cnknow"
+}

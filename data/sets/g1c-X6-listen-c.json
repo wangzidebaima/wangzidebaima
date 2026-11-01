@@ -1,0 +1,187 @@
+{
+ "id": "g1c-X6-listen-c",
+ "title": "听音选字（三）",
+ "subtitle": "听手机读一个字，选出来",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X6-listen-c-A1",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "冬",
+      "中",
+      "开",
+      "瓜"
+     ],
+     "answer": "B",
+     "why": "这个字是“中”，读 zhōng（8 升国旗）。",
+     "pts": 2,
+     "sayzh": "中。中。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-listen-c-A2",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "句",
+      "年",
+      "声",
+      "站"
+     ],
+     "answer": "C",
+     "why": "这个字是“声”，读 shēng（8 升国旗）。",
+     "pts": 2,
+     "sayzh": "声。声。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-listen-c-A3",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "打",
+      "起",
+      "四",
+      "尖"
+     ],
+     "answer": "B",
+     "why": "这个字是“起”，读 qǐ（8 升国旗）。",
+     "pts": 2,
+     "sayzh": "起。起。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-listen-c-A4",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "作",
+      "目",
+      "纸",
+      "多"
+     ],
+     "answer": "D",
+     "why": "这个字是“多”，读 duō（8 升国旗）。",
+     "pts": 2,
+     "sayzh": "多。多。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-listen-c-A5",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "九",
+      "青",
+      "老",
+      "向"
+     ],
+     "answer": "D",
+     "why": "这个字是“向”，读 xiàng（8 升国旗）。",
+     "pts": 2,
+     "sayzh": "向。向。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-listen-c-A6",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "纸",
+      "立",
+      "林",
+      "正"
+     ],
+     "answer": "B",
+     "why": "这个字是“立”，读 lì（8 升国旗）。",
+     "pts": 2,
+     "sayzh": "立。立。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-listen-c-A7",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "蛙",
+      "手",
+      "老",
+      "秋"
+     ],
+     "answer": "C",
+     "why": "这个字是“老”，读 lǎo（语文园地六）。",
+     "pts": 2,
+     "sayzh": "老。老。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-listen-c-A8",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "菜",
+      "火",
+      "师",
+      "路"
+     ],
+     "answer": "C",
+     "why": "这个字是“师”，读 shī（语文园地六）。",
+     "pts": 2,
+     "sayzh": "师。师。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-listen-c-A9",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "工",
+      "六",
+      "少",
+      "生"
+     ],
+     "answer": "A",
+     "why": "这个字是“工”，读 gōng（语文园地六）。",
+     "pts": 2,
+     "sayzh": "工。工。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-listen-c-A10",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "厂",
+      "妈",
+      "月",
+      "蓝"
+     ],
+     "answer": "A",
+     "why": "这个字是“厂”，读 chǎng（语文园地六）。",
+     "pts": 2,
+     "sayzh": "厂。厂。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X6",
+ "mk": "cnknow"
+}

@@ -1,0 +1,177 @@
+{
+ "id": "g1c-X5-read-c",
+ "title": "看字选拼音（三）",
+ "subtitle": "认识的字，选出正确的拼音",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X5-read-c-A1",
+     "type": "choice",
+     "stem": "“青”怎么读？",
+     "options": [
+      "dì",
+      "qīng",
+      "nèi",
+      "qǐng"
+     ],
+     "answer": "B",
+     "why": "“青”读 qīng（4 四季）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-read-c-A2",
+     "type": "choice",
+     "stem": "“蛙”怎么读？",
+     "options": [
+      "chuān",
+      "cài",
+      "wā",
+      "xià"
+     ],
+     "answer": "C",
+     "why": "“蛙”读 wā（4 四季）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-read-c-A3",
+     "type": "choice",
+     "stem": "“夏”怎么读？",
+     "options": [
+      "wā",
+      "wū",
+      "xià",
+      "bān"
+     ],
+     "answer": "C",
+     "why": "“夏”读 xià（4 四季）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-read-c-A4",
+     "type": "choice",
+     "stem": "“皮”怎么读？",
+     "options": [
+      "pí",
+      "dōng",
+      "èr",
+      "xiě"
+     ],
+     "answer": "A",
+     "why": "“皮”读 pí（4 四季）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-read-c-A5",
+     "type": "choice",
+     "stem": "“就”怎么读？",
+     "options": [
+      "míng",
+      "yòng",
+      "jiù",
+      "cóng"
+     ],
+     "answer": "C",
+     "why": "“就”读 jiù（4 四季）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-read-c-A6",
+     "type": "choice",
+     "stem": "“冬”怎么读？",
+     "options": [
+      "xiào",
+      "dōng",
+      "piàn",
+      "nǚ"
+     ],
+     "answer": "B",
+     "why": "“冬”读 dōng（4 四季）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-read-c-A7",
+     "type": "choice",
+     "stem": "“男”怎么读？",
+     "options": [
+      "wǔ",
+      "qīng",
+      "hé",
+      "nán"
+     ],
+     "answer": "D",
+     "why": "“男”读 nán（语文园地五）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-read-c-A8",
+     "type": "choice",
+     "stem": "“女”怎么读？",
+     "options": [
+      "yòng",
+      "nǚ",
+      "zì",
+      "jiān"
+     ],
+     "answer": "B",
+     "why": "“女”读 nǚ（语文园地五）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-read-c-A9",
+     "type": "choice",
+     "stem": "“关”怎么读？",
+     "options": [
+      "pí",
+      "le",
+      "jiān",
+      "guān"
+     ],
+     "answer": "D",
+     "why": "“关”读 guān（语文园地五）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-read-c-A10",
+     "type": "choice",
+     "stem": "“正”怎么读？",
+     "options": [
+      "jiā",
+      "sè",
+      "zhèng",
+      "tǔ"
+     ],
+     "answer": "C",
+     "why": "“正”读 zhèng（语文园地五）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X5",
+ "mk": "cnknow"
+}

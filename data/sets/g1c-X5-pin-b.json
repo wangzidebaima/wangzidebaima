@@ -1,0 +1,177 @@
+{
+ "id": "g1c-X5-pin-b",
+ "title": "看拼音选字（二）",
+ "subtitle": "看拼音，选出对应的字",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X5-pin-b-A1",
+     "type": "choice",
+     "stem": "看拼音「jiān」，是哪个字？",
+     "options": [
+      "色",
+      "正",
+      "间",
+      "采"
+     ],
+     "answer": "C",
+     "why": "jiān 就是“间”（2 江南）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-pin-b-A2",
+     "type": "choice",
+     "stem": "看拼音「dōng」，是哪个字？",
+     "options": [
+      "皮",
+      "田",
+      "东",
+      "白"
+     ],
+     "answer": "C",
+     "why": "dōng 就是“东”（2 江南）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-pin-b-A3",
+     "type": "choice",
+     "stem": "看拼音「běi」，是哪个字？",
+     "options": [
+      "星",
+      "北",
+      "大",
+      "花"
+     ],
+     "answer": "B",
+     "why": "běi 就是“北”（2 江南）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-pin-b-A4",
+     "type": "choice",
+     "stem": "看拼音「jiā」，是哪个字？",
+     "options": [
+      "家",
+      "田",
+      "女",
+      "九"
+     ],
+     "answer": "A",
+     "why": "jiā 就是“家”（3 雪地里的小画家）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-pin-b-A5",
+     "type": "choice",
+     "stem": "看拼音「jī」，是哪个字？",
+     "options": [
+      "坐",
+      "晚",
+      "鸡",
+      "上"
+     ],
+     "answer": "C",
+     "why": "jī 就是“鸡”（3 雪地里的小画家）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-pin-b-A6",
+     "type": "choice",
+     "stem": "看拼音「zhú」，是哪个字？",
+     "options": [
+      "秋",
+      "色",
+      "竹",
+      "晚"
+     ],
+     "answer": "C",
+     "why": "zhú 就是“竹”（3 雪地里的小画家）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-pin-b-A7",
+     "type": "choice",
+     "stem": "看拼音「yá」，是哪个字？",
+     "options": [
+      "姓",
+      "口",
+      "牙",
+      "校"
+     ],
+     "answer": "C",
+     "why": "yá 就是“牙”（3 雪地里的小画家）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-pin-b-A8",
+     "type": "choice",
+     "stem": "看拼音「yòng」，是哪个字？",
+     "options": [
+      "男",
+      "用",
+      "三",
+      "夜"
+     ],
+     "answer": "B",
+     "why": "yòng 就是“用”（3 雪地里的小画家）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-pin-b-A9",
+     "type": "choice",
+     "stem": "看拼音「jǐ」，是哪个字？",
+     "options": [
+      "桥",
+      "男",
+      "几",
+      "瓜"
+     ],
+     "answer": "C",
+     "why": "jǐ 就是“几”（3 雪地里的小画家）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-pin-b-A10",
+     "type": "choice",
+     "stem": "看拼音「bù」，是哪个字？",
+     "options": [
+      "我",
+      "纸",
+      "足",
+      "步"
+     ],
+     "answer": "D",
+     "why": "bù 就是“步”（3 雪地里的小画家）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X5",
+ "mk": "cnknow"
+}

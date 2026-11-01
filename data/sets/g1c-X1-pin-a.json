@@ -1,0 +1,177 @@
+{
+ "id": "g1c-X1-pin-a",
+ "title": "看拼音选字（一）",
+ "subtitle": "看拼音，选出对应的字",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X1-pin-a-A1",
+     "type": "choice",
+     "stem": "看拼音「tiān」，是哪个字？",
+     "options": [
+      "五",
+      "目",
+      "他",
+      "天"
+     ],
+     "answer": "D",
+     "why": "tiān 就是“天”（1 天地人）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-pin-a-A2",
+     "type": "choice",
+     "stem": "看拼音「rén」，是哪个字？",
+     "options": [
+      "站",
+      "下",
+      "人",
+      "山"
+     ],
+     "answer": "C",
+     "why": "rén 就是“人”（1 天地人）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-pin-a-A3",
+     "type": "choice",
+     "stem": "看拼音「nǐ」，是哪个字？",
+     "options": [
+      "下",
+      "坐",
+      "你",
+      "月"
+     ],
+     "answer": "C",
+     "why": "nǐ 就是“你”（1 天地人）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-pin-a-A4",
+     "type": "choice",
+     "stem": "看拼音「wǒ」，是哪个字？",
+     "options": [
+      "我",
+      "站",
+      "足",
+      "八"
+     ],
+     "answer": "A",
+     "why": "wǒ 就是“我”（1 天地人）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-pin-a-A5",
+     "type": "choice",
+     "stem": "看拼音「tā」，是哪个字？",
+     "options": [
+      "他",
+      "足",
+      "川",
+      "六"
+     ],
+     "answer": "A",
+     "why": "tā 就是“他”（1 天地人）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-pin-a-A6",
+     "type": "choice",
+     "stem": "看拼音「yī」，是哪个字？",
+     "options": [
+      "四",
+      "上",
+      "一",
+      "手"
+     ],
+     "answer": "C",
+     "why": "yī 就是“一”（2 金木水火土）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-pin-a-A7",
+     "type": "choice",
+     "stem": "看拼音「èr」，是哪个字？",
+     "options": [
+      "耳",
+      "下",
+      "二",
+      "十"
+     ],
+     "answer": "C",
+     "why": "èr 就是“二”（2 金木水火土）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-pin-a-A8",
+     "type": "choice",
+     "stem": "看拼音「sān」，是哪个字？",
+     "options": [
+      "三",
+      "他",
+      "禾",
+      "七"
+     ],
+     "answer": "A",
+     "why": "sān 就是“三”（2 金木水火土）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-pin-a-A9",
+     "type": "choice",
+     "stem": "看拼音「sì」，是哪个字？",
+     "options": [
+      "田",
+      "四",
+      "上",
+      "七"
+     ],
+     "answer": "B",
+     "why": "sì 就是“四”（2 金木水火土）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-pin-a-A10",
+     "type": "choice",
+     "stem": "看拼音「wǔ」，是哪个字？",
+     "options": [
+      "目",
+      "禾",
+      "五",
+      "我"
+     ],
+     "answer": "C",
+     "why": "wǔ 就是“五”（2 金木水火土）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X1",
+ "mk": "cnknow"
+}

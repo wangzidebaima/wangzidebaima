@@ -1,0 +1,177 @@
+{
+ "id": "g1c-X8-pin-a",
+ "title": "看拼音选字（一）",
+ "subtitle": "看拼音，选出对应的字",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X8-pin-a-A1",
+     "type": "choice",
+     "stem": "看拼音「bǐ」，是哪个字？",
+     "options": [
+      "兔",
+      "巴",
+      "比",
+      "步"
+     ],
+     "answer": "C",
+     "why": "bǐ 就是“比”（8 比尾巴）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-pin-a-A2",
+     "type": "choice",
+     "stem": "看拼音「wěi」，是哪个字？",
+     "options": [
+      "常",
+      "尾",
+      "句",
+      "日"
+     ],
+     "answer": "B",
+     "why": "wěi 就是“尾”（8 比尾巴）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-pin-a-A3",
+     "type": "choice",
+     "stem": "看拼音「bā」，是哪个字？",
+     "options": [
+      "也",
+      "巴",
+      "月",
+      "间"
+     ],
+     "answer": "B",
+     "why": "bā 就是“巴”（8 比尾巴）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-pin-a-A4",
+     "type": "choice",
+     "stem": "看拼音「shuí」，是哪个字？",
+     "options": [
+      "放",
+      "午",
+      "正",
+      "谁"
+     ],
+     "answer": "D",
+     "why": "shuí 就是“谁”（8 比尾巴）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-pin-a-A5",
+     "type": "choice",
+     "stem": "看拼音「duǎn」，是哪个字？",
+     "options": [
+      "就",
+      "短",
+      "花",
+      "双"
+     ],
+     "answer": "B",
+     "why": "duǎn 就是“短”（8 比尾巴）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-pin-a-A6",
+     "type": "choice",
+     "stem": "看拼音「bǎ」，是哪个字？",
+     "options": [
+      "起",
+      "爷",
+      "把",
+      "元"
+     ],
+     "answer": "C",
+     "why": "bǎ 就是“把”（8 比尾巴）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-pin-a-A7",
+     "type": "choice",
+     "stem": "看拼音「sǎn」，是哪个字？",
+     "options": [
+      "伞",
+      "冬",
+      "件",
+      "虫"
+     ],
+     "answer": "A",
+     "why": "sǎn 就是“伞”（8 比尾巴）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-pin-a-A8",
+     "type": "choice",
+     "stem": "看拼音「tù」，是哪个字？",
+     "options": [
+      "班",
+      "尖",
+      "步",
+      "兔"
+     ],
+     "answer": "D",
+     "why": "tù 就是“兔”（8 比尾巴）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-pin-a-A9",
+     "type": "choice",
+     "stem": "看拼音「zuì」，是哪个字？",
+     "options": [
+      "最",
+      "里",
+      "向",
+      "心"
+     ],
+     "answer": "A",
+     "why": "zuì 就是“最”（8 比尾巴）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-pin-a-A10",
+     "type": "choice",
+     "stem": "看拼音「gōng」，是哪个字？",
+     "options": [
+      "头",
+      "公",
+      "鱼",
+      "短"
+     ],
+     "answer": "B",
+     "why": "gōng 就是“公”（8 比尾巴）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X8",
+ "mk": "cnknow"
+}

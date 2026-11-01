@@ -1,0 +1,177 @@
+{
+ "id": "g1c-X1-read-c",
+ "title": "看字选拼音（三）",
+ "subtitle": "认识的字，选出正确的拼音",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X1-read-c-A1",
+     "type": "choice",
+     "stem": "“川”怎么读？",
+     "options": [
+      "rén",
+      "tián",
+      "chuān",
+      "hé"
+     ],
+     "answer": "C",
+     "why": "“川”读 chuān（4 日月山川）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-read-c-A2",
+     "type": "choice",
+     "stem": "“水”怎么读？",
+     "options": [
+      "huǒ",
+      "wǒ",
+      "shǒu",
+      "shuǐ"
+     ],
+     "answer": "D",
+     "why": "“水”读 shuǐ（4 日月山川）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-read-c-A3",
+     "type": "choice",
+     "stem": "“火”怎么读？",
+     "options": [
+      "sì",
+      "huǒ",
+      "ěr",
+      "chuān"
+     ],
+     "answer": "B",
+     "why": "“火”读 huǒ（4 日月山川）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-read-c-A4",
+     "type": "choice",
+     "stem": "“田”怎么读？",
+     "options": [
+      "mù",
+      "shuǐ",
+      "bā",
+      "tián"
+     ],
+     "answer": "D",
+     "why": "“田”读 tián（4 日月山川）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-read-c-A5",
+     "type": "choice",
+     "stem": "“禾”怎么读？",
+     "options": [
+      "shān",
+      "shàng",
+      "dì",
+      "hé"
+     ],
+     "answer": "D",
+     "why": "“禾”读 hé（4 日月山川）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-read-c-A6",
+     "type": "choice",
+     "stem": "“六”怎么读？",
+     "options": [
+      "liù",
+      "tā",
+      "èr",
+      "dì"
+     ],
+     "answer": "A",
+     "why": "“六”读 liù（语文园地一）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-read-c-A7",
+     "type": "choice",
+     "stem": "“七”怎么读？",
+     "options": [
+      "yuè",
+      "qī",
+      "rén",
+      "wǔ"
+     ],
+     "answer": "B",
+     "why": "“七”读 qī（语文园地一）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-read-c-A8",
+     "type": "choice",
+     "stem": "“八”怎么读？",
+     "options": [
+      "zú",
+      "rén",
+      "liù",
+      "bā"
+     ],
+     "answer": "D",
+     "why": "“八”读 bā（语文园地一）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-read-c-A9",
+     "type": "choice",
+     "stem": "“九”怎么读？",
+     "options": [
+      "rì",
+      "jiǔ",
+      "zhàn",
+      "tián"
+     ],
+     "answer": "B",
+     "why": "“九”读 jiǔ（语文园地一）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X1-read-c-A10",
+     "type": "choice",
+     "stem": "“十”怎么读？",
+     "options": [
+      "rén",
+      "nǐ",
+      "shí",
+      "xià"
+     ],
+     "answer": "C",
+     "why": "“十”读 shí（语文园地一）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X1",
+ "mk": "cnknow"
+}

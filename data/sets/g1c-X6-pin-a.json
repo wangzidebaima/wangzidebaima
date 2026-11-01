@@ -1,0 +1,177 @@
+{
+ "id": "g1c-X6-pin-a",
+ "title": "看拼音选字（一）",
+ "subtitle": "看拼音，选出对应的字",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X6-pin-a-A1",
+     "type": "choice",
+     "stem": "看拼音「duì」，是哪个字？",
+     "options": [
+      "立",
+      "三",
+      "对",
+      "原"
+     ],
+     "answer": "C",
+     "why": "duì 就是“对”（5 对韵歌）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-pin-a-A2",
+     "type": "choice",
+     "stem": "看拼音「gē」，是哪个字？",
+     "options": [
+      "说",
+      "采",
+      "歌",
+      "条"
+     ],
+     "answer": "C",
+     "why": "gē 就是“歌”（5 对韵歌）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-pin-a-A3",
+     "type": "choice",
+     "stem": "看拼音「yǔ」，是哪个字？",
+     "options": [
+      "这",
+      "雨",
+      "站",
+      "他"
+     ],
+     "answer": "B",
+     "why": "yǔ 就是“雨”（5 对韵歌）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-pin-a-A4",
+     "type": "choice",
+     "stem": "看拼音「fēng」，是哪个字？",
+     "options": [
+      "金",
+      "反",
+      "弟",
+      "风"
+     ],
+     "answer": "D",
+     "why": "fēng 就是“风”（5 对韵歌）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-pin-a-A5",
+     "type": "choice",
+     "stem": "看拼音「chóng」，是哪个字？",
+     "options": [
+      "班",
+      "厂",
+      "虫",
+      "十"
+     ],
+     "answer": "C",
+     "why": "chóng 就是“虫”（5 对韵歌）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-pin-a-A6",
+     "type": "choice",
+     "stem": "看拼音「qīng」，是哪个字？",
+     "options": [
+      "我",
+      "清",
+      "国",
+      "尖"
+     ],
+     "answer": "B",
+     "why": "qīng 就是“清”（5 对韵歌）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-pin-a-A7",
+     "type": "choice",
+     "stem": "看拼音「lǜ」，是哪个字？",
+     "options": [
+      "自",
+      "雨",
+      "几",
+      "绿"
+     ],
+     "answer": "D",
+     "why": "lǜ 就是“绿”（5 对韵歌）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-pin-a-A8",
+     "type": "choice",
+     "stem": "看拼音「táo」，是哪个字？",
+     "options": [
+      "桃",
+      "八",
+      "林",
+      "几"
+     ],
+     "answer": "A",
+     "why": "táo 就是“桃”（5 对韵歌）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-pin-a-A9",
+     "type": "choice",
+     "stem": "看拼音「hóng」，是哪个字？",
+     "options": [
+      "红",
+      "人",
+      "云",
+      "皮"
+     ],
+     "answer": "A",
+     "why": "hóng 就是“红”（5 对韵歌）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-pin-a-A10",
+     "type": "choice",
+     "stem": "看拼音「lì」，是哪个字？",
+     "options": [
+      "外",
+      "江",
+      "力",
+      "声"
+     ],
+     "answer": "C",
+     "why": "lì 就是“力”（6 日月明）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X6",
+ "mk": "cnknow"
+}

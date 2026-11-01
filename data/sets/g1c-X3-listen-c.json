@@ -1,0 +1,170 @@
+{
+ "id": "g1c-X3-listen-c",
+ "title": "听音选字（三）",
+ "subtitle": "听手机读一个字，选出来",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X3-listen-c-A1",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "木",
+      "乌",
+      "水",
+      "积"
+     ],
+     "answer": "B",
+     "why": "这个字是“乌”，读 wū（拼音9 y w）。",
+     "pts": 2,
+     "sayzh": "乌。乌。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-listen-c-A2",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "山",
+      "坐",
+      "鸦",
+      "级"
+     ],
+     "answer": "C",
+     "why": "这个字是“鸦”，读 yā（拼音9 y w）。",
+     "pts": 2,
+     "sayzh": "鸦。鸦。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-listen-c-A3",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "爸",
+      "鸟",
+      "午",
+      "十"
+     ],
+     "answer": "C",
+     "why": "这个字是“午”，读 wǔ（语文园地三）。",
+     "pts": 2,
+     "sayzh": "午。午。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-listen-c-A4",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "词",
+      "星",
+      "手",
+      "水"
+     ],
+     "answer": "B",
+     "why": "这个字是“星”，读 xīng（语文园地三）。",
+     "pts": 2,
+     "sayzh": "星。星。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-listen-c-A5",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "期",
+      "水",
+      "本",
+      "妈"
+     ],
+     "answer": "A",
+     "why": "这个字是“期”，读 qī（语文园地三）。",
+     "pts": 2,
+     "sayzh": "期。期。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-listen-c-A6",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "桌",
+      "文",
+      "土",
+      "语"
+     ],
+     "answer": "D",
+     "why": "这个字是“语”，读 yǔ（语文园地三）。",
+     "pts": 2,
+     "sayzh": "语。语。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-listen-c-A7",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "站",
+      "川",
+      "文",
+      "下"
+     ],
+     "answer": "C",
+     "why": "这个字是“文”，读 wén（语文园地三）。",
+     "pts": 2,
+     "sayzh": "文。文。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-listen-c-A8",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "姓",
+      "字",
+      "写",
+      "水"
+     ],
+     "answer": "C",
+     "why": "这个字是“写”，读 xiě（语文园地三）。",
+     "pts": 2,
+     "sayzh": "写。写。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-listen-c-A9",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "田",
+      "爸",
+      "你",
+      "会"
+     ],
+     "answer": "D",
+     "why": "这个字是“会”，读 huì（语文园地三）。",
+     "pts": 2,
+     "sayzh": "会。会。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X3",
+ "mk": "cnknow"
+}

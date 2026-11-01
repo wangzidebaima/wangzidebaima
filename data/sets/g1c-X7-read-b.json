@@ -1,0 +1,177 @@
+{
+ "id": "g1c-X7-read-b",
+ "title": "看字选拼音（二）",
+ "subtitle": "认识的字，选出正确的拼音",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X7-read-b-A1",
+     "type": "choice",
+     "stem": "“常”怎么读？",
+     "options": [
+      "kè",
+      "cháng",
+      "méi",
+      "xuě"
+     ],
+     "answer": "B",
+     "why": "“常”读 cháng（6 影子）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-read-b-A2",
+     "type": "choice",
+     "stem": "“黑”怎么读？",
+     "options": [
+      "nǚ",
+      "chuān",
+      "hēi",
+      "shuāng"
+     ],
+     "answer": "C",
+     "why": "“黑”读 hēi（6 影子）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-read-b-A3",
+     "type": "choice",
+     "stem": "“狗”怎么读？",
+     "options": [
+      "gǒu",
+      "cài",
+      "néng",
+      "sēn"
+     ],
+     "answer": "A",
+     "why": "“狗”读 gǒu（6 影子）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-read-b-A4",
+     "type": "choice",
+     "stem": "“左”怎么读？",
+     "options": [
+      "dōng",
+      "dǎ",
+      "shān",
+      "zuǒ"
+     ],
+     "answer": "D",
+     "why": "“左”读 zuǒ（6 影子）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-read-b-A5",
+     "type": "choice",
+     "stem": "“右”怎么读？",
+     "options": [
+      "yòu",
+      "wèi",
+      "xiàng",
+      "zǐ"
+     ],
+     "answer": "A",
+     "why": "“右”读 yòu（6 影子）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-read-b-A6",
+     "type": "choice",
+     "stem": "“它”怎么读？",
+     "options": [
+      "xiān",
+      "shǎn",
+      "huì",
+      "tā"
+     ],
+     "answer": "D",
+     "why": "“它”读 tā（6 影子）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-read-b-A7",
+     "type": "choice",
+     "stem": "“好”怎么读？",
+     "options": [
+      "hǎo",
+      "háo",
+      "dǎ",
+      "hāo"
+     ],
+     "answer": "A",
+     "why": "“好”读 hǎo（6 影子）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-read-b-A8",
+     "type": "choice",
+     "stem": "“朋”怎么读？",
+     "options": [
+      "lín",
+      "jīn",
+      "wǎn",
+      "péng"
+     ],
+     "answer": "D",
+     "why": "“朋”读 péng（6 影子）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-read-b-A9",
+     "type": "choice",
+     "stem": "“友”怎么读？",
+     "options": [
+      "chē",
+      "shī",
+      "yé",
+      "yǒu"
+     ],
+     "answer": "D",
+     "why": "“友”读 yǒu（6 影子）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X7-read-b-A10",
+     "type": "choice",
+     "stem": "“件”怎么读？",
+     "options": [
+      "cí",
+      "jiàn",
+      "bǎo",
+      "liù"
+     ],
+     "answer": "B",
+     "why": "“件”读 jiàn（7 两件宝）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X7",
+ "mk": "cnknow"
+}

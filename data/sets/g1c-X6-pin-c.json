@@ -1,0 +1,177 @@
+{
+ "id": "g1c-X6-pin-c",
+ "title": "看拼音选字（三）",
+ "subtitle": "看拼音，选出对应的字",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X6-pin-c-A1",
+     "type": "choice",
+     "stem": "看拼音「zhōng」，是哪个字？",
+     "options": [
+      "风",
+      "中",
+      "语",
+      "明"
+     ],
+     "answer": "B",
+     "why": "zhōng 就是“中”（8 升国旗）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-pin-c-A2",
+     "type": "choice",
+     "stem": "看拼音「shēng」，是哪个字？",
+     "options": [
+      "森",
+      "立",
+      "金",
+      "声"
+     ],
+     "answer": "D",
+     "why": "shēng 就是“声”（8 升国旗）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-pin-c-A3",
+     "type": "choice",
+     "stem": "看拼音「qǐ」，是哪个字？",
+     "options": [
+      "弟",
+      "起",
+      "采",
+      "心"
+     ],
+     "answer": "B",
+     "why": "qǐ 就是“起”（8 升国旗）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-pin-c-A4",
+     "type": "choice",
+     "stem": "看拼音「duō」，是哪个字？",
+     "options": [
+      "菜",
+      "多",
+      "从",
+      "片"
+     ],
+     "answer": "B",
+     "why": "duō 就是“多”（8 升国旗）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-pin-c-A5",
+     "type": "choice",
+     "stem": "看拼音「xiàng」，是哪个字？",
+     "options": [
+      "起",
+      "晚",
+      "向",
+      "从"
+     ],
+     "answer": "C",
+     "why": "xiàng 就是“向”（8 升国旗）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-pin-c-A6",
+     "type": "choice",
+     "stem": "看拼音「lì」，是哪个字？",
+     "options": [
+      "双",
+      "是",
+      "立",
+      "用"
+     ],
+     "answer": "C",
+     "why": "lì 就是“立”（8 升国旗）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-pin-c-A7",
+     "type": "choice",
+     "stem": "看拼音「lǎo」，是哪个字？",
+     "options": [
+      "老",
+      "上",
+      "作",
+      "片"
+     ],
+     "answer": "A",
+     "why": "lǎo 就是“老”（语文园地六）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-pin-c-A8",
+     "type": "choice",
+     "stem": "看拼音「shī」，是哪个字？",
+     "options": [
+      "车",
+      "师",
+      "棋",
+      "间"
+     ],
+     "answer": "B",
+     "why": "shī 就是“师”（语文园地六）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-pin-c-A9",
+     "type": "choice",
+     "stem": "看拼音「gōng」，是哪个字？",
+     "options": [
+      "纸",
+      "工",
+      "我",
+      "本"
+     ],
+     "answer": "B",
+     "why": "gōng 就是“工”（语文园地六）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-pin-c-A10",
+     "type": "choice",
+     "stem": "看拼音「chǎng」，是哪个字？",
+     "options": [
+      "就",
+      "厂",
+      "红",
+      "林"
+     ],
+     "answer": "B",
+     "why": "chǎng 就是“厂”（语文园地六）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X6",
+ "mk": "cnknow"
+}

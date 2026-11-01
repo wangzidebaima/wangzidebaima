@@ -1,0 +1,177 @@
+{
+ "id": "g1c-X6-read-a",
+ "title": "看字选拼音（一）",
+ "subtitle": "认识的字，选出正确的拼音",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X6-read-a-A1",
+     "type": "choice",
+     "stem": "“对”怎么读？",
+     "options": [
+      "bǎo",
+      "wài",
+      "duì",
+      "nián"
+     ],
+     "answer": "C",
+     "why": "“对”读 duì（5 对韵歌）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-read-a-A2",
+     "type": "choice",
+     "stem": "“歌”怎么读？",
+     "options": [
+      "yòng",
+      "wǔ",
+      "gē",
+      "wài"
+     ],
+     "answer": "C",
+     "why": "“歌”读 gē（5 对韵歌）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-read-a-A3",
+     "type": "choice",
+     "stem": "“雨”怎么读？",
+     "options": [
+      "èr",
+      "qù",
+      "yǔ",
+      "běn"
+     ],
+     "answer": "C",
+     "why": "“雨”读 yǔ（5 对韵歌）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-read-a-A4",
+     "type": "choice",
+     "stem": "“风”怎么读？",
+     "options": [
+      "yī",
+      "gōng",
+      "zì",
+      "fēng"
+     ],
+     "answer": "D",
+     "why": "“风”读 fēng（5 对韵歌）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-read-a-A5",
+     "type": "choice",
+     "stem": "“虫”怎么读？",
+     "options": [
+      "zhòng",
+      "chóng",
+      "xuě",
+      "wèi"
+     ],
+     "answer": "B",
+     "why": "“虫”读 chóng（5 对韵歌）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-read-a-A6",
+     "type": "choice",
+     "stem": "“清”怎么读？",
+     "options": [
+      "shuǐ",
+      "sān",
+      "xīn",
+      "qīng"
+     ],
+     "answer": "D",
+     "why": "“清”读 qīng（5 对韵歌）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-read-a-A7",
+     "type": "choice",
+     "stem": "“绿”怎么读？",
+     "options": [
+      "ěr",
+      "lǜ",
+      "shǒu",
+      "lì"
+     ],
+     "answer": "B",
+     "why": "“绿”读 lǜ（5 对韵歌）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-read-a-A8",
+     "type": "choice",
+     "stem": "“桃”怎么读？",
+     "options": [
+      "lái",
+      "táo",
+      "yī",
+      "qì"
+     ],
+     "answer": "B",
+     "why": "“桃”读 táo（5 对韵歌）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-read-a-A9",
+     "type": "choice",
+     "stem": "“红”怎么读？",
+     "options": [
+      "liù",
+      "le",
+      "hóng",
+      "men"
+     ],
+     "answer": "C",
+     "why": "“红”读 hóng（5 对韵歌）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-read-a-A10",
+     "type": "choice",
+     "stem": "“力”怎么读？",
+     "options": [
+      "mén",
+      "ěr",
+      "lì",
+      "wén"
+     ],
+     "answer": "C",
+     "why": "“力”读 lì（6 日月明）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X6",
+ "mk": "cnknow"
+}

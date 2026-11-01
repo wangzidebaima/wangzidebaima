@@ -1,0 +1,187 @@
+{
+ "id": "g1c-X5-listen-c",
+ "title": "听音选字（三）",
+ "subtitle": "听手机读一个字，选出来",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X5-listen-c-A1",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "雪",
+      "青",
+      "就",
+      "开"
+     ],
+     "answer": "B",
+     "why": "这个字是“青”，读 qīng（4 四季）。",
+     "pts": 2,
+     "sayzh": "青。青。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-listen-c-A2",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "读",
+      "蛙",
+      "南",
+      "打"
+     ],
+     "answer": "B",
+     "why": "这个字是“蛙”，读 wā（4 四季）。",
+     "pts": 2,
+     "sayzh": "蛙。蛙。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-listen-c-A3",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "学",
+      "夏",
+      "我",
+      "树"
+     ],
+     "answer": "B",
+     "why": "这个字是“夏”，读 xià（4 四季）。",
+     "pts": 2,
+     "sayzh": "夏。夏。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-listen-c-A4",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "皮",
+      "男",
+      "牙",
+      "东"
+     ],
+     "answer": "A",
+     "why": "这个字是“皮”，读 pí（4 四季）。",
+     "pts": 2,
+     "sayzh": "皮。皮。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-listen-c-A5",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "水",
+      "就",
+      "戏",
+      "班"
+     ],
+     "answer": "B",
+     "why": "这个字是“就”，读 jiù（4 四季）。",
+     "pts": 2,
+     "sayzh": "就。就。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-listen-c-A6",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "今",
+      "读",
+      "昨",
+      "冬"
+     ],
+     "answer": "D",
+     "why": "这个字是“冬”，读 dōng（4 四季）。",
+     "pts": 2,
+     "sayzh": "冬。冬。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-listen-c-A7",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "片",
+      "期",
+      "果",
+      "男"
+     ],
+     "answer": "D",
+     "why": "这个字是“男”，读 nán（语文园地五）。",
+     "pts": 2,
+     "sayzh": "男。男。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-listen-c-A8",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "正",
+      "女",
+      "二",
+      "家"
+     ],
+     "answer": "B",
+     "why": "这个字是“女”，读 nǚ（语文园地五）。",
+     "pts": 2,
+     "sayzh": "女。女。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-listen-c-A9",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "就",
+      "关",
+      "下",
+      "美"
+     ],
+     "answer": "B",
+     "why": "这个字是“关”，读 guān（语文园地五）。",
+     "pts": 2,
+     "sayzh": "关。关。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-listen-c-A10",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "弟",
+      "来",
+      "正",
+      "内"
+     ],
+     "answer": "C",
+     "why": "这个字是“正”，读 zhèng（语文园地五）。",
+     "pts": 2,
+     "sayzh": "正。正。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X5",
+ "mk": "cnknow"
+}

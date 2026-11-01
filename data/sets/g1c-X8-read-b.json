@@ -1,0 +1,177 @@
+{
+ "id": "g1c-X8-read-b",
+ "title": "看字选拼音（二）",
+ "subtitle": "认识的字，选出正确的拼音",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X8-read-b-A1",
+     "type": "choice",
+     "stem": "“找”怎么读？",
+     "options": [
+      "pí",
+      "zhǎo",
+      "mù",
+      "mén"
+     ],
+     "answer": "B",
+     "why": "“找”读 zhǎo（9 乌鸦喝水）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-read-b-A2",
+     "type": "choice",
+     "stem": "“许”怎么读？",
+     "options": [
+      "pí",
+      "shuǐ",
+      "wèn",
+      "xǔ"
+     ],
+     "answer": "D",
+     "why": "“许”读 xǔ（9 乌鸦喝水）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-read-b-A3",
+     "type": "choice",
+     "stem": "“石”怎么读？",
+     "options": [
+      "shí",
+      "jiā",
+      "lián",
+      "niǎo"
+     ],
+     "answer": "A",
+     "why": "“石”读 shí（9 乌鸦喝水）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-read-b-A4",
+     "type": "choice",
+     "stem": "“出”怎么读？",
+     "options": [
+      "wén",
+      "chū",
+      "tǔ",
+      "bīng"
+     ],
+     "answer": "B",
+     "why": "“出”读 chū（9 乌鸦喝水）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-read-b-A5",
+     "type": "choice",
+     "stem": "“法”怎么读？",
+     "options": [
+      "piàn",
+      "zhǐ",
+      "nǎi",
+      "fǎ"
+     ],
+     "answer": "D",
+     "why": "“法”读 fǎ（9 乌鸦喝水）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-read-b-A6",
+     "type": "choice",
+     "stem": "“放”怎么读？",
+     "options": [
+      "fàng",
+      "cǎo",
+      "péng",
+      "bān"
+     ],
+     "answer": "A",
+     "why": "“放”读 fàng（9 乌鸦喝水）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-read-b-A7",
+     "type": "choice",
+     "stem": "“进”怎么读？",
+     "options": [
+      "jìn",
+      "bāo",
+      "xué",
+      "jù"
+     ],
+     "answer": "A",
+     "why": "“进”读 jìn（9 乌鸦喝水）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-read-b-A8",
+     "type": "choice",
+     "stem": "“高”怎么读？",
+     "options": [
+      "rén",
+      "kǒu",
+      "shǎo",
+      "gāo"
+     ],
+     "answer": "D",
+     "why": "“高”读 gāo（9 乌鸦喝水）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-read-b-A9",
+     "type": "choice",
+     "stem": "“点”怎么读？",
+     "options": [
+      "diǎn",
+      "xiě",
+      "wài",
+      "lián"
+     ],
+     "answer": "A",
+     "why": "“点”读 diǎn（10 雨点儿）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X8-read-b-A10",
+     "type": "choice",
+     "stem": "“彩”怎么读？",
+     "options": [
+      "hē",
+      "wǔ",
+      "cháng",
+      "cǎi"
+     ],
+     "answer": "D",
+     "why": "“彩”读 cǎi（10 雨点儿）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X8",
+ "mk": "cnknow"
+}

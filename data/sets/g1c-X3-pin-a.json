@@ -1,0 +1,161 @@
+{
+ "id": "g1c-X3-pin-a",
+ "title": "看拼音选字（一）",
+ "subtitle": "看拼音，选出对应的字",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X3-pin-a-A1",
+     "type": "choice",
+     "stem": "看拼音「gē」，是哪个字？",
+     "options": [
+      "我",
+      "天",
+      "哥",
+      "你"
+     ],
+     "answer": "C",
+     "why": "gē 就是“哥”（拼音5 g k h）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-pin-a-A2",
+     "type": "choice",
+     "stem": "看拼音「dì」，是哪个字？",
+     "options": [
+      "弟",
+      "坐",
+      "七",
+      "上"
+     ],
+     "answer": "A",
+     "why": "dì 就是“弟”（拼音5 g k h）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-pin-a-A3",
+     "type": "choice",
+     "stem": "看拼音「huà」，是哪个字？",
+     "options": [
+      "山",
+      "十",
+      "打",
+      "画"
+     ],
+     "answer": "D",
+     "why": "huà 就是“画”（拼音5 g k h）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-pin-a-A4",
+     "type": "choice",
+     "stem": "看拼音「huā」，是哪个字？",
+     "options": [
+      "七",
+      "花",
+      "本",
+      "名"
+     ],
+     "answer": "B",
+     "why": "huā 就是“花”（拼音5 g k h）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-pin-a-A5",
+     "type": "choice",
+     "stem": "看拼音「dǎ」，是哪个字？",
+     "options": [
+      "五",
+      "积",
+      "打",
+      "田"
+     ],
+     "answer": "C",
+     "why": "dǎ 就是“打”（拼音6 j q x）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-pin-a-A6",
+     "type": "choice",
+     "stem": "看拼音「qí」，是哪个字？",
+     "options": [
+      "鱼",
+      "棋",
+      "人",
+      "校"
+     ],
+     "answer": "B",
+     "why": "qí 就是“棋”（拼音6 j q x）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-pin-a-A7",
+     "type": "choice",
+     "stem": "看拼音「jī」，是哪个字？",
+     "options": [
+      "积",
+      "日",
+      "火",
+      "午"
+     ],
+     "answer": "A",
+     "why": "jī 就是“积”（拼音6 j q x）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-pin-a-A8",
+     "type": "choice",
+     "stem": "看拼音「mù」，是哪个字？",
+     "options": [
+      "木",
+      "七",
+      "月",
+      "上"
+     ],
+     "answer": "A",
+     "why": "mù 就是“木”（拼音6 j q x）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X3-pin-a-A9",
+     "type": "choice",
+     "stem": "看拼音「zì」，是哪个字？",
+     "options": [
+      "班",
+      "字",
+      "本",
+      "田"
+     ],
+     "answer": "B",
+     "why": "zì 就是“字”（拼音7 z c s）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X3",
+ "mk": "cnknow"
+}

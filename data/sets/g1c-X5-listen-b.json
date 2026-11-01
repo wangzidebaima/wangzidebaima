@@ -1,0 +1,187 @@
+{
+ "id": "g1c-X5-listen-b",
+ "title": "听音选字（二）",
+ "subtitle": "听手机读一个字，选出来",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X5-listen-b-A1",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "女",
+      "青",
+      "学",
+      "间"
+     ],
+     "answer": "D",
+     "why": "这个字是“间”，读 jiān（2 江南）。",
+     "pts": 2,
+     "sayzh": "间。间。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-listen-b-A2",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "打",
+      "今",
+      "东",
+      "流"
+     ],
+     "answer": "C",
+     "why": "这个字是“东”，读 dōng（2 江南）。",
+     "pts": 2,
+     "sayzh": "东。东。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-listen-b-A3",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "月",
+      "北",
+      "六",
+      "戏"
+     ],
+     "answer": "B",
+     "why": "这个字是“北”，读 běi（2 江南）。",
+     "pts": 2,
+     "sayzh": "北。北。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-listen-b-A4",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "鸦",
+      "鸟",
+      "家",
+      "星"
+     ],
+     "answer": "C",
+     "why": "这个字是“家”，读 jiā（3 雪地里的小画家）。",
+     "pts": 2,
+     "sayzh": "家。家。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-listen-b-A5",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "妈",
+      "大",
+      "鸡",
+      "戏"
+     ],
+     "answer": "C",
+     "why": "这个字是“鸡”，读 jī（3 雪地里的小画家）。",
+     "pts": 2,
+     "sayzh": "鸡。鸡。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-listen-b-A6",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "夜",
+      "竹",
+      "积",
+      "天"
+     ],
+     "answer": "B",
+     "why": "这个字是“竹”，读 zhú（3 雪地里的小画家）。",
+     "pts": 2,
+     "sayzh": "竹。竹。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-listen-b-A7",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "美",
+      "六",
+      "家",
+      "牙"
+     ],
+     "answer": "D",
+     "why": "这个字是“牙”，读 yá（3 雪地里的小画家）。",
+     "pts": 2,
+     "sayzh": "牙。牙。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-listen-b-A8",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "北",
+      "用",
+      "冬",
+      "就"
+     ],
+     "answer": "B",
+     "why": "这个字是“用”，读 yòng（3 雪地里的小画家）。",
+     "pts": 2,
+     "sayzh": "用。用。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-listen-b-A9",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "鸦",
+      "女",
+      "耳",
+      "几"
+     ],
+     "answer": "D",
+     "why": "这个字是“几”，读 jǐ（3 雪地里的小画家）。",
+     "pts": 2,
+     "sayzh": "几。几。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-listen-b-A10",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "五",
+      "班",
+      "加",
+      "步"
+     ],
+     "answer": "D",
+     "why": "这个字是“步”，读 bù（3 雪地里的小画家）。",
+     "pts": 2,
+     "sayzh": "步。步。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X5",
+ "mk": "cnknow"
+}

@@ -1,0 +1,177 @@
+{
+ "id": "g1c-X4-yun",
+ "title": "找韵母",
+ "subtitle": "看拼音，韵母",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X4-yun-A1",
+     "type": "choice",
+     "stem": "“行”读 xíng，韵母是哪个？",
+     "options": [
+      "ing",
+      "üe",
+      "an",
+      "ou"
+     ],
+     "answer": "A",
+     "why": "xíng 去掉声母 x，剩下的是韵母 ing。",
+     "pts": 2,
+     "sayText": "看一看拼音，韵母是哪个？",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-yun-A2",
+     "type": "choice",
+     "stem": "“个”读 gè，韵母是哪个？",
+     "options": [
+      "ai",
+      "iu",
+      "e",
+      "ao"
+     ],
+     "answer": "C",
+     "why": "gè 去掉声母 g，剩下的是韵母 e。",
+     "pts": 2,
+     "sayText": "看一看拼音，韵母是哪个？",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-yun-A3",
+     "type": "choice",
+     "stem": "“流”读 liú，韵母是哪个？",
+     "options": [
+      "en",
+      "iu",
+      "üan",
+      "eng"
+     ],
+     "answer": "B",
+     "why": "liú 去掉声母 l，剩下的是韵母 iu。",
+     "pts": 2,
+     "sayText": "看一看拼音，韵母是哪个？",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-yun-A4",
+     "type": "choice",
+     "stem": "“去”读 qù，韵母是哪个？",
+     "options": [
+      "ü",
+      "ian",
+      "an",
+      "u"
+     ],
+     "answer": "A",
+     "why": "qù 去掉声母 q，剩下的是韵母 ü。",
+     "pts": 2,
+     "sayText": "看一看拼音，韵母是哪个？",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-yun-A5",
+     "type": "choice",
+     "stem": "“云”读 yún，韵母是哪个？",
+     "options": [
+      "ün",
+      "iu",
+      "en",
+      "ao"
+     ],
+     "answer": "A",
+     "why": "yún 去掉声母 y，剩下的是韵母 ün。",
+     "pts": 2,
+     "sayText": "看一看拼音，韵母是哪个？",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-yun-A6",
+     "type": "choice",
+     "stem": "“菜”读 cài，韵母是哪个？",
+     "options": [
+      "ai",
+      "ü",
+      "u",
+      "o"
+     ],
+     "answer": "A",
+     "why": "cài 去掉声母 c，剩下的是韵母 ai。",
+     "pts": 2,
+     "sayText": "看一看拼音，韵母是哪个？",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-yun-A7",
+     "type": "choice",
+     "stem": "“柳”读 liǔ，韵母是哪个？",
+     "options": [
+      "an",
+      "ang",
+      "iu",
+      "o"
+     ],
+     "answer": "C",
+     "why": "liǔ 去掉声母 l，剩下的是韵母 iu。",
+     "pts": 2,
+     "sayText": "看一看拼音，韵母是哪个？",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-yun-A8",
+     "type": "choice",
+     "stem": "“这”读 zhè，韵母是哪个？",
+     "options": [
+      "e",
+      "ian",
+      "a",
+      "ao"
+     ],
+     "answer": "A",
+     "why": "zhè 去掉声母 zh，剩下的是韵母 e。",
+     "pts": 2,
+     "sayText": "看一看拼音，韵母是哪个？",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-yun-A9",
+     "type": "choice",
+     "stem": "“美”读 měi，韵母是哪个？",
+     "options": [
+      "ei",
+      "uo",
+      "in",
+      "en"
+     ],
+     "answer": "A",
+     "why": "měi 去掉声母 m，剩下的是韵母 ei。",
+     "pts": 2,
+     "sayText": "看一看拼音，韵母是哪个？",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-yun-A10",
+     "type": "choice",
+     "stem": "“冰”读 bīng，韵母是哪个？",
+     "options": [
+      "eng",
+      "üan",
+      "ing",
+      "o"
+     ],
+     "answer": "C",
+     "why": "bīng 去掉声母 b，剩下的是韵母 ing。",
+     "pts": 2,
+     "sayText": "看一看拼音，韵母是哪个？",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X4",
+ "mk": "cnknow"
+}

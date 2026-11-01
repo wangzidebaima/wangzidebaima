@@ -1,0 +1,177 @@
+{
+ "id": "g1c-X5-read-a",
+ "title": "看字选拼音（一）",
+ "subtitle": "认识的字，选出正确的拼音",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X5-read-a-A1",
+     "type": "choice",
+     "stem": "“秋”怎么读？",
+     "options": [
+      "huǒ",
+      "gē",
+      "tā",
+      "qiū"
+     ],
+     "answer": "D",
+     "why": "“秋”读 qiū（1 秋天）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-read-a-A2",
+     "type": "choice",
+     "stem": "“气”怎么读？",
+     "options": [
+      "jiān",
+      "qì",
+      "qù",
+      "shuō"
+     ],
+     "answer": "B",
+     "why": "“气”读 qì（1 秋天）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-read-a-A3",
+     "type": "choice",
+     "stem": "“树”怎么读？",
+     "options": [
+      "shù",
+      "zhèng",
+      "xuě",
+      "běi"
+     ],
+     "answer": "A",
+     "why": "“树”读 shù（1 秋天）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-read-a-A4",
+     "type": "choice",
+     "stem": "“叶”怎么读？",
+     "options": [
+      "qī",
+      "yè",
+      "gē",
+      "míng"
+     ],
+     "answer": "B",
+     "why": "“叶”读 yè（1 秋天）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-read-a-A5",
+     "type": "choice",
+     "stem": "“黄”怎么读？",
+     "options": [
+      "zǐ",
+      "shí",
+      "sè",
+      "huáng"
+     ],
+     "answer": "D",
+     "why": "“黄”读 huáng（1 秋天）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-read-a-A6",
+     "type": "choice",
+     "stem": "“片”怎么读？",
+     "options": [
+      "qī",
+      "yī",
+      "xī",
+      "piàn"
+     ],
+     "answer": "D",
+     "why": "“片”读 piàn（1 秋天）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-read-a-A7",
+     "type": "choice",
+     "stem": "“从”怎么读？",
+     "options": [
+      "cóng",
+      "lián",
+      "yǔ",
+      "bà"
+     ],
+     "answer": "A",
+     "why": "“从”读 cóng（1 秋天）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-read-a-A8",
+     "type": "choice",
+     "stem": "“来”怎么读？",
+     "options": [
+      "lái",
+      "wǎn",
+      "běi",
+      "le"
+     ],
+     "answer": "A",
+     "why": "“来”读 lái（1 秋天）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-read-a-A9",
+     "type": "choice",
+     "stem": "“飞”怎么读？",
+     "options": [
+      "qiū",
+      "chuān",
+      "fēi",
+      "jǐ"
+     ],
+     "answer": "C",
+     "why": "“飞”读 fēi（1 秋天）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X5-read-a-A10",
+     "type": "choice",
+     "stem": "“江”怎么读？",
+     "options": [
+      "wáng",
+      "xiě",
+      "yè",
+      "jiāng"
+     ],
+     "answer": "D",
+     "why": "“江”读 jiāng（2 江南）。",
+     "pts": 2,
+     "sayText": "看一看这个字，选出正确的拼音。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X5",
+ "mk": "cnknow"
+}

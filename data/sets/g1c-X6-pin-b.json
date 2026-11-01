@@ -1,0 +1,177 @@
+{
+ "id": "g1c-X6-pin-b",
+ "title": "看拼音选字（二）",
+ "subtitle": "看拼音，选出对应的字",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X6-pin-b-A1",
+     "type": "choice",
+     "stem": "看拼音「tiáo」，是哪个字？",
+     "options": [
+      "爸",
+      "路",
+      "条",
+      "绿"
+     ],
+     "answer": "C",
+     "why": "tiáo 就是“条”（6 日月明）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-pin-b-A2",
+     "type": "choice",
+     "stem": "看拼音「xīn」，是哪个字？",
+     "options": [
+      "心",
+      "山",
+      "桌",
+      "对"
+     ],
+     "answer": "A",
+     "why": "xīn 就是“心”（6 日月明）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-pin-b-A3",
+     "type": "choice",
+     "stem": "看拼音「jīn」，是哪个字？",
+     "options": [
+      "下",
+      "一",
+      "金",
+      "黄"
+     ],
+     "answer": "C",
+     "why": "jīn 就是“金”（6 日月明）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-pin-b-A4",
+     "type": "choice",
+     "stem": "看拼音「bāo」，是哪个字？",
+     "options": [
+      "包",
+      "红",
+      "不",
+      "众"
+     ],
+     "answer": "A",
+     "why": "bāo 就是“包”（7 小书包）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-pin-b-A5",
+     "type": "choice",
+     "stem": "看拼音「chǐ」，是哪个字？",
+     "options": [
+      "尺",
+      "说",
+      "夏",
+      "片"
+     ],
+     "answer": "A",
+     "why": "chǐ 就是“尺”（7 小书包）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-pin-b-A6",
+     "type": "choice",
+     "stem": "看拼音「zuò」，是哪个字？",
+     "options": [
+      "间",
+      "天",
+      "作",
+      "语"
+     ],
+     "answer": "C",
+     "why": "zuò 就是“作”（7 小书包）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-pin-b-A7",
+     "type": "choice",
+     "stem": "看拼音「yè」，是哪个字？",
+     "options": [
+      "关",
+      "业",
+      "家",
+      "来"
+     ],
+     "answer": "B",
+     "why": "yè 就是“业”（7 小书包）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-pin-b-A8",
+     "type": "choice",
+     "stem": "看拼音「bǐ」，是哪个字？",
+     "options": [
+      "柳",
+      "笔",
+      "土",
+      "几"
+     ],
+     "answer": "B",
+     "why": "bǐ 就是“笔”（7 小书包）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-pin-b-A9",
+     "type": "choice",
+     "stem": "看拼音「dāo」，是哪个字？",
+     "options": [
+      "刀",
+      "课",
+      "内",
+      "纸"
+     ],
+     "answer": "A",
+     "why": "dāo 就是“刀”（7 小书包）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X6-pin-b-A10",
+     "type": "choice",
+     "stem": "看拼音「bǎo」，是哪个字？",
+     "options": [
+      "就",
+      "今",
+      "双",
+      "宝"
+     ],
+     "answer": "D",
+     "why": "bǎo 就是“宝”（7 小书包）。",
+     "pts": 2,
+     "sayText": "看一看拼音，选出对应的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X6",
+ "mk": "cnknow"
+}

@@ -1,0 +1,187 @@
+{
+ "id": "g1c-X4-listen-a",
+ "title": "听音选字（一）",
+ "subtitle": "听手机读一个字，选出来",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g1c-X4-listen-a-A1",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "手",
+      "级",
+      "冰",
+      "白"
+     ],
+     "answer": "D",
+     "why": "这个字是“白”，读 bái（拼音10 ai ei ui）。",
+     "pts": 2,
+     "sayzh": "白。白。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-listen-a-A2",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "草",
+      "乌",
+      "山",
+      "菜"
+     ],
+     "answer": "D",
+     "why": "这个字是“菜”，读 cài（拼音10 ai ei ui）。",
+     "pts": 2,
+     "sayzh": "菜。菜。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-listen-a-A3",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "坐",
+      "十",
+      "天",
+      "西"
+     ],
+     "answer": "D",
+     "why": "这个字是“西”，读 xī（拼音10 ai ei ui）。",
+     "pts": 2,
+     "sayzh": "西。西。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-listen-a-A4",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "流",
+      "鸭",
+      "瓜",
+      "八"
+     ],
+     "answer": "C",
+     "why": "这个字是“瓜”，读 guā（拼音10 ai ei ui）。",
+     "pts": 2,
+     "sayzh": "瓜。瓜。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-listen-a-A5",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "乌",
+      "妈",
+      "蓝",
+      "果"
+     ],
+     "answer": "D",
+     "why": "这个字是“果”，读 guǒ（拼音10 ai ei ui）。",
+     "pts": 2,
+     "sayzh": "果。果。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-listen-a-A6",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "桥",
+      "五",
+      "小",
+      "他"
+     ],
+     "answer": "C",
+     "why": "这个字是“小”，读 xiǎo（拼音11 ao ou iu）。",
+     "pts": 2,
+     "sayzh": "小。小。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-listen-a-A7",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "明",
+      "桥",
+      "目",
+      "月"
+     ],
+     "answer": "B",
+     "why": "这个字是“桥”，读 qiáo（拼音11 ao ou iu）。",
+     "pts": 2,
+     "sayzh": "桥。桥。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-listen-a-A8",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "流",
+      "四",
+      "文",
+      "积"
+     ],
+     "answer": "A",
+     "why": "这个字是“流”，读 liú（拼音11 ao ou iu）。",
+     "pts": 2,
+     "sayzh": "流。流。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-listen-a-A9",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "果",
+      "纸",
+      "爸",
+      "柳"
+     ],
+     "answer": "D",
+     "why": "这个字是“柳”，读 liǔ（拼音11 ao ou iu）。",
+     "pts": 2,
+     "sayzh": "柳。柳。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    },
+    {
+     "id": "g1c-X4-listen-a-A10",
+     "type": "choice",
+     "stem": "听一听，说的是哪个字？",
+     "options": [
+      "子",
+      "鱼",
+      "开",
+      "乌"
+     ],
+     "answer": "C",
+     "why": "这个字是“开”，读 kāi（拼音12 ie üe er）。",
+     "pts": 2,
+     "sayzh": "开。开。",
+     "sayText": "点听一听，选出你听到的字。",
+     "noOptSay": true
+    }
+   ]
+  }
+ ],
+ "kind": "cn",
+ "unit": "X4",
+ "mk": "cnknow"
+}
