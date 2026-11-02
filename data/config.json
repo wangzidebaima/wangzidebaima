@@ -380,7 +380,10 @@
     "小五"
    ],
    "theme": "leaf",
-   "subjects": [],
+   "subjects": [
+    "g5chinese",
+    "g5sci"
+   ],
    "random": [
     "cnw5"
    ],
@@ -400,7 +403,6 @@
     }
    ],
    "grade": "五年级",
-   "soon": true,
    "readAloud": false,
    "publishers": {
     "cn": "统编版",

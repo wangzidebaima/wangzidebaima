@@ -5950,6 +5950,607 @@
      "count": 11
     }
    ]
+  },
+  {
+   "id": "g5chinese",
+   "title": "语文练习",
+   "icon": "📖",
+   "desc": "按课本单元：课文小测、阅读、古诗、美文",
+   "sets": [
+    {
+     "id": "g5c-k1",
+     "file": "sets/g5c-k1.json",
+     "title": "第一单元·课文小测",
+     "subtitle": "桂花雨 / 落花生 / 珍珠鸟",
+     "kind": "cn",
+     "count": 10,
+     "unit": "F1"
+    },
+    {
+     "id": "g5c-k2",
+     "file": "sets/g5c-k2.json",
+     "title": "第二单元·课文小测",
+     "subtitle": "冀中的地道战 / 将相和 / 什么比猎豹的速度更快 / “诺曼底号”遇难记",
+     "kind": "cn",
+     "count": 10,
+     "unit": "F2"
+    },
+    {
+     "id": "g5c-k3",
+     "file": "sets/g5c-k3.json",
+     "title": "第三单元·课文小测",
+     "subtitle": "猎人海力布 / 牛郎织女",
+     "kind": "cn",
+     "count": 10,
+     "unit": "F3"
+    },
+    {
+     "id": "g5c-k4",
+     "file": "sets/g5c-k4.json",
+     "title": "第四单元·课文小测",
+     "subtitle": "古诗三首 / 少年中国说 / 圆明园的毁灭 / 梅兰芳蓄须明志",
+     "kind": "cn",
+     "count": 10,
+     "unit": "F4"
+    },
+    {
+     "id": "g5c-k5",
+     "file": "sets/g5c-k5.json",
+     "title": "第五单元·课文小测",
+     "subtitle": "太阳 / 金字塔",
+     "kind": "cn",
+     "count": 10,
+     "unit": "F5"
+    },
+    {
+     "id": "g5c-k6",
+     "file": "sets/g5c-k6.json",
+     "title": "第六单元·课文小测",
+     "subtitle": "慈母情深 / 父爱之舟 / 航天员写给孩子的信",
+     "kind": "cn",
+     "count": 10,
+     "unit": "F6"
+    },
+    {
+     "id": "g5c-k7",
+     "file": "sets/g5c-k7.json",
+     "title": "第七单元·课文小测",
+     "subtitle": "古诗三首（山居秋暝 / 枫桥夜泊 / 早春呈水部张十八员外）/ 第一场雪 / 白鹭",
+     "kind": "cn",
+     "count": 10,
+     "unit": "F7"
+    },
+    {
+     "id": "g5c-k8",
+     "file": "sets/g5c-k8.json",
+     "title": "第八单元·课文小测",
+     "subtitle": "古人谈读书 / 忆读书 / 走遍天下书为侣",
+     "kind": "cn",
+     "count": 10,
+     "unit": "F8"
+    },
+    {
+     "id": "g5c-r1",
+     "file": "sets/g5c-r1.json",
+     "title": "窗台上的仙人掌",
+     "subtitle": "阅读·托物言志",
+     "kind": "reading",
+     "count": 8,
+     "unit": "F1"
+    },
+    {
+     "id": "g5c-r2",
+     "file": "sets/g5c-r2.json",
+     "title": "夜行的信使",
+     "subtitle": "阅读·故事（练习提速）",
+     "kind": "reading",
+     "count": 8,
+     "unit": "F2"
+    },
+    {
+     "id": "g5c-r3",
+     "file": "sets/g5c-r3.json",
+     "title": "山脚下的老人和白鹿",
+     "subtitle": "阅读·民间故事",
+     "kind": "reading",
+     "count": 8,
+     "unit": "F3"
+    },
+    {
+     "id": "g5c-r4",
+     "file": "sets/g5c-r4.json",
+     "title": "一封寄往海外的信",
+     "subtitle": "阅读·书信",
+     "kind": "reading",
+     "count": 7,
+     "unit": "F4"
+    },
+    {
+     "id": "g5c-r5",
+     "file": "sets/g5c-r5.json",
+     "title": "月球",
+     "subtitle": "阅读·说明文",
+     "kind": "reading",
+     "count": 8,
+     "unit": "F5"
+    },
+    {
+     "id": "g5c-r6",
+     "file": "sets/g5c-r6.json",
+     "title": "妈妈的缝纫机",
+     "subtitle": "阅读·亲情",
+     "kind": "reading",
+     "count": 8,
+     "unit": "F6"
+    },
+    {
+     "id": "g5c-r7",
+     "file": "sets/g5c-r7.json",
+     "title": "初冬的湖",
+     "subtitle": "阅读·写景",
+     "kind": "reading",
+     "count": 8,
+     "unit": "F7"
+    },
+    {
+     "id": "g5c-r8",
+     "file": "sets/g5c-r8.json",
+     "title": "借书的少年",
+     "subtitle": "阅读·读书",
+     "kind": "reading",
+     "count": 8,
+     "unit": "F8"
+    },
+    {
+     "id": "g5c-r9",
+     "file": "sets/g5c-r9.json",
+     "title": "蜜蜂的“舞蹈”",
+     "subtitle": "阅读·说明文",
+     "kind": "reading",
+     "count": 8,
+     "unit": "F5"
+    },
+    {
+     "id": "g5c-r10",
+     "file": "sets/g5c-r10.json",
+     "title": "会唱歌的竹笛",
+     "subtitle": "阅读·民间故事",
+     "kind": "reading",
+     "count": 8,
+     "unit": "F3"
+    },
+    {
+     "id": "g5c-r11",
+     "file": "sets/g5c-r11.json",
+     "title": "豆苗日记",
+     "subtitle": "阅读·观察日记",
+     "kind": "reading",
+     "count": 8,
+     "unit": "F1"
+    },
+    {
+     "id": "g5c-r12",
+     "file": "sets/g5c-r12.json",
+     "title": "老科学家的行李箱",
+     "subtitle": "阅读·人物",
+     "kind": "reading",
+     "count": 8,
+     "unit": "F4"
+    },
+    {
+     "id": "g5c-e1",
+     "file": "sets/g5c-e1.json",
+     "title": "《外婆的竹篮》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 5,
+     "unit": "E"
+    },
+    {
+     "id": "g5c-e2",
+     "file": "sets/g5c-e2.json",
+     "title": "《秋夜听虫》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 5,
+     "unit": "E"
+    },
+    {
+     "id": "g5c-e3",
+     "file": "sets/g5c-e3.json",
+     "title": "《老槐树》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 5,
+     "unit": "E"
+    },
+    {
+     "id": "g5c-e4",
+     "file": "sets/g5c-e4.json",
+     "title": "《雨落青瓦》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 5,
+     "unit": "E"
+    },
+    {
+     "id": "g5c-e5",
+     "file": "sets/g5c-e5.json",
+     "title": "《星空下的约定》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 5,
+     "unit": "E"
+    },
+    {
+     "id": "g5c-e6",
+     "file": "sets/g5c-e6.json",
+     "title": "《一页书香》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 5,
+     "unit": "E"
+    },
+    {
+     "id": "g5c-e7",
+     "file": "sets/g5c-e7.json",
+     "title": "《元宵灯影》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 5,
+     "unit": "E"
+    },
+    {
+     "id": "g5c-e8",
+     "file": "sets/g5c-e8.json",
+     "title": "《故乡的小河》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 5,
+     "unit": "E"
+    },
+    {
+     "id": "g5c-e9",
+     "file": "sets/g5c-e9.json",
+     "title": "《父亲的旧自行车》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 5,
+     "unit": "E"
+    },
+    {
+     "id": "g5c-e10",
+     "file": "sets/g5c-e10.json",
+     "title": "《操场上的黄昏》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 5,
+     "unit": "E"
+    },
+    {
+     "id": "g5c-sr-a",
+     "file": "sets/g5c-sr-a.json",
+     "title": "《示儿》理解",
+     "subtitle": "陆游 · 古诗",
+     "kind": "cn",
+     "count": 6,
+     "unit": "F4"
+    },
+    {
+     "id": "g5c-sr-b",
+     "file": "sets/g5c-sr-b.json",
+     "title": "《示儿》默写",
+     "subtitle": "先背一背，再默写（不显示原诗）",
+     "kind": "cn",
+     "count": 4,
+     "unit": "F4"
+    },
+    {
+     "id": "g5c-tlad-a",
+     "file": "sets/g5c-tlad-a.json",
+     "title": "《题临安邸》理解",
+     "subtitle": "林升 · 古诗",
+     "kind": "cn",
+     "count": 6,
+     "unit": "F4"
+    },
+    {
+     "id": "g5c-tlad-b",
+     "file": "sets/g5c-tlad-b.json",
+     "title": "《题临安邸》默写",
+     "subtitle": "先背一背，再默写（不显示原诗）",
+     "kind": "cn",
+     "count": 4,
+     "unit": "F4"
+    },
+    {
+     "id": "g5c-jhzs-a",
+     "file": "sets/g5c-jhzs-a.json",
+     "title": "《己亥杂诗》理解",
+     "subtitle": "龚自珍 · 古诗",
+     "kind": "cn",
+     "count": 6,
+     "unit": "F4"
+    },
+    {
+     "id": "g5c-jhzs-b",
+     "file": "sets/g5c-jhzs-b.json",
+     "title": "《己亥杂诗》默写",
+     "subtitle": "先背一背，再默写（不显示原诗）",
+     "kind": "cn",
+     "count": 4,
+     "unit": "F4"
+    },
+    {
+     "id": "g5c-sjqm-a",
+     "file": "sets/g5c-sjqm-a.json",
+     "title": "《山居秋暝》理解",
+     "subtitle": "王维 · 古诗",
+     "kind": "cn",
+     "count": 6,
+     "unit": "F7"
+    },
+    {
+     "id": "g5c-sjqm-b",
+     "file": "sets/g5c-sjqm-b.json",
+     "title": "《山居秋暝》默写",
+     "subtitle": "先背一背，再默写（不显示原诗）",
+     "kind": "cn",
+     "count": 8,
+     "unit": "F7"
+    },
+    {
+     "id": "g5c-fqyb-a",
+     "file": "sets/g5c-fqyb-a.json",
+     "title": "《枫桥夜泊》理解",
+     "subtitle": "张继 · 古诗",
+     "kind": "cn",
+     "count": 6,
+     "unit": "F7"
+    },
+    {
+     "id": "g5c-fqyb-b",
+     "file": "sets/g5c-fqyb-b.json",
+     "title": "《枫桥夜泊》默写",
+     "subtitle": "先背一背，再默写（不显示原诗）",
+     "kind": "cn",
+     "count": 4,
+     "unit": "F7"
+    },
+    {
+     "id": "g5c-zcc-a",
+     "file": "sets/g5c-zcc-a.json",
+     "title": "《早春呈水部张十八员外》理解",
+     "subtitle": "韩愈 · 古诗",
+     "kind": "cn",
+     "count": 6,
+     "unit": "F7"
+    },
+    {
+     "id": "g5c-zcc-b",
+     "file": "sets/g5c-zcc-b.json",
+     "title": "《早春呈水部张十八员外》默写",
+     "subtitle": "先背一背，再默写（不显示原诗）",
+     "kind": "cn",
+     "count": 4,
+     "unit": "F7"
+    },
+    {
+     "id": "g5c-j1",
+     "file": "sets/g5c-j1.json",
+     "title": "词语积累·近义词反义词",
+     "subtitle": "词语小练习",
+     "kind": "cn",
+     "count": 10,
+     "unit": "F0"
+    },
+    {
+     "id": "g5c-j2",
+     "file": "sets/g5c-j2.json",
+     "title": "句子积累·修辞与句式",
+     "subtitle": "比喻 / 拟人 / 夸张 / 排比 / 反问",
+     "kind": "cn",
+     "count": 10,
+     "unit": "F0"
+    },
+    {
+     "id": "g5c-j3",
+     "file": "sets/g5c-j3.json",
+     "title": "关联词与成语",
+     "subtitle": "语文园地六 · 关联词",
+     "kind": "cn",
+     "count": 9,
+     "unit": "F0"
+    }
+   ]
+  },
+  {
+   "id": "g5sci",
+   "title": "科学练习",
+   "icon": "🔬",
+   "desc": "按课本的课，每课一练",
+   "sets": [
+    {
+     "id": "g5sci-1",
+     "file": "sets/g5sci-1.json",
+     "title": "第1课 光源",
+     "subtitle": "第一单元 光与色彩",
+     "kind": "cn",
+     "count": 10,
+     "unit": "FS1"
+    },
+    {
+     "id": "g5sci-2",
+     "file": "sets/g5sci-2.json",
+     "title": "第2课 光的传播",
+     "subtitle": "第一单元 光与色彩",
+     "kind": "cn",
+     "count": 11,
+     "unit": "FS1"
+    },
+    {
+     "id": "g5sci-3",
+     "file": "sets/g5sci-3.json",
+     "title": "第3课 光的反射",
+     "subtitle": "第一单元 光与色彩",
+     "kind": "cn",
+     "count": 10,
+     "unit": "FS1"
+    },
+    {
+     "id": "g5sci-4",
+     "file": "sets/g5sci-4.json",
+     "title": "第4课 七色光",
+     "subtitle": "第一单元 光与色彩",
+     "kind": "cn",
+     "count": 11,
+     "unit": "FS1"
+    },
+    {
+     "id": "g5sci-5",
+     "file": "sets/g5sci-5.json",
+     "title": "第5课 热传导",
+     "subtitle": "第二单元 热传递",
+     "kind": "cn",
+     "count": 10,
+     "unit": "FS2"
+    },
+    {
+     "id": "g5sci-6",
+     "file": "sets/g5sci-6.json",
+     "title": "第6课 热对流",
+     "subtitle": "第二单元 热传递",
+     "kind": "cn",
+     "count": 10,
+     "unit": "FS2"
+    },
+    {
+     "id": "g5sci-7",
+     "file": "sets/g5sci-7.json",
+     "title": "第7课 热辐射",
+     "subtitle": "第二单元 热传递",
+     "kind": "cn",
+     "count": 11,
+     "unit": "FS2"
+    },
+    {
+     "id": "g5sci-8",
+     "file": "sets/g5sci-8.json",
+     "title": "第8课 物体的传热本领",
+     "subtitle": "第二单元 热传递",
+     "kind": "cn",
+     "count": 11,
+     "unit": "FS2"
+    },
+    {
+     "id": "g5sci-9",
+     "file": "sets/g5sci-9.json",
+     "title": "第9课 地球的表面",
+     "subtitle": "第三单元 地球的表面和内部",
+     "kind": "cn",
+     "count": 10,
+     "unit": "FS3"
+    },
+    {
+     "id": "g5sci-10",
+     "file": "sets/g5sci-10.json",
+     "title": "第10课 火山和地震",
+     "subtitle": "第三单元 地球的表面和内部",
+     "kind": "cn",
+     "count": 11,
+     "unit": "FS3"
+    },
+    {
+     "id": "g5sci-11",
+     "file": "sets/g5sci-11.json",
+     "title": "第11课 地球的内部",
+     "subtitle": "第三单元 地球的表面和内部",
+     "kind": "cn",
+     "count": 10,
+     "unit": "FS3"
+    },
+    {
+     "id": "g5sci-12",
+     "file": "sets/g5sci-12.json",
+     "title": "第12课 地表雕刻师",
+     "subtitle": "第三单元 地球的表面和内部",
+     "kind": "cn",
+     "count": 10,
+     "unit": "FS3"
+    },
+    {
+     "id": "g5sci-13",
+     "file": "sets/g5sci-13.json",
+     "title": "第13课 云和雾",
+     "subtitle": "第四单元 水在自然界的循环",
+     "kind": "cn",
+     "count": 11,
+     "unit": "FS4"
+    },
+    {
+     "id": "g5sci-14",
+     "file": "sets/g5sci-14.json",
+     "title": "第14课 露和霜",
+     "subtitle": "第四单元 水在自然界的循环",
+     "kind": "cn",
+     "count": 10,
+     "unit": "FS4"
+    },
+    {
+     "id": "g5sci-15",
+     "file": "sets/g5sci-15.json",
+     "title": "第15课 雨和雪",
+     "subtitle": "第四单元 水在自然界的循环",
+     "kind": "cn",
+     "count": 11,
+     "unit": "FS4"
+    },
+    {
+     "id": "g5sci-16",
+     "file": "sets/g5sci-16.json",
+     "title": "第16课 水滴的“旅行”",
+     "subtitle": "第四单元 水在自然界的循环",
+     "kind": "cn",
+     "count": 11,
+     "unit": "FS4"
+    },
+    {
+     "id": "g5sci-17",
+     "file": "sets/g5sci-17.json",
+     "title": "第17课 刺激与反应",
+     "subtitle": "第五单元 人体“司令部”",
+     "kind": "cn",
+     "count": 10,
+     "unit": "FS5"
+    },
+    {
+     "id": "g5sci-18",
+     "file": "sets/g5sci-18.json",
+     "title": "第18课 从刺激到反应",
+     "subtitle": "第五单元 人体“司令部”",
+     "kind": "cn",
+     "count": 11,
+     "unit": "FS5"
+    },
+    {
+     "id": "g5sci-19",
+     "file": "sets/g5sci-19.json",
+     "title": "第19课 我们的大脑",
+     "subtitle": "第五单元 人体“司令部”",
+     "kind": "cn",
+     "count": 10,
+     "unit": "FS5"
+    },
+    {
+     "id": "g5sci-20",
+     "file": "sets/g5sci-20.json",
+     "title": "第20课 大脑的开发与利用",
+     "subtitle": "第五单元 人体“司令部”",
+     "kind": "cn",
+     "count": 11,
+     "unit": "FS5"
+    }
+   ]
   }
  ],
  "unitNames": {
@@ -6029,6 +6630,20 @@
   "TS2": "第二单元 固体和液体",
   "TS3": "第三单元 地球上的水体",
   "TS4": "第四单元 空气的性质",
-  "TS5": "第五单元 材料的演变"
+  "TS5": "第五单元 材料的演变",
+  "F1": "第一单元 桂花雨·落花生·珍珠鸟",
+  "F2": "第二单元 冀中的地道战·将相和·什么比猎豹的速度更快·“诺曼底号”遇难记",
+  "F3": "第三单元 猎人海力布·牛郎织女",
+  "F4": "第四单元 古诗三首·少年中国说·圆明园的毁灭·梅兰芳蓄须明志",
+  "F5": "第五单元 太阳·金字塔",
+  "F6": "第六单元 慈母情深·父爱之舟·航天员写给孩子的信",
+  "F7": "第七单元 古诗三首·第一场雪·白鹭",
+  "F8": "第八单元 古人谈读书·忆读书·走遍天下书为侣",
+  "F0": "语文积累（词语·句子·标点）",
+  "FS1": "第一单元 光与色彩",
+  "FS2": "第二单元 热传递",
+  "FS3": "第三单元 地球的表面和内部",
+  "FS4": "第四单元 水在自然界的循环",
+  "FS5": "第五单元 人体“司令部”"
  }
 }
