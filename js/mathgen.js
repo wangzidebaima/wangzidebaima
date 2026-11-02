@@ -412,6 +412,34 @@ const G3 = {
 };
 export const T3 = [{ id: 'add', name: '三位数加法' }, { id: 'sub', name: '三位数减法' }, { id: 'mul', name: '乘法' }, { id: 'div', name: '除法' }, { id: 'mix', name: '混合运算' }, { id: 'dec', name: '一位小数加减' }];
 
+// ---------- 五年级口算（小数乘除、简便计算、倍数因数、混合运算） ----------
+const q5 = (typeId, stem, ans, why, digits) => ({ type: 'math', typeId, stem, answer: String(ans), why: why + `\n答案：${ans}`, pts: 1, id: 'r-' + typeId + '-' + hash(stem), digits: !!digits });
+const dd = (n, k) => String(Number((n / Math.pow(10, k)).toFixed(k)));   // n 是放大 10^k 倍的整数
+const G5 = {
+  dmul: (L) => { const a = ri(L === 1 ? 12 : 21, L === 1 ? 59 : 99), b = ri(L === 1 ? 2 : 3, L === 3 ? 29 : 9), ka = L === 3 ? 2 : 1, kb = L === 3 ? 1 : 0;
+    const A = dd(a, ka), B = kb ? dd(b, kb) : String(b); return q5('dmul', `${A}×${B}`, dd(a * b, ka + kb), `先当成整数乘：${a}×${b}=${a * b}；再看因数一共有 ${ka + kb} 位小数，积就点 ${ka + kb} 位小数：${dd(a * b, ka + kb)}。`); },
+  ddiv: (L) => { if (L === 1) { let b, q; do { b = ri(2, 9); q = ri(11, 99); } while ((b * q) % 10 === 0); return q5('ddiv', `${dd(b * q, 1)}÷${b}`, dd(q, 1), `按整数除法算 ${b * q}÷${b}=${q}，商的小数点和被除数对齐，得 ${dd(q, 1)}。`); }
+    if (L === 2) { const b = ri(2, 9), q = ri(11, 99); return q5('ddiv', `${dd(b * q, 2)}÷${b}`, dd(q, 2), `按整数除法算 ${b * q}÷${b}=${q}，商的小数点和被除数对齐，得 ${dd(q, 2)}。`); }
+    const b = ri(2, 9), q = ri(12, 99); return q5('ddiv', `${dd(b * q, 1)}÷${dd(b, 1)}`, String(q), `被除数、除数同时乘 10：${b * q}÷${b}=${q}。`); },
+  simp: (L) => { const f = ri(0, L === 1 ? 1 : 2);
+    if (f === 0) { const a = pick([25, 125, 5]), k = pick([4, 8, 2]), n = ri(2, 9); const m = a === 25 ? 4 : a === 125 ? 8 : 2; return q5('simp', `${a}×${n}×${m}`, a * n * m, `交换位置：${a}×${m}×${n}=${a * m}×${n}=${a * n * m}。`, true); }
+    if (f === 1) { const a = ri(11, 99), b = ri(11, 99), c = 100 - (a % 100 === 0 ? 0 : 0); const x = ri(21, 79); return q5('simp', `${x}×101`, x * 101, `${x}×101=${x}×100+${x}=${x * 100}+${x}=${x * 101}。`, true); }
+    const x = ri(2, 9), y = ri(12, 48); return q5('simp', `${y}×${x}+${y}×${10 - x}`, y * 10, `提公因数：${y}×(${x}+${10 - x})=${y}×10=${y * 10}。`, true); },
+  fac: (L) => { const f = ri(0, 2);
+    if (f === 0) { const n = ri(10, L === 1 ? 40 : 90); const c = []; for (let i = 1; i <= n; i++) if (n % i === 0) c.push(i); return q5('fac', `${n} 一共有几个因数？`, c.length, `${n} 的因数有：${c.join('、')}，共 ${c.length} 个。`, true); }
+    if (f === 1) { const k = pick([2, 3, 4, 5, 6, 7, 8, 9]), n = ri(3, L === 1 ? 6 : 12) * k; return q5('fac', `${k} 的倍数中，小于 ${n + 1} 的最大的数是？`, n, `${n}÷${k}=${n / k}，所以最大的是 ${n}。`, true); }
+    const a = pick([4, 6, 8, 9, 10, 12]), b = pick([6, 8, 10, 12, 15]); let m = 1; while (m % a || m % b) m++; return q5('fac', `${a} 和 ${b} 的最小公倍数是？`, m, `分别列出倍数，找最小的公共倍数，得 ${m}。`, true); },
+  big: (L) => { const f = ri(0, 2);
+    if (f === 0) { const a = ri(100, L === 1 ? 500 : 999), b = ri(2, 9); return q5('big', `${a}×${b}`, a * b, `按位相乘再相加：${a}×${b}=${a * b}。`, true); }
+    if (f === 1) { const b = ri(2, 9), q = ri(101, 399); return q5('big', `${b * q}÷${b}`, q, `想：${b}×${q}=${b * q}，所以商是 ${q}。`, true); }
+    const a = ri(12, 48), b = ri(11, 29); return q5('big', `${a}×${b}`, a * b, `分步算：${a}×${b}=${a * b}。`, true); },
+  mix: (L) => { const a = ri(11, 49), b = ri(2, 9), c = ri(11, 59);
+    if (L === 1) return q5('mix', `${dd(a, 1)}+${dd(c, 1)}×${b}`, dd(a + c * b, 1), `先算乘法：${dd(c, 1)}×${b}=${dd(c * b, 1)}；再算加法，得 ${dd(a + c * b, 1)}。`);
+    if (L === 2) return q5('mix', `(${dd(a, 1)}+${dd(c, 1)})×${b}`, dd((a + c) * b, 1), `先算括号里的：${dd(a, 1)}+${dd(c, 1)}=${dd(a + c, 1)}；再乘 ${b}，得 ${dd((a + c) * b, 1)}。`);
+    const q = ri(3, 12), d = ri(2, 9); return q5('mix', `${dd(a * 10 + d * q, 1)}−${d}×${dd(q, 1)}×10`, dd(a * 10 + d * q - d * q * 10, 1), `先算乘法 ${d}×${dd(q, 1)}×10=${d * q}；再算减法，得 ${dd(a * 10 + d * q - d * q * 10, 1)}。`); },
+};
+export const T5 = [{ id: 'dmul', name: '小数乘法' }, { id: 'ddiv', name: '小数除法' }, { id: 'simp', name: '简便计算' }, { id: 'fac', name: '倍数与因数' }, { id: 'big', name: '多位数乘除' }, { id: 'mix', name: '含小数的混合运算' }];
+
 // ---------- 英语词汇 ----------
 const vocabQ = (kind, list) => {
   const w = pick(list), pool = shuf(list.filter(x => x.en !== w.en)).slice(0, 3);
@@ -437,6 +465,7 @@ import { CHAP4_TYPES } from './chapgen4.js';
 import { CHAP2_TYPES } from './chapgen2.js';
 import { CHAP1_TYPES } from './chapgen1.js';
 import { CHAP3_TYPES } from './chapgen3.js';
+import { CHAP5_TYPES } from './chapgen5.js';
 export const RANDOM = {
   chap1: { title: '一年级数学章节练习', icon: '📐', subject: 'chap1', types: CHAP1_TYPES, levels: ['简单', '适中', '挑战'] },
   math1: { title: '口算随机练习', icon: '🎲', subject: 'math1', types: T1, levels: ['简单', '适中', '挑战'], gen: (t, l) => G1[t](l) },
@@ -444,6 +473,10 @@ export const RANDOM = {
   math3: { title: '口算随机练习', icon: '🎲', subject: 'math3', types: T3, levels: ['简单', '适中', '挑战'], gen: (t, l) => G3[t](l) },
   vocab3: { title: '英语单词小测', icon: '🔤', subject: 'vocab3', types: TW, levels: null },
   sent3: { title: '英语句子小测', icon: '📝', subject: 'sent3', types: TS, levels: null },
+  chap5: { title: '五年级数学章节练习', icon: '📐', subject: 'chap5', types: CHAP5_TYPES, levels: ['简单', '适中', '挑战'] },
+  math5: { title: '口算随机练习', icon: '🎲', subject: 'math5', types: T5, levels: ['简单', '适中', '挑战'], gen: (t, l) => G5[t](l) },
+  vocab5: { title: '英语单词小测', icon: '🔤', subject: 'vocab5', types: TW, levels: null },
+  sent5: { title: '英语句子小测', icon: '📝', subject: 'sent5', types: TS, levels: null },
   chap2: { title: '二年级数学章节练习', icon: '📐', subject: 'chap2', types: CHAP2_TYPES, levels: ['简单', '适中', '挑战'] },
   math2: { title: '口算随机练习', icon: '🎲', subject: 'math2', types: T2, levels: ['简单', '适中', '挑战'], gen: (t, l) => G2[t](l) },
   cnw2: { title: '词语听写', icon: '✍️', subject: 'cnw', types: [], levels: null },

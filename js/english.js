@@ -13,6 +13,7 @@ export const ENG = {
   vocab4: { book: '4', content: 'word' }, phrase4: { book: '4', content: 'phrase' },
   sent4: { book: '4', content: 'sent' },
   vocab3: { book: '3', content: 'word' }, sent3: { book: '3', content: 'sent' },
+  vocab5: { book: '5', content: 'word' }, sent5: { book: '5', content: 'sent' },
 };
 export const isEng = (k) => !!ENG[k];
 

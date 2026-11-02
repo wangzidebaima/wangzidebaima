@@ -1,0 +1,1304 @@
+{
+"book": "五年级 英语",
+"units": [
+{
+"id": "U1",
+"name": "Unit 1 Different friends",
+"items": [
+{
+"id": "U1-1",
+"en": "team",
+"pos": "",
+"zh": "（游戏或运动的）队；（一起工作的）组，班",
+"zh1": "队；组",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-2",
+"en": "player",
+"pos": "",
+"zh": "运动员；参赛选手",
+"zh1": "运动员",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-3",
+"en": "him",
+"pos": "",
+"zh": "他",
+"zh1": "他",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-4",
+"en": "lovely",
+"pos": "",
+"zh": "美丽的；优美的",
+"zh1": "美丽的；可爱的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-5",
+"en": "clever",
+"pos": "",
+"zh": "聪明的；聪颖的",
+"zh1": "聪明的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-6",
+"en": "young",
+"pos": "",
+"zh": "幼小的；年轻的",
+"zh1": "年轻的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-7",
+"en": "hard-working",
+"pos": "",
+"zh": "工作努力的；辛勤的",
+"zh1": "工作努力的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-8",
+"en": "science",
+"pos": "",
+"zh": "科学；自然科学",
+"zh1": "科学",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-9",
+"en": "robot",
+"pos": "",
+"zh": "机器人",
+"zh1": "机器人",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-10",
+"en": "jump",
+"pos": "",
+"zh": "跳；跃",
+"zh1": "跳",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-11",
+"en": "rope",
+"pos": "",
+"zh": "绳；粗绳",
+"zh1": "绳子",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-12",
+"en": "piano",
+"pos": "",
+"zh": "钢琴",
+"zh1": "钢琴",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-13",
+"en": "chess",
+"pos": "",
+"zh": "国际象棋",
+"zh1": "国际象棋",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-14",
+"en": "front",
+"pos": "",
+"zh": "前部",
+"zh1": "前部",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-15",
+"en": "easy",
+"pos": "",
+"zh": "容易的；轻易的",
+"zh1": "容易的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-16",
+"en": "star",
+"pos": "",
+"zh": "歌唱（或表演）明星",
+"zh1": "明星",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-17",
+"en": "wonderful",
+"pos": "",
+"zh": "令人赞叹的；精彩的；绝妙的",
+"zh1": "精彩的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-18",
+"en": "Australia",
+"pos": "",
+"zh": "澳大利亚",
+"zh1": "澳大利亚",
+"bold": true,
+"kind": "word"
+}
+],
+"sentences": [
+{
+"id": "U1-s1",
+"en": "He is a clever player.",
+"zh": "他是一名聪明的运动员。"
+},
+{
+"id": "U1-s2",
+"en": "She is young and lovely.",
+"zh": "她年轻又可爱。"
+},
+{
+"id": "U1-s3",
+"en": "My friend is hard-working.",
+"zh": "我的朋友很勤奋。"
+},
+{
+"id": "U1-s4",
+"en": "He can play the piano.",
+"zh": "他会弹钢琴。"
+},
+{
+"id": "U1-s5",
+"en": "I can jump rope.",
+"zh": "我会跳绳。"
+},
+{
+"id": "U1-s6",
+"en": "She can play chess.",
+"zh": "她会下国际象棋。"
+}
+]
+},
+{
+"id": "U2",
+"name": "Unit 2 My feelings",
+"items": [
+{
+"id": "U2-1",
+"en": "sad",
+"pos": "",
+"zh": "悲哀的；难过的",
+"zh1": "悲哀的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-2",
+"en": "matter",
+"pos": "",
+"zh": "事情；问题",
+"zh1": "事情；问题",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-3",
+"en": "project",
+"pos": "",
+"zh": "项目；方案",
+"zh1": "项目",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-4",
+"en": "centre",
+"pos": "",
+"zh": "中心",
+"zh1": "中心",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-5",
+"en": "agree",
+"pos": "",
+"zh": "同意；赞成",
+"zh1": "同意",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-6",
+"en": "finish",
+"pos": "",
+"zh": "完成；做好",
+"zh1": "完成",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-7",
+"en": "worried",
+"pos": "",
+"zh": "担心的；担忧的",
+"zh1": "担心的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-8",
+"en": "both",
+"pos": "",
+"zh": "两者",
+"zh1": "两者",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-9",
+"en": "excited",
+"pos": "",
+"zh": "激动的；兴奋的",
+"zh1": "激动的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-10",
+"en": "wrong",
+"pos": "",
+"zh": "错误的",
+"zh1": "错误的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-11",
+"en": "angry",
+"pos": "",
+"zh": "愤怒的；生气的",
+"zh1": "愤怒的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-12",
+"en": "afraid",
+"pos": "",
+"zh": "担心；害怕",
+"zh1": "害怕；担心",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-13",
+"en": "parent",
+"pos": "",
+"zh": "父亲；母亲",
+"zh1": "父母",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-14",
+"en": "ask",
+"pos": "",
+"zh": "问；询问",
+"zh1": "问",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-15",
+"en": "laugh",
+"pos": "",
+"zh": "笑",
+"zh1": "笑",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-16",
+"en": "move",
+"pos": "",
+"zh": "搬家；移动",
+"zh1": "搬家；移动",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-17",
+"en": "yours",
+"pos": "",
+"zh": "您的（用于书信结尾的签名前）",
+"zh1": "您的（书信结尾）",
+"bold": true,
+"kind": "word"
+}
+],
+"sentences": [
+{
+"id": "U2-s1",
+"en": "I am sad today.",
+"zh": "我今天很难过。"
+},
+{
+"id": "U2-s2",
+"en": "What's the matter?",
+"zh": "怎么了？"
+},
+{
+"id": "U2-s3",
+"en": "I am worried about the test.",
+"zh": "我担心考试。"
+},
+{
+"id": "U2-s4",
+"en": "She is excited about the trip.",
+"zh": "她对旅行感到兴奋。"
+},
+{
+"id": "U2-s5",
+"en": "Don't be afraid.",
+"zh": "别害怕。"
+},
+{
+"id": "U2-s6",
+"en": "I agree with you.",
+"zh": "我同意你的看法。"
+}
+]
+},
+{
+"id": "U3",
+"name": "Unit 3 Work and play",
+"items": [
+{
+"id": "U3-1",
+"en": "Wednesday",
+"pos": "",
+"zh": "星期三",
+"zh1": "星期三",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-2",
+"en": "subject",
+"pos": "",
+"zh": "科目；学科",
+"zh1": "科目",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-3",
+"en": "Tuesday",
+"pos": "",
+"zh": "星期二",
+"zh1": "星期二",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-4",
+"en": "Friday",
+"pos": "",
+"zh": "星期五",
+"zh1": "星期五",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-5",
+"en": "because",
+"pos": "",
+"zh": "因为",
+"zh1": "因为",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-6",
+"en": "Monday",
+"pos": "",
+"zh": "星期一",
+"zh1": "星期一",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-7",
+"en": "Thursday",
+"pos": "",
+"zh": "星期四",
+"zh1": "星期四",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-8",
+"en": "start",
+"pos": "",
+"zh": "开始",
+"zh1": "开始",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-9",
+"en": "usually",
+"pos": "",
+"zh": "通常地；经常地",
+"zh1": "通常地",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-10",
+"en": "weekend",
+"pos": "",
+"zh": "周末",
+"zh1": "周末",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-11",
+"en": "sometimes",
+"pos": "",
+"zh": "有时；间或",
+"zh1": "有时",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-12",
+"en": "Saturday",
+"pos": "",
+"zh": "星期六",
+"zh1": "星期六",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-13",
+"en": "Sunday",
+"pos": "",
+"zh": "星期日",
+"zh1": "星期日",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-14",
+"en": "lesson",
+"pos": "",
+"zh": "课；一节课",
+"zh1": "课",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-15",
+"en": "evening",
+"pos": "",
+"zh": "晚上；傍晚",
+"zh1": "晚上",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-16",
+"en": "answer",
+"pos": "",
+"zh": "答复；回答",
+"zh1": "回答",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-17",
+"en": "ping-pong",
+"pos": "",
+"zh": "乒乓球",
+"zh1": "乒乓球",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-18",
+"en": "night",
+"pos": "",
+"zh": "夜；夜晚",
+"zh1": "夜晚",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-19",
+"en": "visit",
+"pos": "",
+"zh": "看望；拜访；参观",
+"zh1": "拜访；参观；看望",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-20",
+"en": "grandparent",
+"pos": "",
+"zh": "祖父；祖母；外祖父；外祖母",
+"zh1": "祖父母",
+"bold": true,
+"kind": "word"
+}
+],
+"sentences": [
+{
+"id": "U3-s1",
+"en": "My favourite subject is science.",
+"zh": "我最喜欢的科目是科学。"
+},
+{
+"id": "U3-s2",
+"en": "We usually play ping-pong on Friday.",
+"zh": "我们周五通常打乒乓球。"
+},
+{
+"id": "U3-s3",
+"en": "I visit my grandparents on Sunday.",
+"zh": "我周日去看望祖父母。"
+},
+{
+"id": "U3-s4",
+"en": "I like Friday because it is before the weekend.",
+"zh": "我喜欢星期五，因为它在周末之前。"
+},
+{
+"id": "U3-s5",
+"en": "Sometimes I read in the evening.",
+"zh": "有时我在晚上读书。"
+},
+{
+"id": "U3-s6",
+"en": "School starts on Monday.",
+"zh": "学校星期一开学。"
+}
+]
+},
+{
+"id": "U4",
+"name": "Unit 4 Healthy habits",
+"items": [
+{
+"id": "U4-1",
+"en": "stay",
+"pos": "",
+"zh": "待；保持；继续是",
+"zh1": "待；保持",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-2",
+"en": "should",
+"pos": "",
+"zh": "（提出或征询建议）该，可以",
+"zh1": "应该",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-3",
+"en": "flu",
+"pos": "",
+"zh": "流行性感冒；流感",
+"zh1": "流感",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-4",
+"en": "else",
+"pos": "",
+"zh": "其他的；别的",
+"zh1": "其他的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-5",
+"en": "exercise",
+"pos": "",
+"zh": "锻炼；训练；操练",
+"zh1": "锻炼",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-6",
+"en": "enough",
+"pos": "",
+"zh": "足够的；充足的；充分的",
+"zh1": "足够的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-7",
+"en": "if",
+"pos": "",
+"zh": "如果；假若；倘若",
+"zh1": "如果",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-8",
+"en": "habit",
+"pos": "",
+"zh": "习惯",
+"zh1": "习惯",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-9",
+"en": "house",
+"pos": "",
+"zh": "房子",
+"zh1": "房子",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-10",
+"en": "show",
+"pos": "",
+"zh": "（电视或广播）节目",
+"zh1": "节目",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-11",
+"en": "phone",
+"pos": "",
+"zh": "电话；电话机",
+"zh1": "电话",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-12",
+"en": "then",
+"pos": "",
+"zh": "那么；因此；既然如此",
+"zh1": "那么",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-13",
+"en": "rest",
+"pos": "",
+"zh": "休息；放松",
+"zh1": "休息",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-14",
+"en": "take care of",
+"pos": "",
+"zh": "爱护；照顾",
+"zh1": "爱护",
+"bold": true,
+"kind": "phrase"
+},
+{
+"id": "U4-15",
+"en": "check",
+"pos": "",
+"zh": "查看；查明",
+"zh1": "查看",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-16",
+"en": "less",
+"pos": "",
+"zh": "（与不可数名词连用）较少的，更少的",
+"zh1": "较少的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-17",
+"en": "brush",
+"pos": "",
+"zh": "（用刷子）刷净，刷亮，刷平顺",
+"zh1": "刷",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-18",
+"en": "tooth",
+"pos": "",
+"zh": "（复数 teeth /tiːθ/）牙；齿",
+"zh1": "牙",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-19",
+"en": "twice",
+"pos": "",
+"zh": "两次；两遍",
+"zh1": "两次",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-20",
+"en": "hour",
+"pos": "",
+"zh": "小时",
+"zh1": "小时",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-21",
+"en": "free",
+"pos": "",
+"zh": "没有安排活动的；空闲的",
+"zh1": "空闲的",
+"bold": true,
+"kind": "word"
+}
+],
+"sentences": [
+{
+"id": "U4-s1",
+"en": "You should brush your teeth twice a day.",
+"zh": "你应该一天刷两次牙。"
+},
+{
+"id": "U4-s2",
+"en": "I should take enough rest.",
+"zh": "我应该多休息。"
+},
+{
+"id": "U4-s3",
+"en": "If you have the flu, you should stay at home.",
+"zh": "如果你得了流感，应该待在家里。"
+},
+{
+"id": "U4-s4",
+"en": "Do some exercise every day.",
+"zh": "每天做些运动。"
+},
+{
+"id": "U4-s5",
+"en": "I have less free time.",
+"zh": "我的空闲时间变少了。"
+},
+{
+"id": "U4-s6",
+"en": "Take care of yourself.",
+"zh": "照顾好自己。"
+}
+]
+},
+{
+"id": "U5",
+"name": "Unit 5 Food we eat",
+"items": [
+{
+"id": "U5-1",
+"en": "hungry",
+"pos": "",
+"zh": "感到饿的",
+"zh1": "感到饿的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-2",
+"en": "beef",
+"pos": "",
+"zh": "牛肉",
+"zh1": "牛肉",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-3",
+"en": "ice cream",
+"pos": "",
+"zh": "（一份）冰激凌",
+"zh1": "冰激凌",
+"bold": true,
+"kind": "phrase"
+},
+{
+"id": "U5-4",
+"en": "little",
+"pos": "",
+"zh": "少许；一点",
+"zh1": "少许；一点",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-5",
+"en": "dumpling",
+"pos": "",
+"zh": "饺子；汤圆",
+"zh1": "饺子",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-6",
+"en": "tea",
+"pos": "",
+"zh": "茶叶；茶；茶水",
+"zh1": "茶",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-7",
+"en": "hamburger",
+"pos": "",
+"zh": "汉堡包；汉堡牛肉饼",
+"zh1": "汉堡包",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-8",
+"en": "Mrs",
+"pos": "",
+"zh": "（用于女子的姓氏或姓名前）太太，夫人",
+"zh1": "太太；夫人",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-9",
+"en": "coconut",
+"pos": "",
+"zh": "椰子",
+"zh1": "椰子",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-10",
+"en": "interesting",
+"pos": "",
+"zh": "有趣的；有吸引力的",
+"zh1": "有趣的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-11",
+"en": "seed",
+"pos": "",
+"zh": "种子；籽",
+"zh1": "种子",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-12",
+"en": "pull",
+"pos": "",
+"zh": "拔出；抽出",
+"zh1": "拔出",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-13",
+"en": "stem",
+"pos": "",
+"zh": "（花草的）茎；（花或叶的）梗，柄",
+"zh1": "茎",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-14",
+"en": "root",
+"pos": "",
+"zh": "根；根茎",
+"zh1": "根",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-15",
+"en": "lotus",
+"pos": "",
+"zh": "莲属植物",
+"zh1": "莲花",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-16",
+"en": "lake",
+"pos": "",
+"zh": "湖；湖泊",
+"zh1": "湖",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-17",
+"en": "world",
+"pos": "",
+"zh": "世界；地球；天下",
+"zh1": "世界",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-18",
+"en": "round",
+"pos": "",
+"zh": "圆形的；环形的；球形的",
+"zh1": "圆形的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-19",
+"en": "different",
+"pos": "",
+"zh": "不同的；有区别的；有差异的",
+"zh1": "不同的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-20",
+"en": "way",
+"pos": "",
+"zh": "方法；手段；途径；方式",
+"zh1": "方法",
+"bold": true,
+"kind": "word"
+}
+],
+"sentences": [
+{
+"id": "U5-s1",
+"en": "I am hungry.",
+"zh": "我饿了。"
+},
+{
+"id": "U5-s2",
+"en": "I like beef and dumplings.",
+"zh": "我喜欢牛肉和饺子。"
+},
+{
+"id": "U5-s3",
+"en": "She wants an ice cream.",
+"zh": "她想要一个冰激凌。"
+},
+{
+"id": "U5-s4",
+"en": "The hamburger is big.",
+"zh": "汉堡很大。"
+},
+{
+"id": "U5-s5",
+"en": "The lotus is in the lake.",
+"zh": "莲花在湖里。"
+},
+{
+"id": "U5-s6",
+"en": "Coconuts are round.",
+"zh": "椰子是圆的。"
+}
+]
+},
+{
+"id": "U6",
+"name": "Unit 6 Nature and us",
+"items": [
+{
+"id": "U6-1",
+"en": "river",
+"pos": "",
+"zh": "河；江",
+"zh1": "河",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-2",
+"en": "nature",
+"pos": "",
+"zh": "自然界；大自然",
+"zh1": "自然界",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-3",
+"en": "waterfall",
+"pos": "",
+"zh": "瀑布",
+"zh1": "瀑布",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-4",
+"en": "forest",
+"pos": "",
+"zh": "森林；林区",
+"zh1": "森林",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-5",
+"en": "famous",
+"pos": "",
+"zh": "著名的；出名的",
+"zh1": "著名的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-6",
+"en": "mountain",
+"pos": "",
+"zh": "高山；山岳",
+"zh1": "高山",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-7",
+"en": "wind",
+"pos": "",
+"zh": "风；气流",
+"zh1": "风",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-8",
+"en": "trip",
+"pos": "",
+"zh": "（尤指短程往返的）旅行，旅游，出行",
+"zh1": "旅行",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-9",
+"en": "dangerous",
+"pos": "",
+"zh": "有危险的；不安全的",
+"zh1": "有危险的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-10",
+"en": "heavy",
+"pos": "",
+"zh": "程度大的；严重的",
+"zh1": "严重的；大的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-11",
+"en": "hotel",
+"pos": "",
+"zh": "旅馆；旅社",
+"zh1": "旅馆",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-12",
+"en": "close",
+"pos": "",
+"zh": "关；关闭；闭上",
+"zh1": "关闭",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-13",
+"en": "umbrella",
+"pos": "",
+"zh": "伞；雨伞",
+"zh1": "伞",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-14",
+"en": "raincoat",
+"pos": "",
+"zh": "雨衣",
+"zh1": "雨衣",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-15",
+"en": "worry",
+"pos": "",
+"zh": "担心；担忧；发愁",
+"zh1": "担心",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-16",
+"en": "fine",
+"pos": "",
+"zh": "晴朗的",
+"zh1": "晴朗的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-17",
+"en": "fog",
+"pos": "",
+"zh": "雾",
+"zh1": "雾",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-18",
+"en": "flood",
+"pos": "",
+"zh": "洪水；水灾",
+"zh1": "洪水",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-19",
+"en": "fire",
+"pos": "",
+"zh": "火；火灾",
+"zh1": "火；火灾",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-20",
+"en": "know",
+"pos": "",
+"zh": "知道；了解",
+"zh1": "知道",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-21",
+"en": "before",
+"pos": "",
+"zh": "在……之前",
+"zh1": "在……之前",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-22",
+"en": "go hiking",
+"pos": "",
+"zh": "徒步旅行",
+"zh1": "徒步旅行",
+"bold": true,
+"kind": "phrase"
+},
+{
+"id": "U6-23",
+"en": "bring",
+"pos": "",
+"zh": "带……到某处；带来；取来",
+"zh1": "带……到某处",
+"bold": true,
+"kind": "word"
+}
+],
+"sentences": [
+{
+"id": "U6-s1",
+"en": "The mountain is famous.",
+"zh": "这座山很有名。"
+},
+{
+"id": "U6-s2",
+"en": "It is dangerous to swim in the river.",
+"zh": "在河里游泳很危险。"
+},
+{
+"id": "U6-s3",
+"en": "Bring an umbrella and a raincoat.",
+"zh": "带上雨伞和雨衣。"
+},
+{
+"id": "U6-s4",
+"en": "Don't worry. It is fine today.",
+"zh": "别担心，今天天气晴朗。"
+},
+{
+"id": "U6-s5",
+"en": "There is a waterfall in the forest.",
+"zh": "森林里有一座瀑布。"
+},
+{
+"id": "U6-s6",
+"en": "We go hiking on the trip.",
+"zh": "我们旅行时去徒步。"
+}
+]
+}
+]
+}

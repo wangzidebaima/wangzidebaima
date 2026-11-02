@@ -385,14 +385,36 @@
     "g5sci"
    ],
    "random": [
-    "cnw5"
+    "math5",
+    "chap5",
+    "cnw5",
+    "vocab5",
+    "sent5"
    ],
    "tasks": [
+    {
+     "label": "数学随机练习 10 题",
+     "kind": "rand",
+     "subs": [
+      "math5",
+      "chap5"
+     ],
+     "goal": 10
+    },
     {
      "label": "词语听写 10 个",
      "kind": "rand",
      "subs": [
       "cnw5"
+     ],
+     "goal": 10
+    },
+    {
+     "label": "英语单词或句子小测 10 题",
+     "kind": "rand",
+     "subs": [
+      "vocab5",
+      "sent5"
      ],
      "goal": 10
     },
