@@ -6582,7 +6582,7 @@
      "title": "第三单元·课文小测",
      "subtitle": "有目的地阅读 / 竹节人 / 宇宙生命之谜 / 故宫博物院",
      "kind": "cn",
-     "count": 10,
+     "count": 16,
      "unit": "L3"
     },
     {
@@ -6609,7 +6609,7 @@
      "title": "第六单元·课文小测",
      "subtitle": "只有一个地球 / 古诗三首（浪淘沙 / 江南春 / 书湖阴先生壁）/ 青山不老 / 三黑和土地",
      "kind": "cn",
-     "count": 10,
+     "count": 16,
      "unit": "L6"
     },
     {
@@ -6618,7 +6618,7 @@
      "title": "第七单元·课文小测",
      "subtitle": "文言文二则（伯牙鼓琴 / 书戴嵩画牛）/ 表里的生物 / 他们那时多有趣",
      "kind": "cn",
-     "count": 10,
+     "count": 16,
      "unit": "L7"
     },
     {
@@ -6827,6 +6827,60 @@
      "kind": "essay",
      "count": 5,
      "unit": "E"
+    },
+    {
+     "id": "g6c-sjd-a",
+     "file": "sets/g6c-sjd-a.json",
+     "title": "《宿建德江》理解",
+     "subtitle": "孟浩然 · 古诗词",
+     "kind": "cn",
+     "count": 7,
+     "unit": "L1"
+    },
+    {
+     "id": "g6c-sjd-b",
+     "file": "sets/g6c-sjd-b.json",
+     "title": "《宿建德江》默写",
+     "subtitle": "先背一背，再默写（不显示原诗）",
+     "kind": "cn",
+     "count": 4,
+     "unit": "L1"
+    },
+    {
+     "id": "g6c-wlx-a",
+     "file": "sets/g6c-wlx-a.json",
+     "title": "《六月二十七日望湖楼醉书》理解",
+     "subtitle": "苏轼 · 古诗词",
+     "kind": "cn",
+     "count": 7,
+     "unit": "L1"
+    },
+    {
+     "id": "g6c-wlx-b",
+     "file": "sets/g6c-wlx-b.json",
+     "title": "《六月二十七日望湖楼醉书》默写",
+     "subtitle": "先背一背，再默写（不显示原诗）",
+     "kind": "cn",
+     "count": 4,
+     "unit": "L1"
+    },
+    {
+     "id": "g6c-xjy-a",
+     "file": "sets/g6c-xjy-a.json",
+     "title": "《西江月·夜行黄沙道中》理解",
+     "subtitle": "辛弃疾 · 古诗词",
+     "kind": "cn",
+     "count": 7,
+     "unit": "L1"
+    },
+    {
+     "id": "g6c-xjy-b",
+     "file": "sets/g6c-xjy-b.json",
+     "title": "《西江月·夜行黄沙道中》默写",
+     "subtitle": "先背一背，再默写（不显示原诗）",
+     "kind": "cn",
+     "count": 8,
+     "unit": "L1"
     },
     {
      "id": "g6c-cz-a",
