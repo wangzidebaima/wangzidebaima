@@ -1,0 +1,1529 @@
+{
+"book": "六年级 英语",
+"units": [
+{
+"id": "U1",
+"name": "Unit 1 Amazing places",
+"items": [
+{
+"id": "U1-1",
+"en": "was",
+"pos": "",
+"zh": "是；在（am, is 的过去式）",
+"zh1": "是；在（过去式）",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-2",
+"en": "climb",
+"pos": "",
+"zh": "攀登；爬",
+"zh1": "攀登",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-3",
+"en": "kilometre",
+"pos": "",
+"zh": "千米；公里（=km）",
+"zh1": "千米",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-4",
+"en": "gingerbread house",
+"pos": "",
+"zh": "姜饼屋",
+"zh1": "姜饼屋",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U1-5",
+"en": "send",
+"pos": "",
+"zh": "邮寄；发送",
+"zh1": "邮寄",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-6",
+"en": "go",
+"pos": "",
+"zh": "去；走（过去式 went /went/）",
+"zh1": "去",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-7",
+"en": "thousand",
+"pos": "",
+"zh": "一千",
+"zh1": "一千",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-8",
+"en": "clay",
+"pos": "",
+"zh": "黏土；陶土",
+"zh1": "黏土",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-9",
+"en": "see",
+"pos": "",
+"zh": "看见（过去式 saw /sɔː/）",
+"zh1": "看见",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-10",
+"en": "village",
+"pos": "",
+"zh": "村庄；村镇",
+"zh1": "村庄",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-11",
+"en": "eat",
+"pos": "",
+"zh": "吃（过去式 ate /eɪt/）",
+"zh1": "吃",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-12",
+"en": "dry",
+"pos": "",
+"zh": "干的",
+"zh1": "干的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-13",
+"en": "take",
+"pos": "",
+"zh": "做（某个动作）；拿；带",
+"zh1": "做；拿",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-14",
+"en": "view",
+"pos": "",
+"zh": "景色",
+"zh1": "景色",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-15",
+"en": "inspiring",
+"pos": "",
+"zh": "鼓舞人心的",
+"zh1": "鼓舞人心的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-16",
+"en": "bamboo",
+"pos": "",
+"zh": "竹；竹子",
+"zh1": "竹",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-17",
+"en": "pumpkin",
+"pos": "",
+"zh": "南瓜",
+"zh1": "南瓜",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-18",
+"en": "restaurant",
+"pos": "",
+"zh": "餐馆；餐厅",
+"zh1": "餐馆",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-19",
+"en": "airport",
+"pos": "",
+"zh": "机场",
+"zh1": "机场",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-20",
+"en": "New Zealand",
+"pos": "",
+"zh": "新西兰",
+"zh1": "新西兰",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U1-21",
+"en": "Hong Kong-Zhuhai-Macao Bridge",
+"pos": "",
+"zh": "港珠澳大桥",
+"zh1": "港珠澳大桥",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U1-22",
+"en": "Paris",
+"pos": "",
+"zh": "巴黎",
+"zh1": "巴黎",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U1-23",
+"en": "Eiffel Tower",
+"pos": "",
+"zh": "埃菲尔铁塔",
+"zh1": "埃菲尔铁塔",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U1-24",
+"en": "Terracotta Warriors",
+"pos": "",
+"zh": "兵马俑",
+"zh1": "兵马俑",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U1-25",
+"en": "Jinggangshan Revolution Museum",
+"pos": "",
+"zh": "井冈山革命博物馆",
+"zh1": "井冈山革命博物馆",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U1-26",
+"en": "the Red Army",
+"pos": "",
+"zh": "红军",
+"zh1": "红军",
+"bold": false,
+"kind": "word"
+}
+],
+"sentences": [
+{
+"id": "U1-s1",
+"en": "We went to the village by bus yesterday.",
+"zh": "我们昨天坐公共汽车去了那个村庄。"
+},
+{
+"id": "U1-s2",
+"en": "The view from the mountain was inspiring.",
+"zh": "从山上看到的景色令人鼓舞。"
+},
+{
+"id": "U1-s3",
+"en": "It is about one thousand kilometres from Xi'an to the airport.",
+"zh": "从西安到机场大约一千公里。"
+},
+{
+"id": "U1-s4",
+"en": "He took a photo of the Eiffel Tower in Paris.",
+"zh": "他在巴黎拍了一张埃菲尔铁塔的照片。"
+},
+{
+"id": "U1-s5",
+"en": "We saw the Terracotta Warriors and ate dinner in a restaurant.",
+"zh": "我们参观了兵马俑，还在一家餐馆吃了晚饭。"
+},
+{
+"id": "U1-s6",
+"en": "The Hong Kong-Zhuhai-Macao Bridge was very long.",
+"zh": "港珠澳大桥非常长。"
+}
+]
+},
+{
+"id": "U2",
+"name": "Unit 2 Getting together",
+"items": [
+{
+"id": "U2-1",
+"en": "paste",
+"pos": "",
+"zh": "粘贴",
+"zh1": "粘贴",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-2",
+"en": "dress",
+"pos": "",
+"zh": "穿衣服",
+"zh1": "穿衣服",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-3",
+"en": "gala",
+"pos": "",
+"zh": "演出；庆典",
+"zh1": "演出",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-4",
+"en": "count down",
+"pos": "",
+"zh": "倒计时",
+"zh1": "倒计时",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-5",
+"en": "marathon",
+"pos": "",
+"zh": "马拉松赛跑",
+"zh1": "马拉松赛跑",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-6",
+"en": "as",
+"pos": "",
+"zh": "作为；当……时",
+"zh1": "作为",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-7",
+"en": "race",
+"pos": "",
+"zh": "赛跑；速度竞赛",
+"zh1": "赛跑",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-8",
+"en": "run",
+"pos": "",
+"zh": "跑；奔跑（过去式 ran /ræn/）",
+"zh1": "跑",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-9",
+"en": "cheer",
+"pos": "",
+"zh": "欢呼；加油",
+"zh1": "欢呼",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-10",
+"en": "book fair",
+"pos": "",
+"zh": "书市",
+"zh1": "书市",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-11",
+"en": "writer",
+"pos": "",
+"zh": "作家；作者",
+"zh1": "作家",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-12",
+"en": "read",
+"pos": "",
+"zh": "阅读（过去式 read /red/）",
+"zh1": "阅读",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-13",
+"en": "make",
+"pos": "",
+"zh": "做；使出现（过去式 made /meɪd/）",
+"zh1": "做",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-14",
+"en": "sing",
+"pos": "",
+"zh": "唱（歌）；演唱（过去式 sang /sæŋ/）",
+"zh1": "唱（歌）",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-15",
+"en": "wear",
+"pos": "",
+"zh": "穿；戴（过去式 wore /wɔː(r)/）",
+"zh1": "穿",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-16",
+"en": "yesterday",
+"pos": "",
+"zh": "昨天",
+"zh1": "昨天",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-17",
+"en": "notice",
+"pos": "",
+"zh": "通知",
+"zh1": "通知",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-18",
+"en": "wake",
+"pos": "",
+"zh": "醒；醒来（过去式 woke /wəʊk/）",
+"zh1": "醒",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-19",
+"en": "later",
+"pos": "",
+"zh": "随后；后来",
+"zh1": "随后",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-20",
+"en": "judge",
+"pos": "",
+"zh": "裁判",
+"zh1": "裁判",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-21",
+"en": "begin",
+"pos": "",
+"zh": "开始（过去式 began /bɪˈɡæn/）",
+"zh1": "开始",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-22",
+"en": "win",
+"pos": "",
+"zh": "获胜（过去式 won /wʌn/）",
+"zh1": "获胜",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-23",
+"en": "winner",
+"pos": "",
+"zh": "获胜的人（或队）；成功者",
+"zh1": "获胜的人（或队）",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-24",
+"en": "ever",
+"pos": "",
+"zh": "曾经；以往任何时候",
+"zh1": "曾经",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-25",
+"en": "exciting",
+"pos": "",
+"zh": "令人激动的",
+"zh1": "令人激动的",
+"bold": true,
+"kind": "word"
+}
+],
+"sentences": [
+{
+"id": "U2-s1",
+"en": "Our class had a gala yesterday.",
+"zh": "我们班昨天举办了一场演出。"
+},
+{
+"id": "U2-s2",
+"en": "The runners ran the marathon and the crowd cheered.",
+"zh": "选手们跑完了马拉松，人群在欢呼。"
+},
+{
+"id": "U2-s3",
+"en": "She wore a red dress and sang a song.",
+"zh": "她穿了一条红裙子，还唱了一首歌。"
+},
+{
+"id": "U2-s4",
+"en": "The judge woke up early and read the notice.",
+"zh": "裁判早早醒来，读了通知。"
+},
+{
+"id": "U2-s5",
+"en": "Who won the race later?",
+"zh": "后来是谁赢得了比赛？"
+},
+{
+"id": "U2-s6",
+"en": "It was the most exciting book fair ever.",
+"zh": "那是有史以来最令人激动的一次书市。"
+}
+]
+},
+{
+"id": "U3",
+"name": "Unit 3 Healthy life",
+"items": [
+{
+"id": "U3-1",
+"en": "cold",
+"pos": "",
+"zh": "感冒；冷的",
+"zh1": "感冒；冷的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-2",
+"en": "ill",
+"pos": "",
+"zh": "不舒服；生病的",
+"zh1": "不舒服",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-3",
+"en": "head",
+"pos": "",
+"zh": "头；头部",
+"zh1": "头",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-4",
+"en": "runny nose",
+"pos": "",
+"zh": "流鼻涕",
+"zh1": "流鼻涕",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-5",
+"en": "soon",
+"pos": "",
+"zh": "很快；马上",
+"zh1": "很快",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-6",
+"en": "fever",
+"pos": "",
+"zh": "发烧；发热",
+"zh1": "发烧",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-7",
+"en": "cough",
+"pos": "",
+"zh": "咳嗽",
+"zh1": "咳嗽",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-8",
+"en": "discuss",
+"pos": "",
+"zh": "讨论；商量",
+"zh1": "讨论",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-9",
+"en": "diet",
+"pos": "",
+"zh": "日常饮食",
+"zh1": "日常饮食",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-10",
+"en": "stay up",
+"pos": "",
+"zh": "熬夜",
+"zh1": "熬夜",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-11",
+"en": "cry",
+"pos": "",
+"zh": "哭；哭泣",
+"zh1": "哭",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-12",
+"en": "another",
+"pos": "",
+"zh": "另一；不同的",
+"zh1": "另一个",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-13",
+"en": "call",
+"pos": "",
+"zh": "打电话（给……）",
+"zh1": "打电话",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-14",
+"en": "email",
+"pos": "",
+"zh": "电子邮件",
+"zh1": "电子邮件",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-15",
+"en": "unhappy",
+"pos": "",
+"zh": "不快乐的；难过的",
+"zh1": "不快乐的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-16",
+"en": "glass",
+"pos": "",
+"zh": "一杯（的量）；玻璃",
+"zh1": "玻璃；一杯",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-17",
+"en": "may",
+"pos": "",
+"zh": "也许；可能",
+"zh1": "也许；可能",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-18",
+"en": "add",
+"pos": "",
+"zh": "补充说；增加",
+"zh1": "增加；补充说",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-19",
+"en": "video",
+"pos": "",
+"zh": "视频；录像",
+"zh1": "视频",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-20",
+"en": "better",
+"pos": "",
+"zh": "舒畅些的；（病势）好转的",
+"zh1": "好转的；更好的",
+"bold": true,
+"kind": "word"
+}
+],
+"sentences": [
+{
+"id": "U3-s1",
+"en": "I had a cold and a runny nose yesterday.",
+"zh": "我昨天感冒了，还流鼻涕。"
+},
+{
+"id": "U3-s2",
+"en": "He felt ill and had a fever.",
+"zh": "他觉得不舒服，还发烧了。"
+},
+{
+"id": "U3-s3",
+"en": "You will be better soon.",
+"zh": "你很快就会好起来的。"
+},
+{
+"id": "U3-s4",
+"en": "Don't stay up late, or you may feel unhappy.",
+"zh": "别熬夜，否则你可能会不开心。"
+},
+{
+"id": "U3-s5",
+"en": "My mother called the doctor and they discussed my diet.",
+"zh": "妈妈给医生打了电话，他们讨论了我的饮食。"
+},
+{
+"id": "U3-s6",
+"en": "He drank a glass of water and watched a video.",
+"zh": "他喝了一杯水，还看了一个视频。"
+}
+]
+},
+{
+"id": "U4",
+"name": "Unit 4 Managing money well",
+"items": [
+{
+"id": "U4-1",
+"en": "money",
+"pos": "",
+"zh": "钱",
+"zh1": "钱",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-2",
+"en": "pocket money",
+"pos": "",
+"zh": "零花钱",
+"zh1": "零花钱",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-3",
+"en": "schoolbag",
+"pos": "",
+"zh": "书包",
+"zh1": "书包",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-4",
+"en": "goods",
+"pos": "",
+"zh": "商品",
+"zh1": "商品",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-5",
+"en": "drink",
+"pos": "",
+"zh": "饮料",
+"zh1": "饮料",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-6",
+"en": "service",
+"pos": "",
+"zh": "服务",
+"zh1": "服务",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-7",
+"en": "haircut",
+"pos": "",
+"zh": "理发；发型",
+"zh1": "理发",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-8",
+"en": "microscope",
+"pos": "",
+"zh": "显微镜",
+"zh1": "显微镜",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-9",
+"en": "lucky",
+"pos": "",
+"zh": "幸运的",
+"zh1": "幸运的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-10",
+"en": "half",
+"pos": "",
+"zh": "一半",
+"zh1": "一半",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-11",
+"en": "save up",
+"pos": "",
+"zh": "攒钱",
+"zh1": "攒钱",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-12",
+"en": "sale",
+"pos": "",
+"zh": "特价销售；出售",
+"zh1": "特价销售",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-13",
+"en": "ticket",
+"pos": "",
+"zh": "票",
+"zh1": "票",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-14",
+"en": "manage",
+"pos": "",
+"zh": "管理",
+"zh1": "管理",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-15",
+"en": "sell",
+"pos": "",
+"zh": "出售；售卖",
+"zh1": "出售",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-16",
+"en": "jar",
+"pos": "",
+"zh": "罐子",
+"zh1": "罐子",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-17",
+"en": "for example",
+"pos": "",
+"zh": "例如",
+"zh1": "例如",
+"bold": true,
+"kind": "word"
+}
+],
+"sentences": [
+{
+"id": "U4-s1",
+"en": "I saved up my pocket money to buy a microscope.",
+"zh": "我攒零花钱买了一台显微镜。"
+},
+{
+"id": "U4-s2",
+"en": "The shop is having a sale on schoolbags.",
+"zh": "这家店正在特价出售书包。"
+},
+{
+"id": "U4-s3",
+"en": "A ticket costs half the price today.",
+"zh": "今天票价只要一半。"
+},
+{
+"id": "U4-s4",
+"en": "She sells drinks and offers a haircut service.",
+"zh": "她卖饮料，还提供理发服务。"
+},
+{
+"id": "U4-s5",
+"en": "I keep my money in a jar.",
+"zh": "我把钱放在一个罐子里。"
+},
+{
+"id": "U4-s6",
+"en": "We should manage our money well, for example, save some every week.",
+"zh": "我们应该管好自己的钱，例如每周存一点。"
+}
+]
+},
+{
+"id": "U5",
+"name": "Unit 5 Exploring space",
+"items": [
+{
+"id": "U5-1",
+"en": "planet",
+"pos": "",
+"zh": "行星",
+"zh1": "行星",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-2",
+"en": "earth",
+"pos": "",
+"zh": "地球",
+"zh1": "地球",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-3",
+"en": "sky",
+"pos": "",
+"zh": "天；天空",
+"zh1": "天",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-4",
+"en": "daytime",
+"pos": "",
+"zh": "白天",
+"zh1": "白天",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-5",
+"en": "cloud",
+"pos": "",
+"zh": "云",
+"zh1": "云",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-6",
+"en": "moon",
+"pos": "",
+"zh": "月球；月亮；卫星",
+"zh1": "月亮；月球",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-7",
+"en": "star",
+"pos": "",
+"zh": "恒星；星",
+"zh1": "星星；恒星",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-8",
+"en": "space",
+"pos": "",
+"zh": "太空；空间",
+"zh1": "太空",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-9",
+"en": "outer space",
+"pos": "",
+"zh": "外太空",
+"zh1": "外太空",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-10",
+"en": "space station",
+"pos": "",
+"zh": "空间站",
+"zh1": "空间站",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-11",
+"en": "ocean",
+"pos": "",
+"zh": "大海；海洋",
+"zh1": "大海",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-12",
+"en": "marble",
+"pos": "",
+"zh": "弹子（玻璃）",
+"zh1": "弹子",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-13",
+"en": "satellite",
+"pos": "",
+"zh": "人造卫星",
+"zh1": "人造卫星",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-14",
+"en": "soil",
+"pos": "",
+"zh": "土壤",
+"zh1": "土壤",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-15",
+"en": "alien",
+"pos": "",
+"zh": "外星生物",
+"zh1": "外星生物",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-16",
+"en": "sunrise",
+"pos": "",
+"zh": "日出",
+"zh1": "日出",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-17",
+"en": "rover",
+"pos": "",
+"zh": "探测器",
+"zh1": "探测器",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-18",
+"en": "into",
+"pos": "",
+"zh": "朝；进入",
+"zh1": "朝",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-19",
+"en": "telescope",
+"pos": "",
+"zh": "望远镜",
+"zh1": "望远镜",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-20",
+"en": "astronaut",
+"pos": "",
+"zh": "航天员；宇航员",
+"zh1": "航天员",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-21",
+"en": "spaceship",
+"pos": "",
+"zh": "宇宙飞船",
+"zh1": "宇宙飞船",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-22",
+"en": "month",
+"pos": "",
+"zh": "月；月份",
+"zh1": "月份",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-23",
+"en": "taikonaut",
+"pos": "",
+"zh": "中国航天员",
+"zh1": "中国航天员",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U5-24",
+"en": "cloth",
+"pos": "",
+"zh": "布；织物（一块）",
+"zh1": "布",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-25",
+"en": "toothpaste",
+"pos": "",
+"zh": "牙膏",
+"zh1": "牙膏",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-26",
+"en": "question",
+"pos": "",
+"zh": "问题",
+"zh1": "问题",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-27",
+"en": "sunset",
+"pos": "",
+"zh": "日落",
+"zh1": "日落",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-28",
+"en": "time",
+"pos": "",
+"zh": "次；回；时间",
+"zh1": "次；时间",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-29",
+"en": "Mars",
+"pos": "",
+"zh": "火星",
+"zh1": "火星",
+"bold": false,
+"kind": "word"
+}
+],
+"sentences": [
+{
+"id": "U5-s1",
+"en": "The Earth is a planet in outer space.",
+"zh": "地球是外太空中的一颗行星。"
+},
+{
+"id": "U5-s2",
+"en": "We can see clouds in the sky in the daytime.",
+"zh": "白天我们能在天空中看到云。"
+},
+{
+"id": "U5-s3",
+"en": "The astronaut lives in the space station.",
+"zh": "航天员住在空间站里。"
+},
+{
+"id": "U5-s4",
+"en": "A taikonaut flew into space in a spaceship.",
+"zh": "一名中国航天员乘宇宙飞船飞入太空。"
+},
+{
+"id": "U5-s5",
+"en": "The rover on Mars collected some soil.",
+"zh": "火星上的探测器采集了一些土壤。"
+},
+{
+"id": "U5-s6",
+"en": "I looked at the moon and stars through a telescope.",
+"zh": "我用望远镜看月亮和星星。"
+}
+]
+},
+{
+"id": "U6",
+"name": "Unit 6 Energy, nature and us",
+"items": [
+{
+"id": "U6-1",
+"en": "power",
+"pos": "",
+"zh": "能；能量；力量",
+"zh1": "能量",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-2",
+"en": "electricity",
+"pos": "",
+"zh": "电",
+"zh1": "电",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-3",
+"en": "solar",
+"pos": "",
+"zh": "太阳的",
+"zh1": "太阳的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-4",
+"en": "type",
+"pos": "",
+"zh": "类型；种类",
+"zh1": "类型；种类",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-5",
+"en": "energy",
+"pos": "",
+"zh": "能源",
+"zh1": "能源",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-6",
+"en": "light",
+"pos": "",
+"zh": "照亮；灯；光",
+"zh1": "照亮；光",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-7",
+"en": "heat",
+"pos": "",
+"zh": "加热；（使）变暖；热量",
+"zh1": "加热；热量",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-8",
+"en": "cool",
+"pos": "",
+"zh": "（使）变凉；冷却",
+"zh1": "冷却；凉",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-9",
+"en": "run",
+"pos": "",
+"zh": "运转（使）",
+"zh1": "运转",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-10",
+"en": "resource",
+"pos": "",
+"zh": "资源",
+"zh1": "资源",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-11",
+"en": "run out",
+"pos": "",
+"zh": "用完",
+"zh1": "用完",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-12",
+"en": "change",
+"pos": "",
+"zh": "（使）不同；改变",
+"zh1": "改变",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-13",
+"en": "quick",
+"pos": "",
+"zh": "迅速的；快的",
+"zh1": "迅速的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-14",
+"en": "shower",
+"pos": "",
+"zh": "淋浴",
+"zh1": "淋浴",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-15",
+"en": "unplug",
+"pos": "",
+"zh": "拔掉……的电源插头",
+"zh1": "拔掉……的电源插头",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-16",
+"en": "difference",
+"pos": "",
+"zh": "差别；不同（之处）",
+"zh1": "差别",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-17",
+"en": "reduce",
+"pos": "",
+"zh": "减少",
+"zh1": "减少",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-18",
+"en": "air conditioner",
+"pos": "",
+"zh": "空调机",
+"zh1": "空调机",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-19",
+"en": "drive",
+"pos": "",
+"zh": "驾驶；开车",
+"zh1": "驾驶",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-20",
+"en": "reuse",
+"pos": "",
+"zh": "再次使用；重复使用",
+"zh1": "再次使用",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-21",
+"en": "own",
+"pos": "",
+"zh": "自己的",
+"zh1": "自己的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-22",
+"en": "market",
+"pos": "",
+"zh": "集市；市场",
+"zh1": "集市",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-23",
+"en": "bottle",
+"pos": "",
+"zh": "瓶子",
+"zh1": "瓶子",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-24",
+"en": "top",
+"pos": "",
+"zh": "最高的；顶部",
+"zh1": "最高的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-25",
+"en": "useful",
+"pos": "",
+"zh": "有用的；有益的",
+"zh1": "有用的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-26",
+"en": "dirty",
+"pos": "",
+"zh": "脏的",
+"zh1": "脏的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-27",
+"en": "side",
+"pos": "",
+"zh": "一面；一边",
+"zh1": "一边；一面",
+"bold": true,
+"kind": "word"
+}
+],
+"sentences": [
+{
+"id": "U6-s1",
+"en": "Solar power is a useful type of energy.",
+"zh": "太阳能是一种有用的能源。"
+},
+{
+"id": "U6-s2",
+"en": "We use electricity to light our rooms.",
+"zh": "我们用电来照亮房间。"
+},
+{
+"id": "U6-s3",
+"en": "Oil and coal will run out one day.",
+"zh": "石油和煤总有一天会用完。"
+},
+{
+"id": "U6-s4",
+"en": "Please unplug the air conditioner and take a quick shower.",
+"zh": "请拔掉空调的电源插头，快速冲个澡。"
+},
+{
+"id": "U6-s5",
+"en": "We can reduce, reuse and recycle old bottles.",
+"zh": "我们可以减少、再利用和回收旧瓶子。"
+},
+{
+"id": "U6-s6",
+"en": "Driving less makes a big difference to our nature.",
+"zh": "少开车对大自然有很大的好处。"
+}
+]
+}
+]
+}

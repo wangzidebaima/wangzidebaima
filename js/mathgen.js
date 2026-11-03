@@ -440,6 +440,33 @@ const G5 = {
 };
 export const T5 = [{ id: 'dmul', name: '小数乘法' }, { id: 'ddiv', name: '小数除法' }, { id: 'simp', name: '简便计算' }, { id: 'fac', name: '倍数与因数' }, { id: 'big', name: '多位数乘除' }, { id: 'mix', name: '含小数的混合运算' }];
 
+// ---------- 六年级口算（分数乘除、分数混合运算、百分数互化、比、简便计算） ----------
+const fr = (n, d) => { const g = gcd(n, d); n /= g; d /= g; if (d === 1) return String(n); if (n > d) return `${Math.floor(n / d)}又${n % d}/${d}`; return `${n}/${d}`; };
+const q6 = (typeId, stem, ans, why, digits) => ({ type: 'math', typeId, stem, answer: String(ans), why: why + `\n答案：${ans}`, pts: 1, id: 'r-' + typeId + '-' + hash(stem), digits: !!digits });
+const G6 = {
+  fmul: (L) => { const d1 = pick([2, 3, 4, 5, 6, 8, 9]), d2 = pick([3, 4, 5, 7, 8, 9]), n1 = ri(1, d1 - 1), n2 = ri(1, d2 - 1);
+    if (L === 1) { const k = ri(2, 9), n = ri(1, d1 - 1); return q6('fmul', `${n}/${d1}×${k * d1}`, n * k, `先约分：${k * d1} 和 ${d1} 约去 ${d1}，得 ${n}×${k}=${n * k}。`); }
+    return q6('fmul', `${n1}/${d1}×${n2}/${d2}`, fr(n1 * n2, d1 * d2), `分子乘分子、分母乘分母：${n1 * n2}/${d1 * d2}，约分后是 ${fr(n1 * n2, d1 * d2)}。`); },
+  fdiv: (L) => { const d1 = pick([2, 3, 4, 5, 6, 8]), d2 = pick([3, 4, 5, 7, 9]), n1 = ri(1, d1 - 1), n2 = ri(1, d2 - 1);
+    if (L === 1) { const k = ri(2, 6); return q6('fdiv', `${n1}/${d1}÷${k}`, fr(n1, d1 * k), `除以 ${k} 等于乘 1/${k}：${n1}/${d1}×1/${k}=${fr(n1, d1 * k)}。`); }
+    return q6('fdiv', `${n1}/${d1}÷${n2}/${d2}`, fr(n1 * d2, d1 * n2), `除以一个数，等于乘它的倒数：${n1}/${d1}×${d2}/${n2}=${fr(n1 * d2, d1 * n2)}。`); },
+  fmix: (L) => { const d = pick([2, 3, 4, 5, 6, 8]), a = ri(1, d - 1), b = ri(1, d - 1), k = ri(2, 6);
+    if (L === 1) return q6('fmix', `${a}/${d}+${b}/${d}×${k}`, fr(a + b * k, d), `先算乘法：${b}/${d}×${k}=${b * k}/${d}；再加 ${a}/${d}，得 ${fr(a + b * k, d)}。`);
+    return q6('fmix', `(${a}/${d}+${b}/${d})×${k}`, fr((a + b) * k, d), `先算括号里的：${a}/${d}+${b}/${d}=${a + b}/${d}；再乘 ${k}，得 ${fr((a + b) * k, d)}。`); },
+  pct: (L) => { const f = ri(0, 2), p = pick(L === 1 ? [10, 20, 25, 50, 75] : [5, 8, 12, 15, 24, 35, 40, 60, 65, 80]);
+    if (f === 0) return q6('pct', `把小数 ${dd(p, 2)} 写成百分数（填百分号前面的数）`, p, `小数点向右移动两位，加上百分号：${dd(p, 2)}=${p}%。`);
+    if (f === 1) return q6('pct', `把 ${p}% 写成小数`, dd(p, 2), `去掉百分号，小数点向左移动两位：${p}%=${dd(p, 2)}。`);
+    const m = [10, 20, 25, 50, 75].includes(p) ? p : 50; return q6('pct', `${fr(m, 100)} 写成百分数是百分之几？（填百分号前面的数）`, m, `分数化成小数再化成百分数：${fr(m, 100)}=${dd(m, 2)}=${m}%。`); },
+  ratio: (L) => { const f = ri(0, 2), k = ri(2, 9), a = ri(1, 9), b = ri(1, 9);
+    if (f === 0) return q6('ratio', `${a * k}:${b * k} 化成最简整数比，比的前项是几？`, a / gcd(a, b), `前后项同时除以最大公因数 ${k * gcd(a, b)}，得 ${a / gcd(a, b)}:${b / gcd(a, b)}，前项是 ${a / gcd(a, b)}。`, true);
+    if (f === 1) { const g = gcd(a, b), A = a / g, B = b / g; return q6('ratio', `${A * k}:${B * k} 的比值是多少？`, fr(A, B), `比值=前项÷后项=${A * k}÷${B * k}=${fr(A, B)}。`); }
+    return q6('ratio', `把 ${(a + b) * k} 按 ${a}:${b} 分成两份，第一份是多少？`, a * k, `一共 ${a + b} 份，每份 ${k}，第一份 ${a}×${k}=${a * k}。`, true); },
+  simp: (L) => { const f = ri(0, 1);
+    if (f === 0) { const d = pick([3, 4, 5, 7, 9]), n = ri(1, d - 1), m = ri(2, 9); return q6('simp', `${n}/${d}×${m}+${d - n}/${d}×${m}`, m, `提公因数：(${n}/${d}+${d - n}/${d})×${m}=1×${m}=${m}。`, false); }
+    const d = pick([3, 4, 5, 6, 7, 9]), x = ri(2, 9), y = ri(2, 9); return q6('simp', `${x}/${d}×${y * d}`, x * y, `先约分：${y * d} 里的 ${d} 与分母 ${d} 约去，得 ${x}×${y}=${x * y}。`, true); },
+};
+export const T6 = [{ id: 'fmul', name: '分数乘法' }, { id: 'fdiv', name: '分数除法' }, { id: 'fmix', name: '分数混合运算' }, { id: 'pct', name: '百分数互化' }, { id: 'ratio', name: '比的化简与应用' }, { id: 'simp', name: '简便计算' }];
+
 // ---------- 英语词汇 ----------
 const vocabQ = (kind, list) => {
   const w = pick(list), pool = shuf(list.filter(x => x.en !== w.en)).slice(0, 3);
@@ -466,6 +493,7 @@ import { CHAP2_TYPES } from './chapgen2.js';
 import { CHAP1_TYPES } from './chapgen1.js';
 import { CHAP3_TYPES } from './chapgen3.js';
 import { CHAP5_TYPES } from './chapgen5.js';
+import { CHAP6_TYPES } from './chapgen6.js';
 export const RANDOM = {
   chap1: { title: '一年级数学章节练习', icon: '📐', subject: 'chap1', types: CHAP1_TYPES, levels: ['简单', '适中', '挑战'] },
   math1: { title: '口算随机练习', icon: '🎲', subject: 'math1', types: T1, levels: ['简单', '适中', '挑战'], gen: (t, l) => G1[t](l) },
@@ -477,6 +505,10 @@ export const RANDOM = {
   math5: { title: '口算随机练习', icon: '🎲', subject: 'math5', types: T5, levels: ['简单', '适中', '挑战'], gen: (t, l) => G5[t](l) },
   vocab5: { title: '英语单词小测', icon: '🔤', subject: 'vocab5', types: TW, levels: null },
   sent5: { title: '英语句子小测', icon: '📝', subject: 'sent5', types: TS, levels: null },
+  chap6: { title: '六年级数学章节练习', icon: '📐', subject: 'chap6', types: CHAP6_TYPES, levels: ['简单', '适中', '挑战'] },
+  math6: { title: '口算随机练习', icon: '🎲', subject: 'math6', types: T6, levels: ['简单', '适中', '挑战'], gen: (t, l) => G6[t](l) },
+  vocab6: { title: '英语单词小测', icon: '🔤', subject: 'vocab6', types: TW, levels: null },
+  sent6: { title: '英语句子小测', icon: '📝', subject: 'sent6', types: TS, levels: null },
   chap2: { title: '二年级数学章节练习', icon: '📐', subject: 'chap2', types: CHAP2_TYPES, levels: ['简单', '适中', '挑战'] },
   math2: { title: '口算随机练习', icon: '🎲', subject: 'math2', types: T2, levels: ['简单', '适中', '挑战'], gen: (t, l) => G2[t](l) },
   cnw2: { title: '词语听写', icon: '✍️', subject: 'cnw', types: [], levels: null },

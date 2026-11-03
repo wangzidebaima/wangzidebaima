@@ -456,14 +456,36 @@
     "g6sci"
    ],
    "random": [
-    "cnw6"
+    "math6",
+    "chap6",
+    "cnw6",
+    "vocab6",
+    "sent6"
    ],
    "tasks": [
+    {
+     "label": "数学随机练习 10 题",
+     "kind": "rand",
+     "subs": [
+      "math6",
+      "chap6"
+     ],
+     "goal": 10
+    },
     {
      "label": "词语听写 10 个",
      "kind": "rand",
      "subs": [
       "cnw6"
+     ],
+     "goal": 10
+    },
+    {
+     "label": "英语单词或句子小测 10 题",
+     "kind": "rand",
+     "subs": [
+      "vocab6",
+      "sent6"
      ],
      "goal": 10
     },
