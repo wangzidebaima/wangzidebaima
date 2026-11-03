@@ -45,6 +45,18 @@ main > * + * { margin-top: 14px; }
 .btn.ghost { background: transparent; border: 1.5px solid var(--line); color: var(--ink); font-weight: 500; }
 .btn.wide { width: 100%; } .btn.small { min-height: 38px; padding: 7px 14px; font-size: 15px; border-radius: 11px; }
 .btn:active { transform: scale(.98); }
+/* 听不到声音时的引导浮层（替代原先只说“暂时发不出声音”的 toast；不遮挡，可跳去检查/帮助） */
+.vmodal-mask { position: fixed; inset: 0; z-index: 50; display: flex; align-items: center; justify-content: center; padding: 18px; background: rgba(40,40,40,.55); }
+.vmodal { position: relative; width: 100%; max-width: 360px; background: var(--surface); color: var(--ink); border-radius: 18px; padding: 20px 18px 18px; box-shadow: var(--shadow); }
+.vmodal-x { position: absolute; top: 6px; right: 8px; width: 34px; height: 34px; border: 0; background: transparent; color: var(--muted); font-size: 24px; line-height: 1; cursor: pointer; }
+.vmodal-h { font-size: 19px; font-weight: 700; margin: 2px 0 8px; }
+.vmodal-sub { font-size: 15px; line-height: 1.6; margin: 0 0 12px; }
+.vmodal-steps { background: var(--accent-soft); border-radius: 12px; padding: 12px 12px 8px; margin-bottom: 14px; }
+.vmodal-steps p { font-size: 14px; line-height: 1.6; margin: 0 0 6px; }
+.vmodal-steps b { color: var(--accent); }
+.vmodal-tip { color: var(--muted); font-size: 13px; }
+.vmodal-btns { display: flex; gap: 10px; }
+.vmodal-btns .btn { flex: 1; }
 .link { background: none; border: 0; color: var(--muted); padding: 8px; font-size: 15px; }
 
 /* 登录 */

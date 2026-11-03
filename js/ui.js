@@ -28,6 +28,28 @@ export function toast(msg, ms = 2400) {
   clearTimeout(toast._t); toast._t = setTimeout(() => { t.className = ''; }, ms);
 }
 
+// 听不到声音时的引导浮层：不再只弹一句“暂时发不出声音”的废话，
+// 而是说清原因 + 给操作步骤 + 可一键跳去检查/帮助页。复用已有的引导文案。
+export function voiceFail(reason) {
+  if (document.getElementById('vmodal')) return;
+  const close = () => { const m = document.getElementById('vmodal'); if (m) m.remove(); };
+  const mask = h('div', { class: 'vmodal-mask', id: 'vmodal' });
+  const card = h('div', { class: 'vmodal' },
+    h('button', { type: 'button', class: 'vmodal-x', 'aria-label': '关闭', onclick: close }, '×'),
+    h('div', { class: 'vmodal-h' }, '🔇 听不到声音'),
+    h('p', { class: 'vmodal-sub' }, reason || '这台手机没有可用的语音朗读引擎——多半是没装中文语音包，或者在微信里打开被禁用了。'),
+    h('div', { class: 'vmodal-steps' },
+      h('p', {}, h('b', {}, '苹果手机：'), '设置 → 辅助功能 → 朗读内容，确认没关；再点「去检查声音」下载一个「普通话」。'),
+      h('p', {}, h('b', {}, '安卓手机：'), '设置 → 系统 → 语言和输入法 → 文字转语音，把引擎和语言都设成「中文（中国）」。'),
+      h('p', { class: 'vmodal-tip' }, '在微信里打开链接也会没声：换成手机自带浏览器（或相机扫卷子二维码）就好。')),
+    h('div', { class: 'vmodal-btns' },
+      h('button', { type: 'button', class: 'btn primary', onclick: () => { close(); location.hash = '#/voice'; } }, '去检查声音'),
+      h('button', { type: 'button', class: 'btn', onclick: () => { close(); location.hash = '#/help'; } }, '看完整办法')));
+  mask.append(card);
+  mask.addEventListener('click', (e) => { if (e.target === mask) close(); });
+  document.body.appendChild(mask);
+}
+
 export const praiseText = (ratio) =>
   ratio === 1 ? '全对！太厉害了！' : ratio >= 0.8 ? '做得真棒！' : ratio >= 0.6 ? '不错，继续加油！' : '没关系，看看解析，下次会更好。';
 
@@ -149,7 +171,7 @@ export function testVoice(v, text) {
   stopScript();
   const u = new SpeechSynthesisUtterance(text || '春天来了，小草从土里钻出来，燕子从南方飞回来了。');
   u.lang = v.lang || 'zh-CN'; u.voice = v; u.rate = 0.82; u.pitch = 1;
-  try { ss.speak(u); } catch (e) { toast('这台手机暂时发不出声音'); }
+  try { ss.speak(u); } catch (e) { voiceFail('试听没出声，说明这台手机里还没有可用的语音。'); }
 }
 // 启动时先把语音列表预热：iOS 第一次取常是空的，要等 voiceschanged 事件
 export function warmVoices() {
@@ -166,7 +188,7 @@ export function playSay(key, text, avail) {
       const ss = window.speechSynthesis; if (!ss) throw new Error('no tts');
       ss.cancel(); const u = new SpeechSynthesisUtterance(text); u.lang = 'en-US'; u.rate = 0.85;
       const v = pickVoice(ss, 'en-US'); if (v) u.voice = v; u.rate = 0.9; ss.speak(u);
-    } catch (e) { toast('这台手机暂时发不出声音'); }
+    } catch (e) { voiceFail(); }
   };
   try { if (curAudio) curAudio.pause(); } catch (e) { /* ignore */ }
   if (avail && avail.has(file)) {
@@ -185,7 +207,7 @@ export function stopAllSound() {
   try { document.querySelectorAll('audio').forEach(a => a.pause()); } catch (e) { /* ignore */ }
 }
 export function playScript(lines, speakers, opts = {}) {
-  const ss = window.speechSynthesis; if (!ss) { toast('这台手机暂时发不出声音'); return; }
+  const ss = window.speechSynthesis; if (!ss) { voiceFail(); return; }
   stopScript(); const run = scriptRun, times = opts.times || 2, rate = opts.rate || 0.95;
   const lang = opts.lang || 'en-US';
   const items = [];
