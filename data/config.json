@@ -451,7 +451,10 @@
     "小六"
    ],
    "theme": "rose",
-   "subjects": [],
+   "subjects": [
+    "g6chinese",
+    "g6sci"
+   ],
    "random": [
     "cnw6"
    ],
@@ -471,7 +474,6 @@
     }
    ],
    "grade": "六年级",
-   "soon": true,
    "readAloud": false,
    "publishers": {
     "cn": "统编版",

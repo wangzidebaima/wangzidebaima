@@ -6551,6 +6551,553 @@
      "unit": "FS5"
     }
    ]
+  },
+  {
+   "id": "g6chinese",
+   "title": "语文练习",
+   "icon": "📖",
+   "desc": "按课本单元：课文小测、阅读、古诗、美文",
+   "sets": [
+    {
+     "id": "g6c-k1",
+     "file": "sets/g6c-k1.json",
+     "title": "第一单元·课文小测",
+     "subtitle": "古诗词三首 / 草原 / 丁香结",
+     "kind": "cn",
+     "count": 10,
+     "unit": "L1"
+    },
+    {
+     "id": "g6c-k2",
+     "file": "sets/g6c-k2.json",
+     "title": "第二单元·课文小测",
+     "subtitle": "七律·长征 / 狼牙山五壮士 / 开国大典 / 我的战友邱少云",
+     "kind": "cn",
+     "count": 10,
+     "unit": "L2"
+    },
+    {
+     "id": "g6c-k3",
+     "file": "sets/g6c-k3.json",
+     "title": "第三单元·课文小测",
+     "subtitle": "有目的地阅读 / 竹节人 / 宇宙生命之谜 / 故宫博物院",
+     "kind": "cn",
+     "count": 10,
+     "unit": "L3"
+    },
+    {
+     "id": "g6c-k4",
+     "file": "sets/g6c-k4.json",
+     "title": "第四单元·课文小测",
+     "subtitle": "桥 / 穷人 / 金色的鱼钩",
+     "kind": "cn",
+     "count": 10,
+     "unit": "L4"
+    },
+    {
+     "id": "g6c-k5",
+     "file": "sets/g6c-k5.json",
+     "title": "第五单元·课文小测",
+     "subtitle": "灯光 / 盼",
+     "kind": "cn",
+     "count": 10,
+     "unit": "L5"
+    },
+    {
+     "id": "g6c-k6",
+     "file": "sets/g6c-k6.json",
+     "title": "第六单元·课文小测",
+     "subtitle": "只有一个地球 / 古诗三首（浪淘沙 / 江南春 / 书湖阴先生壁）/ 青山不老 / 三黑和土地",
+     "kind": "cn",
+     "count": 10,
+     "unit": "L6"
+    },
+    {
+     "id": "g6c-k7",
+     "file": "sets/g6c-k7.json",
+     "title": "第七单元·课文小测",
+     "subtitle": "文言文二则（伯牙鼓琴 / 书戴嵩画牛）/ 表里的生物 / 他们那时多有趣",
+     "kind": "cn",
+     "count": 10,
+     "unit": "L7"
+    },
+    {
+     "id": "g6c-k8",
+     "file": "sets/g6c-k8.json",
+     "title": "第八单元·课文小测",
+     "subtitle": "少年闰土 / 好的故事 / 我的伯父鲁迅先生 / 有的人",
+     "kind": "cn",
+     "count": 10,
+     "unit": "L8"
+    },
+    {
+     "id": "g6c-r1",
+     "file": "sets/g6c-r1.json",
+     "title": "山涧",
+     "subtitle": "阅读·写景散文",
+     "kind": "reading",
+     "count": 8,
+     "unit": "L1"
+    },
+    {
+     "id": "g6c-r2",
+     "file": "sets/g6c-r2.json",
+     "title": "一封家书",
+     "subtitle": "阅读·红色故事",
+     "kind": "reading",
+     "count": 8,
+     "unit": "L2"
+    },
+    {
+     "id": "g6c-r3",
+     "file": "sets/g6c-r3.json",
+     "title": "蜂巢里的几何学",
+     "subtitle": "阅读·说明文",
+     "kind": "reading",
+     "count": 8,
+     "unit": "L3"
+    },
+    {
+     "id": "g6c-r4",
+     "file": "sets/g6c-r4.json",
+     "title": "种子的旅行",
+     "subtitle": "阅读·科普短文",
+     "kind": "reading",
+     "count": 8,
+     "unit": "L3"
+    },
+    {
+     "id": "g6c-r5",
+     "file": "sets/g6c-r5.json",
+     "title": "守夜人",
+     "subtitle": "阅读·小说片段",
+     "kind": "reading",
+     "count": 8,
+     "unit": "L4"
+    },
+    {
+     "id": "g6c-r6",
+     "file": "sets/g6c-r6.json",
+     "title": "一碗热汤",
+     "subtitle": "阅读·小说片段",
+     "kind": "reading",
+     "count": 8,
+     "unit": "L4"
+    },
+    {
+     "id": "g6c-r7",
+     "file": "sets/g6c-r7.json",
+     "title": "等一场雨",
+     "subtitle": "阅读·抒情记叙文",
+     "kind": "reading",
+     "count": 8,
+     "unit": "L5"
+    },
+    {
+     "id": "g6c-r8",
+     "file": "sets/g6c-r8.json",
+     "title": "致全校同学的倡议书",
+     "subtitle": "阅读·应用文",
+     "kind": "reading",
+     "count": 8,
+     "unit": "L6"
+    },
+    {
+     "id": "g6c-r9",
+     "file": "sets/g6c-r9.json",
+     "title": "一棵树的账本",
+     "subtitle": "阅读·议论说明文",
+     "kind": "reading",
+     "count": 8,
+     "unit": "L6"
+    },
+    {
+     "id": "g6c-r10",
+     "file": "sets/g6c-r10.json",
+     "title": "2150年的雨",
+     "subtitle": "阅读·科幻小说片段",
+     "kind": "reading",
+     "count": 8,
+     "unit": "L7"
+    },
+    {
+     "id": "g6c-r11",
+     "file": "sets/g6c-r11.json",
+     "title": "老校长的藤椅",
+     "subtitle": "阅读·人物故事",
+     "kind": "reading",
+     "count": 8,
+     "unit": "L8"
+    },
+    {
+     "id": "g6c-r12",
+     "file": "sets/g6c-r12.json",
+     "title": "经典为什么值得反复读",
+     "subtitle": "阅读·议论文",
+     "kind": "reading",
+     "count": 8,
+     "unit": "L8"
+    },
+    {
+     "id": "g6c-e1",
+     "file": "sets/g6c-e1.json",
+     "title": "《秋天的银杏》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 5,
+     "unit": "E"
+    },
+    {
+     "id": "g6c-e2",
+     "file": "sets/g6c-e2.json",
+     "title": "《一场夜雨》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 5,
+     "unit": "E"
+    },
+    {
+     "id": "g6c-e3",
+     "file": "sets/g6c-e3.json",
+     "title": "《父亲的老怀表》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 5,
+     "unit": "E"
+    },
+    {
+     "id": "g6c-e4",
+     "file": "sets/g6c-e4.json",
+     "title": "《星空下的守望》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 5,
+     "unit": "E"
+    },
+    {
+     "id": "g6c-e5",
+     "file": "sets/g6c-e5.json",
+     "title": "《毕业前的香樟树》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 5,
+     "unit": "E"
+    },
+    {
+     "id": "g6c-e6",
+     "file": "sets/g6c-e6.json",
+     "title": "《端午的粽叶香》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 5,
+     "unit": "E"
+    },
+    {
+     "id": "g6c-e7",
+     "file": "sets/g6c-e7.json",
+     "title": "《火车窗外》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 5,
+     "unit": "E"
+    },
+    {
+     "id": "g6c-e8",
+     "file": "sets/g6c-e8.json",
+     "title": "《时光的沙漏》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 5,
+     "unit": "E"
+    },
+    {
+     "id": "g6c-e9",
+     "file": "sets/g6c-e9.json",
+     "title": "《山顶的那束光》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 5,
+     "unit": "E"
+    },
+    {
+     "id": "g6c-e10",
+     "file": "sets/g6c-e10.json",
+     "title": "《书屋里的午后》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 5,
+     "unit": "E"
+    },
+    {
+     "id": "g6c-cz-a",
+     "file": "sets/g6c-cz-a.json",
+     "title": "《七律·长征》理解",
+     "subtitle": "毛泽东 · 古诗",
+     "kind": "cn",
+     "count": 6,
+     "unit": "L2"
+    },
+    {
+     "id": "g6c-cz-b",
+     "file": "sets/g6c-cz-b.json",
+     "title": "《七律·长征》默写",
+     "subtitle": "先背一背，再默写（不显示原诗）",
+     "kind": "cn",
+     "count": 8,
+     "unit": "L2"
+    },
+    {
+     "id": "g6c-lts-a",
+     "file": "sets/g6c-lts-a.json",
+     "title": "《浪淘沙》理解",
+     "subtitle": "刘禹锡 · 古诗",
+     "kind": "cn",
+     "count": 6,
+     "unit": "L6"
+    },
+    {
+     "id": "g6c-lts-b",
+     "file": "sets/g6c-lts-b.json",
+     "title": "《浪淘沙》默写",
+     "subtitle": "先背一背，再默写（不显示原诗）",
+     "kind": "cn",
+     "count": 4,
+     "unit": "L6"
+    },
+    {
+     "id": "g6c-jnc-a",
+     "file": "sets/g6c-jnc-a.json",
+     "title": "《江南春》理解",
+     "subtitle": "杜牧 · 古诗",
+     "kind": "cn",
+     "count": 6,
+     "unit": "L6"
+    },
+    {
+     "id": "g6c-jnc-b",
+     "file": "sets/g6c-jnc-b.json",
+     "title": "《江南春》默写",
+     "subtitle": "先背一背，再默写（不显示原诗）",
+     "kind": "cn",
+     "count": 4,
+     "unit": "L6"
+    },
+    {
+     "id": "g6c-sh-a",
+     "file": "sets/g6c-sh-a.json",
+     "title": "《书湖阴先生壁》理解",
+     "subtitle": "王安石 · 古诗",
+     "kind": "cn",
+     "count": 6,
+     "unit": "L6"
+    },
+    {
+     "id": "g6c-sh-b",
+     "file": "sets/g6c-sh-b.json",
+     "title": "《书湖阴先生壁》默写",
+     "subtitle": "先背一背，再默写（不显示原诗）",
+     "kind": "cn",
+     "count": 4,
+     "unit": "L6"
+    },
+    {
+     "id": "g6c-j1",
+     "file": "sets/g6c-j1.json",
+     "title": "词语积累·近义词反义词",
+     "subtitle": "词语小练习",
+     "kind": "cn",
+     "count": 10,
+     "unit": "L0"
+    },
+    {
+     "id": "g6c-j2",
+     "file": "sets/g6c-j2.json",
+     "title": "句子积累·修辞与病句",
+     "subtitle": "比喻 / 拟人 / 排比 / 反问 / 病句",
+     "kind": "cn",
+     "count": 10,
+     "unit": "L0"
+    },
+    {
+     "id": "g6c-j3",
+     "file": "sets/g6c-j3.json",
+     "title": "成语与关联词",
+     "subtitle": "成语意思 / 关联词",
+     "kind": "cn",
+     "count": 10,
+     "unit": "L0"
+    }
+   ]
+  },
+  {
+   "id": "g6sci",
+   "title": "科学练习",
+   "icon": "🔬",
+   "desc": "按课本的课，每课一练",
+   "sets": [
+    {
+     "id": "g6sci-1",
+     "file": "sets/g6sci-1.json",
+     "title": "第1课 蜡烛的变化",
+     "subtitle": "第一单元 物质的变化",
+     "kind": "cn",
+     "count": 10,
+     "unit": "LS1"
+    },
+    {
+     "id": "g6sci-2",
+     "file": "sets/g6sci-2.json",
+     "title": "第2课 铁钉生锈",
+     "subtitle": "第一单元 物质的变化",
+     "kind": "cn",
+     "count": 11,
+     "unit": "LS1"
+    },
+    {
+     "id": "g6sci-3",
+     "file": "sets/g6sci-3.json",
+     "title": "第3课 制作汽水",
+     "subtitle": "第一单元 物质的变化",
+     "kind": "cn",
+     "count": 10,
+     "unit": "LS1"
+    },
+    {
+     "id": "g6sci-4",
+     "file": "sets/g6sci-4.json",
+     "title": "第4课 化学家的研究",
+     "subtitle": "第一单元 物质的变化",
+     "kind": "cn",
+     "count": 10,
+     "unit": "LS1"
+    },
+    {
+     "id": "g6sci-5",
+     "file": "sets/g6sci-5.json",
+     "title": "第5课 生物的遗传",
+     "subtitle": "第二单元 遗传与变异",
+     "kind": "cn",
+     "count": 10,
+     "unit": "LS2"
+    },
+    {
+     "id": "g6sci-6",
+     "file": "sets/g6sci-6.json",
+     "title": "第6课 生物的变异",
+     "subtitle": "第二单元 遗传与变异",
+     "kind": "cn",
+     "count": 11,
+     "unit": "LS2"
+    },
+    {
+     "id": "g6sci-7",
+     "file": "sets/g6sci-7.json",
+     "title": "第7课 寻找遗传与变异的秘密",
+     "subtitle": "第二单元 遗传与变异",
+     "kind": "cn",
+     "count": 10,
+     "unit": "LS2"
+    },
+    {
+     "id": "g6sci-8",
+     "file": "sets/g6sci-8.json",
+     "title": "第8课 消失的恐龙",
+     "subtitle": "第三单元 化石的奥秘",
+     "kind": "cn",
+     "count": 11,
+     "unit": "LS3"
+    },
+    {
+     "id": "g6sci-9",
+     "file": "sets/g6sci-9.json",
+     "title": "第9课 化石告诉我们什么",
+     "subtitle": "第三单元 化石的奥秘",
+     "kind": "cn",
+     "count": 10,
+     "unit": "LS3"
+    },
+    {
+     "id": "g6sci-10",
+     "file": "sets/g6sci-10.json",
+     "title": "第10课 用化石作证据",
+     "subtitle": "第三单元 化石的奥秘",
+     "kind": "cn",
+     "count": 11,
+     "unit": "LS3"
+    },
+    {
+     "id": "g6sci-11",
+     "file": "sets/g6sci-11.json",
+     "title": "第11课 太阳系大家族",
+     "subtitle": "第四单元 探索宇宙",
+     "kind": "cn",
+     "count": 11,
+     "unit": "LS4"
+    },
+    {
+     "id": "g6sci-12",
+     "file": "sets/g6sci-12.json",
+     "title": "第12课 观察星空",
+     "subtitle": "第四单元 探索宇宙",
+     "kind": "cn",
+     "count": 11,
+     "unit": "LS4"
+    },
+    {
+     "id": "g6sci-13",
+     "file": "sets/g6sci-13.json",
+     "title": "第13课 冲出地球",
+     "subtitle": "第四单元 探索宇宙",
+     "kind": "cn",
+     "count": 10,
+     "unit": "LS4"
+    },
+    {
+     "id": "g6sci-14",
+     "file": "sets/g6sci-14.json",
+     "title": "第14课 探索宇宙",
+     "subtitle": "第四单元 探索宇宙",
+     "kind": "cn",
+     "count": 11,
+     "unit": "LS4"
+    },
+    {
+     "id": "g6sci-15",
+     "file": "sets/g6sci-15.json",
+     "title": "第15课 影响人类文明的里程碑",
+     "subtitle": "第五单元 科技改变生活",
+     "kind": "cn",
+     "count": 11,
+     "unit": "LS5"
+    },
+    {
+     "id": "g6sci-16",
+     "file": "sets/g6sci-16.json",
+     "title": "第16课 人造肥料与现代农业",
+     "subtitle": "第五单元 科技改变生活",
+     "kind": "cn",
+     "count": 11,
+     "unit": "LS5"
+    },
+    {
+     "id": "g6sci-17",
+     "file": "sets/g6sci-17.json",
+     "title": "第17课 钢筋混凝土与现代建筑业",
+     "subtitle": "第五单元 科技改变生活",
+     "kind": "cn",
+     "count": 10,
+     "unit": "LS5"
+    },
+    {
+     "id": "g6sci-18",
+     "file": "sets/g6sci-18.json",
+     "title": "第18课 电动机与现代工业",
+     "subtitle": "第五单元 科技改变生活",
+     "kind": "cn",
+     "count": 11,
+     "unit": "LS5"
+    }
+   ]
   }
  ],
  "unitNames": {
@@ -6644,6 +7191,20 @@
   "FS2": "第二单元 热传递",
   "FS3": "第三单元 地球的表面和内部",
   "FS4": "第四单元 水在自然界的循环",
-  "FS5": "第五单元 人体“司令部”"
+  "FS5": "第五单元 人体“司令部”",
+  "L1": "第一单元 古诗词三首·草原·丁香结",
+  "L2": "第二单元 七律·长征·狼牙山五壮士·开国大典·我的战友邱少云",
+  "L3": "第三单元 竹节人·宇宙生命之谜·故宫博物院",
+  "L4": "第四单元 桥·穷人·金色的鱼钩",
+  "L5": "第五单元 灯光·盼",
+  "L6": "第六单元 只有一个地球·古诗三首·青山不老·三黑和土地",
+  "L7": "第七单元 文言文二则·表里的生物·他们那时多有趣",
+  "L8": "第八单元 少年闰土·好的故事·我的伯父鲁迅先生·有的人",
+  "L0": "语文积累（词语·句子·成语）",
+  "LS1": "第一单元 物质的变化",
+  "LS2": "第二单元 遗传与变异",
+  "LS3": "第三单元 化石的奥秘",
+  "LS4": "第四单元 探索宇宙",
+  "LS5": "第五单元 科技改变生活"
  }
 }
