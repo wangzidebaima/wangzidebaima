@@ -1012,15 +1012,14 @@ function runQuiz(o) {
   o.t0 = o.t0 || Date.now();
   o = { ...o, sections: o.sections.map(sec => ({ ...sec, questions: sec.questions.filter(validQ) })).filter(sec => sec.questions.length) };
   const live = (o.mode || modeOf(o.uid, o.mk)) === 'live';
-  const ans = {}, qs = [], done = {}, nodes = {};
-  const info = h('span', { class: 'info' });
-  const submit = h('button', { class: 'btn primary', onclick: finish }, live ? '看结果' : '交卷');
-  const confirmBtns = [];
-  const update = () => {
-    const n = qs.filter(q => isAnswered(q, ans[q.id])).length; info.textContent = live ? `已确认 ${Object.keys(done).length} / ${qs.length}` : `已答 ${n} / ${qs.length}`;
-    submit.classList.toggle('ready', live ? Object.keys(done).length === qs.length : n === qs.length);
-    confirmBtns.forEach(([q, b]) => { b.disabled = !isAnswered(q, ans[q.id]); });
-  };
+  const ans = {}, qs = [], done = {};
+  o.sections.forEach(sec => sec.questions.forEach(q0 => { const q = { ...q0 }; if (sec.bank) { q.bank = sec.bank; q.bankMode = sec.bankMode; } qs.push(q); }));
+  const N = qs.length;
+  if (!N) { mount(page(o.title, h('p', { class: 'note' }, '这套题暂时打不开，换一套试试～'), { back: o.back })); return; }
+  let cur = 0, curNode = null;
+  const prog = h('div', { class: 'qprog' });
+  const stage = h('div', { class: 'stage' });
+  const nav = h('div', { class: 'qnav' });
   // 判分并记录（每题只记一次：发星星、进错题本）
   function settle(q) {
     if (done[q.id]) return done[q.id];
@@ -1036,36 +1035,53 @@ function runQuiz(o) {
     done[q.id] = r; return r;
   }
   const modeBar = o.mk ? h('div', { class: 'chips modebar' }, h('span', { class: 'lab' }, '做题方式'),
-    ...[['exam', '整套交卷'], ['live', '边做边看']].map(([v, n]) => h('button', { type: 'button', class: 'chipb' + ((live ? 'live' : 'exam') === v ? ' on' : ''), onclick: () => {
+    ...[['exam', '做完看答案'], ['live', '答完看答案']].map(([v, n]) => h('button', { type: 'button', class: 'chipb' + ((live ? 'live' : 'exam') === v ? ' on' : ''), onclick: () => {
       if (v === (live ? 'live' : 'exam')) return;
       if (Object.keys(ans).length) { toast('已经开始做了，下一套再换方式'); return; }
       const P = S.P(o.uid); P.modes = P.modes || {}; P.modes[o.mk.split('#')[0]] = v; S.save(o.uid); mount(runQuiz({ ...o, mode: v }));
     } }, n))) : null;
-  const secs = o.sections.map(sec => {
-    const box = h('section', { class: 'sec' });
-    if (sec.title) box.append(h('h2', {}, sec.title));
-    if (sec.bank && sec.bankMode) box.append(h('p', { class: 'bank' }, h('span', {}, sec.bankMode === 'select' ? '方框里的词：' : '可以用的动词：'), sec.bank.map(w => h('i', {}, w))));
-    sec.questions.forEach(q0 => {
-      const q = { ...q0 }; if (sec.bank) { q.bank = sec.bank; q.bankMode = sec.bankMode; }
-      qs.push(q); const node = renderQ(q, qs.length, ans, update); nodes[q.id] = node; box.append(node);
-      if (live) {
-        const fb = h('div', { class: 'livefb' });
-        const ok = h('button', { type: 'button', class: 'btn primary small livebtn', disabled: true, onclick: () => {
-          const r = settle(q); ok.remove(); keypad.close();
-          node.classList.add('locked', r.g.ok ? 'lok' : 'lbad');
-          node.querySelectorAll('.opt, .ordit, .selfb, input, select').forEach(x => { x.disabled = true; });
-          fb.replaceChildren(reviewItem(r, qs.indexOf(q) + 1)); fb.firstChild.open = true;
-          update();
-        } }, '确定');
-        confirmBtns.push([q, ok]); node.append(ok, fb);
-      }
-    });
-    return box;
-  });
-  update();
+  // 逐题模式：一次只显示一题，答完点「确定并下一题」严格按题号 1→2→3… 顺序进下一题，
+  // 绝不跳过任何题（含选择题）；最后一题点「看结果」进入结果页。
+  function goNext() {
+    const q = qs[cur];
+    if (!done[q.id]) {
+      if (!isAnswered(q, ans[q.id])) { toast('先答一下这题～'); return; }
+      const r = settle(q);
+      curNode.classList.add('locked', r.g.ok ? 'lok' : 'lbad');
+      curNode.querySelectorAll('.opt, .ordit, .selfb, input, select').forEach(x => { x.disabled = true; });
+      if (live && !r.self) toast(r.g.ok ? '✓ 答对啦' : '✗ 答错了，已进错题本', 1300);
+    }
+    if (cur >= N - 1) { finish(); return; }
+    cur++; draw();
+  }
+  function drawNav() {
+    nav.replaceChildren();
+    if (cur > 0) nav.append(h('button', { type: 'button', class: 'btn ghost', onclick: () => { cur--; draw(); } }, '← 上一题'));
+    const last = cur >= N - 1, done0 = !!done[qs[cur].id];
+    const label = done0 ? (last ? '看结果' : '下一题 →') : (last ? '交卷看结果' : '确定并下一题');
+    const answered = isAnswered(qs[cur], ans[qs[cur].id]);
+    nav.append(h('button', { type: 'button', class: 'btn primary', disabled: !answered && !done0, onclick: goNext }, label));
+  }
+  function update() {
+    prog.textContent = `第 ${cur + 1} / ${N} 题`;
+    const q = qs[cur], btn = nav.querySelector('.btn.primary');
+    if (btn) btn.disabled = !isAnswered(q, ans[q.id]) && !done[q.id];
+  }
+  function draw() {
+    const q = qs[cur];
+    stage.replaceChildren();
+    curNode = renderQ(q, cur + 1, ans, update);
+    stage.append(curNode);
+    if (done[q.id]) {
+      curNode.classList.add('locked', done[q.id].g.ok ? 'lok' : 'lbad');
+      curNode.querySelectorAll('.opt, .ordit, .selfb, input, select').forEach(x => { x.disabled = true; });
+    }
+    drawNav();
+    update();
+  }
   function finish() {
     const left = qs.filter(q => !done[q.id] && !isAnswered(q, ans[q.id])).length;
-    if (left && !confirm(`还有 ${left} 题没做，确定${live ? '看结果' : '交卷'}吗？没做的算错。`)) return;
+    if (left && !confirm(`还有 ${left} 题没做，确定看结果吗？没做的算错。`)) return;
     const results = qs.map(q => settle(q));
     let newStars = 0, capped = 0, pts = 0, ptsAll = 0, okN = 0, selfN = 0, selfOk = 0, wrongN = 0;
     results.forEach(r => {
@@ -1082,10 +1098,12 @@ function runQuiz(o) {
     keypad.close();
     mount(resultsNode(o, results, { newStars, capped, okN, pts, ptsAll, total, selfN, selfOk, wrongN }));
   }
+  draw();
   return page(o.title, [
     o.subtitle ? h('p', { class: 'subtitle' }, o.subtitle) : null, modeBar,
-    o.ctxFn ? o.ctxFn(false) : null, secs,
-    h('div', { class: 'submitbar' }, info, submit)], { back: o.back, right: o.printHref ? h('a', { class: 'back r', href: o.printHref }, '🖨 打印') : null });
+    o.ctxFn ? o.ctxFn(false) : null,
+    h('div', { class: 'qtop' }, prog),
+    stage, nav], { back: o.back, right: o.printHref ? h('a', { class: 'back r', href: o.printHref }, '🖨 打印') : null });
 }
 
 function resultsNode(o, results, sum) {

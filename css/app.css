@@ -248,6 +248,13 @@ html[data-fs="1"] body { zoom: 1.12; } html[data-fs="2"] body { zoom: 1.25; }
 .q .livebtn { margin-top: 10px; }
 .q.locked .opt { pointer-events: none; opacity: .85; } .q.locked.lok .opt.on { background: var(--accent-soft); border-color: var(--accent); } .q.locked.lbad .opt.on { border-color: #c0504d; }
 .livefb { margin-top: 8px; }
+/* 逐题模式：一次一题，顶部显示进度，底部固定上一题/下一题 */
+.qtop { position: sticky; top: 0; z-index: 5; background: var(--bg); padding: 8px 0 6px; text-align: center; }
+.qprog { display: inline-block; min-width: 96px; padding: 4px 14px; border-radius: 99px; background: var(--surface); box-shadow: var(--shadow); font-size: 14px; color: var(--muted); }
+.stage { padding: 4px 0 10px; }
+.qnav { position: fixed; left: 0; right: 0; bottom: 0; z-index: 6; display: flex; justify-content: space-between; align-items: center; gap: 12px; max-width: 640px; margin: 0 auto; padding: 10px 16px calc(env(safe-area-inset-bottom) + 10px); background: var(--bg); border-top: 1px solid var(--line); }
+.qnav .btn { flex: 1; min-width: 0; }
+body.kbopen .qnav { display: none; }
 .abcin { position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none; padding: 0; border: 0; }
 .tiles { display: inline-flex; flex-wrap: wrap; gap: 5px; vertical-align: middle; cursor: pointer; margin: 4px 2px; }
 .tile { width: 30px; height: 38px; display: inline-flex; align-items: center; justify-content: center; border: 1.5px solid var(--line); border-radius: 8px; background: var(--surface); font-size: 20px; font-weight: 600; text-transform: lowercase; }
