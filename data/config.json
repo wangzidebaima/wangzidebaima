@@ -1,539 +1,602 @@
 {
- "version": "2026-10-25-1",
- "appName": "书山小路",
- "rewards": [
-  {
-   "stars": 100,
-   "coins": 1,
-   "label": "1 金币"
+  "version": "2026-10-25-1",
+  "appName": "书山小路",
+  "rewards": [
+    {
+      "stars": 100,
+      "coins": 1,
+      "label": "1 金币"
+    },
+    {
+      "stars": 200,
+      "coins": 1,
+      "label": "1 金币"
+    },
+    {
+      "stars": 300,
+      "coins": 1,
+      "label": "1 金币"
+    },
+    {
+      "stars": 400,
+      "coins": 2,
+      "label": "2 金币"
+    }
+  ],
+  "users": [
+    {
+      "id": "son",
+      "display": "小七",
+      "names": [
+        "小七"
+      ],
+      "theme": "blue",
+      "subjects": [
+        "g7reading",
+        "g7listening",
+        "g7speaking",
+        "g7chinese",
+        "g7bio",
+        "g7hist",
+        "g7poli",
+        "g7geo"
+      ],
+      "random": [
+        "chap7",
+        "vocab7",
+        "phrase7"
+      ],
+      "tasks": [
+        {
+          "label": "数学随机练习 10 题",
+          "kind": "rand",
+          "subs": [
+            "chap7",
+            "math7"
+          ],
+          "goal": 10
+        },
+        {
+          "label": "学习 5 个单词",
+          "kind": "learn",
+          "goal": 5
+        },
+        {
+          "label": "阅读理解 10 分钟",
+          "kind": "cat",
+          "cat": "reading",
+          "goal": 10,
+          "minutes": true
+        },
+        {
+          "label": "英语听力 10 分钟",
+          "kind": "cat",
+          "cat": "listening",
+          "goal": 10,
+          "minutes": true
+        },
+        {
+          "label": "口语打卡（10 分钟）",
+          "kind": "speak",
+          "goal": 1
+        },
+        {
+          "label": "听一篇美文",
+          "kind": "essay",
+          "goal": 1
+        }
+      ],
+      "grade": "七年级",
+      "publishers": {
+        "math": "北师大版",
+        "eng": "人教版",
+        "cn": "统编版",
+        "hist": "人教版",
+        "poli": "人教版",
+        "bio": "人教版",
+        "geo": "中图版"
+      },
+      "modes": {
+        "chaptype": "live",
+        "chapmix": "exam",
+        "randmath": "exam",
+        "mathbank": "live",
+        "engquiz": "live",
+        "reading": "exam",
+        "listening": "exam",
+        "errors": "live",
+        "cnpoem": "live",
+        "cnknow": "live",
+        "cnread": "exam"
+      }
+    },
+    {
+      "id": "daughter",
+      "display": "小四",
+      "names": [
+        "小四"
+      ],
+      "theme": "rose",
+      "subjects": [
+        "g4reading",
+        "g4speaking",
+        "g4listening",
+        "g4chinese",
+        "g4sci"
+      ],
+      "random": [
+        "math4",
+        "chap4",
+        "vocab4",
+        "phrase4",
+        "sent4",
+        "cnw4"
+      ],
+      "tasks": [
+        {
+          "label": "数学随机练习 10 题",
+          "kind": "rand",
+          "subs": [
+            "math4",
+            "chap4"
+          ],
+          "goal": 10
+        },
+        {
+          "label": "学习 5 个单词",
+          "kind": "learn",
+          "goal": 5
+        },
+        {
+          "label": "阅读理解 10 分钟",
+          "kind": "cat",
+          "cat": "reading",
+          "goal": 10,
+          "minutes": true
+        },
+        {
+          "label": "英语听力 10 分钟",
+          "kind": "cat",
+          "cat": "listening",
+          "goal": 10,
+          "minutes": true
+        },
+        {
+          "label": "口语打卡（10 分钟）",
+          "kind": "speak",
+          "goal": 1
+        },
+        {
+          "label": "听一篇美文",
+          "kind": "essay",
+          "goal": 1
+        }
+      ],
+      "grade": "四年级",
+      "publishers": {
+        "math": "北师大版",
+        "eng": "人教版 PEP",
+        "cn": "统编版",
+        "sci": "苏教版"
+      },
+      "modes": {
+        "chaptype": "live",
+        "chapmix": "exam",
+        "randmath": "exam",
+        "mathbank": "live",
+        "engquiz": "live",
+        "reading": "exam",
+        "listening": "exam",
+        "errors": "live",
+        "reading#1": "live",
+        "reading#2": "live",
+        "cnpoem": "live",
+        "cnknow": "live",
+        "cnread": "exam"
+      }
+    },
+    {
+      "id": "yezi",
+      "display": "小二",
+      "names": [
+        "小二"
+      ],
+      "theme": "leaf",
+      "subjects": [
+        "g2chinese"
+      ],
+      "random": [
+        "math2",
+        "chap2",
+        "cnw2"
+      ],
+      "tasks": [
+        {
+          "label": "数学随机练习 10 题",
+          "kind": "rand",
+          "subs": [
+            "math2",
+            "chap2"
+          ],
+          "goal": 10
+        },
+        {
+          "label": "词语听写 10 个",
+          "kind": "rand",
+          "subs": [
+            "cnw2"
+          ],
+          "goal": 10
+        },
+        {
+          "label": "阅读理解 10 分钟",
+          "kind": "cat",
+          "cat": "reading",
+          "goal": 10,
+          "minutes": true
+        },
+        {
+          "label": "听一篇美文",
+          "kind": "essay",
+          "goal": 1
+        }
+      ],
+      "grade": "二年级",
+      "publishers": {
+        "math": "北师大版",
+        "cn": "统编版"
+      },
+      "modes": {
+        "chaptype": "live",
+        "mathbank": "live",
+        "engquiz": "live",
+        "errors": "live",
+        "cnpoem": "live",
+        "cnknow": "live",
+        "cnread": "exam",
+        "randmath": "exam",
+        "chapmix": "exam"
+      },
+      "readAloud": true
+    },
+    {
+      "id": "g1",
+      "display": "小一",
+      "names": [
+        "小一"
+      ],
+      "theme": "rose",
+      "subjects": [
+        "g1chinese"
+      ],
+      "random": [
+        "math1",
+        "chap1"
+      ],
+      "tasks": [
+        {
+          "label": "数学随机练习 10 题",
+          "kind": "rand",
+          "subs": [
+            "math1",
+            "chap1"
+          ],
+          "goal": 10
+        }
+      ],
+      "grade": "一年级",
+      "readAloud": true,
+      "publishers": {
+        "cn": "统编版",
+        "math": "北师大版"
+      },
+      "modes": {
+        "chaptype": "live",
+        "mathbank": "live",
+        "engquiz": "live",
+        "errors": "live",
+        "cnpoem": "live",
+        "cnknow": "live",
+        "cnread": "exam",
+        "randmath": "exam",
+        "chapmix": "exam"
+      }
+    },
+    {
+      "id": "g3",
+      "display": "小三",
+      "names": [
+        "小三"
+      ],
+      "theme": "blue",
+      "subjects": [
+        "g3chinese",
+        "g3sci"
+      ],
+      "random": [
+        "math3",
+        "chap3",
+        "cnw3",
+        "vocab3",
+        "sent3"
+      ],
+      "tasks": [
+        {
+          "label": "数学随机练习 10 题",
+          "kind": "rand",
+          "subs": [
+            "math3",
+            "chap3"
+          ],
+          "goal": 10
+        },
+        {
+          "label": "词语听写 10 个",
+          "kind": "rand",
+          "subs": [
+            "cnw3"
+          ],
+          "goal": 10
+        },
+        {
+          "label": "英语单词或句子小测 10 题",
+          "kind": "rand",
+          "subs": [
+            "vocab3",
+            "sent3"
+          ],
+          "goal": 10
+        },
+        {
+          "label": "听一篇美文",
+          "kind": "essay",
+          "goal": 1
+        }
+      ],
+      "grade": "三年级",
+      "readAloud": false,
+      "publishers": {
+        "cn": "统编版",
+        "math": "北师大版",
+        "eng": "人教版 PEP",
+        "sci": "苏教版"
+      },
+      "modes": {
+        "chaptype": "live",
+        "mathbank": "live",
+        "engquiz": "live",
+        "errors": "live",
+        "cnpoem": "live",
+        "cnknow": "live",
+        "cnread": "exam",
+        "randmath": "exam",
+        "chapmix": "exam"
+      }
+    },
+    {
+      "id": "g5",
+      "display": "小五",
+      "names": [
+        "小五"
+      ],
+      "theme": "leaf",
+      "subjects": [
+        "g5chinese",
+        "g5sci"
+      ],
+      "random": [
+        "math5",
+        "chap5",
+        "cnw5",
+        "vocab5",
+        "sent5"
+      ],
+      "tasks": [
+        {
+          "label": "数学随机练习 10 题",
+          "kind": "rand",
+          "subs": [
+            "math5",
+            "chap5"
+          ],
+          "goal": 10
+        },
+        {
+          "label": "词语听写 10 个",
+          "kind": "rand",
+          "subs": [
+            "cnw5"
+          ],
+          "goal": 10
+        },
+        {
+          "label": "英语单词或句子小测 10 题",
+          "kind": "rand",
+          "subs": [
+            "vocab5",
+            "sent5"
+          ],
+          "goal": 10
+        },
+        {
+          "label": "听一篇美文",
+          "kind": "essay",
+          "goal": 1
+        }
+      ],
+      "grade": "五年级",
+      "readAloud": false,
+      "publishers": {
+        "cn": "统编版",
+        "math": "北师大版",
+        "eng": "人教版 PEP",
+        "sci": "苏教版"
+      },
+      "modes": {
+        "chaptype": "live",
+        "mathbank": "live",
+        "engquiz": "live",
+        "errors": "live",
+        "cnpoem": "live",
+        "cnknow": "live",
+        "cnread": "exam",
+        "randmath": "exam",
+        "chapmix": "exam"
+      }
+    },
+    {
+      "id": "g6",
+      "display": "小六",
+      "names": [
+        "小六"
+      ],
+      "theme": "rose",
+      "subjects": [
+        "g6chinese",
+        "g6sci"
+      ],
+      "random": [
+        "math6",
+        "chap6",
+        "cnw6",
+        "vocab6",
+        "sent6"
+      ],
+      "tasks": [
+        {
+          "label": "数学随机练习 10 题",
+          "kind": "rand",
+          "subs": [
+            "math6",
+            "chap6"
+          ],
+          "goal": 10
+        },
+        {
+          "label": "词语听写 10 个",
+          "kind": "rand",
+          "subs": [
+            "cnw6"
+          ],
+          "goal": 10
+        },
+        {
+          "label": "英语单词或句子小测 10 题",
+          "kind": "rand",
+          "subs": [
+            "vocab6",
+            "sent6"
+          ],
+          "goal": 10
+        },
+        {
+          "label": "听一篇美文",
+          "kind": "essay",
+          "goal": 1
+        }
+      ],
+      "grade": "六年级",
+      "readAloud": false,
+      "publishers": {
+        "cn": "统编版",
+        "math": "北师大版",
+        "eng": "人教版 PEP",
+        "sci": "苏教版"
+      },
+      "modes": {
+        "chaptype": "live",
+        "mathbank": "live",
+        "engquiz": "live",
+        "errors": "live",
+        "cnpoem": "live",
+        "cnknow": "live",
+        "cnread": "exam",
+        "randmath": "exam",
+        "chapmix": "exam"
+      }
+    },
+    {
+      "id": "g8",
+      "display": "小八",
+      "names": [
+        "小八"
+      ],
+      "theme": "blue",
+      "subjects": [
+        "g8chinese",
+        "g8hist",
+        "g8poli",
+        "g8phy",
+        "g8bio",
+        "g8geo"
+      ],
+      "random": [
+        "math8",
+        "chap8",
+        "vocab8",
+        "phrase8"
+      ],
+      "tasks": [
+        {
+          "label": "数学随机练习 10 题",
+          "kind": "rand",
+          "subs": [
+            "math8",
+            "chap8"
+          ],
+          "goal": 10
+        },
+        {
+          "label": "学习 5 个单词",
+          "kind": "learn",
+          "goal": 5
+        }
+      ],
+      "grade": "八年级",
+      "readAloud": false,
+      "publishers": {
+        "cn": "统编版",
+        "math": "北师大版",
+        "hist": "统编版",
+        "poli": "统编版",
+        "phy": "苏科版",
+        "bio": "人教版",
+        "geo": "中图版",
+        "eng": "人教版"
+      },
+      "modes": {
+        "chaptype": "live",
+        "chapmix": "exam",
+        "randmath": "exam",
+        "mathbank": "live",
+        "engquiz": "live",
+        "reading": "exam",
+        "listening": "exam",
+        "errors": "live",
+        "cnpoem": "live",
+        "cnknow": "live",
+        "cnread": "exam"
+      }
+    }
+  ],
+  "parent": {
+    "name": "美好的世界",
+    "salt": "d2aab7a455a2db33",
+    "hash": "6a380a8ce0e9737d34bf2a5813ba7e6b3de012ab235719da97a5befaf04732ec"
   },
-  {
-   "stars": 200,
-   "coins": 1,
-   "label": "1 金币"
-  },
-  {
-   "stars": 300,
-   "coins": 1,
-   "label": "1 金币"
-  },
-  {
-   "stars": 400,
-   "coins": 2,
-   "label": "2 金币"
+  "dailyStarCap": 30,
+  "starGoal": 400,
+  "breakMinutes": 15,
+  "breakRestMinutes": 3,
+  "notice": {
+    "ver": 2,
+    "title": "书山小路 · 用之前先知道",
+    "items": [
+      "记录只保存在这台手机里。换手机、清浏览器之前，请家长到「家长专区」导出备份，不然星星和错题会没。家长专区在登录页最下面，第一次进去自己设一个 4~6 位数字的密码。",
+      "每天最多得 30 颗星，攒够了可以换金币，找家长领取。",
+      "连续做 15 分钟会自动提醒休息 3 分钟，眼睛要紧。",
+      "没网也能做题。听力、朗读用的是手机自带的声音，个别手机可能发不出声。",
+      "可以装到手机桌面，点一下就开，像真的 App 一样（登录页底部有教程）。"
+    ]
   }
- ],
- "users": [
-  {
-   "id": "son",
-   "display": "小七",
-   "names": [
-    "小七"
-   ],
-   "theme": "blue",
-   "subjects": [
-    "g7reading",
-    "g7listening",
-    "g7speaking",
-    "g7chinese",
-    "g7bio",
-    "g7hist",
-    "g7poli",
-    "g7geo"
-   ],
-   "random": [
-    "chap7",
-    "vocab7",
-    "phrase7"
-   ],
-   "tasks": [
-    {
-     "label": "数学随机练习 10 题",
-     "kind": "rand",
-     "subs": [
-      "chap7",
-      "math7"
-     ],
-     "goal": 10
-    },
-    {
-     "label": "学习 5 个单词",
-     "kind": "learn",
-     "goal": 5
-    },
-    {
-     "label": "阅读理解 10 分钟",
-     "kind": "cat",
-     "cat": "reading",
-     "goal": 10,
-     "minutes": true
-    },
-    {
-     "label": "英语听力 10 分钟",
-     "kind": "cat",
-     "cat": "listening",
-     "goal": 10,
-     "minutes": true
-    },
-    {
-     "label": "口语打卡（10 分钟）",
-     "kind": "speak",
-     "goal": 1
-    },
-    {
-     "label": "听一篇美文",
-     "kind": "essay",
-     "goal": 1
-    }
-   ],
-   "grade": "七年级",
-   "publishers": {
-    "math": "北师大版",
-    "eng": "人教版",
-    "cn": "统编版",
-    "hist": "人教版",
-    "poli": "人教版",
-    "bio": "人教版",
-    "geo": "中图版"
-   },
-   "modes": {
-    "chaptype": "live",
-    "chapmix": "exam",
-    "randmath": "exam",
-    "mathbank": "live",
-    "engquiz": "live",
-    "reading": "exam",
-    "listening": "exam",
-    "errors": "live",
-    "cnpoem": "live",
-    "cnknow": "live",
-    "cnread": "exam"
-   }
-  },
-  {
-   "id": "daughter",
-   "display": "小四",
-   "names": [
-    "小四"
-   ],
-   "theme": "rose",
-   "subjects": [
-    "g4reading",
-    "g4speaking",
-    "g4listening",
-    "g4chinese",
-    "g4sci"
-   ],
-   "random": [
-    "math4",
-    "chap4",
-    "vocab4",
-    "phrase4",
-    "sent4",
-    "cnw4"
-   ],
-   "tasks": [
-    {
-     "label": "数学随机练习 10 题",
-     "kind": "rand",
-     "subs": [
-      "math4",
-      "chap4"
-     ],
-     "goal": 10
-    },
-    {
-     "label": "学习 5 个单词",
-     "kind": "learn",
-     "goal": 5
-    },
-    {
-     "label": "阅读理解 10 分钟",
-     "kind": "cat",
-     "cat": "reading",
-     "goal": 10,
-     "minutes": true
-    },
-    {
-     "label": "英语听力 10 分钟",
-     "kind": "cat",
-     "cat": "listening",
-     "goal": 10,
-     "minutes": true
-    },
-    {
-     "label": "口语打卡（10 分钟）",
-     "kind": "speak",
-     "goal": 1
-    },
-    {
-     "label": "听一篇美文",
-     "kind": "essay",
-     "goal": 1
-    }
-   ],
-   "grade": "四年级",
-   "publishers": {
-    "math": "北师大版",
-    "eng": "人教版 PEP",
-    "cn": "统编版",
-    "sci": "苏教版"
-   },
-   "modes": {
-    "chaptype": "live",
-    "chapmix": "exam",
-    "randmath": "exam",
-    "mathbank": "live",
-    "engquiz": "live",
-    "reading": "exam",
-    "listening": "exam",
-    "errors": "live",
-    "reading#1": "live",
-    "reading#2": "live",
-    "cnpoem": "live",
-    "cnknow": "live",
-    "cnread": "exam"
-   }
-  },
-  {
-   "id": "yezi",
-   "display": "小二",
-   "names": [
-    "小二"
-   ],
-   "theme": "leaf",
-   "subjects": [
-    "g2chinese"
-   ],
-   "random": [
-    "math2",
-    "chap2",
-    "cnw2"
-   ],
-   "tasks": [
-    {
-     "label": "数学随机练习 10 题",
-     "kind": "rand",
-     "subs": [
-      "math2",
-      "chap2"
-     ],
-     "goal": 10
-    },
-    {
-     "label": "词语听写 10 个",
-     "kind": "rand",
-     "subs": [
-      "cnw2"
-     ],
-     "goal": 10
-    },
-    {
-     "label": "阅读理解 10 分钟",
-     "kind": "cat",
-     "cat": "reading",
-     "goal": 10,
-     "minutes": true
-    },
-    {
-     "label": "听一篇美文",
-     "kind": "essay",
-     "goal": 1
-    }
-   ],
-   "grade": "二年级",
-   "publishers": {
-    "math": "北师大版",
-    "cn": "统编版"
-   },
-   "modes": {
-    "chaptype": "live",
-    "mathbank": "live",
-    "engquiz": "live",
-    "errors": "live",
-    "cnpoem": "live",
-    "cnknow": "live",
-    "cnread": "exam",
-    "randmath": "exam",
-    "chapmix": "exam"
-   },
-   "readAloud": true
-  },
-  {
-   "id": "g1",
-   "display": "小一",
-   "names": [
-    "小一"
-   ],
-   "theme": "rose",
-   "subjects": [
-    "g1chinese"
-   ],
-   "random": [
-    "math1",
-    "chap1"
-   ],
-   "tasks": [
-    {
-     "label": "数学随机练习 10 题",
-     "kind": "rand",
-     "subs": [
-      "math1",
-      "chap1"
-     ],
-     "goal": 10
-    }
-   ],
-   "grade": "一年级",
-   "readAloud": true,
-   "publishers": {
-    "cn": "统编版",
-    "math": "北师大版"
-   },
-   "modes": {
-    "chaptype": "live",
-    "mathbank": "live",
-    "engquiz": "live",
-    "errors": "live",
-    "cnpoem": "live",
-    "cnknow": "live",
-    "cnread": "exam",
-    "randmath": "exam",
-    "chapmix": "exam"
-   }
-  },
-  {
-   "id": "g3",
-   "display": "小三",
-   "names": [
-    "小三"
-   ],
-   "theme": "blue",
-   "subjects": [
-    "g3chinese",
-    "g3sci"
-   ],
-   "random": [
-    "math3",
-    "chap3",
-    "cnw3",
-    "vocab3",
-    "sent3"
-   ],
-   "tasks": [
-    {
-     "label": "数学随机练习 10 题",
-     "kind": "rand",
-     "subs": [
-      "math3",
-      "chap3"
-     ],
-     "goal": 10
-    },
-    {
-     "label": "词语听写 10 个",
-     "kind": "rand",
-     "subs": [
-      "cnw3"
-     ],
-     "goal": 10
-    },
-    {
-     "label": "英语单词或句子小测 10 题",
-     "kind": "rand",
-     "subs": [
-      "vocab3",
-      "sent3"
-     ],
-     "goal": 10
-    },
-    {
-     "label": "听一篇美文",
-     "kind": "essay",
-     "goal": 1
-    }
-   ],
-   "grade": "三年级",
-   "readAloud": false,
-   "publishers": {
-    "cn": "统编版",
-    "math": "北师大版",
-    "eng": "人教版 PEP",
-    "sci": "苏教版"
-   },
-   "modes": {
-    "chaptype": "live",
-    "mathbank": "live",
-    "engquiz": "live",
-    "errors": "live",
-    "cnpoem": "live",
-    "cnknow": "live",
-    "cnread": "exam",
-    "randmath": "exam",
-    "chapmix": "exam"
-   }
-  },
-  {
-   "id": "g5",
-   "display": "小五",
-   "names": [
-    "小五"
-   ],
-   "theme": "leaf",
-   "subjects": [
-    "g5chinese",
-    "g5sci"
-   ],
-   "random": [
-    "math5",
-    "chap5",
-    "cnw5",
-    "vocab5",
-    "sent5"
-   ],
-   "tasks": [
-    {
-     "label": "数学随机练习 10 题",
-     "kind": "rand",
-     "subs": [
-      "math5",
-      "chap5"
-     ],
-     "goal": 10
-    },
-    {
-     "label": "词语听写 10 个",
-     "kind": "rand",
-     "subs": [
-      "cnw5"
-     ],
-     "goal": 10
-    },
-    {
-     "label": "英语单词或句子小测 10 题",
-     "kind": "rand",
-     "subs": [
-      "vocab5",
-      "sent5"
-     ],
-     "goal": 10
-    },
-    {
-     "label": "听一篇美文",
-     "kind": "essay",
-     "goal": 1
-    }
-   ],
-   "grade": "五年级",
-   "readAloud": false,
-   "publishers": {
-    "cn": "统编版",
-    "math": "北师大版",
-    "eng": "人教版 PEP",
-    "sci": "苏教版"
-   },
-   "modes": {
-    "chaptype": "live",
-    "mathbank": "live",
-    "engquiz": "live",
-    "errors": "live",
-    "cnpoem": "live",
-    "cnknow": "live",
-    "cnread": "exam",
-    "randmath": "exam",
-    "chapmix": "exam"
-   }
-  },
-  {
-   "id": "g6",
-   "display": "小六",
-   "names": [
-    "小六"
-   ],
-   "theme": "rose",
-   "subjects": [
-    "g6chinese",
-    "g6sci"
-   ],
-   "random": [
-    "math6",
-    "chap6",
-    "cnw6",
-    "vocab6",
-    "sent6"
-   ],
-   "tasks": [
-    {
-     "label": "数学随机练习 10 题",
-     "kind": "rand",
-     "subs": [
-      "math6",
-      "chap6"
-     ],
-     "goal": 10
-    },
-    {
-     "label": "词语听写 10 个",
-     "kind": "rand",
-     "subs": [
-      "cnw6"
-     ],
-     "goal": 10
-    },
-    {
-     "label": "英语单词或句子小测 10 题",
-     "kind": "rand",
-     "subs": [
-      "vocab6",
-      "sent6"
-     ],
-     "goal": 10
-    },
-    {
-     "label": "听一篇美文",
-     "kind": "essay",
-     "goal": 1
-    }
-   ],
-   "grade": "六年级",
-   "readAloud": false,
-   "publishers": {
-    "cn": "统编版",
-    "math": "北师大版",
-    "eng": "人教版 PEP",
-    "sci": "苏教版"
-   },
-   "modes": {
-    "chaptype": "live",
-    "mathbank": "live",
-    "engquiz": "live",
-    "errors": "live",
-    "cnpoem": "live",
-    "cnknow": "live",
-    "cnread": "exam",
-    "randmath": "exam",
-    "chapmix": "exam"
-   }
-  }
- ],
- "parent": {
-  "name": "美好的世界",
-  "salt": "d2aab7a455a2db33",
-  "hash": "6a380a8ce0e9737d34bf2a5813ba7e6b3de012ab235719da97a5befaf04732ec"
- },
- "dailyStarCap": 30,
- "starGoal": 400,
- "breakMinutes": 15,
- "breakRestMinutes": 3,
- "notice": {
-  "ver": 2,
-  "title": "书山小路 · 用之前先知道",
-  "items": [
-   "记录只保存在这台手机里。换手机、清浏览器之前，请家长到「家长专区」导出备份，不然星星和错题会没。家长专区在登录页最下面，第一次进去自己设一个 4~6 位数字的密码。",
-   "每天最多得 30 颗星，攒够了可以换金币，找家长领取。",
-   "连续做 15 分钟会自动提醒休息 3 分钟，眼睛要紧。",
-   "没网也能做题。听力、朗读用的是手机自带的声音，个别手机可能发不出声。",
-   "可以装到手机桌面，点一下就开，像真的 App 一样（登录页底部有教程）。"
-  ]
- }
 }

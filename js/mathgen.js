@@ -467,6 +467,35 @@ const G6 = {
 };
 export const T6 = [{ id: 'fmul', name: '分数乘法' }, { id: 'fdiv', name: '分数除法' }, { id: 'fmix', name: '分数混合运算' }, { id: 'pct', name: '百分数互化' }, { id: 'ratio', name: '比的化简与应用' }, { id: 'simp', name: '简便计算' }];
 
+// ---------- 八年级口算（实数、二次根式、一次函数、方程组、勾股定理、统计） ----------
+// 答案只用整数、小数、分数三种，键盘够用；根式结果的题放在章节练习里用选择题。
+const q8 = (typeId, stem, ans, why, digits) => ({ type: 'math', typeId, stem, answer: String(ans), why: why + `\n答案：${ans}`, pts: 1, id: 'r-' + typeId + '-' + hash(stem), digits: !!digits });
+const G8 = {
+  root: (L) => { const f = ri(0, 2), a = ri(2, L === 1 ? 12 : 20), b = ri(2, L === 1 ? 6 : 9);
+    if (f === 0) return q8('root', `${a * a} 的算术平方根是？`, a, `${a}×${a}=${a * a}，所以算术平方根是 ${a}。`, true);
+    if (f === 1) return q8('root', `${b * b * b} 的立方根是？`, b, `${b}×${b}×${b}=${b * b * b}，所以立方根是 ${b}。`, true);
+    return q8('root', `√${a * a}+∛${b * b * b} 等于多少？`, a + b, `√${a * a}=${a}，∛${b * b * b}=${b}，和是 ${a + b}。`, true); },
+  sqrt: (L) => { const f = ri(0, 1), a = ri(2, 9), b = ri(2, 9);
+    if (f === 0) return q8('sqrt', `√${a * a}×√${b * b} 等于多少？`, a * b, `√${a * a}=${a}，√${b * b}=${b}，积是 ${a * b}。`, true);
+    return q8('sqrt', `√${a * a * b * b}÷√${b * b} 等于多少？`, a, `√${a * a * b * b}=${a * b}，√${b * b}=${b}，${a * b}÷${b}=${a}。`, true); },
+  pyth: (L) => { const T = L === 1 ? [[3, 4, 5], [6, 8, 10], [5, 12, 13]] : [[3, 4, 5], [5, 12, 13], [8, 15, 17], [7, 24, 25], [9, 12, 15], [20, 21, 29]], t = pick(T), f = ri(0, 1);
+    if (f === 0) return q8('pyth', `直角三角形的两条直角边分别是 ${t[0]} 和 ${t[1]}，斜边是多少？`, t[2], `勾股定理：${t[0]}²+${t[1]}²=${t[0] * t[0] + t[1] * t[1]}=${t[2]}²，斜边是 ${t[2]}。`, true);
+    return q8('pyth', `直角三角形的斜边是 ${t[2]}，一条直角边是 ${t[0]}，另一条直角边是多少？`, t[1], `勾股定理：${t[2]}²−${t[0]}²=${t[2] * t[2] - t[0] * t[0]}=${t[1]}²，另一条直角边是 ${t[1]}。`, true); },
+  lin: (L) => { const k = ri(2, 6) * (Math.random() < 0.3 && L > 1 ? -1 : 1), b = ri(-9, 9), x = ri(1, L === 1 ? 5 : 9), y = k * x + b, sb = b === 0 ? '' : (b > 0 ? `+${b}` : `−${-b}`);
+    const kk = k < 0 ? `−${-k}` : `${k}`;
+    if (Math.random() < 0.5) return q8('lin', `一次函数 y=${kk}x${sb}，当 x=${x} 时，y 等于多少？`, y, `把 x=${x} 代入：${k}×${x}${b >= 0 ? '+' : ''}${b}=${y}。`, true);
+    return q8('lin', `一次函数 y=${kk}x${sb}，当 x=0 时，y 等于多少？（图象与 y 轴交点的纵坐标）`, b, `x=0 时 y=b=${b}。`, true); },
+  sys: (L) => { const x = ri(1, L === 1 ? 5 : 9), y = ri(1, L === 1 ? 5 : 9), a = ri(1, 3), c = ri(1, 3), b = a + ri(1, 3), d = c + ri(1, 3);
+    const e1 = a * x + c * y, e2 = b * x + d * y; if (a * d === b * c) return G8.sys(L);
+    const det = a * d - b * c, X = (e1 * d - e2 * c) / det; if (!Number.isInteger(X) || X !== x) return G8.sys(L);
+    return q8('sys', `解方程组 ${a === 1 ? '' : a}x+${c === 1 ? '' : c}y=${e1}，${b === 1 ? '' : b}x+${d === 1 ? '' : d}y=${e2}，求 x 的值。`, x, `把 x=${x}、y=${y} 代入检验：${a}×${x}+${c}×${y}=${e1}，${b}×${x}+${d}×${y}=${e2}，成立，所以 x=${x}（y=${y}）。`, true); },
+  stat: (L) => { const n = L === 1 ? 4 : 5, v = Array.from({ length: n }, () => ri(2, 12)), sum = v.reduce((p, c) => p + c, 0), m = Math.floor(sum / n); const arr = v.slice(); arr[n - 1] += (n - sum % n) % n; const s2 = arr.reduce((p, c) => p + c, 0), f = ri(0, 1);
+    if (f === 0) return q8('stat', `${arr.join('、')} 这 ${n} 个数的平均数是多少？`, s2 / n, `总和 ${arr.join('+')}=${s2}，${s2}÷${n}=${s2 / n}。`, true);
+    const sorted = arr.slice().sort((p, c) => p - c), odd = n % 2 === 1; if (!odd) return G8.stat(L);
+    return q8('stat', `${arr.join('、')} 这 ${n} 个数的中位数是多少？`, sorted[(n - 1) / 2], `从小到大排：${sorted.join('、')}，中间的数是 ${sorted[(n - 1) / 2]}。`, true); },
+};
+export const T8 = [{ id: 'root', name: '平方根与立方根' }, { id: 'sqrt', name: '二次根式运算' }, { id: 'pyth', name: '勾股定理求边长' }, { id: 'lin', name: '一次函数求值' }, { id: 'sys', name: '二元一次方程组' }, { id: 'stat', name: '平均数与中位数' }];
+
 // ---------- 英语词汇 ----------
 const vocabQ = (kind, list) => {
   const w = pick(list), pool = shuf(list.filter(x => x.en !== w.en)).slice(0, 3);
@@ -494,6 +523,7 @@ import { CHAP1_TYPES } from './chapgen1.js';
 import { CHAP3_TYPES } from './chapgen3.js';
 import { CHAP5_TYPES } from './chapgen5.js';
 import { CHAP6_TYPES } from './chapgen6.js';
+import { CHAP8_TYPES } from './chapgen8.js';
 export const RANDOM = {
   chap1: { title: '一年级数学章节练习', icon: '📐', subject: 'chap1', types: CHAP1_TYPES, levels: ['简单', '适中', '挑战'] },
   math1: { title: '口算随机练习', icon: '🎲', subject: 'math1', types: T1, levels: ['简单', '适中', '挑战'], gen: (t, l) => G1[t](l) },
@@ -509,6 +539,10 @@ export const RANDOM = {
   math6: { title: '口算随机练习', icon: '🎲', subject: 'math6', types: T6, levels: ['简单', '适中', '挑战'], gen: (t, l) => G6[t](l) },
   vocab6: { title: '英语单词小测', icon: '🔤', subject: 'vocab6', types: TW, levels: null },
   sent6: { title: '英语句子小测', icon: '📝', subject: 'sent6', types: TS, levels: null },
+  vocab8: { title: '英语单词小测', icon: '🔤', subject: 'vocab8', types: TW, levels: null },
+  phrase8: { title: '英语短语小测', icon: '💬', subject: 'phrase8', types: TW, levels: null },
+  chap8: { title: '八年级数学章节练习', icon: '📐', subject: 'chap8', types: CHAP8_TYPES, levels: ['简单', '适中', '挑战'] },
+  math8: { title: '口算随机练习', icon: '🎲', subject: 'math8', types: T8, levels: ['简单', '适中', '挑战'], gen: (t, l) => G8[t](l) },
   chap2: { title: '二年级数学章节练习', icon: '📐', subject: 'chap2', types: CHAP2_TYPES, levels: ['简单', '适中', '挑战'] },
   math2: { title: '口算随机练习', icon: '🎲', subject: 'math2', types: T2, levels: ['简单', '适中', '挑战'], gen: (t, l) => G2[t](l) },
   cnw2: { title: '词语听写', icon: '✍️', subject: 'cnw', types: [], levels: null },

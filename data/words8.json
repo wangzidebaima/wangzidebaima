@@ -1,0 +1,4859 @@
+{
+"book": "人教版 八年级上册",
+"units": [
+{
+"id": "U1",
+"name": "Unit 1 Happy Holiday",
+"items": [
+{
+"id": "U1-1",
+"en": "ancient",
+"pos": "adj.",
+"zh": "古代的；古老的",
+"zh1": "古代的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-2",
+"en": "camp",
+"pos": "n.",
+"zh": "度假营；营地；露营；宿营",
+"zh1": "度假营",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-3",
+"en": "landscape",
+"pos": "n.",
+"zh": "风景；景色",
+"zh1": "风景",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-4",
+"en": "strange",
+"pos": "adj.",
+"zh": "奇怪的；陌生的",
+"zh1": "奇怪的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-5",
+"en": "vacation",
+"pos": "n.",
+"zh": "假期；度假",
+"zh1": "假期",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-6",
+"en": "fantastic",
+"pos": "adj.",
+"zh": "极好的；吸引人的",
+"zh1": "极好的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-7",
+"en": "town",
+"pos": "n.",
+"zh": "镇；商业区",
+"zh1": "镇",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-8",
+"en": "breath",
+"pos": "n.",
+"zh": "呼吸的空气；一口气",
+"zh1": "呼吸的空气",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-9",
+"en": "take sb's breath away",
+"pos": "",
+"zh": "令人惊叹；让人叹绝",
+"zh1": "令人惊叹",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U1-10",
+"en": "especially",
+"pos": "adv.",
+"zh": "尤其；特别",
+"zh1": "尤其",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-11",
+"en": "steamed chicken soup",
+"pos": "",
+"zh": "汽锅鸡",
+"zh1": "汽锅鸡",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U1-12",
+"en": "anywhere",
+"pos": "adv.",
+"zh": "在任何地方；随便哪个地方",
+"zh1": "在任何地方",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-13",
+"en": "nothing",
+"pos": "pron.",
+"zh": "没有事；没有任何东西",
+"zh1": "没有事",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-14",
+"en": "relaxing",
+"pos": "adj.",
+"zh": "轻松的；令人放松的",
+"zh1": "轻松的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-15",
+"en": "guide",
+"pos": "n.",
+"zh": "导游；指南；手册；给某人领路；指导",
+"zh1": "导游",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-16",
+"en": "scenery",
+"pos": "n.",
+"zh": "风景；景色",
+"zh1": "风景",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-17",
+"en": "silk",
+"pos": "n.",
+"zh": "丝绸；（蚕）丝",
+"zh1": "丝绸",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-18",
+"en": "scarf",
+"pos": "n.",
+"zh": "围巾；披巾",
+"zh1": "围巾",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-19",
+"en": "ready",
+"pos": "adj.",
+"zh": "准备好的；现成的；已做完；已完成",
+"zh1": "准备好的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-20",
+"en": "ready to do sth",
+"pos": "",
+"zh": "马上要（做某事）；愿意做（某事）",
+"zh1": "马上要",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U1-21",
+"en": "somewhere",
+"pos": "adv.",
+"zh": "在某处；到某处；某处；某个地方",
+"zh1": "在某处",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-22",
+"en": "myself",
+"pos": "pron.",
+"zh": "我自己",
+"zh1": "我自己",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-23",
+"en": "nothing but",
+"pos": "",
+"zh": "只有；只是",
+"zh1": "只有",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U1-24",
+"en": "hotel",
+"pos": "n.",
+"zh": "旅馆；旅社",
+"zh1": "旅馆",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-25",
+"en": "comfortable",
+"pos": "adj.",
+"zh": "使人舒服的；舒适的",
+"zh1": "使人舒服的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-26",
+"en": "bored",
+"pos": "adj.",
+"zh": "厌倦的；烦闷的",
+"zh1": "厌倦的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-27",
+"en": "sky",
+"pos": "n.",
+"zh": "天；天空",
+"zh1": "天",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-28",
+"en": "towards",
+"pos": "prep.",
+"zh": "向；朝",
+"zh1": "向",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-29",
+"en": "rainbow",
+"pos": "n.",
+"zh": "虹；彩虹",
+"zh1": "虹",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-30",
+"en": "square",
+"pos": "n.",
+"zh": "广场；正方形；正方形的；平方的",
+"zh1": "广场",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-31",
+"en": "during",
+"pos": "prep.",
+"zh": "在……期间",
+"zh1": "在……期间",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-32",
+"en": "victory",
+"pos": "n.",
+"zh": "胜利；成功",
+"zh1": "胜利",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-33",
+"en": "Russian",
+"pos": "adj.",
+"zh": "俄罗斯的；俄罗斯人的；俄罗斯人；俄语",
+"zh1": "俄罗斯的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-34",
+"en": "fight",
+"pos": "n.",
+"zh": "战斗；搏斗；斗争；(fought) 打仗；打架",
+"zh1": "战斗",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-35",
+"en": "against",
+"pos": "prep.",
+"zh": "反对；与……相反；紧靠",
+"zh1": "反对",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-36",
+"en": "fight against sb / sth",
+"pos": "",
+"zh": "与……作战；与……作斗争",
+"zh1": "与……作战",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U1-37",
+"en": "artwork",
+"pos": "n.",
+"zh": "艺术作品；插图",
+"zh1": "艺术作品",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-38",
+"en": "thousands of",
+"pos": "",
+"zh": "数以千计的；成千上万的",
+"zh1": "数以千计的",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U1-39",
+"en": "tear",
+"pos": "n.",
+"zh": "眼泪；泪水",
+"zh1": "眼泪",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-40",
+"en": "remind",
+"pos": "v.",
+"zh": "提醒；使想起",
+"zh1": "提醒",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-41",
+"en": "peace",
+"pos": "n.",
+"zh": "和平；太平",
+"zh1": "和平",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-42",
+"en": "easily",
+"pos": "adv.",
+"zh": "容易地；轻易地",
+"zh1": "容易地",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-43",
+"en": "forget",
+"pos": "v.",
+"zh": "忘记；遗忘",
+"zh1": "忘记",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-44",
+"en": "noon",
+"pos": "n.",
+"zh": "正午；中午",
+"zh1": "正午",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-45",
+"en": "sick",
+"pos": "adj.",
+"zh": "恶心的；生病的",
+"zh1": "恶心的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-46",
+"en": "metro",
+"pos": "n.",
+"zh": "地下铁道系统",
+"zh1": "地下铁道系统",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-47",
+"en": "station",
+"pos": "n.",
+"zh": "车站；所；局",
+"zh1": "车站",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-48",
+"en": "palace",
+"pos": "n.",
+"zh": "王宫；宫殿",
+"zh1": "王宫",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-49",
+"en": "accordion",
+"pos": "n.",
+"zh": "手风琴",
+"zh1": "手风琴",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-50",
+"en": "get together",
+"pos": "",
+"zh": "聚会；相聚",
+"zh1": "聚会",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U1-51",
+"en": "in the sun",
+"pos": "",
+"zh": "在阳光下",
+"zh1": "在阳光下",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U1-52",
+"en": "tower",
+"pos": "n.",
+"zh": "塔；塔楼",
+"zh1": "塔",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-53",
+"en": "might",
+"pos": "modal v.",
+"zh": "可能；可以",
+"zh1": "可能",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-54",
+"en": "budget",
+"pos": "n.",
+"zh": "预算；把……编入预算；精打细算",
+"zh1": "预算",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-55",
+"en": "passport",
+"pos": "n.",
+"zh": "护照",
+"zh1": "护照",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-56",
+"en": "forgetful",
+"pos": "adj.",
+"zh": "健忘的；好忘事的",
+"zh1": "健忘的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-57",
+"en": "faraway",
+"pos": "adj.",
+"zh": "远方的；遥远的",
+"zh1": "远方的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-58",
+"en": "regular",
+"pos": "adj.",
+"zh": "平常的；有规律的",
+"zh1": "平常的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-59",
+"en": "countryside",
+"pos": "n.",
+"zh": "乡村；农村",
+"zh1": "乡村",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-60",
+"en": "turn around",
+"pos": "",
+"zh": "转身；翻转",
+"zh1": "转身",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U1-61",
+"en": "surprised",
+"pos": "adj.",
+"zh": "惊奇的；惊讶的",
+"zh1": "惊奇的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-62",
+"en": "deer",
+"pos": "n.",
+"zh": "鹿",
+"zh1": "鹿",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-63",
+"en": "probably",
+"pos": "adv.",
+"zh": "很可能；大概",
+"zh1": "很可能",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-64",
+"en": "look for",
+"pos": "",
+"zh": "寻找",
+"zh1": "寻找",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U1-65",
+"en": "Guest-Greeting Pine",
+"pos": "",
+"zh": "迎客松",
+"zh1": "迎客松",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U1-66",
+"en": "Sea of Clouds",
+"pos": "",
+"zh": "云海",
+"zh1": "云海",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U1-67",
+"en": "Seattle",
+"pos": "",
+"zh": "西雅图（美国城市）",
+"zh1": "西雅图",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U1-68",
+"en": "Red Square",
+"pos": "",
+"zh": "红场",
+"zh1": "红场",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U1-69",
+"en": "Alexander Garden",
+"pos": "",
+"zh": "亚历山大花园",
+"zh1": "亚历山大花园",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U1-70",
+"en": "Vincent",
+"pos": "",
+"zh": "文森特",
+"zh1": "文森特",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U1-71",
+"en": "Moscow",
+"pos": "",
+"zh": "莫斯科（俄罗斯首都）",
+"zh1": "莫斯科",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U1-72",
+"en": "Russia",
+"pos": "",
+"zh": "俄罗斯",
+"zh1": "俄罗斯",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U1-73",
+"en": "the Victory Museum",
+"pos": "",
+"zh": "胜利博物馆",
+"zh1": "胜利博物馆",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U1-74",
+"en": "Nazi",
+"pos": "n.",
+"zh": "纳粹党人；纳粹分子",
+"zh1": "纳粹党人",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U1-75",
+"en": "World War II",
+"pos": "",
+"zh": "第二次世界大战",
+"zh1": "第二次世界大战",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U1-76",
+"en": "Moscow Metro",
+"pos": "",
+"zh": "莫斯科地铁",
+"zh1": "莫斯科地铁",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U1-77",
+"en": "Scotland",
+"pos": "",
+"zh": "苏格兰",
+"zh1": "苏格兰",
+"bold": false,
+"kind": "word"
+}
+]
+},
+{
+"id": "U2",
+"name": "Unit 2 Home Sweet Home",
+"items": [
+{
+"id": "U2-1",
+"en": "pack",
+"pos": "v.",
+"zh": "打包；收拾",
+"zh1": "打包",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-2",
+"en": "pack up",
+"pos": "",
+"zh": "打包",
+"zh1": "打包",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U2-3",
+"en": "bathroom",
+"pos": "n.",
+"zh": "浴室；洗手间",
+"zh1": "浴室",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-4",
+"en": "sort",
+"pos": "v.",
+"zh": "把……分类；整理；种类",
+"zh1": "把……分类",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-5",
+"en": "bedroom",
+"pos": "n.",
+"zh": "卧室",
+"zh1": "卧室",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-6",
+"en": "balcony",
+"pos": "n.",
+"zh": "阳台",
+"zh1": "阳台",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-7",
+"en": "hang up",
+"pos": "",
+"zh": "挂起；挂断电话",
+"zh1": "挂起",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U2-8",
+"en": "invite",
+"pos": "v.",
+"zh": "邀请",
+"zh1": "邀请",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-9",
+"en": "living room",
+"pos": "",
+"zh": "客厅",
+"zh1": "客厅",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U2-10",
+"en": "arrival",
+"pos": "n.",
+"zh": "到达",
+"zh1": "到达",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-11",
+"en": "yet",
+"pos": "adv.",
+"zh": "（用于否定句和疑问句）还；但是",
+"zh1": "还",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-12",
+"en": "add",
+"pos": "v.",
+"zh": "添加；加",
+"zh1": "添加",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-13",
+"en": "add sth to sth",
+"pos": "",
+"zh": "把……加入……",
+"zh1": "把……加入……",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U2-14",
+"en": "go shopping",
+"pos": "",
+"zh": "去购物",
+"zh1": "去购物",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U2-15",
+"en": "biscuit",
+"pos": "n.",
+"zh": "饼干",
+"zh1": "饼干",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-16",
+"en": "borrow",
+"pos": "v.",
+"zh": "借",
+"zh1": "借",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-17",
+"en": "plan",
+"pos": "v.",
+"zh": "策划；打算；计划；方案",
+"zh1": "策划",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-18",
+"en": "treasure",
+"pos": "n.",
+"zh": "宝物；财富；珍视",
+"zh1": "宝物",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-19",
+"en": "hunt",
+"pos": "n.",
+"zh": "搜寻；狩猎；搜寻；打猎",
+"zh1": "搜寻",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-20",
+"en": "treasure hunt",
+"pos": "",
+"zh": "寻宝游戏",
+"zh1": "寻宝游戏",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U2-21",
+"en": "lift",
+"pos": "n.",
+"zh": "搭便车；电梯；举起；抬起",
+"zh1": "搭便车",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-22",
+"en": "give sb a lift",
+"pos": "",
+"zh": "开车顺便送某人",
+"zh1": "开车顺便送某人",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U2-23",
+"en": "until",
+"pos": "prep.",
+"zh": "到……时；直到……为止",
+"zh1": "到……时",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-24",
+"en": "be careful with",
+"pos": "",
+"zh": "注意；当心",
+"zh1": "注意",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U2-25",
+"en": "movie",
+"pos": "n.",
+"zh": "电影",
+"zh1": "电影",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-26",
+"en": "the movies",
+"pos": "",
+"zh": "电影院；电影产业",
+"zh1": "电影院",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U2-27",
+"en": "dead",
+"pos": "adj.",
+"zh": "不运行的；死的",
+"zh1": "不运行的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-28",
+"en": "note",
+"pos": "n.",
+"zh": "笔记；记录；便条；注意；指出",
+"zh1": "笔记",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-29",
+"en": "take notes",
+"pos": "",
+"zh": "做笔记",
+"zh1": "做笔记",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U2-30",
+"en": "clean up",
+"pos": "",
+"zh": "清扫",
+"zh1": "清扫",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U2-31",
+"en": "community",
+"pos": "n.",
+"zh": "社区；社团",
+"zh1": "社区",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-32",
+"en": "rubbish",
+"pos": "n.",
+"zh": "垃圾",
+"zh1": "垃圾",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-33",
+"en": "almost",
+"pos": "adv.",
+"zh": "差不多；几乎",
+"zh1": "差不多",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-34",
+"en": "journey",
+"pos": "n.",
+"zh": "旅行；历程；旅行",
+"zh1": "旅行",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-35",
+"en": "pull",
+"pos": "v./v. & n.",
+"zh": "拉；拖；拽",
+"zh1": "拉",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-36",
+"en": "luggage",
+"pos": "n.",
+"zh": "行李",
+"zh1": "行李",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-37",
+"en": "ah",
+"pos": "interj.",
+"zh": "啊（表示高兴、惊奇等）",
+"zh1": "啊",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-38",
+"en": "share sth with sb",
+"pos": "",
+"zh": "把……与……分享",
+"zh1": "把……与……分享",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U2-39",
+"en": "mm",
+"pos": "interj.",
+"zh": "嗯（表示喜欢、同意等）",
+"zh1": "嗯",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-40",
+"en": "familiar",
+"pos": "adj.",
+"zh": "熟悉的",
+"zh1": "熟悉的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-41",
+"en": "joke",
+"pos": "n.",
+"zh": "笑话；开玩笑",
+"zh1": "笑话",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-42",
+"en": "several",
+"pos": "pron.",
+"zh": "几个；一些",
+"zh1": "几个",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-43",
+"en": "nod",
+"pos": "v./v. & n.",
+"zh": "点头",
+"zh1": "点头",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-44",
+"en": "writer",
+"pos": "n.",
+"zh": "作者",
+"zh1": "作者",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-45",
+"en": "text",
+"pos": "n.",
+"zh": "正文；文本；(用手机给某人)发短信",
+"zh1": "正文",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-46",
+"en": "describe",
+"pos": "v.",
+"zh": "描述；形容",
+"zh1": "描述",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-47",
+"en": "wherever",
+"pos": "adv./adv. & conj.",
+"zh": "无论去哪里；在任何地方",
+"zh1": "无论去哪里",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-48",
+"en": "matter",
+"pos": "v.",
+"zh": "要紧；问题",
+"zh1": "要紧",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-49",
+"en": "no matter",
+"pos": "",
+"zh": "不论；不要紧",
+"zh1": "不论",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U2-50",
+"en": "perhaps",
+"pos": "adv.",
+"zh": "也许；可能",
+"zh1": "也许",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-51",
+"en": "plate",
+"pos": "n.",
+"zh": "盘子；碟子",
+"zh1": "盘子",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-52",
+"en": "freshly",
+"pos": "adv.",
+"zh": "刚刚",
+"zh1": "刚刚",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-53",
+"en": "smell",
+"pos": "v.",
+"zh": "发臭；闻到；气味；臭味",
+"zh1": "发臭",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-54",
+"en": "joy",
+"pos": "n.",
+"zh": "喜悦；乐趣",
+"zh1": "喜悦",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-55",
+"en": "apartment",
+"pos": "n.",
+"zh": "房间；公寓套房",
+"zh1": "房间",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-56",
+"en": "block",
+"pos": "n.",
+"zh": "大楼；街区；大块；阻挡；堵塞",
+"zh1": "大楼",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-57",
+"en": "decorate",
+"pos": "v.",
+"zh": "装饰；装潢",
+"zh1": "装饰",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-58",
+"en": "cover",
+"pos": "v.",
+"zh": "遮盖；包括；遮盖物；封面",
+"zh1": "遮盖",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-59",
+"en": "poster",
+"pos": "n.",
+"zh": "海报",
+"zh1": "海报",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-60",
+"en": "scissors",
+"pos": "n./n. (pl.)",
+"zh": "剪刀",
+"zh1": "剪刀",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-61",
+"en": "glue",
+"pos": "n.",
+"zh": "胶水；粘贴",
+"zh1": "胶水",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-62",
+"en": "paper-cut",
+"pos": "n.",
+"zh": "剪纸",
+"zh1": "剪纸",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U2-63",
+"en": "mm (= mmm)",
+"pos": "interj.",
+"zh": "嗯（表示喜欢、同意等）",
+"zh1": "嗯",
+"bold": false,
+"kind": "phrase"
+}
+]
+},
+{
+"id": "U3",
+"name": "Unit 3 Same or Different?",
+"items": [
+{
+"id": "U3-1",
+"en": "compare",
+"pos": "v.",
+"zh": "比较；对比",
+"zh1": "比较",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-2",
+"en": "shy",
+"pos": "adj.",
+"zh": "害羞的",
+"zh1": "害羞的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-3",
+"en": "lazy",
+"pos": "adj.",
+"zh": "懒惰的；懒洋洋的",
+"zh1": "懒惰的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-4",
+"en": "loud",
+"pos": "adv.",
+"zh": "响亮地；大声的",
+"zh1": "响亮地",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-5",
+"en": "outgoing",
+"pos": "adj.",
+"zh": "外向的",
+"zh1": "外向的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-6",
+"en": "hard-working",
+"pos": "adj.",
+"zh": "勤奋的",
+"zh1": "勤奋的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-7",
+"en": "perform",
+"pos": "v.",
+"zh": "表演；执行",
+"zh1": "表演",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-8",
+"en": "alone",
+"pos": "adv. & adj.",
+"zh": "独自；单独",
+"zh1": "独自",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-9",
+"en": "solve",
+"pos": "v.",
+"zh": "解决；解答",
+"zh1": "解决",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-10",
+"en": "flute",
+"pos": "n.",
+"zh": "长笛",
+"zh1": "长笛",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-11",
+"en": "congratulation",
+"pos": "n.",
+"zh": "祝贺；恭喜",
+"zh1": "祝贺",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-12",
+"en": "Congratulations (on ...)!",
+"pos": "",
+"zh": "祝贺！",
+"zh1": "祝贺！",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U3-13",
+"en": "prize",
+"pos": "n.",
+"zh": "奖；奖励",
+"zh1": "奖",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-14",
+"en": "attend",
+"pos": "v.",
+"zh": "参加；出席",
+"zh1": "参加",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-15",
+"en": "as ... as ...",
+"pos": "",
+"zh": "像……一样……",
+"zh1": "像……一样……",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U3-16",
+"en": "besides",
+"pos": "prep.",
+"zh": "除……之外(还)；而且",
+"zh1": "除……之外(还)",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-17",
+"en": "spare",
+"pos": "adj.",
+"zh": "空闲的；备用的；抽出；拨出",
+"zh1": "空闲的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-18",
+"en": "spare time",
+"pos": "",
+"zh": "空闲时间",
+"zh1": "空闲时间",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U3-19",
+"en": "pleasure",
+"pos": "n.",
+"zh": "乐事；愉快；荣幸",
+"zh1": "乐事",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-20",
+"en": "have sth in common",
+"pos": "",
+"zh": "有共同之处",
+"zh1": "有共同之处",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U3-21",
+"en": "appearance",
+"pos": "n.",
+"zh": "外表；露面",
+"zh1": "外表",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-22",
+"en": "personality",
+"pos": "n.",
+"zh": "性格；品质",
+"zh1": "性格",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-23",
+"en": "serious",
+"pos": "adj.",
+"zh": "严肃的；严重的",
+"zh1": "严肃的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-24",
+"en": "strength",
+"pos": "n.",
+"zh": "优势；力量",
+"zh1": "优势",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-25",
+"en": "slim",
+"pos": "adj.",
+"zh": "苗条的；薄的",
+"zh1": "苗条的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-26",
+"en": "fact",
+"pos": "n.",
+"zh": "事实；现实",
+"zh1": "事实",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-27",
+"en": "population",
+"pos": "n.",
+"zh": "人口",
+"zh1": "人口",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-28",
+"en": "km (= kilometre; kilometer)",
+"pos": "",
+"zh": "千米；公里",
+"zh1": "千米",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U3-29",
+"en": "average",
+"pos": "adj.",
+"zh": "平均的；平常的；平均数；平均水准",
+"zh1": "平均的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-30",
+"en": "rainfall",
+"pos": "n.",
+"zh": "降雨量",
+"zh1": "降雨量",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-31",
+"en": "per",
+"pos": "prep.",
+"zh": "每",
+"zh1": "每",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-32",
+"en": "mm (= millimetre; millimeter)",
+"pos": "",
+"zh": "毫米",
+"zh1": "毫米",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U3-33",
+"en": "pleasant",
+"pos": "adj.",
+"zh": "宜人的；友好的",
+"zh1": "宜人的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-34",
+"en": "forum",
+"pos": "n.",
+"zh": "论坛；讨论会",
+"zh1": "论坛",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-35",
+"en": "difference",
+"pos": "n.",
+"zh": "差异",
+"zh1": "差异",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-36",
+"en": "alike",
+"pos": "adj.",
+"zh": "相像的；相似地",
+"zh1": "相像的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-37",
+"en": "mirror",
+"pos": "n.",
+"zh": "镜子",
+"zh1": "镜子",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-38",
+"en": "interest",
+"pos": "n.",
+"zh": "业余爱好；兴趣；使感兴趣",
+"zh1": "业余爱好",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-39",
+"en": "novel",
+"pos": "n.",
+"zh": "小说",
+"zh1": "小说",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-40",
+"en": "sense",
+"pos": "n.",
+"zh": "理解力；感觉；意识到；感觉到",
+"zh1": "理解力",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-41",
+"en": "humour (= humor)",
+"pos": "n.",
+"zh": "幽默；幽默感",
+"zh1": "幽默",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U3-42",
+"en": "thanks to",
+"pos": "",
+"zh": "归功于；由于；因为",
+"zh1": "归功于",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U3-43",
+"en": "opinion",
+"pos": "n.",
+"zh": "看法；意见",
+"zh1": "看法",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-44",
+"en": "make a mistake",
+"pos": "",
+"zh": "犯错误",
+"zh1": "犯错误",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U3-45",
+"en": "less",
+"pos": "adj.",
+"zh": "较少的；更少的；较少地；更少地；较少；更少",
+"zh1": "较少的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-46",
+"en": "straightforward",
+"pos": "adj.",
+"zh": "坦率的；简单的",
+"zh1": "坦率的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-47",
+"en": "honest",
+"pos": "adj.",
+"zh": "坦诚的；诚实的",
+"zh1": "坦诚的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-48",
+"en": "direct",
+"pos": "adj.",
+"zh": "率直的；直接的",
+"zh1": "率直的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-49",
+"en": "similarity",
+"pos": "n.",
+"zh": "相似之处",
+"zh1": "相似之处",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-50",
+"en": "friendship",
+"pos": "n.",
+"zh": "友谊；友情",
+"zh1": "友谊",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-51",
+"en": "metre (= meter)",
+"pos": "n.",
+"zh": "米",
+"zh1": "米",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U3-52",
+"en": "prince",
+"pos": "n.",
+"zh": "王子",
+"zh1": "王子",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-53",
+"en": "character",
+"pos": "n.",
+"zh": "人物；个性",
+"zh1": "人物",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-54",
+"en": "pauper",
+"pos": "n.",
+"zh": "贫民；乞丐",
+"zh1": "贫民",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-55",
+"en": "exchange",
+"pos": "v. & n.",
+"zh": "交换",
+"zh1": "交换",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-56",
+"en": "accident",
+"pos": "n.",
+"zh": "意外；(交通)事故",
+"zh1": "意外",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-57",
+"en": "by accident",
+"pos": "",
+"zh": "偶然；意外地",
+"zh1": "偶然",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U3-58",
+"en": "expect",
+"pos": "v.",
+"zh": "预料；期待",
+"zh1": "预料",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-59",
+"en": "silver",
+"pos": "adj.",
+"zh": "银色的；银",
+"zh1": "银色的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-60",
+"en": "lining",
+"pos": "n.",
+"zh": "内衬",
+"zh1": "内衬",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-61",
+"en": "silver lining",
+"pos": "",
+"zh": "一线光明",
+"zh1": "一线光明",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U3-62",
+"en": "situation",
+"pos": "n.",
+"zh": "情况；状况",
+"zh1": "情况",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-63",
+"en": "care about",
+"pos": "",
+"zh": "关心；担心",
+"zh1": "关心",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U3-64",
+"en": "reach",
+"pos": "v.",
+"zh": "伸手；到达",
+"zh1": "伸手",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-65",
+"en": "reach for",
+"pos": "",
+"zh": "伸手触碰",
+"zh1": "伸手触碰",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U3-66",
+"en": "touch",
+"pos": "v.",
+"zh": "触动；触碰",
+"zh1": "触动",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U3-67",
+"en": "lend (sb) a hand",
+"pos": "",
+"zh": "帮助(某人)",
+"zh1": "帮助(某人)",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U3-68",
+"en": "Julie",
+"pos": "",
+"zh": "朱莉",
+"zh1": "朱莉",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U3-69",
+"en": "Vancouver",
+"pos": "",
+"zh": "温哥华(加拿大城市)",
+"zh1": "温哥华(加拿大城市)",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U3-70",
+"en": "Matt",
+"pos": "",
+"zh": "马特",
+"zh1": "马特",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U3-71",
+"en": "Stephen",
+"pos": "",
+"zh": "斯蒂芬",
+"zh1": "斯蒂芬",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U3-72",
+"en": "Diana",
+"pos": "",
+"zh": "戴安娜",
+"zh1": "戴安娜",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U3-73",
+"en": "Edward",
+"pos": "",
+"zh": "爱德华",
+"zh1": "爱德华",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U3-74",
+"en": "Mark Twain",
+"pos": "",
+"zh": "马克·吐温",
+"zh1": "马克·吐温",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U3-75",
+"en": "Rose",
+"pos": "",
+"zh": "罗丝",
+"zh1": "罗丝",
+"bold": false,
+"kind": "word"
+}
+]
+},
+{
+"id": "U4",
+"name": "Unit 4 Amazing Plants and Animals",
+"items": [
+{
+"id": "U4-1",
+"en": "moss",
+"pos": "n.",
+"zh": "苔藓",
+"zh1": "苔藓",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-2",
+"en": "redwood",
+"pos": "n.",
+"zh": "红杉；红木",
+"zh1": "红杉",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-3",
+"en": "cheetah",
+"pos": "n.",
+"zh": "猎豹",
+"zh1": "猎豹",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-4",
+"en": "folding",
+"pos": "adj.",
+"zh": "折叠式的；可折叠的",
+"zh1": "折叠式的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-5",
+"en": "folding fan",
+"pos": "",
+"zh": "折扇",
+"zh1": "折扇",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U4-6",
+"en": "bamboo",
+"pos": "n.",
+"zh": "竹；竹子",
+"zh1": "竹",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-7",
+"en": "yeah",
+"pos": "interj.",
+"zh": "是的；对",
+"zh1": "是的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-8",
+"en": "popular",
+"pos": "adj.",
+"zh": "广受欢迎的；流行的",
+"zh1": "广受欢迎的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-9",
+"en": "goodness",
+"pos": "n.",
+"zh": "美德；营养",
+"zh1": "美德",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-10",
+"en": "tool",
+"pos": "n.",
+"zh": "工具；手段",
+"zh1": "工具",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-11",
+"en": "actually",
+"pos": "adv.",
+"zh": "实际上；居然",
+"zh1": "实际上",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-12",
+"en": "shoot",
+"pos": "n.",
+"zh": "幼苗；嫩芽；(shot)开(枪)；射击",
+"zh1": "幼苗",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-13",
+"en": "appear",
+"pos": "v.",
+"zh": "出现；看来好像",
+"zh1": "出现",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-14",
+"en": "feel free (to do sth)",
+"pos": "",
+"zh": "可以随便做某事",
+"zh1": "可以随便做某事",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U4-15",
+"en": "land",
+"pos": "n.",
+"zh": "陆地；土地；降落；着陆",
+"zh1": "陆地",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-16",
+"en": "African",
+"pos": "adj.",
+"zh": "非洲的；非洲人的；非洲人",
+"zh1": "非洲的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-17",
+"en": "rose",
+"pos": "n.",
+"zh": "玫瑰；蔷薇",
+"zh1": "玫瑰",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-18",
+"en": "peony",
+"pos": "n.",
+"zh": "牡丹；芍药",
+"zh1": "牡丹",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-19",
+"en": "lotus",
+"pos": "n.",
+"zh": "莲花",
+"zh1": "莲花",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-20",
+"en": "butterfly",
+"pos": "n.",
+"zh": "蝴蝶",
+"zh1": "蝴蝶",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-21",
+"en": "wing",
+"pos": "n.",
+"zh": "翅膀；翼",
+"zh1": "翅膀",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-22",
+"en": "frog",
+"pos": "n.",
+"zh": "蛙；青蛙",
+"zh1": "蛙",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-23",
+"en": "up to",
+"pos": "",
+"zh": "接近；直到",
+"zh1": "接近",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U4-24",
+"en": "weigh",
+"pos": "v.",
+"zh": "有……重；称重量",
+"zh1": "有……重",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-25",
+"en": "kg (= kilogram; kilogramme)",
+"pos": "",
+"zh": "千克；公斤",
+"zh1": "千克",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U4-26",
+"en": "ginkgo",
+"pos": "n.",
+"zh": "银杏",
+"zh1": "银杏",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-27",
+"en": "believe",
+"pos": "v.",
+"zh": "相信；认为有可能",
+"zh1": "相信",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-28",
+"en": "province",
+"pos": "n.",
+"zh": "省份",
+"zh1": "省份",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-29",
+"en": "take a walk",
+"pos": "",
+"zh": "散步",
+"zh1": "散步",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U4-30",
+"en": "connect",
+"pos": "v.",
+"zh": "关联；连接",
+"zh1": "关联",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-31",
+"en": "connected",
+"pos": "adj.",
+"zh": "连接的；相关的",
+"zh1": "连接的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-32",
+"en": "be connected with / to",
+"pos": "",
+"zh": "与……相连；与……有关联",
+"zh1": "与……相连",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U4-33",
+"en": "without",
+"pos": "prep.",
+"zh": "没有；缺乏",
+"zh1": "没有",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-34",
+"en": "imagine",
+"pos": "v.",
+"zh": "想象；猜想",
+"zh1": "想象",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-35",
+"en": "honey",
+"pos": "n.",
+"zh": "蜂蜜；（爱称）亲爱的",
+"zh1": "蜂蜜",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-36",
+"en": "disappointed",
+"pos": "adj.",
+"zh": "失望的；沮丧的",
+"zh1": "失望的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-37",
+"en": "connection",
+"pos": "n.",
+"zh": "联系；连接",
+"zh1": "联系",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-38",
+"en": "pollination",
+"pos": "n.",
+"zh": "授粉",
+"zh1": "授粉",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-39",
+"en": "pollen",
+"pos": "n.",
+"zh": "花粉",
+"zh1": "花粉",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-40",
+"en": "action",
+"pos": "n.",
+"zh": "行动；行为",
+"zh1": "行动",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-41",
+"en": "in fact",
+"pos": "",
+"zh": "确切地说；实际上",
+"zh1": "确切地说",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U4-42",
+"en": "per cent (= percent)",
+"pos": "n./adj.&adv.",
+"zh": "百分之……；每一百中",
+"zh1": "百分之……",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U4-43",
+"en": "for this reason",
+"pos": "",
+"zh": "出于这个原因",
+"zh1": "出于这个原因",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U4-44",
+"en": "planet",
+"pos": "n.",
+"zh": "行星",
+"zh1": "行星",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-45",
+"en": "in order to",
+"pos": "",
+"zh": "为了；以便",
+"zh1": "为了",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U4-46",
+"en": "store",
+"pos": "v./n.",
+"zh": "贮存；存储；百货商店；商店",
+"zh1": "贮存",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-47",
+"en": "honeycomb",
+"pos": "n.",
+"zh": "蜂巢",
+"zh1": "蜂巢",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-48",
+"en": "communicate",
+"pos": "v.",
+"zh": "交流；沟通",
+"zh1": "交流",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-49",
+"en": "play a part (in sth)",
+"pos": "",
+"zh": "（在……中）起作用；参与某事",
+"zh1": "起作用",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U4-50",
+"en": "ecosystem",
+"pos": "n.",
+"zh": "生态系统",
+"zh1": "生态系统",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-51",
+"en": "protect",
+"pos": "v.",
+"zh": "保护；防护",
+"zh1": "保护",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-52",
+"en": "importance",
+"pos": "n.",
+"zh": "重要性",
+"zh1": "重要性",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-53",
+"en": "title",
+"pos": "n.",
+"zh": "标题；题目；名称",
+"zh1": "标题",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-54",
+"en": "human",
+"pos": "n./adj.",
+"zh": "人；人的；人类的",
+"zh1": "人",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-55",
+"en": "ant",
+"pos": "n.",
+"zh": "蚂蚁",
+"zh1": "蚂蚁",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-56",
+"en": "be home to sb / sth",
+"pos": "",
+"zh": "有……栖息；是……的家乡",
+"zh1": "有……栖息",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U4-57",
+"en": "happiness",
+"pos": "n.",
+"zh": "幸福；快乐",
+"zh1": "幸福",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-58",
+"en": "disappoint",
+"pos": "v.",
+"zh": "使失望；使破灭",
+"zh1": "使失望",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-59",
+"en": "mushroom",
+"pos": "n.",
+"zh": "蘑菇；伞菌",
+"zh1": "蘑菇",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-60",
+"en": "ton",
+"pos": "n.",
+"zh": "吨",
+"zh1": "吨",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-61",
+"en": "role",
+"pos": "n.",
+"zh": "作用；职能；角色",
+"zh1": "作用",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-62",
+"en": "play a role (in)",
+"pos": "",
+"zh": "在……中发挥作用；扮演角色",
+"zh1": "在……中发挥作用",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U4-63",
+"en": "pea",
+"pos": "n.",
+"zh": "豌豆",
+"zh1": "豌豆",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-64",
+"en": "climate",
+"pos": "n.",
+"zh": "气候",
+"zh1": "气候",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-65",
+"en": "ocean",
+"pos": "n.",
+"zh": "大海；海洋",
+"zh1": "大海",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-66",
+"en": "except",
+"pos": "prep.",
+"zh": "除……之外；除了",
+"zh1": "除……之外",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-67",
+"en": "tiny",
+"pos": "adj.",
+"zh": "极小的；微小的",
+"zh1": "极小的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-68",
+"en": "lively",
+"pos": "adj.",
+"zh": "精力充沛的；生机勃勃的",
+"zh1": "精力充沛的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U4-69",
+"en": "the Arctic Ocean",
+"pos": "",
+"zh": "北冰洋",
+"zh1": "北冰洋",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U4-70",
+"en": "Billy",
+"pos": "",
+"zh": "比利",
+"zh1": "比利",
+"bold": false,
+"kind": "word"
+}
+]
+},
+{
+"id": "U5",
+"name": "Unit 5 What a Delicious Meal!",
+"items": [
+{
+"id": "U5-1",
+"en": "pepper",
+"pos": "n.",
+"zh": "胡椒粉；菜椒",
+"zh1": "胡椒粉",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-2",
+"en": "cut up",
+"pos": "",
+"zh": "切碎；剁碎",
+"zh1": "切碎",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U5-3",
+"en": "mix",
+"pos": "v./n.",
+"zh": "（使）混合；融合；调配；混合；混杂；混合料",
+"zh1": "混合",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-4",
+"en": "bake",
+"pos": "v.",
+"zh": "烘焙",
+"zh1": "烘焙",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-5",
+"en": "oven",
+"pos": "n.",
+"zh": "烤箱；烤炉",
+"zh1": "烤箱",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-6",
+"en": "pour sth into sth",
+"pos": "",
+"zh": "将……倒入……",
+"zh1": "将……倒入……",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U5-7",
+"en": "flour",
+"pos": "n.",
+"zh": "面粉",
+"zh1": "面粉",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-8",
+"en": "boil",
+"pos": "v./n.",
+"zh": "煮沸；烧开；沸腾；沸点",
+"zh1": "煮沸",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-9",
+"en": "butter",
+"pos": "n.",
+"zh": "黄油",
+"zh1": "黄油",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-10",
+"en": "cheese",
+"pos": "n.",
+"zh": "奶酪；干酪",
+"zh1": "奶酪",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-11",
+"en": "cut sth in / into sth",
+"pos": "",
+"zh": "将……切成……",
+"zh1": "将……切成……",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U5-12",
+"en": "tablespoon",
+"pos": "n.",
+"zh": "一汤匙（的量）；餐匙；汤匙",
+"zh1": "一汤匙",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-13",
+"en": "mash",
+"pos": "v.",
+"zh": "捣烂；捣碎",
+"zh1": "捣烂",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-14",
+"en": "mashed potatoes",
+"pos": "",
+"zh": "土豆泥",
+"zh1": "土豆泥",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U5-15",
+"en": "stir-fry",
+"pos": "v.",
+"zh": "翻炒；炒；煸",
+"zh1": "翻炒",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-16",
+"en": "do with",
+"pos": "",
+"zh": "处理",
+"zh1": "处理",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U5-17",
+"en": "bowl",
+"pos": "n.",
+"zh": "碗；钵；盆",
+"zh1": "碗",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-18",
+"en": "heat",
+"pos": "v./n.",
+"zh": "加热；变热；热；温度；炎热天气",
+"zh1": "加热",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-19",
+"en": "oil",
+"pos": "n.",
+"zh": "食用油；石油；燃油",
+"zh1": "食用油",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-20",
+"en": "pan",
+"pos": "n.",
+"zh": "平底锅；烤盘",
+"zh1": "平底锅",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-21",
+"en": "put sth back",
+"pos": "",
+"zh": "将……放回",
+"zh1": "将……放回",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U5-22",
+"en": "mix ... with ...",
+"pos": "",
+"zh": "（使）……和……混合",
+"zh1": "……和……混合",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U5-23",
+"en": "simple",
+"pos": "adj.",
+"zh": "简单的；朴素的",
+"zh1": "简单的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-24",
+"en": "ingredient",
+"pos": "n.",
+"zh": "食材；成分",
+"zh1": "食材",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-25",
+"en": "instruction",
+"pos": "n.",
+"zh": "（pl.）用法说明；操作指南",
+"zh1": "用法说明",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-26",
+"en": "steamed fish",
+"pos": "",
+"zh": "清蒸鱼",
+"zh1": "清蒸鱼",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U5-27",
+"en": "sour",
+"pos": "adj.",
+"zh": "酸的；有酸味的",
+"zh1": "酸的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-28",
+"en": "hot and sour soup",
+"pos": "",
+"zh": "酸辣汤",
+"zh1": "酸辣汤",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U5-29",
+"en": "mess",
+"pos": "n.",
+"zh": "脏乱；凌乱",
+"zh1": "脏乱",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-30",
+"en": "pretty",
+"pos": "adj./adv.",
+"zh": "漂亮的；美丽的；相当；十分；非常",
+"zh1": "漂亮的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-31",
+"en": "Christmas",
+"pos": "n.",
+"zh": "圣诞节",
+"zh1": "圣诞节",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-32",
+"en": "pancake",
+"pos": "n.",
+"zh": "烙饼；薄饼",
+"zh1": "烙饼",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-33",
+"en": "dream",
+"pos": "n./v.",
+"zh": "梦想；梦；（dreamt 或 dreamed）做梦；梦见；梦想",
+"zh1": "梦想",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-34",
+"en": "university",
+"pos": "n.",
+"zh": "（综合性）大学；高等学府",
+"zh1": "大学",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-35",
+"en": "go boating",
+"pos": "",
+"zh": "去划船",
+"zh1": "去划船",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U5-36",
+"en": "memory",
+"pos": "n.",
+"zh": "回忆；记忆",
+"zh1": "回忆",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-37",
+"en": "visible",
+"pos": "adj.",
+"zh": "看得见的；可见的",
+"zh1": "看得见的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-38",
+"en": "along with sb / sth",
+"pos": "",
+"zh": "除……以外（还）；与……同样地",
+"zh1": "除……以外",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U5-39",
+"en": "pumpkin",
+"pos": "n.",
+"zh": "南瓜",
+"zh1": "南瓜",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-40",
+"en": "pie",
+"pos": "n.",
+"zh": "果馅饼；肉馅饼",
+"zh1": "果馅饼",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-41",
+"en": "warm up",
+"pos": "",
+"zh": "变暖和；（使）活跃起来；热身",
+"zh1": "变暖和",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U5-42",
+"en": "cinnamon",
+"pos": "n.",
+"zh": "肉桂皮；桂皮香料",
+"zh1": "肉桂皮",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-43",
+"en": "fill ... with ...",
+"pos": "",
+"zh": "（使）充满；（使）填满",
+"zh1": "充满",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U5-44",
+"en": "sweetness",
+"pos": "n.",
+"zh": "甜；芬芳；愉悦",
+"zh1": "甜",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-45",
+"en": "college",
+"pos": "n.",
+"zh": "学院；大学",
+"zh1": "学院",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-46",
+"en": "host",
+"pos": "n./v.",
+"zh": "主人；东道主；主办；主持（活动）",
+"zh1": "主人",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-47",
+"en": "hostess",
+"pos": "n.",
+"zh": "女主人；女房东",
+"zh1": "女主人",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-48",
+"en": "recipe",
+"pos": "n.",
+"zh": "食谱；烹饪法",
+"zh1": "食谱",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-49",
+"en": "cream",
+"pos": "n.",
+"zh": "奶油；护肤霜",
+"zh1": "奶油",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-50",
+"en": "crust",
+"pos": "n.",
+"zh": "糕饼酥皮；面包皮",
+"zh1": "糕饼酥皮",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-51",
+"en": "mixture",
+"pos": "n.",
+"zh": "混合物；结合体",
+"zh1": "混合物",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-52",
+"en": "least",
+"pos": "adv./pron.",
+"zh": "最小；最少",
+"zh1": "最小",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-53",
+"en": "at least",
+"pos": "",
+"zh": "至少",
+"zh1": "至少",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U5-54",
+"en": "secret",
+"pos": "n./adj.",
+"zh": "诀窍；秘密；秘密的；隐秘的",
+"zh1": "诀窍",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-55",
+"en": "according to",
+"pos": "",
+"zh": "根据；依照",
+"zh1": "根据",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U5-56",
+"en": "whenever",
+"pos": "adv./conj.",
+"zh": "每当；在任何……的时候",
+"zh1": "每当",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-57",
+"en": "item",
+"pos": "n.",
+"zh": "项目；条",
+"zh1": "项目",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-58",
+"en": "spaghetti",
+"pos": "n.",
+"zh": "意大利细面条",
+"zh1": "意大利细面条",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-59",
+"en": "spoon",
+"pos": "n.",
+"zh": "一勺的量；勺",
+"zh1": "一勺的量",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-60",
+"en": "slice",
+"pos": "n./v.",
+"zh": "薄片；片；把……切成薄片；切；割",
+"zh1": "薄片",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-61",
+"en": "couple",
+"pos": "n.",
+"zh": "夫妻；情侣；两人",
+"zh1": "夫妻",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-62",
+"en": "island",
+"pos": "n.",
+"zh": "岛",
+"zh1": "岛",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-63",
+"en": "wife",
+"pos": "n.",
+"zh": "（pl. wives）妻子",
+"zh1": "妻子",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-64",
+"en": "separate",
+"pos": "adj./v.",
+"zh": "单独的；分开的；（使）分开；（使）分离",
+"zh1": "单独的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-65",
+"en": "born",
+"pos": "v./adj.",
+"zh": "出生；出世；天生（有某方面才能）的",
+"zh1": "出生",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U5-66",
+"en": "one by one",
+"pos": "",
+"zh": "逐个地；逐一地",
+"zh1": "逐个地",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U5-67",
+"en": "Thanksgiving",
+"pos": "",
+"zh": "感恩节",
+"zh1": "感恩节",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U5-68",
+"en": "Guoqiao Rice Noodles",
+"pos": "",
+"zh": "过桥米线",
+"zh1": "过桥米线",
+"bold": false,
+"kind": "word"
+}
+]
+},
+{
+"id": "U6",
+"name": "Unit 6 Plan for Yourself",
+"items": [
+{
+"id": "U6-1",
+"en": "yourself",
+"pos": "pron.",
+"zh": "（pl. yourselves）你自己；您自己",
+"zh1": "你自己",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-2",
+"en": "engineer",
+"pos": "n.",
+"zh": "工程师；技师",
+"zh1": "工程师",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-3",
+"en": "fashion",
+"pos": "n.",
+"zh": "时装业；时尚",
+"zh1": "时装业",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-4",
+"en": "designer",
+"pos": "n.",
+"zh": "设计师",
+"zh1": "设计师",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-5",
+"en": "director",
+"pos": "n.",
+"zh": "导演；主任；董事",
+"zh1": "导演",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-6",
+"en": "musician",
+"pos": "n.",
+"zh": "音乐家；乐师",
+"zh1": "音乐家",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-7",
+"en": "fireman",
+"pos": "n.",
+"zh": "（pl. firemen）消防队员",
+"zh1": "消防队员",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-8",
+"en": "AI (= artificial intelligence)",
+"pos": "",
+"zh": "人工智能",
+"zh1": "人工智能",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U6-9",
+"en": "essay",
+"pos": "n.",
+"zh": "小品文；文章",
+"zh1": "小品文",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-10",
+"en": "classic",
+"pos": "n./adj.",
+"zh": "经典作品；名著；最优秀的；古典的",
+"zh1": "经典作品",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-11",
+"en": "keep on doing sth",
+"pos": "",
+"zh": "继续做；反复做",
+"zh1": "继续做",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U6-12",
+"en": "make sure",
+"pos": "",
+"zh": "确保；保证",
+"zh1": "确保",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U6-13",
+"en": "try one's best",
+"pos": "",
+"zh": "尽最大努力",
+"zh1": "尽最大努力",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U6-14",
+"en": "literature",
+"pos": "n.",
+"zh": "文学；文献",
+"zh1": "文学",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-15",
+"en": "athlete",
+"pos": "n.",
+"zh": "运动员",
+"zh1": "运动员",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-16",
+"en": "photographer",
+"pos": "n.",
+"zh": "摄影师；拍照者",
+"zh1": "摄影师",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-17",
+"en": "painter",
+"pos": "n.",
+"zh": "画家；油漆匠",
+"zh1": "画家",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-18",
+"en": "businessman",
+"pos": "n.",
+"zh": "商界人士；企业家",
+"zh1": "商界人士",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-19",
+"en": "actress",
+"pos": "n.",
+"zh": "女演员",
+"zh1": "女演员",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-20",
+"en": "lawyer",
+"pos": "n.",
+"zh": "律师",
+"zh1": "律师",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-21",
+"en": "law",
+"pos": "n.",
+"zh": "法律；法规",
+"zh1": "法律",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-22",
+"en": "bath",
+"pos": "n.",
+"zh": "洗澡；浴缸",
+"zh1": "洗澡",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-23",
+"en": "miss",
+"pos": "v.",
+"zh": "想念；错过",
+"zh1": "想念",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-24",
+"en": "be tired of",
+"pos": "",
+"zh": "对……感到厌倦",
+"zh1": "对……感到厌倦",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U6-25",
+"en": "able",
+"pos": "adj.",
+"zh": "能够；有才能的",
+"zh1": "能够",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-26",
+"en": "stick",
+"pos": "v./n.",
+"zh": "（stuck）粘贴；将……刺入；枝条；棍",
+"zh1": "粘贴",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-27",
+"en": "stick to sth",
+"pos": "",
+"zh": "坚持；维持",
+"zh1": "坚持",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U6-28",
+"en": "resolution",
+"pos": "n.",
+"zh": "决定；决议",
+"zh1": "决定",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-29",
+"en": "have (...) to do with sb / sth",
+"pos": "",
+"zh": "与……有关系",
+"zh1": "与……有关系",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U6-30",
+"en": "mini-goal",
+"pos": "n.",
+"zh": "小目标",
+"zh1": "小目标",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-31",
+"en": "achieve",
+"pos": "v.",
+"zh": "（经过努力）达到；完成",
+"zh1": "达到",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-32",
+"en": "physical",
+"pos": "adj.",
+"zh": "身体的；物质的",
+"zh1": "身体的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-33",
+"en": "health",
+"pos": "n.",
+"zh": "健康",
+"zh1": "健康",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-34",
+"en": "healthily",
+"pos": "adv.",
+"zh": "健康地",
+"zh1": "健康地",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-35",
+"en": "take up",
+"pos": "",
+"zh": "开始学；开始从事",
+"zh1": "开始学",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U6-36",
+"en": "photography",
+"pos": "n.",
+"zh": "照相术；摄影",
+"zh1": "照相术",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-37",
+"en": "self-improvement",
+"pos": "n.",
+"zh": "自我改进；自我提高",
+"zh1": "自我改进",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-38",
+"en": "confident",
+"pos": "adj.",
+"zh": "自信的；肯定的",
+"zh1": "自信的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-39",
+"en": "organized (= organised)",
+"pos": "adj.",
+"zh": "有条理的；有组织的",
+"zh1": "有条理的",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U6-40",
+"en": "wisely",
+"pos": "adv.",
+"zh": "聪明地；明智地",
+"zh1": "聪明地",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-41",
+"en": "possible",
+"pos": "adj.",
+"zh": "可能的；合理的",
+"zh1": "可能的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-42",
+"en": "paragraph",
+"pos": "n.",
+"zh": "段；段落",
+"zh1": "段",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-43",
+"en": "introduce",
+"pos": "v.",
+"zh": "介绍；引见；引进",
+"zh1": "介绍",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-44",
+"en": "meaning",
+"pos": "n.",
+"zh": "意义；含义",
+"zh1": "意义",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-45",
+"en": "fail",
+"pos": "v.",
+"zh": "未能（做到）；失败",
+"zh1": "未能",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-46",
+"en": "ahead",
+"pos": "adv.",
+"zh": "提前；在前面",
+"zh1": "提前",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-47",
+"en": "put out",
+"pos": "",
+"zh": "扑灭；把……摆好",
+"zh1": "扑灭",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U6-48",
+"en": "design",
+"pos": "v./n.",
+"zh": "设计；计划；设计；花纹",
+"zh1": "设计",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-49",
+"en": "bridge",
+"pos": "n.",
+"zh": "桥",
+"zh1": "桥",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-50",
+"en": "final",
+"pos": "adj./n.",
+"zh": "最后的；最终的；决赛",
+"zh1": "最后的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-51",
+"en": "confidence",
+"pos": "n.",
+"zh": "信心；信任",
+"zh1": "信心",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-52",
+"en": "find out",
+"pos": "",
+"zh": "查明；弄清（情况）",
+"zh1": "查明",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U6-53",
+"en": "draw to a close",
+"pos": "",
+"zh": "即将结束；即将完成",
+"zh1": "即将结束",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U6-54",
+"en": "form",
+"pos": "v./n.",
+"zh": "（使）形成；组成；类型；形式；表格",
+"zh1": "形成",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-55",
+"en": "relationship",
+"pos": "n.",
+"zh": "关系；联系",
+"zh1": "关系",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-56",
+"en": "push-up",
+"pos": "n.",
+"zh": "俯卧撑",
+"zh1": "俯卧撑",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-57",
+"en": "energetic",
+"pos": "adj.",
+"zh": "精力充沛的；充满活力的",
+"zh1": "精力充沛的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U6-58",
+"en": "last but not least",
+"pos": "",
+"zh": "最后但同等重要的",
+"zh1": "最后但同等重要的",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U6-59",
+"en": "Jason",
+"pos": "",
+"zh": "贾森",
+"zh1": "贾森",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U6-60",
+"en": "Tina",
+"pos": "",
+"zh": "蒂娜",
+"zh1": "蒂娜",
+"bold": false,
+"kind": "word"
+}
+]
+},
+{
+"id": "U7",
+"name": "Unit 7 When Tomorrow Comes",
+"items": [
+{
+"id": "U7-1",
+"en": "prediction",
+"pos": "n.",
+"zh": "预测；预言",
+"zh1": "预测",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-2",
+"en": "outer",
+"pos": "adj.",
+"zh": "外围的；外表的",
+"zh1": "外围的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-3",
+"en": "outer space (= space)",
+"pos": "",
+"zh": "太空；外层空间",
+"zh1": "太空",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U7-4",
+"en": "worse",
+"pos": "adj./adv.",
+"zh": "（bad的比较级）更差的；更糟的；更坏的；（badly的比较级）更差；更糟；更坏",
+"zh1": "更差的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-5",
+"en": "take over",
+"pos": "",
+"zh": "接替；接管；接收",
+"zh1": "接替",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U7-6",
+"en": "sci-fi (= science fiction)",
+"pos": "n.",
+"zh": "科幻小说（或影片等）",
+"zh1": "科幻小说",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U7-7",
+"en": "ticket",
+"pos": "n.",
+"zh": "票；券",
+"zh1": "票",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-8",
+"en": "positive",
+"pos": "adj.",
+"zh": "乐观的；积极的；良好的",
+"zh1": "乐观的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-9",
+"en": "traffic",
+"pos": "n./v.",
+"zh": "交通；运输；（非法）进行交易；做……买卖",
+"zh1": "交通",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-10",
+"en": "technology",
+"pos": "n.",
+"zh": "科技；工艺",
+"zh1": "科技",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-11",
+"en": "video",
+"pos": "n./v.",
+"zh": "视频；录像系统；录视频；给……录像",
+"zh1": "视频",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-12",
+"en": "transport",
+"pos": "n./v.",
+"zh": "交通运输系统；旅行方式；运输；运送",
+"zh1": "交通运输系统",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-13",
+"en": "system",
+"pos": "n.",
+"zh": "系统",
+"zh1": "系统",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-14",
+"en": "efficient",
+"pos": "adj.",
+"zh": "效率高的；有功效的",
+"zh1": "效率高的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-15",
+"en": "education",
+"pos": "n.",
+"zh": "教育",
+"zh1": "教育",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-16",
+"en": "length",
+"pos": "n.",
+"zh": "时长；长度",
+"zh1": "时长",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-17",
+"en": "topic",
+"pos": "n.",
+"zh": "话题；题目；标题",
+"zh1": "话题",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-18",
+"en": "partner",
+"pos": "n.",
+"zh": "搭档；同伴",
+"zh1": "搭档",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-19",
+"en": "shall",
+"pos": "modal v.",
+"zh": "将要；将会",
+"zh1": "将要",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-20",
+"en": "Shall I / we ...?",
+"pos": "",
+"zh": "……好吗？要不要……？（用于提出或征求意见）",
+"zh1": "……好吗？要不要……？",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U7-21",
+"en": "pass",
+"pos": "v./n.",
+"zh": "及格；通过；及格；通行证",
+"zh1": "及格",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-22",
+"en": "winner",
+"pos": "n.",
+"zh": "优胜者；成功者",
+"zh1": "优胜者",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-23",
+"en": "cure",
+"pos": "n./v.",
+"zh": "药物；疗法；治愈；治好",
+"zh1": "药物",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-24",
+"en": "cancer",
+"pos": "n.",
+"zh": "癌症",
+"zh1": "癌症",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-25",
+"en": "concert",
+"pos": "n.",
+"zh": "音乐会；演奏会",
+"zh1": "音乐会",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-26",
+"en": "cash",
+"pos": "n./v.",
+"zh": "现金；金钱；兑现",
+"zh1": "现金",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-27",
+"en": "wallet",
+"pos": "n.",
+"zh": "钱包；皮夹",
+"zh1": "钱包",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-28",
+"en": "guest",
+"pos": "n.",
+"zh": "客人；宾客",
+"zh1": "客人",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-29",
+"en": "chief",
+"pos": "adj./n.",
+"zh": "首席的；最重要的；首领；酋长",
+"zh1": "首席的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-30",
+"en": "researcher",
+"pos": "n.",
+"zh": "研究者；探索者",
+"zh1": "研究者",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-31",
+"en": "research",
+"pos": "n. & v.",
+"zh": "研究；调查",
+"zh1": "研究",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-32",
+"en": "futurist",
+"pos": "n.",
+"zh": "未来学家",
+"zh1": "未来学家",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-33",
+"en": "everywhere",
+"pos": "adv., pron. & conj.",
+"zh": "到处；所有地方",
+"zh1": "到处",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-34",
+"en": "robotics",
+"pos": "n.",
+"zh": "机器人学",
+"zh1": "机器人学",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-35",
+"en": "industry",
+"pos": "n.",
+"zh": "行业；工业",
+"zh1": "行业",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-36",
+"en": "service",
+"pos": "n.",
+"zh": "服务；公共服务",
+"zh1": "服务",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-37",
+"en": "disaster",
+"pos": "n.",
+"zh": "灾难；不幸",
+"zh1": "灾难",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-38",
+"en": "emergency",
+"pos": "n.",
+"zh": "突发事件；紧急情况",
+"zh1": "突发事件",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-39",
+"en": "disappear",
+"pos": "v.",
+"zh": "消失；不见",
+"zh1": "消失",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-40",
+"en": "challenging",
+"pos": "adj.",
+"zh": "挑战性的",
+"zh1": "挑战性的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-41",
+"en": "pilot",
+"pos": "n.",
+"zh": "飞行员；领航员",
+"zh1": "飞行员",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-42",
+"en": "expert",
+"pos": "n./adj.",
+"zh": "专家；行家；熟练的；内行的",
+"zh1": "专家",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-43",
+"en": "replace",
+"pos": "v.",
+"zh": "代替；取代",
+"zh1": "代替",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-44",
+"en": "creativity",
+"pos": "n.",
+"zh": "创造力",
+"zh1": "创造力",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-45",
+"en": "emotional",
+"pos": "adj.",
+"zh": "情感的；情绪的",
+"zh1": "情感的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-46",
+"en": "intelligence",
+"pos": "n.",
+"zh": "智力；智慧",
+"zh1": "智力",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-47",
+"en": "emotional intelligence",
+"pos": "",
+"zh": "情绪智力",
+"zh1": "情绪智力",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U7-48",
+"en": "mention",
+"pos": "v.",
+"zh": "提到；写到",
+"zh1": "提到",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-49",
+"en": "refrigerator (= fridge)",
+"pos": "n.",
+"zh": "冰箱",
+"zh1": "冰箱",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U7-50",
+"en": "low",
+"pos": "adv./adj./n.",
+"zh": "向……底部；低；低的；矮的；低水平；低谷",
+"zh1": "向……底部",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-51",
+"en": "run low (on sth)",
+"pos": "",
+"zh": "即将用尽；快用完",
+"zh1": "即将用尽",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U7-52",
+"en": "accept",
+"pos": "v.",
+"zh": "接受；相信",
+"zh1": "接受",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-53",
+"en": "influence",
+"pos": "v./n.",
+"zh": "影响；对……起作用；影响；作用",
+"zh1": "影响",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-54",
+"en": "creative",
+"pos": "adj.",
+"zh": "创造性的；创作的",
+"zh1": "创造性的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-55",
+"en": "impossible",
+"pos": "adj.",
+"zh": "不可能的",
+"zh1": "不可能的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-56",
+"en": "quality",
+"pos": "n./adj.",
+"zh": "素质；质量；品质；优质的；高质量的",
+"zh1": "素质",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-57",
+"en": "develop",
+"pos": "v.",
+"zh": "增强；发展；开发",
+"zh1": "增强",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-58",
+"en": "German",
+"pos": "n./adj.",
+"zh": "德语；德国人；德国的",
+"zh1": "德语",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-59",
+"en": "valuable",
+"pos": "adj.",
+"zh": "很有用的；宝贵的",
+"zh1": "很有用的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-60",
+"en": "public",
+"pos": "adj.",
+"zh": "公共的；公众的",
+"zh1": "公共的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-61",
+"en": "medical",
+"pos": "adj.",
+"zh": "医学的；医疗的",
+"zh1": "医学的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-62",
+"en": "challenge",
+"pos": "n./v.",
+"zh": "挑战；质疑；向（某人）挑战；对……怀疑",
+"zh1": "挑战",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-63",
+"en": "task",
+"pos": "n.",
+"zh": "任务；工作",
+"zh1": "任务",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-64",
+"en": "depend",
+"pos": "v.",
+"zh": "取决于；依靠",
+"zh1": "取决于",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U7-65",
+"en": "depend on / upon",
+"pos": "",
+"zh": "取决于；依靠",
+"zh1": "取决于",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U7-66",
+"en": "come over",
+"pos": "",
+"zh": "来访；拜访",
+"zh1": "来访",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U7-67",
+"en": "come true",
+"pos": "",
+"zh": "实现",
+"zh1": "实现",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U7-68",
+"en": "as long as",
+"pos": "",
+"zh": "只要",
+"zh1": "只要",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U7-69",
+"en": "Jennifer",
+"pos": "",
+"zh": "珍妮弗",
+"zh1": "珍妮弗",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U7-70",
+"en": "Harry",
+"pos": "",
+"zh": "哈里；哈丽",
+"zh1": "哈里",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U7-71",
+"en": "Asimov",
+"pos": "",
+"zh": "阿西莫夫",
+"zh1": "阿西莫夫",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U7-72",
+"en": "France",
+"pos": "",
+"zh": "法国",
+"zh1": "法国",
+"bold": false,
+"kind": "word"
+},
+{
+"id": "U7-73",
+"en": "Mandy",
+"pos": "",
+"zh": "曼迪",
+"zh1": "曼迪",
+"bold": false,
+"kind": "word"
+}
+]
+},
+{
+"id": "U8",
+"name": "Unit 8 Let's Communicate!",
+"items": [
+{
+"id": "U8-1",
+"en": "communication",
+"pos": "n.",
+"zh": "表达；交流",
+"zh1": "表达",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U8-2",
+"en": "face to face",
+"pos": "",
+"zh": "面对面",
+"zh1": "面对面",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U8-3",
+"en": "text message",
+"pos": "",
+"zh": "（手机）短信息；短信",
+"zh1": "短信息",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U8-4",
+"en": "sign",
+"pos": "n./v.",
+"zh": "手势；迹象；标志；签（名）；签字",
+"zh1": "手势",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U8-5",
+"en": "speaker",
+"pos": "n.",
+"zh": "说话者；发言者",
+"zh1": "说话者",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U8-6",
+"en": "rehearsal",
+"pos": "n.",
+"zh": "排演；排练",
+"zh1": "排演",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U8-7",
+"en": "show sb around",
+"pos": "",
+"zh": "领某人参观",
+"zh1": "领某人参观",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U8-8",
+"en": "local",
+"pos": "adj./n.",
+"zh": "当地的；地方的；当地人；本地人",
+"zh1": "当地的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U8-9",
+"en": "face-to-face",
+"pos": "adj.",
+"zh": "面对面的",
+"zh1": "面对面的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U8-10",
+"en": "professor",
+"pos": "n.",
+"zh": "教授",
+"zh1": "教授",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U8-11",
+"en": "speech",
+"pos": "n.",
+"zh": "演说；发言",
+"zh1": "演说",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U8-12",
+"en": "argue",
+"pos": "v.",
+"zh": "争论；争吵",
+"zh1": "争论",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U8-13",
+"en": "make up (with sb)",
+"pos": "",
+"zh": "与……言归于好",
+"zh1": "与……言归于好",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U8-14",
+"en": "in person",
+"pos": "",
+"zh": "亲自；亲身",
+"zh1": "亲自",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U8-15",
+"en": "prefer",
+"pos": "v.",
+"zh": "较喜欢",
+"zh1": "较喜欢",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U8-16",
+"en": "calm",
+"pos": "adj./v.",
+"zh": "镇静的；沉着的；使平静；使镇静",
+"zh1": "镇静的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U8-17",
+"en": "worry about",
+"pos": "",
+"zh": "为……担心",
+"zh1": "为……担心",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U8-18",
+"en": "expression",
+"pos": "n.",
+"zh": "表达方式；表达",
+"zh1": "表达方式",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U8-19",
+"en": "chance",
+"pos": "n./adj.",
+"zh": "机会；可能性；意外的；偶然的",
+"zh1": "机会",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U8-20",
+"en": "meeting",
+"pos": "n.",
+"zh": "会面；会议",
+"zh1": "会面",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U8-21",
+"en": "difficulty",
+"pos": "n.",
+"zh": "困难；难题",
+"zh1": "困难",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U8-22",
+"en": "right away",
+"pos": "",
+"zh": "立即；马上",
+"zh1": "立即",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U8-23",
+"en": "line",
+"pos": "n.",
+"zh": "字行；便条；线",
+"zh1": "字行",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U8-24",
+"en": "drop sb a line",
+"pos": "",
+"zh": "给……写信",
+"zh1": "给……写信",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U8-25",
+"en": "detail",
+"pos": "n.",
+"zh": "细节；详情",
+"zh1": "细节",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U8-26",
+"en": "reunion",
+"pos": "n.",
+"zh": "团聚；重逢；聚会",
+"zh1": "团聚",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U8-27",
+"en": "seriously",
+"pos": "adv.",
+"zh": "严肃地；认真地",
+"zh1": "严肃地",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U8-28",
+"en": "training",
+"pos": "n.",
+"zh": "训练；培训",
+"zh1": "训练",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U8-29",
+"en": "nervous",
+"pos": "adj.",
+"zh": "担忧的；焦虑的；胆怯的",
+"zh1": "担忧的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U8-30",
+"en": "stranger",
+"pos": "n.",
+"zh": "陌生人",
+"zh1": "陌生人",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U8-31",
+"en": "tip",
+"pos": "n./v.",
+"zh": "指点；实用的提示；尖端；（使）倾斜；倒出；给小费",
+"zh1": "指点",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U8-32",
+"en": "carefully",
+"pos": "adv.",
+"zh": "认真地；仔细地；小心地",
+"zh1": "认真地",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U8-33",
+"en": "show interest in sth",
+"pos": "",
+"zh": "对……表现出兴趣",
+"zh1": "对……表现出兴趣",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U8-34",
+"en": "listener",
+"pos": "n.",
+"zh": "听者",
+"zh1": "听者",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U8-35",
+"en": "point",
+"pos": "n./v.",
+"zh": "观点；重点；指向；瞄准",
+"zh1": "观点",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U8-36",
+"en": "surely",
+"pos": "adv.",
+"zh": "想必；必定",
+"zh1": "想必",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U8-37",
+"en": "continue",
+"pos": "v.",
+"zh": "持续；继续做",
+"zh1": "持续",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U8-38",
+"en": "impolite",
+"pos": "adj.",
+"zh": "不礼貌的；粗鲁的",
+"zh1": "不礼貌的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U8-39",
+"en": "personal",
+"pos": "adj.",
+"zh": "个人的；私人的",
+"zh1": "个人的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U8-40",
+"en": "argue with sb",
+"pos": "",
+"zh": "与某人争论",
+"zh1": "与某人争论",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U8-41",
+"en": "move on (to sth)",
+"pos": "",
+"zh": "换话题；开始做（别的事）",
+"zh1": "换话题",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U8-42",
+"en": "sincere",
+"pos": "adj.",
+"zh": "真诚的；诚实的",
+"zh1": "真诚的",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U8-43",
+"en": "pay",
+"pos": "v./n.",
+"zh": "（paid）付费；交纳；偿还；工资；薪水",
+"zh1": "付费",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U8-44",
+"en": "attention",
+"pos": "n.",
+"zh": "注意；专心；关注",
+"zh1": "注意",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U8-45",
+"en": "pay attention (to ...)",
+"pos": "",
+"zh": "注意；关注",
+"zh1": "注意",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U8-46",
+"en": "be yourself",
+"pos": "",
+"zh": "行为自然；不做作",
+"zh1": "行为自然",
+"bold": false,
+"kind": "phrase"
+},
+{
+"id": "U8-47",
+"en": "offer",
+"pos": "v./n.",
+"zh": "提供；主动提出；主动提议；出价",
+"zh1": "提供",
+"bold": true,
+"kind": "word"
+},
+{
+"id": "U8-48",
+"en": "reasonable",
+"pos": "adj.",
+"zh": "公平的；合理的",
+"zh1": "公平的",
+"bold": true,
+"kind": "word"
+}
+]
+}
+]
+}

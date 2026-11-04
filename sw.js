@@ -1,21 +1,21 @@
 // 离线缓存：先用手机里存的（秒开），同时悄悄检查有没有新内容；有就提示刷新。
-const VER = 'kp-v70';
+const VER = 'kp-v71';
 const AUDIO = 'kp-audio';
 // 下面这份清单由 tools/gen_shell.py 自动生成，不要手改；
 // 加了新文件后跑一次 python tools/gen_shell.py 即可。
 const SHELL = ['./', 'index.html', 'manifest.webmanifest', 'css/app.css',
   'js/app.js', 'js/badges.js', 'js/chapgen.js', 'js/chapgen1.js',
   'js/chapgen2.js', 'js/chapgen3.js', 'js/chapgen4.js', 'js/chapgen5.js',
-  'js/chapgen6.js', 'js/chapview.js', 'js/cndict.js', 'js/english.js',
-  'js/grade.js', 'js/grades.js', 'js/help.js', 'js/learn.js',
-  'js/mathgen.js', 'js/parent.js', 'js/poem.js', 'js/speech.js',
-  'js/store.js', 'js/ui.js', 'js/views.js', 'icons/apple-touch-icon.png',
-  'icons/icon-192.png', 'icons/icon-512.png', 'data/cnwords1.json', 'data/cnwords2.json',
-  'data/cnwords3.json', 'data/cnwords4.json', 'data/cnwords5.json', 'data/cnwords6.json',
-  'data/config.json', 'data/enwords3.json', 'data/enwords5.json', 'data/enwords6.json',
-  'data/ipa.json', 'data/library.json', 'data/poems.json', 'data/tips.json',
-  'data/vocab.json', 'data/words3.json', 'data/words4.json', 'data/words5.json',
-  'data/words6.json', 'data/words7.json'];
+  'js/chapgen6.js', 'js/chapgen8.js', 'js/chapview.js', 'js/cndict.js',
+  'js/english.js', 'js/grade.js', 'js/grades.js', 'js/help.js',
+  'js/learn.js', 'js/mathgen.js', 'js/parent.js', 'js/poem.js',
+  'js/speech.js', 'js/store.js', 'js/ui.js', 'js/views.js',
+  'icons/apple-touch-icon.png', 'icons/icon-192.png', 'icons/icon-512.png', 'data/cnwords1.json',
+  'data/cnwords2.json', 'data/cnwords3.json', 'data/cnwords4.json', 'data/cnwords5.json',
+  'data/cnwords6.json', 'data/config.json', 'data/enwords3.json', 'data/enwords5.json',
+  'data/enwords6.json', 'data/ipa.json', 'data/library.json', 'data/poems.json',
+  'data/tips.json', 'data/vocab.json', 'data/words3.json', 'data/words4.json',
+  'data/words5.json', 'data/words6.json', 'data/words7.json', 'data/words8.json'];
 
 async function precacheSets(c) {
   try {
