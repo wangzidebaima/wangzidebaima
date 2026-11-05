@@ -873,8 +873,11 @@ function ctxDetails(meta) {
   } }, h('summary', {}, meta.kind === 'listening' ? '🎧 听力和原文' : '📖 看原文'), body);
 }
 
-function renderQ(q, no, ans, update) {
+function renderQ(q, no, ans, update, restore) {
   const box = h('article', { class: 'q', id: 'q-' + q.id });
+  // 「做完看答案」返回上一题时把旧答案回填显示；restore 为 false 时保持原样（答完看答案不动）
+  const saved = ans[q.id];
+  const has = restore && saved !== undefined && saved !== null && saved !== '' && (!Array.isArray(saved) || saved.length > 0);
   const setA = (v) => { ans[q.id] = v; update(); };
   const head = (html) => h('div', { class: 'stem' }, h('span', { class: 'no' }, no),
     h('div', { class: 'qt', html: html + (q.img ? '<div class="qimg">' + safeSvg(q.img) + '</div>' : '') }));
@@ -887,11 +890,13 @@ function renderQ(q, no, ans, update) {
         ? h('span', { class: 'ob' }, t ? h('em', {}, t) : null, h('span', { class: 'oi', html: safeSvg(q.optImgs[k]) }))
         : h('span', {}, t)));
     box.append(h('div', { class: 'opts' }, btns));
+    if (has) { const k = 'ABCD'.indexOf(String(saved)); if (k >= 0 && btns[k]) btns[k].classList.add('on'); }
   } else if (q.type === 'tf') {
     box.append(head(esc(q.stem)));
     const mk = (v, label) => h('button', { type: 'button', class: 'opt tfb', onclick: (e) => { bs.forEach(x => x.classList.remove('on')); e.currentTarget.classList.add('on'); setA(v); } }, label);
     const bs = [mk('T', '对  T'), mk('F', '错  F')];
     box.append(h('div', { class: 'opts two' }, bs));
+    if (has) { const k = saved === 'T' ? 0 : saved === 'F' ? 1 : -1; if (k >= 0) bs[k].classList.add('on'); }
   } else if (q.type === 'fill') {
     if (q.img) box.append(h('div', { class: 'qimg wide', html: safeSvg(q.img) }));
     if (q.hint) box.append(h('span', { class: 'pill' }, q.hint));
@@ -916,22 +921,27 @@ function renderQ(q, no, ans, update) {
           const open = () => { if (!inp.disabled) keypad.open(inp, 'abc'); };
           tiles.addEventListener('click', open); tiles.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } });
           inp.addEventListener('input', () => { draw(); read(); }); inp.addEventListener('kbfocus', draw);
+          if (has && Array.isArray(saved)) inp.value = String(saved[i] ?? '');
           draw(); inputs.push(inp); line.append(tiles, inp); return;
         }
         else { const len = Math.max(...q.answers[i].map(s => [...s].reduce((a, c) => a + (c.charCodeAt(0) > 255 ? 2 : 1), 0))); el = h('input', { class: 'blank', type: 'text', autocapitalize: 'off', autocomplete: 'off', autocorrect: 'off', spellcheck: 'false', style: `width:${Math.max(6, len + 3)}ch`, oninput: read }); }
+        if (has && Array.isArray(saved)) el.value = String(saved[i] ?? '');
         inputs.push(el); line.append(el);
       }
     });
     box.append(h('div', { class: 'stem' }, h('span', { class: 'no' }, no), line));
   } else if (q.type === 'short') {
     box.append(head(esc(q.stem)));
-    box.append(h('input', { class: 'blank wide', type: 'text', placeholder: '写下你的答案（英文）', autocapitalize: 'off', autocomplete: 'off', autocorrect: 'off', spellcheck: 'false', oninput: (e) => setA(e.target.value) }));
+    const inp = h('input', { class: 'blank wide', type: 'text', placeholder: '写下你的答案（英文）', autocapitalize: 'off', autocomplete: 'off', autocorrect: 'off', spellcheck: 'false', oninput: (e) => setA(e.target.value) });
+    if (has) inp.value = String(saved);
+    box.append(inp);
   } else if (q.type === 'math') {
     box.append(head(mathHtml(q.stem) + (q.stem.length < 60 && !/[=＝？?]/.test(q.stem) ? ' = ？' : '')));
     if (q.kindName) box.append(h('span', { class: 'pill' }, q.kindName));
     const inp = h('input', { class: 'mi', readonly: true, inputmode: 'none', placeholder: '点这里输入答案', oninput: () => setA(inp.value) });
     inp.dataset.full = q.digits ? '0' : '1'; if (q.digits && /^[0-9]{1,9}$/.test(String(q.answer))) inp.dataset.len = String(String(q.answer).length);
     inp.addEventListener('click', () => keypad.open(inp, !q.digits));
+    if (has) inp.value = String(saved);
     box.append(inp);
   } else if (q.type === 'order') {
     box.append(head(esc(q.stem)));
@@ -942,7 +952,7 @@ function renderQ(q, no, ans, update) {
     if (!Array.isArray(q.show)) for (let i = pool.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [pool[i], pool[j]] = [pool[j], pool[i]]; }
     // slot = 刚撤回留下的空位。不记这个的话，撤回第 2 项再点它会被追加到末尾，
     // 想调一下中间的顺序就只能整题清空重排，孩子会觉得点得莫名其妙。
-    let picked = [], slot = -1;
+    let picked = (has && Array.isArray(saved)) ? saved.slice() : [], slot = -1;
     const pickedBox = h('div', { class: 'ordpick' }), poolBox = h('div', { class: 'ordpool' });
     const draw = () => {
       const rest = pool.filter(ix => !picked.includes(ix));
@@ -968,6 +978,7 @@ function renderQ(q, no, ans, update) {
     const mk = (v, label) => h('button', { type: 'button', class: 'opt selfb', onclick: (e) => { bs.forEach(x => x.classList.remove('on')); e.currentTarget.classList.add('on'); setA(v); } }, label);
     const bs = [mk('ok', '✅ 我说对了'), mk('no', '🤔 还要加油')];
     box.append(h('div', { class: 'opts two' }, bs));
+    if (has) { const k = saved === 'ok' ? 0 : saved === 'no' ? 1 : -1; if (k >= 0) bs[k].classList.add('on'); }
     box.append(h('p', { class: 'note' }, '这题自己评，不算星星、也不进错题本'));
   }
   if (q._meta && (q._meta.kind === 'reading' || q._meta.kind === 'listening') && q._meta.setId) box.append(ctxDetails(q._meta));
@@ -1044,12 +1055,15 @@ function runQuiz(o) {
   // 绝不跳过任何题（含选择题）；最后一题点「看结果」进入结果页。
   function goNext() {
     const q = qs[cur];
-    if (!done[q.id]) {
-      if (!isAnswered(q, ans[q.id])) { toast('先答一下这题～'); return; }
+    // 没答不许走（两种模式都要拦）
+    if (!done[q.id] && !isAnswered(q, ans[q.id])) { toast('先答一下这题～'); return; }
+    // 「答完看答案」当场判分记账并锁定；「做完看答案」只存草稿，交卷时由 finish() 统一判分。
+    // 这样返回上一题还能改答案，星星/错题本也只按最终答案记一次。
+    if (live && !done[q.id]) {
       const r = settle(q);
       curNode.classList.add('locked', r.g.ok ? 'lok' : 'lbad');
       curNode.querySelectorAll('.opt, .ordit, .selfb, input, select').forEach(x => { x.disabled = true; });
-      if (live && !r.self) toast(r.g.ok ? '✓ 答对啦' : '✗ 答错了，已进错题本', 1300);
+      if (!r.self) toast(r.g.ok ? '✓ 答对啦' : '✗ 答错了，已进错题本', 1300);
     }
     if (cur >= N - 1) { finish(); return; }
     cur++; draw();
@@ -1070,7 +1084,7 @@ function runQuiz(o) {
   function draw() {
     const q = qs[cur];
     stage.replaceChildren();
-    curNode = renderQ(q, cur + 1, ans, update);
+    curNode = renderQ(q, cur + 1, ans, update, !live);
     stage.append(curNode);
     if (done[q.id]) {
       curNode.classList.add('locked', done[q.id].g.ok ? 'lok' : 'lbad');
