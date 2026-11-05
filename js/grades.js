@@ -14,6 +14,7 @@ export const GRADES = {
   g5: { name: '五年级', cnw: 'cnw5', words: '5', speak: '', papers: null },
   g6: { name: '六年级', cnw: 'cnw6', words: '6', speak: '', papers: null },
   g8: { name: '八年级', cnw: '', words: '8', speak: '', papers: null },
+  g9: { name: '九年级', cnw: '', words: '9', speak: '', papers: null },
   g4: {
     name: '四年级', cnw: 'cnw4', words: '4', speak: 'g4speaking',
     papers: { math: 5, eng: 6 },

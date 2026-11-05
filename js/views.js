@@ -483,6 +483,14 @@ function taskCard(u) {
 }
 export const coinsGot = (rewards, pos) => rewards.filter(r => pos >= r.stars).reduce((a, r) => a + (r.coins || 0), 0);
 // 自检结果横幅：app 每天自动检查一次文件，有缺的就在首页亮红条
+// 中考倒计时：config 里给 u.exam = {label, date:'YYYY-MM-DD', est:true}，到期或没配就不显示
+function examCard(u) {
+  const x = u && u.exam; if (!x || !x.date) return null;
+  const t = new Date(S.today() + 'T00:00:00'), d = new Date(x.date + 'T00:00:00');
+  const n = Math.round((d - t) / 86400000); if (!(n >= 0)) return null;
+  const md = `${+x.date.slice(5, 7)}月${+x.date.slice(8, 10)}日`;
+  return h('section', { class: 'tasks' }, h('div', { class: 'row' }, h('div', {}, h('b', {}, `⏳ 距${x.label || '中考'}还有 ${n} 天`), h('small', {}, x.est ? `按预计 ${md}，以教育局正式通知为准` : md))));
+}
 function healthBanner() {
   try { const r = JSON.parse(localStorage.getItem('kp_hc') || 'null'); if (!r || !r.bad || !r.bad.length) return null;
     return h('a', { class: 'hcbar', href: '#/check', style: 'display:block;margin:8px 0;padding:10px 12px;border-radius:12px;background:#c0392b;color:#fff;text-decoration:none;font-size:14px' }, `⚠️ 有 ${r.bad.length} 个文件没找到，部分内容可能打不开。点这里看看，并告诉爸爸。`);
@@ -529,7 +537,7 @@ export function home() {
   const wrongN = st.wrong;
   mount(h('div', { class: 'page home' },
     h('header', { class: 'hello' }, h('div', {}, h('small', {}, '你好，'), h('h1', {}, u.display + ' 👋', u.grade ? h('span', { class: 'grade' }, u.grade) : null)), h('div', { class: 'hbtns' }, h('button', { class: 'link', onclick: () => { const f = ((p.font || 0) + 1) % 3; p.font = f; S.save(u.id); setTheme(u); toast(['字号：标准', '字号：大', '字号：特大'][f]); } }, 'Aa'), h('button', { class: 'link', onclick: () => { if (confirm('切换同学？')) { S.setUser(null); nav('#/login'); } } }, '切换'))),
-    healthBanner(), jar, taskCard(u), reviewCard(u),
+    healthBanner(), examCard(u), jar, taskCard(u), reviewCard(u),
     u.soon && !u.subjects.length && !(u.random || []).length ? h('section', { class: 'soonbox' }, h('div', { class: 'logo' }, '🌱'), h('h2', {}, `${u.grade}的练习正在准备中`), h('p', { class: 'note' }, '课本内容马上就来，先把这个小窝准备好啦。')) : null,
     u.tasks && u.tasks.length ? h('p', { class: 'more' }, '想多练一点？从下面自己选：') : null,
     areas,

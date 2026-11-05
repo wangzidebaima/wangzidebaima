@@ -577,6 +577,46 @@
         "cnknow": "live",
         "cnread": "exam"
       }
+    },
+    {
+      "id": "g9",
+      "display": "小九",
+      "names": [
+        "小九"
+      ],
+      "theme": "leaf",
+      "subjects": [],
+      "random": [],
+      "tasks": [],
+      "grade": "九年级",
+      "readAloud": false,
+      "soon": true,
+      "exam": {
+        "label": "中考",
+        "date": "2027-06-20",
+        "est": true
+      },
+      "publishers": {
+        "cn": "统编版",
+        "math": "北师大版",
+        "hist": "统编版",
+        "poli": "统编版",
+        "phy": "苏科版",
+        "chem": "人教版"
+      },
+      "modes": {
+        "chaptype": "live",
+        "chapmix": "exam",
+        "randmath": "exam",
+        "mathbank": "live",
+        "engquiz": "live",
+        "reading": "exam",
+        "listening": "exam",
+        "errors": "live",
+        "cnpoem": "live",
+        "cnknow": "live",
+        "cnread": "exam"
+      }
     }
   ],
   "parent": {
