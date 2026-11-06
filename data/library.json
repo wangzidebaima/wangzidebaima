@@ -8711,6 +8711,176 @@
      "unit": "YW97"
     }
    ]
+  },
+  {
+   "id": "g9phy",
+   "title": "物理练习",
+   "icon": "🔬",
+   "desc": "按课本的节，每节一练（苏科版）",
+   "sets": [
+    {
+     "id": "g9phy-1",
+     "file": "sets/g9phy-1.json",
+     "title": "第1节 杠杆",
+     "subtitle": "第十一章 简单机械和功",
+     "kind": "cn",
+     "count": 10,
+     "unit": "WL91"
+    },
+    {
+     "id": "g9phy-2",
+     "file": "sets/g9phy-2.json",
+     "title": "第2节 滑轮",
+     "subtitle": "第十一章 简单机械和功",
+     "kind": "cn",
+     "count": 10,
+     "unit": "WL91"
+    },
+    {
+     "id": "g9phy-3",
+     "file": "sets/g9phy-3.json",
+     "title": "第3节 功",
+     "subtitle": "第十一章 简单机械和功",
+     "kind": "cn",
+     "count": 10,
+     "unit": "WL91"
+    },
+    {
+     "id": "g9phy-4",
+     "file": "sets/g9phy-4.json",
+     "title": "第4节 功率",
+     "subtitle": "第十一章 简单机械和功",
+     "kind": "cn",
+     "count": 10,
+     "unit": "WL91"
+    },
+    {
+     "id": "g9phy-5",
+     "file": "sets/g9phy-5.json",
+     "title": "第5节 机械效率",
+     "subtitle": "第十一章 简单机械和功",
+     "kind": "cn",
+     "count": 10,
+     "unit": "WL91"
+    },
+    {
+     "id": "g9phy-6",
+     "file": "sets/g9phy-6.json",
+     "title": "第1节 机械能",
+     "subtitle": "第十二章 机械能和内能",
+     "kind": "cn",
+     "count": 10,
+     "unit": "WL92"
+    },
+    {
+     "id": "g9phy-7",
+     "file": "sets/g9phy-7.json",
+     "title": "第2节 内能 热传递",
+     "subtitle": "第十二章 机械能和内能",
+     "kind": "cn",
+     "count": 10,
+     "unit": "WL92"
+    },
+    {
+     "id": "g9phy-8",
+     "file": "sets/g9phy-8.json",
+     "title": "第3节 物质的比热容",
+     "subtitle": "第十二章 机械能和内能",
+     "kind": "cn",
+     "count": 10,
+     "unit": "WL92"
+    },
+    {
+     "id": "g9phy-9",
+     "file": "sets/g9phy-9.json",
+     "title": "第4节 机械能与内能的相互转化",
+     "subtitle": "第十二章 机械能和内能",
+     "kind": "cn",
+     "count": 10,
+     "unit": "WL92"
+    },
+    {
+     "id": "g9phy-10",
+     "file": "sets/g9phy-10.json",
+     "title": "第1节 初识家用电器和电路",
+     "subtitle": "第十三章 简单电路",
+     "kind": "cn",
+     "count": 10,
+     "unit": "WL93"
+    },
+    {
+     "id": "g9phy-11",
+     "file": "sets/g9phy-11.json",
+     "title": "第2节 电路连接的基本方式",
+     "subtitle": "第十三章 简单电路",
+     "kind": "cn",
+     "count": 10,
+     "unit": "WL93"
+    },
+    {
+     "id": "g9phy-12",
+     "file": "sets/g9phy-12.json",
+     "title": "第3节 电流和电流表",
+     "subtitle": "第十三章 简单电路",
+     "kind": "cn",
+     "count": 10,
+     "unit": "WL93"
+    },
+    {
+     "id": "g9phy-13",
+     "file": "sets/g9phy-13.json",
+     "title": "第4节 电压和电压表",
+     "subtitle": "第十三章 简单电路",
+     "kind": "cn",
+     "count": 10,
+     "unit": "WL93"
+    },
+    {
+     "id": "g9phy-14",
+     "file": "sets/g9phy-14.json",
+     "title": "第5节 串、并联电路的特点",
+     "subtitle": "第十三章 简单电路",
+     "kind": "cn",
+     "count": 10,
+     "unit": "WL93"
+    },
+    {
+     "id": "g9phy-15",
+     "file": "sets/g9phy-15.json",
+     "title": "第1节 电阻",
+     "subtitle": "第十四章 欧姆定律",
+     "kind": "cn",
+     "count": 10,
+     "unit": "WL94"
+    },
+    {
+     "id": "g9phy-16",
+     "file": "sets/g9phy-16.json",
+     "title": "第2节 变阻器",
+     "subtitle": "第十四章 欧姆定律",
+     "kind": "cn",
+     "count": 10,
+     "unit": "WL94"
+    },
+    {
+     "id": "g9phy-17",
+     "file": "sets/g9phy-17.json",
+     "title": "第3节 欧姆定律",
+     "subtitle": "第十四章 欧姆定律",
+     "kind": "cn",
+     "count": 10,
+     "unit": "WL94"
+    },
+    {
+     "id": "g9phy-18",
+     "file": "sets/g9phy-18.json",
+     "title": "第4节 欧姆定律的应用",
+     "subtitle": "第十四章 欧姆定律",
+     "kind": "cn",
+     "count": 10,
+     "unit": "WL94"
+    }
+   ]
   }
  ],
  "unitNames": {
@@ -8859,6 +9029,10 @@
   "YW94": "第四单元 小说",
   "YW95": "第五单元 议论与思辨",
   "YW96": "第六单元 古文与诗词曲",
-  "YW97": "课外古诗词、名著与写作"
+  "YW97": "课外古诗词、名著与写作",
+  "WL91": "第十一章 简单机械和功",
+  "WL92": "第十二章 机械能和内能",
+  "WL93": "第十三章 简单电路",
+  "WL94": "第十四章 欧姆定律"
  }
 }
