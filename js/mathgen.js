@@ -496,6 +496,11 @@ const G8 = {
 };
 export const T8 = [{ id: 'root', name: '平方根与立方根' }, { id: 'sqrt', name: '二次根式运算' }, { id: 'pyth', name: '勾股定理求边长' }, { id: 'lin', name: '一次函数求值' }, { id: 'sys', name: '二元一次方程组' }, { id: 'stat', name: '平均数与中位数' }];
 
+// ---------- 九年级口算（复用章节出题器里的计算类题型） ----------
+const g9 = (c, t) => (L) => CH9[c].types.find(x => x.id === t).gen(L);
+const G9 = { fac: g9(1, 'facMax'), sqrt: g9(1, 'sqrt'), delta: g9(1, 'delta'), vieta: g9(1, 'vieta'), rhS: g9(0, 'rhS'), val: g9(4, 'val') };
+export const T9 = [{ id: 'fac', name: '解一元二次方程' }, { id: 'sqrt', name: '直接开平方法' }, { id: 'delta', name: '根的判别式' }, { id: 'vieta', name: '根与系数的关系' }, { id: 'rhS', name: '菱形的边长' }, { id: 'val', name: '二次函数求值' }];
+
 // ---------- 英语词汇 ----------
 const vocabQ = (kind, list) => {
   const w = pick(list), pool = shuf(list.filter(x => x.en !== w.en)).slice(0, 3);
@@ -524,6 +529,7 @@ import { CHAP3_TYPES } from './chapgen3.js';
 import { CHAP5_TYPES } from './chapgen5.js';
 import { CHAP6_TYPES } from './chapgen6.js';
 import { CHAP8_TYPES } from './chapgen8.js';
+import { CH9, CHAP9_TYPES } from './chapgen9.js';
 export const RANDOM = {
   chap1: { title: '一年级数学章节练习', icon: '📐', subject: 'chap1', types: CHAP1_TYPES, levels: ['简单', '适中', '挑战'] },
   math1: { title: '口算随机练习', icon: '🎲', subject: 'math1', types: T1, levels: ['简单', '适中', '挑战'], gen: (t, l) => G1[t](l) },
@@ -544,6 +550,8 @@ export const RANDOM = {
   vocab9: { title: '英语单词小测', icon: '🔤', subject: 'vocab9', types: TW, levels: null },
   phrase9: { title: '英语短语小测', icon: '💬', subject: 'phrase9', types: TW, levels: null },
   chap8: { title: '八年级数学章节练习', icon: '📐', subject: 'chap8', types: CHAP8_TYPES, levels: ['简单', '适中', '挑战'] },
+  chap9: { title: '九年级数学章节练习', icon: '📐', subject: 'chap9', types: CHAP9_TYPES, levels: ['简单', '适中', '挑战'] },
+  math9: { title: '口算随机练习', icon: '🎲', subject: 'math9', types: T9, levels: ['简单', '适中', '挑战'], gen: (t, l) => G9[t](l) },
   math8: { title: '口算随机练习', icon: '🎲', subject: 'math8', types: T8, levels: ['简单', '适中', '挑战'], gen: (t, l) => G8[t](l) },
   chap2: { title: '二年级数学章节练习', icon: '📐', subject: 'chap2', types: CHAP2_TYPES, levels: ['简单', '适中', '挑战'] },
   math2: { title: '口算随机练习', icon: '🎲', subject: 'math2', types: T2, levels: ['简单', '适中', '挑战'], gen: (t, l) => G2[t](l) },
