@@ -8388,6 +8388,329 @@
      "unit": "YW7"
     }
    ]
+  },
+  {
+   "id": "g9chinese",
+   "title": "语文练习",
+   "icon": "📖",
+   "desc": "按课本的课，每课一练",
+   "sets": [
+    {
+     "id": "g9chinese-1",
+     "file": "sets/g9chinese-1.json",
+     "title": "第1课 沁园春·雪",
+     "subtitle": "第一单元 活动·探究（诗歌）",
+     "kind": "cn",
+     "count": 10,
+     "unit": "YW91"
+    },
+    {
+     "id": "g9chinese-2",
+     "file": "sets/g9chinese-2.json",
+     "title": "第2课 周总理，你在哪里",
+     "subtitle": "第一单元 活动·探究（诗歌）",
+     "kind": "cn",
+     "count": 10,
+     "unit": "YW91"
+    },
+    {
+     "id": "g9chinese-3",
+     "file": "sets/g9chinese-3.json",
+     "title": "第3课 我爱这土地",
+     "subtitle": "第一单元 活动·探究（诗歌）",
+     "kind": "cn",
+     "count": 10,
+     "unit": "YW91"
+    },
+    {
+     "id": "g9chinese-4",
+     "file": "sets/g9chinese-4.json",
+     "title": "第4课 乡愁",
+     "subtitle": "第一单元 活动·探究（诗歌）",
+     "kind": "cn",
+     "count": 10,
+     "unit": "YW91"
+    },
+    {
+     "id": "g9chinese-5",
+     "file": "sets/g9chinese-5.json",
+     "title": "第5课 你是人间的四月天",
+     "subtitle": "第一单元 活动·探究（诗歌）",
+     "kind": "cn",
+     "count": 10,
+     "unit": "YW91"
+    },
+    {
+     "id": "g9chinese-6",
+     "file": "sets/g9chinese-6.json",
+     "title": "第6课 我看",
+     "subtitle": "第一单元 活动·探究（诗歌）",
+     "kind": "cn",
+     "count": 10,
+     "unit": "YW91"
+    },
+    {
+     "id": "g9chinese-7",
+     "file": "sets/g9chinese-7.json",
+     "title": "第7课 培养德智体美劳全面发展的社会主义建设者和接班人",
+     "subtitle": "第二单元 议论文",
+     "kind": "cn",
+     "count": 10,
+     "unit": "YW92"
+    },
+    {
+     "id": "g9chinese-8",
+     "file": "sets/g9chinese-8.json",
+     "title": "第8课 中国人失掉自信力了吗",
+     "subtitle": "第二单元 议论文",
+     "kind": "cn",
+     "count": 10,
+     "unit": "YW92"
+    },
+    {
+     "id": "g9chinese-9",
+     "file": "sets/g9chinese-9.json",
+     "title": "第9课 谈骨气",
+     "subtitle": "第二单元 议论文",
+     "kind": "cn",
+     "count": 10,
+     "unit": "YW92"
+    },
+    {
+     "id": "g9chinese-10",
+     "file": "sets/g9chinese-10.json",
+     "title": "第10课 创造宣言",
+     "subtitle": "第二单元 议论文",
+     "kind": "cn",
+     "count": 10,
+     "unit": "YW92"
+    },
+    {
+     "id": "g9chinese-11",
+     "file": "sets/g9chinese-11.json",
+     "title": "第11课 岳阳楼记",
+     "subtitle": "第三单元 古文与诗词",
+     "kind": "cn",
+     "count": 10,
+     "unit": "YW93"
+    },
+    {
+     "id": "g9chinese-12",
+     "file": "sets/g9chinese-12.json",
+     "title": "第12课 醉翁亭记",
+     "subtitle": "第三单元 古文与诗词",
+     "kind": "cn",
+     "count": 10,
+     "unit": "YW93"
+    },
+    {
+     "id": "g9chinese-13",
+     "file": "sets/g9chinese-13.json",
+     "title": "第13课 湖心亭看雪",
+     "subtitle": "第三单元 古文与诗词",
+     "kind": "cn",
+     "count": 10,
+     "unit": "YW93"
+    },
+    {
+     "id": "g9chinese-14",
+     "file": "sets/g9chinese-14.json",
+     "title": "第14课 诗词三首（一）行路难、酬乐天扬州初逢席上见赠",
+     "subtitle": "第三单元 古文与诗词",
+     "kind": "cn",
+     "count": 10,
+     "unit": "YW93"
+    },
+    {
+     "id": "g9chinese-15",
+     "file": "sets/g9chinese-15.json",
+     "title": "第14课 诗词三首（二）水调歌头（明月几时有）",
+     "subtitle": "第三单元 古文与诗词",
+     "kind": "cn",
+     "count": 10,
+     "unit": "YW93"
+    },
+    {
+     "id": "g9chinese-16",
+     "file": "sets/g9chinese-16.json",
+     "title": "课外古诗词诵读（月夜忆舍弟、长沙过贾谊宅、左迁至蓝关示侄孙湘、商山早行）",
+     "subtitle": "第三单元 古文与诗词",
+     "kind": "cn",
+     "count": 10,
+     "unit": "YW93"
+    },
+    {
+     "id": "g9chinese-17",
+     "file": "sets/g9chinese-17.json",
+     "title": "第15课 故乡",
+     "subtitle": "第四单元 小说",
+     "kind": "cn",
+     "count": 10,
+     "unit": "YW94"
+    },
+    {
+     "id": "g9chinese-18",
+     "file": "sets/g9chinese-18.json",
+     "title": "第16课 我的叔叔于勒",
+     "subtitle": "第四单元 小说",
+     "kind": "cn",
+     "count": 10,
+     "unit": "YW94"
+    },
+    {
+     "id": "g9chinese-19",
+     "file": "sets/g9chinese-19.json",
+     "title": "第17课 孤独之旅",
+     "subtitle": "第四单元 小说",
+     "kind": "cn",
+     "count": 10,
+     "unit": "YW94"
+    },
+    {
+     "id": "g9chinese-20",
+     "file": "sets/g9chinese-20.json",
+     "title": "第18课 蒲柳人家（节选）",
+     "subtitle": "第四单元 小说",
+     "kind": "cn",
+     "count": 10,
+     "unit": "YW94"
+    },
+    {
+     "id": "g9chinese-21",
+     "file": "sets/g9chinese-21.json",
+     "title": "《简·爱》（怎样读外国小说）",
+     "subtitle": "课外古诗词、名著与写作",
+     "kind": "cn",
+     "count": 10,
+     "unit": "YW97"
+    },
+    {
+     "id": "g9chinese-22",
+     "file": "sets/g9chinese-22.json",
+     "title": "第19课 想和做",
+     "subtitle": "第五单元 议论与思辨",
+     "kind": "cn",
+     "count": 10,
+     "unit": "YW95"
+    },
+    {
+     "id": "g9chinese-23",
+     "file": "sets/g9chinese-23.json",
+     "title": "第20课 怀疑与学问",
+     "subtitle": "第五单元 议论与思辨",
+     "kind": "cn",
+     "count": 10,
+     "unit": "YW95"
+    },
+    {
+     "id": "g9chinese-24",
+     "file": "sets/g9chinese-24.json",
+     "title": "第21课 就英法联军远征中国致巴特勒上尉的信",
+     "subtitle": "第五单元 议论与思辨",
+     "kind": "cn",
+     "count": 10,
+     "unit": "YW95"
+    },
+    {
+     "id": "g9chinese-25",
+     "file": "sets/g9chinese-25.json",
+     "title": "第22课 精神的三间小屋",
+     "subtitle": "第五单元 议论与思辨",
+     "kind": "cn",
+     "count": 10,
+     "unit": "YW95"
+    },
+    {
+     "id": "g9chinese-26",
+     "file": "sets/g9chinese-26.json",
+     "title": "第23课 曹刿论战",
+     "subtitle": "第六单元 古文与诗词曲",
+     "kind": "cn",
+     "count": 10,
+     "unit": "YW96"
+    },
+    {
+     "id": "g9chinese-27",
+     "file": "sets/g9chinese-27.json",
+     "title": "第24课 邹忌讽齐王纳谏",
+     "subtitle": "第六单元 古文与诗词曲",
+     "kind": "cn",
+     "count": 10,
+     "unit": "YW96"
+    },
+    {
+     "id": "g9chinese-28",
+     "file": "sets/g9chinese-28.json",
+     "title": "第25课 陈涉世家",
+     "subtitle": "第六单元 古文与诗词曲",
+     "kind": "cn",
+     "count": 10,
+     "unit": "YW96"
+    },
+    {
+     "id": "g9chinese-29",
+     "file": "sets/g9chinese-29.json",
+     "title": "第26课 出师表",
+     "subtitle": "第六单元 古文与诗词曲",
+     "kind": "cn",
+     "count": 10,
+     "unit": "YW96"
+    },
+    {
+     "id": "g9chinese-30",
+     "file": "sets/g9chinese-30.json",
+     "title": "第27课 诗词曲五首（一）十五从军征、白雪歌送武判官归京",
+     "subtitle": "第六单元 古文与诗词曲",
+     "kind": "cn",
+     "count": 10,
+     "unit": "YW96"
+    },
+    {
+     "id": "g9chinese-31",
+     "file": "sets/g9chinese-31.json",
+     "title": "第27课 诗词曲五首（二）南乡子、过零丁洋、山坡羊",
+     "subtitle": "第六单元 古文与诗词曲",
+     "kind": "cn",
+     "count": 10,
+     "unit": "YW96"
+    },
+    {
+     "id": "g9chinese-32",
+     "file": "sets/g9chinese-32.json",
+     "title": "《唐诗三百首》",
+     "subtitle": "课外古诗词、名著与写作",
+     "kind": "cn",
+     "count": 10,
+     "unit": "YW97"
+    },
+    {
+     "id": "g9chinese-33",
+     "file": "sets/g9chinese-33.json",
+     "title": "课外古诗词诵读（咸阳城东楼、无题、浣溪沙、丑奴儿）",
+     "subtitle": "课外古诗词、名著与写作",
+     "kind": "cn",
+     "count": 10,
+     "unit": "YW97"
+    },
+    {
+     "id": "g9chinese-34",
+     "file": "sets/g9chinese-34.json",
+     "title": "议论文写作（观点要明确、议论要言之有据、论证要合理）",
+     "subtitle": "课外古诗词、名著与写作",
+     "kind": "cn",
+     "count": 10,
+     "unit": "YW97"
+    },
+    {
+     "id": "g9chinese-35",
+     "file": "sets/g9chinese-35.json",
+     "title": "学写小小说",
+     "subtitle": "课外古诗词、名著与写作",
+     "kind": "cn",
+     "count": 10,
+     "unit": "YW97"
+    }
+   ]
   }
  ],
  "unitNames": {
@@ -8529,6 +8852,13 @@
   "YW4": "第四单元 散文",
   "YW5": "第五单元 说明文",
   "YW6": "第六单元 古诗文",
-  "YW7": "课外古诗词与名著"
+  "YW7": "课外古诗词与名著",
+  "YW91": "第一单元 活动·探究（诗歌）",
+  "YW92": "第二单元 议论文",
+  "YW93": "第三单元 古文与诗词",
+  "YW94": "第四单元 小说",
+  "YW95": "第五单元 议论与思辨",
+  "YW96": "第六单元 古文与诗词曲",
+  "YW97": "课外古诗词、名著与写作"
  }
 }

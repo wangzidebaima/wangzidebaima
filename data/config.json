@@ -585,7 +585,9 @@
         "小九"
       ],
       "theme": "leaf",
-      "subjects": [],
+      "subjects": [
+        "g9chinese"
+      ],
       "random": [
         "vocab9",
         "phrase9"
