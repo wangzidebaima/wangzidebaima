@@ -541,6 +541,8 @@ export const RANDOM = {
   sent6: { title: '英语句子小测', icon: '📝', subject: 'sent6', types: TS, levels: null },
   vocab8: { title: '英语单词小测', icon: '🔤', subject: 'vocab8', types: TW, levels: null },
   phrase8: { title: '英语短语小测', icon: '💬', subject: 'phrase8', types: TW, levels: null },
+  vocab9: { title: '英语单词小测', icon: '🔤', subject: 'vocab9', types: TW, levels: null },
+  phrase9: { title: '英语短语小测', icon: '💬', subject: 'phrase9', types: TW, levels: null },
   chap8: { title: '八年级数学章节练习', icon: '📐', subject: 'chap8', types: CHAP8_TYPES, levels: ['简单', '适中', '挑战'] },
   math8: { title: '口算随机练习', icon: '🎲', subject: 'math8', types: T8, levels: ['简单', '适中', '挑战'], gen: (t, l) => G8[t](l) },
   chap2: { title: '二年级数学章节练习', icon: '📐', subject: 'chap2', types: CHAP2_TYPES, levels: ['简单', '适中', '挑战'] },

@@ -1,5 +1,5 @@
 // 离线缓存：先用手机里存的（秒开），同时悄悄检查有没有新内容；有就提示刷新。
-const VER = 'kp-v73';
+const VER = 'kp-v74';
 const AUDIO = 'kp-audio';
 // 下面这份清单由 tools/gen_shell.py 自动生成，不要手改；
 // 加了新文件后跑一次 python tools/gen_shell.py 即可。
@@ -15,7 +15,8 @@ const SHELL = ['./', 'index.html', 'manifest.webmanifest', 'css/app.css',
   'data/cnwords6.json', 'data/config.json', 'data/enwords3.json', 'data/enwords5.json',
   'data/enwords6.json', 'data/ipa.json', 'data/library.json', 'data/poems.json',
   'data/tips.json', 'data/vocab.json', 'data/words3.json', 'data/words4.json',
-  'data/words5.json', 'data/words6.json', 'data/words7.json', 'data/words8.json'];
+  'data/words5.json', 'data/words6.json', 'data/words7.json', 'data/words8.json',
+  'data/words9.json'];
 
 async function precacheSets(c) {
   try {

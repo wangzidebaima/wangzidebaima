@@ -586,8 +586,17 @@
       ],
       "theme": "leaf",
       "subjects": [],
-      "random": [],
-      "tasks": [],
+      "random": [
+        "vocab9",
+        "phrase9"
+      ],
+      "tasks": [
+        {
+          "label": "学习 5 个单词",
+          "kind": "learn",
+          "goal": 5
+        }
+      ],
       "grade": "九年级",
       "readAloud": false,
       "soon": true,
@@ -602,7 +611,8 @@
         "hist": "统编版",
         "poli": "统编版",
         "phy": "苏科版",
-        "chem": "人教版"
+        "chem": "人教版",
+        "eng": "人教版"
       },
       "modes": {
         "chaptype": "live",
