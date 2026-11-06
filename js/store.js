@@ -171,6 +171,9 @@ export function markSpeak(uid, key) { const p = P(uid); p.speak[key] = Date.now(
 // lap+goal 一起记：中途改过攒星目标也不怕对错轮次
 export const coinList = (uid) => P(uid).coins || [];
 export const coinsPaid = (uid) => coinList(uid).reduce((a, c) => a + (c.n || 0), 0);
+// 这一轮（lap+goal 一起认）已经发了几个。按数量记，才能「攒够一档再发一档」。
+export const coinsPaidLap = (uid, lap, goal) => coinList(uid).filter(c => c.lap === lap && c.goal === goal).reduce((a, c) => a + (c.n || 0), 0);
+// 旧的整轮布尔判断：一轮只要发过一次就锁死，后攒到的金币再也发不掉。已弃用，别再用它判断能不能发。
 export const coinGivenLap = (uid, lap, goal) => coinList(uid).some(c => c.lap === lap && c.goal === goal);
 export function payCoins(uid, lap, goal, n) {
   const p = P(uid);

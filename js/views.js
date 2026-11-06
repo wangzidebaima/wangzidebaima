@@ -201,16 +201,17 @@ export function kidCard(u, { vip = false, redraw = null } = {}) {
     bakTip.style.display = '';
     bakTip.scrollIntoView({ behavior: 'smooth', block: 'center' });
   };
-  // 金币：这一轮攒到的 + 家长已发放的流水
+  // 金币：这一轮攒到几个、已经发了几个、还差几个。按差额发，攒够新的一档就又能领一次。
   const rews = (X.cfg.rewards || []).slice().sort((a, b) => a.stars - b.stars);
-  const cyk = cycle(st.total), got = coinsGot(rews, cyk.pos), given = S.coinGivenLap(u.id, cyk.laps, goal());
+  const cyk = cycle(st.total), got = coinsGot(rews, cyk.pos);
+  const paidLap = S.coinsPaidLap(u.id, cyk.laps, goal()), due = Math.max(0, got - paidLap);
   const paidAll = S.coinsPaid(u.id), lastCoin = S.coinList(u.id).slice(-1)[0];
   const coinRow = h('div', { class: 'row static' }, h('div', {}, h('b', {}, '🪙 金币'),
-    h('small', {}, (got ? (given ? `本轮 ${got} 个已发放` : `本轮可领 ${got} 个`) : '本轮还没攒到') + (paidAll ? ` · 累计已发 ${paidAll} 个` : ' · 还没发过') + (lastCoin ? `，上次 ${Number(lastCoin.d.slice(5, 7))} 月 ${Number(lastCoin.d.slice(8, 10))} 日` : ''))),
-    got && !given ? h('button', { type: 'button', class: 'btn small primary', onclick: () => {
-      if (!confirm(`确认已经把这一轮的 ${got} 个金币给 ${u.display} 了吗？\n记下后，孩子首页会显示「家长已经发放啦」。`)) return;
-      S.payCoins(u.id, cyk.laps, goal(), got); toast('记好啦'); again();
-    } }, `记一笔：发 ${got} 个`) : null);
+    h('small', {}, (got ? `本轮攒到 ${got} 个 · 已发 ${paidLap} 个` + (due ? ` · 还差 ${due} 个` : ' · 都发完啦') : '本轮还没攒到') + (paidAll ? ` · 累计已发 ${paidAll} 个` : ' · 还没发过') + (lastCoin ? `，上次 ${Number(lastCoin.d.slice(5, 7))} 月 ${Number(lastCoin.d.slice(8, 10))} 日` : ''))),
+    due ? h('button', { type: 'button', class: 'btn small primary', onclick: () => {
+      if (!confirm(`确认已经把 1 个金币给 ${u.display} 了吗？\n${due > 1 ? `还差 ${due} 个，发完这个可以接着点。` : '记下后，孩子首页会显示「家长已经发放啦」。'}`)) return;
+      S.payCoins(u.id, cyk.laps, goal(), 1); toast('记好啦'); again();
+    } }, '记一笔：发 1 个') : null);
   // 会员占位：只在我的后台显示，家长专区里没有（现在没有任何功能用它做拦截）
   const vipRow = vip ? h('div', { class: 'row static' }, h('div', {}, h('b', {}, '👑 会员'),
     h('small', {}, S.isVip(u.id) ? `已开通，到期：${S.P(u.id).vip.exp}` : '未开通（功能准备中）'))) : null;
@@ -500,12 +501,13 @@ export function home() {
   const u = user(), st = S.stats(u.id), p = S.P(u.id);
   const rewards = (X.cfg.rewards || []).slice().sort((a, b) => a.stars - b.stars);
   const cy = cycle(st.total), next = rewards.find(r => r.stars > cy.pos), G = goal(), pct = Math.min(100, cy.pos / G * 100);
+  const cg = coinsGot(rewards, cy.pos), cdue = Math.max(0, cg - S.coinsPaidLap(u.id, cy.laps, G));
   const marks = h('div', { class: 'marks' }, rewards.map(r => h('span', { class: 'mk' + (cy.pos >= r.stars ? ' on' : ''), style: `left:${Math.min(100, r.stars / G * 100)}%` }, r.stars)));
   const jar = h('section', { class: 'jar' },
     h('div', { class: 'jar-top' }, h('div', { class: 'jar-n' }, '⭐ ', h('b', {}, cy.pos), h('small', {}, ` / ${G}`)), h('div', { class: 'jar-s' }, `今天 +${st.today}/${cap()}` + (S.streak(u.id) ? ` · 🔥连续 ${S.streak(u.id)} 天` : ''))),
     h('div', { class: 'bar' }, h('i', { style: `width:${pct}%` })), marks,
     h('p', { class: 'jar-t' }, next ? `再得 ${next.stars - cy.pos} 颗星，就能得 ${next.label}（找家长领取）` : '这一轮满啦！再得一颗星，进度条就重新开始。'),
-    coinsGot(rewards, cy.pos) ? h('p', { class: 'jar-t' }, `🪙 这一轮已达成 ${coinsGot(rewards, cy.pos)} 个金币，${S.coinGivenLap(u.id, cy.laps, G) ? '家长已经发放啦' : '找家长领取'}`) : null,
+    cg ? h('p', { class: 'jar-t' }, `🪙 这一轮攒到 ${cg} 个金币，${cdue ? `还有 ${cdue} 个找家长领取` : '家长已经发放啦'}`) : null,
     cy.laps ? h('p', { class: 'jar-t' }, `已完成 ${cy.laps} 轮（每轮 ${rewards.reduce((a, r) => a + (r.coins || 0), 0)} 个金币）`) : null,
     st.today >= cap() ? h('p', { class: 'jar-t' }, '今天的星星拿满啦，明天再来～') : null);
   const subjectCards = u.subjects.map(id => {
@@ -1289,7 +1291,8 @@ function summaryText(u) {
   if (weakT.length) lines.push(`最近容易错：${weakT.join('、')}`);
   if (weakW.length) lines.push(`还没掌握的单词：${weakW.join('、')}`);
   if (next) lines.push(`下一个奖励 ${next.label}：${next.stars} 颗，还差 ${next.stars - cy.pos} 颗`);
-  if (coinsGot(rewards, cy.pos)) lines.push(`这一轮已达成金币：${coinsGot(rewards, cy.pos)} 个（${S.coinGivenLap(u.id, cy.laps, goal()) ? '家长已发放' : '找家长领取'}，累计已发 ${S.coinsPaid(u.id)} 个）` + (cy.laps ? `；已完成 ${cy.laps} 轮` : ''));
+  const scg = coinsGot(rewards, cy.pos), scdue = Math.max(0, scg - S.coinsPaidLap(u.id, cy.laps, goal()));
+  if (scg) lines.push(`这一轮攒到金币：${scg} 个（${scdue ? `还有 ${scdue} 个找家长领取` : '家长已发放'}，累计已发 ${S.coinsPaid(u.id)} 个）` + (cy.laps ? `；已完成 ${cy.laps} 轮` : ''));
   return lines.filter(Boolean).join('\n');
 }
 const CATN = [['reading', '阅读理解', '📖'], ['listening', '听力', '🎧'], ['speaking', '口语', '🗣'], ['essay', '美文', '🌸']];
