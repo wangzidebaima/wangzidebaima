@@ -8881,6 +8881,212 @@
      "unit": "WL94"
     }
    ]
+  },
+  {
+   "id": "g9hist",
+   "title": "历史练习",
+   "icon": "🏛️",
+   "desc": "世界历史（上），按课本的课，每课一练",
+   "sets": [
+    {
+     "id": "g9hist-1",
+     "file": "sets/g9hist-1.json",
+     "title": "第1课 从原始社会到奴隶社会",
+     "subtitle": "第一单元 文明的产生和古代亚非文明",
+     "kind": "cn",
+     "count": 10,
+     "unit": "LS91"
+    },
+    {
+     "id": "g9hist-2",
+     "file": "sets/g9hist-2.json",
+     "title": "第2课 古代两河流域",
+     "subtitle": "第一单元 文明的产生和古代亚非文明",
+     "kind": "cn",
+     "count": 10,
+     "unit": "LS91"
+    },
+    {
+     "id": "g9hist-3",
+     "file": "sets/g9hist-3.json",
+     "title": "第3课 古代埃及",
+     "subtitle": "第一单元 文明的产生和古代亚非文明",
+     "kind": "cn",
+     "count": 10,
+     "unit": "LS91"
+    },
+    {
+     "id": "g9hist-4",
+     "file": "sets/g9hist-4.json",
+     "title": "第4课 古代印度",
+     "subtitle": "第一单元 文明的产生和古代亚非文明",
+     "kind": "cn",
+     "count": 10,
+     "unit": "LS91"
+    },
+    {
+     "id": "g9hist-5",
+     "file": "sets/g9hist-5.json",
+     "title": "第5课 古代希腊",
+     "subtitle": "第二单元 古代欧洲文明",
+     "kind": "cn",
+     "count": 10,
+     "unit": "LS92"
+    },
+    {
+     "id": "g9hist-6",
+     "file": "sets/g9hist-6.json",
+     "title": "第6课 古代罗马",
+     "subtitle": "第二单元 古代欧洲文明",
+     "kind": "cn",
+     "count": 10,
+     "unit": "LS92"
+    },
+    {
+     "id": "g9hist-7",
+     "file": "sets/g9hist-7.json",
+     "title": "第7课 法兰克王国和西欧封建制度",
+     "subtitle": "第三单元 封建时代的欧洲",
+     "kind": "cn",
+     "count": 10,
+     "unit": "LS93"
+    },
+    {
+     "id": "g9hist-8",
+     "file": "sets/g9hist-8.json",
+     "title": "第8课 西欧的城市和大学",
+     "subtitle": "第三单元 封建时代的欧洲",
+     "kind": "cn",
+     "count": 10,
+     "unit": "LS93"
+    },
+    {
+     "id": "g9hist-9",
+     "file": "sets/g9hist-9.json",
+     "title": "第9课 拜占庭帝国",
+     "subtitle": "第三单元 封建时代的欧洲",
+     "kind": "cn",
+     "count": 10,
+     "unit": "LS93"
+    },
+    {
+     "id": "g9hist-10",
+     "file": "sets/g9hist-10.json",
+     "title": "第10课 封建时代的日本",
+     "subtitle": "第四单元 中古时期的亚洲、非洲和美洲",
+     "kind": "cn",
+     "count": 10,
+     "unit": "LS94"
+    },
+    {
+     "id": "g9hist-11",
+     "file": "sets/g9hist-11.json",
+     "title": "第11课 阿拉伯帝国",
+     "subtitle": "第四单元 中古时期的亚洲、非洲和美洲",
+     "kind": "cn",
+     "count": 10,
+     "unit": "LS94"
+    },
+    {
+     "id": "g9hist-12",
+     "file": "sets/g9hist-12.json",
+     "title": "第12课 中古时期的非洲和美洲",
+     "subtitle": "第四单元 中古时期的亚洲、非洲和美洲",
+     "kind": "cn",
+     "count": 10,
+     "unit": "LS94"
+    },
+    {
+     "id": "g9hist-13",
+     "file": "sets/g9hist-13.json",
+     "title": "第13课 西欧经济社会发展与文艺复兴运动",
+     "subtitle": "第五单元 走向近代",
+     "kind": "cn",
+     "count": 10,
+     "unit": "LS95"
+    },
+    {
+     "id": "g9hist-14",
+     "file": "sets/g9hist-14.json",
+     "title": "第14课 探寻新航路",
+     "subtitle": "第五单元 走向近代",
+     "kind": "cn",
+     "count": 10,
+     "unit": "LS95"
+    },
+    {
+     "id": "g9hist-15",
+     "file": "sets/g9hist-15.json",
+     "title": "第15课 早期殖民掠夺",
+     "subtitle": "第五单元 走向近代",
+     "kind": "cn",
+     "count": 10,
+     "unit": "LS95"
+    },
+    {
+     "id": "g9hist-16",
+     "file": "sets/g9hist-16.json",
+     "title": "第16课 英国资产阶级革命",
+     "subtitle": "第六单元 资本主义制度的初步确立",
+     "kind": "cn",
+     "count": 10,
+     "unit": "LS96"
+    },
+    {
+     "id": "g9hist-17",
+     "file": "sets/g9hist-17.json",
+     "title": "第17课 美国的独立",
+     "subtitle": "第六单元 资本主义制度的初步确立",
+     "kind": "cn",
+     "count": 10,
+     "unit": "LS96"
+    },
+    {
+     "id": "g9hist-18",
+     "file": "sets/g9hist-18.json",
+     "title": "第18课 法国大革命和拿破仑帝国",
+     "subtitle": "第六单元 资本主义制度的初步确立",
+     "kind": "cn",
+     "count": 10,
+     "unit": "LS96"
+    },
+    {
+     "id": "g9hist-19",
+     "file": "sets/g9hist-19.json",
+     "title": "第19课 第一次工业革命",
+     "subtitle": "第七单元 第一次工业革命和马克思主义的诞生",
+     "kind": "cn",
+     "count": 10,
+     "unit": "LS97"
+    },
+    {
+     "id": "g9hist-20",
+     "file": "sets/g9hist-20.json",
+     "title": "第20课 马克思主义的诞生",
+     "subtitle": "第七单元 第一次工业革命和马克思主义的诞生",
+     "kind": "cn",
+     "count": 10,
+     "unit": "LS97"
+    },
+    {
+     "id": "g9hist-21",
+     "file": "sets/g9hist-21.json",
+     "title": "第21课 第一国际和巴黎公社",
+     "subtitle": "第七单元 第一次工业革命和马克思主义的诞生",
+     "kind": "cn",
+     "count": 10,
+     "unit": "LS97"
+    },
+    {
+     "id": "g9hist-22",
+     "file": "sets/g9hist-22.json",
+     "title": "第22课 活动课 唱响《国际歌》",
+     "subtitle": "第七单元 第一次工业革命和马克思主义的诞生",
+     "kind": "cn",
+     "count": 10,
+     "unit": "LS97"
+    }
+   ]
   }
  ],
  "unitNames": {
@@ -9033,6 +9239,13 @@
   "WL91": "第十一章 简单机械和功",
   "WL92": "第十二章 机械能和内能",
   "WL93": "第十三章 简单电路",
-  "WL94": "第十四章 欧姆定律"
+  "WL94": "第十四章 欧姆定律",
+  "LS91": "第一单元 文明的产生和古代亚非文明",
+  "LS92": "第二单元 古代欧洲文明",
+  "LS93": "第三单元 封建时代的欧洲",
+  "LS94": "第四单元 中古时期的亚洲、非洲和美洲",
+  "LS95": "第五单元 走向近代",
+  "LS96": "第六单元 资本主义制度的初步确立",
+  "LS97": "第七单元 第一次工业革命和马克思主义的诞生"
  }
 }
