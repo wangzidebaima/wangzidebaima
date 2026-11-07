@@ -1,12 +1,12 @@
 // 离线缓存：先用手机里存的（秒开），同时悄悄检查有没有新内容；有就提示刷新。
-const VER = 'kp-v80';
+const VER = 'kp-v81';
 const AUDIO = 'kp-audio';
 // 下面这份清单由 tools/gen_shell.py 自动生成，不要手改；
 // 加了新文件后跑一次 python tools/gen_shell.py 即可。
 const SHELL = ['./', 'index.html', 'manifest.webmanifest', 'css/app.css',
   'js/app.js', 'js/badges.js', 'js/chapgen.js', 'js/chapgen1.js',
   'js/chapgen2.js', 'js/chapgen3.js', 'js/chapgen4.js', 'js/chapgen5.js',
-  'js/chapgen6.js', 'js/chapgen8.js', 'js/chapgen9.js', 'js/chapview.js',
+  'js/chapgen6.js', 'js/chapgen8.js', 'js/chapgen9.js', 'js/chapgenp9.js', 'js/chapview.js',
   'js/cndict.js', 'js/english.js', 'js/grade.js', 'js/grades.js',
   'js/help.js', 'js/learn.js', 'js/mathgen.js', 'js/parent.js',
   'js/poem.js', 'js/speech.js', 'js/store.js', 'js/ui.js',
