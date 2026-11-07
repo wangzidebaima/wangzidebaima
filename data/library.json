@@ -9087,6 +9087,230 @@
      "unit": "LS97"
     }
    ]
+  },
+  {
+   "id": "g9poli",
+   "title": "道德与法治练习",
+   "icon": "⚖️",
+   "desc": "按课本的课、框，每框一练（开卷科目：要会理解，不用死背）",
+   "sets": [
+    {
+     "id": "g9poli-1",
+     "file": "sets/g9poli-1.json",
+     "title": "第1课 书写恢宏史诗",
+     "subtitle": "第一单元 坚持党的全面领导",
+     "kind": "cn",
+     "count": 10,
+     "unit": "DF91"
+    },
+    {
+     "id": "g9poli-2",
+     "file": "sets/g9poli-2.json",
+     "title": "第1课 弘扬伟大建党精神",
+     "subtitle": "第一单元 坚持党的全面领导",
+     "kind": "cn",
+     "count": 10,
+     "unit": "DF91"
+    },
+    {
+     "id": "g9poli-3",
+     "file": "sets/g9poli-3.json",
+     "title": "第2课 牢记初心使命",
+     "subtitle": "第一单元 坚持党的全面领导",
+     "kind": "cn",
+     "count": 10,
+     "unit": "DF91"
+    },
+    {
+     "id": "g9poli-4",
+     "file": "sets/g9poli-4.json",
+     "title": "第2课 站稳人民立场",
+     "subtitle": "第一单元 坚持党的全面领导",
+     "kind": "cn",
+     "count": 10,
+     "unit": "DF91"
+    },
+    {
+     "id": "g9poli-5",
+     "file": "sets/g9poli-5.json",
+     "title": "第3课 坚强的领导核心",
+     "subtitle": "第一单元 坚持党的全面领导",
+     "kind": "cn",
+     "count": 10,
+     "unit": "DF91"
+    },
+    {
+     "id": "g9poli-6",
+     "file": "sets/g9poli-6.json",
+     "title": "第3课 坚持和加强党的全面领导",
+     "subtitle": "第一单元 坚持党的全面领导",
+     "kind": "cn",
+     "count": 10,
+     "unit": "DF91"
+    },
+    {
+     "id": "g9poli-7",
+     "file": "sets/g9poli-7.json",
+     "title": "第4课 社会主要矛盾的变化",
+     "subtitle": "第二单元 进入新时代",
+     "kind": "cn",
+     "count": 10,
+     "unit": "DF92"
+    },
+    {
+     "id": "g9poli-8",
+     "file": "sets/g9poli-8.json",
+     "title": "第4课 进入新时代的意义",
+     "subtitle": "第二单元 进入新时代",
+     "kind": "cn",
+     "count": 10,
+     "unit": "DF92"
+    },
+    {
+     "id": "g9poli-9",
+     "file": "sets/g9poli-9.json",
+     "title": "第5课 系统科学的理论体系",
+     "subtitle": "第二单元 进入新时代",
+     "kind": "cn",
+     "count": 10,
+     "unit": "DF92"
+    },
+    {
+     "id": "g9poli-10",
+     "file": "sets/g9poli-10.json",
+     "title": "第5课 必须长期坚持的指导思想",
+     "subtitle": "第二单元 进入新时代",
+     "kind": "cn",
+     "count": 10,
+     "unit": "DF92"
+    },
+    {
+     "id": "g9poli-11",
+     "file": "sets/g9poli-11.json",
+     "title": "第6课 经济实力大幅跃升",
+     "subtitle": "第二单元 进入新时代",
+     "kind": "cn",
+     "count": 10,
+     "unit": "DF92"
+    },
+    {
+     "id": "g9poli-12",
+     "file": "sets/g9poli-12.json",
+     "title": "第6课 民主政治不断发展",
+     "subtitle": "第二单元 进入新时代",
+     "kind": "cn",
+     "count": 10,
+     "unit": "DF92"
+    },
+    {
+     "id": "g9poli-13",
+     "file": "sets/g9poli-13.json",
+     "title": "第6课 文化自信日益增强",
+     "subtitle": "第二单元 进入新时代",
+     "kind": "cn",
+     "count": 10,
+     "unit": "DF92"
+    },
+    {
+     "id": "g9poli-14",
+     "file": "sets/g9poli-14.json",
+     "title": "第6课 民生福祉持续增进",
+     "subtitle": "第二单元 进入新时代",
+     "kind": "cn",
+     "count": 10,
+     "unit": "DF92"
+    },
+    {
+     "id": "g9poli-15",
+     "file": "sets/g9poli-15.json",
+     "title": "第6课 美丽中国加快建设",
+     "subtitle": "第二单元 进入新时代",
+     "kind": "cn",
+     "count": 10,
+     "unit": "DF92"
+    },
+    {
+     "id": "g9poli-16",
+     "file": "sets/g9poli-16.json",
+     "title": "第7课 “两步走”战略",
+     "subtitle": "第三单元 奋进新征程",
+     "kind": "cn",
+     "count": 10,
+     "unit": "DF93"
+    },
+    {
+     "id": "g9poli-17",
+     "file": "sets/g9poli-17.json",
+     "title": "第7课 中国式现代化",
+     "subtitle": "第三单元 奋进新征程",
+     "kind": "cn",
+     "count": 10,
+     "unit": "DF93"
+    },
+    {
+     "id": "g9poli-18",
+     "file": "sets/g9poli-18.json",
+     "title": "第8课 贯彻新发展理念",
+     "subtitle": "第三单元 奋进新征程",
+     "kind": "cn",
+     "count": 10,
+     "unit": "DF93"
+    },
+    {
+     "id": "g9poli-19",
+     "file": "sets/g9poli-19.json",
+     "title": "第8课 构建新发展格局",
+     "subtitle": "第三单元 奋进新征程",
+     "kind": "cn",
+     "count": 10,
+     "unit": "DF93"
+    },
+    {
+     "id": "g9poli-20",
+     "file": "sets/g9poli-20.json",
+     "title": "第8课 推动高质量发展",
+     "subtitle": "第三单元 奋进新征程",
+     "kind": "cn",
+     "count": 10,
+     "unit": "DF93"
+    },
+    {
+     "id": "g9poli-21",
+     "file": "sets/g9poli-21.json",
+     "title": "第9课 铸牢中华民族共同体意识",
+     "subtitle": "第四单元 共圆中国梦",
+     "kind": "cn",
+     "count": 10,
+     "unit": "DF94"
+    },
+    {
+     "id": "g9poli-22",
+     "file": "sets/g9poli-22.json",
+     "title": "第9课 实现祖国完全统一",
+     "subtitle": "第四单元 共圆中国梦",
+     "kind": "cn",
+     "count": 10,
+     "unit": "DF94"
+    },
+    {
+     "id": "g9poli-23",
+     "file": "sets/g9poli-23.json",
+     "title": "第10课 民族复兴梦",
+     "subtitle": "第四单元 共圆中国梦",
+     "kind": "cn",
+     "count": 10,
+     "unit": "DF94"
+    },
+    {
+     "id": "g9poli-24",
+     "file": "sets/g9poli-24.json",
+     "title": "第10课 我们都是追梦人",
+     "subtitle": "第四单元 共圆中国梦",
+     "kind": "cn",
+     "count": 10,
+     "unit": "DF94"
+    }
+   ]
   }
  ],
  "unitNames": {
@@ -9246,6 +9470,10 @@
   "LS94": "第四单元 中古时期的亚洲、非洲和美洲",
   "LS95": "第五单元 走向近代",
   "LS96": "第六单元 资本主义制度的初步确立",
-  "LS97": "第七单元 第一次工业革命和马克思主义的诞生"
+  "LS97": "第七单元 第一次工业革命和马克思主义的诞生",
+  "DF91": "第一单元 坚持党的全面领导",
+  "DF92": "第二单元 进入新时代",
+  "DF93": "第三单元 奋进新征程",
+  "DF94": "第四单元 共圆中国梦"
  }
 }
