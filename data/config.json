@@ -601,6 +601,18 @@
       ],
       "tasks": [
         {
+          "label": "数学练习 10 题",
+          "kind": "rand",
+          "subs": ["chap9", "math9"],
+          "goal": 10
+        },
+        {
+          "label": "物理计算练习 10 题",
+          "kind": "rand",
+          "subs": ["chapp9"],
+          "goal": 10
+        },
+        {
           "label": "学习 5 个单词",
           "kind": "learn",
           "goal": 5
