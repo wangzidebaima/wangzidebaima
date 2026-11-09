@@ -1,0 +1,127 @@
+{
+ "id": "g8l-u5-1",
+ "kind": "listening",
+ "title": "Making Mashed Potatoes",
+ "subtitle": "对话",
+ "unit": "E8U5",
+ "speakers": {
+  "Dad": "m1",
+  "Nina": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Nina",
+   "t": "Dad, can you show me how to make mashed potatoes?"
+  },
+  {
+   "s": "Dad",
+   "t": "Sure. First, wash four big potatoes and cut them up."
+  },
+  {
+   "s": "Nina",
+   "t": "Then do I boil them?"
+  },
+  {
+   "s": "Dad",
+   "t": "Yes, boil them for about twenty minutes until they are soft."
+  },
+  {
+   "s": "Nina",
+   "t": "What should I do next?"
+  },
+  {
+   "s": "Dad",
+   "t": "Pour the water out and mash the potatoes. Add a little butter and some milk."
+  },
+  {
+   "s": "Nina",
+   "t": "Do I need salt?"
+  },
+  {
+   "s": "Dad",
+   "t": "Just a little. Then stir it all together. That's it!"
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8l-u5-1-A1",
+     "type": "choice",
+     "stem": "How many potatoes do they use?",
+     "options": [
+      "Two.",
+      "Four.",
+      "Six.",
+      "Ten."
+     ],
+     "answer": "B",
+     "why": "wash four big potatoes.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u5-1-A2",
+     "type": "choice",
+     "stem": "How long do they boil the potatoes?",
+     "options": [
+      "About two minutes.",
+      "About one hour.",
+      "About twenty minutes.",
+      "About five minutes."
+     ],
+     "answer": "C",
+     "why": "boil them for about twenty minutes.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u5-1-A3",
+     "type": "choice",
+     "stem": "What do they add after mashing?",
+     "options": [
+      "Cheese and pepper.",
+      "Oil and sugar.",
+      "Eggs and flour.",
+      "Butter and milk."
+     ],
+     "answer": "D",
+     "why": "Add a little butter and some milk.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8l-u5-1-B1",
+     "type": "fill",
+     "stem": "They need to ____ the potatoes until they are soft.",
+     "answers": [
+      [
+       "boil"
+      ]
+     ],
+     "why": "boil them.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u5-1-B2",
+     "type": "fill",
+     "stem": "Add just a little ____.",
+     "answers": [
+      [
+       "salt"
+      ]
+     ],
+     "why": "Just a little.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

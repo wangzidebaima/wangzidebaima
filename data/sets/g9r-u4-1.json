@@ -1,0 +1,151 @@
+{
+ "id": "g9r-u4-1",
+ "kind": "reading",
+ "title": "Why Do We Forget?",
+ "subtitle": "考点：记忆规律 / memorize, recall, go through",
+ "unit": "E9U4",
+ "passage": [
+  "Everyone forgets things. You may learn a new word in the morning and forget it by night. Scientists say that we forget quickly at first, and then more slowly. If you do not go through new information again, you may lose most of it within a few days.",
+  "However, there are ways to remember better. First, review what you learn soon after class. Then review it again after one day, one week and one month. Second, link new facts with things you already know. Third, try to recall the information without looking at the book. This is more effective than reading it again and again. A good memory is not a gift. It is a skill, and you can build it up."
+ ],
+ "vocab": "memorize 记住 · recall 回忆 · effective 有效的 · technique 技巧 · information 信息 · review 复习",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9r-u4-1-A1",
+     "type": "choice",
+     "stem": "When do we forget most quickly?",
+     "options": [
+      "After a month.",
+      "At first.",
+      "Only at night.",
+      "Never."
+     ],
+     "answer": "B",
+     "why": "we forget quickly at first, and then more slowly.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u4-1-A2",
+     "type": "choice",
+     "stem": "What may happen if you never go through new information again?",
+     "options": [
+      "You will remember it forever.",
+      "You will understand it better.",
+      "You may lose most of it within a few days.",
+      "You will turn it into a game."
+     ],
+     "answer": "C",
+     "why": "you may lose most of it within a few days.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u4-1-A3",
+     "type": "choice",
+     "stem": "What is the first way to remember better?",
+     "options": [
+      "Sleep in class.",
+      "Read a different book.",
+      "Talk to a stranger.",
+      "Review soon after class."
+     ],
+     "answer": "D",
+     "why": "First, review what you learn soon after class.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u4-1-A4",
+     "type": "choice",
+     "stem": "What is more effective than reading again and again?",
+     "options": [
+      "Trying to recall without the book.",
+      "Copying the whole book.",
+      "Listening to loud music.",
+      "Waiting for a month."
+     ],
+     "answer": "A",
+     "why": "try to recall the information without looking at the book. This is more effective",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g9r-u4-1-B1",
+     "type": "tf",
+     "stem": "We forget everything at the same speed.",
+     "answer": "F",
+     "why": "we forget quickly at first, and then more slowly.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u4-1-B2",
+     "type": "tf",
+     "stem": "You should link new facts with things you already know.",
+     "answer": "T",
+     "why": "link new facts with things you already know.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u4-1-B3",
+     "type": "tf",
+     "stem": "The passage says a good memory is a skill.",
+     "answer": "T",
+     "why": "It is a skill, and you can build it up.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9r-u4-1-C1",
+     "type": "fill",
+     "stem": "If you do not go ____ new information again, you may lose it.",
+     "answers": [
+      [
+       "through"
+      ]
+     ],
+     "why": "If you do not go through new information again",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u4-1-C2",
+     "type": "fill",
+     "stem": "Try to ____ the information without looking at the book.",
+     "answers": [
+      [
+       "recall"
+      ]
+     ],
+     "why": "try to recall the information",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u4-1-C3",
+     "type": "fill",
+     "stem": "A good memory is not a ____.",
+     "answers": [
+      [
+       "gift"
+      ]
+     ],
+     "why": "A good memory is not a gift.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

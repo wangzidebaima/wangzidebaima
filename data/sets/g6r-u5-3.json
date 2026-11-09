@@ -1,0 +1,164 @@
+{
+ "id": "g6r-u5-3",
+ "kind": "reading",
+ "title": "A Taikonaut's Trip",
+ "subtitle": "考点：一般过去时 / flew into space",
+ "unit": "E6U5",
+ "dialogue": [
+  {
+   "s": "Lily",
+   "t": "Ben, do you know the word taikonaut?"
+  },
+  {
+   "s": "Ben",
+   "t": "Yes. It means a Chinese astronaut."
+  },
+  {
+   "s": "Lily",
+   "t": "How did a taikonaut go into space?"
+  },
+  {
+   "s": "Ben",
+   "t": "He flew in a spaceship."
+  },
+  {
+   "s": "Lily",
+   "t": "What did he see?"
+  },
+  {
+   "s": "Ben",
+   "t": "He saw the blue Earth. It looked like a marble."
+  },
+  {
+   "s": "Lily",
+   "t": "That sounds beautiful!"
+  },
+  {
+   "s": "Ben",
+   "t": "I watched a video about it. Come to my house and watch it with me."
+  }
+ ],
+ "vocab": "taikonaut 中国航天员 · spaceship 宇宙飞船 · marble 弹珠 · Earth 地球 · video 视频 · beautiful 美丽的",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6r-u5-3-A1",
+     "type": "choice",
+     "stem": "What does taikonaut mean?",
+     "options": [
+      "A Chinese astronaut.",
+      "A Chinese teacher.",
+      "A kind of rocket."
+     ],
+     "answer": "A",
+     "why": "It means a Chinese astronaut.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u5-3-A2",
+     "type": "choice",
+     "stem": "How did the taikonaut go into space?",
+     "options": [
+      "In a plane.",
+      "In a spaceship.",
+      "In a bus."
+     ],
+     "answer": "B",
+     "why": "He flew in a spaceship.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u5-3-A3",
+     "type": "choice",
+     "stem": "What did the Earth look like?",
+     "options": [
+      "A football.",
+      "A balloon.",
+      "A marble."
+     ],
+     "answer": "C",
+     "why": "It looked like a marble.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g6r-u5-3-B1",
+     "type": "tf",
+     "stem": "A taikonaut is a Chinese astronaut.",
+     "answer": "T",
+     "why": "It means a Chinese astronaut.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u5-3-B2",
+     "type": "tf",
+     "stem": "The taikonaut flew into space in a plane.",
+     "answer": "F",
+     "why": "He flew in a spaceship.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u5-3-B3",
+     "type": "tf",
+     "stem": "Ben watched a video about the trip.",
+     "answer": "T",
+     "why": "I watched a video about it.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6r-u5-3-C1",
+     "type": "fill",
+     "stem": "The taikonaut flew in a ____.",
+     "answers": [
+      [
+       "spaceship"
+      ]
+     ],
+     "why": "He flew in a spaceship.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u5-3-C2",
+     "type": "fill",
+     "stem": "The Earth looked like a ____.",
+     "answers": [
+      [
+       "marble"
+      ]
+     ],
+     "why": "It looked like a marble.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u5-3-C3",
+     "type": "fill",
+     "stem": "Ben watched a ____ about it.",
+     "answers": [
+      [
+       "video"
+      ]
+     ],
+     "why": "I watched a video about it.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

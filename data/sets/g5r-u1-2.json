@@ -1,0 +1,160 @@
+{
+ "id": "g5r-u1-2",
+ "kind": "reading",
+ "title": "The School Party",
+ "subtitle": "考点：能力 / I can play the piano.",
+ "unit": "E5U1",
+ "dialogue": [
+  {
+   "s": "Amy",
+   "t": "Sam, what can you do at the party?"
+  },
+  {
+   "s": "Sam",
+   "t": "I can play the piano. It is not easy, but I like it."
+  },
+  {
+   "s": "Amy",
+   "t": "Wonderful! I can jump rope. I can jump one hundred times."
+  },
+  {
+   "s": "Sam",
+   "t": "Wow! Can Lily play chess?"
+  },
+  {
+   "s": "Amy",
+   "t": "Yes, she can. She is very clever."
+  },
+  {
+   "s": "Sam",
+   "t": "Let's sit in the front and watch her."
+  },
+  {
+   "s": "Amy",
+   "t": "Good idea!"
+  }
+ ],
+ "vocab": "piano 钢琴 · jump rope 跳绳 · chess 国际象棋 · easy 容易的 · front 前面 · wonderful 精彩的",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5r-u1-2-A1",
+     "type": "choice",
+     "stem": "What can Sam do?",
+     "options": [
+      "Jump rope.",
+      "Play chess.",
+      "Play the piano."
+     ],
+     "answer": "C",
+     "why": "I can play the piano.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u1-2-A2",
+     "type": "choice",
+     "stem": "How many times can Amy jump?",
+     "options": [
+      "One hundred.",
+      "Ten.",
+      "Fifty."
+     ],
+     "answer": "A",
+     "why": "I can jump one hundred times.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u1-2-A3",
+     "type": "choice",
+     "stem": "Who is clever?",
+     "options": [
+      "Amy",
+      "Lily",
+      "Sam"
+     ],
+     "answer": "B",
+     "why": "She is very clever.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g5r-u1-2-B1",
+     "type": "tf",
+     "stem": "Sam thinks the piano is easy.",
+     "answer": "F",
+     "why": "It is not easy, but I like it.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u1-2-B2",
+     "type": "tf",
+     "stem": "Amy can jump rope.",
+     "answer": "T",
+     "why": "I can jump rope.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u1-2-B3",
+     "type": "tf",
+     "stem": "They will sit at the back.",
+     "answer": "F",
+     "why": "Let's sit in the front.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5r-u1-2-C1",
+     "type": "fill",
+     "stem": "Sam can play the ____.",
+     "answers": [
+      [
+       "piano"
+      ]
+     ],
+     "why": "I can play the piano.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u1-2-C2",
+     "type": "fill",
+     "stem": "Lily can play ____.",
+     "answers": [
+      [
+       "chess"
+      ]
+     ],
+     "why": "Can Lily play chess? Yes, she can.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u1-2-C3",
+     "type": "fill",
+     "stem": "Amy can ____ rope.",
+     "answers": [
+      [
+       "jump"
+      ]
+     ],
+     "why": "I can jump rope.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

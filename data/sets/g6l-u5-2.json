@@ -1,0 +1,124 @@
+{
+ "id": "g6l-u5-2",
+ "kind": "listening",
+ "title": "A Question About Space",
+ "subtitle": "对话",
+ "unit": "E6U5",
+ "speakers": {
+  "Sam": "c1",
+  "Mike": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Sam",
+   "t": "Mike, I have a question about space."
+  },
+  {
+   "s": "Mike",
+   "t": "OK. What is it?"
+  },
+  {
+   "s": "Sam",
+   "t": "Where do astronauts live in space?"
+  },
+  {
+   "s": "Mike",
+   "t": "They live in a space station."
+  },
+  {
+   "s": "Sam",
+   "t": "How do they get there?"
+  },
+  {
+   "s": "Mike",
+   "t": "They fly there in a spaceship."
+  },
+  {
+   "s": "Sam",
+   "t": "Do they eat the same food as us?"
+  },
+  {
+   "s": "Mike",
+   "t": "Yes, but some food is in small bags."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6l-u5-2-A1",
+     "type": "choice",
+     "stem": "What is Sam's question about?",
+     "options": [
+      "The ocean.",
+      "The moon.",
+      "Space."
+     ],
+     "answer": "C",
+     "why": "I have a question about space.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u5-2-A2",
+     "type": "choice",
+     "stem": "Where do astronauts live in space?",
+     "options": [
+      "In a space station.",
+      "On Mars.",
+      "On the moon."
+     ],
+     "answer": "A",
+     "why": "They live in a space station.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u5-2-A3",
+     "type": "choice",
+     "stem": "How do they get there?",
+     "options": [
+      "By plane.",
+      "By spaceship.",
+      "By bus."
+     ],
+     "answer": "B",
+     "why": "They fly there in a spaceship.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6l-u5-2-B1",
+     "type": "fill",
+     "stem": "Astronauts fly to space in a ____.",
+     "answers": [
+      [
+       "spaceship"
+      ]
+     ],
+     "why": "They fly there in a spaceship.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u5-2-B2",
+     "type": "fill",
+     "stem": "Some space food is in small ____.",
+     "answers": [
+      [
+       "bags"
+      ]
+     ],
+     "why": "some food is in small bags",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,108 @@
+{
+ "id": "g3l-u6-4",
+ "kind": "listening",
+ "title": "Count with Me",
+ "subtitle": "对话",
+ "unit": "E3U6",
+ "speakers": {
+  "Amy": "c1",
+  "Ben": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Amy",
+   "t": "Let's count. One, two, three, four, five."
+  },
+  {
+   "s": "Ben",
+   "t": "Six, seven, eight, nine, ten!"
+  },
+  {
+   "s": "Amy",
+   "t": "Good! How old is your sister, Ben?"
+  },
+  {
+   "s": "Ben",
+   "t": "She is nine years old."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3l-u6-4-A1",
+     "type": "choice",
+     "stem": "Which number does Amy stop at?",
+     "options": [
+      "Four.",
+      "Five.",
+      "Six."
+     ],
+     "answer": "B",
+     "why": "One, two, three, four, five.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u6-4-A2",
+     "type": "choice",
+     "stem": "What is the last number Ben says?",
+     "options": [
+      "Nine.",
+      "Eight.",
+      "Ten."
+     ],
+     "answer": "C",
+     "why": "Six, seven, eight, nine, ten!",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u6-4-A3",
+     "type": "choice",
+     "stem": "How old is Ben's sister?",
+     "options": [
+      "Nine.",
+      "Eight.",
+      "Ten."
+     ],
+     "answer": "A",
+     "why": "She is nine years old.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3l-u6-4-B1",
+     "type": "fill",
+     "stem": "Ben's sister is ____ years old.",
+     "answers": [
+      [
+       "nine"
+      ]
+     ],
+     "why": "She is nine years old.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u6-4-B2",
+     "type": "fill",
+     "stem": "The last number is ____.",
+     "answers": [
+      [
+       "ten"
+      ]
+     ],
+     "why": "Six, seven, eight, nine, ten!",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,152 @@
+{
+ "id": "g8r-u2-1",
+ "kind": "reading",
+ "title": "Moving to a New Apartment",
+ "subtitle": "考点：搬家 / pack up / 房间名称",
+ "unit": "E8U2",
+ "passage": [
+  "Last week, Amy's family moved to a new apartment. It is in a big community near her school. The apartment has three bedrooms, a living room, a kitchen, a bathroom and a small balcony.",
+  "Before the move, everyone packed up their things. Amy put her books, toys and clothes into boxes. She wrote “Amy's room” on each box. Her father was careful with the plates because they break easily.",
+  "On the first night, the family ate pizza on the floor of the living room. Amy's room is next to the balcony, so she can see the trees from her window. She hung up her favourite poster on the wall. She loves her new home, but she also misses her old friends."
+ ],
+ "vocab": "apartment 公寓 · community 小区 · balcony 阳台 · pack up 打包 · hang up 挂起 · careful 小心的 · poster 海报",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8r-u2-1-A1",
+     "type": "choice",
+     "stem": "How many bedrooms does the new apartment have?",
+     "options": [
+      "One.",
+      "Three.",
+      "Two.",
+      "Four."
+     ],
+     "answer": "B",
+     "why": "The apartment has three bedrooms.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u2-1-A2",
+     "type": "choice",
+     "stem": "Why was Amy's father careful with the plates?",
+     "options": [
+      "They were very old.",
+      "They were Amy's.",
+      "They break easily.",
+      "They were very heavy."
+     ],
+     "answer": "C",
+     "why": "careful with the plates because they break easily.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u2-1-A3",
+     "type": "choice",
+     "stem": "What did the family eat on the first night?",
+     "options": [
+      "Noodles.",
+      "Dumplings.",
+      "Cake.",
+      "Pizza."
+     ],
+     "answer": "D",
+     "why": "ate pizza on the floor of the living room.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u2-1-A4",
+     "type": "choice",
+     "stem": "What can Amy see from her window?",
+     "options": [
+      "Trees.",
+      "The sea.",
+      "A river.",
+      "A school bus."
+     ],
+     "answer": "A",
+     "why": "she can see the trees from her window.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g8r-u2-1-B1",
+     "type": "tf",
+     "stem": "The new apartment is far from Amy's school.",
+     "answer": "F",
+     "why": "小区在学校附近（near her school）。",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u2-1-B2",
+     "type": "tf",
+     "stem": "Amy wrote her name on the boxes.",
+     "answer": "T",
+     "why": "She wrote “Amy's room” on each box.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u2-1-B3",
+     "type": "tf",
+     "stem": "Amy does not like her new home.",
+     "answer": "F",
+     "why": "She loves her new home.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8r-u2-1-C1",
+     "type": "fill",
+     "stem": "The new apartment has a small ____.",
+     "answers": [
+      [
+       "balcony"
+      ]
+     ],
+     "why": "a small balcony.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u2-1-C2",
+     "type": "fill",
+     "stem": "Amy ____ her poster on the wall.",
+     "answers": [
+      [
+       "hung"
+      ]
+     ],
+     "why": "She hung up her favourite poster.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u2-1-C3",
+     "type": "fill",
+     "stem": "Amy ____ her old friends.",
+     "answers": [
+      [
+       "misses"
+      ]
+     ],
+     "why": "she also misses her old friends.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

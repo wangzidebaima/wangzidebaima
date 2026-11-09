@@ -1,0 +1,82 @@
+{
+ "id": "g5sp-u2",
+ "kind": "speaking",
+ "unit": "E5U2",
+ "title": "口语练习",
+ "subtitle": "每天 10 分钟 · 共 5 天",
+ "steps": [
+  "点 🔊 听一遍，听清语调",
+  "一句一句跟着读，声音要大，不怕错",
+  "读完点「今天完成了」打卡"
+ ],
+ "sentences": [
+  {
+   "en": "I am sad today.",
+   "zh": "我今天很难过。"
+  },
+  {
+   "en": "What's the matter?",
+   "zh": "怎么了？"
+  },
+  {
+   "en": "I am worried about the test.",
+   "zh": "我担心这次测验。"
+  },
+  {
+   "en": "She is excited about the trip.",
+   "zh": "她对这次旅行很兴奋。"
+  },
+  {
+   "en": "Don't be afraid.",
+   "zh": "别害怕。"
+  },
+  {
+   "en": "I agree with you.",
+   "zh": "我同意你。"
+  },
+  {
+   "en": "Let's finish the project together.",
+   "zh": "我们一起完成这个项目吧。"
+  },
+  {
+   "en": "He is angry because he got it wrong.",
+   "zh": "他很生气，因为他做错了。"
+  },
+  {
+   "en": "Don't worry. I can help you.",
+   "zh": "别担心，我可以帮你。"
+  }
+ ],
+ "plan": [
+  {
+   "day": 1,
+   "title": "跟读第 1–3 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 2,
+   "title": "跟读第 4–6 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 3,
+   "title": "跟读第 7–9 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 4,
+   "title": "不看书，说给家长听",
+   "task": "挑 5 句最喜欢的，尽量不看书说出来",
+   "minutes": 10
+  },
+  {
+   "day": 5,
+   "title": "自己说 3 句话",
+   "task": "用 'I am … about …' 说 3 句话讲讲你最近的心情",
+   "minutes": 10
+  }
+ ]
+}

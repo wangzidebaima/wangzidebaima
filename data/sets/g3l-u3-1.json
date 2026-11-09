@@ -1,0 +1,112 @@
+{
+ "id": "g3l-u3-1",
+ "kind": "listening",
+ "title": "Zoo Day",
+ "subtitle": "对话",
+ "unit": "E3U3",
+ "speakers": {
+  "Amy": "c1",
+  "Tom": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Amy",
+   "t": "Look, Tom! We are at the zoo."
+  },
+  {
+   "s": "Tom",
+   "t": "I like tigers. The tiger is fast."
+  },
+  {
+   "s": "Amy",
+   "t": "I like monkeys."
+  },
+  {
+   "s": "Tom",
+   "t": "Look at the lion. It is big."
+  },
+  {
+   "s": "Amy",
+   "t": "Wow!"
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3l-u3-1-A1",
+     "type": "choice",
+     "stem": "Where are they?",
+     "options": [
+      "At school.",
+      "At the zoo.",
+      "On the farm."
+     ],
+     "answer": "B",
+     "why": "We are at the zoo.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u3-1-A2",
+     "type": "choice",
+     "stem": "What does Amy like?",
+     "options": [
+      "Tigers.",
+      "Pandas.",
+      "Monkeys."
+     ],
+     "answer": "C",
+     "why": "I like monkeys.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u3-1-A3",
+     "type": "choice",
+     "stem": "Which animal is fast?",
+     "options": [
+      "The tiger.",
+      "The lion.",
+      "The monkey."
+     ],
+     "answer": "A",
+     "why": "The tiger is fast.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3l-u3-1-B1",
+     "type": "fill",
+     "stem": "The ____ is fast.",
+     "answers": [
+      [
+       "tiger"
+      ]
+     ],
+     "why": "The tiger is fast.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u3-1-B2",
+     "type": "fill",
+     "stem": "Amy likes ____.",
+     "answers": [
+      [
+       "monkeys"
+      ]
+     ],
+     "why": "I like monkeys.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

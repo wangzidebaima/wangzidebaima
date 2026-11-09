@@ -1,0 +1,152 @@
+{
+ "id": "g8r-u3-3",
+ "kind": "reading",
+ "title": "The Prince and the Pauper",
+ "subtitle": "考点：故事概要 / exchange / by accident",
+ "unit": "E8U3",
+ "passage": [
+  "The Prince and the Pauper is a famous story by Mark Twain. It is about two boys in England who look exactly alike. One is Edward, the prince. The other is Tom, a poor boy who lives in a small street.",
+  "One day, the two boys meet by accident. Edward is interested in Tom's life, and Tom is curious about the palace. They decide to exchange clothes. Soon the prince is in the street in old clothes, and nobody believes that he is a prince. Tom is in the palace, but he does not know the rules.",
+  "Each boy learns a lot. Edward finds out how hard life is for poor people. Tom learns that being rich does not always make people happy. In the end, they go back to their own lives. The story shows that people can look alike but have very different lives."
+ ],
+ "vocab": "pauper 穷人 · alike 相像的 · exchange 交换 · by accident 偶然 · palace 宫殿 · rich 富有的 · rule 规则",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8r-u3-3-A1",
+     "type": "choice",
+     "stem": "Who wrote the story?",
+     "options": [
+      "Edward.",
+      "Tom.",
+      "A prince.",
+      "Mark Twain."
+     ],
+     "answer": "D",
+     "why": "a famous story by Mark Twain.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u3-3-A2",
+     "type": "choice",
+     "stem": "How do Edward and Tom meet?",
+     "options": [
+      "By accident.",
+      "At school.",
+      "At a concert.",
+      "On a bus."
+     ],
+     "answer": "A",
+     "why": "the two boys meet by accident.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u3-3-A3",
+     "type": "choice",
+     "stem": "What do the boys exchange?",
+     "options": [
+      "Their names only.",
+      "Their clothes.",
+      "Their books.",
+      "Their houses only."
+     ],
+     "answer": "B",
+     "why": "They decide to exchange clothes.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u3-3-A4",
+     "type": "choice",
+     "stem": "What does Edward learn?",
+     "options": [
+      "How to cook.",
+      "How to play the flute.",
+      "How hard life is for poor people.",
+      "How to travel."
+     ],
+     "answer": "C",
+     "why": "Edward finds out how hard life is for poor people.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g8r-u3-3-B1",
+     "type": "tf",
+     "stem": "Edward and Tom look very different.",
+     "answer": "F",
+     "why": "They look exactly alike.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u3-3-B2",
+     "type": "tf",
+     "stem": "Nobody believes Edward is a prince in the street.",
+     "answer": "T",
+     "why": "nobody believes that he is a prince.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u3-3-B3",
+     "type": "tf",
+     "stem": "At the end, the boys keep each other's lives.",
+     "answer": "F",
+     "why": "In the end, they go back to their own lives.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8r-u3-3-C1",
+     "type": "fill",
+     "stem": "Tom is a ____ boy.",
+     "answers": [
+      [
+       "poor"
+      ]
+     ],
+     "why": "Tom, a poor boy.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u3-3-C2",
+     "type": "fill",
+     "stem": "Edward is interested in Tom's ____.",
+     "answers": [
+      [
+       "life"
+      ]
+     ],
+     "why": "interested in Tom's life.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u3-3-C3",
+     "type": "fill",
+     "stem": "Tom does not know the ____ in the palace.",
+     "answers": [
+      [
+       "rules"
+      ]
+     ],
+     "why": "he does not know the rules.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

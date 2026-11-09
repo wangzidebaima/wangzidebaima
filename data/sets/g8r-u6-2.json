@@ -1,0 +1,152 @@
+{
+ "id": "g8r-u6-2",
+ "kind": "reading",
+ "title": "My New Year Resolutions",
+ "subtitle": "考点：目标与计划 / mini-goals / keep on doing",
+ "unit": "E8U6",
+ "passage": [
+  "Liu Yang is thirteen. At the start of this year, he made three resolutions: to keep healthy, to read more books and to learn to swim. At first, the goals felt too big, so his father told him to make mini-goals.",
+  "To stay healthy, Liu Yang does ten push-ups every morning and goes to bed before ten. After a month, he can do twenty push-ups. To read more, he finishes one page of an English book each night. By June, he had finished four books. To learn swimming, he takes a class every Saturday.",
+  "Sometimes Liu Yang feels tired and wants to stop. But he reminds himself, “Keep on trying and stick to the plan.” His father says small steps can lead to big changes. Liu Yang is proud of himself. He is now thinking about new goals for next year."
+ ],
+ "vocab": "resolution 决心 · mini-goal 小目标 · push-up 俯卧撑 · stick to 坚持 · keep on doing 继续做 · achieve 实现 · proud 自豪的",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8r-u6-2-A1",
+     "type": "choice",
+     "stem": "How many resolutions did Liu Yang make?",
+     "options": [
+      "One.",
+      "Two.",
+      "Three.",
+      "Five."
+     ],
+     "answer": "C",
+     "why": "he made three resolutions.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u6-2-A2",
+     "type": "choice",
+     "stem": "What does he do every morning?",
+     "options": [
+      "Twenty push-ups.",
+      "A swimming class.",
+      "A long run.",
+      "Ten push-ups."
+     ],
+     "answer": "D",
+     "why": "does ten push-ups every morning.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u6-2-A3",
+     "type": "choice",
+     "stem": "When does he take a swimming class?",
+     "options": [
+      "Every Saturday.",
+      "Every Sunday.",
+      "Every morning.",
+      "Every Friday night."
+     ],
+     "answer": "A",
+     "why": "he takes a class every Saturday.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u6-2-A4",
+     "type": "choice",
+     "stem": "What does his father say?",
+     "options": [
+      "Big goals are bad.",
+      "Small steps can lead to big changes.",
+      "He should stop reading.",
+      "He must swim every day."
+     ],
+     "answer": "B",
+     "why": "small steps can lead to big changes.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g8r-u6-2-B1",
+     "type": "tf",
+     "stem": "The mini-goals were his father's idea.",
+     "answer": "T",
+     "why": "his father told him to make mini-goals.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u6-2-B2",
+     "type": "tf",
+     "stem": "Liu Yang read ten books by June.",
+     "answer": "F",
+     "why": "到六月他读完了四本书（four books）。",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u6-2-B3",
+     "type": "tf",
+     "stem": "Liu Yang never feels tired.",
+     "answer": "F",
+     "why": "Sometimes Liu Yang feels tired and wants to stop.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8r-u6-2-C1",
+     "type": "fill",
+     "stem": "He goes to bed before ____ every night.",
+     "answers": [
+      [
+       "ten"
+      ]
+     ],
+     "why": "goes to bed before ten.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u6-2-C2",
+     "type": "fill",
+     "stem": "He finishes one ____ of an English book each night.",
+     "answers": [
+      [
+       "page"
+      ]
+     ],
+     "why": "finishes one page.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u6-2-C3",
+     "type": "fill",
+     "stem": "He tells himself to ____ to the plan.",
+     "answers": [
+      [
+       "stick"
+      ]
+     ],
+     "why": "stick to the plan.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

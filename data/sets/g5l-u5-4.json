@@ -1,0 +1,120 @@
+{
+ "id": "g5l-u5-4",
+ "kind": "listening",
+ "title": "A Big Hamburger",
+ "subtitle": "对话",
+ "unit": "E5U5",
+ "speakers": {
+  "Sam": "c1",
+  "Amy": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Sam",
+   "t": "Look, Amy! The hamburger is big."
+  },
+  {
+   "s": "Amy",
+   "t": "Yes. Are you hungry?"
+  },
+  {
+   "s": "Sam",
+   "t": "Very hungry. I didn't eat breakfast."
+  },
+  {
+   "s": "Amy",
+   "t": "You should eat breakfast every day."
+  },
+  {
+   "s": "Sam",
+   "t": "I know. Today I got up late."
+  },
+  {
+   "s": "Amy",
+   "t": "Let's share it. I want a little."
+  },
+  {
+   "s": "Sam",
+   "t": "OK. Here is half for you."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5l-u5-4-A1",
+     "type": "choice",
+     "stem": "How is the hamburger?",
+     "options": [
+      "Small.",
+      "Big.",
+      "Cold."
+     ],
+     "answer": "B",
+     "why": "The hamburger is big.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u5-4-A2",
+     "type": "choice",
+     "stem": "Why is Sam very hungry?",
+     "options": [
+      "He ran a lot.",
+      "He missed dinner.",
+      "He didn't eat breakfast."
+     ],
+     "answer": "C",
+     "why": "I didn't eat breakfast.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u5-4-A3",
+     "type": "choice",
+     "stem": "What will they do with the hamburger?",
+     "options": [
+      "Share it.",
+      "Give it away.",
+      "Keep it for later."
+     ],
+     "answer": "A",
+     "why": "Let's share it.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5l-u5-4-B1",
+     "type": "fill",
+     "stem": "Sam got up ____ today.",
+     "answers": [
+      [
+       "late"
+      ]
+     ],
+     "why": "Today I got up late.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u5-4-B2",
+     "type": "fill",
+     "stem": "Sam gives Amy ____ of the hamburger.",
+     "answers": [
+      [
+       "half"
+      ]
+     ],
+     "why": "Here is half for you.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

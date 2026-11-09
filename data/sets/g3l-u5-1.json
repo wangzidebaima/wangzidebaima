@@ -1,0 +1,116 @@
+{
+ "id": "g3l-u5-1",
+ "kind": "listening",
+ "title": "Colour Game",
+ "subtitle": "对话",
+ "unit": "E3U5",
+ "speakers": {
+  "Amy": "c1",
+  "Tom": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Amy",
+   "t": "I see something red."
+  },
+  {
+   "s": "Tom",
+   "t": "Is it an apple?"
+  },
+  {
+   "s": "Amy",
+   "t": "Yes! Now you."
+  },
+  {
+   "s": "Tom",
+   "t": "I see something yellow."
+  },
+  {
+   "s": "Amy",
+   "t": "Is it a banana?"
+  },
+  {
+   "s": "Tom",
+   "t": "Yes!"
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3l-u5-1-A1",
+     "type": "choice",
+     "stem": "What colour does Amy see?",
+     "options": [
+      "Blue.",
+      "Red.",
+      "Green."
+     ],
+     "answer": "B",
+     "why": "I see something red.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u5-1-A2",
+     "type": "choice",
+     "stem": "What is red?",
+     "options": [
+      "A bear.",
+      "A cake.",
+      "An apple."
+     ],
+     "answer": "C",
+     "why": "Is it an apple? Yes!",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u5-1-A3",
+     "type": "choice",
+     "stem": "What is yellow?",
+     "options": [
+      "A banana.",
+      "A bear.",
+      "A cake."
+     ],
+     "answer": "A",
+     "why": "Is it a banana? Yes!",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3l-u5-1-B1",
+     "type": "fill",
+     "stem": "Amy sees something ____.",
+     "answers": [
+      [
+       "red"
+      ]
+     ],
+     "why": "I see something red.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u5-1-B2",
+     "type": "fill",
+     "stem": "Tom sees something ____.",
+     "answers": [
+      [
+       "yellow"
+      ]
+     ],
+     "why": "I see something yellow.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

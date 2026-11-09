@@ -1,0 +1,112 @@
+{
+ "id": "g3l-u4-1",
+ "kind": "listening",
+ "title": "In the Garden",
+ "subtitle": "对话",
+ "unit": "E3U4",
+ "speakers": {
+  "Tom": "c1",
+  "Amy": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Tom",
+   "t": "Look at the garden, Amy!"
+  },
+  {
+   "s": "Amy",
+   "t": "Wow! The flowers are pink."
+  },
+  {
+   "s": "Tom",
+   "t": "Water the flowers, please."
+  },
+  {
+   "s": "Amy",
+   "t": "OK. Plants need water."
+  },
+  {
+   "s": "Tom",
+   "t": "And sun, too."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3l-u4-1-A1",
+     "type": "choice",
+     "stem": "Where are they?",
+     "options": [
+      "At the zoo.",
+      "In the garden.",
+      "At school."
+     ],
+     "answer": "B",
+     "why": "Look at the garden!",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u4-1-A2",
+     "type": "choice",
+     "stem": "What colour are the flowers?",
+     "options": [
+      "Yellow.",
+      "White.",
+      "Pink."
+     ],
+     "answer": "C",
+     "why": "The flowers are pink.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u4-1-A3",
+     "type": "choice",
+     "stem": "What does Tom ask Amy to do?",
+     "options": [
+      "Water the flowers.",
+      "Draw the flowers.",
+      "Eat the flowers."
+     ],
+     "answer": "A",
+     "why": "Water the flowers, please.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3l-u4-1-B1",
+     "type": "fill",
+     "stem": "Tom says, \"Water the ____, please.\"",
+     "answers": [
+      [
+       "flowers"
+      ]
+     ],
+     "why": "Water the flowers, please.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u4-1-B2",
+     "type": "fill",
+     "stem": "The flowers are ____.",
+     "answers": [
+      [
+       "pink"
+      ]
+     ],
+     "why": "The flowers are pink.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

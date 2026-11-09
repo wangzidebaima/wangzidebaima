@@ -1,0 +1,120 @@
+{
+ "id": "g5l-u2-3",
+ "kind": "listening",
+ "title": "I Agree",
+ "subtitle": "对话",
+ "unit": "E5U2",
+ "speakers": {
+  "Sam": "c1",
+  "Mike": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Sam",
+   "t": "Mike, shall we do our project about the moon?"
+  },
+  {
+   "s": "Mike",
+   "t": "I agree with you. The moon is interesting."
+  },
+  {
+   "s": "Sam",
+   "t": "We can draw a big picture."
+  },
+  {
+   "s": "Mike",
+   "t": "And I will write the words."
+  },
+  {
+   "s": "Sam",
+   "t": "When do we finish?"
+  },
+  {
+   "s": "Mike",
+   "t": "On Wednesday. We have three days."
+  },
+  {
+   "s": "Sam",
+   "t": "OK. I am excited about it."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5l-u2-3-A1",
+     "type": "choice",
+     "stem": "What is their project about?",
+     "options": [
+      "The moon.",
+      "The sun.",
+      "Robots."
+     ],
+     "answer": "A",
+     "why": "shall we do our project about the moon?",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u2-3-A2",
+     "type": "choice",
+     "stem": "What will Sam do?",
+     "options": [
+      "Write the words.",
+      "Draw a picture.",
+      "Take photos."
+     ],
+     "answer": "B",
+     "why": "We can draw a big picture.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u2-3-A3",
+     "type": "choice",
+     "stem": "When will they finish?",
+     "options": [
+      "On Friday.",
+      "On Monday.",
+      "On Wednesday."
+     ],
+     "answer": "C",
+     "why": "On Wednesday.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5l-u2-3-B1",
+     "type": "fill",
+     "stem": "Mike will write the ____.",
+     "answers": [
+      [
+       "words"
+      ]
+     ],
+     "why": "I will write the words.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u2-3-B2",
+     "type": "fill",
+     "stem": "They have three ____.",
+     "answers": [
+      [
+       "days"
+      ]
+     ],
+     "why": "We have three days.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

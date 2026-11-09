@@ -1,0 +1,127 @@
+{
+ "id": "g8l-u1-1",
+ "kind": "listening",
+ "title": "Planning a Vacation",
+ "subtitle": "对话",
+ "unit": "E8U1",
+ "speakers": {
+  "Ben": "m1",
+  "Amy": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Amy",
+   "t": "Ben, are you ready for our vacation next week?"
+  },
+  {
+   "s": "Ben",
+   "t": "Almost. I still need to buy a ticket for the metro."
+  },
+  {
+   "s": "Amy",
+   "t": "Did you book a hotel in Seattle?"
+  },
+  {
+   "s": "Ben",
+   "t": "Yes. It is a comfortable hotel near the station, and it is not expensive."
+  },
+  {
+   "s": "Amy",
+   "t": "Great. What is your budget for the trip?"
+  },
+  {
+   "s": "Ben",
+   "t": "About four hundred dollars. I want to see the Space Needle and eat some seafood."
+  },
+  {
+   "s": "Amy",
+   "t": "Don't forget your passport this time!"
+  },
+  {
+   "s": "Ben",
+   "t": "I won't. It is already in my bag."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8l-u1-1-A1",
+     "type": "choice",
+     "stem": "Where will they go on vacation?",
+     "options": [
+      "Moscow",
+      "Seattle",
+      "Scotland",
+      "Qingdao"
+     ],
+     "answer": "B",
+     "why": "Ben booked a hotel in Seattle.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u1-1-A2",
+     "type": "choice",
+     "stem": "What is Ben's budget?",
+     "options": [
+      "About forty dollars.",
+      "About one thousand dollars.",
+      "About four hundred dollars.",
+      "About two hundred dollars."
+     ],
+     "answer": "C",
+     "why": "About four hundred dollars.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u1-1-A3",
+     "type": "choice",
+     "stem": "What does Amy remind Ben about?",
+     "options": [
+      "His camera.",
+      "His umbrella.",
+      "His phone.",
+      "His passport."
+     ],
+     "answer": "D",
+     "why": "Don't forget your passport this time!",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8l-u1-1-B1",
+     "type": "fill",
+     "stem": "The hotel is near the ____.",
+     "answers": [
+      [
+       "station"
+      ]
+     ],
+     "why": "near the station.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u1-1-B2",
+     "type": "fill",
+     "stem": "Ben wants to eat some ____.",
+     "answers": [
+      [
+       "seafood"
+      ]
+     ],
+     "why": "eat some seafood.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

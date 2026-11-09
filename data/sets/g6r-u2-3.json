@@ -1,0 +1,164 @@
+{
+ "id": "g6r-u2-3",
+ "kind": "reading",
+ "title": "The Book Fair",
+ "subtitle": "考点：一般过去时 / the most exciting ... ever",
+ "unit": "E6U2",
+ "dialogue": [
+  {
+   "s": "Mike",
+   "t": "Did you go to the book fair on Sunday, Amy?"
+  },
+  {
+   "s": "Amy",
+   "t": "Yes! It was the most exciting book fair ever."
+  },
+  {
+   "s": "Mike",
+   "t": "What did you do there?"
+  },
+  {
+   "s": "Amy",
+   "t": "I met a writer and she signed my book."
+  },
+  {
+   "s": "Mike",
+   "t": "Wow! What did you buy?"
+  },
+  {
+   "s": "Amy",
+   "t": "I bought two books about animals."
+  },
+  {
+   "s": "Mike",
+   "t": "Did you read them?"
+  },
+  {
+   "s": "Amy",
+   "t": "I read one on the bus. I will read the other one tonight."
+  }
+ ],
+ "vocab": "book fair 书展 · writer 作家 · exciting 令人兴奋的 · animal 动物 · read 读 · ever 曾经",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6r-u2-3-A1",
+     "type": "choice",
+     "stem": "When did Amy go to the book fair?",
+     "options": [
+      "On Sunday.",
+      "On Monday.",
+      "On Friday."
+     ],
+     "answer": "A",
+     "why": "Did you go to the book fair on Sunday?",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u2-3-A2",
+     "type": "choice",
+     "stem": "Who did Amy meet?",
+     "options": [
+      "A judge.",
+      "A writer.",
+      "A runner."
+     ],
+     "answer": "B",
+     "why": "I met a writer.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u2-3-A3",
+     "type": "choice",
+     "stem": "What kind of books did Amy buy?",
+     "options": [
+      "Books about space.",
+      "Books about food.",
+      "Books about animals."
+     ],
+     "answer": "C",
+     "why": "two books about animals",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g6r-u2-3-B1",
+     "type": "tf",
+     "stem": "The book fair was exciting.",
+     "answer": "T",
+     "why": "the most exciting book fair ever",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u2-3-B2",
+     "type": "tf",
+     "stem": "Amy bought three books.",
+     "answer": "F",
+     "why": "I bought two books.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u2-3-B3",
+     "type": "tf",
+     "stem": "Amy read one book on the bus.",
+     "answer": "T",
+     "why": "I read one on the bus.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6r-u2-3-C1",
+     "type": "fill",
+     "stem": "Amy met a ____ at the book fair.",
+     "answers": [
+      [
+       "writer"
+      ]
+     ],
+     "why": "I met a writer",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u2-3-C2",
+     "type": "fill",
+     "stem": "Amy bought two books about ____.",
+     "answers": [
+      [
+       "animals"
+      ]
+     ],
+     "why": "books about animals",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u2-3-C3",
+     "type": "fill",
+     "stem": "Amy will read the other book ____.",
+     "answers": [
+      [
+       "tonight"
+      ]
+     ],
+     "why": "I will read the other one tonight.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

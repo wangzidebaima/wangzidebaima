@@ -1,0 +1,164 @@
+{
+ "id": "g5r-u3-4",
+ "kind": "reading",
+ "title": "My Grandparents",
+ "subtitle": "考点：周末活动 / I visit my grandparents on Sunday.",
+ "unit": "E5U3",
+ "dialogue": [
+  {
+   "s": "Lily",
+   "t": "Do you visit your grandparents at the weekend, Tom?"
+  },
+  {
+   "s": "Tom",
+   "t": "Yes, every Sunday. They live near my school."
+  },
+  {
+   "s": "Lily",
+   "t": "What do you do there?"
+  },
+  {
+   "s": "Tom",
+   "t": "In the afternoon I help my grandfather in the garden. In the evening my grandmother tells me stories."
+  },
+  {
+   "s": "Lily",
+   "t": "That is lovely. I usually visit my grandparents on Saturday."
+  },
+  {
+   "s": "Tom",
+   "t": "Do you like it?"
+  },
+  {
+   "s": "Lily",
+   "t": "Yes. My grandmother makes dumplings."
+  },
+  {
+   "s": "Tom",
+   "t": "Yum! I want to try them."
+  }
+ ],
+ "vocab": "visit 拜访 · grandparent 祖父母 · Sunday 星期日 · Saturday 星期六 · evening 晚上 · usually 通常",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5r-u3-4-A1",
+     "type": "choice",
+     "stem": "When does Tom visit his grandparents?",
+     "options": [
+      "Every Saturday.",
+      "Every Sunday.",
+      "Every Friday."
+     ],
+     "answer": "B",
+     "why": "Yes, every Sunday.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u3-4-A2",
+     "type": "choice",
+     "stem": "What does Tom do in the afternoon?",
+     "options": [
+      "He plays ping-pong.",
+      "He reads a book.",
+      "He helps his grandfather in the garden."
+     ],
+     "answer": "C",
+     "why": "In the afternoon I help my grandfather in the garden.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u3-4-A3",
+     "type": "choice",
+     "stem": "Who makes dumplings?",
+     "options": [
+      "Lily's grandmother.",
+      "Tom's grandmother.",
+      "Lily's mother."
+     ],
+     "answer": "A",
+     "why": "My grandmother makes dumplings.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g5r-u3-4-B1",
+     "type": "tf",
+     "stem": "Tom's grandparents live near his school.",
+     "answer": "T",
+     "why": "They live near my school.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u3-4-B2",
+     "type": "tf",
+     "stem": "Lily visits her grandparents on Sunday.",
+     "answer": "F",
+     "why": "I usually visit my grandparents on Saturday.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u3-4-B3",
+     "type": "tf",
+     "stem": "Tom's grandmother tells him stories in the evening.",
+     "answer": "T",
+     "why": "In the evening my grandmother tells me stories.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5r-u3-4-C1",
+     "type": "fill",
+     "stem": "Tom helps his grandfather in the ____.",
+     "answers": [
+      [
+       "garden"
+      ]
+     ],
+     "why": "I help my grandfather in the garden.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u3-4-C2",
+     "type": "fill",
+     "stem": "His grandmother tells him ____.",
+     "answers": [
+      [
+       "stories"
+      ]
+     ],
+     "why": "My grandmother tells me stories.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u3-4-C3",
+     "type": "fill",
+     "stem": "Lily's grandmother makes ____.",
+     "answers": [
+      [
+       "dumplings"
+      ]
+     ],
+     "why": "My grandmother makes dumplings.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

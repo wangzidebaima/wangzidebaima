@@ -1,0 +1,124 @@
+{
+ "id": "g6l-u2-4",
+ "kind": "listening",
+ "title": "A Writer at School",
+ "subtitle": "对话",
+ "unit": "E6U2",
+ "speakers": {
+  "Mike": "c1",
+  "Amy": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Mike",
+   "t": "Amy, a writer came to our school today."
+  },
+  {
+   "s": "Amy",
+   "t": "Really? What did she do?"
+  },
+  {
+   "s": "Mike",
+   "t": "She read us a funny story."
+  },
+  {
+   "s": "Amy",
+   "t": "Did you like it?"
+  },
+  {
+   "s": "Mike",
+   "t": "Yes! It was the most exciting story ever."
+  },
+  {
+   "s": "Amy",
+   "t": "What did she give you?"
+  },
+  {
+   "s": "Mike",
+   "t": "She gave each of us a bookmark."
+  },
+  {
+   "s": "Amy",
+   "t": "I want to meet her too."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6l-u2-4-A1",
+     "type": "choice",
+     "stem": "Who came to the school?",
+     "options": [
+      "A judge.",
+      "A writer.",
+      "A doctor."
+     ],
+     "answer": "B",
+     "why": "a writer came to our school today",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u2-4-A2",
+     "type": "choice",
+     "stem": "What did she read?",
+     "options": [
+      "A song.",
+      "A poem.",
+      "A funny story."
+     ],
+     "answer": "C",
+     "why": "She read us a funny story.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u2-4-A3",
+     "type": "choice",
+     "stem": "What did she give each child?",
+     "options": [
+      "A bookmark.",
+      "A pen.",
+      "A card."
+     ],
+     "answer": "A",
+     "why": "She gave each of us a bookmark.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6l-u2-4-B1",
+     "type": "fill",
+     "stem": "It was the most ____ story ever.",
+     "answers": [
+      [
+       "exciting"
+      ]
+     ],
+     "why": "the most exciting story ever",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u2-4-B2",
+     "type": "fill",
+     "stem": "She gave each child a ____.",
+     "answers": [
+      [
+       "bookmark"
+      ]
+     ],
+     "why": "a bookmark",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

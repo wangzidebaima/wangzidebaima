@@ -1,0 +1,118 @@
+{
+ "id": "g8l-u3-2",
+ "kind": "listening",
+ "title": "My Best Friend Mike",
+ "subtitle": "短文",
+ "unit": "E8U3",
+ "speakers": {
+  "Ella": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Ella",
+   "t": "My best friend is Mike. We met in Grade 6 and have been friends for two years."
+  },
+  {
+   "s": "Ella",
+   "t": "We are not alike in many ways. Mike is tall and loves sports, but I am short and prefer art."
+  },
+  {
+   "s": "Ella",
+   "t": "He is always on time, but I am sometimes late. He is honest and direct, and he tells me the truth."
+  },
+  {
+   "s": "Ella",
+   "t": "Still, we have a lot in common. We both love science fiction and we both enjoy hot pot."
+  },
+  {
+   "s": "Ella",
+   "t": "Last week I made a mistake in a test, and I felt sad. Mike lent me a hand and explained the problem."
+  },
+  {
+   "s": "Ella",
+   "t": "A good friend is like a mirror. He helps me see myself better."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8l-u3-2-A1",
+     "type": "choice",
+     "stem": "When did Ella meet Mike?",
+     "options": [
+      "In Grade 8.",
+      "In Grade 1.",
+      "In Grade 6.",
+      "Last week."
+     ],
+     "answer": "C",
+     "why": "We met in Grade 6.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u3-2-A2",
+     "type": "choice",
+     "stem": "What does Ella like better than sports?",
+     "options": [
+      "Music.",
+      "Cooking.",
+      "Reading novels.",
+      "Art."
+     ],
+     "answer": "D",
+     "why": "Mike loves sports, but I ... prefer art.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u3-2-A3",
+     "type": "choice",
+     "stem": "How did Mike help Ella?",
+     "options": [
+      "He explained a test problem.",
+      "He lent her money.",
+      "He gave her a gift.",
+      "He called her teacher."
+     ],
+     "answer": "A",
+     "why": "Mike lent me a hand and explained the problem.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8l-u3-2-B1",
+     "type": "fill",
+     "stem": "Mike is always on ____.",
+     "answers": [
+      [
+       "time"
+      ]
+     ],
+     "why": "always on time.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u3-2-B2",
+     "type": "fill",
+     "stem": "They both love science ____.",
+     "answers": [
+      [
+       "fiction"
+      ]
+     ],
+     "why": "science fiction.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

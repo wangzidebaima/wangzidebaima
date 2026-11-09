@@ -1,0 +1,116 @@
+{
+ "id": "g3l-u1-2",
+ "kind": "listening",
+ "title": "Body Game",
+ "subtitle": "对话",
+ "unit": "E3U1",
+ "speakers": {
+  "Ben": "c1",
+  "Lily": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Ben",
+   "t": "Touch your hand, Lily."
+  },
+  {
+   "s": "Lily",
+   "t": "This is my hand."
+  },
+  {
+   "s": "Ben",
+   "t": "Touch your arm."
+  },
+  {
+   "s": "Lily",
+   "t": "This is my arm."
+  },
+  {
+   "s": "Ben",
+   "t": "Now touch your eye."
+  },
+  {
+   "s": "Lily",
+   "t": "OK. This is my eye!"
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3l-u1-2-A1",
+     "type": "choice",
+     "stem": "What does Lily touch first?",
+     "options": [
+      "Her ear.",
+      "Her mouth.",
+      "Her hand."
+     ],
+     "answer": "C",
+     "why": "Touch your hand, Lily.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u1-2-A2",
+     "type": "choice",
+     "stem": "What does Lily touch second?",
+     "options": [
+      "Her arm.",
+      "Her eye.",
+      "Her ear."
+     ],
+     "answer": "A",
+     "why": "Touch your arm. This is my arm.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u1-2-A3",
+     "type": "choice",
+     "stem": "What does Lily touch last?",
+     "options": [
+      "Her hand.",
+      "Her eye.",
+      "Her mouth."
+     ],
+     "answer": "B",
+     "why": "Now touch your eye.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3l-u1-2-B1",
+     "type": "fill",
+     "stem": "Ben says, \"Touch your ____, Lily.\"",
+     "answers": [
+      [
+       "hand"
+      ]
+     ],
+     "why": "Touch your hand, Lily.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u1-2-B2",
+     "type": "fill",
+     "stem": "Ben says, \"Now touch your ____.\"",
+     "answers": [
+      [
+       "eye"
+      ]
+     ],
+     "why": "Now touch your eye.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

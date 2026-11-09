@@ -1,0 +1,152 @@
+{
+ "id": "g8r-u5-2",
+ "kind": "reading",
+ "title": "A Thanksgiving Dinner",
+ "subtitle": "考点：节日美食 / pumpkin pie / according to",
+ "unit": "E8U5",
+ "passage": [
+  "Thanksgiving is an important holiday in the United States. It is in November, and families get together for a big meal. Many families eat turkey, mashed potatoes and pumpkin pie.",
+  "Emma helps her mother make the pumpkin pie. First, they mix cooked pumpkin with cream, eggs and a little cinnamon. Then they pour the mixture into a pie crust. They bake the pie in the oven for about an hour. According to Emma's grandmother, the best pie always has a lot of cinnamon.",
+  "At six o'clock, ten people sit around the table. Before eating, each person says one thing they are thankful for. Emma says, “I am thankful for my family and for this delicious pie!” Everyone laughs. The pie is soft and sweet, and the whole house smells of cinnamon."
+ ],
+ "vocab": "Thanksgiving 感恩节 · pumpkin 南瓜 · pie 派 · cinnamon 肉桂 · crust 派皮 · oven 烤箱 · thankful 感激的",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8r-u5-2-A1",
+     "type": "choice",
+     "stem": "When is Thanksgiving?",
+     "options": [
+      "In May.",
+      "In July.",
+      "In November.",
+      "In January."
+     ],
+     "answer": "C",
+     "why": "It is in November.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u5-2-A2",
+     "type": "choice",
+     "stem": "What do they put into the pie crust?",
+     "options": [
+      "Cooked rice.",
+      "Mashed potatoes.",
+      "Fish soup.",
+      "The pumpkin mixture."
+     ],
+     "answer": "D",
+     "why": "pour the mixture into a pie crust.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u5-2-A3",
+     "type": "choice",
+     "stem": "How long do they bake the pie?",
+     "options": [
+      "About an hour.",
+      "About ten minutes.",
+      "About five hours.",
+      "About one minute."
+     ],
+     "answer": "A",
+     "why": "bake the pie in the oven for about an hour.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u5-2-A4",
+     "type": "choice",
+     "stem": "What does each person say before eating?",
+     "options": [
+      "A short poem.",
+      "One thing they are thankful for.",
+      "Their favourite food.",
+      "A funny joke."
+     ],
+     "answer": "B",
+     "why": "each person says one thing they are thankful for.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g8r-u5-2-B1",
+     "type": "tf",
+     "stem": "Thanksgiving is a holiday in the United States.",
+     "answer": "T",
+     "why": "Thanksgiving is an important holiday in the United States.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u5-2-B2",
+     "type": "tf",
+     "stem": "Emma's grandmother says the best pie has no cinnamon.",
+     "answer": "F",
+     "why": "奶奶说最好的派有很多肉桂（a lot of cinnamon）。",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u5-2-B3",
+     "type": "tf",
+     "stem": "Ten people sit around the table.",
+     "answer": "T",
+     "why": "ten people sit around the table.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8r-u5-2-C1",
+     "type": "fill",
+     "stem": "Families get ____ for a big meal.",
+     "answers": [
+      [
+       "together"
+      ]
+     ],
+     "why": "families get together.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u5-2-C2",
+     "type": "fill",
+     "stem": "They bake the pie in the ____.",
+     "answers": [
+      [
+       "oven"
+      ]
+     ],
+     "why": "bake the pie in the oven.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u5-2-C3",
+     "type": "fill",
+     "stem": "The pie is soft and ____.",
+     "answers": [
+      [
+       "sweet"
+      ]
+     ],
+     "why": "The pie is soft and sweet.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,118 @@
+{
+ "id": "g8l-u4-2",
+ "kind": "listening",
+ "title": "The Life of a Frog",
+ "subtitle": "短文",
+ "unit": "E8U4",
+ "speakers": {
+  "Teacher": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Teacher",
+   "t": "Today we talk about frogs. A frog begins its life in water as a tiny egg."
+  },
+  {
+   "s": "Teacher",
+   "t": "After about ten days, the egg becomes a small tadpole with a long tail. It swims and eats plants."
+  },
+  {
+   "s": "Teacher",
+   "t": "After some weeks, the tadpole grows two back legs, and later two front legs. Its tail slowly gets shorter."
+  },
+  {
+   "s": "Teacher",
+   "t": "At last, it becomes a young frog and moves onto land."
+  },
+  {
+   "s": "Teacher",
+   "t": "Frogs eat insects, so they help farmers. They are also a sign of a clean environment."
+  },
+  {
+   "s": "Teacher",
+   "t": "We should protect the ponds where frogs live."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8l-u4-2-A1",
+     "type": "choice",
+     "stem": "Where does a frog begin its life?",
+     "options": [
+      "On a tree.",
+      "Under a rock.",
+      "In water.",
+      "In a nest."
+     ],
+     "answer": "C",
+     "why": "begins its life in water.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u4-2-A2",
+     "type": "choice",
+     "stem": "Which legs does a tadpole grow first?",
+     "options": [
+      "Two front legs.",
+      "Four legs at once.",
+      "No legs.",
+      "Two back legs."
+     ],
+     "answer": "D",
+     "why": "grows two back legs, and later two front legs.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u4-2-A3",
+     "type": "choice",
+     "stem": "Why are frogs helpful to farmers?",
+     "options": [
+      "They eat insects.",
+      "They eat rice.",
+      "They make honey.",
+      "They carry water."
+     ],
+     "answer": "A",
+     "why": "Frogs eat insects, so they help farmers.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8l-u4-2-B1",
+     "type": "fill",
+     "stem": "The egg becomes a small ____.",
+     "answers": [
+      [
+       "tadpole"
+      ]
+     ],
+     "why": "a small tadpole.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u4-2-B2",
+     "type": "fill",
+     "stem": "We should protect the ____ where frogs live.",
+     "answers": [
+      [
+       "ponds"
+      ]
+     ],
+     "why": "protect the ponds.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

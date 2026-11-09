@@ -1,0 +1,152 @@
+{
+ "id": "g8r-u1-3",
+ "kind": "reading",
+ "title": "Ready for the Trip?",
+ "subtitle": "考点：be ready to / nothing but / 旅行准备",
+ "unit": "E8U1",
+ "passage": [
+  "Tom's family is going to Scotland for a ten-day vacation. They plan to visit old castles and stay in the countryside. Tom is ready to go, but he is a very forgetful boy.",
+  "The night before the trip, his mother asked him to check his bag. Tom found his camera and a warm coat, but nothing else was in the bag. His passport was missing! He looked for it in his room, under his bed and even in the kitchen.",
+  "At last, Tom's sister found it in a book on his desk. “You always forget things,” she laughed. Tom said, “This time I will write a list.” Now he puts his passport, tickets and money in one small bag, so he can find them easily."
+ ],
+ "vocab": "vacation 假期 · countryside 乡村 · forgetful 健忘的 · passport 护照 · look for 寻找 · easily 容易地 · ready 准备好的",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8r-u1-3-A1",
+     "type": "choice",
+     "stem": "Where is Tom's family going?",
+     "options": [
+      "To Russia.",
+      "To Seattle.",
+      "To Moscow.",
+      "To Scotland."
+     ],
+     "answer": "D",
+     "why": "going to Scotland for a ten-day vacation.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u1-3-A2",
+     "type": "choice",
+     "stem": "What did Tom find in his bag?",
+     "options": [
+      "A camera and a warm coat.",
+      "A passport and tickets.",
+      "A book and a map.",
+      "Some food and water."
+     ],
+     "answer": "A",
+     "why": "Tom found his camera and a warm coat.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u1-3-A3",
+     "type": "choice",
+     "stem": "Where did Tom's sister find the passport?",
+     "options": [
+      "Under his bed.",
+      "In a book on his desk.",
+      "In the kitchen.",
+      "In his coat."
+     ],
+     "answer": "B",
+     "why": "found it in a book on his desk.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u1-3-A4",
+     "type": "choice",
+     "stem": "What will Tom do next time?",
+     "options": [
+      "Stay at home.",
+      "Ask his sister to pack.",
+      "Write a list.",
+      "Buy a new passport."
+     ],
+     "answer": "C",
+     "why": "This time I will write a list.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g8r-u1-3-B1",
+     "type": "tf",
+     "stem": "Tom's family will stay in the city.",
+     "answer": "F",
+     "why": "他们住在乡村（in the countryside）。",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u1-3-B2",
+     "type": "tf",
+     "stem": "Tom is a forgetful boy.",
+     "answer": "T",
+     "why": "he is a very forgetful boy.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u1-3-B3",
+     "type": "tf",
+     "stem": "Tom's mother found his passport.",
+     "answer": "F",
+     "why": "是 Tom 的姐姐找到的（Tom's sister found it）。",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8r-u1-3-C1",
+     "type": "fill",
+     "stem": "Tom is ____ to go on the trip.",
+     "answers": [
+      [
+       "ready"
+      ]
+     ],
+     "why": "Tom is ready to go.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u1-3-C2",
+     "type": "fill",
+     "stem": "The family will visit old ____.",
+     "answers": [
+      [
+       "castles"
+      ]
+     ],
+     "why": "visit old castles.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u1-3-C3",
+     "type": "fill",
+     "stem": "Tom's passport was ____ the night before the trip.",
+     "answers": [
+      [
+       "missing"
+      ]
+     ],
+     "why": "His passport was missing!",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

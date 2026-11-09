@@ -1,0 +1,164 @@
+{
+ "id": "g6r-u6-2",
+ "kind": "reading",
+ "title": "Save Electricity at Home",
+ "subtitle": "考点：一般现在时 / unplug, quick shower",
+ "unit": "E6U6",
+ "dialogue": [
+  {
+   "s": "Amy",
+   "t": "Mike, why do you turn off the lights?"
+  },
+  {
+   "s": "Mike",
+   "t": "We use electricity to light our rooms, so I turn it off when I leave."
+  },
+  {
+   "s": "Amy",
+   "t": "Good. What else do you do?"
+  },
+  {
+   "s": "Mike",
+   "t": "I unplug the TV when I don't watch it."
+  },
+  {
+   "s": "Amy",
+   "t": "Do you use the air conditioner a lot?"
+  },
+  {
+   "s": "Mike",
+   "t": "No. I use it only when it is very hot."
+  },
+  {
+   "s": "Amy",
+   "t": "And what about showers?"
+  },
+  {
+   "s": "Mike",
+   "t": "I take a quick shower, not a long bath. Saving energy is easy."
+  }
+ ],
+ "vocab": "electricity 电 · light 照亮/灯 · unplug 拔掉插头 · air conditioner 空调 · quick 快的 · shower 淋浴",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6r-u6-2-A1",
+     "type": "choice",
+     "stem": "When does Mike turn off the lights?",
+     "options": [
+      "When he gets up.",
+      "When he eats lunch.",
+      "When he leaves the room."
+     ],
+     "answer": "C",
+     "why": "I turn it off when I leave.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u6-2-A2",
+     "type": "choice",
+     "stem": "What does Mike unplug?",
+     "options": [
+      "The TV.",
+      "The fridge.",
+      "The radio."
+     ],
+     "answer": "A",
+     "why": "I unplug the TV when I don't watch it.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u6-2-A3",
+     "type": "choice",
+     "stem": "When does Mike use the air conditioner?",
+     "options": [
+      "Every day.",
+      "Only when it is very hot.",
+      "Only when it is cold."
+     ],
+     "answer": "B",
+     "why": "I use it only when it is very hot.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g6r-u6-2-B1",
+     "type": "tf",
+     "stem": "Mike takes a long bath.",
+     "answer": "F",
+     "why": "I take a quick shower, not a long bath.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u6-2-B2",
+     "type": "tf",
+     "stem": "Mike unplugs the TV when he does not watch it.",
+     "answer": "T",
+     "why": "I unplug the TV when I don't watch it.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u6-2-B3",
+     "type": "tf",
+     "stem": "Mike uses the air conditioner only on very hot days.",
+     "answer": "T",
+     "why": "I use it only when it is very hot.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6r-u6-2-C1",
+     "type": "fill",
+     "stem": "We use ____ to light our rooms.",
+     "answers": [
+      [
+       "electricity"
+      ]
+     ],
+     "why": "We use electricity to light our rooms",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u6-2-C2",
+     "type": "fill",
+     "stem": "Mike takes a quick ____.",
+     "answers": [
+      [
+       "shower"
+      ]
+     ],
+     "why": "I take a quick shower",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u6-2-C3",
+     "type": "fill",
+     "stem": "Mike unplugs the ____ when he does not watch it.",
+     "answers": [
+      [
+       "tv"
+      ]
+     ],
+     "why": "I unplug the TV",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

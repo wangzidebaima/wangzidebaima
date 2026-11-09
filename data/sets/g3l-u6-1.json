@@ -1,0 +1,112 @@
+{
+ "id": "g3l-u6-1",
+ "kind": "listening",
+ "title": "Ben's Brother",
+ "subtitle": "对话",
+ "unit": "E3U6",
+ "speakers": {
+  "Ben": "c1",
+  "Amy": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Ben",
+   "t": "How old are you, Amy?"
+  },
+  {
+   "s": "Amy",
+   "t": "I am six years old."
+  },
+  {
+   "s": "Ben",
+   "t": "My brother is ten years old."
+  },
+  {
+   "s": "Amy",
+   "t": "Is he tall?"
+  },
+  {
+   "s": "Ben",
+   "t": "Yes. He is tall."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3l-u6-1-A1",
+     "type": "choice",
+     "stem": "How old is Amy?",
+     "options": [
+      "Seven.",
+      "Six.",
+      "Eight."
+     ],
+     "answer": "B",
+     "why": "I am six years old.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u6-1-A2",
+     "type": "choice",
+     "stem": "How old is Ben's brother?",
+     "options": [
+      "Nine.",
+      "Eight.",
+      "Ten."
+     ],
+     "answer": "C",
+     "why": "My brother is ten years old.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u6-1-A3",
+     "type": "choice",
+     "stem": "How is Ben's brother?",
+     "options": [
+      "Tall.",
+      "Small.",
+      "Fast."
+     ],
+     "answer": "A",
+     "why": "Yes. He is tall.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3l-u6-1-B1",
+     "type": "fill",
+     "stem": "Amy is ____ years old.",
+     "answers": [
+      [
+       "six"
+      ]
+     ],
+     "why": "I am six years old.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u6-1-B2",
+     "type": "fill",
+     "stem": "Ben's brother is ____ years old.",
+     "answers": [
+      [
+       "ten"
+      ]
+     ],
+     "why": "My brother is ten years old.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

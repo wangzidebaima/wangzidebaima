@@ -1,0 +1,120 @@
+{
+ "id": "g5l-u2-1",
+ "kind": "listening",
+ "title": "How Do You Feel?",
+ "subtitle": "对话",
+ "unit": "E5U2",
+ "speakers": {
+  "Tom": "c1",
+  "Amy": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Tom",
+   "t": "Amy, what's the matter? You look worried."
+  },
+  {
+   "s": "Amy",
+   "t": "I have a maths test tomorrow."
+  },
+  {
+   "s": "Tom",
+   "t": "Don't worry. You are good at maths."
+  },
+  {
+   "s": "Amy",
+   "t": "But I am afraid of the last question."
+  },
+  {
+   "s": "Tom",
+   "t": "Let's study together after school."
+  },
+  {
+   "s": "Amy",
+   "t": "Really? Thank you, Tom!"
+  },
+  {
+   "s": "Tom",
+   "t": "No problem. We can finish it in an hour."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5l-u2-1-A1",
+     "type": "choice",
+     "stem": "Why is Amy worried?",
+     "options": [
+      "She lost her bag.",
+      "She has a maths test.",
+      "She is ill."
+     ],
+     "answer": "B",
+     "why": "I have a maths test tomorrow.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u2-1-A2",
+     "type": "choice",
+     "stem": "What is Amy afraid of?",
+     "options": [
+      "The teacher.",
+      "The first question.",
+      "The last question."
+     ],
+     "answer": "C",
+     "why": "I am afraid of the last question.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u2-1-A3",
+     "type": "choice",
+     "stem": "When will they study?",
+     "options": [
+      "After school.",
+      "Before school.",
+      "At night."
+     ],
+     "answer": "A",
+     "why": "Let's study together after school.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5l-u2-1-B1",
+     "type": "fill",
+     "stem": "Tom says, Don't ____.",
+     "answers": [
+      [
+       "worry"
+      ]
+     ],
+     "why": "Don't worry.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u2-1-B2",
+     "type": "fill",
+     "stem": "They can finish it in an ____.",
+     "answers": [
+      [
+       "hour"
+      ]
+     ],
+     "why": "We can finish it in an hour.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

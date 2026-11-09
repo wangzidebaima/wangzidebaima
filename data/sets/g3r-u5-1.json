@@ -1,0 +1,152 @@
+{
+ "id": "g3r-u5-1",
+ "kind": "reading",
+ "title": "What Colour Is It?",
+ "subtitle": "考点：询问颜色 / What colour is it? It is red.",
+ "unit": "E3U5",
+ "dialogue": [
+  {
+   "s": "Amy",
+   "t": "Look at my bag. What colour is it?"
+  },
+  {
+   "s": "Tom",
+   "t": "It is red."
+  },
+  {
+   "s": "Amy",
+   "t": "Yes! What colour is your bag?"
+  },
+  {
+   "s": "Tom",
+   "t": "My bag is blue."
+  },
+  {
+   "s": "Amy",
+   "t": "I like blue."
+  }
+ ],
+ "vocab": "colour 颜色 · red 红色 · blue 蓝色 · bag 书包 · look 看 · like 喜欢",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3r-u5-1-A1",
+     "type": "choice",
+     "stem": "What colour is Amy's bag?",
+     "options": [
+      "Blue.",
+      "Red.",
+      "Green."
+     ],
+     "answer": "B",
+     "why": "It is red. (Amy's bag)",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u5-1-A2",
+     "type": "choice",
+     "stem": "What colour is Tom's bag?",
+     "options": [
+      "Red.",
+      "Pink.",
+      "Blue."
+     ],
+     "answer": "C",
+     "why": "My bag is blue.",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u5-1-A3",
+     "type": "choice",
+     "stem": "Which colour does Amy like?",
+     "options": [
+      "Blue.",
+      "Red.",
+      "Green."
+     ],
+     "answer": "A",
+     "why": "I like blue.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g3r-u5-1-B1",
+     "type": "tf",
+     "stem": "Amy's bag is red.",
+     "answer": "T",
+     "why": "It is red.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u5-1-B2",
+     "type": "tf",
+     "stem": "Tom's bag is green.",
+     "answer": "F",
+     "why": "My bag is blue.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u5-1-B3",
+     "type": "tf",
+     "stem": "Amy likes pink.",
+     "answer": "F",
+     "why": "Amy says: I like blue.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3r-u5-1-C1",
+     "type": "fill",
+     "stem": "Amy says, \"Look at my ____.\"",
+     "answers": [
+      [
+       "bag"
+      ]
+     ],
+     "why": "Look at my bag.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u5-1-C2",
+     "type": "fill",
+     "stem": "Tom says, \"My bag is ____.\"",
+     "answers": [
+      [
+       "blue"
+      ]
+     ],
+     "why": "My bag is blue.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u5-1-C3",
+     "type": "fill",
+     "stem": "Amy says, \"What ____ is your bag?\"",
+     "answers": [
+      [
+       "colour"
+      ]
+     ],
+     "why": "What colour is your bag?",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

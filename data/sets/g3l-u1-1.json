@@ -1,0 +1,116 @@
+{
+ "id": "g3l-u1-1",
+ "kind": "listening",
+ "title": "Meet Amy",
+ "subtitle": "对话",
+ "unit": "E3U1",
+ "speakers": {
+  "Sam": "c1",
+  "Amy": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Sam",
+   "t": "Hi! I'm Sam. What's your name?"
+  },
+  {
+   "s": "Amy",
+   "t": "My name is Amy."
+  },
+  {
+   "s": "Sam",
+   "t": "Nice to meet you, Amy."
+  },
+  {
+   "s": "Amy",
+   "t": "Nice to meet you, too."
+  },
+  {
+   "s": "Sam",
+   "t": "Let's be friends."
+  },
+  {
+   "s": "Amy",
+   "t": "OK!"
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3l-u1-1-A1",
+     "type": "choice",
+     "stem": "What is the girl's name?",
+     "options": [
+      "Lily",
+      "Amy",
+      "Mary"
+     ],
+     "answer": "B",
+     "why": "My name is Amy.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u1-1-A2",
+     "type": "choice",
+     "stem": "What is the boy's name?",
+     "options": [
+      "Ben",
+      "Tom",
+      "Sam"
+     ],
+     "answer": "C",
+     "why": "I'm Sam.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u1-1-A3",
+     "type": "choice",
+     "stem": "What do they want to be?",
+     "options": [
+      "Friends.",
+      "Cousins.",
+      "Brothers."
+     ],
+     "answer": "A",
+     "why": "Let's be friends.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3l-u1-1-B1",
+     "type": "fill",
+     "stem": "Sam says, \"Let's be ____.\"",
+     "answers": [
+      [
+       "friends"
+      ]
+     ],
+     "why": "Let's be friends.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u1-1-B2",
+     "type": "fill",
+     "stem": "Amy says, \"My name is ____.\"",
+     "answers": [
+      [
+       "amy"
+      ]
+     ],
+     "why": "My name is Amy.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

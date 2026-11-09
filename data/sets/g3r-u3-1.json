@@ -1,0 +1,152 @@
+{
+ "id": "g3r-u3-1",
+ "kind": "reading",
+ "title": "At the Zoo",
+ "subtitle": "考点：喜欢的动物 / I like ... Pandas are cute.",
+ "unit": "E3U3",
+ "dialogue": [
+  {
+   "s": "Amy",
+   "t": "Let's go to the zoo, Tom!"
+  },
+  {
+   "s": "Tom",
+   "t": "Great! I like monkeys."
+  },
+  {
+   "s": "Amy",
+   "t": "I like pandas. Pandas are cute."
+  },
+  {
+   "s": "Tom",
+   "t": "Look! The elephant is big."
+  },
+  {
+   "s": "Amy",
+   "t": "The giraffe is tall."
+  }
+ ],
+ "vocab": "zoo 动物园 · monkey 猴子 · panda 熊猫 · cute 可爱的 · elephant 大象 · giraffe 长颈鹿",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3r-u3-1-A1",
+     "type": "choice",
+     "stem": "Where do they go?",
+     "options": [
+      "To the farm.",
+      "To the zoo.",
+      "To the garden."
+     ],
+     "answer": "B",
+     "why": "Let's go to the zoo!",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u3-1-A2",
+     "type": "choice",
+     "stem": "What does Tom like?",
+     "options": [
+      "Pandas.",
+      "Tigers.",
+      "Monkeys."
+     ],
+     "answer": "C",
+     "why": "I like monkeys.",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u3-1-A3",
+     "type": "choice",
+     "stem": "What does Amy say about pandas?",
+     "options": [
+      "They are cute.",
+      "They are fast.",
+      "They are tall."
+     ],
+     "answer": "A",
+     "why": "Pandas are cute.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g3r-u3-1-B1",
+     "type": "tf",
+     "stem": "Amy likes pandas.",
+     "answer": "T",
+     "why": "I like pandas.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u3-1-B2",
+     "type": "tf",
+     "stem": "The giraffe is small.",
+     "answer": "F",
+     "why": "The giraffe is tall.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u3-1-B3",
+     "type": "tf",
+     "stem": "The elephant is big.",
+     "answer": "T",
+     "why": "The elephant is big.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3r-u3-1-C1",
+     "type": "fill",
+     "stem": "Tom likes ____.",
+     "answers": [
+      [
+       "monkeys"
+      ]
+     ],
+     "why": "I like monkeys.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u3-1-C2",
+     "type": "fill",
+     "stem": "The ____ is tall.",
+     "answers": [
+      [
+       "giraffe"
+      ]
+     ],
+     "why": "The giraffe is tall.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u3-1-C3",
+     "type": "fill",
+     "stem": "Pandas are ____.",
+     "answers": [
+      [
+       "cute"
+      ]
+     ],
+     "why": "Pandas are cute.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

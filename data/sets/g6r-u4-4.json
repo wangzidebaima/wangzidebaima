@@ -1,0 +1,164 @@
+{
+ "id": "g6r-u4-4",
+ "kind": "reading",
+ "title": "Manage Money Well",
+ "subtitle": "考点：一般现在时 / for example",
+ "unit": "E6U4",
+ "dialogue": [
+  {
+   "s": "Mike",
+   "t": "Amy, how do you manage your pocket money?"
+  },
+  {
+   "s": "Amy",
+   "t": "I keep my money in a jar."
+  },
+  {
+   "s": "Mike",
+   "t": "Do you spend it all?"
+  },
+  {
+   "s": "Amy",
+   "t": "No. I save some every week."
+  },
+  {
+   "s": "Mike",
+   "t": "Can you give me an example?"
+  },
+  {
+   "s": "Amy",
+   "t": "For example, I get twenty yuan and I save five yuan."
+  },
+  {
+   "s": "Mike",
+   "t": "That is a good habit."
+  },
+  {
+   "s": "Amy",
+   "t": "I also sell my old books to my friends."
+  }
+ ],
+ "vocab": "manage 管理 · pocket money 零花钱 · jar 罐子 · save 储蓄 · for example 例如 · sell 卖",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6r-u4-4-A1",
+     "type": "choice",
+     "stem": "Where does Amy keep her money?",
+     "options": [
+      "In a box.",
+      "In a jar.",
+      "In a schoolbag."
+     ],
+     "answer": "B",
+     "why": "I keep my money in a jar.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u4-4-A2",
+     "type": "choice",
+     "stem": "How much does Amy save from twenty yuan?",
+     "options": [
+      "Ten yuan.",
+      "Fifteen yuan.",
+      "Five yuan."
+     ],
+     "answer": "C",
+     "why": "I get twenty yuan and I save five yuan.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u4-4-A3",
+     "type": "choice",
+     "stem": "What does Amy sell to her friends?",
+     "options": [
+      "Her old books.",
+      "Her old toys.",
+      "Her old shoes."
+     ],
+     "answer": "A",
+     "why": "I also sell my old books to my friends.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g6r-u4-4-B1",
+     "type": "tf",
+     "stem": "Amy spends all her money.",
+     "answer": "F",
+     "why": "No. I save some every week.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u4-4-B2",
+     "type": "tf",
+     "stem": "Amy saves some money every week.",
+     "answer": "T",
+     "why": "I save some every week.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u4-4-B3",
+     "type": "tf",
+     "stem": "Mike thinks Amy has a good habit.",
+     "answer": "T",
+     "why": "That is a good habit.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6r-u4-4-C1",
+     "type": "fill",
+     "stem": "Amy keeps her money in a ____.",
+     "answers": [
+      [
+       "jar"
+      ]
+     ],
+     "why": "in a jar",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u4-4-C2",
+     "type": "fill",
+     "stem": "Amy saves ____ yuan from twenty yuan.",
+     "answers": [
+      [
+       "five"
+      ]
+     ],
+     "why": "I save five yuan",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u4-4-C3",
+     "type": "fill",
+     "stem": "Amy sells her old ____ to her friends.",
+     "answers": [
+      [
+       "books"
+      ]
+     ],
+     "why": "sell my old books",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

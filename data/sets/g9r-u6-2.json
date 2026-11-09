@@ -1,0 +1,151 @@
+{
+ "id": "g9r-u6-2",
+ "kind": "reading",
+ "title": "Rovers on Mars",
+ "subtitle": "考点：行星探测 / rover, mission, operate",
+ "unit": "E9U6",
+ "passage": [
+  "Mars is the fourth planet from the sun, and it is often called the Red Planet. People have not set foot on it yet, but robots called rovers have explored it. A rover is a small vehicle with wheels, cameras and tools. It moves slowly across the ground and sends pictures and information back to Earth.",
+  "A rover's mission is to find out whether life ever existed on Mars. Scientists on Earth operate the rover by radio signals. Because Mars is very far away, the signals take several minutes to arrive, so the rover cannot be controlled in real time. It must also work alone in cold, dusty places. Each new rover gives us more knowledge about our neighbour in space, and one day it may help to prepare for a trip by human beings."
+ ],
+ "vocab": "Mars 火星 · rover 火星车 · mission 任务 · operate 操作 · signal 信号 · planet 行星",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9r-u6-2-A1",
+     "type": "choice",
+     "stem": "What is Mars often called?",
+     "options": [
+      "The Blue Planet.",
+      "The Green Star.",
+      "The Red Planet.",
+      "The Big Moon."
+     ],
+     "answer": "C",
+     "why": "it is often called the Red Planet.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u6-2-A2",
+     "type": "choice",
+     "stem": "What is a rover?",
+     "options": [
+      "A kind of rocket.",
+      "A man who flies to space.",
+      "A space telescope.",
+      "A small vehicle with wheels, cameras and tools."
+     ],
+     "answer": "D",
+     "why": "A rover is a small vehicle with wheels, cameras and tools.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u6-2-A3",
+     "type": "choice",
+     "stem": "What is a rover's mission?",
+     "options": [
+      "To find out whether life ever existed on Mars.",
+      "To bring people home.",
+      "To build a new city.",
+      "To fight enemies."
+     ],
+     "answer": "A",
+     "why": "A rover's mission is to find out whether life ever existed on Mars.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u6-2-A4",
+     "type": "choice",
+     "stem": "Why can the rover not be controlled in real time?",
+     "options": [
+      "It has no wheels.",
+      "The signals take several minutes to arrive.",
+      "It is too heavy.",
+      "Scientists are asleep."
+     ],
+     "answer": "B",
+     "why": "the signals take several minutes to arrive, so the rover cannot be controlled in real time.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g9r-u6-2-B1",
+     "type": "tf",
+     "stem": "People have already walked on Mars.",
+     "answer": "F",
+     "why": "People have not set foot on it yet.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u6-2-B2",
+     "type": "tf",
+     "stem": "Scientists operate the rover by radio signals.",
+     "answer": "T",
+     "why": "Scientists on Earth operate the rover by radio signals.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u6-2-B3",
+     "type": "tf",
+     "stem": "Mars is the fourth planet from the sun.",
+     "answer": "T",
+     "why": "Mars is the fourth planet from the sun",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9r-u6-2-C1",
+     "type": "fill",
+     "stem": "Rovers have ____ the planet.",
+     "answers": [
+      [
+       "explored"
+      ]
+     ],
+     "why": "robots called rovers have explored it.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u6-2-C2",
+     "type": "fill",
+     "stem": "A rover sends ____ back to Earth.",
+     "answers": [
+      [
+       "pictures"
+      ]
+     ],
+     "why": "sends pictures and information back to Earth.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u6-2-C3",
+     "type": "fill",
+     "stem": "The rover must work ____ in cold, dusty places.",
+     "answers": [
+      [
+       "alone"
+      ]
+     ],
+     "why": "It must also work alone in cold, dusty places.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

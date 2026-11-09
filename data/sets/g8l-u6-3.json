@@ -1,0 +1,127 @@
+{
+ "id": "g8l-u6-3",
+ "kind": "listening",
+ "title": "A Fashion Designer",
+ "subtitle": "对话",
+ "unit": "E8U6",
+ "speakers": {
+  "Reporter": "f1",
+  "Designer": "m1"
+ },
+ "transcript": [
+  {
+   "s": "Reporter",
+   "t": "Mr Wu, how did you become a fashion designer?"
+  },
+  {
+   "s": "Designer",
+   "t": "I loved drawing clothes when I was ten."
+  },
+  {
+   "s": "Reporter",
+   "t": "Did your parents support you?"
+  },
+  {
+   "s": "Designer",
+   "t": "At first they did not, because they wanted me to be a doctor."
+  },
+  {
+   "s": "Reporter",
+   "t": "What changed their minds?"
+  },
+  {
+   "s": "Designer",
+   "t": "I won a prize in a design competition at sixteen. Then they were proud."
+  },
+  {
+   "s": "Reporter",
+   "t": "What advice do you have for young people?"
+  },
+  {
+   "s": "Designer",
+   "t": "Believe in yourself and never give up your dream."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8l-u6-3-A1",
+     "type": "choice",
+     "stem": "When did Mr Wu start drawing clothes?",
+     "options": [
+      "At sixteen.",
+      "At twenty.",
+      "At six.",
+      "At ten."
+     ],
+     "answer": "D",
+     "why": "I loved drawing clothes when I was ten.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u6-3-A2",
+     "type": "choice",
+     "stem": "What did his parents want him to be at first?",
+     "options": [
+      "A doctor.",
+      "A teacher.",
+      "A pilot.",
+      "A designer."
+     ],
+     "answer": "A",
+     "why": "they wanted me to be a doctor.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u6-3-A3",
+     "type": "choice",
+     "stem": "What changed his parents' minds?",
+     "options": [
+      "He got a new job.",
+      "He won a design prize.",
+      "He moved abroad.",
+      "He opened a shop."
+     ],
+     "answer": "B",
+     "why": "I won a prize in a design competition.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8l-u6-3-B1",
+     "type": "fill",
+     "stem": "He won a prize at ____.",
+     "answers": [
+      [
+       "sixteen"
+      ]
+     ],
+     "why": "at sixteen.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u6-3-B2",
+     "type": "fill",
+     "stem": "He says never give up your ____.",
+     "answers": [
+      [
+       "dream"
+      ]
+     ],
+     "why": "never give up your dream.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

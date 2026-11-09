@@ -1,0 +1,124 @@
+{
+ "id": "g6l-u3-2",
+ "kind": "listening",
+ "title": "Good Habits",
+ "subtitle": "对话",
+ "unit": "E6U3",
+ "speakers": {
+  "Lily": "c1",
+  "Ben": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Lily",
+   "t": "Ben, do you exercise every day?"
+  },
+  {
+   "s": "Ben",
+   "t": "Yes. I run for twenty minutes after school."
+  },
+  {
+   "s": "Lily",
+   "t": "I walk to school every day."
+  },
+  {
+   "s": "Ben",
+   "t": "What time do you go to bed?"
+  },
+  {
+   "s": "Lily",
+   "t": "At nine thirty. I never stay up late."
+  },
+  {
+   "s": "Ben",
+   "t": "Me too. Sleeping early makes me happy."
+  },
+  {
+   "s": "Lily",
+   "t": "Do you eat fruit?"
+  },
+  {
+   "s": "Ben",
+   "t": "Yes. I eat an apple every day."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6l-u3-2-A1",
+     "type": "choice",
+     "stem": "How long does Ben run?",
+     "options": [
+      "Two hours.",
+      "Ten minutes.",
+      "Twenty minutes."
+     ],
+     "answer": "C",
+     "why": "I run for twenty minutes after school.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u3-2-A2",
+     "type": "choice",
+     "stem": "How does Lily go to school?",
+     "options": [
+      "On foot.",
+      "By bus.",
+      "By bike."
+     ],
+     "answer": "A",
+     "why": "I walk to school every day.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u3-2-A3",
+     "type": "choice",
+     "stem": "What time does Ben go to bed?",
+     "options": [
+      "At ten thirty.",
+      "At nine thirty.",
+      "At eight o'clock."
+     ],
+     "answer": "B",
+     "why": "At nine thirty.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6l-u3-2-B1",
+     "type": "fill",
+     "stem": "Ben eats an ____ every day.",
+     "answers": [
+      [
+       "apple"
+      ]
+     ],
+     "why": "I eat an apple every day.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u3-2-B2",
+     "type": "fill",
+     "stem": "Ben never stays up ____.",
+     "answers": [
+      [
+       "late"
+      ]
+     ],
+     "why": "I never stay up late.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,164 @@
+{
+ "id": "g6r-u3-3",
+ "kind": "reading",
+ "title": "A Healthy Diet",
+ "subtitle": "考点：一般过去时 / discuss my diet",
+ "unit": "E6U3",
+ "dialogue": [
+  {
+   "s": "Tom",
+   "t": "Lily, what did you eat for lunch?"
+  },
+  {
+   "s": "Lily",
+   "t": "I ate rice, fish and vegetables."
+  },
+  {
+   "s": "Tom",
+   "t": "That is a healthy diet."
+  },
+  {
+   "s": "Lily",
+   "t": "My mother and I discussed my diet last week."
+  },
+  {
+   "s": "Tom",
+   "t": "What did she say?"
+  },
+  {
+   "s": "Lily",
+   "t": "She said I should eat more fruit and drink less cola."
+  },
+  {
+   "s": "Tom",
+   "t": "I drink a glass of milk every morning."
+  },
+  {
+   "s": "Lily",
+   "t": "Good! Milk is good for you."
+  }
+ ],
+ "vocab": "diet 饮食 · discuss 讨论 · vegetables 蔬菜 · fruit 水果 · glass 玻璃杯 · milk 牛奶",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6r-u3-3-A1",
+     "type": "choice",
+     "stem": "What did Lily eat for lunch?",
+     "options": [
+      "Rice, fish and vegetables.",
+      "Pizza and cola.",
+      "Noodles and cake."
+     ],
+     "answer": "A",
+     "why": "I ate rice, fish and vegetables.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u3-3-A2",
+     "type": "choice",
+     "stem": "Who discussed Lily's diet with her?",
+     "options": [
+      "Her teacher.",
+      "Her mother.",
+      "Her uncle."
+     ],
+     "answer": "B",
+     "why": "My mother and I discussed my diet last week.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u3-3-A3",
+     "type": "choice",
+     "stem": "What does Tom drink every morning?",
+     "options": [
+      "A glass of cola.",
+      "A glass of juice.",
+      "A glass of milk."
+     ],
+     "answer": "C",
+     "why": "I drink a glass of milk every morning.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g6r-u3-3-B1",
+     "type": "tf",
+     "stem": "Lily ate pizza for lunch.",
+     "answer": "F",
+     "why": "She ate rice, fish and vegetables.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u3-3-B2",
+     "type": "tf",
+     "stem": "Lily's mother says she should eat more fruit.",
+     "answer": "T",
+     "why": "She said I should eat more fruit.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u3-3-B3",
+     "type": "tf",
+     "stem": "Tom drinks milk every morning.",
+     "answer": "T",
+     "why": "I drink a glass of milk every morning.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6r-u3-3-C1",
+     "type": "fill",
+     "stem": "Lily ate rice, fish and ____.",
+     "answers": [
+      [
+       "vegetables"
+      ]
+     ],
+     "why": "rice, fish and vegetables",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u3-3-C2",
+     "type": "fill",
+     "stem": "Lily should eat more ____.",
+     "answers": [
+      [
+       "fruit"
+      ]
+     ],
+     "why": "eat more fruit",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u3-3-C3",
+     "type": "fill",
+     "stem": "Tom drinks a ____ of milk every morning.",
+     "answers": [
+      [
+       "glass"
+      ]
+     ],
+     "why": "a glass of milk",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

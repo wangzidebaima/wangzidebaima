@@ -1,0 +1,82 @@
+{
+ "id": "g8sp-u3",
+ "kind": "speaking",
+ "unit": "E8U3",
+ "title": "口语练习",
+ "subtitle": "每天 10 分钟 · 共 5 天",
+ "steps": [
+  "点 🔊 听一遍，听清语调",
+  "一句一句跟着读，声音要大，不怕错",
+  "读完点「今天完成了」打卡"
+ ],
+ "sentences": [
+  {
+   "en": "What is the difference between you and your sister?",
+   "zh": "你和你姐姐有什么不同？"
+  },
+  {
+   "en": "She is outgoing, but I am a little shy.",
+   "zh": "她很外向，但我有点害羞。"
+  },
+  {
+   "en": "We have a lot in common.",
+   "zh": "我们有很多共同点。"
+  },
+  {
+   "en": "Both of us like music and play the flute.",
+   "zh": "我们俩都喜欢音乐，都吹长笛。"
+  },
+  {
+   "en": "I am as tall as my brother.",
+   "zh": "我和我哥哥一样高。"
+  },
+  {
+   "en": "What do you do in your spare time?",
+   "zh": "你空闲时间做什么？"
+  },
+  {
+   "en": "Congratulations on winning the prize!",
+   "zh": "祝贺你获奖！"
+  },
+  {
+   "en": "A good friend will always lend you a hand.",
+   "zh": "好朋友总会助你一臂之力。"
+  },
+  {
+   "en": "We are different, but we are still good friends.",
+   "zh": "我们虽然不同，但仍是好朋友。"
+  }
+ ],
+ "plan": [
+  {
+   "day": 1,
+   "title": "跟读第 1–3 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 2,
+   "title": "跟读第 4–6 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 3,
+   "title": "跟读第 7–9 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 4,
+   "title": "不看书，说给家长听",
+   "task": "挑 5 句最喜欢的，尽量不看书说出来",
+   "minutes": 10
+  },
+  {
+   "day": 5,
+   "title": "自己说 3 句话",
+   "task": "用 'We are both … but I am more … than …' 说 3 句话比较你和朋友",
+   "minutes": 10
+  }
+ ]
+}

@@ -1,0 +1,160 @@
+{
+ "id": "g5r-u6-1",
+ "kind": "reading",
+ "title": "A Famous Mountain",
+ "subtitle": "考点：描述地点 / The mountain is famous.",
+ "unit": "E5U6",
+ "dialogue": [
+  {
+   "s": "Amy",
+   "t": "Look at this photo, Tom. This mountain is famous."
+  },
+  {
+   "s": "Tom",
+   "t": "It is beautiful. Is there a river near it?"
+  },
+  {
+   "s": "Amy",
+   "t": "Yes, and there is a waterfall in the forest."
+  },
+  {
+   "s": "Tom",
+   "t": "Did you go there?"
+  },
+  {
+   "s": "Amy",
+   "t": "Yes, we went on a trip last summer. We go hiking every year."
+  },
+  {
+   "s": "Tom",
+   "t": "Was it easy?"
+  },
+  {
+   "s": "Amy",
+   "t": "Not really. The mountain is high, but the view is wonderful."
+  }
+ ],
+ "vocab": "mountain 山 · famous 著名的 · river 河 · waterfall 瀑布 · forest 森林 · trip 旅行 · go hiking 去徒步",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5r-u6-1-A1",
+     "type": "choice",
+     "stem": "What is famous?",
+     "options": [
+      "The river.",
+      "The mountain.",
+      "The hotel."
+     ],
+     "answer": "B",
+     "why": "This mountain is famous.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u6-1-A2",
+     "type": "choice",
+     "stem": "Where is the waterfall?",
+     "options": [
+      "In the hotel.",
+      "In the city.",
+      "In the forest."
+     ],
+     "answer": "C",
+     "why": "there is a waterfall in the forest.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u6-1-A3",
+     "type": "choice",
+     "stem": "How is the view?",
+     "options": [
+      "Wonderful.",
+      "Dangerous.",
+      "Boring."
+     ],
+     "answer": "A",
+     "why": "the view is wonderful.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g5r-u6-1-B1",
+     "type": "tf",
+     "stem": "Amy went on a trip last summer.",
+     "answer": "T",
+     "why": "we went on a trip last summer.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u6-1-B2",
+     "type": "tf",
+     "stem": "The mountain is low.",
+     "answer": "F",
+     "why": "The mountain is high.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u6-1-B3",
+     "type": "tf",
+     "stem": "Amy goes hiking every year.",
+     "answer": "T",
+     "why": "We go hiking every year.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5r-u6-1-C1",
+     "type": "fill",
+     "stem": "There is a ____ in the forest.",
+     "answers": [
+      [
+       "waterfall"
+      ]
+     ],
+     "why": "there is a waterfall in the forest.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u6-1-C2",
+     "type": "fill",
+     "stem": "We go ____ every year.",
+     "answers": [
+      [
+       "hiking"
+      ]
+     ],
+     "why": "We go hiking every year.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u6-1-C3",
+     "type": "fill",
+     "stem": "The ____ is famous.",
+     "answers": [
+      [
+       "mountain"
+      ]
+     ],
+     "why": "This mountain is famous.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

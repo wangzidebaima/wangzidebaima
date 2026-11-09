@@ -1,0 +1,116 @@
+{
+ "id": "g3l-u3-3",
+ "kind": "listening",
+ "title": "My Pet",
+ "subtitle": "对话",
+ "unit": "E3U3",
+ "speakers": {
+  "Ben": "c1",
+  "Amy": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Ben",
+   "t": "Do you have a pet, Amy?"
+  },
+  {
+   "s": "Amy",
+   "t": "Yes. I have a fish."
+  },
+  {
+   "s": "Ben",
+   "t": "I have a rabbit. It is white."
+  },
+  {
+   "s": "Amy",
+   "t": "Cute! I like rabbits."
+  },
+  {
+   "s": "Ben",
+   "t": "Do you like cats?"
+  },
+  {
+   "s": "Amy",
+   "t": "Yes, I do."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3l-u3-3-A1",
+     "type": "choice",
+     "stem": "What pet does Amy have?",
+     "options": [
+      "A fish.",
+      "A dog.",
+      "A bird."
+     ],
+     "answer": "A",
+     "why": "I have a fish.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u3-3-A2",
+     "type": "choice",
+     "stem": "What pet does Ben have?",
+     "options": [
+      "A cat.",
+      "A rabbit.",
+      "A dog."
+     ],
+     "answer": "B",
+     "why": "I have a rabbit.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u3-3-A3",
+     "type": "choice",
+     "stem": "What colour is the rabbit?",
+     "options": [
+      "Brown.",
+      "Black.",
+      "White."
+     ],
+     "answer": "C",
+     "why": "It is white.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3l-u3-3-B1",
+     "type": "fill",
+     "stem": "Amy has a ____.",
+     "answers": [
+      [
+       "fish"
+      ]
+     ],
+     "why": "I have a fish.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u3-3-B2",
+     "type": "fill",
+     "stem": "The rabbit is ____.",
+     "answers": [
+      [
+       "white"
+      ]
+     ],
+     "why": "It is white.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,152 @@
+{
+ "id": "g8r-u8-2",
+ "kind": "reading",
+ "title": "Tips for a Good Speech",
+ "subtitle": "考点：演讲技巧 / nervous / pay attention to",
+ "unit": "E8U8",
+ "passage": [
+  "Many students feel nervous when they speak in front of a class. Mr Green, an English teacher, gives some tips to help.",
+  "First, prepare carefully. Write down your main points and practise them aloud. If possible, ask a friend to be your listener and hold a rehearsal. Second, speak slowly and clearly. When people are nervous, they speak too fast, so take a deep breath before you start. Third, look at your listeners and smile. This shows that you are friendly and sincere.",
+  "Also, pay attention to your body. Stand up straight and do not play with your hair or pen. Last but not least, be yourself. You do not have to be perfect. Mr Green says that even good speakers make mistakes, but they simply continue and do not stop. “With practice, your fear will become smaller and smaller,” he says."
+ ],
+ "vocab": "nervous 紧张的 · tip 建议 · rehearsal 排练 · listener 听众 · sincere 真诚的 · continue 继续 · attention 注意",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8r-u8-2-A1",
+     "type": "choice",
+     "stem": "Who gives the tips?",
+     "options": [
+      "A doctor.",
+      "A student.",
+      "Mr Green.",
+      "A professor from Russia."
+     ],
+     "answer": "C",
+     "why": "Mr Green, an English teacher, gives some tips.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u8-2-A2",
+     "type": "choice",
+     "stem": "What should you do before you start?",
+     "options": [
+      "Run around the room.",
+      "Read a book.",
+      "Eat something.",
+      "Take a deep breath."
+     ],
+     "answer": "D",
+     "why": "take a deep breath before you start.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u8-2-A3",
+     "type": "choice",
+     "stem": "Why should you look at your listeners and smile?",
+     "options": [
+      "It shows you are friendly and sincere.",
+      "It makes the speech shorter.",
+      "It hides your notes.",
+      "It makes them laugh at you."
+     ],
+     "answer": "A",
+     "why": "This shows that you are friendly and sincere.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u8-2-A4",
+     "type": "choice",
+     "stem": "What should you do if you make a mistake?",
+     "options": [
+      "Stop and leave.",
+      "Continue speaking.",
+      "Start over from the beginning.",
+      "Ask the teacher to speak."
+     ],
+     "answer": "B",
+     "why": "they simply continue and do not stop.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g8r-u8-2-B1",
+     "type": "tf",
+     "stem": "Nervous people often speak too fast.",
+     "answer": "T",
+     "why": "When people are nervous, they speak too fast.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u8-2-B2",
+     "type": "tf",
+     "stem": "A rehearsal needs a listener.",
+     "answer": "T",
+     "why": "ask a friend to be your listener and hold a rehearsal.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u8-2-B3",
+     "type": "tf",
+     "stem": "Good speakers never make mistakes.",
+     "answer": "F",
+     "why": "even good speakers make mistakes。",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8r-u8-2-C1",
+     "type": "fill",
+     "stem": "You should prepare ____.",
+     "answers": [
+      [
+       "carefully"
+      ]
+     ],
+     "why": "prepare carefully.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u8-2-C2",
+     "type": "fill",
+     "stem": "Write down your main ____.",
+     "answers": [
+      [
+       "points"
+      ]
+     ],
+     "why": "Write down your main points.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u8-2-C3",
+     "type": "fill",
+     "stem": "Last but not least, be ____.",
+     "answers": [
+      [
+       "yourself"
+      ]
+     ],
+     "why": "be yourself.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

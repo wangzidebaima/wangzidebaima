@@ -1,0 +1,124 @@
+{
+ "id": "g6l-u6-2",
+ "kind": "listening",
+ "title": "The Air Conditioner",
+ "subtitle": "对话",
+ "unit": "E6U6",
+ "speakers": {
+  "Ben": "c1",
+  "Tom": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Ben",
+   "t": "Tom, it is very hot today."
+  },
+  {
+   "s": "Tom",
+   "t": "Yes. Let's turn on the air conditioner."
+  },
+  {
+   "s": "Ben",
+   "t": "Wait. Don't set it too cold."
+  },
+  {
+   "s": "Tom",
+   "t": "What do you suggest?"
+  },
+  {
+   "s": "Ben",
+   "t": "Set it at twenty-six degrees."
+  },
+  {
+   "s": "Tom",
+   "t": "That is cool enough."
+  },
+  {
+   "s": "Ben",
+   "t": "Please turn it off when we go out."
+  },
+  {
+   "s": "Tom",
+   "t": "OK. It will save energy."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6l-u6-2-A1",
+     "type": "choice",
+     "stem": "What is the weather like today?",
+     "options": [
+      "Very cold.",
+      "Rainy.",
+      "Very hot."
+     ],
+     "answer": "C",
+     "why": "it is very hot today",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u6-2-A2",
+     "type": "choice",
+     "stem": "What does Ben say about the air conditioner?",
+     "options": [
+      "Don't set it too cold.",
+      "Never use it.",
+      "Set it very low."
+     ],
+     "answer": "A",
+     "why": "Don't set it too cold.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u6-2-A3",
+     "type": "choice",
+     "stem": "When should they turn it off?",
+     "options": [
+      "When they eat.",
+      "When they go out.",
+      "When they sleep."
+     ],
+     "answer": "B",
+     "why": "turn it off when we go out",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6l-u6-2-B1",
+     "type": "fill",
+     "stem": "Ben suggests setting it at ____ degrees.",
+     "answers": [
+      [
+       "twenty-six"
+      ]
+     ],
+     "why": "Set it at twenty-six degrees.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u6-2-B2",
+     "type": "fill",
+     "stem": "Turning it off will save ____.",
+     "answers": [
+      [
+       "energy"
+      ]
+     ],
+     "why": "It will save energy.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

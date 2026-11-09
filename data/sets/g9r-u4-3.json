@@ -1,0 +1,151 @@
+{
+ "id": "g9r-u4-3",
+ "kind": "reading",
+ "title": "Squirrels and Their Nuts",
+ "subtitle": "考点：动物记忆 / wild, brain, keep in mind",
+ "unit": "E9U4",
+ "passage": [
+  "In autumn, a wild squirrel is very busy. It collects nuts and hides them in the ground, in different places. A squirrel may hide thousands of nuts in one season. Many people ask, 'How can such a small animal remember so many places?'",
+  "Scientists have found that squirrels use the position of trees and rocks to help them find their nuts. They also have a good sense of smell. Squirrels do forget some places, and the forgotten nuts may grow into new trees. So the squirrel's poor memory is good for the forest! Keep in mind that animals are often cleverer than we think."
+ ],
+ "vocab": "wild 野生的 · squirrel 松鼠 · position 位置 · scientist 科学家 · forest 森林 · smell 嗅觉",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9r-u4-3-A1",
+     "type": "choice",
+     "stem": "When is a wild squirrel very busy?",
+     "options": [
+      "In spring.",
+      "In winter.",
+      "In summer.",
+      "In autumn."
+     ],
+     "answer": "D",
+     "why": "In autumn, a wild squirrel is very busy.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u4-3-A2",
+     "type": "choice",
+     "stem": "Where does a squirrel hide its nuts?",
+     "options": [
+      "In the ground, in different places.",
+      "In one big hole.",
+      "In a school.",
+      "In the water."
+     ],
+     "answer": "A",
+     "why": "hides them in the ground, in different places.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u4-3-A3",
+     "type": "choice",
+     "stem": "What helps squirrels find nuts?",
+     "options": [
+      "Birds that show the way.",
+      "The position of trees and rocks.",
+      "Maps made by people.",
+      "Loud noises."
+     ],
+     "answer": "B",
+     "why": "squirrels use the position of trees and rocks to help them find their nuts.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u4-3-A4",
+     "type": "choice",
+     "stem": "What may happen to forgotten nuts?",
+     "options": [
+      "They turn into rocks.",
+      "They become food for fish.",
+      "They may grow into new trees.",
+      "They fly away."
+     ],
+     "answer": "C",
+     "why": "the forgotten nuts may grow into new trees.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g9r-u4-3-B1",
+     "type": "tf",
+     "stem": "A squirrel hides all its nuts in one place.",
+     "answer": "F",
+     "why": "hides them in the ground, in different places.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u4-3-B2",
+     "type": "tf",
+     "stem": "Squirrels have a good sense of smell.",
+     "answer": "T",
+     "why": "They also have a good sense of smell.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u4-3-B3",
+     "type": "tf",
+     "stem": "The squirrel's forgetting can help the forest.",
+     "answer": "T",
+     "why": "the squirrel's poor memory is good for the forest!",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9r-u4-3-C1",
+     "type": "fill",
+     "stem": "A squirrel may hide ____ of nuts in one season.",
+     "answers": [
+      [
+       "thousands"
+      ]
+     ],
+     "why": "A squirrel may hide thousands of nuts in one season.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u4-3-C2",
+     "type": "fill",
+     "stem": "Squirrels use the ____ of trees and rocks.",
+     "answers": [
+      [
+       "position"
+      ]
+     ],
+     "why": "use the position of trees and rocks",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u4-3-C3",
+     "type": "fill",
+     "stem": "Animals are often ____ than we think.",
+     "answers": [
+      [
+       "cleverer"
+      ]
+     ],
+     "why": "animals are often cleverer than we think.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

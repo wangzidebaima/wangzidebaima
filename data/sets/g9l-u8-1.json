@@ -1,0 +1,127 @@
+{
+ "id": "g9l-u8-1",
+ "kind": "listening",
+ "title": "Sports Team Tryouts",
+ "subtitle": "对话",
+ "unit": "E9U8",
+ "speakers": {
+  "Ben": "m1",
+  "Amy": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Amy",
+   "t": "Ben, are you going to the tryout for the sports team?"
+  },
+  {
+   "s": "Ben",
+   "t": "Yes. I want to join the relay team, but I am also trying shot-put."
+  },
+  {
+   "s": "Amy",
+   "t": "Can you do many pull-ups?"
+  },
+  {
+   "s": "Ben",
+   "t": "Only eight now. My goal is twelve."
+  },
+  {
+   "s": "Amy",
+   "t": "I am trying out for swimming. The judge will time us in the freestyle race."
+  },
+  {
+   "s": "Ben",
+   "t": "You are talented. I am sure you will make it."
+  },
+  {
+   "s": "Amy",
+   "t": "Thanks. Neither of us should be nervous."
+  },
+  {
+   "s": "Ben",
+   "t": "Right. Let's do our best and enjoy the game."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9l-u8-1-A1",
+     "type": "choice",
+     "stem": "Which team does Ben want to join?",
+     "options": [
+      "The swimming team.",
+      "The relay team.",
+      "The boxing club.",
+      "The art club."
+     ],
+     "answer": "B",
+     "why": "I want to join the relay team.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u8-1-A2",
+     "type": "choice",
+     "stem": "How many pull-ups can Ben do now?",
+     "options": [
+      "Twelve.",
+      "Two.",
+      "Eight.",
+      "Twenty."
+     ],
+     "answer": "C",
+     "why": "Only eight now.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u8-1-A3",
+     "type": "choice",
+     "stem": "What will Amy try out for?",
+     "options": [
+      "Shot-put.",
+      "Boxing.",
+      "Football.",
+      "Swimming."
+     ],
+     "answer": "D",
+     "why": "I am trying out for swimming.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9l-u8-1-B1",
+     "type": "fill",
+     "stem": "The judge will ____ the swimmers.",
+     "answers": [
+      [
+       "time"
+      ]
+     ],
+     "why": "The judge will time us.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u8-1-B2",
+     "type": "fill",
+     "stem": "Let's do our best and ____ the game.",
+     "answers": [
+      [
+       "enjoy"
+      ]
+     ],
+     "why": "enjoy the game.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

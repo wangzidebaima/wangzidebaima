@@ -1,0 +1,82 @@
+{
+ "id": "g9sp-u4",
+ "kind": "speaking",
+ "unit": "E9U4",
+ "title": "口语练习",
+ "subtitle": "每天 10 分钟 · 共 5 天",
+ "steps": [
+  "点 🔊 听一遍，听清语调",
+  "一句一句跟着读，声音要大，不怕错",
+  "读完点「今天完成了」打卡"
+ ],
+ "sentences": [
+  {
+   "en": "I cannot recall where I put my notebook.",
+   "zh": "我想不起把笔记本放哪儿了。"
+  },
+  {
+   "en": "To start with, let's go through what we did today.",
+   "zh": "首先，我们把今天做的事回顾一遍。"
+  },
+  {
+   "en": "Please keep this password in mind.",
+   "zh": "请把这个密码记在心里。"
+  },
+  {
+   "en": "It is easy to mix up the two words.",
+   "zh": "这两个词很容易搞混。"
+  },
+  {
+   "en": "Divide the long list into small groups.",
+   "zh": "把长清单分成几个小组。"
+  },
+  {
+   "en": "Reviewing often puts your notes to good use.",
+   "zh": "经常复习能让你的笔记派上用场。"
+  },
+  {
+   "en": "Long-term memory lasts much longer than short-term memory.",
+   "zh": "长期记忆比短期记忆持续得久得多。"
+  },
+  {
+   "en": "A squirrel can remember where it hid its nuts.",
+   "zh": "松鼠能记得它把坚果藏在哪里。"
+  },
+  {
+   "en": "In my case, drawing a picture helps me remember.",
+   "zh": "就我而言，画图帮助我记忆。"
+  }
+ ],
+ "plan": [
+  {
+   "day": 1,
+   "title": "跟读第 1–3 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 2,
+   "title": "跟读第 4–6 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 3,
+   "title": "跟读第 7–9 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 4,
+   "title": "不看书，说给家长听",
+   "task": "挑 5 句最喜欢的，尽量不看书说出来",
+   "minutes": 10
+  },
+  {
+   "day": 5,
+   "title": "自己说 3 句话",
+   "task": "用 'To remember …, I … ' 说 3 句话介绍你记东西的办法",
+   "minutes": 10
+  }
+ ]
+}

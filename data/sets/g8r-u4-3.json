@@ -1,0 +1,152 @@
+{
+ "id": "g8r-u4-3",
+ "kind": "reading",
+ "title": "Plants in China",
+ "subtitle": "考点：中国植物 / 描述特点 / province",
+ "unit": "E8U4",
+ "passage": [
+  "China has many beautiful and special plants. The peony is one of the most popular flowers in the country. Luoyang, a city in Henan Province, is famous for its peonies. Every spring, thousands of visitors go there to see the large pink, red and white flowers.",
+  "The lotus grows in water. Its leaves are big and round, and its flowers open in summer. Many Chinese poems and paintings are about lotus flowers. The lotus seeds and roots can also be eaten.",
+  "The ginkgo is a very old kind of tree. Its leaves are shaped like small fans, and they turn bright yellow in autumn. Some ginkgo trees in China are more than a thousand years old. Because ginkgos can live so long, people believe they bring good luck. We should protect these amazing plants."
+ ],
+ "vocab": "peony 牡丹 · lotus 荷花 · ginkgo 银杏 · province 省 · popular 受欢迎的 · poem 诗 · luck 运气",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8r-u4-3-A1",
+     "type": "choice",
+     "stem": "Which city is famous for peonies?",
+     "options": [
+      "Qingdao.",
+      "Vancouver.",
+      "Moscow.",
+      "Luoyang."
+     ],
+     "answer": "D",
+     "why": "Luoyang ... is famous for its peonies.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u4-3-A2",
+     "type": "choice",
+     "stem": "Where does the lotus grow?",
+     "options": [
+      "In water.",
+      "On mountains.",
+      "In deserts.",
+      "In the snow."
+     ],
+     "answer": "A",
+     "why": "The lotus grows in water.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u4-3-A3",
+     "type": "choice",
+     "stem": "What colour do ginkgo leaves turn in autumn?",
+     "options": [
+      "Pink.",
+      "Bright yellow.",
+      "Blue.",
+      "Dark red."
+     ],
+     "answer": "B",
+     "why": "they turn bright yellow in autumn.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u4-3-A4",
+     "type": "choice",
+     "stem": "Why do people think ginkgos bring good luck?",
+     "options": [
+      "Ginkgos grow in water.",
+      "Ginkgos are very small.",
+      "Ginkgos can live for a very long time.",
+      "Ginkgos have large red flowers."
+     ],
+     "answer": "C",
+     "why": "Because ginkgos can live so long, people believe they bring good luck.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g8r-u4-3-B1",
+     "type": "tf",
+     "stem": "Peonies are only red.",
+     "answer": "F",
+     "why": "牡丹有粉、红、白色（pink, red and white）。",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u4-3-B2",
+     "type": "tf",
+     "stem": "People can eat lotus seeds.",
+     "answer": "T",
+     "why": "The lotus seeds and roots can also be eaten.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u4-3-B3",
+     "type": "tf",
+     "stem": "Ginkgo leaves look like small fans.",
+     "answer": "T",
+     "why": "shaped like small fans.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8r-u4-3-C1",
+     "type": "fill",
+     "stem": "The lotus flowers open in ____.",
+     "answers": [
+      [
+       "summer"
+      ]
+     ],
+     "why": "its flowers open in summer.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u4-3-C2",
+     "type": "fill",
+     "stem": "Ginkgo leaves are shaped like small ____.",
+     "answers": [
+      [
+       "fans"
+      ]
+     ],
+     "why": "shaped like small fans.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u4-3-C3",
+     "type": "fill",
+     "stem": "Luoyang is in Henan ____.",
+     "answers": [
+      [
+       "province"
+      ]
+     ],
+     "why": "a city in Henan Province.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

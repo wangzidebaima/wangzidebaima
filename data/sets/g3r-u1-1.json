@@ -1,0 +1,152 @@
+{
+ "id": "g3r-u1-1",
+ "kind": "reading",
+ "title": "Nice to Meet You",
+ "subtitle": "考点：自我介绍 / My name is ... Let's be friends.",
+ "unit": "E3U1",
+ "dialogue": [
+  {
+   "s": "Amy",
+   "t": "Hi! What's your name?"
+  },
+  {
+   "s": "Mike",
+   "t": "My name is Mike. What's your name?"
+  },
+  {
+   "s": "Amy",
+   "t": "My name is Amy. Nice to meet you."
+  },
+  {
+   "s": "Mike",
+   "t": "Nice to meet you, too. Let's be friends."
+  },
+  {
+   "s": "Amy",
+   "t": "OK! I can share my book."
+  }
+ ],
+ "vocab": "name 名字 · nice 好的 · meet 遇见 · friend 朋友 · share 分享 · book 书",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3r-u1-1-A1",
+     "type": "choice",
+     "stem": "What is the boy's name?",
+     "options": [
+      "Tom",
+      "Mike",
+      "Ben"
+     ],
+     "answer": "B",
+     "why": "My name is Mike.",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u1-1-A2",
+     "type": "choice",
+     "stem": "What can Amy share?",
+     "options": [
+      "Her pen.",
+      "Her cake.",
+      "Her book."
+     ],
+     "answer": "C",
+     "why": "I can share my book.",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u1-1-A3",
+     "type": "choice",
+     "stem": "What does Mike say to Amy?",
+     "options": [
+      "Let's be friends.",
+      "Goodbye.",
+      "I am eight."
+     ],
+     "answer": "A",
+     "why": "Let's be friends.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g3r-u1-1-B1",
+     "type": "tf",
+     "stem": "Amy's name is Mike.",
+     "answer": "F",
+     "why": "Amy says: My name is Amy.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u1-1-B2",
+     "type": "tf",
+     "stem": "Mike says, \"Nice to meet you, too.\"",
+     "answer": "T",
+     "why": "Nice to meet you, too.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u1-1-B3",
+     "type": "tf",
+     "stem": "Amy can share her book.",
+     "answer": "T",
+     "why": "I can share my book.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3r-u1-1-C1",
+     "type": "fill",
+     "stem": "Amy can share her ____.",
+     "answers": [
+      [
+       "book"
+      ]
+     ],
+     "why": "I can share my book.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u1-1-C2",
+     "type": "fill",
+     "stem": "Let's be ____.",
+     "answers": [
+      [
+       "friends"
+      ]
+     ],
+     "why": "Let's be friends.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u1-1-C3",
+     "type": "fill",
+     "stem": "Nice to ____ you.",
+     "answers": [
+      [
+       "meet"
+      ]
+     ],
+     "why": "Nice to meet you.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

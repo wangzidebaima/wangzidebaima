@@ -1,0 +1,124 @@
+{
+ "id": "g6l-u3-3",
+ "kind": "listening",
+ "title": "Call the Doctor",
+ "subtitle": "对话",
+ "unit": "E6U3",
+ "speakers": {
+  "Ben": "c1",
+  "Amy": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Ben",
+   "t": "Amy, my sister is ill."
+  },
+  {
+   "s": "Amy",
+   "t": "What is wrong?"
+  },
+  {
+   "s": "Ben",
+   "t": "She has a cough and a runny nose."
+  },
+  {
+   "s": "Amy",
+   "t": "Did your mother call the doctor?"
+  },
+  {
+   "s": "Ben",
+   "t": "Yes. The doctor will come at four o'clock."
+  },
+  {
+   "s": "Amy",
+   "t": "I hope she gets better soon."
+  },
+  {
+   "s": "Ben",
+   "t": "Thanks. She must stay in bed today."
+  },
+  {
+   "s": "Amy",
+   "t": "I will send her a card."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6l-u3-3-A1",
+     "type": "choice",
+     "stem": "Who is ill?",
+     "options": [
+      "Ben's sister.",
+      "Ben's brother.",
+      "Amy's sister."
+     ],
+     "answer": "A",
+     "why": "my sister is ill",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u3-3-A2",
+     "type": "choice",
+     "stem": "When will the doctor come?",
+     "options": [
+      "At two o'clock.",
+      "At four o'clock.",
+      "At six o'clock."
+     ],
+     "answer": "B",
+     "why": "The doctor will come at four o'clock.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u3-3-A3",
+     "type": "choice",
+     "stem": "What will Amy send?",
+     "options": [
+      "A photo.",
+      "An email.",
+      "A card."
+     ],
+     "answer": "C",
+     "why": "I will send her a card.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6l-u3-3-B1",
+     "type": "fill",
+     "stem": "She has a cough and a runny ____.",
+     "answers": [
+      [
+       "nose"
+      ]
+     ],
+     "why": "a cough and a runny nose",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u3-3-B2",
+     "type": "fill",
+     "stem": "She must stay in ____ today.",
+     "answers": [
+      [
+       "bed"
+      ]
+     ],
+     "why": "She must stay in bed today.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

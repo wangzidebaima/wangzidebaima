@@ -1,0 +1,124 @@
+{
+ "id": "g6l-u6-1",
+ "kind": "listening",
+ "title": "Save Water and Power",
+ "subtitle": "对话",
+ "unit": "E6U6",
+ "speakers": {
+  "Mike": "c1",
+  "Amy": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Mike",
+   "t": "Amy, please turn off the light."
+  },
+  {
+   "s": "Amy",
+   "t": "OK. Nobody is in the room."
+  },
+  {
+   "s": "Mike",
+   "t": "We should save electricity at home."
+  },
+  {
+   "s": "Amy",
+   "t": "I agree. I also unplug the TV."
+  },
+  {
+   "s": "Mike",
+   "t": "Do you take a long shower?"
+  },
+  {
+   "s": "Amy",
+   "t": "No. I take a quick shower, only five minutes."
+  },
+  {
+   "s": "Mike",
+   "t": "That is a good habit."
+  },
+  {
+   "s": "Amy",
+   "t": "Small things make a big difference."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6l-u6-1-A1",
+     "type": "choice",
+     "stem": "What does Amy do with the TV?",
+     "options": [
+      "She turns it up.",
+      "She unplugs it.",
+      "She sells it."
+     ],
+     "answer": "B",
+     "why": "I also unplug the TV.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u6-1-A2",
+     "type": "choice",
+     "stem": "How long is Amy's shower?",
+     "options": [
+      "Fifteen minutes.",
+      "One hour.",
+      "Five minutes."
+     ],
+     "answer": "C",
+     "why": "I take a quick shower, only five minutes.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u6-1-A3",
+     "type": "choice",
+     "stem": "What makes a big difference?",
+     "options": [
+      "Small things.",
+      "Big machines.",
+      "New clothes."
+     ],
+     "answer": "A",
+     "why": "Small things make a big difference.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6l-u6-1-B1",
+     "type": "fill",
+     "stem": "Mike says they should save ____ at home.",
+     "answers": [
+      [
+       "electricity"
+      ]
+     ],
+     "why": "We should save electricity at home.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u6-1-B2",
+     "type": "fill",
+     "stem": "Amy takes a ____ shower.",
+     "answers": [
+      [
+       "quick"
+      ]
+     ],
+     "why": "I take a quick shower",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

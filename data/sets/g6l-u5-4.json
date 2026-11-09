@@ -1,0 +1,124 @@
+{
+ "id": "g6l-u5-4",
+ "kind": "listening",
+ "title": "Earth from Space",
+ "subtitle": "对话",
+ "unit": "E6U5",
+ "speakers": {
+  "Tom": "c1",
+  "Lily": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Tom",
+   "t": "Lily, look at this picture of the Earth."
+  },
+  {
+   "s": "Lily",
+   "t": "It looks like a blue marble!"
+  },
+  {
+   "s": "Tom",
+   "t": "Yes. The blue parts are the oceans."
+  },
+  {
+   "s": "Lily",
+   "t": "What are the white parts?"
+  },
+  {
+   "s": "Tom",
+   "t": "They are clouds."
+  },
+  {
+   "s": "Lily",
+   "t": "A satellite took this photo."
+  },
+  {
+   "s": "Tom",
+   "t": "Wow! The Earth is a beautiful planet."
+  },
+  {
+   "s": "Lily",
+   "t": "I want to be an astronaut one day."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6l-u5-4-A1",
+     "type": "choice",
+     "stem": "What does the Earth look like in the picture?",
+     "options": [
+      "A red ball.",
+      "A blue marble.",
+      "A yellow coin."
+     ],
+     "answer": "B",
+     "why": "It looks like a blue marble!",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u5-4-A2",
+     "type": "choice",
+     "stem": "What are the blue parts?",
+     "options": [
+      "Clouds.",
+      "Mountains.",
+      "Oceans."
+     ],
+     "answer": "C",
+     "why": "The blue parts are the oceans.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u5-4-A3",
+     "type": "choice",
+     "stem": "What took the photo?",
+     "options": [
+      "A satellite.",
+      "A rover.",
+      "A telescope."
+     ],
+     "answer": "A",
+     "why": "A satellite took this photo.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6l-u5-4-B1",
+     "type": "fill",
+     "stem": "The white parts are ____.",
+     "answers": [
+      [
+       "clouds"
+      ]
+     ],
+     "why": "They are clouds.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u5-4-B2",
+     "type": "fill",
+     "stem": "Lily wants to be an ____ one day.",
+     "answers": [
+      [
+       "astronaut"
+      ]
+     ],
+     "why": "I want to be an astronaut one day.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

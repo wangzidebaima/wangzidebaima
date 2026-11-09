@@ -1,0 +1,160 @@
+{
+ "id": "g5r-u6-4",
+ "kind": "reading",
+ "title": "The Hotel by the Lake",
+ "subtitle": "考点：旅行 / We go hiking on the trip.",
+ "unit": "E5U6",
+ "dialogue": [
+  {
+   "s": "Sam",
+   "t": "Dad, is our hotel close to the forest?"
+  },
+  {
+   "s": "Dad",
+   "t": "Yes. It is only ten minutes' walk."
+  },
+  {
+   "s": "Sam",
+   "t": "Great! Can we go hiking tomorrow?"
+  },
+  {
+   "s": "Dad",
+   "t": "Yes. But we must start early. The fog is heavy in the morning."
+  },
+  {
+   "s": "Sam",
+   "t": "What should I bring?"
+  },
+  {
+   "s": "Dad",
+   "t": "Bring water, some bread and a map."
+  },
+  {
+   "s": "Sam",
+   "t": "I know. I will also bring my camera."
+  }
+ ],
+ "vocab": "hotel 酒店 · close 近的 · forest 森林 · fog 雾 · bring 带来 · know 知道 · go hiking 去徒步",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5r-u6-4-A1",
+     "type": "choice",
+     "stem": "How far is the hotel from the forest?",
+     "options": [
+      "One hour by bus.",
+      "Ten minutes' walk.",
+      "Two minutes' walk."
+     ],
+     "answer": "B",
+     "why": "It is only ten minutes' walk.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u6-4-A2",
+     "type": "choice",
+     "stem": "Why must they start early?",
+     "options": [
+      "The hotel is closed.",
+      "It is too hot.",
+      "The fog is heavy in the morning."
+     ],
+     "answer": "C",
+     "why": "we must start early. The fog is heavy in the morning.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u6-4-A3",
+     "type": "choice",
+     "stem": "What will Sam also bring?",
+     "options": [
+      "His camera.",
+      "His umbrella.",
+      "His phone."
+     ],
+     "answer": "A",
+     "why": "I will also bring my camera.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g5r-u6-4-B1",
+     "type": "tf",
+     "stem": "The hotel is close to the forest.",
+     "answer": "T",
+     "why": "It is only ten minutes' walk.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u6-4-B2",
+     "type": "tf",
+     "stem": "They will go hiking today.",
+     "answer": "F",
+     "why": "Can we go hiking tomorrow? Yes.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u6-4-B3",
+     "type": "tf",
+     "stem": "Dad says to bring water and bread.",
+     "answer": "T",
+     "why": "Bring water, some bread and a map.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5r-u6-4-C1",
+     "type": "fill",
+     "stem": "Is our hotel ____ to the forest?",
+     "answers": [
+      [
+       "close"
+      ]
+     ],
+     "why": "is our hotel close to the forest?",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u6-4-C2",
+     "type": "fill",
+     "stem": "The ____ is heavy in the morning.",
+     "answers": [
+      [
+       "fog"
+      ]
+     ],
+     "why": "The fog is heavy in the morning.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u6-4-C3",
+     "type": "fill",
+     "stem": "Bring water, some bread and a ____.",
+     "answers": [
+      [
+       "map"
+      ]
+     ],
+     "why": "Bring water, some bread and a map.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

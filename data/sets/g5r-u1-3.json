@@ -1,0 +1,160 @@
+{
+ "id": "g5r-u1-3",
+ "kind": "reading",
+ "title": "My Robot Friend",
+ "subtitle": "考点：描述事物与人 / The robot can ...",
+ "unit": "E5U1",
+ "dialogue": [
+  {
+   "s": "Ben",
+   "t": "Tom, come to the science club. We have a new robot."
+  },
+  {
+   "s": "Tom",
+   "t": "Really? Can it jump?"
+  },
+  {
+   "s": "Ben",
+   "t": "No, it can't jump, but it can walk and dance."
+  },
+  {
+   "s": "Tom",
+   "t": "Wonderful! Who made it?"
+  },
+  {
+   "s": "Ben",
+   "t": "Miss Green and the students. Lily is the star of the club."
+  },
+  {
+   "s": "Tom",
+   "t": "Why?"
+  },
+  {
+   "s": "Ben",
+   "t": "She is hard-working. She works on the robot every day."
+  }
+ ],
+ "vocab": "science 科学 · robot 机器人 · jump 跳 · wonderful 精彩的 · star 明星 · hard-working 勤奋的",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5r-u1-3-A1",
+     "type": "choice",
+     "stem": "What can the robot do?",
+     "options": [
+      "Walk and dance.",
+      "Jump and sing.",
+      "Play chess."
+     ],
+     "answer": "A",
+     "why": "It can walk and dance.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u1-3-A2",
+     "type": "choice",
+     "stem": "Who made the robot?",
+     "options": [
+      "Tom and Ben.",
+      "Miss Green and the students.",
+      "Only Lily."
+     ],
+     "answer": "B",
+     "why": "Miss Green and the students.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u1-3-A3",
+     "type": "choice",
+     "stem": "Why is Lily the star of the club?",
+     "options": [
+      "She is tall.",
+      "She is young.",
+      "She is hard-working."
+     ],
+     "answer": "C",
+     "why": "She is hard-working.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g5r-u1-3-B1",
+     "type": "tf",
+     "stem": "The club has a new robot.",
+     "answer": "T",
+     "why": "We have a new robot.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u1-3-B2",
+     "type": "tf",
+     "stem": "The robot can jump.",
+     "answer": "F",
+     "why": "No, it can't jump.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u1-3-B3",
+     "type": "tf",
+     "stem": "Lily works on the robot every day.",
+     "answer": "T",
+     "why": "She works on the robot every day.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5r-u1-3-C1",
+     "type": "fill",
+     "stem": "The robot can walk and ____.",
+     "answers": [
+      [
+       "dance"
+      ]
+     ],
+     "why": "It can walk and dance.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u1-3-C2",
+     "type": "fill",
+     "stem": "We have a new ____.",
+     "answers": [
+      [
+       "robot"
+      ]
+     ],
+     "why": "We have a new robot.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u1-3-C3",
+     "type": "fill",
+     "stem": "Lily works on the robot every ____.",
+     "answers": [
+      [
+       "day"
+      ]
+     ],
+     "why": "She works on the robot every day.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

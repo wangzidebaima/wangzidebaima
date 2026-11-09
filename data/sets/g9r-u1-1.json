@@ -1,0 +1,151 @@
+{
+ "id": "g9r-u1-1",
+ "kind": "reading",
+ "title": "Green Wall at the Desert's Edge",
+ "subtitle": "考点：环境变化 / bring about, lack, support",
+ "unit": "E9U1",
+ "passage": [
+  "Years ago, Dahe Village lay next to a rough, sandy desert. In spring, sandstorms came often and covered the farmland with dirt. Corn could not grow well because the soil was dry and the villagers lacked water. Many young people left for the city.",
+  "Then the government gave the village its support. Experts told the villagers to plant bushes with long roots. The roots hold the soil, and the bushes stop the wind. After ten years, the village was very different. The sandstorms became fewer, and the farmland was green again. Now visitors come to see the bushes, and the village sells corn all over the country. The villagers say, 'Hard work brings about great change.'"
+ ],
+ "vocab": "sandstorm 沙尘暴 · farmland 农田 · soil 土壤 · bush 灌木 · root 根 · support 支持",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9r-u1-1-A1",
+     "type": "choice",
+     "stem": "Why could corn not grow well at first?",
+     "options": [
+      "There were too many cars.",
+      "The soil was dry and the villagers lacked water.",
+      "The villagers did not like corn.",
+      "The government stopped the villagers."
+     ],
+     "answer": "B",
+     "why": "the soil was dry and the villagers lacked water",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u1-1-A2",
+     "type": "choice",
+     "stem": "What did the experts tell the villagers to plant?",
+     "options": [
+      "Tall trees with big leaves.",
+      "Rice in the sand.",
+      "Bushes with long roots.",
+      "Flowers in greenhouses."
+     ],
+     "answer": "C",
+     "why": "Experts told the villagers to plant bushes with long roots.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u1-1-A3",
+     "type": "choice",
+     "stem": "What do the roots do?",
+     "options": [
+      "They bring rain.",
+      "They make the wind stronger.",
+      "They turn sand into corn.",
+      "They hold the soil."
+     ],
+     "answer": "D",
+     "why": "The roots hold the soil.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u1-1-A4",
+     "type": "choice",
+     "stem": "What happened after ten years?",
+     "options": [
+      "The farmland was green again.",
+      "The village became a big city.",
+      "The sandstorms came more often.",
+      "All the villagers left."
+     ],
+     "answer": "A",
+     "why": "After ten years ... the farmland was green again.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g9r-u1-1-B1",
+     "type": "tf",
+     "stem": "Sandstorms often covered the farmland in spring.",
+     "answer": "T",
+     "why": "In spring, sandstorms came often and covered the farmland with dirt.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u1-1-B2",
+     "type": "tf",
+     "stem": "The government did not help the village.",
+     "answer": "F",
+     "why": "The government gave the village its support.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u1-1-B3",
+     "type": "tf",
+     "stem": "The village now sells corn to other places.",
+     "answer": "T",
+     "why": "the village sells corn all over the country.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9r-u1-1-C1",
+     "type": "fill",
+     "stem": "The villagers ____ water.",
+     "answers": [
+      [
+       "lacked"
+      ]
+     ],
+     "why": "the villagers lacked water.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u1-1-C2",
+     "type": "fill",
+     "stem": "Experts told them to plant bushes with long ____.",
+     "answers": [
+      [
+       "roots"
+      ]
+     ],
+     "why": "bushes with long roots.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u1-1-C3",
+     "type": "fill",
+     "stem": "The government gave the village its ____.",
+     "answers": [
+      [
+       "support"
+      ]
+     ],
+     "why": "gave the village its support.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

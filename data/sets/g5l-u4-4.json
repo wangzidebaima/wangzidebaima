@@ -1,0 +1,120 @@
+{
+ "id": "g5l-u4-4",
+ "kind": "listening",
+ "title": "A Good Habit",
+ "subtitle": "对话",
+ "unit": "E5U4",
+ "speakers": {
+  "Lily": "c1",
+  "Sam": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Lily",
+   "t": "Sam, you look tired."
+  },
+  {
+   "s": "Sam",
+   "t": "I go to bed late every night."
+  },
+  {
+   "s": "Lily",
+   "t": "That is not a good habit."
+  },
+  {
+   "s": "Sam",
+   "t": "I know. I have less free time because of homework."
+  },
+  {
+   "s": "Lily",
+   "t": "You should finish homework early."
+  },
+  {
+   "s": "Sam",
+   "t": "OK. I will try."
+  },
+  {
+   "s": "Lily",
+   "t": "Then you can sleep for ten hours."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5l-u4-4-A1",
+     "type": "choice",
+     "stem": "Why does Sam look tired?",
+     "options": [
+      "He is ill.",
+      "He goes to bed late.",
+      "He runs too much."
+     ],
+     "answer": "B",
+     "why": "I go to bed late every night.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u4-4-A2",
+     "type": "choice",
+     "stem": "Why does Sam have less free time?",
+     "options": [
+      "He plays football.",
+      "He watches TV.",
+      "He has homework."
+     ],
+     "answer": "C",
+     "why": "I have less free time because of homework.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u4-4-A3",
+     "type": "choice",
+     "stem": "What should Sam do?",
+     "options": [
+      "Finish homework early.",
+      "Stop doing homework.",
+      "Play more."
+     ],
+     "answer": "A",
+     "why": "You should finish homework early.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5l-u4-4-B1",
+     "type": "fill",
+     "stem": "Going to bed late is not a good ____.",
+     "answers": [
+      [
+       "habit"
+      ]
+     ],
+     "why": "That is not a good habit.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u4-4-B2",
+     "type": "fill",
+     "stem": "Sam can sleep for ten ____.",
+     "answers": [
+      [
+       "hours"
+      ]
+     ],
+     "why": "you can sleep for ten hours.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

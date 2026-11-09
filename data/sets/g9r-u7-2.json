@@ -1,0 +1,151 @@
+{
+ "id": "g9r-u7-2",
+ "kind": "reading",
+ "title": "Different Kinds of Music",
+ "subtitle": "考点：音乐风格 / jazz, rap, traditional",
+ "unit": "E9U7",
+ "passage": [
+  "There are many styles of music, and each one has its own character. Classical music is often played by an orchestra and can be calm or powerful. Jazz comes from the United States. It is full of surprises because the players often make up the music as they play. Pop songs are easy to sing along to, so they are popular with young people.",
+  "Rap is different. The performer speaks the lyrics quickly and follows a strong rhythm. Traditional music, such as Chinese folk songs, tells the stories and customs of a place. Nowadays, we can download any kind of music in seconds and listen to it on our phones. Some people like only one style, but others enjoy many kinds. As the saying goes, music has no borders."
+ ],
+ "vocab": "style 风格 · jazz 爵士乐 · rap 说唱 · lyric 歌词 · traditional 传统的 · download 下载",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9r-u7-2-A1",
+     "type": "choice",
+     "stem": "Where does jazz come from?",
+     "options": [
+      "Poland.",
+      "Kenya.",
+      "The United States.",
+      "Greece."
+     ],
+     "answer": "C",
+     "why": "Jazz comes from the United States.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u7-2-A2",
+     "type": "choice",
+     "stem": "Why is jazz full of surprises?",
+     "options": [
+      "It is always very quiet.",
+      "It has no instruments.",
+      "It is only for old people.",
+      "The players often make up the music as they play."
+     ],
+     "answer": "D",
+     "why": "the players often make up the music as they play.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u7-2-A3",
+     "type": "choice",
+     "stem": "What does a rap performer do?",
+     "options": [
+      "Speaks the lyrics quickly with a strong rhythm.",
+      "Plays the violin slowly.",
+      "Sings without words.",
+      "Dances without music."
+     ],
+     "answer": "A",
+     "why": "The performer speaks the lyrics quickly and follows a strong rhythm.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u7-2-A4",
+     "type": "choice",
+     "stem": "What does traditional music tell us about?",
+     "options": [
+      "The price of tickets.",
+      "The stories and customs of a place.",
+      "The weather in space.",
+      "The speed of cars."
+     ],
+     "answer": "B",
+     "why": "tells the stories and customs of a place.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g9r-u7-2-B1",
+     "type": "tf",
+     "stem": "Classical music is often played by an orchestra.",
+     "answer": "T",
+     "why": "Classical music is often played by an orchestra",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u7-2-B2",
+     "type": "tf",
+     "stem": "Pop songs are hard to sing along to.",
+     "answer": "F",
+     "why": "Pop songs are easy to sing along to",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u7-2-B3",
+     "type": "tf",
+     "stem": "We can download music in seconds nowadays.",
+     "answer": "T",
+     "why": "we can download any kind of music in seconds",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9r-u7-2-C1",
+     "type": "fill",
+     "stem": "Jazz is full of ____.",
+     "answers": [
+      [
+       "surprises"
+      ]
+     ],
+     "why": "It is full of surprises",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u7-2-C2",
+     "type": "fill",
+     "stem": "Rap follows a strong ____.",
+     "answers": [
+      [
+       "rhythm"
+      ]
+     ],
+     "why": "follows a strong rhythm.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u7-2-C3",
+     "type": "fill",
+     "stem": "Some people like only one ____ of music.",
+     "answers": [
+      [
+       "style"
+      ]
+     ],
+     "why": "Some people like only one style",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

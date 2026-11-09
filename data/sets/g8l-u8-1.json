@@ -1,0 +1,127 @@
+{
+ "id": "g8l-u8-1",
+ "kind": "listening",
+ "title": "Showing a Visitor Around",
+ "subtitle": "对话",
+ "unit": "E8U8",
+ "speakers": {
+  "Li Hua": "m1",
+  "Visitor": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Visitor",
+   "t": "Hi, Li Hua. Thank you for showing me around your school."
+  },
+  {
+   "s": "Li Hua",
+   "t": "My pleasure. This is our library. It opens at eight."
+  },
+  {
+   "s": "Visitor",
+   "t": "It is so big! How many books are there?"
+  },
+  {
+   "s": "Li Hua",
+   "t": "More than fifty thousand. The gym is next to it."
+  },
+  {
+   "s": "Visitor",
+   "t": "Do students play sports every day?"
+  },
+  {
+   "s": "Li Hua",
+   "t": "Yes, we have PE three times a week. Now let me show you the music room."
+  },
+  {
+   "s": "Visitor",
+   "t": "I would like that. I play the piano."
+  },
+  {
+   "s": "Li Hua",
+   "t": "Then you can try ours. Just be yourself and have fun."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8l-u8-1-A1",
+     "type": "choice",
+     "stem": "When does the library open?",
+     "options": [
+      "At seven.",
+      "At eight.",
+      "At nine.",
+      "At ten."
+     ],
+     "answer": "B",
+     "why": "It opens at eight.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u8-1-A2",
+     "type": "choice",
+     "stem": "How often do students have PE?",
+     "options": [
+      "Every day.",
+      "Once a week.",
+      "Three times a week.",
+      "Twice a month."
+     ],
+     "answer": "C",
+     "why": "PE three times a week.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u8-1-A3",
+     "type": "choice",
+     "stem": "What instrument does the visitor play?",
+     "options": [
+      "The flute.",
+      "The violin.",
+      "The drums.",
+      "The piano."
+     ],
+     "answer": "D",
+     "why": "I play the piano.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8l-u8-1-B1",
+     "type": "fill",
+     "stem": "There are more than fifty ____ books.",
+     "answers": [
+      [
+       "thousand"
+      ]
+     ],
+     "why": "fifty thousand.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u8-1-B2",
+     "type": "fill",
+     "stem": "The gym is next to the ____.",
+     "answers": [
+      [
+       "library"
+      ]
+     ],
+     "why": "The gym is next to it (the library).",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

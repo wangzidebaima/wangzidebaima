@@ -1,0 +1,127 @@
+{
+ "id": "g8l-u2-2",
+ "kind": "listening",
+ "title": "A Housewarming Party",
+ "subtitle": "对话",
+ "unit": "E8U2",
+ "speakers": {
+  "Lin": "f1",
+  "Mark": "m1"
+ },
+ "transcript": [
+  {
+   "s": "Lin",
+   "t": "Mark, we are having a party on Saturday. Would you like to come?"
+  },
+  {
+   "s": "Mark",
+   "t": "Sure! What is the party for?"
+  },
+  {
+   "s": "Lin",
+   "t": "It's for our new apartment. We moved in last week."
+  },
+  {
+   "s": "Mark",
+   "t": "How many floors are there in your block?"
+  },
+  {
+   "s": "Lin",
+   "t": "Eighteen. We live on the sixth floor, and there is a lift."
+  },
+  {
+   "s": "Mark",
+   "t": "Good. Shall I bring something?"
+  },
+  {
+   "s": "Lin",
+   "t": "Maybe some biscuits. My mum will cook dinner."
+  },
+  {
+   "s": "Mark",
+   "t": "No problem. See you at six!"
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8l-u2-2-A1",
+     "type": "choice",
+     "stem": "When is the party?",
+     "options": [
+      "On Sunday.",
+      "On Friday.",
+      "On Saturday.",
+      "On Monday."
+     ],
+     "answer": "C",
+     "why": "a party on Saturday.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u2-2-A2",
+     "type": "choice",
+     "stem": "Which floor does Lin live on?",
+     "options": [
+      "The first floor.",
+      "The eighteenth floor.",
+      "The eighth floor.",
+      "The sixth floor."
+     ],
+     "answer": "D",
+     "why": "We live on the sixth floor.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u2-2-A3",
+     "type": "choice",
+     "stem": "What will Mark bring?",
+     "options": [
+      "Some biscuits.",
+      "Some flowers.",
+      "Some fruit.",
+      "Some drinks."
+     ],
+     "answer": "A",
+     "why": "Maybe some biscuits.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8l-u2-2-B1",
+     "type": "fill",
+     "stem": "There are ____ floors in the block.",
+     "answers": [
+      [
+       "eighteen"
+      ]
+     ],
+     "why": "Eighteen.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u2-2-B2",
+     "type": "fill",
+     "stem": "Lin's mum will cook ____.",
+     "answers": [
+      [
+       "dinner"
+      ]
+     ],
+     "why": "My mum will cook dinner.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,148 @@
+{
+ "id": "g3r-u6-4",
+ "kind": "reading",
+ "title": "Count the Fruit",
+ "subtitle": "考点：数字和加法 / Six and three make nine.",
+ "unit": "E3U6",
+ "dialogue": [
+  {
+   "s": "Amy",
+   "t": "I have six bananas."
+  },
+  {
+   "s": "Ben",
+   "t": "I have three oranges."
+  },
+  {
+   "s": "Amy",
+   "t": "Six and three make nine fruits."
+  },
+  {
+   "s": "Ben",
+   "t": "Let's eat them!"
+  }
+ ],
+ "vocab": "six 六 · three 三 · nine 九 · banana 香蕉 · orange 橙子 · eat 吃",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3r-u6-4-A1",
+     "type": "choice",
+     "stem": "How many bananas does Amy have?",
+     "options": [
+      "Three.",
+      "Six.",
+      "Nine."
+     ],
+     "answer": "B",
+     "why": "I have six bananas.",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u6-4-A2",
+     "type": "choice",
+     "stem": "How many oranges does Ben have?",
+     "options": [
+      "Four.",
+      "Six.",
+      "Three."
+     ],
+     "answer": "C",
+     "why": "I have three oranges.",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u6-4-A3",
+     "type": "choice",
+     "stem": "How many fruits do they have?",
+     "options": [
+      "Nine.",
+      "Ten.",
+      "Seven."
+     ],
+     "answer": "A",
+     "why": "Six and three make nine fruits.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g3r-u6-4-B1",
+     "type": "tf",
+     "stem": "Amy has six bananas.",
+     "answer": "T",
+     "why": "I have six bananas.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u6-4-B2",
+     "type": "tf",
+     "stem": "Ben has four oranges.",
+     "answer": "F",
+     "why": "I have three oranges.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u6-4-B3",
+     "type": "tf",
+     "stem": "Ben wants to eat the fruits.",
+     "answer": "T",
+     "why": "Let's eat them!",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3r-u6-4-C1",
+     "type": "fill",
+     "stem": "Amy has ____ bananas.",
+     "answers": [
+      [
+       "six"
+      ]
+     ],
+     "why": "I have six bananas.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u6-4-C2",
+     "type": "fill",
+     "stem": "Ben has ____ oranges.",
+     "answers": [
+      [
+       "three"
+      ]
+     ],
+     "why": "I have three oranges.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u6-4-C3",
+     "type": "fill",
+     "stem": "Six and three make ____ fruits.",
+     "answers": [
+      [
+       "nine"
+      ]
+     ],
+     "why": "Six and three make nine fruits.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

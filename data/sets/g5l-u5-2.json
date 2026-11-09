@@ -1,0 +1,120 @@
+{
+ "id": "g5l-u5-2",
+ "kind": "listening",
+ "title": "Ice Cream Day",
+ "subtitle": "对话",
+ "unit": "E5U5",
+ "speakers": {
+  "Lily": "c1",
+  "Tom": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Lily",
+   "t": "It is hot today. I want an ice cream."
+  },
+  {
+   "s": "Tom",
+   "t": "Me too. Let's go to the shop."
+  },
+  {
+   "s": "Lily",
+   "t": "What flavour do you like?"
+  },
+  {
+   "s": "Tom",
+   "t": "I like chocolate. And you?"
+  },
+  {
+   "s": "Lily",
+   "t": "I like coconut."
+  },
+  {
+   "s": "Tom",
+   "t": "Coconut? That is interesting."
+  },
+  {
+   "s": "Lily",
+   "t": "Try it. It is sweet and cool."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5l-u5-2-A1",
+     "type": "choice",
+     "stem": "What does Lily want?",
+     "options": [
+      "A hamburger.",
+      "Some tea.",
+      "An ice cream."
+     ],
+     "answer": "C",
+     "why": "I want an ice cream.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u5-2-A2",
+     "type": "choice",
+     "stem": "What flavour does Tom like?",
+     "options": [
+      "Chocolate.",
+      "Coconut.",
+      "Strawberry."
+     ],
+     "answer": "A",
+     "why": "I like chocolate.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u5-2-A3",
+     "type": "choice",
+     "stem": "What flavour does Lily like?",
+     "options": [
+      "Chocolate.",
+      "Coconut.",
+      "Lemon."
+     ],
+     "answer": "B",
+     "why": "I like coconut.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5l-u5-2-B1",
+     "type": "fill",
+     "stem": "It is ____ today.",
+     "answers": [
+      [
+       "hot"
+      ]
+     ],
+     "why": "It is hot today.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u5-2-B2",
+     "type": "fill",
+     "stem": "Coconut ice cream is sweet and ____.",
+     "answers": [
+      [
+       "cool"
+      ]
+     ],
+     "why": "It is sweet and cool.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

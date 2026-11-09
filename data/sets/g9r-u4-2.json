@@ -1,0 +1,151 @@
+{
+ "id": "g9r-u4-2",
+ "kind": "reading",
+ "title": "Grandpa's Memory Box",
+ "subtitle": "考点：回忆与情感 / grandson, keep in mind, recall",
+ "unit": "E9U4",
+ "passage": [
+  "Jack's grandfather is seventy-eight. Sometimes he forgets where he put his glasses, but he can recall events from fifty years ago clearly. Last Sunday, Jack sat with him in the garden, and Grandpa took out an old wooden box. Inside were a few photos, a ticket to an opera and a small notebook.",
+  "'This photo was taken at our first picnic,' Grandpa said. 'It rained, and we ran under a big tree.' He laughed. Jack wrote down the story in a notebook. 'Keep in mind that old stories are like treasure,' Grandpa told him. 'If nobody remembers them, they disappear.' Jack promised to record more of Grandpa's stories on his phone, so the whole family can listen to them in the future."
+ ],
+ "vocab": "grandson 孙子 · recall 回忆 · opera 歌剧 · picnic 野餐 · notebook 笔记本 · treasure 宝藏",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9r-u4-2-A1",
+     "type": "choice",
+     "stem": "What does Grandpa sometimes forget?",
+     "options": [
+      "His grandson's name.",
+      "His own age.",
+      "Where he put his glasses.",
+      "The way to the garden."
+     ],
+     "answer": "C",
+     "why": "Sometimes he forgets where he put his glasses",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u4-2-A2",
+     "type": "choice",
+     "stem": "What was in the wooden box?",
+     "options": [
+      "Old coins and keys.",
+      "A phone and a camera.",
+      "Books and pens.",
+      "Photos, an opera ticket and a notebook."
+     ],
+     "answer": "D",
+     "why": "Inside were a few photos, a ticket to an opera and a small notebook.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u4-2-A3",
+     "type": "choice",
+     "stem": "What happened at the first picnic?",
+     "options": [
+      "It rained and they ran under a tree.",
+      "They lost the photos.",
+      "They saw a squirrel.",
+      "They met Jack."
+     ],
+     "answer": "A",
+     "why": "It rained, and we ran under a big tree.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u4-2-A4",
+     "type": "choice",
+     "stem": "What did Jack promise to do?",
+     "options": [
+      "Sell the old box.",
+      "Record Grandpa's stories on his phone.",
+      "Move to another city.",
+      "Throw away the photos."
+     ],
+     "answer": "B",
+     "why": "Jack promised to record more of Grandpa's stories on his phone",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g9r-u4-2-B1",
+     "type": "tf",
+     "stem": "Grandpa can clearly recall events from fifty years ago.",
+     "answer": "T",
+     "why": "he can recall events from fifty years ago clearly.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u4-2-B2",
+     "type": "tf",
+     "stem": "They opened the box in the kitchen.",
+     "answer": "F",
+     "why": "Jack sat with him in the garden.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u4-2-B3",
+     "type": "tf",
+     "stem": "Grandpa thinks old stories are like treasure.",
+     "answer": "T",
+     "why": "old stories are like treasure.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9r-u4-2-C1",
+     "type": "fill",
+     "stem": "Jack's ____ is seventy-eight.",
+     "answers": [
+      [
+       "grandfather"
+      ]
+     ],
+     "why": "Jack's grandfather is seventy-eight.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u4-2-C2",
+     "type": "fill",
+     "stem": "The box held a ticket to an ____.",
+     "answers": [
+      [
+       "opera"
+      ]
+     ],
+     "why": "a ticket to an opera",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u4-2-C3",
+     "type": "fill",
+     "stem": "Grandpa said old stories are like ____.",
+     "answers": [
+      [
+       "treasure"
+      ]
+     ],
+     "why": "old stories are like treasure.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

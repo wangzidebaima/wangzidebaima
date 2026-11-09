@@ -1,0 +1,120 @@
+{
+ "id": "g5l-u5-3",
+ "kind": "listening",
+ "title": "Food from Plants",
+ "subtitle": "对话",
+ "unit": "E5U5",
+ "speakers": {
+  "Ben": "c1",
+  "Mrs Wang": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Ben",
+   "t": "Mrs Wang, what is this white thing?"
+  },
+  {
+   "s": "Mrs Wang",
+   "t": "It is a lotus root. It grows in the lake."
+  },
+  {
+   "s": "Ben",
+   "t": "Can we eat it?"
+  },
+  {
+   "s": "Mrs Wang",
+   "t": "Yes. It is crisp and tasty."
+  },
+  {
+   "s": "Ben",
+   "t": "What about the seeds?"
+  },
+  {
+   "s": "Mrs Wang",
+   "t": "You can eat the seeds too. They are small and round."
+  },
+  {
+   "s": "Ben",
+   "t": "Plants are interesting."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5l-u5-3-A1",
+     "type": "choice",
+     "stem": "Where does the lotus root grow?",
+     "options": [
+      "In the lake.",
+      "On a tree.",
+      "In the forest."
+     ],
+     "answer": "A",
+     "why": "It grows in the lake.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u5-3-A2",
+     "type": "choice",
+     "stem": "How is the lotus root?",
+     "options": [
+      "Sweet and sour.",
+      "Crisp and tasty.",
+      "Soft and hot."
+     ],
+     "answer": "B",
+     "why": "It is crisp and tasty.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u5-3-A3",
+     "type": "choice",
+     "stem": "What are the seeds like?",
+     "options": [
+      "Big and long.",
+      "Big and heavy.",
+      "Small and round."
+     ],
+     "answer": "C",
+     "why": "They are small and round.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5l-u5-3-B1",
+     "type": "fill",
+     "stem": "The lotus root is ____.",
+     "answers": [
+      [
+       "white"
+      ]
+     ],
+     "why": "what is this white thing?",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u5-3-B2",
+     "type": "fill",
+     "stem": "Plants are ____.",
+     "answers": [
+      [
+       "interesting"
+      ]
+     ],
+     "why": "Plants are interesting.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

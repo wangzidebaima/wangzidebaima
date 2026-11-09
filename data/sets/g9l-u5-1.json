@@ -1,0 +1,127 @@
+{
+ "id": "g9l-u5-1",
+ "kind": "listening",
+ "title": "Inventions Around Us",
+ "subtitle": "对话",
+ "unit": "E9U5",
+ "speakers": {
+  "Amy": "f1",
+  "Ben": "m1"
+ },
+ "transcript": [
+  {
+   "s": "Ben",
+   "t": "Amy, what is that machine in the school workshop?"
+  },
+  {
+   "s": "Amy",
+   "t": "It is a 3D printer. It can make small plastic toys layer by layer."
+  },
+  {
+   "s": "Ben",
+   "t": "Amazing! Is it expensive?"
+  },
+  {
+   "s": "Amy",
+   "t": "A little, but it is getting cheaper every year, so many schools can afford one now."
+  },
+  {
+   "s": "Ben",
+   "t": "Can it print a phone?"
+  },
+  {
+   "s": "Amy",
+   "t": "Not yet. It makes simple things, like a cup or a toy car."
+  },
+  {
+   "s": "Ben",
+   "t": "I would like to invent something useful."
+  },
+  {
+   "s": "Amy",
+   "t": "Me too. Maybe a laptop that never runs out of power!"
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9l-u5-1-A1",
+     "type": "choice",
+     "stem": "What is the machine in the workshop?",
+     "options": [
+      "A laptop.",
+      "A 3D printer.",
+      "A telephone.",
+      "A camera."
+     ],
+     "answer": "B",
+     "why": "It is a 3D printer.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u5-1-A2",
+     "type": "choice",
+     "stem": "What does the machine use to make toys?",
+     "options": [
+      "Paper.",
+      "Stone.",
+      "Plastic.",
+      "Glass."
+     ],
+     "answer": "C",
+     "why": "small plastic toys.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u5-1-A3",
+     "type": "choice",
+     "stem": "Why can many schools afford the machine now?",
+     "options": [
+      "The government gives it for free.",
+      "It is made of paper.",
+      "It is very small.",
+      "It is getting cheaper every year."
+     ],
+     "answer": "D",
+     "why": "it is getting cheaper every year, so many schools can afford one now.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9l-u5-1-B1",
+     "type": "fill",
+     "stem": "The machine makes things layer by ____.",
+     "answers": [
+      [
+       "layer"
+      ]
+     ],
+     "why": "layer by layer.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u5-1-B2",
+     "type": "fill",
+     "stem": "Amy wants a laptop that never runs ____ of power.",
+     "answers": [
+      [
+       "out"
+      ]
+     ],
+     "why": "never runs out of power.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

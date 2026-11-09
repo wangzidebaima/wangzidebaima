@@ -1,0 +1,164 @@
+{
+ "id": "g6r-u4-3",
+ "kind": "reading",
+ "title": "A Lucky Day",
+ "subtitle": "考点：一般将来时 / half the price",
+ "unit": "E6U4",
+ "dialogue": [
+  {
+   "s": "Mike",
+   "t": "Sam, today is a lucky day!"
+  },
+  {
+   "s": "Sam",
+   "t": "Why?"
+  },
+  {
+   "s": "Mike",
+   "t": "The museum ticket costs half the price today."
+  },
+  {
+   "s": "Sam",
+   "t": "Really? How much is it?"
+  },
+  {
+   "s": "Mike",
+   "t": "It is ten yuan. It is usually twenty yuan."
+  },
+  {
+   "s": "Sam",
+   "t": "Let's go this afternoon."
+  },
+  {
+   "s": "Mike",
+   "t": "Good idea. I have thirty yuan."
+  },
+  {
+   "s": "Sam",
+   "t": "Then we can buy two tickets and two drinks."
+  }
+ ],
+ "vocab": "lucky 幸运的 · ticket 票 · half 一半 · price 价格 · museum 博物馆 · drink 饮料",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6r-u4-3-A1",
+     "type": "choice",
+     "stem": "Why is today a lucky day?",
+     "options": [
+      "The tickets are half price.",
+      "The museum is free.",
+      "The drinks are free."
+     ],
+     "answer": "A",
+     "why": "The museum ticket costs half the price today.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u4-3-A2",
+     "type": "choice",
+     "stem": "How much is a ticket today?",
+     "options": [
+      "Five yuan.",
+      "Ten yuan.",
+      "Forty yuan."
+     ],
+     "answer": "B",
+     "why": "It is ten yuan.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u4-3-A3",
+     "type": "choice",
+     "stem": "What can Mike and Sam buy?",
+     "options": [
+      "Two books and two drinks.",
+      "Three tickets and one drink.",
+      "Two tickets and two drinks."
+     ],
+     "answer": "C",
+     "why": "we can buy two tickets and two drinks",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g6r-u4-3-B1",
+     "type": "tf",
+     "stem": "The tickets are half price today.",
+     "answer": "T",
+     "why": "half the price today",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u4-3-B2",
+     "type": "tf",
+     "stem": "The usual ticket price is ten yuan.",
+     "answer": "F",
+     "why": "It is usually twenty yuan.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u4-3-B3",
+     "type": "tf",
+     "stem": "Mike and Sam will go this afternoon.",
+     "answer": "T",
+     "why": "Let's go this afternoon.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6r-u4-3-C1",
+     "type": "fill",
+     "stem": "The museum ticket costs ____ the price today.",
+     "answers": [
+      [
+       "half"
+      ]
+     ],
+     "why": "half the price today",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u4-3-C2",
+     "type": "fill",
+     "stem": "A ticket usually costs ____ yuan.",
+     "answers": [
+      [
+       "twenty"
+      ]
+     ],
+     "why": "It is usually twenty yuan.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u4-3-C3",
+     "type": "fill",
+     "stem": "Mike has ____ yuan.",
+     "answers": [
+      [
+       "thirty"
+      ]
+     ],
+     "why": "I have thirty yuan.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

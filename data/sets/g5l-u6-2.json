@@ -1,0 +1,120 @@
+{
+ "id": "g5l-u6-2",
+ "kind": "listening",
+ "title": "Weather Report",
+ "subtitle": "对话",
+ "unit": "E5U6",
+ "speakers": {
+  "Mum": "c1",
+  "Lily": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Lily",
+   "t": "Mum, is it fine today?"
+  },
+  {
+   "s": "Mum",
+   "t": "No. The weather report says it will rain."
+  },
+  {
+   "s": "Lily",
+   "t": "Oh no. We are going on a trip."
+  },
+  {
+   "s": "Mum",
+   "t": "Don't worry. Bring an umbrella."
+  },
+  {
+   "s": "Lily",
+   "t": "Will there be wind?"
+  },
+  {
+   "s": "Mum",
+   "t": "Yes, a strong wind in the afternoon."
+  },
+  {
+   "s": "Lily",
+   "t": "Then I will bring a coat too."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5l-u6-2-A1",
+     "type": "choice",
+     "stem": "What will the weather be like?",
+     "options": [
+      "Sunny.",
+      "Foggy.",
+      "Rainy."
+     ],
+     "answer": "C",
+     "why": "it will rain.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u6-2-A2",
+     "type": "choice",
+     "stem": "What should Lily bring?",
+     "options": [
+      "An umbrella.",
+      "A hat.",
+      "A bag."
+     ],
+     "answer": "A",
+     "why": "Bring an umbrella.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u6-2-A3",
+     "type": "choice",
+     "stem": "When will there be strong wind?",
+     "options": [
+      "In the morning.",
+      "In the afternoon.",
+      "At night."
+     ],
+     "answer": "B",
+     "why": "a strong wind in the afternoon.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5l-u6-2-B1",
+     "type": "fill",
+     "stem": "Mum says, Don't ____.",
+     "answers": [
+      [
+       "worry"
+      ]
+     ],
+     "why": "Don't worry.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u6-2-B2",
+     "type": "fill",
+     "stem": "Lily will bring a ____ too.",
+     "answers": [
+      [
+       "coat"
+      ]
+     ],
+     "why": "I will bring a coat too.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

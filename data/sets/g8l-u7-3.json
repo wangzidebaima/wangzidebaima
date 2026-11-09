@@ -1,0 +1,127 @@
+{
+ "id": "g8l-u7-3",
+ "kind": "listening",
+ "title": "Paying with a Phone",
+ "subtitle": "对话",
+ "unit": "E8U7",
+ "speakers": {
+  "Jennifer": "f1",
+  "Grandpa": "m1"
+ },
+ "transcript": [
+  {
+   "s": "Grandpa",
+   "t": "Jennifer, why don't you carry any cash?"
+  },
+  {
+   "s": "Jennifer",
+   "t": "I pay with my phone, Grandpa. It is faster and safer."
+  },
+  {
+   "s": "Grandpa",
+   "t": "But what if the battery runs low?"
+  },
+  {
+   "s": "Jennifer",
+   "t": "I always carry a small charger with me."
+  },
+  {
+   "s": "Grandpa",
+   "t": "In my day, we kept money in a wallet."
+  },
+  {
+   "s": "Jennifer",
+   "t": "You can learn to use it. I can teach you."
+  },
+  {
+   "s": "Grandpa",
+   "t": "Hmm, maybe next weekend."
+  },
+  {
+   "s": "Jennifer",
+   "t": "Great. It will take only ten minutes."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8l-u7-3-A1",
+     "type": "choice",
+     "stem": "How does Jennifer pay?",
+     "options": [
+      "With cash.",
+      "With a card only.",
+      "With a ticket.",
+      "With her phone."
+     ],
+     "answer": "D",
+     "why": "I pay with my phone.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u7-3-A2",
+     "type": "choice",
+     "stem": "What does Jennifer carry in case the battery runs low?",
+     "options": [
+      "A small charger.",
+      "Some cash.",
+      "A wallet.",
+      "A second phone."
+     ],
+     "answer": "A",
+     "why": "I always carry a small charger.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u7-3-A3",
+     "type": "choice",
+     "stem": "When will Grandpa learn?",
+     "options": [
+      "Tomorrow.",
+      "Maybe next weekend.",
+      "Never.",
+      "Tonight."
+     ],
+     "answer": "B",
+     "why": "maybe next weekend.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8l-u7-3-B1",
+     "type": "fill",
+     "stem": "Paying with a phone is faster and ____.",
+     "answers": [
+      [
+       "safer"
+      ]
+     ],
+     "why": "faster and safer.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u7-3-B2",
+     "type": "fill",
+     "stem": "It will take only ten ____.",
+     "answers": [
+      [
+       "minutes"
+      ]
+     ],
+     "why": "only ten minutes.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

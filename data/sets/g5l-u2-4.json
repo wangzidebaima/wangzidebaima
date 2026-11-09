@@ -1,0 +1,120 @@
+{
+ "id": "g5l-u2-4",
+ "kind": "listening",
+ "title": "Don't Be Afraid",
+ "subtitle": "对话",
+ "unit": "E5U2",
+ "speakers": {
+  "Amy": "c1",
+  "Tom": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Amy",
+   "t": "Tom, why are you standing there?"
+  },
+  {
+   "s": "Tom",
+   "t": "I am afraid of the big dog."
+  },
+  {
+   "s": "Amy",
+   "t": "Don't be afraid. It is my dog, Lucky."
+  },
+  {
+   "s": "Tom",
+   "t": "Is it friendly?"
+  },
+  {
+   "s": "Amy",
+   "t": "Yes. It likes to play with children."
+  },
+  {
+   "s": "Tom",
+   "t": "Then I can touch it?"
+  },
+  {
+   "s": "Amy",
+   "t": "Yes. Move slowly and say hello."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5l-u2-4-A1",
+     "type": "choice",
+     "stem": "What is Tom afraid of?",
+     "options": [
+      "The cat.",
+      "The big dog.",
+      "The bus."
+     ],
+     "answer": "B",
+     "why": "I am afraid of the big dog.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u2-4-A2",
+     "type": "choice",
+     "stem": "What is the dog's name?",
+     "options": [
+      "Lucy.",
+      "Buddy.",
+      "Lucky."
+     ],
+     "answer": "C",
+     "why": "It is my dog, Lucky.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u2-4-A3",
+     "type": "choice",
+     "stem": "What should Tom do?",
+     "options": [
+      "Move slowly.",
+      "Run away.",
+      "Shout loudly."
+     ],
+     "answer": "A",
+     "why": "Move slowly and say hello.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5l-u2-4-B1",
+     "type": "fill",
+     "stem": "Don't be ____.",
+     "answers": [
+      [
+       "afraid"
+      ]
+     ],
+     "why": "Don't be afraid.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u2-4-B2",
+     "type": "fill",
+     "stem": "The dog is ____.",
+     "answers": [
+      [
+       "friendly"
+      ]
+     ],
+     "why": "Is it friendly? Yes.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

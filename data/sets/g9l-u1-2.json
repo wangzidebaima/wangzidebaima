@@ -1,0 +1,114 @@
+{
+ "id": "g9l-u1-2",
+ "kind": "listening",
+ "title": "My Hometown Then and Now",
+ "subtitle": "短文",
+ "unit": "E9U1",
+ "speakers": {
+  "Mei": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Mei",
+   "t": "My hometown has changed a great deal in the last twenty years. When my father was a boy, there was only a narrow road, and it took three hours to reach the city."
+  },
+  {
+   "s": "Mei",
+   "t": "Now there is a wide highway and a tunnel through the mountain, so the trip takes only forty minutes."
+  },
+  {
+   "s": "Mei",
+   "t": "A new railway also links our town to the capital, and many visitors come to see our beautiful lakes."
+  },
+  {
+   "s": "Mei",
+   "t": "Many villagers have moved into new housing, and the old houses are now a small museum."
+  },
+  {
+   "s": "Mei",
+   "t": "My grandmother says our town has seen a miracle. I think she is right."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9l-u1-2-A1",
+     "type": "choice",
+     "stem": "How long did it take to reach the city when Mei's father was a boy?",
+     "options": [
+      "Forty minutes.",
+      "One hour.",
+      "Three hours.",
+      "Five hours."
+     ],
+     "answer": "C",
+     "why": "it took three hours to reach the city.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u1-2-A2",
+     "type": "choice",
+     "stem": "What goes through the mountain now?",
+     "options": [
+      "A greenhouse.",
+      "A port.",
+      "A factory.",
+      "A tunnel."
+     ],
+     "answer": "D",
+     "why": "a wide highway and a tunnel through the mountain.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u1-2-A3",
+     "type": "choice",
+     "stem": "What are the old houses now?",
+     "options": [
+      "A small museum.",
+      "A school.",
+      "A hotel.",
+      "A farm."
+     ],
+     "answer": "A",
+     "why": "the old houses are now a small museum.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9l-u1-2-B1",
+     "type": "fill",
+     "stem": "A new ____ links the town to the capital.",
+     "answers": [
+      [
+       "railway"
+      ]
+     ],
+     "why": "A new railway also links our town to the capital.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u1-2-B2",
+     "type": "fill",
+     "stem": "The trip now takes only forty ____.",
+     "answers": [
+      [
+       "minutes"
+      ]
+     ],
+     "why": "the trip takes only forty minutes.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,112 @@
+{
+ "id": "g3l-u5-3",
+ "kind": "listening",
+ "title": "Draw the Sea",
+ "subtitle": "对话",
+ "unit": "E3U5",
+ "speakers": {
+  "Lily": "c1",
+  "Mike": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Lily",
+   "t": "Let's draw the sea."
+  },
+  {
+   "s": "Mike",
+   "t": "OK. I have blue."
+  },
+  {
+   "s": "Lily",
+   "t": "I have pink."
+  },
+  {
+   "s": "Mike",
+   "t": "A pink sea?"
+  },
+  {
+   "s": "Lily",
+   "t": "Ha-ha, no. I draw a pink fish."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3l-u5-3-A1",
+     "type": "choice",
+     "stem": "What do they draw?",
+     "options": [
+      "The sea.",
+      "A tree.",
+      "A cake."
+     ],
+     "answer": "A",
+     "why": "Let's draw the sea.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u5-3-A2",
+     "type": "choice",
+     "stem": "What colour does Mike have?",
+     "options": [
+      "Pink.",
+      "Blue.",
+      "Green."
+     ],
+     "answer": "B",
+     "why": "I have blue. (Mike)",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u5-3-A3",
+     "type": "choice",
+     "stem": "What colour is Lily's fish?",
+     "options": [
+      "Blue.",
+      "Yellow.",
+      "Pink."
+     ],
+     "answer": "C",
+     "why": "I draw a pink fish.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3l-u5-3-B1",
+     "type": "fill",
+     "stem": "Mike says, \"I have ____.\"",
+     "answers": [
+      [
+       "blue"
+      ]
+     ],
+     "why": "I have blue.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u5-3-B2",
+     "type": "fill",
+     "stem": "Lily draws a ____ fish.",
+     "answers": [
+      [
+       "pink"
+      ]
+     ],
+     "why": "I draw a pink fish.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

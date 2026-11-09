@@ -1,0 +1,152 @@
+{
+ "id": "g3r-u3-4",
+ "kind": "reading",
+ "title": "The Red Panda",
+ "subtitle": "考点：认识红熊猫 / It is cute. It is small.",
+ "unit": "E3U3",
+ "dialogue": [
+  {
+   "s": "Lily",
+   "t": "Look! This is a red panda."
+  },
+  {
+   "s": "Tom",
+   "t": "It is cute. It is small."
+  },
+  {
+   "s": "Lily",
+   "t": "Is it a fox?"
+  },
+  {
+   "s": "Tom",
+   "t": "No, it is not a fox. It is a red panda."
+  },
+  {
+   "s": "Lily",
+   "t": "I like red pandas."
+  }
+ ],
+ "vocab": "red panda 小熊猫 · cute 可爱的 · small 小的 · fox 狐狸 · animal 动物 · like 喜欢",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3r-u3-4-A1",
+     "type": "choice",
+     "stem": "What animal is it?",
+     "options": [
+      "A fox.",
+      "A red panda.",
+      "A cat."
+     ],
+     "answer": "B",
+     "why": "This is a red panda.",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u3-4-A2",
+     "type": "choice",
+     "stem": "How is the red panda?",
+     "options": [
+      "Big and tall.",
+      "Fast and big.",
+      "Cute and small."
+     ],
+     "answer": "C",
+     "why": "It is cute. It is small.",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u3-4-A3",
+     "type": "choice",
+     "stem": "What does Lily ask?",
+     "options": [
+      "Is it a fox?",
+      "Is it big?",
+      "Is it a tiger?"
+     ],
+     "answer": "A",
+     "why": "Is it a fox?",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g3r-u3-4-B1",
+     "type": "tf",
+     "stem": "The red panda is big.",
+     "answer": "F",
+     "why": "It is small.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u3-4-B2",
+     "type": "tf",
+     "stem": "Tom says it is not a fox.",
+     "answer": "T",
+     "why": "No, it is not a fox.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u3-4-B3",
+     "type": "tf",
+     "stem": "Tom says the red panda is not cute.",
+     "answer": "F",
+     "why": "It is cute.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3r-u3-4-C1",
+     "type": "fill",
+     "stem": "Tom says the red panda is cute and ____.",
+     "answers": [
+      [
+       "small"
+      ]
+     ],
+     "why": "It is cute. It is small.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u3-4-C2",
+     "type": "fill",
+     "stem": "It is not a ____.",
+     "answers": [
+      [
+       "fox"
+      ]
+     ],
+     "why": "No, it is not a fox.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u3-4-C3",
+     "type": "fill",
+     "stem": "Lily likes red ____.",
+     "answers": [
+      [
+       "pandas"
+      ]
+     ],
+     "why": "I like red pandas.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

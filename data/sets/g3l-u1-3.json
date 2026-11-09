@@ -1,0 +1,116 @@
+{
+ "id": "g3l-u1-3",
+ "kind": "listening",
+ "title": "Share and Help",
+ "subtitle": "对话",
+ "unit": "E3U1",
+ "speakers": {
+  "Tom": "c1",
+  "Ben": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Tom",
+   "t": "Oh no! I have no pen."
+  },
+  {
+   "s": "Ben",
+   "t": "I can help you."
+  },
+  {
+   "s": "Ben",
+   "t": "Let's share my pen."
+  },
+  {
+   "s": "Tom",
+   "t": "Thank you, Ben."
+  },
+  {
+   "s": "Ben",
+   "t": "Smile, Tom!"
+  },
+  {
+   "s": "Tom",
+   "t": "You are a good friend."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3l-u1-3-A1",
+     "type": "choice",
+     "stem": "What does Tom not have?",
+     "options": [
+      "A pen.",
+      "A book.",
+      "A bag."
+     ],
+     "answer": "A",
+     "why": "I have no pen.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u1-3-A2",
+     "type": "choice",
+     "stem": "Who helps Tom?",
+     "options": [
+      "Sam",
+      "Ben",
+      "Mike"
+     ],
+     "answer": "B",
+     "why": "Ben: I can help you.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u1-3-A3",
+     "type": "choice",
+     "stem": "What does Tom say about Ben?",
+     "options": [
+      "He is a new friend.",
+      "He is a big friend.",
+      "He is a good friend."
+     ],
+     "answer": "C",
+     "why": "You are a good friend.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3l-u1-3-B1",
+     "type": "fill",
+     "stem": "Tom says, \"I have no ____.\"",
+     "answers": [
+      [
+       "pen"
+      ]
+     ],
+     "why": "I have no pen.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u1-3-B2",
+     "type": "fill",
+     "stem": "Tom says, \"You are a good ____.\"",
+     "answers": [
+      [
+       "friend"
+      ]
+     ],
+     "why": "You are a good friend.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

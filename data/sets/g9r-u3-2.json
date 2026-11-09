@@ -1,0 +1,151 @@
+{
+ "id": "g9r-u3-2",
+ "kind": "reading",
+ "title": "The Growth Mindset",
+ "subtitle": "考点：学习态度 / feedback, mindset, take advantage of",
+ "unit": "E9U3",
+ "passage": [
+  "Some students think they are simply good or bad at maths. Teachers call this a fixed mindset. Other students believe that they can grow if they work hard and use good strategies. This is called a growth mindset. Students with a growth mindset do not give up when a problem is difficult.",
+  "Tom used to say, 'I am bad at science.' Then his teacher showed him how to take advantage of mistakes. Tom looked at his wrong answers, asked for feedback and tried again. He also joined a hands-on project with his classmates. By the end of the term, his marks were much higher. Tom now says, 'My brain is like a muscle. The more I use it, the stronger it gets.'"
+ ],
+ "vocab": "mindset 思维模式 · strategy 策略 · feedback 反馈 · hands-on 动手的 · project 项目 · brain 大脑",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9r-u3-2-A1",
+     "type": "choice",
+     "stem": "What do students with a growth mindset believe?",
+     "options": [
+      "They are born clever.",
+      "Mistakes are always shameful.",
+      "They can grow if they work hard.",
+      "Maths is only for adults."
+     ],
+     "answer": "C",
+     "why": "believe that they can grow if they work hard and use good strategies.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u3-2-A2",
+     "type": "choice",
+     "stem": "What did Tom use to say?",
+     "options": [
+      "'I love maths.'",
+      "'I am the best in class.'",
+      "'I do not need feedback.'",
+      "'I am bad at science.'"
+     ],
+     "answer": "D",
+     "why": "Tom used to say, 'I am bad at science.'",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u3-2-A3",
+     "type": "choice",
+     "stem": "How did Tom use his mistakes?",
+     "options": [
+      "He looked at wrong answers and tried again.",
+      "He hid his test papers.",
+      "He gave up science.",
+      "He copied his friend's answers."
+     ],
+     "answer": "A",
+     "why": "Tom looked at his wrong answers, asked for feedback and tried again.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u3-2-A4",
+     "type": "choice",
+     "stem": "What does Tom compare his brain to?",
+     "options": [
+      "A computer.",
+      "A muscle.",
+      "A book.",
+      "A bird."
+     ],
+     "answer": "B",
+     "why": "My brain is like a muscle.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g9r-u3-2-B1",
+     "type": "tf",
+     "stem": "Teachers call the belief 'I can grow' a fixed mindset.",
+     "answer": "F",
+     "why": "This is called a growth mindset.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u3-2-B2",
+     "type": "tf",
+     "stem": "Tom joined a hands-on project.",
+     "answer": "T",
+     "why": "He also joined a hands-on project with his classmates.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u3-2-B3",
+     "type": "tf",
+     "stem": "Tom's marks became higher by the end of the term.",
+     "answer": "T",
+     "why": "his marks were much higher.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9r-u3-2-C1",
+     "type": "fill",
+     "stem": "Students with a growth mindset do not give up when a problem is ____.",
+     "answers": [
+      [
+       "difficult"
+      ]
+     ],
+     "why": "when a problem is difficult.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u3-2-C2",
+     "type": "fill",
+     "stem": "Tom asked for ____ and tried again.",
+     "answers": [
+      [
+       "feedback"
+      ]
+     ],
+     "why": "asked for feedback and tried again.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u3-2-C3",
+     "type": "fill",
+     "stem": "Tom's ____ were much higher at the end of the term.",
+     "answers": [
+      [
+       "marks"
+      ]
+     ],
+     "why": "his marks were much higher.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,127 @@
+{
+ "id": "g9l-u2-3",
+ "kind": "listening",
+ "title": "A Talk About Confucius",
+ "subtitle": "对话",
+ "unit": "E9U2",
+ "speakers": {
+  "Lily": "f1",
+  "Tom": "m1"
+ },
+ "transcript": [
+  {
+   "s": "Lily",
+   "t": "Tom, what are you reading?"
+  },
+  {
+   "s": "Tom",
+   "t": "A book about Confucius. He was a great thinker and teacher in ancient China."
+  },
+  {
+   "s": "Lily",
+   "t": "When did he live?"
+  },
+  {
+   "s": "Tom",
+   "t": "More than two thousand years ago."
+  },
+  {
+   "s": "Lily",
+   "t": "What did he teach?"
+  },
+  {
+   "s": "Tom",
+   "t": "He taught that people should learn all their lives and treat others with kindness."
+  },
+  {
+   "s": "Lily",
+   "t": "His words are still wise today."
+  },
+  {
+   "s": "Tom",
+   "t": "Yes, his ideas live on. Can I finish the book by Friday, and then lend it to you?"
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9l-u2-3-A1",
+     "type": "choice",
+     "stem": "Who was Confucius?",
+     "options": [
+      "A king.",
+      "A doctor.",
+      "A pilot.",
+      "A thinker and teacher."
+     ],
+     "answer": "D",
+     "why": "a great thinker and teacher in ancient China.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u2-3-A2",
+     "type": "choice",
+     "stem": "When did Confucius live?",
+     "options": [
+      "More than two thousand years ago.",
+      "About two hundred years ago.",
+      "About five hundred years ago.",
+      "In the last century."
+     ],
+     "answer": "A",
+     "why": "More than two thousand years ago.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u2-3-A3",
+     "type": "choice",
+     "stem": "When will Tom finish the book?",
+     "options": [
+      "By Monday.",
+      "By Friday.",
+      "Tomorrow morning.",
+      "Next month."
+     ],
+     "answer": "B",
+     "why": "finish the book by Friday.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9l-u2-3-B1",
+     "type": "fill",
+     "stem": "People should treat others with ____.",
+     "answers": [
+      [
+       "kindness"
+      ]
+     ],
+     "why": "treat others with kindness.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u2-3-B2",
+     "type": "fill",
+     "stem": "Confucius's ideas still ____ on.",
+     "answers": [
+      [
+       "live"
+      ]
+     ],
+     "why": "his ideas live on.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,127 @@
+{
+ "id": "g9l-u8-3",
+ "kind": "listening",
+ "title": "Cheering at the Swimming Final",
+ "subtitle": "对话",
+ "unit": "E9U8",
+ "speakers": {
+  "Lily": "f1",
+  "Tom": "m1"
+ },
+ "transcript": [
+  {
+   "s": "Tom",
+   "t": "Lily, the freestyle final starts now!"
+  },
+  {
+   "s": "Lily",
+   "t": "Which lane is our school's swimmer in?"
+  },
+  {
+   "s": "Tom",
+   "t": "Lane four. He is wearing the red cap."
+  },
+  {
+   "s": "Lily",
+   "t": "Oh no, he is behind at the turn."
+  },
+  {
+   "s": "Tom",
+   "t": "Do not worry. He is catching up with the leader."
+  },
+  {
+   "s": "Lily",
+   "t": "Go! The whole crowd is cheering."
+  },
+  {
+   "s": "Tom",
+   "t": "He took the lead! He won by half a second!"
+  },
+  {
+   "s": "Lily",
+   "t": "What a dramatic finish! He also set a new school record. Let's congratulate him after the ceremony."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9l-u8-3-A1",
+     "type": "choice",
+     "stem": "Which lane is the school's swimmer in?",
+     "options": [
+      "Lane one.",
+      "Lane six.",
+      "Lane eight.",
+      "Lane four."
+     ],
+     "answer": "D",
+     "why": "Lane four.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u8-3-A2",
+     "type": "choice",
+     "stem": "What colour is the swimmer's cap?",
+     "options": [
+      "Red.",
+      "Blue.",
+      "Yellow.",
+      "White."
+     ],
+     "answer": "A",
+     "why": "He is wearing the red cap.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u8-3-A3",
+     "type": "choice",
+     "stem": "How much did he win by?",
+     "options": [
+      "Two seconds.",
+      "Half a second.",
+      "One minute.",
+      "Ten seconds."
+     ],
+     "answer": "B",
+     "why": "He won by half a second!",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9l-u8-3-B1",
+     "type": "fill",
+     "stem": "He is catching ____ with the leader.",
+     "answers": [
+      [
+       "up"
+      ]
+     ],
+     "why": "He is catching up with the leader.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u8-3-B2",
+     "type": "fill",
+     "stem": "He set a new school ____.",
+     "answers": [
+      [
+       "record"
+      ]
+     ],
+     "why": "He also set a new school record.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

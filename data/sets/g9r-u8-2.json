@@ -1,0 +1,151 @@
+{
+ "id": "g9r-u8-2",
+ "kind": "reading",
+ "title": "The Relay Race",
+ "subtitle": "考点：团队合作 / relay, baton, catch up with",
+ "unit": "E9U8",
+ "passage": [
+  "On sports day, Class 9 had a 4 x 100 metre relay race. Four runners ran one after another, and each one passed the baton to the next runner. The handoff is the most dangerous part. If the baton falls, the team may lose the race.",
+  "Danny ran the first part and gave his team a good start. The second runner, Lily, fell a little behind, and the other teams took the lead. Then Jack, the third runner, ran very fast and began to catch up with the leaders. At the last handoff, he passed the baton smoothly to Kevin. Kevin ran with all his strength and crossed the line second. The team did not win, but they all cheered and hugged each other. 'We did our best together,' said Kevin. 'That is more important than a gold medal.'"
+ ],
+ "vocab": "relay 接力赛 · baton 接力棒 · handoff 交接 · runner 跑步者 · smooth 顺利的 · strength 力量",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9r-u8-2-A1",
+     "type": "choice",
+     "stem": "What is the most dangerous part of a relay race?",
+     "options": [
+      "The start.",
+      "The cheering.",
+      "The handoff.",
+      "The last hundred metres."
+     ],
+     "answer": "C",
+     "why": "The handoff is the most dangerous part.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u8-2-A2",
+     "type": "choice",
+     "stem": "Who ran the first part?",
+     "options": [
+      "Lily.",
+      "Jack.",
+      "Kevin.",
+      "Danny."
+     ],
+     "answer": "D",
+     "why": "Danny ran the first part",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u8-2-A3",
+     "type": "choice",
+     "stem": "What did Jack do?",
+     "options": [
+      "He began to catch up with the leaders.",
+      "He dropped the baton.",
+      "He fell behind.",
+      "He stopped to rest."
+     ],
+     "answer": "A",
+     "why": "Jack ... began to catch up with the leaders.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u8-2-A4",
+     "type": "choice",
+     "stem": "Where did the team finish?",
+     "options": [
+      "First.",
+      "Second.",
+      "Third.",
+      "Last."
+     ],
+     "answer": "B",
+     "why": "Kevin ... crossed the line second.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g9r-u8-2-B1",
+     "type": "tf",
+     "stem": "Each runner passes the baton to the next runner.",
+     "answer": "T",
+     "why": "each one passed the baton to the next runner.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u8-2-B2",
+     "type": "tf",
+     "stem": "Lily ran faster than the other teams' second runners.",
+     "answer": "F",
+     "why": "Lily, fell a little behind",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u8-2-B3",
+     "type": "tf",
+     "stem": "The team felt happy even though they did not win.",
+     "answer": "T",
+     "why": "they all cheered and hugged each other.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9r-u8-2-C1",
+     "type": "fill",
+     "stem": "It was a 4 x 100 metre ____ race.",
+     "answers": [
+      [
+       "relay"
+      ]
+     ],
+     "why": "a 4 x 100 metre relay race.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u8-2-C2",
+     "type": "fill",
+     "stem": "If the ____ falls, the team may lose.",
+     "answers": [
+      [
+       "baton"
+      ]
+     ],
+     "why": "If the baton falls",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u8-2-C3",
+     "type": "fill",
+     "stem": "Kevin ran with all his ____.",
+     "answers": [
+      [
+       "strength"
+      ]
+     ],
+     "why": "ran with all his strength",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

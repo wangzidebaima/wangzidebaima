@@ -1,0 +1,160 @@
+{
+ "id": "g5r-u4-2",
+ "kind": "reading",
+ "title": "Stay at Home",
+ "subtitle": "考点：生病时的建议 / If you have the flu, you should stay at home.",
+ "unit": "E5U4",
+ "dialogue": [
+  {
+   "s": "Mum",
+   "t": "Tom, you look tired. Do you feel well?"
+  },
+  {
+   "s": "Tom",
+   "t": "No, Mum. I have a headache and I cough."
+  },
+  {
+   "s": "Mum",
+   "t": "I think you have the flu. Let me check your temperature."
+  },
+  {
+   "s": "Tom",
+   "t": "Is it high?"
+  },
+  {
+   "s": "Mum",
+   "t": "Yes. If you have the flu, you should stay at home and rest."
+  },
+  {
+   "s": "Tom",
+   "t": "But I want to go to school."
+  },
+  {
+   "s": "Mum",
+   "t": "No. You should drink water and take enough rest. I will call your teacher."
+  }
+ ],
+ "vocab": "flu 流感 · stay 待 · rest 休息 · check 检查 · enough 足够的 · should 应该 · house 房子",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5r-u4-2-A1",
+     "type": "choice",
+     "stem": "What does Tom have?",
+     "options": [
+      "A toothache.",
+      "A broken leg.",
+      "The flu."
+     ],
+     "answer": "C",
+     "why": "I think you have the flu.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u4-2-A2",
+     "type": "choice",
+     "stem": "What should Tom do?",
+     "options": [
+      "Stay at home and rest.",
+      "Go to school.",
+      "Play outside."
+     ],
+     "answer": "A",
+     "why": "You should stay at home and rest.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u4-2-A3",
+     "type": "choice",
+     "stem": "Who will call the teacher?",
+     "options": [
+      "Tom",
+      "Mum",
+      "Dad"
+     ],
+     "answer": "B",
+     "why": "I will call your teacher.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g5r-u4-2-B1",
+     "type": "tf",
+     "stem": "Tom wants to go to school.",
+     "answer": "T",
+     "why": "But I want to go to school.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u4-2-B2",
+     "type": "tf",
+     "stem": "Tom's temperature is low.",
+     "answer": "F",
+     "why": "Is it high? Yes.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u4-2-B3",
+     "type": "tf",
+     "stem": "Mum says Tom should take enough rest.",
+     "answer": "T",
+     "why": "You should drink water and take enough rest.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5r-u4-2-C1",
+     "type": "fill",
+     "stem": "Tom has a ____ and he coughs.",
+     "answers": [
+      [
+       "headache"
+      ]
+     ],
+     "why": "I have a headache and I cough.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u4-2-C2",
+     "type": "fill",
+     "stem": "If you have the flu, you should stay at ____.",
+     "answers": [
+      [
+       "home"
+      ]
+     ],
+     "why": "you should stay at home and rest.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u4-2-C3",
+     "type": "fill",
+     "stem": "Tom should drink ____.",
+     "answers": [
+      [
+       "water"
+      ]
+     ],
+     "why": "You should drink water and take enough rest.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

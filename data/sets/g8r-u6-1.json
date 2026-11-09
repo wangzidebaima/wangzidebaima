@@ -1,0 +1,152 @@
+{
+ "id": "g8r-u6-1",
+ "kind": "reading",
+ "title": "What Do You Want to Be?",
+ "subtitle": "考点：职业与理想 / want to be / because",
+ "unit": "E8U6",
+ "passage": [
+  "Four students talk about their dream jobs. Jason wants to be an engineer because he loves building things. He made a small bridge from sticks last month, and it was strong enough to hold a heavy book.",
+  "Tina wants to be a fashion designer. She draws clothes in her notebook every day, and she often makes new dresses for her dolls. “I want to make clothes that make people feel confident,” she says.",
+  "Their classmate Alex likes taking photos and hopes to become a photographer. He takes pictures of birds in the park every weekend. Mia wants to be a lawyer because she wants to help people. She often reads about law in the library. Their teacher says every dream is good, but they must work hard. “Study well now, and try your best every day,” she says."
+ ],
+ "vocab": "engineer 工程师 · bridge 桥 · fashion designer 服装设计师 · photographer 摄影师 · lawyer 律师 · confident 自信的 · try one's best 尽力",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8r-u6-1-A1",
+     "type": "choice",
+     "stem": "Why does Jason want to be an engineer?",
+     "options": [
+      "He likes taking photos.",
+      "He loves building things.",
+      "He likes drawing dresses.",
+      "He wants to help people in court."
+     ],
+     "answer": "B",
+     "why": "Jason wants to be an engineer because he loves building things.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u6-1-A2",
+     "type": "choice",
+     "stem": "What does Tina do every day?",
+     "options": [
+      "She builds bridges.",
+      "She takes pictures of birds.",
+      "She draws clothes in her notebook.",
+      "She reads about law."
+     ],
+     "answer": "C",
+     "why": "She draws clothes in her notebook every day.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u6-1-A3",
+     "type": "choice",
+     "stem": "What does Alex take pictures of every weekend?",
+     "options": [
+      "Dresses.",
+      "Bridges.",
+      "Books.",
+      "Birds in the park."
+     ],
+     "answer": "D",
+     "why": "He takes pictures of birds in the park every weekend.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u6-1-A4",
+     "type": "choice",
+     "stem": "What does the teacher tell the students?",
+     "options": [
+      "Work hard and try their best.",
+      "Choose an easy job.",
+      "Stop dreaming.",
+      "Do not read at all."
+     ],
+     "answer": "A",
+     "why": "Study well now, and try your best every day.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g8r-u6-1-B1",
+     "type": "tf",
+     "stem": "Jason made a bridge from sticks.",
+     "answer": "T",
+     "why": "He made a small bridge from sticks.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u6-1-B2",
+     "type": "tf",
+     "stem": "Tina wants to be a photographer.",
+     "answer": "F",
+     "why": "Tina 想当服装设计师（fashion designer）。",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u6-1-B3",
+     "type": "tf",
+     "stem": "Mia wants to be a lawyer to help people.",
+     "answer": "T",
+     "why": "Mia wants to be a lawyer because she wants to help people.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8r-u6-1-C1",
+     "type": "fill",
+     "stem": "Jason loves ____ things.",
+     "answers": [
+      [
+       "building"
+      ]
+     ],
+     "why": "he loves building things.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u6-1-C2",
+     "type": "fill",
+     "stem": "Tina wants to make clothes that make people feel ____.",
+     "answers": [
+      [
+       "confident"
+      ]
+     ],
+     "why": "feel confident.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u6-1-C3",
+     "type": "fill",
+     "stem": "Mia often reads about law in the ____.",
+     "answers": [
+      [
+       "library"
+      ]
+     ],
+     "why": "in the library.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

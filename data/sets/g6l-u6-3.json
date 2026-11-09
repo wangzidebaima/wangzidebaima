@@ -1,0 +1,124 @@
+{
+ "id": "g6l-u6-3",
+ "kind": "listening",
+ "title": "Old Bottles",
+ "subtitle": "对话",
+ "unit": "E6U6",
+ "speakers": {
+  "Lily": "c1",
+  "Sam": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Lily",
+   "t": "Sam, what are you doing with that bottle?"
+  },
+  {
+   "s": "Sam",
+   "t": "I will reuse it as a flower pot."
+  },
+  {
+   "s": "Lily",
+   "t": "That is a good idea!"
+  },
+  {
+   "s": "Sam",
+   "t": "Yes. We can reduce waste this way."
+  },
+  {
+   "s": "Lily",
+   "t": "Where do you put other old bottles?"
+  },
+  {
+   "s": "Sam",
+   "t": "I put them in the green bin for recycling."
+  },
+  {
+   "s": "Lily",
+   "t": "Can I have one for my pencils?"
+  },
+  {
+   "s": "Sam",
+   "t": "Sure. Take this one."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6l-u6-3-A1",
+     "type": "choice",
+     "stem": "What will Sam do with the bottle?",
+     "options": [
+      "Use it as a flower pot.",
+      "Throw it away.",
+      "Sell it at the market."
+     ],
+     "answer": "A",
+     "why": "I will reuse it as a flower pot.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u6-3-A2",
+     "type": "choice",
+     "stem": "Where does Sam put other old bottles?",
+     "options": [
+      "In the river.",
+      "In the green bin.",
+      "In the jar."
+     ],
+     "answer": "B",
+     "why": "I put them in the green bin for recycling.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u6-3-A3",
+     "type": "choice",
+     "stem": "What will Lily use a bottle for?",
+     "options": [
+      "Her water.",
+      "Her flowers.",
+      "Her pencils."
+     ],
+     "answer": "C",
+     "why": "Can I have one for my pencils?",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6l-u6-3-B1",
+     "type": "fill",
+     "stem": "Sam will ____ the bottle as a flower pot.",
+     "answers": [
+      [
+       "reuse"
+      ]
+     ],
+     "why": "I will reuse it as a flower pot.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u6-3-B2",
+     "type": "fill",
+     "stem": "Old bottles go in the ____ bin.",
+     "answers": [
+      [
+       "green"
+      ]
+     ],
+     "why": "in the green bin",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

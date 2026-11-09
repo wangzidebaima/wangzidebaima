@@ -1,0 +1,127 @@
+{
+ "id": "g9l-u6-1",
+ "kind": "listening",
+ "title": "Looking at the Moon",
+ "subtitle": "对话",
+ "unit": "E9U6",
+ "speakers": {
+  "Ann": "f1",
+  "Tom": "m1"
+ },
+ "transcript": [
+  {
+   "s": "Tom",
+   "t": "Ann, look through my new telescope."
+  },
+  {
+   "s": "Ann",
+   "t": "Wow! I can see craters on the Moon."
+  },
+  {
+   "s": "Tom",
+   "t": "Yes, and tonight Mars is also visible. It looks like a small red dot."
+  },
+  {
+   "s": "Ann",
+   "t": "Why is it red?"
+  },
+  {
+   "s": "Tom",
+   "t": "The soil on Mars contains a lot of iron, so it looks reddish."
+  },
+  {
+   "s": "Ann",
+   "t": "Has any human being set foot on Mars?"
+  },
+  {
+   "s": "Tom",
+   "t": "No. Only robots, like rovers, have been there. People have walked on the Moon, though."
+  },
+  {
+   "s": "Ann",
+   "t": "Maybe one day it will be our generation."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9l-u6-1-A1",
+     "type": "choice",
+     "stem": "What can Ann see on the Moon?",
+     "options": [
+      "Rivers.",
+      "Craters.",
+      "Forests.",
+      "Cities."
+     ],
+     "answer": "B",
+     "why": "I can see craters on the Moon.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u6-1-A2",
+     "type": "choice",
+     "stem": "What colour does Mars look?",
+     "options": [
+      "Blue.",
+      "Green.",
+      "Red.",
+      "Purple."
+     ],
+     "answer": "C",
+     "why": "It looks like a small red dot.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u6-1-A3",
+     "type": "choice",
+     "stem": "Who has visited Mars so far?",
+     "options": [
+      "Many astronauts.",
+      "A famous singer.",
+      "Some tourists.",
+      "Only robots."
+     ],
+     "answer": "D",
+     "why": "Only robots, like rovers, have been there.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9l-u6-1-B1",
+     "type": "fill",
+     "stem": "Mars looks like a small red ____.",
+     "answers": [
+      [
+       "dot"
+      ]
+     ],
+     "why": "a small red dot.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u6-1-B2",
+     "type": "fill",
+     "stem": "The soil on Mars contains a lot of ____.",
+     "answers": [
+      [
+       "iron"
+      ]
+     ],
+     "why": "contains a lot of iron.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

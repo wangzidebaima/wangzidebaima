@@ -1,0 +1,164 @@
+{
+ "id": "g6r-u3-2",
+ "kind": "reading",
+ "title": "Don't Stay Up Late",
+ "subtitle": "考点：祈使句 / Don't ..., or you may ...",
+ "unit": "E6U3",
+ "dialogue": [
+  {
+   "s": "Sam",
+   "t": "Ben, you look tired today."
+  },
+  {
+   "s": "Ben",
+   "t": "I stayed up late last night."
+  },
+  {
+   "s": "Sam",
+   "t": "Did you do your homework?"
+  },
+  {
+   "s": "Ben",
+   "t": "No. I watched a funny video until eleven o'clock."
+  },
+  {
+   "s": "Sam",
+   "t": "Don't stay up late, or you may feel unhappy."
+  },
+  {
+   "s": "Ben",
+   "t": "You are right. I felt sleepy in class."
+  },
+  {
+   "s": "Sam",
+   "t": "Go to bed at nine tonight."
+  },
+  {
+   "s": "Ben",
+   "t": "OK, I will."
+  }
+ ],
+ "vocab": "stay up 熬夜 · tired 累的 · video 视频 · unhappy 不开心的 · sleepy 困的 · funny 有趣的",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6r-u3-2-A1",
+     "type": "choice",
+     "stem": "Why does Ben look tired?",
+     "options": [
+      "He ran a marathon.",
+      "He had a cold.",
+      "He stayed up late."
+     ],
+     "answer": "C",
+     "why": "I stayed up late last night.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u3-2-A2",
+     "type": "choice",
+     "stem": "What did Ben do until eleven o'clock?",
+     "options": [
+      "He watched a video.",
+      "He did homework.",
+      "He read a book."
+     ],
+     "answer": "A",
+     "why": "I watched a funny video until eleven o'clock.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u3-2-A3",
+     "type": "choice",
+     "stem": "What does Sam say Ben should do tonight?",
+     "options": [
+      "Watch another video.",
+      "Go to bed at nine.",
+      "Stay up late."
+     ],
+     "answer": "B",
+     "why": "Go to bed at nine tonight.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g6r-u3-2-B1",
+     "type": "tf",
+     "stem": "Ben watched a video last night.",
+     "answer": "T",
+     "why": "I watched a funny video.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u3-2-B2",
+     "type": "tf",
+     "stem": "Ben did his homework until eleven o'clock.",
+     "answer": "F",
+     "why": "Ben says No; he watched a video.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u3-2-B3",
+     "type": "tf",
+     "stem": "Ben felt sleepy in class.",
+     "answer": "T",
+     "why": "I felt sleepy in class.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6r-u3-2-C1",
+     "type": "fill",
+     "stem": "Ben ____ up late last night.",
+     "answers": [
+      [
+       "stayed"
+      ]
+     ],
+     "why": "I stayed up late last night.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u3-2-C2",
+     "type": "fill",
+     "stem": "Ben watched a funny ____.",
+     "answers": [
+      [
+       "video"
+      ]
+     ],
+     "why": "a funny video",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u3-2-C3",
+     "type": "fill",
+     "stem": "Sam says Ben should go to bed at ____.",
+     "answers": [
+      [
+       "nine"
+      ]
+     ],
+     "why": "Go to bed at nine tonight.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

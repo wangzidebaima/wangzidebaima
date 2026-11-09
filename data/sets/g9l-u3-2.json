@@ -1,0 +1,110 @@
+{
+ "id": "g9l-u3-2",
+ "kind": "listening",
+ "title": "A Better Study Plan",
+ "subtitle": "短文",
+ "unit": "E9U3",
+ "speakers": {
+  "Frank": "m1"
+ },
+ "transcript": [
+  {
+   "s": "Frank",
+   "t": "I used to study without a plan, and my grades did not improve. Then my teacher gave me some advice."
+  },
+  {
+   "s": "Frank",
+   "t": "First, make a clear plan for each week. Second, after each lesson, summarize the main points in a few sentences. Third, ask for feedback and learn from your mistakes."
+  },
+  {
+   "s": "Frank",
+   "t": "I also began to take advantage of free online resources, such as videos and podcasts."
+  },
+  {
+   "s": "Frank",
+   "t": "Now I study step by step, and I enjoy it more. My teacher says a good method is more important than studying for many hours."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9l-u3-2-A1",
+     "type": "choice",
+     "stem": "What was Frank's problem before?",
+     "options": [
+      "He had no textbooks.",
+      "He was too ill to study.",
+      "He studied without a plan.",
+      "He disliked his teacher."
+     ],
+     "answer": "C",
+     "why": "I used to study without a plan.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u3-2-A2",
+     "type": "choice",
+     "stem": "What should Frank do after each lesson?",
+     "options": [
+      "Watch a film.",
+      "Copy the whole textbook.",
+      "Take a long nap.",
+      "Summarize the main points."
+     ],
+     "answer": "D",
+     "why": "after each lesson, summarize the main points.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u3-2-A3",
+     "type": "choice",
+     "stem": "Which online resources does Frank use?",
+     "options": [
+      "Videos and podcasts.",
+      "Comic books and games.",
+      "Only his old notes.",
+      "Printed newspapers."
+     ],
+     "answer": "A",
+     "why": "such as videos and podcasts.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9l-u3-2-B1",
+     "type": "fill",
+     "stem": "Frank makes a clear ____ for each week.",
+     "answers": [
+      [
+       "plan"
+      ]
+     ],
+     "why": "make a clear plan for each week.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u3-2-B2",
+     "type": "fill",
+     "stem": "A good ____ is more important than many hours.",
+     "answers": [
+      [
+       "method"
+      ]
+     ],
+     "why": "a good method is more important than studying for many hours.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

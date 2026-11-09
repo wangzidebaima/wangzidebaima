@@ -1,0 +1,112 @@
+{
+ "id": "g3l-u3-2",
+ "kind": "listening",
+ "title": "Giraffes and Pandas",
+ "subtitle": "对话",
+ "unit": "E3U3",
+ "speakers": {
+  "Sam": "c1",
+  "Lily": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Sam",
+   "t": "Do you like pandas, Lily?"
+  },
+  {
+   "s": "Lily",
+   "t": "Yes. Pandas are cute."
+  },
+  {
+   "s": "Sam",
+   "t": "I like giraffes."
+  },
+  {
+   "s": "Lily",
+   "t": "Why?"
+  },
+  {
+   "s": "Sam",
+   "t": "Because the giraffe is tall."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3l-u3-2-A1",
+     "type": "choice",
+     "stem": "What does Sam like?",
+     "options": [
+      "Pandas.",
+      "Tigers.",
+      "Giraffes."
+     ],
+     "answer": "C",
+     "why": "I like giraffes.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u3-2-A2",
+     "type": "choice",
+     "stem": "What does Lily say about pandas?",
+     "options": [
+      "They are cute.",
+      "They are fast.",
+      "They are tall."
+     ],
+     "answer": "A",
+     "why": "Pandas are cute.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u3-2-A3",
+     "type": "choice",
+     "stem": "Why does Sam like giraffes?",
+     "options": [
+      "Because it is fast.",
+      "Because it is tall.",
+      "Because it is small."
+     ],
+     "answer": "B",
+     "why": "Because the giraffe is tall.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3l-u3-2-B1",
+     "type": "fill",
+     "stem": "Lily says, \"Pandas are ____.\"",
+     "answers": [
+      [
+       "cute"
+      ]
+     ],
+     "why": "Pandas are cute.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u3-2-B2",
+     "type": "fill",
+     "stem": "The giraffe is ____.",
+     "answers": [
+      [
+       "tall"
+      ]
+     ],
+     "why": "Because the giraffe is tall.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

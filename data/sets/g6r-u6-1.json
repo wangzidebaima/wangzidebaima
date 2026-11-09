@@ -1,0 +1,164 @@
+{
+ "id": "g6r-u6-1",
+ "kind": "reading",
+ "title": "Solar Power",
+ "subtitle": "考点：一般现在时 / Solar power is a useful energy",
+ "unit": "E6U6",
+ "dialogue": [
+  {
+   "s": "Tom",
+   "t": "Lily, what are those on the roof?"
+  },
+  {
+   "s": "Lily",
+   "t": "They are solar panels. They use sunlight to make electricity."
+  },
+  {
+   "s": "Tom",
+   "t": "Is solar power a useful type of energy?"
+  },
+  {
+   "s": "Lily",
+   "t": "Yes. It is clean, and the sun never runs out."
+  },
+  {
+   "s": "Tom",
+   "t": "What about oil and coal?"
+  },
+  {
+   "s": "Lily",
+   "t": "They will run out one day, and they make the air dirty."
+  },
+  {
+   "s": "Tom",
+   "t": "So we should use more solar power."
+  },
+  {
+   "s": "Lily",
+   "t": "I agree."
+  }
+ ],
+ "vocab": "solar 太阳能的 · electricity 电 · energy 能源 · run out 用完 · dirty 脏的 · useful 有用的",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6r-u6-1-A1",
+     "type": "choice",
+     "stem": "What do solar panels use to make electricity?",
+     "options": [
+      "Oil.",
+      "Sunlight.",
+      "Coal."
+     ],
+     "answer": "B",
+     "why": "They use sunlight to make electricity.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u6-1-A2",
+     "type": "choice",
+     "stem": "What will run out one day?",
+     "options": [
+      "The sun.",
+      "Solar power.",
+      "Oil and coal."
+     ],
+     "answer": "C",
+     "why": "They will run out one day.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u6-1-A3",
+     "type": "choice",
+     "stem": "What does Tom think we should do?",
+     "options": [
+      "Use more solar power.",
+      "Use more oil.",
+      "Use more coal."
+     ],
+     "answer": "A",
+     "why": "So we should use more solar power.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g6r-u6-1-B1",
+     "type": "tf",
+     "stem": "Solar panels make electricity.",
+     "answer": "T",
+     "why": "They use sunlight to make electricity.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u6-1-B2",
+     "type": "tf",
+     "stem": "Oil and coal will never run out.",
+     "answer": "F",
+     "why": "They will run out one day.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u6-1-B3",
+     "type": "tf",
+     "stem": "Lily agrees with Tom.",
+     "answer": "T",
+     "why": "I agree.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6r-u6-1-C1",
+     "type": "fill",
+     "stem": "Solar panels use ____ to make electricity.",
+     "answers": [
+      [
+       "sunlight"
+      ]
+     ],
+     "why": "They use sunlight to make electricity.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u6-1-C2",
+     "type": "fill",
+     "stem": "Oil and coal will run ____ one day.",
+     "answers": [
+      [
+       "out"
+      ]
+     ],
+     "why": "They will run out one day.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u6-1-C3",
+     "type": "fill",
+     "stem": "Oil and coal make the air ____.",
+     "answers": [
+      [
+       "dirty"
+      ]
+     ],
+     "why": "they make the air dirty",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,82 @@
+{
+ "id": "g9sp-u7",
+ "kind": "speaking",
+ "unit": "E9U7",
+ "title": "口语练习",
+ "subtitle": "每天 10 分钟 · 共 5 天",
+ "steps": [
+  "点 🔊 听一遍，听清语调",
+  "一句一句跟着读，声音要大，不怕错",
+  "读完点「今天完成了」打卡"
+ ],
+ "sentences": [
+  {
+   "en": "What kind of music do you like?",
+   "zh": "你喜欢什么类型的音乐？"
+  },
+  {
+   "en": "I like to sing along to pop songs.",
+   "zh": "我喜欢跟着流行歌曲一起唱。"
+  },
+  {
+   "en": "Classical music helps me relax.",
+   "zh": "古典音乐帮我放松。"
+  },
+  {
+   "en": "My brother plays the electric guitar in a band.",
+   "zh": "我哥哥在乐队里弹电吉他。"
+  },
+  {
+   "en": "Chopin was a famous Polish pianist and composer.",
+   "zh": "肖邦是著名的波兰钢琴家和作曲家。"
+  },
+  {
+   "en": "Traditional folk songs are loved by young and old.",
+   "zh": "传统民歌深受老少喜爱。"
+  },
+  {
+   "en": "I tap my feet when I hear the rhythm.",
+   "zh": "我一听到节奏就会用脚打拍子。"
+  },
+  {
+   "en": "Hats off to all the performers!",
+   "zh": "向所有表演者致敬！"
+  },
+  {
+   "en": "Music brings people together.",
+   "zh": "音乐把人们团结在一起。"
+  }
+ ],
+ "plan": [
+  {
+   "day": 1,
+   "title": "跟读第 1–3 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 2,
+   "title": "跟读第 4–6 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 3,
+   "title": "跟读第 7–9 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 4,
+   "title": "不看书，说给家长听",
+   "task": "挑 5 句最喜欢的，尽量不看书说出来",
+   "minutes": 10
+  },
+  {
+   "day": 5,
+   "title": "自己说 3 句话",
+   "task": "用 'I like … music because …' 说 3 句话介绍你喜欢的音乐",
+   "minutes": 10
+  }
+ ]
+}

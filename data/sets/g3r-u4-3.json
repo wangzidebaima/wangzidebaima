@@ -1,0 +1,152 @@
+{
+ "id": "g3r-u4-3",
+ "kind": "reading",
+ "title": "A New Tree",
+ "subtitle": "考点：照顾植物 / The tree needs water.",
+ "unit": "E3U4",
+ "dialogue": [
+  {
+   "s": "Mike",
+   "t": "Look! There is a new tree at school."
+  },
+  {
+   "s": "Amy",
+   "t": "It is small. It needs water."
+  },
+  {
+   "s": "Mike",
+   "t": "Let's give it water."
+  },
+  {
+   "s": "Amy",
+   "t": "The sun is good for the tree."
+  },
+  {
+   "s": "Mike",
+   "t": "Yes. Trees need the sun."
+  }
+ ],
+ "vocab": "tree 树 · new 新的 · school 学校 · water 水 · give 给 · sun 太阳",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3r-u4-3-A1",
+     "type": "choice",
+     "stem": "Where is the new tree?",
+     "options": [
+      "At school.",
+      "At the zoo.",
+      "On the farm."
+     ],
+     "answer": "A",
+     "why": "There is a new tree at school.",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u4-3-A2",
+     "type": "choice",
+     "stem": "What does the tree need?",
+     "options": [
+      "A cake.",
+      "Water.",
+      "A book."
+     ],
+     "answer": "B",
+     "why": "It needs water.",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u4-3-A3",
+     "type": "choice",
+     "stem": "How is the tree?",
+     "options": [
+      "Tall.",
+      "Big.",
+      "Small."
+     ],
+     "answer": "C",
+     "why": "It is small.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g3r-u4-3-B1",
+     "type": "tf",
+     "stem": "The tree is new.",
+     "answer": "T",
+     "why": "There is a new tree at school.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u4-3-B2",
+     "type": "tf",
+     "stem": "The tree is big.",
+     "answer": "F",
+     "why": "It is small.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u4-3-B3",
+     "type": "tf",
+     "stem": "Mike says, \"Let's give it water.\"",
+     "answer": "T",
+     "why": "Let's give it water.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3r-u4-3-C1",
+     "type": "fill",
+     "stem": "There is a ____ tree at school.",
+     "answers": [
+      [
+       "new"
+      ]
+     ],
+     "why": "There is a new tree at school.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u4-3-C2",
+     "type": "fill",
+     "stem": "The tree needs ____.",
+     "answers": [
+      [
+       "water"
+      ]
+     ],
+     "why": "It needs water.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u4-3-C3",
+     "type": "fill",
+     "stem": "Mike says, \"Let's ____ it water.\"",
+     "answers": [
+      [
+       "give"
+      ]
+     ],
+     "why": "Let's give it water.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

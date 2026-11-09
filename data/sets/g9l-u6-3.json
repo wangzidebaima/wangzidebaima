@@ -1,0 +1,127 @@
+{
+ "id": "g9l-u6-3",
+ "kind": "listening",
+ "title": "Would You Live on Mars?",
+ "subtitle": "对话",
+ "unit": "E9U6",
+ "speakers": {
+  "Ben": "m1",
+  "Amy": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Amy",
+   "t": "Ben, would you move to Mars if you could?"
+  },
+  {
+   "s": "Ben",
+   "t": "Maybe. Earth is getting crowded."
+  },
+  {
+   "s": "Amy",
+   "t": "But Mars is very cold, and there is no air that people can breathe."
+  },
+  {
+   "s": "Ben",
+   "t": "True. We would need special spaceships and suits."
+  },
+  {
+   "s": "Amy",
+   "t": "And the trip would take months."
+  },
+  {
+   "s": "Ben",
+   "t": "That is fine. I would take books and games on board."
+  },
+  {
+   "s": "Amy",
+   "t": "I would miss my family and the blue sky."
+  },
+  {
+   "s": "Ben",
+   "t": "Then let's stay on Earth and study space from here."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9l-u6-3-A1",
+     "type": "choice",
+     "stem": "Why does Ben say maybe?",
+     "options": [
+      "Mars is warm.",
+      "He wants to be famous.",
+      "Mars has a lot of water.",
+      "Earth is getting crowded."
+     ],
+     "answer": "D",
+     "why": "Earth is getting crowded.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u6-3-A2",
+     "type": "choice",
+     "stem": "What is Mars like, according to Amy?",
+     "options": [
+      "Cold, with no air to breathe.",
+      "Hot and wet.",
+      "Warm and sunny.",
+      "Green and full of trees."
+     ],
+     "answer": "A",
+     "why": "Mars is very cold, and there is no air that people can breathe.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u6-3-A3",
+     "type": "choice",
+     "stem": "What would Amy miss?",
+     "options": [
+      "Her phone and games.",
+      "Her family and the blue sky.",
+      "Her school and teachers.",
+      "Her dog."
+     ],
+     "answer": "B",
+     "why": "I would miss my family and the blue sky.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9l-u6-3-B1",
+     "type": "fill",
+     "stem": "We would need special spaceships and ____.",
+     "answers": [
+      [
+       "suits"
+      ]
+     ],
+     "why": "special spaceships and suits.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u6-3-B2",
+     "type": "fill",
+     "stem": "The trip would take ____.",
+     "answers": [
+      [
+       "months"
+      ]
+     ],
+     "why": "the trip would take months.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

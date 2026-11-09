@@ -1,0 +1,164 @@
+{
+ "id": "g6r-u1-1",
+ "kind": "reading",
+ "title": "A Trip to Xi'an",
+ "subtitle": "考点：一般过去时 / Where did you go?",
+ "unit": "E6U1",
+ "dialogue": [
+  {
+   "s": "Amy",
+   "t": "Mike, where did you go last week?"
+  },
+  {
+   "s": "Mike",
+   "t": "I went to Xi'an with my family."
+  },
+  {
+   "s": "Amy",
+   "t": "Wow! Did you see the Terracotta Warriors?"
+  },
+  {
+   "s": "Mike",
+   "t": "Yes, I did. There were thousands of clay soldiers."
+  },
+  {
+   "s": "Amy",
+   "t": "How did you get there?"
+  },
+  {
+   "s": "Mike",
+   "t": "We took a plane. Then we went to the museum by bus."
+  },
+  {
+   "s": "Amy",
+   "t": "Was it fun?"
+  },
+  {
+   "s": "Mike",
+   "t": "Yes. The warriors were amazing, and I took a lot of photos."
+  }
+ ],
+ "vocab": "Terracotta Warriors 兵马俑 · clay 黏土 · thousand 一千 · museum 博物馆 · plane 飞机 · photo 照片",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6r-u1-1-A1",
+     "type": "choice",
+     "stem": "Where did Mike go last week?",
+     "options": [
+      "To Paris.",
+      "To Xi'an.",
+      "To Zhuhai."
+     ],
+     "answer": "B",
+     "why": "I went to Xi'an with my family.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u1-1-A2",
+     "type": "choice",
+     "stem": "How did they go to the museum?",
+     "options": [
+      "By bike.",
+      "By train.",
+      "By bus."
+     ],
+     "answer": "C",
+     "why": "Then we went to the museum by bus.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u1-1-A3",
+     "type": "choice",
+     "stem": "What were the soldiers made of?",
+     "options": [
+      "Clay.",
+      "Wood.",
+      "Gold."
+     ],
+     "answer": "A",
+     "why": "There were thousands of clay soldiers.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g6r-u1-1-B1",
+     "type": "tf",
+     "stem": "Mike went to Xi'an with his friends.",
+     "answer": "F",
+     "why": "He went with his family.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u1-1-B2",
+     "type": "tf",
+     "stem": "Mike saw the Terracotta Warriors.",
+     "answer": "T",
+     "why": "Yes, I did.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u1-1-B3",
+     "type": "tf",
+     "stem": "Mike's family took a plane.",
+     "answer": "T",
+     "why": "We took a plane.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6r-u1-1-C1",
+     "type": "fill",
+     "stem": "Mike's family took a ____ to Xi'an.",
+     "answers": [
+      [
+       "plane"
+      ]
+     ],
+     "why": "We took a plane.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u1-1-C2",
+     "type": "fill",
+     "stem": "There were thousands of ____ soldiers.",
+     "answers": [
+      [
+       "clay"
+      ]
+     ],
+     "why": "thousands of clay soldiers",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u1-1-C3",
+     "type": "fill",
+     "stem": "Mike took a lot of ____.",
+     "answers": [
+      [
+       "photos"
+      ]
+     ],
+     "why": "I took a lot of photos.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

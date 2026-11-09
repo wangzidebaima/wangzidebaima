@@ -1,0 +1,82 @@
+{
+ "id": "g6sp-u1",
+ "kind": "speaking",
+ "unit": "E6U1",
+ "title": "口语练习",
+ "subtitle": "每天 10 分钟 · 共 5 天",
+ "steps": [
+  "点 🔊 听一遍，听清语调",
+  "一句一句跟着读，声音要大，不怕错",
+  "读完点「今天完成了」打卡"
+ ],
+ "sentences": [
+  {
+   "en": "We went to the village by bus.",
+   "zh": "我们坐公共汽车去了村子。"
+  },
+  {
+   "en": "The view from the mountain was inspiring.",
+   "zh": "山上的景色令人振奋。"
+  },
+  {
+   "en": "It is about one thousand kilometres from Xi'an to the airport.",
+   "zh": "从西安到机场大约一千公里。"
+  },
+  {
+   "en": "He took a photo of the Eiffel Tower in Paris.",
+   "zh": "他在巴黎拍了一张埃菲尔铁塔的照片。"
+  },
+  {
+   "en": "We saw the Terracotta Warriors.",
+   "zh": "我们看到了兵马俑。"
+  },
+  {
+   "en": "We ate dinner in a restaurant.",
+   "zh": "我们在一家餐厅吃了晚饭。"
+  },
+  {
+   "en": "The Hong Kong-Zhuhai-Macao Bridge was very long.",
+   "zh": "港珠澳大桥非常长。"
+  },
+  {
+   "en": "How did you get there?",
+   "zh": "你们是怎么到那儿的？"
+  },
+  {
+   "en": "I climbed the mountain and sent a card to my friend.",
+   "zh": "我爬了山，还给朋友寄了一张卡片。"
+  }
+ ],
+ "plan": [
+  {
+   "day": 1,
+   "title": "跟读第 1–3 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 2,
+   "title": "跟读第 4–6 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 3,
+   "title": "跟读第 7–9 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 4,
+   "title": "不看书，说给家长听",
+   "task": "挑 5 句最喜欢的，尽量不看书说出来",
+   "minutes": 10
+  },
+  {
+   "day": 5,
+   "title": "自己说 3 句话",
+   "task": "用 'I went to … and I saw …' 说 3 句话介绍你去过的一个地方",
+   "minutes": 10
+  }
+ ]
+}

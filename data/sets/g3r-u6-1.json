@@ -1,0 +1,152 @@
+{
+ "id": "g3r-u6-1",
+ "kind": "reading",
+ "title": "How Old Are You?",
+ "subtitle": "考点：问年龄 / How old are you? I am eight years old.",
+ "unit": "E3U6",
+ "dialogue": [
+  {
+   "s": "Tom",
+   "t": "How old are you, Amy?"
+  },
+  {
+   "s": "Amy",
+   "t": "I am eight years old."
+  },
+  {
+   "s": "Tom",
+   "t": "I am nine years old."
+  },
+  {
+   "s": "Amy",
+   "t": "My sister is five years old."
+  },
+  {
+   "s": "Tom",
+   "t": "She is small!"
+  }
+ ],
+ "vocab": "old 年老的/岁 · year 年 · eight 八 · nine 九 · five 五 · sister 姐妹",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3r-u6-1-A1",
+     "type": "choice",
+     "stem": "How old is Amy?",
+     "options": [
+      "Nine.",
+      "Eight.",
+      "Five."
+     ],
+     "answer": "B",
+     "why": "I am eight years old. (Amy)",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u6-1-A2",
+     "type": "choice",
+     "stem": "How old is Tom?",
+     "options": [
+      "Eight.",
+      "Ten.",
+      "Nine."
+     ],
+     "answer": "C",
+     "why": "I am nine years old. (Tom)",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u6-1-A3",
+     "type": "choice",
+     "stem": "How old is Amy's sister?",
+     "options": [
+      "Five.",
+      "Six.",
+      "Seven."
+     ],
+     "answer": "A",
+     "why": "My sister is five years old.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g3r-u6-1-B1",
+     "type": "tf",
+     "stem": "Amy is eight years old.",
+     "answer": "T",
+     "why": "I am eight years old.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u6-1-B2",
+     "type": "tf",
+     "stem": "Tom is eight years old.",
+     "answer": "F",
+     "why": "Tom says: I am nine years old.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u6-1-B3",
+     "type": "tf",
+     "stem": "Amy's sister is ten years old.",
+     "answer": "F",
+     "why": "My sister is five years old.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3r-u6-1-C1",
+     "type": "fill",
+     "stem": "Amy is ____ years old.",
+     "answers": [
+      [
+       "eight"
+      ]
+     ],
+     "why": "I am eight years old.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u6-1-C2",
+     "type": "fill",
+     "stem": "Tom is ____ years old.",
+     "answers": [
+      [
+       "nine"
+      ]
+     ],
+     "why": "I am nine years old.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u6-1-C3",
+     "type": "fill",
+     "stem": "Amy's ____ is five years old.",
+     "answers": [
+      [
+       "sister"
+      ]
+     ],
+     "why": "My sister is five years old.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

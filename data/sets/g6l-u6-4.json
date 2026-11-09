@@ -1,0 +1,124 @@
+{
+ "id": "g6l-u6-4",
+ "kind": "listening",
+ "title": "Wind and Sun",
+ "subtitle": "对话",
+ "unit": "E6U6",
+ "speakers": {
+  "Sam": "c1",
+  "Amy": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Sam",
+   "t": "Amy, look at the big blades on the hill."
+  },
+  {
+   "s": "Amy",
+   "t": "They are wind turbines. They make electricity."
+  },
+  {
+   "s": "Sam",
+   "t": "Is wind a useful type of energy?"
+  },
+  {
+   "s": "Amy",
+   "t": "Yes. It is clean, and it will not run out."
+  },
+  {
+   "s": "Sam",
+   "t": "Do we also use the sun?"
+  },
+  {
+   "s": "Amy",
+   "t": "Yes. Solar power gives light and heat."
+  },
+  {
+   "s": "Sam",
+   "t": "Oil and coal will run out one day."
+  },
+  {
+   "s": "Amy",
+   "t": "So we need more clean energy."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6l-u6-4-A1",
+     "type": "choice",
+     "stem": "What do the wind turbines make?",
+     "options": [
+      "Oil.",
+      "Electricity.",
+      "Water."
+     ],
+     "answer": "B",
+     "why": "They are wind turbines. They make electricity.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u6-4-A2",
+     "type": "choice",
+     "stem": "What does solar power give us?",
+     "options": [
+      "Coal and oil.",
+      "Rain and snow.",
+      "Light and heat."
+     ],
+     "answer": "C",
+     "why": "Solar power gives light and heat.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u6-4-A3",
+     "type": "choice",
+     "stem": "What will run out one day?",
+     "options": [
+      "Oil and coal.",
+      "Wind and sun.",
+      "Water and air."
+     ],
+     "answer": "A",
+     "why": "Oil and coal will run out one day.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6l-u6-4-B1",
+     "type": "fill",
+     "stem": "Wind energy will not run ____.",
+     "answers": [
+      [
+       "out"
+      ]
+     ],
+     "why": "it will not run out",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u6-4-B2",
+     "type": "fill",
+     "stem": "We need more ____ energy.",
+     "answers": [
+      [
+       "clean"
+      ]
+     ],
+     "why": "we need more clean energy",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

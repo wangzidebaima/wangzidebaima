@@ -1,0 +1,106 @@
+{
+ "id": "g9l-u6-2",
+ "kind": "listening",
+ "title": "Satellites Around Us",
+ "subtitle": "短文",
+ "unit": "E9U6",
+ "speakers": {
+  "Ann": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Ann",
+   "t": "Look up at the sky at night, and you may see a small light moving slowly. It might be a satellite. There are thousands of satellites circling the Earth."
+  },
+  {
+   "s": "Ann",
+   "t": "Some of them take pictures of clouds, so weather reports can tell us when a storm is coming. Others help our phones find the way on a map. Some even carry TV programmes across the world."
+  },
+  {
+   "s": "Ann",
+   "t": "A rocket carries a satellite into space, and it can work there for many years. Life without satellites would be much less convenient."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9l-u6-2-A1",
+     "type": "choice",
+     "stem": "What does the speaker say the moving light might be?",
+     "options": [
+      "A rocket.",
+      "A firework.",
+      "A satellite.",
+      "A bird."
+     ],
+     "answer": "C",
+     "why": "It might be a satellite.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u6-2-A2",
+     "type": "choice",
+     "stem": "How can weather reports tell us a storm is coming?",
+     "options": [
+      "Birds bring the news.",
+      "People read newspapers.",
+      "Rovers on Mars send messages.",
+      "Satellites take pictures of clouds."
+     ],
+     "answer": "D",
+     "why": "Some of them take pictures of clouds.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u6-2-A3",
+     "type": "choice",
+     "stem": "What carries a satellite into space?",
+     "options": [
+      "A rocket.",
+      "A balloon.",
+      "A train.",
+      "A telescope."
+     ],
+     "answer": "A",
+     "why": "A rocket carries a satellite into space.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9l-u6-2-B1",
+     "type": "fill",
+     "stem": "Some satellites help phones find the way on a ____.",
+     "answers": [
+      [
+       "map"
+      ]
+     ],
+     "why": "find the way on a map.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u6-2-B2",
+     "type": "fill",
+     "stem": "A satellite can work in space for many ____.",
+     "answers": [
+      [
+       "years"
+      ]
+     ],
+     "why": "work there for many years.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

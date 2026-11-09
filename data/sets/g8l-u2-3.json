@@ -1,0 +1,118 @@
+{
+ "id": "g8l-u2-3",
+ "kind": "listening",
+ "title": "Our New Community",
+ "subtitle": "短文",
+ "unit": "E8U2",
+ "speakers": {
+  "Wang": "m1"
+ },
+ "transcript": [
+  {
+   "s": "Wang",
+   "t": "My family has lived in the Green Park community for two years. It is a clean and quiet place."
+  },
+  {
+   "s": "Wang",
+   "t": "There is a small garden in the middle, and old people often sit there and talk."
+  },
+  {
+   "s": "Wang",
+   "t": "Every Sunday, the neighbours get together to clean up the rubbish near the gate."
+  },
+  {
+   "s": "Wang",
+   "t": "Last month, I helped them for the first time. I put the rubbish into different bins."
+  },
+  {
+   "s": "Wang",
+   "t": "After the work, a neighbour gave us cold watermelon."
+  },
+  {
+   "s": "Wang",
+   "t": "I love my community, because everyone is friendly and ready to help."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8l-u2-3-A1",
+     "type": "choice",
+     "stem": "How long has Wang lived in the community?",
+     "options": [
+      "Two months.",
+      "Ten years.",
+      "One year.",
+      "Two years."
+     ],
+     "answer": "D",
+     "why": "for two years.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u2-3-A2",
+     "type": "choice",
+     "stem": "What do the neighbours do every Sunday?",
+     "options": [
+      "Clean up the rubbish.",
+      "Play football.",
+      "Have a party.",
+      "Go shopping."
+     ],
+     "answer": "A",
+     "why": "clean up the rubbish near the gate.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u2-3-A3",
+     "type": "choice",
+     "stem": "What did the neighbour give them?",
+     "options": [
+      "Hot tea.",
+      "Cold watermelon.",
+      "Biscuits.",
+      "Ice cream."
+     ],
+     "answer": "B",
+     "why": "a neighbour gave us cold watermelon.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8l-u2-3-B1",
+     "type": "fill",
+     "stem": "There is a small ____ in the middle.",
+     "answers": [
+      [
+       "garden"
+      ]
+     ],
+     "why": "a small garden.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u2-3-B2",
+     "type": "fill",
+     "stem": "Everyone in the community is ____.",
+     "answers": [
+      [
+       "friendly"
+      ]
+     ],
+     "why": "everyone is friendly.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

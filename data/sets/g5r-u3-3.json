@@ -1,0 +1,160 @@
+{
+ "id": "g5r-u3-3",
+ "kind": "reading",
+ "title": "School Days",
+ "subtitle": "考点：时间与原因 / I like Thursday because ...",
+ "unit": "E5U3",
+ "dialogue": [
+  {
+   "s": "Mike",
+   "t": "What time do we start school in the morning, Tom?"
+  },
+  {
+   "s": "Tom",
+   "t": "We start at eight. We have four lessons before lunch."
+  },
+  {
+   "s": "Mike",
+   "t": "And after lunch?"
+  },
+  {
+   "s": "Tom",
+   "t": "Two lessons. On Thursday we have a ping-pong club after school."
+  },
+  {
+   "s": "Mike",
+   "t": "Great! I like Thursday."
+  },
+  {
+   "s": "Tom",
+   "t": "Why?"
+  },
+  {
+   "s": "Mike",
+   "t": "Because I can play ping-pong with my friends."
+  }
+ ],
+ "vocab": "start 开始 · lesson 课 · ping-pong 乒乓球 · because 因为 · Thursday 星期四 · answer 回答",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5r-u3-3-A1",
+     "type": "choice",
+     "stem": "When do they start school?",
+     "options": [
+      "At eight.",
+      "At nine.",
+      "At seven."
+     ],
+     "answer": "A",
+     "why": "We start at eight.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u3-3-A2",
+     "type": "choice",
+     "stem": "How many lessons are there before lunch?",
+     "options": [
+      "Two.",
+      "Four.",
+      "Three."
+     ],
+     "answer": "B",
+     "why": "We have four lessons before lunch.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u3-3-A3",
+     "type": "choice",
+     "stem": "Why does Mike like Thursday?",
+     "options": [
+      "He can visit his grandparents.",
+      "He has no lessons.",
+      "He can play ping-pong after school."
+     ],
+     "answer": "C",
+     "why": "Because I can play ping-pong with my friends.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g5r-u3-3-B1",
+     "type": "tf",
+     "stem": "They have two lessons after lunch.",
+     "answer": "T",
+     "why": "Two lessons.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u3-3-B2",
+     "type": "tf",
+     "stem": "The ping-pong club is on Friday.",
+     "answer": "F",
+     "why": "On Thursday we have a ping-pong club.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u3-3-B3",
+     "type": "tf",
+     "stem": "Mike likes Thursday.",
+     "answer": "T",
+     "why": "Great! I like Thursday.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5r-u3-3-C1",
+     "type": "fill",
+     "stem": "They start school at ____.",
+     "answers": [
+      [
+       "eight"
+      ]
+     ],
+     "why": "We start at eight.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u3-3-C2",
+     "type": "fill",
+     "stem": "They have four ____ before lunch.",
+     "answers": [
+      [
+       "lessons"
+      ]
+     ],
+     "why": "We have four lessons before lunch.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u3-3-C3",
+     "type": "fill",
+     "stem": "Mike likes Thursday ____ he can play ping-pong.",
+     "answers": [
+      [
+       "because"
+      ]
+     ],
+     "why": "Because I can play ping-pong with my friends.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

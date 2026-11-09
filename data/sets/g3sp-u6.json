@@ -1,0 +1,82 @@
+{
+ "id": "g3sp-u6",
+ "kind": "speaking",
+ "unit": "E3U6",
+ "title": "口语练习",
+ "subtitle": "每天 10 分钟 · 共 5 天",
+ "steps": [
+  "点 🔊 听一遍，听清语调",
+  "一句一句跟着读，声音要大，不怕错",
+  "读完点「今天完成了」打卡"
+ ],
+ "sentences": [
+  {
+   "en": "How old are you?",
+   "zh": "你几岁了？"
+  },
+  {
+   "en": "I am eight years old.",
+   "zh": "我八岁了。"
+  },
+  {
+   "en": "She is five years old.",
+   "zh": "她五岁了。"
+  },
+  {
+   "en": "He is six years old.",
+   "zh": "他六岁了。"
+  },
+  {
+   "en": "It is seven o'clock.",
+   "zh": "现在七点钟。"
+  },
+  {
+   "en": "I have two books.",
+   "zh": "我有两本书。"
+  },
+  {
+   "en": "I can count to ten.",
+   "zh": "我能数到十。"
+  },
+  {
+   "en": "Cut the cake, please.",
+   "zh": "请切蛋糕。"
+  },
+  {
+   "en": "Let's eat the cake.",
+   "zh": "我们吃蛋糕吧。"
+  }
+ ],
+ "plan": [
+  {
+   "day": 1,
+   "title": "跟读第 1–3 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 2,
+   "title": "跟读第 4–6 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 3,
+   "title": "跟读第 7–9 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 4,
+   "title": "不看书，说给家长听",
+   "task": "挑 5 句最喜欢的，尽量不看书说出来",
+   "minutes": 10
+  },
+  {
+   "day": 5,
+   "title": "自己说 3 句话",
+   "task": "用 'I am … years old. It is … o'clock.' 说 3 句话介绍年龄和时间",
+   "minutes": 10
+  }
+ ]
+}

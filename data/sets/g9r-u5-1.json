@@ -1,0 +1,151 @@
+{
+ "id": "g9r-u5-1",
+ "kind": "reading",
+ "title": "The Sticky Note Story",
+ "subtitle": "考点：发明故事 / invent, later on, be supposed to",
+ "unit": "E9U5",
+ "passage": [
+  "In 1968, a scientist named Spencer Silver was trying to make a very strong glue. He failed. His glue was weak, and it was not supposed to be that way. But it did something strange: it stuck to paper, and it could be pulled off again without any damage. For years, nobody knew what to do with it.",
+  "Later on, another man, Arthur Fry, found a use for it. He sang in a church choir, and the small pieces of paper in his songbook kept falling out. He remembered Silver's glue and put it on the back of the paper. The notes stayed in place and came off easily. The company began to produce sticky notes, and today people all over the world use them at home and in the office."
+ ],
+ "vocab": "invent 发明 · glue 胶水 · weak 弱的 · sticky 粘的 · produce 生产 · company 公司",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9r-u5-1-A1",
+     "type": "choice",
+     "stem": "What was Spencer Silver trying to make?",
+     "options": [
+      "A new kind of paper.",
+      "A very strong glue.",
+      "A songbook.",
+      "A strong plastic."
+     ],
+     "answer": "B",
+     "why": "was trying to make a very strong glue.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u5-1-A2",
+     "type": "choice",
+     "stem": "What was strange about his glue?",
+     "options": [
+      "It could not stick to anything.",
+      "It turned paper into plastic.",
+      "It stuck to paper but could be pulled off again.",
+      "It could only be used in churches."
+     ],
+     "answer": "C",
+     "why": "it stuck to paper, and it could be pulled off again without any damage.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u5-1-A3",
+     "type": "choice",
+     "stem": "Why did Arthur Fry need the glue?",
+     "options": [
+      "He wanted to make a camera.",
+      "His church had no paper.",
+      "His company asked him to.",
+      "The papers in his songbook kept falling out."
+     ],
+     "answer": "D",
+     "why": "the small pieces of paper in his songbook kept falling out.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u5-1-A4",
+     "type": "choice",
+     "stem": "What did the company begin to do?",
+     "options": [
+      "Produce sticky notes.",
+      "Sell songbooks.",
+      "Build churches.",
+      "Teach scientists."
+     ],
+     "answer": "A",
+     "why": "The company began to produce sticky notes",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g9r-u5-1-B1",
+     "type": "tf",
+     "stem": "Silver's glue was very strong.",
+     "answer": "F",
+     "why": "His glue was weak.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u5-1-B2",
+     "type": "tf",
+     "stem": "Arthur Fry sang in a church choir.",
+     "answer": "T",
+     "why": "He sang in a church choir",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u5-1-B3",
+     "type": "tf",
+     "stem": "Sticky notes are used all over the world today.",
+     "answer": "T",
+     "why": "people all over the world use them",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9r-u5-1-C1",
+     "type": "fill",
+     "stem": "Spencer Silver was a ____.",
+     "answers": [
+      [
+       "scientist"
+      ]
+     ],
+     "why": "a scientist named Spencer Silver",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u5-1-C2",
+     "type": "fill",
+     "stem": "The notes stayed in place and came off ____.",
+     "answers": [
+      [
+       "easily"
+      ]
+     ],
+     "why": "came off easily.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u5-1-C3",
+     "type": "fill",
+     "stem": "The company began to ____ sticky notes.",
+     "answers": [
+      [
+       "produce"
+      ]
+     ],
+     "why": "began to produce sticky notes",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

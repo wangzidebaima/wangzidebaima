@@ -1,0 +1,164 @@
+{
+ "id": "g6r-u6-3",
+ "kind": "reading",
+ "title": "Reduce, Reuse, Recycle",
+ "subtitle": "考点：情态动词 / We can reduce, reuse and recycle",
+ "unit": "E6U6",
+ "dialogue": [
+  {
+   "s": "Lily",
+   "t": "Sam, what are you doing with those old bottles?"
+  },
+  {
+   "s": "Sam",
+   "t": "I am going to reuse them."
+  },
+  {
+   "s": "Lily",
+   "t": "How?"
+  },
+  {
+   "s": "Sam",
+   "t": "I will paint them and make pen holders."
+  },
+  {
+   "s": "Lily",
+   "t": "What else can we recycle?"
+  },
+  {
+   "s": "Sam",
+   "t": "Paper, cans and plastic bottles. We can reduce, reuse and recycle!"
+  },
+  {
+   "s": "Lily",
+   "t": "I will put my old paper in the recycling box."
+  },
+  {
+   "s": "Sam",
+   "t": "Great! Every small step makes a difference."
+  }
+ ],
+ "vocab": "reduce 减少 · reuse 再利用 · recycle 回收 · bottle 瓶子 · paper 纸 · difference 差别",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6r-u6-3-A1",
+     "type": "choice",
+     "stem": "What will Sam do with the old bottles?",
+     "options": [
+      "Make pen holders.",
+      "Throw them away.",
+      "Sell them."
+     ],
+     "answer": "A",
+     "why": "I will paint them and make pen holders.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u6-3-A2",
+     "type": "choice",
+     "stem": "What can we recycle?",
+     "options": [
+      "Food and water.",
+      "Paper, cans and plastic bottles.",
+      "Light and heat."
+     ],
+     "answer": "B",
+     "why": "Paper, cans and plastic bottles.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u6-3-A3",
+     "type": "choice",
+     "stem": "What will Lily put in the recycling box?",
+     "options": [
+      "Her old shoes.",
+      "Her old toys.",
+      "Her old paper."
+     ],
+     "answer": "C",
+     "why": "I will put my old paper in the recycling box.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g6r-u6-3-B1",
+     "type": "tf",
+     "stem": "Sam will make pen holders from old bottles.",
+     "answer": "T",
+     "why": "I will paint them and make pen holders.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u6-3-B2",
+     "type": "tf",
+     "stem": "Sam will throw the bottles away.",
+     "answer": "F",
+     "why": "He will reuse them.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u6-3-B3",
+     "type": "tf",
+     "stem": "Lily will put her old paper in the recycling box.",
+     "answer": "T",
+     "why": "I will put my old paper in the recycling box.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6r-u6-3-C1",
+     "type": "fill",
+     "stem": "Sam will ____ the old bottles.",
+     "answers": [
+      [
+       "reuse"
+      ]
+     ],
+     "why": "I am going to reuse them.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u6-3-C2",
+     "type": "fill",
+     "stem": "We can recycle paper, cans and plastic ____.",
+     "answers": [
+      [
+       "bottles"
+      ]
+     ],
+     "why": "Paper, cans and plastic bottles.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u6-3-C3",
+     "type": "fill",
+     "stem": "Every small step makes a ____.",
+     "answers": [
+      [
+       "difference"
+      ]
+     ],
+     "why": "Every small step makes a difference.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

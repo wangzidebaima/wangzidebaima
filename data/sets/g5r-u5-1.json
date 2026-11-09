@@ -1,0 +1,160 @@
+{
+ "id": "g5r-u5-1",
+ "kind": "reading",
+ "title": "I Am Hungry",
+ "subtitle": "考点：表达饥饿与食物 / I like beef and dumplings.",
+ "unit": "E5U5",
+ "dialogue": [
+  {
+   "s": "Mum",
+   "t": "Dinner is ready, Tom. Are you hungry?"
+  },
+  {
+   "s": "Tom",
+   "t": "Yes, I am very hungry. What do we have?"
+  },
+  {
+   "s": "Mum",
+   "t": "We have beef and dumplings."
+  },
+  {
+   "s": "Tom",
+   "t": "I like beef and dumplings! Can I have some tea?"
+  },
+  {
+   "s": "Mum",
+   "t": "Of course. Here you are."
+  },
+  {
+   "s": "Tom",
+   "t": "Thanks, Mum. Is there any ice cream?"
+  },
+  {
+   "s": "Mum",
+   "t": "Only a little. You can have it after dinner."
+  }
+ ],
+ "vocab": "hungry 饿的 · beef 牛肉 · dumpling 饺子 · tea 茶 · ice cream 冰淇淋 · little 少量的",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5r-u5-1-A1",
+     "type": "choice",
+     "stem": "How does Tom feel?",
+     "options": [
+      "Tired.",
+      "Hungry.",
+      "Sad."
+     ],
+     "answer": "B",
+     "why": "Yes, I am very hungry.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u5-1-A2",
+     "type": "choice",
+     "stem": "What do they have for dinner?",
+     "options": [
+      "Fish and rice.",
+      "Noodles and eggs.",
+      "Beef and dumplings."
+     ],
+     "answer": "C",
+     "why": "We have beef and dumplings.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u5-1-A3",
+     "type": "choice",
+     "stem": "When can Tom have ice cream?",
+     "options": [
+      "After dinner.",
+      "Before dinner.",
+      "Tomorrow."
+     ],
+     "answer": "A",
+     "why": "You can have it after dinner.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g5r-u5-1-B1",
+     "type": "tf",
+     "stem": "Tom likes beef and dumplings.",
+     "answer": "T",
+     "why": "I like beef and dumplings!",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u5-1-B2",
+     "type": "tf",
+     "stem": "There is a lot of ice cream.",
+     "answer": "F",
+     "why": "Only a little.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u5-1-B3",
+     "type": "tf",
+     "stem": "Tom wants some tea.",
+     "answer": "T",
+     "why": "Can I have some tea?",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5r-u5-1-C1",
+     "type": "fill",
+     "stem": "Tom is very ____.",
+     "answers": [
+      [
+       "hungry"
+      ]
+     ],
+     "why": "I am very hungry.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u5-1-C2",
+     "type": "fill",
+     "stem": "They have beef and ____.",
+     "answers": [
+      [
+       "dumplings"
+      ]
+     ],
+     "why": "We have beef and dumplings.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u5-1-C3",
+     "type": "fill",
+     "stem": "Tom wants some ____.",
+     "answers": [
+      [
+       "tea"
+      ]
+     ],
+     "why": "Can I have some tea?",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

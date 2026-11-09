@@ -1,0 +1,120 @@
+{
+ "id": "g5l-u6-4",
+ "kind": "listening",
+ "title": "After the Flood",
+ "subtitle": "对话",
+ "unit": "E5U6",
+ "speakers": {
+  "Amy": "c1",
+  "Sam": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Amy",
+   "t": "Sam, did you see the news about the flood?"
+  },
+  {
+   "s": "Sam",
+   "t": "Yes. The river was very high."
+  },
+  {
+   "s": "Amy",
+   "t": "Many people left their houses."
+  },
+  {
+   "s": "Sam",
+   "t": "Is it safe now?"
+  },
+  {
+   "s": "Amy",
+   "t": "Yes. The rain stopped yesterday."
+  },
+  {
+   "s": "Sam",
+   "t": "Nature can be dangerous."
+  },
+  {
+   "s": "Amy",
+   "t": "We should always listen to the weather report."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5l-u6-4-A1",
+     "type": "choice",
+     "stem": "What was the news about?",
+     "options": [
+      "A fire.",
+      "A flood.",
+      "A trip."
+     ],
+     "answer": "B",
+     "why": "the news about the flood?",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u6-4-A2",
+     "type": "choice",
+     "stem": "How was the river?",
+     "options": [
+      "Very low.",
+      "Very clean.",
+      "Very high."
+     ],
+     "answer": "C",
+     "why": "The river was very high.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u6-4-A3",
+     "type": "choice",
+     "stem": "When did the rain stop?",
+     "options": [
+      "Yesterday.",
+      "Today.",
+      "Last week."
+     ],
+     "answer": "A",
+     "why": "The rain stopped yesterday.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5l-u6-4-B1",
+     "type": "fill",
+     "stem": "Nature can be ____.",
+     "answers": [
+      [
+       "dangerous"
+      ]
+     ],
+     "why": "Nature can be dangerous.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u6-4-B2",
+     "type": "fill",
+     "stem": "We should listen to the weather ____.",
+     "answers": [
+      [
+       "report"
+      ]
+     ],
+     "why": "listen to the weather report.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

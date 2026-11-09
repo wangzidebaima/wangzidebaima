@@ -1,0 +1,151 @@
+{
+ "id": "g9r-u3-1",
+ "kind": "reading",
+ "title": "Learning English with Podcasts",
+ "subtitle": "考点：学习方法 / look up, aloud, in addition",
+ "unit": "E9U3",
+ "passage": [
+  "Lucy wanted to improve her English, so she asked her teacher for advice. The teacher suggested that she listen to a short podcast every day. Lucy tried it. At first, she could not understand everything, so she wrote down new words and looked them up in a dictionary.",
+  "After a month, she began to read the stories aloud and copy the speakers' pronunciation. In addition, she made flashcards for difficult words and reviewed them on the bus. Step by step, her listening got better, and she felt more confident. Lucy says, 'Learning is not about speed. It is about finding a method that suits you.'"
+ ],
+ "vocab": "podcast 播客 · suggest 建议 · dictionary 词典 · aloud 出声地 · flashcard 单词卡 · pronunciation 发音",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9r-u3-1-A1",
+     "type": "choice",
+     "stem": "What did the teacher suggest?",
+     "options": [
+      "Reading a long novel.",
+      "Listening to a short podcast every day.",
+      "Moving to another country.",
+      "Watching films without sound."
+     ],
+     "answer": "B",
+     "why": "suggested that she listen to a short podcast every day.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u3-1-A2",
+     "type": "choice",
+     "stem": "What did Lucy do with new words at first?",
+     "options": [
+      "She ignored them.",
+      "She asked her mother to sing them.",
+      "She wrote them down and looked them up.",
+      "She put them on the wall."
+     ],
+     "answer": "C",
+     "why": "she wrote down new words and looked them up in a dictionary.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u3-1-A3",
+     "type": "choice",
+     "stem": "When did Lucy review her flashcards?",
+     "options": [
+      "In the library.",
+      "At the park.",
+      "In the kitchen.",
+      "On the bus."
+     ],
+     "answer": "D",
+     "why": "reviewed them on the bus.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u3-1-A4",
+     "type": "choice",
+     "stem": "What does Lucy think is important?",
+     "options": [
+      "Finding a method that suits you.",
+      "Learning as fast as possible.",
+      "Studying only at night.",
+      "Never making mistakes."
+     ],
+     "answer": "A",
+     "why": "It is about finding a method that suits you.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g9r-u3-1-B1",
+     "type": "tf",
+     "stem": "Lucy understood everything in the podcast at first.",
+     "answer": "F",
+     "why": "At first, she could not understand everything.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u3-1-B2",
+     "type": "tf",
+     "stem": "Lucy read stories aloud after a month.",
+     "answer": "T",
+     "why": "After a month, she began to read the stories aloud",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u3-1-B3",
+     "type": "tf",
+     "stem": "Lucy made flashcards for difficult words.",
+     "answer": "T",
+     "why": "she made flashcards for difficult words",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9r-u3-1-C1",
+     "type": "fill",
+     "stem": "The teacher ____ that she listen to a podcast.",
+     "answers": [
+      [
+       "suggested"
+      ]
+     ],
+     "why": "The teacher suggested that she listen to a short podcast every day.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u3-1-C2",
+     "type": "fill",
+     "stem": "She looked new words up in a ____.",
+     "answers": [
+      [
+       "dictionary"
+      ]
+     ],
+     "why": "looked them up in a dictionary.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u3-1-C3",
+     "type": "fill",
+     "stem": "Step by step, her ____ got better.",
+     "answers": [
+      [
+       "listening"
+      ]
+     ],
+     "why": "Step by step, her listening got better.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

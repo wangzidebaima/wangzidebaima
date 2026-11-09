@@ -1,0 +1,127 @@
+{
+ "id": "g9l-u2-1",
+ "kind": "listening",
+ "title": "Someone I Look Up To",
+ "subtitle": "对话",
+ "unit": "E9U2",
+ "speakers": {
+  "Amy": "f1",
+  "Ben": "m1"
+ },
+ "transcript": [
+  {
+   "s": "Amy",
+   "t": "Ben, we must choose a person we look up to for our class talk."
+  },
+  {
+   "s": "Ben",
+   "t": "I will choose my aunt. She is a nurse in a small hospital."
+  },
+  {
+   "s": "Amy",
+   "t": "Why do you admire her?"
+  },
+  {
+   "s": "Ben",
+   "t": "During a bad flood, she worked for two days without a break to help the wounded."
+  },
+  {
+   "s": "Amy",
+   "t": "That is really brave."
+  },
+  {
+   "s": "Ben",
+   "t": "Above all, she is kind to everyone. What about you?"
+  },
+  {
+   "s": "Amy",
+   "t": "I choose my math teacher. She dropped out of school as a girl, but she studied at night and later became a teacher."
+  },
+  {
+   "s": "Ben",
+   "t": "That shows great courage too."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9l-u2-1-A1",
+     "type": "choice",
+     "stem": "What is Ben's aunt's job?",
+     "options": [
+      "She is a doctor.",
+      "She is a nurse.",
+      "She is a pilot.",
+      "She is a teacher."
+     ],
+     "answer": "B",
+     "why": "She is a nurse in a small hospital.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u2-1-A2",
+     "type": "choice",
+     "stem": "How long did Ben's aunt work without a break during the flood?",
+     "options": [
+      "Two hours.",
+      "One week.",
+      "Two days.",
+      "Ten hours."
+     ],
+     "answer": "C",
+     "why": "worked for two days without a break.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u2-1-A3",
+     "type": "choice",
+     "stem": "How did Amy's teacher become a teacher?",
+     "options": [
+      "She won a big prize.",
+      "She learned it from a TV show.",
+      "She followed her parents' job.",
+      "She studied at night."
+     ],
+     "answer": "D",
+     "why": "she studied at night and later became a teacher.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9l-u2-1-B1",
+     "type": "fill",
+     "stem": "Ben's aunt helped the ____ in the flood.",
+     "answers": [
+      [
+       "wounded"
+      ]
+     ],
+     "why": "to help the wounded.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u2-1-B2",
+     "type": "fill",
+     "stem": "Above all, she is ____ to everyone.",
+     "answers": [
+      [
+       "kind"
+      ]
+     ],
+     "why": "Above all, she is kind to everyone.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

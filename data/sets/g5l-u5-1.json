@@ -1,0 +1,120 @@
+{
+ "id": "g5l-u5-1",
+ "kind": "listening",
+ "title": "Lunch Time",
+ "subtitle": "对话",
+ "unit": "E5U5",
+ "speakers": {
+  "Amy": "c1",
+  "Mike": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Amy",
+   "t": "Mike, I am hungry. What do you have for lunch?"
+  },
+  {
+   "s": "Mike",
+   "t": "I have beef and rice. And you?"
+  },
+  {
+   "s": "Amy",
+   "t": "I have dumplings. My mum made them."
+  },
+  {
+   "s": "Mike",
+   "t": "They look nice. Can I have one?"
+  },
+  {
+   "s": "Amy",
+   "t": "Sure. Here you are."
+  },
+  {
+   "s": "Mike",
+   "t": "Mmm, delicious! Thank you."
+  },
+  {
+   "s": "Amy",
+   "t": "You are welcome."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5l-u5-1-A1",
+     "type": "choice",
+     "stem": "What does Mike have for lunch?",
+     "options": [
+      "Dumplings.",
+      "Beef and rice.",
+      "A hamburger."
+     ],
+     "answer": "B",
+     "why": "I have beef and rice.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u5-1-A2",
+     "type": "choice",
+     "stem": "Who made the dumplings?",
+     "options": [
+      "Mike's mum.",
+      "Amy.",
+      "Amy's mum."
+     ],
+     "answer": "C",
+     "why": "My mum made them.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u5-1-A3",
+     "type": "choice",
+     "stem": "What does Mike want?",
+     "options": [
+      "One dumpling.",
+      "Some tea.",
+      "An ice cream."
+     ],
+     "answer": "A",
+     "why": "Can I have one?",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5l-u5-1-B1",
+     "type": "fill",
+     "stem": "Amy is ____.",
+     "answers": [
+      [
+       "hungry"
+      ]
+     ],
+     "why": "I am hungry.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u5-1-B2",
+     "type": "fill",
+     "stem": "Amy has ____ for lunch.",
+     "answers": [
+      [
+       "dumplings"
+      ]
+     ],
+     "why": "I have dumplings.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,82 @@
+{
+ "id": "g5sp-u5",
+ "kind": "speaking",
+ "unit": "E5U5",
+ "title": "口语练习",
+ "subtitle": "每天 10 分钟 · 共 5 天",
+ "steps": [
+  "点 🔊 听一遍，听清语调",
+  "一句一句跟着读，声音要大，不怕错",
+  "读完点「今天完成了」打卡"
+ ],
+ "sentences": [
+  {
+   "en": "I am hungry.",
+   "zh": "我饿了。"
+  },
+  {
+   "en": "I like beef and dumplings.",
+   "zh": "我喜欢牛肉和饺子。"
+  },
+  {
+   "en": "She wants an ice cream.",
+   "zh": "她想要一个冰淇淋。"
+  },
+  {
+   "en": "The hamburger is big.",
+   "zh": "这个汉堡包很大。"
+  },
+  {
+   "en": "The lotus is in the lake.",
+   "zh": "荷花在湖里。"
+  },
+  {
+   "en": "Coconuts are round.",
+   "zh": "椰子是圆的。"
+  },
+  {
+   "en": "Can I have some tea, please?",
+   "zh": "请给我一些茶好吗？"
+  },
+  {
+   "en": "Lotus seeds are small and round.",
+   "zh": "莲子又小又圆。"
+  },
+  {
+   "en": "Plants are interesting.",
+   "zh": "植物很有趣。"
+  }
+ ],
+ "plan": [
+  {
+   "day": 1,
+   "title": "跟读第 1–3 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 2,
+   "title": "跟读第 4–6 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 3,
+   "title": "跟读第 7–9 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 4,
+   "title": "不看书，说给家长听",
+   "task": "挑 5 句最喜欢的，尽量不看书说出来",
+   "minutes": 10
+  },
+  {
+   "day": 5,
+   "title": "自己说 3 句话",
+   "task": "用 'I like … because …' 说 3 句话介绍你喜欢的食物",
+   "minutes": 10
+  }
+ ]
+}

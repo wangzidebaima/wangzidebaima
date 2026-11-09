@@ -1,0 +1,152 @@
+{
+ "id": "g8r-u8-1",
+ "kind": "reading",
+ "title": "Making Up with a Friend",
+ "subtitle": "考点：解决矛盾 / argue with / make up",
+ "unit": "E8U8",
+ "passage": [
+  "Lily and Kate have been best friends for five years. Last week, they argued about a school project. Lily wanted to make a poster, but Kate wanted to make a video. Both of them became angry, and they stopped talking to each other.",
+  "For three days, they sat far apart in class. Lily felt sad and lonely. She missed talking with Kate at lunch. She asked her older sister for advice. Her sister said, “Calm down first. Then listen to Kate and tell her how you feel. A good friend is more important than a project.”",
+  "The next day, Lily wrote a note to Kate. It said, “I'm sorry I was impolite. Can we talk?” Kate read it and smiled. After school, they talked face to face. They decided to make a poster with a short video. In the end, their teacher gave the project an A, and the girls became closer than before."
+ ],
+ "vocab": "argue 争吵 · project 项目 · calm 冷静的 · impolite 不礼貌的 · face to face 面对面 · make up 和好 · advice 建议",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8r-u8-1-A1",
+     "type": "choice",
+     "stem": "What did Lily and Kate argue about?",
+     "options": [
+      "A birthday gift.",
+      "A school project.",
+      "A holiday plan.",
+      "A lost book."
+     ],
+     "answer": "B",
+     "why": "they argued about a school project.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u8-1-A2",
+     "type": "choice",
+     "stem": "What did Lily's sister tell her to do first?",
+     "options": [
+      "Say sorry to the teacher.",
+      "Make a video.",
+      "Calm down.",
+      "Forget Kate."
+     ],
+     "answer": "C",
+     "why": "Calm down first.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u8-1-A3",
+     "type": "choice",
+     "stem": "How did Lily contact Kate?",
+     "options": [
+      "She sent a gift.",
+      "She called her at night.",
+      "She asked the teacher.",
+      "She wrote a note."
+     ],
+     "answer": "D",
+     "why": "Lily wrote a note to Kate.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u8-1-A4",
+     "type": "choice",
+     "stem": "What did the girls do for the project in the end?",
+     "options": [
+      "They made a poster with a short video.",
+      "They made only a poster.",
+      "They made only a video.",
+      "They did nothing."
+     ],
+     "answer": "A",
+     "why": "They decided to make a poster with a short video.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g8r-u8-1-B1",
+     "type": "tf",
+     "stem": "Lily and Kate have been friends for five years.",
+     "answer": "T",
+     "why": "best friends for five years.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u8-1-B2",
+     "type": "tf",
+     "stem": "They kept talking during the three days.",
+     "answer": "F",
+     "why": "他们互相不说话（stopped talking to each other）。",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u8-1-B3",
+     "type": "tf",
+     "stem": "The teacher gave the project an A.",
+     "answer": "T",
+     "why": "their teacher gave the project an A.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8r-u8-1-C1",
+     "type": "fill",
+     "stem": "Lily wanted to make a ____.",
+     "answers": [
+      [
+       "poster"
+      ]
+     ],
+     "why": "Lily wanted to make a poster.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u8-1-C2",
+     "type": "fill",
+     "stem": "Lily felt sad and ____.",
+     "answers": [
+      [
+       "lonely"
+      ]
+     ],
+     "why": "Lily felt sad and lonely.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u8-1-C3",
+     "type": "fill",
+     "stem": "They talked face to ____.",
+     "answers": [
+      [
+       "face"
+      ]
+     ],
+     "why": "talked face to face.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

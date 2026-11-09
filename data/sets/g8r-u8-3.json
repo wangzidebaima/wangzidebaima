@@ -1,0 +1,152 @@
+{
+ "id": "g8r-u8-3",
+ "kind": "reading",
+ "title": "Message or Meeting?",
+ "subtitle": "考点：沟通方式 / text message / in person",
+ "unit": "E8U8",
+ "passage": [
+  "Today, people can talk in many ways. Text messages are quick and easy. You can send one in seconds, and you can answer when you are free. Many teenagers use text messages to chat with friends every day.",
+  "However, text messages have problems. Sometimes it is hard to understand the real meaning because you cannot see the speaker's face or hear the voice. A joke may sound unkind, and a short reply may seem impolite. Misunderstandings can happen easily.",
+  "That is why face-to-face talk is still important. When you meet someone in person, you can see their expression and hear their tone. You can also ask questions right away. For serious or personal topics, it is better to talk in person or on the phone. Whichever way you choose, remember to show interest in the other person and to listen carefully."
+ ],
+ "vocab": "text message 短信 · in person 当面 · expression 表情 · misunderstanding 误解 · personal 个人的 · carefully 仔细地 · right away 马上",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8r-u8-3-A1",
+     "type": "choice",
+     "stem": "What is good about text messages?",
+     "options": [
+      "They are always polite.",
+      "They show your face.",
+      "They are always free of mistakes.",
+      "They are quick and easy."
+     ],
+     "answer": "D",
+     "why": "Text messages are quick and easy.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u8-3-A2",
+     "type": "choice",
+     "stem": "What problem can a text message cause?",
+     "options": [
+      "Misunderstandings.",
+      "Headaches.",
+      "Bad weather.",
+      "Traffic jams."
+     ],
+     "answer": "A",
+     "why": "Misunderstandings can happen easily.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u8-3-A3",
+     "type": "choice",
+     "stem": "What can you see when you meet in person?",
+     "options": [
+      "Their text.",
+      "Their expression.",
+      "Their emails.",
+      "Their phone number."
+     ],
+     "answer": "B",
+     "why": "you can see their expression and hear their tone.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u8-3-A4",
+     "type": "choice",
+     "stem": "Which way is better for serious topics?",
+     "options": [
+      "Sending a text message.",
+      "Writing a short note.",
+      "Talking in person or on the phone.",
+      "Not talking at all."
+     ],
+     "answer": "C",
+     "why": "For serious or personal topics, it is better to talk in person or on the phone.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g8r-u8-3-B1",
+     "type": "tf",
+     "stem": "You can answer a text message when you are free.",
+     "answer": "T",
+     "why": "you can answer when you are free.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u8-3-B2",
+     "type": "tf",
+     "stem": "A short reply always seems friendly.",
+     "answer": "F",
+     "why": "简短回复可能显得不礼貌（may seem impolite）。",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u8-3-B3",
+     "type": "tf",
+     "stem": "In face-to-face talk, you cannot ask questions right away.",
+     "answer": "F",
+     "why": "You can also ask questions right away.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8r-u8-3-C1",
+     "type": "fill",
+     "stem": "Text messages can be sent in ____.",
+     "answers": [
+      [
+       "seconds"
+      ]
+     ],
+     "why": "send one in seconds.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u8-3-C2",
+     "type": "fill",
+     "stem": "A joke may sound ____.",
+     "answers": [
+      [
+       "unkind"
+      ]
+     ],
+     "why": "A joke may sound unkind.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u8-3-C3",
+     "type": "fill",
+     "stem": "You should ____ carefully to the other person.",
+     "answers": [
+      [
+       "listen"
+      ]
+     ],
+     "why": "remember to ... listen carefully.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

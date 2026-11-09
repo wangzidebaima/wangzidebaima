@@ -1,0 +1,160 @@
+{
+ "id": "g5r-u3-1",
+ "kind": "reading",
+ "title": "My Favourite Subject",
+ "subtitle": "考点：科目与星期 / My favourite subject is science.",
+ "unit": "E5U3",
+ "dialogue": [
+  {
+   "s": "Ben",
+   "t": "What is your favourite subject, Lily?"
+  },
+  {
+   "s": "Lily",
+   "t": "My favourite subject is science. And you?"
+  },
+  {
+   "s": "Ben",
+   "t": "I like English because it is fun."
+  },
+  {
+   "s": "Lily",
+   "t": "When do you have English lessons?"
+  },
+  {
+   "s": "Ben",
+   "t": "On Monday and Wednesday. Science is on Tuesday and Friday."
+  },
+  {
+   "s": "Lily",
+   "t": "I like Friday because I have science and then the weekend starts."
+  },
+  {
+   "s": "Ben",
+   "t": "Haha, me too!"
+  }
+ ],
+ "vocab": "subject 科目 · favourite 最喜欢的 · because 因为 · lesson 课 · Wednesday 星期三 · weekend 周末",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5r-u3-1-A1",
+     "type": "choice",
+     "stem": "What is Lily's favourite subject?",
+     "options": [
+      "English.",
+      "Science.",
+      "Music."
+     ],
+     "answer": "B",
+     "why": "My favourite subject is science.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u3-1-A2",
+     "type": "choice",
+     "stem": "When are Ben's English lessons?",
+     "options": [
+      "Tuesday and Friday.",
+      "Thursday and Friday.",
+      "Monday and Wednesday."
+     ],
+     "answer": "C",
+     "why": "On Monday and Wednesday.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u3-1-A3",
+     "type": "choice",
+     "stem": "Why does Ben like English?",
+     "options": [
+      "Because it is fun.",
+      "Because it is easy.",
+      "Because the teacher is lovely."
+     ],
+     "answer": "A",
+     "why": "I like English because it is fun.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g5r-u3-1-B1",
+     "type": "tf",
+     "stem": "Lily likes science.",
+     "answer": "T",
+     "why": "My favourite subject is science.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u3-1-B2",
+     "type": "tf",
+     "stem": "Ben has English on Friday.",
+     "answer": "F",
+     "why": "English is on Monday and Wednesday.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u3-1-B3",
+     "type": "tf",
+     "stem": "They have science on Tuesday and Friday.",
+     "answer": "T",
+     "why": "Science is on Tuesday and Friday.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5r-u3-1-C1",
+     "type": "fill",
+     "stem": "Lily's favourite subject is ____.",
+     "answers": [
+      [
+       "science"
+      ]
+     ],
+     "why": "My favourite subject is science.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u3-1-C2",
+     "type": "fill",
+     "stem": "Ben has English on Monday and ____.",
+     "answers": [
+      [
+       "wednesday"
+      ]
+     ],
+     "why": "On Monday and Wednesday.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u3-1-C3",
+     "type": "fill",
+     "stem": "Science is on Tuesday and ____.",
+     "answers": [
+      [
+       "friday"
+      ]
+     ],
+     "why": "Science is on Tuesday and Friday.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

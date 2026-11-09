@@ -1,0 +1,82 @@
+{
+ "id": "g3sp-u2",
+ "kind": "speaking",
+ "unit": "E3U2",
+ "title": "口语练习",
+ "subtitle": "每天 10 分钟 · 共 5 天",
+ "steps": [
+  "点 🔊 听一遍，听清语调",
+  "一句一句跟着读，声音要大，不怕错",
+  "读完点「今天完成了」打卡"
+ ],
+ "sentences": [
+  {
+   "en": "This is my family.",
+   "zh": "这是我的家人。"
+  },
+  {
+   "en": "I have a big family.",
+   "zh": "我有一个大家庭。"
+  },
+  {
+   "en": "He is my father.",
+   "zh": "他是我的爸爸。"
+  },
+  {
+   "en": "She is my mother.",
+   "zh": "她是我的妈妈。"
+  },
+  {
+   "en": "She is my grandma.",
+   "zh": "她是我的奶奶。"
+  },
+  {
+   "en": "He is my grandpa.",
+   "zh": "他是我的爷爷。"
+  },
+  {
+   "en": "I have one sister.",
+   "zh": "我有一个姐姐（妹妹）。"
+  },
+  {
+   "en": "The baby is my cousin.",
+   "zh": "这个宝宝是我的堂（表）弟妹。"
+  },
+  {
+   "en": "I love my family.",
+   "zh": "我爱我的家人。"
+  }
+ ],
+ "plan": [
+  {
+   "day": 1,
+   "title": "跟读第 1–3 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 2,
+   "title": "跟读第 4–6 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 3,
+   "title": "跟读第 7–9 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 4,
+   "title": "不看书，说给家长听",
+   "task": "挑 5 句最喜欢的，尽量不看书说出来",
+   "minutes": 10
+  },
+  {
+   "day": 5,
+   "title": "自己说 3 句话",
+   "task": "用 'This is my … He/She is my …' 说 3 句话介绍你的家人",
+   "minutes": 10
+  }
+ ]
+}

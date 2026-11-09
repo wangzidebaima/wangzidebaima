@@ -1,0 +1,124 @@
+{
+ "id": "g6l-u2-3",
+ "kind": "listening",
+ "title": "The Race Yesterday",
+ "subtitle": "对话",
+ "unit": "E6U2",
+ "speakers": {
+  "Sam": "c1",
+  "Ben": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Sam",
+   "t": "Ben, did you watch the race yesterday?"
+  },
+  {
+   "s": "Ben",
+   "t": "Yes. Many runners ran in the park."
+  },
+  {
+   "s": "Sam",
+   "t": "Who won?"
+  },
+  {
+   "s": "Ben",
+   "t": "A girl from Class Two won. She ran very fast."
+  },
+  {
+   "s": "Sam",
+   "t": "What did the crowd do?"
+  },
+  {
+   "s": "Ben",
+   "t": "They cheered loudly for all the runners."
+  },
+  {
+   "s": "Sam",
+   "t": "Did you run too?"
+  },
+  {
+   "s": "Ben",
+   "t": "No, I took photos."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6l-u2-3-A1",
+     "type": "choice",
+     "stem": "Where did the runners run?",
+     "options": [
+      "In the park.",
+      "On the street.",
+      "At school."
+     ],
+     "answer": "A",
+     "why": "Many runners ran in the park.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u2-3-A2",
+     "type": "choice",
+     "stem": "Who won the race?",
+     "options": [
+      "A boy from Class Two.",
+      "A girl from Class Two.",
+      "A teacher."
+     ],
+     "answer": "B",
+     "why": "A girl from Class Two won.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u2-3-A3",
+     "type": "choice",
+     "stem": "What did Ben do?",
+     "options": [
+      "He ran too.",
+      "He was the judge.",
+      "He took photos."
+     ],
+     "answer": "C",
+     "why": "No, I took photos.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6l-u2-3-B1",
+     "type": "fill",
+     "stem": "A girl from Class ____ won.",
+     "answers": [
+      [
+       "two"
+      ]
+     ],
+     "why": "A girl from Class Two won.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u2-3-B2",
+     "type": "fill",
+     "stem": "The crowd ____ loudly.",
+     "answers": [
+      [
+       "cheered"
+      ]
+     ],
+     "why": "They cheered loudly",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

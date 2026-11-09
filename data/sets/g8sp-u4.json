@@ -1,0 +1,82 @@
+{
+ "id": "g8sp-u4",
+ "kind": "speaking",
+ "unit": "E8U4",
+ "title": "口语练习",
+ "subtitle": "每天 10 分钟 · 共 5 天",
+ "steps": [
+  "点 🔊 听一遍，听清语调",
+  "一句一句跟着读，声音要大，不怕错",
+  "读完点「今天完成了」打卡"
+ ],
+ "sentences": [
+  {
+   "en": "Pandas eat bamboo and they are very popular.",
+   "zh": "大熊猫吃竹子，非常受欢迎。"
+  },
+  {
+   "en": "The cheetah is the fastest land animal.",
+   "zh": "猎豹是跑得最快的陆地动物。"
+  },
+  {
+   "en": "A blue whale can weigh up to 150 tons.",
+   "zh": "一头蓝鲸体重可达150吨。"
+  },
+  {
+   "en": "Bees are connected with many flowers.",
+   "zh": "蜜蜂与许多花有联系。"
+  },
+  {
+   "en": "Butterflies and bees help flowers with pollination.",
+   "zh": "蝴蝶和蜜蜂帮助花朵授粉。"
+  },
+  {
+   "en": "In fact, every living thing plays a role in nature.",
+   "zh": "事实上，每种生物都在自然中发挥作用。"
+  },
+  {
+   "en": "We should protect the planet for this reason.",
+   "zh": "因此我们应该保护地球。"
+  },
+  {
+   "en": "Ginkgo trees are very old and very special.",
+   "zh": "银杏树非常古老而且很特别。"
+  },
+  {
+   "en": "Please feel free to ask me about animals.",
+   "zh": "请随时问我有关动物的问题。"
+  }
+ ],
+ "plan": [
+  {
+   "day": 1,
+   "title": "跟读第 1–3 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 2,
+   "title": "跟读第 4–6 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 3,
+   "title": "跟读第 7–9 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 4,
+   "title": "不看书，说给家长听",
+   "task": "挑 5 句最喜欢的，尽量不看书说出来",
+   "minutes": 10
+  },
+  {
+   "day": 5,
+   "title": "自己说 3 句话",
+   "task": "用 'I like … because …' 说 3 句话介绍你喜欢的动物或植物",
+   "minutes": 10
+  }
+ ]
+}

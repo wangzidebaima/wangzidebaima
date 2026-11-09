@@ -3805,6 +3805,96 @@
      "kind": "cn",
      "count": 10,
      "unit": "X8"
+    },
+    {
+     "id": "g1c-e1",
+     "file": "sets/g1c-e1.json",
+     "title": "《小雨点》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 4,
+     "unit": "E"
+    },
+    {
+     "id": "g1c-e2",
+     "file": "sets/g1c-e2.json",
+     "title": "《小蚂蚁》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 4,
+     "unit": "E"
+    },
+    {
+     "id": "g1c-e3",
+     "file": "sets/g1c-e3.json",
+     "title": "《月亮船》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 4,
+     "unit": "E"
+    },
+    {
+     "id": "g1c-e4",
+     "file": "sets/g1c-e4.json",
+     "title": "《我的小书包》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 4,
+     "unit": "E"
+    },
+    {
+     "id": "g1c-e5",
+     "file": "sets/g1c-e5.json",
+     "title": "《小白兔》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 4,
+     "unit": "E"
+    },
+    {
+     "id": "g1c-e6",
+     "file": "sets/g1c-e6.json",
+     "title": "《下雪啦》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 4,
+     "unit": "E"
+    },
+    {
+     "id": "g1c-e7",
+     "file": "sets/g1c-e7.json",
+     "title": "《小鸟早》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 4,
+     "unit": "E"
+    },
+    {
+     "id": "g1c-e8",
+     "file": "sets/g1c-e8.json",
+     "title": "《秋天来了》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 4,
+     "unit": "E"
+    },
+    {
+     "id": "g1c-e9",
+     "file": "sets/g1c-e9.json",
+     "title": "《小花猫》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 4,
+     "unit": "E"
+    },
+    {
+     "id": "g1c-e10",
+     "file": "sets/g1c-e10.json",
+     "title": "《家》",
+     "subtitle": "听美文 · 学好词好句",
+     "kind": "essay",
+     "count": 4,
+     "unit": "E"
     }
    ]
   },
@@ -9490,6 +9580,2592 @@
      "unit": "HX97"
     }
    ]
+  },
+  {
+   "id": "g3reading",
+   "title": "英语阅读理解",
+   "icon": "📖",
+   "desc": "按单元，每个单元 4 套",
+   "sets": [
+    {
+     "id": "g3r-u1-1",
+     "file": "sets/g3r-u1-1.json",
+     "title": "Nice to Meet You",
+     "subtitle": "考点：自我介绍 / My name is ... Let's be friends.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E3U1"
+    },
+    {
+     "id": "g3r-u1-2",
+     "file": "sets/g3r-u1-2.json",
+     "title": "Touch Your Ear",
+     "subtitle": "考点：身体部位 / Touch your ...",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E3U1"
+    },
+    {
+     "id": "g3r-u1-3",
+     "file": "sets/g3r-u1-3.json",
+     "title": "A Good Friend",
+     "subtitle": "考点：帮助朋友 / I can help. I can share.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E3U1"
+    },
+    {
+     "id": "g3r-u1-4",
+     "file": "sets/g3r-u1-4.json",
+     "title": "Say Hello",
+     "subtitle": "考点：问候新朋友 / Smile and say hello.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E3U1"
+    },
+    {
+     "id": "g3r-u2-1",
+     "file": "sets/g3r-u2-1.json",
+     "title": "My Family",
+     "subtitle": "考点：介绍家人 / He is my ... She is my ...",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E3U2"
+    },
+    {
+     "id": "g3r-u2-2",
+     "file": "sets/g3r-u2-2.json",
+     "title": "I Have One Sister",
+     "subtitle": "考点：家庭成员 / I have a big family.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E3U2"
+    },
+    {
+     "id": "g3r-u2-3",
+     "file": "sets/g3r-u2-3.json",
+     "title": "Uncle and Aunt",
+     "subtitle": "考点：亲戚称呼 / He is my uncle. She is my aunt.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E3U2"
+    },
+    {
+     "id": "g3r-u2-4",
+     "file": "sets/g3r-u2-4.json",
+     "title": "Grandpa and Grandma",
+     "subtitle": "考点：描述家人 / He is tall and big.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E3U2"
+    },
+    {
+     "id": "g3r-u3-1",
+     "file": "sets/g3r-u3-1.json",
+     "title": "At the Zoo",
+     "subtitle": "考点：喜欢的动物 / I like ... Pandas are cute.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E3U3"
+    },
+    {
+     "id": "g3r-u3-2",
+     "file": "sets/g3r-u3-2.json",
+     "title": "Pets",
+     "subtitle": "考点：宠物 / Do you like cats?",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E3U3"
+    },
+    {
+     "id": "g3r-u3-3",
+     "file": "sets/g3r-u3-3.json",
+     "title": "Fast and Tall",
+     "subtitle": "考点：描述动物 / The tiger is fast. The giraffe is tall.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E3U3"
+    },
+    {
+     "id": "g3r-u3-4",
+     "file": "sets/g3r-u3-4.json",
+     "title": "The Red Panda",
+     "subtitle": "考点：认识红熊猫 / It is cute. It is small.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E3U3"
+    },
+    {
+     "id": "g3r-u4-1",
+     "file": "sets/g3r-u4-1.json",
+     "title": "Plants Need Water",
+     "subtitle": "考点：植物需要什么 / Plants need water, sun and air.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E3U4"
+    },
+    {
+     "id": "g3r-u4-2",
+     "file": "sets/g3r-u4-2.json",
+     "title": "Fruit Time",
+     "subtitle": "考点：水果 / I like apples and bananas.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E3U4"
+    },
+    {
+     "id": "g3r-u4-3",
+     "file": "sets/g3r-u4-3.json",
+     "title": "A New Tree",
+     "subtitle": "考点：照顾植物 / The tree needs water.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E3U4"
+    },
+    {
+     "id": "g3r-u4-4",
+     "file": "sets/g3r-u4-4.json",
+     "title": "Farm Day",
+     "subtitle": "考点：农场里的植物 / Plants give us apples.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E3U4"
+    },
+    {
+     "id": "g3r-u5-1",
+     "file": "sets/g3r-u5-1.json",
+     "title": "What Colour Is It?",
+     "subtitle": "考点：询问颜色 / What colour is it? It is red.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E3U5"
+    },
+    {
+     "id": "g3r-u5-2",
+     "file": "sets/g3r-u5-2.json",
+     "title": "The Sea and the Duck",
+     "subtitle": "考点：描述颜色 / The sea is blue. The duck is yellow.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E3U5"
+    },
+    {
+     "id": "g3r-u5-3",
+     "file": "sets/g3r-u5-3.json",
+     "title": "A White Cat",
+     "subtitle": "考点：画动物和颜色 / Let's draw a white cat.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E3U5"
+    },
+    {
+     "id": "g3r-u5-4",
+     "file": "sets/g3r-u5-4.json",
+     "title": "Pink and Purple",
+     "subtitle": "考点：喜欢的颜色 / I like pink and purple.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E3U5"
+    },
+    {
+     "id": "g3r-u6-1",
+     "file": "sets/g3r-u6-1.json",
+     "title": "How Old Are You?",
+     "subtitle": "考点：问年龄 / How old are you? I am eight years old.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E3U6"
+    },
+    {
+     "id": "g3r-u6-2",
+     "file": "sets/g3r-u6-2.json",
+     "title": "Cut the Cake",
+     "subtitle": "考点：蛋糕和年龄 / Cut the cake, please. Let's eat the cake.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E3U6"
+    },
+    {
+     "id": "g3r-u6-3",
+     "file": "sets/g3r-u6-3.json",
+     "title": "What Time Is It?",
+     "subtitle": "考点：整点时间 / It is seven o'clock.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E3U6"
+    },
+    {
+     "id": "g3r-u6-4",
+     "file": "sets/g3r-u6-4.json",
+     "title": "Count the Fruit",
+     "subtitle": "考点：数字和加法 / Six and three make nine.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E3U6"
+    }
+   ]
+  },
+  {
+   "id": "g3listening",
+   "title": "英语听力",
+   "icon": "🎧",
+   "desc": "按单元，每段听两遍再作答",
+   "sets": [
+    {
+     "id": "g3l-u1-1",
+     "file": "sets/g3l-u1-1.json",
+     "title": "Meet Amy",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E3U1"
+    },
+    {
+     "id": "g3l-u1-2",
+     "file": "sets/g3l-u1-2.json",
+     "title": "Body Game",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E3U1"
+    },
+    {
+     "id": "g3l-u1-3",
+     "file": "sets/g3l-u1-3.json",
+     "title": "Share and Help",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E3U1"
+    },
+    {
+     "id": "g3l-u1-4",
+     "file": "sets/g3l-u1-4.json",
+     "title": "Say Hello to Amy",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E3U1"
+    },
+    {
+     "id": "g3l-u2-1",
+     "file": "sets/g3l-u2-1.json",
+     "title": "This Is My Family",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E3U2"
+    },
+    {
+     "id": "g3l-u2-2",
+     "file": "sets/g3l-u2-2.json",
+     "title": "Go to Grandma's",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E3U2"
+    },
+    {
+     "id": "g3l-u2-3",
+     "file": "sets/g3l-u2-3.json",
+     "title": "A Big Family",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E3U2"
+    },
+    {
+     "id": "g3l-u2-4",
+     "file": "sets/g3l-u2-4.json",
+     "title": "Grandmother and Grandfather",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E3U2"
+    },
+    {
+     "id": "g3l-u3-1",
+     "file": "sets/g3l-u3-1.json",
+     "title": "Zoo Day",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E3U3"
+    },
+    {
+     "id": "g3l-u3-2",
+     "file": "sets/g3l-u3-2.json",
+     "title": "Giraffes and Pandas",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E3U3"
+    },
+    {
+     "id": "g3l-u3-3",
+     "file": "sets/g3l-u3-3.json",
+     "title": "My Pet",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E3U3"
+    },
+    {
+     "id": "g3l-u3-4",
+     "file": "sets/g3l-u3-4.json",
+     "title": "Animal Quiz",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E3U3"
+    },
+    {
+     "id": "g3l-u4-1",
+     "file": "sets/g3l-u4-1.json",
+     "title": "In the Garden",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E3U4"
+    },
+    {
+     "id": "g3l-u4-2",
+     "file": "sets/g3l-u4-2.json",
+     "title": "Grapes on the Farm",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E3U4"
+    },
+    {
+     "id": "g3l-u4-3",
+     "file": "sets/g3l-u4-3.json",
+     "title": "Bananas and Apples",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E3U4"
+    },
+    {
+     "id": "g3l-u4-4",
+     "file": "sets/g3l-u4-4.json",
+     "title": "What Do Plants Need?",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E3U4"
+    },
+    {
+     "id": "g3l-u5-1",
+     "file": "sets/g3l-u5-1.json",
+     "title": "Colour Game",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E3U5"
+    },
+    {
+     "id": "g3l-u5-2",
+     "file": "sets/g3l-u5-2.json",
+     "title": "A Brown Bear",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E3U5"
+    },
+    {
+     "id": "g3l-u5-3",
+     "file": "sets/g3l-u5-3.json",
+     "title": "Draw the Sea",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E3U5"
+    },
+    {
+     "id": "g3l-u5-4",
+     "file": "sets/g3l-u5-4.json",
+     "title": "Three Ducks",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E3U5"
+    },
+    {
+     "id": "g3l-u6-1",
+     "file": "sets/g3l-u6-1.json",
+     "title": "Ben's Brother",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E3U6"
+    },
+    {
+     "id": "g3l-u6-2",
+     "file": "sets/g3l-u6-2.json",
+     "title": "Eat the Cake",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E3U6"
+    },
+    {
+     "id": "g3l-u6-3",
+     "file": "sets/g3l-u6-3.json",
+     "title": "Time to Eat",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E3U6"
+    },
+    {
+     "id": "g3l-u6-4",
+     "file": "sets/g3l-u6-4.json",
+     "title": "Count with Me",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E3U6"
+    }
+   ]
+  },
+  {
+   "id": "g3speaking",
+   "title": "每日口语打卡",
+   "icon": "🗣️",
+   "desc": "每天 10 分钟，跟读打卡",
+   "sets": [
+    {
+     "id": "g3sp-u1",
+     "file": "sets/g3sp-u1.json",
+     "title": "Unit 1 口语",
+     "subtitle": "每天 10 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "E3U1"
+    },
+    {
+     "id": "g3sp-u2",
+     "file": "sets/g3sp-u2.json",
+     "title": "Unit 2 口语",
+     "subtitle": "每天 10 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "E3U2"
+    },
+    {
+     "id": "g3sp-u3",
+     "file": "sets/g3sp-u3.json",
+     "title": "Unit 3 口语",
+     "subtitle": "每天 10 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "E3U3"
+    },
+    {
+     "id": "g3sp-u4",
+     "file": "sets/g3sp-u4.json",
+     "title": "Unit 4 口语",
+     "subtitle": "每天 10 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "E3U4"
+    },
+    {
+     "id": "g3sp-u5",
+     "file": "sets/g3sp-u5.json",
+     "title": "Unit 5 口语",
+     "subtitle": "每天 10 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "E3U5"
+    },
+    {
+     "id": "g3sp-u6",
+     "file": "sets/g3sp-u6.json",
+     "title": "Unit 6 口语",
+     "subtitle": "每天 10 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "E3U6"
+    }
+   ]
+  },
+  {
+   "id": "g5reading",
+   "title": "英语阅读理解",
+   "icon": "📖",
+   "desc": "按单元，每个单元 4 套",
+   "sets": [
+    {
+     "id": "g5r-u1-1",
+     "file": "sets/g5r-u1-1.json",
+     "title": "A Clever Player",
+     "subtitle": "考点：人物描述 / He is a clever player.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E5U1"
+    },
+    {
+     "id": "g5r-u1-2",
+     "file": "sets/g5r-u1-2.json",
+     "title": "The School Party",
+     "subtitle": "考点：能力 / I can play the piano.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E5U1"
+    },
+    {
+     "id": "g5r-u1-3",
+     "file": "sets/g5r-u1-3.json",
+     "title": "My Robot Friend",
+     "subtitle": "考点：描述事物与人 / The robot can ...",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E5U1"
+    },
+    {
+     "id": "g5r-u1-4",
+     "file": "sets/g5r-u1-4.json",
+     "title": "A New Friend",
+     "subtitle": "考点：介绍朋友 / My friend is from Australia.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E5U1"
+    },
+    {
+     "id": "g5r-u2-1",
+     "file": "sets/g5r-u2-1.json",
+     "title": "What's the Matter?",
+     "subtitle": "考点：询问感受 / What's the matter?",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E5U2"
+    },
+    {
+     "id": "g5r-u2-2",
+     "file": "sets/g5r-u2-2.json",
+     "title": "The Science Project",
+     "subtitle": "考点：同意与兴奋 / I agree with you.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E5U2"
+    },
+    {
+     "id": "g5r-u2-3",
+     "file": "sets/g5r-u2-3.json",
+     "title": "A Wrong Answer",
+     "subtitle": "考点：安慰他人 / Don't be angry.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E5U2"
+    },
+    {
+     "id": "g5r-u2-4",
+     "file": "sets/g5r-u2-4.json",
+     "title": "The Class Trip",
+     "subtitle": "考点：害怕与兴奋 / Don't be afraid.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E5U2"
+    },
+    {
+     "id": "g5r-u3-1",
+     "file": "sets/g5r-u3-1.json",
+     "title": "My Favourite Subject",
+     "subtitle": "考点：科目与星期 / My favourite subject is science.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E5U3"
+    },
+    {
+     "id": "g5r-u3-2",
+     "file": "sets/g5r-u3-2.json",
+     "title": "Weekend Fun",
+     "subtitle": "考点：频率副词 / I usually ... on Saturday.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E5U3"
+    },
+    {
+     "id": "g5r-u3-3",
+     "file": "sets/g5r-u3-3.json",
+     "title": "School Days",
+     "subtitle": "考点：时间与原因 / I like Thursday because ...",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E5U3"
+    },
+    {
+     "id": "g5r-u3-4",
+     "file": "sets/g5r-u3-4.json",
+     "title": "My Grandparents",
+     "subtitle": "考点：周末活动 / I visit my grandparents on Sunday.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E5U3"
+    },
+    {
+     "id": "g5r-u4-1",
+     "file": "sets/g5r-u4-1.json",
+     "title": "Brush Your Teeth",
+     "subtitle": "考点：建议 / You should brush your teeth twice a day.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E5U4"
+    },
+    {
+     "id": "g5r-u4-2",
+     "file": "sets/g5r-u4-2.json",
+     "title": "Stay at Home",
+     "subtitle": "考点：生病时的建议 / If you have the flu, you should stay at home.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E5U4"
+    },
+    {
+     "id": "g5r-u4-3",
+     "file": "sets/g5r-u4-3.json",
+     "title": "Exercise Every Day",
+     "subtitle": "考点：运动习惯 / Do some exercise every day.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E5U4"
+    },
+    {
+     "id": "g5r-u4-4",
+     "file": "sets/g5r-u4-4.json",
+     "title": "Take Care of Yourself",
+     "subtitle": "考点：关心他人 / Take care of yourself.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E5U4"
+    },
+    {
+     "id": "g5r-u5-1",
+     "file": "sets/g5r-u5-1.json",
+     "title": "I Am Hungry",
+     "subtitle": "考点：表达饥饿与食物 / I like beef and dumplings.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E5U5"
+    },
+    {
+     "id": "g5r-u5-2",
+     "file": "sets/g5r-u5-2.json",
+     "title": "At the Restaurant",
+     "subtitle": "考点：点餐 / She wants an ice cream.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E5U5"
+    },
+    {
+     "id": "g5r-u5-3",
+     "file": "sets/g5r-u5-3.json",
+     "title": "Lotus in the Lake",
+     "subtitle": "考点：植物与食物 / The lotus is in the lake.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E5U5"
+    },
+    {
+     "id": "g5r-u5-4",
+     "file": "sets/g5r-u5-4.json",
+     "title": "Coconuts",
+     "subtitle": "考点：描述食物 / Coconuts are round.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E5U5"
+    },
+    {
+     "id": "g5r-u6-1",
+     "file": "sets/g5r-u6-1.json",
+     "title": "A Famous Mountain",
+     "subtitle": "考点：描述地点 / The mountain is famous.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E5U6"
+    },
+    {
+     "id": "g5r-u6-2",
+     "file": "sets/g5r-u6-2.json",
+     "title": "Dangerous River",
+     "subtitle": "考点：安全提醒 / It is dangerous to swim in the river.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E5U6"
+    },
+    {
+     "id": "g5r-u6-3",
+     "file": "sets/g5r-u6-3.json",
+     "title": "Rain or Shine",
+     "subtitle": "考点：天气与物品 / Bring an umbrella and a raincoat.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E5U6"
+    },
+    {
+     "id": "g5r-u6-4",
+     "file": "sets/g5r-u6-4.json",
+     "title": "The Hotel by the Lake",
+     "subtitle": "考点：旅行 / We go hiking on the trip.",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E5U6"
+    }
+   ]
+  },
+  {
+   "id": "g5listening",
+   "title": "英语听力",
+   "icon": "🎧",
+   "desc": "按单元，每段听两遍再作答",
+   "sets": [
+    {
+     "id": "g5l-u1-1",
+     "file": "sets/g5l-u1-1.json",
+     "title": "My Best Friend",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E5U1"
+    },
+    {
+     "id": "g5l-u1-2",
+     "file": "sets/g5l-u1-2.json",
+     "title": "Who Is She?",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E5U1"
+    },
+    {
+     "id": "g5l-u1-3",
+     "file": "sets/g5l-u1-3.json",
+     "title": "The Robot Show",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E5U1"
+    },
+    {
+     "id": "g5l-u1-4",
+     "file": "sets/g5l-u1-4.json",
+     "title": "Our Team",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E5U1"
+    },
+    {
+     "id": "g5l-u2-1",
+     "file": "sets/g5l-u2-1.json",
+     "title": "How Do You Feel?",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E5U2"
+    },
+    {
+     "id": "g5l-u2-2",
+     "file": "sets/g5l-u2-2.json",
+     "title": "A Happy Day",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E5U2"
+    },
+    {
+     "id": "g5l-u2-3",
+     "file": "sets/g5l-u2-3.json",
+     "title": "I Agree",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E5U2"
+    },
+    {
+     "id": "g5l-u2-4",
+     "file": "sets/g5l-u2-4.json",
+     "title": "Don't Be Afraid",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E5U2"
+    },
+    {
+     "id": "g5l-u3-1",
+     "file": "sets/g5l-u3-1.json",
+     "title": "My Timetable",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E5U3"
+    },
+    {
+     "id": "g5l-u3-2",
+     "file": "sets/g5l-u3-2.json",
+     "title": "Sports Day Plan",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E5U3"
+    },
+    {
+     "id": "g5l-u3-3",
+     "file": "sets/g5l-u3-3.json",
+     "title": "Monday Morning",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E5U3"
+    },
+    {
+     "id": "g5l-u3-4",
+     "file": "sets/g5l-u3-4.json",
+     "title": "Friday Night",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E5U3"
+    },
+    {
+     "id": "g5l-u4-1",
+     "file": "sets/g5l-u4-1.json",
+     "title": "Healthy Habits",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E5U4"
+    },
+    {
+     "id": "g5l-u4-2",
+     "file": "sets/g5l-u4-2.json",
+     "title": "Too Much Phone",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E5U4"
+    },
+    {
+     "id": "g5l-u4-3",
+     "file": "sets/g5l-u4-3.json",
+     "title": "At the Clinic",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E5U4"
+    },
+    {
+     "id": "g5l-u4-4",
+     "file": "sets/g5l-u4-4.json",
+     "title": "A Good Habit",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E5U4"
+    },
+    {
+     "id": "g5l-u5-1",
+     "file": "sets/g5l-u5-1.json",
+     "title": "Lunch Time",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E5U5"
+    },
+    {
+     "id": "g5l-u5-2",
+     "file": "sets/g5l-u5-2.json",
+     "title": "Ice Cream Day",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E5U5"
+    },
+    {
+     "id": "g5l-u5-3",
+     "file": "sets/g5l-u5-3.json",
+     "title": "Food from Plants",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E5U5"
+    },
+    {
+     "id": "g5l-u5-4",
+     "file": "sets/g5l-u5-4.json",
+     "title": "A Big Hamburger",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E5U5"
+    },
+    {
+     "id": "g5l-u6-1",
+     "file": "sets/g5l-u6-1.json",
+     "title": "Hiking Plans",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E5U6"
+    },
+    {
+     "id": "g5l-u6-2",
+     "file": "sets/g5l-u6-2.json",
+     "title": "Weather Report",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E5U6"
+    },
+    {
+     "id": "g5l-u6-3",
+     "file": "sets/g5l-u6-3.json",
+     "title": "Safe in the Forest",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E5U6"
+    },
+    {
+     "id": "g5l-u6-4",
+     "file": "sets/g5l-u6-4.json",
+     "title": "After the Flood",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E5U6"
+    }
+   ]
+  },
+  {
+   "id": "g5speaking",
+   "title": "每日口语打卡",
+   "icon": "🗣️",
+   "desc": "每天 10 分钟，跟读打卡",
+   "sets": [
+    {
+     "id": "g5sp-u1",
+     "file": "sets/g5sp-u1.json",
+     "title": "Unit 1 口语",
+     "subtitle": "每天 10 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "E5U1"
+    },
+    {
+     "id": "g5sp-u2",
+     "file": "sets/g5sp-u2.json",
+     "title": "Unit 2 口语",
+     "subtitle": "每天 10 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "E5U2"
+    },
+    {
+     "id": "g5sp-u3",
+     "file": "sets/g5sp-u3.json",
+     "title": "Unit 3 口语",
+     "subtitle": "每天 10 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "E5U3"
+    },
+    {
+     "id": "g5sp-u4",
+     "file": "sets/g5sp-u4.json",
+     "title": "Unit 4 口语",
+     "subtitle": "每天 10 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "E5U4"
+    },
+    {
+     "id": "g5sp-u5",
+     "file": "sets/g5sp-u5.json",
+     "title": "Unit 5 口语",
+     "subtitle": "每天 10 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "E5U5"
+    },
+    {
+     "id": "g5sp-u6",
+     "file": "sets/g5sp-u6.json",
+     "title": "Unit 6 口语",
+     "subtitle": "每天 10 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "E5U6"
+    }
+   ]
+  },
+  {
+   "id": "g6reading",
+   "title": "英语阅读理解",
+   "icon": "📖",
+   "desc": "按单元，每个单元 4 套",
+   "sets": [
+    {
+     "id": "g6r-u1-1",
+     "file": "sets/g6r-u1-1.json",
+     "title": "A Trip to Xi'an",
+     "subtitle": "考点：一般过去时 / Where did you go?",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E6U1"
+    },
+    {
+     "id": "g6r-u1-2",
+     "file": "sets/g6r-u1-2.json",
+     "title": "A Day in Paris",
+     "subtitle": "考点：一般过去时 / Did you see ...?",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E6U1"
+    },
+    {
+     "id": "g6r-u1-3",
+     "file": "sets/g6r-u1-3.json",
+     "title": "The Long Bridge",
+     "subtitle": "考点：一般过去时 / How did you go?",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E6U1"
+    },
+    {
+     "id": "g6r-u1-4",
+     "file": "sets/g6r-u1-4.json",
+     "title": "Visiting Jinggangshan",
+     "subtitle": "考点：一般过去时 / What did you do?",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E6U1"
+    },
+    {
+     "id": "g6r-u2-1",
+     "file": "sets/g6r-u2-1.json",
+     "title": "Our Class Gala",
+     "subtitle": "考点：一般过去时 / What did you do?",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E6U2"
+    },
+    {
+     "id": "g6r-u2-2",
+     "file": "sets/g6r-u2-2.json",
+     "title": "The City Marathon",
+     "subtitle": "考点：一般过去时 / Who won the race?",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E6U2"
+    },
+    {
+     "id": "g6r-u2-3",
+     "file": "sets/g6r-u2-3.json",
+     "title": "The Book Fair",
+     "subtitle": "考点：一般过去时 / the most exciting ... ever",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E6U2"
+    },
+    {
+     "id": "g6r-u2-4",
+     "file": "sets/g6r-u2-4.json",
+     "title": "The School Race",
+     "subtitle": "考点：一般现在时与将来 / begin, win, judge",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E6U2"
+    },
+    {
+     "id": "g6r-u3-1",
+     "file": "sets/g6r-u3-1.json",
+     "title": "A Bad Cold",
+     "subtitle": "考点：一般过去时 / I had a cold",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E6U3"
+    },
+    {
+     "id": "g6r-u3-2",
+     "file": "sets/g6r-u3-2.json",
+     "title": "Don't Stay Up Late",
+     "subtitle": "考点：祈使句 / Don't ..., or you may ...",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E6U3"
+    },
+    {
+     "id": "g6r-u3-3",
+     "file": "sets/g6r-u3-3.json",
+     "title": "A Healthy Diet",
+     "subtitle": "考点：一般过去时 / discuss my diet",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E6U3"
+    },
+    {
+     "id": "g6r-u3-4",
+     "file": "sets/g6r-u3-4.json",
+     "title": "At the Doctor's",
+     "subtitle": "考点：一般过去时 / You will be better soon",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E6U3"
+    },
+    {
+     "id": "g6r-u4-1",
+     "file": "sets/g6r-u4-1.json",
+     "title": "Saving for a Microscope",
+     "subtitle": "考点：一般将来时 / save up pocket money",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E6U4"
+    },
+    {
+     "id": "g6r-u4-2",
+     "file": "sets/g6r-u4-2.json",
+     "title": "The Schoolbag Sale",
+     "subtitle": "考点：现在进行时 / The shop is having a sale",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E6U4"
+    },
+    {
+     "id": "g6r-u4-3",
+     "file": "sets/g6r-u4-3.json",
+     "title": "A Lucky Day",
+     "subtitle": "考点：一般将来时 / half the price",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E6U4"
+    },
+    {
+     "id": "g6r-u4-4",
+     "file": "sets/g6r-u4-4.json",
+     "title": "Manage Money Well",
+     "subtitle": "考点：一般现在时 / for example",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E6U4"
+    },
+    {
+     "id": "g6r-u5-1",
+     "file": "sets/g6r-u5-1.json",
+     "title": "The Earth and the Sky",
+     "subtitle": "考点：一般现在时 / The Earth is a planet",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E6U5"
+    },
+    {
+     "id": "g6r-u5-2",
+     "file": "sets/g6r-u5-2.json",
+     "title": "Life in the Space Station",
+     "subtitle": "考点：一般现在时 / The astronaut lives in ...",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E6U5"
+    },
+    {
+     "id": "g6r-u5-3",
+     "file": "sets/g6r-u5-3.json",
+     "title": "A Taikonaut's Trip",
+     "subtitle": "考点：一般过去时 / flew into space",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E6U5"
+    },
+    {
+     "id": "g6r-u5-4",
+     "file": "sets/g6r-u5-4.json",
+     "title": "A Rover on Mars",
+     "subtitle": "考点：一般现在时 / The rover collected soil",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E6U5"
+    },
+    {
+     "id": "g6r-u6-1",
+     "file": "sets/g6r-u6-1.json",
+     "title": "Solar Power",
+     "subtitle": "考点：一般现在时 / Solar power is a useful energy",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E6U6"
+    },
+    {
+     "id": "g6r-u6-2",
+     "file": "sets/g6r-u6-2.json",
+     "title": "Save Electricity at Home",
+     "subtitle": "考点：一般现在时 / unplug, quick shower",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E6U6"
+    },
+    {
+     "id": "g6r-u6-3",
+     "file": "sets/g6r-u6-3.json",
+     "title": "Reduce, Reuse, Recycle",
+     "subtitle": "考点：情态动词 / We can reduce, reuse and recycle",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E6U6"
+    },
+    {
+     "id": "g6r-u6-4",
+     "file": "sets/g6r-u6-4.json",
+     "title": "Driving Less",
+     "subtitle": "考点：一般现在时 / Driving less makes a difference",
+     "kind": "reading",
+     "count": 9,
+     "unit": "E6U6"
+    }
+   ]
+  },
+  {
+   "id": "g6listening",
+   "title": "英语听力",
+   "icon": "🎧",
+   "desc": "按单元，每段听两遍再作答",
+   "sets": [
+    {
+     "id": "g6l-u1-1",
+     "file": "sets/g6l-u1-1.json",
+     "title": "A Trip to the Village",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E6U1"
+    },
+    {
+     "id": "g6l-u1-2",
+     "file": "sets/g6l-u1-2.json",
+     "title": "At the Airport",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E6U1"
+    },
+    {
+     "id": "g6l-u1-3",
+     "file": "sets/g6l-u1-3.json",
+     "title": "The Gingerbread House",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E6U1"
+    },
+    {
+     "id": "g6l-u1-4",
+     "file": "sets/g6l-u1-4.json",
+     "title": "Holiday Photos",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E6U1"
+    },
+    {
+     "id": "g6l-u2-1",
+     "file": "sets/g6l-u2-1.json",
+     "title": "The Gala Plan",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E6U2"
+    },
+    {
+     "id": "g6l-u2-2",
+     "file": "sets/g6l-u2-2.json",
+     "title": "Count Down to the New Year",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E6U2"
+    },
+    {
+     "id": "g6l-u2-3",
+     "file": "sets/g6l-u2-3.json",
+     "title": "The Race Yesterday",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E6U2"
+    },
+    {
+     "id": "g6l-u2-4",
+     "file": "sets/g6l-u2-4.json",
+     "title": "A Writer at School",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E6U2"
+    },
+    {
+     "id": "g6l-u3-1",
+     "file": "sets/g6l-u3-1.json",
+     "title": "A Sick Day",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E6U3"
+    },
+    {
+     "id": "g6l-u3-2",
+     "file": "sets/g6l-u3-2.json",
+     "title": "Good Habits",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E6U3"
+    },
+    {
+     "id": "g6l-u3-3",
+     "file": "sets/g6l-u3-3.json",
+     "title": "Call the Doctor",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E6U3"
+    },
+    {
+     "id": "g6l-u3-4",
+     "file": "sets/g6l-u3-4.json",
+     "title": "A Glass of Water",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E6U3"
+    },
+    {
+     "id": "g6l-u4-1",
+     "file": "sets/g6l-u4-1.json",
+     "title": "The Money Jar",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E6U4"
+    },
+    {
+     "id": "g6l-u4-2",
+     "file": "sets/g6l-u4-2.json",
+     "title": "A Drink Stall",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E6U4"
+    },
+    {
+     "id": "g6l-u4-3",
+     "file": "sets/g6l-u4-3.json",
+     "title": "A Haircut Service",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E6U4"
+    },
+    {
+     "id": "g6l-u4-4",
+     "file": "sets/g6l-u4-4.json",
+     "title": "Tickets for the Zoo",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E6U4"
+    },
+    {
+     "id": "g6l-u5-1",
+     "file": "sets/g6l-u5-1.json",
+     "title": "Looking at the Moon",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E6U5"
+    },
+    {
+     "id": "g6l-u5-2",
+     "file": "sets/g6l-u5-2.json",
+     "title": "A Question About Space",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E6U5"
+    },
+    {
+     "id": "g6l-u5-3",
+     "file": "sets/g6l-u5-3.json",
+     "title": "Day and Night Sky",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E6U5"
+    },
+    {
+     "id": "g6l-u5-4",
+     "file": "sets/g6l-u5-4.json",
+     "title": "Earth from Space",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E6U5"
+    },
+    {
+     "id": "g6l-u6-1",
+     "file": "sets/g6l-u6-1.json",
+     "title": "Save Water and Power",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E6U6"
+    },
+    {
+     "id": "g6l-u6-2",
+     "file": "sets/g6l-u6-2.json",
+     "title": "The Air Conditioner",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E6U6"
+    },
+    {
+     "id": "g6l-u6-3",
+     "file": "sets/g6l-u6-3.json",
+     "title": "Old Bottles",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E6U6"
+    },
+    {
+     "id": "g6l-u6-4",
+     "file": "sets/g6l-u6-4.json",
+     "title": "Wind and Sun",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E6U6"
+    }
+   ]
+  },
+  {
+   "id": "g6speaking",
+   "title": "每日口语打卡",
+   "icon": "🗣️",
+   "desc": "每天 10 分钟，跟读打卡",
+   "sets": [
+    {
+     "id": "g6sp-u1",
+     "file": "sets/g6sp-u1.json",
+     "title": "Unit 1 口语",
+     "subtitle": "每天 10 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "E6U1"
+    },
+    {
+     "id": "g6sp-u2",
+     "file": "sets/g6sp-u2.json",
+     "title": "Unit 2 口语",
+     "subtitle": "每天 10 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "E6U2"
+    },
+    {
+     "id": "g6sp-u3",
+     "file": "sets/g6sp-u3.json",
+     "title": "Unit 3 口语",
+     "subtitle": "每天 10 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "E6U3"
+    },
+    {
+     "id": "g6sp-u4",
+     "file": "sets/g6sp-u4.json",
+     "title": "Unit 4 口语",
+     "subtitle": "每天 10 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "E6U4"
+    },
+    {
+     "id": "g6sp-u5",
+     "file": "sets/g6sp-u5.json",
+     "title": "Unit 5 口语",
+     "subtitle": "每天 10 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "E6U5"
+    },
+    {
+     "id": "g6sp-u6",
+     "file": "sets/g6sp-u6.json",
+     "title": "Unit 6 口语",
+     "subtitle": "每天 10 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "E6U6"
+    }
+   ]
+  },
+  {
+   "id": "g8reading",
+   "title": "英语阅读理解",
+   "icon": "📖",
+   "desc": "按单元，每个单元 3 套",
+   "sets": [
+    {
+     "id": "g8r-u1-1",
+     "file": "sets/g8r-u1-1.json",
+     "title": "A Trip to Moscow",
+     "subtitle": "考点：一般过去时 / 旅行经历 / be surprised",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E8U1"
+    },
+    {
+     "id": "g8r-u1-2",
+     "file": "sets/g8r-u1-2.json",
+     "title": "Huangshan, a Fantastic Place",
+     "subtitle": "考点：描写风景 / especially / take one's breath away",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E8U1"
+    },
+    {
+     "id": "g8r-u1-3",
+     "file": "sets/g8r-u1-3.json",
+     "title": "Ready for the Trip?",
+     "subtitle": "考点：be ready to / nothing but / 旅行准备",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E8U1"
+    },
+    {
+     "id": "g8r-u2-1",
+     "file": "sets/g8r-u2-1.json",
+     "title": "Moving to a New Apartment",
+     "subtitle": "考点：搬家 / pack up / 房间名称",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E8U2"
+    },
+    {
+     "id": "g8r-u2-2",
+     "file": "sets/g8r-u2-2.json",
+     "title": "A Treasure Hunt at Home",
+     "subtitle": "考点：寻宝游戏 / note / until",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E8U2"
+    },
+    {
+     "id": "g8r-u2-3",
+     "file": "sets/g8r-u2-3.json",
+     "title": "Paper-cuts for Spring Festival",
+     "subtitle": "考点：装饰房间 / cover / decorate",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E8U2"
+    },
+    {
+     "id": "g8r-u3-1",
+     "file": "sets/g8r-u3-1.json",
+     "title": "Twins, but Different",
+     "subtitle": "考点：比较人物 / as ... as / 性格",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E8U3"
+    },
+    {
+     "id": "g8r-u3-2",
+     "file": "sets/g8r-u3-2.json",
+     "title": "Two Schools, Two Styles",
+     "subtitle": "考点：比较 / more ... than / 数字与事实",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E8U3"
+    },
+    {
+     "id": "g8r-u3-3",
+     "file": "sets/g8r-u3-3.json",
+     "title": "The Prince and the Pauper",
+     "subtitle": "考点：故事概要 / exchange / by accident",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E8U3"
+    },
+    {
+     "id": "g8r-u4-1",
+     "file": "sets/g8r-u4-1.json",
+     "title": "Fastest on Land, Tallest on Earth",
+     "subtitle": "考点：动植物事实 / weigh / up to",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E8U4"
+    },
+    {
+     "id": "g8r-u4-2",
+     "file": "sets/g8r-u4-2.json",
+     "title": "Little Workers: Bees",
+     "subtitle": "考点：蜜蜂与授粉 / connect / communicate",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E8U4"
+    },
+    {
+     "id": "g8r-u4-3",
+     "file": "sets/g8r-u4-3.json",
+     "title": "Plants in China",
+     "subtitle": "考点：中国植物 / 描述特点 / province",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E8U4"
+    },
+    {
+     "id": "g8r-u5-1",
+     "file": "sets/g8r-u5-1.json",
+     "title": "Sunday Pancakes",
+     "subtitle": "考点：食谱步骤 / mix, pour, heat / 顺序词",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E8U5"
+    },
+    {
+     "id": "g8r-u5-2",
+     "file": "sets/g8r-u5-2.json",
+     "title": "A Thanksgiving Dinner",
+     "subtitle": "考点：节日美食 / pumpkin pie / according to",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E8U5"
+    },
+    {
+     "id": "g8r-u5-3",
+     "file": "sets/g8r-u5-3.json",
+     "title": "A Bowl of Guoqiao Rice Noodles",
+     "subtitle": "考点：特色美食 / 烹饪方式 / put ... into",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E8U5"
+    },
+    {
+     "id": "g8r-u6-1",
+     "file": "sets/g8r-u6-1.json",
+     "title": "What Do You Want to Be?",
+     "subtitle": "考点：职业与理想 / want to be / because",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E8U6"
+    },
+    {
+     "id": "g8r-u6-2",
+     "file": "sets/g8r-u6-2.json",
+     "title": "My New Year Resolutions",
+     "subtitle": "考点：目标与计划 / mini-goals / keep on doing",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E8U6"
+    },
+    {
+     "id": "g8r-u6-3",
+     "file": "sets/g8r-u6-3.json",
+     "title": "Be Healthy and Confident",
+     "subtitle": "考点：健康生活 / physical health / be able to",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E8U6"
+    },
+    {
+     "id": "g8r-u7-1",
+     "file": "sets/g8r-u7-1.json",
+     "title": "Transport in the Future",
+     "subtitle": "考点：未来预测 / will / traffic",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E8U7"
+    },
+    {
+     "id": "g8r-u7-2",
+     "file": "sets/g8r-u7-2.json",
+     "title": "Will Robots Take Over?",
+     "subtitle": "考点：机器人与工作 / replace / depend on",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E8U7"
+    },
+    {
+     "id": "g8r-u7-3",
+     "file": "sets/g8r-u7-3.json",
+     "title": "Mandy's Trip to Space",
+     "subtitle": "考点：科幻故事 / come true / outer space",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E8U7"
+    },
+    {
+     "id": "g8r-u8-1",
+     "file": "sets/g8r-u8-1.json",
+     "title": "Making Up with a Friend",
+     "subtitle": "考点：解决矛盾 / argue with / make up",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E8U8"
+    },
+    {
+     "id": "g8r-u8-2",
+     "file": "sets/g8r-u8-2.json",
+     "title": "Tips for a Good Speech",
+     "subtitle": "考点：演讲技巧 / nervous / pay attention to",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E8U8"
+    },
+    {
+     "id": "g8r-u8-3",
+     "file": "sets/g8r-u8-3.json",
+     "title": "Message or Meeting?",
+     "subtitle": "考点：沟通方式 / text message / in person",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E8U8"
+    }
+   ]
+  },
+  {
+   "id": "g8listening",
+   "title": "英语听力",
+   "icon": "🎧",
+   "desc": "按单元，每段听两遍再作答",
+   "sets": [
+    {
+     "id": "g8l-u1-1",
+     "file": "sets/g8l-u1-1.json",
+     "title": "Planning a Vacation",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E8U1"
+    },
+    {
+     "id": "g8l-u1-2",
+     "file": "sets/g8l-u1-2.json",
+     "title": "My Holiday in Scotland",
+     "subtitle": "短文",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E8U1"
+    },
+    {
+     "id": "g8l-u1-3",
+     "file": "sets/g8l-u1-3.json",
+     "title": "Lost in the Metro",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E8U1"
+    },
+    {
+     "id": "g8l-u2-1",
+     "file": "sets/g8l-u2-1.json",
+     "title": "Packing for the Move",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E8U2"
+    },
+    {
+     "id": "g8l-u2-2",
+     "file": "sets/g8l-u2-2.json",
+     "title": "A Housewarming Party",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E8U2"
+    },
+    {
+     "id": "g8l-u2-3",
+     "file": "sets/g8l-u2-3.json",
+     "title": "Our New Community",
+     "subtitle": "短文",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E8U2"
+    },
+    {
+     "id": "g8l-u3-1",
+     "file": "sets/g8l-u3-1.json",
+     "title": "Sisters Compared",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E8U3"
+    },
+    {
+     "id": "g8l-u3-2",
+     "file": "sets/g8l-u3-2.json",
+     "title": "My Best Friend Mike",
+     "subtitle": "短文",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E8U3"
+    },
+    {
+     "id": "g8l-u3-3",
+     "file": "sets/g8l-u3-3.json",
+     "title": "Congratulations!",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E8U3"
+    },
+    {
+     "id": "g8l-u4-1",
+     "file": "sets/g8l-u4-1.json",
+     "title": "A Visit to the Zoo",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E8U4"
+    },
+    {
+     "id": "g8l-u4-2",
+     "file": "sets/g8l-u4-2.json",
+     "title": "The Life of a Frog",
+     "subtitle": "短文",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E8U4"
+    },
+    {
+     "id": "g8l-u4-3",
+     "file": "sets/g8l-u4-3.json",
+     "title": "Protecting the Ocean",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E8U4"
+    },
+    {
+     "id": "g8l-u5-1",
+     "file": "sets/g8l-u5-1.json",
+     "title": "Making Mashed Potatoes",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E8U5"
+    },
+    {
+     "id": "g8l-u5-2",
+     "file": "sets/g8l-u5-2.json",
+     "title": "Tomato and Egg Stir-fry",
+     "subtitle": "短文",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E8U5"
+    },
+    {
+     "id": "g8l-u5-3",
+     "file": "sets/g8l-u5-3.json",
+     "title": "A Dinner Party",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E8U5"
+    },
+    {
+     "id": "g8l-u6-1",
+     "file": "sets/g8l-u6-1.json",
+     "title": "Career Talk",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E8U6"
+    },
+    {
+     "id": "g8l-u6-2",
+     "file": "sets/g8l-u6-2.json",
+     "title": "My Goals This Term",
+     "subtitle": "短文",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E8U6"
+    },
+    {
+     "id": "g8l-u6-3",
+     "file": "sets/g8l-u6-3.json",
+     "title": "A Fashion Designer",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E8U6"
+    },
+    {
+     "id": "g8l-u7-1",
+     "file": "sets/g8l-u7-1.json",
+     "title": "Shall We Go to the Concert?",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E8U7"
+    },
+    {
+     "id": "g8l-u7-2",
+     "file": "sets/g8l-u7-2.json",
+     "title": "Life in 2050",
+     "subtitle": "短文",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E8U7"
+    },
+    {
+     "id": "g8l-u7-3",
+     "file": "sets/g8l-u7-3.json",
+     "title": "Paying with a Phone",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E8U7"
+    },
+    {
+     "id": "g8l-u8-1",
+     "file": "sets/g8l-u8-1.json",
+     "title": "Showing a Visitor Around",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E8U8"
+    },
+    {
+     "id": "g8l-u8-2",
+     "file": "sets/g8l-u8-2.json",
+     "title": "A Nervous Speaker",
+     "subtitle": "短文",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E8U8"
+    },
+    {
+     "id": "g8l-u8-3",
+     "file": "sets/g8l-u8-3.json",
+     "title": "Phone or Face to Face?",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E8U8"
+    }
+   ]
+  },
+  {
+   "id": "g8speaking",
+   "title": "每日口语打卡",
+   "icon": "🗣️",
+   "desc": "每天 10 分钟，跟读打卡",
+   "sets": [
+    {
+     "id": "g8sp-u1",
+     "file": "sets/g8sp-u1.json",
+     "title": "Unit 1 口语",
+     "subtitle": "每天 10 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "E8U1"
+    },
+    {
+     "id": "g8sp-u2",
+     "file": "sets/g8sp-u2.json",
+     "title": "Unit 2 口语",
+     "subtitle": "每天 10 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "E8U2"
+    },
+    {
+     "id": "g8sp-u3",
+     "file": "sets/g8sp-u3.json",
+     "title": "Unit 3 口语",
+     "subtitle": "每天 10 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "E8U3"
+    },
+    {
+     "id": "g8sp-u4",
+     "file": "sets/g8sp-u4.json",
+     "title": "Unit 4 口语",
+     "subtitle": "每天 10 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "E8U4"
+    },
+    {
+     "id": "g8sp-u5",
+     "file": "sets/g8sp-u5.json",
+     "title": "Unit 5 口语",
+     "subtitle": "每天 10 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "E8U5"
+    },
+    {
+     "id": "g8sp-u6",
+     "file": "sets/g8sp-u6.json",
+     "title": "Unit 6 口语",
+     "subtitle": "每天 10 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "E8U6"
+    },
+    {
+     "id": "g8sp-u7",
+     "file": "sets/g8sp-u7.json",
+     "title": "Unit 7 口语",
+     "subtitle": "每天 10 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "E8U7"
+    },
+    {
+     "id": "g8sp-u8",
+     "file": "sets/g8sp-u8.json",
+     "title": "Unit 8 口语",
+     "subtitle": "每天 10 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "E8U8"
+    }
+   ]
+  },
+  {
+   "id": "g9reading",
+   "title": "英语阅读理解",
+   "icon": "📖",
+   "desc": "按单元，每个单元 3 套",
+   "sets": [
+    {
+     "id": "g9r-u1-1",
+     "file": "sets/g9r-u1-1.json",
+     "title": "Green Wall at the Desert's Edge",
+     "subtitle": "考点：环境变化 / bring about, lack, support",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E9U1"
+    },
+    {
+     "id": "g9r-u1-2",
+     "file": "sets/g9r-u1-2.json",
+     "title": "A New Railway for Kenya",
+     "subtitle": "考点：交通发展 / link, with ease, convenient",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E9U1"
+    },
+    {
+     "id": "g9r-u1-3",
+     "file": "sets/g9r-u1-3.json",
+     "title": "A High-tech Farm",
+     "subtitle": "考点：科技与农业 / e-payment, digital, greenhouse",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E9U1"
+    },
+    {
+     "id": "g9r-u2-1",
+     "file": "sets/g9r-u2-1.json",
+     "title": "Marie Curie: A Life for Science",
+     "subtitle": "考点：人物经历 / Nobel Prize, physicist, wounded",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E9U2"
+    },
+    {
+     "id": "g9r-u2-2",
+     "file": "sets/g9r-u2-2.json",
+     "title": "Amelia Earhart: Flying Alone",
+     "subtitle": "考点：勇气与梦想 / courage, admire, above all",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E9U2"
+    },
+    {
+     "id": "g9r-u2-3",
+     "file": "sets/g9r-u2-3.json",
+     "title": "Zhang Qian and the Silk Road",
+     "subtitle": "考点：历史人物 / brave, pioneer, the Western Regions",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E9U2"
+    },
+    {
+     "id": "g9r-u3-1",
+     "file": "sets/g9r-u3-1.json",
+     "title": "Learning English with Podcasts",
+     "subtitle": "考点：学习方法 / look up, aloud, in addition",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E9U3"
+    },
+    {
+     "id": "g9r-u3-2",
+     "file": "sets/g9r-u3-2.json",
+     "title": "The Growth Mindset",
+     "subtitle": "考点：学习态度 / feedback, mindset, take advantage of",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E9U3"
+    },
+    {
+     "id": "g9r-u3-3",
+     "file": "sets/g9r-u3-3.json",
+     "title": "Paper Books or E-books?",
+     "subtitle": "考点：阅读方式 / advantage, in general, come across",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E9U3"
+    },
+    {
+     "id": "g9r-u4-1",
+     "file": "sets/g9r-u4-1.json",
+     "title": "Why Do We Forget?",
+     "subtitle": "考点：记忆规律 / memorize, recall, go through",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E9U4"
+    },
+    {
+     "id": "g9r-u4-2",
+     "file": "sets/g9r-u4-2.json",
+     "title": "Grandpa's Memory Box",
+     "subtitle": "考点：回忆与情感 / grandson, keep in mind, recall",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E9U4"
+    },
+    {
+     "id": "g9r-u4-3",
+     "file": "sets/g9r-u4-3.json",
+     "title": "Squirrels and Their Nuts",
+     "subtitle": "考点：动物记忆 / wild, brain, keep in mind",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E9U4"
+    },
+    {
+     "id": "g9r-u5-1",
+     "file": "sets/g9r-u5-1.json",
+     "title": "The Sticky Note Story",
+     "subtitle": "考点：发明故事 / invent, later on, be supposed to",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E9U5"
+    },
+    {
+     "id": "g9r-u5-2",
+     "file": "sets/g9r-u5-2.json",
+     "title": "The Railway on the Roof of the World",
+     "subtitle": "考点：工程创造 / result in, be responsible for, speed up",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E9U5"
+    },
+    {
+     "id": "g9r-u5-3",
+     "file": "sets/g9r-u5-3.json",
+     "title": "The Wright Brothers and Their Flying Machine",
+     "subtitle": "考点：科学探索 / glider, afford, none",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E9U5"
+    },
+    {
+     "id": "g9r-u6-1",
+     "file": "sets/g9r-u6-1.json",
+     "title": "Life on the Space Station",
+     "subtitle": "考点：太空生活 / weightless, fall asleep, on board",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E9U6"
+    },
+    {
+     "id": "g9r-u6-2",
+     "file": "sets/g9r-u6-2.json",
+     "title": "Rovers on Mars",
+     "subtitle": "考点：行星探测 / rover, mission, operate",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E9U6"
+    },
+    {
+     "id": "g9r-u6-3",
+     "file": "sets/g9r-u6-3.json",
+     "title": "Voyager 1: A Message to the Stars",
+     "subtitle": "考点：太空探索 / launch, spacecraft, billion",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E9U6"
+    },
+    {
+     "id": "g9r-u7-1",
+     "file": "sets/g9r-u7-1.json",
+     "title": "Chopin, the Poet of the Piano",
+     "subtitle": "考点：音乐家 / composer, pianist, classical",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E9U7"
+    },
+    {
+     "id": "g9r-u7-2",
+     "file": "sets/g9r-u7-2.json",
+     "title": "Different Kinds of Music",
+     "subtitle": "考点：音乐风格 / jazz, rap, traditional",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E9U7"
+    },
+    {
+     "id": "g9r-u7-3",
+     "file": "sets/g9r-u7-3.json",
+     "title": "Mei's Piano Practice",
+     "subtitle": "考点：坚持练习 / tap, finger, proudly",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E9U7"
+    },
+    {
+     "id": "g9r-u8-1",
+     "file": "sets/g9r-u8-1.json",
+     "title": "Eric the Eel at the Olympics",
+     "subtitle": "考点：体育精神 / compete, cheer, set a record",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E9U8"
+    },
+    {
+     "id": "g9r-u8-2",
+     "file": "sets/g9r-u8-2.json",
+     "title": "The Relay Race",
+     "subtitle": "考点：团队合作 / relay, baton, catch up with",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E9U8"
+    },
+    {
+     "id": "g9r-u8-3",
+     "file": "sets/g9r-u8-3.json",
+     "title": "The Olympic Games, Then and Now",
+     "subtitle": "考点：奥运历史 / Greek, ceremony, worldwide",
+     "kind": "reading",
+     "count": 10,
+     "unit": "E9U8"
+    }
+   ]
+  },
+  {
+   "id": "g9listening",
+   "title": "英语听力",
+   "icon": "🎧",
+   "desc": "按单元，每段听两遍再作答",
+   "sets": [
+    {
+     "id": "g9l-u1-1",
+     "file": "sets/g9l-u1-1.json",
+     "title": "Paying with a Phone",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E9U1"
+    },
+    {
+     "id": "g9l-u1-2",
+     "file": "sets/g9l-u1-2.json",
+     "title": "My Hometown Then and Now",
+     "subtitle": "短文",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E9U1"
+    },
+    {
+     "id": "g9l-u1-3",
+     "file": "sets/g9l-u1-3.json",
+     "title": "Sandstorm Warning",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E9U1"
+    },
+    {
+     "id": "g9l-u2-1",
+     "file": "sets/g9l-u2-1.json",
+     "title": "Someone I Look Up To",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E9U2"
+    },
+    {
+     "id": "g9l-u2-2",
+     "file": "sets/g9l-u2-2.json",
+     "title": "Michael Faraday's Road to Science",
+     "subtitle": "短文",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E9U2"
+    },
+    {
+     "id": "g9l-u2-3",
+     "file": "sets/g9l-u2-3.json",
+     "title": "A Talk About Confucius",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E9U2"
+    },
+    {
+     "id": "g9l-u3-1",
+     "file": "sets/g9l-u3-1.json",
+     "title": "Flashcards for Words",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E9U3"
+    },
+    {
+     "id": "g9l-u3-2",
+     "file": "sets/g9l-u3-2.json",
+     "title": "A Better Study Plan",
+     "subtitle": "短文",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E9U3"
+    },
+    {
+     "id": "g9l-u3-3",
+     "file": "sets/g9l-u3-3.json",
+     "title": "At the School Library",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E9U3"
+    },
+    {
+     "id": "g9l-u4-1",
+     "file": "sets/g9l-u4-1.json",
+     "title": "Lost Notebook at the Mall",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E9U4"
+    },
+    {
+     "id": "g9l-u4-2",
+     "file": "sets/g9l-u4-2.json",
+     "title": "Three Tips for a Better Memory",
+     "subtitle": "短文",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E9U4"
+    },
+    {
+     "id": "g9l-u4-3",
+     "file": "sets/g9l-u4-3.json",
+     "title": "I Forgot My Password",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E9U4"
+    },
+    {
+     "id": "g9l-u5-1",
+     "file": "sets/g9l-u5-1.json",
+     "title": "Inventions Around Us",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E9U5"
+    },
+    {
+     "id": "g9l-u5-2",
+     "file": "sets/g9l-u5-2.json",
+     "title": "The Story of Paper",
+     "subtitle": "短文",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E9U5"
+    },
+    {
+     "id": "g9l-u5-3",
+     "file": "sets/g9l-u5-3.json",
+     "title": "A Report on the Telephone",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E9U5"
+    },
+    {
+     "id": "g9l-u6-1",
+     "file": "sets/g9l-u6-1.json",
+     "title": "Looking at the Moon",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E9U6"
+    },
+    {
+     "id": "g9l-u6-2",
+     "file": "sets/g9l-u6-2.json",
+     "title": "Satellites Around Us",
+     "subtitle": "短文",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E9U6"
+    },
+    {
+     "id": "g9l-u6-3",
+     "file": "sets/g9l-u6-3.json",
+     "title": "Would You Live on Mars?",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E9U6"
+    },
+    {
+     "id": "g9l-u7-1",
+     "file": "sets/g9l-u7-1.json",
+     "title": "Which Concert?",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E9U7"
+    },
+    {
+     "id": "g9l-u7-2",
+     "file": "sets/g9l-u7-2.json",
+     "title": "Music in My Family",
+     "subtitle": "短文",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E9U7"
+    },
+    {
+     "id": "g9l-u7-3",
+     "file": "sets/g9l-u7-3.json",
+     "title": "Choosing an Instrument",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E9U7"
+    },
+    {
+     "id": "g9l-u8-1",
+     "file": "sets/g9l-u8-1.json",
+     "title": "Sports Team Tryouts",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E9U8"
+    },
+    {
+     "id": "g9l-u8-2",
+     "file": "sets/g9l-u8-2.json",
+     "title": "Bing Dwen Dwen the Panda",
+     "subtitle": "短文",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E9U8"
+    },
+    {
+     "id": "g9l-u8-3",
+     "file": "sets/g9l-u8-3.json",
+     "title": "Cheering at the Swimming Final",
+     "subtitle": "对话",
+     "kind": "listening",
+     "count": 5,
+     "unit": "E9U8"
+    }
+   ]
+  },
+  {
+   "id": "g9speaking",
+   "title": "每日口语打卡",
+   "icon": "🗣️",
+   "desc": "每天 10 分钟，跟读打卡",
+   "sets": [
+    {
+     "id": "g9sp-u1",
+     "file": "sets/g9sp-u1.json",
+     "title": "Unit 1 口语",
+     "subtitle": "每天 10 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "E9U1"
+    },
+    {
+     "id": "g9sp-u2",
+     "file": "sets/g9sp-u2.json",
+     "title": "Unit 2 口语",
+     "subtitle": "每天 10 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "E9U2"
+    },
+    {
+     "id": "g9sp-u3",
+     "file": "sets/g9sp-u3.json",
+     "title": "Unit 3 口语",
+     "subtitle": "每天 10 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "E9U3"
+    },
+    {
+     "id": "g9sp-u4",
+     "file": "sets/g9sp-u4.json",
+     "title": "Unit 4 口语",
+     "subtitle": "每天 10 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "E9U4"
+    },
+    {
+     "id": "g9sp-u5",
+     "file": "sets/g9sp-u5.json",
+     "title": "Unit 5 口语",
+     "subtitle": "每天 10 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "E9U5"
+    },
+    {
+     "id": "g9sp-u6",
+     "file": "sets/g9sp-u6.json",
+     "title": "Unit 6 口语",
+     "subtitle": "每天 10 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "E9U6"
+    },
+    {
+     "id": "g9sp-u7",
+     "file": "sets/g9sp-u7.json",
+     "title": "Unit 7 口语",
+     "subtitle": "每天 10 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "E9U7"
+    },
+    {
+     "id": "g9sp-u8",
+     "file": "sets/g9sp-u8.json",
+     "title": "Unit 8 口语",
+     "subtitle": "每天 10 分钟 · 共 5 天",
+     "kind": "speaking",
+     "count": 5,
+     "unit": "E9U8"
+    }
+   ]
   }
  ],
  "unitNames": {
@@ -9661,6 +12337,40 @@
   "HX94": "第四单元 自然界的水",
   "HX95": "第五单元 化学反应的定量关系",
   "HX96": "第六单元 碳和碳的氧化物",
-  "HX97": "第七单元 能源的合理利用与开发"
+  "HX97": "第七单元 能源的合理利用与开发",
+  "E3U1": "Unit 1 Making friends",
+  "E3U2": "Unit 2 Different families",
+  "E3U3": "Unit 3 Amazing animals",
+  "E3U4": "Unit 4 Plants around us",
+  "E3U5": "Unit 5 The colourful world",
+  "E3U6": "Unit 6 Useful numbers",
+  "E5U1": "Unit 1 Different friends",
+  "E5U2": "Unit 2 My feelings",
+  "E5U3": "Unit 3 Work and play",
+  "E5U4": "Unit 4 Healthy habits",
+  "E5U5": "Unit 5 Food we eat",
+  "E5U6": "Unit 6 Nature and us",
+  "E6U1": "Unit 1 Amazing places",
+  "E6U2": "Unit 2 Getting together",
+  "E6U3": "Unit 3 Healthy life",
+  "E6U4": "Unit 4 Managing money well",
+  "E6U5": "Unit 5 Exploring space",
+  "E6U6": "Unit 6 Energy, nature and us",
+  "E8U1": "Unit 1 Happy Holiday",
+  "E8U2": "Unit 2 Home Sweet Home",
+  "E8U3": "Unit 3 Same or Different?",
+  "E8U4": "Unit 4 Amazing Plants and Animals",
+  "E8U5": "Unit 5 What a Delicious Meal!",
+  "E8U6": "Unit 6 Plan for Yourself",
+  "E8U7": "Unit 7 When Tomorrow Comes",
+  "E8U8": "Unit 8 Let's Communicate!",
+  "E9U1": "Unit 1 The Changing World",
+  "E9U2": "Unit 2 Inspiring People",
+  "E9U3": "Unit 3 Smart Learning",
+  "E9U4": "Unit 4 Our Memory",
+  "E9U5": "Unit 5 Power of Ideas",
+  "E9U6": "Unit 6 Beyond Earth",
+  "E9U7": "Unit 7 Feel the Rhythm",
+  "E9U8": "Unit 8 More than a Game"
  }
 }

@@ -1,0 +1,127 @@
+{
+ "id": "g8l-u4-1",
+ "kind": "listening",
+ "title": "A Visit to the Zoo",
+ "subtitle": "对话",
+ "unit": "E8U4",
+ "speakers": {
+  "Tim": "m1",
+  "Anna": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Anna",
+   "t": "Look, Tim! That is a cheetah."
+  },
+  {
+   "s": "Tim",
+   "t": "It looks so thin and fast. Is it the fastest animal on land?"
+  },
+  {
+   "s": "Anna",
+   "t": "Yes. It can run more than one hundred kilometres per hour."
+  },
+  {
+   "s": "Tim",
+   "t": "Wow! What does it eat?"
+  },
+  {
+   "s": "Anna",
+   "t": "Small animals like deer. It comes from Africa."
+  },
+  {
+   "s": "Tim",
+   "t": "Let's go and see the pandas now."
+  },
+  {
+   "s": "Anna",
+   "t": "Good idea. They eat bamboo, don't they?"
+  },
+  {
+   "s": "Tim",
+   "t": "Yes. They eat for about twelve hours a day."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8l-u4-1-A1",
+     "type": "choice",
+     "stem": "Which animal do they see first?",
+     "options": [
+      "A panda.",
+      "A cheetah.",
+      "A deer.",
+      "A frog."
+     ],
+     "answer": "B",
+     "why": "That is a cheetah.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u4-1-A2",
+     "type": "choice",
+     "stem": "Where does the cheetah come from?",
+     "options": [
+      "Asia.",
+      "Canada.",
+      "Africa.",
+      "Europe."
+     ],
+     "answer": "C",
+     "why": "It comes from Africa.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u4-1-A3",
+     "type": "choice",
+     "stem": "What do pandas eat?",
+     "options": [
+      "Honey.",
+      "Meat.",
+      "Fruit only.",
+      "Bamboo."
+     ],
+     "answer": "D",
+     "why": "They eat bamboo.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8l-u4-1-B1",
+     "type": "fill",
+     "stem": "A cheetah eats small animals like ____.",
+     "answers": [
+      [
+       "deer"
+      ]
+     ],
+     "why": "Small animals like deer.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u4-1-B2",
+     "type": "fill",
+     "stem": "Pandas eat for about ____ hours a day.",
+     "answers": [
+      [
+       "twelve"
+      ]
+     ],
+     "why": "about twelve hours a day.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

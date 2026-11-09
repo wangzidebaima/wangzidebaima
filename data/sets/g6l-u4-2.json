@@ -1,0 +1,124 @@
+{
+ "id": "g6l-u4-2",
+ "kind": "listening",
+ "title": "A Drink Stall",
+ "subtitle": "对话",
+ "unit": "E6U4",
+ "speakers": {
+  "Mike": "c1",
+  "Lily": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Mike",
+   "t": "Lily, you sell drinks at the school fair, right?"
+  },
+  {
+   "s": "Lily",
+   "t": "Yes. I sell orange juice and tea."
+  },
+  {
+   "s": "Mike",
+   "t": "How much is a cup of juice?"
+  },
+  {
+   "s": "Lily",
+   "t": "It is three yuan. Tea is two yuan."
+  },
+  {
+   "s": "Mike",
+   "t": "How many cups did you sell today?"
+  },
+  {
+   "s": "Lily",
+   "t": "I sold thirty cups. I am so lucky!"
+  },
+  {
+   "s": "Mike",
+   "t": "What will you do with the money?"
+  },
+  {
+   "s": "Lily",
+   "t": "I will give half of it to my mother and save the rest."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6l-u4-2-A1",
+     "type": "choice",
+     "stem": "What does Lily sell?",
+     "options": [
+      "Milk and coffee.",
+      "Water and soup.",
+      "Orange juice and tea."
+     ],
+     "answer": "C",
+     "why": "I sell orange juice and tea.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u4-2-A2",
+     "type": "choice",
+     "stem": "How much is a cup of juice?",
+     "options": [
+      "Three yuan.",
+      "Two yuan.",
+      "Thirty yuan."
+     ],
+     "answer": "A",
+     "why": "It is three yuan.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u4-2-A3",
+     "type": "choice",
+     "stem": "What will Lily do with half of the money?",
+     "options": [
+      "Buy a ticket.",
+      "Give it to her mother.",
+      "Put it in a jar."
+     ],
+     "answer": "B",
+     "why": "I will give half of it to my mother",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6l-u4-2-B1",
+     "type": "fill",
+     "stem": "Lily sold ____ cups today.",
+     "answers": [
+      [
+       "thirty"
+      ]
+     ],
+     "why": "I sold thirty cups.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u4-2-B2",
+     "type": "fill",
+     "stem": "Lily feels very ____.",
+     "answers": [
+      [
+       "lucky"
+      ]
+     ],
+     "why": "I am so lucky!",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

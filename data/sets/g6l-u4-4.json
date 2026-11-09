@@ -1,0 +1,124 @@
+{
+ "id": "g6l-u4-4",
+ "kind": "listening",
+ "title": "Tickets for the Zoo",
+ "subtitle": "对话",
+ "unit": "E6U4",
+ "speakers": {
+  "Tom": "c1",
+  "Amy": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Tom",
+   "t": "Amy, are you free on Saturday?"
+  },
+  {
+   "s": "Amy",
+   "t": "Yes. What shall we do?"
+  },
+  {
+   "s": "Tom",
+   "t": "Let's go to the zoo. A ticket is half price on Saturday."
+  },
+  {
+   "s": "Amy",
+   "t": "Great! How much is it?"
+  },
+  {
+   "s": "Tom",
+   "t": "It is twenty yuan for a child."
+  },
+  {
+   "s": "Amy",
+   "t": "I have thirty yuan in my pocket."
+  },
+  {
+   "s": "Tom",
+   "t": "Good. Let's manage our money well."
+  },
+  {
+   "s": "Amy",
+   "t": "We can use the rest to buy water."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6l-u4-4-A1",
+     "type": "choice",
+     "stem": "When is the ticket half price?",
+     "options": [
+      "On Friday.",
+      "On Saturday.",
+      "On Sunday."
+     ],
+     "answer": "B",
+     "why": "A ticket is half price on Saturday.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u4-4-A2",
+     "type": "choice",
+     "stem": "How much is a child's ticket on that day?",
+     "options": [
+      "Thirty yuan.",
+      "Two yuan.",
+      "Twenty yuan."
+     ],
+     "answer": "C",
+     "why": "It is twenty yuan for a child.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u4-4-A3",
+     "type": "choice",
+     "stem": "What will they buy with the rest of the money?",
+     "options": [
+      "Water.",
+      "Toys.",
+      "Books."
+     ],
+     "answer": "A",
+     "why": "We can use the rest to buy water.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6l-u4-4-B1",
+     "type": "fill",
+     "stem": "Tom and Amy will go to the ____.",
+     "answers": [
+      [
+       "zoo"
+      ]
+     ],
+     "why": "Let's go to the zoo.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u4-4-B2",
+     "type": "fill",
+     "stem": "Amy has ____ yuan in her pocket.",
+     "answers": [
+      [
+       "thirty"
+      ]
+     ],
+     "why": "I have thirty yuan in my pocket.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

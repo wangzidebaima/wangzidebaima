@@ -1,0 +1,124 @@
+{
+ "id": "g6l-u3-1",
+ "kind": "listening",
+ "title": "A Sick Day",
+ "subtitle": "对话",
+ "unit": "E6U3",
+ "speakers": {
+  "Amy": "c1",
+  "Sam": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Amy",
+   "t": "Sam, you look ill."
+  },
+  {
+   "s": "Sam",
+   "t": "I have a headache and a fever."
+  },
+  {
+   "s": "Amy",
+   "t": "You should stay at home."
+  },
+  {
+   "s": "Sam",
+   "t": "My mother will call the teacher."
+  },
+  {
+   "s": "Amy",
+   "t": "Drink some hot water and sleep."
+  },
+  {
+   "s": "Sam",
+   "t": "OK. I will."
+  },
+  {
+   "s": "Amy",
+   "t": "I will email you our homework."
+  },
+  {
+   "s": "Sam",
+   "t": "Thank you."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6l-u3-1-A1",
+     "type": "choice",
+     "stem": "What is wrong with Sam?",
+     "options": [
+      "A cough and a sore foot.",
+      "A headache and a fever.",
+      "A runny nose and a cough."
+     ],
+     "answer": "B",
+     "why": "I have a headache and a fever.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u3-1-A2",
+     "type": "choice",
+     "stem": "Who will call the teacher?",
+     "options": [
+      "Sam's father.",
+      "Amy.",
+      "Sam's mother."
+     ],
+     "answer": "C",
+     "why": "My mother will call the teacher.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u3-1-A3",
+     "type": "choice",
+     "stem": "What will Amy do?",
+     "options": [
+      "Email Sam the homework.",
+      "Visit Sam at home.",
+      "Bring Sam some fruit."
+     ],
+     "answer": "A",
+     "why": "I will email you our homework.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6l-u3-1-B1",
+     "type": "fill",
+     "stem": "Sam's mother will call the ____.",
+     "answers": [
+      [
+       "teacher"
+      ]
+     ],
+     "why": "My mother will call the teacher.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u3-1-B2",
+     "type": "fill",
+     "stem": "Amy says Sam should drink hot ____.",
+     "answers": [
+      [
+       "water"
+      ]
+     ],
+     "why": "Drink some hot water and sleep.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

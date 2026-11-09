@@ -1,0 +1,120 @@
+{
+ "id": "g5l-u4-3",
+ "kind": "listening",
+ "title": "At the Clinic",
+ "subtitle": "对话",
+ "unit": "E5U4",
+ "speakers": {
+  "Doctor": "c1",
+  "Amy": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Doctor",
+   "t": "What's the matter, Amy?"
+  },
+  {
+   "s": "Amy",
+   "t": "I have a sore throat and I feel hot."
+  },
+  {
+   "s": "Doctor",
+   "t": "Let me check. You have the flu."
+  },
+  {
+   "s": "Amy",
+   "t": "Should I go to school tomorrow?"
+  },
+  {
+   "s": "Doctor",
+   "t": "No. You should stay at home for two days."
+  },
+  {
+   "s": "Amy",
+   "t": "What else should I do?"
+  },
+  {
+   "s": "Doctor",
+   "t": "Drink hot water and rest in bed."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5l-u4-3-A1",
+     "type": "choice",
+     "stem": "What does Amy have?",
+     "options": [
+      "The flu.",
+      "A toothache.",
+      "A stomach ache."
+     ],
+     "answer": "A",
+     "why": "You have the flu.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u4-3-A2",
+     "type": "choice",
+     "stem": "How long should Amy stay at home?",
+     "options": [
+      "One day.",
+      "Two days.",
+      "A week."
+     ],
+     "answer": "B",
+     "why": "You should stay at home for two days.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u4-3-A3",
+     "type": "choice",
+     "stem": "What should Amy drink?",
+     "options": [
+      "Cold juice.",
+      "Milk tea.",
+      "Hot water."
+     ],
+     "answer": "C",
+     "why": "Drink hot water and rest in bed.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5l-u4-3-B1",
+     "type": "fill",
+     "stem": "Amy has a sore ____.",
+     "answers": [
+      [
+       "throat"
+      ]
+     ],
+     "why": "I have a sore throat.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u4-3-B2",
+     "type": "fill",
+     "stem": "She should rest in ____.",
+     "answers": [
+      [
+       "bed"
+      ]
+     ],
+     "why": "rest in bed.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

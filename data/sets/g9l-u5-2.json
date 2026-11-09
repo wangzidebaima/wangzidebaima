@@ -1,0 +1,110 @@
+{
+ "id": "g9l-u5-2",
+ "kind": "listening",
+ "title": "The Story of Paper",
+ "subtitle": "短文",
+ "unit": "E9U5",
+ "speakers": {
+  "Frank": "m1"
+ },
+ "transcript": [
+  {
+   "s": "Frank",
+   "t": "Before paper was invented, people in different places wrote on bamboo, silk or even stone. These materials were heavy or very expensive."
+  },
+  {
+   "s": "Frank",
+   "t": "In ancient China, an officer named Cai Lun improved papermaking about 1,900 years ago. Workers used tree bark, old cloth and fishing nets to make thin sheets."
+  },
+  {
+   "s": "Frank",
+   "t": "Paper was light and cheap, so more people could afford to read and write. Later on, the skill spread to other countries."
+  },
+  {
+   "s": "Frank",
+   "t": "Today paper is everywhere, from books to boxes."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9l-u5-2-A1",
+     "type": "choice",
+     "stem": "What did people write on before paper was invented?",
+     "options": [
+      "Plastic and glass.",
+      "Leaves and sand.",
+      "Bamboo, silk and stone.",
+      "Metal and rubber."
+     ],
+     "answer": "C",
+     "why": "people wrote on bamboo, silk or even stone.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u5-2-A2",
+     "type": "choice",
+     "stem": "Who improved papermaking in ancient China?",
+     "options": [
+      "A teacher named Wang.",
+      "A king named Qin.",
+      "A doctor named Zhang.",
+      "Cai Lun."
+     ],
+     "answer": "D",
+     "why": "an officer named Cai Lun improved papermaking.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u5-2-A3",
+     "type": "choice",
+     "stem": "Why could more people read and write?",
+     "options": [
+      "Paper was light and cheap.",
+      "Paper was heavy and strong.",
+      "Everyone got free books.",
+      "Schools became free."
+     ],
+     "answer": "A",
+     "why": "Paper was light and cheap, so more people could afford to read and write.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9l-u5-2-B1",
+     "type": "fill",
+     "stem": "Workers used tree ____ to make thin sheets.",
+     "answers": [
+      [
+       "bark"
+      ]
+     ],
+     "why": "tree bark, old cloth and fishing nets.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u5-2-B2",
+     "type": "fill",
+     "stem": "Today paper is everywhere, from books to ____.",
+     "answers": [
+      [
+       "boxes"
+      ]
+     ],
+     "why": "from books to boxes.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

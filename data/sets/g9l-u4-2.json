@@ -1,0 +1,114 @@
+{
+ "id": "g9l-u4-2",
+ "kind": "listening",
+ "title": "Three Tips for a Better Memory",
+ "subtitle": "短文",
+ "unit": "E9U4",
+ "speakers": {
+  "Clarice": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Clarice",
+   "t": "Do you often forget things? Here are three tips."
+  },
+  {
+   "s": "Clarice",
+   "t": "First, organize what you learn. Divide a long list into small groups, and it will be easier to remember."
+  },
+  {
+   "s": "Clarice",
+   "t": "Second, make a picture in your mind. If you want to remember the word dolphin, imagine a dolphin jumping out of the water."
+  },
+  {
+   "s": "Clarice",
+   "t": "Third, review often. Our brain forgets quickly, so look at your notes the next day, and again a week later. Do not wait until the night before the exam."
+  },
+  {
+   "s": "Clarice",
+   "t": "With these techniques, your memory will become stronger."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9l-u4-2-A1",
+     "type": "choice",
+     "stem": "What should you do with a long list?",
+     "options": [
+      "Read it only once.",
+      "Copy it ten times.",
+      "Divide it into small groups.",
+      "Throw it away."
+     ],
+     "answer": "C",
+     "why": "Divide a long list into small groups.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u4-2-A2",
+     "type": "choice",
+     "stem": "Which word is used as an example?",
+     "options": [
+      "Squirrel.",
+      "Engine.",
+      "Picnic.",
+      "Dolphin."
+     ],
+     "answer": "D",
+     "why": "remember the word dolphin.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u4-2-A3",
+     "type": "choice",
+     "stem": "When should you review your notes for the first time?",
+     "options": [
+      "The next day.",
+      "The night before the exam.",
+      "One month later.",
+      "Only at the weekend."
+     ],
+     "answer": "A",
+     "why": "look at your notes the next day.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9l-u4-2-B1",
+     "type": "fill",
+     "stem": "Make a ____ in your mind.",
+     "answers": [
+      [
+       "picture"
+      ]
+     ],
+     "why": "make a picture in your mind.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u4-2-B2",
+     "type": "fill",
+     "stem": "Our brain ____ quickly, so review often.",
+     "answers": [
+      [
+       "forgets"
+      ]
+     ],
+     "why": "Our brain forgets quickly.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

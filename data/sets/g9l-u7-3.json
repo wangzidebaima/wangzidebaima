@@ -1,0 +1,127 @@
+{
+ "id": "g9l-u7-3",
+ "kind": "listening",
+ "title": "Choosing an Instrument",
+ "subtitle": "对话",
+ "unit": "E9U7",
+ "speakers": {
+  "Tom": "m1",
+  "Lily": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Lily",
+   "t": "Tom, I want to learn an instrument. Which one is good?"
+  },
+  {
+   "s": "Tom",
+   "t": "The trumpet is loud and fun, but it needs a lot of breath."
+  },
+  {
+   "s": "Lily",
+   "t": "Maybe not for me. What about the piano?"
+  },
+  {
+   "s": "Tom",
+   "t": "Great choice, but a real piano is expensive. You could start with an electronic keyboard."
+  },
+  {
+   "s": "Lily",
+   "t": "Can I practise with headphones?"
+  },
+  {
+   "s": "Tom",
+   "t": "Yes, so you will not disturb your neighbours."
+  },
+  {
+   "s": "Lily",
+   "t": "That sounds perfect. I will ask my parents tonight."
+  },
+  {
+   "s": "Tom",
+   "t": "Practise for fifteen minutes a day, and you will improve fast."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9l-u7-3-A1",
+     "type": "choice",
+     "stem": "What is the problem with the trumpet for Lily?",
+     "options": [
+      "It is too quiet.",
+      "It is too heavy.",
+      "It is too cheap.",
+      "It needs a lot of breath."
+     ],
+     "answer": "D",
+     "why": "it needs a lot of breath.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u7-3-A2",
+     "type": "choice",
+     "stem": "Why does Tom suggest an electronic keyboard first?",
+     "options": [
+      "A real piano is expensive.",
+      "It is louder than a trumpet.",
+      "It does not need practice.",
+      "It is free."
+     ],
+     "answer": "A",
+     "why": "a real piano is expensive.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u7-3-A3",
+     "type": "choice",
+     "stem": "How long should Lily practise each day?",
+     "options": [
+      "Five minutes.",
+      "Fifteen minutes.",
+      "Fifty minutes.",
+      "Two hours."
+     ],
+     "answer": "B",
+     "why": "Practise for fifteen minutes a day.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9l-u7-3-B1",
+     "type": "fill",
+     "stem": "Lily can practise with ____.",
+     "answers": [
+      [
+       "headphones"
+      ]
+     ],
+     "why": "practise with headphones.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u7-3-B2",
+     "type": "fill",
+     "stem": "Lily will ask her ____ tonight.",
+     "answers": [
+      [
+       "parents"
+      ]
+     ],
+     "why": "I will ask my parents tonight.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

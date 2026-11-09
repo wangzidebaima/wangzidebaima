@@ -1,0 +1,151 @@
+{
+ "id": "g9r-u8-1",
+ "kind": "reading",
+ "title": "Eric the Eel at the Olympics",
+ "subtitle": "考点：体育精神 / compete, cheer, set a record",
+ "unit": "E9U8",
+ "passage": [
+  "At the Sydney Olympics in 2000, a young swimmer from Equatorial Guinea became famous around the world. His name was Eric Moussambani. He had learned to swim only a few months before, and he had never seen an Olympic-size pool.",
+  "In his race, the other two swimmers made false starts, so Eric swam alone. He was very tired in the last part, and the crowd stood up and cheered for him. He finished the race much more slowly than the other Olympic swimmers, but he was proud. 'I just wanted to finish,' he said. Eric did not win a medal, but he showed the real spirit of the Games. He later became a coach and helped to train young swimmers in his country."
+ ],
+ "vocab": "compete 参加比赛 · Olympic 奥林匹克的 · crowd 人群 · cheer 欢呼 · medal 奖牌 · coach 教练",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9r-u8-1-A1",
+     "type": "choice",
+     "stem": "Where did Eric Moussambani come from?",
+     "options": [
+      "Greece.",
+      "Equatorial Guinea.",
+      "Australia.",
+      "Kenya."
+     ],
+     "answer": "B",
+     "why": "a young swimmer from Equatorial Guinea",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u8-1-A2",
+     "type": "choice",
+     "stem": "How long had Eric been swimming before the Olympics?",
+     "options": [
+      "Ten years.",
+      "Since he was a baby.",
+      "A few months.",
+      "One week."
+     ],
+     "answer": "C",
+     "why": "He had learned to swim only a few months before",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u8-1-A3",
+     "type": "choice",
+     "stem": "Why did Eric swim alone in his race?",
+     "options": [
+      "He was the only swimmer.",
+      "The pool was too small.",
+      "The race was a team event.",
+      "The other two swimmers made false starts."
+     ],
+     "answer": "D",
+     "why": "the other two swimmers made false starts, so Eric swam alone.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u8-1-A4",
+     "type": "choice",
+     "stem": "What did the crowd do in the last part?",
+     "options": [
+      "They stood up and cheered.",
+      "They went home.",
+      "They threw bottles.",
+      "They fell asleep."
+     ],
+     "answer": "A",
+     "why": "the crowd stood up and cheered for him.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g9r-u8-1-B1",
+     "type": "tf",
+     "stem": "Eric won a gold medal in Sydney.",
+     "answer": "F",
+     "why": "Eric did not win a medal",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u8-1-B2",
+     "type": "tf",
+     "stem": "Eric later became a coach.",
+     "answer": "T",
+     "why": "He later became a coach",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u8-1-B3",
+     "type": "tf",
+     "stem": "Eric finished faster than the other Olympic swimmers.",
+     "answer": "F",
+     "why": "He finished the race much more slowly than the other Olympic swimmers",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9r-u8-1-C1",
+     "type": "fill",
+     "stem": "Eric was a young ____ from Equatorial Guinea.",
+     "answers": [
+      [
+       "swimmer"
+      ]
+     ],
+     "why": "a young swimmer from Equatorial Guinea",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u8-1-C2",
+     "type": "fill",
+     "stem": "He had never seen an Olympic-size ____.",
+     "answers": [
+      [
+       "pool"
+      ]
+     ],
+     "why": "never seen an Olympic-size pool.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u8-1-C3",
+     "type": "fill",
+     "stem": "He showed the real ____ of the Games.",
+     "answers": [
+      [
+       "spirit"
+      ]
+     ],
+     "why": "the real spirit of the Games.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

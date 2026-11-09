@@ -1,0 +1,106 @@
+{
+ "id": "g9l-u8-2",
+ "kind": "listening",
+ "title": "Bing Dwen Dwen the Panda",
+ "subtitle": "短文",
+ "unit": "E9U8",
+ "speakers": {
+  "Frank": "m1"
+ },
+ "transcript": [
+  {
+   "s": "Frank",
+   "t": "The mascot of the Beijing 2022 Winter Olympics was a panda called Bing Dwen Dwen. The word bing means ice, and the panda wore a clear shell of ice."
+  },
+  {
+   "s": "Frank",
+   "t": "Pandas are friendly animals, and many people around the world love them. Soon after the Games began, the mascot became so popular that shops quickly sold out of Bing Dwen Dwen toys. People waited in long lines to buy one."
+  },
+  {
+   "s": "Frank",
+   "t": "The mascot showed the Olympic ideas of friendship and pride."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9l-u8-2-A1",
+     "type": "choice",
+     "stem": "Which animal was the mascot?",
+     "options": [
+      "A tiger.",
+      "A dolphin.",
+      "A panda.",
+      "A rabbit."
+     ],
+     "answer": "C",
+     "why": "a panda called Bing Dwen Dwen.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u8-2-A2",
+     "type": "choice",
+     "stem": "What does the word bing mean?",
+     "options": [
+      "Gold.",
+      "Friend.",
+      "Mountain.",
+      "Ice."
+     ],
+     "answer": "D",
+     "why": "The word bing means ice.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u8-2-A3",
+     "type": "choice",
+     "stem": "What happened soon after the Games began?",
+     "options": [
+      "Shops sold out of the toys.",
+      "The Games were cancelled.",
+      "A new mascot was chosen.",
+      "The toys became free."
+     ],
+     "answer": "A",
+     "why": "shops quickly sold out of Bing Dwen Dwen toys.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9l-u8-2-B1",
+     "type": "fill",
+     "stem": "The panda wore a clear shell of ____.",
+     "answers": [
+      [
+       "ice"
+      ]
+     ],
+     "why": "a clear shell of ice.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u8-2-B2",
+     "type": "fill",
+     "stem": "People waited in long ____ to buy one.",
+     "answers": [
+      [
+       "lines"
+      ]
+     ],
+     "why": "waited in long lines.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

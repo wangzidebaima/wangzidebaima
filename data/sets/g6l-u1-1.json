@@ -1,0 +1,124 @@
+{
+ "id": "g6l-u1-1",
+ "kind": "listening",
+ "title": "A Trip to the Village",
+ "subtitle": "对话",
+ "unit": "E6U1",
+ "speakers": {
+  "Amy": "c1",
+  "Mike": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Amy",
+   "t": "Mike, where did you go on Saturday?"
+  },
+  {
+   "s": "Mike",
+   "t": "I went to a village with my grandpa."
+  },
+  {
+   "s": "Amy",
+   "t": "How did you get there?"
+  },
+  {
+   "s": "Mike",
+   "t": "We went by bus. It took two hours."
+  },
+  {
+   "s": "Amy",
+   "t": "What did you do there?"
+  },
+  {
+   "s": "Mike",
+   "t": "We saw a lot of bamboo and ate pumpkin soup."
+  },
+  {
+   "s": "Amy",
+   "t": "That sounds nice!"
+  },
+  {
+   "s": "Mike",
+   "t": "Yes. I want to go again."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6l-u1-1-A1",
+     "type": "choice",
+     "stem": "Where did Mike go on Saturday?",
+     "options": [
+      "To a city.",
+      "To a village.",
+      "To the airport."
+     ],
+     "answer": "B",
+     "why": "I went to a village with my grandpa.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u1-1-A2",
+     "type": "choice",
+     "stem": "How did they get there?",
+     "options": [
+      "By car.",
+      "By train.",
+      "By bus."
+     ],
+     "answer": "C",
+     "why": "We went by bus.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u1-1-A3",
+     "type": "choice",
+     "stem": "What did Mike eat?",
+     "options": [
+      "Pumpkin soup.",
+      "Fish soup.",
+      "Chicken and rice."
+     ],
+     "answer": "A",
+     "why": "ate pumpkin soup",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6l-u1-1-B1",
+     "type": "fill",
+     "stem": "Mike went there with his ____.",
+     "answers": [
+      [
+       "grandpa"
+      ]
+     ],
+     "why": "with my grandpa",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u1-1-B2",
+     "type": "fill",
+     "stem": "The bus ride took ____ hours.",
+     "answers": [
+      [
+       "two"
+      ]
+     ],
+     "why": "It took two hours.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,127 @@
+{
+ "id": "g8l-u1-3",
+ "kind": "listening",
+ "title": "Lost in the Metro",
+ "subtitle": "对话",
+ "unit": "E8U1",
+ "speakers": {
+  "Tom": "m1",
+  "Guide": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Tom",
+   "t": "Excuse me, I am looking for Red Square. Could you help me?"
+  },
+  {
+   "s": "Guide",
+   "t": "Of course. Take the metro to Okhotny Ryad station."
+  },
+  {
+   "s": "Tom",
+   "t": "How many stops is that from here?"
+  },
+  {
+   "s": "Guide",
+   "t": "Only three. The ride takes about ten minutes."
+  },
+  {
+   "s": "Tom",
+   "t": "Is the station near the Victory Museum?"
+  },
+  {
+   "s": "Guide",
+   "t": "No, the museum is in the west of the city. You can go there tomorrow."
+  },
+  {
+   "s": "Tom",
+   "t": "Thank you. I'll go to Red Square first."
+  },
+  {
+   "s": "Guide",
+   "t": "Have a good day, and enjoy your trip!"
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8l-u1-3-A1",
+     "type": "choice",
+     "stem": "What is Tom looking for?",
+     "options": [
+      "A hotel.",
+      "A museum.",
+      "A metro ticket.",
+      "Red Square."
+     ],
+     "answer": "D",
+     "why": "I am looking for Red Square.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u1-3-A2",
+     "type": "choice",
+     "stem": "How long does the ride take?",
+     "options": [
+      "About ten minutes.",
+      "About three minutes.",
+      "About half an hour.",
+      "About one hour."
+     ],
+     "answer": "A",
+     "why": "The ride takes about ten minutes.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u1-3-A3",
+     "type": "choice",
+     "stem": "Where is the Victory Museum?",
+     "options": [
+      "Next to Red Square.",
+      "In the west of the city.",
+      "In the east of the city.",
+      "In the metro station."
+     ],
+     "answer": "B",
+     "why": "the museum is in the west of the city.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8l-u1-3-B1",
+     "type": "fill",
+     "stem": "Tom needs to go ____ stops by metro.",
+     "answers": [
+      [
+       "three"
+      ]
+     ],
+     "why": "Only three.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u1-3-B2",
+     "type": "fill",
+     "stem": "Tom will go to the museum ____.",
+     "answers": [
+      [
+       "tomorrow"
+      ]
+     ],
+     "why": "You can go there tomorrow.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

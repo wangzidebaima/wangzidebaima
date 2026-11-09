@@ -1,0 +1,151 @@
+{
+ "id": "g9r-u5-3",
+ "kind": "reading",
+ "title": "The Wright Brothers and Their Flying Machine",
+ "subtitle": "考点：科学探索 / glider, afford, none",
+ "unit": "E9U5",
+ "passage": [
+  "Orville and Wilbur Wright were brothers from the United States. They did not have much money, and they could not afford a university education. They ran a small bicycle shop, but they were also curious about flying. They read books about birds and built gliders to test their ideas.",
+  "Many people laughed at them, and none of their first gliders worked well. But the brothers did not give up. They made their own tools and even built a small wind tunnel to test different wing shapes. On 17 December 1903, Orville flew their plane for twelve seconds. It was a short flight, but it was the first powered flight with a person on board. It changed the world."
+ ],
+ "vocab": "glider 滑翔机 · afford 负担得起 · bicycle 自行车 · shape 形状 · wing 翅膀 · powered 有动力的",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9r-u5-3-A1",
+     "type": "choice",
+     "stem": "What kind of shop did the brothers run?",
+     "options": [
+      "A flower shop.",
+      "A bookshop.",
+      "A toy shop.",
+      "A bicycle shop."
+     ],
+     "answer": "D",
+     "why": "They ran a small bicycle shop",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u5-3-A2",
+     "type": "choice",
+     "stem": "How did they test their ideas at first?",
+     "options": [
+      "They built gliders.",
+      "They sailed boats.",
+      "They asked birds.",
+      "They copied a film."
+     ],
+     "answer": "A",
+     "why": "built gliders to test their ideas.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u5-3-A3",
+     "type": "choice",
+     "stem": "What did they build to test wing shapes?",
+     "options": [
+      "A tall tower.",
+      "A small wind tunnel.",
+      "A fast car.",
+      "A large kite."
+     ],
+     "answer": "B",
+     "why": "built a small wind tunnel to test different wing shapes.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u5-3-A4",
+     "type": "choice",
+     "stem": "How long was the flight on 17 December 1903?",
+     "options": [
+      "Twelve minutes.",
+      "Twelve hours.",
+      "Twelve seconds.",
+      "One hour."
+     ],
+     "answer": "C",
+     "why": "Orville flew their plane for twelve seconds.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g9r-u5-3-B1",
+     "type": "tf",
+     "stem": "The Wright brothers were rich.",
+     "answer": "F",
+     "why": "They did not have much money.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u5-3-B2",
+     "type": "tf",
+     "stem": "Some people laughed at the brothers.",
+     "answer": "T",
+     "why": "Many people laughed at them",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u5-3-B3",
+     "type": "tf",
+     "stem": "Wilbur flew the plane on 17 December 1903.",
+     "answer": "F",
+     "why": "Orville flew their plane for twelve seconds.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9r-u5-3-C1",
+     "type": "fill",
+     "stem": "They could not ____ a university education.",
+     "answers": [
+      [
+       "afford"
+      ]
+     ],
+     "why": "could not afford a university education.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u5-3-C2",
+     "type": "fill",
+     "stem": "They built ____ to test their ideas.",
+     "answers": [
+      [
+       "gliders"
+      ]
+     ],
+     "why": "built gliders to test their ideas.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u5-3-C3",
+     "type": "fill",
+     "stem": "It was the first ____ flight with a person on board.",
+     "answers": [
+      [
+       "powered"
+      ]
+     ],
+     "why": "the first powered flight",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

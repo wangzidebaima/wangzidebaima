@@ -1,0 +1,82 @@
+{
+ "id": "g8sp-u2",
+ "kind": "speaking",
+ "unit": "E8U2",
+ "title": "口语练习",
+ "subtitle": "每天 10 分钟 · 共 5 天",
+ "steps": [
+  "点 🔊 听一遍，听清语调",
+  "一句一句跟着读，声音要大，不怕错",
+  "读完点「今天完成了」打卡"
+ ],
+ "sentences": [
+  {
+   "en": "Let's pack up our things for the new apartment.",
+   "zh": "我们把东西打包准备搬进新公寓吧。"
+  },
+  {
+   "en": "Can you give me a lift to the community?",
+   "zh": "你能载我去小区吗？"
+  },
+  {
+   "en": "I have not finished my bedroom yet.",
+   "zh": "我还没整理好我的卧室。"
+  },
+  {
+   "en": "Please clean up the living room before dinner.",
+   "zh": "晚饭前请把客厅打扫干净。"
+  },
+  {
+   "en": "Let's hang up the new poster on the wall.",
+   "zh": "我们把新海报挂到墙上吧。"
+  },
+  {
+   "en": "Be careful with the plates and the scissors.",
+   "zh": "小心盘子和剪刀。"
+  },
+  {
+   "en": "We can share the balcony with our neighbours.",
+   "zh": "我们可以和邻居共用阳台。"
+  },
+  {
+   "en": "Wherever you live, home is a place full of joy.",
+   "zh": "无论你住在哪里，家都是充满快乐的地方。"
+  },
+  {
+   "en": "The smell of freshly baked biscuits makes me feel at home.",
+   "zh": "刚烤好的饼干的香味让我有家的感觉。"
+  }
+ ],
+ "plan": [
+  {
+   "day": 1,
+   "title": "跟读第 1–3 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 2,
+   "title": "跟读第 4–6 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 3,
+   "title": "跟读第 7–9 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 4,
+   "title": "不看书，说给家长听",
+   "task": "挑 5 句最喜欢的，尽量不看书说出来",
+   "minutes": 10
+  },
+  {
+   "day": 5,
+   "title": "自己说 3 句话",
+   "task": "用 'My home has … and I like … because …' 说 3 句话介绍你的家",
+   "minutes": 10
+  }
+ ]
+}

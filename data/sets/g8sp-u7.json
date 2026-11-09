@@ -1,0 +1,82 @@
+{
+ "id": "g8sp-u7",
+ "kind": "speaking",
+ "unit": "E8U7",
+ "title": "口语练习",
+ "subtitle": "每天 10 分钟 · 共 5 天",
+ "steps": [
+  "点 🔊 听一遍，听清语调",
+  "一句一句跟着读，声音要大，不怕错",
+  "读完点「今天完成了」打卡"
+ ],
+ "sentences": [
+  {
+   "en": "What will the world be like in fifty years?",
+   "zh": "五十年后世界会是什么样？"
+  },
+  {
+   "en": "I think robots will take over many jobs.",
+   "zh": "我认为机器人会接管很多工作。"
+  },
+  {
+   "en": "Will people live in outer space?",
+   "zh": "人们会住在外太空吗？"
+  },
+  {
+   "en": "Maybe, as long as the technology is safe.",
+   "zh": "也许，只要技术安全。"
+  },
+  {
+   "en": "Scientists hope to find a cure for cancer.",
+   "zh": "科学家希望找到治疗癌症的方法。"
+  },
+  {
+   "en": "Shall we go to the concert together?",
+   "zh": "我们一起去听音乐会好吗？"
+  },
+  {
+   "en": "My phone is running low on power.",
+   "zh": "我的手机快没电了。"
+  },
+  {
+   "en": "Your dream will come true if you work hard.",
+   "zh": "只要你努力，梦想就会实现。"
+  },
+  {
+   "en": "The future depends on what we do today.",
+   "zh": "未来取决于我们今天所做的事。"
+  }
+ ],
+ "plan": [
+  {
+   "day": 1,
+   "title": "跟读第 1–3 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 2,
+   "title": "跟读第 4–6 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 3,
+   "title": "跟读第 7–9 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 4,
+   "title": "不看书，说给家长听",
+   "task": "挑 5 句最喜欢的，尽量不看书说出来",
+   "minutes": 10
+  },
+  {
+   "day": 5,
+   "title": "自己说 3 句话",
+   "task": "用 'I think … will … in the future' 说 3 句话预测未来的生活",
+   "minutes": 10
+  }
+ ]
+}

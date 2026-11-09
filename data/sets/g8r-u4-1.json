@@ -1,0 +1,152 @@
+{
+ "id": "g8r-u4-1",
+ "kind": "reading",
+ "title": "Fastest on Land, Tallest on Earth",
+ "subtitle": "考点：动植物事实 / weigh / up to",
+ "unit": "E8U4",
+ "passage": [
+  "The cheetah is the fastest animal on land. It can run more than 100 kilometres per hour, but only for a short time. A cheetah has long legs and a small head, so it can start very quickly. It lives mainly in Africa and hunts small animals like deer.",
+  "The redwood is one of the tallest trees in the world. Some redwoods are over 100 metres tall, and they grow in the west of the United States. They can live for thousands of years. Redwoods like wet air from the ocean, so they grow near the coast.",
+  "People are surprised by how big redwoods are. A tall redwood can weigh many tons. Students who visit the redwood forest often say that they feel tiny next to the trees. Scientists say we should protect these giants, because they are home to many birds and small animals."
+ ],
+ "vocab": "cheetah 猎豹 · redwood 红杉 · weigh 重达 · ton 吨 · tiny 微小的 · protect 保护 · be home to 是……的栖息地",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8r-u4-1-A1",
+     "type": "choice",
+     "stem": "Which animal is the fastest on land?",
+     "options": [
+      "The deer.",
+      "The cheetah.",
+      "The frog.",
+      "The ant."
+     ],
+     "answer": "B",
+     "why": "The cheetah is the fastest animal on land.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u4-1-A2",
+     "type": "choice",
+     "stem": "Where does the cheetah mainly live?",
+     "options": [
+      "In the Arctic.",
+      "In the ocean.",
+      "In Africa.",
+      "In Scotland."
+     ],
+     "answer": "C",
+     "why": "It lives mainly in Africa.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u4-1-A3",
+     "type": "choice",
+     "stem": "Why do redwoods grow near the coast?",
+     "options": [
+      "They need strong winds.",
+      "They like cold snow.",
+      "They need salty soil.",
+      "They like wet air from the ocean."
+     ],
+     "answer": "D",
+     "why": "Redwoods like wet air from the ocean.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u4-1-A4",
+     "type": "choice",
+     "stem": "Why should we protect redwoods?",
+     "options": [
+      "They are home to many animals.",
+      "They are very cheap.",
+      "They are small.",
+      "They only live for one year."
+     ],
+     "answer": "A",
+     "why": "they are home to many birds and small animals.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g8r-u4-1-B1",
+     "type": "tf",
+     "stem": "A cheetah can run fast for a long time.",
+     "answer": "F",
+     "why": "只能跑很短的时间（only for a short time）。",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u4-1-B2",
+     "type": "tf",
+     "stem": "Some redwoods are over 100 metres tall.",
+     "answer": "T",
+     "why": "Some redwoods are over 100 metres tall.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u4-1-B3",
+     "type": "tf",
+     "stem": "Redwoods can live for thousands of years.",
+     "answer": "T",
+     "why": "They can live for thousands of years.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8r-u4-1-C1",
+     "type": "fill",
+     "stem": "The cheetah has long legs and a small ____.",
+     "answers": [
+      [
+       "head"
+      ]
+     ],
+     "why": "long legs and a small head.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u4-1-C2",
+     "type": "fill",
+     "stem": "Redwoods grow in the west of the United ____.",
+     "answers": [
+      [
+       "states"
+      ]
+     ],
+     "why": "in the west of the United States.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u4-1-C3",
+     "type": "fill",
+     "stem": "Visitors feel ____ next to the trees.",
+     "answers": [
+      [
+       "tiny"
+      ]
+     ],
+     "why": "they feel tiny next to the trees.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

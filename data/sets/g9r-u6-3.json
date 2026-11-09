@@ -1,0 +1,151 @@
+{
+ "id": "g9r-u6-3",
+ "kind": "reading",
+ "title": "Voyager 1: A Message to the Stars",
+ "subtitle": "考点：太空探索 / launch, spacecraft, billion",
+ "unit": "E9U6",
+ "passage": [
+  "Voyager 1 is a small spacecraft with no people on board. It was launched in 1977 to visit Jupiter and Saturn, and it sent back wonderful pictures of these planets. After its mission, it kept travelling, and today it is in the space between the stars, billions of kilometres from Earth.",
+  "Voyager 1 carries a golden record. On it there are sounds and pictures from Earth, such as greetings in many languages, music and the sound of rain. Scientists hoped that someone, one day, might find it. But space is huge. The nearest star after the sun, Proxima Centauri, is more than four light-years away, and Voyager 1 would need tens of thousands of years to reach that area. The record is like a bottle thrown into a very big ocean."
+ ],
+ "vocab": "launch 发射 · spacecraft 航天器 · golden 金色的 · record 唱片 · billion 十亿 · greeting 问候",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9r-u6-3-A1",
+     "type": "choice",
+     "stem": "When was Voyager 1 launched?",
+     "options": [
+      "In 1957.",
+      "In 1997.",
+      "In 2017.",
+      "In 1977."
+     ],
+     "answer": "D",
+     "why": "It was launched in 1977",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u6-3-A2",
+     "type": "choice",
+     "stem": "Which planets did it visit first?",
+     "options": [
+      "Jupiter and Saturn.",
+      "Mars and Venus.",
+      "Earth and the moon.",
+      "Mercury and the sun."
+     ],
+     "answer": "A",
+     "why": "to visit Jupiter and Saturn",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u6-3-A3",
+     "type": "choice",
+     "stem": "What is on the golden record?",
+     "options": [
+      "A map of the sun.",
+      "Sounds and pictures from Earth.",
+      "Food for aliens.",
+      "A letter from a robot."
+     ],
+     "answer": "B",
+     "why": "On it there are sounds and pictures from Earth",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u6-3-A4",
+     "type": "choice",
+     "stem": "Why is the record compared to a bottle in the ocean?",
+     "options": [
+      "It is made of glass.",
+      "It is full of water.",
+      "Space is huge, so it is hard for anyone to find it.",
+      "It floats on the sea."
+     ],
+     "answer": "C",
+     "why": "But space is huge.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g9r-u6-3-B1",
+     "type": "tf",
+     "stem": "Voyager 1 has astronauts on board.",
+     "answer": "F",
+     "why": "with no people on board.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u6-3-B2",
+     "type": "tf",
+     "stem": "The golden record includes the sound of rain.",
+     "answer": "T",
+     "why": "music and the sound of rain.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u6-3-B3",
+     "type": "tf",
+     "stem": "Proxima Centauri is more than four light-years away.",
+     "answer": "T",
+     "why": "is more than four light-years away",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9r-u6-3-C1",
+     "type": "fill",
+     "stem": "Voyager 1 was ____ in 1977.",
+     "answers": [
+      [
+       "launched"
+      ]
+     ],
+     "why": "It was launched in 1977",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u6-3-C2",
+     "type": "fill",
+     "stem": "It carries a ____ record.",
+     "answers": [
+      [
+       "golden"
+      ]
+     ],
+     "why": "Voyager 1 carries a golden record.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u6-3-C3",
+     "type": "fill",
+     "stem": "The record has greetings in many ____.",
+     "answers": [
+      [
+       "languages"
+      ]
+     ],
+     "why": "greetings in many languages",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,152 @@
+{
+ "id": "g8r-u2-2",
+ "kind": "reading",
+ "title": "A Treasure Hunt at Home",
+ "subtitle": "考点：寻宝游戏 / note / until",
+ "unit": "E8U2",
+ "passage": [
+  "Jack's birthday was on Saturday. His sister Kate planned a treasure hunt for him. She hid a small gift somewhere in the apartment and wrote five notes to help Jack find it.",
+  "The first note said, “Go to the place where we wash our hands.” Jack ran to the bathroom and found the second note under the soap. That note told him to look behind the sofa in the living room. Each note led him to a new place.",
+  "The last note was in the kitchen. It said, “Look inside the biscuit box.” Jack opened it and found a small blue watch. He was very happy. “Thank you, Kate!” he said. Kate smiled and said, “Now let's share the biscuits until our parents come home.”"
+ ],
+ "vocab": "treasure hunt 寻宝 · note 便条 · bathroom 浴室 · sofa 沙发 · biscuit 饼干 · share 分享 · until 直到",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8r-u2-2-A1",
+     "type": "choice",
+     "stem": "Who planned the treasure hunt?",
+     "options": [
+      "Jack.",
+      "Their father.",
+      "Kate.",
+      "Their mother."
+     ],
+     "answer": "C",
+     "why": "His sister Kate planned a treasure hunt.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u2-2-A2",
+     "type": "choice",
+     "stem": "Where was the second note?",
+     "options": [
+      "Behind the sofa.",
+      "In the kitchen.",
+      "On the balcony.",
+      "Under the soap."
+     ],
+     "answer": "D",
+     "why": "found the second note under the soap.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u2-2-A3",
+     "type": "choice",
+     "stem": "How many notes did Kate write?",
+     "options": [
+      "Five.",
+      "Two.",
+      "Three.",
+      "Ten."
+     ],
+     "answer": "A",
+     "why": "wrote five notes.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u2-2-A4",
+     "type": "choice",
+     "stem": "What was Jack's gift?",
+     "options": [
+      "A red ball.",
+      "A blue watch.",
+      "A new book.",
+      "A model plane."
+     ],
+     "answer": "B",
+     "why": "found a small blue watch.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g8r-u2-2-B1",
+     "type": "tf",
+     "stem": "The treasure hunt was on Jack's birthday.",
+     "answer": "T",
+     "why": "Jack's birthday was on Saturday. Kate planned a treasure hunt.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u2-2-B2",
+     "type": "tf",
+     "stem": "The last note was in the bathroom.",
+     "answer": "F",
+     "why": "最后一张便条在厨房（in the kitchen）。",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u2-2-B3",
+     "type": "tf",
+     "stem": "Kate and Jack shared the biscuits.",
+     "answer": "T",
+     "why": "Now let's share the biscuits.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8r-u2-2-C1",
+     "type": "fill",
+     "stem": "Kate wrote five ____ to help Jack.",
+     "answers": [
+      [
+       "notes"
+      ]
+     ],
+     "why": "wrote five notes.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u2-2-C2",
+     "type": "fill",
+     "stem": "The second note told Jack to look behind the ____.",
+     "answers": [
+      [
+       "sofa"
+      ]
+     ],
+     "why": "look behind the sofa.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u2-2-C3",
+     "type": "fill",
+     "stem": "The gift was inside the ____ box.",
+     "answers": [
+      [
+       "biscuit"
+      ]
+     ],
+     "why": "inside the biscuit box.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

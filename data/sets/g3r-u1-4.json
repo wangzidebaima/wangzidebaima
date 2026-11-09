@@ -1,0 +1,156 @@
+{
+ "id": "g3r-u1-4",
+ "kind": "reading",
+ "title": "Say Hello",
+ "subtitle": "考点：问候新朋友 / Smile and say hello.",
+ "unit": "E3U1",
+ "dialogue": [
+  {
+   "s": "Lily",
+   "t": "Hello! Are you new?"
+  },
+  {
+   "s": "Amy",
+   "t": "Yes. My name is Amy."
+  },
+  {
+   "s": "Lily",
+   "t": "I am Lily. Nice to meet you, Amy."
+  },
+  {
+   "s": "Amy",
+   "t": "Nice to meet you, too."
+  },
+  {
+   "s": "Lily",
+   "t": "Smile and say hello to my friends."
+  },
+  {
+   "s": "Amy",
+   "t": "Hello, everyone!"
+  }
+ ],
+ "vocab": "new 新的 · name 名字 · nice 好的 · smile 微笑 · say 说 · hello 你好",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3r-u1-4-A1",
+     "type": "choice",
+     "stem": "Who is new?",
+     "options": [
+      "Lily",
+      "Amy",
+      "Mike"
+     ],
+     "answer": "B",
+     "why": "Yes. My name is Amy. (answering: Are you new?)",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u1-4-A2",
+     "type": "choice",
+     "stem": "Who says \"Nice to meet you\" first?",
+     "options": [
+      "Amy",
+      "Mike",
+      "Lily"
+     ],
+     "answer": "C",
+     "why": "Lily: Nice to meet you, Amy.",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u1-4-A3",
+     "type": "choice",
+     "stem": "What does Amy say to everyone?",
+     "options": [
+      "Hello, everyone!",
+      "Goodbye, everyone!",
+      "Thank you, everyone!"
+     ],
+     "answer": "A",
+     "why": "Hello, everyone!",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g3r-u1-4-B1",
+     "type": "tf",
+     "stem": "Lily is new.",
+     "answer": "F",
+     "why": "Lily asks Amy: Are you new?",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u1-4-B2",
+     "type": "tf",
+     "stem": "Amy says, \"Nice to meet you, too.\"",
+     "answer": "T",
+     "why": "Nice to meet you, too.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u1-4-B3",
+     "type": "tf",
+     "stem": "Amy says goodbye to everyone.",
+     "answer": "F",
+     "why": "Amy says: Hello, everyone!",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3r-u1-4-C1",
+     "type": "fill",
+     "stem": "Amy says, \"My name is ____.\"",
+     "answers": [
+      [
+       "amy"
+      ]
+     ],
+     "why": "My name is Amy.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u1-4-C2",
+     "type": "fill",
+     "stem": "Lily says, \"Nice to meet you, ____.\"",
+     "answers": [
+      [
+       "amy"
+      ]
+     ],
+     "why": "Nice to meet you, Amy.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u1-4-C3",
+     "type": "fill",
+     "stem": "Lily says, \"Smile and say ____ to my friends.\"",
+     "answers": [
+      [
+       "hello"
+      ]
+     ],
+     "why": "Smile and say hello to my friends.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

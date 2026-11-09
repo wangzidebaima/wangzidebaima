@@ -1,0 +1,124 @@
+{
+ "id": "g6l-u3-4",
+ "kind": "listening",
+ "title": "A Glass of Water",
+ "subtitle": "对话",
+ "unit": "E6U3",
+ "speakers": {
+  "Tom": "c1",
+  "Mike": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Tom",
+   "t": "Mike, why do you drink so much water?"
+  },
+  {
+   "s": "Mike",
+   "t": "My doctor says it is good for us."
+  },
+  {
+   "s": "Tom",
+   "t": "How many glasses do you drink every day?"
+  },
+  {
+   "s": "Mike",
+   "t": "About six glasses."
+  },
+  {
+   "s": "Tom",
+   "t": "What do you do when you feel tired?"
+  },
+  {
+   "s": "Mike",
+   "t": "I take a short walk."
+  },
+  {
+   "s": "Tom",
+   "t": "That is a good idea."
+  },
+  {
+   "s": "Mike",
+   "t": "Try it. You may feel better."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6l-u3-4-A1",
+     "type": "choice",
+     "stem": "Why does Mike drink a lot of water?",
+     "options": [
+      "It is cheap.",
+      "It is good for us.",
+      "It is sweet."
+     ],
+     "answer": "B",
+     "why": "My doctor says it is good for us.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u3-4-A2",
+     "type": "choice",
+     "stem": "How many glasses does Mike drink every day?",
+     "options": [
+      "About two.",
+      "About ten.",
+      "About six."
+     ],
+     "answer": "C",
+     "why": "About six glasses.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u3-4-A3",
+     "type": "choice",
+     "stem": "What does Mike do when he feels tired?",
+     "options": [
+      "He takes a short walk.",
+      "He watches a video.",
+      "He eats candy."
+     ],
+     "answer": "A",
+     "why": "I take a short walk.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6l-u3-4-B1",
+     "type": "fill",
+     "stem": "Mike drinks about six ____ of water every day.",
+     "answers": [
+      [
+       "glasses"
+      ]
+     ],
+     "why": "About six glasses.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u3-4-B2",
+     "type": "fill",
+     "stem": "Mike takes a short ____ when he is tired.",
+     "answers": [
+      [
+       "walk"
+      ]
+     ],
+     "why": "I take a short walk.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

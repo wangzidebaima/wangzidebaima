@@ -1,0 +1,164 @@
+{
+ "id": "g6r-u6-4",
+ "kind": "reading",
+ "title": "Driving Less",
+ "subtitle": "考点：一般现在时 / Driving less makes a difference",
+ "unit": "E6U6",
+ "dialogue": [
+  {
+   "s": "Ben",
+   "t": "Amy, do you go to school by car?"
+  },
+  {
+   "s": "Amy",
+   "t": "No. I walk or ride my bike."
+  },
+  {
+   "s": "Ben",
+   "t": "Why?"
+  },
+  {
+   "s": "Amy",
+   "t": "Cars use oil and make the air dirty."
+  },
+  {
+   "s": "Ben",
+   "t": "My father drives to work every day."
+  },
+  {
+   "s": "Amy",
+   "t": "He can take the bus once a week."
+  },
+  {
+   "s": "Ben",
+   "t": "That is a good idea. Driving less makes a big difference."
+  },
+  {
+   "s": "Amy",
+   "t": "Yes. It is good for nature, and it is good for us too."
+  }
+ ],
+ "vocab": "drive 驾驶 · oil 石油 · dirty 脏的 · difference 差别 · nature 自然 · bike 自行车",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6r-u6-4-A1",
+     "type": "choice",
+     "stem": "How does Amy go to school?",
+     "options": [
+      "She goes by car.",
+      "She walks or rides her bike.",
+      "She goes by taxi."
+     ],
+     "answer": "B",
+     "why": "I walk or ride my bike.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u6-4-A2",
+     "type": "choice",
+     "stem": "Why does Amy not go by car?",
+     "options": [
+      "Cars are too slow.",
+      "Cars are too small.",
+      "Cars make the air dirty."
+     ],
+     "answer": "C",
+     "why": "Cars use oil and make the air dirty.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u6-4-A3",
+     "type": "choice",
+     "stem": "What can Ben's father do?",
+     "options": [
+      "Take the bus once a week.",
+      "Walk to work every day.",
+      "Buy a bigger car."
+     ],
+     "answer": "A",
+     "why": "He can take the bus once a week.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g6r-u6-4-B1",
+     "type": "tf",
+     "stem": "Amy goes to school by car.",
+     "answer": "F",
+     "why": "I walk or ride my bike.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u6-4-B2",
+     "type": "tf",
+     "stem": "Ben's father drives to work every day.",
+     "answer": "T",
+     "why": "My father drives to work every day.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u6-4-B3",
+     "type": "tf",
+     "stem": "Driving less makes a big difference.",
+     "answer": "T",
+     "why": "Driving less makes a big difference.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6r-u6-4-C1",
+     "type": "fill",
+     "stem": "Cars use ____ and make the air dirty.",
+     "answers": [
+      [
+       "oil"
+      ]
+     ],
+     "why": "Cars use oil",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u6-4-C2",
+     "type": "fill",
+     "stem": "Ben's father ____ to work every day.",
+     "answers": [
+      [
+       "drives"
+      ]
+     ],
+     "why": "My father drives to work every day.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u6-4-C3",
+     "type": "fill",
+     "stem": "Amy rides her ____.",
+     "answers": [
+      [
+       "bike"
+      ]
+     ],
+     "why": "I walk or ride my bike.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

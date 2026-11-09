@@ -1,0 +1,164 @@
+{
+ "id": "g6r-u5-2",
+ "kind": "reading",
+ "title": "Life in the Space Station",
+ "subtitle": "考点：一般现在时 / The astronaut lives in ...",
+ "unit": "E6U5",
+ "dialogue": [
+  {
+   "s": "Sam",
+   "t": "Mike, I read about the space station."
+  },
+  {
+   "s": "Mike",
+   "t": "Astronauts live there for months."
+  },
+  {
+   "s": "Sam",
+   "t": "What do they eat?"
+  },
+  {
+   "s": "Mike",
+   "t": "They eat food from special bags."
+  },
+  {
+   "s": "Sam",
+   "t": "How do they sleep?"
+  },
+  {
+   "s": "Mike",
+   "t": "They sleep in sleeping bags on the wall."
+  },
+  {
+   "s": "Sam",
+   "t": "On the wall?"
+  },
+  {
+   "s": "Mike",
+   "t": "Yes. There is no up or down in space."
+  }
+ ],
+ "vocab": "space station 空间站 · astronaut 宇航员 · month 月 · special 特别的 · sleep 睡觉 · wall 墙",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6r-u5-2-A1",
+     "type": "choice",
+     "stem": "Who lives in the space station?",
+     "options": [
+      "Doctors.",
+      "Teachers.",
+      "Astronauts."
+     ],
+     "answer": "C",
+     "why": "Astronauts live there for months.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u5-2-A2",
+     "type": "choice",
+     "stem": "How long do astronauts live there?",
+     "options": [
+      "For months.",
+      "For one day.",
+      "For one hour."
+     ],
+     "answer": "A",
+     "why": "Astronauts live there for months.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u5-2-A3",
+     "type": "choice",
+     "stem": "Where do astronauts sleep?",
+     "options": [
+      "In beds on the floor.",
+      "In sleeping bags on the wall.",
+      "In chairs at the table."
+     ],
+     "answer": "B",
+     "why": "They sleep in sleeping bags on the wall.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g6r-u5-2-B1",
+     "type": "tf",
+     "stem": "Astronauts eat food from special bags.",
+     "answer": "T",
+     "why": "They eat food from special bags.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u5-2-B2",
+     "type": "tf",
+     "stem": "Astronauts sleep in beds on the floor.",
+     "answer": "F",
+     "why": "They sleep in sleeping bags on the wall.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u5-2-B3",
+     "type": "tf",
+     "stem": "Mike says there is no up or down in space.",
+     "answer": "T",
+     "why": "There is no up or down in space.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6r-u5-2-C1",
+     "type": "fill",
+     "stem": "Astronauts live in the space ____.",
+     "answers": [
+      [
+       "station"
+      ]
+     ],
+     "why": "the space station",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u5-2-C2",
+     "type": "fill",
+     "stem": "There is no up or ____ in space.",
+     "answers": [
+      [
+       "down"
+      ]
+     ],
+     "why": "no up or down in space",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u5-2-C3",
+     "type": "fill",
+     "stem": "Astronauts eat food from special ____.",
+     "answers": [
+      [
+       "bags"
+      ]
+     ],
+     "why": "food from special bags",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

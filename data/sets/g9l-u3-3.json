@@ -1,0 +1,127 @@
+{
+ "id": "g9l-u3-3",
+ "kind": "listening",
+ "title": "At the School Library",
+ "subtitle": "对话",
+ "unit": "E9U3",
+ "speakers": {
+  "Terry": "m1",
+  "Cathy": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Terry",
+   "t": "Hi, I need some material for my project about space."
+  },
+  {
+   "s": "Cathy",
+   "t": "Look on the third shelf. There are textbooks, magazines and newspapers."
+  },
+  {
+   "s": "Terry",
+   "t": "Can I borrow an e-book as well?"
+  },
+  {
+   "s": "Cathy",
+   "t": "Yes. Open the library website and click on e-books. You need your student number."
+  },
+  {
+   "s": "Terry",
+   "t": "Great. Are the newspapers recent?"
+  },
+  {
+   "s": "Cathy",
+   "t": "They are from this week. You can read them here, but you cannot take them home."
+  },
+  {
+   "s": "Terry",
+   "t": "How long can I keep the magazines?"
+  },
+  {
+   "s": "Cathy",
+   "t": "For two weeks."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9l-u3-3-A1",
+     "type": "choice",
+     "stem": "What is Terry's project about?",
+     "options": [
+      "Music.",
+      "Sports.",
+      "Food.",
+      "Space."
+     ],
+     "answer": "D",
+     "why": "my project about space.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u3-3-A2",
+     "type": "choice",
+     "stem": "Where can Terry find the magazines?",
+     "options": [
+      "On the third shelf.",
+      "On the first shelf.",
+      "Behind the desk.",
+      "On the second floor."
+     ],
+     "answer": "A",
+     "why": "Look on the third shelf.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u3-3-A3",
+     "type": "choice",
+     "stem": "How long can Terry keep the magazines?",
+     "options": [
+      "Two days.",
+      "Two weeks.",
+      "One month.",
+      "One year."
+     ],
+     "answer": "B",
+     "why": "For two weeks.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9l-u3-3-B1",
+     "type": "fill",
+     "stem": "Terry needs his student ____ to read e-books.",
+     "answers": [
+      [
+       "number"
+      ]
+     ],
+     "why": "You need your student number.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u3-3-B2",
+     "type": "fill",
+     "stem": "The newspapers are from this ____.",
+     "answers": [
+      [
+       "week"
+      ]
+     ],
+     "why": "They are from this week.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

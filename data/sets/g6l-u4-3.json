@@ -1,0 +1,124 @@
+{
+ "id": "g6l-u4-3",
+ "kind": "listening",
+ "title": "A Haircut Service",
+ "subtitle": "对话",
+ "unit": "E6U4",
+ "speakers": {
+  "Ben": "c1",
+  "Sam": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Ben",
+   "t": "Sam, your hair looks nice!"
+  },
+  {
+   "s": "Sam",
+   "t": "Thanks. I had a haircut at the new shop."
+  },
+  {
+   "s": "Ben",
+   "t": "How much was it?"
+  },
+  {
+   "s": "Sam",
+   "t": "Only fifteen yuan. They have a sale today."
+  },
+  {
+   "s": "Ben",
+   "t": "Is it open on Sunday?"
+  },
+  {
+   "s": "Sam",
+   "t": "Yes. It opens at nine o'clock."
+  },
+  {
+   "s": "Ben",
+   "t": "I need a haircut too."
+  },
+  {
+   "s": "Sam",
+   "t": "Go early. Many people want that service."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6l-u4-3-A1",
+     "type": "choice",
+     "stem": "Where did Sam have a haircut?",
+     "options": [
+      "At the new shop.",
+      "At home.",
+      "At school."
+     ],
+     "answer": "A",
+     "why": "I had a haircut at the new shop.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u4-3-A2",
+     "type": "choice",
+     "stem": "How much was the haircut?",
+     "options": [
+      "Fifty yuan.",
+      "Fifteen yuan.",
+      "Five yuan."
+     ],
+     "answer": "B",
+     "why": "Only fifteen yuan.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u4-3-A3",
+     "type": "choice",
+     "stem": "What time does the shop open on Sunday?",
+     "options": [
+      "At eight o'clock.",
+      "At ten o'clock.",
+      "At nine o'clock."
+     ],
+     "answer": "C",
+     "why": "It opens at nine o'clock.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6l-u4-3-B1",
+     "type": "fill",
+     "stem": "The shop has a ____ today.",
+     "answers": [
+      [
+       "sale"
+      ]
+     ],
+     "why": "They have a sale today.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u4-3-B2",
+     "type": "fill",
+     "stem": "Ben says Sam should go ____.",
+     "answers": [
+      [
+       "early"
+      ]
+     ],
+     "why": "Go early.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

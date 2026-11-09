@@ -1,0 +1,164 @@
+{
+ "id": "g5r-u1-1",
+ "kind": "reading",
+ "title": "A Clever Player",
+ "subtitle": "考点：人物描述 / He is a clever player.",
+ "unit": "E5U1",
+ "dialogue": [
+  {
+   "s": "Amy",
+   "t": "Tom, who is that boy in the team photo?"
+  },
+  {
+   "s": "Tom",
+   "t": "He is Ben. He is a clever player."
+  },
+  {
+   "s": "Amy",
+   "t": "How old is he?"
+  },
+  {
+   "s": "Tom",
+   "t": "He is young, only ten."
+  },
+  {
+   "s": "Amy",
+   "t": "Who is the girl next to him?"
+  },
+  {
+   "s": "Tom",
+   "t": "She is Lily. She is hard-working and lovely."
+  },
+  {
+   "s": "Amy",
+   "t": "Does she play in the team too?"
+  },
+  {
+   "s": "Tom",
+   "t": "Yes. She is the star of our team."
+  }
+ ],
+ "vocab": "team 队 · player 选手 · clever 聪明的 · young 年轻的 · hard-working 勤奋的 · lovely 可爱的 · star 明星",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5r-u1-1-A1",
+     "type": "choice",
+     "stem": "Who is a clever player?",
+     "options": [
+      "Tom",
+      "Ben",
+      "Lily"
+     ],
+     "answer": "B",
+     "why": "He is Ben. He is a clever player.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u1-1-A2",
+     "type": "choice",
+     "stem": "How old is Ben?",
+     "options": [
+      "Eleven.",
+      "Twelve.",
+      "Ten."
+     ],
+     "answer": "C",
+     "why": "He is young, only ten.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u1-1-A3",
+     "type": "choice",
+     "stem": "Who is the star of the team?",
+     "options": [
+      "Lily",
+      "Ben",
+      "Amy"
+     ],
+     "answer": "A",
+     "why": "She is the star of our team.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g5r-u1-1-B1",
+     "type": "tf",
+     "stem": "Ben is a clever player.",
+     "answer": "T",
+     "why": "He is a clever player.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u1-1-B2",
+     "type": "tf",
+     "stem": "Lily is not hard-working.",
+     "answer": "F",
+     "why": "She is hard-working and lovely.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u1-1-B3",
+     "type": "tf",
+     "stem": "Ben is twelve years old.",
+     "answer": "F",
+     "why": "He is young, only ten.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5r-u1-1-C1",
+     "type": "fill",
+     "stem": "Ben is a clever ____.",
+     "answers": [
+      [
+       "player"
+      ]
+     ],
+     "why": "He is a clever player.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u1-1-C2",
+     "type": "fill",
+     "stem": "Lily is the ____ of the team.",
+     "answers": [
+      [
+       "star"
+      ]
+     ],
+     "why": "She is the star of our team.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u1-1-C3",
+     "type": "fill",
+     "stem": "Ben is only ____ years old.",
+     "answers": [
+      [
+       "ten"
+      ]
+     ],
+     "why": "He is young, only ten.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

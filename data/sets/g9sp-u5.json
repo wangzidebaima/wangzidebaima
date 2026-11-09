@@ -1,0 +1,82 @@
+{
+ "id": "g9sp-u5",
+ "kind": "speaking",
+ "unit": "E9U5",
+ "title": "口语练习",
+ "subtitle": "每天 10 分钟 · 共 5 天",
+ "steps": [
+  "点 🔊 听一遍，听清语调",
+  "一句一句跟着读，声音要大，不怕错",
+  "读完点「今天完成了」打卡"
+ ],
+ "sentences": [
+  {
+   "en": "Who invented the telephone?",
+   "zh": "谁发明了电话？"
+  },
+  {
+   "en": "Alexander Bell invented it in 1876.",
+   "zh": "亚历山大·贝尔在 1876 年发明了它。"
+  },
+  {
+   "en": "Paper was invented in ancient China.",
+   "zh": "纸是在中国古代发明的。"
+  },
+  {
+   "en": "A new idea can lead to a great invention.",
+   "zh": "一个新点子可以带来伟大的发明。"
+  },
+  {
+   "en": "Many schools can afford a 3D printer now.",
+   "zh": "现在许多学校买得起 3D 打印机了。"
+  },
+  {
+   "en": "The high-speed train speeds up our trips.",
+   "zh": "高铁让我们的出行更快了。"
+  },
+  {
+   "en": "The Wright brothers built a glider before their plane.",
+   "zh": "莱特兄弟在造飞机之前先造了滑翔机。"
+  },
+  {
+   "en": "Later on, the skill spread to many countries.",
+   "zh": "后来，这项技术传到了许多国家。"
+  },
+  {
+   "en": "I would like to invent something useful.",
+   "zh": "我想发明一样有用的东西。"
+  }
+ ],
+ "plan": [
+  {
+   "day": 1,
+   "title": "跟读第 1–3 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 2,
+   "title": "跟读第 4–6 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 3,
+   "title": "跟读第 7–9 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 4,
+   "title": "不看书，说给家长听",
+   "task": "挑 5 句最喜欢的，尽量不看书说出来",
+   "minutes": 10
+  },
+  {
+   "day": 5,
+   "title": "自己说 3 句话",
+   "task": "用 'I want to invent … It can …' 说 3 句话介绍你的发明",
+   "minutes": 10
+  }
+ ]
+}

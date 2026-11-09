@@ -1,0 +1,152 @@
+{
+ "id": "g3r-u6-2",
+ "kind": "reading",
+ "title": "Cut the Cake",
+ "subtitle": "考点：蛋糕和年龄 / Cut the cake, please. Let's eat the cake.",
+ "unit": "E3U6",
+ "dialogue": [
+  {
+   "s": "Ben",
+   "t": "Look at the cake, Mum!"
+  },
+  {
+   "s": "Mum",
+   "t": "It is for Lily. She is seven years old today."
+  },
+  {
+   "s": "Ben",
+   "t": "Cut the cake, please."
+  },
+  {
+   "s": "Mum",
+   "t": "OK. Let's eat the cake."
+  },
+  {
+   "s": "Ben",
+   "t": "Yummy!"
+  }
+ ],
+ "vocab": "cake 蛋糕 · cut 切 · eat 吃 · seven 七 · year 年/岁 · please 请",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3r-u6-2-A1",
+     "type": "choice",
+     "stem": "Who is the cake for?",
+     "options": [
+      "Ben.",
+      "Mum.",
+      "Lily."
+     ],
+     "answer": "C",
+     "why": "It is for Lily.",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u6-2-A2",
+     "type": "choice",
+     "stem": "How old is Lily today?",
+     "options": [
+      "Seven.",
+      "Six.",
+      "Eight."
+     ],
+     "answer": "A",
+     "why": "She is seven years old today.",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u6-2-A3",
+     "type": "choice",
+     "stem": "What does Ben say to Mum?",
+     "options": [
+      "Draw the cake, please.",
+      "Cut the cake, please.",
+      "Share the book, please."
+     ],
+     "answer": "B",
+     "why": "Cut the cake, please.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g3r-u6-2-B1",
+     "type": "tf",
+     "stem": "Lily is seven years old today.",
+     "answer": "T",
+     "why": "She is seven years old today.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u6-2-B2",
+     "type": "tf",
+     "stem": "The cake is for Ben.",
+     "answer": "F",
+     "why": "It is for Lily.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u6-2-B3",
+     "type": "tf",
+     "stem": "Ben says, \"Yummy!\"",
+     "answer": "T",
+     "why": "Yummy!",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3r-u6-2-C1",
+     "type": "fill",
+     "stem": "The cake is for ____.",
+     "answers": [
+      [
+       "lily"
+      ]
+     ],
+     "why": "It is for Lily.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u6-2-C2",
+     "type": "fill",
+     "stem": "Lily is ____ years old today.",
+     "answers": [
+      [
+       "seven"
+      ]
+     ],
+     "why": "She is seven years old today.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u6-2-C3",
+     "type": "fill",
+     "stem": "Ben says, \"Cut the cake, ____.\"",
+     "answers": [
+      [
+       "please"
+      ]
+     ],
+     "why": "Cut the cake, please.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

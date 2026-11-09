@@ -1,0 +1,116 @@
+{
+ "id": "g3l-u3-4",
+ "kind": "listening",
+ "title": "Animal Quiz",
+ "subtitle": "对话",
+ "unit": "E3U3",
+ "speakers": {
+  "Amy": "c1",
+  "Ben": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Amy",
+   "t": "Is the red panda big?"
+  },
+  {
+   "s": "Ben",
+   "t": "No. It is small."
+  },
+  {
+   "s": "Amy",
+   "t": "Is the fox fast?"
+  },
+  {
+   "s": "Ben",
+   "t": "Yes, it is fast."
+  },
+  {
+   "s": "Amy",
+   "t": "Is the monkey cute?"
+  },
+  {
+   "s": "Ben",
+   "t": "Yes!"
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3l-u3-4-A1",
+     "type": "choice",
+     "stem": "How is the red panda?",
+     "options": [
+      "Big.",
+      "Small.",
+      "Tall."
+     ],
+     "answer": "B",
+     "why": "No. It is small.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u3-4-A2",
+     "type": "choice",
+     "stem": "Which animal is fast?",
+     "options": [
+      "The elephant.",
+      "The giraffe.",
+      "The fox."
+     ],
+     "answer": "C",
+     "why": "Yes, it is fast. (the fox)",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u3-4-A3",
+     "type": "choice",
+     "stem": "Which animal is cute?",
+     "options": [
+      "The monkey.",
+      "The lion.",
+      "The elephant."
+     ],
+     "answer": "A",
+     "why": "Is the monkey cute? Yes!",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3l-u3-4-B1",
+     "type": "fill",
+     "stem": "The red panda is ____.",
+     "answers": [
+      [
+       "small"
+      ]
+     ],
+     "why": "No. It is small.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u3-4-B2",
+     "type": "fill",
+     "stem": "The ____ is fast.",
+     "answers": [
+      [
+       "fox"
+      ]
+     ],
+     "why": "Is the fox fast? Yes, it is fast.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

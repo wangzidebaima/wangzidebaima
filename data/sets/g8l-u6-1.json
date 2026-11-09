@@ -1,0 +1,127 @@
+{
+ "id": "g8l-u6-1",
+ "kind": "listening",
+ "title": "Career Talk",
+ "subtitle": "对话",
+ "unit": "E8U6",
+ "speakers": {
+  "Ms Chen": "f1",
+  "Peter": "m1"
+ },
+ "transcript": [
+  {
+   "s": "Ms Chen",
+   "t": "Peter, have you thought about your future job?"
+  },
+  {
+   "s": "Peter",
+   "t": "Yes. I want to be a pilot."
+  },
+  {
+   "s": "Ms Chen",
+   "t": "Why do you like that job?"
+  },
+  {
+   "s": "Peter",
+   "t": "I love planes, and I want to see the world from the sky."
+  },
+  {
+   "s": "Ms Chen",
+   "t": "Pilots must be healthy and calm. Are you good at maths and English?"
+  },
+  {
+   "s": "Peter",
+   "t": "I am good at English, but maths is hard for me."
+  },
+  {
+   "s": "Ms Chen",
+   "t": "Then you should spend more time on maths and try your best."
+  },
+  {
+   "s": "Peter",
+   "t": "I will. I will make a study plan tonight."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8l-u6-1-A1",
+     "type": "choice",
+     "stem": "What does Peter want to be?",
+     "options": [
+      "An engineer.",
+      "A pilot.",
+      "A lawyer.",
+      "A designer."
+     ],
+     "answer": "B",
+     "why": "I want to be a pilot.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u6-1-A2",
+     "type": "choice",
+     "stem": "Which subject is hard for Peter?",
+     "options": [
+      "English.",
+      "Art.",
+      "Maths.",
+      "Music."
+     ],
+     "answer": "C",
+     "why": "maths is hard for me.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u6-1-A3",
+     "type": "choice",
+     "stem": "What will Peter do tonight?",
+     "options": [
+      "Take a flight.",
+      "Buy a plane.",
+      "Call a pilot.",
+      "Make a study plan."
+     ],
+     "answer": "D",
+     "why": "I will make a study plan tonight.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8l-u6-1-B1",
+     "type": "fill",
+     "stem": "Pilots must be healthy and ____.",
+     "answers": [
+      [
+       "calm"
+      ]
+     ],
+     "why": "healthy and calm.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u6-1-B2",
+     "type": "fill",
+     "stem": "Peter wants to see the world from the ____.",
+     "answers": [
+      [
+       "sky"
+      ]
+     ],
+     "why": "from the sky.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

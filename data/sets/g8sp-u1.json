@@ -1,0 +1,82 @@
+{
+ "id": "g8sp-u1",
+ "kind": "speaking",
+ "unit": "E8U1",
+ "title": "口语练习",
+ "subtitle": "每天 10 分钟 · 共 5 天",
+ "steps": [
+  "点 🔊 听一遍，听清语调",
+  "一句一句跟着读，声音要大，不怕错",
+  "读完点「今天完成了」打卡"
+ ],
+ "sentences": [
+  {
+   "en": "Where did you go on your vacation?",
+   "zh": "你假期去了哪里？"
+  },
+  {
+   "en": "I went to Seattle with my family.",
+   "zh": "我和家人去了西雅图。"
+  },
+  {
+   "en": "The scenery was fantastic and it took my breath away.",
+   "zh": "风景太棒了，令我惊叹不已。"
+  },
+  {
+   "en": "We stayed in a comfortable hotel near the station.",
+   "zh": "我们住在车站附近一家舒适的旅馆。"
+  },
+  {
+   "en": "Were you bored during the trip?",
+   "zh": "旅行期间你觉得无聊吗？"
+  },
+  {
+   "en": "No, there was nothing but fun!",
+   "zh": "不，全是乐趣！"
+  },
+  {
+   "en": "Thousands of people visit this ancient town every year.",
+   "zh": "每年有成千上万的人参观这座古镇。"
+  },
+  {
+   "en": "Don't forget your passport and your scarf.",
+   "zh": "别忘了你的护照和围巾。"
+  },
+  {
+   "en": "I will never forget this happy holiday.",
+   "zh": "我永远不会忘记这个快乐的假期。"
+  }
+ ],
+ "plan": [
+  {
+   "day": 1,
+   "title": "跟读第 1–3 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 2,
+   "title": "跟读第 4–6 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 3,
+   "title": "跟读第 7–9 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 4,
+   "title": "不看书，说给家长听",
+   "task": "挑 5 句最喜欢的，尽量不看书说出来",
+   "minutes": 10
+  },
+  {
+   "day": 5,
+   "title": "自己说 3 句话",
+   "task": "用 'I went to … and it was …' 说 3 句话介绍你的一次假期",
+   "minutes": 10
+  }
+ ]
+}

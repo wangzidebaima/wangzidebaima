@@ -1,0 +1,152 @@
+{
+ "id": "g3r-u4-2",
+ "kind": "reading",
+ "title": "Fruit Time",
+ "subtitle": "考点：水果 / I like apples and bananas.",
+ "unit": "E3U4",
+ "dialogue": [
+  {
+   "s": "Tom",
+   "t": "I like apples and bananas."
+  },
+  {
+   "s": "Lily",
+   "t": "I like oranges and grapes."
+  },
+  {
+   "s": "Tom",
+   "t": "Look! The grapes are on the farm."
+  },
+  {
+   "s": "Lily",
+   "t": "Let's go to the farm."
+  },
+  {
+   "s": "Tom",
+   "t": "OK. Let's eat some grapes."
+  }
+ ],
+ "vocab": "apple 苹果 · banana 香蕉 · orange 橙子 · grape 葡萄 · farm 农场 · eat 吃",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3r-u4-2-A1",
+     "type": "choice",
+     "stem": "What does Tom like?",
+     "options": [
+      "Cakes and fish.",
+      "Dogs and cats.",
+      "Apples and bananas."
+     ],
+     "answer": "C",
+     "why": "I like apples and bananas.",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u4-2-A2",
+     "type": "choice",
+     "stem": "What does Lily like?",
+     "options": [
+      "Oranges and grapes.",
+      "Bananas and cakes.",
+      "Fish and rabbits."
+     ],
+     "answer": "A",
+     "why": "I like oranges and grapes.",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u4-2-A3",
+     "type": "choice",
+     "stem": "Where are the grapes?",
+     "options": [
+      "In the school.",
+      "On the farm.",
+      "In the zoo."
+     ],
+     "answer": "B",
+     "why": "The grapes are on the farm.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g3r-u4-2-B1",
+     "type": "tf",
+     "stem": "Tom likes apples and bananas.",
+     "answer": "T",
+     "why": "I like apples and bananas.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u4-2-B2",
+     "type": "tf",
+     "stem": "The grapes are in the school.",
+     "answer": "F",
+     "why": "The grapes are on the farm.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u4-2-B3",
+     "type": "tf",
+     "stem": "Lily wants to go to the farm.",
+     "answer": "T",
+     "why": "Let's go to the farm.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3r-u4-2-C1",
+     "type": "fill",
+     "stem": "Tom likes apples and ____.",
+     "answers": [
+      [
+       "bananas"
+      ]
+     ],
+     "why": "I like apples and bananas.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u4-2-C2",
+     "type": "fill",
+     "stem": "Lily likes oranges and ____.",
+     "answers": [
+      [
+       "grapes"
+      ]
+     ],
+     "why": "I like oranges and grapes.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u4-2-C3",
+     "type": "fill",
+     "stem": "Let's go to the ____.",
+     "answers": [
+      [
+       "farm"
+      ]
+     ],
+     "why": "Let's go to the farm.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

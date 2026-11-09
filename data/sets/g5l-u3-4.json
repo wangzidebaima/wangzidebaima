@@ -1,0 +1,120 @@
+{
+ "id": "g5l-u3-4",
+ "kind": "listening",
+ "title": "Friday Night",
+ "subtitle": "对话",
+ "unit": "E5U3",
+ "speakers": {
+  "Amy": "c1",
+  "Lily": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Amy",
+   "t": "I like Friday because it is before the weekend."
+  },
+  {
+   "s": "Lily",
+   "t": "Me too. What do you do on Friday night?"
+  },
+  {
+   "s": "Amy",
+   "t": "I usually watch a film with my family."
+  },
+  {
+   "s": "Lily",
+   "t": "What about Saturday?"
+  },
+  {
+   "s": "Amy",
+   "t": "On Saturday I visit my grandparents."
+  },
+  {
+   "s": "Lily",
+   "t": "I sometimes go swimming on Saturday."
+  },
+  {
+   "s": "Amy",
+   "t": "That sounds great."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5l-u3-4-A1",
+     "type": "choice",
+     "stem": "Why does Amy like Friday?",
+     "options": [
+      "It is a holiday.",
+      "It is before the weekend.",
+      "There is no homework."
+     ],
+     "answer": "B",
+     "why": "I like Friday because it is before the weekend.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u3-4-A2",
+     "type": "choice",
+     "stem": "What does Amy do on Friday night?",
+     "options": [
+      "Read a book.",
+      "Play chess.",
+      "Watch a film."
+     ],
+     "answer": "C",
+     "why": "I usually watch a film with my family.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u3-4-A3",
+     "type": "choice",
+     "stem": "What does Lily sometimes do on Saturday?",
+     "options": [
+      "Go swimming.",
+      "Visit grandparents.",
+      "Play ping-pong."
+     ],
+     "answer": "A",
+     "why": "I sometimes go swimming on Saturday.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5l-u3-4-B1",
+     "type": "fill",
+     "stem": "Amy usually watches a film with her ____.",
+     "answers": [
+      [
+       "family"
+      ]
+     ],
+     "why": "I usually watch a film with my family.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u3-4-B2",
+     "type": "fill",
+     "stem": "Amy visits her ____ on Saturday.",
+     "answers": [
+      [
+       "grandparents"
+      ]
+     ],
+     "why": "On Saturday I visit my grandparents.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

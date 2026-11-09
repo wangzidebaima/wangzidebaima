@@ -1,0 +1,106 @@
+{
+ "id": "g9l-u7-2",
+ "kind": "listening",
+ "title": "Music in My Family",
+ "subtitle": "短文",
+ "unit": "E9U7",
+ "speakers": {
+  "Clarice": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Clarice",
+   "t": "Music is part of my family life. My grandfather loves folk songs. Every evening he sits by the window and sings old songs from his village."
+  },
+  {
+   "s": "Clarice",
+   "t": "My mother plays the keyboard, and she often sings along to pop songs while she cooks. My older brother plays the electric guitar in a school band."
+  },
+  {
+   "s": "Clarice",
+   "t": "On weekends, our home is full of different sounds. At first, I thought it was too noisy. Now I understand that music brings us together, young and old."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9l-u7-2-A1",
+     "type": "choice",
+     "stem": "What does the grandfather love?",
+     "options": [
+      "Rap.",
+      "Jazz.",
+      "Folk songs.",
+      "Electronic music."
+     ],
+     "answer": "C",
+     "why": "My grandfather loves folk songs.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u7-2-A2",
+     "type": "choice",
+     "stem": "What does the older brother play?",
+     "options": [
+      "The trumpet.",
+      "The keyboard.",
+      "The drums.",
+      "The electric guitar."
+     ],
+     "answer": "D",
+     "why": "My older brother plays the electric guitar.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u7-2-A3",
+     "type": "choice",
+     "stem": "What does the speaker think now?",
+     "options": [
+      "Music brings the family together.",
+      "Music is too noisy.",
+      "Music is too difficult.",
+      "Music is a waste of time."
+     ],
+     "answer": "A",
+     "why": "music brings us together, young and old.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9l-u7-2-B1",
+     "type": "fill",
+     "stem": "Grandfather sits by the ____ every evening.",
+     "answers": [
+      [
+       "window"
+      ]
+     ],
+     "why": "he sits by the window.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u7-2-B2",
+     "type": "fill",
+     "stem": "My mother plays the ____.",
+     "answers": [
+      [
+       "keyboard"
+      ]
+     ],
+     "why": "My mother plays the keyboard.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

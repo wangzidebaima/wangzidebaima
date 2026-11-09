@@ -1,0 +1,120 @@
+{
+ "id": "g5l-u6-3",
+ "kind": "listening",
+ "title": "Safe in the Forest",
+ "subtitle": "对话",
+ "unit": "E5U6",
+ "speakers": {
+  "Dad": "c1",
+  "Ben": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Ben",
+   "t": "Dad, can we make a fire here?"
+  },
+  {
+   "s": "Dad",
+   "t": "No, Ben. It is dangerous. The forest is dry."
+  },
+  {
+   "s": "Ben",
+   "t": "But I am cold."
+  },
+  {
+   "s": "Dad",
+   "t": "Put on your coat. We can eat hot food at the hotel."
+  },
+  {
+   "s": "Ben",
+   "t": "How far is the hotel?"
+  },
+  {
+   "s": "Dad",
+   "t": "It is close. Only five minutes."
+  },
+  {
+   "s": "Ben",
+   "t": "OK. Let's go."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5l-u6-3-A1",
+     "type": "choice",
+     "stem": "What does Ben want to do?",
+     "options": [
+      "Make a fire.",
+      "Swim.",
+      "Take photos."
+     ],
+     "answer": "A",
+     "why": "can we make a fire here?",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u6-3-A2",
+     "type": "choice",
+     "stem": "Why is it dangerous?",
+     "options": [
+      "The forest is dark.",
+      "The forest is dry.",
+      "It is raining."
+     ],
+     "answer": "B",
+     "why": "The forest is dry.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u6-3-A3",
+     "type": "choice",
+     "stem": "How far is the hotel?",
+     "options": [
+      "Ten minutes.",
+      "One hour.",
+      "Five minutes."
+     ],
+     "answer": "C",
+     "why": "Only five minutes.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5l-u6-3-B1",
+     "type": "fill",
+     "stem": "Put on your ____.",
+     "answers": [
+      [
+       "coat"
+      ]
+     ],
+     "why": "Put on your coat.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u6-3-B2",
+     "type": "fill",
+     "stem": "The hotel is ____.",
+     "answers": [
+      [
+       "close"
+      ]
+     ],
+     "why": "It is close.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

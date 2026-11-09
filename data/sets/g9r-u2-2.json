@@ -1,0 +1,151 @@
+{
+ "id": "g9r-u2-2",
+ "kind": "reading",
+ "title": "Amelia Earhart: Flying Alone",
+ "subtitle": "考点：勇气与梦想 / courage, admire, above all",
+ "unit": "E9U2",
+ "passage": [
+  "Amelia Earhart dreamed of flying. At the time, few women were pilots, but she did not give up. She took flying lessons and worked at different jobs to pay for them.",
+  "In 1932, she flew alone across the Atlantic Ocean. She was the first woman to do it, and people around the world admired her courage. A few years later, she tried to fly around the world, but her plane disappeared over the Pacific Ocean. Nobody knows exactly what happened, but she still inspires many young people, above all girls who want to be pilots."
+ ],
+ "vocab": "pilot 飞行员 · courage 勇气 · admire 钦佩 · Atlantic Ocean 大西洋 · disappear 消失 · above all 尤其是",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9r-u2-2-A1",
+     "type": "choice",
+     "stem": "What was Amelia's dream?",
+     "options": [
+      "To be a doctor.",
+      "To sail across the sea.",
+      "To fly planes.",
+      "To teach in a school."
+     ],
+     "answer": "C",
+     "why": "Amelia Earhart dreamed of flying.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u2-2-A2",
+     "type": "choice",
+     "stem": "How did she pay for her flying lessons?",
+     "options": [
+      "Her friends paid.",
+      "She won a prize.",
+      "Her school paid.",
+      "She worked at different jobs."
+     ],
+     "answer": "D",
+     "why": "worked at different jobs to pay for them.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u2-2-A3",
+     "type": "choice",
+     "stem": "What did she do in 1932?",
+     "options": [
+      "She flew alone across the Atlantic Ocean.",
+      "She flew around the world.",
+      "She built a plane.",
+      "She taught at an airport."
+     ],
+     "answer": "A",
+     "why": "In 1932, she flew alone across the Atlantic Ocean.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u2-2-A4",
+     "type": "choice",
+     "stem": "What happened on her flight around the world?",
+     "options": [
+      "She landed safely at home.",
+      "Her plane disappeared.",
+      "She won a Nobel Prize.",
+      "She met Marie Curie."
+     ],
+     "answer": "B",
+     "why": "her plane disappeared over the Pacific Ocean.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g9r-u2-2-B1",
+     "type": "tf",
+     "stem": "Many women were pilots at that time.",
+     "answer": "F",
+     "why": "few women were pilots.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u2-2-B2",
+     "type": "tf",
+     "stem": "She was the first woman to fly alone across the Atlantic.",
+     "answer": "T",
+     "why": "She was the first woman to do it.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u2-2-B3",
+     "type": "tf",
+     "stem": "Everybody knows what happened to her plane.",
+     "answer": "F",
+     "why": "Nobody knows exactly what happened.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9r-u2-2-C1",
+     "type": "fill",
+     "stem": "People ____ her courage.",
+     "answers": [
+      [
+       "admired"
+      ]
+     ],
+     "why": "people around the world admired her courage.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u2-2-C2",
+     "type": "fill",
+     "stem": "She flew alone across the Atlantic ____.",
+     "answers": [
+      [
+       "ocean"
+      ]
+     ],
+     "why": "across the Atlantic Ocean.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u2-2-C3",
+     "type": "fill",
+     "stem": "Her plane ____ over the Pacific Ocean.",
+     "answers": [
+      [
+       "disappeared"
+      ]
+     ],
+     "why": "her plane disappeared over the Pacific Ocean.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

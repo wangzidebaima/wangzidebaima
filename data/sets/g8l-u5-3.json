@@ -1,0 +1,127 @@
+{
+ "id": "g8l-u5-3",
+ "kind": "listening",
+ "title": "A Dinner Party",
+ "subtitle": "对话",
+ "unit": "E8U5",
+ "speakers": {
+  "Host": "f1",
+  "Guest": "m1"
+ },
+ "transcript": [
+  {
+   "s": "Host",
+   "t": "Welcome, Mr Brown! Dinner is almost ready."
+  },
+  {
+   "s": "Guest",
+   "t": "It smells wonderful. What are we having?"
+  },
+  {
+   "s": "Host",
+   "t": "First, hot and sour soup. Then steamed fish and some vegetables."
+  },
+  {
+   "s": "Guest",
+   "t": "I love steamed fish. Did you cook it yourself?"
+  },
+  {
+   "s": "Host",
+   "t": "Yes, I followed my mother's recipe. The secret is to add a little ginger."
+  },
+  {
+   "s": "Guest",
+   "t": "And what's for dessert?"
+  },
+  {
+   "s": "Host",
+   "t": "A pumpkin pie. I baked it this afternoon."
+  },
+  {
+   "s": "Guest",
+   "t": "Perfect! I hope there will be a second slice."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8l-u5-3-A1",
+     "type": "choice",
+     "stem": "What is the first dish?",
+     "options": [
+      "Steamed fish.",
+      "Pumpkin pie.",
+      "Mashed potatoes.",
+      "Hot and sour soup."
+     ],
+     "answer": "D",
+     "why": "First, hot and sour soup.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u5-3-A2",
+     "type": "choice",
+     "stem": "What is the secret of the fish?",
+     "options": [
+      "A little ginger.",
+      "A lot of sugar.",
+      "Some cheese.",
+      "Some cream."
+     ],
+     "answer": "A",
+     "why": "The secret is to add a little ginger.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u5-3-A3",
+     "type": "choice",
+     "stem": "When did the host bake the pie?",
+     "options": [
+      "Yesterday.",
+      "This afternoon.",
+      "This morning.",
+      "Last week."
+     ],
+     "answer": "B",
+     "why": "I baked it this afternoon.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8l-u5-3-B1",
+     "type": "fill",
+     "stem": "The host followed her mother's ____.",
+     "answers": [
+      [
+       "recipe"
+      ]
+     ],
+     "why": "my mother's recipe.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u5-3-B2",
+     "type": "fill",
+     "stem": "The dessert is a pumpkin ____.",
+     "answers": [
+      [
+       "pie"
+      ]
+     ],
+     "why": "A pumpkin pie.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

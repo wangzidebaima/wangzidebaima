@@ -1,0 +1,164 @@
+{
+ "id": "g6r-u3-1",
+ "kind": "reading",
+ "title": "A Bad Cold",
+ "subtitle": "考点：一般过去时 / I had a cold",
+ "unit": "E6U3",
+ "dialogue": [
+  {
+   "s": "Amy",
+   "t": "Mike, you were not at school yesterday."
+  },
+  {
+   "s": "Mike",
+   "t": "I had a cold and a runny nose."
+  },
+  {
+   "s": "Amy",
+   "t": "Did you have a fever too?"
+  },
+  {
+   "s": "Mike",
+   "t": "Yes, a little. My mother called the doctor."
+  },
+  {
+   "s": "Amy",
+   "t": "What did the doctor say?"
+  },
+  {
+   "s": "Mike",
+   "t": "She said I should drink water and rest at home."
+  },
+  {
+   "s": "Amy",
+   "t": "I hope you feel better soon."
+  },
+  {
+   "s": "Mike",
+   "t": "Thanks. I feel better today."
+  }
+ ],
+ "vocab": "cold 感冒 · runny nose 流鼻涕 · fever 发烧 · doctor 医生 · rest 休息 · better 更好的",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6r-u3-1-A1",
+     "type": "choice",
+     "stem": "Why was Mike not at school yesterday?",
+     "options": [
+      "He had a race.",
+      "He had a cold.",
+      "He had a trip."
+     ],
+     "answer": "B",
+     "why": "I had a cold and a runny nose.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u3-1-A2",
+     "type": "choice",
+     "stem": "Who called the doctor?",
+     "options": [
+      "Mike's father.",
+      "Amy.",
+      "Mike's mother."
+     ],
+     "answer": "C",
+     "why": "My mother called the doctor.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u3-1-A3",
+     "type": "choice",
+     "stem": "What should Mike do at home?",
+     "options": [
+      "Drink water and rest.",
+      "Run and play.",
+      "Go to the park."
+     ],
+     "answer": "A",
+     "why": "She said I should drink water and rest at home.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g6r-u3-1-B1",
+     "type": "tf",
+     "stem": "Mike had a little fever.",
+     "answer": "T",
+     "why": "Yes, a little.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u3-1-B2",
+     "type": "tf",
+     "stem": "Mike's father called the doctor.",
+     "answer": "F",
+     "why": "My mother called the doctor.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u3-1-B3",
+     "type": "tf",
+     "stem": "Mike feels better today.",
+     "answer": "T",
+     "why": "I feel better today.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6r-u3-1-C1",
+     "type": "fill",
+     "stem": "Mike had a cold and a runny ____.",
+     "answers": [
+      [
+       "nose"
+      ]
+     ],
+     "why": "a cold and a runny nose",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u3-1-C2",
+     "type": "fill",
+     "stem": "Mike's mother called the ____.",
+     "answers": [
+      [
+       "doctor"
+      ]
+     ],
+     "why": "My mother called the doctor.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u3-1-C3",
+     "type": "fill",
+     "stem": "The doctor said Mike should drink ____.",
+     "answers": [
+      [
+       "water"
+      ]
+     ],
+     "why": "drink water and rest at home",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

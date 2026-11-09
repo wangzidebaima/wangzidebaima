@@ -1,0 +1,151 @@
+{
+ "id": "g9r-u2-1",
+ "kind": "reading",
+ "title": "Marie Curie: A Life for Science",
+ "subtitle": "考点：人物经历 / Nobel Prize, physicist, wounded",
+ "unit": "E9U2",
+ "passage": [
+  "Marie Curie was born in Poland in 1867. Her family was not rich, and she worked as a private teacher at a young age to save money. Later she went to Paris to study physics and chemistry. In Paris she met Pierre Curie, a physicist, and they got married.",
+  "Marie worked very hard with her husband. They found two new elements. She won the Nobel Prize in Physics, and later she won a second Nobel Prize, in chemistry. She was the first person to win two Nobel Prizes. During the war, she also helped wounded soldiers with X-ray machines on cars."
+ ],
+ "vocab": "physicist 物理学家 · chemistry 化学 · Nobel Prize 诺贝尔奖 · element 元素 · wounded 受伤的 · soldier 士兵",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9r-u2-1-A1",
+     "type": "choice",
+     "stem": "Where was Marie born?",
+     "options": [
+      "In France.",
+      "In Poland.",
+      "In Britain.",
+      "In China."
+     ],
+     "answer": "B",
+     "why": "Marie Curie was born in Poland in 1867.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u2-1-A2",
+     "type": "choice",
+     "stem": "What did she study in Paris?",
+     "options": [
+      "Music and art.",
+      "History and law.",
+      "Physics and chemistry.",
+      "Medicine and sports."
+     ],
+     "answer": "C",
+     "why": "she went to Paris to study physics and chemistry.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u2-1-A3",
+     "type": "choice",
+     "stem": "How many Nobel Prizes did she win?",
+     "options": [
+      "One.",
+      "Three.",
+      "None.",
+      "Two."
+     ],
+     "answer": "D",
+     "why": "She won a second Nobel Prize",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u2-1-A4",
+     "type": "choice",
+     "stem": "How did she help wounded soldiers?",
+     "options": [
+      "With X-ray machines.",
+      "With new clothes.",
+      "With radio programmes.",
+      "With a hospital in Poland."
+     ],
+     "answer": "A",
+     "why": "helped wounded soldiers with X-ray machines",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g9r-u2-1-B1",
+     "type": "tf",
+     "stem": "Marie's family was not rich.",
+     "answer": "T",
+     "why": "Her family was not rich.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u2-1-B2",
+     "type": "tf",
+     "stem": "Pierre Curie was a chemist.",
+     "answer": "F",
+     "why": "Pierre Curie, a physicist.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u2-1-B3",
+     "type": "tf",
+     "stem": "She won a Nobel Prize in chemistry.",
+     "answer": "T",
+     "why": "a second Nobel Prize, in chemistry.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9r-u2-1-C1",
+     "type": "fill",
+     "stem": "Marie was born in ____.",
+     "answers": [
+      [
+       "Poland"
+      ]
+     ],
+     "why": "born in Poland in 1867.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u2-1-C2",
+     "type": "fill",
+     "stem": "She went to ____ to study physics and chemistry.",
+     "answers": [
+      [
+       "Paris"
+      ]
+     ],
+     "why": "she went to Paris to study.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u2-1-C3",
+     "type": "fill",
+     "stem": "Marie and her husband found two new ____.",
+     "answers": [
+      [
+       "elements"
+      ]
+     ],
+     "why": "They found two new elements.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

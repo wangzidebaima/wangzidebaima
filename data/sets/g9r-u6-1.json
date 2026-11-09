@@ -1,0 +1,151 @@
+{
+ "id": "g9r-u6-1",
+ "kind": "reading",
+ "title": "Life on the Space Station",
+ "subtitle": "考点：太空生活 / weightless, fall asleep, on board",
+ "unit": "E9U6",
+ "passage": [
+  "Astronauts on the International Space Station live and work in a very different world. There is almost no gravity there, so everything seems weightless. Food, pens and even water float in the air, and astronauts must tie their tools to the walls.",
+  "Sleeping is also special. Astronauts cannot lie on a bed, so they fall asleep in sleeping bags tied to the wall. Exercise is very important, too. Without gravity, muscles and bones become weaker, so astronauts exercise about two hours every day. Meals are simple, and many of them come in bags. On board, the astronauts see the sun rise and set about sixteen times a day, which makes it hard to follow a normal day and night."
+ ],
+ "vocab": "astronaut 宇航员 · weightless 失重的 · float 漂浮 · tie 系 · muscle 肌肉 · exercise 锻炼",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9r-u6-1-A1",
+     "type": "choice",
+     "stem": "Why does everything seem weightless on the station?",
+     "options": [
+      "The station is very small.",
+      "There is almost no gravity.",
+      "The air is too thick.",
+      "The walls are made of water."
+     ],
+     "answer": "B",
+     "why": "There is almost no gravity there, so everything seems weightless.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u6-1-A2",
+     "type": "choice",
+     "stem": "Why do astronauts tie their tools to the walls?",
+     "options": [
+      "The tools are too heavy.",
+      "They want to sell them.",
+      "Things float in the air.",
+      "The tools are made of glass."
+     ],
+     "answer": "C",
+     "why": "Food, pens and even water float in the air",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u6-1-A3",
+     "type": "choice",
+     "stem": "Where do astronauts sleep?",
+     "options": [
+      "In beds on the floor.",
+      "In the garden.",
+      "On the roof.",
+      "In sleeping bags tied to the wall."
+     ],
+     "answer": "D",
+     "why": "they fall asleep in sleeping bags tied to the wall.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u6-1-A4",
+     "type": "choice",
+     "stem": "Why must astronauts exercise a lot?",
+     "options": [
+      "Their muscles and bones become weaker.",
+      "They want to play sports.",
+      "They have to lose weight.",
+      "It is a space rule for children."
+     ],
+     "answer": "A",
+     "why": "Without gravity, muscles and bones become weaker",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g9r-u6-1-B1",
+     "type": "tf",
+     "stem": "Astronauts exercise about two hours every day.",
+     "answer": "T",
+     "why": "astronauts exercise about two hours every day.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u6-1-B2",
+     "type": "tf",
+     "stem": "Astronauts sleep on soft beds.",
+     "answer": "F",
+     "why": "Astronauts cannot lie on a bed",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u6-1-B3",
+     "type": "tf",
+     "stem": "Astronauts see the sun rise about sixteen times a day.",
+     "answer": "T",
+     "why": "see the sun rise and set about sixteen times a day",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9r-u6-1-C1",
+     "type": "fill",
+     "stem": "Water can ____ in the air on the station.",
+     "answers": [
+      [
+       "float"
+      ]
+     ],
+     "why": "Food, pens and even water float in the air",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u6-1-C2",
+     "type": "fill",
+     "stem": "Astronauts must ____ their tools to the walls.",
+     "answers": [
+      [
+       "tie"
+      ]
+     ],
+     "why": "astronauts must tie their tools to the walls.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u6-1-C3",
+     "type": "fill",
+     "stem": "Many meals come in ____.",
+     "answers": [
+      [
+       "bags"
+      ]
+     ],
+     "why": "many of them come in bags.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,112 @@
+{
+ "id": "g3l-u4-3",
+ "kind": "listening",
+ "title": "Bananas and Apples",
+ "subtitle": "对话",
+ "unit": "E3U4",
+ "speakers": {
+  "Sam": "c1",
+  "Amy": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Sam",
+   "t": "Do you like bananas, Amy?"
+  },
+  {
+   "s": "Amy",
+   "t": "Yes. I like bananas and oranges."
+  },
+  {
+   "s": "Sam",
+   "t": "I like apples. Apples are red."
+  },
+  {
+   "s": "Amy",
+   "t": "Let's eat some fruit!"
+  },
+  {
+   "s": "Sam",
+   "t": "OK!"
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3l-u4-3-A1",
+     "type": "choice",
+     "stem": "What does Amy like?",
+     "options": [
+      "Bananas and oranges.",
+      "Apples and grapes.",
+      "Cakes and fish."
+     ],
+     "answer": "A",
+     "why": "I like bananas and oranges.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u4-3-A2",
+     "type": "choice",
+     "stem": "What does Sam like?",
+     "options": [
+      "Bananas.",
+      "Apples.",
+      "Oranges."
+     ],
+     "answer": "B",
+     "why": "I like apples.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u4-3-A3",
+     "type": "choice",
+     "stem": "What colour are the apples?",
+     "options": [
+      "Blue.",
+      "Purple.",
+      "Red."
+     ],
+     "answer": "C",
+     "why": "Apples are red.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3l-u4-3-B1",
+     "type": "fill",
+     "stem": "Sam likes ____.",
+     "answers": [
+      [
+       "apples"
+      ]
+     ],
+     "why": "I like apples.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u4-3-B2",
+     "type": "fill",
+     "stem": "Apples are ____.",
+     "answers": [
+      [
+       "red"
+      ]
+     ],
+     "why": "Apples are red.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

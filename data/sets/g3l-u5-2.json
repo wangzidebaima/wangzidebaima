@@ -1,0 +1,116 @@
+{
+ "id": "g3l-u5-2",
+ "kind": "listening",
+ "title": "A Brown Bear",
+ "subtitle": "对话",
+ "unit": "E3U5",
+ "speakers": {
+  "Amy": "c1",
+  "Ben": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Amy",
+   "t": "What colour is the bear?"
+  },
+  {
+   "s": "Ben",
+   "t": "It is brown."
+  },
+  {
+   "s": "Amy",
+   "t": "Is it big?"
+  },
+  {
+   "s": "Ben",
+   "t": "Yes. It is big and brown."
+  },
+  {
+   "s": "Amy",
+   "t": "I like the bear."
+  },
+  {
+   "s": "Ben",
+   "t": "Me, too."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3l-u5-2-A1",
+     "type": "choice",
+     "stem": "What colour is the bear?",
+     "options": [
+      "Black.",
+      "White.",
+      "Brown."
+     ],
+     "answer": "C",
+     "why": "It is brown.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u5-2-A2",
+     "type": "choice",
+     "stem": "How is the bear?",
+     "options": [
+      "Big.",
+      "Small.",
+      "Tall."
+     ],
+     "answer": "A",
+     "why": "It is big and brown.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u5-2-A3",
+     "type": "choice",
+     "stem": "What does Amy ask first?",
+     "options": [
+      "What colour is the duck?",
+      "What colour is the bear?",
+      "How old is the bear?"
+     ],
+     "answer": "B",
+     "why": "Amy: What colour is the bear?",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3l-u5-2-B1",
+     "type": "fill",
+     "stem": "The bear is big and ____.",
+     "answers": [
+      [
+       "brown"
+      ]
+     ],
+     "why": "It is big and brown.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u5-2-B2",
+     "type": "fill",
+     "stem": "It is ____ and brown.",
+     "answers": [
+      [
+       "big"
+      ]
+     ],
+     "why": "It is big and brown.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

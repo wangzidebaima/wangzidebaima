@@ -1,0 +1,127 @@
+{
+ "id": "g8l-u3-3",
+ "kind": "listening",
+ "title": "Congratulations!",
+ "subtitle": "对话",
+ "unit": "E8U3",
+ "speakers": {
+  "Sam": "m1",
+  "Diana": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Sam",
+   "t": "Diana, congratulations on winning the music prize!"
+  },
+  {
+   "s": "Diana",
+   "t": "Thank you, Sam. I am very surprised."
+  },
+  {
+   "s": "Sam",
+   "t": "You play the flute so well. How long did you practise?"
+  },
+  {
+   "s": "Diana",
+   "t": "Every day for two hours, even at weekends."
+  },
+  {
+   "s": "Sam",
+   "t": "That's hard work. Are you going to perform at the school concert?"
+  },
+  {
+   "s": "Diana",
+   "t": "Yes, next Friday. Would you like to attend?"
+  },
+  {
+   "s": "Sam",
+   "t": "It would be a pleasure. Can I bring my sister?"
+  },
+  {
+   "s": "Diana",
+   "t": "Of course. The more, the better!"
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8l-u3-3-A1",
+     "type": "choice",
+     "stem": "What did Diana win?",
+     "options": [
+      "A running race.",
+      "A book.",
+      "A trip to Seattle.",
+      "A music prize."
+     ],
+     "answer": "D",
+     "why": "winning the music prize.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u3-3-A2",
+     "type": "choice",
+     "stem": "How long did Diana practise every day?",
+     "options": [
+      "Two hours.",
+      "Twenty minutes.",
+      "Four hours.",
+      "One hour."
+     ],
+     "answer": "A",
+     "why": "Every day for two hours.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u3-3-A3",
+     "type": "choice",
+     "stem": "When is the school concert?",
+     "options": [
+      "Next Monday.",
+      "Next Friday.",
+      "Tomorrow.",
+      "Next Sunday."
+     ],
+     "answer": "B",
+     "why": "Yes, next Friday.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8l-u3-3-B1",
+     "type": "fill",
+     "stem": "Diana plays the ____.",
+     "answers": [
+      [
+       "flute"
+      ]
+     ],
+     "why": "You play the flute so well.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u3-3-B2",
+     "type": "fill",
+     "stem": "Sam wants to bring his ____.",
+     "answers": [
+      [
+       "sister"
+      ]
+     ],
+     "why": "Can I bring my sister?",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,160 @@
+{
+ "id": "g5r-u5-3",
+ "kind": "reading",
+ "title": "Lotus in the Lake",
+ "subtitle": "考点：植物与食物 / The lotus is in the lake.",
+ "unit": "E5U5",
+ "dialogue": [
+  {
+   "s": "Mrs Green",
+   "t": "Look at the lake. What can you see, class?"
+  },
+  {
+   "s": "Lily",
+   "t": "I can see a lotus. It has big round leaves."
+  },
+  {
+   "s": "Mrs Green",
+   "t": "Yes. The lotus is in the lake. It has a long stem and a root in the mud."
+  },
+  {
+   "s": "Ben",
+   "t": "Can we eat it?"
+  },
+  {
+   "s": "Mrs Green",
+   "t": "Yes. In China people eat the lotus root and the lotus seeds."
+  },
+  {
+   "s": "Ben",
+   "t": "That is interesting!"
+  },
+  {
+   "s": "Mrs Green",
+   "t": "Yes. Many foods come from plants."
+  }
+ ],
+ "vocab": "Mrs 太太 · lotus 荷花 · lake 湖 · round 圆的 · stem 茎 · root 根 · seed 种子 · interesting 有趣的",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5r-u5-3-A1",
+     "type": "choice",
+     "stem": "Where is the lotus?",
+     "options": [
+      "In the lake.",
+      "In the garden.",
+      "On the hill."
+     ],
+     "answer": "A",
+     "why": "The lotus is in the lake.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u5-3-A2",
+     "type": "choice",
+     "stem": "What shape are the leaves?",
+     "options": [
+      "Square.",
+      "Round.",
+      "Long."
+     ],
+     "answer": "B",
+     "why": "It has big round leaves.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u5-3-A3",
+     "type": "choice",
+     "stem": "What can people eat?",
+     "options": [
+      "The stem and the lake.",
+      "Only the leaves.",
+      "The root and the seeds."
+     ],
+     "answer": "C",
+     "why": "people eat the lotus root and the lotus seeds.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g5r-u5-3-B1",
+     "type": "tf",
+     "stem": "The lotus has a root in the mud.",
+     "answer": "T",
+     "why": "a root in the mud.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u5-3-B2",
+     "type": "tf",
+     "stem": "People in China cannot eat the lotus.",
+     "answer": "F",
+     "why": "In China people eat the lotus root and the lotus seeds.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u5-3-B3",
+     "type": "tf",
+     "stem": "Ben thinks it is interesting.",
+     "answer": "T",
+     "why": "That is interesting!",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5r-u5-3-C1",
+     "type": "fill",
+     "stem": "The lotus is in the ____.",
+     "answers": [
+      [
+       "lake"
+      ]
+     ],
+     "why": "The lotus is in the lake.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u5-3-C2",
+     "type": "fill",
+     "stem": "It has big ____ leaves.",
+     "answers": [
+      [
+       "round"
+      ]
+     ],
+     "why": "It has big round leaves.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u5-3-C3",
+     "type": "fill",
+     "stem": "It has a long ____.",
+     "answers": [
+      [
+       "stem"
+      ]
+     ],
+     "why": "It has a long stem.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

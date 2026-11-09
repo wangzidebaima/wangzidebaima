@@ -1,0 +1,160 @@
+{
+ "id": "g5r-u2-1",
+ "kind": "reading",
+ "title": "What's the Matter?",
+ "subtitle": "考点：询问感受 / What's the matter?",
+ "unit": "E5U2",
+ "dialogue": [
+  {
+   "s": "Mike",
+   "t": "Amy, what's the matter? You look sad."
+  },
+  {
+   "s": "Amy",
+   "t": "I lost my red pen. It was a gift from my mother."
+  },
+  {
+   "s": "Mike",
+   "t": "Don't be sad. Let's look for it together."
+  },
+  {
+   "s": "Amy",
+   "t": "Thank you. I am worried because I need it for the test."
+  },
+  {
+   "s": "Mike",
+   "t": "Is this your pen?"
+  },
+  {
+   "s": "Amy",
+   "t": "Yes, it is! It was under my chair. Thanks, Mike!"
+  },
+  {
+   "s": "Mike",
+   "t": "You are welcome. Now you can laugh again."
+  }
+ ],
+ "vocab": "sad 难过的 · matter 问题 · worried 担心的 · laugh 笑 · test 测验 · together 一起",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5r-u2-1-A1",
+     "type": "choice",
+     "stem": "Why is Amy sad?",
+     "options": [
+      "She is angry with Mike.",
+      "She lost her red pen.",
+      "She missed the bus."
+     ],
+     "answer": "B",
+     "why": "I lost my red pen.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u2-1-A2",
+     "type": "choice",
+     "stem": "Where was the pen?",
+     "options": [
+      "In her bag.",
+      "On the desk.",
+      "Under her chair."
+     ],
+     "answer": "C",
+     "why": "It was under my chair.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u2-1-A3",
+     "type": "choice",
+     "stem": "Who gave Amy the pen?",
+     "options": [
+      "Her mother.",
+      "Her father.",
+      "Mike."
+     ],
+     "answer": "A",
+     "why": "It was a gift from my mother.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g5r-u2-1-B1",
+     "type": "tf",
+     "stem": "Mike helps Amy look for the pen.",
+     "answer": "T",
+     "why": "Let's look for it together.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u2-1-B2",
+     "type": "tf",
+     "stem": "Amy is worried about the test.",
+     "answer": "T",
+     "why": "I am worried because I need it for the test.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u2-1-B3",
+     "type": "tf",
+     "stem": "The pen is Mike's.",
+     "answer": "F",
+     "why": "Yes, it is! (Amy's pen)",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5r-u2-1-C1",
+     "type": "fill",
+     "stem": "Amy lost her red ____.",
+     "answers": [
+      [
+       "pen"
+      ]
+     ],
+     "why": "I lost my red pen.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u2-1-C2",
+     "type": "fill",
+     "stem": "The pen was under her ____.",
+     "answers": [
+      [
+       "chair"
+      ]
+     ],
+     "why": "It was under my chair.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u2-1-C3",
+     "type": "fill",
+     "stem": "Mike says, Don't be ____.",
+     "answers": [
+      [
+       "sad"
+      ]
+     ],
+     "why": "Don't be sad.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

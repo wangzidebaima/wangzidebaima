@@ -1,0 +1,164 @@
+{
+ "id": "g6r-u4-2",
+ "kind": "reading",
+ "title": "The Schoolbag Sale",
+ "subtitle": "考点：现在进行时 / The shop is having a sale",
+ "unit": "E6U4",
+ "dialogue": [
+  {
+   "s": "Lily",
+   "t": "Tom, look! The shop is having a sale on schoolbags."
+  },
+  {
+   "s": "Tom",
+   "t": "Great! How much is this blue one?"
+  },
+  {
+   "s": "Lily",
+   "t": "It was sixty yuan, but today it is thirty yuan."
+  },
+  {
+   "s": "Tom",
+   "t": "That is half the price!"
+  },
+  {
+   "s": "Lily",
+   "t": "Yes. Are you going to buy one?"
+  },
+  {
+   "s": "Tom",
+   "t": "My schoolbag is old, so I want a new one."
+  },
+  {
+   "s": "Lily",
+   "t": "The sale ends on Sunday."
+  },
+  {
+   "s": "Tom",
+   "t": "I will ask my mother for money today."
+  }
+ ],
+ "vocab": "sale 促销 · schoolbag 书包 · half 一半 · price 价格 · yuan 元 · buy 买",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6r-u4-2-A1",
+     "type": "choice",
+     "stem": "What is the shop having?",
+     "options": [
+      "A race on Sunday.",
+      "A gala for children.",
+      "A sale on schoolbags."
+     ],
+     "answer": "C",
+     "why": "The shop is having a sale on schoolbags.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u4-2-A2",
+     "type": "choice",
+     "stem": "How much is the blue schoolbag today?",
+     "options": [
+      "Thirty yuan.",
+      "Sixty yuan.",
+      "Twenty yuan."
+     ],
+     "answer": "A",
+     "why": "today it is thirty yuan",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u4-2-A3",
+     "type": "choice",
+     "stem": "When does the sale end?",
+     "options": [
+      "On Monday.",
+      "On Sunday.",
+      "On Friday."
+     ],
+     "answer": "B",
+     "why": "The sale ends on Sunday.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g6r-u4-2-B1",
+     "type": "tf",
+     "stem": "The blue schoolbag was sixty yuan before.",
+     "answer": "T",
+     "why": "It was sixty yuan.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u4-2-B2",
+     "type": "tf",
+     "stem": "Tom's schoolbag is new.",
+     "answer": "F",
+     "why": "My schoolbag is old.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u4-2-B3",
+     "type": "tf",
+     "stem": "The schoolbag is half price today.",
+     "answer": "T",
+     "why": "That is half the price!",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6r-u4-2-C1",
+     "type": "fill",
+     "stem": "The shop is having a ____ on schoolbags.",
+     "answers": [
+      [
+       "sale"
+      ]
+     ],
+     "why": "having a sale",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u4-2-C2",
+     "type": "fill",
+     "stem": "Today the blue schoolbag is ____ yuan.",
+     "answers": [
+      [
+       "thirty"
+      ]
+     ],
+     "why": "today it is thirty yuan",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u4-2-C3",
+     "type": "fill",
+     "stem": "Tom's ____ is old.",
+     "answers": [
+      [
+       "schoolbag"
+      ]
+     ],
+     "why": "My schoolbag is old.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

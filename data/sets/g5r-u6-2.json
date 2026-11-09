@@ -1,0 +1,160 @@
+{
+ "id": "g5r-u6-2",
+ "kind": "reading",
+ "title": "Dangerous River",
+ "subtitle": "考点：安全提醒 / It is dangerous to swim in the river.",
+ "unit": "E5U6",
+ "dialogue": [
+  {
+   "s": "Dad",
+   "t": "Ben, it is hot today. Do you want to swim in the river?"
+  },
+  {
+   "s": "Ben",
+   "t": "Yes! The water looks nice."
+  },
+  {
+   "s": "Dad",
+   "t": "No, Ben. It is dangerous to swim in the river."
+  },
+  {
+   "s": "Ben",
+   "t": "Why?"
+  },
+  {
+   "s": "Dad",
+   "t": "It rained heavily last night. The water is deep and fast."
+  },
+  {
+   "s": "Ben",
+   "t": "OK. Let's go to the swimming pool instead."
+  },
+  {
+   "s": "Dad",
+   "t": "Good idea. Safety is important."
+  }
+ ],
+ "vocab": "river 河 · dangerous 危险的 · heavy 大的 · close 近的 · flood 洪水 · know 知道 · before 在……之前",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5r-u6-2-A1",
+     "type": "choice",
+     "stem": "What does Ben want to do?",
+     "options": [
+      "Go hiking.",
+      "Fish in the lake.",
+      "Swim in the river."
+     ],
+     "answer": "C",
+     "why": "Do you want to swim in the river? Yes!",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u6-2-A2",
+     "type": "choice",
+     "stem": "Why is the river dangerous?",
+     "options": [
+      "The water is deep and fast.",
+      "It is very cold.",
+      "It is far away."
+     ],
+     "answer": "A",
+     "why": "The water is deep and fast.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u6-2-A3",
+     "type": "choice",
+     "stem": "Where will they go?",
+     "options": [
+      "The forest.",
+      "The swimming pool.",
+      "The hotel."
+     ],
+     "answer": "B",
+     "why": "Let's go to the swimming pool instead.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g5r-u6-2-B1",
+     "type": "tf",
+     "stem": "It rained heavily last night.",
+     "answer": "T",
+     "why": "It rained heavily last night.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u6-2-B2",
+     "type": "tf",
+     "stem": "Dad says it is safe to swim in the river.",
+     "answer": "F",
+     "why": "It is dangerous to swim in the river.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u6-2-B3",
+     "type": "tf",
+     "stem": "Ben agrees to go to the pool.",
+     "answer": "T",
+     "why": "OK. Let's go to the swimming pool instead.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5r-u6-2-C1",
+     "type": "fill",
+     "stem": "It is ____ to swim in the river.",
+     "answers": [
+      [
+       "dangerous"
+      ]
+     ],
+     "why": "It is dangerous to swim in the river.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u6-2-C2",
+     "type": "fill",
+     "stem": "It rained ____ last night.",
+     "answers": [
+      [
+       "heavily"
+      ]
+     ],
+     "why": "It rained heavily last night.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u6-2-C3",
+     "type": "fill",
+     "stem": "The water is deep and ____.",
+     "answers": [
+      [
+       "fast"
+      ]
+     ],
+     "why": "The water is deep and fast.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

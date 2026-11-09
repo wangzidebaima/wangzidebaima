@@ -1,0 +1,148 @@
+{
+ "id": "g3r-u4-4",
+ "kind": "reading",
+ "title": "Farm Day",
+ "subtitle": "考点：农场里的植物 / Plants give us apples.",
+ "unit": "E3U4",
+ "dialogue": [
+  {
+   "s": "Sam",
+   "t": "We go to the farm today."
+  },
+  {
+   "s": "Lily",
+   "t": "I see grass and trees."
+  },
+  {
+   "s": "Sam",
+   "t": "Look at the apples! They are red."
+  },
+  {
+   "s": "Lily",
+   "t": "I like apples. Plants give us apples. Thank you, trees!"
+  }
+ ],
+ "vocab": "farm 农场 · grass 草 · tree 树 · apple 苹果 · plant 植物 · give 给",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3r-u4-4-A1",
+     "type": "choice",
+     "stem": "Where are they?",
+     "options": [
+      "At school.",
+      "On a farm.",
+      "At the zoo."
+     ],
+     "answer": "B",
+     "why": "We go to the farm today.",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u4-4-A2",
+     "type": "choice",
+     "stem": "What do the trees give us?",
+     "options": [
+      "Fish.",
+      "Cake.",
+      "Apples."
+     ],
+     "answer": "C",
+     "why": "Plants give us apples.",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u4-4-A3",
+     "type": "choice",
+     "stem": "What does Lily see?",
+     "options": [
+      "Grass and trees.",
+      "Dogs and cats.",
+      "Fish and birds."
+     ],
+     "answer": "A",
+     "why": "I see grass and trees.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g3r-u4-4-B1",
+     "type": "tf",
+     "stem": "They are at a farm.",
+     "answer": "T",
+     "why": "We go to the farm today.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u4-4-B2",
+     "type": "tf",
+     "stem": "Lily does not like apples.",
+     "answer": "F",
+     "why": "I like apples.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u4-4-B3",
+     "type": "tf",
+     "stem": "Lily says plants give us apples.",
+     "answer": "T",
+     "why": "Plants give us apples.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3r-u4-4-C1",
+     "type": "fill",
+     "stem": "They go to the ____.",
+     "answers": [
+      [
+       "farm"
+      ]
+     ],
+     "why": "We go to the farm today.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u4-4-C2",
+     "type": "fill",
+     "stem": "The apples are ____.",
+     "answers": [
+      [
+       "red"
+      ]
+     ],
+     "why": "They are red.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u4-4-C3",
+     "type": "fill",
+     "stem": "Plants give us ____.",
+     "answers": [
+      [
+       "apples"
+      ]
+     ],
+     "why": "Plants give us apples.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

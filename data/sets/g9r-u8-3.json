@@ -1,0 +1,151 @@
+{
+ "id": "g9r-u8-3",
+ "kind": "reading",
+ "title": "The Olympic Games, Then and Now",
+ "subtitle": "考点：奥运历史 / Greek, ceremony, worldwide",
+ "unit": "E9U8",
+ "passage": [
+  "The first Olympic Games were held in ancient Greece more than two thousand years ago. At that time, only men took part, and the Games were in honour of the Greek gods. The athletes ran, jumped and threw things, and the winners received crowns made of olive leaves, not gold medals.",
+  "The modern Olympic Games began in 1896 in Athens, Greece. Today they are held every four years in different cities, and athletes from all over the world compete. There are opening and closing ceremonies, and the athletes march into the stadium with their national flags. Millions of people watch the Games on TV. The Olympic motto is 'Faster, Higher, Stronger', and it reminds everyone to try their best and respect other players."
+ ],
+ "vocab": "ancient 古代的 · Greek 希腊的 · athlete 运动员 · ceremony 仪式 · motto 格言 · respect 尊重",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9r-u8-3-A1",
+     "type": "choice",
+     "stem": "Where were the first Olympic Games held?",
+     "options": [
+      "In Rome.",
+      "In China.",
+      "In the United States.",
+      "In ancient Greece."
+     ],
+     "answer": "D",
+     "why": "held in ancient Greece more than two thousand years ago.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u8-3-A2",
+     "type": "choice",
+     "stem": "What did winners receive in ancient times?",
+     "options": [
+      "Crowns made of olive leaves.",
+      "Gold medals.",
+      "Money.",
+      "Silver cups."
+     ],
+     "answer": "A",
+     "why": "crowns made of olive leaves, not gold medals.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u8-3-A3",
+     "type": "choice",
+     "stem": "When did the modern Games begin?",
+     "options": [
+      "In 1796.",
+      "In 1896.",
+      "In 1996.",
+      "In 1696."
+     ],
+     "answer": "B",
+     "why": "The modern Olympic Games began in 1896",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u8-3-A4",
+     "type": "choice",
+     "stem": "What does the Olympic motto remind people to do?",
+     "options": [
+      "Win at any cost.",
+      "Stay at home.",
+      "Try their best and respect other players.",
+      "Buy tickets early."
+     ],
+     "answer": "C",
+     "why": "it reminds everyone to try their best and respect other players.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g9r-u8-3-B1",
+     "type": "tf",
+     "stem": "Women took part in the ancient Games.",
+     "answer": "F",
+     "why": "only men took part",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u8-3-B2",
+     "type": "tf",
+     "stem": "The modern Games are held every four years.",
+     "answer": "T",
+     "why": "held every four years in different cities",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u8-3-B3",
+     "type": "tf",
+     "stem": "The modern Games always take place in the same city.",
+     "answer": "F",
+     "why": "in different cities",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9r-u8-3-C1",
+     "type": "fill",
+     "stem": "The first Games were held in ancient ____.",
+     "answers": [
+      [
+       "Greece"
+      ]
+     ],
+     "why": "held in ancient Greece",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u8-3-C2",
+     "type": "fill",
+     "stem": "Athletes march into the stadium with their national ____.",
+     "answers": [
+      [
+       "flags"
+      ]
+     ],
+     "why": "with their national flags.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u8-3-C3",
+     "type": "fill",
+     "stem": "The Olympic ____ is 'Faster, Higher, Stronger'.",
+     "answers": [
+      [
+       "motto"
+      ]
+     ],
+     "why": "The Olympic motto is",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

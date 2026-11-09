@@ -1,0 +1,124 @@
+{
+ "id": "g6l-u1-4",
+ "kind": "listening",
+ "title": "Holiday Photos",
+ "subtitle": "对话",
+ "unit": "E6U1",
+ "speakers": {
+  "Amy": "c1",
+  "Sam": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Amy",
+   "t": "Look at my holiday photos, Sam."
+  },
+  {
+   "s": "Sam",
+   "t": "Where is this?"
+  },
+  {
+   "s": "Amy",
+   "t": "It is the Eiffel Tower in Paris. We went last summer."
+  },
+  {
+   "s": "Sam",
+   "t": "Did you climb it?"
+  },
+  {
+   "s": "Amy",
+   "t": "No. We took a lift to the top."
+  },
+  {
+   "s": "Sam",
+   "t": "What is that photo?"
+  },
+  {
+   "s": "Amy",
+   "t": "A restaurant near the tower. We ate dinner there, and the view was inspiring."
+  },
+  {
+   "s": "Sam",
+   "t": "I want to go to Paris too."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6l-u1-4-A1",
+     "type": "choice",
+     "stem": "Where is the first photo?",
+     "options": [
+      "In Hong Kong.",
+      "In Paris.",
+      "In Xi'an."
+     ],
+     "answer": "B",
+     "why": "It is the Eiffel Tower in Paris.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u1-4-A2",
+     "type": "choice",
+     "stem": "How did they go to the top?",
+     "options": [
+      "By stairs.",
+      "By bike.",
+      "By lift."
+     ],
+     "answer": "C",
+     "why": "We took a lift to the top.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u1-4-A3",
+     "type": "choice",
+     "stem": "What did they do at the restaurant?",
+     "options": [
+      "They ate dinner.",
+      "They drank tea.",
+      "They bought books."
+     ],
+     "answer": "A",
+     "why": "We ate dinner there.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6l-u1-4-B1",
+     "type": "fill",
+     "stem": "They went to Paris last ____.",
+     "answers": [
+      [
+       "summer"
+      ]
+     ],
+     "why": "We went last summer.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u1-4-B2",
+     "type": "fill",
+     "stem": "The view from the restaurant was ____.",
+     "answers": [
+      [
+       "inspiring"
+      ]
+     ],
+     "why": "the view was inspiring",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

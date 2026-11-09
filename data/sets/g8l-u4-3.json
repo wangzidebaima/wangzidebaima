@@ -1,0 +1,127 @@
+{
+ "id": "g8l-u4-3",
+ "kind": "listening",
+ "title": "Protecting the Ocean",
+ "subtitle": "对话",
+ "unit": "E8U4",
+ "speakers": {
+  "Lena": "f1",
+  "Mr Li": "m1"
+ },
+ "transcript": [
+  {
+   "s": "Lena",
+   "t": "Mr Li, why is the ocean so important?"
+  },
+  {
+   "s": "Mr Li",
+   "t": "It gives us oxygen and food, and it is home to many animals."
+  },
+  {
+   "s": "Lena",
+   "t": "I saw a video about plastic in the sea. It was sad."
+  },
+  {
+   "s": "Mr Li",
+   "t": "Yes, plastic hurts turtles and fish. They often eat it by mistake."
+  },
+  {
+   "s": "Lena",
+   "t": "What can we do to protect them?"
+  },
+  {
+   "s": "Mr Li",
+   "t": "Use fewer plastic bags and take your rubbish home from the beach."
+  },
+  {
+   "s": "Lena",
+   "t": "I will bring my own bag when I go shopping."
+  },
+  {
+   "s": "Mr Li",
+   "t": "Good. Small actions can make a big difference."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8l-u4-3-A1",
+     "type": "choice",
+     "stem": "What does the ocean give us?",
+     "options": [
+      "Only salt.",
+      "Only rain.",
+      "Only sand.",
+      "Oxygen and food."
+     ],
+     "answer": "D",
+     "why": "It gives us oxygen and food.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u4-3-A2",
+     "type": "choice",
+     "stem": "What hurts turtles and fish?",
+     "options": [
+      "Plastic.",
+      "Cold water.",
+      "Sunlight.",
+      "Sand."
+     ],
+     "answer": "A",
+     "why": "plastic hurts turtles and fish.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u4-3-A3",
+     "type": "choice",
+     "stem": "What will Lena do?",
+     "options": [
+      "Stop eating fish.",
+      "Bring her own bag when shopping.",
+      "Move to the beach.",
+      "Buy more plastic."
+     ],
+     "answer": "B",
+     "why": "I will bring my own bag when I go shopping.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8l-u4-3-B1",
+     "type": "fill",
+     "stem": "Lena saw a ____ about plastic in the sea.",
+     "answers": [
+      [
+       "video"
+      ]
+     ],
+     "why": "I saw a video.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u4-3-B2",
+     "type": "fill",
+     "stem": "Small ____ can make a big difference.",
+     "answers": [
+      [
+       "actions"
+      ]
+     ],
+     "why": "Small actions can make a big difference.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

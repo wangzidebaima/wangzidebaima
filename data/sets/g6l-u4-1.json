@@ -1,0 +1,124 @@
+{
+ "id": "g6l-u4-1",
+ "kind": "listening",
+ "title": "The Money Jar",
+ "subtitle": "对话",
+ "unit": "E6U4",
+ "speakers": {
+  "Amy": "c1",
+  "Tom": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Amy",
+   "t": "Tom, what is in that jar?"
+  },
+  {
+   "s": "Tom",
+   "t": "It is my pocket money."
+  },
+  {
+   "s": "Amy",
+   "t": "How much do you have?"
+  },
+  {
+   "s": "Tom",
+   "t": "I have forty yuan. I save five yuan every week."
+  },
+  {
+   "s": "Amy",
+   "t": "What do you want to buy?"
+  },
+  {
+   "s": "Tom",
+   "t": "A new schoolbag. The old one is dirty."
+  },
+  {
+   "s": "Amy",
+   "t": "How long will you save up?"
+  },
+  {
+   "s": "Tom",
+   "t": "About two more months."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6l-u4-1-A1",
+     "type": "choice",
+     "stem": "Where does Tom keep his money?",
+     "options": [
+      "In a box.",
+      "In a jar.",
+      "In a bank."
+     ],
+     "answer": "B",
+     "why": "what is in that jar? It is my pocket money.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u4-1-A2",
+     "type": "choice",
+     "stem": "How much does Tom save every week?",
+     "options": [
+      "Ten yuan.",
+      "Forty yuan.",
+      "Five yuan."
+     ],
+     "answer": "C",
+     "why": "I save five yuan every week.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u4-1-A3",
+     "type": "choice",
+     "stem": "What does Tom want to buy?",
+     "options": [
+      "A new schoolbag.",
+      "A new microscope.",
+      "A pair of shoes."
+     ],
+     "answer": "A",
+     "why": "A new schoolbag.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6l-u4-1-B1",
+     "type": "fill",
+     "stem": "Tom has ____ yuan in the jar.",
+     "answers": [
+      [
+       "forty"
+      ]
+     ],
+     "why": "I have forty yuan.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u4-1-B2",
+     "type": "fill",
+     "stem": "Tom will save for about two more ____.",
+     "answers": [
+      [
+       "months"
+      ]
+     ],
+     "why": "About two more months.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

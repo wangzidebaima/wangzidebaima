@@ -1,0 +1,160 @@
+{
+ "id": "g5r-u4-1",
+ "kind": "reading",
+ "title": "Brush Your Teeth",
+ "subtitle": "考点：建议 / You should brush your teeth twice a day.",
+ "unit": "E5U4",
+ "dialogue": [
+  {
+   "s": "Dentist",
+   "t": "Hello, Amy. Open your mouth, please."
+  },
+  {
+   "s": "Amy",
+   "t": "Is there a problem with my teeth?"
+  },
+  {
+   "s": "Dentist",
+   "t": "Yes, a little one. Do you eat a lot of sweets?"
+  },
+  {
+   "s": "Amy",
+   "t": "Yes, I do. I like them very much."
+  },
+  {
+   "s": "Dentist",
+   "t": "You should eat less sweets. And you should brush your teeth twice a day."
+  },
+  {
+   "s": "Amy",
+   "t": "I brush them only once, in the morning."
+  },
+  {
+   "s": "Dentist",
+   "t": "Please brush them in the evening too. Then your teeth will be fine."
+  }
+ ],
+ "vocab": "dentist 牙医 · tooth 牙齿 · brush 刷 · twice 两次 · less 更少 · should 应该 · habit 习惯",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5r-u4-1-A1",
+     "type": "choice",
+     "stem": "What should Amy do twice a day?",
+     "options": [
+      "Eat sweets.",
+      "Brush her teeth.",
+      "Visit the dentist."
+     ],
+     "answer": "B",
+     "why": "You should brush your teeth twice a day.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u4-1-A2",
+     "type": "choice",
+     "stem": "When does Amy brush her teeth now?",
+     "options": [
+      "In the evening.",
+      "After lunch.",
+      "In the morning."
+     ],
+     "answer": "C",
+     "why": "I brush them only once, in the morning.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u4-1-A3",
+     "type": "choice",
+     "stem": "What should Amy eat less of?",
+     "options": [
+      "Sweets.",
+      "Rice.",
+      "Fruit."
+     ],
+     "answer": "A",
+     "why": "You should eat less sweets.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g5r-u4-1-B1",
+     "type": "tf",
+     "stem": "Amy likes sweets very much.",
+     "answer": "T",
+     "why": "I like them very much.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u4-1-B2",
+     "type": "tf",
+     "stem": "Amy brushes her teeth twice a day now.",
+     "answer": "F",
+     "why": "I brush them only once, in the morning.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u4-1-B3",
+     "type": "tf",
+     "stem": "The dentist says Amy has a little problem.",
+     "answer": "T",
+     "why": "Yes, a little one.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5r-u4-1-C1",
+     "type": "fill",
+     "stem": "You should brush your teeth ____ a day.",
+     "answers": [
+      [
+       "twice"
+      ]
+     ],
+     "why": "You should brush your teeth twice a day.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u4-1-C2",
+     "type": "fill",
+     "stem": "Amy should eat ____ sweets.",
+     "answers": [
+      [
+       "less"
+      ]
+     ],
+     "why": "You should eat less sweets.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u4-1-C3",
+     "type": "fill",
+     "stem": "Please brush them in the ____ too.",
+     "answers": [
+      [
+       "evening"
+      ]
+     ],
+     "why": "Please brush them in the evening too.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

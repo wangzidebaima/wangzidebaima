@@ -1,0 +1,160 @@
+{
+ "id": "g5r-u2-2",
+ "kind": "reading",
+ "title": "The Science Project",
+ "subtitle": "考点：同意与兴奋 / I agree with you.",
+ "unit": "E5U2",
+ "dialogue": [
+  {
+   "s": "Lily",
+   "t": "Ben, we must finish our science project on Friday."
+  },
+  {
+   "s": "Ben",
+   "t": "I am worried. We have only two days."
+  },
+  {
+   "s": "Lily",
+   "t": "Don't worry. I will make the poster and you can write the report."
+  },
+  {
+   "s": "Ben",
+   "t": "I agree with you. Let's ask Mr Wang for help."
+  },
+  {
+   "s": "Lily",
+   "t": "Good idea. We are both good at science."
+  },
+  {
+   "s": "Ben",
+   "t": "Yes. I am excited about the project now!"
+  },
+  {
+   "s": "Lily",
+   "t": "Me too. We can finish it together."
+  }
+ ],
+ "vocab": "project 项目 · finish 完成 · worried 担心的 · agree 同意 · both 两者都 · excited 兴奋的",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5r-u2-2-A1",
+     "type": "choice",
+     "stem": "When must they finish the project?",
+     "options": [
+      "On Monday.",
+      "On Sunday.",
+      "On Friday."
+     ],
+     "answer": "C",
+     "why": "We must finish our science project on Friday.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u2-2-A2",
+     "type": "choice",
+     "stem": "Who will make the poster?",
+     "options": [
+      "Lily",
+      "Ben",
+      "Mr Wang"
+     ],
+     "answer": "A",
+     "why": "I will make the poster.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u2-2-A3",
+     "type": "choice",
+     "stem": "How does Ben feel at the end?",
+     "options": [
+      "Angry.",
+      "Excited.",
+      "Afraid."
+     ],
+     "answer": "B",
+     "why": "I am excited about the project now!",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g5r-u2-2-B1",
+     "type": "tf",
+     "stem": "Ben is worried at first.",
+     "answer": "T",
+     "why": "I am worried.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u2-2-B2",
+     "type": "tf",
+     "stem": "Ben will make the poster.",
+     "answer": "F",
+     "why": "Lily will make the poster.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u2-2-B3",
+     "type": "tf",
+     "stem": "They will ask Mr Wang for help.",
+     "answer": "T",
+     "why": "Let's ask Mr Wang for help.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5r-u2-2-C1",
+     "type": "fill",
+     "stem": "They have only two ____.",
+     "answers": [
+      [
+       "days"
+      ]
+     ],
+     "why": "We have only two days.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u2-2-C2",
+     "type": "fill",
+     "stem": "Ben can write the ____.",
+     "answers": [
+      [
+       "report"
+      ]
+     ],
+     "why": "You can write the report.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u2-2-C3",
+     "type": "fill",
+     "stem": "Lily and Ben are ____ good at science.",
+     "answers": [
+      [
+       "both"
+      ]
+     ],
+     "why": "We are both good at science.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

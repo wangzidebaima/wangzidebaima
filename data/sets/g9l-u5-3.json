@@ -1,0 +1,123 @@
+{
+ "id": "g9l-u5-3",
+ "kind": "listening",
+ "title": "A Report on the Telephone",
+ "subtitle": "对话",
+ "unit": "E9U5",
+ "speakers": {
+  "Lily": "f1",
+  "Tom": "m1"
+ },
+ "transcript": [
+  {
+   "s": "Lily",
+   "t": "Tom, my history report is about the telephone."
+  },
+  {
+   "s": "Tom",
+   "t": "Who invented it?"
+  },
+  {
+   "s": "Lily",
+   "t": "Alexander Bell. He made the first successful telephone call in 1876."
+  },
+  {
+   "s": "Tom",
+   "t": "Before that, how did people send messages quickly?"
+  },
+  {
+   "s": "Lily",
+   "t": "They used telegrams, which sent signals along wires."
+  },
+  {
+   "s": "Tom",
+   "t": "And now we carry phones in our pockets! Can I read your report when it is ready?"
+  },
+  {
+   "s": "Lily",
+   "t": "Sure. Phones have changed greatly. They can take photos and show maps. I will finish the report on Sunday."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9l-u5-3-A1",
+     "type": "choice",
+     "stem": "What is Lily's report about?",
+     "options": [
+      "The camera.",
+      "The printer.",
+      "The glider.",
+      "The telephone."
+     ],
+     "answer": "D",
+     "why": "my history report is about the telephone.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u5-3-A2",
+     "type": "choice",
+     "stem": "When was the first successful telephone call?",
+     "options": [
+      "In 1876.",
+      "In 1796.",
+      "In 1936.",
+      "In 1986."
+     ],
+     "answer": "A",
+     "why": "the first successful telephone call in 1876.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u5-3-A3",
+     "type": "choice",
+     "stem": "What did telegrams do?",
+     "options": [
+      "Carried letters by horse.",
+      "Sent signals along wires.",
+      "Showed pictures.",
+      "Played music."
+     ],
+     "answer": "B",
+     "why": "telegrams, which sent signals along wires.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9l-u5-3-B1",
+     "type": "fill",
+     "stem": "Phones can take photos and show ____.",
+     "answers": [
+      [
+       "maps"
+      ]
+     ],
+     "why": "take photos and show maps.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u5-3-B2",
+     "type": "fill",
+     "stem": "Lily will finish the report on ____.",
+     "answers": [
+      [
+       "sunday"
+      ]
+     ],
+     "why": "I will finish it on Sunday.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

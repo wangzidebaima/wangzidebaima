@@ -1,0 +1,108 @@
+{
+ "id": "g3l-u6-2",
+ "kind": "listening",
+ "title": "Eat the Cake",
+ "subtitle": "对话",
+ "unit": "E3U6",
+ "speakers": {
+  "Amy": "c1",
+  "Mum": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Amy",
+   "t": "Mum, cut the cake, please."
+  },
+  {
+   "s": "Mum",
+   "t": "OK. We are five."
+  },
+  {
+   "s": "Amy",
+   "t": "Five? Mum, Dad, Ben, me and Grandpa."
+  },
+  {
+   "s": "Mum",
+   "t": "Yes. Let's eat the cake!"
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3l-u6-2-A1",
+     "type": "choice",
+     "stem": "What does Amy ask Mum to do?",
+     "options": [
+      "Eat the cake.",
+      "Draw the cake.",
+      "Cut the cake."
+     ],
+     "answer": "C",
+     "why": "Mum, cut the cake, please.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u6-2-A2",
+     "type": "choice",
+     "stem": "How many people eat the cake?",
+     "options": [
+      "Five.",
+      "Four.",
+      "Six."
+     ],
+     "answer": "A",
+     "why": "We are five.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u6-2-A3",
+     "type": "choice",
+     "stem": "What does Mum say at the end?",
+     "options": [
+      "Let's draw a cake!",
+      "Let's eat the cake!",
+      "Let's go to school!"
+     ],
+     "answer": "B",
+     "why": "Let's eat the cake!",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3l-u6-2-B1",
+     "type": "fill",
+     "stem": "Mum says, \"We are ____.\"",
+     "answers": [
+      [
+       "five"
+      ]
+     ],
+     "why": "We are five.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u6-2-B2",
+     "type": "fill",
+     "stem": "Mum, Dad, Ben, me and ____.",
+     "answers": [
+      [
+       "grandpa"
+      ]
+     ],
+     "why": "Mum, Dad, Ben, me and Grandpa.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

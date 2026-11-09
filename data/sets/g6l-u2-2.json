@@ -1,0 +1,124 @@
+{
+ "id": "g6l-u2-2",
+ "kind": "listening",
+ "title": "Count Down to the New Year",
+ "subtitle": "对话",
+ "unit": "E6U2",
+ "speakers": {
+  "Mike": "c1",
+  "Lily": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Mike",
+   "t": "Lily, are you going to the New Year gala?"
+  },
+  {
+   "s": "Lily",
+   "t": "Yes! We will count down together."
+  },
+  {
+   "s": "Mike",
+   "t": "Ten, nine, eight ..."
+  },
+  {
+   "s": "Lily",
+   "t": "Ha ha, not yet! It starts at nine in the evening."
+  },
+  {
+   "s": "Mike",
+   "t": "Who will sing?"
+  },
+  {
+   "s": "Lily",
+   "t": "Our music teacher will sing, and my friends will dance."
+  },
+  {
+   "s": "Mike",
+   "t": "I can't wait!"
+  },
+  {
+   "s": "Lily",
+   "t": "Me neither. It will be exciting."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6l-u2-2-A1",
+     "type": "choice",
+     "stem": "What will people do together?",
+     "options": [
+      "Run a race.",
+      "Read books.",
+      "Count down."
+     ],
+     "answer": "C",
+     "why": "We will count down together.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u2-2-A2",
+     "type": "choice",
+     "stem": "When does the gala start?",
+     "options": [
+      "At nine in the evening.",
+      "At six in the morning.",
+      "At two in the afternoon."
+     ],
+     "answer": "A",
+     "why": "It starts at nine in the evening.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u2-2-A3",
+     "type": "choice",
+     "stem": "Who will dance?",
+     "options": [
+      "Mike's uncle.",
+      "Lily's friends.",
+      "The music teacher."
+     ],
+     "answer": "B",
+     "why": "my friends will dance",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6l-u2-2-B1",
+     "type": "fill",
+     "stem": "Lily's friends will ____.",
+     "answers": [
+      [
+       "dance"
+      ]
+     ],
+     "why": "my friends will dance",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u2-2-B2",
+     "type": "fill",
+     "stem": "The gala starts at ____ in the evening.",
+     "answers": [
+      [
+       "nine"
+      ]
+     ],
+     "why": "It starts at nine in the evening.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

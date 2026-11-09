@@ -1,0 +1,152 @@
+{
+ "id": "g3r-u2-4",
+ "kind": "reading",
+ "title": "Grandpa and Grandma",
+ "subtitle": "考点：描述家人 / He is tall and big.",
+ "unit": "E3U2",
+ "dialogue": [
+  {
+   "s": "Ben",
+   "t": "I have a grandpa and a grandma."
+  },
+  {
+   "s": "Lily",
+   "t": "Is your grandpa big?"
+  },
+  {
+   "s": "Ben",
+   "t": "Yes, he is tall and big. My grandma is small."
+  },
+  {
+   "s": "Lily",
+   "t": "Do you love them?"
+  },
+  {
+   "s": "Ben",
+   "t": "Yes! They are my family."
+  }
+ ],
+ "vocab": "grandpa 爷爷/外公 · grandma 奶奶/外婆 · tall 高的 · big 大的 · small 小的 · love 爱",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3r-u2-4-A1",
+     "type": "choice",
+     "stem": "Who is big?",
+     "options": [
+      "Ben's grandma.",
+      "Ben's grandpa.",
+      "Ben's sister."
+     ],
+     "answer": "B",
+     "why": "He is tall and big. (Ben's grandpa)",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u2-4-A2",
+     "type": "choice",
+     "stem": "Who is small?",
+     "options": [
+      "Ben's grandpa.",
+      "Ben's dad.",
+      "Ben's grandma."
+     ],
+     "answer": "C",
+     "why": "My grandma is small.",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u2-4-A3",
+     "type": "choice",
+     "stem": "Who has a grandpa and a grandma?",
+     "options": [
+      "Ben",
+      "Lily",
+      "Tom"
+     ],
+     "answer": "A",
+     "why": "Ben: I have a grandpa and a grandma.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g3r-u2-4-B1",
+     "type": "tf",
+     "stem": "Ben's grandma is big.",
+     "answer": "F",
+     "why": "My grandma is small.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u2-4-B2",
+     "type": "tf",
+     "stem": "Ben has a grandpa and a grandma.",
+     "answer": "T",
+     "why": "I have a grandpa and a grandma.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u2-4-B3",
+     "type": "tf",
+     "stem": "Ben's grandma is tall.",
+     "answer": "F",
+     "why": "My grandma is small.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3r-u2-4-C1",
+     "type": "fill",
+     "stem": "Ben has a ____ and a grandma.",
+     "answers": [
+      [
+       "grandpa"
+      ]
+     ],
+     "why": "I have a grandpa and a grandma.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u2-4-C2",
+     "type": "fill",
+     "stem": "Ben's grandpa is tall and ____.",
+     "answers": [
+      [
+       "big"
+      ]
+     ],
+     "why": "He is tall and big.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u2-4-C3",
+     "type": "fill",
+     "stem": "Ben's grandma is ____.",
+     "answers": [
+      [
+       "small"
+      ]
+     ],
+     "why": "My grandma is small.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

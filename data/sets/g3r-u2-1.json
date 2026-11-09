@@ -1,0 +1,156 @@
+{
+ "id": "g3r-u2-1",
+ "kind": "reading",
+ "title": "My Family",
+ "subtitle": "考点：介绍家人 / He is my ... She is my ...",
+ "unit": "E3U2",
+ "dialogue": [
+  {
+   "s": "Tom",
+   "t": "Who is this man, Amy?"
+  },
+  {
+   "s": "Amy",
+   "t": "He is my father."
+  },
+  {
+   "s": "Tom",
+   "t": "Who is she?"
+  },
+  {
+   "s": "Amy",
+   "t": "She is my grandma."
+  },
+  {
+   "s": "Tom",
+   "t": "And who is the baby?"
+  },
+  {
+   "s": "Amy",
+   "t": "The baby is my cousin."
+  }
+ ],
+ "vocab": "family 家庭 · father 爸爸 · grandma 奶奶/外婆 · baby 婴儿 · cousin 堂/表兄弟姐妹 · who 谁",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3r-u2-1-A1",
+     "type": "choice",
+     "stem": "Who is the man?",
+     "options": [
+      "Amy's uncle.",
+      "Amy's father.",
+      "Amy's grandpa."
+     ],
+     "answer": "B",
+     "why": "He is my father.",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u2-1-A2",
+     "type": "choice",
+     "stem": "Who is the baby?",
+     "options": [
+      "Amy's sister.",
+      "Amy's brother.",
+      "Amy's cousin."
+     ],
+     "answer": "C",
+     "why": "The baby is my cousin.",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u2-1-A3",
+     "type": "choice",
+     "stem": "Who asks the questions?",
+     "options": [
+      "Tom",
+      "Mike",
+      "Ben"
+     ],
+     "answer": "A",
+     "why": "Tom: Who is this man, Amy?",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g3r-u2-1-B1",
+     "type": "tf",
+     "stem": "The man is Amy's father.",
+     "answer": "T",
+     "why": "He is my father.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u2-1-B2",
+     "type": "tf",
+     "stem": "The baby is Amy's brother.",
+     "answer": "F",
+     "why": "The baby is my cousin.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u2-1-B3",
+     "type": "tf",
+     "stem": "The baby is Amy's cousin.",
+     "answer": "T",
+     "why": "The baby is my cousin.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3r-u2-1-C1",
+     "type": "fill",
+     "stem": "The man is Amy's ____.",
+     "answers": [
+      [
+       "father"
+      ]
+     ],
+     "why": "He is my father.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u2-1-C2",
+     "type": "fill",
+     "stem": "Amy says, \"She is my ____.\"",
+     "answers": [
+      [
+       "grandma"
+      ]
+     ],
+     "why": "She is my grandma.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u2-1-C3",
+     "type": "fill",
+     "stem": "The ____ is Amy's cousin.",
+     "answers": [
+      [
+       "baby"
+      ]
+     ],
+     "why": "The baby is my cousin.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

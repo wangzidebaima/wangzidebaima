@@ -1,0 +1,160 @@
+{
+ "id": "g5r-u2-4",
+ "kind": "reading",
+ "title": "The Class Trip",
+ "subtitle": "考点：害怕与兴奋 / Don't be afraid.",
+ "unit": "E5U2",
+ "dialogue": [
+  {
+   "s": "Amy",
+   "t": "Are you excited about the trip to the science centre?"
+  },
+  {
+   "s": "Sam",
+   "t": "Yes! But I am a little afraid of the big robot there."
+  },
+  {
+   "s": "Amy",
+   "t": "Don't be afraid. It can move and talk, but it is friendly."
+  },
+  {
+   "s": "Sam",
+   "t": "Really? Then I will ask it a question."
+  },
+  {
+   "s": "Amy",
+   "t": "Our parents can come too."
+  },
+  {
+   "s": "Sam",
+   "t": "Great! My father will take photos."
+  },
+  {
+   "s": "Amy",
+   "t": "Let's finish our homework first. The bus leaves at eight tomorrow."
+  }
+ ],
+ "vocab": "excited 兴奋的 · centre 中心 · afraid 害怕的 · move 移动 · parent 家长 · finish 完成",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5r-u2-4-A1",
+     "type": "choice",
+     "stem": "Where is the class trip to?",
+     "options": [
+      "A park.",
+      "The science centre.",
+      "A farm."
+     ],
+     "answer": "B",
+     "why": "the trip to the science centre",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u2-4-A2",
+     "type": "choice",
+     "stem": "What is Sam afraid of?",
+     "options": [
+      "A dog.",
+      "The bus.",
+      "The big robot."
+     ],
+     "answer": "C",
+     "why": "I am a little afraid of the big robot there.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u2-4-A3",
+     "type": "choice",
+     "stem": "When does the bus leave?",
+     "options": [
+      "At eight tomorrow.",
+      "At nine tomorrow.",
+      "At seven tomorrow."
+     ],
+     "answer": "A",
+     "why": "The bus leaves at eight tomorrow.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g5r-u2-4-B1",
+     "type": "tf",
+     "stem": "The robot is friendly.",
+     "answer": "T",
+     "why": "It can move and talk, but it is friendly.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u2-4-B2",
+     "type": "tf",
+     "stem": "Parents cannot come on the trip.",
+     "answer": "F",
+     "why": "Our parents can come too.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u2-4-B3",
+     "type": "tf",
+     "stem": "Sam's father will take photos.",
+     "answer": "T",
+     "why": "My father will take photos.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5r-u2-4-C1",
+     "type": "fill",
+     "stem": "The robot can move and ____.",
+     "answers": [
+      [
+       "talk"
+      ]
+     ],
+     "why": "It can move and talk.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u2-4-C2",
+     "type": "fill",
+     "stem": "My father will take ____.",
+     "answers": [
+      [
+       "photos"
+      ]
+     ],
+     "why": "My father will take photos.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u2-4-C3",
+     "type": "fill",
+     "stem": "Let's finish our ____ first.",
+     "answers": [
+      [
+       "homework"
+      ]
+     ],
+     "why": "Let's finish our homework first.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,164 @@
+{
+ "id": "g6r-u3-4",
+ "kind": "reading",
+ "title": "At the Doctor's",
+ "subtitle": "考点：一般过去时 / You will be better soon",
+ "unit": "E6U3",
+ "dialogue": [
+  {
+   "s": "Amy",
+   "t": "Sam, why are you coughing?"
+  },
+  {
+   "s": "Sam",
+   "t": "I have a cough, and my head hurts."
+  },
+  {
+   "s": "Amy",
+   "t": "Did you go to the doctor?"
+  },
+  {
+   "s": "Sam",
+   "t": "Yes. I went with my father yesterday."
+  },
+  {
+   "s": "Amy",
+   "t": "What did the doctor say?"
+  },
+  {
+   "s": "Sam",
+   "t": "She said, 'Take medicine, drink water and sleep early.'"
+  },
+  {
+   "s": "Amy",
+   "t": "You will be better soon."
+  },
+  {
+   "s": "Sam",
+   "t": "Thank you, Amy."
+  }
+ ],
+ "vocab": "cough 咳嗽 · head 头 · medicine 药 · doctor 医生 · early 早 · better 更好的",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6r-u3-4-A1",
+     "type": "choice",
+     "stem": "What is wrong with Sam?",
+     "options": [
+      "He has a fever and a runny nose.",
+      "He has a cough and a headache.",
+      "He has a sore foot."
+     ],
+     "answer": "B",
+     "why": "I have a cough, and my head hurts.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u3-4-A2",
+     "type": "choice",
+     "stem": "Who went to the doctor with Sam?",
+     "options": [
+      "His mother.",
+      "His friend.",
+      "His father."
+     ],
+     "answer": "C",
+     "why": "I went with my father yesterday.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u3-4-A3",
+     "type": "choice",
+     "stem": "What did the doctor tell Sam to do?",
+     "options": [
+      "Take medicine, drink water and sleep early.",
+      "Run and play outside.",
+      "Eat cold ice cream."
+     ],
+     "answer": "A",
+     "why": "Take medicine, drink water and sleep early.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g6r-u3-4-B1",
+     "type": "tf",
+     "stem": "Sam has a cough.",
+     "answer": "T",
+     "why": "I have a cough.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u3-4-B2",
+     "type": "tf",
+     "stem": "Sam went to the doctor alone.",
+     "answer": "F",
+     "why": "He went with his father.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u3-4-B3",
+     "type": "tf",
+     "stem": "Amy says Sam will be better soon.",
+     "answer": "T",
+     "why": "You will be better soon.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6r-u3-4-C1",
+     "type": "fill",
+     "stem": "Sam's ____ hurts.",
+     "answers": [
+      [
+       "head"
+      ]
+     ],
+     "why": "my head hurts",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u3-4-C2",
+     "type": "fill",
+     "stem": "Sam went to the doctor with his ____.",
+     "answers": [
+      [
+       "father"
+      ]
+     ],
+     "why": "I went with my father",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u3-4-C3",
+     "type": "fill",
+     "stem": "The doctor said Sam should drink ____.",
+     "answers": [
+      [
+       "water"
+      ]
+     ],
+     "why": "drink water",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

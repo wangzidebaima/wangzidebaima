@@ -1,0 +1,112 @@
+{
+ "id": "g3l-u5-4",
+ "kind": "listening",
+ "title": "Three Ducks",
+ "subtitle": "对话",
+ "unit": "E3U5",
+ "speakers": {
+  "Sam": "c1",
+  "Amy": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Sam",
+   "t": "I see three ducks."
+  },
+  {
+   "s": "Amy",
+   "t": "What colour are they?"
+  },
+  {
+   "s": "Sam",
+   "t": "One is white. One is yellow. One is brown."
+  },
+  {
+   "s": "Amy",
+   "t": "I like the yellow duck."
+  },
+  {
+   "s": "Sam",
+   "t": "Me, too!"
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3l-u5-4-A1",
+     "type": "choice",
+     "stem": "How many ducks does Sam see?",
+     "options": [
+      "Two.",
+      "Three.",
+      "Four."
+     ],
+     "answer": "B",
+     "why": "I see three ducks.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u5-4-A2",
+     "type": "choice",
+     "stem": "What colour is the first duck?",
+     "options": [
+      "Blue.",
+      "Green.",
+      "White."
+     ],
+     "answer": "C",
+     "why": "One is white.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u5-4-A3",
+     "type": "choice",
+     "stem": "What colour is the last duck?",
+     "options": [
+      "Brown.",
+      "Black.",
+      "Pink."
+     ],
+     "answer": "A",
+     "why": "One is brown.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3l-u5-4-B1",
+     "type": "fill",
+     "stem": "Sam sees ____ ducks.",
+     "answers": [
+      [
+       "three"
+      ]
+     ],
+     "why": "I see three ducks.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u5-4-B2",
+     "type": "fill",
+     "stem": "The last duck is ____.",
+     "answers": [
+      [
+       "brown"
+      ]
+     ],
+     "why": "One is brown.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,120 @@
+{
+ "id": "g5l-u4-1",
+ "kind": "listening",
+ "title": "Healthy Habits",
+ "subtitle": "对话",
+ "unit": "E5U4",
+ "speakers": {
+  "Dr Li": "c1",
+  "Tom": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Dr Li",
+   "t": "Tom, do you have good habits?"
+  },
+  {
+   "s": "Tom",
+   "t": "I think so. I brush my teeth twice a day."
+  },
+  {
+   "s": "Dr Li",
+   "t": "Good. Do you do exercise?"
+  },
+  {
+   "s": "Tom",
+   "t": "Yes. I run every morning."
+  },
+  {
+   "s": "Dr Li",
+   "t": "How about sleep?"
+  },
+  {
+   "s": "Tom",
+   "t": "I go to bed at nine. I take enough rest."
+  },
+  {
+   "s": "Dr Li",
+   "t": "Great. Keep it up."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5l-u4-1-A1",
+     "type": "choice",
+     "stem": "How often does Tom brush his teeth?",
+     "options": [
+      "Once a day.",
+      "Twice a day.",
+      "Three times a day."
+     ],
+     "answer": "B",
+     "why": "I brush my teeth twice a day.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u4-1-A2",
+     "type": "choice",
+     "stem": "When does Tom run?",
+     "options": [
+      "Every evening.",
+      "Every weekend.",
+      "Every morning."
+     ],
+     "answer": "C",
+     "why": "I run every morning.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u4-1-A3",
+     "type": "choice",
+     "stem": "When does Tom go to bed?",
+     "options": [
+      "At nine.",
+      "At ten.",
+      "At eight."
+     ],
+     "answer": "A",
+     "why": "I go to bed at nine.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5l-u4-1-B1",
+     "type": "fill",
+     "stem": "Tom runs every ____.",
+     "answers": [
+      [
+       "morning"
+      ]
+     ],
+     "why": "I run every morning.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u4-1-B2",
+     "type": "fill",
+     "stem": "Tom takes enough ____.",
+     "answers": [
+      [
+       "rest"
+      ]
+     ],
+     "why": "I take enough rest.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

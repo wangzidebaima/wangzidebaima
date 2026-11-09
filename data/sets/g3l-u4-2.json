@@ -1,0 +1,112 @@
+{
+ "id": "g3l-u4-2",
+ "kind": "listening",
+ "title": "Grapes on the Farm",
+ "subtitle": "对话",
+ "unit": "E3U4",
+ "speakers": {
+  "Mike": "c1",
+  "Lily": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Mike",
+   "t": "Look! This is a farm."
+  },
+  {
+   "s": "Lily",
+   "t": "I see grass and trees."
+  },
+  {
+   "s": "Mike",
+   "t": "The grapes are purple."
+  },
+  {
+   "s": "Lily",
+   "t": "I like grapes."
+  },
+  {
+   "s": "Mike",
+   "t": "Let's eat some grapes."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3l-u4-2-A1",
+     "type": "choice",
+     "stem": "What does Lily see?",
+     "options": [
+      "Dogs and cats.",
+      "Cakes and books.",
+      "Grass and trees."
+     ],
+     "answer": "C",
+     "why": "I see grass and trees.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u4-2-A2",
+     "type": "choice",
+     "stem": "What colour are the grapes?",
+     "options": [
+      "Purple.",
+      "Pink.",
+      "Blue."
+     ],
+     "answer": "A",
+     "why": "The grapes are purple.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u4-2-A3",
+     "type": "choice",
+     "stem": "What will they eat?",
+     "options": [
+      "Apples.",
+      "Grapes.",
+      "Cakes."
+     ],
+     "answer": "B",
+     "why": "Let's eat some grapes.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3l-u4-2-B1",
+     "type": "fill",
+     "stem": "Lily likes ____.",
+     "answers": [
+      [
+       "grapes"
+      ]
+     ],
+     "why": "I like grapes.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u4-2-B2",
+     "type": "fill",
+     "stem": "The grapes are ____.",
+     "answers": [
+      [
+       "purple"
+      ]
+     ],
+     "why": "The grapes are purple.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

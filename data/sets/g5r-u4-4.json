@@ -1,0 +1,160 @@
+{
+ "id": "g5r-u4-4",
+ "kind": "reading",
+ "title": "Take Care of Yourself",
+ "subtitle": "考点：关心他人 / Take care of yourself.",
+ "unit": "E5U4",
+ "dialogue": [
+  {
+   "s": "Amy",
+   "t": "Sam, you are not at school today. Are you OK?"
+  },
+  {
+   "s": "Sam",
+   "t": "I am at home. I had a cold, but I am better now."
+  },
+  {
+   "s": "Amy",
+   "t": "Take care of yourself. Did you see a doctor?"
+  },
+  {
+   "s": "Sam",
+   "t": "Yes. The doctor says I should rest and eat healthy food."
+  },
+  {
+   "s": "Amy",
+   "t": "That is a good habit. I eat fruit and vegetables every day."
+  },
+  {
+   "s": "Sam",
+   "t": "I will do the same. Thank you for calling."
+  },
+  {
+   "s": "Amy",
+   "t": "You are welcome. See you on Monday!"
+  }
+ ],
+ "vocab": "take care of 照顾 · rest 休息 · habit 习惯 · check 检查 · stay 待 · enough 足够的",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5r-u4-4-A1",
+     "type": "choice",
+     "stem": "Where is Sam today?",
+     "options": [
+      "At school.",
+      "At home.",
+      "At the park."
+     ],
+     "answer": "B",
+     "why": "I am at home.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u4-4-A2",
+     "type": "choice",
+     "stem": "What does the doctor say Sam should do?",
+     "options": [
+      "Run every day.",
+      "Play ping-pong.",
+      "Rest and eat healthy food."
+     ],
+     "answer": "C",
+     "why": "I should rest and eat healthy food.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u4-4-A3",
+     "type": "choice",
+     "stem": "When will Amy see Sam?",
+     "options": [
+      "On Monday.",
+      "On Friday.",
+      "On Sunday."
+     ],
+     "answer": "A",
+     "why": "See you on Monday!",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g5r-u4-4-B1",
+     "type": "tf",
+     "stem": "Sam had a cold.",
+     "answer": "T",
+     "why": "I had a cold, but I am better now.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u4-4-B2",
+     "type": "tf",
+     "stem": "Sam is still very ill.",
+     "answer": "F",
+     "why": "I am better now.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u4-4-B3",
+     "type": "tf",
+     "stem": "Amy eats fruit and vegetables every day.",
+     "answer": "T",
+     "why": "I eat fruit and vegetables every day.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5r-u4-4-C1",
+     "type": "fill",
+     "stem": "Take ____ of yourself.",
+     "answers": [
+      [
+       "care"
+      ]
+     ],
+     "why": "Take care of yourself.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u4-4-C2",
+     "type": "fill",
+     "stem": "Amy eats fruit and ____ every day.",
+     "answers": [
+      [
+       "vegetables"
+      ]
+     ],
+     "why": "I eat fruit and vegetables every day.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u4-4-C3",
+     "type": "fill",
+     "stem": "Sam says, Thank you for ____.",
+     "answers": [
+      [
+       "calling"
+      ]
+     ],
+     "why": "Thank you for calling.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

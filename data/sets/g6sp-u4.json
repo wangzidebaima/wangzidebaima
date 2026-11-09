@@ -1,0 +1,82 @@
+{
+ "id": "g6sp-u4",
+ "kind": "speaking",
+ "unit": "E6U4",
+ "title": "口语练习",
+ "subtitle": "每天 10 分钟 · 共 5 天",
+ "steps": [
+  "点 🔊 听一遍，听清语调",
+  "一句一句跟着读，声音要大，不怕错",
+  "读完点「今天完成了」打卡"
+ ],
+ "sentences": [
+  {
+   "en": "I saved up my pocket money to buy a microscope.",
+   "zh": "我攒零花钱买了一台显微镜。"
+  },
+  {
+   "en": "The shop is having a sale on schoolbags.",
+   "zh": "这家店正在打折卖书包。"
+  },
+  {
+   "en": "A ticket costs half the price today.",
+   "zh": "今天票价是半价。"
+  },
+  {
+   "en": "She sells drinks at the fair.",
+   "zh": "她在集市上卖饮料。"
+  },
+  {
+   "en": "He offers a haircut service.",
+   "zh": "他提供理发服务。"
+  },
+  {
+   "en": "I keep my money in a jar.",
+   "zh": "我把钱放在罐子里。"
+  },
+  {
+   "en": "We should manage our money well.",
+   "zh": "我们应该管好自己的钱。"
+  },
+  {
+   "en": "For example, save some every week.",
+   "zh": "例如，每周存一些。"
+  },
+  {
+   "en": "I was lucky to get a good price.",
+   "zh": "我很幸运，买到了好价钱。"
+  }
+ ],
+ "plan": [
+  {
+   "day": 1,
+   "title": "跟读第 1–3 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 2,
+   "title": "跟读第 4–6 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 3,
+   "title": "跟读第 7–9 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 4,
+   "title": "不看书，说给家长听",
+   "task": "挑 5 句最喜欢的，尽量不看书说出来",
+   "minutes": 10
+  },
+  {
+   "day": 5,
+   "title": "自己说 3 句话",
+   "task": "用 'I saved up … to buy …' 说 3 句话讲讲你想买的东西和存钱计划",
+   "minutes": 10
+  }
+ ]
+}

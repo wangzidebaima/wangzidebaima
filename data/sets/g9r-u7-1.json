@@ -1,0 +1,151 @@
+{
+ "id": "g9r-u7-1",
+ "kind": "reading",
+ "title": "Chopin, the Poet of the Piano",
+ "subtitle": "考点：音乐家 / composer, pianist, classical",
+ "unit": "E9U7",
+ "passage": [
+  "Frédéric Chopin was a famous Polish composer and pianist. He was born in Poland in 1810 and began to play the piano when he was very young. He gave his first public concert at the age of eight, and people were surprised by his gift.",
+  "When he grew up, Chopin moved to Paris and lived there for most of his life. He wrote mostly for the piano, and his music is full of feeling. Many of his pieces were inspired by Polish folk music and dances. Because his playing was so soft and romantic, people called him the 'poet of the piano'. Today, his classical music is still loved by pianists and music lovers all over the world."
+ ],
+ "vocab": "composer 作曲家 · pianist 钢琴家 · classical 古典的 · concert 音乐会 · folk 民间的 · romantic 浪漫的",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9r-u7-1-A1",
+     "type": "choice",
+     "stem": "Where was Chopin born?",
+     "options": [
+      "In Vienna.",
+      "In Poland.",
+      "In Paris.",
+      "In London."
+     ],
+     "answer": "B",
+     "why": "He was born in Poland in 1810",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u7-1-A2",
+     "type": "choice",
+     "stem": "When did he give his first public concert?",
+     "options": [
+      "At the age of eighteen.",
+      "At the age of thirty.",
+      "At the age of eight.",
+      "At the age of eighty."
+     ],
+     "answer": "C",
+     "why": "He gave his first public concert at the age of eight",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u7-1-A3",
+     "type": "choice",
+     "stem": "What inspired many of his pieces?",
+     "options": [
+      "Rock music.",
+      "Electronic sounds.",
+      "Chinese songs.",
+      "Polish folk music and dances."
+     ],
+     "answer": "D",
+     "why": "inspired by Polish folk music and dances.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u7-1-A4",
+     "type": "choice",
+     "stem": "Why was he called the 'poet of the piano'?",
+     "options": [
+      "His playing was soft and romantic.",
+      "He wrote poems every day.",
+      "He played very loudly.",
+      "He sold piano books."
+     ],
+     "answer": "A",
+     "why": "his playing was so soft and romantic, people called him the 'poet of the piano'.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g9r-u7-1-B1",
+     "type": "tf",
+     "stem": "Chopin lived in Paris for most of his life.",
+     "answer": "T",
+     "why": "moved to Paris and lived there for most of his life.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u7-1-B2",
+     "type": "tf",
+     "stem": "Chopin wrote mostly for the guitar.",
+     "answer": "F",
+     "why": "He wrote mostly for the piano",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u7-1-B3",
+     "type": "tf",
+     "stem": "His music is still loved today.",
+     "answer": "T",
+     "why": "still loved by pianists and music lovers all over the world.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9r-u7-1-C1",
+     "type": "fill",
+     "stem": "Chopin was a famous Polish ____ and pianist.",
+     "answers": [
+      [
+       "composer"
+      ]
+     ],
+     "why": "a famous Polish composer and pianist.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u7-1-C2",
+     "type": "fill",
+     "stem": "His music is full of ____.",
+     "answers": [
+      [
+       "feeling"
+      ]
+     ],
+     "why": "his music is full of feeling.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u7-1-C3",
+     "type": "fill",
+     "stem": "People call him the 'poet of the ____'.",
+     "answers": [
+      [
+       "piano"
+      ]
+     ],
+     "why": "the 'poet of the piano'.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

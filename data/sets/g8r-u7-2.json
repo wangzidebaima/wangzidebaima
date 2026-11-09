@@ -1,0 +1,152 @@
+{
+ "id": "g8r-u7-2",
+ "kind": "reading",
+ "title": "Will Robots Take Over?",
+ "subtitle": "考点：机器人与工作 / replace / depend on",
+ "unit": "E8U7",
+ "passage": [
+  "Robots are already doing jobs in factories, hospitals and shops. Some people worry that robots will take over all jobs. Experts say this is not likely. Robots can do simple, repeated tasks very well, but they cannot replace people everywhere.",
+  "Jobs that depend on creativity, such as writing, designing and teaching, will still need people. Jobs that need emotional intelligence, such as nursing and counselling, will also stay. A robot can measure your temperature, but it cannot really understand how you feel.",
+  "Robots will also create new jobs. In the future, the world will need more robot engineers and researchers. Jennifer, a young engineer, says, “Robots are tools. They help us, but people decide what to do with them.” To get ready for the future, students should learn to think, to work with others and to keep learning new things."
+ ],
+ "vocab": "robot 机器人 · replace 取代 · creativity 创造力 · emotional intelligence 情商 · depend on 取决于 · engineer 工程师 · task 任务",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8r-u7-2-A1",
+     "type": "choice",
+     "stem": "Where do robots already work?",
+     "options": [
+      "Only in space.",
+      "Only at home.",
+      "In factories, hospitals and shops.",
+      "Only in schools."
+     ],
+     "answer": "C",
+     "why": "Robots are already doing jobs in factories, hospitals and shops.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u7-2-A2",
+     "type": "choice",
+     "stem": "What can robots do very well?",
+     "options": [
+      "Teaching art.",
+      "Understanding feelings.",
+      "Writing new stories.",
+      "Simple, repeated tasks."
+     ],
+     "answer": "D",
+     "why": "Robots can do simple, repeated tasks very well.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u7-2-A3",
+     "type": "choice",
+     "stem": "Which jobs need emotional intelligence?",
+     "options": [
+      "Nursing and counselling.",
+      "Factory work only.",
+      "Measuring temperature only.",
+      "Driving trains."
+     ],
+     "answer": "A",
+     "why": "Jobs that need emotional intelligence, such as nursing and counselling.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u7-2-A4",
+     "type": "choice",
+     "stem": "What does Jennifer think about robots?",
+     "options": [
+      "They are dangerous enemies.",
+      "They are tools that help people.",
+      "They will rule people.",
+      "They are useless."
+     ],
+     "answer": "B",
+     "why": "Robots are tools. They help us.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g8r-u7-2-B1",
+     "type": "tf",
+     "stem": "Experts say robots will certainly take all jobs.",
+     "answer": "F",
+     "why": "专家说这不太可能（this is not likely）。",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u7-2-B2",
+     "type": "tf",
+     "stem": "Teaching will still need people.",
+     "answer": "T",
+     "why": "creativity, such as writing, designing and teaching, will still need people.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u7-2-B3",
+     "type": "tf",
+     "stem": "Robots will create new jobs.",
+     "answer": "T",
+     "why": "Robots will also create new jobs.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8r-u7-2-C1",
+     "type": "fill",
+     "stem": "Jobs that depend on ____ will still need people.",
+     "answers": [
+      [
+       "creativity"
+      ]
+     ],
+     "why": "depend on creativity.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u7-2-C2",
+     "type": "fill",
+     "stem": "The world will need more robot ____.",
+     "answers": [
+      [
+       "engineers"
+      ]
+     ],
+     "why": "more robot engineers.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u7-2-C3",
+     "type": "fill",
+     "stem": "Students should keep ____ new things.",
+     "answers": [
+      [
+       "learning"
+      ]
+     ],
+     "why": "keep learning new things.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

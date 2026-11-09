@@ -1,0 +1,152 @@
+{
+ "id": "g8r-u7-1",
+ "kind": "reading",
+ "title": "Transport in the Future",
+ "subtitle": "考点：未来预测 / will / traffic",
+ "unit": "E8U7",
+ "passage": [
+  "How will people travel in 2060? Many experts believe that cities will have much less traffic. Instead of private cars, people will use public transport such as fast trains and electric buses. These systems will be more efficient, and they will cost less money.",
+  "Technology will also change cars. Some cars will drive themselves, so people can read or watch videos on the way to work. Some experts say that small flying cars may appear in big cities, but they will probably be too expensive for most people at first.",
+  "Will everything be better? Not always. New technology needs a lot of electricity, and it must be safe. Still, most experts are positive. “Good transport will save people time and protect the planet,” says one researcher. Students in Class 8 will have a chance to see these changes during their lifetime."
+ ],
+ "vocab": "traffic 交通 · public transport 公共交通 · efficient 高效的 · technology 技术 · positive 积极的 · researcher 研究人员 · expert 专家",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8r-u7-1-A1",
+     "type": "choice",
+     "stem": "What will people use instead of private cars?",
+     "options": [
+      "Horses.",
+      "Public transport.",
+      "Bicycles only.",
+      "Boats only."
+     ],
+     "answer": "B",
+     "why": "Instead of private cars, people will use public transport.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u7-1-A2",
+     "type": "choice",
+     "stem": "What can people do in a self-driving car?",
+     "options": [
+      "Drive faster.",
+      "Fix the engine.",
+      "Read or watch videos.",
+      "Sleep outside."
+     ],
+     "answer": "C",
+     "why": "people can read or watch videos on the way to work.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u7-1-A3",
+     "type": "choice",
+     "stem": "Why will flying cars be a problem at first?",
+     "options": [
+      "They will be too slow.",
+      "They will be too small for adults.",
+      "They will need no electricity.",
+      "They will be too expensive for most people."
+     ],
+     "answer": "D",
+     "why": "they will probably be too expensive for most people at first.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u7-1-A4",
+     "type": "choice",
+     "stem": "What does the researcher say?",
+     "options": [
+      "Good transport will save people time and protect the planet.",
+      "Cars will be more important than trains.",
+      "Technology is always dangerous.",
+      "People will stop travelling."
+     ],
+     "answer": "A",
+     "why": "Good transport will save people time and protect the planet.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g8r-u7-1-B1",
+     "type": "tf",
+     "stem": "Experts think there will be less traffic in cities.",
+     "answer": "T",
+     "why": "cities will have much less traffic.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u7-1-B2",
+     "type": "tf",
+     "stem": "Flying cars will be cheap at first.",
+     "answer": "F",
+     "why": "一开始会很贵（too expensive for most people）。",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u7-1-B3",
+     "type": "tf",
+     "stem": "New technology needs a lot of electricity.",
+     "answer": "T",
+     "why": "New technology needs a lot of electricity.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8r-u7-1-C1",
+     "type": "fill",
+     "stem": "Public transport will be more ____.",
+     "answers": [
+      [
+       "efficient"
+      ]
+     ],
+     "why": "more efficient.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u7-1-C2",
+     "type": "fill",
+     "stem": "Some cars will drive ____.",
+     "answers": [
+      [
+       "themselves"
+      ]
+     ],
+     "why": "drive themselves.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u7-1-C3",
+     "type": "fill",
+     "stem": "Most experts are ____ about the future.",
+     "answers": [
+      [
+       "positive"
+      ]
+     ],
+     "why": "most experts are positive.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

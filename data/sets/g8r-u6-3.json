@@ -1,0 +1,152 @@
+{
+ "id": "g8r-u6-3",
+ "kind": "reading",
+ "title": "Be Healthy and Confident",
+ "subtitle": "考点：健康生活 / physical health / be able to",
+ "unit": "E8U6",
+ "passage": [
+  "Tina used to be shy. She was afraid to speak in class, and she did not enjoy sports. Last year, she decided to change herself. She joined the school running club and started to eat more healthily.",
+  "At first, running was hard. She could only run for five minutes. But she did not give up. She ran three times a week, and after two months she was able to run for half an hour. Her body became stronger and she felt more energetic. She also found that exercise helped her sleep better.",
+  "Slowly, Tina became more confident. She put up her hand in class and gave a short speech in front of everyone. “When I take care of my body, I feel good about myself,” she says. Now she tells her friends, “Good health and confidence go hand in hand. Make a plan, take small steps, and never stop.”"
+ ],
+ "vocab": "confident 自信的 · healthily 健康地 · energetic 精力充沛的 · physical 身体的 · speech 演讲 · give up 放弃 · able 能够的",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8r-u6-3-A1",
+     "type": "choice",
+     "stem": "What was Tina like before?",
+     "options": [
+      "She was lazy.",
+      "She was loud.",
+      "She was angry.",
+      "She was shy."
+     ],
+     "answer": "D",
+     "why": "Tina used to be shy.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u6-3-A2",
+     "type": "choice",
+     "stem": "Which club did Tina join?",
+     "options": [
+      "The school running club.",
+      "The music club.",
+      "The chess club.",
+      "The art club."
+     ],
+     "answer": "A",
+     "why": "joined the school running club.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u6-3-A3",
+     "type": "choice",
+     "stem": "How long could she run after two months?",
+     "options": [
+      "Five minutes.",
+      "Half an hour.",
+      "Ten minutes.",
+      "Two hours."
+     ],
+     "answer": "B",
+     "why": "able to run for half an hour.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u6-3-A4",
+     "type": "choice",
+     "stem": "What did exercise help Tina do?",
+     "options": [
+      "Draw better.",
+      "Cook better.",
+      "Sleep better.",
+      "Sing better."
+     ],
+     "answer": "C",
+     "why": "exercise helped her sleep better.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g8r-u6-3-B1",
+     "type": "tf",
+     "stem": "At first, Tina could run for half an hour.",
+     "answer": "F",
+     "why": "一开始只能跑五分钟（five minutes）。",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u6-3-B2",
+     "type": "tf",
+     "stem": "Tina gave a speech in class.",
+     "answer": "T",
+     "why": "gave a short speech in front of everyone.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u6-3-B3",
+     "type": "tf",
+     "stem": "Tina gave up running soon after she started.",
+     "answer": "F",
+     "why": "But she did not give up.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8r-u6-3-C1",
+     "type": "fill",
+     "stem": "Tina started to eat more ____.",
+     "answers": [
+      [
+       "healthily"
+      ]
+     ],
+     "why": "eat more healthily.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u6-3-C2",
+     "type": "fill",
+     "stem": "She felt more ____ after exercise.",
+     "answers": [
+      [
+       "energetic"
+      ]
+     ],
+     "why": "felt more energetic.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u6-3-C3",
+     "type": "fill",
+     "stem": "She gave a short ____ in front of everyone.",
+     "answers": [
+      [
+       "speech"
+      ]
+     ],
+     "why": "gave a short speech.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

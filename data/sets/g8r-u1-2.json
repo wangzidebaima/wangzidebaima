@@ -1,0 +1,152 @@
+{
+ "id": "g8r-u1-2",
+ "kind": "reading",
+ "title": "Huangshan, a Fantastic Place",
+ "subtitle": "考点：描写风景 / especially / take one's breath away",
+ "unit": "E8U1",
+ "passage": [
+  "Huangshan, or the Yellow Mountain, is in Anhui Province. It is famous for its strange rocks, old pine trees and the sea of clouds. Every year, thousands of people visit it, especially in autumn.",
+  "Li Na climbed Huangshan with her cousin last October. They got up at four in the morning because they wanted to see the sunrise. It was cold, so they wore thick coats. When the sun came up, the sky turned red and gold, and the clouds looked like a white sea below them.",
+  "On the way down, they saw the Guest-Greeting Pine. Li Na took many photos of it. She was tired but happy. She said, “The scenery here is so beautiful that it takes my breath away.”"
+ ],
+ "vocab": "province 省 · strange 奇怪的 · scenery 风景 · especially 尤其 · sunrise 日出 · pine 松树 · thousands of 成千上万",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8r-u1-2-A1",
+     "type": "choice",
+     "stem": "Where is Huangshan?",
+     "options": [
+      "In Moscow.",
+      "In Scotland.",
+      "In Anhui Province.",
+      "In Seattle."
+     ],
+     "answer": "C",
+     "why": "Huangshan ... is in Anhui Province.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u1-2-A2",
+     "type": "choice",
+     "stem": "Why did Li Na and her cousin get up at four?",
+     "options": [
+      "To catch a bus home.",
+      "To buy breakfast.",
+      "To have a class.",
+      "To see the sunrise."
+     ],
+     "answer": "D",
+     "why": "They got up at four because they wanted to see the sunrise.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u1-2-A3",
+     "type": "choice",
+     "stem": "Why did they wear thick coats?",
+     "options": [
+      "It was cold in the morning.",
+      "It was raining hard.",
+      "It was snowing all day.",
+      "They were going to sleep outside."
+     ],
+     "answer": "A",
+     "why": "It was cold, so they wore thick coats.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u1-2-A4",
+     "type": "choice",
+     "stem": "What did Li Na do on the way down?",
+     "options": [
+      "She bought a silk scarf.",
+      "She took many photos of a pine tree.",
+      "She slept under a tree.",
+      "She painted a picture."
+     ],
+     "answer": "B",
+     "why": "Li Na took many photos of it (the Guest-Greeting Pine).",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g8r-u1-2-B1",
+     "type": "tf",
+     "stem": "Huangshan is famous for its strange rocks and old pine trees.",
+     "answer": "T",
+     "why": "famous for its strange rocks, old pine trees and the sea of clouds.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u1-2-B2",
+     "type": "tf",
+     "stem": "Li Na went to Huangshan in summer.",
+     "answer": "F",
+     "why": "她是去年十月（last October）去的。",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u1-2-B3",
+     "type": "tf",
+     "stem": "The clouds looked like a white sea.",
+     "answer": "T",
+     "why": "the clouds looked like a white sea below them.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8r-u1-2-C1",
+     "type": "fill",
+     "stem": "Huangshan is famous for the sea of ____.",
+     "answers": [
+      [
+       "clouds"
+      ]
+     ],
+     "why": "the sea of clouds.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u1-2-C2",
+     "type": "fill",
+     "stem": "Li Na went there with her ____.",
+     "answers": [
+      [
+       "cousin"
+      ]
+     ],
+     "why": "with her cousin.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u1-2-C3",
+     "type": "fill",
+     "stem": "The sky turned red and ____.",
+     "answers": [
+      [
+       "gold"
+      ]
+     ],
+     "why": "red and gold.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,156 @@
+{
+ "id": "g3r-u5-2",
+ "kind": "reading",
+ "title": "The Sea and the Duck",
+ "subtitle": "考点：描述颜色 / The sea is blue. The duck is yellow.",
+ "unit": "E3U5",
+ "dialogue": [
+  {
+   "s": "Lily",
+   "t": "Look at the sea."
+  },
+  {
+   "s": "Ben",
+   "t": "The sea is blue."
+  },
+  {
+   "s": "Lily",
+   "t": "Look! A duck. What colour is it?"
+  },
+  {
+   "s": "Ben",
+   "t": "It is yellow."
+  },
+  {
+   "s": "Lily",
+   "t": "I like the yellow duck."
+  },
+  {
+   "s": "Ben",
+   "t": "Let's draw it."
+  }
+ ],
+ "vocab": "sea 大海 · blue 蓝色 · duck 鸭子 · yellow 黄色 · draw 画画 · colour 颜色",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3r-u5-2-A1",
+     "type": "choice",
+     "stem": "What colour is the sea?",
+     "options": [
+      "Green.",
+      "Red.",
+      "Blue."
+     ],
+     "answer": "C",
+     "why": "The sea is blue.",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u5-2-A2",
+     "type": "choice",
+     "stem": "What colour is the duck?",
+     "options": [
+      "Yellow.",
+      "White.",
+      "Black."
+     ],
+     "answer": "A",
+     "why": "It is yellow.",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u5-2-A3",
+     "type": "choice",
+     "stem": "What will they draw?",
+     "options": [
+      "The bear.",
+      "The duck.",
+      "The cat."
+     ],
+     "answer": "B",
+     "why": "Let's draw it. (the duck)",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g3r-u5-2-B1",
+     "type": "tf",
+     "stem": "The duck is yellow.",
+     "answer": "T",
+     "why": "It is yellow.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u5-2-B2",
+     "type": "tf",
+     "stem": "The sea is green.",
+     "answer": "F",
+     "why": "The sea is blue.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u5-2-B3",
+     "type": "tf",
+     "stem": "Lily says, \"Let's draw it.\"",
+     "answer": "F",
+     "why": "Ben says: Let's draw it.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3r-u5-2-C1",
+     "type": "fill",
+     "stem": "Lily says, \"Look at the ____.\"",
+     "answers": [
+      [
+       "sea"
+      ]
+     ],
+     "why": "Look at the sea.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u5-2-C2",
+     "type": "fill",
+     "stem": "The sea is ____.",
+     "answers": [
+      [
+       "blue"
+      ]
+     ],
+     "why": "The sea is blue.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u5-2-C3",
+     "type": "fill",
+     "stem": "Ben says, \"Let's ____ it.\"",
+     "answers": [
+      [
+       "draw"
+      ]
+     ],
+     "why": "Let's draw it.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

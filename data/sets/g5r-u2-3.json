@@ -1,0 +1,160 @@
+{
+ "id": "g5r-u2-3",
+ "kind": "reading",
+ "title": "A Wrong Answer",
+ "subtitle": "考点：安慰他人 / Don't be angry.",
+ "unit": "E5U2",
+ "dialogue": [
+  {
+   "s": "Tom",
+   "t": "Mum, I am angry with myself. I got one answer wrong in the maths test."
+  },
+  {
+   "s": "Mum",
+   "t": "Don't be angry, Tom. Everyone makes mistakes."
+  },
+  {
+   "s": "Tom",
+   "t": "But my friends laughed."
+  },
+  {
+   "s": "Mum",
+   "t": "Did Amy laugh?"
+  },
+  {
+   "s": "Tom",
+   "t": "No. Amy asked me to check the test with her."
+  },
+  {
+   "s": "Mum",
+   "t": "She is a good friend. Check it again and learn from it."
+  },
+  {
+   "s": "Tom",
+   "t": "OK, Mum. I feel better now."
+  }
+ ],
+ "vocab": "angry 生气的 · wrong 错的 · laugh 笑 · ask 请求 · check 检查 · better 更好的",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5r-u2-3-A1",
+     "type": "choice",
+     "stem": "Why is Tom angry?",
+     "options": [
+      "He got one answer wrong.",
+      "He lost his bag.",
+      "He missed lunch."
+     ],
+     "answer": "A",
+     "why": "I got one answer wrong in the maths test.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u2-3-A2",
+     "type": "choice",
+     "stem": "Who asked Tom to check the test?",
+     "options": [
+      "Lily",
+      "Amy",
+      "His teacher"
+     ],
+     "answer": "B",
+     "why": "Amy asked me to check the test with her.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u2-3-A3",
+     "type": "choice",
+     "stem": "How does Tom feel at the end?",
+     "options": [
+      "Very sad.",
+      "Afraid.",
+      "Better."
+     ],
+     "answer": "C",
+     "why": "I feel better now.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g5r-u2-3-B1",
+     "type": "tf",
+     "stem": "Tom's mum says don't be angry.",
+     "answer": "T",
+     "why": "Don't be angry, Tom.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u2-3-B2",
+     "type": "tf",
+     "stem": "Tom talks to his mum.",
+     "answer": "T",
+     "why": "Tom speaks to Mum.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u2-3-B3",
+     "type": "tf",
+     "stem": "Amy laughed at Tom.",
+     "answer": "F",
+     "why": "No. Amy asked me to check the test with her.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5r-u2-3-C1",
+     "type": "fill",
+     "stem": "Tom got one answer ____.",
+     "answers": [
+      [
+       "wrong"
+      ]
+     ],
+     "why": "I got one answer wrong.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u2-3-C2",
+     "type": "fill",
+     "stem": "Everyone makes ____.",
+     "answers": [
+      [
+       "mistakes"
+      ]
+     ],
+     "why": "Everyone makes mistakes.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u2-3-C3",
+     "type": "fill",
+     "stem": "Check it ____.",
+     "answers": [
+      [
+       "again"
+      ]
+     ],
+     "why": "Check it again and learn from it.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

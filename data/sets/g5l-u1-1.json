@@ -1,0 +1,120 @@
+{
+ "id": "g5l-u1-1",
+ "kind": "listening",
+ "title": "My Best Friend",
+ "subtitle": "对话",
+ "unit": "E5U1",
+ "speakers": {
+  "Amy": "c1",
+  "Tom": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Amy",
+   "t": "Tom, do you have a best friend?"
+  },
+  {
+   "s": "Tom",
+   "t": "Yes. His name is Jack. He is very clever."
+  },
+  {
+   "s": "Amy",
+   "t": "What can he do?"
+  },
+  {
+   "s": "Tom",
+   "t": "He can play chess and he can play the piano."
+  },
+  {
+   "s": "Amy",
+   "t": "Wow! Is he hard-working too?"
+  },
+  {
+   "s": "Tom",
+   "t": "Yes. He practises the piano every evening."
+  },
+  {
+   "s": "Amy",
+   "t": "He sounds wonderful."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5l-u1-1-A1",
+     "type": "choice",
+     "stem": "What is Tom's best friend's name?",
+     "options": [
+      "Ben.",
+      "Jack.",
+      "Sam."
+     ],
+     "answer": "B",
+     "why": "His name is Jack.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u1-1-A2",
+     "type": "choice",
+     "stem": "What can Jack play?",
+     "options": [
+      "Chess and ping-pong.",
+      "The piano and football.",
+      "Chess and the piano."
+     ],
+     "answer": "C",
+     "why": "He can play chess and he can play the piano.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u1-1-A3",
+     "type": "choice",
+     "stem": "When does Jack practise the piano?",
+     "options": [
+      "Every evening.",
+      "Every morning.",
+      "Every weekend."
+     ],
+     "answer": "A",
+     "why": "He practises the piano every evening.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5l-u1-1-B1",
+     "type": "fill",
+     "stem": "Jack is very ____.",
+     "answers": [
+      [
+       "clever"
+      ]
+     ],
+     "why": "He is very clever.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u1-1-B2",
+     "type": "fill",
+     "stem": "He can play the ____.",
+     "answers": [
+      [
+       "piano"
+      ]
+     ],
+     "why": "He can play the piano.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

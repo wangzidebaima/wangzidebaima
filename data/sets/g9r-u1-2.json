@@ -1,0 +1,151 @@
+{
+ "id": "g9r-u1-2",
+ "kind": "reading",
+ "title": "A New Railway for Kenya",
+ "subtitle": "考点：交通发展 / link, with ease, convenient",
+ "unit": "E9U1",
+ "passage": [
+  "Mombasa is a big port in Kenya, and Nairobi is its capital. In the past, goods had to go by lorry on a narrow, crowded road, and the trip was slow. Many drivers were tired, and some products arrived late.",
+  "Then a new railway linked the port with the capital. The railway was built with help from China. Now trains carry people and goods with ease. A manager at the port says, 'The railway is very convenient. Our business has grown.' Tourists also like it, because they can sometimes see wild animals from the train window. For many Kenyans, the railway is a real miracle."
+ ],
+ "vocab": "port 港口 · capital 首都 · lorry 卡车 · narrow 狭窄的 · convenient 方便的 · miracle 奇迹",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9r-u1-2-A1",
+     "type": "choice",
+     "stem": "What is Nairobi?",
+     "options": [
+      "A port in Kenya.",
+      "A kind of train.",
+      "The capital of Kenya.",
+      "A Chinese city."
+     ],
+     "answer": "C",
+     "why": "Mombasa is a big port in Kenya, and Nairobi is its capital.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u1-2-A2",
+     "type": "choice",
+     "stem": "How did goods travel in the past?",
+     "options": [
+      "By plane.",
+      "By ship only.",
+      "By high-speed train.",
+      "By lorry on a narrow road."
+     ],
+     "answer": "D",
+     "why": "goods had to go by lorry on a narrow, crowded road",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u1-2-A3",
+     "type": "choice",
+     "stem": "What does the manager think of the railway?",
+     "options": [
+      "It is very convenient.",
+      "It is too expensive.",
+      "It is dangerous.",
+      "It is useless."
+     ],
+     "answer": "A",
+     "why": "The railway is very convenient.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u1-2-A4",
+     "type": "choice",
+     "stem": "Why do tourists like the train?",
+     "options": [
+      "It is cheaper than a bike.",
+      "They can sometimes see wild animals from the window.",
+      "It stops at every farm.",
+      "It goes to China."
+     ],
+     "answer": "B",
+     "why": "they can sometimes see wild animals from the train window",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g9r-u1-2-B1",
+     "type": "tf",
+     "stem": "The railway links Mombasa and Nairobi.",
+     "answer": "T",
+     "why": "a new railway linked the port with the capital.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u1-2-B2",
+     "type": "tf",
+     "stem": "In the past, goods travelled by railway.",
+     "answer": "F",
+     "why": "In the past, goods went by lorry on a narrow road.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u1-2-B3",
+     "type": "tf",
+     "stem": "The railway was built with help from China.",
+     "answer": "T",
+     "why": "The railway was built with help from China.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9r-u1-2-C1",
+     "type": "fill",
+     "stem": "Mombasa is a big ____ in Kenya.",
+     "answers": [
+      [
+       "port"
+      ]
+     ],
+     "why": "Mombasa is a big port in Kenya.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u1-2-C2",
+     "type": "fill",
+     "stem": "The new railway ____ the port with the capital.",
+     "answers": [
+      [
+       "linked"
+      ]
+     ],
+     "why": "a new railway linked the port with the capital.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u1-2-C3",
+     "type": "fill",
+     "stem": "Now trains carry goods with ____.",
+     "answers": [
+      [
+       "ease"
+      ]
+     ],
+     "why": "carry people and goods with ease.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

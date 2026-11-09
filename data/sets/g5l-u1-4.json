@@ -1,0 +1,120 @@
+{
+ "id": "g5l-u1-4",
+ "kind": "listening",
+ "title": "Our Team",
+ "subtitle": "对话",
+ "unit": "E5U1",
+ "speakers": {
+  "Amy": "c1",
+  "Mike": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Amy",
+   "t": "Mike, our team has a new player."
+  },
+  {
+   "s": "Mike",
+   "t": "Who is he?"
+  },
+  {
+   "s": "Amy",
+   "t": "He is Jim from Australia. He is a clever player."
+  },
+  {
+   "s": "Mike",
+   "t": "How old is he?"
+  },
+  {
+   "s": "Amy",
+   "t": "He is eleven. He is young but very good."
+  },
+  {
+   "s": "Mike",
+   "t": "Can he play with us tomorrow?"
+  },
+  {
+   "s": "Amy",
+   "t": "Yes. Let's tell him the time."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5l-u1-4-A1",
+     "type": "choice",
+     "stem": "Where is Jim from?",
+     "options": [
+      "America.",
+      "Australia.",
+      "China."
+     ],
+     "answer": "B",
+     "why": "He is Jim from Australia.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u1-4-A2",
+     "type": "choice",
+     "stem": "How old is Jim?",
+     "options": [
+      "Ten.",
+      "Twelve.",
+      "Eleven."
+     ],
+     "answer": "C",
+     "why": "He is eleven.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u1-4-A3",
+     "type": "choice",
+     "stem": "When can Jim play with them?",
+     "options": [
+      "Tomorrow.",
+      "Today.",
+      "On Sunday."
+     ],
+     "answer": "A",
+     "why": "Can he play with us tomorrow? Yes.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5l-u1-4-B1",
+     "type": "fill",
+     "stem": "Jim is a ____ player.",
+     "answers": [
+      [
+       "clever"
+      ]
+     ],
+     "why": "He is a clever player.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u1-4-B2",
+     "type": "fill",
+     "stem": "Our team has a new ____.",
+     "answers": [
+      [
+       "player"
+      ]
+     ],
+     "why": "our team has a new player.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

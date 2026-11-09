@@ -1,0 +1,164 @@
+{
+ "id": "g5r-u5-4",
+ "kind": "reading",
+ "title": "Coconuts",
+ "subtitle": "考点：描述食物 / Coconuts are round.",
+ "unit": "E5U5",
+ "dialogue": [
+  {
+   "s": "Sam",
+   "t": "Mum, what is that big round thing?"
+  },
+  {
+   "s": "Mum",
+   "t": "It is a coconut. Coconuts are round and heavy."
+  },
+  {
+   "s": "Sam",
+   "t": "Is it a fruit?"
+  },
+  {
+   "s": "Mum",
+   "t": "Yes. It grows on tall trees in hot places."
+  },
+  {
+   "s": "Sam",
+   "t": "What is inside?"
+  },
+  {
+   "s": "Mum",
+   "t": "There is sweet water inside. You can drink it."
+  },
+  {
+   "s": "Sam",
+   "t": "Wow! Can I try it?"
+  },
+  {
+   "s": "Mum",
+   "t": "Yes. It is different from other drinks."
+  }
+ ],
+ "vocab": "coconut 椰子 · round 圆的 · seed 种子 · different 不同的 · world 世界 · way 方式 · little 少量的",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5r-u5-4-A1",
+     "type": "choice",
+     "stem": "What shape is a coconut?",
+     "options": [
+      "Long.",
+      "Round.",
+      "Flat."
+     ],
+     "answer": "B",
+     "why": "Coconuts are round and heavy.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u5-4-A2",
+     "type": "choice",
+     "stem": "Where does a coconut grow?",
+     "options": [
+      "In a lake.",
+      "Under the ground.",
+      "On tall trees in hot places."
+     ],
+     "answer": "C",
+     "why": "It grows on tall trees in hot places.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u5-4-A3",
+     "type": "choice",
+     "stem": "What is inside a coconut?",
+     "options": [
+      "Sweet water.",
+      "Tea.",
+      "Beef."
+     ],
+     "answer": "A",
+     "why": "There is sweet water inside.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g5r-u5-4-B1",
+     "type": "tf",
+     "stem": "Coconuts are heavy.",
+     "answer": "T",
+     "why": "Coconuts are round and heavy.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u5-4-B2",
+     "type": "tf",
+     "stem": "A coconut is a vegetable.",
+     "answer": "F",
+     "why": "Is it a fruit? Yes.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u5-4-B3",
+     "type": "tf",
+     "stem": "Sam wants to try the coconut.",
+     "answer": "T",
+     "why": "Can I try it?",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5r-u5-4-C1",
+     "type": "fill",
+     "stem": "Coconuts are round and ____.",
+     "answers": [
+      [
+       "heavy"
+      ]
+     ],
+     "why": "Coconuts are round and heavy.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u5-4-C2",
+     "type": "fill",
+     "stem": "It grows on tall ____.",
+     "answers": [
+      [
+       "trees"
+      ]
+     ],
+     "why": "It grows on tall trees.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u5-4-C3",
+     "type": "fill",
+     "stem": "There is sweet ____ inside.",
+     "answers": [
+      [
+       "water"
+      ]
+     ],
+     "why": "There is sweet water inside.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

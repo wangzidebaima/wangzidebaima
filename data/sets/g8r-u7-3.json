@@ -1,0 +1,152 @@
+{
+ "id": "g8r-u7-3",
+ "kind": "reading",
+ "title": "Mandy's Trip to Space",
+ "subtitle": "考点：科幻故事 / come true / outer space",
+ "unit": "E8U7",
+ "passage": [
+  "Mandy loves science fiction. Her favourite book is about a girl who travels to another planet. Last night, Mandy had a strange dream. In the dream, she was a pilot, and she flew a small spaceship into outer space.",
+  "Through the window, Mandy saw the Earth. It looked small and blue, like a ball. Then she met a friendly robot named Zip. Zip said, “Welcome! Shall we visit the Moon first?” They landed on the Moon, and Mandy jumped very high because it was so light there. She also found a tiny garden with colourful flowers.",
+  "Suddenly, an alarm rang, and Mandy woke up. It was only a dream! She laughed and wrote down everything in her notebook. Perhaps she will write her own sci-fi story one day. Her father told her, “Many things in old sci-fi books have come true. Maybe your dream will, too.” Mandy smiled and went back to sleep."
+ ],
+ "vocab": "science fiction 科幻小说 · pilot 飞行员 · outer space 外太空 · spaceship 宇宙飞船 · planet 行星 · come true 成真 · shall 将要",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8r-u7-3-A1",
+     "type": "choice",
+     "stem": "What was Mandy's dream about?",
+     "options": [
+      "Swimming in the sea.",
+      "Climbing a mountain.",
+      "Cooking dinner.",
+      "Flying a spaceship."
+     ],
+     "answer": "D",
+     "why": "she was a pilot, and she flew a small spaceship into outer space.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u7-3-A2",
+     "type": "choice",
+     "stem": "What did the Earth look like?",
+     "options": [
+      "Small and blue, like a ball.",
+      "Big and red.",
+      "Flat and white.",
+      "Dark and cold."
+     ],
+     "answer": "A",
+     "why": "It looked small and blue, like a ball.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u7-3-A3",
+     "type": "choice",
+     "stem": "Who was Zip?",
+     "options": [
+      "A pilot.",
+      "A friendly robot.",
+      "A teacher.",
+      "A cat."
+     ],
+     "answer": "B",
+     "why": "she met a friendly robot named Zip.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u7-3-A4",
+     "type": "choice",
+     "stem": "How did the dream end?",
+     "options": [
+      "Zip took her home.",
+      "The spaceship broke.",
+      "An alarm rang and Mandy woke up.",
+      "She fell into the sea."
+     ],
+     "answer": "C",
+     "why": "an alarm rang, and Mandy woke up.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g8r-u7-3-B1",
+     "type": "tf",
+     "stem": "Mandy likes science fiction.",
+     "answer": "T",
+     "why": "Mandy loves science fiction.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u7-3-B2",
+     "type": "tf",
+     "stem": "Mandy jumped very low on the Moon.",
+     "answer": "F",
+     "why": "她跳得很高（jumped very high）。",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u7-3-B3",
+     "type": "tf",
+     "stem": "Mandy might write a sci-fi story one day.",
+     "answer": "T",
+     "why": "Perhaps she will write her own sci-fi story one day.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8r-u7-3-C1",
+     "type": "fill",
+     "stem": "In her dream, Mandy was a ____.",
+     "answers": [
+      [
+       "pilot"
+      ]
+     ],
+     "why": "she was a pilot.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u7-3-C2",
+     "type": "fill",
+     "stem": "Mandy jumped very high because it was so ____ there.",
+     "answers": [
+      [
+       "light"
+      ]
+     ],
+     "why": "it was so light there.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u7-3-C3",
+     "type": "fill",
+     "stem": "She wrote everything down in her ____.",
+     "answers": [
+      [
+       "notebook"
+      ]
+     ],
+     "why": "wrote down everything in her notebook.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

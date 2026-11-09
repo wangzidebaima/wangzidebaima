@@ -1,0 +1,120 @@
+{
+ "id": "g3l-u2-1",
+ "kind": "listening",
+ "title": "This Is My Family",
+ "subtitle": "对话",
+ "unit": "E3U2",
+ "speakers": {
+  "Amy": "c1",
+  "Mike": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Amy",
+   "t": "This is my family, Mike."
+  },
+  {
+   "s": "Mike",
+   "t": "Who is this man?"
+  },
+  {
+   "s": "Amy",
+   "t": "He is my father."
+  },
+  {
+   "s": "Mike",
+   "t": "Who is she?"
+  },
+  {
+   "s": "Amy",
+   "t": "She is my mother."
+  },
+  {
+   "s": "Mike",
+   "t": "And the small boy?"
+  },
+  {
+   "s": "Amy",
+   "t": "He is my brother."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3l-u2-1-A1",
+     "type": "choice",
+     "stem": "Who is the man?",
+     "options": [
+      "Amy's uncle.",
+      "Amy's father.",
+      "Amy's grandpa."
+     ],
+     "answer": "B",
+     "why": "He is my father.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u2-1-A2",
+     "type": "choice",
+     "stem": "Who is the woman?",
+     "options": [
+      "Amy's aunt.",
+      "Amy's sister.",
+      "Amy's mother."
+     ],
+     "answer": "C",
+     "why": "She is my mother.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u2-1-A3",
+     "type": "choice",
+     "stem": "Who is the small boy?",
+     "options": [
+      "Amy's brother.",
+      "Amy's cousin.",
+      "Amy's uncle."
+     ],
+     "answer": "A",
+     "why": "He is my brother.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3l-u2-1-B1",
+     "type": "fill",
+     "stem": "The man is Amy's ____.",
+     "answers": [
+      [
+       "father"
+      ]
+     ],
+     "why": "He is my father.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u2-1-B2",
+     "type": "fill",
+     "stem": "The small boy is Amy's ____.",
+     "answers": [
+      [
+       "brother"
+      ]
+     ],
+     "why": "He is my brother.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

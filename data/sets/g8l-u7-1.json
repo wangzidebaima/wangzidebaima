@@ -1,0 +1,127 @@
+{
+ "id": "g8l-u7-1",
+ "kind": "listening",
+ "title": "Shall We Go to the Concert?",
+ "subtitle": "对话",
+ "unit": "E8U7",
+ "speakers": {
+  "Harry": "m1",
+  "Mandy": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Harry",
+   "t": "Mandy, shall we go to the concert on Saturday?"
+  },
+  {
+   "s": "Mandy",
+   "t": "Good idea! How much are the tickets?"
+  },
+  {
+   "s": "Harry",
+   "t": "They are thirty yuan each. I only have twenty in my wallet."
+  },
+  {
+   "s": "Mandy",
+   "t": "Don't worry. I can pay for both. You can buy me lunch next time."
+  },
+  {
+   "s": "Harry",
+   "t": "Thanks. Shall we meet at the station?"
+  },
+  {
+   "s": "Mandy",
+   "t": "Let's meet outside the concert hall at six."
+  },
+  {
+   "s": "Harry",
+   "t": "OK. The concert starts at seven, doesn't it?"
+  },
+  {
+   "s": "Mandy",
+   "t": "Yes. We shall have time for a snack."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8l-u7-1-A1",
+     "type": "choice",
+     "stem": "When is the concert?",
+     "options": [
+      "On Sunday.",
+      "On Saturday.",
+      "On Friday.",
+      "Next month."
+     ],
+     "answer": "B",
+     "why": "the concert on Saturday.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u7-1-A2",
+     "type": "choice",
+     "stem": "How much is one ticket?",
+     "options": [
+      "Twenty yuan.",
+      "Fifty yuan.",
+      "Thirty yuan.",
+      "Ten yuan."
+     ],
+     "answer": "C",
+     "why": "thirty yuan each.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u7-1-A3",
+     "type": "choice",
+     "stem": "Where will they meet?",
+     "options": [
+      "At the station.",
+      "At school.",
+      "At Harry's home.",
+      "Outside the concert hall."
+     ],
+     "answer": "D",
+     "why": "meet outside the concert hall at six.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8l-u7-1-B1",
+     "type": "fill",
+     "stem": "Harry only has twenty yuan in his ____.",
+     "answers": [
+      [
+       "wallet"
+      ]
+     ],
+     "why": "in my wallet.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u7-1-B2",
+     "type": "fill",
+     "stem": "The concert starts at ____.",
+     "answers": [
+      [
+       "seven"
+      ]
+     ],
+     "why": "starts at seven.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

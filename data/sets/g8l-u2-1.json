@@ -1,0 +1,127 @@
+{
+ "id": "g8l-u2-1",
+ "kind": "listening",
+ "title": "Packing for the Move",
+ "subtitle": "对话",
+ "unit": "E8U2",
+ "speakers": {
+  "Mum": "f1",
+  "Jack": "m1"
+ },
+ "transcript": [
+  {
+   "s": "Mum",
+   "t": "Jack, have you packed your things yet?"
+  },
+  {
+   "s": "Jack",
+   "t": "Not yet. I only put my books into two boxes."
+  },
+  {
+   "s": "Mum",
+   "t": "Please pack your clothes this afternoon. The truck comes at nine tomorrow morning."
+  },
+  {
+   "s": "Jack",
+   "t": "Can I take my big poster?"
+  },
+  {
+   "s": "Mum",
+   "t": "Yes, but be careful with it. Don't hang it up until we arrive."
+  },
+  {
+   "s": "Jack",
+   "t": "What about my bed?"
+  },
+  {
+   "s": "Mum",
+   "t": "Dad will take it apart. Your new bedroom has a big window."
+  },
+  {
+   "s": "Jack",
+   "t": "Great! I will pack everything before dinner."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8l-u2-1-A1",
+     "type": "choice",
+     "stem": "What has Jack packed?",
+     "options": [
+      "His clothes.",
+      "His books.",
+      "His bed.",
+      "His poster."
+     ],
+     "answer": "B",
+     "why": "I only put my books into two boxes.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u2-1-A2",
+     "type": "choice",
+     "stem": "When does the truck come?",
+     "options": [
+      "At nine tonight.",
+      "At six tomorrow morning.",
+      "At nine tomorrow morning.",
+      "At noon today."
+     ],
+     "answer": "C",
+     "why": "The truck comes at nine tomorrow morning.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u2-1-A3",
+     "type": "choice",
+     "stem": "Who will take the bed apart?",
+     "options": [
+      "Jack.",
+      "Mum.",
+      "A neighbour.",
+      "Dad."
+     ],
+     "answer": "D",
+     "why": "Dad will take it apart.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8l-u2-1-B1",
+     "type": "fill",
+     "stem": "Jack puts his books into two ____.",
+     "answers": [
+      [
+       "boxes"
+      ]
+     ],
+     "why": "two boxes.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u2-1-B2",
+     "type": "fill",
+     "stem": "His new bedroom has a big ____.",
+     "answers": [
+      [
+       "window"
+      ]
+     ],
+     "why": "a big window.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

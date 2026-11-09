@@ -1,0 +1,124 @@
+{
+ "id": "g6l-u1-2",
+ "kind": "listening",
+ "title": "At the Airport",
+ "subtitle": "对话",
+ "unit": "E6U1",
+ "speakers": {
+  "Tom": "c1",
+  "Lily": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Tom",
+   "t": "Lily, where are you going?"
+  },
+  {
+   "s": "Lily",
+   "t": "I am going to New Zealand with my parents."
+  },
+  {
+   "s": "Tom",
+   "t": "Wow! Is it far?"
+  },
+  {
+   "s": "Lily",
+   "t": "Yes. The plane trip takes about twelve hours."
+  },
+  {
+   "s": "Tom",
+   "t": "What will you do there?"
+  },
+  {
+   "s": "Lily",
+   "t": "We will climb a mountain and see many sheep."
+  },
+  {
+   "s": "Tom",
+   "t": "Send me a photo!"
+  },
+  {
+   "s": "Lily",
+   "t": "Sure. I will send you one from the top. Thanks!"
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6l-u1-2-A1",
+     "type": "choice",
+     "stem": "Where is Lily going?",
+     "options": [
+      "To Paris.",
+      "To Hong Kong.",
+      "To New Zealand."
+     ],
+     "answer": "C",
+     "why": "I am going to New Zealand with my parents.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u1-2-A2",
+     "type": "choice",
+     "stem": "Who is Lily going with?",
+     "options": [
+      "Her parents.",
+      "Her friends.",
+      "Her class."
+     ],
+     "answer": "A",
+     "why": "with my parents",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u1-2-A3",
+     "type": "choice",
+     "stem": "What will Lily send Tom?",
+     "options": [
+      "A postcard.",
+      "A photo.",
+      "A letter."
+     ],
+     "answer": "B",
+     "why": "I will send you one (a photo) from the top.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6l-u1-2-B1",
+     "type": "fill",
+     "stem": "The plane trip takes about ____ hours.",
+     "answers": [
+      [
+       "twelve"
+      ]
+     ],
+     "why": "about twelve hours",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u1-2-B2",
+     "type": "fill",
+     "stem": "Lily will ____ a mountain.",
+     "answers": [
+      [
+       "climb"
+      ]
+     ],
+     "why": "We will climb a mountain",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

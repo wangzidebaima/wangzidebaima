@@ -1,0 +1,152 @@
+{
+ "id": "g8r-u1-1",
+ "kind": "reading",
+ "title": "A Trip to Moscow",
+ "subtitle": "考点：一般过去时 / 旅行经历 / be surprised",
+ "unit": "E8U1",
+ "passage": [
+  "Last summer, Ben went to Moscow with his parents. It was his first trip to Russia. They stayed in a small hotel near Red Square. The hotel was comfortable, and the people there were very friendly.",
+  "On the second day, they took the metro. Ben was surprised because the stations looked like palaces. There were beautiful lights and artworks on the walls. He said that the metro was not like any metro at home.",
+  "In the evening, they walked in Red Square. A man was playing the accordion, and many people were taking photos. The view took Ben's breath away. He thought, “I will never forget this trip.”"
+ ],
+ "vocab": "hotel 旅馆 · comfortable 舒适的 · metro 地铁 · palace 宫殿 · accordion 手风琴 · surprised 惊讶的 · forget 忘记",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8r-u1-1-A1",
+     "type": "choice",
+     "stem": "Who did Ben go to Moscow with?",
+     "options": [
+      "His friends.",
+      "His parents.",
+      "His teacher.",
+      "His classmates."
+     ],
+     "answer": "B",
+     "why": "Ben went to Moscow with his parents.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u1-1-A2",
+     "type": "choice",
+     "stem": "Where did they stay?",
+     "options": [
+      "In a palace near the metro.",
+      "In a tent in the countryside.",
+      "In a small hotel near Red Square.",
+      "In a friend's apartment."
+     ],
+     "answer": "C",
+     "why": "They stayed in a small hotel near Red Square.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u1-1-A3",
+     "type": "choice",
+     "stem": "Why was Ben surprised by the metro?",
+     "options": [
+      "The trains were free.",
+      "The stations were very small.",
+      "The metro was closed.",
+      "The stations looked like palaces."
+     ],
+     "answer": "D",
+     "why": "The stations looked like palaces.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u1-1-A4",
+     "type": "choice",
+     "stem": "What was a man doing in Red Square?",
+     "options": [
+      "Playing the accordion.",
+      "Singing a song.",
+      "Selling scarves.",
+      "Painting a picture."
+     ],
+     "answer": "A",
+     "why": "A man was playing the accordion.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g8r-u1-1-B1",
+     "type": "tf",
+     "stem": "It was Ben's first trip to Russia.",
+     "answer": "T",
+     "why": "It was his first trip to Russia.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u1-1-B2",
+     "type": "tf",
+     "stem": "The hotel was far from Red Square.",
+     "answer": "F",
+     "why": "酒店在红场附近（near Red Square）。",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u1-1-B3",
+     "type": "tf",
+     "stem": "Ben took the metro on the second day.",
+     "answer": "T",
+     "why": "On the second day, they took the metro.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8r-u1-1-C1",
+     "type": "fill",
+     "stem": "The metro stations looked like ____.",
+     "answers": [
+      [
+       "palaces"
+      ]
+     ],
+     "why": "stations looked like palaces.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u1-1-C2",
+     "type": "fill",
+     "stem": "A man was playing the ____ in Red Square.",
+     "answers": [
+      [
+       "accordion"
+      ]
+     ],
+     "why": "playing the accordion.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u1-1-C3",
+     "type": "fill",
+     "stem": "Ben thought, “I will never ____ this trip.”",
+     "answers": [
+      [
+       "forget"
+      ]
+     ],
+     "why": "I will never forget this trip.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

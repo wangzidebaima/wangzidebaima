@@ -1,0 +1,164 @@
+{
+ "id": "g6r-u5-1",
+ "kind": "reading",
+ "title": "The Earth and the Sky",
+ "subtitle": "考点：一般现在时 / The Earth is a planet",
+ "unit": "E6U5",
+ "dialogue": [
+  {
+   "s": "Amy",
+   "t": "Tom, what is the Earth?"
+  },
+  {
+   "s": "Tom",
+   "t": "It is a planet in outer space."
+  },
+  {
+   "s": "Amy",
+   "t": "Can we see the moon in the daytime?"
+  },
+  {
+   "s": "Tom",
+   "t": "Sometimes. We can see it in the sky on clear days."
+  },
+  {
+   "s": "Amy",
+   "t": "And stars?"
+  },
+  {
+   "s": "Tom",
+   "t": "We usually see stars at night, not in the daytime."
+  },
+  {
+   "s": "Amy",
+   "t": "Why not?"
+  },
+  {
+   "s": "Tom",
+   "t": "The sun is too bright in the daytime."
+  }
+ ],
+ "vocab": "Earth 地球 · planet 行星 · outer space 外太空 · daytime 白天 · sky 天空 · moon 月亮",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6r-u5-1-A1",
+     "type": "choice",
+     "stem": "What is the Earth?",
+     "options": [
+      "A star.",
+      "A planet.",
+      "A rocket."
+     ],
+     "answer": "B",
+     "why": "It is a planet in outer space.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u5-1-A2",
+     "type": "choice",
+     "stem": "When do we usually see stars?",
+     "options": [
+      "At noon.",
+      "In the morning.",
+      "At night."
+     ],
+     "answer": "C",
+     "why": "We usually see stars at night.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u5-1-A3",
+     "type": "choice",
+     "stem": "Why can we not see stars in the daytime?",
+     "options": [
+      "The sun is too bright.",
+      "The stars are asleep.",
+      "The clouds are too thick."
+     ],
+     "answer": "A",
+     "why": "The sun is too bright in the daytime.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g6r-u5-1-B1",
+     "type": "tf",
+     "stem": "The Earth is a planet.",
+     "answer": "T",
+     "why": "It is a planet in outer space.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u5-1-B2",
+     "type": "tf",
+     "stem": "We can never see the moon in the daytime.",
+     "answer": "F",
+     "why": "Sometimes we can see it in the sky.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u5-1-B3",
+     "type": "tf",
+     "stem": "We usually see stars at night.",
+     "answer": "T",
+     "why": "We usually see stars at night.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6r-u5-1-C1",
+     "type": "fill",
+     "stem": "The Earth is a ____ in outer space.",
+     "answers": [
+      [
+       "planet"
+      ]
+     ],
+     "why": "It is a planet in outer space.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u5-1-C2",
+     "type": "fill",
+     "stem": "We usually see stars at ____.",
+     "answers": [
+      [
+       "night"
+      ]
+     ],
+     "why": "We usually see stars at night.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u5-1-C3",
+     "type": "fill",
+     "stem": "The ____ is too bright in the daytime.",
+     "answers": [
+      [
+       "sun"
+      ]
+     ],
+     "why": "The sun is too bright in the daytime.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

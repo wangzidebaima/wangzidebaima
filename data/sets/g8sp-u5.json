@@ -1,0 +1,82 @@
+{
+ "id": "g8sp-u5",
+ "kind": "speaking",
+ "unit": "E8U5",
+ "title": "口语练习",
+ "subtitle": "每天 10 分钟 · 共 5 天",
+ "steps": [
+  "点 🔊 听一遍，听清语调",
+  "一句一句跟着读，声音要大，不怕错",
+  "读完点「今天完成了」打卡"
+ ],
+ "sentences": [
+  {
+   "en": "How do you make a pancake?",
+   "zh": "你怎么做煎饼？"
+  },
+  {
+   "en": "First, mix the flour with some milk.",
+   "zh": "首先，把面粉和牛奶混合。"
+  },
+  {
+   "en": "Pour the mixture into a hot pan.",
+   "zh": "把混合物倒进热锅里。"
+  },
+  {
+   "en": "Cut the pumpkin into small pieces.",
+   "zh": "把南瓜切成小块。"
+  },
+  {
+   "en": "Stir-fry it in oil for five minutes.",
+   "zh": "用油翻炒五分钟。"
+  },
+  {
+   "en": "Add a little pepper and cheese.",
+   "zh": "加一点胡椒和奶酪。"
+  },
+  {
+   "en": "Put the pie into the oven and bake it.",
+   "zh": "把派放进烤箱烤。"
+  },
+  {
+   "en": "According to the recipe, we need two spoons of sugar.",
+   "zh": "根据食谱，我们需要两勺糖。"
+  },
+  {
+   "en": "What a delicious meal this is!",
+   "zh": "这顿饭真好吃！"
+  }
+ ],
+ "plan": [
+  {
+   "day": 1,
+   "title": "跟读第 1–3 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 2,
+   "title": "跟读第 4–6 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 3,
+   "title": "跟读第 7–9 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 4,
+   "title": "不看书，说给家长听",
+   "task": "挑 5 句最喜欢的，尽量不看书说出来",
+   "minutes": 10
+  },
+  {
+   "day": 5,
+   "title": "自己说 3 句话",
+   "task": "用 'First, … Then, … Finally, …' 说 3 句话介绍你会做的一道菜",
+   "minutes": 10
+  }
+ ]
+}

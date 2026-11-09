@@ -1,0 +1,148 @@
+{
+ "id": "g3r-u3-2",
+ "kind": "reading",
+ "title": "Pets",
+ "subtitle": "考点：宠物 / Do you like cats?",
+ "unit": "E3U3",
+ "dialogue": [
+  {
+   "s": "Sam",
+   "t": "Do you have a pet, Lily?"
+  },
+  {
+   "s": "Lily",
+   "t": "Yes. I have a dog. I like dogs."
+  },
+  {
+   "s": "Sam",
+   "t": "I have a cat. Do you like cats?"
+  },
+  {
+   "s": "Lily",
+   "t": "Yes, but I like rabbits, too."
+  }
+ ],
+ "vocab": "pet 宠物 · dog 狗 · cat 猫 · rabbit 兔子 · like 喜欢 · have 有",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3r-u3-2-A1",
+     "type": "choice",
+     "stem": "What pet does Lily have?",
+     "options": [
+      "A cat.",
+      "A fish.",
+      "A dog."
+     ],
+     "answer": "C",
+     "why": "I have a dog.",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u3-2-A2",
+     "type": "choice",
+     "stem": "What pet does Sam have?",
+     "options": [
+      "A cat.",
+      "A dog.",
+      "A rabbit."
+     ],
+     "answer": "A",
+     "why": "I have a cat.",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u3-2-A3",
+     "type": "choice",
+     "stem": "What animal does Lily like, too?",
+     "options": [
+      "Birds.",
+      "Rabbits.",
+      "Fish."
+     ],
+     "answer": "B",
+     "why": "I like rabbits, too.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g3r-u3-2-B1",
+     "type": "tf",
+     "stem": "Lily has a dog.",
+     "answer": "T",
+     "why": "I have a dog.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u3-2-B2",
+     "type": "tf",
+     "stem": "Sam has a dog.",
+     "answer": "F",
+     "why": "Sam says: I have a cat.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u3-2-B3",
+     "type": "tf",
+     "stem": "Lily likes rabbits.",
+     "answer": "T",
+     "why": "I like rabbits, too.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3r-u3-2-C1",
+     "type": "fill",
+     "stem": "Lily has a ____.",
+     "answers": [
+      [
+       "dog"
+      ]
+     ],
+     "why": "I have a dog.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u3-2-C2",
+     "type": "fill",
+     "stem": "Sam has a ____.",
+     "answers": [
+      [
+       "cat"
+      ]
+     ],
+     "why": "I have a cat.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u3-2-C3",
+     "type": "fill",
+     "stem": "Lily likes ____, too.",
+     "answers": [
+      [
+       "rabbits"
+      ]
+     ],
+     "why": "I like rabbits, too.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

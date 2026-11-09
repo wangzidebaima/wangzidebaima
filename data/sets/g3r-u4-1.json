@@ -1,0 +1,152 @@
+{
+ "id": "g3r-u4-1",
+ "kind": "reading",
+ "title": "Plants Need Water",
+ "subtitle": "考点：植物需要什么 / Plants need water, sun and air.",
+ "unit": "E3U4",
+ "dialogue": [
+  {
+   "s": "Amy",
+   "t": "Let's go to the garden, Ben."
+  },
+  {
+   "s": "Ben",
+   "t": "OK. Look at the flowers. They need water."
+  },
+  {
+   "s": "Amy",
+   "t": "Plants need water."
+  },
+  {
+   "s": "Ben",
+   "t": "Plants need sun and air, too."
+  },
+  {
+   "s": "Amy",
+   "t": "Let's water the flowers."
+  }
+ ],
+ "vocab": "garden 花园 · flower 花 · plant 植物 · water 水/浇水 · sun 太阳 · air 空气",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3r-u4-1-A1",
+     "type": "choice",
+     "stem": "Where do they go?",
+     "options": [
+      "To the zoo.",
+      "To the garden.",
+      "To the school."
+     ],
+     "answer": "B",
+     "why": "Let's go to the garden.",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u4-1-A2",
+     "type": "choice",
+     "stem": "What do plants need?",
+     "options": [
+      "Only fish.",
+      "Only books.",
+      "Water, sun and air."
+     ],
+     "answer": "C",
+     "why": "Plants need water. Plants need sun and air, too.",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u4-1-A3",
+     "type": "choice",
+     "stem": "What will they water?",
+     "options": [
+      "The flowers.",
+      "The grass.",
+      "The tree."
+     ],
+     "answer": "A",
+     "why": "Let's water the flowers.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g3r-u4-1-B1",
+     "type": "tf",
+     "stem": "Plants need water.",
+     "answer": "T",
+     "why": "Plants need water.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u4-1-B2",
+     "type": "tf",
+     "stem": "Plants do not need air.",
+     "answer": "F",
+     "why": "Plants need sun and air, too.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u4-1-B3",
+     "type": "tf",
+     "stem": "Amy and Ben go to the zoo.",
+     "answer": "F",
+     "why": "They go to the garden.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3r-u4-1-C1",
+     "type": "fill",
+     "stem": "Let's go to the ____.",
+     "answers": [
+      [
+       "garden"
+      ]
+     ],
+     "why": "Let's go to the garden.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u4-1-C2",
+     "type": "fill",
+     "stem": "Plants need sun and ____, too.",
+     "answers": [
+      [
+       "air"
+      ]
+     ],
+     "why": "Plants need sun and air, too.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u4-1-C3",
+     "type": "fill",
+     "stem": "Amy says, \"Let's ____ the flowers.\"",
+     "answers": [
+      [
+       "water"
+      ]
+     ],
+     "why": "Let's water the flowers.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

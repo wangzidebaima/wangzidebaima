@@ -1,0 +1,120 @@
+{
+ "id": "g5l-u4-2",
+ "kind": "listening",
+ "title": "Too Much Phone",
+ "subtitle": "对话",
+ "unit": "E5U4",
+ "speakers": {
+  "Mum": "c1",
+  "Ben": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Mum",
+   "t": "Ben, you play on your phone for three hours every day."
+  },
+  {
+   "s": "Ben",
+   "t": "But I like the games."
+  },
+  {
+   "s": "Mum",
+   "t": "You should play for less time."
+  },
+  {
+   "s": "Ben",
+   "t": "Then what can I do?"
+  },
+  {
+   "s": "Mum",
+   "t": "You can read books or play football."
+  },
+  {
+   "s": "Ben",
+   "t": "OK. I will play for one hour only."
+  },
+  {
+   "s": "Mum",
+   "t": "Good boy. Take care of your eyes."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5l-u4-2-A1",
+     "type": "choice",
+     "stem": "How long does Ben play on his phone now?",
+     "options": [
+      "One hour.",
+      "Five hours.",
+      "Three hours."
+     ],
+     "answer": "C",
+     "why": "you play on your phone for three hours every day.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u4-2-A2",
+     "type": "choice",
+     "stem": "What does Mum say Ben should do?",
+     "options": [
+      "Play for less time.",
+      "Play more games.",
+      "Buy a new phone."
+     ],
+     "answer": "A",
+     "why": "You should play for less time.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u4-2-A3",
+     "type": "choice",
+     "stem": "How long will Ben play from now on?",
+     "options": [
+      "Two hours.",
+      "One hour.",
+      "Half an hour."
+     ],
+     "answer": "B",
+     "why": "I will play for one hour only.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5l-u4-2-B1",
+     "type": "fill",
+     "stem": "Ben likes the ____.",
+     "answers": [
+      [
+       "games"
+      ]
+     ],
+     "why": "I like the games.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u4-2-B2",
+     "type": "fill",
+     "stem": "Take care of your ____.",
+     "answers": [
+      [
+       "eyes"
+      ]
+     ],
+     "why": "Take care of your eyes.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

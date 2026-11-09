@@ -282,6 +282,11 @@
             "chap1"
           ],
           "goal": 10
+        },
+        {
+          "label": "听一篇美文",
+          "kind": "essay",
+          "goal": 1
         }
       ],
       "grade": "一年级",
@@ -310,6 +315,9 @@
       ],
       "theme": "blue",
       "subjects": [
+        "g3reading",
+        "g3listening",
+        "g3speaking",
         "g3chinese",
         "g3sci"
       ],
@@ -348,6 +356,25 @@
           "goal": 10
         },
         {
+          "label": "阅读理解 10 分钟",
+          "kind": "cat",
+          "cat": "reading",
+          "goal": 10,
+          "minutes": true
+        },
+        {
+          "label": "英语听力 10 分钟",
+          "kind": "cat",
+          "cat": "listening",
+          "goal": 10,
+          "minutes": true
+        },
+        {
+          "label": "口语打卡（10 分钟）",
+          "kind": "speak",
+          "goal": 1
+        },
+        {
           "label": "听一篇美文",
           "kind": "essay",
           "goal": 1
@@ -381,6 +408,9 @@
       ],
       "theme": "leaf",
       "subjects": [
+        "g5reading",
+        "g5listening",
+        "g5speaking",
         "g5chinese",
         "g5sci"
       ],
@@ -419,6 +449,25 @@
           "goal": 10
         },
         {
+          "label": "阅读理解 10 分钟",
+          "kind": "cat",
+          "cat": "reading",
+          "goal": 10,
+          "minutes": true
+        },
+        {
+          "label": "英语听力 10 分钟",
+          "kind": "cat",
+          "cat": "listening",
+          "goal": 10,
+          "minutes": true
+        },
+        {
+          "label": "口语打卡（10 分钟）",
+          "kind": "speak",
+          "goal": 1
+        },
+        {
           "label": "听一篇美文",
           "kind": "essay",
           "goal": 1
@@ -452,6 +501,9 @@
       ],
       "theme": "rose",
       "subjects": [
+        "g6reading",
+        "g6listening",
+        "g6speaking",
         "g6chinese",
         "g6sci"
       ],
@@ -490,6 +542,25 @@
           "goal": 10
         },
         {
+          "label": "阅读理解 10 分钟",
+          "kind": "cat",
+          "cat": "reading",
+          "goal": 10,
+          "minutes": true
+        },
+        {
+          "label": "英语听力 10 分钟",
+          "kind": "cat",
+          "cat": "listening",
+          "goal": 10,
+          "minutes": true
+        },
+        {
+          "label": "口语打卡（10 分钟）",
+          "kind": "speak",
+          "goal": 1
+        },
+        {
           "label": "听一篇美文",
           "kind": "essay",
           "goal": 1
@@ -523,6 +594,9 @@
       ],
       "theme": "blue",
       "subjects": [
+        "g8reading",
+        "g8listening",
+        "g8speaking",
         "g8chinese",
         "g8hist",
         "g8poli",
@@ -550,6 +624,25 @@
           "label": "学习 5 个单词",
           "kind": "learn",
           "goal": 5
+        },
+        {
+          "label": "阅读理解 10 分钟",
+          "kind": "cat",
+          "cat": "reading",
+          "goal": 10,
+          "minutes": true
+        },
+        {
+          "label": "英语听力 10 分钟",
+          "kind": "cat",
+          "cat": "listening",
+          "goal": 10,
+          "minutes": true
+        },
+        {
+          "label": "口语打卡（10 分钟）",
+          "kind": "speak",
+          "goal": 1
         }
       ],
       "grade": "八年级",
@@ -586,6 +679,9 @@
       ],
       "theme": "leaf",
       "subjects": [
+        "g9reading",
+        "g9listening",
+        "g9speaking",
         "g9chinese",
         "g9phy",
         "g9hist",
@@ -603,19 +699,43 @@
         {
           "label": "数学练习 10 题",
           "kind": "rand",
-          "subs": ["chap9", "math9"],
+          "subs": [
+            "chap9",
+            "math9"
+          ],
           "goal": 10
         },
         {
           "label": "物理计算练习 10 题",
           "kind": "rand",
-          "subs": ["chapp9"],
+          "subs": [
+            "chapp9"
+          ],
           "goal": 10
         },
         {
           "label": "学习 5 个单词",
           "kind": "learn",
           "goal": 5
+        },
+        {
+          "label": "阅读理解 10 分钟",
+          "kind": "cat",
+          "cat": "reading",
+          "goal": 10,
+          "minutes": true
+        },
+        {
+          "label": "英语听力 10 分钟",
+          "kind": "cat",
+          "cat": "listening",
+          "goal": 10,
+          "minutes": true
+        },
+        {
+          "label": "口语打卡（10 分钟）",
+          "kind": "speak",
+          "goal": 1
         }
       ],
       "grade": "九年级",

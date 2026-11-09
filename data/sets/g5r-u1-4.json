@@ -1,0 +1,160 @@
+{
+ "id": "g5r-u1-4",
+ "kind": "reading",
+ "title": "A New Friend",
+ "subtitle": "考点：介绍朋友 / My friend is from Australia.",
+ "unit": "E5U1",
+ "dialogue": [
+  {
+   "s": "Amy",
+   "t": "We have a new friend in our class. He is from Australia."
+  },
+  {
+   "s": "Mike",
+   "t": "What is his name?"
+  },
+  {
+   "s": "Amy",
+   "t": "His name is Jack. He is lovely and he can play chess."
+  },
+  {
+   "s": "Mike",
+   "t": "I like chess too! Can he play the piano?"
+  },
+  {
+   "s": "Amy",
+   "t": "No, he can't. But he can jump rope very well."
+  },
+  {
+   "s": "Mike",
+   "t": "Great. Let's ask him to join our team."
+  },
+  {
+   "s": "Amy",
+   "t": "Good idea. He is clever and friendly."
+  }
+ ],
+ "vocab": "Australia 澳大利亚 · lovely 可爱的 · chess 国际象棋 · piano 钢琴 · jump rope 跳绳 · team 队",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5r-u1-4-A1",
+     "type": "choice",
+     "stem": "Where is Jack from?",
+     "options": [
+      "China.",
+      "Australia.",
+      "Canada."
+     ],
+     "answer": "B",
+     "why": "He is from Australia.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u1-4-A2",
+     "type": "choice",
+     "stem": "What can Jack play?",
+     "options": [
+      "The piano.",
+      "Ping-pong.",
+      "Chess."
+     ],
+     "answer": "C",
+     "why": "He can play chess.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u1-4-A3",
+     "type": "choice",
+     "stem": "What does Mike want to do?",
+     "options": [
+      "Ask Jack to join their team.",
+      "Play the piano with Jack.",
+      "Teach Jack to jump rope."
+     ],
+     "answer": "A",
+     "why": "Let's ask him to join our team.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g5r-u1-4-B1",
+     "type": "tf",
+     "stem": "Jack is from Australia.",
+     "answer": "T",
+     "why": "He is from Australia.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u1-4-B2",
+     "type": "tf",
+     "stem": "Jack can play the piano.",
+     "answer": "F",
+     "why": "No, he can't.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u1-4-B3",
+     "type": "tf",
+     "stem": "Jack can jump rope well.",
+     "answer": "T",
+     "why": "He can jump rope very well.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5r-u1-4-C1",
+     "type": "fill",
+     "stem": "Jack is from ____.",
+     "answers": [
+      [
+       "australia"
+      ]
+     ],
+     "why": "He is from Australia.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u1-4-C2",
+     "type": "fill",
+     "stem": "Jack can jump ____ very well.",
+     "answers": [
+      [
+       "rope"
+      ]
+     ],
+     "why": "He can jump rope very well.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u1-4-C3",
+     "type": "fill",
+     "stem": "Let's ask him to join our ____.",
+     "answers": [
+      [
+       "team"
+      ]
+     ],
+     "why": "Let's ask him to join our team.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

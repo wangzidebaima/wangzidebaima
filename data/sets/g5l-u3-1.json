@@ -1,0 +1,120 @@
+{
+ "id": "g5l-u3-1",
+ "kind": "listening",
+ "title": "My Timetable",
+ "subtitle": "对话",
+ "unit": "E5U3",
+ "speakers": {
+  "Lily": "c1",
+  "Sam": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Lily",
+   "t": "Sam, what is your favourite subject?"
+  },
+  {
+   "s": "Sam",
+   "t": "I like maths because it is interesting."
+  },
+  {
+   "s": "Lily",
+   "t": "When do you have maths?"
+  },
+  {
+   "s": "Sam",
+   "t": "On Tuesday and Thursday. What about you?"
+  },
+  {
+   "s": "Lily",
+   "t": "My favourite subject is music. We have it on Wednesday."
+  },
+  {
+   "s": "Sam",
+   "t": "Do you have music on Friday too?"
+  },
+  {
+   "s": "Lily",
+   "t": "No. On Friday we have art."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5l-u3-1-A1",
+     "type": "choice",
+     "stem": "Why does Sam like maths?",
+     "options": [
+      "It is easy.",
+      "It is interesting.",
+      "It is short."
+     ],
+     "answer": "B",
+     "why": "I like maths because it is interesting.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u3-1-A2",
+     "type": "choice",
+     "stem": "When does Lily have music?",
+     "options": [
+      "On Tuesday.",
+      "On Friday.",
+      "On Wednesday."
+     ],
+     "answer": "C",
+     "why": "We have it on Wednesday.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u3-1-A3",
+     "type": "choice",
+     "stem": "What do they have on Friday?",
+     "options": [
+      "Art.",
+      "Music.",
+      "Maths."
+     ],
+     "answer": "A",
+     "why": "On Friday we have art.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5l-u3-1-B1",
+     "type": "fill",
+     "stem": "Sam has maths on Tuesday and ____.",
+     "answers": [
+      [
+       "thursday"
+      ]
+     ],
+     "why": "On Tuesday and Thursday.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u3-1-B2",
+     "type": "fill",
+     "stem": "Lily's favourite subject is ____.",
+     "answers": [
+      [
+       "music"
+      ]
+     ],
+     "why": "My favourite subject is music.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

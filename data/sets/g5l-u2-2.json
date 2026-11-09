@@ -1,0 +1,120 @@
+{
+ "id": "g5l-u2-2",
+ "kind": "listening",
+ "title": "A Happy Day",
+ "subtitle": "对话",
+ "unit": "E5U2",
+ "speakers": {
+  "Lily": "c1",
+  "Ben": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Lily",
+   "t": "Ben, you look so excited today!"
+  },
+  {
+   "s": "Ben",
+   "t": "Yes! We are going to the science centre."
+  },
+  {
+   "s": "Lily",
+   "t": "Are your parents coming too?"
+  },
+  {
+   "s": "Ben",
+   "t": "Yes. My mother and father will come."
+  },
+  {
+   "s": "Lily",
+   "t": "That sounds fun. I want to go too."
+  },
+  {
+   "s": "Ben",
+   "t": "You can ask your parents. The trip is on Saturday."
+  },
+  {
+   "s": "Lily",
+   "t": "I will ask them tonight."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5l-u2-2-A1",
+     "type": "choice",
+     "stem": "How does Ben feel?",
+     "options": [
+      "Sad.",
+      "Angry.",
+      "Excited."
+     ],
+     "answer": "C",
+     "why": "you look so excited today!",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u2-2-A2",
+     "type": "choice",
+     "stem": "Where are they going?",
+     "options": [
+      "The science centre.",
+      "The zoo.",
+      "The beach."
+     ],
+     "answer": "A",
+     "why": "We are going to the science centre.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u2-2-A3",
+     "type": "choice",
+     "stem": "When is the trip?",
+     "options": [
+      "On Sunday.",
+      "On Saturday.",
+      "On Friday."
+     ],
+     "answer": "B",
+     "why": "The trip is on Saturday.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5l-u2-2-B1",
+     "type": "fill",
+     "stem": "Ben's ____ will come too.",
+     "answers": [
+      [
+       "parents"
+      ]
+     ],
+     "why": "Are your parents coming too? Yes.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u2-2-B2",
+     "type": "fill",
+     "stem": "Lily will ask them ____.",
+     "answers": [
+      [
+       "tonight"
+      ]
+     ],
+     "why": "I will ask them tonight.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

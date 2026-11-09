@@ -1,0 +1,152 @@
+{
+ "id": "g8r-u4-2",
+ "kind": "reading",
+ "title": "Little Workers: Bees",
+ "subtitle": "考点：蜜蜂与授粉 / connect / communicate",
+ "unit": "E8U4",
+ "passage": [
+  "Bees are tiny, but they play an important role in nature. When a bee visits a flower, some pollen sticks to its body. When it flies to the next flower, the pollen goes with it. This is called pollination. Without pollination, many plants cannot make fruit or seeds.",
+  "Bees live in groups and work together. Some bees look for flowers, and some stay in the hive to make honey. A bee that finds good flowers can communicate with other bees by dancing. The dance tells them where the flowers are.",
+  "People get honey and honeycomb from bees, but the greatest gift of bees is pollination. Scientists say that one third of the food we eat is connected with bees. If bees disappear, our food will change. For this reason, we should plant more flowers and not use too many chemicals in gardens."
+ ],
+ "vocab": "pollen 花粉 · pollination 授粉 · honeycomb 蜂巢 · communicate 交流 · connected 相连的 · disappear 消失 · role 作用",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8r-u4-2-A1",
+     "type": "choice",
+     "stem": "What sticks to a bee's body when it visits a flower?",
+     "options": [
+      "Honey.",
+      "Water.",
+      "Pollen.",
+      "Seeds."
+     ],
+     "answer": "C",
+     "why": "some pollen sticks to its body.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u4-2-A2",
+     "type": "choice",
+     "stem": "How can a bee tell other bees where the flowers are?",
+     "options": [
+      "By singing.",
+      "By making a sound with a leaf.",
+      "By drawing a map.",
+      "By dancing."
+     ],
+     "answer": "D",
+     "why": "communicate with other bees by dancing.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u4-2-A3",
+     "type": "choice",
+     "stem": "What is the greatest gift of bees?",
+     "options": [
+      "Pollination.",
+      "Honey.",
+      "Honeycomb.",
+      "Wings."
+     ],
+     "answer": "A",
+     "why": "the greatest gift of bees is pollination.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u4-2-A4",
+     "type": "choice",
+     "stem": "What does the writer say we should do?",
+     "options": [
+      "Catch more bees.",
+      "Plant more flowers.",
+      "Stop eating fruit.",
+      "Build more cities."
+     ],
+     "answer": "B",
+     "why": "we should plant more flowers.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g8r-u4-2-B1",
+     "type": "tf",
+     "stem": "Bees are important in nature.",
+     "answer": "T",
+     "why": "play an important role in nature.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u4-2-B2",
+     "type": "tf",
+     "stem": "All bees stay in the hive and make honey.",
+     "answer": "F",
+     "why": "有些蜜蜂出去找花（Some bees look for flowers）。",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u4-2-B3",
+     "type": "tf",
+     "stem": "One third of our food is connected with bees.",
+     "answer": "T",
+     "why": "one third of the food we eat is connected with bees.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8r-u4-2-C1",
+     "type": "fill",
+     "stem": "A bee visits a ____ and picks up pollen.",
+     "answers": [
+      [
+       "flower"
+      ]
+     ],
+     "why": "When a bee visits a flower.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u4-2-C2",
+     "type": "fill",
+     "stem": "Some bees stay in the ____ to make honey.",
+     "answers": [
+      [
+       "hive"
+      ]
+     ],
+     "why": "stay in the hive to make honey.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u4-2-C3",
+     "type": "fill",
+     "stem": "Bees live in ____ and work together.",
+     "answers": [
+      [
+       "groups"
+      ]
+     ],
+     "why": "Bees live in groups.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

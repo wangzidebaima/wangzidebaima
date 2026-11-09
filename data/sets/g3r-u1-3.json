@@ -1,0 +1,148 @@
+{
+ "id": "g3r-u1-3",
+ "kind": "reading",
+ "title": "A Good Friend",
+ "subtitle": "考点：帮助朋友 / I can help. I can share.",
+ "unit": "E3U1",
+ "dialogue": [
+  {
+   "s": "Tom",
+   "t": "Ben, I have no pencil."
+  },
+  {
+   "s": "Ben",
+   "t": "I can help you. I can share my pencil."
+  },
+  {
+   "s": "Tom",
+   "t": "Thank you, Ben. You are a good friend."
+  },
+  {
+   "s": "Ben",
+   "t": "Smile, Tom! Let's draw."
+  }
+ ],
+ "vocab": "pencil 铅笔 · help 帮助 · share 分享 · good 好的 · friend 朋友 · draw 画画",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3r-u1-3-A1",
+     "type": "choice",
+     "stem": "What does Tom not have?",
+     "options": [
+      "A pencil.",
+      "A book.",
+      "A bag."
+     ],
+     "answer": "A",
+     "why": "I have no pencil.",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u1-3-A2",
+     "type": "choice",
+     "stem": "Who is a good friend?",
+     "options": [
+      "Tom",
+      "Ben",
+      "Sam"
+     ],
+     "answer": "B",
+     "why": "You are a good friend. (Tom says it to Ben)",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u1-3-A3",
+     "type": "choice",
+     "stem": "What will they do?",
+     "options": [
+      "Read.",
+      "Sing.",
+      "Draw."
+     ],
+     "answer": "C",
+     "why": "Let's draw.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g3r-u1-3-B1",
+     "type": "tf",
+     "stem": "Tom has a pencil.",
+     "answer": "F",
+     "why": "Tom says: I have no pencil.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u1-3-B2",
+     "type": "tf",
+     "stem": "Ben can help Tom.",
+     "answer": "T",
+     "why": "I can help you.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u1-3-B3",
+     "type": "tf",
+     "stem": "Tom says Ben is a good friend.",
+     "answer": "T",
+     "why": "You are a good friend.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3r-u1-3-C1",
+     "type": "fill",
+     "stem": "Ben can ____ his pencil.",
+     "answers": [
+      [
+       "share"
+      ]
+     ],
+     "why": "I can share my pencil.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u1-3-C2",
+     "type": "fill",
+     "stem": "Tom says, \"You are a good ____.\"",
+     "answers": [
+      [
+       "friend"
+      ]
+     ],
+     "why": "You are a good friend.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u1-3-C3",
+     "type": "fill",
+     "stem": "Ben says, \"Let's ____.\"",
+     "answers": [
+      [
+       "draw"
+      ]
+     ],
+     "why": "Let's draw.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

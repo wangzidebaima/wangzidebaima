@@ -1,0 +1,110 @@
+{
+ "id": "g9l-u2-2",
+ "kind": "listening",
+ "title": "Michael Faraday's Road to Science",
+ "subtitle": "短文",
+ "unit": "E9U2",
+ "speakers": {
+  "Frank": "m1"
+ },
+ "transcript": [
+  {
+   "s": "Frank",
+   "t": "Michael Faraday was born in 1791 into a poor family in England. He left school at a young age, and at fourteen he started to work for a bookbinder."
+  },
+  {
+   "s": "Frank",
+   "t": "In his free time, he read the books he was binding and learned a lot about science. Later he went to lectures by a famous chemist, wrote down his notes carefully and sent them to him."
+  },
+  {
+   "s": "Frank",
+   "t": "The chemist liked the notes and gave Faraday a job as an assistant. Faraday worked very hard and made important discoveries about electricity."
+  },
+  {
+   "s": "Frank",
+   "t": "Today we use electricity every day, so we should remember him."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9l-u2-2-A1",
+     "type": "choice",
+     "stem": "What kind of family was Faraday born into?",
+     "options": [
+      "A rich family.",
+      "A family of scientists.",
+      "A poor family.",
+      "A royal family."
+     ],
+     "answer": "C",
+     "why": "born into a poor family.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u2-2-A2",
+     "type": "choice",
+     "stem": "What did Faraday do at fourteen?",
+     "options": [
+      "He entered a university.",
+      "He became a chemist.",
+      "He sailed to Africa.",
+      "He started to work for a bookbinder."
+     ],
+     "answer": "D",
+     "why": "at fourteen he started to work for a bookbinder.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u2-2-A3",
+     "type": "choice",
+     "stem": "How did Faraday get a job as an assistant?",
+     "options": [
+      "He sent his notes to a famous chemist.",
+      "He won a prize.",
+      "He wrote a book.",
+      "He built a machine."
+     ],
+     "answer": "A",
+     "why": "wrote down his notes carefully and sent them to him.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9l-u2-2-B1",
+     "type": "fill",
+     "stem": "At fourteen, Faraday began to work for a ____.",
+     "answers": [
+      [
+       "bookbinder"
+      ]
+     ],
+     "why": "to work for a bookbinder.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u2-2-B2",
+     "type": "fill",
+     "stem": "His discoveries were about ____.",
+     "answers": [
+      [
+       "electricity"
+      ]
+     ],
+     "why": "discoveries about electricity.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

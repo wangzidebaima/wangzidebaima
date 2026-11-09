@@ -1,0 +1,164 @@
+{
+ "id": "g6r-u1-3",
+ "kind": "reading",
+ "title": "The Long Bridge",
+ "subtitle": "考点：一般过去时 / How did you go?",
+ "unit": "E6U1",
+ "dialogue": [
+  {
+   "s": "Sam",
+   "t": "Ben, where did you go yesterday?"
+  },
+  {
+   "s": "Ben",
+   "t": "I went to Zhuhai by the Hong Kong-Zhuhai-Macao Bridge."
+  },
+  {
+   "s": "Sam",
+   "t": "Was the bridge long?"
+  },
+  {
+   "s": "Ben",
+   "t": "Yes, it was very long. We were on the bridge for a long time."
+  },
+  {
+   "s": "Sam",
+   "t": "How did you go there?"
+  },
+  {
+   "s": "Ben",
+   "t": "We went by bus with my parents."
+  },
+  {
+   "s": "Sam",
+   "t": "What did you see from the bridge?"
+  },
+  {
+   "s": "Ben",
+   "t": "I saw the blue sea and many ships. The view was great."
+  }
+ ],
+ "vocab": "bridge 桥 · long 长的 · sea 大海 · ship 轮船 · view 景色 · parents 父母",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6r-u1-3-A1",
+     "type": "choice",
+     "stem": "How did Ben go to the bridge?",
+     "options": [
+      "By bus.",
+      "By bike.",
+      "By boat."
+     ],
+     "answer": "A",
+     "why": "We went by bus with my parents.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u1-3-A2",
+     "type": "choice",
+     "stem": "What did Ben see from the bridge?",
+     "options": [
+      "Mountains and trees.",
+      "The sea and ships.",
+      "Houses and cars."
+     ],
+     "answer": "B",
+     "why": "I saw the blue sea and many ships.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u1-3-A3",
+     "type": "choice",
+     "stem": "How was the bridge?",
+     "options": [
+      "Very short.",
+      "Very old.",
+      "Very long."
+     ],
+     "answer": "C",
+     "why": "it was very long",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g6r-u1-3-B1",
+     "type": "tf",
+     "stem": "Ben went there yesterday.",
+     "answer": "T",
+     "why": "Sam asks where he went yesterday.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u1-3-B2",
+     "type": "tf",
+     "stem": "Ben went with his friends.",
+     "answer": "F",
+     "why": "We went by bus with my parents.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u1-3-B3",
+     "type": "tf",
+     "stem": "Ben saw ships from the bridge.",
+     "answer": "T",
+     "why": "I saw the blue sea and many ships.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6r-u1-3-C1",
+     "type": "fill",
+     "stem": "The bridge was very ____.",
+     "answers": [
+      [
+       "long"
+      ]
+     ],
+     "why": "it was very long",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u1-3-C2",
+     "type": "fill",
+     "stem": "Ben saw the blue sea and many ____.",
+     "answers": [
+      [
+       "ships"
+      ]
+     ],
+     "why": "many ships",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u1-3-C3",
+     "type": "fill",
+     "stem": "Ben went there with his ____.",
+     "answers": [
+      [
+       "parents"
+      ]
+     ],
+     "why": "with my parents",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

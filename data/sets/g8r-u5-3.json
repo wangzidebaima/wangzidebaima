@@ -1,0 +1,152 @@
+{
+ "id": "g8r-u5-3",
+ "kind": "reading",
+ "title": "A Bowl of Guoqiao Rice Noodles",
+ "subtitle": "考点：特色美食 / 烹饪方式 / put ... into",
+ "unit": "E8U5",
+ "passage": [
+  "Guoqiao Rice Noodles is a famous dish from Yunnan Province. It is served in a big bowl of very hot soup. On top of the soup, there is a thin layer of oil. The oil keeps the soup hot for a long time.",
+  "When the dish arrives, the rice noodles and other ingredients are not in the soup yet. They are on separate plates. First, you put the thin slices of meat into the bowl. They cook in a few seconds because the soup is so hot. Then you add vegetables, eggs and, at last, the noodles.",
+  "Mr Zhang runs a small shop in Kunming. He says that you should eat the dish while it is hot. Many visitors say it is one of the most delicious meals they have ever had. If you like spicy food, you can add a little pepper to your bowl. But be careful, because the soup can burn your mouth!"
+ ],
+ "vocab": "Yunnan 云南 · dish 菜肴 · layer 层 · oil 油 · separate 分开的 · slice 片 · pepper 辣椒/胡椒",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8r-u5-3-A1",
+     "type": "choice",
+     "stem": "Where is Guoqiao Rice Noodles from?",
+     "options": [
+      "Anhui Province.",
+      "Henan Province.",
+      "Scotland.",
+      "Yunnan Province."
+     ],
+     "answer": "D",
+     "why": "a famous dish from Yunnan Province.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u5-3-A2",
+     "type": "choice",
+     "stem": "What keeps the soup hot?",
+     "options": [
+      "A thin layer of oil.",
+      "A big lid.",
+      "A cold bowl.",
+      "A lot of rice."
+     ],
+     "answer": "A",
+     "why": "The oil keeps the soup hot.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u5-3-A3",
+     "type": "choice",
+     "stem": "What do you put into the bowl first?",
+     "options": [
+      "The noodles.",
+      "The thin slices of meat.",
+      "The eggs.",
+      "The vegetables."
+     ],
+     "answer": "B",
+     "why": "First, you put the thin slices of meat into the bowl.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u5-3-A4",
+     "type": "choice",
+     "stem": "Why should you be careful?",
+     "options": [
+      "The noodles are sour.",
+      "The bowl is very small.",
+      "The soup can burn your mouth.",
+      "The bowl is made of glass."
+     ],
+     "answer": "C",
+     "why": "the soup can burn your mouth!",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g8r-u5-3-B1",
+     "type": "tf",
+     "stem": "The soup is cold when it arrives.",
+     "answer": "F",
+     "why": "The soup is very hot.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u5-3-B2",
+     "type": "tf",
+     "stem": "The noodles are put into the soup last.",
+     "answer": "T",
+     "why": "at last, the noodles.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u5-3-B3",
+     "type": "tf",
+     "stem": "Mr Zhang runs a shop in Kunming.",
+     "answer": "T",
+     "why": "Mr Zhang runs a small shop in Kunming.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8r-u5-3-C1",
+     "type": "fill",
+     "stem": "The thin slices of meat cook in a few ____.",
+     "answers": [
+      [
+       "seconds"
+      ]
+     ],
+     "why": "cook in a few seconds.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u5-3-C2",
+     "type": "fill",
+     "stem": "The ingredients are on ____ plates.",
+     "answers": [
+      [
+       "separate"
+      ]
+     ],
+     "why": "on separate plates.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u5-3-C3",
+     "type": "fill",
+     "stem": "Some people add a little ____ to the soup.",
+     "answers": [
+      [
+       "pepper"
+      ]
+     ],
+     "why": "add a little pepper.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

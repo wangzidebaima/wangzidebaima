@@ -1,0 +1,124 @@
+{
+ "id": "g6l-u5-3",
+ "kind": "listening",
+ "title": "Day and Night Sky",
+ "subtitle": "对话",
+ "unit": "E6U5",
+ "speakers": {
+  "Amy": "c1",
+  "Sam": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Amy",
+   "t": "Sam, what can we see in the sky in the daytime?"
+  },
+  {
+   "s": "Sam",
+   "t": "We can see the sun and white clouds."
+  },
+  {
+   "s": "Amy",
+   "t": "And at night?"
+  },
+  {
+   "s": "Sam",
+   "t": "We can see the moon and stars."
+  },
+  {
+   "s": "Amy",
+   "t": "Why is it dark at night?"
+  },
+  {
+   "s": "Sam",
+   "t": "The Earth turns, and our side faces away from the sun."
+  },
+  {
+   "s": "Amy",
+   "t": "I like the sunset. The sky is orange."
+  },
+  {
+   "s": "Sam",
+   "t": "I like the sunrise more. It is so quiet."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6l-u5-3-A1",
+     "type": "choice",
+     "stem": "What can we see in the daytime sky?",
+     "options": [
+      "The sun and clouds.",
+      "The moon and stars.",
+      "Planes and birds only."
+     ],
+     "answer": "A",
+     "why": "We can see the sun and white clouds.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u5-3-A2",
+     "type": "choice",
+     "stem": "What colour is the sky at sunset?",
+     "options": [
+      "Green.",
+      "Orange.",
+      "Purple."
+     ],
+     "answer": "B",
+     "why": "The sky is orange.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u5-3-A3",
+     "type": "choice",
+     "stem": "Which does Sam like more?",
+     "options": [
+      "The sunset.",
+      "The night.",
+      "The sunrise."
+     ],
+     "answer": "C",
+     "why": "I like the sunrise more.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6l-u5-3-B1",
+     "type": "fill",
+     "stem": "We can see the moon and ____ at night.",
+     "answers": [
+      [
+       "stars"
+      ]
+     ],
+     "why": "We can see the moon and stars.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u5-3-B2",
+     "type": "fill",
+     "stem": "Sam says the sunrise is so ____.",
+     "answers": [
+      [
+       "quiet"
+      ]
+     ],
+     "why": "It is so quiet.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,120 @@
+{
+ "id": "g5l-u6-1",
+ "kind": "listening",
+ "title": "Hiking Plans",
+ "subtitle": "对话",
+ "unit": "E5U6",
+ "speakers": {
+  "Tom": "c1",
+  "Amy": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Tom",
+   "t": "Amy, shall we go hiking on Saturday?"
+  },
+  {
+   "s": "Amy",
+   "t": "Great idea! Where shall we go?"
+  },
+  {
+   "s": "Tom",
+   "t": "The famous mountain near the lake."
+  },
+  {
+   "s": "Amy",
+   "t": "Is there a waterfall?"
+  },
+  {
+   "s": "Tom",
+   "t": "Yes, in the forest. It is beautiful."
+  },
+  {
+   "s": "Amy",
+   "t": "What should we bring?"
+  },
+  {
+   "s": "Tom",
+   "t": "Water, food and a raincoat."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5l-u6-1-A1",
+     "type": "choice",
+     "stem": "When will they go hiking?",
+     "options": [
+      "On Sunday.",
+      "On Saturday.",
+      "On Friday."
+     ],
+     "answer": "B",
+     "why": "shall we go hiking on Saturday?",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u6-1-A2",
+     "type": "choice",
+     "stem": "Where is the waterfall?",
+     "options": [
+      "In the lake.",
+      "In the hotel.",
+      "In the forest."
+     ],
+     "answer": "C",
+     "why": "Yes, in the forest.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u6-1-A3",
+     "type": "choice",
+     "stem": "What should they bring?",
+     "options": [
+      "Water, food and a raincoat.",
+      "A map and a ball.",
+      "Books and toys."
+     ],
+     "answer": "A",
+     "why": "Water, food and a raincoat.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5l-u6-1-B1",
+     "type": "fill",
+     "stem": "The mountain is ____.",
+     "answers": [
+      [
+       "famous"
+      ]
+     ],
+     "why": "The famous mountain near the lake.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u6-1-B2",
+     "type": "fill",
+     "stem": "They go hiking on ____.",
+     "answers": [
+      [
+       "saturday"
+      ]
+     ],
+     "why": "on Saturday.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

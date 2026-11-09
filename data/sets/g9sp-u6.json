@@ -1,0 +1,82 @@
+{
+ "id": "g9sp-u6",
+ "kind": "speaking",
+ "unit": "E9U6",
+ "title": "口语练习",
+ "subtitle": "每天 10 分钟 · 共 5 天",
+ "steps": [
+  "点 🔊 听一遍，听清语调",
+  "一句一句跟着读，声音要大，不怕错",
+  "读完点「今天完成了」打卡"
+ ],
+ "sentences": [
+  {
+   "en": "Have you ever looked at the stars through a telescope?",
+   "zh": "你用望远镜看过星星吗？"
+  },
+  {
+   "en": "A rover is exploring the surface of Mars.",
+   "zh": "一辆火星车正在探索火星表面。"
+  },
+  {
+   "en": "Astronauts feel weightless on the space station.",
+   "zh": "宇航员在空间站里感觉失重。"
+  },
+  {
+   "en": "It is hard to fall asleep when you float in the air.",
+   "zh": "在空中漂浮时很难入睡。"
+  },
+  {
+   "en": "A rocket carries a satellite into space.",
+   "zh": "火箭把卫星送入太空。"
+  },
+  {
+   "en": "Voyager 1 is travelling far beyond the Earth.",
+   "zh": "旅行者 1 号正飞向远离地球的地方。"
+  },
+  {
+   "en": "Countries should cooperate with each other in space.",
+   "zh": "各国在太空领域应该相互合作。"
+  },
+  {
+   "en": "No human being has set foot on Mars yet.",
+   "zh": "还没有人类登上过火星。"
+  },
+  {
+   "en": "Our galaxy has billions of stars.",
+   "zh": "我们的银河系有数十亿颗恒星。"
+  }
+ ],
+ "plan": [
+  {
+   "day": 1,
+   "title": "跟读第 1–3 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 2,
+   "title": "跟读第 4–6 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 3,
+   "title": "跟读第 7–9 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 4,
+   "title": "不看书，说给家长听",
+   "task": "挑 5 句最喜欢的，尽量不看书说出来",
+   "minutes": 10
+  },
+  {
+   "day": 5,
+   "title": "自己说 3 句话",
+   "task": "用 'I would like to … in space because …' 说 3 句话谈谈你的太空梦想",
+   "minutes": 10
+  }
+ ]
+}

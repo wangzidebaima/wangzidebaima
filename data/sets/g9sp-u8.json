@@ -1,0 +1,82 @@
+{
+ "id": "g9sp-u8",
+ "kind": "speaking",
+ "unit": "E9U8",
+ "title": "口语练习",
+ "subtitle": "每天 10 分钟 · 共 5 天",
+ "steps": [
+  "点 🔊 听一遍，听清语调",
+  "一句一句跟着读，声音要大，不怕错",
+  "读完点「今天完成了」打卡"
+ ],
+ "sentences": [
+  {
+   "en": "Are you going to try out for the relay team?",
+   "zh": "你要去参加接力队选拔吗？"
+  },
+  {
+   "en": "He passed the baton to the next runner smoothly.",
+   "zh": "他把接力棒顺利地交给了下一位选手。"
+  },
+  {
+   "en": "She is catching up with the leader.",
+   "zh": "她正在追赶领先者。"
+  },
+  {
+   "en": "Neither he nor I can do ten pull-ups.",
+   "zh": "他和我都做不了十个引体向上。"
+  },
+  {
+   "en": "The crowd cheered when he took the lead.",
+   "zh": "他领先时，观众欢呼起来。"
+  },
+  {
+   "en": "Usain Bolt set a world record in the 100 metres.",
+   "zh": "尤塞恩·博尔特创造了 100 米世界纪录。"
+  },
+  {
+   "en": "Bing Dwen Dwen was the mascot of the 2022 Winter Olympics.",
+   "zh": "冰墩墩是 2022 年冬奥会的吉祥物。"
+  },
+  {
+   "en": "Sport is more than a game; it brings harmony to the world.",
+   "zh": "体育不只是比赛，它给世界带来和谐。"
+  },
+  {
+   "en": "Let's do our best and enjoy the competition.",
+   "zh": "让我们尽力而为，享受比赛。"
+  }
+ ],
+ "plan": [
+  {
+   "day": 1,
+   "title": "跟读第 1–3 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 2,
+   "title": "跟读第 4–6 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 3,
+   "title": "跟读第 7–9 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 4,
+   "title": "不看书，说给家长听",
+   "task": "挑 5 句最喜欢的，尽量不看书说出来",
+   "minutes": 10
+  },
+  {
+   "day": 5,
+   "title": "自己说 3 句话",
+   "task": "用 'I like … because …' 说 3 句话介绍你喜欢的运动",
+   "minutes": 10
+  }
+ ]
+}

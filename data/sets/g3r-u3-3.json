@@ -1,0 +1,152 @@
+{
+ "id": "g3r-u3-3",
+ "kind": "reading",
+ "title": "Fast and Tall",
+ "subtitle": "考点：描述动物 / The tiger is fast. The giraffe is tall.",
+ "unit": "E3U3",
+ "dialogue": [
+  {
+   "s": "Ben",
+   "t": "Look at the tiger. It is fast."
+  },
+  {
+   "s": "Amy",
+   "t": "Yes. And the giraffe is tall."
+  },
+  {
+   "s": "Ben",
+   "t": "The elephant is big."
+  },
+  {
+   "s": "Amy",
+   "t": "I like the giraffe."
+  },
+  {
+   "s": "Ben",
+   "t": "I like the tiger."
+  }
+ ],
+ "vocab": "tiger 老虎 · fast 快的 · giraffe 长颈鹿 · tall 高的 · elephant 大象 · big 大的",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3r-u3-3-A1",
+     "type": "choice",
+     "stem": "Which animal is fast?",
+     "options": [
+      "The tiger.",
+      "The giraffe.",
+      "The elephant."
+     ],
+     "answer": "A",
+     "why": "It is fast. (the tiger)",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u3-3-A2",
+     "type": "choice",
+     "stem": "Which animal is tall?",
+     "options": [
+      "The tiger.",
+      "The giraffe.",
+      "The monkey."
+     ],
+     "answer": "B",
+     "why": "The giraffe is tall.",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u3-3-A3",
+     "type": "choice",
+     "stem": "Which animal does Ben like?",
+     "options": [
+      "The giraffe.",
+      "The elephant.",
+      "The tiger."
+     ],
+     "answer": "C",
+     "why": "I like the tiger. (Ben)",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g3r-u3-3-B1",
+     "type": "tf",
+     "stem": "Amy likes the tiger.",
+     "answer": "F",
+     "why": "Amy says: I like the giraffe.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u3-3-B2",
+     "type": "tf",
+     "stem": "The elephant is big.",
+     "answer": "T",
+     "why": "The elephant is big.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u3-3-B3",
+     "type": "tf",
+     "stem": "The tiger is tall.",
+     "answer": "F",
+     "why": "The tiger is fast; the giraffe is tall.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3r-u3-3-C1",
+     "type": "fill",
+     "stem": "The tiger is ____.",
+     "answers": [
+      [
+       "fast"
+      ]
+     ],
+     "why": "It is fast.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u3-3-C2",
+     "type": "fill",
+     "stem": "The giraffe is ____.",
+     "answers": [
+      [
+       "tall"
+      ]
+     ],
+     "why": "The giraffe is tall.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u3-3-C3",
+     "type": "fill",
+     "stem": "The ____ is big.",
+     "answers": [
+      [
+       "elephant"
+      ]
+     ],
+     "why": "The elephant is big.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

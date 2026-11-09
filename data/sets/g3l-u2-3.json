@@ -1,0 +1,112 @@
+{
+ "id": "g3l-u2-3",
+ "kind": "listening",
+ "title": "A Big Family",
+ "subtitle": "对话",
+ "unit": "E3U2",
+ "speakers": {
+  "Amy": "c1",
+  "Tom": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Amy",
+   "t": "Do you have a big family, Tom?"
+  },
+  {
+   "s": "Tom",
+   "t": "Yes. I have a dad, a mum and two sisters."
+  },
+  {
+   "s": "Amy",
+   "t": "Wow! I have one brother."
+  },
+  {
+   "s": "Tom",
+   "t": "Is your family big?"
+  },
+  {
+   "s": "Amy",
+   "t": "No. My family is small."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3l-u2-3-A1",
+     "type": "choice",
+     "stem": "How many sisters does Tom have?",
+     "options": [
+      "Two.",
+      "One.",
+      "Three."
+     ],
+     "answer": "A",
+     "why": "I have a dad, a mum and two sisters.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u2-3-A2",
+     "type": "choice",
+     "stem": "What does Amy have?",
+     "options": [
+      "One sister.",
+      "One brother.",
+      "Two brothers."
+     ],
+     "answer": "B",
+     "why": "I have one brother.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u2-3-A3",
+     "type": "choice",
+     "stem": "How is Amy's family?",
+     "options": [
+      "Big.",
+      "Old.",
+      "Small."
+     ],
+     "answer": "C",
+     "why": "My family is small.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3l-u2-3-B1",
+     "type": "fill",
+     "stem": "Tom has a dad, a mum and two ____.",
+     "answers": [
+      [
+       "sisters"
+      ]
+     ],
+     "why": "I have a dad, a mum and two sisters.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u2-3-B2",
+     "type": "fill",
+     "stem": "Amy says, \"My family is ____.\"",
+     "answers": [
+      [
+       "small"
+      ]
+     ],
+     "why": "My family is small.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,164 @@
+{
+ "id": "g6r-u2-4",
+ "kind": "reading",
+ "title": "The School Race",
+ "subtitle": "考点：一般现在时与将来 / begin, win, judge",
+ "unit": "E6U2",
+ "dialogue": [
+  {
+   "s": "Tom",
+   "t": "Ben, you woke up early today."
+  },
+  {
+   "s": "Ben",
+   "t": "Yes. Today is our school race."
+  },
+  {
+   "s": "Tom",
+   "t": "Did you read the notice?"
+  },
+  {
+   "s": "Ben",
+   "t": "Yes. The race begins at nine o'clock."
+  },
+  {
+   "s": "Tom",
+   "t": "Who is the judge?"
+  },
+  {
+   "s": "Ben",
+   "t": "Mr Wang, our PE teacher."
+  },
+  {
+   "s": "Tom",
+   "t": "Good luck! I hope you win."
+  },
+  {
+   "s": "Ben",
+   "t": "Thanks. Please cheer for me later."
+  }
+ ],
+ "vocab": "race 比赛 · notice 通知 · judge 裁判 · begin 开始 · win 赢 · later 稍后",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6r-u2-4-A1",
+     "type": "choice",
+     "stem": "Why did Ben wake up early?",
+     "options": [
+      "He has a test today.",
+      "He has a race today.",
+      "He has a party today."
+     ],
+     "answer": "B",
+     "why": "Today is our school race.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u2-4-A2",
+     "type": "choice",
+     "stem": "When does the race begin?",
+     "options": [
+      "At eight o'clock.",
+      "At ten o'clock.",
+      "At nine o'clock."
+     ],
+     "answer": "C",
+     "why": "The race begins at nine o'clock.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u2-4-A3",
+     "type": "choice",
+     "stem": "Who is the judge?",
+     "options": [
+      "Mr Wang.",
+      "Tom.",
+      "Ben's mother."
+     ],
+     "answer": "A",
+     "why": "Mr Wang, our PE teacher.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g6r-u2-4-B1",
+     "type": "tf",
+     "stem": "Ben read the notice.",
+     "answer": "T",
+     "why": "Yes (I read it).",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u2-4-B2",
+     "type": "tf",
+     "stem": "Mr Wang is a doctor.",
+     "answer": "F",
+     "why": "Mr Wang is the PE teacher.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u2-4-B3",
+     "type": "tf",
+     "stem": "Ben wants Tom to cheer for him later.",
+     "answer": "T",
+     "why": "Please cheer for me later.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6r-u2-4-C1",
+     "type": "fill",
+     "stem": "The race begins at ____ o'clock.",
+     "answers": [
+      [
+       "nine"
+      ]
+     ],
+     "why": "at nine o'clock",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u2-4-C2",
+     "type": "fill",
+     "stem": "Ben woke up ____ today.",
+     "answers": [
+      [
+       "early"
+      ]
+     ],
+     "why": "you woke up early today",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u2-4-C3",
+     "type": "fill",
+     "stem": "The judge is Ben's PE ____.",
+     "answers": [
+      [
+       "teacher"
+      ]
+     ],
+     "why": "our PE teacher",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

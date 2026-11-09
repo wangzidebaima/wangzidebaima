@@ -1,0 +1,152 @@
+{
+ "id": "g8r-u3-2",
+ "kind": "reading",
+ "title": "Two Schools, Two Styles",
+ "subtitle": "考点：比较 / more ... than / 数字与事实",
+ "unit": "E8U3",
+ "passage": [
+  "Mei studies in Qingdao, China, and her pen friend Julie studies in Vancouver, Canada. They often write to each other and compare their school lives.",
+  "Mei's school starts at 7:40 a.m. and ends at 4:30 p.m. She has about forty students in her class. Julie's school starts later, at 8:30 a.m., and ends at 3:15 p.m. There are only twenty-five students in her class. Mei has more homework than Julie, but Julie has more clubs to choose from.",
+  "In spare time, Mei plays table tennis and Julie plays ice hockey. Julie says that school lunch in Canada is as simple as a sandwich and some fruit. Mei eats rice and vegetables at school. Both girls think the differences are interesting, and they hope to meet one day."
+ ],
+ "vocab": "compare 比较 · pen friend 笔友 · club 社团 · simple 简单的 · difference 差异 · interesting 有趣的 · homework 作业",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8r-u3-2-A1",
+     "type": "choice",
+     "stem": "Where does Julie study?",
+     "options": [
+      "In Qingdao.",
+      "In Seattle.",
+      "In Vancouver.",
+      "In Moscow."
+     ],
+     "answer": "C",
+     "why": "Julie studies in Vancouver, Canada.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u3-2-A2",
+     "type": "choice",
+     "stem": "How many students are in Julie's class?",
+     "options": [
+      "Forty.",
+      "Fifteen.",
+      "Thirty.",
+      "Twenty-five."
+     ],
+     "answer": "D",
+     "why": "There are only twenty-five students in her class.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u3-2-A3",
+     "type": "choice",
+     "stem": "Who has more homework?",
+     "options": [
+      "Mei.",
+      "Julie.",
+      "Both have the same.",
+      "Neither has any."
+     ],
+     "answer": "A",
+     "why": "Mei has more homework than Julie.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u3-2-A4",
+     "type": "choice",
+     "stem": "What does Julie eat for lunch?",
+     "options": [
+      "Rice and vegetables.",
+      "A sandwich and some fruit.",
+      "Noodles and soup.",
+      "Pizza and cake."
+     ],
+     "answer": "B",
+     "why": "school lunch ... is ... a sandwich and some fruit.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g8r-u3-2-B1",
+     "type": "tf",
+     "stem": "Mei's school starts earlier than Julie's school.",
+     "answer": "T",
+     "why": "Mei: 7:40 a.m.; Julie: 8:30 a.m.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u3-2-B2",
+     "type": "tf",
+     "stem": "Julie plays table tennis.",
+     "answer": "F",
+     "why": "Julie 打冰球（ice hockey），Mei 打乒乓球。",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u3-2-B3",
+     "type": "tf",
+     "stem": "Julie's school ends at 3:15 p.m.",
+     "answer": "T",
+     "why": "ends at 3:15 p.m.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8r-u3-2-C1",
+     "type": "fill",
+     "stem": "Mei and Julie are ____ friends.",
+     "answers": [
+      [
+       "pen"
+      ]
+     ],
+     "why": "her pen friend Julie.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u3-2-C2",
+     "type": "fill",
+     "stem": "Julie has more ____ to choose from.",
+     "answers": [
+      [
+       "clubs"
+      ]
+     ],
+     "why": "Julie has more clubs to choose from.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u3-2-C3",
+     "type": "fill",
+     "stem": "Mei plays table ____ in her spare time.",
+     "answers": [
+      [
+       "tennis"
+      ]
+     ],
+     "why": "Mei plays table tennis.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

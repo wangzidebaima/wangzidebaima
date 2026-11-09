@@ -1,0 +1,152 @@
+{
+ "id": "g3r-u5-3",
+ "kind": "reading",
+ "title": "A White Cat",
+ "subtitle": "考点：画动物和颜色 / Let's draw a white cat.",
+ "unit": "E3U5",
+ "dialogue": [
+  {
+   "s": "Amy",
+   "t": "Let's draw a cat, Sam."
+  },
+  {
+   "s": "Sam",
+   "t": "OK. What colour is your cat?"
+  },
+  {
+   "s": "Amy",
+   "t": "My cat is white."
+  },
+  {
+   "s": "Sam",
+   "t": "I draw a black cat."
+  },
+  {
+   "s": "Amy",
+   "t": "Black is nice! Let's draw a brown bear, too."
+  }
+ ],
+ "vocab": "draw 画画 · white 白色 · black 黑色 · brown 棕色 · bear 熊 · cat 猫",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3r-u5-3-A1",
+     "type": "choice",
+     "stem": "What colour is Amy's cat?",
+     "options": [
+      "White.",
+      "Black.",
+      "Brown."
+     ],
+     "answer": "A",
+     "why": "My cat is white.",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u5-3-A2",
+     "type": "choice",
+     "stem": "What colour is Sam's cat?",
+     "options": [
+      "White.",
+      "Black.",
+      "Brown."
+     ],
+     "answer": "B",
+     "why": "I draw a black cat.",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u5-3-A3",
+     "type": "choice",
+     "stem": "What will they draw, too?",
+     "options": [
+      "A yellow duck.",
+      "A pink fish.",
+      "A brown bear."
+     ],
+     "answer": "C",
+     "why": "Let's draw a brown bear, too.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g3r-u5-3-B1",
+     "type": "tf",
+     "stem": "Amy's cat is white.",
+     "answer": "T",
+     "why": "My cat is white.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u5-3-B2",
+     "type": "tf",
+     "stem": "Sam draws a brown cat.",
+     "answer": "F",
+     "why": "I draw a black cat.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u5-3-B3",
+     "type": "tf",
+     "stem": "They will draw a bear, too.",
+     "answer": "T",
+     "why": "Let's draw a brown bear, too.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3r-u5-3-C1",
+     "type": "fill",
+     "stem": "Amy's cat is ____.",
+     "answers": [
+      [
+       "white"
+      ]
+     ],
+     "why": "My cat is white.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u5-3-C2",
+     "type": "fill",
+     "stem": "Sam draws a ____ cat.",
+     "answers": [
+      [
+       "black"
+      ]
+     ],
+     "why": "I draw a black cat.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u5-3-C3",
+     "type": "fill",
+     "stem": "Let's draw a brown ____, too.",
+     "answers": [
+      [
+       "bear"
+      ]
+     ],
+     "why": "Let's draw a brown bear, too.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,151 @@
+{
+ "id": "g9r-u1-3",
+ "kind": "reading",
+ "title": "A High-tech Farm",
+ "subtitle": "考点：科技与农业 / e-payment, digital, greenhouse",
+ "unit": "E9U1",
+ "passage": [
+  "Mr Li is the manager of a high-tech farm near a big city. The farm has many greenhouses, and the tomatoes grow there all year. Computers in each greenhouse check the heat and the water. Mr Li can even look at the plants on his phone.",
+  "The farm's products are popular. Customers order fruit on a website, and they pay with e-payment. A driver brings the fruit to their homes the same day. Mr Li says, 'Digital tools make our work easier. We need fewer workers, but the workers need to learn new skills.' Last year, the farm opened a small school, where villagers learn how to use computers."
+ ],
+ "vocab": "manager 经理 · greenhouse 温室 · product 产品 · website 网站 · digital 数字的 · customer 顾客",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9r-u1-3-A1",
+     "type": "choice",
+     "stem": "What grows in the greenhouses?",
+     "options": [
+      "Corn.",
+      "Bushes.",
+      "Rice.",
+      "Tomatoes."
+     ],
+     "answer": "D",
+     "why": "the tomatoes grow there all year.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u1-3-A2",
+     "type": "choice",
+     "stem": "What do the computers in the greenhouses check?",
+     "options": [
+      "The heat and the water.",
+      "The workers' homes.",
+      "The price of fruit.",
+      "The road to the city."
+     ],
+     "answer": "A",
+     "why": "Computers in each greenhouse check the heat and the water.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u1-3-A3",
+     "type": "choice",
+     "stem": "How do customers pay?",
+     "options": [
+      "With old coins.",
+      "With e-payment.",
+      "By lorry.",
+      "At the school."
+     ],
+     "answer": "B",
+     "why": "they pay with e-payment.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u1-3-A4",
+     "type": "choice",
+     "stem": "What do the villagers learn at the farm's school?",
+     "options": [
+      "How to drive a lorry.",
+      "How to build a railway.",
+      "How to use computers.",
+      "How to cook tomatoes."
+     ],
+     "answer": "C",
+     "why": "villagers learn how to use computers.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g9r-u1-3-B1",
+     "type": "tf",
+     "stem": "Mr Li can check the plants on his phone.",
+     "answer": "T",
+     "why": "Mr Li can even look at the plants on his phone.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u1-3-B2",
+     "type": "tf",
+     "stem": "The farm needs more workers than before.",
+     "answer": "F",
+     "why": "We need fewer workers.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u1-3-B3",
+     "type": "tf",
+     "stem": "The fruit can arrive at customers' homes on the same day.",
+     "answer": "T",
+     "why": "A driver brings the fruit to their homes the same day.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9r-u1-3-C1",
+     "type": "fill",
+     "stem": "Mr Li is the ____ of a high-tech farm.",
+     "answers": [
+      [
+       "manager"
+      ]
+     ],
+     "why": "Mr Li is the manager of a high-tech farm.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u1-3-C2",
+     "type": "fill",
+     "stem": "Customers order fruit on a ____.",
+     "answers": [
+      [
+       "website"
+      ]
+     ],
+     "why": "Customers order fruit on a website.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u1-3-C3",
+     "type": "fill",
+     "stem": "Digital tools make our work ____.",
+     "answers": [
+      [
+       "easier"
+      ]
+     ],
+     "why": "Digital tools make our work easier.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

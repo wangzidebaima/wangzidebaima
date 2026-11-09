@@ -1,0 +1,124 @@
+{
+ "id": "g6l-u2-1",
+ "kind": "listening",
+ "title": "The Gala Plan",
+ "subtitle": "对话",
+ "unit": "E6U2",
+ "speakers": {
+  "Tom": "c1",
+  "Amy": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Tom",
+   "t": "Amy, our class gala is on Friday."
+  },
+  {
+   "s": "Amy",
+   "t": "I know. I will wear a green dress and sing a song."
+  },
+  {
+   "s": "Tom",
+   "t": "I will read a poem."
+  },
+  {
+   "s": "Amy",
+   "t": "Is your brother coming?"
+  },
+  {
+   "s": "Tom",
+   "t": "Yes. He will cheer for us."
+  },
+  {
+   "s": "Amy",
+   "t": "What time does the gala begin?"
+  },
+  {
+   "s": "Tom",
+   "t": "It begins at two o'clock."
+  },
+  {
+   "s": "Amy",
+   "t": "Great! See you there."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6l-u2-1-A1",
+     "type": "choice",
+     "stem": "When is the gala?",
+     "options": [
+      "On Monday.",
+      "On Friday.",
+      "On Sunday."
+     ],
+     "answer": "B",
+     "why": "our class gala is on Friday",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u2-1-A2",
+     "type": "choice",
+     "stem": "What will Amy wear?",
+     "options": [
+      "A red dress.",
+      "A white skirt.",
+      "A green dress."
+     ],
+     "answer": "C",
+     "why": "I will wear a green dress",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u2-1-A3",
+     "type": "choice",
+     "stem": "When does the gala begin?",
+     "options": [
+      "At two o'clock.",
+      "At four o'clock.",
+      "At ten o'clock."
+     ],
+     "answer": "A",
+     "why": "It begins at two o'clock.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6l-u2-1-B1",
+     "type": "fill",
+     "stem": "Tom will read a ____.",
+     "answers": [
+      [
+       "poem"
+      ]
+     ],
+     "why": "I will read a poem.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u2-1-B2",
+     "type": "fill",
+     "stem": "Tom's brother will ____ for them.",
+     "answers": [
+      [
+       "cheer"
+      ]
+     ],
+     "why": "He will cheer for us.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

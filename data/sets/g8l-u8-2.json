@@ -1,0 +1,118 @@
+{
+ "id": "g8l-u8-2",
+ "kind": "listening",
+ "title": "A Nervous Speaker",
+ "subtitle": "短文",
+ "unit": "E8U8",
+ "speakers": {
+  "Ben": "m1"
+ },
+ "transcript": [
+  {
+   "s": "Ben",
+   "t": "Last Monday, I had to give a speech in English class. I was very nervous the night before."
+  },
+  {
+   "s": "Ben",
+   "t": "My hands were cold and I could not sleep well. In the morning, my friend Tom gave me some tips."
+  },
+  {
+   "s": "Ben",
+   "t": "He said, take a deep breath, speak slowly, and look at your listeners."
+  },
+  {
+   "s": "Ben",
+   "t": "So I stood up, smiled and began. At first my voice shook, but I continued."
+  },
+  {
+   "s": "Ben",
+   "t": "After two minutes, I felt calmer. When I finished, everyone clapped."
+  },
+  {
+   "s": "Ben",
+   "t": "My teacher said it was a sincere and clear speech. Now I am not so afraid of speaking."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8l-u8-2-A1",
+     "type": "choice",
+     "stem": "When did Ben give his speech?",
+     "options": [
+      "Last Friday.",
+      "Yesterday.",
+      "Last Monday.",
+      "Next Monday."
+     ],
+     "answer": "C",
+     "why": "Last Monday, I had to give a speech.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u8-2-A2",
+     "type": "choice",
+     "stem": "Who gave Ben tips?",
+     "options": [
+      "His teacher.",
+      "His sister.",
+      "His mother.",
+      "Tom."
+     ],
+     "answer": "D",
+     "why": "my friend Tom gave me some tips.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u8-2-A3",
+     "type": "choice",
+     "stem": "How did Ben feel after two minutes?",
+     "options": [
+      "Calmer.",
+      "More nervous.",
+      "Angry.",
+      "Sleepy."
+     ],
+     "answer": "A",
+     "why": "After two minutes, I felt calmer.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8l-u8-2-B1",
+     "type": "fill",
+     "stem": "Ben's hands were ____ the night before.",
+     "answers": [
+      [
+       "cold"
+      ]
+     ],
+     "why": "My hands were cold.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u8-2-B2",
+     "type": "fill",
+     "stem": "When he finished, everyone ____.",
+     "answers": [
+      [
+       "clapped"
+      ]
+     ],
+     "why": "everyone clapped.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

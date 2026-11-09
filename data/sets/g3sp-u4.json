@@ -1,0 +1,82 @@
+{
+ "id": "g3sp-u4",
+ "kind": "speaking",
+ "unit": "E3U4",
+ "title": "口语练习",
+ "subtitle": "每天 10 分钟 · 共 5 天",
+ "steps": [
+  "点 🔊 听一遍，听清语调",
+  "一句一句跟着读，声音要大，不怕错",
+  "读完点「今天完成了」打卡"
+ ],
+ "sentences": [
+  {
+   "en": "I like apples and bananas.",
+   "zh": "我喜欢苹果和香蕉。"
+  },
+  {
+   "en": "The grapes are on the farm.",
+   "zh": "葡萄在农场里。"
+  },
+  {
+   "en": "Plants need water.",
+   "zh": "植物需要水。"
+  },
+  {
+   "en": "Plants need sun and air.",
+   "zh": "植物需要阳光和空气。"
+  },
+  {
+   "en": "Water the flowers.",
+   "zh": "给花浇水。"
+  },
+  {
+   "en": "The grass is green.",
+   "zh": "草是绿色的。"
+  },
+  {
+   "en": "Look at the new tree.",
+   "zh": "看这棵新树。"
+  },
+  {
+   "en": "Let's go to the garden.",
+   "zh": "我们去花园吧。"
+  },
+  {
+   "en": "Plants give us apples.",
+   "zh": "植物给我们苹果。"
+  }
+ ],
+ "plan": [
+  {
+   "day": 1,
+   "title": "跟读第 1–3 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 2,
+   "title": "跟读第 4–6 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 3,
+   "title": "跟读第 7–9 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 4,
+   "title": "不看书，说给家长听",
+   "task": "挑 5 句最喜欢的，尽量不看书说出来",
+   "minutes": 10
+  },
+  {
+   "day": 5,
+   "title": "自己说 3 句话",
+   "task": "用 'Plants need … Let's …' 说 3 句话介绍植物和花园",
+   "minutes": 10
+  }
+ ]
+}

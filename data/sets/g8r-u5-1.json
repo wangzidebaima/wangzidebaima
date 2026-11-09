@@ -1,0 +1,152 @@
+{
+ "id": "g8r-u5-1",
+ "kind": "reading",
+ "title": "Sunday Pancakes",
+ "subtitle": "考点：食谱步骤 / mix, pour, heat / 顺序词",
+ "unit": "E8U5",
+ "passage": [
+  "Every Sunday morning, Lucy makes pancakes for her family. The recipe is simple, and you only need a few ingredients: flour, eggs, milk, a little sugar and some butter.",
+  "First, mix the flour, sugar and eggs in a big bowl. Then pour the milk into the bowl and stir until the mixture is smooth. Next, heat a pan and put a small piece of butter in it. When the butter is hot, pour some of the mixture into the pan. Wait for about two minutes, then turn the pancake over. Cook the other side for one more minute.",
+  "Lucy puts the pancakes on a plate and adds a little honey or fruit. Her brother likes them with cream, but her father prefers them plain. “The secret is to use a hot pan,” says Lucy. Everyone enjoys the warm pancakes, and there is always a mess in the kitchen afterwards!"
+ ],
+ "vocab": "ingredient 原料 · flour 面粉 · mix 混合 · pour 倒 · pan 平底锅 · mixture 混合物 · secret 秘诀",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8r-u5-1-A1",
+     "type": "choice",
+     "stem": "When does Lucy make pancakes?",
+     "options": [
+      "On Friday nights.",
+      "On Sunday mornings.",
+      "On her birthday only.",
+      "On school days."
+     ],
+     "answer": "B",
+     "why": "Every Sunday morning, Lucy makes pancakes.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u5-1-A2",
+     "type": "choice",
+     "stem": "What should you do first?",
+     "options": [
+      "Heat the pan.",
+      "Add honey.",
+      "Mix the flour, sugar and eggs in a bowl.",
+      "Turn the pancake over."
+     ],
+     "answer": "C",
+     "why": "First, mix the flour, sugar and eggs in a big bowl.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u5-1-A3",
+     "type": "choice",
+     "stem": "What is Lucy's secret?",
+     "options": [
+      "Use a lot of sugar.",
+      "Add some pepper.",
+      "Cook it for ten minutes.",
+      "Use a hot pan."
+     ],
+     "answer": "D",
+     "why": "The secret is to use a hot pan.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u5-1-A4",
+     "type": "choice",
+     "stem": "How does Lucy's brother like his pancakes?",
+     "options": [
+      "With cream.",
+      "With cheese.",
+      "With pepper.",
+      "With soup."
+     ],
+     "answer": "A",
+     "why": "Her brother likes them with cream.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g8r-u5-1-B1",
+     "type": "tf",
+     "stem": "The pancake recipe is difficult.",
+     "answer": "F",
+     "why": "The recipe is simple.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u5-1-B2",
+     "type": "tf",
+     "stem": "Lucy puts butter in the pan before the mixture.",
+     "answer": "T",
+     "why": "put a small piece of butter in it. When the butter is hot, pour ... the mixture.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u5-1-B3",
+     "type": "tf",
+     "stem": "Lucy's father likes pancakes with cream.",
+     "answer": "F",
+     "why": "爸爸更喜欢原味（prefers them plain）。",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8r-u5-1-C1",
+     "type": "fill",
+     "stem": "Lucy makes pancakes for her ____ every Sunday.",
+     "answers": [
+      [
+       "family"
+      ]
+     ],
+     "why": "makes pancakes for her family.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u5-1-C2",
+     "type": "fill",
+     "stem": "Pour the milk into the ____.",
+     "answers": [
+      [
+       "bowl"
+      ]
+     ],
+     "why": "pour the milk into the bowl.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u5-1-C3",
+     "type": "fill",
+     "stem": "Turn the pancake ____ after two minutes.",
+     "answers": [
+      [
+       "over"
+      ]
+     ],
+     "why": "turn the pancake over.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

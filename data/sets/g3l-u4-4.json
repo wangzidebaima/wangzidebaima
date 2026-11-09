@@ -1,0 +1,112 @@
+{
+ "id": "g3l-u4-4",
+ "kind": "listening",
+ "title": "What Do Plants Need?",
+ "subtitle": "对话",
+ "unit": "E3U4",
+ "speakers": {
+  "Amy": "c1",
+  "Ben": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Amy",
+   "t": "What do plants need, Ben?"
+  },
+  {
+   "s": "Ben",
+   "t": "Plants need water."
+  },
+  {
+   "s": "Amy",
+   "t": "What else?"
+  },
+  {
+   "s": "Ben",
+   "t": "Plants need sun and air."
+  },
+  {
+   "s": "Amy",
+   "t": "Great! Let's water our plant."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3l-u4-4-A1",
+     "type": "choice",
+     "stem": "What do plants need?",
+     "options": [
+      "Cakes and books.",
+      "Water, sun and air.",
+      "Dogs and fish."
+     ],
+     "answer": "B",
+     "why": "Plants need water. Plants need sun and air.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u4-4-A2",
+     "type": "choice",
+     "stem": "What will they water?",
+     "options": [
+      "Their dog.",
+      "Their book.",
+      "Their plant."
+     ],
+     "answer": "C",
+     "why": "Let's water our plant.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u4-4-A3",
+     "type": "choice",
+     "stem": "Who asks the questions?",
+     "options": [
+      "Amy",
+      "Ben",
+      "Mum"
+     ],
+     "answer": "A",
+     "why": "Amy: What do plants need, Ben?",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3l-u4-4-B1",
+     "type": "fill",
+     "stem": "Plants need sun and ____.",
+     "answers": [
+      [
+       "air"
+      ]
+     ],
+     "why": "Plants need sun and air.",
+     "pts": 1
+    },
+    {
+     "id": "g3l-u4-4-B2",
+     "type": "fill",
+     "stem": "Amy says, \"Let's water our ____.\"",
+     "answers": [
+      [
+       "plant"
+      ]
+     ],
+     "why": "Let's water our plant.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

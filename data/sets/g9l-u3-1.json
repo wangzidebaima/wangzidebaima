@@ -1,0 +1,127 @@
+{
+ "id": "g9l-u3-1",
+ "kind": "listening",
+ "title": "Flashcards for Words",
+ "subtitle": "对话",
+ "unit": "E9U3",
+ "speakers": {
+  "Frank": "m1",
+  "Cathy": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Frank",
+   "t": "Cathy, how do you remember so many English words?"
+  },
+  {
+   "s": "Cathy",
+   "t": "I make flashcards. I write the word on one side and the meaning on the other."
+  },
+  {
+   "s": "Frank",
+   "t": "Do you look up every new word in a dictionary?"
+  },
+  {
+   "s": "Cathy",
+   "t": "Yes, and I also write a sentence with it. That helps a lot."
+  },
+  {
+   "s": "Frank",
+   "t": "I just read the list again and again, but I forget the words."
+  },
+  {
+   "s": "Cathy",
+   "t": "Try reading aloud, too. It improves your pronunciation."
+  },
+  {
+   "s": "Frank",
+   "t": "I will try it step by step. How many words do you learn a day?"
+  },
+  {
+   "s": "Cathy",
+   "t": "About ten. Slow and steady works best."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9l-u3-1-A1",
+     "type": "choice",
+     "stem": "What does Cathy write on the other side of a flashcard?",
+     "options": [
+      "Her name.",
+      "The meaning.",
+      "The date.",
+      "A picture."
+     ],
+     "answer": "B",
+     "why": "the word on one side and the meaning on the other.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u3-1-A2",
+     "type": "choice",
+     "stem": "What does reading aloud improve?",
+     "options": [
+      "Handwriting.",
+      "Eyesight.",
+      "Pronunciation.",
+      "Math skills."
+     ],
+     "answer": "C",
+     "why": "It improves your pronunciation.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u3-1-A3",
+     "type": "choice",
+     "stem": "How many words does Cathy learn a day?",
+     "options": [
+      "About two.",
+      "About thirty.",
+      "About a hundred.",
+      "About ten."
+     ],
+     "answer": "D",
+     "why": "About ten.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9l-u3-1-B1",
+     "type": "fill",
+     "stem": "Cathy looks up new words in a ____.",
+     "answers": [
+      [
+       "dictionary"
+      ]
+     ],
+     "why": "look up every new word in a dictionary.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u3-1-B2",
+     "type": "fill",
+     "stem": "Slow and ____ works best.",
+     "answers": [
+      [
+       "steady"
+      ]
+     ],
+     "why": "Slow and steady works best.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

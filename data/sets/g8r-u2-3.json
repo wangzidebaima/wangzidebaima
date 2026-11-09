@@ -1,0 +1,152 @@
+{
+ "id": "g8r-u2-3",
+ "kind": "reading",
+ "title": "Paper-cuts for Spring Festival",
+ "subtitle": "考点：装饰房间 / cover / decorate",
+ "unit": "E8U2",
+ "passage": [
+  "Spring Festival is coming. Lin Hua's family is cleaning and decorating their home. This year, Lin Hua wants to make some paper-cuts for the windows.",
+  "She needs red paper, scissors and glue. First, she folds the paper in half. Then she draws a picture of a fish on it and cuts along the lines. When she opens the paper, there are two fish side by side. The fish is a popular pattern at Spring Festival because it stands for a good life.",
+  "Lin Hua makes ten paper-cuts and puts them on the windows with glue. Her grandmother covers the table with a red cloth and puts fresh flowers on it. In the evening, the whole family sits together in the warm living room. The smell of freshly made dumplings fills the apartment, and everyone feels full of joy."
+ ],
+ "vocab": "paper-cut 剪纸 · decorate 装饰 · scissors 剪刀 · glue 胶水 · cover 覆盖 · freshly 刚刚 · joy 快乐",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8r-u2-3-A1",
+     "type": "choice",
+     "stem": "What does Lin Hua want to make?",
+     "options": [
+      "A poster for her room.",
+      "A box for her books.",
+      "A cake for her family.",
+      "Paper-cuts for the windows."
+     ],
+     "answer": "D",
+     "why": "Lin Hua wants to make some paper-cuts for the windows.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u2-3-A2",
+     "type": "choice",
+     "stem": "What does she draw on the red paper?",
+     "options": [
+      "A fish.",
+      "A bird.",
+      "A flower.",
+      "A house."
+     ],
+     "answer": "A",
+     "why": "draws a picture of a fish on it.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u2-3-A3",
+     "type": "choice",
+     "stem": "What does Lin Hua's grandmother do?",
+     "options": [
+      "She cuts red paper.",
+      "She covers the table with a red cloth.",
+      "She cooks noodles.",
+      "She cleans the windows."
+     ],
+     "answer": "B",
+     "why": "Her grandmother covers the table with a red cloth.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u2-3-A4",
+     "type": "choice",
+     "stem": "What does the apartment smell of in the evening?",
+     "options": [
+      "Fresh paint.",
+      "Sweet cakes.",
+      "Freshly made dumplings.",
+      "Burning paper."
+     ],
+     "answer": "C",
+     "why": "The smell of freshly made dumplings fills the apartment.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g8r-u2-3-B1",
+     "type": "tf",
+     "stem": "Lin Hua uses blue paper for the paper-cuts.",
+     "answer": "F",
+     "why": "她用的是红纸（red paper）。",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u2-3-B2",
+     "type": "tf",
+     "stem": "She folds the paper before she cuts it.",
+     "answer": "T",
+     "why": "she folds the paper in half.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u2-3-B3",
+     "type": "tf",
+     "stem": "Lin Hua puts the paper-cuts on the windows.",
+     "answer": "T",
+     "why": "puts them on the windows with glue.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8r-u2-3-C1",
+     "type": "fill",
+     "stem": "Lin Hua needs red paper, ____ and glue.",
+     "answers": [
+      [
+       "scissors"
+      ]
+     ],
+     "why": "red paper, scissors and glue.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u2-3-C2",
+     "type": "fill",
+     "stem": "The fish stands for a good ____.",
+     "answers": [
+      [
+       "life"
+      ]
+     ],
+     "why": "it stands for a good life.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u2-3-C3",
+     "type": "fill",
+     "stem": "Grandmother puts fresh ____ on the table.",
+     "answers": [
+      [
+       "flowers"
+      ]
+     ],
+     "why": "puts fresh flowers on it.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

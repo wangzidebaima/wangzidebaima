@@ -1,0 +1,127 @@
+{
+ "id": "g8l-u3-1",
+ "kind": "listening",
+ "title": "Sisters Compared",
+ "subtitle": "对话",
+ "unit": "E8U3",
+ "speakers": {
+  "Jenny": "f1",
+  "Tom": "m1"
+ },
+ "transcript": [
+  {
+   "s": "Tom",
+   "t": "Jenny, is your sister older than you?"
+  },
+  {
+   "s": "Jenny",
+   "t": "Yes, Anna is two years older. We look alike, but we are very different."
+  },
+  {
+   "s": "Tom",
+   "t": "How are you different?"
+  },
+  {
+   "s": "Jenny",
+   "t": "I am outgoing, but Anna is shy. She is not as loud as I am."
+  },
+  {
+   "s": "Tom",
+   "t": "What do you do in your spare time?"
+  },
+  {
+   "s": "Jenny",
+   "t": "I play volleyball. Anna reads novels and plays the flute."
+  },
+  {
+   "s": "Tom",
+   "t": "Do you have anything in common?"
+  },
+  {
+   "s": "Jenny",
+   "t": "Yes, we both love dumplings and we both want to study in Vancouver."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8l-u3-1-A1",
+     "type": "choice",
+     "stem": "How old is Anna compared to Jenny?",
+     "options": [
+      "Two years younger.",
+      "Two years older.",
+      "Five years older.",
+      "The same age."
+     ],
+     "answer": "B",
+     "why": "Anna is two years older.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u3-1-A2",
+     "type": "choice",
+     "stem": "What does Anna do in her spare time?",
+     "options": [
+      "She plays volleyball.",
+      "She dances on stage.",
+      "She reads novels and plays the flute.",
+      "She cooks dumplings."
+     ],
+     "answer": "C",
+     "why": "Anna reads novels and plays the flute.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u3-1-A3",
+     "type": "choice",
+     "stem": "What do both sisters want?",
+     "options": [
+      "To live in Moscow.",
+      "To be actresses.",
+      "To play volleyball.",
+      "To study in Vancouver."
+     ],
+     "answer": "D",
+     "why": "we both want to study in Vancouver.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8l-u3-1-B1",
+     "type": "fill",
+     "stem": "Jenny is ____.",
+     "answers": [
+      [
+       "outgoing"
+      ]
+     ],
+     "why": "I am outgoing.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u3-1-B2",
+     "type": "fill",
+     "stem": "Both sisters love ____.",
+     "answers": [
+      [
+       "dumplings"
+      ]
+     ],
+     "why": "we both love dumplings.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

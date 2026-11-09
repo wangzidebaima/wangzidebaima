@@ -1,0 +1,160 @@
+{
+ "id": "g5r-u4-3",
+ "kind": "reading",
+ "title": "Exercise Every Day",
+ "subtitle": "考点：运动习惯 / Do some exercise every day.",
+ "unit": "E5U4",
+ "dialogue": [
+  {
+   "s": "Lily",
+   "t": "Ben, you look strong. What do you do every day?"
+  },
+  {
+   "s": "Ben",
+   "t": "I do some exercise every day. I run for half an hour after school."
+  },
+  {
+   "s": "Lily",
+   "t": "I have less free time now. I play games on my phone for two hours."
+  },
+  {
+   "s": "Ben",
+   "t": "Two hours is too long. You should play for less time."
+  },
+  {
+   "s": "Lily",
+   "t": "What should I do instead?"
+  },
+  {
+   "s": "Ben",
+   "t": "Come and run with me. Exercise is good for your body."
+  },
+  {
+   "s": "Lily",
+   "t": "OK. I will start tomorrow."
+  }
+ ],
+ "vocab": "exercise 锻炼 · free 空闲的 · phone 手机 · less 更少 · hour 小时 · habit 习惯 · show 显示",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5r-u4-3-A1",
+     "type": "choice",
+     "stem": "How long does Ben run after school?",
+     "options": [
+      "Half an hour.",
+      "Two hours.",
+      "One hour."
+     ],
+     "answer": "A",
+     "why": "I run for half an hour after school.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u4-3-A2",
+     "type": "choice",
+     "stem": "How long does Lily play on her phone?",
+     "options": [
+      "Half an hour.",
+      "Two hours.",
+      "Ten minutes."
+     ],
+     "answer": "B",
+     "why": "I play games on my phone for two hours.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u4-3-A3",
+     "type": "choice",
+     "stem": "When will Lily start to run?",
+     "options": [
+      "Today.",
+      "Next year.",
+      "Tomorrow."
+     ],
+     "answer": "C",
+     "why": "I will start tomorrow.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g5r-u4-3-B1",
+     "type": "tf",
+     "stem": "Ben does exercise every day.",
+     "answer": "T",
+     "why": "I do some exercise every day.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u4-3-B2",
+     "type": "tf",
+     "stem": "Lily has more free time now.",
+     "answer": "F",
+     "why": "I have less free time now.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u4-3-B3",
+     "type": "tf",
+     "stem": "Ben thinks two hours on the phone is too long.",
+     "answer": "T",
+     "why": "Two hours is too long.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5r-u4-3-C1",
+     "type": "fill",
+     "stem": "Ben runs after ____.",
+     "answers": [
+      [
+       "school"
+      ]
+     ],
+     "why": "I run for half an hour after school.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u4-3-C2",
+     "type": "fill",
+     "stem": "Lily plays games on her ____.",
+     "answers": [
+      [
+       "phone"
+      ]
+     ],
+     "why": "I play games on my phone.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u4-3-C3",
+     "type": "fill",
+     "stem": "Exercise is good for your ____.",
+     "answers": [
+      [
+       "body"
+      ]
+     ],
+     "why": "Exercise is good for your body.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

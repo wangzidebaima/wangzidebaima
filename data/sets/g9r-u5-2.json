@@ -1,0 +1,151 @@
+{
+ "id": "g9r-u5-2",
+ "kind": "reading",
+ "title": "The Railway on the Roof of the World",
+ "subtitle": "考点：工程创造 / result in, be responsible for, speed up",
+ "unit": "E9U5",
+ "passage": [
+  "The Qinghai-Tibet Railway goes to Lhasa and passes through Tanggula Pass, which is more than five thousand metres above sea level. Building it was a huge challenge. In many places, the ground is frozen soil. In summer, the top layer can melt, and a railway on soft ground may sink.",
+  "Engineers had good ideas. They put special pipes into the ground to keep the soil cold. They also built long bridges, so the railway does not touch the ground in some places. Thousands of workers were responsible for the building work, and new machines helped to speed it up. The railway has led to a rapid growth in tourism, and it makes life easier for people in Tibet."
+ ],
+ "vocab": "layer 层 · frozen 冻结的 · melt 融化 · pipe 管道 · tourism 旅游业 · rapid 迅速的",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9r-u5-2-A1",
+     "type": "choice",
+     "stem": "Where does the railway go?",
+     "options": [
+      "To Mombasa.",
+      "To Oakland.",
+      "To Lhasa.",
+      "To Paris."
+     ],
+     "answer": "C",
+     "why": "The Qinghai-Tibet Railway goes to Lhasa",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u5-2-A2",
+     "type": "choice",
+     "stem": "Why was the building difficult?",
+     "options": [
+      "There were no workers.",
+      "The mountains were too low.",
+      "The weather was always hot.",
+      "The ground is frozen soil that can melt."
+     ],
+     "answer": "D",
+     "why": "the ground is frozen soil. In summer, the top layer can melt",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u5-2-A3",
+     "type": "choice",
+     "stem": "How did engineers keep the soil cold?",
+     "options": [
+      "They put special pipes into the ground.",
+      "They covered it with sand.",
+      "They painted it white.",
+      "They poured hot water on it."
+     ],
+     "answer": "A",
+     "why": "They put special pipes into the ground to keep the soil cold.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u5-2-A4",
+     "type": "choice",
+     "stem": "What has the railway led to?",
+     "options": [
+      "Fewer visitors.",
+      "A rapid growth in tourism.",
+      "More sandstorms.",
+      "A shortage of food."
+     ],
+     "answer": "B",
+     "why": "The railway has led to a rapid growth in tourism",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g9r-u5-2-B1",
+     "type": "tf",
+     "stem": "Tanggula Pass is more than five thousand metres above sea level.",
+     "answer": "T",
+     "why": "more than five thousand metres above sea level.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u5-2-B2",
+     "type": "tf",
+     "stem": "The railway touches the ground everywhere.",
+     "answer": "F",
+     "why": "built long bridges, so the railway does not touch the ground in some places.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u5-2-B3",
+     "type": "tf",
+     "stem": "New machines helped to speed up the work.",
+     "answer": "T",
+     "why": "new machines helped to speed it up.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9r-u5-2-C1",
+     "type": "fill",
+     "stem": "In summer, the top ____ of the ground can melt.",
+     "answers": [
+      [
+       "layer"
+      ]
+     ],
+     "why": "the top layer can melt",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u5-2-C2",
+     "type": "fill",
+     "stem": "Engineers put special ____ into the ground.",
+     "answers": [
+      [
+       "pipes"
+      ]
+     ],
+     "why": "They put special pipes into the ground",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u5-2-C3",
+     "type": "fill",
+     "stem": "The railway makes life ____ for people in Tibet.",
+     "answers": [
+      [
+       "easier"
+      ]
+     ],
+     "why": "makes life easier for people in Tibet.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

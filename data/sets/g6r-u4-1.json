@@ -1,0 +1,164 @@
+{
+ "id": "g6r-u4-1",
+ "kind": "reading",
+ "title": "Saving for a Microscope",
+ "subtitle": "考点：一般将来时 / save up pocket money",
+ "unit": "E6U4",
+ "dialogue": [
+  {
+   "s": "Ben",
+   "t": "Amy, what are you saving up for?"
+  },
+  {
+   "s": "Amy",
+   "t": "I am saving up my pocket money for a microscope."
+  },
+  {
+   "s": "Ben",
+   "t": "How much does it cost?"
+  },
+  {
+   "s": "Amy",
+   "t": "It costs two hundred yuan."
+  },
+  {
+   "s": "Ben",
+   "t": "How much money do you have now?"
+  },
+  {
+   "s": "Amy",
+   "t": "I have half of it. I have one hundred yuan."
+  },
+  {
+   "s": "Ben",
+   "t": "How long will it take?"
+  },
+  {
+   "s": "Amy",
+   "t": "I save ten yuan every week, so about ten weeks."
+  }
+ ],
+ "vocab": "save up 攒钱 · pocket money 零花钱 · microscope 显微镜 · cost 花费 · half 一半 · week 周",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6r-u4-1-A1",
+     "type": "choice",
+     "stem": "What does Amy want to buy?",
+     "options": [
+      "A schoolbag.",
+      "A microscope.",
+      "A ticket."
+     ],
+     "answer": "B",
+     "why": "I am saving up my pocket money for a microscope.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u4-1-A2",
+     "type": "choice",
+     "stem": "How much does the microscope cost?",
+     "options": [
+      "Fifty yuan.",
+      "Two thousand yuan.",
+      "Two hundred yuan."
+     ],
+     "answer": "C",
+     "why": "It costs two hundred yuan.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u4-1-A3",
+     "type": "choice",
+     "stem": "How much does Amy save every week?",
+     "options": [
+      "Ten yuan.",
+      "Twenty yuan.",
+      "One hundred yuan."
+     ],
+     "answer": "A",
+     "why": "I save ten yuan every week.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g6r-u4-1-B1",
+     "type": "tf",
+     "stem": "Amy has one hundred yuan now.",
+     "answer": "T",
+     "why": "I have half of it. I have one hundred yuan.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u4-1-B2",
+     "type": "tf",
+     "stem": "The microscope costs one hundred yuan.",
+     "answer": "F",
+     "why": "It costs two hundred yuan.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u4-1-B3",
+     "type": "tf",
+     "stem": "Amy saves some money every week.",
+     "answer": "T",
+     "why": "I save ten yuan every week.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6r-u4-1-C1",
+     "type": "fill",
+     "stem": "Amy is saving up her pocket ____.",
+     "answers": [
+      [
+       "money"
+      ]
+     ],
+     "why": "saving up my pocket money",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u4-1-C2",
+     "type": "fill",
+     "stem": "Amy has ____ of the money now.",
+     "answers": [
+      [
+       "half"
+      ]
+     ],
+     "why": "I have half of it.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u4-1-C3",
+     "type": "fill",
+     "stem": "Amy saves ____ yuan every week.",
+     "answers": [
+      [
+       "ten"
+      ]
+     ],
+     "why": "I save ten yuan every week.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

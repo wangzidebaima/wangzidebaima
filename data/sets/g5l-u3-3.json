@@ -1,0 +1,120 @@
+{
+ "id": "g5l-u3-3",
+ "kind": "listening",
+ "title": "Monday Morning",
+ "subtitle": "对话",
+ "unit": "E5U3",
+ "speakers": {
+  "Mike": "c1",
+  "Tom": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Mike",
+   "t": "Tom, school starts on Monday. Are you ready?"
+  },
+  {
+   "s": "Tom",
+   "t": "Not really. I am not happy on Monday."
+  },
+  {
+   "s": "Mike",
+   "t": "Why not?"
+  },
+  {
+   "s": "Tom",
+   "t": "Because we have a long maths lesson first."
+  },
+  {
+   "s": "Mike",
+   "t": "But we have PE in the afternoon."
+  },
+  {
+   "s": "Tom",
+   "t": "That is true. I like PE."
+  },
+  {
+   "s": "Mike",
+   "t": "So Monday is not so bad."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5l-u3-3-A1",
+     "type": "choice",
+     "stem": "What day does school start?",
+     "options": [
+      "Monday.",
+      "Tuesday.",
+      "Sunday."
+     ],
+     "answer": "A",
+     "why": "school starts on Monday.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u3-3-A2",
+     "type": "choice",
+     "stem": "Why is Tom not happy?",
+     "options": [
+      "He has no friends.",
+      "They have a long maths lesson first.",
+      "It is too cold."
+     ],
+     "answer": "B",
+     "why": "Because we have a long maths lesson first.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u3-3-A3",
+     "type": "choice",
+     "stem": "When do they have PE?",
+     "options": [
+      "In the morning.",
+      "In the evening.",
+      "In the afternoon."
+     ],
+     "answer": "C",
+     "why": "we have PE in the afternoon.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5l-u3-3-B1",
+     "type": "fill",
+     "stem": "School starts on ____.",
+     "answers": [
+      [
+       "monday"
+      ]
+     ],
+     "why": "school starts on Monday.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u3-3-B2",
+     "type": "fill",
+     "stem": "Tom likes ____.",
+     "answers": [
+      [
+       "pe"
+      ]
+     ],
+     "why": "I like PE.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,127 @@
+{
+ "id": "g9l-u1-1",
+ "kind": "listening",
+ "title": "Paying with a Phone",
+ "subtitle": "对话",
+ "unit": "E9U1",
+ "speakers": {
+  "Amy": "f1",
+  "Ben": "m1"
+ },
+ "transcript": [
+  {
+   "s": "Amy",
+   "t": "Ben, why are you taking so much cash to the market?"
+  },
+  {
+   "s": "Ben",
+   "t": "I always do. I think it is safer than using my phone."
+  },
+  {
+   "s": "Amy",
+   "t": "But e-payment is very convenient. I have not carried cash for a year."
+  },
+  {
+   "s": "Ben",
+   "t": "Really? How do you pay for vegetables?"
+  },
+  {
+   "s": "Amy",
+   "t": "I just scan the code with my phone. It takes only two seconds."
+  },
+  {
+   "s": "Ben",
+   "t": "What if the phone runs out of power?"
+  },
+  {
+   "s": "Amy",
+   "t": "Then I bring a small charger. Now even the old farmer at the market uses a digital code."
+  },
+  {
+   "s": "Ben",
+   "t": "OK, you have convinced me. Show me how to do it."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9l-u1-1-A1",
+     "type": "choice",
+     "stem": "Why does Ben take cash to the market?",
+     "options": [
+      "He does not have a smartphone.",
+      "He thinks it is safer than using a phone.",
+      "He likes counting money.",
+      "The market does not accept codes."
+     ],
+     "answer": "B",
+     "why": "Ben: I think it is safer than using my phone.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u1-1-A2",
+     "type": "choice",
+     "stem": "How long does it take Amy to pay?",
+     "options": [
+      "About two minutes.",
+      "About twenty seconds.",
+      "About two seconds.",
+      "About two hours."
+     ],
+     "answer": "C",
+     "why": "It takes only two seconds.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u1-1-A3",
+     "type": "choice",
+     "stem": "What does Amy do in case the phone runs out of power?",
+     "options": [
+      "She pays with cash.",
+      "She asks the farmer for help.",
+      "She goes back home.",
+      "She brings a small charger."
+     ],
+     "answer": "D",
+     "why": "Then I bring a small charger.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9l-u1-1-B1",
+     "type": "fill",
+     "stem": "Amy has not carried ____ for a year.",
+     "answers": [
+      [
+       "cash"
+      ]
+     ],
+     "why": "I have not carried cash for a year.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u1-1-B2",
+     "type": "fill",
+     "stem": "Amy scans a ____ with her phone.",
+     "answers": [
+      [
+       "code"
+      ]
+     ],
+     "why": "I just scan the code with my phone.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,152 @@
+{
+ "id": "g3r-u2-2",
+ "kind": "reading",
+ "title": "I Have One Sister",
+ "subtitle": "考点：家庭成员 / I have a big family.",
+ "unit": "E3U2",
+ "dialogue": [
+  {
+   "s": "Sam",
+   "t": "Lily, do you have a brother?"
+  },
+  {
+   "s": "Lily",
+   "t": "No, I don't. I have one sister."
+  },
+  {
+   "s": "Sam",
+   "t": "How big is your family?"
+  },
+  {
+   "s": "Lily",
+   "t": "I have a big family. I have a dad, a mum, a grandpa and a sister."
+  },
+  {
+   "s": "Sam",
+   "t": "Wow! My family is small. I have a mum, a dad and me."
+  }
+ ],
+ "vocab": "sister 姐妹 · brother 兄弟 · big 大的 · small 小的 · grandpa 爷爷/外公 · family 家庭",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3r-u2-2-A1",
+     "type": "choice",
+     "stem": "What does Lily have?",
+     "options": [
+      "One brother.",
+      "Two sisters.",
+      "One sister."
+     ],
+     "answer": "C",
+     "why": "I have one sister.",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u2-2-A2",
+     "type": "choice",
+     "stem": "How is Lily's family?",
+     "options": [
+      "Big.",
+      "Small.",
+      "Old."
+     ],
+     "answer": "A",
+     "why": "I have a big family.",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u2-2-A3",
+     "type": "choice",
+     "stem": "How many people are in Sam's family?",
+     "options": [
+      "Two.",
+      "Three.",
+      "Four."
+     ],
+     "answer": "B",
+     "why": "I have a mum, a dad and me.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g3r-u2-2-B1",
+     "type": "tf",
+     "stem": "Lily has a brother.",
+     "answer": "F",
+     "why": "No, I don't. I have one sister.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u2-2-B2",
+     "type": "tf",
+     "stem": "Lily has a grandpa.",
+     "answer": "T",
+     "why": "I have a dad, a mum, a grandpa and a sister.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u2-2-B3",
+     "type": "tf",
+     "stem": "Sam has a mum and a dad.",
+     "answer": "T",
+     "why": "I have a mum, a dad and me.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3r-u2-2-C1",
+     "type": "fill",
+     "stem": "Lily has one ____.",
+     "answers": [
+      [
+       "sister"
+      ]
+     ],
+     "why": "I have one sister.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u2-2-C2",
+     "type": "fill",
+     "stem": "Lily has a ____ family.",
+     "answers": [
+      [
+       "big"
+      ]
+     ],
+     "why": "I have a big family.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u2-2-C3",
+     "type": "fill",
+     "stem": "Sam's family is ____.",
+     "answers": [
+      [
+       "small"
+      ]
+     ],
+     "why": "My family is small.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

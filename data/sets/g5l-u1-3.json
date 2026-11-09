@@ -1,0 +1,120 @@
+{
+ "id": "g5l-u1-3",
+ "kind": "listening",
+ "title": "The Robot Show",
+ "subtitle": "对话",
+ "unit": "E5U1",
+ "speakers": {
+  "Ben": "c1",
+  "Sam": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Ben",
+   "t": "Sam, are you going to the science show?"
+  },
+  {
+   "s": "Sam",
+   "t": "Yes. I want to see the robots."
+  },
+  {
+   "s": "Ben",
+   "t": "Let's sit in the front."
+  },
+  {
+   "s": "Sam",
+   "t": "Good idea. Can the robot play chess?"
+  },
+  {
+   "s": "Ben",
+   "t": "Yes. A student made it. She is very hard-working."
+  },
+  {
+   "s": "Sam",
+   "t": "That is wonderful!"
+  },
+  {
+   "s": "Ben",
+   "t": "The show starts at three o'clock."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5l-u1-3-A1",
+     "type": "choice",
+     "stem": "What are the boys going to see?",
+     "options": [
+      "A science show.",
+      "A football match.",
+      "A piano show."
+     ],
+     "answer": "A",
+     "why": "are you going to the science show?",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u1-3-A2",
+     "type": "choice",
+     "stem": "Where do they want to sit?",
+     "options": [
+      "At the back.",
+      "In the front.",
+      "Near the door."
+     ],
+     "answer": "B",
+     "why": "Let's sit in the front.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u1-3-A3",
+     "type": "choice",
+     "stem": "When does the show start?",
+     "options": [
+      "At two o'clock.",
+      "At four o'clock.",
+      "At three o'clock."
+     ],
+     "answer": "C",
+     "why": "The show starts at three o'clock.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5l-u1-3-B1",
+     "type": "fill",
+     "stem": "The robot can play ____.",
+     "answers": [
+      [
+       "chess"
+      ]
+     ],
+     "why": "Can the robot play chess? Yes.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u1-3-B2",
+     "type": "fill",
+     "stem": "A ____ made the robot.",
+     "answers": [
+      [
+       "student"
+      ]
+     ],
+     "why": "A student made it.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

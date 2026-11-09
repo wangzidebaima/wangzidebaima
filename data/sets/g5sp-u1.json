@@ -1,0 +1,82 @@
+{
+ "id": "g5sp-u1",
+ "kind": "speaking",
+ "unit": "E5U1",
+ "title": "口语练习",
+ "subtitle": "每天 10 分钟 · 共 5 天",
+ "steps": [
+  "点 🔊 听一遍，听清语调",
+  "一句一句跟着读，声音要大，不怕错",
+  "读完点「今天完成了」打卡"
+ ],
+ "sentences": [
+  {
+   "en": "He is a clever player.",
+   "zh": "他是一个聪明的选手。"
+  },
+  {
+   "en": "She is young and lovely.",
+   "zh": "她年轻又可爱。"
+  },
+  {
+   "en": "My friend is hard-working.",
+   "zh": "我的朋友很勤奋。"
+  },
+  {
+   "en": "He can play the piano.",
+   "zh": "他会弹钢琴。"
+  },
+  {
+   "en": "I can jump rope.",
+   "zh": "我会跳绳。"
+  },
+  {
+   "en": "She can play chess.",
+   "zh": "她会下国际象棋。"
+  },
+  {
+   "en": "Who is the star of our team?",
+   "zh": "谁是我们队的明星？"
+  },
+  {
+   "en": "He is from Australia.",
+   "zh": "他来自澳大利亚。"
+  },
+  {
+   "en": "My robot can walk and dance.",
+   "zh": "我的机器人会走路和跳舞。"
+  }
+ ],
+ "plan": [
+  {
+   "day": 1,
+   "title": "跟读第 1–3 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 2,
+   "title": "跟读第 4–6 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 3,
+   "title": "跟读第 7–9 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 4,
+   "title": "不看书，说给家长听",
+   "task": "挑 5 句最喜欢的，尽量不看书说出来",
+   "minutes": 10
+  },
+  {
+   "day": 5,
+   "title": "自己说 3 句话",
+   "task": "用 'He/She is … and can …' 说 3 句话介绍你的一位朋友",
+   "minutes": 10
+  }
+ ]
+}

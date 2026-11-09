@@ -1,0 +1,82 @@
+{
+ "id": "g9sp-u3",
+ "kind": "speaking",
+ "unit": "E9U3",
+ "title": "口语练习",
+ "subtitle": "每天 10 分钟 · 共 5 天",
+ "steps": [
+  "点 🔊 听一遍，听清语调",
+  "一句一句跟着读，声音要大，不怕错",
+  "读完点「今天完成了」打卡"
+ ],
+ "sentences": [
+  {
+   "en": "How do you learn English?",
+   "zh": "你是怎么学英语的？"
+  },
+  {
+   "en": "I make flashcards and look up new words in a dictionary.",
+   "zh": "我做单词卡片，并在词典里查生词。"
+  },
+  {
+   "en": "Reading aloud improves my pronunciation.",
+   "zh": "朗读能改善我的发音。"
+  },
+  {
+   "en": "I study step by step and make a plan for each week.",
+   "zh": "我一步一步地学，每周都做计划。"
+  },
+  {
+   "en": "In general, hands-on experiments make science fun.",
+   "zh": "总的来说，动手实验让科学变得有趣。"
+  },
+  {
+   "en": "In addition, I listen to English podcasts.",
+   "zh": "此外，我还听英语播客。"
+  },
+  {
+   "en": "I summarize the main points after each lesson.",
+   "zh": "每节课后我都总结要点。"
+  },
+  {
+   "en": "Feedback from my teacher helps me improve.",
+   "zh": "老师的反馈帮助我进步。"
+  },
+  {
+   "en": "I take advantage of online resources to learn efficiently.",
+   "zh": "我利用网络资源高效学习。"
+  }
+ ],
+ "plan": [
+  {
+   "day": 1,
+   "title": "跟读第 1–3 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 2,
+   "title": "跟读第 4–6 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 3,
+   "title": "跟读第 7–9 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 4,
+   "title": "不看书，说给家长听",
+   "task": "挑 5 句最喜欢的，尽量不看书说出来",
+   "minutes": 10
+  },
+  {
+   "day": 5,
+   "title": "自己说 3 句话",
+   "task": "用 'I learn … by … and it helps me …' 说 3 句话介绍你的学习方法",
+   "minutes": 10
+  }
+ ]
+}

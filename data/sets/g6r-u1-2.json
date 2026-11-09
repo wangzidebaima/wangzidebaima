@@ -1,0 +1,164 @@
+{
+ "id": "g6r-u1-2",
+ "kind": "reading",
+ "title": "A Day in Paris",
+ "subtitle": "考点：一般过去时 / Did you see ...?",
+ "unit": "E6U1",
+ "dialogue": [
+  {
+   "s": "Lily",
+   "t": "Tom, where did you go in the summer holiday?"
+  },
+  {
+   "s": "Tom",
+   "t": "I went to Paris with my aunt."
+  },
+  {
+   "s": "Lily",
+   "t": "Did you see the Eiffel Tower?"
+  },
+  {
+   "s": "Tom",
+   "t": "Yes! We went up it. The view was inspiring."
+  },
+  {
+   "s": "Lily",
+   "t": "What did you eat there?"
+  },
+  {
+   "s": "Tom",
+   "t": "We ate dinner in a small restaurant. I ate bread and soup."
+  },
+  {
+   "s": "Lily",
+   "t": "Did you take any photos?"
+  },
+  {
+   "s": "Tom",
+   "t": "Yes, I took a photo of the tower at night."
+  }
+ ],
+ "vocab": "Paris 巴黎 · Eiffel Tower 埃菲尔铁塔 · view 景色 · inspiring 令人振奋的 · restaurant 餐馆 · aunt 姑姑/阿姨",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6r-u1-2-A1",
+     "type": "choice",
+     "stem": "Who did Tom go to Paris with?",
+     "options": [
+      "His uncle.",
+      "His teacher.",
+      "His aunt."
+     ],
+     "answer": "C",
+     "why": "I went to Paris with my aunt.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u1-2-A2",
+     "type": "choice",
+     "stem": "How was the view?",
+     "options": [
+      "Inspiring.",
+      "Boring.",
+      "Scary."
+     ],
+     "answer": "A",
+     "why": "The view was inspiring.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u1-2-A3",
+     "type": "choice",
+     "stem": "What did Tom eat in the restaurant?",
+     "options": [
+      "Rice and fish.",
+      "Bread and soup.",
+      "Pizza and cake."
+     ],
+     "answer": "B",
+     "why": "I ate bread and soup.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g6r-u1-2-B1",
+     "type": "tf",
+     "stem": "Tom went to Paris in the summer holiday.",
+     "answer": "T",
+     "why": "Lily asks about the summer holiday and Tom says he went to Paris.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u1-2-B2",
+     "type": "tf",
+     "stem": "Tom ate dinner at home.",
+     "answer": "F",
+     "why": "We ate dinner in a small restaurant.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u1-2-B3",
+     "type": "tf",
+     "stem": "Tom took a photo of the tower.",
+     "answer": "T",
+     "why": "I took a photo of the tower at night.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6r-u1-2-C1",
+     "type": "fill",
+     "stem": "Tom went to Paris with his ____.",
+     "answers": [
+      [
+       "aunt"
+      ]
+     ],
+     "why": "with my aunt",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u1-2-C2",
+     "type": "fill",
+     "stem": "The ____ from the Eiffel Tower was inspiring.",
+     "answers": [
+      [
+       "view"
+      ]
+     ],
+     "why": "The view was inspiring.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u1-2-C3",
+     "type": "fill",
+     "stem": "Tom ate bread and ____.",
+     "answers": [
+      [
+       "soup"
+      ]
+     ],
+     "why": "bread and soup",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

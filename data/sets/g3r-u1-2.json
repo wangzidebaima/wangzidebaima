@@ -1,0 +1,152 @@
+{
+ "id": "g3r-u1-2",
+ "kind": "reading",
+ "title": "Touch Your Ear",
+ "subtitle": "考点：身体部位 / Touch your ...",
+ "unit": "E3U1",
+ "dialogue": [
+  {
+   "s": "Ben",
+   "t": "Touch your ear, Lily."
+  },
+  {
+   "s": "Lily",
+   "t": "OK. This is my ear."
+  },
+  {
+   "s": "Ben",
+   "t": "Touch your eye."
+  },
+  {
+   "s": "Lily",
+   "t": "This is my eye. Now your mouth!"
+  },
+  {
+   "s": "Ben",
+   "t": "Ha! This is my mouth. I smile."
+  }
+ ],
+ "vocab": "ear 耳朵 · eye 眼睛 · mouth 嘴巴 · touch 摸 · smile 微笑 · now 现在",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3r-u1-2-A1",
+     "type": "choice",
+     "stem": "What does Ben say first?",
+     "options": [
+      "Touch your hand.",
+      "Touch your arm.",
+      "Touch your ear."
+     ],
+     "answer": "C",
+     "why": "Touch your ear, Lily.",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u1-2-A2",
+     "type": "choice",
+     "stem": "What does Ben do at the end?",
+     "options": [
+      "He smiles.",
+      "He cries.",
+      "He sleeps."
+     ],
+     "answer": "A",
+     "why": "I smile.",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u1-2-A3",
+     "type": "choice",
+     "stem": "Who says, \"Now your mouth!\"?",
+     "options": [
+      "Ben",
+      "Lily",
+      "Amy"
+     ],
+     "answer": "B",
+     "why": "Lily: This is my eye. Now your mouth!",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g3r-u1-2-B1",
+     "type": "tf",
+     "stem": "Lily touches her ear.",
+     "answer": "T",
+     "why": "This is my ear.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u1-2-B2",
+     "type": "tf",
+     "stem": "Ben says, \"Touch your hand.\"",
+     "answer": "F",
+     "why": "Ben says touch your ear and your eye.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u1-2-B3",
+     "type": "tf",
+     "stem": "Ben smiles.",
+     "answer": "T",
+     "why": "I smile.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3r-u1-2-C1",
+     "type": "fill",
+     "stem": "First, Ben says: \"Touch your ____.\"",
+     "answers": [
+      [
+       "ear"
+      ]
+     ],
+     "why": "Touch your ear, Lily.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u1-2-C2",
+     "type": "fill",
+     "stem": "Lily says: \"Now your ____!\"",
+     "answers": [
+      [
+       "mouth"
+      ]
+     ],
+     "why": "Now your mouth!",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u1-2-C3",
+     "type": "fill",
+     "stem": "At the end, Ben says: \"I ____.\"",
+     "answers": [
+      [
+       "smile"
+      ]
+     ],
+     "why": "I smile.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,127 @@
+{
+ "id": "g9l-u7-1",
+ "kind": "listening",
+ "title": "Which Concert?",
+ "subtitle": "对话",
+ "unit": "E9U7",
+ "speakers": {
+  "Debbie": "f1",
+  "Rick": "m1"
+ },
+ "transcript": [
+  {
+   "s": "Debbie",
+   "t": "Rick, there is a concert on Saturday. Do you want to go?"
+  },
+  {
+   "s": "Rick",
+   "t": "What kind of music is it?"
+  },
+  {
+   "s": "Debbie",
+   "t": "Classical. A young pianist from Poland will play pieces by Chopin."
+  },
+  {
+   "s": "Rick",
+   "t": "That sounds nice, but I prefer pop and rap."
+  },
+  {
+   "s": "Debbie",
+   "t": "Give it a try. Slow music helps me relax after a busy week."
+  },
+  {
+   "s": "Rick",
+   "t": "OK. How much is a ticket?"
+  },
+  {
+   "s": "Debbie",
+   "t": "Twenty yuan for students. The pianist has a five-star rating online."
+  },
+  {
+   "s": "Rick",
+   "t": "Great, I will go with you."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9l-u7-1-A1",
+     "type": "choice",
+     "stem": "What kind of music will be played at the concert?",
+     "options": [
+      "Jazz.",
+      "Classical music.",
+      "Rap.",
+      "Folk music."
+     ],
+     "answer": "B",
+     "why": "Classical.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u7-1-A2",
+     "type": "choice",
+     "stem": "What music does Rick usually prefer?",
+     "options": [
+      "Classical and jazz.",
+      "Folk and opera.",
+      "Pop and rap.",
+      "Only electronic music."
+     ],
+     "answer": "C",
+     "why": "I prefer pop and rap.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u7-1-A3",
+     "type": "choice",
+     "stem": "How much is a student ticket?",
+     "options": [
+      "Two yuan.",
+      "Two hundred yuan.",
+      "Fifty yuan.",
+      "Twenty yuan."
+     ],
+     "answer": "D",
+     "why": "Twenty yuan for students.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9l-u7-1-B1",
+     "type": "fill",
+     "stem": "A young ____ from Poland will play at the concert.",
+     "answers": [
+      [
+       "pianist"
+      ]
+     ],
+     "why": "A young pianist from Poland.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u7-1-B2",
+     "type": "fill",
+     "stem": "Slow music helps Debbie ____.",
+     "answers": [
+      [
+       "relax"
+      ]
+     ],
+     "why": "Slow music helps me relax.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

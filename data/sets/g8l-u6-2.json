@@ -1,0 +1,118 @@
+{
+ "id": "g8l-u6-2",
+ "kind": "listening",
+ "title": "My Goals This Term",
+ "subtitle": "短文",
+ "unit": "E8U6",
+ "speakers": {
+  "Cathy": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Cathy",
+   "t": "This term, I have three goals. My first goal is to get up at six thirty every day."
+  },
+  {
+   "s": "Cathy",
+   "t": "My second goal is to read for twenty minutes before bed. I want to finish six books by the end of the term."
+  },
+  {
+   "s": "Cathy",
+   "t": "My third goal is to learn to draw. I will take one painting class every Sunday."
+  },
+  {
+   "s": "Cathy",
+   "t": "These goals are not too big, so I think I can stick to them."
+  },
+  {
+   "s": "Cathy",
+   "t": "If I feel tired, I will remind myself why I started."
+  },
+  {
+   "s": "Cathy",
+   "t": "At the end of the term, I will check my list and reward myself with a new notebook."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8l-u6-2-A1",
+     "type": "choice",
+     "stem": "When does Cathy want to get up?",
+     "options": [
+      "At six.",
+      "At seven.",
+      "At six thirty.",
+      "At seven thirty."
+     ],
+     "answer": "C",
+     "why": "get up at six thirty every day.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u6-2-A2",
+     "type": "choice",
+     "stem": "How many books does she want to finish?",
+     "options": [
+      "Three.",
+      "Ten.",
+      "Sixteen.",
+      "Six."
+     ],
+     "answer": "D",
+     "why": "finish six books.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u6-2-A3",
+     "type": "choice",
+     "stem": "When will she have a painting class?",
+     "options": [
+      "Every Sunday.",
+      "Every Saturday.",
+      "Every Monday.",
+      "Every evening."
+     ],
+     "answer": "A",
+     "why": "one painting class every Sunday.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8l-u6-2-B1",
+     "type": "fill",
+     "stem": "Cathy wants to read for ____ minutes before bed.",
+     "answers": [
+      [
+       "twenty"
+      ]
+     ],
+     "why": "read for twenty minutes.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u6-2-B2",
+     "type": "fill",
+     "stem": "She will reward herself with a new ____.",
+     "answers": [
+      [
+       "notebook"
+      ]
+     ],
+     "why": "a new notebook.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

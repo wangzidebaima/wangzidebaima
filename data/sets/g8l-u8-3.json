@@ -1,0 +1,127 @@
+{
+ "id": "g8l-u8-3",
+ "kind": "listening",
+ "title": "Phone or Face to Face?",
+ "subtitle": "对话",
+ "unit": "E8U8",
+ "speakers": {
+  "Kevin": "m1",
+  "Sara": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Kevin",
+   "t": "Sara, I sent you a text message yesterday, but you did not answer."
+  },
+  {
+   "s": "Sara",
+   "t": "Sorry, I was at my grandma's house. She does not have good signal."
+  },
+  {
+   "s": "Kevin",
+   "t": "It was about our school trip."
+  },
+  {
+   "s": "Sara",
+   "t": "Why don't we talk about it face to face at lunch?"
+  },
+  {
+   "s": "Kevin",
+   "t": "Good idea. I prefer talking in person. Text messages can be confusing."
+  },
+  {
+   "s": "Sara",
+   "t": "I agree. Last week I thought my friend was angry, but she was only busy."
+  },
+  {
+   "s": "Kevin",
+   "t": "See? That's why talking is better."
+  },
+  {
+   "s": "Sara",
+   "t": "OK. Let's meet in the canteen at twelve."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8l-u8-3-A1",
+     "type": "choice",
+     "stem": "Why did Sara not answer?",
+     "options": [
+      "She was asleep.",
+      "She lost her phone.",
+      "She was angry.",
+      "She was at her grandma's house."
+     ],
+     "answer": "D",
+     "why": "I was at my grandma's house.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u8-3-A2",
+     "type": "choice",
+     "stem": "What was the message about?",
+     "options": [
+      "The school trip.",
+      "The homework.",
+      "A birthday party.",
+      "A football match."
+     ],
+     "answer": "A",
+     "why": "It was about our school trip.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u8-3-A3",
+     "type": "choice",
+     "stem": "Where will they meet?",
+     "options": [
+      "In the library.",
+      "In the canteen.",
+      "At the gym.",
+      "At the gate."
+     ],
+     "answer": "B",
+     "why": "meet in the canteen at twelve.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8l-u8-3-B1",
+     "type": "fill",
+     "stem": "Kevin prefers talking in ____.",
+     "answers": [
+      [
+       "person"
+      ]
+     ],
+     "why": "I prefer talking in person.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u8-3-B2",
+     "type": "fill",
+     "stem": "They will meet at ____.",
+     "answers": [
+      [
+       "twelve"
+      ]
+     ],
+     "why": "at twelve.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

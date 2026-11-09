@@ -1,0 +1,82 @@
+{
+ "id": "g8sp-u6",
+ "kind": "speaking",
+ "unit": "E8U6",
+ "title": "口语练习",
+ "subtitle": "每天 10 分钟 · 共 5 天",
+ "steps": [
+  "点 🔊 听一遍，听清语调",
+  "一句一句跟着读，声音要大，不怕错",
+  "读完点「今天完成了」打卡"
+ ],
+ "sentences": [
+  {
+   "en": "What do you want to be in the future?",
+   "zh": "你将来想做什么？"
+  },
+  {
+   "en": "I want to be an engineer.",
+   "zh": "我想成为一名工程师。"
+  },
+  {
+   "en": "I will try my best to achieve my goal.",
+   "zh": "我会尽力实现我的目标。"
+  },
+  {
+   "en": "You should keep on doing push-ups every day.",
+   "zh": "你应该每天坚持做俯卧撑。"
+  },
+  {
+   "en": "Make sure you stick to your plan.",
+   "zh": "确保你坚持自己的计划。"
+  },
+  {
+   "en": "My New Year resolution is to read more books.",
+   "zh": "我的新年决心是多读书。"
+  },
+  {
+   "en": "Are you tired of the same old routine?",
+   "zh": "你厌倦了一成不变的日常吗？"
+  },
+  {
+   "en": "A mini-goal can make big changes.",
+   "zh": "一个小目标能带来大改变。"
+  },
+  {
+   "en": "Last but not least, believe in yourself.",
+   "zh": "最后但同样重要的是，要相信自己。"
+  }
+ ],
+ "plan": [
+  {
+   "day": 1,
+   "title": "跟读第 1–3 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 2,
+   "title": "跟读第 4–6 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 3,
+   "title": "跟读第 7–9 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 4,
+   "title": "不看书，说给家长听",
+   "task": "挑 5 句最喜欢的，尽量不看书说出来",
+   "minutes": 10
+  },
+  {
+   "day": 5,
+   "title": "自己说 3 句话",
+   "task": "用 'I want to be … because … I will …' 说 3 句话介绍你的梦想",
+   "minutes": 10
+  }
+ ]
+}

@@ -1,0 +1,160 @@
+{
+ "id": "g5r-u3-2",
+ "kind": "reading",
+ "title": "Weekend Fun",
+ "subtitle": "考点：频率副词 / I usually ... on Saturday.",
+ "unit": "E5U3",
+ "dialogue": [
+  {
+   "s": "Sam",
+   "t": "What do you usually do at the weekend, Amy?"
+  },
+  {
+   "s": "Amy",
+   "t": "On Saturday I usually play ping-pong with my friends."
+  },
+  {
+   "s": "Sam",
+   "t": "What about Sunday?"
+  },
+  {
+   "s": "Amy",
+   "t": "I visit my grandparents on Sunday. We have lunch together."
+  },
+  {
+   "s": "Sam",
+   "t": "That sounds nice."
+  },
+  {
+   "s": "Amy",
+   "t": "Sometimes I read in the evening. What about you?"
+  },
+  {
+   "s": "Sam",
+   "t": "I usually play chess on Saturday. Sometimes I help my father at home."
+  }
+ ],
+ "vocab": "usually 通常 · weekend 周末 · Saturday 星期六 · Sunday 星期日 · visit 拜访 · grandparent 祖父母 · sometimes 有时",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5r-u3-2-A1",
+     "type": "choice",
+     "stem": "What does Amy usually do on Saturday?",
+     "options": [
+      "Visit her grandparents.",
+      "Read books.",
+      "Play ping-pong."
+     ],
+     "answer": "C",
+     "why": "On Saturday I usually play ping-pong.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u3-2-A2",
+     "type": "choice",
+     "stem": "When does Amy visit her grandparents?",
+     "options": [
+      "On Sunday.",
+      "On Saturday.",
+      "On Friday."
+     ],
+     "answer": "A",
+     "why": "I visit my grandparents on Sunday.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u3-2-A3",
+     "type": "choice",
+     "stem": "What does Sam usually play on Saturday?",
+     "options": [
+      "Ping-pong.",
+      "Chess.",
+      "The piano."
+     ],
+     "answer": "B",
+     "why": "I usually play chess on Saturday.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g5r-u3-2-B1",
+     "type": "tf",
+     "stem": "Amy plays ping-pong on Saturday.",
+     "answer": "T",
+     "why": "On Saturday I usually play ping-pong.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u3-2-B2",
+     "type": "tf",
+     "stem": "Amy visits her grandparents on Friday.",
+     "answer": "F",
+     "why": "I visit my grandparents on Sunday.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u3-2-B3",
+     "type": "tf",
+     "stem": "Sam usually plays chess on Saturday.",
+     "answer": "T",
+     "why": "I usually play chess on Saturday.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5r-u3-2-C1",
+     "type": "fill",
+     "stem": "Amy has lunch with her ____ on Sunday.",
+     "answers": [
+      [
+       "grandparents"
+      ]
+     ],
+     "why": "I visit my grandparents on Sunday. We have lunch together.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u3-2-C2",
+     "type": "fill",
+     "stem": "Sometimes Amy reads in the ____.",
+     "answers": [
+      [
+       "evening"
+      ]
+     ],
+     "why": "Sometimes I read in the evening.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u3-2-C3",
+     "type": "fill",
+     "stem": "Sam usually plays ____ on Saturday.",
+     "answers": [
+      [
+       "chess"
+      ]
+     ],
+     "why": "I usually play chess on Saturday.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

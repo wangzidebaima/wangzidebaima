@@ -1,0 +1,127 @@
+{
+ "id": "g9l-u1-3",
+ "kind": "listening",
+ "title": "Sandstorm Warning",
+ "subtitle": "对话",
+ "unit": "E9U1",
+ "speakers": {
+  "Tom": "m1",
+  "Lily": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Tom",
+   "t": "Did you hear the news? A sandstorm is coming tomorrow."
+  },
+  {
+   "s": "Lily",
+   "t": "Again? The sky was yellow last spring, and I could not see the road."
+  },
+  {
+   "s": "Tom",
+   "t": "The land near the desert is dry and sandy, so the wind lifts the soil easily."
+  },
+  {
+   "s": "Lily",
+   "t": "What can people do about it?"
+  },
+  {
+   "s": "Tom",
+   "t": "The government supports farmers to plant bushes and trees. Their roots hold the soil."
+  },
+  {
+   "s": "Lily",
+   "t": "That sounds clever. Are there any results?"
+  },
+  {
+   "s": "Tom",
+   "t": "Yes. My uncle's village used to lack water, but now the farmland is greener."
+  },
+  {
+   "s": "Lily",
+   "t": "Then let's plant a tree at school too."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9l-u1-3-A1",
+     "type": "choice",
+     "stem": "When is the sandstorm coming?",
+     "options": [
+      "Tonight.",
+      "This weekend.",
+      "Next month.",
+      "Tomorrow."
+     ],
+     "answer": "D",
+     "why": "A sandstorm is coming tomorrow.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u1-3-A2",
+     "type": "choice",
+     "stem": "Why does the wind lift the soil easily?",
+     "options": [
+      "The land is dry and sandy.",
+      "The land is covered with grass.",
+      "The land is full of tall trees.",
+      "The land is under water."
+     ],
+     "answer": "A",
+     "why": "The land near the desert is dry and sandy.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u1-3-A3",
+     "type": "choice",
+     "stem": "What helps hold the soil?",
+     "options": [
+      "Tall walls.",
+      "The roots of bushes and trees.",
+      "Plastic sheets.",
+      "Heavy rain."
+     ],
+     "answer": "B",
+     "why": "Their roots hold the soil.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9l-u1-3-B1",
+     "type": "fill",
+     "stem": "The government supports farmers to plant ____ and trees.",
+     "answers": [
+      [
+       "bushes"
+      ]
+     ],
+     "why": "plant bushes and trees.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u1-3-B2",
+     "type": "fill",
+     "stem": "My uncle's village used to ____ water.",
+     "answers": [
+      [
+       "lack"
+      ]
+     ],
+     "why": "used to lack water.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

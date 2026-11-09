@@ -1,0 +1,151 @@
+{
+ "id": "g9r-u7-3",
+ "kind": "reading",
+ "title": "Mei's Piano Practice",
+ "subtitle": "考点：坚持练习 / tap, finger, proudly",
+ "unit": "E9U7",
+ "passage": [
+  "Mei is thirteen, and she has been learning the piano for five years. At first, she hated practice. Her fingers were stiff, and she made many mistakes. Her mother often found her tapping her feet and looking out of the window instead of playing.",
+  "Then Mei's teacher gave her a new piece, a slow and beautiful folk song. 'Play it as if you are telling a story,' the teacher said. Mei began to enjoy it. She practised for twenty minutes every day and listened to a recording to learn from great pianists. Last month, she played the folk song at the school concert. When the audience clapped, she smiled proudly. 'Practice is not fun every day,' she said, 'but the result is worth it.'"
+ ],
+ "vocab": "finger 手指 · tap 轻敲 · practise 练习 · recording 录音 · audience 观众 · proudly 自豪地",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9r-u7-3-A1",
+     "type": "choice",
+     "stem": "How long has Mei been learning the piano?",
+     "options": [
+      "For five months.",
+      "For fifteen years.",
+      "For one week.",
+      "For five years."
+     ],
+     "answer": "D",
+     "why": "she has been learning the piano for five years.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u7-3-A2",
+     "type": "choice",
+     "stem": "What did Mei do instead of playing at first?",
+     "options": [
+      "She tapped her feet and looked out of the window.",
+      "She sang loudly.",
+      "She slept on the piano.",
+      "She called her teacher."
+     ],
+     "answer": "A",
+     "why": "tapping her feet and looking out of the window instead of playing.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u7-3-A3",
+     "type": "choice",
+     "stem": "What did the teacher say about the new piece?",
+     "options": [
+      "Play it as fast as you can.",
+      "Play it as if you are telling a story.",
+      "Play it only for yourself.",
+      "Play it without practice."
+     ],
+     "answer": "B",
+     "why": "'Play it as if you are telling a story,'",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u7-3-A4",
+     "type": "choice",
+     "stem": "Where did Mei play the folk song?",
+     "options": [
+      "At a TV show.",
+      "At her grandmother's house.",
+      "At the school concert.",
+      "In the street."
+     ],
+     "answer": "C",
+     "why": "she played the folk song at the school concert.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g9r-u7-3-B1",
+     "type": "tf",
+     "stem": "Mei practised for two hours every day.",
+     "answer": "F",
+     "why": "She practised for twenty minutes every day",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u7-3-B2",
+     "type": "tf",
+     "stem": "Mei listened to recordings of great pianists.",
+     "answer": "T",
+     "why": "listened to a recording to learn from great pianists.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u7-3-B3",
+     "type": "tf",
+     "stem": "Mei smiled proudly when the audience clapped.",
+     "answer": "T",
+     "why": "When the audience clapped, she smiled proudly.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9r-u7-3-C1",
+     "type": "fill",
+     "stem": "Mei is ____ years old.",
+     "answers": [
+      [
+       "thirteen"
+      ]
+     ],
+     "why": "Mei is thirteen",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u7-3-C2",
+     "type": "fill",
+     "stem": "Her ____ were stiff at first.",
+     "answers": [
+      [
+       "fingers"
+      ]
+     ],
+     "why": "Her fingers were stiff",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u7-3-C3",
+     "type": "fill",
+     "stem": "The new piece was a slow and beautiful ____ song.",
+     "answers": [
+      [
+       "folk"
+      ]
+     ],
+     "why": "a slow and beautiful folk song.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

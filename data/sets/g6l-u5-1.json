@@ -1,0 +1,124 @@
+{
+ "id": "g6l-u5-1",
+ "kind": "listening",
+ "title": "Looking at the Moon",
+ "subtitle": "对话",
+ "unit": "E6U5",
+ "speakers": {
+  "Lily": "c1",
+  "Ben": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Lily",
+   "t": "Ben, what is that on the table?"
+  },
+  {
+   "s": "Ben",
+   "t": "It is a telescope. My father gave it to me."
+  },
+  {
+   "s": "Lily",
+   "t": "What can you see with it?"
+  },
+  {
+   "s": "Ben",
+   "t": "I can see the moon and many stars."
+  },
+  {
+   "s": "Lily",
+   "t": "Is the moon bright tonight?"
+  },
+  {
+   "s": "Ben",
+   "t": "Yes. It is round and very clear."
+  },
+  {
+   "s": "Lily",
+   "t": "Can I look too?"
+  },
+  {
+   "s": "Ben",
+   "t": "Of course. Come to my home after dinner."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6l-u5-1-A1",
+     "type": "choice",
+     "stem": "What did Ben's father give him?",
+     "options": [
+      "A robot.",
+      "A telescope.",
+      "A model spaceship."
+     ],
+     "answer": "B",
+     "why": "It is a telescope. My father gave it to me.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u5-1-A2",
+     "type": "choice",
+     "stem": "What can Ben see with it?",
+     "options": [
+      "Clouds and birds.",
+      "Planes and trains.",
+      "The moon and stars."
+     ],
+     "answer": "C",
+     "why": "I can see the moon and many stars.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u5-1-A3",
+     "type": "choice",
+     "stem": "When will Lily go to Ben's home?",
+     "options": [
+      "After dinner.",
+      "Before lunch.",
+      "In the morning."
+     ],
+     "answer": "A",
+     "why": "Come to my home after dinner.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6l-u5-1-B1",
+     "type": "fill",
+     "stem": "The moon is round and very ____ tonight.",
+     "answers": [
+      [
+       "clear"
+      ]
+     ],
+     "why": "It is round and very clear.",
+     "pts": 1
+    },
+    {
+     "id": "g6l-u5-1-B2",
+     "type": "fill",
+     "stem": "Ben's ____ gave him the telescope.",
+     "answers": [
+      [
+       "father"
+      ]
+     ],
+     "why": "My father gave it to me.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

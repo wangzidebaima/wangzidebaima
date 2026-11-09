@@ -1,0 +1,152 @@
+{
+ "id": "g8r-u3-1",
+ "kind": "reading",
+ "title": "Twins, but Different",
+ "subtitle": "考点：比较人物 / as ... as / 性格",
+ "unit": "E8U3",
+ "passage": [
+  "Sam and Dan are twins. They look almost the same: both are tall and slim with short black hair. But their personalities are very different.",
+  "Sam is outgoing and loud. He loves talking to people and he is never shy. At school, he often performs on the stage. Dan is quiet and a little shy. He likes to spend his spare time reading alone in his room. He is not as talkative as his brother, but he is more serious about his homework.",
+  "Even so, they have a lot in common. Both of them love basketball, and they both play the flute. Sam says, “Dan is not as outgoing as I am, but he is a great friend.” Dan says, “Sam makes me laugh every day.” Their differences do not stop them from being close."
+ ],
+ "vocab": "twins 双胞胎 · slim 苗条的 · personality 性格 · outgoing 外向的 · shy 害羞的 · perform 表演 · have sth in common 有共同点",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8r-u3-1-A1",
+     "type": "choice",
+     "stem": "What do Sam and Dan look like?",
+     "options": [
+      "They look very different.",
+      "They look almost the same.",
+      "One is short and one is tall.",
+      "One has long hair."
+     ],
+     "answer": "B",
+     "why": "They look almost the same.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u3-1-A2",
+     "type": "choice",
+     "stem": "What does Sam often do at school?",
+     "options": [
+      "He reads alone.",
+      "He does homework alone.",
+      "He performs on the stage.",
+      "He plays chess."
+     ],
+     "answer": "C",
+     "why": "he often performs on the stage.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u3-1-A3",
+     "type": "choice",
+     "stem": "How does Dan spend his spare time?",
+     "options": [
+      "Playing basketball outside.",
+      "Talking with friends.",
+      "Acting on stage.",
+      "Reading alone in his room."
+     ],
+     "answer": "D",
+     "why": "spend his spare time reading alone in his room.",
+     "pts": 2
+    },
+    {
+     "id": "g8r-u3-1-A4",
+     "type": "choice",
+     "stem": "What do the brothers both play?",
+     "options": [
+      "The flute.",
+      "The piano.",
+      "The violin.",
+      "The drums."
+     ],
+     "answer": "A",
+     "why": "they both play the flute.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g8r-u3-1-B1",
+     "type": "tf",
+     "stem": "Sam is shy.",
+     "answer": "F",
+     "why": "Sam is outgoing and ... never shy.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u3-1-B2",
+     "type": "tf",
+     "stem": "Dan is more serious about homework than Sam.",
+     "answer": "T",
+     "why": "he is more serious about his homework.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u3-1-B3",
+     "type": "tf",
+     "stem": "The brothers like different sports.",
+     "answer": "F",
+     "why": "两人都爱篮球（Both of them love basketball）。",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8r-u3-1-C1",
+     "type": "fill",
+     "stem": "Sam and Dan are ____.",
+     "answers": [
+      [
+       "twins"
+      ]
+     ],
+     "why": "Sam and Dan are twins.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u3-1-C2",
+     "type": "fill",
+     "stem": "Dan likes to read ____ in his room.",
+     "answers": [
+      [
+       "alone"
+      ]
+     ],
+     "why": "reading alone in his room.",
+     "pts": 1
+    },
+    {
+     "id": "g8r-u3-1-C3",
+     "type": "fill",
+     "stem": "They have a lot in ____.",
+     "answers": [
+      [
+       "common"
+      ]
+     ],
+     "why": "have a lot in common.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

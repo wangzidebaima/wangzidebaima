@@ -1,0 +1,164 @@
+{
+ "id": "g6r-u2-2",
+ "kind": "reading",
+ "title": "The City Marathon",
+ "subtitle": "考点：一般过去时 / Who won the race?",
+ "unit": "E6U2",
+ "dialogue": [
+  {
+   "s": "Sam",
+   "t": "Did you watch the marathon yesterday, Lily?"
+  },
+  {
+   "s": "Lily",
+   "t": "Yes! My uncle ran in it."
+  },
+  {
+   "s": "Sam",
+   "t": "How long is a marathon?"
+  },
+  {
+   "s": "Lily",
+   "t": "It is about forty-two kilometres."
+  },
+  {
+   "s": "Sam",
+   "t": "That is so long! Did your uncle win?"
+  },
+  {
+   "s": "Lily",
+   "t": "No, but he finished the race. We cheered for him."
+  },
+  {
+   "s": "Sam",
+   "t": "Who was the winner?"
+  },
+  {
+   "s": "Lily",
+   "t": "A young man in a green shirt."
+  }
+ ],
+ "vocab": "marathon 马拉松 · race 比赛 · run 跑 · winner 获胜者 · cheer 欢呼 · kilometre 公里",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6r-u2-2-A1",
+     "type": "choice",
+     "stem": "Who ran in the marathon?",
+     "options": [
+      "Lily's father.",
+      "Sam's uncle.",
+      "Lily's uncle."
+     ],
+     "answer": "C",
+     "why": "My uncle ran in it.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u2-2-A2",
+     "type": "choice",
+     "stem": "How long is a marathon?",
+     "options": [
+      "About forty-two kilometres.",
+      "About four kilometres.",
+      "About four hundred kilometres."
+     ],
+     "answer": "A",
+     "why": "It is about forty-two kilometres.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u2-2-A3",
+     "type": "choice",
+     "stem": "What did the winner wear?",
+     "options": [
+      "A red shirt.",
+      "A green shirt.",
+      "A blue hat."
+     ],
+     "answer": "B",
+     "why": "A young man in a green shirt.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g6r-u2-2-B1",
+     "type": "tf",
+     "stem": "Lily watched the marathon.",
+     "answer": "T",
+     "why": "Yes! My uncle ran in it.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u2-2-B2",
+     "type": "tf",
+     "stem": "Lily's uncle won the race.",
+     "answer": "F",
+     "why": "No, but he finished the race.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u2-2-B3",
+     "type": "tf",
+     "stem": "Lily's uncle finished the race.",
+     "answer": "T",
+     "why": "he finished the race",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6r-u2-2-C1",
+     "type": "fill",
+     "stem": "A marathon is about forty-two ____.",
+     "answers": [
+      [
+       "kilometres"
+      ]
+     ],
+     "why": "about forty-two kilometres",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u2-2-C2",
+     "type": "fill",
+     "stem": "Lily's uncle ran in the ____.",
+     "answers": [
+      [
+       "marathon"
+      ]
+     ],
+     "why": "My uncle ran in it (the marathon).",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u2-2-C3",
+     "type": "fill",
+     "stem": "The winner wore a green ____.",
+     "answers": [
+      [
+       "shirt"
+      ]
+     ],
+     "why": "in a green shirt",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

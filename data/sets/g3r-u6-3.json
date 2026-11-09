@@ -1,0 +1,152 @@
+{
+ "id": "g3r-u6-3",
+ "kind": "reading",
+ "title": "What Time Is It?",
+ "subtitle": "考点：整点时间 / It is seven o'clock.",
+ "unit": "E3U6",
+ "dialogue": [
+  {
+   "s": "Sam",
+   "t": "What time is it, Amy?"
+  },
+  {
+   "s": "Amy",
+   "t": "It is seven o'clock."
+  },
+  {
+   "s": "Sam",
+   "t": "Let's go to school."
+  },
+  {
+   "s": "Amy",
+   "t": "OK. School is at eight o'clock."
+  },
+  {
+   "s": "Sam",
+   "t": "Let's go!"
+  }
+ ],
+ "vocab": "time 时间 · o'clock …点钟 · seven 七 · eight 八 · school 学校 · go 去",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3r-u6-3-A1",
+     "type": "choice",
+     "stem": "What time is it now?",
+     "options": [
+      "Seven o'clock.",
+      "Eight o'clock.",
+      "Nine o'clock."
+     ],
+     "answer": "A",
+     "why": "It is seven o'clock.",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u6-3-A2",
+     "type": "choice",
+     "stem": "Where do they go?",
+     "options": [
+      "To the zoo.",
+      "To school.",
+      "To the farm."
+     ],
+     "answer": "B",
+     "why": "Let's go to school.",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u6-3-A3",
+     "type": "choice",
+     "stem": "What time is school?",
+     "options": [
+      "Nine o'clock.",
+      "Ten o'clock.",
+      "Eight o'clock."
+     ],
+     "answer": "C",
+     "why": "School is at eight o'clock.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g3r-u6-3-B1",
+     "type": "tf",
+     "stem": "It is seven o'clock now.",
+     "answer": "T",
+     "why": "It is seven o'clock.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u6-3-B2",
+     "type": "tf",
+     "stem": "School is at ten o'clock.",
+     "answer": "F",
+     "why": "School is at eight o'clock.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u6-3-B3",
+     "type": "tf",
+     "stem": "Sam asks the time.",
+     "answer": "T",
+     "why": "What time is it, Amy?",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3r-u6-3-C1",
+     "type": "fill",
+     "stem": "Amy says, \"It is ____ o'clock.\"",
+     "answers": [
+      [
+       "seven"
+      ]
+     ],
+     "why": "It is seven o'clock.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u6-3-C2",
+     "type": "fill",
+     "stem": "School is at ____ o'clock.",
+     "answers": [
+      [
+       "eight"
+      ]
+     ],
+     "why": "School is at eight o'clock.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u6-3-C3",
+     "type": "fill",
+     "stem": "Sam says, \"Let's go to ____.\"",
+     "answers": [
+      [
+       "school"
+      ]
+     ],
+     "why": "Let's go to school.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

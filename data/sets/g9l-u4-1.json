@@ -1,0 +1,127 @@
+{
+ "id": "g9l-u4-1",
+ "kind": "listening",
+ "title": "Lost Notebook at the Mall",
+ "subtitle": "对话",
+ "unit": "E9U4",
+ "speakers": {
+  "Rick": "m1",
+  "Amy": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Amy",
+   "t": "Rick, you look worried. What happened?"
+  },
+  {
+   "s": "Rick",
+   "t": "I cannot find my notebook. I think I left it at the mall."
+  },
+  {
+   "s": "Amy",
+   "t": "Try to recall. Where did you go first?"
+  },
+  {
+   "s": "Rick",
+   "t": "To start with, I went to the bookshop. Then I had lunch with Bob."
+  },
+  {
+   "s": "Amy",
+   "t": "Did you take the notebook out at lunch?"
+  },
+  {
+   "s": "Rick",
+   "t": "Yes! I was writing my homework. I probably left it on the table."
+  },
+  {
+   "s": "Amy",
+   "t": "Let's go back to the restaurant. Maybe someone kept it for you."
+  },
+  {
+   "s": "Rick",
+   "t": "Good idea. Next time I will put my name and address inside."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9l-u4-1-A1",
+     "type": "choice",
+     "stem": "Where does Rick think he left his notebook?",
+     "options": [
+      "At school.",
+      "At the mall.",
+      "On the bus.",
+      "At Amy's home."
+     ],
+     "answer": "B",
+     "why": "I think I left it at the mall.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u4-1-A2",
+     "type": "choice",
+     "stem": "Where did Rick go first?",
+     "options": [
+      "The restaurant.",
+      "The cinema.",
+      "The bookshop.",
+      "The bank."
+     ],
+     "answer": "C",
+     "why": "To start with, I went to the bookshop.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u4-1-A3",
+     "type": "choice",
+     "stem": "What was Rick doing with the notebook at lunch?",
+     "options": [
+      "Drawing a picture.",
+      "Reading a story.",
+      "Playing a game.",
+      "Writing his homework."
+     ],
+     "answer": "D",
+     "why": "I was writing my homework.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9l-u4-1-B1",
+     "type": "fill",
+     "stem": "Next time Rick will put his name and ____ inside.",
+     "answers": [
+      [
+       "address"
+      ]
+     ],
+     "why": "put my name and address inside.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u4-1-B2",
+     "type": "fill",
+     "stem": "Amy tells Rick to try to ____.",
+     "answers": [
+      [
+       "recall"
+      ]
+     ],
+     "why": "Try to recall.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

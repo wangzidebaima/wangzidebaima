@@ -1,0 +1,164 @@
+{
+ "id": "g6r-u1-4",
+ "kind": "reading",
+ "title": "Visiting Jinggangshan",
+ "subtitle": "考点：一般过去时 / What did you do?",
+ "unit": "E6U1",
+ "dialogue": [
+  {
+   "s": "Amy",
+   "t": "Our class went to Jinggangshan last week."
+  },
+  {
+   "s": "Sam",
+   "t": "What did you do there?"
+  },
+  {
+   "s": "Amy",
+   "t": "We visited the Jinggangshan Revolution Museum."
+  },
+  {
+   "s": "Sam",
+   "t": "What did you learn?"
+  },
+  {
+   "s": "Amy",
+   "t": "We learned about the Red Army. They lived on the mountain long ago."
+  },
+  {
+   "s": "Sam",
+   "t": "Did you eat there?"
+  },
+  {
+   "s": "Amy",
+   "t": "Yes. We ate lunch in a village restaurant. The food was great."
+  },
+  {
+   "s": "Sam",
+   "t": "It sounds good!"
+  }
+ ],
+ "vocab": "Jinggangshan 井冈山 · Revolution Museum 革命博物馆 · Red Army 红军 · village 村庄 · restaurant 餐馆 · lunch 午餐",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6r-u1-4-A1",
+     "type": "choice",
+     "stem": "Who went to Jinggangshan?",
+     "options": [
+      "Sam's family.",
+      "Amy's class.",
+      "Amy's aunt."
+     ],
+     "answer": "B",
+     "why": "Our class went to Jinggangshan last week.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u1-4-A2",
+     "type": "choice",
+     "stem": "What did they learn about?",
+     "options": [
+      "Gingerbread houses.",
+      "The Eiffel Tower.",
+      "The Red Army."
+     ],
+     "answer": "C",
+     "why": "We learned about the Red Army.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u1-4-A3",
+     "type": "choice",
+     "stem": "Where did they eat lunch?",
+     "options": [
+      "In a village restaurant.",
+      "At school.",
+      "On the bus."
+     ],
+     "answer": "A",
+     "why": "We ate lunch in a village restaurant.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g6r-u1-4-B1",
+     "type": "tf",
+     "stem": "They visited a museum.",
+     "answer": "T",
+     "why": "We visited the Jinggangshan Revolution Museum.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u1-4-B2",
+     "type": "tf",
+     "stem": "They ate lunch at school.",
+     "answer": "F",
+     "why": "They ate lunch in a village restaurant.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u1-4-B3",
+     "type": "tf",
+     "stem": "The food was great.",
+     "answer": "T",
+     "why": "The food was great.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6r-u1-4-C1",
+     "type": "fill",
+     "stem": "They visited the Jinggangshan Revolution ____.",
+     "answers": [
+      [
+       "museum"
+      ]
+     ],
+     "why": "Revolution Museum",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u1-4-C2",
+     "type": "fill",
+     "stem": "They learned about the Red ____.",
+     "answers": [
+      [
+       "army"
+      ]
+     ],
+     "why": "the Red Army",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u1-4-C3",
+     "type": "fill",
+     "stem": "They ate lunch in a village ____.",
+     "answers": [
+      [
+       "restaurant"
+      ]
+     ],
+     "why": "village restaurant",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

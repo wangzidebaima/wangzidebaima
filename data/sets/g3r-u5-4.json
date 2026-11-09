@@ -1,0 +1,156 @@
+{
+ "id": "g3r-u5-4",
+ "kind": "reading",
+ "title": "Pink and Purple",
+ "subtitle": "考点：喜欢的颜色 / I like pink and purple.",
+ "unit": "E3U5",
+ "dialogue": [
+  {
+   "s": "Mike",
+   "t": "What colour do you like, Lily?"
+  },
+  {
+   "s": "Lily",
+   "t": "I like pink and purple."
+  },
+  {
+   "s": "Mike",
+   "t": "Can you make pink?"
+  },
+  {
+   "s": "Lily",
+   "t": "Yes. Red and white make pink."
+  },
+  {
+   "s": "Mike",
+   "t": "Wow! I like green."
+  },
+  {
+   "s": "Lily",
+   "t": "Blue and yellow make green."
+  }
+ ],
+ "vocab": "pink 粉色 · purple 紫色 · green 绿色 · make 混合成 · red 红色 · white 白色",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g3r-u5-4-A1",
+     "type": "choice",
+     "stem": "What does Lily like?",
+     "options": [
+      "Green and brown.",
+      "Pink and purple.",
+      "Black and white."
+     ],
+     "answer": "B",
+     "why": "I like pink and purple.",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u5-4-A2",
+     "type": "choice",
+     "stem": "What do red and white make?",
+     "options": [
+      "Purple.",
+      "Green.",
+      "Pink."
+     ],
+     "answer": "C",
+     "why": "Red and white make pink.",
+     "pts": 2
+    },
+    {
+     "id": "g3r-u5-4-A3",
+     "type": "choice",
+     "stem": "What colour does Mike like?",
+     "options": [
+      "Green.",
+      "Pink.",
+      "Brown."
+     ],
+     "answer": "A",
+     "why": "I like green. (Mike)",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g3r-u5-4-B1",
+     "type": "tf",
+     "stem": "Lily likes pink and purple.",
+     "answer": "T",
+     "why": "I like pink and purple.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u5-4-B2",
+     "type": "tf",
+     "stem": "Red and white make purple.",
+     "answer": "F",
+     "why": "Red and white make pink.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u5-4-B3",
+     "type": "tf",
+     "stem": "Mike likes green.",
+     "answer": "T",
+     "why": "I like green.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g3r-u5-4-C1",
+     "type": "fill",
+     "stem": "Lily likes pink and ____.",
+     "answers": [
+      [
+       "purple"
+      ]
+     ],
+     "why": "I like pink and purple.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u5-4-C2",
+     "type": "fill",
+     "stem": "Red and white make ____.",
+     "answers": [
+      [
+       "pink"
+      ]
+     ],
+     "why": "Red and white make pink.",
+     "pts": 1
+    },
+    {
+     "id": "g3r-u5-4-C3",
+     "type": "fill",
+     "stem": "Blue and yellow make ____.",
+     "answers": [
+      [
+       "green"
+      ]
+     ],
+     "why": "Blue and yellow make green.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

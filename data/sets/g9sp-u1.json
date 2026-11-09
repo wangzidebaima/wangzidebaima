@@ -1,0 +1,82 @@
+{
+ "id": "g9sp-u1",
+ "kind": "speaking",
+ "unit": "E9U1",
+ "title": "口语练习",
+ "subtitle": "每天 10 分钟 · 共 5 天",
+ "steps": [
+  "点 🔊 听一遍，听清语调",
+  "一句一句跟着读，声音要大，不怕错",
+  "读完点「今天完成了」打卡"
+ ],
+ "sentences": [
+  {
+   "en": "The world is changing faster than ever before.",
+   "zh": "世界比以往任何时候变化得都快。"
+  },
+  {
+   "en": "A new railway links our town to the capital.",
+   "zh": "一条新铁路把我们的小镇与首都连了起来。"
+  },
+  {
+   "en": "The government supports farmers to plant bushes and trees.",
+   "zh": "政府支持农民种植灌木和树木。"
+  },
+  {
+   "en": "The wind lifts the sandy soil during a sandstorm.",
+   "zh": "沙尘暴来时，风会卷起沙质土壤。"
+  },
+  {
+   "en": "E-payment is very convenient and saves a lot of time.",
+   "zh": "电子支付非常方便，能节省很多时间。"
+  },
+  {
+   "en": "Our farm uses a greenhouse to grow vegetables all year.",
+   "zh": "我们的农场用温室全年种蔬菜。"
+  },
+  {
+   "en": "The tunnel makes the trip much shorter.",
+   "zh": "隧道让行程短了很多。"
+  },
+  {
+   "en": "Many villagers have moved into new housing.",
+   "zh": "许多村民搬进了新住房。"
+  },
+  {
+   "en": "With high-tech tools, farmers can work with ease.",
+   "zh": "借助高科技工具，农民干活很轻松。"
+  }
+ ],
+ "plan": [
+  {
+   "day": 1,
+   "title": "跟读第 1–3 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 2,
+   "title": "跟读第 4–6 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 3,
+   "title": "跟读第 7–9 句",
+   "task": "先听一遍，再跟读 3 遍",
+   "minutes": 10
+  },
+  {
+   "day": 4,
+   "title": "不看书，说给家长听",
+   "task": "挑 5 句最喜欢的，尽量不看书说出来",
+   "minutes": 10
+  },
+  {
+   "day": 5,
+   "title": "自己说 3 句话",
+   "task": "用 'Now there is … but before there was …' 说 3 句话介绍你家乡的变化",
+   "minutes": 10
+  }
+ ]
+}

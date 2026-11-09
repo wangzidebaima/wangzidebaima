@@ -1,0 +1,151 @@
+{
+ "id": "g9r-u2-3",
+ "kind": "reading",
+ "title": "Zhang Qian and the Silk Road",
+ "subtitle": "考点：历史人物 / brave, pioneer, the Western Regions",
+ "unit": "E9U2",
+ "passage": [
+  "More than two thousand years ago, Zhang Qian lived in the Han Dynasty. The emperor sent him to the Western Regions to look for friends for his country. The trip was long and dangerous. On the way, Zhang Qian was caught and kept for about ten years, but he never gave up his mission.",
+  "At last he escaped and went on. When he came home, he told the emperor about the countries, the roads and the goods in the west. After his trip, traders began to travel along the Silk Road. Silk and paper went west, and new ideas came east. Today people remember Zhang Qian as a brave pioneer."
+ ],
+ "vocab": "dynasty 朝代 · emperor 皇帝 · dangerous 危险的 · mission 使命 · trader 商人 · pioneer 开拓者",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9r-u2-3-A1",
+     "type": "choice",
+     "stem": "When did Zhang Qian live?",
+     "options": [
+      "In the Qing Dynasty.",
+      "In the Tang Dynasty.",
+      "In the twentieth century.",
+      "In the Han Dynasty."
+     ],
+     "answer": "D",
+     "why": "Zhang Qian lived in the Han Dynasty.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u2-3-A2",
+     "type": "choice",
+     "stem": "Why did the emperor send him west?",
+     "options": [
+      "To look for friends for his country.",
+      "To sell silk.",
+      "To build a railway.",
+      "To find a new emperor."
+     ],
+     "answer": "A",
+     "why": "to look for friends for his country.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u2-3-A3",
+     "type": "choice",
+     "stem": "What happened to him on the way?",
+     "options": [
+      "He gave up and went home.",
+      "He was caught and kept for about ten years.",
+      "He met Marie Curie.",
+      "He became a farmer."
+     ],
+     "answer": "B",
+     "why": "Zhang Qian was caught and kept for about ten years",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u2-3-A4",
+     "type": "choice",
+     "stem": "How do people remember Zhang Qian today?",
+     "options": [
+      "As a rich trader.",
+      "As a wise teacher.",
+      "As a brave pioneer.",
+      "As a famous doctor."
+     ],
+     "answer": "C",
+     "why": "remember Zhang Qian as a brave pioneer.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g9r-u2-3-B1",
+     "type": "tf",
+     "stem": "Zhang Qian told the emperor about the countries in the west.",
+     "answer": "T",
+     "why": "he told the emperor about the countries, the roads and the goods in the west.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u2-3-B2",
+     "type": "tf",
+     "stem": "The trip was short and easy.",
+     "answer": "F",
+     "why": "The trip was long and dangerous.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u2-3-B3",
+     "type": "tf",
+     "stem": "Traders began to use the Silk Road after his trip.",
+     "answer": "T",
+     "why": "traders began to travel along the Silk Road.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9r-u2-3-C1",
+     "type": "fill",
+     "stem": "Zhang Qian lived in the Han ____.",
+     "answers": [
+      [
+       "Dynasty"
+      ]
+     ],
+     "why": "lived in the Han Dynasty.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u2-3-C2",
+     "type": "fill",
+     "stem": "The trip was long and ____.",
+     "answers": [
+      [
+       "dangerous"
+      ]
+     ],
+     "why": "The trip was long and dangerous.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u2-3-C3",
+     "type": "fill",
+     "stem": "Today people remember him as a brave ____.",
+     "answers": [
+      [
+       "pioneer"
+      ]
+     ],
+     "why": "a brave pioneer.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

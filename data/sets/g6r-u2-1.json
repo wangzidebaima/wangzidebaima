@@ -1,0 +1,164 @@
+{
+ "id": "g6r-u2-1",
+ "kind": "reading",
+ "title": "Our Class Gala",
+ "subtitle": "考点：一般过去时 / What did you do?",
+ "unit": "E6U2",
+ "dialogue": [
+  {
+   "s": "Amy",
+   "t": "Our class had a gala yesterday, Tom."
+  },
+  {
+   "s": "Tom",
+   "t": "Great! What did you do?"
+  },
+  {
+   "s": "Amy",
+   "t": "I wore a red dress and sang a song."
+  },
+  {
+   "s": "Tom",
+   "t": "Wonderful! What did Ben do?"
+  },
+  {
+   "s": "Amy",
+   "t": "Ben read a story."
+  },
+  {
+   "s": "Tom",
+   "t": "Was it exciting?"
+  },
+  {
+   "s": "Amy",
+   "t": "Yes! Everyone cheered at the end."
+  },
+  {
+   "s": "Tom",
+   "t": "I want to come next time."
+  }
+ ],
+ "vocab": "gala 联欢会 · wear 穿 · dress 连衣裙 · sing 唱 · read 读 · cheer 欢呼",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6r-u2-1-A1",
+     "type": "choice",
+     "stem": "What did Amy wear?",
+     "options": [
+      "A blue shirt.",
+      "A red dress.",
+      "A white hat."
+     ],
+     "answer": "B",
+     "why": "I wore a red dress.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u2-1-A2",
+     "type": "choice",
+     "stem": "What did Amy do at the gala?",
+     "options": [
+      "She ran a race.",
+      "She read a story.",
+      "She sang a song."
+     ],
+     "answer": "C",
+     "why": "I wore a red dress and sang a song.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u2-1-A3",
+     "type": "choice",
+     "stem": "What did Ben do?",
+     "options": [
+      "He read a story.",
+      "He sang a song.",
+      "He wore a red dress."
+     ],
+     "answer": "A",
+     "why": "Ben read a story.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g6r-u2-1-B1",
+     "type": "tf",
+     "stem": "The gala was yesterday.",
+     "answer": "T",
+     "why": "Our class had a gala yesterday.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u2-1-B2",
+     "type": "tf",
+     "stem": "Amy wore a blue dress.",
+     "answer": "F",
+     "why": "I wore a red dress.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u2-1-B3",
+     "type": "tf",
+     "stem": "Everyone cheered at the end.",
+     "answer": "T",
+     "why": "Everyone cheered at the end.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6r-u2-1-C1",
+     "type": "fill",
+     "stem": "Amy wore a red ____.",
+     "answers": [
+      [
+       "dress"
+      ]
+     ],
+     "why": "a red dress",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u2-1-C2",
+     "type": "fill",
+     "stem": "Ben read a ____.",
+     "answers": [
+      [
+       "story"
+      ]
+     ],
+     "why": "Ben read a story.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u2-1-C3",
+     "type": "fill",
+     "stem": "Everyone ____ at the end.",
+     "answers": [
+      [
+       "cheered"
+      ]
+     ],
+     "why": "Everyone cheered at the end.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

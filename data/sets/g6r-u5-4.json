@@ -1,0 +1,164 @@
+{
+ "id": "g6r-u5-4",
+ "kind": "reading",
+ "title": "A Rover on Mars",
+ "subtitle": "考点：一般现在时 / The rover collected soil",
+ "unit": "E6U5",
+ "dialogue": [
+  {
+   "s": "Mike",
+   "t": "Amy, did you hear about the rover on Mars?"
+  },
+  {
+   "s": "Amy",
+   "t": "No. What is a rover?"
+  },
+  {
+   "s": "Mike",
+   "t": "It is a small car that moves on another planet."
+  },
+  {
+   "s": "Amy",
+   "t": "What does it do?"
+  },
+  {
+   "s": "Mike",
+   "t": "It takes photos and collects soil."
+  },
+  {
+   "s": "Amy",
+   "t": "Why does it collect soil?"
+  },
+  {
+   "s": "Mike",
+   "t": "Scientists study the soil to learn about Mars."
+  },
+  {
+   "s": "Amy",
+   "t": "Cool! Mars is a planet, and so is the Earth."
+  }
+ ],
+ "vocab": "rover 火星车 · Mars 火星 · planet 行星 · soil 土壤 · scientist 科学家 · collect 收集",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g6r-u5-4-A1",
+     "type": "choice",
+     "stem": "What is a rover?",
+     "options": [
+      "A small plane.",
+      "A small car.",
+      "A big ship."
+     ],
+     "answer": "B",
+     "why": "It is a small car that moves on another planet.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u5-4-A2",
+     "type": "choice",
+     "stem": "What does the rover collect?",
+     "options": [
+      "Clouds.",
+      "Stars.",
+      "Soil."
+     ],
+     "answer": "C",
+     "why": "It takes photos and collects soil.",
+     "pts": 2
+    },
+    {
+     "id": "g6r-u5-4-A3",
+     "type": "choice",
+     "stem": "Why do scientists study the soil?",
+     "options": [
+      "To learn about Mars.",
+      "To grow vegetables on Earth.",
+      "To see the moon."
+     ],
+     "answer": "A",
+     "why": "Scientists study the soil to learn about Mars.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g6r-u5-4-B1",
+     "type": "tf",
+     "stem": "A rover takes photos.",
+     "answer": "T",
+     "why": "It takes photos and collects soil.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u5-4-B2",
+     "type": "tf",
+     "stem": "The rover in the talk is on the moon.",
+     "answer": "F",
+     "why": "It is on Mars.",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u5-4-B3",
+     "type": "tf",
+     "stem": "Scientists study the soil.",
+     "answer": "T",
+     "why": "Scientists study the soil to learn about Mars.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g6r-u5-4-C1",
+     "type": "fill",
+     "stem": "The rover is on ____.",
+     "answers": [
+      [
+       "mars"
+      ]
+     ],
+     "why": "the rover on Mars",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u5-4-C2",
+     "type": "fill",
+     "stem": "A rover takes photos and collects ____.",
+     "answers": [
+      [
+       "soil"
+      ]
+     ],
+     "why": "collects soil",
+     "pts": 1
+    },
+    {
+     "id": "g6r-u5-4-C3",
+     "type": "fill",
+     "stem": "Scientists study the soil to ____ about Mars.",
+     "answers": [
+      [
+       "learn"
+      ]
+     ],
+     "why": "to learn about Mars",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

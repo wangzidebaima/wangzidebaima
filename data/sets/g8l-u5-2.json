@@ -1,0 +1,118 @@
+{
+ "id": "g8l-u5-2",
+ "kind": "listening",
+ "title": "Tomato and Egg Stir-fry",
+ "subtitle": "短文",
+ "unit": "E8U5",
+ "speakers": {
+  "Chef": "m1"
+ },
+ "transcript": [
+  {
+   "s": "Chef",
+   "t": "Today I will show you a simple dish: tomato and egg stir-fry. You need three tomatoes, four eggs, some oil and a little salt."
+  },
+  {
+   "s": "Chef",
+   "t": "First, cut the tomatoes into small pieces. Then break the eggs into a bowl and mix them well."
+  },
+  {
+   "s": "Chef",
+   "t": "Next, heat some oil in a pan. Pour in the eggs and stir them for one minute. Then take them out."
+  },
+  {
+   "s": "Chef",
+   "t": "Heat a little more oil and put in the tomatoes. Cook them for three minutes until they are soft."
+  },
+  {
+   "s": "Chef",
+   "t": "Put the eggs back into the pan and mix them with the tomatoes. Add salt, and it is ready."
+  },
+  {
+   "s": "Chef",
+   "t": "This dish is sweet and sour, and children usually love it."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g8l-u5-2-A1",
+     "type": "choice",
+     "stem": "How many eggs do you need?",
+     "options": [
+      "Three.",
+      "Two.",
+      "Four.",
+      "Six."
+     ],
+     "answer": "C",
+     "why": "four eggs.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u5-2-A2",
+     "type": "choice",
+     "stem": "How long do you stir the eggs?",
+     "options": [
+      "For ten minutes.",
+      "For three minutes.",
+      "For half an hour.",
+      "For one minute."
+     ],
+     "answer": "D",
+     "why": "stir them for one minute.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u5-2-A3",
+     "type": "choice",
+     "stem": "What does the dish taste like?",
+     "options": [
+      "Sweet and sour.",
+      "Hot and spicy.",
+      "Sweet only.",
+      "Salty and bitter."
+     ],
+     "answer": "A",
+     "why": "This dish is sweet and sour.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g8l-u5-2-B1",
+     "type": "fill",
+     "stem": "First, cut the tomatoes into small ____.",
+     "answers": [
+      [
+       "pieces"
+      ]
+     ],
+     "why": "small pieces.",
+     "pts": 1
+    },
+    {
+     "id": "g8l-u5-2-B2",
+     "type": "fill",
+     "stem": "Cook the tomatoes for three ____.",
+     "answers": [
+      [
+       "minutes"
+      ]
+     ],
+     "why": "for three minutes.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

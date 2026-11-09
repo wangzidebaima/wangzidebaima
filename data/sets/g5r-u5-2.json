@@ -1,0 +1,160 @@
+{
+ "id": "g5r-u5-2",
+ "kind": "reading",
+ "title": "At the Restaurant",
+ "subtitle": "考点：点餐 / She wants an ice cream.",
+ "unit": "E5U5",
+ "dialogue": [
+  {
+   "s": "Waiter",
+   "t": "Hello. What would you like?"
+  },
+  {
+   "s": "Amy",
+   "t": "I want a hamburger, please. And my sister wants an ice cream."
+  },
+  {
+   "s": "Waiter",
+   "t": "Big or small?"
+  },
+  {
+   "s": "Amy",
+   "t": "A small one for her. She is only five."
+  },
+  {
+   "s": "Waiter",
+   "t": "Anything to drink?"
+  },
+  {
+   "s": "Amy",
+   "t": "Two cups of tea, please."
+  },
+  {
+   "s": "Waiter",
+   "t": "OK. The hamburger is big, so it takes ten minutes."
+  }
+ ],
+ "vocab": "hamburger 汉堡包 · ice cream 冰淇淋 · tea 茶 · little 小的 · hungry 饿的 · different 不同的",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5r-u5-2-A1",
+     "type": "choice",
+     "stem": "What does Amy want?",
+     "options": [
+      "Dumplings.",
+      "Beef.",
+      "A hamburger."
+     ],
+     "answer": "C",
+     "why": "I want a hamburger, please.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u5-2-A2",
+     "type": "choice",
+     "stem": "What does Amy's sister want?",
+     "options": [
+      "An ice cream.",
+      "A hamburger.",
+      "Tea."
+     ],
+     "answer": "A",
+     "why": "my sister wants an ice cream.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u5-2-A3",
+     "type": "choice",
+     "stem": "How old is Amy's sister?",
+     "options": [
+      "Ten.",
+      "Five.",
+      "Three."
+     ],
+     "answer": "B",
+     "why": "She is only five.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g5r-u5-2-B1",
+     "type": "tf",
+     "stem": "Amy's sister wants a big ice cream.",
+     "answer": "F",
+     "why": "A small one for her.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u5-2-B2",
+     "type": "tf",
+     "stem": "They want two cups of tea.",
+     "answer": "T",
+     "why": "Two cups of tea, please.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u5-2-B3",
+     "type": "tf",
+     "stem": "The hamburger is big.",
+     "answer": "T",
+     "why": "The hamburger is big.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5r-u5-2-C1",
+     "type": "fill",
+     "stem": "Amy wants a ____.",
+     "answers": [
+      [
+       "hamburger"
+      ]
+     ],
+     "why": "I want a hamburger, please.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u5-2-C2",
+     "type": "fill",
+     "stem": "Her sister wants a ____ ice cream.",
+     "answers": [
+      [
+       "small"
+      ]
+     ],
+     "why": "A small one for her.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u5-2-C3",
+     "type": "fill",
+     "stem": "They want two cups of ____.",
+     "answers": [
+      [
+       "tea"
+      ]
+     ],
+     "why": "Two cups of tea, please.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

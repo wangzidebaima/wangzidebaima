@@ -1,0 +1,120 @@
+{
+ "id": "g5l-u3-2",
+ "kind": "listening",
+ "title": "Sports Day Plan",
+ "subtitle": "对话",
+ "unit": "E5U3",
+ "speakers": {
+  "Ben": "c1",
+  "Amy": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Ben",
+   "t": "What do you usually do on Saturday, Amy?"
+  },
+  {
+   "s": "Amy",
+   "t": "I usually play ping-pong at the club."
+  },
+  {
+   "s": "Ben",
+   "t": "Do you play on Sunday too?"
+  },
+  {
+   "s": "Amy",
+   "t": "No. On Sunday I visit my grandparents."
+  },
+  {
+   "s": "Ben",
+   "t": "Do you play with them?"
+  },
+  {
+   "s": "Amy",
+   "t": "Sometimes we play cards in the evening."
+  },
+  {
+   "s": "Ben",
+   "t": "That sounds nice."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5l-u3-2-A1",
+     "type": "choice",
+     "stem": "What does Amy usually do on Saturday?",
+     "options": [
+      "Play chess.",
+      "Go shopping.",
+      "Play ping-pong."
+     ],
+     "answer": "C",
+     "why": "I usually play ping-pong at the club.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u3-2-A2",
+     "type": "choice",
+     "stem": "What does Amy do on Sunday?",
+     "options": [
+      "Visit her grandparents.",
+      "Go to school.",
+      "Stay in bed."
+     ],
+     "answer": "A",
+     "why": "On Sunday I visit my grandparents.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u3-2-A3",
+     "type": "choice",
+     "stem": "When do they sometimes play cards?",
+     "options": [
+      "In the morning.",
+      "In the evening.",
+      "At noon."
+     ],
+     "answer": "B",
+     "why": "Sometimes we play cards in the evening.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5l-u3-2-B1",
+     "type": "fill",
+     "stem": "Amy plays ping-pong at the ____.",
+     "answers": [
+      [
+       "club"
+      ]
+     ],
+     "why": "I usually play ping-pong at the club.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u3-2-B2",
+     "type": "fill",
+     "stem": "They play ____ in the evening.",
+     "answers": [
+      [
+       "cards"
+      ]
+     ],
+     "why": "Sometimes we play cards in the evening.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

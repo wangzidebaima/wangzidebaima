@@ -1,0 +1,120 @@
+{
+ "id": "g5l-u1-2",
+ "kind": "listening",
+ "title": "Who Is She?",
+ "subtitle": "对话",
+ "unit": "E5U1",
+ "speakers": {
+  "Mike": "c1",
+  "Lily": "c2"
+ },
+ "transcript": [
+  {
+   "s": "Mike",
+   "t": "Lily, who is the girl with the long hair?"
+  },
+  {
+   "s": "Lily",
+   "t": "She is Amy. She is young and lovely."
+  },
+  {
+   "s": "Mike",
+   "t": "Is she in our team?"
+  },
+  {
+   "s": "Lily",
+   "t": "Yes. She is our best player."
+  },
+  {
+   "s": "Mike",
+   "t": "Can she jump rope?"
+  },
+  {
+   "s": "Lily",
+   "t": "Yes, she can. She can jump two hundred times."
+  },
+  {
+   "s": "Mike",
+   "t": "Great! She is a star."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5l-u1-2-A1",
+     "type": "choice",
+     "stem": "Who is the girl with the long hair?",
+     "options": [
+      "Lily.",
+      "Sam.",
+      "Amy."
+     ],
+     "answer": "C",
+     "why": "She is Amy.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u1-2-A2",
+     "type": "choice",
+     "stem": "What is Amy in the team?",
+     "options": [
+      "The best player.",
+      "The teacher.",
+      "The new student."
+     ],
+     "answer": "A",
+     "why": "She is our best player.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u1-2-A3",
+     "type": "choice",
+     "stem": "How many times can Amy jump?",
+     "options": [
+      "One hundred.",
+      "Two hundred.",
+      "Twenty."
+     ],
+     "answer": "B",
+     "why": "She can jump two hundred times.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5l-u1-2-B1",
+     "type": "fill",
+     "stem": "Amy is young and ____.",
+     "answers": [
+      [
+       "lovely"
+      ]
+     ],
+     "why": "She is young and lovely.",
+     "pts": 1
+    },
+    {
+     "id": "g5l-u1-2-B2",
+     "type": "fill",
+     "stem": "Amy can ____ rope.",
+     "answers": [
+      [
+       "jump"
+      ]
+     ],
+     "why": "Can she jump rope? Yes, she can.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,151 @@
+{
+ "id": "g9r-u3-3",
+ "kind": "reading",
+ "title": "Paper Books or E-books?",
+ "subtitle": "考点：阅读方式 / advantage, in general, come across",
+ "unit": "E9U3",
+ "passage": [
+  "Anna and her brother Ben both love reading, but in different ways. Anna prefers paper books. She likes the smell of paper, and she can write notes beside the lines. In general, she finds it easier to remember what she reads on paper. Ben likes e-books. His tablet holds hundreds of books, so he never carries a heavy bag.",
+  "Ben also has other advantages. He can click on a hard word and see its meaning at once. Sometimes he comes across a new word in a story and learns it in seconds. However, his eyes get tired after a long time on the screen. Their mother says, 'Both ways are good. The most important thing is to read every day.'"
+ ],
+ "vocab": "e-book 电子书 · tablet 平板电脑 · advantage 优点 · in general 总的来说 · click 点击 · screen 屏幕",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9r-u3-3-A1",
+     "type": "choice",
+     "stem": "Why does Anna like paper books?",
+     "options": [
+      "They are cheaper.",
+      "They are lighter than a tablet.",
+      "They show new words at once.",
+      "She can write notes beside the lines."
+     ],
+     "answer": "D",
+     "why": "she can write notes beside the lines.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u3-3-A2",
+     "type": "choice",
+     "stem": "What does Ben carry instead of a heavy bag?",
+     "options": [
+      "A tablet with many books.",
+      "A radio.",
+      "A box of paper books.",
+      "A big dictionary."
+     ],
+     "answer": "A",
+     "why": "His tablet holds hundreds of books, so he never carries a heavy bag.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u3-3-A3",
+     "type": "choice",
+     "stem": "What is a problem with e-books for Ben?",
+     "options": [
+      "They are too heavy.",
+      "His eyes get tired.",
+      "They have no pictures.",
+      "They cannot show new words."
+     ],
+     "answer": "B",
+     "why": "his eyes get tired after a long time on the screen.",
+     "pts": 2
+    },
+    {
+     "id": "g9r-u3-3-A4",
+     "type": "choice",
+     "stem": "What does their mother think?",
+     "options": [
+      "Paper books are better.",
+      "E-books are better.",
+      "Reading every day is most important.",
+      "Reading is a waste of time."
+     ],
+     "answer": "C",
+     "why": "The most important thing is to read every day.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g9r-u3-3-B1",
+     "type": "tf",
+     "stem": "Anna likes the smell of paper.",
+     "answer": "T",
+     "why": "She likes the smell of paper",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u3-3-B2",
+     "type": "tf",
+     "stem": "Ben can click on a hard word to see its meaning.",
+     "answer": "T",
+     "why": "He can click on a hard word and see its meaning at once.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u3-3-B3",
+     "type": "tf",
+     "stem": "Anna thinks e-books are easier to remember.",
+     "answer": "F",
+     "why": "she finds it easier to remember what she reads on paper.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9r-u3-3-C1",
+     "type": "fill",
+     "stem": "Anna ____ paper books.",
+     "answers": [
+      [
+       "prefers"
+      ]
+     ],
+     "why": "Anna prefers paper books.",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u3-3-C2",
+     "type": "fill",
+     "stem": "Ben's tablet holds ____ of books.",
+     "answers": [
+      [
+       "hundreds"
+      ]
+     ],
+     "why": "His tablet holds hundreds of books",
+     "pts": 1
+    },
+    {
+     "id": "g9r-u3-3-C3",
+     "type": "fill",
+     "stem": "Sometimes Ben ____ across a new word in a story.",
+     "answers": [
+      [
+       "comes"
+      ]
+     ],
+     "why": "Sometimes he comes across a new word",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

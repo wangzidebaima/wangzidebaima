@@ -1,0 +1,160 @@
+{
+ "id": "g5r-u6-3",
+ "kind": "reading",
+ "title": "Rain or Shine",
+ "subtitle": "考点：天气与物品 / Bring an umbrella and a raincoat.",
+ "unit": "E5U6",
+ "dialogue": [
+  {
+   "s": "Mum",
+   "t": "Lily, look at the sky. It will rain this afternoon."
+  },
+  {
+   "s": "Lily",
+   "t": "But we are going on the school trip."
+  },
+  {
+   "s": "Mum",
+   "t": "Don't worry. Bring an umbrella and a raincoat."
+  },
+  {
+   "s": "Lily",
+   "t": "Is the raincoat in my room?"
+  },
+  {
+   "s": "Mum",
+   "t": "Yes, it is on the bed. And put on warm clothes."
+  },
+  {
+   "s": "Lily",
+   "t": "OK. Is it fine in the morning?"
+  },
+  {
+   "s": "Mum",
+   "t": "Yes. It is fine in the morning, but there will be wind in the afternoon."
+  }
+ ],
+ "vocab": "umbrella 雨伞 · raincoat 雨衣 · worry 担心 · fine 晴朗的 · wind 风 · bring 带来 · trip 旅行",
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、选择题",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g5r-u6-3-A1",
+     "type": "choice",
+     "stem": "What will the weather be like this afternoon?",
+     "options": [
+      "Rainy.",
+      "Snowy.",
+      "Sunny."
+     ],
+     "answer": "A",
+     "why": "It will rain this afternoon.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u6-3-A2",
+     "type": "choice",
+     "stem": "What should Lily bring?",
+     "options": [
+      "A hat and a camera.",
+      "An umbrella and a raincoat.",
+      "A ball and a kite."
+     ],
+     "answer": "B",
+     "why": "Bring an umbrella and a raincoat.",
+     "pts": 2
+    },
+    {
+     "id": "g5r-u6-3-A3",
+     "type": "choice",
+     "stem": "Where is the raincoat?",
+     "options": [
+      "In the bag.",
+      "On the chair.",
+      "On the bed."
+     ],
+     "answer": "C",
+     "why": "it is on the bed.",
+     "pts": 2
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、判断正误（对选 T，错选 F）",
+   "type": "tf",
+   "questions": [
+    {
+     "id": "g5r-u6-3-B1",
+     "type": "tf",
+     "stem": "Lily is going on a school trip.",
+     "answer": "T",
+     "why": "we are going on the school trip.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u6-3-B2",
+     "type": "tf",
+     "stem": "It is not fine in the morning.",
+     "answer": "F",
+     "why": "It is fine in the morning.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u6-3-B3",
+     "type": "tf",
+     "stem": "There will be wind in the afternoon.",
+     "answer": "T",
+     "why": "there will be wind in the afternoon.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "三、选词填空（每词限用一次）",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g5r-u6-3-C1",
+     "type": "fill",
+     "stem": "Bring an umbrella and a ____.",
+     "answers": [
+      [
+       "raincoat"
+      ]
+     ],
+     "why": "Bring an umbrella and a raincoat.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u6-3-C2",
+     "type": "fill",
+     "stem": "Mum says, Don't ____.",
+     "answers": [
+      [
+       "worry"
+      ]
+     ],
+     "why": "Don't worry.",
+     "pts": 1
+    },
+    {
+     "id": "g5r-u6-3-C3",
+     "type": "fill",
+     "stem": "The raincoat is on the ____.",
+     "answers": [
+      [
+       "bed"
+      ]
+     ],
+     "why": "it is on the bed.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}

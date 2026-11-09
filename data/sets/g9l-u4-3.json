@@ -1,0 +1,127 @@
+{
+ "id": "g9l-u4-3",
+ "kind": "listening",
+ "title": "I Forgot My Password",
+ "subtitle": "对话",
+ "unit": "E9U4",
+ "speakers": {
+  "Johnny": "m1",
+  "Amy": "f1"
+ },
+ "transcript": [
+  {
+   "s": "Johnny",
+   "t": "Oh no! I cannot log in to my school account."
+  },
+  {
+   "s": "Amy",
+   "t": "Did you forget your password?"
+  },
+  {
+   "s": "Johnny",
+   "t": "Yes. I changed it last week and I did not write it down."
+  },
+  {
+   "s": "Amy",
+   "t": "Do not use your birthday for a password. It is not safe."
+  },
+  {
+   "s": "Johnny",
+   "t": "So what should I do?"
+  },
+  {
+   "s": "Amy",
+   "t": "Make a password from a sentence you can easily keep in mind, like the first letters of a song."
+  },
+  {
+   "s": "Johnny",
+   "t": "Good tip. And I will write a hint in my notebook, not the password itself."
+  },
+  {
+   "s": "Amy",
+   "t": "Exactly. And never share it with anyone."
+  }
+ ],
+ "sections": [
+  {
+   "id": "A",
+   "title": "一、听材料，选择正确答案",
+   "type": "choice",
+   "questions": [
+    {
+     "id": "g9l-u4-3-A1",
+     "type": "choice",
+     "stem": "Why cannot Johnny log in?",
+     "options": [
+      "His computer is broken.",
+      "The school is closed.",
+      "He lost his phone.",
+      "He forgot his password."
+     ],
+     "answer": "D",
+     "why": "Did you forget your password? Yes.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u4-3-A2",
+     "type": "choice",
+     "stem": "What does Amy say about using a birthday as a password?",
+     "options": [
+      "It is not safe.",
+      "It is the best choice.",
+      "It is too long.",
+      "It is easy to forget."
+     ],
+     "answer": "A",
+     "why": "Do not use your birthday for a password. It is not safe.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u4-3-A3",
+     "type": "choice",
+     "stem": "What will Johnny write in his notebook?",
+     "options": [
+      "The password itself.",
+      "A hint.",
+      "His home address.",
+      "Amy's name."
+     ],
+     "answer": "B",
+     "why": "a hint in my notebook, not the password itself.",
+     "pts": 1
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "title": "二、听材料，填写所缺的词或数字",
+   "type": "fill",
+   "questions": [
+    {
+     "id": "g9l-u4-3-B1",
+     "type": "fill",
+     "stem": "Do not use your ____ for a password.",
+     "answers": [
+      [
+       "birthday"
+      ]
+     ],
+     "why": "Do not use your birthday.",
+     "pts": 1
+    },
+    {
+     "id": "g9l-u4-3-B2",
+     "type": "fill",
+     "stem": "Never ____ your password with anyone.",
+     "answers": [
+      [
+       "share"
+      ]
+     ],
+     "why": "never share it with anyone.",
+     "pts": 1
+    }
+   ]
+  }
+ ]
+}
