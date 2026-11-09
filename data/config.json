@@ -39,7 +39,8 @@
         "g7bio",
         "g7hist",
         "g7poli",
-        "g7geo"
+        "g7geo",
+        "g7mathk"
       ],
       "random": [
         "chap7",
@@ -602,7 +603,8 @@
         "g8poli",
         "g8phy",
         "g8bio",
-        "g8geo"
+        "g8geo",
+        "g8mathk"
       ],
       "random": [
         "math8",
@@ -686,7 +688,8 @@
         "g9phy",
         "g9hist",
         "g9poli",
-        "g9chem"
+        "g9chem",
+        "g9mathk"
       ],
       "random": [
         "math9",
