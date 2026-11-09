@@ -32,9 +32,10 @@ function showUpdate() {
 // ---------- 学习休息提醒：学满 N 分钟弹休息页，倒计时结束才能继续 ----------
 // 计时按“真实经过的时间”算：孩子看题、听听力的时候手是不动屏幕的，
 // 以前要求每秒都有操作才累加，结果学满 15 分钟也弹不出来（孩子反馈过）。
+// 所以只要页面是亮的、人在用，就一直计；切后台 / 息屏由 visibilityState 停表。
+// 唯一例外：页面亮着却半小时完全没碰过，多半是手机放一边了，这时才重新计时。
 const BRK = { active: 0, last: Date.now(), shown: false, snoozed: false, limit: 15 * 60, sec: 0 };
-const IDLE_STOP = 3 * 60 * 1000;    // 连续 3 分钟没碰屏幕：多半去干别的了，先停表
-const IDLE_RESET = 8 * 60 * 1000;   // 连续 8 分钟没碰：相当于已经歇过了，重新计时
+const IDLE_AWAY = 30 * 60 * 1000;   // 30 分钟完全无操作：当作已经离开，重新计时（听 10 分钟听力不会再被打断）
 ['pointerdown', 'keydown', 'touchstart', 'scroll'].forEach(ev => window.addEventListener(ev, () => { BRK.last = Date.now(); }, { passive: true, capture: true }));
 function showBreak(restMin, learnMin) {
   if (document.getElementById('brkm')) return;
@@ -54,8 +55,7 @@ setInterval(() => {
   const r = location.hash.replace(/^#\/?/, '').split('/')[0];
   if (BRK.shown || document.visibilityState !== 'visible' || !V.user() || ['login', 'parent', 'zone', 'hear', 'install'].includes(r)) return;
   const idle = Date.now() - BRK.last;
-  if (idle > IDLE_RESET) { BRK.active = 0; return; }   // 离开这么久，算休息过了
-  if (idle > IDLE_STOP) return;                        // 暂时停表，不加也不清
+  if (idle > IDLE_AWAY) { BRK.active = 0; BRK.sec = 0; return; }   // 手机放一边太久，重新计时
   const cfg = (V.X && V.X.cfg) || {}; BRK.limit = (cfg.breakMinutes || 15) * 60;
   BRK.active++;
   // 顺手记一下今天学了多少分钟，家长在「我的记录」里能看到
@@ -68,8 +68,11 @@ async function render() {
     stopAllSound();
     const hash = location.hash.replace(/^#\/?/, '');
     const [r, a, b, c] = hash.split('/');
-    // 公告确认：每次打开 App 都要先确认看到公告（ hear 页是扫码听力，不拦外面的人 ）
-    if (r !== 'hear' && !V.noticeOk()) { V.noticeGate(render); return; }
+    // 公告确认：每次打开 App 都要先确认看到公告。
+    // 扫码听力、没声音怎么办、检查声音、装桌面这几页是「来找解决办法」的，不拦；
+    // 试卷页 / 首页仍要看一次使用须知（告知作用）。
+    const NOTICE_FREE = ['hear', 'help', 'voice', 'install'];
+    if (!NOTICE_FREE.includes(r) && !V.noticeOk()) { V.noticeGate(render); return; }
     const u = V.user();
     if (!u && r !== 'login' && r !== 'parent' && r !== 'zone' && r !== 'hear' && r !== 'install' && r !== 'voice' && r !== 'help' && r !== 'traffic' && r !== 'papers') { location.replace('#/login'); return; }
     V.setTheme(u);

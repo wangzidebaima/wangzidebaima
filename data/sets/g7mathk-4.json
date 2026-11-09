@@ -1,10 +1,10 @@
 {
  "id": "g7mathk-4",
- "kind": "cn",
+ "kind": "math",
  "title": "线段与角的计算",
  "subtitle": "第四章 基本平面图形",
  "unit": "MK74",
- "mk": "cnknow",
+ "mk": "chapmix",
  "sections": [
   {
    "id": "A",

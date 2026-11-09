@@ -91,6 +91,10 @@ function askPassword() {
 // 游客也能进，不能再把孩子的名字挂上去
 const PAPERS = Object.entries(GRADES).filter(([, v]) => v.papers)
   .map(([g, v]) => ({ g, name: v.name, math: v.papers.math, eng: v.papers.eng })).reverse();
+// 卷子份数按 grades.js 算出来，别写死：以后加年级 / 加单元，三处文案自动跟着变。
+// 每个年级：数学 n 份单元卷 + 期中 + 期末，英语同理（所以一科是 n+2 份）。
+const PAPER_COUNT = PAPERS.reduce((a, x) => a + x.math + 2 + x.eng + 2, 0);
+const PAPER_SUMMARY = PAPERS.slice().reverse().map(x => `${x.name} ${x.math + x.eng + 4} 份`).join(' · ');
 // 一份英语卷子里嵌了哪几段听力二维码：优先用卷子里真实印的值（见 js/grades.js 的 PAPER_HEARS），
 // 表里没有的（比如新年级的卷子）才按规则推，推出来的必须跑 tools/check_data.py 验证
 function hearsOf(key) {
@@ -143,8 +147,8 @@ export function papersPage() {
   const backTo = ses('kp_zone', '__kpZone') ? '#/zone' : (S.getUser() ? '#/' : '#/login');
   mount(page('试卷下载', [
     h('div', { class: 'tipbox' },
-      h('b', {}, '📄 34 份卷子，免费下载打印'),
-      h('p', {}, '四年级 15 份 · 七年级 19 份；数学 + 英语；每个单元一份，另外还有期中、期末。'),
+      h('b', {}, `📄 ${PAPER_COUNT} 份卷子，免费下载打印`),
+      h('p', {}, `${PAPER_SUMMARY}；数学 + 英语；每个单元一份，另外还有期中、期末。`),
       h('p', {}, '都带答案。英语卷带听力：卷子上有二维码，扫一下就能听，每段读两遍。'),
       h('p', { class: 'warn' }, '⚠️ 听力请用手机自带的「相机」扫，不要用微信里的「扫一扫」——微信里听不到声音。'),
       h('p', {}, '嫌扫码麻烦：下面每份英语卷后面都有 🎧，点一下手机上直接放给孩子听，不用扫。')),
@@ -154,7 +158,11 @@ export function papersPage() {
     tip.box,
     h('p', { class: 'note' }, '点一下就下载 Word 文件（.docx），用电脑打开打印最省事；手机上要用 WPS 之类的打开。'),
     ...blocks,
-    h('p', { class: 'note' }, '语文没有做试卷；二年级也没有。想让孩子在手机上做题，用「单元小测」更快。'),
+    h('div', { class: 'tipbox' },
+      h('b', {}, '🖨 其它年级想打印，怎么办？'),
+      h('p', {}, '这里整理的是成套的 Word 卷子（目前只有四年级、七年级）。其它年级从一年级到九年级，题都在手机上，也能打印：'),
+      h('p', {}, '打开任意一套题 → 点右上角的「🖨 打印」→ 出一张题目卷和一张答案卷，用电脑打印最省事。'),
+      h('p', { class: 'note' }, '成套 Word 卷子只有数学、英语两科；语文没有单独做 Word 卷子。想让孩子在手机上做题，用「单元小测」更快。')),
     h('div', { class: 'tipbox' },
       h('b', {}, '💡 卷子打印着做，平时在手机上练'),
       h('p', {}, '手机上做完自动判卷，错的进错题本，第二天自动再练一遍。'),
@@ -201,16 +209,15 @@ export function kidCard(u, { vip = false, redraw = null } = {}) {
     bakTip.style.display = '';
     bakTip.scrollIntoView({ behavior: 'smooth', block: 'center' });
   };
-  // 金币：这一轮攒到几个、已经发了几个、还差几个。按差额发，攒够新的一档就又能领一次。
-  const rews = (X.cfg.rewards || []).slice().sort((a, b) => a.stars - b.stars);
-  const cyk = cycle(st.total), got = coinsGot(rews, cyk.pos);
-  const paidLap = S.coinsPaidLap(u.id, cyk.laps, goal()), due = Math.max(0, got - paidLap);
-  const paidAll = S.coinsPaid(u.id), lastCoin = S.coinList(u.id).slice(-1)[0];
+  // 金币：累计该发几个、已经发了几个、还差几个。按差额发，攒够新的一档就又能领一次。
+  // 走 coinAccount 的累计口径，跨轮不会把上一轮没发完的金币弄丢。
+  const ac = coinAccount(u.id, st.total);
+  const { gotAll, paidAll, due } = ac, lastCoin = S.coinList(u.id).slice(-1)[0];
   const coinRow = h('div', { class: 'row static' }, h('div', {}, h('b', {}, '🪙 金币'),
-    h('small', {}, (got ? `本轮攒到 ${got} 个 · 已发 ${paidLap} 个` + (due ? ` · 还差 ${due} 个` : ' · 都发完啦') : '本轮还没攒到') + (paidAll ? ` · 累计已发 ${paidAll} 个` : ' · 还没发过') + (lastCoin ? `，上次 ${Number(lastCoin.d.slice(5, 7))} 月 ${Number(lastCoin.d.slice(8, 10))} 日` : ''))),
+    h('small', {}, (gotAll ? `累计该发 ${gotAll} 个 · 已发 ${paidAll} 个` + (due ? ` · 还差 ${due} 个` : ' · 都发完啦') : '还没攒到第一档') + (lastCoin ? `，上次 ${Number(lastCoin.d.slice(5, 7))} 月 ${Number(lastCoin.d.slice(8, 10))} 日` : ''))),
     due ? h('button', { type: 'button', class: 'btn small primary', onclick: () => {
       if (!confirm(`确认已经把 1 个金币给 ${u.display} 了吗？\n${due > 1 ? `还差 ${due} 个，发完这个可以接着点。` : '记下后，孩子首页会显示「家长已经发放啦」。'}`)) return;
-      S.payCoins(u.id, cyk.laps, goal(), 1); toast('记好啦'); again();
+      S.payCoins(u.id, ac.cy.laps, goal(), 1); toast('记好啦'); again();
     } }, '记一笔：发 1 个') : null);
   // 会员占位：只在我的后台显示，家长专区里没有（现在没有任何功能用它做拦截）
   const vipRow = vip ? h('div', { class: 'row static' }, h('div', {}, h('b', {}, '👑 会员'),
@@ -253,7 +260,7 @@ export function parentHome() {
       h('a', { class: 'row', href: '#/zone' }, h('div', {}, h('b', {}, '👨‍👩‍👧 家长专区'),
         h('small', {}, '家长自己设密码进来：发金币 / 备份 / 试卷')), h('span', { class: 'chip' }, '去看看')),
       h('a', { class: 'row', href: '#/papers' }, h('div', {}, h('b', {}, '📄 试卷下载'),
-        h('small', {}, '数学、英语各单元 + 期中期末，共 34 份 Word')), h('span', { class: 'chip' }, '去下载')),
+        h('small', {}, `数学、英语各单元 + 期中期末，共 ${PAPER_COUNT} 份 Word`)), h('span', { class: 'chip' }, '去下载')),
       h('a', { class: 'row', href: '#/traffic' }, h('div', {}, h('b', {}, '📈 访问统计'),
         h('small', {}, '有多少人打开过这个网站（GitHub 官方数据）')), h('span', { class: 'chip' }, '看看')),
       h('a', { class: 'row', href: '#/help' }, h('div', {}, h('b', {}, '🩺 遇到问题'), h('small', {}, '没声音、打不开、更新不了怎么办；一键自检把状态查出来')), h('span', { class: 'chip' }, '看看'))),
@@ -398,7 +405,7 @@ export function login() {
     h('p', { class: 'sub' }, '输入你的年级（比如：七年级），开始今天的练习'), inp,
     h('button', { class: 'btn primary wide', onclick: enter }, '开始'), msg,
     h('a', { class: 'paper-cta', href: '#/papers' }, h('span', { class: 'ico' }, '📄'),
-      h('span', {}, h('b', {}, '34 份试卷，免费下载打印'),
+      h('span', {}, h('b', {}, `${PAPER_COUNT} 份试卷，免费下载打印`),
         h('small', {}, '四年级 / 七年级 · 数学 + 英语 · 带答案，英语卷含听力')),
       h('span', { class: 'go' }, '›')),
     h('a', { class: 'link instl', href: '#/install' }, '📲 怎么把它装到手机桌面？'),
@@ -483,6 +490,18 @@ function taskCard(u) {
     }));
 }
 export const coinsGot = (rewards, pos) => rewards.filter(r => pos >= r.stars).reduce((a, r) => a + (r.coins || 0), 0);
+// 金币账本（全站只用这一处算欠账）：按「累计总星数」算应得，按「累计发放流水」算已发。
+// 以前只比本轮 pos / 本轮 lap：孩子攒满 400 颗、家长还差 2 个没发时，再得 1 颗星就跳到新轮，
+// pos 归零、新轮已发为 0，欠的 2 个金币在孩子首页和家长专区都再也找不到。
+// 每满一轮固定得 perLap 个（100/200/300/400 星四档合计 5 个），零头再按本轮 pos 算一档。
+export function coinAccount(uid, total) {
+  const rewards = (X.cfg.rewards || []).slice().sort((a, b) => a.stars - b.stars);
+  const cy = cycle(total), perLap = rewards.reduce((a, r) => a + (r.coins || 0), 0);
+  const curGot = coinsGot(rewards, cy.pos);
+  const gotAll = cy.laps * perLap + curGot;
+  const paidAll = S.coinsPaid(uid);
+  return { rewards, cy, perLap, curGot, gotAll, paidAll, due: Math.max(0, gotAll - paidAll) };
+}
 // 自检结果横幅：app 每天自动检查一次文件，有缺的就在首页亮红条
 // 中考倒计时：config 里给 u.exam = {label, date:'YYYY-MM-DD', est:true}，到期或没配就不显示
 function examCard(u) {
@@ -499,16 +518,15 @@ function healthBanner() {
 }
 export function home() {
   const u = user(), st = S.stats(u.id), p = S.P(u.id);
-  const rewards = (X.cfg.rewards || []).slice().sort((a, b) => a.stars - b.stars);
-  const cy = cycle(st.total), next = rewards.find(r => r.stars > cy.pos), G = goal(), pct = Math.min(100, cy.pos / G * 100);
-  const cg = coinsGot(rewards, cy.pos), cdue = Math.max(0, cg - S.coinsPaidLap(u.id, cy.laps, G));
+  const ac = coinAccount(u.id, st.total), rewards = ac.rewards;
+  const cy = ac.cy, next = rewards.find(r => r.stars > cy.pos), G = goal(), pct = Math.min(100, cy.pos / G * 100);
   const marks = h('div', { class: 'marks' }, rewards.map(r => h('span', { class: 'mk' + (cy.pos >= r.stars ? ' on' : ''), style: `left:${Math.min(100, r.stars / G * 100)}%` }, r.stars)));
   const jar = h('section', { class: 'jar' },
-    h('div', { class: 'jar-top' }, h('div', { class: 'jar-n' }, '⭐ ', h('b', {}, cy.pos), h('small', {}, ` / ${G}`)), h('div', { class: 'jar-s' }, `今天 +${st.today}/${cap()}` + (S.streak(u.id) ? ` · 🔥连续 ${S.streak(u.id)} 天` : ''))),
+    h('div', { class: 'jar-top' }, h('div', { class: 'jar-n' }, '⭐ ', h('b', {}, cy.pos), h('small', {}, ` / ${G}`)), h('div', { class: 'jar-s' }, `今天 +${st.today}/${cap()} · 累计 ⭐${st.total} 颗` + (S.streak(u.id) ? ` · 🔥连续 ${S.streak(u.id)} 天` : ''))),
     h('div', { class: 'bar' }, h('i', { style: `width:${pct}%` })), marks,
-    h('p', { class: 'jar-t' }, next ? `再得 ${next.stars - cy.pos} 颗星，就能得 ${next.label}（找家长领取）` : '这一轮满啦！再得一颗星，进度条就重新开始。'),
-    cg ? h('p', { class: 'jar-t' }, `🪙 这一轮攒到 ${cg} 个金币，${cdue ? `还有 ${cdue} 个找家长领取` : '家长已经发放啦'}`) : null,
-    cy.laps ? h('p', { class: 'jar-t' }, `已完成 ${cy.laps} 轮（每轮 ${rewards.reduce((a, r) => a + (r.coins || 0), 0)} 个金币）`) : null,
+    h('p', { class: 'jar-t' }, next ? `再得 ${next.stars - cy.pos} 颗星，就能得 ${next.label}（找家长领取）` : '这一轮满啦！再得一颗星就开始新一轮，累计的星星和金币都会一直留着～'),
+    ac.gotAll ? h('p', { class: 'jar-t' }, `🪙 累计攒到 ${ac.gotAll} 个金币，家长已发 ${ac.paidAll} 个，${ac.due ? `还有 ${ac.due} 个找家长领取` : '都发完啦'}`) : null,
+    cy.laps ? h('p', { class: 'jar-t' }, `已完成 ${cy.laps} 轮（每轮 ${ac.perLap} 个金币）`) : null,
     st.today >= cap() ? h('p', { class: 'jar-t' }, '今天的星星拿满啦，明天再来～') : null);
   const subjectCards = u.subjects.map(id => {
     const s = subj(id); if (!s || !s.sets.length) return null;
@@ -999,9 +1017,12 @@ function renderQ(q, no, ans, update, restore) {
     const lines = [{ t: say0, s: 'x' }];
     if (q.type === 'choice' && !q.noOptSay) (q.options || []).forEach((o, k) => { if (o) lines.push({ t: 'ABCD'[k] + '，' + o, s: 'x' }); });
     if (q.type === 'tf') lines.push({ t: '对，还是错？', s: 'x' });
-    const b = h('button', { type: 'button', class: 'spk listenq', onclick: () => { stopScript(); playScript(lines, {}, { lang: 'zh-CN', times: 1, rate: 0.8, pause: 500 }); } }, '🔊 听题');
+    // 听音选字题（q.sayzh，一年级 220 道）只留一个「听一听」：
+    // 另一个「听题」读的是「点听一听，选出你听到的字」加四个选项，孩子点了听不到要选的字，会以为坏了。
+    // 题干「听一听，说的是哪个字？」本身已经写清楚了，不用再读一遍。
+    const b = q.sayzh ? null : h('button', { type: 'button', class: 'spk listenq', onclick: () => { stopScript(); playScript(lines, {}, { lang: 'zh-CN', times: 1, rate: 0.8, pause: 500 }); } }, '🔊 听题');
     const b2 = q.sayzh ? h('button', { type: 'button', class: 'spk listenq', onclick: () => { stopScript(); playScript([{ t: q.sayzh, s: 'x' }], {}, { lang: 'zh-CN', times: 1, rate: 0.7, pause: 400 }); } }, '🔊 听一听') : null;
-    const first = box.querySelector('.stem'); const rowEl = h('div', { class: 'speakrow' }, b2, b); if (first) first.after(rowEl); else box.prepend(rowEl);
+    if (b || b2) { const first = box.querySelector('.stem'); const rowEl = h('div', { class: 'speakrow' }, b2, b); if (first) first.after(rowEl); else box.prepend(rowEl); }
   }
   return box;
 }
@@ -1037,10 +1058,39 @@ function runQuiz(o) {
   o.sections.forEach(sec => sec.questions.forEach(q0 => { const q = { ...q0 }; if (sec.bank) { q.bank = sec.bank; q.bankMode = sec.bankMode; } qs.push(q); }));
   const N = qs.length;
   if (!N) { mount(page(o.title, h('p', { class: 'note' }, '这套题暂时打不开，换一套试试～'), { back: o.back })); return; }
-  let cur = 0, curNode = null;
+  // 「做完看答案」的草稿：刷新、切页、被休息弹窗打断后能接着做，不用从第 1 题重来。
+  // 只存固定题集（recId）：随机练习每次题目都不同，存了反而会答到别的题上。
+  // 「答完看答案」当场判分锁定，不存草稿，免得和 done 里的判分记录打架。
+  const draftKey = (!live && o.recId) ? 'kp_draft_' + o.uid + '_' + o.recId : null;
+  const qids = qs.map(q => q.id).join('|');
+  const readDraft = () => {
+    if (!draftKey) return null;
+    try {
+      const d = JSON.parse(sessionStorage.getItem(draftKey) || 'null');
+      // 题目顺序变了、或者草稿超过一天，就当没有：不能把答案贴到别的题上
+      if (!d || d.ids !== qids || !d.ans || typeof d.ans !== 'object' || !(Date.now() - (d.t || 0) < 24 * 3600 * 1000)) { sessionStorage.removeItem(draftKey); return null; }
+      return d;
+    } catch (e) { return null; }
+  };
+  const saveDraft = () => {
+    if (!draftKey) return;
+    try {
+      // 只是打开看了一眼（一题没答、也没翻页）别留草稿，否则下次进来会误报「上次做到第 1 题」
+      if (!Object.keys(ans).length && cur === 0) { sessionStorage.removeItem(draftKey); return; }
+      sessionStorage.setItem(draftKey, JSON.stringify({ ids: qids, cur, ans, t: Date.now() }));
+    } catch (e) { /* 存储不可用就当没草稿 */ }
+  };
+  const clearDraft = () => { if (draftKey) { try { sessionStorage.removeItem(draftKey); } catch (e) { /* ignore */ } } };
+  const draft = readDraft();
+  if (draft) Object.assign(ans, draft.ans);
+  let cur = draft ? Math.min(N - 1, Math.max(0, Number(draft.cur) || 0)) : 0, curNode = null;
   const prog = h('div', { class: 'qprog' });
   const stage = h('div', { class: 'stage' });
   const nav = h('div', { class: 'qnav' });
+  // 有草稿时先跟孩子说清楚：是接着做，不是重新开始；想重做也有按钮
+  const resumeBar = draft ? h('p', { class: 'note', style: 'margin:8px 0;font-size:15px' },
+    `📌 上次做到第 ${cur + 1} 题，已经帮你接着做啦。`,
+    h('button', { type: 'button', class: 'btn ghost small', style: 'margin-left:8px', onclick: () => { clearDraft(); mount(runQuiz({ ...o, t0: Date.now() })); } }, '从头再做')) : null;
   // 判分并记录（每题只记一次：发星星、进错题本）
   function settle(q) {
     if (done[q.id]) return done[q.id];
@@ -1090,6 +1140,7 @@ function runQuiz(o) {
     prog.textContent = `第 ${cur + 1} / ${N} 题`;
     const q = qs[cur], btn = nav.querySelector('.btn.primary');
     if (btn) btn.disabled = !isAnswered(q, ans[q.id]) && !done[q.id];
+    saveDraft();
   }
   function draw() {
     const q = qs[cur];
@@ -1117,6 +1168,7 @@ function runQuiz(o) {
     const total = results.length - selfN;
     const m0 = qs.length ? o.metaFor(qs[0]) : {};
     S.recordAttempt(o.uid, o.recId || null, { title: o.recTitle || o.title, ok: okN, total, pts, ptsAll, stars: newStars, src: m0.src, sub: m0.sub, kind: m0.kind, secs: Math.min(1500, Math.round((Date.now() - o.t0) / 1000)) });
+    clearDraft();   // 已经交卷，别让下次进来还停在上次的答案
     // 做完当场查一遍成就，有新解锁立刻报喜
     B.checkAndGrant(o.uid).forEach(x => toast(`🏅 解锁成就：${x.icon} ${x.name}`, 4000));
     keypad.close();
@@ -1124,7 +1176,7 @@ function runQuiz(o) {
   }
   draw();
   return page(o.title, [
-    o.subtitle ? h('p', { class: 'subtitle' }, o.subtitle) : null, modeBar,
+    o.subtitle ? h('p', { class: 'subtitle' }, o.subtitle) : null, resumeBar, modeBar,
     o.ctxFn ? o.ctxFn(false) : null,
     h('div', { class: 'qtop' }, prog),
     stage, nav], { back: o.back, right: o.printHref ? h('a', { class: 'back r', href: o.printHref }, '🖨 打印') : null });
@@ -1291,8 +1343,8 @@ function summaryText(u) {
   if (weakT.length) lines.push(`最近容易错：${weakT.join('、')}`);
   if (weakW.length) lines.push(`还没掌握的单词：${weakW.join('、')}`);
   if (next) lines.push(`下一个奖励 ${next.label}：${next.stars} 颗，还差 ${next.stars - cy.pos} 颗`);
-  const scg = coinsGot(rewards, cy.pos), scdue = Math.max(0, scg - S.coinsPaidLap(u.id, cy.laps, goal()));
-  if (scg) lines.push(`这一轮攒到金币：${scg} 个（${scdue ? `还有 ${scdue} 个找家长领取` : '家长已发放'}，累计已发 ${S.coinsPaid(u.id)} 个）` + (cy.laps ? `；已完成 ${cy.laps} 轮` : ''));
+  const ac = coinAccount(u.id, st.total);
+  if (ac.gotAll) lines.push(`累计该发金币：${ac.gotAll} 个（${ac.due ? `还有 ${ac.due} 个找家长领取` : '家长已发放'}，累计已发 ${ac.paidAll} 个）` + (cy.laps ? `；已完成 ${cy.laps} 轮` : ''));
   return lines.filter(Boolean).join('\n');
 }
 const CATN = [['reading', '阅读理解', '📖'], ['listening', '听力', '🎧'], ['speaking', '口语', '🗣'], ['essay', '美文', '🌸']];

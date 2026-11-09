@@ -1,10 +1,10 @@
 {
  "id": "g9mathk-2",
- "kind": "cn",
+ "kind": "math",
  "title": "一元二次方程的解法与根",
  "subtitle": "一元二次方程",
  "unit": "MK92",
- "mk": "cnknow",
+ "mk": "chapmix",
  "sections": [
   {
    "id": "A",

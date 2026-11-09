@@ -50,6 +50,13 @@ export function voiceFail(reason) {
   document.body.appendChild(mask);
 }
 
+// 朗读失败兜底：有些手机有 speechSynthesis、但没装语音包，点了播放既不出声也不抛错。
+// 连续两次失败（跨多次点击累计）就弹「听不到声音」引导；只要有一次读成功了就清零。
+let sayFailN = 0;
+const sayOk = () => { sayFailN = 0; };
+const sayBad = (reason) => { if (++sayFailN >= 2) { sayFailN = 0; voiceFail(reason); } };
+const NO_VOICE = '这台手机的朗读一直没成功——多半是没装中文语音包，或者在微信里打开被禁用了。';
+
 export const praiseText = (ratio) =>
   ratio === 1 ? '全对！太厉害了！' : ratio >= 0.8 ? '做得真棒！' : ratio >= 0.6 ? '不错，继续加油！' : '没关系，看看解析，下次会更好。';
 
@@ -171,6 +178,7 @@ export function testVoice(v, text) {
   stopScript();
   const u = new SpeechSynthesisUtterance(text || '春天来了，小草从土里钻出来，燕子从南方飞回来了。');
   u.lang = v.lang || 'zh-CN'; u.voice = v; u.rate = 0.82; u.pitch = 1;
+  u.onend = sayOk; u.onerror = () => sayBad('试听没出声，说明这台手机里还没有可用的语音。');
   try { ss.speak(u); } catch (e) { voiceFail('试听没出声，说明这台手机里还没有可用的语音。'); }
 }
 // 启动时先把语音列表预热：iOS 第一次取常是空的，要等 voiceschanged 事件
@@ -187,7 +195,9 @@ export function playSay(key, text, avail) {
     try {
       const ss = window.speechSynthesis; if (!ss) throw new Error('no tts');
       ss.cancel(); const u = new SpeechSynthesisUtterance(text); u.lang = 'en-US'; u.rate = 0.85;
-      const v = pickVoice(ss, 'en-US'); if (v) u.voice = v; u.rate = 0.9; ss.speak(u);
+      const v = pickVoice(ss, 'en-US'); if (v) u.voice = v; u.rate = 0.9;
+      u.onend = sayOk; u.onerror = () => sayBad(NO_VOICE);
+      ss.speak(u);
     } catch (e) { voiceFail(); }
   };
   try { if (curAudio) curAudio.pause(); } catch (e) { /* ignore */ }
@@ -208,8 +218,15 @@ export function stopAllSound() {
 }
 export function playScript(lines, speakers, opts = {}) {
   const ss = window.speechSynthesis; if (!ss) { voiceFail(); return; }
-  stopScript(); const run = scriptRun, times = opts.times || 2, rate = opts.rate || 0.95;
   const lang = opts.lang || 'en-US';
+  // 语音列表已经给出来了、却没有任何这个语言的语音：点了也不会出声，直接给引导。
+  // iOS 刚打开时列表是空的，那种情况走下面的 300ms 预热，不在这里误报。
+  const all0 = ss.getVoices() || [];
+  if (all0.length && !voicesFor(ss, lang).length) {
+    voiceFail(/^zh/.test(lang) ? '这台手机里没有中文语音包，朗读会没有声音。' : '这台手机里没有英语语音包，朗读会没有声音。');
+    return;
+  }
+  stopScript(); const run = scriptRun, times = opts.times || 2, rate = opts.rate || 0.95;
   const items = [];
   for (let k = 0; k < times; k++) { lines.forEach(l => items.push({ t: l.t, who: (speakers && speakers[l.s]) || '' })); if (k < times - 1) items.push({ gap: 2200 }); }
   let i = 0;
@@ -221,8 +238,12 @@ export function playScript(lines, speakers, opts = {}) {
     const v = pickVoice(ss, lang, it.who), vs = voicesFor(ss, lang), distinct = v && vs.length > 1 && (FEM.test(v.name) !== MAL.test(v.name));
     if (v) u.voice = v;
     u.pitch = distinct ? 1 : /^f/.test(it.who) ? 1.1 : /^m/.test(it.who) ? 0.9 : /^c/.test(it.who) ? 1.2 : 1;
-    u.onend = () => setTimeout(next, opts.pause || 450); u.onerror = () => setTimeout(next, 100);
-    ss.speak(u);
+    let to = null;
+    u.onend = () => { clearTimeout(to); sayOk(); setTimeout(next, opts.pause || 450); };
+    u.onerror = () => { clearTimeout(to); sayBad(NO_VOICE); setTimeout(next, 100); };
+    // 有些手机点了既不出声、也不触发 onend/onerror：1.5 秒后还没在朗读就记一次失败并继续
+    to = setTimeout(() => { if (!ss.speaking && !ss.pending) { sayBad(NO_VOICE); setTimeout(next, 100); } }, 1500);
+    try { ss.speak(u); } catch (e) { clearTimeout(to); sayBad(NO_VOICE); setTimeout(next, 100); }
   };
   // iOS 刚打开时语音列表常常是空的，这时直接播系统会自己乱挑一个（可能挑到粤语 → 咬舌）。
   // 给它 300ms 等 voiceschanged；等不到也照常播，不能让孩子点了没反应。

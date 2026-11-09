@@ -1,10 +1,10 @@
 {
  "id": "g7mathk-3",
- "kind": "cn",
+ "kind": "math",
  "title": "整式的化简与求值",
  "subtitle": "第三章 整式及其加减",
  "unit": "MK73",
- "mk": "cnknow",
+ "mk": "chapmix",
  "sections": [
   {
    "id": "A",
