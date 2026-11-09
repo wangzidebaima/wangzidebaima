@@ -7,6 +7,8 @@ import { RANDOM, makeSession } from './mathgen.js';
 import { recReady, startRec, micErrText } from './speech.js';
 import { GRADES, engUnit, PAPER_HEARS } from './grades.js';
 
+// audio 是「将来做 MP3 音频」预留的空集合：目前站内没有任何 mp3 文件，playSay 一律走
+// 手机自带朗读（见 ui.js）。别删这块和 sw.js 里的音频 Range 缓存，将来上音频可直接接着用。
 export const X = { cfg: null, lib: null, vocab: {}, audio: new Set(), sets: {}, ipa: {} };
 const app = () => document.getElementById('app');
 // 两个门：adminOk = 开发者后台（config.json 里那个密码）；parentOk = 家长专区或后台都算过
@@ -462,7 +464,7 @@ export function nextTask(u) {
   for (const t of shown) if (S.taskDone(u.id, t, { window: ew }) < t.goal) return { label: t.kind === 'essay' ? '听美文' : t.label, href: taskTarget(u, t, ew), left: shown.filter(x => S.taskDone(u.id, x, { window: ew }) < x.goal).length };
   return null;
 }
-import { dueCount } from './learn.js';
+import { dueCount, hasBook } from './learn.js';
 // 今日复习卡片：把「该复习的单词」和「错后 3 天还没做对的错题」聚合在首页，
 // 有到期内容才显示，不打扰没有欠账的日子
 function reviewCard(u) {
@@ -503,11 +505,16 @@ export function coinAccount(uid, total) {
   return { rewards, cy, perLap, curGot, gotAll, paidAll, due: Math.max(0, gotAll - paidAll) };
 }
 // 自检结果横幅：app 每天自动检查一次文件，有缺的就在首页亮红条
-// 中考倒计时：config 里给 u.exam = {label, date:'YYYY-MM-DD', est:true}，到期或没配就不显示
+// 中考倒计时：config 里给 u.exam = {label, date:'YYYY-MM-DD', est:true}，到期或没配就不显示。
+// monthOnly=true 时只给「预计哪年哪月」——中考具体日期每年由教育局定，写死一个日子会误导家长。
 function examCard(u) {
   const x = u && u.exam; if (!x || !x.date) return null;
   const t = new Date(S.today() + 'T00:00:00'), d = new Date(x.date + 'T00:00:00');
   const n = Math.round((d - t) / 86400000); if (!(n >= 0)) return null;
+  if (x.monthOnly) {
+    const ym = `${+x.date.slice(0, 4)} 年 ${+x.date.slice(5, 7)} 月`;
+    return h('section', { class: 'tasks' }, h('div', { class: 'row' }, h('div', {}, h('b', {}, `⏳ ${x.label || '中考'}预计在 ${ym}`), h('small', {}, '具体日期以教育局正式通知为准'))));
+  }
   const md = `${+x.date.slice(5, 7)}月${+x.date.slice(8, 10)}日`;
   return h('section', { class: 'tasks' }, h('div', { class: 'row' }, h('div', {}, h('b', {}, `⏳ 距${x.label || '中考'}还有 ${n} 天`), h('small', {}, x.est ? `按预计 ${md}，以教育局正式通知为准` : md))));
 }
@@ -531,7 +538,7 @@ export function home() {
   const subjectCards = u.subjects.map(id => {
     const s = subj(id); if (!s || !s.sets.length) return null;
     const speak = s.sets[0].kind === 'speaking';
-    const em = speak ? `已打卡 ${Object.keys(p.speak).filter(k => s.sets.some(x => k.startsWith(x.id + '-'))).length}/${s.sets.reduce((a, x) => a + (x.count || 5), 0)} 天` : `${s.sets.filter(x => p.sets[x.id]).length}/${s.sets.length} 已完成`;
+    const em = speak ? `已练 ${Object.keys(p.speak).filter(k => s.sets.some(x => k.startsWith(x.id + '-'))).length}/${s.sets.reduce((a, x) => a + (x.count || 5), 0)} 句` : `${s.sets.filter(x => p.sets[x.id]).length}/${s.sets.length} 已完成`;
     const card = h('a', { class: 'card', href: '#/s/' + id }, h('span', { class: 'ic' }, s.icon), h('b', {}, s.title), h('small', {}, s.desc), h('em', {}, em));
     // 分区靠科目 id 认：新增科目（如科学的 g4sci）必须能自己落对位置，
     // 否则会掉进兜底的英语区，卡片出现在「🔤 英语」标题下面。
@@ -544,7 +551,7 @@ export function home() {
     const R = RANDOM[k]; const card = h('a', { class: 'card alt', href: '#/rand/' + k }, h('span', { class: 'ic' }, R.icon), h('b', {}, R.title), h('small', {}, /^cnw/.test(k) ? '听词语，写在纸上' : '随机出题，不重样'), h('em', {}, `今天 ${S.starsToday(u.id)}/${cap()} 颗`));
     card._area = /^(math|chap)/.test(k) ? 'math' : /^cn/.test(k) ? 'cn' : 'eng'; return card;
   });
-  const hasEng = (u.random || []).some(k => /^vocab/.test(k));
+  const hasEng = (u.random || []).some(k => /^vocab/.test(k)) && hasBook(u);
   const learnCard = hasEng ? Object.assign(h('a', { class: 'card', href: '#/learn' }, h('span', { class: 'ic' }, '🃏'), h('b', {}, '单词卡片'), h('small', {}, '先学一学，再去测'), h('em', {}, '看词·听音·记意思')), { _area: 'eng' }) : null;
   const ew0 = essayNow(u);
   const essayCard = ew0 ? Object.assign(h('a', { class: 'card', href: '#/set/' + ew0.item.id }, h('span', { class: 'ic' }, '🌸'), h('b', {}, '听美文'), h('small', {}, '《' + String(ew0.item.title || '').replace(/^《|》$/g, '') + '》'), h('em', {}, ew0.end.slice(5) + ' 前听完')), { _area: 'cn' }) : null;

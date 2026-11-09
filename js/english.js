@@ -3,6 +3,7 @@ import { h, toast, playSay, slug, playScript, stopScript } from './ui.js';
 import * as S from './store.js';
 import { X, user, mount, page, runQuiz, cap } from './views.js';
 import { RANDOM, TW, TS, weighted } from './mathgen.js';
+import { ginfo } from './grades.js';
 
 export { slug };
 const shuf = (a) => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
@@ -219,7 +220,7 @@ export async function engSetup(kind) {
   mount(page(R.title, [
     h('section', { class: 'jar mini' }, h('div', { class: 'jar-top' }, h('div', { class: 'jar-n' }, '今天的星星'), h('div', { class: 'jar-s' }, `${n} / ${cap()}`)),
       h('div', { class: 'bar' }, h('i', { style: `width:${Math.min(100, n / (cap()) * 100)}%` }))),
-    kind.startsWith('sent') ? null : h('a', { class: 'btn ghost wide', href: '#/learn/' }, '🃏 还没学？先用单词卡片学一学'),
+    kind.startsWith('sent') || !(ginfo(user()) && ginfo(user()).words) ? null : h('a', { class: 'btn ghost wide', href: '#/learn/' }, '🃏 还没学？先用单词卡片学一学'),
     h('div', { class: 'chips' }, h('span', { class: 'lab' }, '学过的单元（只会从这些里出题）')),
     h('div', { class: 'chips' }, ubtns),
     h('div', { class: 'chips' }, h('button', { type: 'button', class: 'btn ghost small', onclick: () => setAll(true) }, '全选'), h('button', { type: 'button', class: 'btn ghost small', onclick: () => setAll(false) }, '清空')),

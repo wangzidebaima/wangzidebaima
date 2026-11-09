@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-25-1",
+  "version": "kp-v86",
   "appName": "书山小路",
   "rewards": [
     {
@@ -743,11 +743,11 @@
       ],
       "grade": "九年级",
       "readAloud": false,
-      "soon": true,
       "exam": {
         "label": "中考",
         "date": "2027-06-20",
-        "est": true
+        "est": true,
+        "monthOnly": true
       },
       "publishers": {
         "cn": "统编版",

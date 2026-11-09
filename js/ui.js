@@ -189,6 +189,7 @@ export function warmVoices() {
     ss.addEventListener('voiceschanged', () => { try { ss.getVoices(); } catch (e) { /* ignore */ } });
   } catch (e) { /* ignore */ }
 }
+// avail 为 MP3 预留（见 views.js 的 X.audio）；当前这个集合是空的，一律走下面的朗读兜底。
 export function playSay(key, text, avail) {
   const file = 'audio/w/' + key + '.mp3';
   const fallback = () => {

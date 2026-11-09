@@ -1,5 +1,5 @@
 // 离线缓存：先用手机里存的（秒开），同时悄悄检查有没有新内容；有就提示刷新。
-const VER = 'kp-v85';
+const VER = 'kp-v86';
 const AUDIO = 'kp-audio';
 // 下面这份清单由 tools/gen_shell.py 自动生成，不要手改；
 // 加了新文件后跑一次 python tools/gen_shell.py 即可。
@@ -113,6 +113,7 @@ async function trafficResp(req) {
   return hit || new Response('{"none":1}', { status: 200, headers: { 'Content-Type': 'application/json' } });
 }
 
+// 预留能力：站内目前没有 mp3 文件，这段不会触发；将来做音频时可直接接上，别删。
 // 音频：第一次播放时存下来；iPhone 播放需要支持「分段读取」(Range)
 async function audioResp(req) {
   const c = await caches.open(AUDIO);

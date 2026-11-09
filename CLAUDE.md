@@ -28,9 +28,10 @@
 | 九年级 | `g9` | `9` |
 
 各年级现有科目（语文统编版、数学北师大版、英语 PEP、科学苏教版；一、二年级没有科学和英语）：
-g1 语文 · g2 语文 · g3/g5/g6 语文+科学（数学、英语走“随机练习”入口：math/chap/vocab/sent） · g4 全套 · g7 全套 · **g8 全套（第12批已上线）** · **g9（第13～20批已上线）**。
+g1 语文 · g2 语文 · g3/g5/g6 语文+科学+英语三拆（阅读/听力/口语，第23批已上线；数学仍走“随机练习”入口 math/chap） · g4 全套 · g7 全套 · **g8 全套（第12批已上线）** · **g9（第13～20批已上线）**。
 
 > **以线上代码为准**：八、九年级的英语走 `data/words8.json` / `data/words9.json`（单词卡片·单词小测·短语小测），
+> 另有英语三拆（阅读/听力/口语）三个**真实科目 id**，见第 2 节；
 > 数学走 `js/chapgen8.js` / `js/chapgen9.js`（章节练习 + 口算随机），**两者都不是科目 id**，
 > 不会出现在 `data/library.json` 的 subjects 里。准确清单见第 2 节。
 单元代号：g1 X1–X8，g2 W1–W8，g3 T/TS，g5 F/FS，g6 L/LS（语文 L0 为积累，TS/FS/LS 为科学）。
@@ -72,9 +73,17 @@ g2chinese
 | 九年级英语 | `data/words9.json` | 人教 2024 · 8 单元 484 条，卡片 / 小测，**不是科目 id** |
 | 九年级数学 | `js/chapgen9.js` | 北师大 6 章约 50 种随机题型 + 口算，**不是科目 id** |
 
+**英语三拆（第 23 批已上线，是真实科目 id，不是规划稿）**：三、五、六、八、九年级各有
+`g3reading/g3listening/g3speaking`、`g5reading/g5listening/g5speaking`、
+`g6reading/g6listening/g6speaking`、`g8reading/g8listening/g8speaking`、
+`g9reading/g9listening/g9speaking` 三个科目；四、七年级的同名科目是更早上线的老科目。
+题集 id 形如 `g8r-u1-1`（阅读）/ `g8l-u1-1`（听力）/ `g8sp-u1`（口语，用 `sentences`/`plan` 结构），
+kind 分别是 `reading` / `listening` / `speaking`。完整清单以 `data/library.json` 的 subjects 为准。
+
 > **以线上代码为准**：`data/config.json` 的 `users[g8]` / `users[g9].subjects` 与 `data/library.json` 的科目列表是唯一权威。
 > 上表标「不是科目 id」的都不出现在这两处。旧版本文档写过的
-> `g8phys` / `g8math` / `g8reading` / `g8listening` / `g8speaking` **全部作废**；
+> `g8phys` / `g8math` **全部作废**（物理实际是 `g8phy`，数学走 `js/chapgen8.js`）；
+> `g8reading` / `g8listening` / `g8speaking` **第 23 批已真实上线，不是作废 id**。
 > 《给Claude_八年级上册内容生产任务书.md》里的旧口径已同步标注为历史存档。
 
 ### 教材版本（2026 秋 · 西安在读，九年级已定死）

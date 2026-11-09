@@ -5,8 +5,10 @@ import { X, user, mount, page } from './views.js';
 import { loadBook } from './english.js';
 import { ginfo } from './grades.js';
 
-// 年级 → 用哪本单词书，见 js/grades.js（二年级不开英语，配了 words:'' 就会走兜底）
-const bookOf = (u) => (ginfo(u) && ginfo(u).words) || '4';
+// 年级 → 用哪本单词书，见 js/grades.js。没配 words 的年级（一、二年级）不显示单词卡片，
+// 绝不兜底到别的年级的词表：那样新年级的孩子会在页面正常的情况下看到四年级课本内容。
+export const hasBook = (u) => !!(ginfo(u) && ginfo(u).words);
+const bookOf = (u) => (ginfo(u) && ginfo(u).words) || '';
 const sayText = (en) => en.replace(/\([^)]*\)/g, '').replace(/\s*\/.*$/, '').replace(/\.\.\./g, '').replace(/[?.]+$/, '').trim();
 const shuf = (a) => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
 const learned = (uid, book) => { const p = S.P(uid); p.learn = p.learn || {}; return (p.learn[book] = p.learn[book] || {}); };
@@ -14,12 +16,13 @@ const key = (it) => it.en.toLowerCase();
 const GAPS = [1, 3, 7, 14];
 const dayN = (d) => Math.floor(new Date(d + 'T00:00:00').getTime() / 86400000);
 const isDue = (o) => o && typeof o === 'object' && o.s < 4 && dayN(S.today()) - dayN(o.d) >= GAPS[o.s];
-export const dueCount = (uid) => { const p = S.P(uid), b = bookOf(user()); const L = (p.learn && p.learn[b]) || {}; return Object.values(L).filter(isDue).length; };
+export const dueCount = (uid) => { if (!hasBook(user())) return 0; const p = S.P(uid), b = bookOf(user()); const L = (p.learn && p.learn[b]) || {}; return Object.values(L).filter(isDue).length; };
 const uname = (x) => x.name.replace('Starter Unit', 'Starter');
 export const learnCount = (uid, book, data) => { const L = learned(uid, book); let n = 0, t = 0; data.units.forEach(u => u.items.forEach(i => { t++; if (L[key(i)]) n++; })); return [n, t]; };
 
 export async function learnHome() {
   const u = user(), book = bookOf(u);
+  if (!book) { mount(page('单词卡片', h('p', { class: 'note' }, '这个年级还没有配单词表，先去练别的吧～'), { back: '#/' })); return; }
   mount(page('单词卡片', h('p', { class: 'note' }, '加载中…'), { back: '#/' }));
   let data; try { data = await loadBook(book); } catch (e) { toast('词表加载失败，请连上网络再试'); return; }
   const L = learned(u.id, book);
@@ -43,6 +46,7 @@ export async function learnHome() {
 
 export async function learnUnit(unitId) {
   const u = user(), book = bookOf(u);
+  if (!book) { location.hash = '#/'; return; }
   let data; try { data = await loadBook(book); } catch (e) { toast('词表加载失败，请连上网络再试'); return; }
   const L = learned(u.id, book), back = '#/learn', review = unitId === 'review';
   const un = review ? { id: 'review', name: '今日复习', items: data.units.flatMap(x => x.items) } : data.units.find(x => x.id === unitId);
