@@ -1335,8 +1335,28 @@ export function errors() {
       if (la !== lb) return la < lb ? -1 : 1;
       return (a.d < b.d ? -1 : a.d > b.d ? 1 : b.n - a.n);
     }).slice(0, 10);
-    const qs = pick.map(e => ({ ...e.q, _meta: e.meta }));
-    mount(runQuiz({ uid: u.id, mk: 'errors', title: label ? '错题专项：' + label : '错题重做', subtitle: `这次 ${qs.length} 题`, sections: [{ title: '', questions: qs }], recTitle: '错题本重做', back: '#/errors', metaFor: q => q._meta, again: () => errors() }));
+    // 随机练习的错题：重做时换成「同题型的新题」，别让孩子背原题答案。
+    // 这类题的 id 是 r-<题型>-<题干hash>，只有再随机抽到一模一样的题干才算同一题；
+    // 孩子只点首页的随机练习时，错题本里这些题几乎等不到第二次答对，就一直留着。
+    // 现在重做现出一道同类新题，但沿用原错题 id 记账：答对仍走 rightWrong 正常毕业，
+    // 判分、星星、草稿（错题本重做本就不存草稿）都不用改。
+    // 没有生成器的 kind（英语词汇、章节练习等）出不来新题，自动用回原题。
+    let freshN = 0;
+    const refreshRandom = (e) => {
+      const q = e.q, meta = e.meta || {}, orig = { ...q, _meta: meta };
+      if (!String(q.id || '').startsWith('r-') || !q.typeId) return orig;
+      const R = RANDOM[meta.sub];
+      if (!R || typeof R.gen !== 'function' || !R.types.some(t => t.id === q.typeId)) return orig;
+      try {
+        for (let i = 0; i < 3; i++) {
+          const made = makeSession(meta.sub, q.typeId, q.level || 1, 1, S.P(u.id).rand.types, X.vocab[R.vocab])[0];
+          if (made && made.stem && made.stem !== q.stem) { freshN++; return { ...made, id: q.id, typeId: q.typeId, _meta: meta }; }
+        }
+      } catch (err) { /* 出题失败就用原题，不影响正常重做 */ }
+      return orig;
+    };
+    const qs = pick.map(refreshRandom);
+    mount(runQuiz({ uid: u.id, mk: 'errors', title: label ? '错题专项：' + label : '错题重做', subtitle: `这次 ${qs.length} 题` + (freshN ? `（其中 ${freshN} 题换了同类新题，考考是不是真会了）` : ''), sections: [{ title: '', questions: qs }], recTitle: '错题本重做', back: '#/errors', metaFor: q => q._meta, again: () => errors() }));
   };
   const entries = Object.entries(groups).sort((a, b) => b[1].length - a[1].length);
   // 「还是不会」：看完解析也不懂的题，孩子自己标的，家长在专区里能看到同一份清单
