@@ -117,20 +117,33 @@ export function award(uid, q, src, subject, cap = 30) {
   save(uid); return 'new';
 }
 
-// 错题本：做错进来（3 天后再提醒），答对一次先「待巩固」，隔天再答对才真正出库
+// 错题本：做错进来（3 天后再提醒）。
+// 出库规则（2026-11-09 定）：当天答对 1 次，记下「第一次答对的日期」；
+// 之后任意更晚的一天再答对 1 次就毕业。同一天答对几次都只算 1 次；
+// 不要求连续两天，隔一周、隔一个月回来答对也算。答错会清零重来。
+// 也可以在错题本 / 结果页点「✓ 我会了，移出去」直接清掉（见 clearWrong）。
 export function addWrong(uid, q, meta) {
-  const p = P(uid), old = p.wrong[q.id];
+  const p = P(uid), old = p.wrong[q.id], t = today();
   p.wrongHad = true; // 记「曾经有过错题」，错题清零徽章用
-  p.wrong[q.id] = { q, meta, n: old ? old.n + 1 : 1, d: today(), ok: 0, next: shiftDay(-3) };
+  p.wrong[q.id] = { q, meta, n: old ? old.n + 1 : 1, d: t, ok: 0, okDay: null, next: shiftDay(-3), last: t };
   save(uid);
 }
-// 答对一道错题。返回 true 表示已毕业（从错题本删掉）；
-// 返回 false 表示先记一次「待巩固」，隔天再来对一次才算掌握。
+// 答对一道错题。返回 true 表示已毕业（从错题本删掉）；false 表示还要再对一次。
+// okDay = 第一次答对那天的日期，一旦记下就不再改；只有「今天比那天晚」才算第二次。
 export function rightWrong(uid, qid) {
   const p = P(uid), e = p.wrong[qid];
   if (!e) return true;
-  if ((e.ok || 0) >= 1 && e.next && e.next <= today()) { delete p.wrong[qid]; save(uid); return true; }
-  e.ok = 1; e.next = shiftDay(-1); save(uid); return false;
+  const t = today();
+  // 兼容升级前的老记录：那时只有 next（第一次答对日的明天），条件 next <= 今天 与「okDay < 今天」等价
+  const graduated = e.ok
+    ? (e.okDay ? e.okDay < t : (e.next ? e.next <= t : true))
+    : false;
+  if (graduated) { delete p.wrong[qid]; save(uid); return true; }
+  e.ok = 1;
+  if (!e.okDay) e.okDay = t;
+  e.next = shiftDay(-1); // 旧字段保留：首页「今日复习」的调度还按它排
+  e.last = t;            // 最近一次练过：错题重做按它排序，保证每批题都轮得到
+  save(uid); return false;
 }
 export function clearWrong(uid, qid) { const p = P(uid); if (p.wrong[qid]) { delete p.wrong[qid]; save(uid); } }
 

@@ -167,7 +167,7 @@ export function papersPage() {
       h('p', { class: 'note' }, '成套 Word 卷子只有数学、英语两科；语文没有单独做 Word 卷子。想让孩子在手机上做题，用「单元小测」更快。')),
     h('div', { class: 'tipbox' },
       h('b', {}, '💡 卷子打印着做，平时在手机上练'),
-      h('p', {}, '手机上做完自动判卷，错的进错题本，第二天自动再练一遍。'),
+      h('p', {}, '手机上做完自动判卷，错的进错题本，过几天会提醒再练；答对 1 次，之后任意一天再答对 1 次就毕业。'),
       h('a', { class: 'link instl', href: '#/install' }, '📲 怎么把它装到手机桌面？')),
   ], { back: backTo }));
 }
@@ -476,7 +476,7 @@ function reviewCard(u) {
   const stale = Object.values(p.wrong || {}).filter(e => e.next ? e.next <= S.today() : (e.d || '0000') <= lim).length;
   const rows = [];
   if (words) rows.push(h('a', { class: 'row', href: '#/learn/review' }, h('div', {}, h('b', {}, `🔁 单词复习 ${words} 个`), h('small', {}, '到了该再见一面的日子，记更牢')), h('span', { class: 'chip' }, '开始')));
-  if (stale) rows.push(h('a', { class: 'row', href: '#/errors' }, h('div', {}, h('b', {}, `📕 错题复习 ${stale} 道`), h('small', {}, '到了该再见面的日子，答对一次、隔天再对就毕业')), h('span', { class: 'chip' }, '开始')));
+  if (stale) rows.push(h('a', { class: 'row', href: '#/errors' }, h('div', {}, h('b', {}, `📕 错题复习 ${stale} 道`), h('small', {}, '答对 1 次，之后任意一天再答对 1 次就毕业；会了也能自己移出去')), h('span', { class: 'chip' }, '开始')));
   if (!rows.length) return null;
   return h('section', { class: 'tasks' }, h('h2', { class: 'sh' }, '今日复习'), h('div', { class: 'list' }, rows));
 }
@@ -1118,6 +1118,10 @@ function runQuiz(o) {
       if (Object.keys(ans).length) { toast('已经开始做了，下一套再换方式'); return; }
       const P = S.P(o.uid); P.modes = P.modes || {}; P.modes[o.mk.split('#')[0]] = v; S.save(o.uid); mount(runQuiz({ ...o, mode: v }));
     } }, n))) : null;
+  // 「做完看答案」中途想出去：先把做过的题判分记账（星星 / 错题本 / 毕业），
+  // 不用非得把整套做完，也不会把没做的题算错。剩下的题在结果页点「接着做」。
+  const saveBar = !live ? h('div', { class: 'chips', style: 'margin:2px 0 8px' },
+    h('button', { type: 'button', class: 'btn ghost small', style: 'display:none', onclick: () => finish() }, '📌 先记下做过的题，先出去')) : null;
   // 逐题模式：一次只显示一题，答完点「确定并下一题」严格按题号 1→2→3… 顺序进下一题，
   // 绝不跳过任何题（含选择题）；最后一题点「看结果」进入结果页。
   function goNext() {
@@ -1147,6 +1151,7 @@ function runQuiz(o) {
     prog.textContent = `第 ${cur + 1} / ${N} 题`;
     const q = qs[cur], btn = nav.querySelector('.btn.primary');
     if (btn) btn.disabled = !isAnswered(q, ans[q.id]) && !done[q.id];
+    if (saveBar) { const b = saveBar.querySelector('.btn'); if (b) b.style.display = Object.keys(ans).length ? '' : 'none'; }
     saveDraft();
   }
   function draw() {
@@ -1162,9 +1167,12 @@ function runQuiz(o) {
     update();
   }
   function finish() {
-    const left = qs.filter(q => !done[q.id] && !isAnswered(q, ans[q.id])).length;
-    if (left && !confirm(`还有 ${left} 题没做，确定看结果吗？没做的算错。`)) return;
-    const results = qs.map(q => settle(q));
+    // 没做的题不算错、也不塞进错题本：只对做过的题判分，剩下的下次接着做。
+    // 以前是「没做的算错」，会把一堆孩子根本没看到的题塞进错题本，越攒越多。
+    const restQs = qs.filter(q => !done[q.id] && !isAnswered(q, ans[q.id]));
+    const gradedQs = qs.filter(q => done[q.id] || isAnswered(q, ans[q.id]));
+    if (!gradedQs.length) { toast('先答几题再交卷～'); return; }
+    const results = gradedQs.map(q => { const r = settle(q); r.no = qs.indexOf(q) + 1; return r; });
     let newStars = 0, capped = 0, pts = 0, ptsAll = 0, okN = 0, selfN = 0, selfOk = 0, wrongN = 0;
     results.forEach(r => {
       // 自评题走单独一路账：不进对错统计、不进星星、不进错题本，只告诉孩子自己评得怎么样
@@ -1175,15 +1183,15 @@ function runQuiz(o) {
     const total = results.length - selfN;
     const m0 = qs.length ? o.metaFor(qs[0]) : {};
     S.recordAttempt(o.uid, o.recId || null, { title: o.recTitle || o.title, ok: okN, total, pts, ptsAll, stars: newStars, src: m0.src, sub: m0.sub, kind: m0.kind, secs: Math.min(1500, Math.round((Date.now() - o.t0) / 1000)) });
-    clearDraft();   // 已经交卷，别让下次进来还停在上次的答案
+    clearDraft();   // 已经交卷，别让下次进来还停在上次的答案；剩下的题由「接着做」重新组一套
     // 做完当场查一遍成就，有新解锁立刻报喜
     B.checkAndGrant(o.uid).forEach(x => toast(`🏅 解锁成就：${x.icon} ${x.name}`, 4000));
     keypad.close();
-    mount(resultsNode(o, results, { newStars, capped, okN, pts, ptsAll, total, selfN, selfOk, wrongN }));
+    mount(resultsNode(o, results, { newStars, capped, okN, pts, ptsAll, total, selfN, selfOk, wrongN, restQs, mode: live ? 'live' : 'exam' }));
   }
   draw();
   return page(o.title, [
-    o.subtitle ? h('p', { class: 'subtitle' }, o.subtitle) : null, resumeBar, modeBar,
+    o.subtitle ? h('p', { class: 'subtitle' }, o.subtitle) : null, resumeBar, modeBar, saveBar,
     o.ctxFn ? o.ctxFn(false) : null,
     h('div', { class: 'qtop' }, prog),
     stage, nav], { back: o.back, right: o.printHref ? h('a', { class: 'back r', href: o.printHref }, '🖨 打印') : null });
@@ -1200,14 +1208,17 @@ function resultsNode(o, results, sum) {
     had > 0 ? h('p', { class: 'note' }, `有 ${had} 题以前已经得过星星，一题只得一颗哦。`) : null,
     sum.capped ? h('p', { class: 'note' }, `今天的星星已经拿满 ${cap()} 颗，明天再来～（做对的题明天再做还能得星）`) : null,
     sum.selfN ? h('p', { class: 'note' }, `另有 ${sum.selfN} 道自评题（自己评的：${sum.selfOk} 题说对了）——不算星星也不进错题本。`) : null,
-    sum.wrongN ? h('p', { class: 'note' }, `做错的 ${sum.wrongN} 题已放进错题本：先答对 1 次，隔天再答对就毕业。`) : null);
+    sum.wrongN ? h('p', { class: 'note' }, `做错的 ${sum.wrongN} 题已放进错题本：先答对 1 次，之后任意一天再答对 1 次就毕业；已经会了也可以在下面每题点「✓ 我会了，移出去」。` ) : null,
+    sum.restQs && sum.restQs.length ? h('p', { class: 'note' }, `还有 ${sum.restQs.length} 题没做，这次不算错、也没放进错题本，点「接着做剩下的」可以继续。`) : null);
   const nextT = user() ? nextTask(user()) : null;
+  const rest = sum.restQs || [];
   const acts = h('div', { class: 'acts' },
-    nextT ? h('a', { class: 'btn primary', href: nextT.href }, `下一项：${nextT.label} →`) : null,
-    o.again ? h('button', { class: nextT ? 'btn ghost' : 'btn primary', onclick: o.again }, '再做一遍') : null,
+    rest.length ? h('button', { type: 'button', class: 'btn primary', onclick: () => mount(runQuiz({ ...o, t0: Date.now(), title: o.title + '（剩下的题）', subtitle: `还有 ${rest.length} 题`, sections: [{ title: '', questions: rest }], mode: sum.mode || 'exam' })) }, `接着做剩下的 ${rest.length} 题 →`) : null,
+    nextT ? h('a', { class: 'btn' + (rest.length ? ' ghost' : ' primary'), href: nextT.href }, `下一项：${nextT.label} →`) : null,
+    o.again ? h('button', { class: (nextT || rest.length) ? 'btn ghost' : 'btn primary', onclick: o.again }, '再做一遍') : null,
     h('a', { class: 'btn ghost', href: o.back || '#/' }, '返回'));
   let only = false;
-  const list = h('div', { class: 'rvlist' }, results.map((r, i) => reviewItem(r, i + 1)));
+  const list = h('div', { class: 'rvlist' }, results.map((r, i) => reviewItem(r, r.no || i + 1)));
   const toggle = h('button', { class: 'btn ghost small', onclick: () => { only = !only; list.classList.toggle('onlybad', only); toggle.textContent = only ? '看全部' : '只看错题'; } }, '只看错题');
   return page('结果', [head, acts, o.ctxFn ? o.ctxFn(true) : null, h('div', { class: 'rvhead' }, h('h2', {}, '答案与解析'), sum.wrongN ? toggle : null), list], { back: o.back });
 }
@@ -1257,7 +1268,13 @@ function reviewItem(r, no) {
         e.currentTarget.textContent = on ? '🙋 已标记：还是不会' : '🙋 还是不会';
         toast(on ? '记下了，家长在「家长专区」里能看到这道题' : '好啦，取消标记');
       } }, S.isStuck(u.id, q.id) ? '🙋 已标记：还是不会' : '🙋 还是不会'),
-      h('button', { type: 'button', class: 'btn small ghost', onclick: () => askForHelp(u, q) }, '📤 问家长 / 问老师')) : null);
+      h('button', { type: 'button', class: 'btn small ghost', onclick: () => askForHelp(u, q) }, '📤 问家长 / 问老师'),
+      h('button', { type: 'button', class: 'btn small ghost', onclick: (e) => {
+        S.clearWrong(u.id, q.id);
+        e.currentTarget.textContent = '✓ 已移出错题本';
+        e.currentTarget.disabled = true;
+        toast('好，这道题从错题本里移走啦');
+      } }, '✓ 我会了，移出去')) : null);
   return h('details', { class: 'rv ' + (self ? 'self' : (ok ? 'ok' : 'bad')), open: !ok && !self },
     h('summary', {}, h('span', { class: 'mark' }, self ? '💬' : (ok ? '✓' : '✗')), h('span', { class: 'no' }, no), h('span', { class: 'rvs', html: mathish(q) ? mathHtml(short) : esc(short) })), body);
 }
@@ -1300,15 +1317,24 @@ function startRandom(kind, gt, gl, gc) {
 }
 
 // ---------------- 错题本 ----------------
+// 逐题管理区展不展开：移出一题后要重绘整页（否则「全部重做」还按旧快照把已移出的题抽回来），
+// 记一下展开状态，省得孩子每移一题都要重新点开。
+let wrongManageOpen = false;
 export function errors() {
   const u = user(), list = Object.values(S.P(u.id).wrong);
-  if (!list.length) { mount(page('错题本', h('div', { class: 'empty' }, h('div', { class: 'logo' }, '🎉'), h('h2', {}, '错题本是空的'), h('p', {}, '做错的题会自动进来；答对 1 次先打上「待巩固」，隔天再做对就从这里毕业。')))); return; }
+  if (!list.length) { mount(page('错题本', h('div', { class: 'empty' }, h('div', { class: 'logo' }, '🎉'), h('h2', {}, '错题本是空的'), h('p', {}, '做错的题会自动进来；答对 1 次，之后任意一天再答对 1 次就毕业。已经会了也能自己点「✓ 我会了，移出去」。')))); return; }
   const tnames = {}; Object.values(RANDOM).forEach(R => R.types.forEach(t => { tnames[t.id] = t.name; }));
   const keyOf = (e) => (e.q.typeId && tnames[e.q.typeId]) ? `${e.meta.title} · ${tnames[e.q.typeId]}` : e.meta.title;
   const groups = {};
   list.forEach(e => { (groups[keyOf(e)] = groups[keyOf(e)] || []).push(e); });
   const start = (es, label) => {
-    const pick = es.slice().sort((a, b) => (a.d < b.d ? -1 : a.d > b.d ? 1 : b.n - a.n)).slice(0, 10);
+    // 抽题改成「最久没练过的优先」：以前按最早做错日期排，答对过但没毕业的题会一直霸占前 10，
+    // 新错题反而轮不到。现在每次重做都会换一批，隔几天待巩固的题又会重新排上来给毕业机会。
+    const pick = es.slice().sort((a, b) => {
+      const la = a.last || a.d || '0000', lb = b.last || b.d || '0000';
+      if (la !== lb) return la < lb ? -1 : 1;
+      return (a.d < b.d ? -1 : a.d > b.d ? 1 : b.n - a.n);
+    }).slice(0, 10);
     const qs = pick.map(e => ({ ...e.q, _meta: e.meta }));
     mount(runQuiz({ uid: u.id, mk: 'errors', title: label ? '错题专项：' + label : '错题重做', subtitle: `这次 ${qs.length} 题`, sections: [{ title: '', questions: qs }], recTitle: '错题本重做', back: '#/errors', metaFor: q => q._meta, again: () => errors() }));
   };
@@ -1320,9 +1346,20 @@ export function errors() {
       h('button', { type: 'button', class: 'btn small ghost', onclick: () => askForHelp(u, e.q) }, '📤 问家长'),
       h('button', { type: 'button', class: 'btn small ghost', onclick: (ev) => { S.setStuck(u.id, e.q.id, false); toast('好啦，弄懂了！'); const box = ev.currentTarget.closest('.list'); box.replaceChildren(...stuckRows()); } }, '✓ 弄懂了'))));
   const stuck = S.stuckList(u.id);
+  // 逐题管理：孩子自己判断「这题我会了」，直接移出去，不用等两次答对
+  const manage = h('div', { class: 'list' });
+  const manageRows = () => {
+    const cur = Object.values(S.P(u.id).wrong);
+    if (!cur.length) { manage.replaceChildren(h('p', { class: 'note' }, '错题本清空啦 🎉')); return; }
+    manage.replaceChildren(...cur.map(e => h('div', { class: 'row static' },
+      h('div', {}, h('b', {}, (e.meta && e.meta.title) || '练习题'), h('small', {}, String(e.q.stem || '').replace(/_{2,}/g, '__').slice(0, 44))),
+      h('button', { type: 'button', class: 'btn small ghost', onclick: () => { S.clearWrong(u.id, e.q.id); toast('已从错题本移走'); wrongManageOpen = true; errors(); } }, '✓ 我会了'))));
+  };
+  manageRows();
   mount(page('错题本', [
-    h('p', { class: 'note' }, `一共 ${list.length} 道，分成 ${entries.length} 类。点下面一类，就只练这一类；每次最多 10 题。答对 1 次先打上「待巩固」，隔天再做对就从这里毕业。`),
+    h('p', { class: 'note' }, `一共 ${list.length} 道，分成 ${entries.length} 类。点下面一类，就只练这一类；每次最多 10 题，会优先挑最久没练的。答对 1 次，之后任意一天再答对 1 次就毕业；已经会了也能自己移出去。`),
     h('button', { class: 'btn primary wide', onclick: () => start(list, '') }, '全部混着重做'),
+    h('details', { class: 'mgmt', style: 'margin:10px 0', open: wrongManageOpen, ontoggle: (e) => { wrongManageOpen = e.target.open; } }, h('summary', {}, '🧹 我会了，自己移出去（点开逐题看）'), manage),
     stuck.length ? h('h2', { class: 'sh' }, `🙋 我说「还是不会」的题（${stuck.length}）`) : null,
     stuck.length ? h('div', { class: 'list' }, stuckRows()) : null,
     stuck.length ? h('p', { class: 'note' }, '这些题已经告诉家长了。弄懂之后点「✓ 弄懂了」，清单里就去掉。') : null,
