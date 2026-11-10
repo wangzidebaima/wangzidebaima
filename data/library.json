@@ -12379,6 +12379,122 @@
      "unit": "MK96"
     }
    ]
+  },
+  {
+   "id": "g9moxie",
+   "title": "古诗文默写",
+   "icon": "✍️",
+   "desc": "中考高频默写，按篇练习",
+   "sets": [
+    {
+     "id": "g9moxie-1",
+     "file": "sets/g9moxie-1.json",
+     "title": "默写 沁园春·雪",
+     "subtitle": "九年级 古诗文默写",
+     "kind": "cn",
+     "count": 10,
+     "unit": "MX1"
+    },
+    {
+     "id": "g9moxie-2",
+     "file": "sets/g9moxie-2.json",
+     "title": "默写 岳阳楼记",
+     "subtitle": "九年级 古诗文默写",
+     "kind": "cn",
+     "count": 10,
+     "unit": "MX2"
+    },
+    {
+     "id": "g9moxie-3",
+     "file": "sets/g9moxie-3.json",
+     "title": "默写 醉翁亭记",
+     "subtitle": "九年级 古诗文默写",
+     "kind": "cn",
+     "count": 10,
+     "unit": "MX3"
+    },
+    {
+     "id": "g9moxie-4",
+     "file": "sets/g9moxie-4.json",
+     "title": "默写 湖心亭看雪",
+     "subtitle": "九年级 古诗文默写",
+     "kind": "cn",
+     "count": 6,
+     "unit": "MX4"
+    },
+    {
+     "id": "g9moxie-5",
+     "file": "sets/g9moxie-5.json",
+     "title": "默写 行路难（其一）",
+     "subtitle": "九年级 古诗文默写",
+     "kind": "cn",
+     "count": 6,
+     "unit": "MX5"
+    },
+    {
+     "id": "g9moxie-6",
+     "file": "sets/g9moxie-6.json",
+     "title": "默写 酬乐天扬州初逢席上见赠",
+     "subtitle": "九年级 古诗文默写",
+     "kind": "cn",
+     "count": 4,
+     "unit": "MX6"
+    },
+    {
+     "id": "g9moxie-7",
+     "file": "sets/g9moxie-7.json",
+     "title": "默写 水调歌头（明月几时有）",
+     "subtitle": "九年级 古诗文默写",
+     "kind": "cn",
+     "count": 8,
+     "unit": "MX7"
+    },
+    {
+     "id": "g9moxie-8",
+     "file": "sets/g9moxie-8.json",
+     "title": "默写 曹刿论战",
+     "subtitle": "九年级 古诗文默写",
+     "kind": "cn",
+     "count": 8,
+     "unit": "MX8"
+    },
+    {
+     "id": "g9moxie-9",
+     "file": "sets/g9moxie-9.json",
+     "title": "默写 邹忌讽齐王纳谏",
+     "subtitle": "九年级 古诗文默写",
+     "kind": "cn",
+     "count": 8,
+     "unit": "MX9"
+    },
+    {
+     "id": "g9moxie-10",
+     "file": "sets/g9moxie-10.json",
+     "title": "默写 出师表",
+     "subtitle": "九年级 古诗文默写",
+     "kind": "cn",
+     "count": 9,
+     "unit": "MX10"
+    },
+    {
+     "id": "g9moxie-11",
+     "file": "sets/g9moxie-11.json",
+     "title": "默写 白雪歌送武判官归京",
+     "subtitle": "九年级 古诗文默写",
+     "kind": "cn",
+     "count": 4,
+     "unit": "MX11"
+    },
+    {
+     "id": "g9moxie-12",
+     "file": "sets/g9moxie-12.json",
+     "title": "默写 过零丁洋",
+     "subtitle": "九年级 古诗文默写",
+     "kind": "cn",
+     "count": 4,
+     "unit": "MX12"
+    }
+   ]
   }
  ],
  "unitNames": {
@@ -12600,6 +12716,18 @@
   "MK92": "一元二次方程",
   "MK93": "图形的相似",
   "MK95": "二次函数",
-  "MK96": "概率的进一步认识"
+  "MK96": "概率的进一步认识",
+  "MX1": "默写 1 沁园春·雪",
+  "MX2": "默写 2 岳阳楼记",
+  "MX3": "默写 3 醉翁亭记",
+  "MX4": "默写 4 湖心亭看雪",
+  "MX5": "默写 5 行路难（其一）",
+  "MX6": "默写 6 酬乐天扬州初逢席上见赠",
+  "MX7": "默写 7 水调歌头（明月几时有）",
+  "MX8": "默写 8 曹刿论战",
+  "MX9": "默写 9 邹忌讽齐王纳谏",
+  "MX10": "默写 10 出师表",
+  "MX11": "默写 11 白雪歌送武判官归京",
+  "MX12": "默写 12 过零丁洋"
  }
 }

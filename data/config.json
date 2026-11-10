@@ -1,5 +1,5 @@
 {
-  "version": "kp-v90",
+  "version": "kp-v91",
   "appName": "书山小路",
   "rewards": [
     {
@@ -689,7 +689,8 @@
         "g9hist",
         "g9poli",
         "g9chem",
-        "g9mathk"
+        "g9mathk",
+        "g9moxie"
       ],
       "random": [
         "math9",

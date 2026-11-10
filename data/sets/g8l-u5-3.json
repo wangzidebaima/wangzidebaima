@@ -100,13 +100,13 @@
     {
      "id": "g8l-u5-3-B1",
      "type": "fill",
-     "stem": "The host followed her mother's ____.",
+     "stem": "The host cooked the dinner with a family ____.",
      "answers": [
       [
        "recipe"
       ]
      ],
-     "why": "my mother's recipe.",
+     "why": "I followed my mother's recipe.",
      "pts": 1
     },
     {

@@ -544,7 +544,7 @@ export function home() {
     // 否则会掉进兜底的英语区，卡片出现在「🔤 英语」标题下面。
     // 后面这几科（历史/道法/生物/地理）id 里自带科目关键字，靠它自己落位，
     // 别再往 eng 那个兜底里掉——掉了孩子会在英语区看到历史卡片。
-    card._area = /math/.test(id) ? 'math' : /chinese/.test(id) ? 'cn' : /sci|science/.test(id) ? 'sci'
+    card._area = /math/.test(id) ? 'math' : /chinese|moxie/.test(id) ? 'cn' : /sci|science/.test(id) ? 'sci'
       : /phy/.test(id) ? 'phy' : /hist/.test(id) ? 'hist' : /poli/.test(id) ? 'poli' : /chem/.test(id) ? 'chem' : /bio/.test(id) ? 'bio' : /geo/.test(id) ? 'geo' : 'eng'; return card;
   }).filter(Boolean);
   const randCards = (u.random || []).map(k => {
