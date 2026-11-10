@@ -549,7 +549,8 @@ export function home() {
   }).filter(Boolean);
   const randCards = (u.random || []).map(k => {
     const R = RANDOM[k]; const card = h('a', { class: 'card alt', href: '#/rand/' + k }, h('span', { class: 'ic' }, R.icon), h('b', {}, R.title), h('small', {}, /^cnw/.test(k) ? '听词语，写在纸上' : '随机出题，不重样'), h('em', {}, `今天 ${S.starsToday(u.id)}/${cap()} 颗`));
-    card._area = /^(math|chap)/.test(k) ? 'math' : /^cn/.test(k) ? 'cn' : 'eng'; return card;
+    // chapp*（物理计算）虽然 chap 开头，但它是物理练习，卡片要落在物理区，别混进数学
+    card._area = /^chapp/.test(k) ? 'phy' : /^(math|chap)/.test(k) ? 'math' : /^cn/.test(k) ? 'cn' : 'eng'; return card;
   });
   const hasEng = (u.random || []).some(k => /^vocab/.test(k)) && hasBook(u);
   const learnCard = hasEng ? Object.assign(h('a', { class: 'card', href: '#/learn' }, h('span', { class: 'ic' }, '🃏'), h('b', {}, '单词卡片'), h('small', {}, '先学一学，再去测'), h('em', {}, '看词·听音·记意思')), { _area: 'eng' }) : null;
@@ -1113,11 +1114,11 @@ function runQuiz(o) {
     done[q.id] = r; return r;
   }
   const modeBar = o.mk ? h('div', { class: 'chips modebar' }, h('span', { class: 'lab' }, '做题方式'),
-    ...[['exam', '做完看答案'], ['live', '答完看答案']].map(([v, n]) => h('button', { type: 'button', class: 'chipb' + ((live ? 'live' : 'exam') === v ? ' on' : ''), onclick: () => {
+    ...[['exam', '整套做完再看'], ['live', '每题答完就看']].map(([v, n]) => h('button', { type: 'button', class: 'chipb' + ((live ? 'live' : 'exam') === v ? ' on' : ''), onclick: () => {
       if (v === (live ? 'live' : 'exam')) return;
       if (Object.keys(ans).length) { toast('已经开始做了，下一套再换方式'); return; }
       const P = S.P(o.uid); P.modes = P.modes || {}; P.modes[o.mk.split('#')[0]] = v; S.save(o.uid); mount(runQuiz({ ...o, mode: v }));
-    } }, n))) : null;
+    } }, n)), h('small', { class: 'mnote' }, live ? '每答完一题马上判分；答错的题当场亮出正确答案和解析' : '先把整套做完再交卷，一起看对错和答案')) : null;
   // 「做完看答案」中途想出去：先把做过的题判分记账（星星 / 错题本 / 毕业），
   // 不用非得把整套做完，也不会把没做的题算错。剩下的题在结果页点「接着做」。
   const saveBar = !live ? h('div', { class: 'chips', style: 'margin:2px 0 8px' },
@@ -1126,15 +1127,19 @@ function runQuiz(o) {
   // 绝不跳过任何题（含选择题）；最后一题点「看结果」进入结果页。
   function goNext() {
     const q = qs[cur];
-    // 没答不许走（两种模式都要拦）
-    if (!done[q.id] && !isAnswered(q, ans[q.id])) { toast('先答一下这题～'); return; }
+    // 没答完不许走（两种模式都要拦）：按钮不再禁用，点了就提示还差着
+    if (!done[q.id] && !isAnswered(q, ans[q.id])) { toast('这题还没答完哦～'); return; }
     // 「答完看答案」当场判分记账并锁定；「做完看答案」只存草稿，交卷时由 finish() 统一判分。
     // 这样返回上一题还能改答案，星星/错题本也只按最终答案记一次。
     if (live && !done[q.id]) {
       const r = settle(q);
       curNode.classList.add('locked', r.g.ok ? 'lok' : 'lbad');
       curNode.querySelectorAll('.opt, .ordit, .selfb, input, select').forEach(x => { x.disabled = true; });
-      if (!r.self) toast(r.g.ok ? '✓ 答对啦' : '✗ 答错了，已进错题本', 1300);
+      keypad.close();
+      if (!r.self) toast(r.g.ok ? '✓ 答对啦' : '✗ 答错了，已进错题本', 1600);
+      // 答错先停在这题：正确答案、你的答案和解析当场亮出来，看明白再点「下一题」。
+      // 答对就不耽误节奏，直接进下一题。「答完看答案」不能只是一闪而过的提示。
+      if (!r.g.ok) { curNode.append(reviewItem(r, cur + 1)); drawNav(); return; }
     }
     if (cur >= N - 1) { finish(); return; }
     cur++; draw();
@@ -1145,12 +1150,13 @@ function runQuiz(o) {
     const last = cur >= N - 1, done0 = !!done[qs[cur].id];
     const label = done0 ? (last ? '看结果' : '下一题 →') : (last ? '交卷看结果' : '确定并下一题');
     const answered = isAnswered(qs[cur], ans[qs[cur].id]);
-    nav.append(h('button', { type: 'button', class: 'btn primary', disabled: !answered && !done0, onclick: goNext }, label));
+    // 不用 disabled（点了没反应也没提示，孩子会懵），改半透明样式，点了由 goNext 弹提示
+    nav.append(h('button', { type: 'button', class: 'btn primary' + ((answered || done0) ? '' : ' idle'), onclick: goNext }, label));
   }
   function update() {
     prog.textContent = `第 ${cur + 1} / ${N} 题`;
     const q = qs[cur], btn = nav.querySelector('.btn.primary');
-    if (btn) btn.disabled = !isAnswered(q, ans[q.id]) && !done[q.id];
+    if (btn) btn.classList.toggle('idle', !isAnswered(q, ans[q.id]) && !done[q.id]);
     if (saveBar) { const b = saveBar.querySelector('.btn'); if (b) b.style.display = Object.keys(ans).length ? '' : 'none'; }
     saveDraft();
   }
@@ -1162,6 +1168,8 @@ function runQuiz(o) {
     if (done[q.id]) {
       curNode.classList.add('locked', done[q.id].g.ok ? 'lok' : 'lbad');
       curNode.querySelectorAll('.opt, .ordit, .selfb, input, select').forEach(x => { x.disabled = true; });
+      // 返回上一题时，做错的题同样把正确答案和解析亮出来（和当场判分的显示一致）
+      if (!done[q.id].g.ok) curNode.append(reviewItem(done[q.id], cur + 1));
     }
     drawNav();
     update();
