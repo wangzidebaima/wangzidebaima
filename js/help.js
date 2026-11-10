@@ -140,7 +140,7 @@ const FAQ = [
         q: '📱 字太小 / 太大',
         steps: [
           '首页右上角的「Aa」，点一下换一档：标准 → 大 → 特大。',
-          '换完整个 App 的字都会跟着变，三个孩子各自记各自的。',
+          '换完整个 App 的字都会跟着变，每个孩子各自记各自的。',
         ],
       },
     ],
@@ -279,7 +279,7 @@ export function helpPage() {
     ...groups,
     h('section', { class: 'faq' },
       h('h2', { class: 'sh' }, '🔊 朗读声音'),
-      h('p', { class: 'note' }, '读得怪、没声音，多半是这台手机用来念书的声音不合适。点进去一个个试听，挑顺耳的点「用这个」——三个孩子共用这一个选择。'),
+      h('p', { class: 'note' }, '读得怪、没声音，多半是这台手机用来念书的声音不合适。点进去一个个试听，挑顺耳的点「用这个」——这台手机上的孩子共用这一个选择。'),
       h('button', { type: 'button', class: 'btn primary wide', onclick: () => nav('#/voice') }, '去换朗读声音')),
     diagSection(),
     h('section', { class: 'faq' },

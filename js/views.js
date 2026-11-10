@@ -56,8 +56,13 @@ export async function checkPage() {
   bad.forEach(f => out.append(h('div', { class: 'row' }, h('div', {}, h('b', {}, f)))));
 }
 export function showError(msg) {
-  mount(h('div', { class: 'login' }, h('div', { class: 'logo' }, '📡'), h('h1', {}, '打不开'), h('p', { class: 'sub' }, msg),
-    h('button', { class: 'btn primary wide', onclick: () => location.reload() }, '重新加载')));
+  // 孩子不需要看英文技术报错：先说人话，技术信息折起来（家长要报修时可以展开复制）
+  const tech = /[\u4e00-\u9fa5]/.test(String(msg)) && String(msg).length < 60;
+  mount(h('div', { class: 'login' }, h('div', { class: 'logo' }, '📡'), h('h1', {}, '这个页面打不开'),
+    h('p', { class: 'sub' }, tech ? msg : '可能是链接过期了，或者网络不太好。先回首页，再点一次试试。'),
+    h('a', { class: 'btn primary wide', href: '#/' }, '回首页'),
+    h('button', { class: 'btn ghost wide', style: 'margin-top:8px', onclick: () => location.reload() }, '重新加载'),
+    tech ? null : h('details', { style: 'margin-top:14px;font-size:13px;color:var(--mute,#888)' }, h('summary', {}, '给家长看的详细信息'), h('p', { style: 'word-break:break-all' }, String(msg)))));
 }
 
 const subj = (id) => X.lib.subjects.find(s => s.id === id);
@@ -167,7 +172,7 @@ export function papersPage() {
       h('p', { class: 'note' }, '成套 Word 卷子只有数学、英语两科；语文没有单独做 Word 卷子。想让孩子在手机上做题，用「单元小测」更快。')),
     h('div', { class: 'tipbox' },
       h('b', {}, '💡 卷子打印着做，平时在手机上练'),
-      h('p', {}, '手机上做完自动判卷，错的进错题本，过几天会提醒再练；答对 1 次，之后任意一天再答对 1 次就毕业。'),
+      h('p', {}, '手机上做完自动判卷，错的进错题本，过几天会提醒再练；答对 2 次（要隔一天）就毕业。'),
       h('a', { class: 'link instl', href: '#/install' }, '📲 怎么把它装到手机桌面？')),
   ], { back: backTo }));
 }
@@ -398,18 +403,20 @@ export function login() {
     const v = inp.value.trim();
     const u = X.cfg.users.find(x => x.names.some(n => norm(n) === norm(v))) || X.cfg.users.find(x => norm(x.grade) === norm(v));
     if (!u && X.cfg.parent && v.toLowerCase() === X.cfg.parent.name.toLowerCase()) { askPassword(); return; }
-    if (!u) { msg.textContent = '没有找到这个年级或名字，再检查一下～'; return; }
+    if (!u) { msg.textContent = '没有找到这个年级。现在有一年级到九年级，输入像「三年级」这样的就行～'; return; }
     S.setUser(u.id); setTheme(u); nav('#/');
   };
   inp.addEventListener('keydown', e => { if (e.key === 'Enter') enter(); });
   setTheme(null);
   mount(h('div', { class: 'login' }, h('div', { class: 'logo' }, '⭐'), h('h1', {}, X.cfg.appName),
-    h('p', { class: 'sub' }, '输入你的年级（比如：七年级），开始今天的练习'), inp,
+    h('p', { class: 'sub' }, '输入你的年级（一年级到九年级都有，比如：七年级），开始今天的练习'), inp,
     h('button', { class: 'btn primary wide', onclick: enter }, '开始'), msg,
     h('a', { class: 'paper-cta', href: '#/papers' }, h('span', { class: 'ico' }, '📄'),
       h('span', {}, h('b', {}, `${PAPER_COUNT} 份试卷，免费下载打印`),
-        h('small', {}, '四年级 / 七年级 · 数学 + 英语 · 带答案，英语卷含听力')),
+        h('small', {}, '目前只有四年级、七年级的卷子 · 数学 + 英语 · 带答案，英语卷含听力')),
       h('span', { class: 'go' }, '›')),
+    /MicroMessenger/i.test(navigator.userAgent) ? h('p', { class: 'note', style: 'text-align:center;font-size:13px;margin:6px 0' }, '📌 你现在在微信里：可以直接做题。想装到桌面，请点右上角「…」→「在浏览器打开」。') : null,
+    h('p', { class: 'note', style: 'text-align:center;font-size:13px;margin:6px 0' }, '学习记录只存在这台手机里，不用注册、不用联网也能做题。'),
     h('a', { class: 'link instl', href: '#/install' }, '📲 怎么把它装到手机桌面？'),
     h('a', { class: 'link instl', href: '#/help' }, '🩺 打不开 / 没声音 / 更新不了？看这里'),
     h('a', { class: 'link instl' + (S.pinHas() ? '' : ' hi'), href: '#/zone' }, S.pinHas() ? '👨‍👩‍👧 家长专区：发金币 / 备份 / 打印试卷' : '👨‍👩‍👧 家长专区：还没设密码，点这里先设一个')));
@@ -460,7 +467,7 @@ function taskTarget(u, t, ew) {
 }
 export function nextTask(u) {
   const tasks = (u && u.tasks) || []; if (!tasks.length) return null;
-  const ew = essayNow(u), shown = tasks.filter(t => t.kind !== 'essay' || ew);
+  const ew = essayNow(u), shown = tasks.filter(t => t.kind !== 'essay' || ew).sort((a, b) => (b.kind === 'essay') - (a.kind === 'essay'));
   for (const t of shown) if (S.taskDone(u.id, t, { window: ew }) < t.goal) return { label: t.kind === 'essay' ? '听美文' : t.label, href: taskTarget(u, t, ew), left: shown.filter(x => S.taskDone(u.id, x, { window: ew }) < x.goal).length };
   return null;
 }
@@ -476,18 +483,18 @@ function reviewCard(u) {
   const stale = Object.values(p.wrong || {}).filter(e => e.next ? e.next <= S.today() : (e.d || '0000') <= lim).length;
   const rows = [];
   if (words) rows.push(h('a', { class: 'row', href: '#/learn/review' }, h('div', {}, h('b', {}, `🔁 单词复习 ${words} 个`), h('small', {}, '到了该再见一面的日子，记更牢')), h('span', { class: 'chip' }, '开始')));
-  if (stale) rows.push(h('a', { class: 'row', href: '#/errors' }, h('div', {}, h('b', {}, `📕 错题复习 ${stale} 道`), h('small', {}, '答对 1 次，之后任意一天再答对 1 次就毕业；会了也能自己移出去')), h('span', { class: 'chip' }, '开始')));
+  if (stale) rows.push(h('a', { class: 'row', href: '#/errors' }, h('div', {}, h('b', {}, `📕 错题复习 ${stale} 道`), h('small', {}, '答对 2 次（要隔一天）就毕业；会了也能自己移出去')), h('span', { class: 'chip' }, '开始')));
   if (!rows.length) return null;
   return h('section', { class: 'tasks' }, h('h2', { class: 'sh' }, '今日复习'), h('div', { class: 'list' }, rows));
 }
 function taskCard(u) {
   const tasks = u.tasks || []; if (!tasks.length) return null;
-  const ew = essayNow(u), shown = tasks.filter(t => t.kind !== 'essay' || ew);
+  const ew = essayNow(u), shown = tasks.filter(t => t.kind !== 'essay' || ew).sort((a, b) => (b.kind === 'essay') - (a.kind === 'essay'));
   const done = shown.map(t => S.taskDone(u.id, t, { window: ew })), all = shown.every((t, i) => done[i] >= t.goal), nx = nextTask(u);
   return h('section', { class: 'tasks' }, h('h2', { class: 'sh' }, all ? '🎉 今天的任务都完成啦' : '今天做什么'),
     nx ? h('a', { class: 'btn primary wide gobtn', href: nx.href }, `▶ 开始：${nx.label}`) : h('p', { class: 'note' }, '真棒！还想多练的话，往下选一个就行。'),
     shown.map((t, i) => {
-      const ok = done[i] >= t.goal, label = t.kind === 'essay' ? `听美文《${ew.item.title.replace(/^《|》$/g, '')}》（${ew.end.slice(5)} 前）` : t.label;
+      const ok = done[i] >= t.goal, label = t.kind === 'essay' ? `听美文《${ew.item.title.replace(/^《|》$/g, '')}》（${+ew.end.slice(5, 7)}月${+ew.end.slice(8, 10)}日前听完）` : t.label;
       return h('a', { class: 'task' + (ok ? ' done' : ''), href: taskTarget(u, t, ew) }, h('span', { class: 'tk' }, ok ? '✅' : '⬜'), h('span', { class: 'tl' }, label), h('span', { class: 'tn' }, `${Math.min(done[i], t.goal)}/${t.goal}${t.minutes ? ' 分钟' : ''}`));
     }));
 }
@@ -555,7 +562,7 @@ export function home() {
   const hasEng = (u.random || []).some(k => /^vocab/.test(k)) && hasBook(u);
   const learnCard = hasEng ? Object.assign(h('a', { class: 'card', href: '#/learn' }, h('span', { class: 'ic' }, '🃏'), h('b', {}, '单词卡片'), h('small', {}, '先学一学，再去测'), h('em', {}, '看词·听音·记意思')), { _area: 'eng' }) : null;
   const ew0 = essayNow(u);
-  const essayCard = ew0 ? Object.assign(h('a', { class: 'card', href: '#/set/' + ew0.item.id }, h('span', { class: 'ic' }, '🌸'), h('b', {}, '听美文'), h('small', {}, '《' + String(ew0.item.title || '').replace(/^《|》$/g, '') + '》'), h('em', {}, ew0.end.slice(5) + ' 前听完')), { _area: 'cn' }) : null;
+  const essayCard = ew0 ? Object.assign(h('a', { class: 'card', href: '#/set/' + ew0.item.id }, h('span', { class: 'ic' }, '🌸'), h('b', {}, '听美文'), h('small', {}, '《' + String(ew0.item.title || '').replace(/^《|》$/g, '') + '》'), h('em', {}, (+ew0.end.slice(5, 7)) + '月' + (+ew0.end.slice(8, 10)) + '日前听完')), { _area: 'cn' }) : null;
   const areas = [['math', '📐 数学'], ['cn', '📖 语文'], ['eng', '🔤 英语'], ['sci', '🔬 科学'],
     ['phy', '🔬 物理'], ['hist', '📜 历史'], ['poli', '⚖️ 道德与法治'], ['chem', '🧪 化学'], ['bio', '🧬 生物'], ['geo', '🌏 地理']].map(([a, t0]) => {
     const pub = (u.publishers || {})[a], t = pub ? `${t0}（${pub}）` : t0;
@@ -859,8 +866,9 @@ const ipaFor = (en) => {
 };
 function vocabNode(str) {
   const items = String(str).split(/\s*·\s*/).map(part => { const m = part.trim().match(/^(.*?)\s*([（(]?[\u4e00-\u9fff].*)$/); return m ? { en: m[1].trim(), zh: m[2].trim() } : { en: part.trim(), zh: '' }; }).filter(x => x.en);
+  const allIpa = items.every(it => ipaFor(it.en));   // 有的词查不到音标：这一组就都不显示，免得一半有一半没有
   return h('div', { class: 'vocab vlist' }, h('b', {}, '重点词（点一下听发音）'),
-    h('div', { class: 'vwrap' }, items.map(it => { const ip = ipaFor(it.en); return h('button', { type: 'button', class: 'vchip', onclick: () => playSay(slug(it.en), it.en, X.audio) },
+    h('div', { class: 'vwrap' }, items.map(it => { const ip = allIpa ? ipaFor(it.en) : ''; return h('button', { type: 'button', class: 'vchip', onclick: () => playSay(slug(it.en), it.en, X.audio) },
       h('span', { class: 've' }, it.en), ip ? h('span', { class: 'ipa sm' }, '/' + ip + '/') : null, h('span', { class: 'vz' }, it.zh)); })));
 }
 
@@ -1210,13 +1218,13 @@ function resultsNode(o, results, sum) {
   const had = sum.okN - sum.newStars - sum.capped;
   const head = h('section', { class: 'result' },
     h('div', { class: 'big' }, h('b', {}, sum.okN), h('small', {}, ` / ${total} 题答对`)),
-    sum.ptsAll !== total ? h('p', { class: 'pts' }, `得分 ${sum.pts} / ${sum.ptsAll}`) : null,
+    sum.ptsAll !== total ? h('p', { class: 'pts' }, `（有的题分值高，按分值算是 ${sum.pts} / ${sum.ptsAll} 分）`) : null,
     h('p', { class: 'praise' }, praiseText(ratio)),
     h('div', { class: 'earn' + (sum.newStars ? ' on' : '') }, sum.newStars ? `⭐ × ${sum.newStars}` : '这次没有新星星'),
     had > 0 ? h('p', { class: 'note' }, `有 ${had} 题以前已经得过星星，一题只得一颗哦。`) : null,
     sum.capped ? h('p', { class: 'note' }, `今天的星星已经拿满 ${cap()} 颗，明天再来～（做对的题明天再做还能得星）`) : null,
     sum.selfN ? h('p', { class: 'note' }, `另有 ${sum.selfN} 道自评题（自己评的：${sum.selfOk} 题说对了）——不算星星也不进错题本。`) : null,
-    sum.wrongN ? h('p', { class: 'note' }, `做错的 ${sum.wrongN} 题已放进错题本：先答对 1 次，之后任意一天再答对 1 次就毕业；已经会了也可以在下面每题点「✓ 我会了，移出去」。` ) : null,
+    sum.wrongN ? h('p', { class: 'note' }, `做错的 ${sum.wrongN} 题已放进错题本：答对 2 次（要隔一天）就毕业；已经会了也可以在下面每题点「✓ 我会了，移出去」。` ) : null,
     sum.restQs && sum.restQs.length ? h('p', { class: 'note' }, `还有 ${sum.restQs.length} 题没做，这次不算错、也没放进错题本，点「接着做剩下的」可以继续。`) : null);
   const nextT = user() ? nextTask(user()) : null;
   const rest = sum.restQs || [];
@@ -1330,7 +1338,7 @@ function startRandom(kind, gt, gl, gc) {
 let wrongManageOpen = false;
 export function errors() {
   const u = user(), list = Object.values(S.P(u.id).wrong);
-  if (!list.length) { mount(page('错题本', h('div', { class: 'empty' }, h('div', { class: 'logo' }, '🎉'), h('h2', {}, '错题本是空的'), h('p', {}, '做错的题会自动进来；答对 1 次，之后任意一天再答对 1 次就毕业。已经会了也能自己点「✓ 我会了，移出去」。')))); return; }
+  if (!list.length) { mount(page('错题本', h('div', { class: 'empty' }, h('div', { class: 'logo' }, '🎉'), h('h2', {}, '错题本是空的'), h('p', {}, '做错的题会自动进来；答对 2 次（要隔一天）就毕业。已经会了也能自己点「✓ 我会了，移出去」。')))); return; }
   const tnames = {}; Object.values(RANDOM).forEach(R => R.types.forEach(t => { tnames[t.id] = t.name; }));
   const keyOf = (e) => (e.q.typeId && tnames[e.q.typeId]) ? `${e.meta.title} · ${tnames[e.q.typeId]}` : e.meta.title;
   const groups = {};
@@ -1385,7 +1393,7 @@ export function errors() {
   };
   manageRows();
   mount(page('错题本', [
-    h('p', { class: 'note' }, `一共 ${list.length} 道，分成 ${entries.length} 类。点下面一类，就只练这一类；每次最多 10 题，会优先挑最久没练的。答对 1 次，之后任意一天再答对 1 次就毕业；已经会了也能自己移出去。`),
+    h('p', { class: 'note' }, `一共 ${list.length} 道，分成 ${entries.length} 类。点下面一类，就只练这一类；每次最多 10 题，会优先挑最久没练的。答对 2 次（要隔一天）就毕业；已经会了也能自己移出去。`),
     h('button', { class: 'btn primary wide', onclick: () => start(list, '') }, '全部混着重做'),
     h('details', { class: 'mgmt', style: 'margin:10px 0', open: wrongManageOpen, ontoggle: (e) => { wrongManageOpen = e.target.open; } }, h('summary', {}, '🧹 我会了，自己移出去（点开逐题看）'), manage),
     stuck.length ? h('h2', { class: 'sh' }, `🙋 我说「还是不会」的题（${stuck.length}）`) : null,

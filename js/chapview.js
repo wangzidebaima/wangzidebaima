@@ -35,11 +35,12 @@ export const isChap = (k) => !!CHAP[k];
 
 export function chapSetup(kind) {
   const u = user(), R = RANDOM[kind], cfg = CHAP[kind];
-  const sel = new Set(S.getUnits(u.id, cfg.book, []));
+  const savedU = S.P(u.id).eng && S.P(u.id).eng[cfg.book];
+  const sel = new Set(savedU || cfg.CH.map(c => c.id));   // 第一次进来默认全选，一键就能开始；想少选自己取消
   let type = 'mix', level = 2, count = 10;
   const save = () => S.setUnits(u.id, cfg.book, [...sel]);
   const info = h('p', { class: 'note' });
-  const upd = () => { info.textContent = sel.size ? `已选 ${sel.size} 章。` : '先点一点，选出你已经学过的章节。'; };
+  const upd = () => { info.textContent = sel.size ? `已选 ${sel.size} 章（没学过的点一下取消）。` : '先点一点，选出你已经学过的章节。'; };
   const btns = cfg.CH.map(c => {
     const b = h('button', { type: 'button', class: 'chipb' + (sel.has(c.id) ? ' on' : ''), onclick: () => { sel.has(c.id) ? sel.delete(c.id) : sel.add(c.id); b.classList.toggle('on', sel.has(c.id)); save(); upd(); } }, c.name);
     return b;
