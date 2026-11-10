@@ -115,7 +115,8 @@
      "stem": "Jack's ____ is seventy-eight.",
      "answers": [
       [
-       "grandfather"
+       "grandfather",
+       "grandpa"
       ]
      ],
      "why": "Jack's grandfather is seventy-eight.",

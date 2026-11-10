@@ -100,7 +100,8 @@
      "stem": "The moon is round and very ____ tonight.",
      "answers": [
       [
-       "clear"
+       "clear",
+       "bright"
       ]
      ],
      "why": "It is round and very clear.",

@@ -109,13 +109,13 @@
     {
      "id": "g6l-u4-3-B2",
      "type": "fill",
-     "stem": "Ben says Sam should go ____.",
+     "stem": "Many people want that service, so go ____.",
      "answers": [
       [
        "early"
       ]
      ],
-     "why": "Go early.",
+     "why": "Go early. Many people want that service.",
      "pts": 1
     }
    ]

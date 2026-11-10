@@ -105,13 +105,13 @@
     {
      "id": "g5l-u2-4-B2",
      "type": "fill",
-     "stem": "The dog is ____.",
+     "stem": "The dog likes to play with ____.",
      "answers": [
       [
-       "friendly"
+       "children"
       ]
      ],
-     "why": "Is it friendly? Yes.",
+     "why": "It likes to play with children.",
      "pts": 1
     }
    ]

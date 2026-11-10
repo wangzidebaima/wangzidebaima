@@ -23,7 +23,7 @@
   },
   {
    "s": "Dentist",
-   "t": "You should eat less sweets. And you should brush your teeth twice a day."
+   "t": "You should eat fewer sweets. And you should brush your teeth twice a day."
   },
   {
    "s": "Amy",
@@ -70,14 +70,14 @@
     {
      "id": "g5r-u4-1-A3",
      "type": "choice",
-     "stem": "What should Amy eat less of?",
+     "stem": "What should Amy eat fewer of?",
      "options": [
       "Sweets.",
       "Rice.",
       "Fruit."
      ],
      "answer": "A",
-     "why": "You should eat less sweets.",
+     "why": "You should eat fewer sweets.",
      "pts": 2
     }
    ]
@@ -136,10 +136,10 @@
      "stem": "Amy should eat ____ sweets.",
      "answers": [
       [
-       "less"
+       "fewer"
       ]
      ],
-     "why": "You should eat less sweets.",
+     "why": "You should eat fewer sweets.",
      "pts": 1
     },
     {

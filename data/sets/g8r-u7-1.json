@@ -125,13 +125,13 @@
     {
      "id": "g8r-u7-1-C2",
      "type": "fill",
-     "stem": "Some cars will drive ____.",
+     "stem": "Some cars will ____ themselves.",
      "answers": [
       [
-       "themselves"
+       "drive"
       ]
      ],
-     "why": "drive themselves.",
+     "why": "Some cars will drive themselves.",
      "pts": 1
     },
     {

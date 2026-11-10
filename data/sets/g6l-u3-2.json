@@ -77,14 +77,14 @@
     {
      "id": "g6l-u3-2-A3",
      "type": "choice",
-     "stem": "What time does Ben go to bed?",
+     "stem": "What time does Lily go to bed?",
      "options": [
       "At ten thirty.",
       "At nine thirty.",
       "At eight o'clock."
      ],
      "answer": "B",
-     "why": "At nine thirty.",
+     "why": "Lily says: At nine thirty.",
      "pts": 1
     }
    ]
@@ -109,13 +109,13 @@
     {
      "id": "g6l-u3-2-B2",
      "type": "fill",
-     "stem": "Ben never stays up ____.",
+     "stem": "Sleeping ____ makes me happy.",
      "answers": [
       [
-       "late"
+       "early"
       ]
      ],
-     "why": "I never stay up late.",
+     "why": "Sleeping early makes me happy.",
      "pts": 1
     }
    ]

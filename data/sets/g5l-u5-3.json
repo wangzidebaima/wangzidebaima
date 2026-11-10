@@ -93,13 +93,13 @@
     {
      "id": "g5l-u5-3-B1",
      "type": "fill",
-     "stem": "The lotus root is ____.",
+     "stem": "The lotus root is crisp and ____.",
      "answers": [
       [
-       "white"
+       "tasty"
       ]
      ],
-     "why": "what is this white thing?",
+     "why": "It is crisp and tasty.",
      "pts": 1
     },
     {

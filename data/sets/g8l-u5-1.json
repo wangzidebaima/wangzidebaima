@@ -112,13 +112,13 @@
     {
      "id": "g8l-u5-1-B2",
      "type": "fill",
-     "stem": "Add just a little ____.",
+     "stem": "They add a little butter and some ____.",
      "answers": [
       [
-       "salt"
+       "milk"
       ]
      ],
-     "why": "Just a little.",
+     "why": "Add a little butter and some milk.",
      "pts": 1
     }
    ]

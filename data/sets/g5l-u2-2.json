@@ -93,13 +93,13 @@
     {
      "id": "g5l-u2-2-B1",
      "type": "fill",
-     "stem": "Ben's ____ will come too.",
+     "stem": "Ben's mother and ____ will come too.",
      "answers": [
       [
-       "parents"
+       "father"
       ]
      ],
-     "why": "Are your parents coming too? Yes.",
+     "why": "My mother and father will come.",
      "pts": 1
     },
     {

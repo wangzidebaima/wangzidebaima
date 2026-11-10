@@ -79,7 +79,7 @@
     {
      "id": "g9l-u2-3-A3",
      "type": "choice",
-     "stem": "When will Tom finish the book?",
+     "stem": "By when does Tom hope to finish the book?",
      "options": [
       "By Monday.",
       "By Friday.",
@@ -87,7 +87,7 @@
       "Next month."
      ],
      "answer": "B",
-     "why": "finish the book by Friday.",
+     "why": "He asks: Can I finish the book by Friday?",
      "pts": 1
     }
    ]
