@@ -54,7 +54,11 @@ export function voiceFail(reason) {
 // 连续两次失败（跨多次点击累计）就弹「听不到声音」引导；只要有一次读成功了就清零。
 let sayFailN = 0;
 const sayOk = () => { sayFailN = 0; };
-const sayBad = (reason) => { if (++sayFailN >= 2) { sayFailN = 0; voiceFail(reason); } };
+const sayBad = (reason, e) => {
+  // 主动停止/切换朗读会触发 interrupted 或 canceled，不是手机没声音，不计失败。
+  if (e && (e.error === 'interrupted' || e.error === 'canceled')) return;
+  if (++sayFailN >= 2) { sayFailN = 0; voiceFail(reason); }
+};
 const NO_VOICE = '这台手机的朗读一直没成功——多半是没装中文语音包，或者在微信里打开被禁用了。';
 
 export const praiseText = (ratio) =>
@@ -178,7 +182,7 @@ export function testVoice(v, text) {
   stopScript();
   const u = new SpeechSynthesisUtterance(text || '春天来了，小草从土里钻出来，燕子从南方飞回来了。');
   u.lang = v.lang || 'zh-CN'; u.voice = v; u.rate = 0.82; u.pitch = 1;
-  u.onend = sayOk; u.onerror = () => sayBad('试听没出声，说明这台手机里还没有可用的语音。');
+  u.onend = sayOk; u.onerror = (e) => sayBad('试听没出声，说明这台手机里还没有可用的语音。', e);
   try { ss.speak(u); } catch (e) { voiceFail('试听没出声，说明这台手机里还没有可用的语音。'); }
 }
 // 启动时先把语音列表预热：iOS 第一次取常是空的，要等 voiceschanged 事件
@@ -197,7 +201,7 @@ export function playSay(key, text, avail) {
       const ss = window.speechSynthesis; if (!ss) throw new Error('no tts');
       ss.cancel(); const u = new SpeechSynthesisUtterance(text); u.lang = 'en-US'; u.rate = 0.85;
       const v = pickVoice(ss, 'en-US'); if (v) u.voice = v; u.rate = 0.9;
-      u.onend = sayOk; u.onerror = () => sayBad(NO_VOICE);
+      u.onend = sayOk; u.onerror = (e) => sayBad(NO_VOICE, e);
       ss.speak(u);
     } catch (e) { voiceFail(); }
   };
@@ -241,7 +245,7 @@ export function playScript(lines, speakers, opts = {}) {
     u.pitch = distinct ? 1 : /^f/.test(it.who) ? 1.1 : /^m/.test(it.who) ? 0.9 : /^c/.test(it.who) ? 1.2 : 1;
     let to = null;
     u.onend = () => { clearTimeout(to); sayOk(); setTimeout(next, opts.pause || 450); };
-    u.onerror = () => { clearTimeout(to); sayBad(NO_VOICE); setTimeout(next, 100); };
+    u.onerror = (e) => { clearTimeout(to); sayBad(NO_VOICE, e); setTimeout(next, 100); };
     // 有些手机点了既不出声、也不触发 onend/onerror：1.5 秒后还没在朗读就记一次失败并继续
     to = setTimeout(() => { if (!ss.speaking && !ss.pending) { sayBad(NO_VOICE); setTimeout(next, 100); } }, 1500);
     try { ss.speak(u); } catch (e) { clearTimeout(to); sayBad(NO_VOICE); setTimeout(next, 100); }

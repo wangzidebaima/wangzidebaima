@@ -1131,15 +1131,12 @@ function runQuiz(o) {
   // 不用非得把整套做完，也不会把没做的题算错。剩下的题在结果页点「接着做」。
   const saveBar = !live ? h('div', { class: 'chips', style: 'margin:2px 0 8px' },
     h('button', { type: 'button', class: 'btn ghost small', style: 'display:none', onclick: () => finish() }, '📌 先记下做过的题，先出去')) : null;
-  // 逐题模式：一次只显示一题，答完点「确定并下一题」严格按题号 1→2→3… 顺序进下一题，
-  // 绝不跳过任何题（含选择题）；最后一题点「看结果」进入结果页。
+  // 逐题模式：一次只显示一题；不会的题可以空着先看下一题，之后还能返回再答。
   function goNext() {
     const q = qs[cur];
-    // 没答完不许走（两种模式都要拦）：按钮不再禁用，点了就提示还差着
-    if (!done[q.id] && !isAnswered(q, ans[q.id])) { toast('这题还没答完哦～'); return; }
     // 「答完看答案」当场判分记账并锁定；「做完看答案」只存草稿，交卷时由 finish() 统一判分。
-    // 这样返回上一题还能改答案，星星/错题本也只按最终答案记一次。
-    if (live && !done[q.id]) {
+    // 空着跳过的题不判分、不进错题本；返回后仍可作答。
+    if (live && !done[q.id] && isAnswered(q, ans[q.id])) {
       const r = settle(q);
       curNode.classList.add('locked', r.g.ok ? 'lok' : 'lbad');
       curNode.querySelectorAll('.opt, .ordit, .selfb, input, select').forEach(x => { x.disabled = true; });
@@ -1156,15 +1153,18 @@ function runQuiz(o) {
     nav.replaceChildren();
     if (cur > 0) nav.append(h('button', { type: 'button', class: 'btn ghost', onclick: () => { cur--; draw(); } }, '← 上一题'));
     const last = cur >= N - 1, done0 = !!done[qs[cur].id];
-    const label = done0 ? (last ? '看结果' : '下一题 →') : (last ? '交卷看结果' : '确定并下一题');
     const answered = isAnswered(qs[cur], ans[qs[cur].id]);
-    // 不用 disabled（点了没反应也没提示，孩子会懵），改半透明样式，点了由 goNext 弹提示
+    const label = done0 ? (last ? '看结果' : '下一题 →') : !answered ? (last ? '交卷看结果' : '下一题 →') : (last ? '交卷看结果' : '确定并下一题');
     nav.append(h('button', { type: 'button', class: 'btn primary' + ((answered || done0) ? '' : ' idle'), onclick: goNext }, label));
   }
   function update() {
     prog.textContent = `第 ${cur + 1} / ${N} 题`;
     const q = qs[cur], btn = nav.querySelector('.btn.primary');
-    if (btn) btn.classList.toggle('idle', !isAnswered(q, ans[q.id]) && !done[q.id]);
+    if (btn) {
+      const answered = isAnswered(q, ans[q.id]), last = cur >= N - 1;
+      btn.classList.toggle('idle', !answered && !done[q.id]);
+      btn.textContent = done[q.id] ? (last ? '看结果' : '下一题 →') : !answered ? (last ? '交卷看结果' : '下一题 →') : (last ? '交卷看结果' : '确定并下一题');
+    }
     if (saveBar) { const b = saveBar.querySelector('.btn'); if (b) b.style.display = Object.keys(ans).length ? '' : 'none'; }
     saveDraft();
   }
