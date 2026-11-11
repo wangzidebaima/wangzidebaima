@@ -555,7 +555,7 @@ export function home() {
       : /phy/.test(id) ? 'phy' : /hist/.test(id) ? 'hist' : /poli/.test(id) ? 'poli' : /chem/.test(id) ? 'chem' : /bio/.test(id) ? 'bio' : /geo/.test(id) ? 'geo' : 'eng'; return card;
   }).filter(Boolean);
   const randCards = (u.random || []).map(k => {
-    const R = RANDOM[k]; const card = h('a', { class: 'card alt', href: '#/rand/' + k }, h('span', { class: 'ic' }, R.icon), h('b', {}, R.title), h('small', {}, /^cnw/.test(k) ? '听词语，写在纸上' : '随机出题，不重样'), h('em', {}, `今天 ${S.starsToday(u.id)}/${cap()} 颗`));
+    const R = RANDOM[k]; const card = h('a', { class: 'card alt', href: '#/rand/' + k }, h('span', { class: 'ic' }, R.icon), h('b', {}, R.title), h('small', {}, /^cnw/.test(k) ? '听词语，写在纸上' : (R.desc || '随机出题，不重样')), h('em', {}, `今天 ${S.starsToday(u.id)}/${cap()} 颗`));
     // chapp*（物理计算）虽然 chap 开头，但它是物理练习，卡片要落在物理区，别混进数学
     card._area = /^chapp/.test(k) ? 'phy' : /^(math|chap)/.test(k) ? 'math' : /^cn/.test(k) ? 'cn' : 'eng'; return card;
   });
@@ -579,7 +579,7 @@ export function home() {
     h('h2', { class: 'sh' }, '我的'),
     h('div', { class: 'grid' },
       h('a', { class: 'card plain', href: '#/badges' }, h('span', { class: 'ic' }, '🏅'), h('b', {}, '成就徽章'), h('small', {}, '拿到就永远是你的'), h('em', {}, `${B.unlockedCount(u.id)}/${B.totalCount(u.id)}`)),
-      h('a', { class: 'card plain', href: '#/errors' }, h('span', { class: 'ic' }, '📒'), h('b', {}, '错题本'), h('small', {}, wrongN ? '做错的题在这里再练' : '现在是空的，真棒'), wrongN ? h('em', { class: 'badge' }, wrongN + ' 道') : null),
+      h('a', { class: 'card plain', href: '#/errors' }, h('span', { class: 'ic' }, '📒'), h('b', {}, '错题本'), h('small', {}, wrongN ? '做错的题在这里再练' : '还没有错题'), wrongN ? h('em', { class: 'badge' }, wrongN + ' 道') : null),
       h('a', { class: 'card plain', href: '#/me' }, h('span', { class: 'ic' }, '📊'), h('b', {}, '我的记录'), h('small', {}, '星星、进度、发给家长'))),
     standalone() ? null : h('a', { class: 'link instl', href: '#/install' }, '📲 装到手机桌面，打开更方便')));
 }

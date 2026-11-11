@@ -1,5 +1,5 @@
 {
-  "version": "kp-v95",
+  "version": "kp-v96",
   "appName": "书山小路",
   "rewards": [
     {
@@ -701,7 +701,7 @@
       ],
       "tasks": [
         {
-          "label": "数学练习 10 题",
+          "label": "数学随机练习 10 题",
           "kind": "rand",
           "subs": [
             "chap9",
@@ -710,7 +710,7 @@
           "goal": 10
         },
         {
-          "label": "物理计算练习 10 题",
+          "label": "物理计算题 10 题",
           "kind": "rand",
           "subs": [
             "chapp9"
