@@ -84,7 +84,6 @@ kind 分别是 `reading` / `listening` / `speaking`。完整清单以 `data/libr
 > 上表标「不是科目 id」的都不出现在这两处。旧版本文档写过的
 > `g8phys` / `g8math` **全部作废**（物理实际是 `g8phy`，数学走 `js/chapgen8.js`）；
 > `g8reading` / `g8listening` / `g8speaking` **第 23 批已真实上线，不是作废 id**。
-> 《给Claude_八年级上册内容生产任务书.md》里的旧口径已同步标注为历史存档。
 
 ### 教材版本（2026 秋 · 西安在读，九年级已定死）
 

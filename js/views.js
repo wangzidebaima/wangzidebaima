@@ -17,7 +17,7 @@ export const adminOk = () => ses('kp_parent', '__kpParent');
 export const parentOk = () => adminOk() || ses('kp_zone', '__kpZone');
 export const nav = (hash) => { if (location.hash === hash) window.dispatchEvent(new Event('hashchange')); else location.hash = hash; };
 export const user = () => X.cfg.users.find(u => u.id === S.getUser()) || null;
-export function setTheme(u) { document.documentElement.dataset.theme = u ? u.theme : ''; document.documentElement.dataset.fs = u ? String(S.P(u.id).font || 0) : '0'; }
+export function setTheme(u) { document.documentElement.dataset.theme = u ? u.theme : ''; document.documentElement.dataset.fs = u ? String(S.P(u.id).font || 0) : '0'; document.documentElement.dataset.py = (u && S.P(u.id).py === 0) ? 'off' : 'on'; }
 export function mount(node) { app().replaceChildren(node); window.scrollTo(0, 0); keypad.close(); }
 export const cap = () => X.cfg.dailyStarCap || 30;
 export const goal = () => X.cfg.starGoal || 400;
@@ -571,7 +571,7 @@ export function home() {
   });
   const wrongN = st.wrong;
   mount(h('div', { class: 'page home' },
-    h('header', { class: 'hello' }, h('div', {}, h('small', {}, '你好，'), h('h1', {}, u.display + ' 👋', u.grade ? h('span', { class: 'grade' }, u.grade) : null)), h('div', { class: 'hbtns' }, h('button', { class: 'link', onclick: () => { const f = ((p.font || 0) + 1) % 3; p.font = f; S.save(u.id); setTheme(u); toast(['字号：标准', '字号：大', '字号：特大'][f]); } }, 'Aa'), h('button', { class: 'link', onclick: () => { if (confirm('切换同学？')) { S.setUser(null); nav('#/login'); } } }, '切换'))),
+    h('header', { class: 'hello' }, h('div', {}, h('small', {}, '你好，'), h('h1', {}, u.display + ' 👋', u.grade ? h('span', { class: 'grade' }, u.grade) : null)), h('div', { class: 'hbtns' }, h('button', { class: 'link', onclick: () => { const f = ((p.font || 0) + 1) % 3; p.font = f; S.save(u.id); setTheme(u); toast(['字号：标准', '字号：大', '字号：特大'][f]); } }, 'Aa'), (u.grade === '一年级' || u.grade === '二年级') ? h('button', { class: 'link', onclick: () => { const p = S.P(u.id); p.py = p.py === 0 ? 1 : 0; S.save(u.id); setTheme(u); toast(p.py === 0 ? '拼音：已关闭' : '拼音：已打开'); } }, '拼') : null, h('button', { class: 'link', onclick: () => { if (confirm('切换同学？')) { S.setUser(null); nav('#/login'); } } }, '切换'))),
     healthBanner(), examCard(u), jar, taskCard(u), reviewCard(u),
     u.soon && !u.subjects.length && !(u.random || []).length ? h('section', { class: 'soonbox' }, h('div', { class: 'logo' }, '🌱'), h('h2', {}, `${u.grade}的练习正在准备中`), h('p', { class: 'note' }, '课本内容马上就来，先把这个小窝准备好啦。')) : null,
     u.tasks && u.tasks.length ? h('p', { class: 'more' }, '想多练一点？从下面自己选：') : null,

@@ -9,6 +9,7 @@ import * as CV from './chapview.js';
 import { stopAllSound, toast, warmVoices } from './ui.js';
 import * as HP from './help.js';
 import * as B from './badges.js';
+import * as PY from './pinyin.js';
 import * as P from './parent.js';
 
 const getJSON = (u) => fetch(u).then(r => { if (!r.ok) throw new Error(u + ' ' + r.status); return r.json(); });
@@ -150,6 +151,7 @@ async function boot() {
     if (a && a.getAttribute('href') === location.hash) { e.preventDefault(); render(); }
   });
   render();
+  PY.init(V.user);   // 一、二年级：汉字上面加拼音
   selfCheck();
   if ('serviceWorker' in navigator) {
     const had = !!navigator.serviceWorker.controller;
