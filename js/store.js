@@ -163,7 +163,7 @@ export function recordAttempt(uid, setId, rec) {
     const o = p.sets[setId] || { n: 0, best: 0 };
     p.sets[setId] = { n: o.n + 1, best: Math.max(o.best, rec.ok), last: rec };
   }
-  p.log.push({ d: today(), t: Date.now(), setId: setId || null, title: rec.title, ok: rec.ok, total: rec.total, stars: rec.stars, src: rec.src, sub: rec.sub, kind: rec.kind || null, secs: rec.secs || 0 });
+  p.log.push({ d: today(), t: Date.now(), setId: setId || null, title: rec.title, ok: rec.ok, total: rec.total, stars: rec.stars, src: rec.src, sub: rec.sub, kind: rec.kind || null, secs: rec.secs || 0, rest: rec.rest || 0 });
   if (p.log.length > 300) p.log = p.log.slice(-300);
   save(uid);
 }

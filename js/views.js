@@ -1198,7 +1198,7 @@ function runQuiz(o) {
     });
     const total = results.length - selfN;
     const m0 = qs.length ? o.metaFor(qs[0]) : {};
-    S.recordAttempt(o.uid, o.recId || null, { title: o.recTitle || o.title, ok: okN, total, pts, ptsAll, stars: newStars, src: m0.src, sub: m0.sub, kind: m0.kind, secs: Math.min(1500, Math.round((Date.now() - o.t0) / 1000)) });
+    S.recordAttempt(o.uid, o.recId || null, { title: o.recTitle || o.title, ok: okN, total, pts, ptsAll, stars: newStars, src: m0.src, sub: m0.sub, kind: m0.kind, secs: Math.min(1500, Math.round((Date.now() - o.t0) / 1000)), rest: restQs.length });
     clearDraft();   // 已经交卷，别让下次进来还停在上次的答案；剩下的题由「接着做」重新组一套
     // 做完当场查一遍成就，有新解锁立刻报喜
     B.checkAndGrant(o.uid).forEach(x => toast(`🏅 解锁成就：${x.icon} ${x.name}`, 4000));
@@ -1219,7 +1219,7 @@ function resultsNode(o, results, sum) {
   const head = h('section', { class: 'result' },
     h('div', { class: 'big' }, h('b', {}, sum.okN), h('small', {}, ` / ${total} 题答对`)),
     sum.ptsAll !== total ? h('p', { class: 'pts' }, `（有的题分值高，按分值算是 ${sum.pts} / ${sum.ptsAll} 分）`) : null,
-    h('p', { class: 'praise' }, praiseText(ratio)),
+    h('p', { class: 'praise' }, (sum.restQs && sum.restQs.length) ? `先做了 ${total} 题。` : praiseText(ratio)),
     h('div', { class: 'earn' + (sum.newStars ? ' on' : '') }, sum.newStars ? `⭐ × ${sum.newStars}` : '这次没有新星星'),
     had > 0 ? h('p', { class: 'note' }, `有 ${had} 题以前已经得过星星，一题只得一颗哦。`) : null,
     sum.capped ? h('p', { class: 'note' }, `今天的星星已经拿满 ${cap()} 颗，明天再来～（做对的题明天再做还能得星）`) : null,

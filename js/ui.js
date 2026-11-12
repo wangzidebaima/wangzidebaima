@@ -247,7 +247,7 @@ export function playScript(lines, speakers, opts = {}) {
     u.onend = () => { clearTimeout(to); sayOk(); setTimeout(next, opts.pause || 450); };
     u.onerror = (e) => { clearTimeout(to); sayBad(NO_VOICE, e); setTimeout(next, 100); };
     // 有些手机点了既不出声、也不触发 onend/onerror：1.5 秒后还没在朗读就记一次失败并继续
-    to = setTimeout(() => { if (!ss.speaking && !ss.pending) { sayBad(NO_VOICE); setTimeout(next, 100); } }, 1500);
+    to = setTimeout(() => { if (run === scriptRun && !ss.speaking && !ss.pending) { sayBad(NO_VOICE); setTimeout(next, 100); } }, 1500);
     try { ss.speak(u); } catch (e) { clearTimeout(to); sayBad(NO_VOICE); setTimeout(next, 100); }
   };
   // iOS 刚打开时语音列表常常是空的，这时直接播系统会自己乱挑一个（可能挑到粤语 → 咬舌）。

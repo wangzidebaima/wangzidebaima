@@ -43,7 +43,7 @@ function satisfied(uid) {
   if (S.totalDays(uid) >= 10) got.add('days10');
   if (S.totalDays(uid) >= 30) got.add('days30');
   if (S.streak(uid) >= 7) got.add('streak7');
-  if (p.log.some(x => x.total > 0 && x.ok === x.total)) got.add('perfect');
+  if (p.log.some(x => x.total >= 3 && x.ok === x.total && !x.rest)) got.add('perfect');
   if (p.wrongHad && st.wrong === 0) got.add('wrong-zero');
   if (Object.keys(p.speak).length >= 3) got.add('speak3');
   return got;

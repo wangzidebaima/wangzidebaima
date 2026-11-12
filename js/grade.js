@@ -60,7 +60,7 @@ export function gradeMath(input, answer) {
   return { ok: true };
 }
 
-export const norm = (s) => String(s == null ? '' : s).toLowerCase().replace(/[’‘`´]/g, "'").replace(/：/g, ':')
+export const norm = (s) => String(s == null ? '' : s).normalize('NFKC').replace(/[\u200b-\u200f\u202a-\u202e\u2060\ufeff\u00ad]/g, '').toLowerCase().replace(/[’‘`´]/g, "'").replace(/：/g, ':')
   .replace(/[.,!?;。，！？\s]+$/g, '').replace(/\s+/g, ' ').trim();
 
 const hasWord = (text, w) => new RegExp('(^|[^a-z0-9])' + w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '($|[^a-z0-9])').test(text);
