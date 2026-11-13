@@ -1,5 +1,5 @@
 {
-  "version": "kp-v98",
+  "version": "kp-v99",
   "appName": "书山小路",
   "rewards": [
     {
@@ -63,21 +63,28 @@
           "goal": 5
         },
         {
-          "label": "阅读理解 10 分钟",
+          "label": "语文阅读理解 1 篇",
           "kind": "cat",
           "cat": "reading",
-          "goal": 10,
-          "minutes": true
+          "subj": "chinese$",
+          "goal": 1
         },
         {
-          "label": "英语听力 10 分钟",
+          "label": "英语阅读理解 1 篇",
+          "kind": "cat",
+          "cat": "reading",
+          "subj": "reading$",
+          "goal": 1
+        },
+        {
+          "label": "英语听力 1 段",
           "kind": "cat",
           "cat": "listening",
-          "goal": 10,
-          "minutes": true
+          "subj": "listening$",
+          "goal": 1
         },
         {
-          "label": "口语打卡（10 分钟）",
+          "label": "口语打卡 1 次",
           "kind": "speak",
           "goal": 1
         },
@@ -149,21 +156,28 @@
           "goal": 5
         },
         {
-          "label": "阅读理解 10 分钟",
+          "label": "语文阅读理解 1 篇",
           "kind": "cat",
           "cat": "reading",
-          "goal": 10,
-          "minutes": true
+          "subj": "chinese$",
+          "goal": 1
         },
         {
-          "label": "英语听力 10 分钟",
+          "label": "英语阅读理解 1 篇",
+          "kind": "cat",
+          "cat": "reading",
+          "subj": "reading$",
+          "goal": 1
+        },
+        {
+          "label": "英语听力 1 段",
           "kind": "cat",
           "cat": "listening",
-          "goal": 10,
-          "minutes": true
+          "subj": "listening$",
+          "goal": 1
         },
         {
-          "label": "口语打卡（10 分钟）",
+          "label": "口语打卡 1 次",
           "kind": "speak",
           "goal": 1
         },
@@ -230,11 +244,11 @@
           "goal": 10
         },
         {
-          "label": "阅读理解 10 分钟",
+          "label": "语文阅读理解 1 篇",
           "kind": "cat",
           "cat": "reading",
-          "goal": 10,
-          "minutes": true
+          "subj": "chinese$",
+          "goal": 1
         },
         {
           "label": "听一篇美文",
@@ -357,21 +371,28 @@
           "goal": 10
         },
         {
-          "label": "阅读理解 10 分钟",
+          "label": "语文阅读理解 1 篇",
           "kind": "cat",
           "cat": "reading",
-          "goal": 10,
-          "minutes": true
+          "subj": "chinese$",
+          "goal": 1
         },
         {
-          "label": "英语听力 10 分钟",
+          "label": "英语阅读理解 1 篇",
+          "kind": "cat",
+          "cat": "reading",
+          "subj": "reading$",
+          "goal": 1
+        },
+        {
+          "label": "英语听力 1 段",
           "kind": "cat",
           "cat": "listening",
-          "goal": 10,
-          "minutes": true
+          "subj": "listening$",
+          "goal": 1
         },
         {
-          "label": "口语打卡（10 分钟）",
+          "label": "口语打卡 1 次",
           "kind": "speak",
           "goal": 1
         },
@@ -450,21 +471,28 @@
           "goal": 10
         },
         {
-          "label": "阅读理解 10 分钟",
+          "label": "语文阅读理解 1 篇",
           "kind": "cat",
           "cat": "reading",
-          "goal": 10,
-          "minutes": true
+          "subj": "chinese$",
+          "goal": 1
         },
         {
-          "label": "英语听力 10 分钟",
+          "label": "英语阅读理解 1 篇",
+          "kind": "cat",
+          "cat": "reading",
+          "subj": "reading$",
+          "goal": 1
+        },
+        {
+          "label": "英语听力 1 段",
           "kind": "cat",
           "cat": "listening",
-          "goal": 10,
-          "minutes": true
+          "subj": "listening$",
+          "goal": 1
         },
         {
-          "label": "口语打卡（10 分钟）",
+          "label": "口语打卡 1 次",
           "kind": "speak",
           "goal": 1
         },
@@ -543,21 +571,28 @@
           "goal": 10
         },
         {
-          "label": "阅读理解 10 分钟",
+          "label": "语文阅读理解 1 篇",
           "kind": "cat",
           "cat": "reading",
-          "goal": 10,
-          "minutes": true
+          "subj": "chinese$",
+          "goal": 1
         },
         {
-          "label": "英语听力 10 分钟",
+          "label": "英语阅读理解 1 篇",
+          "kind": "cat",
+          "cat": "reading",
+          "subj": "reading$",
+          "goal": 1
+        },
+        {
+          "label": "英语听力 1 段",
           "kind": "cat",
           "cat": "listening",
-          "goal": 10,
-          "minutes": true
+          "subj": "listening$",
+          "goal": 1
         },
         {
-          "label": "口语打卡（10 分钟）",
+          "label": "口语打卡 1 次",
           "kind": "speak",
           "goal": 1
         },
@@ -628,21 +663,21 @@
           "goal": 5
         },
         {
-          "label": "阅读理解 10 分钟",
+          "label": "英语阅读理解 1 篇",
           "kind": "cat",
           "cat": "reading",
-          "goal": 10,
-          "minutes": true
+          "subj": "reading$",
+          "goal": 1
         },
         {
-          "label": "英语听力 10 分钟",
+          "label": "英语听力 1 段",
           "kind": "cat",
           "cat": "listening",
-          "goal": 10,
-          "minutes": true
+          "subj": "listening$",
+          "goal": 1
         },
         {
-          "label": "口语打卡（10 分钟）",
+          "label": "口语打卡 1 次",
           "kind": "speak",
           "goal": 1
         }
@@ -723,21 +758,21 @@
           "goal": 5
         },
         {
-          "label": "阅读理解 10 分钟",
+          "label": "英语阅读理解 1 篇",
           "kind": "cat",
           "cat": "reading",
-          "goal": 10,
-          "minutes": true
+          "subj": "reading$",
+          "goal": 1
         },
         {
-          "label": "英语听力 10 分钟",
+          "label": "英语听力 1 段",
           "kind": "cat",
           "cat": "listening",
-          "goal": 10,
-          "minutes": true
+          "subj": "listening$",
+          "goal": 1
         },
         {
-          "label": "口语打卡（10 分钟）",
+          "label": "口语打卡 1 次",
           "kind": "speak",
           "goal": 1
         }

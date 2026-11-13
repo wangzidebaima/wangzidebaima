@@ -75,7 +75,7 @@ async function render() {
     const NOTICE_FREE = ['hear', 'help', 'voice', 'install'];
     if (!NOTICE_FREE.includes(r) && !V.noticeOk()) { V.noticeGate(render); return; }
     const u = V.user();
-    if (!u && r !== 'login' && r !== 'parent' && r !== 'zone' && r !== 'hear' && r !== 'install' && r !== 'voice' && r !== 'help' && r !== 'traffic' && r !== 'papers') { location.replace('#/login'); return; }
+    if (!u && r !== 'login' && r !== 'parent' && r !== 'zone' && r !== 'hear' && r !== 'install' && r !== 'voice' && r !== 'help' && r !== 'papers') { location.replace('#/login'); return; }
     V.setTheme(u);
     // 成就徽章：每次页面切换顺手查一遍，有新解锁就弹提示（拿到永久点亮，重复调用安全）
     if (u && !['login', 'parent', 'zone', 'voice', 'help', 'hear', 'install'].includes(r)) B.checkAndGrant(u.id).forEach(x => toast(`🏅 解锁成就：${x.icon} ${x.name}`, 4000));
@@ -85,7 +85,6 @@ async function render() {
       case 'zone': return P.zoneGate();
       case 'voice': return V.voicePage();
       case 'help': return HP.helpPage();
-      case 'traffic': return V.trafficPage();
       case 'badges': return B.badgesView(u ? u.id : null);
       case 'install': return V.install();
       case 'hear': return await V.hear(a);
