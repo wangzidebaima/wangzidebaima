@@ -1,5 +1,5 @@
 {
-  "version": "kp-v99",
+  "version": "kp-v100",
   "appName": "书山小路",
   "rewards": [
     {
@@ -661,6 +661,13 @@
           "label": "学习 5 个单词",
           "kind": "learn",
           "goal": 5
+        },
+        {
+          "label": "语文阅读理解 1 篇",
+          "kind": "cat",
+          "cat": "reading",
+          "subj": "chinese$",
+          "goal": 1
         },
         {
           "label": "英语阅读理解 1 篇",

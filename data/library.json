@@ -8476,6 +8476,186 @@
      "kind": "cn",
      "count": 10,
      "unit": "YW7"
+    },
+    {
+     "id": "g8c-r1",
+     "file": "sets/g8c-r1.json",
+     "title": "六十八分",
+     "subtitle": "阅读·记叙散文（成长心理）",
+     "kind": "reading",
+     "count": 6,
+     "unit": "YWR"
+    },
+    {
+     "id": "g8c-r2",
+     "file": "sets/g8c-r2.json",
+     "title": "爷爷的石榴树",
+     "subtitle": "阅读·记叙散文（亲情）",
+     "kind": "reading",
+     "count": 6,
+     "unit": "YWR"
+    },
+    {
+     "id": "g8c-r3",
+     "file": "sets/g8c-r3.json",
+     "title": "暴雨中的站台",
+     "subtitle": "阅读·记叙散文（社会生活）",
+     "kind": "reading",
+     "count": 6,
+     "unit": "YWR"
+    },
+    {
+     "id": "g8c-r4",
+     "file": "sets/g8c-r4.json",
+     "title": "小熊猫橡皮",
+     "subtitle": "阅读·小说片段（校园生活）",
+     "kind": "reading",
+     "count": 6,
+     "unit": "YWR"
+    },
+    {
+     "id": "g8c-r5",
+     "file": "sets/g8c-r5.json",
+     "title": "一碗有点咸的面",
+     "subtitle": "阅读·记叙散文（生活体验）",
+     "kind": "reading",
+     "count": 6,
+     "unit": "YWR"
+    },
+    {
+     "id": "g8c-r6",
+     "file": "sets/g8c-r6.json",
+     "title": "竹子的生长",
+     "subtitle": "阅读·说明文（生物科普）",
+     "kind": "reading",
+     "count": 6,
+     "unit": "YWR"
+    },
+    {
+     "id": "g8c-r7",
+     "file": "sets/g8c-r7.json",
+     "title": "声音是怎样传播的",
+     "subtitle": "阅读·说明文（物理科普）",
+     "kind": "reading",
+     "count": 6,
+     "unit": "YWR"
+    },
+    {
+     "id": "g8c-r8",
+     "file": "sets/g8c-r8.json",
+     "title": "古代的计时仪器——日晷",
+     "subtitle": "阅读·说明文（古代科技）",
+     "kind": "reading",
+     "count": 6,
+     "unit": "YWR"
+    },
+    {
+     "id": "g8c-r9",
+     "file": "sets/g8c-r9.json",
+     "title": "蜜蜂的“舞蹈语言”",
+     "subtitle": "阅读·说明文（动物科普）",
+     "kind": "reading",
+     "count": 6,
+     "unit": "YWR"
+    },
+    {
+     "id": "g8c-r10",
+     "file": "sets/g8c-r10.json",
+     "title": "城市里的“热岛”",
+     "subtitle": "阅读·说明文（地理环境科普）",
+     "kind": "reading",
+     "count": 6,
+     "unit": "YWR"
+    },
+    {
+     "id": "g8c-r11",
+     "file": "sets/g8c-r11.json",
+     "title": "专注的力量",
+     "subtitle": "阅读·议论文",
+     "kind": "reading",
+     "count": 6,
+     "unit": "YWR"
+    },
+    {
+     "id": "g8c-r12",
+     "file": "sets/g8c-r12.json",
+     "title": "失败的价值",
+     "subtitle": "阅读·议论文",
+     "kind": "reading",
+     "count": 6,
+     "unit": "YWR"
+    },
+    {
+     "id": "g8c-r13",
+     "file": "sets/g8c-r13.json",
+     "title": "好奇心的力量",
+     "subtitle": "阅读·议论文",
+     "kind": "reading",
+     "count": 6,
+     "unit": "YWR"
+    },
+    {
+     "id": "g8c-r14",
+     "file": "sets/g8c-r14.json",
+     "title": "慢下来的意义",
+     "subtitle": "阅读·议论文",
+     "kind": "reading",
+     "count": 6,
+     "unit": "YWR"
+    },
+    {
+     "id": "g8c-r15",
+     "file": "sets/g8c-r15.json",
+     "title": "读书与思考",
+     "subtitle": "阅读·议论文",
+     "kind": "reading",
+     "count": 6,
+     "unit": "YWR"
+    },
+    {
+     "id": "g8c-r16",
+     "file": "sets/g8c-r16.json",
+     "title": "山路上的药箱",
+     "subtitle": "阅读·人物通讯",
+     "kind": "reading",
+     "count": 6,
+     "unit": "YWR"
+    },
+    {
+     "id": "g8c-r17",
+     "file": "sets/g8c-r17.json",
+     "title": "漂流站里的书香",
+     "subtitle": "阅读·新闻特写",
+     "kind": "reading",
+     "count": 6,
+     "unit": "YWR"
+    },
+    {
+     "id": "g8c-r18",
+     "file": "sets/g8c-r18.json",
+     "title": "池塘与小溪",
+     "subtitle": "阅读·寓言故事",
+     "kind": "reading",
+     "count": 6,
+     "unit": "YWR"
+    },
+    {
+     "id": "g8c-r19",
+     "file": "sets/g8c-r19.json",
+     "title": "老石桥",
+     "subtitle": "阅读·抒情散文",
+     "kind": "reading",
+     "count": 6,
+     "unit": "YWR"
+    },
+    {
+     "id": "g8c-r20",
+     "file": "sets/g8c-r20.json",
+     "title": "红笔下的月牙",
+     "subtitle": "阅读·写人散文",
+     "kind": "reading",
+     "count": 6,
+     "unit": "YWR"
     }
    ]
   },
@@ -12728,6 +12908,7 @@
   "MX9": "默写 9 邹忌讽齐王纳谏",
   "MX10": "默写 10 出师表",
   "MX11": "默写 11 白雪歌送武判官归京",
-  "MX12": "默写 12 过零丁洋"
+  "MX12": "默写 12 过零丁洋",
+  "YWR": "现代文阅读理解"
  }
 }

@@ -533,7 +533,7 @@ export function cnSubject(id) {
   const u = user(), s = subj(id), p = S.P(u.id);
   const unitName = (x) => (X.lib.unitNames && X.lib.unitNames[x]) || x;
   const order = Object.keys(X.lib.unitNames || {});
-  const units = [...new Set(s.sets.filter(m => m.unit && m.unit !== 'E').map(m => m.unit))].sort((a, b) => order.indexOf(a) - order.indexOf(b));
+  const units = [...new Set(s.sets.filter(m => m.unit && m.unit !== 'E').map(m => m.unit))].filter(x => s.sets.some(m => m.unit === x && m.kind !== 'reading')).sort((a, b) => order.indexOf(a) - order.indexOf(b));
   const msOf = (x) => s.sets.filter(m => m.unit === x && m.kind !== 'essay');
   const cur = units.find(x => !unitDone(p, msOf(x))) || units[0];
   const row = (x) => { const ms = msOf(x), n = ms.filter(m => p.sets[m.id]).length;
