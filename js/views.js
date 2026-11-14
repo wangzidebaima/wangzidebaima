@@ -734,6 +734,7 @@ function startEssay(set) {
     playBtn.textContent = '正在朗读…（点这里重听）'; state.textContent = '听一听，哪些词语、句子让你觉得很美？';
     playScript(P.map(t => ({ t, s: '' })), {}, { lang: 'zh-CN', times: 1, rate: 0.82, pause: 900, onend: () => { playBtn.textContent = '🔁 再听一遍'; state.textContent = '听完啦！可以看原文，再学一学好词好句，然后做小题。'; textBtn.disabled = false; } });
   } }, '▶ 开始听');
+  const stopBtn = h('button', { type: 'button', class: 'btn ghost wide', style: 'margin-top:10px', onclick: () => { stopScript(); playBtn.textContent = '▶ 重新开始听'; state.textContent = '已停止。可以重听，或者直接看原文。'; textBtn.disabled = false; } }, '■ 停止');
   const textBtn = h('button', { class: 'btn ghost wide', style: 'margin-top:10px', onclick: () => { textBox.hidden = !textBox.hidden; textBtn.textContent = textBox.hidden ? '📖 看原文' : '收起原文'; } }, '📖 看原文');
   const words = h('section', {}, h('h2', { class: 'sh' }, '好词'), h('div', { class: 'chips' }, (set.words || []).map(w => h('span', { class: 'chip' }, w))),
     h('h2', { class: 'sh' }, '好句'), h('div', { class: 'list' }, (set.sents || []).map(x => h('div', { class: 'row static' }, h('div', {}, h('b', {}, x[0]), x[1] ? h('small', {}, x[1]) : null),
@@ -744,7 +745,7 @@ function startEssay(set) {
       sections: set.sections, recId: set.id, back: '#/set/' + set.id,
       metaFor: () => ({ setId: set.id, title: set.title, src: 'bank', sub: sm.subject.id, kind: 'essay' }), again: () => startEssay(set) }));
   } }, '做小题（算今天的美文任务）');
-  mount(page(set.title, [h('p', { class: 'subtitle' }, set.subtitle || ''), state, playBtn, textBtn, textBox, words, go], { back: '#/s/' + sm.subject.id }));
+  mount(page(set.title, [h('p', { class: 'subtitle' }, set.subtitle || ''), state, playBtn, stopBtn, textBtn, textBox, words, go], { back: '#/s/' + sm.subject.id }));
 }
 // 确定性伪随机（xmur3 播种 + mulberry32）：打印卷必须每次生成同一份，
 // 否则「题目卷」和「含答案卷」是两次渲染，打乱结果不同，答案就会对不上。
@@ -979,7 +980,13 @@ function renderQ(q, no, ans, update, restore) {
     // 听音选字题（q.sayzh，一年级 220 道）只留一个「听一听」：
     // 另一个「听题」读的是「点听一听，选出你听到的字」加四个选项，孩子点了听不到要选的字，会以为坏了。
     // 题干「听一听，说的是哪个字？」本身已经写清楚了，不用再读一遍。
-    const b = q.sayzh ? null : h('button', { type: 'button', class: 'spk listenq', onclick: () => { stopScript(); playScript(lines, {}, { lang: 'zh-CN', times: 1, rate: 0.8, pause: 500 }); } }, '🔊 听题');
+    // 听题要读题干加选项，要十几秒：播放中再点一下就停（按钮变「■ 停」）
+    let qOn = false;
+    const b = q.sayzh ? null : h('button', { type: 'button', class: 'spk listenq', onclick: () => {
+      if (qOn) { stopScript(); qOn = false; b.textContent = '🔊 听题'; return; }
+      stopScript(); qOn = true; b.textContent = '■ 停';
+      playScript(lines, {}, { lang: 'zh-CN', times: 1, rate: 0.8, pause: 500, onend: () => { qOn = false; b.textContent = '🔊 听题'; } });
+    } }, '🔊 听题');
     const b2 = q.sayzh ? h('button', { type: 'button', class: 'spk listenq', onclick: () => { stopScript(); playScript([{ t: q.sayzh, s: 'x' }], {}, { lang: 'zh-CN', times: 1, rate: 0.7, pause: 400 }); } }, '🔊 听一听') : null;
     if (b || b2) { const first = box.querySelector('.stem'); const rowEl = h('div', { class: 'speakrow' }, b2, b); if (first) first.after(rowEl); else box.prepend(rowEl); }
   }
@@ -1606,7 +1613,7 @@ export async function speak(id) {
         a.onended = () => { play.textContent = `▶️ 再听一遍（${sec} 秒）`; };
         play.textContent = `▶️ 听我读的（${sec} 秒）`;
         play.style.display = '';
-        play.onclick = () => { a.play(); };
+        play.onclick = () => { if (!a.paused) { a.pause(); a.currentTime = 0; play.textContent = `▶️ 再听一遍（${sec} 秒）`; } else a.play(); };
         info.className = 'srres good';
         infoTxt.textContent = '录好啦，点 ▶️ 听一遍自己读的';
         sync();

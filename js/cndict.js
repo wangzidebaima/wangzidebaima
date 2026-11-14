@@ -47,13 +47,14 @@ function flow(u, qs, KIND) {
   const back = '#/rand/' + KIND;
   const status = h('p', { class: 'note dstat' }, `一共 ${qs.length} 个词，准备好纸和笔，点“开始听”。`);
   const showBtn = h('button', { class: 'btn primary wide', style: 'margin-top:10px', disabled: true, onclick: () => { stopScript(); review(); } }, '显示答案');
+  const stopBtn = h('button', { type: 'button', class: 'btn ghost wide', style: 'margin-top:10px', onclick: () => { stopScript(); playBtn.textContent = '▶ 重新开始听'; showBtn.disabled = false; status.textContent = '已停止。想重听点上面的按钮；写完了点“显示答案”。'; } }, '■ 停止');
   const playBtn = h('button', { class: 'btn primary wide', onclick: () => {
     showBtn.disabled = true; playBtn.textContent = '正在听…（点这里重听）';
     status.textContent = `一共 ${qs.length} 个词，每个读两遍，请边听边写在纸上。`;
     const lines = []; qs.forEach(q => { lines.push({ t: q.w, s: 'x' }); lines.push({ t: q.w, s: 'x' }); });
     playScript(lines, {}, { lang: 'zh-CN', times: 1, rate: 0.8, pause: 3200, onend: () => { showBtn.disabled = false; playBtn.textContent = '🔁 再听一遍'; status.textContent = '听完啦！检查一下纸上写的，然后点“显示答案”。'; } });
   } }, '▶ 开始听');
-  mount(page('词语听写', [h('p', { class: 'note' }, '不用在手机上打字：先听完全部，写在纸上；写完自己点“显示答案”。'), status, playBtn, showBtn], { back }));
+  mount(page('词语听写', [h('p', { class: 'note' }, '不用在手机上打字：先听完全部，写在纸上；写完自己点“显示答案”。'), status, playBtn, stopBtn, showBtn], { back }));
   function review() {
     const mark = {};
     const done = h('button', { class: 'btn primary wide', onclick: () => {

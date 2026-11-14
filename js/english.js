@@ -139,6 +139,7 @@ function dictFlow(u, R, qs, kind) {
   const backTo = '#/rand/' + kind;
   const status = h('p', { class: 'note dstat' }, `一共 ${qs.length} 个，准备好纸和笔，点“开始听”。`);
   const showBtn = h('button', { class: 'btn primary wide', style: 'margin-top:10px', disabled: true, onclick: () => { stopScript(); review(); } }, '显示答案');
+  const stopBtn = h('button', { type: 'button', class: 'btn ghost wide', style: 'margin-top:10px', onclick: () => { stopScript(); playBtn.textContent = '▶ 重新开始听'; showBtn.disabled = false; status.textContent = '已停止。想重听点上面的按钮；写完了点“显示答案”。'; } }, '■ 停止');
   const playBtn = h('button', { class: 'btn primary wide', onclick: () => {
     showBtn.disabled = true; playBtn.textContent = '正在听…（点这里重听）';
     status.textContent = `一共 ${qs.length} 个词，每个读两遍，请边听边写在纸上。`;
@@ -150,7 +151,7 @@ function dictFlow(u, R, qs, kind) {
   } }, '▶ 开始听');
   mount(page('听写', [
     h('p', { class: 'note' }, '不用在手机上打字：先听完全部，写在纸上；写完自己点“显示答案”，再对一对。'),
-    status, playBtn, showBtn,
+    status, playBtn, stopBtn, showBtn,
   ], { back: backTo }));
   function review() {
     const mark = {};

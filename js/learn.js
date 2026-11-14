@@ -1,5 +1,5 @@
 // 英语“学”：单词卡片。先看词、听发音，点一下看意思，自己点“会了 / 不会”。不会的会再出现，一组 5 个。
-import { h, toast, playSay, slug, stopAllSound } from './ui.js';
+import { h, toast, playSay, slug, stopAllSound, playScript, stopScript } from './ui.js';
 import * as S from './store.js';
 import { X, user, mount, page } from './views.js';
 import { loadBook } from './english.js';
@@ -113,7 +113,6 @@ export async function learnUnit(unitId) {
 }
 
 // 本单元要点卡：每条一个小标题 + 几句话，能听
-import { playScript } from './ui.js';
 export function tipsLink(key, back) {
   return (X.tips || {})[key] ? h('a', { class: 'row', href: '#/tips/' + key }, h('div', {}, h('b', {}, '📝 本单元要点'), h('small', {}, '几句话讲清重点')), h('span', { class: 'chip' }, '看看')) : null;
 }
@@ -126,7 +125,7 @@ export function tipsView(key) {
   mount(page('本单元要点', [
     name ? h('p', { class: 'note' }, name) : null,
     ...T.items.map(([a, b]) => h('section', { class: 'tip' }, h('h3', {}, a), h('p', {}, b))),
-    cn ? h('button', { type: 'button', class: 'btn ghost wide', onclick: speakAll }, '🔊 听一听') : null,
+    cn ? h('div', { class: 'acts' }, h('button', { type: 'button', class: 'btn ghost', onclick: speakAll }, '🔊 听一听'), h('button', { type: 'button', class: 'btn ghost', onclick: () => stopScript() }, '■ 停')) : null,
     h('a', { class: 'btn primary wide', style: 'margin-top:10px', href: back }, '看完了'),
   ], { back }));
 }

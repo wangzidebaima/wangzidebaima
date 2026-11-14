@@ -1,5 +1,5 @@
 // 语文“学一学”：古诗文学习页——先听、读原文，看注释和大意，再用“挡一挡”练背，最后去做题
-import { h, playScript } from './ui.js';
+import { h, playScript, stopScript } from './ui.js';
 import * as S from './store.js';
 import { X, mount, page, setLearnHook } from './views.js';
 
@@ -33,7 +33,7 @@ export function poemView(pid) {
   mount(page(P.title, [
     h('p', { class: 'note' }, P.by),
     box,
-    h('div', { class: 'acts' }, h('button', { type: 'button', class: 'btn primary', onclick: () => play(0.8) }, '🔊 朗读'), h('button', { type: 'button', class: 'btn ghost', onclick: () => play(0.6) }, '🐢 慢读'), P.prose ? null : hideBtn),
+    h('div', { class: 'acts' }, h('button', { type: 'button', class: 'btn primary', onclick: () => play(0.8) }, '🔊 朗读'), h('button', { type: 'button', class: 'btn ghost', onclick: () => play(0.6) }, '🐢 慢读'), h('button', { type: 'button', class: 'btn ghost', onclick: () => { stopScript(); status.textContent = '已停止。'; } }, '■ 停'), P.prose ? null : hideBtn),
     status,
     h('h2', { class: 'sh' }, '注释'),
     h('div', { class: 'list notes' }, P.notes.map(([w, e]) => h('div', { class: 'row' }, h('div', {}, h('b', {}, w), h('small', {}, e))))),
