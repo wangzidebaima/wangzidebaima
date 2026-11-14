@@ -41,17 +41,68 @@
     <div class="footer">欢迎转发给需要的朋友</div>
   </div>
 <script>
-// 本页与学习应用共用同一个 GitHub Pages 站点。学习应用的 Service Worker
-// 会顺带缓存本页；收到「有新版本」通知时自动刷新一次，保证换群码后立即生效。
-// 这里只监听消息，不注册/注销任何 Service Worker，不影响学习应用。
-if (navigator.serviceWorker) {
-  navigator.serviceWorker.addEventListener('message', function (e) {
-    if (e.data && e.data.type === 'updated' && !sessionStorage.getItem('huoma-reloaded')) {
-      sessionStorage.setItem('huoma-reloaded', '1');
-      location.reload();
+// 本页与学习应用共用同一个 GitHub Pages 站点。学习应用的 Service Worker 是
+// 「缓存优先」：手机把第一次看到的页面存起来、后台再悄悄更新，导致反复打开过
+// 的手机一直显示旧文案 / 旧群码。这里让本页自己校正：
+//   1) 用 HEAD 请求读服务器上本页的 Last-Modified（该 Service Worker 只拦截 GET，
+//      HEAD 直接走网络，能读到真实版本）
+//   2) 版本与上次记录不同 → 只删掉本页自己那一条缓存记录，再刷新一次
+//   3) 同时监听 Service Worker 的「有新版本」消息作为兜底
+// 全程不注册、不注销、不修改任何 Service Worker；只删本页 URL 对应的缓存键，
+// 学习应用的 index.html / js / css / data 等文件与缓存一律不碰。
+(function () {
+  var SEEN = 'huoma-seen-ver';
+  var DONE = 'huoma-refreshed-for';
+  var pageUrl = new URL(location.pathname, location.origin).href;
+  var pageKeys = [pageUrl, pageUrl + 'index.html'];
+
+  function get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+  function set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+  function sget(k) { try { return sessionStorage.getItem(k); } catch (e) { return null; } }
+  function sset(k, v) { try { sessionStorage.setItem(k, v); } catch (e) {} }
+
+  function probe() {
+    return fetch(pageUrl, { method: 'HEAD', cache: 'no-store' })
+      .then(function (r) { return r.headers.get('Last-Modified') || ''; })
+      .catch(function () { return ''; });
+  }
+
+  function refresh(ver) {
+    if (!ver || sget(DONE) === ver) return;   // 同一版本最多刷一次，防死循环
+    sset(DONE, ver);
+    set(SEEN, ver);
+    var wipe = Promise.resolve();
+    if (window.caches && caches.keys && caches.open) {
+      wipe = caches.keys().then(function (names) {
+        return Promise.all(names.map(function (n) {
+          return caches.open(n).then(function (c) {
+            return Promise.all(pageKeys.map(function (k) {
+              return c.delete(k, { ignoreSearch: true }).catch(function () {});
+            }));
+          }).catch(function () {});
+        }));
+      }).catch(function () {});
     }
+    wipe.then(function () { location.reload(); });
+  }
+
+  // 服务器版本变了就校正一次
+  probe().then(function (ver) {
+    if (!ver) return;                          // 网络异常：什么都不做，页面照常显示
+    var seen = get(SEEN);
+    if (!seen) { set(SEEN, ver); return; }     // 首次访问：记下版本即可
+    if (seen !== ver) refresh(ver);
   });
-}
+
+  // 兜底：Service Worker 发现内容变化时发的消息
+  if (navigator.serviceWorker && navigator.serviceWorker.addEventListener) {
+    navigator.serviceWorker.addEventListener('message', function (e) {
+      if (e.data && e.data.type === 'updated') {
+        probe().then(function (ver) { if (ver) refresh(ver); });
+      }
+    });
+  }
+})();
 </script>
 </body>
 </html>
