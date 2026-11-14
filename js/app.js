@@ -45,11 +45,21 @@ function showBreak(restMin, learnMin) {
   m.innerHTML = '<div class="updbox"><div class="updt">🌿 休息一下吧</div><div class="updp">已经学了 ' + learnMin + ' 分钟啦！现在请：站起来走一走，看看窗外远处，喝几口水。<br>倒计时结束前不能继续，先歇一会儿。</div><div class="brkt" id="brkt"></div>' +
     '<button class="btn primary" id="brkgo" disabled>休息好了，继续</button><button class="btn ghost" id="brkmore">还差一点没做完，再给我 2 分钟</button></div>';
   document.body.append(m);
-  let left = restMin * 60; const t = m.querySelector('#brkt'), go = m.querySelector('#brkgo'), more = m.querySelector('#brkmore');
-  const draw = () => { t.textContent = left > 0 ? `${String(Math.floor(left / 60)).padStart(2, '0')}:${String(left % 60).padStart(2, '0')}` : '休息好啦 👍'; go.disabled = left > 0; };
-  const iv = setInterval(() => { left--; draw(); if (left <= 0) clearInterval(iv); }, 1000); draw();
-  const close = () => { clearInterval(iv); m.remove(); BRK.shown = false; BRK.last = Date.now(); };
-  go.onclick = () => { close(); BRK.active = 0; BRK.snoozed = false; };
+  // 倒计时按真实时间算：孩子锁屏、切走去休息的时间也算数（以前切走就停表，回来还得再等）
+  const endAt = Date.now() + restMin * 60 * 1000; let left = restMin * 60;
+  const t = m.querySelector('#brkt'), go = m.querySelector('#brkgo'), more = m.querySelector('#brkmore');
+  const draw = () => {
+    left = Math.max(0, Math.ceil((endAt - Date.now()) / 1000));
+    const mmss = `${String(Math.floor(left / 60)).padStart(2, '0')}:${String(left % 60).padStart(2, '0')}`;
+    t.textContent = left > 0 ? mmss : '休息好啦 👍';
+    go.disabled = left > 0; go.textContent = left > 0 ? `再休息 ${mmss} 才能继续` : '休息好了，继续';
+  };
+  const iv = setInterval(() => { draw(); if (left <= 0) clearInterval(iv); }, 1000); draw();
+  const close = () => { clearInterval(iv); document.removeEventListener('visibilitychange', onVis); m.remove(); BRK.shown = false; BRK.last = Date.now(); };
+  // 休息时间已经过完才回到页面：直接放行，不用再点
+  const onVis = () => { if (document.visibilityState === 'visible') { draw(); if (left <= 0) { close(); BRK.active = 0; BRK.snoozed = false; } } };
+  document.addEventListener('visibilitychange', onVis);
+  go.onclick = () => { if (left > 0) return; close(); BRK.active = 0; BRK.snoozed = false; };
   if (BRK.snoozed) more.remove(); else more.onclick = () => { close(); BRK.snoozed = true; BRK.active = Math.max(0, BRK.limit - 120); };
 }
 setInterval(() => {
@@ -61,7 +71,9 @@ setInterval(() => {
   BRK.active++;
   // 顺手记一下今天学了多少分钟，家长在「我的记录」里能看到
   if (++BRK.sec >= 60) { BRK.sec = 0; try { S.addStudyMinute(); } catch (e) { /* ignore */ } }
-  if (BRK.active >= BRK.limit) showBreak(cfg.breakRestMinutes || 3, Math.round(BRK.limit / 60));
+  // 正在播听力 / 朗读时先不打断（最多再等 5 分钟），等这一段播完再弹休息，免得孩子被打断后要重听
+  let talking = false; try { talking = !!(window.speechSynthesis && window.speechSynthesis.speaking); } catch (e) { /* ignore */ }
+  if (BRK.active >= BRK.limit && !(talking && BRK.active < BRK.limit + 300)) showBreak(cfg.breakRestMinutes || 3, Math.round(BRK.limit / 60));
 }, 1000);
 
 async function render() {
