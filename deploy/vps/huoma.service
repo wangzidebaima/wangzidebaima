@@ -1,0 +1,19 @@
+# systemd 服务：让活码开机自启、崩了自动重启
+# 放到服务器的 /etc/systemd/system/huoma.service
+[Unit]
+Description=Huoma QR Live Code
+After=network.target
+
+[Service]
+User=www-data
+WorkingDirectory=/opt/huoma
+# 用虚拟环境里的 gunicorn，避免污染系统 Python
+ExecStart=/opt/huoma/venv/bin/gunicorn -w 2 -b 127.0.0.1:8000 server:app
+# 后台口令通过环境变量注入，部署后改成你自己的复杂字符串
+Environment=ADMIN_TOKEN=改成你的复杂口令
+Environment=PORT=8000
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

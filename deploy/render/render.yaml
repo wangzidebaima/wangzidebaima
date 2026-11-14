@@ -1,0 +1,16 @@
+# Render 免费部署配置
+# 在 render.com 新建 Web Service 并连接本仓库后，Render 会自动读取此文件
+services:
+  - type: web
+    name: huoma
+    runtime: python
+    plan: free              # 免费计划；会休眠，适合试水
+    region: oregon          # 或选 singapore 离国内近一点
+    branch: main
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn -w 2 -b 0.0.0.0:$PORT server:app
+    envVars:
+      - key: ADMIN_TOKEN
+        sync: false         # 部署后在 Render 后台 Environment 里手动填你的复杂口令
+      - key: PORT
+        sync: false         # Render 自动注入，不用管

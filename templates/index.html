@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html data-page-node-id="CzfPEgPQwq3bnPLkSrSuKv" lang="zh-CN">
+<head data-page-node-id="V2ScgzP03FwXhQTpCPfWmp">
+<script data-page-node-id="k1zT054zc8TfHK7AD6dKoK" src="/page/page_comm/inject.js"></script>
+<meta data-page-node-id="Np0ABGvlCdgJlauAPtawpF" charset="UTF-8">
+<meta data-page-node-id="fogkNUqcRay6qE2S0q5pMo" content="width=device-width, initial-scale=1.0" name="viewport">
+<title data-page-node-id="9vG6JpyaByiiGPGOOpX5c0" data-pnid-children="kNLCJOeQQ6Kl1pX5UMIEaQ">{{ config.page_title }}</title>
+<style data-page-node-id="cIqslIn3jL3Lrv8EhzKgMg" data-pnid-children="4y0AOJ6hQKLRhJV1fVzvBy">
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: linear-gradient(160deg, #07c160 0%, #0a9d4d 100%);
+    min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    padding: 24px;
+  }
+  .card {
+    background: #fff; width: 100%; max-width: 380px; border-radius: 20px;
+    padding: 32px 24px 28px; text-align: center; box-shadow: 0 12px 40px rgba(0,0,0,.18);
+  }
+  .title { font-size: 22px; font-weight: 700; color: #1a1a1a; margin-bottom: 8px; }
+  .subtitle { font-size: 14px; color: #888; margin-bottom: 24px; line-height: 1.5; }
+  .qr-wrap {
+    width: 240px; height: 240px; margin: 0 auto 14px; border-radius: 16px;
+    border: 1px solid #eee; display: flex; align-items: center; justify-content: center;
+    overflow: hidden; background: #fafafa;
+  }
+  .qr-wrap img { width: 100%; height: 100%; object-fit: contain; }
+  .qr-tip { font-size: 13px; color: #07c160; margin-bottom: 6px; font-weight: 600; }
+  .qr-name { font-size: 12px; color: #aaa; margin-bottom: 22px; }
+  .gate-note {
+    background: #f6fff9; border: 1px solid #b7ebc8; color: #1a7a47;
+    border-radius: 12px; padding: 14px; font-size: 13px; line-height: 1.6; margin-bottom: 8px;
+  }
+  .footer { font-size: 11px; color: #bbb; margin-top: 10px; }
+  {% if not active %}
+  .empty { color:#bbb; font-size:14px; padding:60px 0; }
+  {% endif %}
+</style>
+</head>
+<body data-page-node-id="L0g8BGpwZkiujjwAftIEGh">
+  <div data-page-node-id="nrnM6coVbKCNvTHFQQhB3h" class="card">
+    <div data-page-node-id="acjCFY7793UCp7EgiShHL1" class="title"><!--pnid:1LBEZxwGYrWHoAUWcx81r0-->{{ config.page_title }}</div>
+    <div data-page-node-id="FvqbPn4eJkESZ7nvkje48S" class="subtitle"><!--pnid:OlTT72Y8wK5RpYltsM9zAr-->{{ config.page_subtitle }}</div><!--pnid:ReX8k3FNf10nFAHWeCPQxw-->
+
+    {% if active %}
+    <div data-page-node-id="Tene8Er7W4RyOGRXHEbL4o" class="qr-wrap">
+      <img data-page-node-id="ZfR0zGEb1fsh2FNDDd1MSX" alt="群二维码" src="/static/qrcodes/{{ active.file }}">
+    </div>
+    <div data-page-node-id="7dv37eTomErpDmNy2xd1RJ" class="qr-tip"><!--pnid:q1yoM6XfEd5SpxBJd95SfW-->长按识别二维码，加入群聊</div>
+    <div data-page-node-id="dDBmvtuA0HeUDFrOADp64B" class="qr-name"><!--pnid:1lYaRl82mMECBpoTpJIMOD-->{{ active.name }}</div><!--pnid:v57yrAOnTrBa6jAd66D1xe-->
+    {% else %}
+    <div data-page-node-id="yEwgcF6JhwcRqb5TzphXJK" class="empty"><!--pnid:dDktStdakb9dYVJtnbI8fu-->群二维码尚未配置<br data-page-node-id="M0iMJxRCHXoc7z8bButUmC"><!--pnid:7yhX80fB0DmFgZzIi6QNYB-->请到后台上传</div><!--pnid:rZHdNmT1jltp2CRYbtylO0-->
+    {% endif %}
+
+    <div data-page-node-id="kmkyqQu4EYPiFBUdIMKlPD" class="gate-note"><!--pnid:RZFWGqBPnl2XzdXrYWk7Yq-->
+      🔒 网站入口<strong data-page-node-id="4PZN8oEoNQKa2Hi250ciOP"><!--pnid:t3FpSPWYiJxEbGusjaX1OJ-->仅在本群内发布</strong><br data-page-node-id="Hq9ksCFvNKqS0KBHJ2F2pt"><!--pnid:cgYgrQv1Q53QK89QkPsyqL-->
+      进群后查看群公告 / 群消息获取专属访问链接
+    </div>
+
+    <div data-page-node-id="tJJCUdE2SYGKO4agZj9liw" class="footer"><!--pnid:hVlsVxI0J4KOwtV2eOcl7f-->更新于 {{ now }}</div>
+  </div>
+</body>
+</html>

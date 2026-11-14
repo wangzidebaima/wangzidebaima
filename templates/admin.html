@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html data-page-node-id="J4bK8BLPlH09RT5IkZ9RCP" lang="zh-CN">
+<head data-page-node-id="mEPq8QiVD82FEC9DOSVB2X">
+<script data-page-node-id="CIHjttpRkAKNsNi7vQEPJw" src="/page/page_comm/inject.js"></script>
+<meta data-page-node-id="p31vVHs3qZ2dS8GVg4QR44" charset="UTF-8">
+<meta data-page-node-id="IlYI5H5RguEh5RqpFsBhEI" content="width=device-width, initial-scale=1.0" name="viewport">
+<title data-page-node-id="WRnzFLsewNpLRaAnEvEiTS" data-pnid-children="tV0w6qabyPyQt9kLoa7iUy">活码后台</title>
+<style data-page-node-id="hVM0qLs8d8CVbHZ3Op3pdb" data-pnid-children="Rj5yuQbOLM036C1B5G2Oc0">
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+         background: #f5f6f8; color: #222; padding: 20px; }
+  .box { max-width: 760px; margin: 0 auto; background: #fff; border-radius: 14px;
+         padding: 22px; box-shadow: 0 4px 16px rgba(0,0,0,.06); margin-bottom: 18px; }
+  h2 { font-size: 18px; margin-bottom: 16px; }
+  label { display: block; font-size: 13px; color: #666; margin: 10px 0 4px; }
+  input[type=text], input[type=url] { width: 100%; padding: 9px 11px; border: 1px solid #ddd;
+         border-radius: 8px; font-size: 14px; }
+  .row { display: flex; gap: 12px; flex-wrap: wrap; }
+  .row > div { flex: 1; min-width: 200px; }
+  button { cursor: pointer; border: none; border-radius: 8px; padding: 10px 16px;
+           font-size: 14px; font-weight: 600; }
+  .primary { background: #07c160; color: #fff; }
+  .ghost { background: #fff; border: 1px solid #ddd; color: #555; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px,1fr)); gap: 14px; }
+  .item { border: 1px solid #eee; border-radius: 12px; padding: 10px; text-align: center; }
+  .item.active { border-color: #07c160; box-shadow: 0 0 0 2px rgba(7,193,96,.15); }
+  .item img { width: 120px; height: 120px; object-fit: contain; border:1px solid #f0f0f0; border-radius:8px; }
+  .item .nm { font-size: 13px; font-weight: 600; margin: 6px 0 2px; }
+  .item .meta { font-size: 11px; color: #999; margin-bottom: 8px; }
+  .item .acts { display: flex; gap: 6px; justify-content: center; }
+  .item .acts button { padding: 6px 10px; font-size: 12px; }
+  .badge { display:inline-block; background:#07c160; color:#fff; font-size:11px;
+           padding:2px 7px; border-radius:10px; margin-left:6px; }
+  .hint { font-size: 12px; color: #999; line-height: 1.6; margin-top: 10px; }
+  code { background:#f3f3f3; padding:2px 6px; border-radius:5px; font-size:12px; }
+</style>
+</head>
+<body data-page-node-id="ewV1NAegrn07POKcyOPNDc">
+  <div data-page-node-id="iFF5N5gtyf3hqft3EPACgy" class="box">
+    <h2 data-page-node-id="rYVMDlUURnHJLcUqMzja2s"><!--pnid:VONeAAz8HfbpTPN7ilZQxu-->① 页面与入口配置</h2>
+    <form data-page-node-id="Av5NTr5zsQfYJq1Darg2ka" action="/admin/config" method="post">
+      <input data-page-node-id="9x33cUCyv0rsPMAVJpR32I" name="token" type="hidden" value="{{ token }}">
+      <div data-page-node-id="zsAHrHW5zQmEdl2vfcoUz3" class="row">
+        <div data-page-node-id="rjf0pmkZ5YEyt8wZBnk1TU"><label data-page-node-id="DxNcyHCcrrZVXtsEOruSvX"><!--pnid:tvqgpqrKPgPAEVSl57101T-->页面主标题</label><input data-page-node-id="2nG0rx2IDK67ZyoIFXd6KH" name="page_title" type="text" value="{{ config.page_title }}"></div>
+        <div data-page-node-id="xxufS1bMwPJ4HJvjycYPPi"><label data-page-node-id="xAbnFHvYByLoc54sozjQ5s"><!--pnid:AyvzZgdmEZGLY3CV2HKKil-->页面副标题</label><input data-page-node-id="OLbQmIkS9gLrgnPqsPYCjG" name="page_subtitle" type="text" value="{{ config.page_subtitle }}"></div>
+      </div>
+      <div data-page-node-id="tG5TfnZRJBLSYpXSqSRFmZ" class="row">
+        <div data-page-node-id="gXx9BXPLU6jRfuaqmQziVT"><label data-page-node-id="DIR3y3eaO8CE4gv3MLTNCF"><!--pnid:Sv1tgeeak1zt9RkaLdo9LU-->应用链接（按钮跳转）</label><input data-page-node-id="vsMwoCgT1JQEigNm3etuT3" name="app_url" type="url" value="{{ config.app_url }}"></div>
+        <div data-page-node-id="eVRaVj4h5vF446sTDLN0s5"><label data-page-node-id="u0v6QQexxI7znM121K0eos"><!--pnid:xwOXxq3vzjVEI9wu02IS8c-->应用按钮文案</label><input data-page-node-id="NtsH4GXIoRJYwSginPnwDx" name="app_text" type="text" value="{{ config.app_text }}"></div>
+      </div>
+      <div data-page-node-id="JSMh2f3PnPiqSzKLs3Rs6q" class="row">
+        <div data-page-node-id="ZUFU68qJ2gRuPBlU5t7pxU"><label data-page-node-id="qxg4ZjUfmtnr2wtqxjfvLz"><!--pnid:7d5S8xPqeehSU6uGlKaXtv-->福利链接（可留空）</label><input data-page-node-id="nGUunDjXXj5dYcYuGWxty7" name="welfare_url" type="url" value="{{ config.welfare_url }}"></div>
+        <div data-page-node-id="4OVPLVi6O0d1KGNhKWKpdA"><label data-page-node-id="yqFP4KUxwqO6GINbhDH9A2"><!--pnid:QHr40m5t2jtkMbcSVApC8R-->福利按钮文案</label><input data-page-node-id="8bYZJo6Vpgjb97CETXeBER" name="welfare_text" type="text" value="{{ config.welfare_text }}"></div>
+      </div>
+      <div data-page-node-id="NFr6DgK5fwCynxOb8i4Mz5" class="row" style="margin-top:10px; align-items:center">
+        <div data-page-node-id="9kFLhPttPd8jyokyo7LRYg"><label data-page-node-id="aZOjKPMc8BJDxWuGlt9qPG"><!--pnid:DJJAfCxTEQ70cDIM2i8koT-->自动切换阈值（每群扫码上限，接近100）</label>
+          <input data-page-node-id="hHoNmpnFEiVcBMwzCJgBDE" name="max_per_group" type="text" value="{{ config.max_per_group }}"></div>
+        <div data-page-node-id="fCjwcZBl3Ai8YdZGR33WyL" style="display:flex; align-items:flex-end; gap:14px">
+          <label data-page-node-id="yjjhgPdIay4rl3AjKHZSP1" style="margin:0"><input data-page-node-id="c8tSl1IObVc3IbZPou2AOp" '' 'checked' config.auto_switch else if name="auto_switch" type="checkbox" {{ }}><!--pnid:bAsJ0KvXTcegUAL2jThIE0--> 开启自动切换</label>
+          <button data-page-node-id="CAJZWrIYQLd6g6oySkioGh" class="primary" type="submit"><!--pnid:TYonldGIQlYX9NnnfGk3u4-->保存配置</button>
+        </div>
+      </div>
+    </form>
+    <div data-page-node-id="S5ztrdgbt3lTUhIDIoGP1x" class="hint"><!--pnid:zZT8V86RWQDbsQ6Xjvlk7b-->线下印刷的「静态二维码」请指向本页面地址（部署后改为你的域名，例如 <code data-page-node-id="0NH2rGvhr1OycTTgK0bmTO" data-pnid-children="XYU0rRMGvzX1BxNzkHacUE">https://huoma.你的域名.com/</code><!--pnid:rlq8l6hW9POFGnKX0U9F0X-->）。群满后只需在下方换图，物料永不重印。</div>
+  </div>
+
+  <div data-page-node-id="cLGHiuckrSFr44yqiBkh3O" class="box">
+    <h2 data-page-node-id="TXRxZkWKExw5tcCQp0qjrn"><!--pnid:Su3CCjUiSoe6LfPb48F5sn-->② 群二维码管理 {% if active_id %}<span data-page-node-id="0KsIvWlzEq30M0NmtUTEWL" class="badge"><!--pnid:qJ3p5bB06vHmJvJ0yA4h27-->当前生效：{{ active_id[:6] }}</span><!--pnid:O5nm6vlYgSV7jDMoc8cjAm-->{% endif %}</h2>
+    <form data-page-node-id="91M1Mwylzc3S6ZYXCngxd4" action="/admin/upload" enctype="multipart/form-data" id="up" method="post" style="margin-bottom:16px">
+      <input data-page-node-id="iWCA0YODz1XCogstGDcAXw" name="token" type="hidden" value="{{ token }}">
+      <label data-page-node-id="cXHwKhuVXYUfYslPf0p0Fc"><!--pnid:u0gf96689zhu210JeMpfS4-->上传新的群二维码图片（微信「群设置→群二维码」截图/PNG）</label>
+      <div data-page-node-id="SG6xrTRNdc7Wtjnksz6dbh" class="row" style="align-items:center">
+        <div data-page-node-id="jFOzIS83DLvyw9QuQgaD0S"><input data-page-node-id="bjg5lgcnZIAZwy0ZBkd4mw" accept="image/*" name="file" required type="file"></div>
+        <div data-page-node-id="X04RJkE81ibNy8bLqss3iX"><input data-page-node-id="ym0Ha54pAb5vMNfuEeNL1h" name="name" placeholder="群名称，如 1群/2群" type="text"></div>
+        <div data-page-node-id="naeC5EdvsafIISwoWUPmKj" style="flex:0 0 auto"><button data-page-node-id="nGSHOeikwX93bkaFXn1iwX" class="primary" type="submit"><!--pnid:T8ZomhWd6Skon5aZadzshm-->上传并加入</button></div>
+      </div>
+    </form>
+    <div data-page-node-id="yyoye8JsdGNzpiulgkdfuZ" class="grid"><!--pnid:TwGv4xSzms5hL82NBbp0jn-->
+      {% for g in groups.groups %}
+      <div data-page-node-id="pMqS2tDvgULMpk62QDNKvo" class="item {% if g.id == active_id %}active{% endif %}">
+        <img data-page-node-id="InDdurEOR5ncN6PrEsmy17" src="/static/qrcodes/{{ g.file }}">
+        <div data-page-node-id="PRxtzlR0CQHmhu9yAAfnXX" class="nm"><!--pnid:KkbfFQNsuJqBqr8E97udNf-->{{ g.name }} {% if g.id == active_id %}<span data-page-node-id="8dBJEGrxDmrU1lzlWpNFP4" class="badge"><!--pnid:z0pfzz1GCeFM6azcqEqb0i-->生效中</span><!--pnid:e5PcX6bsfIBlKFRvqd3bC4-->{% endif %}</div>
+        <div data-page-node-id="ZqbREYYxDMLCrxatCodjEj" class="meta"><!--pnid:KK199GkDDG3AKMJFaEJ8yr-->扫码 {{ g.scans }} 次 · {{ g.created }}</div>
+        <div data-page-node-id="XsQUoOrgBhcy7AiDW40ngZ" class="acts"><!--pnid:7H2XihTzlUPGFEUbhs5OTw-->
+          {% if g.id != active_id %}
+          <button data-page-node-id="2VMHQ7uwi7PeGrwAVf8A4t" class="ghost" onclick="setActive('{{ g.id }}')"><!--pnid:YG9ikkVtLMDClAsGmhk6Te-->设为生效</button><!--pnid:xY51kIpnzktPDozwCfSQgw-->
+          {% endif %}
+          <button data-page-node-id="QkGPleqeXUgfwGR8NnICx8" class="ghost" onclick="del('{{ g.id }}')" style="color:#e74c3c"><!--pnid:idX8LDNHCTBx8c5OHgnrqe-->删除</button>
+        </div>
+      </div><!--pnid:ttHYx0GhUqdBEO4ksAmUih-->
+      {% else %}
+      <div data-page-node-id="K6Nvs3F4VoQWp9wMIqkfsh" style="color:#bbb; font-size:14px; padding:20px 0"><!--pnid:NL8iNPQLuMIaO8zCfguIix-->还没有群二维码，先上传一个吧。</div><!--pnid:jCalP7DFWhcEkJyRPD0nNJ-->
+      {% endfor %}
+    </div>
+  </div>
+
+<script data-page-node-id="Ak44jo0WYOdUY5o4grmXx4" data-pnid-children="aruzv14Bw7SyxQOaMiWTya">
+const t = "{{ token }}";
+function setActive(id){
+  fetch("/admin/set_active",{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"},
+    body:`token=${t}&id=${id}`}).then(r=>r.json()).then(d=>{ if(d.ok) location.reload(); });
+}
+function del(id){
+  if(!confirm("确认删除该群二维码？")) return;
+  fetch("/admin/delete",{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"},
+    body:`token=${t}&id=${id}`}).then(r=>r.json()).then(d=>{ if(d.ok) location.reload(); });
+}
+</script>
+</body>
+</html>
