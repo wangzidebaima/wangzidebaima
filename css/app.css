@@ -426,10 +426,13 @@ a.task { color: inherit; text-decoration: none; }
 .poi svg{display:block;width:100%;max-width:140px;height:auto}
 
 /* ===== 一、二年级拼音（js/pinyin.js）：拼音写在字上面一行 ===== */
-.py { display: inline-block; margin: 0 .5px; text-align: center; vertical-align: bottom; line-height: 1.15; }
-.py::before { content: attr(data-p); display: block; font-size: .52em; line-height: 1.25; font-weight: 500; letter-spacing: 0; color: var(--muted); font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; min-height: 1.25em; white-space: nowrap; }
+.py { display: inline-block; margin: 0 1.5px; text-align: center; vertical-align: bottom; line-height: 1.15; }
+.py::before { content: attr(data-p); display: block; font-size: .6em; line-height: 1.2; font-weight: 600; letter-spacing: .02em; color: var(--ink); opacity: .88; font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; min-height: 1.25em; white-space: nowrap; }
 .py.np::before { content: "\200b"; }
 .py.np { text-align: left; }
 html[data-py="off"] .py::before { display: none; }
 html[data-py="off"] .py { display: inline; }
-.top h1 .py::before, button .py::before, .btn .py::before { color: inherit; opacity: .75; }
+.top h1 .py::before, button .py::before, .btn .py::before { color: inherit; opacity: .9; }
+
+.hbtns .link { white-space: nowrap; }
+.hbtns .link .py { margin: 0 .5px; }
