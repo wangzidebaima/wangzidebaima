@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>扫码进群，一起玩</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: linear-gradient(160deg, #07c160 0%, #0a9d4d 100%);
+    min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    padding: 24px;
+  }
+  .card {
+    background: #fff; width: 100%; max-width: 380px; border-radius: 20px;
+    padding: 32px 24px 28px; text-align: center; box-shadow: 0 12px 40px rgba(0,0,0,.18);
+  }
+  .title { font-size: 22px; font-weight: 700; color: #1a1a1a; margin-bottom: 8px; }
+  .subtitle { font-size: 14px; color: #888; margin-bottom: 24px; line-height: 1.5; }
+  .qr-wrap {
+    width: 260px; height: 260px; max-width: 100%; margin: 0 auto 14px; border-radius: 16px;
+    border: 1px solid #eee; display: flex; align-items: center; justify-content: center;
+    overflow: hidden; background: #fff;
+  }
+  .qr-wrap img { width: 100%; height: 100%; object-fit: contain; display: block; }
+  .qr-tip { font-size: 14px; color: #07c160; margin-bottom: 10px; font-weight: 600; }
+  .note { font-size: 12px; color: #999; line-height: 1.6; margin-top: 16px; }
+  .footer { font-size: 11px; color: #bbb; margin-top: 12px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">扫码进群，一起玩</div>
+    <div class="subtitle">长按识别下方二维码，加入我们的微信群</div>
+    <div class="qr-wrap">
+      <img alt="群二维码" src="qr.png">
+    </div>
+    <div class="qr-tip">长按识别二维码，加入群聊</div>
+    <div class="note">若提示二维码已过期或群已满，请刷新页面后重试。</div>
+    <div class="footer">欢迎转发给需要的朋友</div>
+  </div>
+<script>
+// 本页与学习应用共用同一个 GitHub Pages 站点。学习应用的 Service Worker
+// 会顺带缓存本页；收到「有新版本」通知时自动刷新一次，保证换群码后立即生效。
+// 这里只监听消息，不注册/注销任何 Service Worker，不影响学习应用。
+if (navigator.serviceWorker) {
+  navigator.serviceWorker.addEventListener('message', function (e) {
+    if (e.data && e.data.type === 'updated' && !sessionStorage.getItem('huoma-reloaded')) {
+      sessionStorage.setItem('huoma-reloaded', '1');
+      location.reload();
+    }
+  });
+}
+</script>
+</body>
+</html>
