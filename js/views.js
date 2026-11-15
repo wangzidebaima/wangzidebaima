@@ -479,11 +479,11 @@ export function home() {
   const cy = ac.cy, next = rewards.find(r => r.stars > cy.pos), G = goal(), pct = Math.min(100, cy.pos / G * 100);
   const marks = h('div', { class: 'marks' }, rewards.map(r => h('span', { class: 'mk' + (cy.pos >= r.stars ? ' on' : ''), style: `left:${Math.min(100, r.stars / G * 100)}%` }, r.stars)));
   const jar = h('section', { class: 'jar' },
-    h('div', { class: 'jar-top' }, h('div', { class: 'jar-n' }, '⭐ ', h('b', {}, cy.pos), h('small', {}, ` / ${G}`)), h('div', { class: 'jar-s' }, `今天 +${st.today}/${cap()} · 累计 ⭐${st.total} 颗` + (S.streak(u.id) ? ` · 🔥连续 ${S.streak(u.id)} 天` : ''))),
+    h('div', { class: 'jar-top' }, h('div', { class: 'jar-n' }, cy.laps ? h('small', {}, `第 ${cy.laps + 1} 轮 `) : null, '⭐ ', h('b', {}, cy.pos), h('small', {}, ` / ${G}`)), h('div', { class: 'jar-s' }, `累计 ⭐${st.total} 颗 · 今天 +${st.today}/${cap()}` + (S.streak(u.id) ? ` · 🔥连续 ${S.streak(u.id)} 天` : ''))),
     h('div', { class: 'bar' }, h('i', { style: `width:${pct}%` })), marks,
     h('p', { class: 'jar-t' }, next ? `再得 ${next.stars - cy.pos} 颗星，就能得 ${next.label}（找家长领取）` : '这一轮满啦！再得一颗星就开始新一轮，累计的星星和金币都会一直留着～'),
     ac.gotAll ? h('p', { class: 'jar-t' }, `🪙 累计攒到 ${ac.gotAll} 个金币，家长已发 ${ac.paidAll} 个，${ac.due ? `还有 ${ac.due} 个找家长领取` : '都发完啦'}`) : null,
-    cy.laps ? h('p', { class: 'jar-t' }, `已完成 ${cy.laps} 轮（每轮 ${ac.perLap} 个金币）`) : null,
+    cy.laps ? h('p', { class: 'jar-t' }, `🎉 已完成 ${cy.laps} 轮（每轮 ${ac.perLap} 个金币）。进度条每满 ${G} 颗就从头再来，累计 ⭐${st.total} 颗一颗都没少～`) : null,
     st.today >= cap() ? h('p', { class: 'jar-t' }, '今天的星星拿满啦，明天再来～') : null);
   const subjectCards = u.subjects.map(id => {
     const s = subj(id); if (!s || !s.sets.length) return null;
