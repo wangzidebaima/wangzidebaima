@@ -248,18 +248,18 @@ function diagSection() {
   let rows = [];
   copyBtn.onclick = async () => {
     const ok = await copyText(diagText(rows));
-    toast(ok ? '已复制，去微信粘贴发给家长' : '复制没成功，长按上面的文字手动复制');
+    toast(ok ? '已复制，可以粘贴发给能帮你的人' : '复制没成功，长按上面的文字手动复制');
   };
   const run = async () => {
     out.replaceChildren(h('p', { class: 'note' }, '正在检查…'));
     try { rows = await collect(); } catch (e) { rows = [['自检失败', String(e && e.message || e)]]; }
     out.replaceChildren(
       h('div', { class: 'dgn' }, rows.map(([k, v]) => `${k}：${v}`).join('\n')),
-      h('p', { class: 'note' }, '这些只是这台手机的运行状态，不包含孩子的名字和答题内容。发给家长看，就知道是哪里不对。'));
+      h('p', { class: 'note' }, '这些只是这台手机的运行状态，不包含孩子的名字和答题内容。发给能帮你的人看，就知道是哪里不对。'));
     copyBtn.style.display = '';
   };
   const btn = h('button', { type: 'button', class: 'btn primary wide', onclick: () => { btn.disabled = true; run().finally(() => { btn.disabled = false; }); } }, '🩺 一键自检（看看是哪里不对）');
-  return h('section', { class: 'faq' }, h('h2', { class: 'sh' }, '还是不行：把状态发给我'),
+  return h('section', { class: 'faq' }, h('h2', { class: 'sh' }, '还是不行：一键自检'),
     h('p', { class: 'note' }, '点一下，把版本、缓存、声音、备份这些一次看全；复制给家长，基本能直接看出毛病在哪。'),
     btn, out, copyBtn);
 }
