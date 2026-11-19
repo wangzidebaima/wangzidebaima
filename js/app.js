@@ -11,6 +11,7 @@ import * as HP from './help.js';
 import * as B from './badges.js';
 import * as PY from './pinyin.js';
 import * as P from './parent.js';
+import { initStat } from './stat.js';
 
 const getJSON = (u) => fetch(u).then(r => { if (!r.ok) throw new Error(u + ' ' + r.status); return r.json(); });
 
@@ -141,6 +142,7 @@ async function selfCheck() {
 }
 
 async function boot() {
+  initStat();
   // 先把语音列表预热：iOS 第一次取常是空的，等真要朗读时才取就会挑错声音（语文“咬舌”）
   warmVoices();
   // 悄悄记下脚本报错，出问题时在「遇到问题 → 一键自检」里能看到

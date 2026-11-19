@@ -1,4 +1,5 @@
 // 本机记录：每个孩子一份，保存在这台手机的浏览器里
+import { ev as statEv } from './stat.js';
 const LS = {
   get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
   set(k, v) { try { localStorage.setItem(k, v); return true; } catch (e) { return false; } },
@@ -10,7 +11,11 @@ export const today = () => { const d = new Date(); return `${d.getFullYear()}-${
 
 // ---------- 今天学了多少分钟（休息提醒顺手记的，给家长看，也用来确认提醒有没有生效） ----------
 export const studyMinutes = () => Number(LS.get('kp_min_' + today()) || 0);
-export function addStudyMinute() { LS.set('kp_min_' + today(), String(studyMinutes() + 1)); }
+export function addStudyMinute() {
+  const n = studyMinutes() + 1; LS.set('kp_min_' + today(), String(n));
+  // 匿名统计：每满 1 分钟记一次；当天第一次满 1 分钟单独记一次（用来数"今天有多少人学了"）
+  statEv('学习分钟', '', 1); if (n === 1) statEv('当天首次学满1分钟', '');
+}
 
 // ---------- 备份提醒：记下最近一次导出备份的日期（只存日期字符串，很小） ----------
 export const lastBackup = (uid) => LS.get('kp_bak_' + uid) || '';
@@ -113,6 +118,7 @@ export function award(uid, q, src, subject, cap = 30) {
   const day = (p.days[t] = p.days[t] || blank());
   if (day.n >= cap) return 'capped';
   day.n++; if (src === 'rand') day.r++; else day.b++;
+  if (day.n === 1) statEv('当天首次答题', subject || ''); // 哪怕只答了一题的孩子也能统计到
   if (Object.keys(p.days).length > KEEP_DAYS + 40) sealOld(p); // 偶尔封一次旧账，几乎零开销
   save(uid); return 'new';
 }
@@ -166,6 +172,8 @@ export function recordAttempt(uid, setId, rec) {
   p.log.push({ d: today(), t: Date.now(), setId: setId || null, title: rec.title, ok: rec.ok, total: rec.total, stars: rec.stars, src: rec.src, sub: rec.sub, kind: rec.kind || null, secs: rec.secs || 0, rest: rec.rest || 0 });
   if (p.log.length > 300) p.log = p.log.slice(-300);
   save(uid);
+  // 匿名统计：只发科目和做了几题，不发姓名/账号
+  statEv(rec.src === 'rand' ? '完成随机练习' : '完成练习', rec.sub || '', rec.total);
 }
 
 export function stats(uid) {
