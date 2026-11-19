@@ -32,6 +32,7 @@ export function toast(msg, ms = 2400) {
 // 而是说清原因 + 给操作步骤 + 可一键跳去检查/帮助页。复用已有的引导文案。
 export function voiceFail(reason) {
   if (document.getElementById('vmodal')) return;
+  const en = /英语|英文/.test(reason || '');
   const close = () => { const m = document.getElementById('vmodal'); if (m) m.remove(); };
   const mask = h('div', { class: 'vmodal-mask', id: 'vmodal' });
   const card = h('div', { class: 'vmodal' },
@@ -39,8 +40,11 @@ export function voiceFail(reason) {
     h('div', { class: 'vmodal-h' }, '🔇 听不到声音'),
     h('p', { class: 'vmodal-sub' }, reason || '这台手机没有可用的语音朗读引擎——多半是没装中文语音包，或者在微信里打开被禁用了。'),
     h('div', { class: 'vmodal-steps' },
-      h('p', {}, h('b', {}, '苹果手机：'), '设置 → 辅助功能 → 朗读内容，确认没关；再点「去检查声音」下载一个「普通话」。'),
-      h('p', {}, h('b', {}, '安卓手机：'), '设置 → 系统 → 语言和输入法 → 文字转语音，把引擎和语言都设成「中文（中国）」。'),
+      en ? h('p', {}, h('b', {}, '苹果手机：'), '设置 → 辅助功能 → 朗读内容 → 声音 → 英语，下载一个「美国」的声音。')
+        : h('p', {}, h('b', {}, '苹果手机：'), '设置 → 辅助功能 → 朗读内容，确认没关；再点「去检查声音」下载一个「普通话」。'),
+      en ? h('p', {}, h('b', {}, '安卓手机：'), '设置 → 系统 → 语言和输入法 → 文字转语音，看「首选引擎」是否带「英语（美国）」，没有就换一个带英语的引擎。')
+        : h('p', {}, h('b', {}, '安卓手机：'), '设置 → 系统 → 语言和输入法 → 文字转语音，把引擎和语言都设成「中文（中国）」。'),
+      en ? h('p', {}, h('b', {}, '华为 / 荣耀：'), '设置 → 辅助功能 → 无障碍 → 文本转语音输出，查看首选引擎。如果引擎里只有中文，英语就会没有声音，需要换一个支持英语的朗读引擎。') : null,
       h('p', { class: 'vmodal-tip' }, '在微信里打开链接也会没声：换成手机自带浏览器（或相机扫卷子二维码）就好。')),
     h('div', { class: 'vmodal-btns' },
       h('button', { type: 'button', class: 'btn primary', onclick: () => { close(); location.hash = '#/voice'; } }, '去检查声音'),
@@ -60,6 +64,7 @@ const sayBad = (reason, e) => {
   if (++sayFailN >= 2) { sayFailN = 0; voiceFail(reason); }
 };
 const NO_VOICE = '这台手机的朗读一直没成功——多半是没装中文语音包，或者在微信里打开被禁用了。';
+const NO_VOICE_EN = '这台手机的英语朗读一直没成功——多半是没有英语语音包，或者在微信里打开被禁用了。';
 
 export const praiseText = (ratio) =>
   ratio === 1 ? '全对！太厉害了！' : ratio >= 0.8 ? '做得真棒！' : ratio >= 0.6 ? '不错，继续加油！' : '没关系，看看解析，下次会更好。';
@@ -194,22 +199,52 @@ export function warmVoices() {
   } catch (e) { /* ignore */ }
 }
 // avail 为 MP3 预留（见 views.js 的 X.audio）；当前这个集合是空的，一律走下面的朗读兜底。
-export function playSay(key, text, avail) {
+export function playSay(key, text, avail, mult) {
+  const m = mult || 1;
   const file = 'audio/w/' + key + '.mp3';
   const fallback = () => {
     try {
       const ss = window.speechSynthesis; if (!ss) throw new Error('no tts');
       ss.cancel(); const u = new SpeechSynthesisUtterance(text); u.lang = 'en-US'; u.rate = 0.85;
-      const v = pickVoice(ss, 'en-US'); if (v) u.voice = v; u.rate = 0.9;
-      u.onend = sayOk; u.onerror = (e) => sayBad(NO_VOICE, e);
+      const v = pickVoice(ss, 'en-US'); if (v) u.voice = v; u.rate = 0.9 * m;
+      u.onend = sayOk; u.onerror = (e) => sayBad(NO_VOICE_EN, e);
       ss.speak(u);
     } catch (e) { voiceFail(); }
   };
   try { if (curAudio) curAudio.pause(); } catch (e) { /* ignore */ }
   if (avail && avail.has(file)) {
-    try { curAudio = new Audio(file); curAudio.play().catch(fallback); return; } catch (e) { /* 用朗读兜底 */ }
+    try { curAudio = new Audio(file); setRate(curAudio, m); curAudio.play().catch(fallback); return; } catch (e) { /* 用朗读兜底 */ }
   }
   fallback();
+}
+
+// ---- 听力/口语的速度切换：0.8 倍 / 1 倍 / 1.25 倍（孩子自己点；记在这一次打开的页面里）----
+const SPEEDS = [0.8, 1, 1.25];
+let spdI = 1;
+export const speedMul = () => SPEEDS[spdI];
+export const speedText = () => '速度 ' + SPEEDS[spdI] + ' 倍';
+const setRate = (a, m) => { try { a.preservesPitch = true; a.webkitPreservesPitch = true; a.playbackRate = m; } catch (e) { /* ignore */ } };
+// 点一下换下一档；正在放 MP3 就立刻变速（用手机朗读时，下一句开始生效）
+export function cycleSpeed() {
+  spdI = (spdI + 1) % SPEEDS.length;
+  try { if (curAudio && !curAudio.paused) setRate(curAudio, SPEEDS[spdI]); } catch (e) { /* ignore */ }
+  return speedText();
+}
+// 播放一段听力：有 MP3（audio/<题集id>.mp3，已经含两遍）就播 MP3，没有就用手机朗读兜底
+export function playListen(id, avail, lines, speakers, opts = {}) {
+  const file = 'audio/' + id + '.mp3';
+  const tts = () => playScript(lines, speakers, { ...opts, rate: 0.9 * speedMul() });
+  stopScript(); try { if (curAudio) curAudio.pause(); } catch (e) { /* ignore */ }
+  if (avail && avail.has(file)) {
+    try {
+      const a = new Audio(file); curAudio = a; setRate(a, speedMul());
+      a.addEventListener('play', () => setRate(a, speedMul()));
+      a.addEventListener('ended', () => { if (curAudio === a && opts.onend) opts.onend(); });
+      a.play().catch(() => { if (curAudio === a) tts(); });
+      return;
+    } catch (e) { /* 用朗读兜底 */ }
+  }
+  tts();
 }
 
 // 听力原文朗读：没有 MP3 时，用手机自带的美式语音；男女声用音高区分。每次播放读两遍。
@@ -224,6 +259,7 @@ export function stopAllSound() {
 export function playScript(lines, speakers, opts = {}) {
   const ss = window.speechSynthesis; if (!ss) { voiceFail(); return; }
   const lang = opts.lang || 'en-US';
+  const noV = /^zh/.test(lang) ? NO_VOICE : NO_VOICE_EN;
   // 语音列表已经给出来了、却没有任何这个语言的语音：点了也不会出声，直接给引导。
   // iOS 刚打开时列表是空的，那种情况走下面的 300ms 预热，不在这里误报。
   const all0 = ss.getVoices() || [];
@@ -245,10 +281,10 @@ export function playScript(lines, speakers, opts = {}) {
     u.pitch = distinct ? 1 : /^f/.test(it.who) ? 1.1 : /^m/.test(it.who) ? 0.9 : /^c/.test(it.who) ? 1.2 : 1;
     let to = null;
     u.onend = () => { clearTimeout(to); sayOk(); setTimeout(next, opts.pause || 450); };
-    u.onerror = (e) => { clearTimeout(to); sayBad(NO_VOICE, e); setTimeout(next, 100); };
+    u.onerror = (e) => { clearTimeout(to); sayBad(noV, e); setTimeout(next, 100); };
     // 有些手机点了既不出声、也不触发 onend/onerror：1.5 秒后还没在朗读就记一次失败并继续
-    to = setTimeout(() => { if (run === scriptRun && !ss.speaking && !ss.pending) { sayBad(NO_VOICE); setTimeout(next, 100); } }, 1500);
-    try { ss.speak(u); } catch (e) { clearTimeout(to); sayBad(NO_VOICE); setTimeout(next, 100); }
+    to = setTimeout(() => { if (run === scriptRun && !ss.speaking && !ss.pending) { sayBad(noV); setTimeout(next, 100); } }, 1500);
+    try { ss.speak(u); } catch (e) { clearTimeout(to); sayBad(noV); setTimeout(next, 100); }
   };
   // iOS 刚打开时语音列表常常是空的，这时直接播系统会自己乱挑一个（可能挑到粤语 → 咬舌）。
   // 给它 300ms 等 voiceschanged；等不到也照常播，不能让孩子点了没反应。

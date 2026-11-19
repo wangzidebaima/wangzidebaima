@@ -1,5 +1,5 @@
 // 所有页面：登录、首页、题库、答题、结果、错题本、随机练习、记录、打印
-import { h, esc, mathHtml, toast, keypad, praiseText, playSay, slug, playScript, stopScript, zhVoices, testVoice, getVoicePref, setVoicePref } from './ui.js';
+import { h, esc, mathHtml, toast, keypad, praiseText, playSay, slug, playScript, stopScript, stopAllSound, playListen, cycleSpeed, speedText, speedMul, zhVoices, testVoice, getVoicePref, setVoicePref } from './ui.js';
 import * as B from './badges.js';
 import * as S from './store.js';
 import { gradeQuestion, answerText, userText, isAnswered } from './grade.js';
@@ -715,10 +715,10 @@ function transcriptNode(set) {
 function listenNode(set, withScript) {
   const box = h('section', { class: 'listen' }, h('h3', {}, '🎧 听力'));
   {
-    let rate = 0.9;
     const status = h('p', { class: 'hint' }, '先看题，再点播放。每次会读两遍，听的时候不要看原文。');
-    const play = (r) => { rate = r; status.textContent = '正在播放…（读两遍）'; playScript(set.transcript, set.speakers, { rate: r, times: 2, onend: () => { status.textContent = '读完啦。想再听就再点一次。'; } }); };
-    box.append(h('div', { class: 'acts' }, h('button', { type: 'button', class: 'btn primary', onclick: () => play(0.9) }, '▶ 播放（读两遍）'), h('button', { type: 'button', class: 'btn ghost', onclick: () => play(0.7) }, '🐢 慢一点'), h('button', { type: 'button', class: 'btn ghost', onclick: () => { stopScript(); status.textContent = '已停止。'; } }, '■ 停')), status);
+    const play = () => { status.textContent = '正在播放…（读两遍）'; playListen(set.id, X.audio, set.transcript, set.speakers, { times: 2, onend: () => { status.textContent = '读完啦。想再听就再点一次。'; } }); };
+    const spd = h('button', { type: 'button', class: 'btn ghost', onclick: () => { spd.textContent = '🐢 ' + cycleSpeed(); } }, '🐢 ' + speedText());
+    box.append(h('div', { class: 'acts' }, h('button', { type: 'button', class: 'btn primary', onclick: play }, '▶ 播放（读两遍）'), spd, h('button', { type: 'button', class: 'btn ghost', onclick: () => { stopAllSound(); status.textContent = '已停止。'; } }, '■ 停')), status);
   }
   if (withScript) box.append(h('details', { class: 'ctx', open: true }, h('summary', {}, '听力原文'), transcriptNode(set)));
   return box;
@@ -729,11 +729,11 @@ export async function hear(id) {
   let set; try { set = await loadSet(id); } catch (e) { set = null; }
   if (!set || !set.transcript) { mount(h('div', { class: 'page' }, h('h1', {}, '没有找到这段听力'), h('p', { class: 'hint' }, '请确认二维码是最新的，或者联网后再试。'))); return; }
   const status = h('p', { class: 'hint' }, '先看试卷上的题，再点「播放」。每次读两遍，听的时候不要看原文。');
-  const play = (r) => { status.textContent = '正在播放…（读两遍）'; playScript(set.transcript, set.speakers, { rate: r, times: 2, onend: () => { status.textContent = '读完啦。想再听就再点一次。'; } }); };
+  const play = () => { status.textContent = '正在播放…（读两遍）'; playListen(set.id, X.audio, set.transcript, set.speakers, { times: 2, onend: () => { status.textContent = '读完啦。想再听就再点一次。'; } }); };
+  const spd = h('button', { type: 'button', class: 'btn ghost wide', onclick: () => { spd.textContent = '🐢 ' + cycleSpeed() + '（点一下换）'; } }, '🐢 ' + speedText() + '（点一下换）');
   mount(h('div', { class: 'page hear' }, h('h1', {}, '🎧 听力：' + set.title), h('p', { class: 'hint' }, '只能听，不显示原文。'),
-    h('button', { type: 'button', class: 'btn primary wide big', onclick: () => play(0.9) }, '▶ 播放（读两遍）'),
-    h('button', { type: 'button', class: 'btn ghost wide', onclick: () => play(0.7) }, '🐢 慢一点再听'),
-    h('button', { type: 'button', class: 'btn ghost wide', onclick: () => { stopScript(); status.textContent = '已停止。'; } }, '■ 停'), status));
+    h('button', { type: 'button', class: 'btn primary wide big', onclick: play }, '▶ 播放（读两遍）'), spd,
+    h('button', { type: 'button', class: 'btn ghost wide', onclick: () => { stopAllSound(); status.textContent = '已停止。'; } }, '■ 停'), status));
 }
 
 // ---------------- 题库套题 ----------------
@@ -1690,7 +1690,7 @@ export async function speak(id) {
       const box = h('div', { class: 'sent' + (readOk.has(i) ? ' ok' : '') },
         h('div', {}, h('b', {}, s.en), h('small', {}, s.zh)),
         h('div', { class: 'chips' },
-          h('button', { class: 'btn small ghost', onclick: () => playSay('sp-' + slug(s.en), s.en, X.audio) }, '🔊'),
+          h('button', { class: 'btn small ghost', onclick: () => playSay('sp-' + slug(s.en), s.en, X.audio, speedMul()) }, '🔊'),
           canRec() ? h('button', { class: 'btn small ghost', onclick: (e) => recOne(s, i, e.currentTarget, info, infoTxt, box, bars, play) }, '🎤 录这句') : null,
           play),
         info);
@@ -1699,9 +1699,10 @@ export async function speak(id) {
     const tip = canRec()
       ? h('p', { class: 'note' }, '先点 🔊 听老师怎么读，再点 🎤 录下自己读的，然后点 ▶️ 听一遍。录过一句，下面才能打卡。录音只留在这台手机上，不会上传。')
       : h('p', { class: 'note' }, micBroken ? '这台手机用不了麦克风，已经换成原来的打卡方式，不影响打卡。' : '这台手机录不了音（在微信里打开就会这样），按原来的方式打卡就行。想听自己读的，用手机自带的浏览器（Safari / Chrome）打开。');
+    const spd = h('button', { type: 'button', class: 'btn small ghost', onclick: () => { spd.textContent = '🐢 ' + cycleSpeed(); } }, '🐢 ' + speedText());
     // 顺序：先听 → 再录 → 听自己的 → 最后打卡（以前打卡在上面，孩子还没读就能点）
     mount(page(set.title, [h('ol', { class: 'steps' }, set.steps.map(t => h('li', {}, t))), tip,
-      h('h2', { class: 'sh' }, '本单元句子（🔊 听 · 🎤 录 · ▶️ 听自己）'), h('div', { class: 'list' }, sents),
+      h('h2', { class: 'sh' }, '本单元句子（🔊 听 · 🎤 录 · ▶️ 听自己）'), h('div', { class: 'acts' }, spd), h('div', { class: 'list' }, sents),
       h('h2', { class: 'sh' }, `${set.plan.length} 天打卡`), h('div', { class: 'list' }, days)], { back: '#/s/' + ((GRADES[set.id.slice(0, 2)] || {}).speak || 'g4speaking') }));
   };
   render();

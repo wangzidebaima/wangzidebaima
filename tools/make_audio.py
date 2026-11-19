@@ -9,7 +9,9 @@
     python make_audio.py --all     全部重新生成
     python make_audio.py g7l3 g4l2 只生成指定的几组
     python make_audio.py --index-only  只更新目录（你已经自己做好 MP3 并放进 audio 文件夹时用）
-    python make_audio.py --words       生成所有单词、短语、句子的美式发音（放在 audio/w/ 里）
+    python make_audio.py --listening   只做听力
+    python make_audio.py --speaking    只做口语跟读句子（放在 audio/w/sp-*.mp3）
+    python make_audio.py --words       生成所有年级单词、短语、句子的美式发音（放在 audio/w/ 里）
     python make_audio.py --dry-run 不联网，只生成 2 秒的静音，用来检查流程
 
 生成的 MP3 放在上一级的 audio 文件夹里，同时更新 audio/index.json。
@@ -38,7 +40,9 @@ VOICES = {
 }
 GAP_LINE = 1       # 每句话之间停几秒
 GAP_REPEAT = 3     # 第一遍和第二遍之间停几秒
-SPEAK_RATE = '-15%'
+LISTEN_RATE = '-10%'   # 听力统一语速，不按年级区分（题集里的 rate 字段不再使用）
+SPEAK_RATE = '-15%'    # 口语跟读
+WORD_RATE = '-5%'      # 单词/短语/句子发音
 
 
 def silence(sec):
@@ -66,7 +70,7 @@ async def tts(text, voice, rate, dry):
 
 async def make_listening(s, out, dry):
     spk = s.get('speakers', {})
-    rate = s.get('rate', '+0%')
+    rate = LISTEN_RATE
     one = bytearray()
     for line in s['transcript']:
         voice = VOICES.get(spk.get(line['s'], 'f1'), VOICES['f1'])
@@ -75,14 +79,21 @@ async def make_listening(s, out, dry):
     out.write_bytes(bytes(one) + silence(GAP_REPEAT) + bytes(one))
 
 
+def slug(s):
+    import re
+    return re.sub(r'[^a-z0-9]+', '-', s.lower()).strip('-')
+
+
 async def make_speaking(s, dry):
-    for i, x in enumerate(s['sentences'], 1):
-        out = AUDIO / ('sp-%d.mp3' % i)
+    """口语跟读句子。文件名要和网页一致：audio/w/sp-<slug(句子原文)>.mp3（网页里 playSay('sp-' + slug(s.en))）"""
+    out_dir = AUDIO / 'w'
+    out_dir.mkdir(parents=True, exist_ok=True)
+    for x in s['sentences']:
+        out = out_dir / ('sp-' + slug(x['en']) + '.mp3')
         if out.exists() and not FORCE:
             continue
         out.write_bytes(await tts(x['en'], VOICES['f1'], SPEAK_RATE, dry) + silence(1))
-        print('  口语句子', i, '完成')
-
+        print('  口语句子', x['en'][:40], '完成')
 
 
 # ---------- 单词 / 短语 / 句子发音（美式） ----------
@@ -94,18 +105,10 @@ SPEAK_FIX = {  # 有些写法直接读不对，这里指定怎么读
 }
 
 
-def slug(s):
-    import re
-    return re.sub(r'[^a-z0-9]+', '-', s.lower()).strip('-')
-
-
 def word_jobs():
     """返回 [(文件名, 要读的文字)]，文件名规则要和网页里一致：单词/短语 = slug(原文).mp3，句子 = s-<slug(句子编号)>.mp3"""
     jobs = {}
-    for f in ('words7.json', 'words4.json'):
-        p = ROOT / 'data' / f
-        if not p.exists():
-            continue
+    for p in sorted((ROOT / 'data').glob('words*.json')):   # words3~9 全部年级
         for u in json.loads(p.read_text(encoding='utf-8'))['units']:
             for it in u['items']:
                 jobs[slug(it['en']) + '.mp3'] = SPEAK_FIX.get(it['en'], it['en'])
@@ -137,7 +140,7 @@ async def make_words(dry):
 
     async def one(n, t):
         async with sem:
-            (out_dir / n).write_bytes(await tts(t, WORD_VOICE, '-5%', dry))
+            (out_dir / n).write_bytes(await tts(t, WORD_VOICE, WORD_RATE, dry))
             done[0] += 1
             if done[0] % 50 == 0:
                 print('  已完成', done[0], '/', len(todo))
@@ -161,18 +164,19 @@ async def main():
         write_index(); return
     if '--words' in args:
         await make_words(dry); write_index(); print('完成。把 audio 文件夹上传到 GitHub 即可。'); return
+    only_l, only_s = '--listening' in args, '--speaking' in args   # 只做听力 / 只做口语
     for f in sorted(DATA.glob('*.json')):
         s = json.loads(f.read_text(encoding='utf-8'))
         if ids and s['id'] not in ids:
             continue
-        if s['kind'] == 'listening':
+        if s['kind'] == 'listening' and not only_s:
             out = AUDIO / (s['id'] + '.mp3')
             if out.exists() and not FORCE and not ids:
                 continue
             print('生成', s['id'], s['title'])
             await make_listening(s, out, dry)
-        elif s['kind'] == 'speaking':
-            print('生成口语跟读句子')
+        elif s['kind'] == 'speaking' and not only_l:
+            print('生成口语跟读句子', s['id'])
             await make_speaking(s, dry)
     write_index()
     print('完成。把 audio 文件夹上传到 GitHub 即可。')

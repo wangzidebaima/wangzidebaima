@@ -150,6 +150,8 @@ async function boot() {
   try {
     const [cfg, lib, vocab] = await Promise.all([getJSON('data/config.json'), getJSON('data/library.json'), getJSON('data/vocab.json')]);
     V.X.cfg = cfg; V.X.lib = lib; V.X.vocab = vocab;
+    // 有真人 MP3 的话，audio/index.json 里有清单；没有这个文件（目前就是这样）就当空，一律走手机朗读
+    try { const ai = await getJSON('audio/index.json'); V.X.audio = new Set((ai && ai.files) || []); } catch (e) { /* 没有音频清单，用朗读 */ }
     V.X.ipa = await getJSON('data/ipa.json').catch(() => ({}));
     V.X.poems = await getJSON('data/poems.json').catch(() => ({}));
     V.X.tips = await getJSON('data/tips.json').catch(() => ({}));
