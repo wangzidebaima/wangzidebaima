@@ -6,6 +6,7 @@ import { gradeQuestion, answerText, userText, isAnswered } from './grade.js';
 import { RANDOM, makeSession } from './mathgen.js';
 import { recReady, startRec, micErrText } from './speech.js';
 import { GRADES, engUnit, PAPER_HEARS } from './grades.js';
+import { cardBtn, cardPageBody, hasCard, hasSubjectCards, setOfQ } from './cards.js';
 
 // audio 是「将来做 MP3 音频」预留的空集合：目前站内没有任何 mp3 文件，playSay 一律走
 // 手机自带朗读（见 ui.js）。别删这块和 sw.js 里的音频 Range 缓存，将来上音频可直接接着用。
@@ -400,7 +401,7 @@ export function install() {
     sec('电脑或平板', h('div', {}, h('p', { class: 'note' }, 'Windows 电脑：用自带的「Edge」浏览器打开，点右上角「…」→「应用」→「将此站点作为应用安装」。'),
       h('p', { class: 'note' }, '苹果电脑（Mac）：用 Safari 打开，点菜单栏「文件」→「添加到程序坞」。'),
       h('p', { class: 'note' }, 'iPad：和 iPhone 一样，用 Safari 的「分享」→「添加到主屏幕」。'))),
-    sec('装好以后', ol('第一次装完，先用图标打开，登录输入名字，让它把内容加载好。', '之后没有网络也能做大部分题，听力和语音用手机自带的声音。', '如果换了新手机，或者图标不见了，重新照上面做一遍就行；换手机后星星会从零开始（记录只保存在每台手机里）。')),
+    sec('装好以后', ol('第一次装完，先用图标打开，登录输入名字，让它把内容加载好。', '之后没有网络也能做大部分题；英语听力要先联网放过一遍，下次没网也能听。', '如果换了新手机，或者图标不见了，重新照上面做一遍就行；换手机后星星会从零开始（记录只保存在每台手机里）。')),
     h('a', { class: 'btn primary wide', href: user() ? '#/' : '#/login' }, u ? '回首页' : '回登录页'),
   ], { back: u ? '#/' : '#/login' }));
 }
@@ -695,8 +696,23 @@ export function subject(id, sub) {
     updTestRow();
     testRow = h('div', { class: 'list' }, h('a', { class: 'row', href: '#/utest/mix/' + id }, h('div', {}, h('b', {}, '📝 综合测（期中 / 期末）'), small), h('span', { class: 'chip' }, '去测')));
   }
-  mount(page(s.title, [chips, testRow, listBox]));
+  const cardRow = hasSubjectCards(s.sets.map(m => m.id)) ? h('div', { class: 'list' }, h('a', { class: 'row', href: '#/cards/' + id }, h('div', {}, h('b', {}, '📖 知识卡（每课要点）'), h('small', {}, '一课一页：要点 · 容易错 · 一句话记住')), h('span', { class: 'chip' }, '去看'))) : null;
+  mount(page(s.title, [cardRow, chips, testRow, listBox]));
   draw();
+}
+
+// ---------------- 知识卡：列表页 / 单课页 ----------------
+export function cardsPage(id) {
+  const s = subj(id); if (!s) { location.hash = '#/'; return; }
+  const p = S.P(user().id);
+  const ms = s.sets.filter(m => hasCard(m.id));
+  mount(page(s.title + ' · 知识卡', [h('p', { class: 'note' }, '先看要点，再去做题；做错了题，解析里也能直接点开对应这一课的卡。'),
+    h('div', { class: 'list' }, ms.map(m => h('a', { class: 'row', href: '#/card/' + m.id }, h('div', {}, h('b', {}, m.title), h('small', {}, m.subtitle)), h('span', { class: 'chip' + (p.sets[m.id] ? ' ok' : '') }, p.sets[m.id] ? '做过' : '看看'))))], { back: '#/s/' + id }));
+}
+export async function cardPage(setId) {
+  const sm = setMeta(setId); if (!sm) { location.hash = '#/'; return; }
+  const bodyNode = await cardPageBody(setId);
+  mount(page(sm.meta.title, [bodyNode], { back: '#/cards/' + sm.subject.id }));
 }
 
 // ---------------- 原文 / 听力 ----------------
@@ -810,7 +826,9 @@ function shuffleOpts(set, rand) {
 }
 function startBank(set0) {
   const set = shuffled(set0), u = user(), sm = setMeta(set.id);
-  const ctxFn = (done) => set.kind === 'listening' ? listenNode(set, done) : (set.kind === 'reading' || (set.kind === 'cn' && set.passage)) ? (done ? h('details', { class: 'ctx' }, h('summary', {}, '📖 原文'), passageNode(set)) : passageNode(set)) : set.tip ? h('div', { class: 'tip' }, '💡 ' + set.tip) : null;
+  const ctxBase = (done) => set.kind === 'listening' ? listenNode(set, done) : (set.kind === 'reading' || (set.kind === 'cn' && set.passage)) ? (done ? h('details', { class: 'ctx' }, h('summary', {}, '📖 原文'), passageNode(set)) : passageNode(set)) : set.tip ? h('div', { class: 'tip' }, '💡 ' + set.tip) : null;
+  // 有知识卡的课，在题目上方放一个入口（弹窗打开，做到一半的题不会丢）
+  const ctxFn = (done) => { const base = ctxBase(done), cb = cardBtn(set.id, done ? 'result' : 'quiz'); return cb ? h('div', {}, h('div', { class: 'chips', style: 'margin:6px 0' }, cb), base) : base; };
   mount(runQuiz({
     uid: u.id, mk: set.mk ? set.mk : set.kind === 'reading' ? 'reading#' + (String(set.id).split('-').pop()) : set.kind === 'listening' ? 'listening' : 'mathbank', title: set.title, subtitle: set.subtitle, ctxFn, sections: set.sections, recId: set.id,
     back: '#/s/' + sm.subject.id, printHref: '#/print/' + set.id,
@@ -1245,6 +1263,7 @@ function reviewItem(r, no) {
     r.star === 'new' ? h('p', { class: 'got' }, '⭐ +1') : null,
     // 看完解析还不明白：标一下，家长在专区里能看到；或者直接把题发给家长/老师
     !ok && !self && u ? h('div', { class: 'chips askrow' },
+      cardBtn(setOfQ(q.id), 'wrong', '📖 看知识卡'),
       h('button', { type: 'button', class: 'btn small ghost', onclick: (e) => {
         const on = !S.isStuck(u.id, q.id);
         S.setStuck(u.id, q.id, on);

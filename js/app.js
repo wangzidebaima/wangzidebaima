@@ -12,6 +12,7 @@ import * as B from './badges.js';
 import * as PY from './pinyin.js';
 import * as P from './parent.js';
 import { initStat } from './stat.js';
+import { initCards } from './cards.js';
 
 const getJSON = (u) => fetch(u).then(r => { if (!r.ok) throw new Error(u + ' ' + r.status); return r.json(); });
 
@@ -112,6 +113,8 @@ async function render() {
       case 'rand': if (/^cnw\d$/.test(a)) return await CN.cnSetup(); if (CV.isChap(a)) return CV.chapSetup(a); return E.isEng(a) ? await E.engSetup(a) : V.randSetup(a);
       case 'words': return /^cnw\d$/.test(a) ? await CN.cnWords(b) : await E.engWords(a);
       case 'learn': return a ? await LN.learnUnit(a) : await LN.learnHome();
+      case 'cards': return V.cardsPage(a);
+      case 'card': return await V.cardPage(a);
       case 'errors': return V.errors();
       case 'me': return V.records();
       case 'check': return await V.checkPage();
@@ -152,6 +155,7 @@ async function boot() {
     V.X.cfg = cfg; V.X.lib = lib; V.X.vocab = vocab;
     // 有真人 MP3 的话，audio/index.json 里有清单；没有这个文件（目前就是这样）就当空，一律走手机朗读
     try { const ai = await getJSON('audio/index.json'); V.X.audio = new Set((ai && ai.files) || []); } catch (e) { /* 没有音频清单，用朗读 */ }
+    initCards();   // 知识卡清单（没有也不影响）
     V.X.ipa = await getJSON('data/ipa.json').catch(() => ({}));
     V.X.poems = await getJSON('data/poems.json').catch(() => ({}));
     V.X.tips = await getJSON('data/tips.json').catch(() => ({}));
