@@ -449,3 +449,9 @@ html[data-py="off"] .py { display: inline; }
 .kc-rec { background: var(--accent-soft); border-radius: 12px; padding: 4px 12px 8px; margin-top: 10px; }
 .kc-note { color: var(--muted); font-size: 13px; margin: 12px 0 0; }
 .kc-load { color: var(--muted); padding: 12px 0; }
+
+.dict-row { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; margin-bottom: 10px; }
+.dict-hint { color: var(--muted); font-size: 14px; margin-bottom: 6px; }
+.dict-in { width: 100%; box-sizing: border-box; font-size: 17px; border: 0; border-bottom: 2px solid var(--line); background: var(--bg); color: var(--ink); border-radius: 8px 8px 0 0; padding: 8px; outline: none; }
+.dict-res { font-size: 15px; margin-top: 6px; } .dict-res.good { color: #2e7d32; } .dict-res.bad { color: #c62828; }
+@media (prefers-color-scheme: dark) { .dict-res.good { color: #81c784; } .dict-res.bad { color: #ef9a9a; } }

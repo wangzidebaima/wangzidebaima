@@ -105,6 +105,7 @@ async function render() {
       case 's': return V.subject(a, b);
       case 'tips': return LN.tipsView(a + (b ? '/' + b : ''));
       case 'poem': return PM.poemView(a);
+      case 'dict': return PM.dictView(a);
       case 'unit': return V.unitPage(a, b);
       case 'utest': return a === 'eng' ? await E.unitTestEng(b) : a === 'mix' ? await V.mixedTest(b) : await V.unitTest(a, b, c);
       case 'papers': return V.papersPage();

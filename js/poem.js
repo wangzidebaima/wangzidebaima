@@ -1,6 +1,7 @@
 // 语文“学一学”：古诗文学习页——先听、读原文，看注释和大意，再用“挡一挡”练背，最后去做题
 import { h, playScript, stopScript } from './ui.js';
 import * as S from './store.js';
+import { ev } from './stat.js';
 import { X, mount, page, setLearnHook } from './views.js';
 
 export function registerPoemHook() {
@@ -41,7 +42,43 @@ export function poemView(pid) {
     ...P.meaning.map(t => h('p', { class: 'mean' }, t)),
     h('h2', { class: 'sh' }, '想一想'),
     h('p', { class: 'mean' }, P.feel),
+    h('a', { class: 'btn ghost wide', style: 'margin-bottom:8px', href: '#/dict/' + pid }, '✍️ 默写练习'),
     h('a', { class: 'btn primary wide gobtn', href: '#/set/' + pid + '-a' }, '学好了，去做练习 →'),
     h('a', { class: 'btn ghost wide', style: 'margin-top:8px', href: back }, '回单元'),
+  ], { back }));
+}
+
+// 默写：逐句给上一句（第一句给题目和前两个字），孩子写下一句，点“对答案”逐句判
+const norm = (t) => t.replace(/[，。？！、；：“”‘’—·《》…\s,.?!;:'"-]/g, '');
+export function dictView(pid) {
+  const P = (X.poems || {})[pid]; if (!P) { location.hash = '#/'; return; }
+  const back = '#/poem/' + pid;
+  const lines = P.lines.map(l => l.replace(/[ ]+$/, '')).filter(l => norm(l));
+  const rows = lines.map((l, i) => {
+    const hint = i === 0 ? '第一句：' + [...norm(l)].slice(0, 2).join('') + '……' : '上一句：' + lines[i - 1];
+    const inp = h('input', { type: 'text', class: 'dict-in', placeholder: '写这一句', autocomplete: 'off', autocapitalize: 'off', spellcheck: 'false' });
+    const res = h('div', { class: 'dict-res' });
+    return { l, inp, res, el: h('div', { class: 'dict-row' }, h('div', { class: 'dict-hint' }, hint), inp, res) };
+  });
+  const sum = h('p', { class: 'hint' });
+  let done = false;
+  const check = () => {
+    let ok = 0;
+    rows.forEach(r => {
+      const good = norm(r.inp.value) === norm(r.l);
+      if (good) ok++;
+      r.res.className = 'dict-res ' + (good ? 'good' : 'bad');
+      r.res.textContent = good ? '✓ 对了' : '✗ 正确：' + r.l;
+    });
+    sum.textContent = `写对 ${ok} / ${rows.length} 句。${ok === rows.length ? '全对，太棒了！' : '错的句子再读两遍，隔一会儿再默一次。'}`;
+    if (!done) { done = true; ev('古诗默写', pid + '|' + ok + '/' + rows.length, ok); }
+  };
+  mount(page('默写：' + P.title, [
+    h('p', { class: 'note' }, P.by + '　先不看原文，凭记忆写。写完点“对答案”，标点不用写。'),
+    h('div', { class: 'dict' }, rows.map(r => r.el)),
+    h('div', { class: 'acts' }, h('button', { type: 'button', class: 'btn primary', onclick: check }, '✅ 对答案'),
+      h('button', { type: 'button', class: 'btn ghost', onclick: () => { rows.forEach(r => { r.inp.value = ''; r.res.textContent = ''; r.res.className = 'dict-res'; }); sum.textContent = ''; done = false; } }, '🔄 重新写')),
+    sum,
+    h('a', { class: 'btn ghost wide', style: 'margin-top:10px', href: back }, '回去看原文'),
   ], { back }));
 }

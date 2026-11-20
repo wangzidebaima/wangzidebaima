@@ -6,6 +6,7 @@ import { gradeQuestion, answerText, userText, isAnswered } from './grade.js';
 import { RANDOM, makeSession } from './mathgen.js';
 import { recReady, startRec, micErrText } from './speech.js';
 import { GRADES, engUnit, PAPER_HEARS } from './grades.js';
+import { ev } from './stat.js';
 import { cardBtn, cardPageBody, hasCard, hasSubjectCards, setOfQ } from './cards.js';
 
 // audio 是「将来做 MP3 音频」预留的空集合：目前站内没有任何 mp3 文件，playSay 一律走
@@ -1233,8 +1234,16 @@ export const askText = (u, q) => {
   return s;
 };
 // 复制好题目再打开微信；复制不成功就让孩子长按手动复制
-export async function askForHelp(u, q) {
-  const text = askText(u, q);
+export const reportText = (q) => {
+  const stem = q.type === 'fill' ? (q.stem || '').replace(/_{2,}/g, '____') : (q.stem || '').replace(/\s+$/, '');
+  let t = `【题目纠错】题号：${q.id}\n${stem}`;
+  if (q.type === 'choice' && q.options) t += '\n选项：' + q.options.map((x, i) => 'ABCD'[i] + '. ' + x).join('　');
+  try { t += '\n现在的答案：' + answerText(q); } catch (e) { /* 没有答案文本的题型 */ }
+  if (q.why) t += '\n现在的解析：' + String(q.why).replace(/\n/g, ' ');
+  return t + '\n我觉得有问题的地方：';
+};
+export async function askForHelp(u, q, custom) {
+  const text = custom || askText(u, q);
   let ok = false;
   try { await navigator.clipboard.writeText(text); ok = true; } catch (e) { /* 下面兜底 */ }
   if (!ok) {
@@ -1244,7 +1253,7 @@ export async function askForHelp(u, q) {
       document.body.append(ta); ta.removeAttribute('readonly'); ta.select(); ok = document.execCommand('copy'); ta.remove();
     } catch (e) { ok = false; }
   }
-  toast(ok ? '题目已复制，正在打开微信，粘贴发给家长或老师' : '请长按题目手动复制，再去微信粘贴', 4000);
+  toast(ok ? (custom ? '题号和题目已复制，正在打开微信，粘贴发到群里，并写上哪里不对' : '题目已复制，正在打开微信，粘贴发给家长或老师') : '请长按题目手动复制，再去微信粘贴', 4000);
   if (ok) setTimeout(() => { location.href = 'weixin://'; }, 900);
 }
 
@@ -1262,6 +1271,7 @@ function reviewItem(r, no) {
     r.g.note ? h('p', { class: 'note' }, r.g.note) : null,
     r.star === 'new' ? h('p', { class: 'got' }, '⭐ +1') : null,
     // 看完解析还不明白：标一下，家长在专区里能看到；或者直接把题发给家长/老师
+    u ? h('div', { class: 'chips askrow' }, h('button', { type: 'button', class: 'btn small ghost', onclick: () => { ev('题目报错', q.id); askForHelp(u, q, reportText(q)); } }, '🚩 这题有问题')) : null,
     !ok && !self && u ? h('div', { class: 'chips askrow' },
       cardBtn(setOfQ(q.id), 'wrong', '📖 看知识卡'),
       h('button', { type: 'button', class: 'btn small ghost', onclick: (e) => {
