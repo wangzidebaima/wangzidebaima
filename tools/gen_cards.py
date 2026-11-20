@@ -7,8 +7,8 @@ import json, re, difflib, sys
 from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 SUBJECTS = ['g3sci', 'g4sci', 'g5sci', 'g6sci', 'g7bio', 'g7hist', 'g7geo', 'g8hist', 'g8poli', 'g8phy', 'g8bio', 'g8geo',
-            'g9phy', 'g9hist', 'g9poli', 'g9chem']
-HAND = {'g7poli'}   # 手写的，不动
+            'g9phy', 'g9hist', 'g9poli', 'g9chem', 'g8chinese', 'g9chinese']
+HAND = {'g7poli', 'g7mathk', 'g8mathk', 'g9mathk'}   # 手写的，不动
 MAXP = 9
 
 def clean_why(w):
@@ -17,9 +17,11 @@ def clean_why(w):
     if m and re.search(r'[第课节题《“”「」]', m.group(1)):
         w = w[m.end():].strip()
     w = re.sub(r'正确答案是[“"][^”"]*[”"]。?', '', w).strip()
-    w = re.sub(r'^该说法(正确|错误)[。，,]?', '', w).strip()
+    w = re.sub(r'该说法(正确|错误)[。，,]?', '', w).strip()
+    if re.match(r'^[^，。：]{2,14}：[^，。]{1,10}。?$', w):
+        return ''
     w = re.sub(r'^(这|这些|该|此|它|他|她)(是|些|个)', lambda m: '\x00', w)
-    if '\x00' in w or len(w) < 10 or '答案' in w:
+    if '\x00' in w or len(w) < 10 or '答案' in w or w.startswith('“') or w.startswith('【'):
         return ''
     if not re.search(r'[。！？]$', w):
         w += '。'
@@ -88,7 +90,7 @@ def main():
                 continue
             d = json.loads(f.read_text('utf-8'))
             pts, traps = make(d)
-            if len(pts) < 3:
+            if len(pts) < (4 if 'chinese' in sid else 3):
                 skipped += 1; print('跳过(要点太少)', f.stem); continue
             cards[d['id']] = {'title': d['title'], 'points': pts, 'traps': traps, 'auto': True}
         (ROOT / 'data' / 'cards' / f'{sid}.json').write_text(json.dumps(cards, ensure_ascii=False, indent=1), 'utf-8')
