@@ -36,6 +36,7 @@ function body(c) {
     h('h3', {}, '📌 要点'),
     h('ol', {}, c.points.map(t => h('li', {}, t))),
     c.traps && c.traps.length ? h('div', { class: 'kc-trap' }, h('h3', {}, '⚠️ 容易错'), h('ul', {}, c.traps.map(t => h('li', {}, t)))) : null,
+    c.auto ? h('p', { class: 'muted', style: 'font-size:12px;margin-top:8px' }, '本卡由本节题目的解析整理，仅作复习提示，请以课本为准。') : null,
     c.recite && c.recite.length ? h('div', { class: 'kc-rec' }, h('h3', {}, '🧠 一句话记住'), h('ul', {}, c.recite.map(t => h('li', {}, t)))) : null,
     h('p', { class: 'kc-note' }, '这是按课本内容整理的要点，细节以课本为准。'));
 }
