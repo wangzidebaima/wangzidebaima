@@ -442,7 +442,10 @@ html[data-py="off"] .py { display: inline; }
 .kc-title { font-weight: 700; font-size: 17px; margin: 2px 0 8px; }
 .kc h3 { font-size: 15px; margin: 12px 0 6px; color: var(--accent); }
 .kc ol, .kc ul { margin: 0; padding-left: 22px; } .kc li { font-size: 15px; line-height: 1.7; margin-bottom: 4px; }
-.kc-trap { background: #fff4e5; border-radius: 12px; padding: 4px 12px 8px; margin-top: 10px; }
+.kc-trap { background: #fff4e5; color: #4a2e00; border-radius: 12px; padding: 4px 12px 8px; margin-top: 10px; border: 1px solid #f0cf9a; }
+.kc-trap h3 { color: #a04a00; }
+.kc-trap li { font-size: 15px; color: #4a2e00; }
+@media (prefers-color-scheme: dark) { .kc-trap { background: #4a3517; color: #fbeccd; border-color: #7a5a2a; } .kc-trap h3 { color: #ffc474; } .kc-trap li { color: #fbeccd; } }
 .kc-rec { background: var(--accent-soft); border-radius: 12px; padding: 4px 12px 8px; margin-top: 10px; }
 .kc-note { color: var(--muted); font-size: 13px; margin: 12px 0 0; }
 .kc-load { color: var(--muted); padding: 12px 0; }
