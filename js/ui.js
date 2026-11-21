@@ -1,5 +1,8 @@
 // 界面小工具：创建元素、提示、数学键盘、分数排版
 import { zhFile } from './zhtext.js';
+let AUDIO_BASE = '';
+export function setAudioBase(b) { b = String(b || '').trim(); AUDIO_BASE = /^https?:\/\//.test(b) ? b.replace(/\/*$/, '/') : ''; }
+export const audioUrl = (p) => AUDIO_BASE + p;
 export function h(tag, props, ...kids) {
   const el = document.createElement(tag);
   for (const [k, v] of Object.entries(props || {})) {
@@ -220,7 +223,7 @@ export function playSay(key, text, avail, mult) {
   };
   try { if (curAudio) curAudio.pause(); } catch (e) { /* ignore */ }
   if (avail && avail.has(file)) {
-    try { curAudio = new Audio(file); setRate(curAudio, m); curAudio.play().catch(fallback); return; } catch (e) { /* 用朗读兜底 */ }
+    try { curAudio = new Audio(audioUrl(file)); setRate(curAudio, m); curAudio.play().catch(fallback); return; } catch (e) { /* 用朗读兜底 */ }
   }
   fallback();
 }
@@ -244,7 +247,7 @@ export function playListen(id, avail, lines, speakers, opts = {}) {
   stopScript(); try { if (curAudio) curAudio.pause(); } catch (e) { /* ignore */ }
   if (avail && avail.has(file)) {
     try {
-      const a = new Audio(file); curAudio = a; setRate(a, speedMul());
+      const a = new Audio(audioUrl(file)); curAudio = a; setRate(a, speedMul());
       let paused = false;
       a.addEventListener('play', () => setRate(a, speedMul()));
       a.addEventListener('ended', () => { if (curAudio === a) { playCtl = null; if (opts.onend) opts.onend(); } });
@@ -281,7 +284,7 @@ export function playMp3Lines(lines, avail, opts, fileOf) {
     if (run !== scriptRun) return;
     if (opts.onpos) opts.onpos(i);
     if (i >= lines.length) { if (run === scriptRun) playCtl = null; if (opts.onend) opts.onend(); return; }
-    const l = lines[i], a = new Audio(fileOf(l.t)); curAudio = a; seg = a; setRate(a, opts.mult || 1);
+    const l = lines[i], a = new Audio(audioUrl(fileOf(l.t))); curAudio = a; seg = a; setRate(a, opts.mult || 1);
     const go = () => {
       if (run !== scriptRun) return;
       i++; seg = null;

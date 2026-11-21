@@ -7,7 +7,7 @@ import * as LN from './learn.js';
 import * as PM from './poem.js';
 import * as SR from './search.js';
 import * as CV from './chapview.js';
-import { stopAllSound, toast, warmVoices } from './ui.js';
+import { stopAllSound, toast, warmVoices, setAudioBase } from './ui.js';
 import * as HP from './help.js';
 import * as B from './badges.js';
 import * as PY from './pinyin.js';
@@ -158,7 +158,7 @@ async function boot() {
   HP.installErrorLog();
   try {
     const [cfg, lib, vocab] = await Promise.all([getJSON('data/config.json'), getJSON('data/library.json'), getJSON('data/vocab.json')]);
-    V.X.cfg = cfg; V.X.lib = lib; V.X.vocab = vocab;
+    setAudioBase(cfg.audioBase); V.X.cfg = cfg; V.X.lib = lib; V.X.vocab = vocab;
     // 有真人 MP3 的话，audio/index.json 里有清单；没有这个文件（目前就是这样）就当空，一律走手机朗读
     try { const ai = await getJSON('audio/index.json'); V.X.audio = new Set((ai && ai.files) || []); } catch (e) { /* 没有音频清单，用朗读 */ }
     initCards();   // 知识卡清单（没有也不影响）

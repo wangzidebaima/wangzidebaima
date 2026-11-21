@@ -1,5 +1,6 @@
 {
-  "version": "kp-v132",
+  "version": "kp-v133",
+  "audioBase": "",
   "appName": "书山小路",
   "rewards": [
     {
