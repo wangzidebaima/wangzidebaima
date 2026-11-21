@@ -1353,8 +1353,9 @@ let wrongManageOpen = false;
 // ---------------- 讲给家长听 ----------------
 // 每天挑一课有知识卡的内容：优先挑最近做错的那一课，否则按日期轮流。孩子用自己的话讲 1 分钟，家长听，讲完点一下。
 function tellPick(u) {
-  const t = S.today(), sets = [];
-  (u.subjects || []).forEach(id => { const s = subj(id); if (s) s.sets.forEach(m => { if (hasCard(m.id)) sets.push({ id: m.id, title: m.title, subject: s }); }); });
+  const t = S.today(), p = S.P(u.id), sets = [];
+  // 只从「有知识卡 且 孩子做过」的课里挑——没学过的课讲不出来。
+  (u.subjects || []).forEach(id => { const s = subj(id); if (s) s.sets.forEach(m => { if (hasCard(m.id) && p.sets[m.id]) sets.push({ id: m.id, title: m.title, subject: s }); }); });
   if (!sets.length) return null;
   const done = (S.P(u.id).tell || {})[t]; if (done) { const f = sets.find(x => x.id === done); if (f) return f; }
   const wrongSets = new Set(Object.values(S.P(u.id).wrong).filter(e => e.q).map(e => setOfQ(e.q.id)));
