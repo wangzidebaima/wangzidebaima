@@ -1,5 +1,5 @@
 // 所有页面：登录、首页、题库、答题、结果、错题本、随机练习、记录、打印
-import { h, esc, mathHtml, toast, keypad, praiseText, playSay, slug, playScript, stopScript, stopAllSound, playListen, cycleSpeed, speedText, speedMul, zhVoices, testVoice, getVoicePref, setVoicePref } from './ui.js';
+import { speakZh, h, esc, mathHtml, toast, keypad, praiseText, playSay, slug, playScript, stopScript, stopAllSound, playListen, cycleSpeed, speedText, speedMul, zhVoices, testVoice, getVoicePref, setVoicePref } from './ui.js';
 import * as B from './badges.js';
 import * as S from './store.js';
 import { gradeQuestion, answerText, userText, isAnswered } from './grade.js';
@@ -7,6 +7,7 @@ import { RANDOM, makeSession } from './mathgen.js';
 import { recReady, startRec, micErrText } from './speech.js';
 import { GRADES, engUnit, PAPER_HEARS } from './grades.js';
 import { ev } from './stat.js';
+import { qSayLines } from './zhtext.js';
 import { cardBtn, cardPageBody, cardBlock, cardBlockData, hasCard, hasSubjectCards, setOfQ } from './cards.js';
 
 // audio 是「将来做 MP3 音频」预留的空集合：目前站内没有任何 mp3 文件，playSay 一律走
@@ -767,13 +768,13 @@ function startEssay(set) {
   const textBox = h('section', { class: 'passage essaytext', hidden: true }, P.map(t => h('p', {}, t)));
   const playBtn = h('button', { class: 'btn primary wide', onclick: () => {
     playBtn.textContent = '正在朗读…（点这里重听）'; state.textContent = '听一听，哪些词语、句子让你觉得很美？';
-    playScript(P.map(t => ({ t, s: '' })), {}, { lang: 'zh-CN', times: 1, rate: 0.82, pause: 900, onend: () => { playBtn.textContent = '🔁 再听一遍'; state.textContent = '听完啦！可以看原文，再学一学好词好句，然后做小题。'; textBtn.disabled = false; } });
+    speakZh(P, X.audio, { gap: 900, ttsRate: 0.82, onend: () => { playBtn.textContent = '🔁 再听一遍'; state.textContent = '听完啦！可以看原文，再学一学好词好句，然后做小题。'; textBtn.disabled = false; } });
   } }, '▶ 开始听');
   const stopBtn = h('button', { type: 'button', class: 'btn ghost wide', style: 'margin-top:10px', onclick: () => { stopScript(); playBtn.textContent = '▶ 重新开始听'; state.textContent = '已停止。可以重听，或者直接看原文。'; textBtn.disabled = false; } }, '■ 停止');
   const textBtn = h('button', { class: 'btn ghost wide', style: 'margin-top:10px', onclick: () => { textBox.hidden = !textBox.hidden; textBtn.textContent = textBox.hidden ? '📖 看原文' : '收起原文'; } }, '📖 看原文');
   const words = h('section', {}, h('h2', { class: 'sh' }, '好词'), h('div', { class: 'chips' }, (set.words || []).map(w => h('span', { class: 'chip' }, w))),
     h('h2', { class: 'sh' }, '好句'), h('div', { class: 'list' }, (set.sents || []).map(x => h('div', { class: 'row static' }, h('div', {}, h('b', {}, x[0]), x[1] ? h('small', {}, x[1]) : null),
-      h('button', { type: 'button', class: 'spk', onclick: () => playScript([{ t: x[0], s: '' }], {}, { lang: 'zh-CN', times: 1, rate: 0.8 }) }, '🔊')))));
+      h('button', { type: 'button', class: 'spk', onclick: () => speakZh([x[0]], X.audio, { ttsRate: 0.8 }) }, '🔊')))));
   const go = h('button', { class: 'btn primary wide', style: 'margin-top:14px', onclick: () => {
     stopScript();
     mount(runQuiz({ uid: u.id, mk: 'cnread', mode: 'exam', title: set.title, subtitle: '美文小题', ctxFn: (done) => h('details', { class: 'ctx', open: !done }, h('summary', {}, '📖 原文'), h('section', { class: 'passage' }, P.map(t => h('p', {}, t)))),
@@ -1010,10 +1011,7 @@ function renderQ(q, no, ans, update, restore) {
   // 低年级（config 里 readAloud:true）：孩子识字少，每题加「听题」，手机把题目和选项读出来
   const me = user();
   if (me && me.readAloud && ['choice', 'tf', 'fill', 'math'].includes(q.type)) {
-    const say0 = q.sayText || String(q.stem || '').replace(/_{2,}|□/g, '空').replace(/\s*[+＋]\s*/g, '加').replace(/\s*[−-]\s*/g, '减').replace(/\s*=\s*\?*/g, '等于几');
-    const lines = [{ t: say0, s: 'x' }];
-    if (q.type === 'choice' && !q.noOptSay) (q.options || []).forEach((o, k) => { if (o) lines.push({ t: 'ABCD'[k] + '，' + o, s: 'x' }); });
-    if (q.type === 'tf') lines.push({ t: '对，还是错？', s: 'x' });
+    const lines = qSayLines(q);
     // 听音选字题（q.sayzh，一年级 220 道）只留一个「听一听」：
     // 另一个「听题」读的是「点听一听，选出你听到的字」加四个选项，孩子点了听不到要选的字，会以为坏了。
     // 题干「听一听，说的是哪个字？」本身已经写清楚了，不用再读一遍。
@@ -1022,9 +1020,9 @@ function renderQ(q, no, ans, update, restore) {
     const b = q.sayzh ? null : h('button', { type: 'button', class: 'spk listenq', onclick: () => {
       if (qOn) { stopScript(); qOn = false; b.textContent = '🔊 听题'; return; }
       stopScript(); qOn = true; b.textContent = '■ 停';
-      playScript(lines, {}, { lang: 'zh-CN', times: 1, rate: 0.8, pause: 500, onend: () => { qOn = false; b.textContent = '🔊 听题'; } });
+      speakZh(lines, X.audio, { ttsRate: 0.8, gap: 500, onend: () => { qOn = false; b.textContent = '🔊 听题'; } });
     } }, '🔊 听题');
-    const b2 = q.sayzh ? h('button', { type: 'button', class: 'spk listenq', onclick: () => { stopScript(); playScript([{ t: q.sayzh, s: 'x' }], {}, { lang: 'zh-CN', times: 1, rate: 0.7, pause: 400 }); } }, '🔊 听一听') : null;
+    const b2 = q.sayzh ? h('button', { type: 'button', class: 'spk listenq', onclick: () => { stopScript(); speakZh([q.sayzh], X.audio, { ttsRate: 0.7, gap: 400 }); } }, '🔊 听一听') : null;
     if (b || b2) { const first = box.querySelector('.stem'); const rowEl = h('div', { class: 'speakrow' }, b2, b); if (first) first.after(rowEl); else box.prepend(rowEl); }
   }
   return box;

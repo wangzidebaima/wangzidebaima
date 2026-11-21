@@ -1,5 +1,6 @@
 // 英语“学”：单词卡片。先看词、听发音，点一下看意思，自己点“会了 / 不会”。不会的会再出现，一组 5 个。
-import { h, toast, playSay, slug, stopAllSound, playScript, stopScript } from './ui.js';
+import { h, toast, playSay, slug, stopAllSound, stopScript, speakZh } from './ui.js';
+import { tipSay } from './zhtext.js';
 import * as S from './store.js';
 import { X, user, mount, page } from './views.js';
 import { loadBook } from './english.js';
@@ -121,7 +122,7 @@ export function tipsView(key) {
   const m = key.match(/^e(\d)-(.+)$/), cn = key.match(/^(g\d+chinese)-(.+)$/);
   const back = m ? '#/learn' : cn ? `#/unit/${cn[1]}/${cn[2]}` : '#/';
   const name = m ? ((X.lib.unitNames || {})[m[2]] || m[2]) : cn ? ((X.lib.unitNames || {})[cn[2]] || cn[2]) : '';
-  const speakAll = () => playScript(T.items.map(([a, b]) => ({ t: a + '。' + b.replace(/[A-Za-z][A-Za-z\s,.\'’!?/-]*/g, ' '), s: 'x' })), {}, { lang: 'zh-CN', times: 1, rate: 0.85, pause: 700 });
+  const speakAll = () => speakZh(T.items.map(([a, b]) => tipSay(a, b)), X.audio, { ttsRate: 0.85, gap: 700 });
   mount(page('本单元要点', [
     name ? h('p', { class: 'note' }, name) : null,
     ...T.items.map(([a, b]) => h('section', { class: 'tip' }, h('h3', {}, a), h('p', {}, b))),

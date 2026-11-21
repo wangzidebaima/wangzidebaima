@@ -1,5 +1,5 @@
 // 英语：单词 / 短语 / 句子小测，按单元出题；黑体词要会拼写，非黑体词只考意思和发音
-import { h, toast, playSay, slug, playScript, stopScript } from './ui.js';
+import { h, toast, playSay, slug, playScript, stopScript, playMp3Lines } from './ui.js';
 import * as S from './store.js';
 import { X, user, mount, page, runQuiz, cap } from './views.js';
 import { RANDOM, TW, TS, weighted } from './mathgen.js';
@@ -144,10 +144,14 @@ function dictFlow(u, R, qs, kind) {
     showBtn.disabled = true; playBtn.textContent = '正在听…（点这里重听）';
     status.textContent = `一共 ${qs.length} 个词，每个读两遍，请边听边写在纸上。`;
     const lines = []; qs.forEach(q => { lines.push({ t: q.say, s: 'x' }); lines.push({ t: q.say, s: 'x' }); });
-    playScript(lines, {}, { times: 1, rate: 0.85, pause: 2600, onend: () => {
+    const finish = () => {
       showBtn.disabled = false; playBtn.textContent = '🔁 再听一遍';
       status.textContent = '听完啦！检查一下纸上写的，然后点“显示答案”。';
-    } });
+    };
+    const tts = (ls) => playScript(ls, {}, { times: 1, rate: 0.85, pause: 2600, onend: finish });
+    // 有真人 MP3（audio/w/<key>.mp3）就播 MP3：同一个词两遍间隔 1.5 秒，换词停 2.6 秒；缺 MP3 或中途出错就用手机朗读
+    const mp = []; qs.forEach(q => { const k = q.sayKey || (q.rv && q.rv.key); mp.push({ t: k, gap: 1500 }); mp.push({ t: k, gap: 2600 }); });
+    if (!qs.every(q => q.sayKey || (q.rv && q.rv.key)) || !playMp3Lines(mp, X.audio, { onend: finish, onfail: (rest) => tts(lines.slice(lines.length - rest.length)) }, (k) => 'audio/w/' + k + '.mp3')) tts(lines);
   } }, '▶ 开始听');
   mount(page('听写', [
     h('p', { class: 'note' }, '不用在手机上打字：先听完全部，写在纸上；写完自己点“显示答案”，再对一对。'),

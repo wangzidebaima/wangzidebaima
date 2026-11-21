@@ -13,6 +13,7 @@
     python make_audio.py --speaking    只做口语跟读句子（放在 audio/w/sp-*.mp3）
     python make_audio.py --words       生成所有年级单词、短语、句子的美式发音（放在 audio/w/ 里）
     python make_audio.py --cn          生成语文词语/生字听写发音（放在 audio/w/cn-*.mp3，女声，语速 -10%）
+    python make_audio.py --zh          生成语文整段朗读（美文、好句、古诗、学一学要点、一二年级听题）放在 audio/z/*.mp3；要先装 node（检查脚本用的那个就行）
     python make_audio.py --dry-run 不联网，只生成 2 秒的静音，用来检查流程
 
 生成的 MP3 放在上一级的 audio 文件夹里，同时更新 audio/index.json。
@@ -194,8 +195,34 @@ async def make_cn(dry):
     await asyncio.gather(*[one(n, t) for n, t in todo])
 
 
+# ---------- 语文整段朗读：美文、好句、古诗、学一学要点、一二年级听题 ----------
+def zh_jobs():
+    """要读哪些文字、文件名叫什么，全部由 tools/zh_jobs.mjs 给出（和网页共用 js/zhtext.js 的规则）"""
+    import subprocess
+    r = subprocess.run(['node', str(pathlib.Path(__file__).resolve().parent / 'zh_jobs.mjs')], capture_output=True, check=True)
+    return json.loads(r.stdout.decode('utf-8'))
+
+
+async def make_zh(dry):
+    out_dir = AUDIO / 'z'
+    out_dir.mkdir(parents=True, exist_ok=True)
+    jobs = zh_jobs()
+    todo = [(k, v) for k, v in jobs.items() if FORCE or not (out_dir / (k + '.mp3')).exists()]
+    print('语文整段朗读：需要生成 %d 个，已有 %d 个' % (len(todo), len(jobs) - len(todo)))
+    sem = asyncio.Semaphore(4)
+    done = [0]
+
+    async def one(k, v):
+        async with sem:
+            (out_dir / (k + '.mp3')).write_bytes(await tts(v['t'], v['v'], v['r'], dry))
+            done[0] += 1
+            if done[0] % 100 == 0:
+                print('  已完成', done[0], '/', len(todo))
+    await asyncio.gather(*[one(k, v) for k, v in todo])
+
+
 def write_index():
-    files = sorted(['audio/' + p.name for p in AUDIO.glob('*.mp3')] + ['audio/w/' + p.name for p in (AUDIO / 'w').glob('*.mp3')])
+    files = sorted(['audio/' + p.name for p in AUDIO.glob('*.mp3')] + ['audio/w/' + p.name for p in (AUDIO / 'w').glob('*.mp3')] + ['audio/z/' + p.name for p in (AUDIO / 'z').glob('*.mp3')])
     (AUDIO / 'index.json').write_text(json.dumps({'files': files}, ensure_ascii=False, indent=1), encoding='utf-8')
     print('已更新 audio/index.json，共 %d 个音频' % len(files))
 
@@ -209,6 +236,8 @@ async def main():
     AUDIO.mkdir(exist_ok=True)
     if '--index-only' in args:
         write_index(); return
+    if '--zh' in args:
+        await make_zh(dry); write_index(); print('完成。把 audio 文件夹上传到 GitHub 即可。'); return
     if '--cn' in args:
         await make_cn(dry); write_index(); print('完成。把 audio 文件夹上传到 GitHub 即可。'); return
     if '--words' in args:

@@ -1,5 +1,5 @@
 // 语文“学一学”：古诗文学习页——先听、读原文，看注释和大意，再用“挡一挡”练背，最后去做题
-import { h, playScript, stopScript } from './ui.js';
+import { h, speakZh, stopScript } from './ui.js';
 import * as S from './store.js';
 import { ev } from './stat.js';
 import { X, mount, page, setLearnHook } from './views.js';
@@ -29,7 +29,7 @@ export function poemView(pid) {
   };
   const hideBtn = h('button', { type: 'button', class: 'btn ghost', onclick: () => { level = (level + 1) % 3; hideBtn.textContent = ['🙈 挡一挡', '🙈 再多挡', '👀 全显示'][level]; draw(); } }, '🙈 挡一挡');
   const status = h('p', { class: 'hint' });
-  const play = (rate) => { status.textContent = '正在朗读…'; playScript(lines.map(t => ({ t, s: 'x' })), {}, { lang: 'zh-CN', times: 1, rate, pause: P.prose ? 600 : 1100, onend: () => { status.textContent = '读完啦，可以跟着再读一遍。'; } }); };
+  const play = (rate) => { status.textContent = '正在朗读…'; speakZh(lines, X.audio, { mult: rate < 0.7 ? 0.8 : 1, ttsRate: rate, gap: P.prose ? 600 : 1100, onend: () => { status.textContent = '读完啦，可以跟着再读一遍。'; } }); };
   draw();
   mount(page(P.title, [
     h('p', { class: 'note' }, P.by),

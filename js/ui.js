@@ -1,4 +1,5 @@
 // 界面小工具：创建元素、提示、数学键盘、分数排版
+import { zhFile } from './zhtext.js';
 export function h(tag, props, ...kids) {
   const el = document.createElement(tag);
   for (const [k, v] of Object.entries(props || {})) {
@@ -255,16 +256,18 @@ export function stopScript() { scriptRun++; try { window.speechSynthesis && wind
 // 文件名规则要和 tools/make_audio.py 的 cn_name() 完全一致
 export const cnAudioFile = (t) => 'audio/w/cn-' + [...t].map(c => c.codePointAt(0).toString(16)).join('-') + '.mp3';
 // lines: [{t, gap}]（gap = 读完这一遍后停几毫秒）。所有词都有 MP3 才播并返回 true；否则返回 false，由调用方走手机朗读
-export function playCnMp3(lines, avail, opts = {}) {
-  if (!avail || !lines.length || !lines.every(l => avail.has(cnAudioFile(l.t)))) return false;
+export function playCnMp3(lines, avail, opts = {}) { return playMp3Lines(lines, avail, opts, cnAudioFile); }
+// 通用：fileOf(文字) 给出这段文字对应的 MP3 路径
+export function playMp3Lines(lines, avail, opts, fileOf) {
+  if (!avail || !lines.length || !lines.every(l => avail.has(fileOf(l.t)))) return false;
   const run = ++scriptRun; let i = 0;
   try { window.speechSynthesis && window.speechSynthesis.cancel(); } catch (e) { /* ignore */ }
   try { if (curAudio) curAudio.pause(); } catch (e) { /* ignore */ }
   const next = () => {
     if (run !== scriptRun) return;
     if (i >= lines.length) { if (opts.onend) opts.onend(); return; }
-    const l = lines[i], a = new Audio(cnAudioFile(l.t)); curAudio = a; setRate(a, opts.mult || 1);
-    const go = () => { if (run !== scriptRun) return; i++; setTimeout(next, i >= lines.length ? 0 : (l.gap == null ? 1500 : l.gap)); };
+    const l = lines[i], a = new Audio(fileOf(l.t)); curAudio = a; setRate(a, opts.mult || 1);
+    const go = () => { if (run !== scriptRun) return; i++; setTimeout(next, i >= lines.length ? 0 : (l.gap == null ? (opts.gap == null ? 1500 : opts.gap) : l.gap)); };
     a.onended = go;
     a.onerror = () => { if (run === scriptRun && opts.onfail) { opts.onfail(lines.slice(i), i); } else go(); };
     a.play().catch(() => { if (run === scriptRun && opts.onfail) opts.onfail(lines.slice(i), i); });
@@ -319,3 +322,12 @@ export function playScript(lines, speakers, opts = {}) {
 }
 
 export const slug = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+
+// 语文整段朗读（美文、古诗、要点、听题）：有 MP3（audio/z/<码>.mp3）就播 MP3，没有就用手机朗读。
+// texts: 要读的文字数组；opts: { mult 速度倍数, gap 每段之间停几毫秒, ttsRate 手机朗读语速, onend }
+export function speakZh(texts, avail, opts = {}) {
+  const gap = opts.gap == null ? 900 : opts.gap;
+  const tts = (rest) => playScript(rest.map(t => ({ t: typeof t === 'string' ? t : t.t, s: 'x' })), {}, { lang: 'zh-CN', times: 1, rate: opts.ttsRate || 0.82, pause: gap, onend: opts.onend });
+  const lines = texts.map(t => ({ t }));
+  if (!playMp3Lines(lines, avail, { mult: opts.mult, gap, onend: opts.onend, onfail: tts }, zhFile)) tts(lines);
+}
