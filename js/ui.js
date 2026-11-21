@@ -260,11 +260,12 @@ export function playCnMp3(lines, avail, opts = {}) { return playMp3Lines(lines, 
 // 通用：fileOf(文字) 给出这段文字对应的 MP3 路径
 export function playMp3Lines(lines, avail, opts, fileOf) {
   if (!avail || !lines.length || !lines.every(l => avail.has(fileOf(l.t)))) return false;
-  const run = ++scriptRun; let i = 0;
+  const run = ++scriptRun; let i = opts.startAt || 0;
   try { window.speechSynthesis && window.speechSynthesis.cancel(); } catch (e) { /* ignore */ }
   try { if (curAudio) curAudio.pause(); } catch (e) { /* ignore */ }
   const next = () => {
     if (run !== scriptRun) return;
+    if (opts.onpos) opts.onpos(i);
     if (i >= lines.length) { if (opts.onend) opts.onend(); return; }
     const l = lines[i], a = new Audio(fileOf(l.t)); curAudio = a; setRate(a, opts.mult || 1);
     const go = () => { if (run !== scriptRun) return; i++; setTimeout(next, i >= lines.length ? 0 : (l.gap == null ? (opts.gap == null ? 1500 : opts.gap) : l.gap)); };
@@ -294,9 +295,11 @@ export function playScript(lines, speakers, opts = {}) {
   stopScript(); const run = scriptRun, times = opts.times || 2, rate = opts.rate || 0.95;
   const items = [];
   for (let k = 0; k < times; k++) { lines.forEach(l => items.push({ t: l.t, who: (speakers && speakers[l.s]) || '' })); if (k < times - 1) items.push({ gap: 2200 }); }
-  let i = 0;
+  let i = opts.startAt || 0;
   const next = () => {
-    if (run !== scriptRun || i >= items.length) { if (run === scriptRun && opts.onend) opts.onend(); return; }
+    if (run !== scriptRun) return;
+    if (opts.onpos) opts.onpos(i);
+    if (i >= items.length) { if (opts.onend) opts.onend(); return; }
     const it = items[i++];
     if (it.gap) { setTimeout(next, it.gap); return; }
     const u = new SpeechSynthesisUtterance(it.t); u.lang = lang; u.rate = rate;

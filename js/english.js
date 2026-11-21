@@ -139,20 +139,31 @@ function dictFlow(u, R, qs, kind) {
   const backTo = '#/rand/' + kind;
   const status = h('p', { class: 'note dstat' }, `一共 ${qs.length} 个，准备好纸和笔，点“开始听”。`);
   const showBtn = h('button', { class: 'btn primary wide', style: 'margin-top:10px', disabled: true, onclick: () => { stopScript(); review(); } }, '显示答案');
-  const stopBtn = h('button', { type: 'button', class: 'btn ghost wide', style: 'margin-top:10px', onclick: () => { stopScript(); playBtn.textContent = '▶ 重新开始听'; showBtn.disabled = false; status.textContent = '已停止。想重听点上面的按钮；写完了点“显示答案”。'; } }, '■ 停止');
-  const playBtn = h('button', { class: 'btn primary wide', onclick: () => {
+  let breakAt = 0, stopped = false;   // 断点行号（每词两行）、是否处于“停止”态
+  const playBtn = h('button', { class: 'btn primary wide', onclick: () => { startPlay(stopped && breakAt > 0 ? Math.floor(breakAt / 2) * 2 : 0); } }, '▶ 开始听');
+  const stopBtn = h('button', { type: 'button', class: 'btn ghost wide', style: 'margin-top:10px', onclick: () => {
+    if (stopped) { startPlay(0); return; }   // 停止态下再点 = 从头重听
+    stopScript(); stopped = true;
+    playBtn.textContent = breakAt > 0 ? '▶ 继续听' : '▶ 重新开始听';
+    stopBtn.textContent = '↺ 从头重听';
+    showBtn.disabled = false;
+    status.textContent = '已停止。点“继续听”接着刚才的听；点“从头重听”重新开始；写完了点“显示答案”。';
+  } }, '■ 停止');
+  function startPlay(from) {
+    stopped = false; breakAt = from; stopBtn.textContent = '■ 停止';
     showBtn.disabled = true; playBtn.textContent = '正在听…（点这里重听）';
     status.textContent = `一共 ${qs.length} 个词，每个读两遍，请边听边写在纸上。`;
     const lines = []; qs.forEach(q => { lines.push({ t: q.say, s: 'x' }); lines.push({ t: q.say, s: 'x' }); });
     const finish = () => {
       showBtn.disabled = false; playBtn.textContent = '🔁 再听一遍';
+      breakAt = 0;
       status.textContent = '听完啦！检查一下纸上写的，然后点“显示答案”。';
     };
-    const tts = (ls) => playScript(ls, {}, { times: 1, rate: 0.85, pause: 2600, onend: finish });
+    const tts = (ls, fromIdx) => playScript(ls, {}, { times: 1, rate: 0.85, pause: 2600, startAt: fromIdx, onpos: (p) => { breakAt = p; }, onend: finish });
     // 有真人 MP3（audio/w/<key>.mp3）就播 MP3：同一个词两遍间隔 1.5 秒，换词停 2.6 秒；缺 MP3 或中途出错就用手机朗读
     const mp = []; qs.forEach(q => { const k = q.sayKey || (q.rv && q.rv.key); mp.push({ t: k, gap: 1500 }); mp.push({ t: k, gap: 2600 }); });
-    if (!qs.every(q => q.sayKey || (q.rv && q.rv.key)) || !playMp3Lines(mp, X.audio, { onend: finish, onfail: (rest) => tts(lines.slice(lines.length - rest.length)) }, (k) => 'audio/w/' + k + '.mp3')) tts(lines);
-  } }, '▶ 开始听');
+    if (!qs.every(q => q.sayKey || (q.rv && q.rv.key)) || !playMp3Lines(mp, X.audio, { startAt: from, onpos: (p) => { breakAt = p; }, onend: finish, onfail: (rest, i) => tts(lines, i) }, (k) => 'audio/w/' + k + '.mp3')) tts(lines, from);
+  }
   mount(page('听写', [
     h('p', { class: 'note' }, '不用在手机上打字：先听完全部，写在纸上；写完自己点“显示答案”，再对一对。'),
     status, playBtn, stopBtn, showBtn,
