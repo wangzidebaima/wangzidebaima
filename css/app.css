@@ -206,6 +206,7 @@ textarea.sum { width: 100%; border: 1.5px solid var(--line); border-radius: 14px
 @media print {
   body { background: #fff; color: #000; font-size: 13pt; } .noprint, #toast, #kb, #upd { display: none !important; }
   .print { padding: 0; max-width: none; } .print .passage { background: #fff; } .pagebreak { break-before: page; }
+  .kc-trap { background: #fff !important; color: #000 !important; border: 1px solid #999 !important; } .kc-trap h3, .kc-trap li { color: #000 !important; }
   :root { --surface: #fff; --bg: #fff; --ink: #000; --muted: #444; --line: #bbb; }
 }
 

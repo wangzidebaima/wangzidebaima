@@ -41,6 +41,11 @@ function body(c) {
     h('p', { class: 'kc-note' }, '这是按课本内容整理的要点，细节以课本为准。'));
 }
 
+// 打印用：只要卡片内容，不带按钮、不记统计。没有就返回 null
+export async function cardBlock(setId) {
+  try { const c = await getCard(setId); return c ? body(c) : null; } catch (e) { return null; }
+}
+
 // 弹窗：做题中途、看解析时点开，不会离开当前页面，做到一半的题不会丢
 export async function openCard(setId, from) {
   if (document.getElementById('kcmodal')) return;

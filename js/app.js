@@ -122,6 +122,8 @@ async function render() {
       case 'me': return V.records();
       case 'check': return await V.checkPage();
       case 'weekrev': return V.weekReview(a === 'a');
+      case 'packs': return V.packsPage();
+      case 'pack': return await V.packView(a, b === 'a');
       case 'print': return await V.printView(a, b === 'a');
       default: return V.home();
     }

@@ -7,7 +7,7 @@ import { RANDOM, makeSession } from './mathgen.js';
 import { recReady, startRec, micErrText } from './speech.js';
 import { GRADES, engUnit, PAPER_HEARS } from './grades.js';
 import { ev } from './stat.js';
-import { cardBtn, cardPageBody, hasCard, hasSubjectCards, setOfQ } from './cards.js';
+import { cardBtn, cardPageBody, cardBlock, hasCard, hasSubjectCards, setOfQ } from './cards.js';
 
 // audio 是「将来做 MP3 音频」预留的空集合：目前站内没有任何 mp3 文件，playSay 一律走
 // 手机自带朗读（见 ui.js）。别删这块和 sw.js 里的音频 Range 缓存，将来上音频可直接接着用。
@@ -1395,6 +1395,7 @@ export function errors() {
     stuck.length ? h('h2', { class: 'sh' }, `🙋 我说「还是不会」的题（${stuck.length}）`) : null,
     stuck.length ? h('div', { class: 'list' }, stuckRows()) : null,
     stuck.length ? h('p', { class: 'note' }, '这些题已经告诉家长了。弄懂之后点「✓ 弄懂了」，清单里就去掉。') : null,
+    h('a', { class: 'btn ghost wide', style: 'margin-top:10px', href: '#/packs' }, '📚 复习包（错题 + 知识要点，可打印）'),
     h('a', { class: 'btn ghost wide', style: 'margin-top:10px', href: '#/weekrev' }, '🖨 本周错题复习卷（打印 / 存 PDF）'),
     h('div', { class: 'list' }, entries.map(([t, es]) => h('a', { class: 'row', href: 'javascript:void(0)', onclick: (ev) => { ev.preventDefault(); start(es, t); } }, h('div', {}, h('b', {}, t), h('small', {}, es.map(e => e.q.stem.replace(/_{2,}/g, '__').slice(0, 24)).slice(0, 2).join(' ； '))), h('span', { class: 'chip bad' }, es.length + ' 道')))),
   ]));
@@ -1738,6 +1739,46 @@ export async function speak(id) {
 }
 
 // ---------------- 打印版 ----------------
+// 复习包：选一个科目，把这个科目错题本里的题，连同这些题所在课的知识卡，排成一份可打印的复习单
+const wrongBySubject = (u) => {
+  const m = {};
+  Object.values(S.P(u.id).wrong).filter(e => e.q).forEach(e => {
+    const sid = setOfQ(e.q.id), sm = setMeta(sid); if (!sm) return;
+    const o = (m[sm.subject.id] = m[sm.subject.id] || { subject: sm.subject, sets: {} });
+    (o.sets[sid] = o.sets[sid] || { meta: sm.meta, qs: [] }).qs.push(e);
+  });
+  return m;
+};
+export function packsPage() {
+  const u = user(), m = wrongBySubject(u), list = Object.values(m);
+  if (!list.length) { toast('错题本是空的，暂时不用做复习包'); location.hash = '#/errors'; return; }
+  mount(page('复习包', [
+    h('p', { class: 'note' }, '选一个科目：把这个科目错题本里还没毕业的题，加上这些题所在那一课的知识要点，排成一份复习单，可以直接看，也能打印。'),
+    h('div', { class: 'list' }, list.map(o => {
+      const n = Object.values(o.sets).reduce((a, x) => a + x.qs.length, 0);
+      return h('a', { class: 'row', href: '#/pack/' + o.subject.id }, h('div', {}, h('b', {}, o.subject.icon + ' ' + o.subject.title), h('small', {}, `${Object.keys(o.sets).length} 课 · ${n} 道错题`)), h('span', {}, '›'));
+    }))], { back: '#/errors' }));
+}
+export async function packView(subjectId, withAns) {
+  const u = user(), o = wrongBySubject(u)[subjectId];
+  if (!o) { toast('这个科目没有错题'); location.hash = '#/packs'; return; }
+  const ids = Object.keys(o.sets).sort((a, b) => (o.sets[a].meta.title < o.sets[b].meta.title ? -1 : 1));
+  let left = 40; const sections = [];
+  for (const id of ids) {
+    if (left <= 0) break;
+    const qs = o.sets[id].qs.slice(0, left).map(e => ({ ...e.q })); left -= qs.length;
+    const card = await cardBlock(id);
+    sections.push({ title: o.sets[id].meta.title, questions: qs, intro: card });
+  }
+  const total = sections.reduce((a, s) => a + s.questions.length, 0);
+  const set = { title: `${u.display}的复习包 · ${o.subject.title}`, subtitle: `${S.today()} · ${sections.length} 课 · ${total} 道错题（先看每课的要点，再做题）`, sections };
+  ev('复习包', subjectId, total);
+  const shuf = shuffleOpts(set, seededRand('pack:' + subjectId + ':' + total));
+  // 打乱会把题集整个复制一遍，页面节点（知识卡）复制不了，打乱后再按顺序挂回去
+  shuf.sections.forEach((s, i) => { s.intro = sections[i].intro; });
+  return renderPrint(shuf, withAns, '#/packs', '#/pack/' + subjectId + (withAns ? '' : '/a'));
+}
+
 // 每周错题复习卷：取最近 7 天做错的题（没有的话取错题本里最近的 30 题），排成一张可打印的卷子
 export function weekReview(withAns) {
   const u = user(), list = Object.values(S.P(u.id).wrong).filter(e => e.q);
@@ -1776,6 +1817,7 @@ function renderPrint(set, withAns, backHref, toggleHref) {
   let no = 0;
   set.sections.forEach(sec => {
     doc.append(h('h2', {}, sec.title));
+    if (sec.intro) doc.append(sec.intro);
     if (sec.bank) doc.append(h('p', { class: 'bank' }, sec.bank.join('   ')));
     sec.questions.forEach(q => {
       no++;
