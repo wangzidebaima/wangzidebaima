@@ -7,7 +7,7 @@ import { RANDOM, makeSession } from './mathgen.js';
 import { recReady, startRec, micErrText } from './speech.js';
 import { GRADES, engUnit, PAPER_HEARS } from './grades.js';
 import { ev } from './stat.js';
-import { cardBtn, cardPageBody, cardBlock, hasCard, hasSubjectCards, setOfQ } from './cards.js';
+import { cardBtn, cardPageBody, cardBlock, cardBlockData, hasCard, hasSubjectCards, setOfQ } from './cards.js';
 
 // audio 是「将来做 MP3 音频」预留的空集合：目前站内没有任何 mp3 文件，playSay 一律走
 // 手机自带朗读（见 ui.js）。别删这块和 sw.js 里的音频 Range 缓存，将来上音频可直接接着用。
@@ -541,6 +541,7 @@ export function home() {
     h('h2', { class: 'sh' }, '我的'),
     h('div', { class: 'grid' },
       h('a', { class: 'card plain', href: '#/badges' }, h('span', { class: 'ic' }, '🏅'), h('b', {}, '成就徽章'), h('small', {}, '拿到就永远是你的'), h('em', {}, `${B.unlockedCount(u.id)}/${B.totalCount(u.id)}`)),
+      tellCard(u),
       h('a', { class: 'card plain', href: '#/errors' }, h('span', { class: 'ic' }, '📒'), h('b', {}, '错题本'), h('small', {}, wrongN ? '做错的题在这里再练' : '还没有错题'), wrongN ? h('em', { class: 'badge' }, wrongN + ' 道') : null),
       h('a', { class: 'card plain', href: '#/me' }, h('span', { class: 'ic' }, '📊'), h('b', {}, '我的记录'), h('small', {}, '星星、进度、发给家长'))),
     standalone() ? null : h('a', { class: 'link instl', href: '#/install' }, '📲 装到手机桌面，打开更方便')));
@@ -1257,6 +1258,24 @@ export async function askForHelp(u, q, custom) {
   if (ok) setTimeout(() => { location.href = 'weixin://'; }, 900);
 }
 
+function reasonRow(u, q) {
+  const row = h('div', { class: 'chips askrow reasons' }, h('small', {}, '错在哪？'));
+  const paint = () => row.querySelectorAll('.chipb').forEach(b => b.classList.toggle('on', b.dataset.r === S.getReason(u.id, q.id)));
+  S.REASONS.forEach(r => row.append(h('button', { type: 'button', class: 'chipb', 'data-r': r, onclick: () => {
+    const same = S.getReason(u.id, q.id) === r;
+    S.setReason(u.id, q.id, same ? '' : r); if (!same) ev('错因', r);
+    paint();
+  } }, r)));
+  paint(); return row;
+}
+// 本周错因小结：多是粗心就提醒检查，多是不会就提醒先看知识卡
+export function reasonCard(u) {
+  const st = S.reasonStats(u.id, 7); if (!st.n) return null;
+  const top = Object.entries(st.by).sort((a, b) => b[1] - a[1])[0];
+  const tip = { '粗心': '粗心占多：做完用 10 秒从头检查一遍，特别是符号和单位。', '没看清题': '没看清题占多：读题时用笔圈出关键词和“不”“没有”“错误的是”。', '不会': '不会占多：先看这一课的知识卡，再回头做错题。', '记混了': '记混占多：把容易混的两个概念放在一起对比着记。' }[top[0]];
+  return h('section', { class: 'reasoncard' }, h('b', {}, '📈 最近 7 天，你标了 ' + st.n + ' 道错因'),
+    h('p', {}, S.REASONS.filter(r => st.by[r]).map(r => `${r} ${st.by[r]}`).join(' · ')), h('p', { class: 'note' }, tip));
+}
 function reviewItem(r, no) {
   // self = 简答自评题。它没有客观对错，打绿勾会让孩子以为「自评说对了」等于「做对了」，
   // 所以单独一个中性标记，「正确答案」也改成「参考答案」。
@@ -1272,6 +1291,7 @@ function reviewItem(r, no) {
     r.star === 'new' ? h('p', { class: 'got' }, '⭐ +1') : null,
     // 看完解析还不明白：标一下，家长在专区里能看到；或者直接把题发给家长/老师
     u ? h('div', { class: 'chips askrow' }, h('button', { type: 'button', class: 'btn small ghost', onclick: () => { ev('题目报错', q.id); askForHelp(u, q, reportText(q)); } }, '🚩 这题有问题')) : null,
+    !ok && !self && u ? reasonRow(u, q) : null,
     !ok && !self && u ? h('div', { class: 'chips askrow' },
       cardBtn(setOfQ(q.id), 'wrong', '📖 看知识卡'),
       h('button', { type: 'button', class: 'btn small ghost', onclick: (e) => {
@@ -1332,6 +1352,35 @@ function startRandom(kind, gt, gl, gc) {
 // 逐题管理区展不展开：移出一题后要重绘整页（否则「全部重做」还按旧快照把已移出的题抽回来），
 // 记一下展开状态，省得孩子每移一题都要重新点开。
 let wrongManageOpen = false;
+// ---------------- 讲给家长听 ----------------
+// 每天挑一课有知识卡的内容：优先挑最近做错的那一课，否则按日期轮流。孩子用自己的话讲 1 分钟，家长听，讲完点一下。
+function tellPick(u) {
+  const t = S.today(), sets = [];
+  (u.subjects || []).forEach(id => { const s = subj(id); if (s) s.sets.forEach(m => { if (hasCard(m.id)) sets.push({ id: m.id, title: m.title, subject: s }); }); });
+  if (!sets.length) return null;
+  const done = (S.P(u.id).tell || {})[t]; if (done) { const f = sets.find(x => x.id === done); if (f) return f; }
+  const wrongSets = new Set(Object.values(S.P(u.id).wrong).filter(e => e.q).map(e => setOfQ(e.q.id)));
+  const pool = sets.filter(x => wrongSets.has(x.id)); const arr = pool.length ? pool : sets;
+  const n = Math.floor(new Date(t).getTime() / 86400000);
+  return arr[n % arr.length];
+}
+export const tellCard = (u) => { const k = tellPick(u); return k ? h('a', { class: 'card plain', href: '#/tell' }, h('span', { class: 'ic' }, '🗣️'), h('b', {}, '讲给家长听'), h('small', {}, S.toldToday(u.id) ? '今天讲过啦' : '今天讲：' + k.title), h('em', {}, `已讲 ${S.tellDays(u.id)} 天`)) : null; };
+export async function tellPage() {
+  const u = user(), k = tellPick(u); if (!k) { location.hash = '#/'; return; }
+  const c = await cardBlockData(k.id);
+  const told = S.toldToday(u.id);
+  const m = c && (c.traps || []).map(t => /^「([^」]+)」是错的/.exec(t)).find(Boolean);
+  const ask = m ? `家长可以问：“${m[1]}”，这句话对不对？为什么？` : '家长可以问：这一课最重要的是什么？举个例子？哪里最容易记错？';
+  const btn = h('button', { type: 'button', class: 'btn primary wide', disabled: told, onclick: () => { S.markTell(u.id, k.id); ev('讲给家长听', k.id); toast('讲完啦，真棒！'); btn.disabled = true; btn.textContent = '✅ 今天讲过了'; } }, told ? '✅ 今天讲过了' : '✅ 我讲完了');
+  mount(page('讲给家长听', [
+    h('h2', { class: 'sh' }, k.subject.icon + ' ' + k.title),
+    h('ol', { class: 'steps' }, h('li', {}, '先自己想：这一课学了什么？不看书，用自己的话说。'), h('li', {}, '讲给爸爸妈妈听，大约 1 分钟，讲到哪个例子就举哪个。'), h('li', {}, '卡住了，点下面看一眼知识卡，再接着讲。')),
+    h('p', { class: 'note' }, ask),
+    h('div', { class: 'chips', style: 'margin:10px 0' }, cardBtn(k.id, 'tell', '📖 看一眼知识卡')),
+    btn,
+    h('p', { class: 'note' }, '会讲，才算真的会。每天讲一课，比多做十道题更有用。')], { back: '#/' }));
+}
+
 export function errors() {
   const u = user(), list = Object.values(S.P(u.id).wrong);
   if (!list.length) { mount(page('错题本', h('div', { class: 'empty' }, h('div', { class: 'logo' }, '🎉'), h('h2', {}, '错题本是空的'), h('p', {}, '做错的题会自动进来；答对 2 次（要隔一天）就毕业。已经会了也能自己点「✓ 我会了，移出去」。')))); return; }
@@ -1390,6 +1439,7 @@ export function errors() {
   manageRows();
   mount(page('错题本', [
     h('p', { class: 'note' }, `一共 ${list.length} 道，分成 ${entries.length} 类。点下面一类，就只练这一类；每次最多 10 题，会优先挑最久没练的。答对 2 次（要隔一天）就毕业；已经会了也能自己移出去。`),
+    reasonCard(u),
     h('button', { class: 'btn primary wide', onclick: () => start(list, '') }, '全部混着重做'),
     h('details', { class: 'mgmt', style: 'margin:10px 0', open: wrongManageOpen, ontoggle: (e) => { wrongManageOpen = e.target.open; } }, h('summary', {}, '🧹 我会了，自己移出去（点开逐题看）'), manage),
     stuck.length ? h('h2', { class: 'sh' }, `🙋 我说「还是不会」的题（${stuck.length}）`) : null,
@@ -1445,6 +1495,7 @@ function weeklyText(u) {
     `这周新得 ⭐${stars} 颗；进度条 ${cy.pos} / ${goal()}` + (next ? `，离下一个奖励（${next.label}）还差 ${next.stars - cy.pos} 颗` : ''),
     weakU.length ? `本周错得多的内容：${weakU.join('、')}` : '本周没有新增错题，很棒！',
     weakT.length ? `容易错的题型：${weakT.join('、')}` : '',
+    (() => { const rs = S.reasonStats(u.id, 7); return rs.n ? `孩子自己标的错因：${S.REASONS.filter(r => rs.by[r]).map(r => r + ' ' + rs.by[r]).join('、')}` : ''; })(),
     `错题本里还有 ${st.wrong} 道没掌握（可以在「错题本」里打印本周错题复习卷）`];
   const tips = [];
   if (active.size < 4) tips.push('这周练习天数偏少，每天只要完成“今天做什么”里的任务，坚持比一次做很多更重要');

@@ -46,6 +46,9 @@ export async function cardBlock(setId) {
   try { const c = await getCard(setId); return c ? body(c) : null; } catch (e) { return null; }
 }
 
+// 取卡的原始数据（讲给家长听用）
+export async function cardBlockData(setId) { try { return await getCard(setId); } catch (e) { return null; } }
+
 // 弹窗：做题中途、看解析时点开，不会离开当前页面，做到一半的题不会丢
 export async function openCard(setId, from) {
   if (document.getElementById('kcmodal')) return;

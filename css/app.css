@@ -463,3 +463,7 @@ html[data-py="off"] .py { display: inline; }
 .sr-t { font-size: 12px; background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 0 6px; color: var(--muted); }
 .sr-b { margin: 4px 0 0; font-size: 14px; color: var(--muted); }
 .sr-b mark { background: #ffe082; color: #3a2a00; border-radius: 3px; padding: 0 1px; }
+
+.reasons { align-items: center; } .reasons small { color: var(--muted); }
+.reasoncard { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 10px 14px; margin: 8px 0; }
+.reasoncard p { margin: 4px 0 0; }

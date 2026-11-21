@@ -58,7 +58,7 @@ const cache = {};
 // 老格式（按题记的 stars）会在这一步汇总成每日账，星星总数一颗不少
 const normProfile = (p) => {
   p = p || {};
-  p.sets = p.sets || {}; p.wrong = p.wrong || {};
+  p.sets = p.sets || {}; p.wrong = p.wrong || {}; p.reasons = p.reasons || {}; p.tell = p.tell || {};
   p.rand = p.rand || { days: {}, types: {} }; p.rand.days = p.rand.days || {}; p.rand.types = p.rand.types || {};
   p.speak = p.speak || {}; p.log = p.log || [];
   p.days = p.days || {}; p.year = p.year || {};
@@ -288,3 +288,21 @@ export function taskDone(uid, t, extra) {
   if (t.kind === 'essay') { const w = extra && extra.window; if (!w) return 0; return p.log.filter(x => x.setId === w.item.id && x.d >= w.start && x.d <= w.end).length ? 1 : 0; }
   return 0;
 }
+
+// 错因标注：孩子自己说这道题为什么错（粗心 / 没看清题 / 不会 / 记混了），按天统计
+export const REASONS = ['粗心', '没看清题', '不会', '记混了'];
+export const getReason = (uid, qid) => ((P(uid).reasons || {})[qid] || {}).r || '';
+export function setReason(uid, qid, r) {
+  const p = P(uid); p.reasons = p.reasons || {};
+  if (r) p.reasons[qid] = { r, d: today() }; else delete p.reasons[qid];
+  save(uid);
+}
+export function reasonStats(uid, days = 7) {
+  const lim = shiftDay(days), out = {}; let n = 0;
+  Object.values(P(uid).reasons || {}).forEach(x => { if (x.d >= lim) { out[x.r] = (out[x.r] || 0) + 1; n++; } });
+  return { n, by: out };
+}
+// 讲给家长听：记哪天讲了哪一课
+export function markTell(uid, setId) { const p = P(uid); p.tell = p.tell || {}; p.tell[today()] = setId; save(uid); }
+export const tellDays = (uid) => Object.keys(P(uid).tell || {}).length;
+export const toldToday = (uid) => !!(P(uid).tell || {})[today()];
