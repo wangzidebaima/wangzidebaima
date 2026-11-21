@@ -1,7 +1,7 @@
 // 语文：四年级词语听写（词语表）。先把词全听完（每词两遍）→ 孩子写在纸上 → 自己点“显示答案”→ 自己判对错
-import { h, toast, playScript, stopScript } from './ui.js';
+import { h, toast, playScript, stopScript, playCnMp3 } from './ui.js';
 import * as S from './store.js';
-import { user, mount, page, cap } from './views.js';
+import { user, mount, page, cap, X } from './views.js';
 
 import { ginfo, gcode } from './grades.js';
 
@@ -14,7 +14,7 @@ async function load(k) {
 }
 const shuf = (a) => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
 const missed = (uid) => { const p = S.P(uid); p.cnw = p.cnw || {}; return p.cnw; };
-const say = (t) => playScript([{ t, s: 'x' }], {}, { lang: 'zh-CN', times: 1, rate: 0.8 });
+const say = (t) => { if (!playCnMp3([{ t }], X.audio)) playScript([{ t, s: 'x' }], {}, { lang: 'zh-CN', times: 1, rate: 0.8 }); };
 
 export async function cnSetup() {
   const u = user(), KIND = kindOf(u); mount(page('词语听写', h('p', { class: 'note' }, '加载中…'), { back: '#/' }));
@@ -52,7 +52,11 @@ function flow(u, qs, KIND) {
     showBtn.disabled = true; playBtn.textContent = '正在听…（点这里重听）';
     status.textContent = `一共 ${qs.length} 个词，每个读两遍，请边听边写在纸上。`;
     const lines = []; qs.forEach(q => { lines.push({ t: q.w, s: 'x' }); lines.push({ t: q.w, s: 'x' }); });
-    playScript(lines, {}, { lang: 'zh-CN', times: 1, rate: 0.8, pause: 3200, onend: () => { showBtn.disabled = false; playBtn.textContent = '🔁 再听一遍'; status.textContent = '听完啦！检查一下纸上写的，然后点“显示答案”。'; } });
+    const finish = () => { showBtn.disabled = false; playBtn.textContent = '🔁 再听一遍'; status.textContent = '听完啦！检查一下纸上写的，然后点“显示答案”。'; };
+    const tts = (ls) => playScript(ls.map(l => ({ t: l.t, s: 'x' })), {}, { lang: 'zh-CN', times: 1, rate: 0.8, pause: 3200, onend: finish });
+    // 有真人 MP3 就播 MP3（同一个词两遍之间停 1.5 秒，换词停 3.2 秒）；中途放不出来就从当前词起改用手机朗读
+    const mp = lines.map((l, i) => ({ t: l.t, gap: i % 2 === 0 ? 1500 : 3200 }));
+    if (!playCnMp3(mp, X.audio, { onend: finish, onfail: (rest) => tts(rest) })) tts(lines);
   } }, '▶ 开始听');
   mount(page('词语听写', [h('p', { class: 'note' }, '不用在手机上打字：先听完全部，写在纸上；写完自己点“显示答案”。'), status, playBtn, stopBtn, showBtn], { back }));
   function review() {

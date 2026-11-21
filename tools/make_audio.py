@@ -12,6 +12,7 @@
     python make_audio.py --listening   只做听力
     python make_audio.py --speaking    只做口语跟读句子（放在 audio/w/sp-*.mp3）
     python make_audio.py --words       生成所有年级单词、短语、句子的美式发音（放在 audio/w/ 里）
+    python make_audio.py --cn          生成语文词语/生字听写发音（放在 audio/w/cn-*.mp3，女声，语速 -10%）
     python make_audio.py --dry-run 不联网，只生成 2 秒的静音，用来检查流程
 
 生成的 MP3 放在上一级的 audio 文件夹里，同时更新 audio/index.json。
@@ -147,6 +148,52 @@ async def make_words(dry):
     await asyncio.gather(*[one(n, t) for n, t in todo])
 
 
+# ---------- 语文词语 / 生字听写发音 ----------
+CN_VOICE = 'zh-CN-XiaoxiaoNeural'
+CN_RATE = '-10%'
+
+
+def cn_name(t):
+    """文件名规则要和 js/ui.js 的 cnAudioFile() 完全一致：cn-<每个字的 Unicode 十六进制码，用 - 连起来>.mp3"""
+    return 'cn-' + '-'.join(format(ord(c), 'x') for c in t) + '.mp3'
+
+
+def cn_jobs():
+    out = []
+
+    def walk(o):
+        if isinstance(o, dict):
+            for k, v in o.items():
+                if k == 'w' and isinstance(v, str):
+                    out.append(v)
+                else:
+                    walk(v)
+        elif isinstance(o, list):
+            for x in o:
+                walk(x)
+    for p in sorted((ROOT / 'data').glob('cnwords*.json')):
+        walk(json.loads(p.read_text(encoding='utf-8')))
+    return {cn_name(w): w for w in out}
+
+
+async def make_cn(dry):
+    out_dir = AUDIO / 'w'
+    out_dir.mkdir(parents=True, exist_ok=True)
+    jobs = cn_jobs()
+    todo = [(n, t) for n, t in jobs.items() if FORCE or not (out_dir / n).exists()]
+    print('语文词语：需要生成 %d 个，已有 %d 个' % (len(todo), len(jobs) - len(todo)))
+    sem = asyncio.Semaphore(4)
+    done = [0]
+
+    async def one(n, t):
+        async with sem:
+            (out_dir / n).write_bytes(await tts(t, CN_VOICE, CN_RATE, dry))
+            done[0] += 1
+            if done[0] % 100 == 0:
+                print('  已完成', done[0], '/', len(todo))
+    await asyncio.gather(*[one(n, t) for n, t in todo])
+
+
 def write_index():
     files = sorted(['audio/' + p.name for p in AUDIO.glob('*.mp3')] + ['audio/w/' + p.name for p in (AUDIO / 'w').glob('*.mp3')])
     (AUDIO / 'index.json').write_text(json.dumps({'files': files}, ensure_ascii=False, indent=1), encoding='utf-8')
@@ -162,6 +209,8 @@ async def main():
     AUDIO.mkdir(exist_ok=True)
     if '--index-only' in args:
         write_index(); return
+    if '--cn' in args:
+        await make_cn(dry); write_index(); print('完成。把 audio 文件夹上传到 GitHub 即可。'); return
     if '--words' in args:
         await make_words(dry); write_index(); print('完成。把 audio 文件夹上传到 GitHub 即可。'); return
     only_l, only_s = '--listening' in args, '--speaking' in args   # 只做听力 / 只做口语

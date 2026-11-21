@@ -249,7 +249,28 @@ export function playListen(id, avail, lines, speakers, opts = {}) {
 
 // 听力原文朗读：没有 MP3 时，用手机自带的美式语音；男女声用音高区分。每次播放读两遍。
 let scriptRun = 0;
-export function stopScript() { scriptRun++; try { window.speechSynthesis && window.speechSynthesis.cancel(); } catch (e) { /* ignore */ } }
+export function stopScript() { scriptRun++; try { window.speechSynthesis && window.speechSynthesis.cancel(); } catch (e) { /* ignore */ } try { if (curAudio) curAudio.pause(); } catch (e) { /* ignore */ } }
+
+// ---- 语文词语/生字：有 MP3（audio/w/cn-<字的十六进制码>.mp3）就播 MP3，没有才用手机朗读 ----
+// 文件名规则要和 tools/make_audio.py 的 cn_name() 完全一致
+export const cnAudioFile = (t) => 'audio/w/cn-' + [...t].map(c => c.codePointAt(0).toString(16)).join('-') + '.mp3';
+// lines: [{t, gap}]（gap = 读完这一遍后停几毫秒）。所有词都有 MP3 才播并返回 true；否则返回 false，由调用方走手机朗读
+export function playCnMp3(lines, avail, opts = {}) {
+  if (!avail || !lines.length || !lines.every(l => avail.has(cnAudioFile(l.t)))) return false;
+  const run = ++scriptRun; let i = 0;
+  try { window.speechSynthesis && window.speechSynthesis.cancel(); } catch (e) { /* ignore */ }
+  try { if (curAudio) curAudio.pause(); } catch (e) { /* ignore */ }
+  const next = () => {
+    if (run !== scriptRun) return;
+    if (i >= lines.length) { if (opts.onend) opts.onend(); return; }
+    const l = lines[i], a = new Audio(cnAudioFile(l.t)); curAudio = a; setRate(a, opts.mult || 1);
+    const go = () => { if (run !== scriptRun) return; i++; setTimeout(next, i >= lines.length ? 0 : (l.gap == null ? 1500 : l.gap)); };
+    a.onended = go;
+    a.onerror = () => { if (run === scriptRun && opts.onfail) { opts.onfail(lines.slice(i), i); } else go(); };
+    a.play().catch(() => { if (run === scriptRun && opts.onfail) opts.onfail(lines.slice(i), i); });
+  };
+  next(); return true;
+}
 // 离开页面时，把正在播的声音（朗读、录音、听力）全部停掉
 export function stopAllSound() {
   stopScript();
