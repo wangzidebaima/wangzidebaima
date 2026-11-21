@@ -6,6 +6,7 @@ import * as CN from './cndict.js';
 import * as LN from './learn.js';
 import * as PM from './poem.js';
 import * as SR from './search.js';
+import * as WR from './write.js';
 import * as CV from './chapview.js';
 import { stopAllSound, toast, warmVoices, setAudioBase } from './ui.js';
 import * as HP from './help.js';
@@ -107,6 +108,7 @@ async function render() {
       case 'tips': return LN.tipsView(a + (b ? '/' + b : ''));
       case 'poem': return PM.poemView(a);
       case 'search': return SR.searchPage();
+      case 'write': return WR.writePage();
       case 'dict': return PM.dictView(a);
       case 'unit': return V.unitPage(a, b);
       case 'utest': return a === 'eng' ? await E.unitTestEng(b) : a === 'mix' ? await V.mixedTest(b) : await V.unitTest(a, b, c);

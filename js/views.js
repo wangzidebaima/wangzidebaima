@@ -435,6 +435,7 @@ export function nextTask(u) {
   return null;
 }
 import { dueCount, hasBook } from './learn.js';
+import { writeCard } from './write.js';
 // 今日复习卡片：把「该复习的单词」和「错后 3 天还没做对的错题」聚合在首页，
 // 有到期内容才显示，不打扰没有欠账的日子
 function reviewCard(u) {
@@ -542,7 +543,7 @@ export function home() {
     h('h2', { class: 'sh' }, '我的'),
     h('div', { class: 'grid' },
       h('a', { class: 'card plain', href: '#/badges' }, h('span', { class: 'ic' }, '🏅'), h('b', {}, '成就徽章'), h('small', {}, '拿到就永远是你的'), h('em', {}, `${B.unlockedCount(u.id)}/${B.totalCount(u.id)}`)),
-      tellCard(u),
+      tellCard(u), writeCard(u),
       h('a', { class: 'card plain', href: '#/errors' }, h('span', { class: 'ic' }, '📒'), h('b', {}, '错题本'), h('small', {}, wrongN ? '做错的题在这里再练' : '还没有错题'), wrongN ? h('em', { class: 'badge' }, wrongN + ' 道') : null),
       h('a', { class: 'card plain', href: '#/me' }, h('span', { class: 'ic' }, '📊'), h('b', {}, '我的记录'), h('small', {}, '星星、进度、发给家长'))),
     standalone() ? null : h('a', { class: 'link instl', href: '#/install' }, '📲 装到手机桌面，打开更方便')));
