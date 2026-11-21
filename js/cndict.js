@@ -1,5 +1,5 @@
 // 语文：四年级词语听写（词语表）。先把词全听完（每词两遍）→ 孩子写在纸上 → 自己点“显示答案”→ 自己判对错
-import { h, toast, playScript, stopScript, playCnMp3 } from './ui.js';
+import { h, toast, playScript, stopScript, playCnMp3, pausePlay, resumePlay } from './ui.js';
 import * as S from './store.js';
 import { user, mount, page, cap, X } from './views.js';
 
@@ -47,28 +47,24 @@ function flow(u, qs, KIND) {
   const back = '#/rand/' + KIND;
   const status = h('p', { class: 'note dstat' }, `一共 ${qs.length} 个词，准备好纸和笔，点“开始听”。`);
   const showBtn = h('button', { class: 'btn primary wide', style: 'margin-top:10px', disabled: true, onclick: () => { stopScript(); review(); } }, '显示答案');
-  let breakAt = 0, stopped = false;   // 断点行号（每词两行）、是否处于“停止”态
-  const playBtn = h('button', { class: 'btn primary wide', onclick: () => { startPlay(stopped && breakAt > 0 ? Math.floor(breakAt / 2) * 2 : 0); } }, '▶ 开始听');
-  const stopBtn = h('button', { type: 'button', class: 'btn ghost wide', style: 'margin-top:10px', onclick: () => {
-    if (stopped) { startPlay(0); return; }   // 停止态下再点 = 从头重听
-    stopScript(); stopped = true;
-    playBtn.textContent = breakAt > 0 ? '▶ 继续听' : '▶ 重新开始听';
-    stopBtn.textContent = '↺ 从头重听';
-    showBtn.disabled = false;
-    status.textContent = '已停止。点“继续听”接着刚才的听；点“从头重听”重新开始；写完了点“显示答案”。';
-  } }, '■ 停止');
+  let mode = 'idle';   // idle 未播 | playing 播放中 | paused 已暂停 | done 播完
+  const playBtn = h('button', { class: 'btn primary wide', onclick: () => {
+    if (mode === 'playing') { pausePlay(); mode = 'paused'; playBtn.textContent = '▶ 继续'; showBtn.disabled = false; status.textContent = '已暂停。点「继续」从刚才停下的地方接着听；写完了点「显示答案」。'; }
+    else if (mode === 'paused') { resumePlay(); mode = 'playing'; playBtn.textContent = '⏸ 暂停'; status.textContent = `一共 ${qs.length} 个词，每个读两遍，请边听边写在纸上。`; }
+    else startPlay(0);   // 未播 / 播完：从头开始
+  } }, '▶ 开始听');
+  const restartBtn = h('button', { type: 'button', class: 'btn ghost wide', style: 'margin-top:10px', disabled: true, onclick: () => { stopScript(); startPlay(0); } }, '↺ 从头开始');
   function startPlay(from) {
-    stopped = false; breakAt = from; stopBtn.textContent = '■ 停止';
-    showBtn.disabled = true; playBtn.textContent = '正在听…（点这里重听）';
-    status.textContent = `一共 ${qs.length} 个词，每个读两遍，请边听边写在纸上。`;
+    mode = 'playing'; playBtn.textContent = '⏸ 暂停'; restartBtn.disabled = false; showBtn.disabled = true;
+    status.textContent = `一共 ${qs.length} 个词，每个读两遍，请边听边写在纸上。听不清可以点「暂停」。`;
     const lines = []; qs.forEach(q => { lines.push({ t: q.w, s: 'x' }); lines.push({ t: q.w, s: 'x' }); });
-    const finish = () => { showBtn.disabled = false; playBtn.textContent = '🔁 再听一遍'; breakAt = 0; status.textContent = '听完啦！检查一下纸上写的，然后点“显示答案”。'; };
-    const tts = (ls, fromIdx) => playScript(ls, {}, { lang: 'zh-CN', times: 1, rate: 0.8, pause: 3200, startAt: fromIdx, onpos: (p) => { breakAt = p; }, onend: finish });
+    const finish = () => { mode = 'done'; showBtn.disabled = false; playBtn.textContent = '🔁 再听一遍'; restartBtn.disabled = true; status.textContent = '听完啦！检查一下纸上写的，然后点“显示答案”。'; };
+    const tts = (ls, fromIdx) => playScript(ls, {}, { lang: 'zh-CN', times: 1, rate: 0.8, pause: 3200, startAt: fromIdx, onend: finish });
     // 有真人 MP3 就播 MP3（同一个词两遍之间停 1.5 秒，换词停 3.2 秒）；中途放不出来就从当前词起改用手机朗读
     const mp = lines.map((l, i) => ({ t: l.t, gap: i % 2 === 0 ? 1500 : 3200 }));
-    if (!playCnMp3(mp, X.audio, { startAt: from, onpos: (p) => { breakAt = p; }, onend: finish, onfail: (rest, i) => tts(lines, i) })) tts(lines, from);
+    if (!playCnMp3(mp, X.audio, { startAt: from, onend: finish, onfail: (rest, i) => tts(lines, i) })) tts(lines, from);
   }
-  mount(page('词语听写', [h('p', { class: 'note' }, '不用在手机上打字：先听完全部，写在纸上；写完自己点“显示答案”。'), status, playBtn, stopBtn, showBtn], { back }));
+  mount(page('词语听写', [h('p', { class: 'note' }, '不用在手机上打字：先听完全部，写在纸上；写完自己点“显示答案”。'), status, playBtn, restartBtn, showBtn], { back }));
   function review() {
     const mark = {};
     const done = h('button', { class: 'btn primary wide', onclick: () => {

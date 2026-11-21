@@ -1,5 +1,5 @@
 // 所有页面：登录、首页、题库、答题、结果、错题本、随机练习、记录、打印
-import { speakZh, h, esc, mathHtml, toast, keypad, praiseText, playSay, slug, playScript, stopScript, stopAllSound, playListen, cycleSpeed, speedText, speedMul, zhVoices, testVoice, getVoicePref, setVoicePref } from './ui.js';
+import { speakZh, h, esc, mathHtml, toast, keypad, praiseText, playSay, slug, playScript, stopScript, stopAllSound, playListen, cycleSpeed, speedText, speedMul, zhVoices, testVoice, getVoicePref, setVoicePref, pausePlay, resumePlay, isPlaying, isPaused } from './ui.js';
 import * as B from './badges.js';
 import * as S from './store.js';
 import { gradeQuestion, answerText, userText, isAnswered } from './grade.js';
@@ -735,9 +735,14 @@ function listenNode(set, withScript) {
   const box = h('section', { class: 'listen' }, h('h3', {}, '🎧 听力'));
   {
     const status = h('p', { class: 'hint' }, '先看题，再点播放。每次会读两遍，听的时候不要看原文。');
-    const play = () => { status.textContent = '正在播放…（读两遍）'; playListen(set.id, X.audio, set.transcript, set.speakers, { times: 2, onend: () => { status.textContent = '读完啦。想再听就再点一次。'; } }); };
+    let mode = 'idle';
     const spd = h('button', { type: 'button', class: 'btn ghost', onclick: () => { spd.textContent = '🐢 ' + cycleSpeed(); } }, '🐢 ' + speedText());
-    box.append(h('div', { class: 'acts' }, h('button', { type: 'button', class: 'btn primary', onclick: play }, '▶ 播放（读两遍）'), spd, h('button', { type: 'button', class: 'btn ghost', onclick: () => { stopAllSound(); status.textContent = '已停止。'; } }, '■ 停')), status);
+    const playBtn = h('button', { type: 'button', class: 'btn primary', onclick: () => {
+      if (mode === 'playing') { pausePlay(); mode = 'paused'; playBtn.textContent = '▶ 继续'; status.textContent = '已暂停，点「继续」接着听。'; }
+      else if (mode === 'paused') { resumePlay(); mode = 'playing'; playBtn.textContent = '⏸ 暂停'; status.textContent = '正在播放…'; }
+      else { mode = 'playing'; playBtn.textContent = '⏸ 暂停'; status.textContent = '正在播放…（读两遍），点「暂停」可以停下来。'; playListen(set.id, X.audio, set.transcript, set.speakers, { times: 2, onend: () => { mode = 'done'; playBtn.textContent = '🔁 再听一遍'; status.textContent = '读完啦。想再听就再点一次。'; } }); }
+    } }, '▶ 播放（读两遍）');
+    box.append(h('div', { class: 'acts' }, playBtn, spd), status);
   }
   if (withScript) box.append(h('details', { class: 'ctx', open: true }, h('summary', {}, '听力原文'), transcriptNode(set)));
   return box;
@@ -748,11 +753,15 @@ export async function hear(id) {
   let set; try { set = await loadSet(id); } catch (e) { set = null; }
   if (!set || !set.transcript) { mount(h('div', { class: 'page' }, h('h1', {}, '没有找到这段听力'), h('p', { class: 'hint' }, '请确认二维码是最新的，或者联网后再试。'))); return; }
   const status = h('p', { class: 'hint' }, '先看试卷上的题，再点「播放」。每次读两遍，听的时候不要看原文。');
-  const play = () => { status.textContent = '正在播放…（读两遍）'; playListen(set.id, X.audio, set.transcript, set.speakers, { times: 2, onend: () => { status.textContent = '读完啦。想再听就再点一次。'; } }); };
+  let mode = 'idle';
   const spd = h('button', { type: 'button', class: 'btn ghost wide', onclick: () => { spd.textContent = '🐢 ' + cycleSpeed() + '（点一下换）'; } }, '🐢 ' + speedText() + '（点一下换）');
+  const playBtn = h('button', { type: 'button', class: 'btn primary wide big', onclick: () => {
+    if (mode === 'playing') { pausePlay(); mode = 'paused'; playBtn.textContent = '▶ 继续'; status.textContent = '已暂停，点「继续」接着听。'; }
+    else if (mode === 'paused') { resumePlay(); mode = 'playing'; playBtn.textContent = '⏸ 暂停'; status.textContent = '正在播放…'; }
+    else { mode = 'playing'; playBtn.textContent = '⏸ 暂停'; status.textContent = '正在播放…（读两遍），点「暂停」可以停下来。'; playListen(set.id, X.audio, set.transcript, set.speakers, { times: 2, onend: () => { mode = 'done'; playBtn.textContent = '🔁 再听一遍'; status.textContent = '读完啦。想再听就再点一次。'; } }); }
+  } }, '▶ 播放（读两遍）');
   mount(h('div', { class: 'page hear' }, h('h1', {}, '🎧 听力：' + set.title), h('p', { class: 'hint' }, '只能听，不显示原文。'),
-    h('button', { type: 'button', class: 'btn primary wide big', onclick: play }, '▶ 播放（读两遍）'), spd,
-    h('button', { type: 'button', class: 'btn ghost wide', onclick: () => { stopAllSound(); status.textContent = '已停止。'; } }, '■ 停'), status));
+    playBtn, spd, status));
 }
 
 // ---------------- 题库套题 ----------------
@@ -766,21 +775,21 @@ function startEssay(set) {
   const u = user(), sm = setMeta(set.id), P = set.paras || [];
   const state = h('p', { class: 'note' }, '准备好了就点「开始听」。听的时候先不看原文，闭上眼睛想象画面。');
   const textBox = h('section', { class: 'passage essaytext', hidden: true }, P.map(t => h('p', {}, t)));
-  let breakAt = 0, stopped = false;   // 断点段落号、是否处于停止态
+  let mode = 'idle';   // idle 未播 | playing 播放中 | paused 已暂停 | done 播完
   function startPlay(from) {
-    stopped = false; breakAt = from; stopBtn.textContent = '■ 停止';
-    playBtn.textContent = '正在朗读…（点这里重听）'; state.textContent = '听一听，哪些词语、句子让你觉得很美？';
-    speakZh(P, X.audio, { gap: 900, ttsRate: 0.82, startAt: from, onpos: (p) => { breakAt = p; }, onend: () => { playBtn.textContent = '🔁 再听一遍'; breakAt = 0; state.textContent = '听完啦！可以看原文，再学一学好词好句，然后做小题。'; textBtn.disabled = false; } });
+    mode = 'playing'; playBtn.textContent = '⏸ 暂停'; restartBtn.disabled = false;
+    state.textContent = '正在朗读…，点「暂停」可以停下来，回来点「继续」接着听。'; textBtn.disabled = false;
+    speakZh(P, X.audio, { gap: 900, ttsRate: 0.82, startAt: from, onend: () => {
+      mode = 'done'; playBtn.textContent = '🔁 再听一遍'; restartBtn.disabled = true;
+      state.textContent = '听完啦！可以看原文，再学一学好词好句，然后做小题。'; textBtn.disabled = false;
+    } });
   }
-  const playBtn = h('button', { class: 'btn primary wide', onclick: () => { startPlay(stopped && breakAt > 0 ? breakAt : 0); } }, '▶ 开始听');
-  const stopBtn = h('button', { type: 'button', class: 'btn ghost wide', style: 'margin-top:10px', onclick: () => {
-    if (stopped) { startPlay(0); return; }   // 停止态下再点 = 从头重听
-    stopScript(); stopped = true;
-    playBtn.textContent = breakAt > 0 ? '▶ 继续听' : '▶ 重新开始听';
-    stopBtn.textContent = '↺ 从头重听';
-    state.textContent = '已停止。点「继续听」接着刚才的听；点「从头重听」重新开始；也可以直接看原文。';
-    textBtn.disabled = false;
-  } }, '■ 停止');
+  const playBtn = h('button', { class: 'btn primary wide', onclick: () => {
+    if (mode === 'playing') { pausePlay(); mode = 'paused'; playBtn.textContent = '▶ 继续'; state.textContent = '已暂停。点「继续」从刚才停下的地方接着听。'; }
+    else if (mode === 'paused') { resumePlay(); mode = 'playing'; playBtn.textContent = '⏸ 暂停'; state.textContent = '正在朗读…，点「暂停」可以停下来。'; }
+    else startPlay(0);   // 未播 / 播完：从头开始
+  } }, '▶ 开始听');
+  const restartBtn = h('button', { type: 'button', class: 'btn ghost wide', style: 'margin-top:10px', disabled: true, onclick: () => { stopScript(); startPlay(0); } }, '↺ 从头开始');
   const textBtn = h('button', { class: 'btn ghost wide', style: 'margin-top:10px', onclick: () => { textBox.hidden = !textBox.hidden; textBtn.textContent = textBox.hidden ? '📖 看原文' : '收起原文'; } }, '📖 看原文');
   const words = h('section', {}, h('h2', { class: 'sh' }, '好词'), h('div', { class: 'chips' }, (set.words || []).map(w => h('span', { class: 'chip' }, w))),
     h('h2', { class: 'sh' }, '好句'), h('div', { class: 'list' }, (set.sents || []).map(x => h('div', { class: 'row static' }, h('div', {}, h('b', {}, x[0]), x[1] ? h('small', {}, x[1]) : null),
@@ -791,7 +800,7 @@ function startEssay(set) {
       sections: set.sections, recId: set.id, back: '#/set/' + set.id,
       metaFor: () => ({ setId: set.id, title: set.title, src: 'bank', sub: sm.subject.id, kind: 'essay' }), again: () => startEssay(set) }));
   } }, '做小题（算今天的美文任务）');
-  mount(page(set.title, [h('p', { class: 'subtitle' }, set.subtitle || ''), state, playBtn, stopBtn, textBtn, textBox, words, go], { back: '#/s/' + sm.subject.id }));
+  mount(page(set.title, [h('p', { class: 'subtitle' }, set.subtitle || ''), state, playBtn, restartBtn, textBtn, textBox, words, go], { back: '#/s/' + sm.subject.id }));
 }
 // 确定性伪随机（xmur3 播种 + mulberry32）：打印卷必须每次生成同一份，
 // 否则「题目卷」和「含答案卷」是两次渲染，打乱结果不同，答案就会对不上。

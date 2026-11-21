@@ -130,6 +130,12 @@ export const keypad = {
 
 // 播放发音：优先用上传的真人 MP3（audio/w/<key>.mp3），没有就用手机自带的美式朗读
 let curAudio = null;
+// 当前播放的暂停/恢复控制（朗读、听力、听写共用）：各播放函数开始时设置，结束或停止时清空
+let playCtl = null;
+export function pausePlay() { if (playCtl) playCtl.pause(); }
+export function resumePlay() { if (playCtl) playCtl.resume(); }
+export const isPlaying = () => !!playCtl;
+export const isPaused = () => !!(playCtl && playCtl.paused);
 // 选最自然的语音：优先“增强/高品质/神经网络”语音，其次系统自带的好声音
 const GOOD = /enhanced|premium|natural|neural|siri|google|samantha|ava\b|allison|susan|zoe|alex|aaron|nicky|evan|tian|xiaoxiao|xiaoyi|yunxi|ting-?ting|mei-?jia|lili|microsoft.*(online|aria|jenny|guy|xiao|yun)/i;
 const FEM = /female|samantha|ava\b|allison|susan|zoe|karen|victoria|aria|jenny|zira|nicky|joelle|ting|mei|xiaoxiao|xiaoyi|lili/i, MAL = /\bmale\b|alex|aaron|tom|david|mark|guy|evan|daniel|fred|yunxi|yunyang|eric/i;
@@ -239,8 +245,14 @@ export function playListen(id, avail, lines, speakers, opts = {}) {
   if (avail && avail.has(file)) {
     try {
       const a = new Audio(file); curAudio = a; setRate(a, speedMul());
+      let paused = false;
       a.addEventListener('play', () => setRate(a, speedMul()));
-      a.addEventListener('ended', () => { if (curAudio === a && opts.onend) opts.onend(); });
+      a.addEventListener('ended', () => { if (curAudio === a) { playCtl = null; if (opts.onend) opts.onend(); } });
+      playCtl = {
+        get paused() { return paused; },
+        pause() { if (paused) return; paused = true; try { a.pause(); } catch (e) { /* ignore */ } },
+        resume() { if (!paused) return; paused = false; a.play().catch(() => {}); }
+      };
       a.play().catch(() => { if (curAudio === a) tts(); });
       return;
     } catch (e) { /* 用朗读兜底 */ }
@@ -250,7 +262,7 @@ export function playListen(id, avail, lines, speakers, opts = {}) {
 
 // 听力原文朗读：没有 MP3 时，用手机自带的美式语音；男女声用音高区分。每次播放读两遍。
 let scriptRun = 0;
-export function stopScript() { scriptRun++; try { window.speechSynthesis && window.speechSynthesis.cancel(); } catch (e) { /* ignore */ } try { if (curAudio) curAudio.pause(); } catch (e) { /* ignore */ } }
+export function stopScript() { scriptRun++; playCtl = null; try { window.speechSynthesis && window.speechSynthesis.cancel(); } catch (e) { /* ignore */ } try { if (curAudio) curAudio.pause(); } catch (e) { /* ignore */ } }
 
 // ---- 语文词语/生字：有 MP3（audio/w/cn-<字的十六进制码>.mp3）就播 MP3，没有才用手机朗读 ----
 // 文件名规则要和 tools/make_audio.py 的 cn_name() 完全一致
@@ -261,17 +273,28 @@ export function playCnMp3(lines, avail, opts = {}) { return playMp3Lines(lines, 
 export function playMp3Lines(lines, avail, opts, fileOf) {
   if (!avail || !lines.length || !lines.every(l => avail.has(fileOf(l.t)))) return false;
   const run = ++scriptRun; let i = opts.startAt || 0;
+  let timer = null, seg = null, paused = false;
   try { window.speechSynthesis && window.speechSynthesis.cancel(); } catch (e) { /* ignore */ }
   try { if (curAudio) curAudio.pause(); } catch (e) { /* ignore */ }
+  const clearT = () => { if (timer) { clearTimeout(timer); timer = null; } };
   const next = () => {
     if (run !== scriptRun) return;
     if (opts.onpos) opts.onpos(i);
-    if (i >= lines.length) { if (opts.onend) opts.onend(); return; }
-    const l = lines[i], a = new Audio(fileOf(l.t)); curAudio = a; setRate(a, opts.mult || 1);
-    const go = () => { if (run !== scriptRun) return; i++; setTimeout(next, i >= lines.length ? 0 : (l.gap == null ? (opts.gap == null ? 1500 : opts.gap) : l.gap)); };
+    if (i >= lines.length) { if (run === scriptRun) playCtl = null; if (opts.onend) opts.onend(); return; }
+    const l = lines[i], a = new Audio(fileOf(l.t)); curAudio = a; seg = a; setRate(a, opts.mult || 1);
+    const go = () => {
+      if (run !== scriptRun) return;
+      i++; seg = null;
+      timer = setTimeout(next, i >= lines.length ? 0 : (l.gap == null ? (opts.gap == null ? 1500 : opts.gap) : l.gap));
+    };
     a.onended = go;
     a.onerror = () => { if (run === scriptRun && opts.onfail) { opts.onfail(lines.slice(i), i); } else go(); };
     a.play().catch(() => { if (run === scriptRun && opts.onfail) opts.onfail(lines.slice(i), i); });
+  };
+  playCtl = {
+    get paused() { return paused; },
+    pause() { if (paused) return; paused = true; clearT(); try { if (seg && !seg.paused) seg.pause(); } catch (e) { /* ignore */ } },
+    resume() { if (!paused) return; paused = false; if (seg && !seg.ended) { try { seg.play().catch(() => { seg = null; next(); }); } catch (e) { seg = null; next(); } } else next(); }
   };
   next(); return true;
 }
@@ -295,23 +318,28 @@ export function playScript(lines, speakers, opts = {}) {
   stopScript(); const run = scriptRun, times = opts.times || 2, rate = opts.rate || 0.95;
   const items = [];
   for (let k = 0; k < times; k++) { lines.forEach(l => items.push({ t: l.t, who: (speakers && speakers[l.s]) || '' })); if (k < times - 1) items.push({ gap: 2200 }); }
-  let i = opts.startAt || 0;
+  let i = opts.startAt || 0, paused = false, timer = null;
   const next = () => {
     if (run !== scriptRun) return;
     if (opts.onpos) opts.onpos(i);
-    if (i >= items.length) { if (opts.onend) opts.onend(); return; }
+    if (i >= items.length) { if (run === scriptRun) playCtl = null; if (opts.onend) opts.onend(); return; }
     const it = items[i++];
-    if (it.gap) { setTimeout(next, it.gap); return; }
+    if (it.gap) { timer = setTimeout(next, it.gap); return; }
     const u = new SpeechSynthesisUtterance(it.t); u.lang = lang; u.rate = rate;
     const v = pickVoice(ss, lang, it.who), vs = voicesFor(ss, lang), distinct = v && vs.length > 1 && (FEM.test(v.name) !== MAL.test(v.name));
     if (v) u.voice = v;
     u.pitch = distinct ? 1 : /^f/.test(it.who) ? 1.1 : /^m/.test(it.who) ? 0.9 : /^c/.test(it.who) ? 1.2 : 1;
     let to = null;
-    u.onend = () => { clearTimeout(to); sayOk(); setTimeout(next, opts.pause || 450); };
-    u.onerror = (e) => { clearTimeout(to); sayBad(noV, e); setTimeout(next, 100); };
+    u.onend = () => { clearTimeout(to); sayOk(); timer = setTimeout(next, opts.pause || 450); };
+    u.onerror = (e) => { clearTimeout(to); sayBad(noV, e); timer = setTimeout(next, 100); };
     // 有些手机点了既不出声、也不触发 onend/onerror：1.5 秒后还没在朗读就记一次失败并继续
-    to = setTimeout(() => { if (run === scriptRun && !ss.speaking && !ss.pending) { sayBad(noV); setTimeout(next, 100); } }, 1500);
-    try { ss.speak(u); } catch (e) { clearTimeout(to); sayBad(noV); setTimeout(next, 100); }
+    to = setTimeout(() => { if (run === scriptRun && !ss.speaking && !ss.pending) { sayBad(noV); timer = setTimeout(next, 100); } }, 1500);
+    try { ss.speak(u); } catch (e) { clearTimeout(to); sayBad(noV); timer = setTimeout(next, 100); }
+  };
+  playCtl = {
+    get paused() { return paused; },
+    pause() { if (paused) return; paused = true; if (timer) { clearTimeout(timer); timer = null; } try { ss.cancel(); } catch (e) { /* ignore */ } i = Math.max(0, i - 1); },
+    resume() { if (!paused) return; paused = false; next(); }
   };
   // iOS 刚打开时语音列表常常是空的，这时直接播系统会自己乱挑一个（可能挑到粤语 → 咬舌）。
   // 给它 300ms 等 voiceschanged；等不到也照常播，不能让孩子点了没反应。

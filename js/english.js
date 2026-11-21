@@ -1,5 +1,5 @@
 // 英语：单词 / 短语 / 句子小测，按单元出题；黑体词要会拼写，非黑体词只考意思和发音
-import { h, toast, playSay, slug, playScript, stopScript, playMp3Lines } from './ui.js';
+import { h, toast, playSay, slug, playScript, stopScript, playMp3Lines, pausePlay, resumePlay } from './ui.js';
 import * as S from './store.js';
 import { X, user, mount, page, runQuiz, cap } from './views.js';
 import { RANDOM, TW, TS, weighted } from './mathgen.js';
@@ -139,34 +139,29 @@ function dictFlow(u, R, qs, kind) {
   const backTo = '#/rand/' + kind;
   const status = h('p', { class: 'note dstat' }, `一共 ${qs.length} 个，准备好纸和笔，点“开始听”。`);
   const showBtn = h('button', { class: 'btn primary wide', style: 'margin-top:10px', disabled: true, onclick: () => { stopScript(); review(); } }, '显示答案');
-  let breakAt = 0, stopped = false;   // 断点行号（每词两行）、是否处于“停止”态
-  const playBtn = h('button', { class: 'btn primary wide', onclick: () => { startPlay(stopped && breakAt > 0 ? Math.floor(breakAt / 2) * 2 : 0); } }, '▶ 开始听');
-  const stopBtn = h('button', { type: 'button', class: 'btn ghost wide', style: 'margin-top:10px', onclick: () => {
-    if (stopped) { startPlay(0); return; }   // 停止态下再点 = 从头重听
-    stopScript(); stopped = true;
-    playBtn.textContent = breakAt > 0 ? '▶ 继续听' : '▶ 重新开始听';
-    stopBtn.textContent = '↺ 从头重听';
-    showBtn.disabled = false;
-    status.textContent = '已停止。点“继续听”接着刚才的听；点“从头重听”重新开始；写完了点“显示答案”。';
-  } }, '■ 停止');
+  let mode = 'idle';   // idle 未播 | playing 播放中 | paused 已暂停 | done 播完
+  const playBtn = h('button', { class: 'btn primary wide', onclick: () => {
+    if (mode === 'playing') { pausePlay(); mode = 'paused'; playBtn.textContent = '▶ 继续'; showBtn.disabled = false; status.textContent = '已暂停。点「继续」从刚才停下的地方接着听；写完了点「显示答案」。'; }
+    else if (mode === 'paused') { resumePlay(); mode = 'playing'; playBtn.textContent = '⏸ 暂停'; status.textContent = `一共 ${qs.length} 个词，每个读两遍，请边听边写在纸上。`; }
+    else startPlay(0);   // 未播 / 播完：从头开始
+  } }, '▶ 开始听');
+  const restartBtn = h('button', { type: 'button', class: 'btn ghost wide', style: 'margin-top:10px', disabled: true, onclick: () => { stopScript(); startPlay(0); } }, '↺ 从头开始');
   function startPlay(from) {
-    stopped = false; breakAt = from; stopBtn.textContent = '■ 停止';
-    showBtn.disabled = true; playBtn.textContent = '正在听…（点这里重听）';
-    status.textContent = `一共 ${qs.length} 个词，每个读两遍，请边听边写在纸上。`;
+    mode = 'playing'; playBtn.textContent = '⏸ 暂停'; restartBtn.disabled = false; showBtn.disabled = true;
+    status.textContent = `一共 ${qs.length} 个词，每个读两遍，请边听边写在纸上。听不清可以点「暂停」。`;
     const lines = []; qs.forEach(q => { lines.push({ t: q.say, s: 'x' }); lines.push({ t: q.say, s: 'x' }); });
     const finish = () => {
-      showBtn.disabled = false; playBtn.textContent = '🔁 再听一遍';
-      breakAt = 0;
+      mode = 'done'; showBtn.disabled = false; playBtn.textContent = '🔁 再听一遍'; restartBtn.disabled = true;
       status.textContent = '听完啦！检查一下纸上写的，然后点“显示答案”。';
     };
-    const tts = (ls, fromIdx) => playScript(ls, {}, { times: 1, rate: 0.85, pause: 2600, startAt: fromIdx, onpos: (p) => { breakAt = p; }, onend: finish });
+    const tts = (ls, fromIdx) => playScript(ls, {}, { times: 1, rate: 0.85, pause: 2600, startAt: fromIdx, onend: finish });
     // 有真人 MP3（audio/w/<key>.mp3）就播 MP3：同一个词两遍间隔 1.5 秒，换词停 2.6 秒；缺 MP3 或中途出错就用手机朗读
     const mp = []; qs.forEach(q => { const k = q.sayKey || (q.rv && q.rv.key); mp.push({ t: k, gap: 1500 }); mp.push({ t: k, gap: 2600 }); });
-    if (!qs.every(q => q.sayKey || (q.rv && q.rv.key)) || !playMp3Lines(mp, X.audio, { startAt: from, onpos: (p) => { breakAt = p; }, onend: finish, onfail: (rest, i) => tts(lines, i) }, (k) => 'audio/w/' + k + '.mp3')) tts(lines, from);
+    if (!qs.every(q => q.sayKey || (q.rv && q.rv.key)) || !playMp3Lines(mp, X.audio, { startAt: from, onend: finish, onfail: (rest, i) => tts(lines, i) }, (k) => 'audio/w/' + k + '.mp3')) tts(lines, from);
   }
   mount(page('听写', [
     h('p', { class: 'note' }, '不用在手机上打字：先听完全部，写在纸上；写完自己点“显示答案”，再对一对。'),
-    status, playBtn, stopBtn, showBtn,
+    status, playBtn, restartBtn, showBtn,
   ], { back: backTo }));
   function review() {
     const mark = {};

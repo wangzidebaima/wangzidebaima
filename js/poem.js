@@ -1,5 +1,5 @@
 // 语文“学一学”：古诗文学习页——先听、读原文，看注释和大意，再用“挡一挡”练背，最后去做题
-import { h, speakZh, stopScript } from './ui.js';
+import { h, speakZh, stopScript, pausePlay, resumePlay } from './ui.js';
 import * as S from './store.js';
 import { ev } from './stat.js';
 import { X, mount, page, setLearnHook } from './views.js';
@@ -29,12 +29,17 @@ export function poemView(pid) {
   };
   const hideBtn = h('button', { type: 'button', class: 'btn ghost', onclick: () => { level = (level + 1) % 3; hideBtn.textContent = ['🙈 挡一挡', '🙈 再多挡', '👀 全显示'][level]; draw(); } }, '🙈 挡一挡');
   const status = h('p', { class: 'hint' });
-  const play = (rate) => { status.textContent = '正在朗读…'; speakZh(lines, X.audio, { mult: rate < 0.7 ? 0.8 : 1, ttsRate: rate, gap: P.prose ? 600 : 1100, onend: () => { status.textContent = '读完啦，可以跟着再读一遍。'; } }); };
+  let mode = 'idle';   // idle 未播 | playing 播放中 | paused 已暂停
+  const pauseBtn = h('button', { type: 'button', class: 'btn ghost', disabled: true, onclick: () => {
+    if (mode === 'playing') { pausePlay(); mode = 'paused'; pauseBtn.textContent = '▶ 继续'; status.textContent = '已暂停，点「继续」接着读。'; }
+    else if (mode === 'paused') { resumePlay(); mode = 'playing'; pauseBtn.textContent = '⏸ 暂停'; status.textContent = '正在朗读…'; }
+  } }, '⏸ 暂停');
+  const play = (rate) => { mode = 'playing'; pauseBtn.disabled = false; pauseBtn.textContent = '⏸ 暂停'; status.textContent = '正在朗读…'; speakZh(lines, X.audio, { mult: rate < 0.7 ? 0.8 : 1, ttsRate: rate, gap: P.prose ? 600 : 1100, onend: () => { mode = 'idle'; pauseBtn.disabled = true; pauseBtn.textContent = '⏸ 暂停'; status.textContent = '读完啦，可以跟着再读一遍。'; } }); };
   draw();
   mount(page(P.title, [
     h('p', { class: 'note' }, P.by),
     box,
-    h('div', { class: 'acts' }, h('button', { type: 'button', class: 'btn primary', onclick: () => play(0.8) }, '🔊 朗读'), h('button', { type: 'button', class: 'btn ghost', onclick: () => play(0.6) }, '🐢 慢读'), h('button', { type: 'button', class: 'btn ghost', onclick: () => { stopScript(); status.textContent = '已停止。'; } }, '■ 停'), P.prose ? null : hideBtn),
+    h('div', { class: 'acts' }, h('button', { type: 'button', class: 'btn primary', onclick: () => play(0.8) }, '🔊 朗读'), h('button', { type: 'button', class: 'btn ghost', onclick: () => play(0.6) }, '🐢 慢读'), pauseBtn, P.prose ? null : hideBtn),
     status,
     h('h2', { class: 'sh' }, '注释'),
     h('div', { class: 'list notes' }, P.notes.map(([w, e]) => h('div', { class: 'row' }, h('div', {}, h('b', {}, w), h('small', {}, e))))),

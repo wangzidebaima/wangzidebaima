@@ -1,5 +1,5 @@
 // 英语“学”：单词卡片。先看词、听发音，点一下看意思，自己点“会了 / 不会”。不会的会再出现，一组 5 个。
-import { h, toast, playSay, slug, stopAllSound, stopScript, speakZh } from './ui.js';
+import { h, toast, playSay, slug, stopAllSound, stopScript, speakZh, pausePlay, resumePlay } from './ui.js';
 import { tipSay } from './zhtext.js';
 import * as S from './store.js';
 import { X, user, mount, page } from './views.js';
@@ -122,11 +122,16 @@ export function tipsView(key) {
   const m = key.match(/^e(\d)-(.+)$/), cn = key.match(/^(g\d+chinese)-(.+)$/);
   const back = m ? '#/learn' : cn ? `#/unit/${cn[1]}/${cn[2]}` : '#/';
   const name = m ? ((X.lib.unitNames || {})[m[2]] || m[2]) : cn ? ((X.lib.unitNames || {})[cn[2]] || cn[2]) : '';
-  const speakAll = () => speakZh(T.items.map(([a, b]) => tipSay(a, b)), X.audio, { ttsRate: 0.85, gap: 700 });
+  let mode = 'idle';
+  const listenBtn = h('button', { type: 'button', class: 'btn ghost', onclick: () => {
+    if (mode === 'playing') { pausePlay(); mode = 'paused'; listenBtn.textContent = '▶ 继续'; }
+    else if (mode === 'paused') { resumePlay(); mode = 'playing'; listenBtn.textContent = '⏸ 暂停'; }
+    else { mode = 'playing'; listenBtn.textContent = '⏸ 暂停'; speakZh(T.items.map(([a, b]) => tipSay(a, b)), X.audio, { ttsRate: 0.85, gap: 700, onend: () => { mode = 'idle'; listenBtn.textContent = '🔊 听一听'; } }); }
+  } }, '🔊 听一听');
   mount(page('本单元要点', [
     name ? h('p', { class: 'note' }, name) : null,
     ...T.items.map(([a, b]) => h('section', { class: 'tip' }, h('h3', {}, a), h('p', {}, b))),
-    cn ? h('div', { class: 'acts' }, h('button', { type: 'button', class: 'btn ghost', onclick: speakAll }, '🔊 听一听'), h('button', { type: 'button', class: 'btn ghost', onclick: () => stopScript() }, '■ 停')) : null,
+    cn ? h('div', { class: 'acts' }, listenBtn) : null,
     h('a', { class: 'btn primary wide', style: 'margin-top:10px', href: back }, '看完了'),
   ], { back }));
 }
