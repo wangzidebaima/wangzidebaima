@@ -318,28 +318,31 @@ export function playScript(lines, speakers, opts = {}) {
   stopScript(); const run = scriptRun, times = opts.times || 2, rate = opts.rate || 0.95;
   const items = [];
   for (let k = 0; k < times; k++) { lines.forEach(l => items.push({ t: l.t, who: (speakers && speakers[l.s]) || '' })); if (k < times - 1) items.push({ gap: 2200 }); }
-  let i = opts.startAt || 0, paused = false, timer = null;
+  let i = opts.startAt || 0, paused = false, timer = null, gen = 0;
   const next = () => {
-    if (run !== scriptRun) return;
+    // 暂停期间 ss.cancel() 会触发 onerror→setTimeout(next)，这里必须挡住，否则“暂停”100ms 后自己接着念
+    if (run !== scriptRun || paused) return;
     if (opts.onpos) opts.onpos(i);
     if (i >= items.length) { if (run === scriptRun) playCtl = null; if (opts.onend) opts.onend(); return; }
     const it = items[i++];
     if (it.gap) { timer = setTimeout(next, it.gap); return; }
+    const myGen = ++gen;   // 每句一个序号：暂停/继续后，旧句子迟到的回调一律作废
     const u = new SpeechSynthesisUtterance(it.t); u.lang = lang; u.rate = rate;
     const v = pickVoice(ss, lang, it.who), vs = voicesFor(ss, lang), distinct = v && vs.length > 1 && (FEM.test(v.name) !== MAL.test(v.name));
     if (v) u.voice = v;
     u.pitch = distinct ? 1 : /^f/.test(it.who) ? 1.1 : /^m/.test(it.who) ? 0.9 : /^c/.test(it.who) ? 1.2 : 1;
     let to = null;
-    u.onend = () => { clearTimeout(to); sayOk(); timer = setTimeout(next, opts.pause || 450); };
-    u.onerror = (e) => { clearTimeout(to); sayBad(noV, e); timer = setTimeout(next, 100); };
-    // 有些手机点了既不出声、也不触发 onend/onerror：1.5 秒后还没在朗读就记一次失败并继续
-    to = setTimeout(() => { if (run === scriptRun && !ss.speaking && !ss.pending) { sayBad(noV); timer = setTimeout(next, 100); } }, 1500);
+    // 暂停时 ss.cancel() 会触发 onend/onerror，这里必须挡住，不能再排下一次 next（否则暂停后自己接着念）
+    u.onend = () => { clearTimeout(to); if (myGen !== gen || paused) return; sayOk(); timer = setTimeout(next, opts.pause || 450); };
+    u.onerror = (e) => { clearTimeout(to); if (myGen !== gen || paused) return; sayBad(noV, e); timer = setTimeout(next, 100); };
+    // 有些手机点了既不出声、也不触发 onend/onerror：1.5 秒后还没在朗读就记一次失败并继续；暂停中不算失败
+    to = setTimeout(() => { if (run === scriptRun && myGen === gen && !paused && !ss.speaking && !ss.pending) { sayBad(noV); timer = setTimeout(next, 100); } }, 1500);
     try { ss.speak(u); } catch (e) { clearTimeout(to); sayBad(noV); timer = setTimeout(next, 100); }
   };
   playCtl = {
     get paused() { return paused; },
-    pause() { if (paused) return; paused = true; if (timer) { clearTimeout(timer); timer = null; } try { ss.cancel(); } catch (e) { /* ignore */ } i = Math.max(0, i - 1); },
-    resume() { if (!paused) return; paused = false; next(); }
+    pause() { if (paused) return; paused = true; gen++; if (timer) { clearTimeout(timer); timer = null; } try { ss.cancel(); } catch (e) { /* ignore */ } i = Math.max(0, i - 1); },
+    resume() { if (!paused) return; paused = false; if (timer) { clearTimeout(timer); timer = null; } next(); }
   };
   // iOS 刚打开时语音列表常常是空的，这时直接播系统会自己乱挑一个（可能挑到粤语 → 咬舌）。
   // 给它 300ms 等 voiceschanged；等不到也照常播，不能让孩子点了没反应。

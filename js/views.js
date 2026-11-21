@@ -1034,12 +1034,13 @@ function renderQ(q, no, ans, update, restore) {
     // 听音选字题（q.sayzh，一年级 220 道）只留一个「听一听」：
     // 另一个「听题」读的是「点听一听，选出你听到的字」加四个选项，孩子点了听不到要选的字，会以为坏了。
     // 题干「听一听，说的是哪个字？」本身已经写清楚了，不用再读一遍。
-    // 听题要读题干加选项，要十几秒：播放中再点一下就停（按钮变「■ 停」）
-    let qOn = false;
+    // 听题要读题干加选项，要十几秒：播放中可暂停，回来点「继续」从停下的地方接着读
+    let qMode = 'idle';   // idle 未播 | playing 播放中 | paused 已暂停
     const b = q.sayzh ? null : h('button', { type: 'button', class: 'spk listenq', onclick: () => {
-      if (qOn) { stopScript(); qOn = false; b.textContent = '🔊 听题'; return; }
-      stopScript(); qOn = true; b.textContent = '■ 停';
-      speakZh(lines, X.audio, { ttsRate: 0.8, gap: 500, onend: () => { qOn = false; b.textContent = '🔊 听题'; } });
+      if (qMode === 'playing') { pausePlay(); qMode = 'paused'; b.textContent = '▶ 继续'; return; }
+      if (qMode === 'paused') { resumePlay(); qMode = 'playing'; b.textContent = '⏸ 暂停'; return; }
+      qMode = 'playing'; b.textContent = '⏸ 暂停';
+      speakZh(lines, X.audio, { ttsRate: 0.8, gap: 500, onend: () => { qMode = 'idle'; b.textContent = '🔊 听题'; } });
     } }, '🔊 听题');
     const b2 = q.sayzh ? h('button', { type: 'button', class: 'spk listenq', onclick: () => { stopScript(); speakZh([q.sayzh], X.audio, { ttsRate: 0.7, gap: 400 }); } }, '🔊 听一听') : null;
     if (b || b2) { const first = box.querySelector('.stem'); const rowEl = h('div', { class: 'speakrow' }, b2, b); if (first) first.after(rowEl); else box.prepend(rowEl); }
@@ -1726,10 +1727,16 @@ export async function speak(id) {
         box._url = r.url;
         const sec = Math.max(1, Math.round(r.ms / 1000));
         const a = new Audio(r.url);
-        a.onended = () => { play.textContent = `▶️ 再听一遍（${sec} 秒）`; };
+        let rp = 'idle';   // idle 未播 | playing 播放中 | paused 已暂停 | done 播完
+        a.onended = () => { rp = 'done'; play.textContent = `▶️ 再听一遍（${sec} 秒）`; };
         play.textContent = `▶️ 听我读的（${sec} 秒）`;
         play.style.display = '';
-        play.onclick = () => { if (!a.paused) { a.pause(); a.currentTime = 0; play.textContent = `▶️ 再听一遍（${sec} 秒）`; } else a.play(); };
+        play.onclick = () => {
+          if (rp === 'playing') { a.pause(); rp = 'paused'; play.textContent = '▶ 继续'; return; }  // 暂停：保留进度
+          if (rp === 'paused') { a.play(); rp = 'playing'; play.textContent = '⏸ 暂停'; return; }   // 继续：从停下的地方接着听
+          if (rp === 'done') a.currentTime = 0;                                                        // 播完了想再听：从头
+          a.play(); rp = 'playing'; play.textContent = '⏸ 暂停';
+        };
         info.className = 'srres good';
         infoTxt.textContent = '录好啦，点 ▶️ 听一遍自己读的';
         sync();
