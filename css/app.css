@@ -455,3 +455,10 @@ html[data-py="off"] .py { display: inline; }
 .dict-in { width: 100%; box-sizing: border-box; font-size: 17px; border: 0; border-bottom: 2px solid var(--line); background: var(--bg); color: var(--ink); border-radius: 8px 8px 0 0; padding: 8px; outline: none; }
 .dict-res { font-size: 15px; margin-top: 6px; } .dict-res.good { color: #2e7d32; } .dict-res.bad { color: #c62828; }
 @media (prefers-color-scheme: dark) { .dict-res.good { color: #81c784; } .dict-res.bad { color: #ef9a9a; } }
+
+.sr { margin-top: 8px; }
+.sr-it { display: block; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; margin-bottom: 8px; color: var(--ink); text-decoration: none; }
+.sr-h { display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap; }
+.sr-t { font-size: 12px; background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 0 6px; color: var(--muted); }
+.sr-b { margin: 4px 0 0; font-size: 14px; color: var(--muted); }
+.sr-b mark { background: #ffe082; color: #3a2a00; border-radius: 3px; padding: 0 1px; }
