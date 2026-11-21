@@ -330,7 +330,8 @@ export const slug = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').r
 // texts: 要读的文字数组；opts: { mult 速度倍数, gap 每段之间停几毫秒, ttsRate 手机朗读语速, onend }
 export function speakZh(texts, avail, opts = {}) {
   const gap = opts.gap == null ? 900 : opts.gap;
-  const tts = (rest) => playScript(rest.map(t => ({ t: typeof t === 'string' ? t : t.t, s: 'x' })), {}, { lang: 'zh-CN', times: 1, rate: opts.ttsRate || 0.82, pause: gap, onend: opts.onend });
+  const startAt = opts.startAt || 0;
+  const tts = (rest, fromIdx) => playScript(rest.map(t => ({ t: typeof t === 'string' ? t : t.t, s: 'x' })), {}, { lang: 'zh-CN', times: 1, rate: opts.ttsRate || 0.82, pause: gap, onpos: opts.onpos ? (i) => opts.onpos(fromIdx + i) : undefined, onend: opts.onend });
   const lines = texts.map(t => ({ t }));
-  if (!playMp3Lines(lines, avail, { mult: opts.mult, gap, onend: opts.onend, onfail: tts }, zhFile)) tts(lines);
+  if (!playMp3Lines(lines, avail, { mult: opts.mult, gap, startAt, onpos: opts.onpos, onend: opts.onend, onfail: tts }, zhFile)) tts(lines.slice(startAt), startAt);
 }

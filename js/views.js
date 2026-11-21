@@ -766,11 +766,21 @@ function startEssay(set) {
   const u = user(), sm = setMeta(set.id), P = set.paras || [];
   const state = h('p', { class: 'note' }, '准备好了就点「开始听」。听的时候先不看原文，闭上眼睛想象画面。');
   const textBox = h('section', { class: 'passage essaytext', hidden: true }, P.map(t => h('p', {}, t)));
-  const playBtn = h('button', { class: 'btn primary wide', onclick: () => {
+  let breakAt = 0, stopped = false;   // 断点段落号、是否处于停止态
+  function startPlay(from) {
+    stopped = false; breakAt = from; stopBtn.textContent = '■ 停止';
     playBtn.textContent = '正在朗读…（点这里重听）'; state.textContent = '听一听，哪些词语、句子让你觉得很美？';
-    speakZh(P, X.audio, { gap: 900, ttsRate: 0.82, onend: () => { playBtn.textContent = '🔁 再听一遍'; state.textContent = '听完啦！可以看原文，再学一学好词好句，然后做小题。'; textBtn.disabled = false; } });
-  } }, '▶ 开始听');
-  const stopBtn = h('button', { type: 'button', class: 'btn ghost wide', style: 'margin-top:10px', onclick: () => { stopScript(); playBtn.textContent = '▶ 重新开始听'; state.textContent = '已停止。可以重听，或者直接看原文。'; textBtn.disabled = false; } }, '■ 停止');
+    speakZh(P, X.audio, { gap: 900, ttsRate: 0.82, startAt: from, onpos: (p) => { breakAt = p; }, onend: () => { playBtn.textContent = '🔁 再听一遍'; breakAt = 0; state.textContent = '听完啦！可以看原文，再学一学好词好句，然后做小题。'; textBtn.disabled = false; } });
+  }
+  const playBtn = h('button', { class: 'btn primary wide', onclick: () => { startPlay(stopped && breakAt > 0 ? breakAt : 0); } }, '▶ 开始听');
+  const stopBtn = h('button', { type: 'button', class: 'btn ghost wide', style: 'margin-top:10px', onclick: () => {
+    if (stopped) { startPlay(0); return; }   // 停止态下再点 = 从头重听
+    stopScript(); stopped = true;
+    playBtn.textContent = breakAt > 0 ? '▶ 继续听' : '▶ 重新开始听';
+    stopBtn.textContent = '↺ 从头重听';
+    state.textContent = '已停止。点「继续听」接着刚才的听；点「从头重听」重新开始；也可以直接看原文。';
+    textBtn.disabled = false;
+  } }, '■ 停止');
   const textBtn = h('button', { class: 'btn ghost wide', style: 'margin-top:10px', onclick: () => { textBox.hidden = !textBox.hidden; textBtn.textContent = textBox.hidden ? '📖 看原文' : '收起原文'; } }, '📖 看原文');
   const words = h('section', {}, h('h2', { class: 'sh' }, '好词'), h('div', { class: 'chips' }, (set.words || []).map(w => h('span', { class: 'chip' }, w))),
     h('h2', { class: 'sh' }, '好句'), h('div', { class: 'list' }, (set.sents || []).map(x => h('div', { class: 'row static' }, h('div', {}, h('b', {}, x[0]), x[1] ? h('small', {}, x[1]) : null),
