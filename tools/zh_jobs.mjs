@@ -10,7 +10,7 @@ const rd = (...p) => JSON.parse(fs.readFileSync(path.join(root, ...p), 'utf8'));
 
 const XIAOXIAO = 'zh-CN-XiaoxiaoNeural', XIAOYI = 'zh-CN-XiaoyiNeural';
 const jobs = {};
-const add = (t, v, r) => { t = String(t || ''); if (!/[一-鿿]/.test(t) && !/^[A-D]，$/.test(t)) return; const k = Z.zhKey(t); if (!jobs[k]) jobs[k] = { t, v, r }; };
+const add = (t, v, r) => { t = String(t || ''); if (!/[一-鿿]/.test(t) && !/^[A-D]，$/.test(t) && !/^[A-Z]$/.test(t)) return; const k = Z.zhKey(t); if (!jobs[k]) jobs[k] = { t, v, r }; };
 
 const sets = fs.readdirSync(path.join(root, 'data', 'sets')).filter(f => f.endsWith('.json')).map(f => rd('data', 'sets', f));
 const byId = Object.fromEntries(sets.map(s => [s.id, s]));
@@ -58,6 +58,6 @@ if (!process.env.ZH_NO_DYN) dynKinds.forEach(kind => sampleLines(kind, N).forEac
 if (process.env.ZH_COVER) {   // 自测：另抽一批，看有多少句能完全拼出来
   const ready = new Set(Object.keys(jobs)); let all = 0, ok = 0, bad = {};
   dynKinds.forEach(kind => sampleLines(kind, 100).forEach(line => { all++; const ps = Z.zhPieces(line); const miss = ps ? ps.filter(p => !ready.has(Z.zhKey(p))) : ['(拆不开)']; if (!miss.length) ok++; else bad[line] = miss; }));
-  console.error(`拼读覆盖：${ok}/${all}（${(ok / all * 100).toFixed(1)}%）；缺：`, Object.entries(bad).slice(0, 15));
+  console.error(`拼读覆盖：${ok}/${all}（${(ok / all * 100).toFixed(1)}%）；缺：`, Object.entries(bad).slice(0, Number(process.env.ZH_SHOW || 15)));
 }
 process.stdout.write(JSON.stringify(jobs));

@@ -17,8 +17,15 @@ export function zhKey(s) {
 export const zhFile = (t) => 'audio/z/' + zhKey(t) + '.mp3';
 
 // 「学一学」本单元要点：一条要点读成「标题。内容」，内容里的英文字母段落不读（英文另有发音）
-export const tipSay = (a, b) => a + '。' + String(b).replace(/[A-Za-z][A-Za-z\s,.'’!?/-]*/g, ' ');
+export const tipSay = (a, b) => (a + '。' + String(b).replace(/[A-Za-z][A-Za-z\s,.'’!?/-]*/g, ' ')).replace(/([一-鿿])\s+([，、])/g, '$1$2');   // 英文去掉后留下的空格会吃掉汉字之间逗号的停顿（只处理「早上  ，下午  」这种）
 
+// 表情图读成汉字（手机朗读遇到表情常常直接跳过，孩子就听不到选项）。连续 3 个 🍎 读成「3个苹果」。
+const EMOJI = { '🍎': '苹果', '🐟': '小鱼', '⭐': '星星', '🌸': '花', '🐥': '小鸡', '🎈': '气球', '🍓': '草莓', '🚗': '汽车', '🐶': '小狗', '🐱': '小猫', '🐰': '小兔', '🐼': '熊猫',
+  '🚩': '小红旗', '🐦': '小鸟', '🦆': '鸭子', '🍌': '香蕉', '🍇': '葡萄', '🚌': '公交车', '🚲': '自行车', '✈': '飞机', '⚽': '足球', '🌳': '大树' };
+export function emojiSay(t) {
+  const keys = Object.keys(EMOJI).join('|');
+  return String(t).replace(/\uFE0F/g, '').replace(new RegExp(`(${keys})\\1*`, 'gu'), (m, e) => { const n = [...m].length; return (n > 1 ? n + '个' : '') + EMOJI[e]; }).replace(new RegExp(`(${Object.values(EMOJI).join('|')})\\s*\\1`, 'g'), '$1').replace(/\s{2,}/g, ' ');   // 句子里已经写了「小红旗」就不重复读
+}
 // 低年级（readAloud）每题的「听题」：先读题干，再读选项，判断题最后问「对，还是错？」
 export function qSayLines(q) {
   // 一、二年级随机口算：题干只有算式（如 54+32），读成「54加32等于几？」
@@ -28,7 +35,7 @@ export function qSayLines(q) {
   const lines = [say0];
   if (q.type === 'choice' && !q.noOptSay) (q.options || []).forEach((o, k) => { if (o) lines.push('ABCD'[k] + '，' + o); });
   if (q.type === 'tf') lines.push('对，还是错？');
-  return lines;
+  return lines.map(emojiSay);
 }
 
 // ---- 数字和固定句子拼接朗读 ----
@@ -60,15 +67,17 @@ export function zhPieces(text) {
   const lead = /^[A-D]，/.exec(t); if (lead) t = t.slice(2);   // 选项前面的「A，」单独一块
   t = t.replace(/○/g, '圆圈').replace(/＞|>/g, '大于').replace(/＜|</g, '小于').replace(/＝|=/g, '等于');
   if (!/[一-鿿]/.test(t) && !/\d/.test(t)) return null;
-  if (/\d[.．。,，:：/%％]\d|[A-Za-z]/.test(t)) return null;   // 小数、分数、百分数、英文：不拆
-  const out = lead ? [lead[0]] : []; const re = /(\d+)|([^\d]+)/g; let m;
+  t = t.replace(/["“”]/g, '');
+  if (/\d[.．。,，:：/%％]\d|[A-Z]{2,}|[a-z]/.test(t)) return null;   // 小数、分数、百分数、英文：不拆
+  const out = lead ? [lead[0]] : []; const re = /(\d+)|([A-Z])|([^\dA-Z]+)/g; let m;
   while ((m = re.exec(t))) {
+    if (m[2]) { out.push(m[2]); continue; }   // 单个大写字母单独一块
     if (m[1]) {
       if (m[1].length > 1 && m[1][0] === '0') return null;
       const n = +m[1], nx = t[m.index + m[1].length] || '';
       const c = (n === 2 && MEASURE.includes(nx)) ? ['两'] : cnNumParts(n); if (c == null) return null; out.push(...c);
     } else {
-      const f = m[2].replace(/\s+/g, ''); if (!/[一-鿿]/.test(f)) continue;
+      const f = m[3].replace(/\s+/g, ''); if (!/[一-鿿]/.test(f)) continue;
       if (/[^一-鿿，。？！、；：“”‘’…—（）]/.test(f)) return null;   // 夹着符号、□ 等：不拆
       out.push(f);
     }

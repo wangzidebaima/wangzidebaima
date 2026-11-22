@@ -166,7 +166,8 @@ def cn_jobs():
         if isinstance(o, dict):
             for k, v in o.items():
                 if k == 'w' and isinstance(v, str):
-                    out.append(v)
+                    # 词条里可以加 "s"：实际朗读的文字（多音字用，如 {"w":"只","s":"一只的只"}）；没有就读 w
+                    out.append(o['s'] if isinstance(o.get('s'), str) and o['s'] else v)
                 else:
                     walk(v)
         elif isinstance(o, list):

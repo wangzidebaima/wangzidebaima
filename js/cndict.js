@@ -57,7 +57,7 @@ function flow(u, qs, KIND) {
   function startPlay(from) {
     mode = 'playing'; playBtn.textContent = '⏸ 暂停'; restartBtn.disabled = false; showBtn.disabled = true;
     status.textContent = `一共 ${qs.length} 个词，每个读两遍，请边听边写在纸上。听不清可以点「暂停」。`;
-    const lines = []; qs.forEach(q => { lines.push({ t: q.w, s: 'x' }); lines.push({ t: q.w, s: 'x' }); });
+    const lines = []; qs.forEach(q => { lines.push({ t: q.s || q.w, s: 'x' }); lines.push({ t: q.s || q.w, s: 'x' }); });
     const finish = () => { mode = 'done'; showBtn.disabled = false; playBtn.textContent = '🔁 再听一遍'; restartBtn.disabled = true; status.textContent = '听完啦！检查一下纸上写的，然后点“显示答案”。'; };
     const tts = (ls, fromIdx) => playScript(ls, {}, { lang: 'zh-CN', times: 1, rate: 0.8, pause: 3200, startAt: fromIdx, onend: finish });
     // 有真人 MP3 就播 MP3（同一个词两遍之间停 1.5 秒，换词停 3.2 秒）；中途放不出来就从当前词起改用手机朗读
@@ -87,7 +87,7 @@ function flow(u, qs, KIND) {
     const rows = qs.map((q, i) => {
       const yes = h('button', { type: 'button', class: 'chipb', onclick: () => { mark[q.w] = true; yes.classList.add('on'); no.classList.remove('on'); } }, '✅ 写对了');
       const no = h('button', { type: 'button', class: 'chipb', onclick: () => { mark[q.w] = false; no.classList.add('on'); yes.classList.remove('on'); } }, '❌ 写错了');
-      return h('div', { class: 'row dr' }, h('div', {}, h('b', {}, `${i + 1}. ${q.w}`), h('small', {}, q.l)), h('button', { type: 'button', class: 'spk', onclick: () => say(q.w) }, '🔊'), h('div', { class: 'chips' }, yes, no));
+      return h('div', { class: 'row dr' }, h('div', {}, h('b', {}, `${i + 1}. ${q.w}`), h('small', {}, q.l)), h('button', { type: 'button', class: 'spk', onclick: () => say(q.s || q.w) }, '🔊'), h('div', { class: 'chips' }, yes, no));
     });
     mount(page('对答案', [h('p', { class: 'note' }, '对照纸上写的，一个一个点“写对了 / 写错了”。一个字都不能错才算对。'), h('div', { class: 'list' }, rows), done], { back }));
   }
@@ -99,7 +99,7 @@ export async function cnWords(only) {
   const chosen = only ? [only] : S.getUnits(u.id, KIND, []), ids = chosen.length ? chosen : data.units.map(x => x.id);
   const blocks = data.units.filter(x => ids.includes(x.id)).map(x => {
     const ls = [...new Set(x.items.map(i => i.l))];
-    return [h('h2', { class: 'sh' }, x.name), ...ls.map(l => h('div', {}, h('p', { class: 'note' }, l), h('div', { class: 'chips' }, x.items.filter(i => i.l === l).map(i => h('button', { type: 'button', class: 'chipb', onclick: () => say(i.w) }, '🔊 ' + i.w)))))];
+    return [h('h2', { class: 'sh' }, x.name), ...ls.map(l => h('div', {}, h('p', { class: 'note' }, l), h('div', { class: 'chips' }, x.items.filter(i => i.l === l).map(i => h('button', { type: 'button', class: 'chipb', onclick: () => say(i.s || i.w) }, '🔊 ' + i.w)))))];
   });
   mount(page('词语表', [h('p', { class: 'note' }, '点一个词，听手机读。' + (chosen.length ? '（只显示你选的单元）' : '')), ...blocks], { back: only ? '#/unit/' + gcode(u) + 'chinese/' + only : '#/rand/' + KIND }));
 }
