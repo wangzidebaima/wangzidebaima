@@ -1,5 +1,5 @@
 // 所有页面：登录、首页、题库、答题、结果、错题本、随机练习、记录、打印
-import { speakZh, h, esc, mathHtml, toast, keypad, praiseText, playSay, slug, playScript, stopScript, stopAllSound, playListen, cycleSpeed, speedText, speedMul, zhVoices, testVoice, getVoicePref, setVoicePref, pausePlay, resumePlay, isPlaying, isPaused } from './ui.js';
+import { speakZh, speakQLines, h, esc, mathHtml, toast, keypad, praiseText, playSay, slug, playScript, stopScript, stopAllSound, playListen, cycleSpeed, speedText, speedMul, zhVoices, testVoice, getVoicePref, setVoicePref, pausePlay, resumePlay, isPlaying, isPaused } from './ui.js';
 import * as B from './badges.js';
 import * as S from './store.js';
 import { gradeQuestion, answerText, userText, isAnswered } from './grade.js';
@@ -436,6 +436,7 @@ export function nextTask(u) {
 }
 import { dueCount, hasBook } from './learn.js';
 import { writeCard } from './write.js';
+import { planCard } from './plan.js';
 // 今日复习卡片：把「该复习的单词」和「错后 3 天还没做对的错题」聚合在首页，
 // 有到期内容才显示，不打扰没有欠账的日子
 function reviewCard(u) {
@@ -543,7 +544,7 @@ export function home() {
     h('h2', { class: 'sh' }, '我的'),
     h('div', { class: 'grid' },
       h('a', { class: 'card plain', href: '#/badges' }, h('span', { class: 'ic' }, '🏅'), h('b', {}, '成就徽章'), h('small', {}, '拿到就永远是你的'), h('em', {}, `${B.unlockedCount(u.id)}/${B.totalCount(u.id)}`)),
-      tellCard(u), writeCard(u),
+      tellCard(u), planCard(u), writeCard(u),
       h('a', { class: 'card plain', href: '#/errors' }, h('span', { class: 'ic' }, '📒'), h('b', {}, '错题本'), h('small', {}, wrongN ? '做错的题在这里再练' : '还没有错题'), wrongN ? h('em', { class: 'badge' }, wrongN + ' 道') : null),
       h('a', { class: 'card plain', href: '#/me' }, h('span', { class: 'ic' }, '📊'), h('b', {}, '我的记录'), h('small', {}, '星星、进度、发给家长'))),
     standalone() ? null : h('a', { class: 'link instl', href: '#/install' }, '📲 装到手机桌面，打开更方便')));
@@ -1041,7 +1042,7 @@ function renderQ(q, no, ans, update, restore) {
       if (qMode === 'playing') { pausePlay(); qMode = 'paused'; b.textContent = '▶ 继续'; return; }
       if (qMode === 'paused') { resumePlay(); qMode = 'playing'; b.textContent = '⏸ 暂停'; return; }
       qMode = 'playing'; b.textContent = '⏸ 暂停';
-      speakZh(lines, X.audio, { ttsRate: 0.8, gap: 500, onend: () => { qMode = 'idle'; b.textContent = '🔊 听题'; } });
+      speakQLines(lines, X.audio, { ttsRate: 0.8, gap: 500, onend: () => { qMode = 'idle'; b.textContent = '🔊 听题'; } });
     } }, '🔊 听题');
     const b2 = q.sayzh ? h('button', { type: 'button', class: 'spk listenq', onclick: () => { stopScript(); speakZh([q.sayzh], X.audio, { ttsRate: 0.7, gap: 400 }); } }, '🔊 听一听') : null;
     if (b || b2) { const first = box.querySelector('.stem'); const rowEl = h('div', { class: 'speakrow' }, b2, b); if (first) first.after(rowEl); else box.prepend(rowEl); }

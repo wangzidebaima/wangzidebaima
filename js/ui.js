@@ -1,5 +1,5 @@
 // 界面小工具：创建元素、提示、数学键盘、分数排版
-import { zhFile } from './zhtext.js';
+import { zhFile, zhPieces } from './zhtext.js';
 let AUDIO_BASE = '';
 export function setAudioBase(b) { b = String(b || '').trim(); AUDIO_BASE = /^https?:\/\//.test(b) ? b.replace(/\/*$/, '/') : ''; }
 export const audioUrl = (p) => AUDIO_BASE + p;
@@ -273,6 +273,20 @@ export const cnAudioFile = (t) => 'audio/w/cn-' + [...t].map(c => c.codePointAt(
 // lines: [{t, gap}]（gap = 读完这一遍后停几毫秒）。所有词都有 MP3 才播并返回 true；否则返回 false，由调用方走手机朗读
 export function playCnMp3(lines, avail, opts = {}) { return playMp3Lines(lines, avail, opts, cnAudioFile); }
 // 通用：fileOf(文字) 给出这段文字对应的 MP3 路径
+// 听题：每一行先找整句 MP3；没有就拆成「数字 + 固定句子」小块连着放（一、二年级随机题）；
+// 还不行（含字母、表情、小数等）或中途播放失败，改用手机朗读从头读，保证总能听到。
+export function speakQLines(lines, avail, opts = {}) {
+  const gap = opts.gap == null ? 500 : opts.gap, parts = []; let ok = !!avail;
+  if (ok) for (const t of lines) {
+    if (avail.has(zhFile(t))) { parts.push({ t, gap }); continue; }
+    const ps = zhPieces(t); if (!ps) { ok = false; break; }
+    ps.forEach((p, k) => parts.push({ t: p, gap: k === ps.length - 1 ? gap : 40 }));
+  }
+  if (ok && parts.length && parts.every(p => avail.has(zhFile(p.t)))
+    && playMp3Lines(parts, avail, { mult: opts.mult, gap, onend: opts.onend, onfail: () => speakZh(lines, new Set(), opts) }, zhFile)) return;
+  speakZh(lines, avail, opts);
+}
+
 export function playMp3Lines(lines, avail, opts, fileOf) {
   if (!avail || !lines.length || !lines.every(l => avail.has(fileOf(l.t)))) return false;
   const run = ++scriptRun; let i = opts.startAt || 0;
@@ -285,6 +299,7 @@ export function playMp3Lines(lines, avail, opts, fileOf) {
     if (opts.onpos) opts.onpos(i);
     if (i >= lines.length) { if (run === scriptRun) playCtl = null; if (opts.onend) opts.onend(); return; }
     const l = lines[i], a = new Audio(audioUrl(fileOf(l.t))); curAudio = a; seg = a; setRate(a, opts.mult || 1);
+    try { const nx = lines[i + 1]; if (nx) { const pa = new Audio(audioUrl(fileOf(nx.t))); pa.preload = 'auto'; } } catch (e) { /* 预读失败不影响播放 */ }
     const go = () => {
       if (run !== scriptRun) return;
       i++; seg = null;
