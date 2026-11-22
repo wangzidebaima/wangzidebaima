@@ -1,6 +1,8 @@
 // 离线缓存：先用手机里存的（秒开），同时悄悄检查有没有新内容；有就提示刷新。
-const VER = 'kp-v136';
+const VER = 'kp-v137';
 const AUDIO = 'kp-audio';
+const AUDIO_MAX = 1500;   // 音频缓存最多留多少个文件，超了删最早存的，免得手机越用越占地方
+const AUDIO_RE = /\/audio\/(?:[wz]\/)?[^/]+\.mp3$/;
 // 下面这份清单由 tools/gen_shell.py 自动生成，不要手改；
 // 加了新文件后跑一次 python tools/gen_shell.py 即可。
 const SHELL = ['./', 'index.html', 'manifest.webmanifest', 'css/app.css',
@@ -115,8 +117,10 @@ async function trafficResp(req) {
   return hit || new Response('{"none":1}', { status: 200, headers: { 'Content-Type': 'application/json' } });
 }
 
-// 预留能力：站内目前没有 mp3 文件，这段不会触发；将来做音频时可直接接上，别删。
 // 音频：第一次播放时存下来；iPhone 播放需要支持「分段读取」(Range)
+async function trimAudio(c) {
+  try { const ks = await c.keys(); for (let i = 0; i < ks.length - AUDIO_MAX; i++) await c.delete(ks[i]); } catch (e) { /* ignore */ }
+}
 async function audioResp(req) {
   const c = await caches.open(AUDIO);
   let res = await c.match(req.url);
@@ -125,7 +129,12 @@ async function audioResp(req) {
       const net = await fetch(req.url);
       if (!net.ok) return net;
       await c.put(req.url, net.clone()); res = net;
-    } catch (e) { return new Response('', { status: 503 }); }
+      trimAudio(c);
+    } catch (e) {
+      // 音频放在别的网站（config 里 audioBase）而对方不允许跨域读取时，退回普通请求，至少在线能听
+      if (new URL(req.url).origin !== location.origin) { try { return await fetch(req); } catch (e2) { /* 离线 */ } }
+      return new Response('', { status: 503 });
+    }
   }
   const range = req.headers.get('range');
   if (!range) return res;
@@ -144,8 +153,8 @@ self.addEventListener('fetch', (e) => {
   const req = e.request;
   if (req.method !== 'GET') return;
   const url = new URL(req.url);
-  if (url.origin !== location.origin) return;
+  if (url.origin !== location.origin) { if (AUDIO_RE.test(url.pathname)) e.respondWith(audioResp(req)); return; }   // 音频搬到别的网站后，照样能离线缓存
   if (/\/data\/traffic[\w-]*\.json$/.test(url.pathname)) { e.respondWith(trafficResp(req)); return; }
-  if (/\/audio\/(?:w\/)?[^/]+\.mp3$/.test(url.pathname)) { e.respondWith(audioResp(req)); return; }
+  if (AUDIO_RE.test(url.pathname)) { e.respondWith(audioResp(req)); return; }
   e.respondWith(swr(req, e));
 });
