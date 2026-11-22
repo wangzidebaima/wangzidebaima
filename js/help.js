@@ -1,5 +1,5 @@
 // 遇到问题：常见毛病按“症状”排，能自己修的先自己修；真修不了就一键自检 + 复制给家长
-import { h, toast, zhVoices, getVoicePref } from './ui.js';
+import { h, toast, zhVoices, getVoicePref, audioUrl, stopAllSound } from './ui.js';
 import * as S from './store.js';
 import { X, mount, page, nav } from './views.js';
 
@@ -232,6 +232,45 @@ async function copyText(text) {
   } catch (e) { return false; }
 }
 
+// ---------------- 声音检测：真人录音（MP3）和手机朗读各试一次，告诉家长哪个正常、哪里不对 ----------------
+function soundSection() {
+  const out = h('div', {});
+  const line = (ok, t) => h('p', { class: 'note', style: ok ? '' : 'color:#c0392b' }, (ok ? '✅ ' : '❌ ') + t);
+  const hints = ['手机侧面的静音开关（苹果）打开了吗？把音量调大。', '在微信里打开时，换成浏览器（Safari / Chrome）再试。', '用蓝牙耳机的话，看看声音是不是跑到耳机里了。', '网络不好时第一次播放会慢，等几秒；已经听过的内容以后会更快。'];
+  const mp3 = () => new Promise(async (done) => {
+    let file = '';
+    try { const r = await fetch('audio/index.json', { cache: 'no-store' }); const j = await r.json(); const fs = j.files || []; file = fs.find(f => /^audio\/z\//.test(f)) || fs[0] || ''; } catch (e) { done([false, '读不到音频清单，可能是网络不通。']); return; }
+    if (!file) { done([false, '音频清单是空的。']); return; }
+    const a = new Audio(audioUrl(file)); const t0 = Date.now(); let fin = false;
+    const end = (r) => { if (!fin) { fin = true; done(r); } };
+    a.onplaying = () => end([true, `真人录音能正常播放（点击后约 ${Math.round((Date.now() - t0) / 100) / 10} 秒出声${Date.now() - t0 > 3000 ? '，网络偏慢' : ''}）。如果没听到声音，请看下面的小提示。`]);
+    a.onerror = () => end([false, '录音文件没有加载出来（网络不通或文件缺失）。']);
+    setTimeout(() => end([false, '等了 8 秒还没出声：网络很慢或被系统拦截。']), 8000);
+    a.play().catch((e) => end([false, e && e.name === 'NotAllowedError' ? '被系统拦截了：请再点一次按钮。' : '播放失败：' + (e && e.message || e)]));
+  });
+  const tts = () => new Promise((done) => {
+    const ss = window.speechSynthesis; if (!ss) { done([false, '这个浏览器不支持手机朗读。']); return; }
+    const vs = zhVoices(); if (!vs.length) { done([false, '没读到中文语音：到系统设置里下载中文语音，或换个浏览器。']); return; }
+    let fin = false; const end = (r) => { if (!fin) { fin = true; done(r); } };
+    const u = new SpeechSynthesisUtterance('你好，现在测试手机朗读。'); u.lang = 'zh-CN'; u.rate = 0.9;
+    const pref = getVoicePref(), v = (pref && vs.find(x => x.key === pref) || vs[0]).v; if (v) u.voice = v;
+    u.onstart = () => end([true, '手机朗读能出声。']); u.onerror = () => end([false, '手机朗读出错：这台设备里的语音不可用。']);
+    setTimeout(() => end([false, '手机朗读没有反应（有些手机要先在设置里装好中文语音）。']), 5000);
+    try { ss.cancel(); ss.speak(u); } catch (e) { end([false, '手机朗读调用失败。']); }
+  });
+  const run = async (btn) => {
+    btn.disabled = true; stopAllSound(); out.replaceChildren(h('p', { class: 'note' }, '正在测试，请听…'));
+    const a = await mp3(); out.replaceChildren(line(a[0], a[1]));
+    await new Promise(r => setTimeout(r, 1500));
+    const c = await tts(); out.append(line(c[0], c[1]));
+    if (!a[0] || !c[0]) out.append(h('p', { class: 'note' }, '小提示：' + hints.join(' ')));
+    btn.disabled = false;
+  };
+  const btn = h('button', { type: 'button', class: 'btn primary wide', onclick: () => run(btn) }, '🔊 测试声音（先调大音量）');
+  return h('section', { class: 'faq' }, h('h2', { class: 'sh' }, '没声音：先测一下'),
+    h('p', { class: 'note' }, '会先放一小段真人录音，再放一句手机朗读。哪一步没声音，下面会写出原因。'), btn, out);
+}
+
 function diagSection() {
   const out = h('div', {});
   const copyBtn = h('button', { type: 'button', class: 'btn ghost wide', style: 'margin-top:10px;display:none' }, '📋 复制诊断信息');
@@ -270,6 +309,7 @@ export function helpPage() {
       h('h2', { class: 'sh' }, '🔊 朗读声音'),
       h('p', { class: 'note' }, '读得怪、没声音，多半是这台手机用来念书的声音不合适。点进去一个个试听，挑顺耳的点「用这个」——这台手机上的孩子共用这一个选择。'),
       h('button', { type: 'button', class: 'btn primary wide', onclick: () => nav('#/voice') }, '去换朗读声音')),
+    soundSection(),
     diagSection(),
   ], { back }));
 }
