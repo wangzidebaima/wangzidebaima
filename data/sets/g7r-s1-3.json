@@ -115,10 +115,11 @@
      "stem": "You can ____ many letters on the street.",
      "answers": [
       [
-       "see"
+       "see",
+       "find"
       ]
      ],
-     "why": "can 后面用动词原形 see。",
+     "why": "can 后面用动词原形，see 或 find 都可以。",
      "pts": 1
     },
     {
