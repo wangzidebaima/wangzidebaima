@@ -1,5 +1,5 @@
 // 离线缓存：先用手机里存的（秒开），同时悄悄检查有没有新内容；有就提示刷新。
-const VER = 'kp-v139';
+const VER = 'kp-v140';
 const AUDIO = 'kp-audio';
 const AUDIO_MAX = 1500;   // 音频缓存最多留多少个文件，超了删最早存的，免得手机越用越占地方
 const AUDIO_RE = /\/audio\/(?:[wz]\/)?[^/]+\.mp3$/;
