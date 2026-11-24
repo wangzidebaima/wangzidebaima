@@ -6,8 +6,13 @@ import { X, mount, page, user } from './views.js';
 let idx = null, idxFor = '';
 const cardFiles = {};
 
+let cardIds = null;
 async function loadCards(subjectId) {
   if (cardFiles[subjectId] !== undefined) return cardFiles[subjectId];
+  // 没有知识卡的科目不用去读文件（以前会产生一串 404）
+  if (!cardIds) { try { const j = await (await fetch('data/cards/index.json')).json(); cardIds = new Set(j.sets || []); } catch (e) { cardIds = false; } }
+  const sb = (X.lib.subjects || []).find(s => s.id === subjectId);
+  if (cardIds && sb && !sb.sets.some(m => cardIds.has(m.id))) { cardFiles[subjectId] = {}; return {}; }
   try {
     const r = await fetch('data/cards/' + subjectId + '.json');
     cardFiles[subjectId] = r.ok ? await r.json() : {};
