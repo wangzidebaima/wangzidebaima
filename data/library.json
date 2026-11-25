@@ -2710,6 +2710,276 @@
      "unit": "Y8"
     },
     {
+     "id": "g4c-r21",
+     "file": "sets/g4c-r21.json",
+     "title": "一块橡皮",
+     "subtitle": "记叙文·诚实",
+     "kind": "reading",
+     "count": 9,
+     "unit": "R41"
+    },
+    {
+     "id": "g4c-r22",
+     "file": "sets/g4c-r22.json",
+     "title": "妈妈的手",
+     "subtitle": "记叙文·感恩",
+     "kind": "reading",
+     "count": 9,
+     "unit": "R41"
+    },
+    {
+     "id": "g4c-r23",
+     "file": "sets/g4c-r23.json",
+     "title": "值日生风波",
+     "subtitle": "记叙文·责任",
+     "kind": "reading",
+     "count": 9,
+     "unit": "R41"
+    },
+    {
+     "id": "g4c-r24",
+     "file": "sets/g4c-r24.json",
+     "title": "雨中的伞",
+     "subtitle": "记叙文·温暖",
+     "kind": "reading",
+     "count": 9,
+     "unit": "R41"
+    },
+    {
+     "id": "g4c-r25",
+     "file": "sets/g4c-r25.json",
+     "title": "第一次做饭",
+     "subtitle": "记叙文·成长",
+     "kind": "reading",
+     "count": 9,
+     "unit": "R41"
+    },
+    {
+     "id": "g4c-r26",
+     "file": "sets/g4c-r26.json",
+     "title": "修车的老人",
+     "subtitle": "记叙文·人物",
+     "kind": "reading",
+     "count": 9,
+     "unit": "R41"
+    },
+    {
+     "id": "g4c-r27",
+     "file": "sets/g4c-r27.json",
+     "title": "冬日的操场",
+     "subtitle": "写景·冬天",
+     "kind": "reading",
+     "count": 9,
+     "unit": "R42"
+    },
+    {
+     "id": "g4c-r28",
+     "file": "sets/g4c-r28.json",
+     "title": "荷塘的清晨",
+     "subtitle": "写景·夏天",
+     "kind": "reading",
+     "count": 9,
+     "unit": "R42"
+    },
+    {
+     "id": "g4c-r29",
+     "file": "sets/g4c-r29.json",
+     "title": "故乡的小河",
+     "subtitle": "写景·四季",
+     "kind": "reading",
+     "count": 9,
+     "unit": "R42"
+    },
+    {
+     "id": "g4c-r30",
+     "file": "sets/g4c-r30.json",
+     "title": "校园里的老槐树",
+     "subtitle": "写景·状物",
+     "kind": "reading",
+     "count": 9,
+     "unit": "R42"
+    },
+    {
+     "id": "g4c-r31",
+     "file": "sets/g4c-r31.json",
+     "title": "雨后的彩虹",
+     "subtitle": "写景·科学小常识",
+     "kind": "reading",
+     "count": 9,
+     "unit": "R42"
+    },
+    {
+     "id": "g4c-r32",
+     "file": "sets/g4c-r32.json",
+     "title": "周末的早市",
+     "subtitle": "写景·生活",
+     "kind": "reading",
+     "count": 9,
+     "unit": "R42"
+    },
+    {
+     "id": "g4c-r33",
+     "file": "sets/g4c-r33.json",
+     "title": "会“看”的蝙蝠",
+     "subtitle": "说明文·动物",
+     "kind": "reading",
+     "count": 9,
+     "unit": "R43"
+    },
+    {
+     "id": "g4c-r34",
+     "file": "sets/g4c-r34.json",
+     "title": "荷叶为什么不沾水",
+     "subtitle": "说明文·植物",
+     "kind": "reading",
+     "count": 9,
+     "unit": "R43"
+    },
+    {
+     "id": "g4c-r35",
+     "file": "sets/g4c-r35.json",
+     "title": "蜘蛛不是昆虫",
+     "subtitle": "说明文·动物",
+     "kind": "reading",
+     "count": 9,
+     "unit": "R43"
+    },
+    {
+     "id": "g4c-r36",
+     "file": "sets/g4c-r36.json",
+     "title": "候鸟的远行",
+     "subtitle": "说明文·动物",
+     "kind": "reading",
+     "count": 9,
+     "unit": "R43"
+    },
+    {
+     "id": "g4c-r37",
+     "file": "sets/g4c-r37.json",
+     "title": "竹子的秘密",
+     "subtitle": "说明文·植物",
+     "kind": "reading",
+     "count": 9,
+     "unit": "R43"
+    },
+    {
+     "id": "g4c-r38",
+     "file": "sets/g4c-r38.json",
+     "title": "声音是怎样传播的",
+     "subtitle": "说明文·科学",
+     "kind": "reading",
+     "count": 9,
+     "unit": "R43"
+    },
+    {
+     "id": "g4c-r39",
+     "file": "sets/g4c-r39.json",
+     "title": "会说话的路灯",
+     "subtitle": "童话·温暖",
+     "kind": "reading",
+     "count": 9,
+     "unit": "R44"
+    },
+    {
+     "id": "g4c-r40",
+     "file": "sets/g4c-r40.json",
+     "title": "小刺猬的苹果",
+     "subtitle": "童话·分享",
+     "kind": "reading",
+     "count": 9,
+     "unit": "R44"
+    },
+    {
+     "id": "g4c-r41",
+     "file": "sets/g4c-r41.json",
+     "title": "守护星星的小熊",
+     "subtitle": "童话·坚持",
+     "kind": "reading",
+     "count": 9,
+     "unit": "R44"
+    },
+    {
+     "id": "g4c-r42",
+     "file": "sets/g4c-r42.json",
+     "title": "云朵邮递员",
+     "subtitle": "童话·想象",
+     "kind": "reading",
+     "count": 10,
+     "unit": "R44"
+    },
+    {
+     "id": "g4c-r43",
+     "file": "sets/g4c-r43.json",
+     "title": "胆小的蒲公英",
+     "subtitle": "童话·勇气",
+     "kind": "reading",
+     "count": 9,
+     "unit": "R44"
+    },
+    {
+     "id": "g4c-r44",
+     "file": "sets/g4c-r44.json",
+     "title": "铅笔和橡皮的争吵",
+     "subtitle": "童话·合作",
+     "kind": "reading",
+     "count": 10,
+     "unit": "R44"
+    },
+    {
+     "id": "g4c-r45",
+     "file": "sets/g4c-r45.json",
+     "title": "守株待兔",
+     "subtitle": "小古文·寓言",
+     "kind": "reading",
+     "count": 9,
+     "unit": "R45"
+    },
+    {
+     "id": "g4c-r46",
+     "file": "sets/g4c-r46.json",
+     "title": "揠苗助长",
+     "subtitle": "小古文·寓言",
+     "kind": "reading",
+     "count": 9,
+     "unit": "R45"
+    },
+    {
+     "id": "g4c-r47",
+     "file": "sets/g4c-r47.json",
+     "title": "刻舟求剑",
+     "subtitle": "小古文·寓言",
+     "kind": "reading",
+     "count": 9,
+     "unit": "R45"
+    },
+    {
+     "id": "g4c-r48",
+     "file": "sets/g4c-r48.json",
+     "title": "掩耳盗铃",
+     "subtitle": "小古文·寓言",
+     "kind": "reading",
+     "count": 9,
+     "unit": "R45"
+    },
+    {
+     "id": "g4c-r49",
+     "file": "sets/g4c-r49.json",
+     "title": "画蛇添足",
+     "subtitle": "小古文·寓言",
+     "kind": "reading",
+     "count": 9,
+     "unit": "R45"
+    },
+    {
+     "id": "g4c-r50",
+     "file": "sets/g4c-r50.json",
+     "title": "滥竽充数",
+     "subtitle": "小古文·寓言",
+     "kind": "reading",
+     "count": 9,
+     "unit": "R45"
+    },
+    {
      "id": "g4c-j1",
      "file": "sets/g4c-j1.json",
      "title": "词语积累·近义词反义词",
@@ -12706,6 +12976,11 @@
   "Y0": "语文积累（词语·句子·标点）",
   "Z7": "语文积累·名著导读",
   "E": "优美美文（每 3 天听一篇）",
+  "R41": "进阶·记叙文",
+  "R42": "进阶·写景状物",
+  "R43": "进阶·说明文",
+  "R44": "进阶·童话想象",
+  "R45": "进阶·小古文",
   "W1": "第一单元 小蝌蚪找妈妈·我是什么·植物妈妈有办法",
   "W2": "第二单元 识字（场景歌·树之歌·拍手歌·田家四季歌）",
   "W3": "第三单元 彩虹·去外婆家·数星星的孩子",

@@ -581,7 +581,18 @@ export function cnReadings(id) {
   const unitName = (x) => (X.lib.unitNames && X.lib.unitNames[x]) || x;
   const order = Object.keys(X.lib.unitNames || {});
   const ms = s.sets.filter(m => m.kind === 'reading').sort((a, b) => order.indexOf(a.unit) - order.indexOf(b.unit));
-  mount(page('阅读理解', [h('p', { class: 'note' }, '先读短文，再回答问题。不认识的字，点题目下面的“听题”，手机读给你听。'), h('div', { class: 'list' }, ms.map(m => { const rec = p.sets[m.id]; return h('a', { class: 'row', href: '#/set/' + m.id }, h('div', {}, h('b', {}, m.title), h('small', {}, `${m.subtitle} · ${(unitName(m.unit) || '').split(' ')[0]}`)), h('span', { class: 'chip' + (rec ? ' ok' : '') }, rec ? `上次 ${rec.last.ok}/${rec.last.total}` : '未做')); }))], { back: '#/s/' + id }));
+  // R4x = 进阶阅读（更长、题型更全，按文体分组）；其余是原来的基础短文
+  const adv = (m) => /^R4\d$/.test(m.unit);
+  const row = (m, tag) => { const rec = p.sets[m.id]; return h('a', { class: 'row', href: '#/set/' + m.id }, h('div', {}, h('b', {}, m.title), h('small', {}, tag ? `${m.subtitle} · ${(unitName(m.unit) || '').split(' ')[0]}` : m.subtitle)), h('span', { class: 'chip' + (rec ? ' ok' : '') }, rec ? `上次 ${rec.last.ok}/${rec.last.total}` : '未做')); };
+  const advs = ms.filter(adv), basic = ms.filter(m => !adv(m));
+  const blocks = [h('p', { class: 'note' }, '先读短文，再回答问题。不认识的字，点题目下面的“听题”，手机读给你听。')];
+  if (advs.length) {
+    blocks.push(h('p', { class: 'note' }, '进阶阅读：文章更长，题目有词语理解、句子含义、概括、简答。读完原文再做，别急着看答案。'));
+    [...new Set(advs.map(m => m.unit))].forEach(x => { const g = advs.filter(m => m.unit === x); blocks.push(h('h2', { class: 'sh' }, `${unitName(x)}（${g.length} 篇）`), h('div', { class: 'list' }, g.map(m => row(m, false)))); });
+    blocks.push(h('h2', { class: 'sh' }, `基础短文（${basic.length} 篇，短一些）`));
+  }
+  blocks.push(h('div', { class: 'list' }, basic.map(m => row(m, true))));
+  mount(page('阅读理解', blocks, { back: '#/s/' + id }));
 }
 export function cnEssays(id) {
   const u = user(), s = subj(id), p = S.P(u.id);
